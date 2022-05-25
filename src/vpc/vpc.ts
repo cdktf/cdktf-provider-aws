@@ -32,6 +32,13 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableDnsSupport?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#id Vpc#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#instance_tenancy Vpc#instance_tenancy}
   */
   readonly instanceTenancy?: string;
@@ -109,6 +116,7 @@ export class Vpc extends cdktf.TerraformResource {
     this._enableClassiclinkDnsSupport = config.enableClassiclinkDnsSupport;
     this._enableDnsHostnames = config.enableDnsHostnames;
     this._enableDnsSupport = config.enableDnsSupport;
+    this._id = config.id;
     this._instanceTenancy = config.instanceTenancy;
     this._ipv4IpamPoolId = config.ipv4IpamPoolId;
     this._ipv4NetmaskLength = config.ipv4NetmaskLength;
@@ -246,8 +254,19 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_tenancy - computed: false, optional: true, required: false
@@ -421,6 +440,7 @@ export class Vpc extends cdktf.TerraformResource {
       enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
       enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
       enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
+      id: cdktf.stringToTerraform(this._id),
       instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
       ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
       ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),

@@ -24,6 +24,13 @@ export interface DxGatewayAssociationConfig extends cdktf.TerraformMetaArguments
   */
   readonly dxGatewayId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association#id DxGatewayAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association#proposal_id DxGatewayAssociation#proposal_id}
   */
   readonly proposalId?: string;
@@ -67,6 +74,7 @@ export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssoci
 
 export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -76,7 +84,10 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DxGatewayAssociationTimeouts | undefined {
+  public get internalValue(): DxGatewayAssociationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -94,15 +105,21 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DxGatewayAssociationTimeouts | undefined) {
+  public set internalValue(value: DxGatewayAssociationTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -196,6 +213,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
     this._associatedGatewayId = config.associatedGatewayId;
     this._associatedGatewayOwnerAccountId = config.associatedGatewayOwnerAccountId;
     this._dxGatewayId = config.dxGatewayId;
+    this._id = config.id;
     this._proposalId = config.proposalId;
     this._vpnGatewayId = config.vpnGatewayId;
     this._timeouts.internalValue = config.timeouts;
@@ -282,8 +300,19 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // proposal_id - computed: false, optional: true, required: false
@@ -344,6 +373,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
       associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
       associated_gateway_owner_account_id: cdktf.stringToTerraform(this._associatedGatewayOwnerAccountId),
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      id: cdktf.stringToTerraform(this._id),
       proposal_id: cdktf.stringToTerraform(this._proposalId),
       vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
       timeouts: dxGatewayAssociationTimeoutsToTerraform(this._timeouts.internalValue),

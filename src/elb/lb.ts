@@ -36,6 +36,13 @@ export interface LbConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb#id Lb#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb#idle_timeout Lb#idle_timeout}
   */
   readonly idleTimeout?: number;
@@ -242,6 +249,154 @@ export function lbSubnetMappingToTerraform(struct?: LbSubnetMapping | cdktf.IRes
   }
 }
 
+export class LbSubnetMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbSubnetMapping | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationId = this._allocationId;
+    }
+    if (this._ipv6Address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Address = this._ipv6Address;
+    }
+    if (this._privateIpv4Address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateIpv4Address = this._privateIpv4Address;
+    }
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbSubnetMapping | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allocationId = undefined;
+      this._ipv6Address = undefined;
+      this._privateIpv4Address = undefined;
+      this._subnetId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allocationId = value.allocationId;
+      this._ipv6Address = value.ipv6Address;
+      this._privateIpv4Address = value.privateIpv4Address;
+      this._subnetId = value.subnetId;
+    }
+  }
+
+  // allocation_id - computed: false, optional: true, required: false
+  private _allocationId?: string; 
+  public get allocationId() {
+    return this.getStringAttribute('allocation_id');
+  }
+  public set allocationId(value: string) {
+    this._allocationId = value;
+  }
+  public resetAllocationId() {
+    this._allocationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationIdInput() {
+    return this._allocationId;
+  }
+
+  // ipv6_address - computed: false, optional: true, required: false
+  private _ipv6Address?: string; 
+  public get ipv6Address() {
+    return this.getStringAttribute('ipv6_address');
+  }
+  public set ipv6Address(value: string) {
+    this._ipv6Address = value;
+  }
+  public resetIpv6Address() {
+    this._ipv6Address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressInput() {
+    return this._ipv6Address;
+  }
+
+  // outpost_id - computed: true, optional: false, required: false
+  public get outpostId() {
+    return this.getStringAttribute('outpost_id');
+  }
+
+  // private_ipv4_address - computed: false, optional: true, required: false
+  private _privateIpv4Address?: string; 
+  public get privateIpv4Address() {
+    return this.getStringAttribute('private_ipv4_address');
+  }
+  public set privateIpv4Address(value: string) {
+    this._privateIpv4Address = value;
+  }
+  public resetPrivateIpv4Address() {
+    this._privateIpv4Address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpv4AddressInput() {
+    return this._privateIpv4Address;
+  }
+
+  // subnet_id - computed: false, optional: false, required: true
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+}
+
+export class LbSubnetMappingList extends cdktf.ComplexList {
+  public internalValue? : LbSubnetMapping[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbSubnetMappingOutputReference {
+    return new LbSubnetMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LbTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb#create Lb#create}
@@ -271,6 +426,7 @@ export function lbTimeoutsToTerraform(struct?: LbTimeoutsOutputReference | LbTim
 
 export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -280,7 +436,10 @@ export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LbTimeouts | undefined {
+  public get internalValue(): LbTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -298,15 +457,21 @@ export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbTimeouts | undefined) {
+  public set internalValue(value: LbTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -403,6 +568,7 @@ export class Lb extends cdktf.TerraformResource {
     this._enableDeletionProtection = config.enableDeletionProtection;
     this._enableHttp2 = config.enableHttp2;
     this._enableWafFailOpen = config.enableWafFailOpen;
+    this._id = config.id;
     this._idleTimeout = config.idleTimeout;
     this._internal = config.internal;
     this._ipAddressType = config.ipAddressType;
@@ -414,7 +580,7 @@ export class Lb extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._accessLogs.internalValue = config.accessLogs;
-    this._subnetMapping = config.subnetMapping;
+    this._subnetMapping.internalValue = config.subnetMapping;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -550,8 +716,19 @@ export class Lb extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_timeout - computed: false, optional: true, required: false
@@ -741,20 +918,19 @@ export class Lb extends cdktf.TerraformResource {
   }
 
   // subnet_mapping - computed: false, optional: true, required: false
-  private _subnetMapping?: LbSubnetMapping[] | cdktf.IResolvable; 
+  private _subnetMapping = new LbSubnetMappingList(this, "subnet_mapping", true);
   public get subnetMapping() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('subnet_mapping')));
+    return this._subnetMapping;
   }
-  public set subnetMapping(value: LbSubnetMapping[] | cdktf.IResolvable) {
-    this._subnetMapping = value;
+  public putSubnetMapping(value: LbSubnetMapping[] | cdktf.IResolvable) {
+    this._subnetMapping.internalValue = value;
   }
   public resetSubnetMapping() {
-    this._subnetMapping = undefined;
+    this._subnetMapping.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get subnetMappingInput() {
-    return this._subnetMapping;
+    return this._subnetMapping.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -786,6 +962,7 @@ export class Lb extends cdktf.TerraformResource {
       enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
       enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
       enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
+      id: cdktf.stringToTerraform(this._id),
       idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
       internal: cdktf.booleanToTerraform(this._internal),
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
@@ -797,7 +974,7 @@ export class Lb extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: lbAccessLogsToTerraform(this._accessLogs.internalValue),
-      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping),
+      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping.internalValue),
       timeouts: lbTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

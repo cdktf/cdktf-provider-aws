@@ -16,6 +16,13 @@ export interface S3BucketLifecycleConfigurationConfig extends cdktf.TerraformMet
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
@@ -734,6 +741,127 @@ export function s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToT
   }
 }
 
+export class S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._newerNoncurrentVersions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.newerNoncurrentVersions = this._newerNoncurrentVersions;
+    }
+    if (this._noncurrentDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentDays = this._noncurrentDays;
+    }
+    if (this._storageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageClass = this._storageClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._newerNoncurrentVersions = undefined;
+      this._noncurrentDays = undefined;
+      this._storageClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._newerNoncurrentVersions = value.newerNoncurrentVersions;
+      this._noncurrentDays = value.noncurrentDays;
+      this._storageClass = value.storageClass;
+    }
+  }
+
+  // newer_noncurrent_versions - computed: false, optional: true, required: false
+  private _newerNoncurrentVersions?: string; 
+  public get newerNoncurrentVersions() {
+    return this.getStringAttribute('newer_noncurrent_versions');
+  }
+  public set newerNoncurrentVersions(value: string) {
+    this._newerNoncurrentVersions = value;
+  }
+  public resetNewerNoncurrentVersions() {
+    this._newerNoncurrentVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newerNoncurrentVersionsInput() {
+    return this._newerNoncurrentVersions;
+  }
+
+  // noncurrent_days - computed: false, optional: true, required: false
+  private _noncurrentDays?: number; 
+  public get noncurrentDays() {
+    return this.getNumberAttribute('noncurrent_days');
+  }
+  public set noncurrentDays(value: number) {
+    this._noncurrentDays = value;
+  }
+  public resetNoncurrentDays() {
+    this._noncurrentDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentDaysInput() {
+    return this._noncurrentDays;
+  }
+
+  // storage_class - computed: false, optional: false, required: true
+  private _storageClass?: string; 
+  public get storageClass() {
+    return this.getStringAttribute('storage_class');
+  }
+  public set storageClass(value: string) {
+    this._storageClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass;
+  }
+}
+
+export class S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference {
+    return new S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleTransition {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
@@ -761,9 +889,133 @@ export function s3BucketLifecycleConfigurationRuleTransitionToTerraform(struct?:
   }
 }
 
+export class S3BucketLifecycleConfigurationRuleTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketLifecycleConfigurationRuleTransition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._date !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.date = this._date;
+    }
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    if (this._storageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageClass = this._storageClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleTransition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._date = undefined;
+      this._days = undefined;
+      this._storageClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._date = value.date;
+      this._days = value.days;
+      this._storageClass = value.storageClass;
+    }
+  }
+
+  // date - computed: false, optional: true, required: false
+  private _date?: string; 
+  public get date() {
+    return this.getStringAttribute('date');
+  }
+  public set date(value: string) {
+    this._date = value;
+  }
+  public resetDate() {
+    this._date = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateInput() {
+    return this._date;
+  }
+
+  // days - computed: false, optional: true, required: false
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  public resetDays() {
+    this._days = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+
+  // storage_class - computed: false, optional: false, required: true
+  private _storageClass?: string; 
+  public get storageClass() {
+    return this.getStringAttribute('storage_class');
+  }
+  public set storageClass(value: string) {
+    this._storageClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass;
+  }
+}
+
+export class S3BucketLifecycleConfigurationRuleTransitionList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleTransition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleTransitionOutputReference {
+    return new S3BucketLifecycleConfigurationRuleTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -830,6 +1082,256 @@ export function s3BucketLifecycleConfigurationRuleToTerraform(struct?: S3BucketL
   }
 }
 
+export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketLifecycleConfigurationRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._abortIncompleteMultipartUpload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abortIncompleteMultipartUpload = this._abortIncompleteMultipartUpload?.internalValue;
+    }
+    if (this._expiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expiration = this._expiration?.internalValue;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    if (this._noncurrentVersionExpiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentVersionExpiration = this._noncurrentVersionExpiration?.internalValue;
+    }
+    if (this._noncurrentVersionTransition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentVersionTransition = this._noncurrentVersionTransition?.internalValue;
+    }
+    if (this._transition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transition = this._transition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLifecycleConfigurationRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._prefix = undefined;
+      this._status = undefined;
+      this._abortIncompleteMultipartUpload.internalValue = undefined;
+      this._expiration.internalValue = undefined;
+      this._filter.internalValue = undefined;
+      this._noncurrentVersionExpiration.internalValue = undefined;
+      this._noncurrentVersionTransition.internalValue = undefined;
+      this._transition.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._prefix = value.prefix;
+      this._status = value.status;
+      this._abortIncompleteMultipartUpload.internalValue = value.abortIncompleteMultipartUpload;
+      this._expiration.internalValue = value.expiration;
+      this._filter.internalValue = value.filter;
+      this._noncurrentVersionExpiration.internalValue = value.noncurrentVersionExpiration;
+      this._noncurrentVersionTransition.internalValue = value.noncurrentVersionTransition;
+      this._transition.internalValue = value.transition;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // abort_incomplete_multipart_upload - computed: false, optional: true, required: false
+  private _abortIncompleteMultipartUpload = new S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(this, "abort_incomplete_multipart_upload");
+  public get abortIncompleteMultipartUpload() {
+    return this._abortIncompleteMultipartUpload;
+  }
+  public putAbortIncompleteMultipartUpload(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) {
+    this._abortIncompleteMultipartUpload.internalValue = value;
+  }
+  public resetAbortIncompleteMultipartUpload() {
+    this._abortIncompleteMultipartUpload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abortIncompleteMultipartUploadInput() {
+    return this._abortIncompleteMultipartUpload.internalValue;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration = new S3BucketLifecycleConfigurationRuleExpirationOutputReference(this, "expiration");
+  public get expiration() {
+    return this._expiration;
+  }
+  public putExpiration(value: S3BucketLifecycleConfigurationRuleExpiration) {
+    this._expiration.internalValue = value;
+  }
+  public resetExpiration() {
+    this._expiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration.internalValue;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new S3BucketLifecycleConfigurationRuleFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: S3BucketLifecycleConfigurationRuleFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+
+  // noncurrent_version_expiration - computed: false, optional: true, required: false
+  private _noncurrentVersionExpiration = new S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(this, "noncurrent_version_expiration");
+  public get noncurrentVersionExpiration() {
+    return this._noncurrentVersionExpiration;
+  }
+  public putNoncurrentVersionExpiration(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) {
+    this._noncurrentVersionExpiration.internalValue = value;
+  }
+  public resetNoncurrentVersionExpiration() {
+    this._noncurrentVersionExpiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentVersionExpirationInput() {
+    return this._noncurrentVersionExpiration.internalValue;
+  }
+
+  // noncurrent_version_transition - computed: false, optional: true, required: false
+  private _noncurrentVersionTransition = new S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList(this, "noncurrent_version_transition", true);
+  public get noncurrentVersionTransition() {
+    return this._noncurrentVersionTransition;
+  }
+  public putNoncurrentVersionTransition(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition[] | cdktf.IResolvable) {
+    this._noncurrentVersionTransition.internalValue = value;
+  }
+  public resetNoncurrentVersionTransition() {
+    this._noncurrentVersionTransition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentVersionTransitionInput() {
+    return this._noncurrentVersionTransition.internalValue;
+  }
+
+  // transition - computed: false, optional: true, required: false
+  private _transition = new S3BucketLifecycleConfigurationRuleTransitionList(this, "transition", true);
+  public get transition() {
+    return this._transition;
+  }
+  public putTransition(value: S3BucketLifecycleConfigurationRuleTransition[] | cdktf.IResolvable) {
+    this._transition.internalValue = value;
+  }
+  public resetTransition() {
+    this._transition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitionInput() {
+    return this._transition.internalValue;
+  }
+}
+
+export class S3BucketLifecycleConfigurationRuleList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleOutputReference {
+    return new S3BucketLifecycleConfigurationRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}
@@ -867,7 +1369,8 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
-    this._rule = config.rule;
+    this._id = config.id;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -904,22 +1407,32 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable; 
+  private _rule = new S3BucketLifecycleConfigurationRuleList(this, "rule", false);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule');
+    return this._rule;
   }
-  public set rule(value: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -930,7 +1443,8 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      rule: cdktf.listMapper(s3BucketLifecycleConfigurationRuleToTerraform)(this._rule),
+      id: cdktf.stringToTerraform(this._id),
+      rule: cdktf.listMapper(s3BucketLifecycleConfigurationRuleToTerraform)(this._rule.internalValue),
     };
   }
 }

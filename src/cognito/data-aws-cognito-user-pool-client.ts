@@ -12,6 +12,13 @@ export interface DataAwsCognitoUserPoolClientConfig extends cdktf.TerraformMetaA
   */
   readonly clientId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_client#id DataAwsCognitoUserPoolClient#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_client#user_pool_id DataAwsCognitoUserPoolClient#user_pool_id}
   */
   readonly userPoolId: string;
@@ -210,6 +217,7 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._clientId = config.clientId;
+    this._id = config.id;
     this._userPoolId = config.userPoolId;
   }
 
@@ -287,8 +295,19 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // id_token_validity - computed: true, optional: false, required: false
@@ -357,6 +376,7 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_id: cdktf.stringToTerraform(this._clientId),
+      id: cdktf.stringToTerraform(this._id),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }

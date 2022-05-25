@@ -40,6 +40,13 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostInstanceType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker#id MqBroker#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker#publicly_accessible MqBroker#publicly_accessible}
   */
   readonly publiclyAccessible?: boolean | cdktf.IResolvable;
@@ -177,6 +184,9 @@ export class MqBrokerInstancesList extends cdktf.ComplexList {
 export interface MqBrokerConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker#id MqBroker#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -191,6 +201,7 @@ export function mqBrokerConfigurationToTerraform(struct?: MqBrokerConfigurationO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    id: cdktf.stringToTerraform(struct!.id),
     revision: cdktf.numberToTerraform(struct!.revision),
   }
 }
@@ -209,6 +220,10 @@ export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
   public get internalValue(): MqBrokerConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
     if (this._revision !== undefined) {
       hasAnyValues = true;
       internalValueResult.revision = this._revision;
@@ -219,17 +234,30 @@ export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: MqBrokerConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._id = undefined;
       this._revision = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
       this._revision = value.revision;
     }
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // revision - computed: true, optional: true, required: false
@@ -909,6 +937,146 @@ export function mqBrokerUserToTerraform(struct?: MqBrokerUser | cdktf.IResolvabl
   }
 }
 
+export class MqBrokerUserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MqBrokerUser | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._consoleAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.consoleAccess = this._consoleAccess;
+    }
+    if (this._groups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groups = this._groups;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MqBrokerUser | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._consoleAccess = undefined;
+      this._groups = undefined;
+      this._password = undefined;
+      this._username = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._consoleAccess = value.consoleAccess;
+      this._groups = value.groups;
+      this._password = value.password;
+      this._username = value.username;
+    }
+  }
+
+  // console_access - computed: false, optional: true, required: false
+  private _consoleAccess?: boolean | cdktf.IResolvable; 
+  public get consoleAccess() {
+    return this.getBooleanAttribute('console_access');
+  }
+  public set consoleAccess(value: boolean | cdktf.IResolvable) {
+    this._consoleAccess = value;
+  }
+  public resetConsoleAccess() {
+    this._consoleAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get consoleAccessInput() {
+    return this._consoleAccess;
+  }
+
+  // groups - computed: false, optional: true, required: false
+  private _groups?: string[]; 
+  public get groups() {
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+  }
+  public set groups(value: string[]) {
+    this._groups = value;
+  }
+  public resetGroups() {
+    this._groups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupsInput() {
+    return this._groups;
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+
+export class MqBrokerUserList extends cdktf.ComplexList {
+  public internalValue? : MqBrokerUser[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MqBrokerUserOutputReference {
+    return new MqBrokerUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/mq_broker aws_mq_broker}
@@ -952,6 +1120,7 @@ export class MqBroker extends cdktf.TerraformResource {
     this._engineType = config.engineType;
     this._engineVersion = config.engineVersion;
     this._hostInstanceType = config.hostInstanceType;
+    this._id = config.id;
     this._publiclyAccessible = config.publiclyAccessible;
     this._securityGroups = config.securityGroups;
     this._storageType = config.storageType;
@@ -963,7 +1132,7 @@ export class MqBroker extends cdktf.TerraformResource {
     this._ldapServerMetadata.internalValue = config.ldapServerMetadata;
     this._logs.internalValue = config.logs;
     this._maintenanceWindowStartTime.internalValue = config.maintenanceWindowStartTime;
-    this._user = config.user;
+    this._user.internalValue = config.user;
   }
 
   // ==========
@@ -1092,8 +1261,19 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instances - computed: true, optional: false, required: false
@@ -1279,17 +1459,16 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // user - computed: false, optional: false, required: true
-  private _user?: MqBrokerUser[] | cdktf.IResolvable; 
+  private _user = new MqBrokerUserList(this, "user", true);
   public get user() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user')));
+    return this._user;
   }
-  public set user(value: MqBrokerUser[] | cdktf.IResolvable) {
-    this._user = value;
+  public putUser(value: MqBrokerUser[] | cdktf.IResolvable) {
+    this._user.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get userInput() {
-    return this._user;
+    return this._user.internalValue;
   }
 
   // =========
@@ -1306,6 +1485,7 @@ export class MqBroker extends cdktf.TerraformResource {
       engine_type: cdktf.stringToTerraform(this._engineType),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
+      id: cdktf.stringToTerraform(this._id),
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       storage_type: cdktf.stringToTerraform(this._storageType),
@@ -1317,7 +1497,7 @@ export class MqBroker extends cdktf.TerraformResource {
       ldap_server_metadata: mqBrokerLdapServerMetadataToTerraform(this._ldapServerMetadata.internalValue),
       logs: mqBrokerLogsToTerraform(this._logs.internalValue),
       maintenance_window_start_time: mqBrokerMaintenanceWindowStartTimeToTerraform(this._maintenanceWindowStartTime.internalValue),
-      user: cdktf.listMapper(mqBrokerUserToTerraform)(this._user),
+      user: cdktf.listMapper(mqBrokerUserToTerraform)(this._user.internalValue),
     };
   }
 }

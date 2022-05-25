@@ -16,6 +16,13 @@ export interface StoragegatewayStoredIscsiVolumeConfig extends cdktf.TerraformMe
   */
   readonly gatewayArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_stored_iscsi_volume#id StoragegatewayStoredIscsiVolume#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_stored_iscsi_volume#kms_encrypted StoragegatewayStoredIscsiVolume#kms_encrypted}
   */
   readonly kmsEncrypted?: boolean | cdktf.IResolvable;
@@ -85,6 +92,7 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
     });
     this._diskId = config.diskId;
     this._gatewayArn = config.gatewayArn;
+    this._id = config.id;
     this._kmsEncrypted = config.kmsEncrypted;
     this._kmsKey = config.kmsKey;
     this._networkInterfaceId = config.networkInterfaceId;
@@ -136,8 +144,19 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
@@ -307,6 +326,7 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
     return {
       disk_id: cdktf.stringToTerraform(this._diskId),
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
+      id: cdktf.stringToTerraform(this._id),
       kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
       kms_key: cdktf.stringToTerraform(this._kmsKey),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),

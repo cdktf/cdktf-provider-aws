@@ -12,6 +12,13 @@ export interface S3BucketReplicationConfigurationAConfig extends cdktf.Terraform
   */
   readonly bucket: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}
   */
   readonly role: string;
@@ -1333,6 +1340,9 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
 export interface S3BucketReplicationConfigurationRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -1385,6 +1395,7 @@ export function s3BucketReplicationConfigurationRuleToTerraform(struct?: S3Bucke
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    id: cdktf.stringToTerraform(struct!.id),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     priority: cdktf.numberToTerraform(struct!.priority),
     status: cdktf.stringToTerraform(struct!.status),
@@ -1396,6 +1407,256 @@ export function s3BucketReplicationConfigurationRuleToTerraform(struct?: S3Bucke
   }
 }
 
+export class S3BucketReplicationConfigurationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketReplicationConfigurationRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._deleteMarkerReplication?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteMarkerReplication = this._deleteMarkerReplication?.internalValue;
+    }
+    if (this._destination?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination?.internalValue;
+    }
+    if (this._existingObjectReplication?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.existingObjectReplication = this._existingObjectReplication?.internalValue;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    if (this._sourceSelectionCriteria?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceSelectionCriteria = this._sourceSelectionCriteria?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketReplicationConfigurationRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._prefix = undefined;
+      this._priority = undefined;
+      this._status = undefined;
+      this._deleteMarkerReplication.internalValue = undefined;
+      this._destination.internalValue = undefined;
+      this._existingObjectReplication.internalValue = undefined;
+      this._filter.internalValue = undefined;
+      this._sourceSelectionCriteria.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._prefix = value.prefix;
+      this._priority = value.priority;
+      this._status = value.status;
+      this._deleteMarkerReplication.internalValue = value.deleteMarkerReplication;
+      this._destination.internalValue = value.destination;
+      this._existingObjectReplication.internalValue = value.existingObjectReplication;
+      this._filter.internalValue = value.filter;
+      this._sourceSelectionCriteria.internalValue = value.sourceSelectionCriteria;
+    }
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // delete_marker_replication - computed: false, optional: true, required: false
+  private _deleteMarkerReplication = new S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference(this, "delete_marker_replication");
+  public get deleteMarkerReplication() {
+    return this._deleteMarkerReplication;
+  }
+  public putDeleteMarkerReplication(value: S3BucketReplicationConfigurationRuleDeleteMarkerReplication) {
+    this._deleteMarkerReplication.internalValue = value;
+  }
+  public resetDeleteMarkerReplication() {
+    this._deleteMarkerReplication.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteMarkerReplicationInput() {
+    return this._deleteMarkerReplication.internalValue;
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination = new S3BucketReplicationConfigurationRuleDestinationOutputReference(this, "destination");
+  public get destination() {
+    return this._destination;
+  }
+  public putDestination(value: S3BucketReplicationConfigurationRuleDestination) {
+    this._destination.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination.internalValue;
+  }
+
+  // existing_object_replication - computed: false, optional: true, required: false
+  private _existingObjectReplication = new S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference(this, "existing_object_replication");
+  public get existingObjectReplication() {
+    return this._existingObjectReplication;
+  }
+  public putExistingObjectReplication(value: S3BucketReplicationConfigurationRuleExistingObjectReplication) {
+    this._existingObjectReplication.internalValue = value;
+  }
+  public resetExistingObjectReplication() {
+    this._existingObjectReplication.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get existingObjectReplicationInput() {
+    return this._existingObjectReplication.internalValue;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new S3BucketReplicationConfigurationRuleFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: S3BucketReplicationConfigurationRuleFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+
+  // source_selection_criteria - computed: false, optional: true, required: false
+  private _sourceSelectionCriteria = new S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference(this, "source_selection_criteria");
+  public get sourceSelectionCriteria() {
+    return this._sourceSelectionCriteria;
+  }
+  public putSourceSelectionCriteria(value: S3BucketReplicationConfigurationRuleSourceSelectionCriteria) {
+    this._sourceSelectionCriteria.internalValue = value;
+  }
+  public resetSourceSelectionCriteria() {
+    this._sourceSelectionCriteria.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSelectionCriteriaInput() {
+    return this._sourceSelectionCriteria.internalValue;
+  }
+}
+
+export class S3BucketReplicationConfigurationRuleList extends cdktf.ComplexList {
+  public internalValue? : S3BucketReplicationConfigurationRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketReplicationConfigurationRuleOutputReference {
+    return new S3BucketReplicationConfigurationRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}
@@ -1432,9 +1693,10 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bucket = config.bucket;
+    this._id = config.id;
     this._role = config.role;
     this._token = config.token;
-    this._rule = config.rule;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -1455,8 +1717,19 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // role - computed: false, optional: false, required: true
@@ -1489,17 +1762,16 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable; 
+  private _rule = new S3BucketReplicationConfigurationRuleList(this, "rule", false);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule');
+    return this._rule;
   }
-  public set rule(value: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -1509,9 +1781,10 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
+      id: cdktf.stringToTerraform(this._id),
       role: cdktf.stringToTerraform(this._role),
       token: cdktf.stringToTerraform(this._token),
-      rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform)(this._rule),
+      rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform)(this._rule.internalValue),
     };
   }
 }

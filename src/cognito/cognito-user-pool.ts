@@ -24,6 +24,13 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly emailVerificationSubject?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#id CognitoUserPool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#mfa_configuration CognitoUserPool#mfa_configuration}
   */
   readonly mfaConfiguration?: string;
@@ -146,6 +153,102 @@ export function cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerrafor
   }
 }
 
+export class CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CognitoUserPoolAccountRecoverySettingRecoveryMechanism | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._priority = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._priority = value.priority;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // priority - computed: false, optional: false, required: true
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+}
+
+export class CognitoUserPoolAccountRecoverySettingRecoveryMechanismList extends cdktf.ComplexList {
+  public internalValue? : CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference {
+    return new CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CognitoUserPoolAccountRecoverySetting {
   /**
   * recovery_mechanism block
@@ -179,9 +282,9 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   public get internalValue(): CognitoUserPoolAccountRecoverySetting | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recoveryMechanism !== undefined) {
+    if (this._recoveryMechanism?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.recoveryMechanism = this._recoveryMechanism;
+      internalValueResult.recoveryMechanism = this._recoveryMechanism?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -189,26 +292,25 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   public set internalValue(value: CognitoUserPoolAccountRecoverySetting | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._recoveryMechanism = undefined;
+      this._recoveryMechanism.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._recoveryMechanism = value.recoveryMechanism;
+      this._recoveryMechanism.internalValue = value.recoveryMechanism;
     }
   }
 
   // recovery_mechanism - computed: false, optional: false, required: true
-  private _recoveryMechanism?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable; 
+  private _recoveryMechanism = new CognitoUserPoolAccountRecoverySettingRecoveryMechanismList(this, "recovery_mechanism", true);
   public get recoveryMechanism() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('recovery_mechanism')));
+    return this._recoveryMechanism;
   }
-  public set recoveryMechanism(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable) {
-    this._recoveryMechanism = value;
+  public putRecoveryMechanism(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable) {
+    this._recoveryMechanism.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get recoveryMechanismInput() {
-    return this._recoveryMechanism;
+    return this._recoveryMechanism.internalValue;
   }
 }
 export interface CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate {
@@ -1689,6 +1791,212 @@ export function cognitoUserPoolSchemaToTerraform(struct?: CognitoUserPoolSchema 
   }
 }
 
+export class CognitoUserPoolSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CognitoUserPoolSchema | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeDataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeDataType = this._attributeDataType;
+    }
+    if (this._developerOnlyAttribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.developerOnlyAttribute = this._developerOnlyAttribute;
+    }
+    if (this._mutable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mutable = this._mutable;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._required !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.required = this._required;
+    }
+    if (this._numberAttributeConstraints?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberAttributeConstraints = this._numberAttributeConstraints?.internalValue;
+    }
+    if (this._stringAttributeConstraints?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringAttributeConstraints = this._stringAttributeConstraints?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CognitoUserPoolSchema | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeDataType = undefined;
+      this._developerOnlyAttribute = undefined;
+      this._mutable = undefined;
+      this._name = undefined;
+      this._required = undefined;
+      this._numberAttributeConstraints.internalValue = undefined;
+      this._stringAttributeConstraints.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeDataType = value.attributeDataType;
+      this._developerOnlyAttribute = value.developerOnlyAttribute;
+      this._mutable = value.mutable;
+      this._name = value.name;
+      this._required = value.required;
+      this._numberAttributeConstraints.internalValue = value.numberAttributeConstraints;
+      this._stringAttributeConstraints.internalValue = value.stringAttributeConstraints;
+    }
+  }
+
+  // attribute_data_type - computed: false, optional: false, required: true
+  private _attributeDataType?: string; 
+  public get attributeDataType() {
+    return this.getStringAttribute('attribute_data_type');
+  }
+  public set attributeDataType(value: string) {
+    this._attributeDataType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeDataTypeInput() {
+    return this._attributeDataType;
+  }
+
+  // developer_only_attribute - computed: false, optional: true, required: false
+  private _developerOnlyAttribute?: boolean | cdktf.IResolvable; 
+  public get developerOnlyAttribute() {
+    return this.getBooleanAttribute('developer_only_attribute');
+  }
+  public set developerOnlyAttribute(value: boolean | cdktf.IResolvable) {
+    this._developerOnlyAttribute = value;
+  }
+  public resetDeveloperOnlyAttribute() {
+    this._developerOnlyAttribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get developerOnlyAttributeInput() {
+    return this._developerOnlyAttribute;
+  }
+
+  // mutable - computed: false, optional: true, required: false
+  private _mutable?: boolean | cdktf.IResolvable; 
+  public get mutable() {
+    return this.getBooleanAttribute('mutable');
+  }
+  public set mutable(value: boolean | cdktf.IResolvable) {
+    this._mutable = value;
+  }
+  public resetMutable() {
+    this._mutable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutableInput() {
+    return this._mutable;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // required - computed: false, optional: true, required: false
+  private _required?: boolean | cdktf.IResolvable; 
+  public get required() {
+    return this.getBooleanAttribute('required');
+  }
+  public set required(value: boolean | cdktf.IResolvable) {
+    this._required = value;
+  }
+  public resetRequired() {
+    this._required = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredInput() {
+    return this._required;
+  }
+
+  // number_attribute_constraints - computed: false, optional: true, required: false
+  private _numberAttributeConstraints = new CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference(this, "number_attribute_constraints");
+  public get numberAttributeConstraints() {
+    return this._numberAttributeConstraints;
+  }
+  public putNumberAttributeConstraints(value: CognitoUserPoolSchemaNumberAttributeConstraints) {
+    this._numberAttributeConstraints.internalValue = value;
+  }
+  public resetNumberAttributeConstraints() {
+    this._numberAttributeConstraints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberAttributeConstraintsInput() {
+    return this._numberAttributeConstraints.internalValue;
+  }
+
+  // string_attribute_constraints - computed: false, optional: true, required: false
+  private _stringAttributeConstraints = new CognitoUserPoolSchemaStringAttributeConstraintsOutputReference(this, "string_attribute_constraints");
+  public get stringAttributeConstraints() {
+    return this._stringAttributeConstraints;
+  }
+  public putStringAttributeConstraints(value: CognitoUserPoolSchemaStringAttributeConstraints) {
+    this._stringAttributeConstraints.internalValue = value;
+  }
+  public resetStringAttributeConstraints() {
+    this._stringAttributeConstraints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringAttributeConstraintsInput() {
+    return this._stringAttributeConstraints.internalValue;
+  }
+}
+
+export class CognitoUserPoolSchemaList extends cdktf.ComplexList {
+  public internalValue? : CognitoUserPoolSchema[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CognitoUserPoolSchemaOutputReference {
+    return new CognitoUserPoolSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CognitoUserPoolSmsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#external_id CognitoUserPool#external_id}
@@ -2200,6 +2508,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     this._autoVerifiedAttributes = config.autoVerifiedAttributes;
     this._emailVerificationMessage = config.emailVerificationMessage;
     this._emailVerificationSubject = config.emailVerificationSubject;
+    this._id = config.id;
     this._mfaConfiguration = config.mfaConfiguration;
     this._name = config.name;
     this._smsAuthenticationMessage = config.smsAuthenticationMessage;
@@ -2213,7 +2522,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     this._emailConfiguration.internalValue = config.emailConfiguration;
     this._lambdaConfig.internalValue = config.lambdaConfig;
     this._passwordPolicy.internalValue = config.passwordPolicy;
-    this._schema = config.schema;
+    this._schema.internalValue = config.schema;
     this._smsConfiguration.internalValue = config.smsConfiguration;
     this._softwareTokenMfaConfiguration.internalValue = config.softwareTokenMfaConfiguration;
     this._userPoolAddOns.internalValue = config.userPoolAddOns;
@@ -2320,8 +2629,19 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_modified_date - computed: true, optional: false, required: false
@@ -2535,20 +2855,19 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // schema - computed: false, optional: true, required: false
-  private _schema?: CognitoUserPoolSchema[] | cdktf.IResolvable; 
+  private _schema = new CognitoUserPoolSchemaList(this, "schema", true);
   public get schema() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('schema')));
+    return this._schema;
   }
-  public set schema(value: CognitoUserPoolSchema[] | cdktf.IResolvable) {
-    this._schema = value;
+  public putSchema(value: CognitoUserPoolSchema[] | cdktf.IResolvable) {
+    this._schema.internalValue = value;
   }
   public resetSchema() {
-    this._schema = undefined;
+    this._schema.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
-    return this._schema;
+    return this._schema.internalValue;
   }
 
   // sms_configuration - computed: false, optional: true, required: false
@@ -2641,6 +2960,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       auto_verified_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._autoVerifiedAttributes),
       email_verification_message: cdktf.stringToTerraform(this._emailVerificationMessage),
       email_verification_subject: cdktf.stringToTerraform(this._emailVerificationSubject),
+      id: cdktf.stringToTerraform(this._id),
       mfa_configuration: cdktf.stringToTerraform(this._mfaConfiguration),
       name: cdktf.stringToTerraform(this._name),
       sms_authentication_message: cdktf.stringToTerraform(this._smsAuthenticationMessage),
@@ -2654,7 +2974,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       email_configuration: cognitoUserPoolEmailConfigurationToTerraform(this._emailConfiguration.internalValue),
       lambda_config: cognitoUserPoolLambdaConfigToTerraform(this._lambdaConfig.internalValue),
       password_policy: cognitoUserPoolPasswordPolicyToTerraform(this._passwordPolicy.internalValue),
-      schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform)(this._schema),
+      schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform)(this._schema.internalValue),
       sms_configuration: cognitoUserPoolSmsConfigurationToTerraform(this._smsConfiguration.internalValue),
       software_token_mfa_configuration: cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(this._softwareTokenMfaConfiguration.internalValue),
       user_pool_add_ons: cognitoUserPoolUserPoolAddOnsToTerraform(this._userPoolAddOns.internalValue),

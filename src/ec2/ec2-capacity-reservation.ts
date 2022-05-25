@@ -28,6 +28,13 @@ export interface Ec2CapacityReservationConfig extends cdktf.TerraformMetaArgumen
   */
   readonly ephemeralStorage?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation#id Ec2CapacityReservation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation#instance_count Ec2CapacityReservation#instance_count}
   */
   readonly instanceCount: number;
@@ -100,6 +107,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     this._endDate = config.endDate;
     this._endDateType = config.endDateType;
     this._ephemeralStorage = config.ephemeralStorage;
+    this._id = config.id;
     this._instanceCount = config.instanceCount;
     this._instanceMatchCriteria = config.instanceMatchCriteria;
     this._instancePlatform = config.instancePlatform;
@@ -197,8 +205,19 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_count - computed: false, optional: false, required: true
@@ -336,6 +355,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
       end_date: cdktf.stringToTerraform(this._endDate),
       end_date_type: cdktf.stringToTerraform(this._endDateType),
       ephemeral_storage: cdktf.booleanToTerraform(this._ephemeralStorage),
+      id: cdktf.stringToTerraform(this._id),
       instance_count: cdktf.numberToTerraform(this._instanceCount),
       instance_match_criteria: cdktf.stringToTerraform(this._instanceMatchCriteria),
       instance_platform: cdktf.stringToTerraform(this._instancePlatform),

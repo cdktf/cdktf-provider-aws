@@ -12,6 +12,13 @@ export interface S3ControlBucketLifecycleConfigurationConfig extends cdktf.Terra
   */
   readonly bucket: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration#id S3ControlBucketLifecycleConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration#rule S3ControlBucketLifecycleConfiguration#rule}
@@ -294,6 +301,9 @@ export class S3ControlBucketLifecycleConfigurationRuleFilterOutputReference exte
 export interface S3ControlBucketLifecycleConfigurationRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration#id S3ControlBucketLifecycleConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -334,6 +344,171 @@ export function s3ControlBucketLifecycleConfigurationRuleToTerraform(struct?: S3
   }
 }
 
+export class S3ControlBucketLifecycleConfigurationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3ControlBucketLifecycleConfigurationRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._abortIncompleteMultipartUpload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abortIncompleteMultipartUpload = this._abortIncompleteMultipartUpload?.internalValue;
+    }
+    if (this._expiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expiration = this._expiration?.internalValue;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3ControlBucketLifecycleConfigurationRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._status = undefined;
+      this._abortIncompleteMultipartUpload.internalValue = undefined;
+      this._expiration.internalValue = undefined;
+      this._filter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._status = value.status;
+      this._abortIncompleteMultipartUpload.internalValue = value.abortIncompleteMultipartUpload;
+      this._expiration.internalValue = value.expiration;
+      this._filter.internalValue = value.filter;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // status - computed: false, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // abort_incomplete_multipart_upload - computed: false, optional: true, required: false
+  private _abortIncompleteMultipartUpload = new S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(this, "abort_incomplete_multipart_upload");
+  public get abortIncompleteMultipartUpload() {
+    return this._abortIncompleteMultipartUpload;
+  }
+  public putAbortIncompleteMultipartUpload(value: S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) {
+    this._abortIncompleteMultipartUpload.internalValue = value;
+  }
+  public resetAbortIncompleteMultipartUpload() {
+    this._abortIncompleteMultipartUpload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abortIncompleteMultipartUploadInput() {
+    return this._abortIncompleteMultipartUpload.internalValue;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration = new S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference(this, "expiration");
+  public get expiration() {
+    return this._expiration;
+  }
+  public putExpiration(value: S3ControlBucketLifecycleConfigurationRuleExpiration) {
+    this._expiration.internalValue = value;
+  }
+  public resetExpiration() {
+    this._expiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration.internalValue;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new S3ControlBucketLifecycleConfigurationRuleFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: S3ControlBucketLifecycleConfigurationRuleFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+}
+
+export class S3ControlBucketLifecycleConfigurationRuleList extends cdktf.ComplexList {
+  public internalValue? : S3ControlBucketLifecycleConfigurationRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3ControlBucketLifecycleConfigurationRuleOutputReference {
+    return new S3ControlBucketLifecycleConfigurationRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration aws_s3control_bucket_lifecycle_configuration}
@@ -370,7 +545,8 @@ export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResour
       lifecycle: config.lifecycle
     });
     this._bucket = config.bucket;
-    this._rule = config.rule;
+    this._id = config.id;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -391,22 +567,32 @@ export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: S3ControlBucketLifecycleConfigurationRule[] | cdktf.IResolvable; 
+  private _rule = new S3ControlBucketLifecycleConfigurationRuleList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: S3ControlBucketLifecycleConfigurationRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: S3ControlBucketLifecycleConfigurationRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -416,7 +602,8 @@ export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
-      rule: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleToTerraform)(this._rule),
+      id: cdktf.stringToTerraform(this._id),
+      rule: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleToTerraform)(this._rule.internalValue),
     };
   }
 }

@@ -24,6 +24,13 @@ export interface KmsReplicaExternalKeyConfig extends cdktf.TerraformMetaArgument
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_replica_external_key#id KmsReplicaExternalKey#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_replica_external_key#key_material_base64 KmsReplicaExternalKey#key_material_base64}
   */
   readonly keyMaterialBase64?: string;
@@ -87,6 +94,7 @@ export class KmsReplicaExternalKey extends cdktf.TerraformResource {
     this._deletionWindowInDays = config.deletionWindowInDays;
     this._description = config.description;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._keyMaterialBase64 = config.keyMaterialBase64;
     this._policy = config.policy;
     this._primaryKeyArn = config.primaryKeyArn;
@@ -174,8 +182,19 @@ export class KmsReplicaExternalKey extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key_id - computed: true, optional: false, required: false
@@ -296,6 +315,7 @@ export class KmsReplicaExternalKey extends cdktf.TerraformResource {
       deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       key_material_base64: cdktf.stringToTerraform(this._keyMaterialBase64),
       policy: cdktf.stringToTerraform(this._policy),
       primary_key_arn: cdktf.stringToTerraform(this._primaryKeyArn),

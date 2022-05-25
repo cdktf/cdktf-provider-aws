@@ -16,6 +16,13 @@ export interface DxHostedConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly connectionId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_connection#id DxHostedConnection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_connection#name DxHostedConnection#name}
   */
   readonly name: string;
@@ -65,6 +72,7 @@ export class DxHostedConnection extends cdktf.TerraformResource {
     });
     this._bandwidth = config.bandwidth;
     this._connectionId = config.connectionId;
+    this._id = config.id;
     this._name = config.name;
     this._ownerAccountId = config.ownerAccountId;
     this._vlan = config.vlan;
@@ -111,8 +119,19 @@ export class DxHostedConnection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // jumbo_frame_capable - computed: true, optional: false, required: false
@@ -202,6 +221,7 @@ export class DxHostedConnection extends cdktf.TerraformResource {
     return {
       bandwidth: cdktf.stringToTerraform(this._bandwidth),
       connection_id: cdktf.stringToTerraform(this._connectionId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner_account_id: cdktf.stringToTerraform(this._ownerAccountId),
       vlan: cdktf.numberToTerraform(this._vlan),

@@ -12,6 +12,13 @@ export interface LambdaProvisionedConcurrencyConfigConfig extends cdktf.Terrafor
   */
   readonly functionName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_provisioned_concurrency_config#id LambdaProvisionedConcurrencyConfig#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_provisioned_concurrency_config#provisioned_concurrent_executions LambdaProvisionedConcurrencyConfig#provisioned_concurrent_executions}
   */
   readonly provisionedConcurrentExecutions: number;
@@ -50,6 +57,7 @@ export function lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(struct?: L
 
 export class LambdaProvisionedConcurrencyConfigTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -59,7 +67,10 @@ export class LambdaProvisionedConcurrencyConfigTimeoutsOutputReference extends c
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LambdaProvisionedConcurrencyConfigTimeouts | undefined {
+  public get internalValue(): LambdaProvisionedConcurrencyConfigTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -73,14 +84,20 @@ export class LambdaProvisionedConcurrencyConfigTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LambdaProvisionedConcurrencyConfigTimeouts | undefined) {
+  public set internalValue(value: LambdaProvisionedConcurrencyConfigTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -154,6 +171,7 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
       lifecycle: config.lifecycle
     });
     this._functionName = config.functionName;
+    this._id = config.id;
     this._provisionedConcurrentExecutions = config.provisionedConcurrentExecutions;
     this._qualifier = config.qualifier;
     this._timeouts.internalValue = config.timeouts;
@@ -177,8 +195,19 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // provisioned_concurrent_executions - computed: false, optional: false, required: true
@@ -230,6 +259,7 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: cdktf.stringToTerraform(this._functionName),
+      id: cdktf.stringToTerraform(this._id),
       provisioned_concurrent_executions: cdktf.numberToTerraform(this._provisionedConcurrentExecutions),
       qualifier: cdktf.stringToTerraform(this._qualifier),
       timeouts: lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(this._timeouts.internalValue),

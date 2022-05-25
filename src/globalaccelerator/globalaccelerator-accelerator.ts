@@ -12,6 +12,13 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#id GlobalacceleratorAccelerator#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#ip_address_type GlobalacceleratorAccelerator#ip_address_type}
   */
   readonly ipAddressType?: string;
@@ -252,6 +259,7 @@ export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: Globala
 
 export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -261,7 +269,10 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GlobalacceleratorAcceleratorTimeouts | undefined {
+  public get internalValue(): GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -275,14 +286,20 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorAcceleratorTimeouts | undefined) {
+  public set internalValue(value: GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -356,6 +373,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._enabled = config.enabled;
+    this._id = config.id;
     this._ipAddressType = config.ipAddressType;
     this._name = config.name;
     this._tags = config.tags;
@@ -395,8 +413,19 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_address_type - computed: false, optional: true, required: false
@@ -505,6 +534,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

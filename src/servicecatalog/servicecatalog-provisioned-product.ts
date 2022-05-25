@@ -12,6 +12,13 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   */
   readonly acceptLanguage?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#id ServicecatalogProvisionedProduct#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#ignore_errors ServicecatalogProvisionedProduct#ignore_errors}
   */
   readonly ignoreErrors?: boolean | cdktf.IResolvable;
@@ -179,6 +186,127 @@ export function servicecatalogProvisionedProductProvisioningParametersToTerrafor
   }
 }
 
+export class ServicecatalogProvisionedProductProvisioningParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServicecatalogProvisionedProductProvisioningParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._usePreviousValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usePreviousValue = this._usePreviousValue;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicecatalogProvisionedProductProvisioningParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._usePreviousValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._usePreviousValue = value.usePreviousValue;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // use_previous_value - computed: false, optional: true, required: false
+  private _usePreviousValue?: boolean | cdktf.IResolvable; 
+  public get usePreviousValue() {
+    return this.getBooleanAttribute('use_previous_value');
+  }
+  public set usePreviousValue(value: boolean | cdktf.IResolvable) {
+    this._usePreviousValue = value;
+  }
+  public resetUsePreviousValue() {
+    this._usePreviousValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usePreviousValueInput() {
+    return this._usePreviousValue;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServicecatalogProvisionedProductProvisioningParametersList extends cdktf.ComplexList {
+  public internalValue? : ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServicecatalogProvisionedProductProvisioningParametersOutputReference {
+    return new ServicecatalogProvisionedProductProvisioningParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServicecatalogProvisionedProductStackSetProvisioningPreferences {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#accounts ServicecatalogProvisionedProduct#accounts}
@@ -413,6 +541,7 @@ export function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: Ser
 
 export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -422,7 +551,10 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ServicecatalogProvisionedProductTimeouts | undefined {
+  public get internalValue(): ServicecatalogProvisionedProductTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -444,16 +576,22 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicecatalogProvisionedProductTimeouts | undefined) {
+  public set internalValue(value: ServicecatalogProvisionedProductTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -561,6 +699,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._acceptLanguage = config.acceptLanguage;
+    this._id = config.id;
     this._ignoreErrors = config.ignoreErrors;
     this._name = config.name;
     this._notificationArns = config.notificationArns;
@@ -573,7 +712,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
     this._retainPhysicalResources = config.retainPhysicalResources;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._provisioningParameters = config.provisioningParameters;
+    this._provisioningParameters.internalValue = config.provisioningParameters;
     this._stackSetProvisioningPreferences.internalValue = config.stackSetProvisioningPreferences;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -614,8 +753,19 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ignore_errors - computed: false, optional: true, required: false
@@ -849,20 +999,19 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // provisioning_parameters - computed: false, optional: true, required: false
-  private _provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable; 
+  private _provisioningParameters = new ServicecatalogProvisionedProductProvisioningParametersList(this, "provisioning_parameters", false);
   public get provisioningParameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('provisioning_parameters');
+    return this._provisioningParameters;
   }
-  public set provisioningParameters(value: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable) {
-    this._provisioningParameters = value;
+  public putProvisioningParameters(value: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable) {
+    this._provisioningParameters.internalValue = value;
   }
   public resetProvisioningParameters() {
-    this._provisioningParameters = undefined;
+    this._provisioningParameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get provisioningParametersInput() {
-    return this._provisioningParameters;
+    return this._provisioningParameters.internalValue;
   }
 
   // stack_set_provisioning_preferences - computed: false, optional: true, required: false
@@ -904,6 +1053,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
+      id: cdktf.stringToTerraform(this._id),
       ignore_errors: cdktf.booleanToTerraform(this._ignoreErrors),
       name: cdktf.stringToTerraform(this._name),
       notification_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationArns),
@@ -916,7 +1066,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       retain_physical_resources: cdktf.booleanToTerraform(this._retainPhysicalResources),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      provisioning_parameters: cdktf.listMapper(servicecatalogProvisionedProductProvisioningParametersToTerraform)(this._provisioningParameters),
+      provisioning_parameters: cdktf.listMapper(servicecatalogProvisionedProductProvisioningParametersToTerraform)(this._provisioningParameters.internalValue),
       stack_set_provisioning_preferences: servicecatalogProvisionedProductStackSetProvisioningPreferencesToTerraform(this._stackSetProvisioningPreferences.internalValue),
       timeouts: servicecatalogProvisionedProductTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -36,6 +36,13 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostKey?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#id TransferServer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#identity_provider_type TransferServer#identity_provider_type}
   */
   readonly identityProviderType?: string;
@@ -456,6 +463,7 @@ export class TransferServer extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._function = config.function;
     this._hostKey = config.hostKey;
+    this._id = config.id;
     this._identityProviderType = config.identityProviderType;
     this._invocationRole = config.invocationRole;
     this._loggingRole = config.loggingRole;
@@ -602,8 +610,19 @@ export class TransferServer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identity_provider_type - computed: false, optional: true, required: false
@@ -811,6 +830,7 @@ export class TransferServer extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       function: cdktf.stringToTerraform(this._function),
       host_key: cdktf.stringToTerraform(this._hostKey),
+      id: cdktf.stringToTerraform(this._id),
       identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
       invocation_role: cdktf.stringToTerraform(this._invocationRole),
       logging_role: cdktf.stringToTerraform(this._loggingRole),

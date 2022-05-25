@@ -16,6 +16,13 @@ export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArgum
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#id SsmMaintenanceWindowTask#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#max_concurrency SsmMaintenanceWindowTask#max_concurrency}
   */
   readonly maxConcurrency?: string;
@@ -82,6 +89,102 @@ export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenan
   }
 }
 
+export class SsmMaintenanceWindowTaskTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SsmMaintenanceWindowTaskTargets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmMaintenanceWindowTaskTargets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SsmMaintenanceWindowTaskTargetsList extends cdktf.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SsmMaintenanceWindowTaskTargetsOutputReference {
+    return new SsmMaintenanceWindowTaskTargetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#name SsmMaintenanceWindowTask#name}
@@ -104,6 +207,102 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
   }
 }
 
+export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._values = value.values;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList extends cdktf.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference {
+    return new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#document_version SsmMaintenanceWindowTask#document_version}
@@ -146,9 +345,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
       hasAnyValues = true;
       internalValueResult.documentVersion = this._documentVersion;
     }
-    if (this._parameter !== undefined) {
+    if (this._parameter?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.parameter = this._parameter;
+      internalValueResult.parameter = this._parameter?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -157,12 +356,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
     if (value === undefined) {
       this.isEmptyObject = false;
       this._documentVersion = undefined;
-      this._parameter = undefined;
+      this._parameter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._documentVersion = value.documentVersion;
-      this._parameter = value.parameter;
+      this._parameter.internalValue = value.parameter;
     }
   }
 
@@ -183,20 +382,19 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable; 
+  private _parameter = new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList(this, "parameter", true);
   public get parameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
+    return this._parameter;
   }
-  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable) {
-    this._parameter = value;
+  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
   }
   public resetParameter() {
-    this._parameter = undefined;
+    this._parameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parameterInput() {
-    return this._parameter;
+    return this._parameter.internalValue;
   }
 }
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters {
@@ -551,6 +749,102 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   }
 }
 
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._values = value.values;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList extends cdktf.ComplexList {
+  public internalValue? : SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference {
+    return new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#comment SsmMaintenanceWindowTask#comment}
@@ -678,9 +972,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
       hasAnyValues = true;
       internalValueResult.notificationConfig = this._notificationConfig?.internalValue;
     }
-    if (this._parameter !== undefined) {
+    if (this._parameter?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.parameter = this._parameter;
+      internalValueResult.parameter = this._parameter?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -698,7 +992,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
       this._timeoutSeconds = undefined;
       this._cloudwatchConfig.internalValue = undefined;
       this._notificationConfig.internalValue = undefined;
-      this._parameter = undefined;
+      this._parameter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -712,7 +1006,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
       this._timeoutSeconds = value.timeoutSeconds;
       this._cloudwatchConfig.internalValue = value.cloudwatchConfig;
       this._notificationConfig.internalValue = value.notificationConfig;
-      this._parameter = value.parameter;
+      this._parameter.internalValue = value.parameter;
     }
   }
 
@@ -877,20 +1171,19 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable; 
+  private _parameter = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList(this, "parameter", true);
   public get parameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
+    return this._parameter;
   }
-  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable) {
-    this._parameter = value;
+  public putParameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
   }
   public resetParameter() {
-    this._parameter = undefined;
+    this._parameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parameterInput() {
-    return this._parameter;
+    return this._parameter.internalValue;
   }
 }
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
@@ -1176,6 +1469,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     });
     this._cutoffBehavior = config.cutoffBehavior;
     this._description = config.description;
+    this._id = config.id;
     this._maxConcurrency = config.maxConcurrency;
     this._maxErrors = config.maxErrors;
     this._name = config.name;
@@ -1184,7 +1478,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     this._taskArn = config.taskArn;
     this._taskType = config.taskType;
     this._windowId = config.windowId;
-    this._targets = config.targets;
+    this._targets.internalValue = config.targets;
     this._taskInvocationParameters.internalValue = config.taskInvocationParameters;
   }
 
@@ -1230,8 +1524,19 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_concurrency - computed: true, optional: true, required: false
@@ -1359,20 +1664,19 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   }
 
   // targets - computed: false, optional: true, required: false
-  private _targets?: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable; 
+  private _targets = new SsmMaintenanceWindowTaskTargetsList(this, "targets", false);
   public get targets() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('targets');
+    return this._targets;
   }
-  public set targets(value: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable) {
-    this._targets = value;
+  public putTargets(value: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable) {
+    this._targets.internalValue = value;
   }
   public resetTargets() {
-    this._targets = undefined;
+    this._targets.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetsInput() {
-    return this._targets;
+    return this._targets.internalValue;
   }
 
   // task_invocation_parameters - computed: false, optional: true, required: false
@@ -1399,6 +1703,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return {
       cutoff_behavior: cdktf.stringToTerraform(this._cutoffBehavior),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
       max_errors: cdktf.stringToTerraform(this._maxErrors),
       name: cdktf.stringToTerraform(this._name),
@@ -1407,7 +1712,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
       task_arn: cdktf.stringToTerraform(this._taskArn),
       task_type: cdktf.stringToTerraform(this._taskType),
       window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform)(this._targets),
+      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform)(this._targets.internalValue),
       task_invocation_parameters: ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(this._taskInvocationParameters.internalValue),
     };
   }

@@ -12,6 +12,13 @@ export interface TransferWorkflowConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#id TransferWorkflow#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#tags TransferWorkflow#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -720,6 +727,102 @@ export function transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform(st
   }
 }
 
+export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsTagStepDetailsTagsList extends cdktf.ComplexList {
+  public internalValue? : TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference {
+    return new TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface TransferWorkflowOnExceptionStepsTagStepDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
@@ -771,9 +874,9 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference exten
       hasAnyValues = true;
       internalValueResult.sourceFileLocation = this._sourceFileLocation;
     }
-    if (this._tags !== undefined) {
+    if (this._tags?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.tags = this._tags;
+      internalValueResult.tags = this._tags?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -783,13 +886,13 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference exten
       this.isEmptyObject = false;
       this._name = undefined;
       this._sourceFileLocation = undefined;
-      this._tags = undefined;
+      this._tags.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._sourceFileLocation = value.sourceFileLocation;
-      this._tags = value.tags;
+      this._tags.internalValue = value.tags;
     }
   }
 
@@ -826,20 +929,19 @@ export class TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference exten
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable; 
+  private _tags = new TransferWorkflowOnExceptionStepsTagStepDetailsTagsList(this, "tags", false);
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags');
+    return this._tags;
   }
-  public set tags(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable) {
-    this._tags = value;
+  public putTags(value: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable) {
+    this._tags.internalValue = value;
   }
   public resetTags() {
-    this._tags = undefined;
+    this._tags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags;
+    return this._tags.internalValue;
   }
 }
 export interface TransferWorkflowOnExceptionSteps {
@@ -887,6 +989,171 @@ export function transferWorkflowOnExceptionStepsToTerraform(struct?: TransferWor
   }
 }
 
+export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionSteps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._copyStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.copyStepDetails = this._copyStepDetails?.internalValue;
+    }
+    if (this._customStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customStepDetails = this._customStepDetails?.internalValue;
+    }
+    if (this._deleteStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteStepDetails = this._deleteStepDetails?.internalValue;
+    }
+    if (this._tagStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagStepDetails = this._tagStepDetails?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionSteps | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._copyStepDetails.internalValue = undefined;
+      this._customStepDetails.internalValue = undefined;
+      this._deleteStepDetails.internalValue = undefined;
+      this._tagStepDetails.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._copyStepDetails.internalValue = value.copyStepDetails;
+      this._customStepDetails.internalValue = value.customStepDetails;
+      this._deleteStepDetails.internalValue = value.deleteStepDetails;
+      this._tagStepDetails.internalValue = value.tagStepDetails;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // copy_step_details - computed: false, optional: true, required: false
+  private _copyStepDetails = new TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference(this, "copy_step_details");
+  public get copyStepDetails() {
+    return this._copyStepDetails;
+  }
+  public putCopyStepDetails(value: TransferWorkflowOnExceptionStepsCopyStepDetails) {
+    this._copyStepDetails.internalValue = value;
+  }
+  public resetCopyStepDetails() {
+    this._copyStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyStepDetailsInput() {
+    return this._copyStepDetails.internalValue;
+  }
+
+  // custom_step_details - computed: false, optional: true, required: false
+  private _customStepDetails = new TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference(this, "custom_step_details");
+  public get customStepDetails() {
+    return this._customStepDetails;
+  }
+  public putCustomStepDetails(value: TransferWorkflowOnExceptionStepsCustomStepDetails) {
+    this._customStepDetails.internalValue = value;
+  }
+  public resetCustomStepDetails() {
+    this._customStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customStepDetailsInput() {
+    return this._customStepDetails.internalValue;
+  }
+
+  // delete_step_details - computed: false, optional: true, required: false
+  private _deleteStepDetails = new TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference(this, "delete_step_details");
+  public get deleteStepDetails() {
+    return this._deleteStepDetails;
+  }
+  public putDeleteStepDetails(value: TransferWorkflowOnExceptionStepsDeleteStepDetails) {
+    this._deleteStepDetails.internalValue = value;
+  }
+  public resetDeleteStepDetails() {
+    this._deleteStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteStepDetailsInput() {
+    return this._deleteStepDetails.internalValue;
+  }
+
+  // tag_step_details - computed: false, optional: true, required: false
+  private _tagStepDetails = new TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference(this, "tag_step_details");
+  public get tagStepDetails() {
+    return this._tagStepDetails;
+  }
+  public putTagStepDetails(value: TransferWorkflowOnExceptionStepsTagStepDetails) {
+    this._tagStepDetails.internalValue = value;
+  }
+  public resetTagStepDetails() {
+    this._tagStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagStepDetailsInput() {
+    return this._tagStepDetails.internalValue;
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsList extends cdktf.ComplexList {
+  public internalValue? : TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWorkflowOnExceptionStepsOutputReference {
+    return new TransferWorkflowOnExceptionStepsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#file_system_id TransferWorkflow#file_system_id}
@@ -1575,6 +1842,102 @@ export function transferWorkflowStepsTagStepDetailsTagsToTerraform(struct?: Tran
   }
 }
 
+export class TransferWorkflowStepsTagStepDetailsTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowStepsTagStepDetailsTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class TransferWorkflowStepsTagStepDetailsTagsList extends cdktf.ComplexList {
+  public internalValue? : TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWorkflowStepsTagStepDetailsTagsOutputReference {
+    return new TransferWorkflowStepsTagStepDetailsTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface TransferWorkflowStepsTagStepDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
@@ -1626,9 +1989,9 @@ export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.sourceFileLocation = this._sourceFileLocation;
     }
-    if (this._tags !== undefined) {
+    if (this._tags?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.tags = this._tags;
+      internalValueResult.tags = this._tags?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1638,13 +2001,13 @@ export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._name = undefined;
       this._sourceFileLocation = undefined;
-      this._tags = undefined;
+      this._tags.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._sourceFileLocation = value.sourceFileLocation;
-      this._tags = value.tags;
+      this._tags.internalValue = value.tags;
     }
   }
 
@@ -1681,20 +2044,19 @@ export class TransferWorkflowStepsTagStepDetailsOutputReference extends cdktf.Co
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable; 
+  private _tags = new TransferWorkflowStepsTagStepDetailsTagsList(this, "tags", false);
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags');
+    return this._tags;
   }
-  public set tags(value: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable) {
-    this._tags = value;
+  public putTags(value: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable) {
+    this._tags.internalValue = value;
   }
   public resetTags() {
-    this._tags = undefined;
+    this._tags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags;
+    return this._tags.internalValue;
   }
 }
 export interface TransferWorkflowSteps {
@@ -1742,6 +2104,171 @@ export function transferWorkflowStepsToTerraform(struct?: TransferWorkflowSteps 
   }
 }
 
+export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWorkflowSteps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._copyStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.copyStepDetails = this._copyStepDetails?.internalValue;
+    }
+    if (this._customStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customStepDetails = this._customStepDetails?.internalValue;
+    }
+    if (this._deleteStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteStepDetails = this._deleteStepDetails?.internalValue;
+    }
+    if (this._tagStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagStepDetails = this._tagStepDetails?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowSteps | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._copyStepDetails.internalValue = undefined;
+      this._customStepDetails.internalValue = undefined;
+      this._deleteStepDetails.internalValue = undefined;
+      this._tagStepDetails.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._copyStepDetails.internalValue = value.copyStepDetails;
+      this._customStepDetails.internalValue = value.customStepDetails;
+      this._deleteStepDetails.internalValue = value.deleteStepDetails;
+      this._tagStepDetails.internalValue = value.tagStepDetails;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // copy_step_details - computed: false, optional: true, required: false
+  private _copyStepDetails = new TransferWorkflowStepsCopyStepDetailsOutputReference(this, "copy_step_details");
+  public get copyStepDetails() {
+    return this._copyStepDetails;
+  }
+  public putCopyStepDetails(value: TransferWorkflowStepsCopyStepDetails) {
+    this._copyStepDetails.internalValue = value;
+  }
+  public resetCopyStepDetails() {
+    this._copyStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyStepDetailsInput() {
+    return this._copyStepDetails.internalValue;
+  }
+
+  // custom_step_details - computed: false, optional: true, required: false
+  private _customStepDetails = new TransferWorkflowStepsCustomStepDetailsOutputReference(this, "custom_step_details");
+  public get customStepDetails() {
+    return this._customStepDetails;
+  }
+  public putCustomStepDetails(value: TransferWorkflowStepsCustomStepDetails) {
+    this._customStepDetails.internalValue = value;
+  }
+  public resetCustomStepDetails() {
+    this._customStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customStepDetailsInput() {
+    return this._customStepDetails.internalValue;
+  }
+
+  // delete_step_details - computed: false, optional: true, required: false
+  private _deleteStepDetails = new TransferWorkflowStepsDeleteStepDetailsOutputReference(this, "delete_step_details");
+  public get deleteStepDetails() {
+    return this._deleteStepDetails;
+  }
+  public putDeleteStepDetails(value: TransferWorkflowStepsDeleteStepDetails) {
+    this._deleteStepDetails.internalValue = value;
+  }
+  public resetDeleteStepDetails() {
+    this._deleteStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteStepDetailsInput() {
+    return this._deleteStepDetails.internalValue;
+  }
+
+  // tag_step_details - computed: false, optional: true, required: false
+  private _tagStepDetails = new TransferWorkflowStepsTagStepDetailsOutputReference(this, "tag_step_details");
+  public get tagStepDetails() {
+    return this._tagStepDetails;
+  }
+  public putTagStepDetails(value: TransferWorkflowStepsTagStepDetails) {
+    this._tagStepDetails.internalValue = value;
+  }
+  public resetTagStepDetails() {
+    this._tagStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagStepDetailsInput() {
+    return this._tagStepDetails.internalValue;
+  }
+}
+
+export class TransferWorkflowStepsList extends cdktf.ComplexList {
+  public internalValue? : TransferWorkflowSteps[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWorkflowStepsOutputReference {
+    return new TransferWorkflowStepsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow aws_transfer_workflow}
@@ -1778,10 +2305,11 @@ export class TransferWorkflow extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._onExceptionSteps = config.onExceptionSteps;
-    this._steps = config.steps;
+    this._onExceptionSteps.internalValue = config.onExceptionSteps;
+    this._steps.internalValue = config.steps;
   }
 
   // ==========
@@ -1810,8 +2338,19 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -1847,34 +2386,32 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   }
 
   // on_exception_steps - computed: false, optional: true, required: false
-  private _onExceptionSteps?: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable; 
+  private _onExceptionSteps = new TransferWorkflowOnExceptionStepsList(this, "on_exception_steps", false);
   public get onExceptionSteps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('on_exception_steps');
+    return this._onExceptionSteps;
   }
-  public set onExceptionSteps(value: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable) {
-    this._onExceptionSteps = value;
+  public putOnExceptionSteps(value: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable) {
+    this._onExceptionSteps.internalValue = value;
   }
   public resetOnExceptionSteps() {
-    this._onExceptionSteps = undefined;
+    this._onExceptionSteps.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get onExceptionStepsInput() {
-    return this._onExceptionSteps;
+    return this._onExceptionSteps.internalValue;
   }
 
   // steps - computed: false, optional: false, required: true
-  private _steps?: TransferWorkflowSteps[] | cdktf.IResolvable; 
+  private _steps = new TransferWorkflowStepsList(this, "steps", false);
   public get steps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('steps');
+    return this._steps;
   }
-  public set steps(value: TransferWorkflowSteps[] | cdktf.IResolvable) {
-    this._steps = value;
+  public putSteps(value: TransferWorkflowSteps[] | cdktf.IResolvable) {
+    this._steps.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get stepsInput() {
-    return this._steps;
+    return this._steps.internalValue;
   }
 
   // =========
@@ -1884,10 +2421,11 @@ export class TransferWorkflow extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      on_exception_steps: cdktf.listMapper(transferWorkflowOnExceptionStepsToTerraform)(this._onExceptionSteps),
-      steps: cdktf.listMapper(transferWorkflowStepsToTerraform)(this._steps),
+      on_exception_steps: cdktf.listMapper(transferWorkflowOnExceptionStepsToTerraform)(this._onExceptionSteps.internalValue),
+      steps: cdktf.listMapper(transferWorkflowStepsToTerraform)(this._steps.internalValue),
     };
   }
 }

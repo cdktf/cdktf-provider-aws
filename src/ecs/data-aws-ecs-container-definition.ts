@@ -12,6 +12,13 @@ export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMeta
   */
   readonly containerName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_container_definition#id DataAwsEcsContainerDefinition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}
   */
   readonly taskDefinition: string;
@@ -52,6 +59,7 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._containerName = config.containerName;
+    this._id = config.id;
     this._taskDefinition = config.taskDefinition;
   }
 
@@ -83,18 +91,31 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   }
 
   // docker_labels - computed: true, optional: false, required: false
-  public dockerLabels(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'docker_labels').lookup(key);
+  private _dockerLabels = new cdktf.StringMap(this, "docker_labels");
+  public get dockerLabels() {
+    return this._dockerLabels;
   }
 
   // environment - computed: true, optional: false, required: false
-  public environment(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'environment').lookup(key);
+  private _environment = new cdktf.StringMap(this, "environment");
+  public get environment() {
+    return this._environment;
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image - computed: true, optional: false, required: false
@@ -137,6 +158,7 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       container_name: cdktf.stringToTerraform(this._containerName),
+      id: cdktf.stringToTerraform(this._id),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
     };
   }

@@ -16,6 +16,13 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   */
   readonly forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#id SecretsmanagerSecret#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#kms_key_id SecretsmanagerSecret#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -82,6 +89,120 @@ export function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSe
   }
 }
 
+export class SecretsmanagerSecretReplicaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SecretsmanagerSecretReplica | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecretsmanagerSecretReplica | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._kmsKeyId = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._kmsKeyId = value.kmsKeyId;
+      this._region = value.region;
+    }
+  }
+
+  // kms_key_id - computed: true, optional: true, required: false
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+
+  // last_accessed_date - computed: true, optional: false, required: false
+  public get lastAccessedDate() {
+    return this.getStringAttribute('last_accessed_date');
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // status_message - computed: true, optional: false, required: false
+  public get statusMessage() {
+    return this.getStringAttribute('status_message');
+  }
+}
+
+export class SecretsmanagerSecretReplicaList extends cdktf.ComplexList {
+  public internalValue? : SecretsmanagerSecretReplica[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SecretsmanagerSecretReplicaOutputReference {
+    return new SecretsmanagerSecretReplicaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SecretsmanagerSecretRotationRules {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#automatically_after_days SecretsmanagerSecret#automatically_after_days}
@@ -181,6 +302,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._forceOverwriteReplicaSecret = config.forceOverwriteReplicaSecret;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
@@ -189,7 +311,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     this._rotationLambdaArn = config.rotationLambdaArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._replica = config.replica;
+    this._replica.internalValue = config.replica;
     this._rotationRules.internalValue = config.rotationRules;
   }
 
@@ -235,8 +357,19 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
@@ -373,20 +506,19 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // replica - computed: false, optional: true, required: false
-  private _replica?: SecretsmanagerSecretReplica[] | cdktf.IResolvable; 
+  private _replica = new SecretsmanagerSecretReplicaList(this, "replica", true);
   public get replica() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('replica')));
+    return this._replica;
   }
-  public set replica(value: SecretsmanagerSecretReplica[] | cdktf.IResolvable) {
-    this._replica = value;
+  public putReplica(value: SecretsmanagerSecretReplica[] | cdktf.IResolvable) {
+    this._replica.internalValue = value;
   }
   public resetReplica() {
-    this._replica = undefined;
+    this._replica.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get replicaInput() {
-    return this._replica;
+    return this._replica.internalValue;
   }
 
   // rotation_rules - computed: false, optional: true, required: false
@@ -413,6 +545,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       force_overwrite_replica_secret: cdktf.booleanToTerraform(this._forceOverwriteReplicaSecret),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
@@ -421,7 +554,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform)(this._replica),
+      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform)(this._replica.internalValue),
       rotation_rules: secretsmanagerSecretRotationRulesToTerraform(this._rotationRules.internalValue),
     };
   }

@@ -28,6 +28,13 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly authorizerId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route#id Apigatewayv2Route#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route#model_selection_expression Apigatewayv2Route#model_selection_expression}
   */
   readonly modelSelectionExpression?: string;
@@ -80,6 +87,102 @@ export function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigateway
   }
 }
 
+export class Apigatewayv2RouteRequestParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Apigatewayv2RouteRequestParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requestParameterKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestParameterKey = this._requestParameterKey;
+    }
+    if (this._required !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.required = this._required;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Apigatewayv2RouteRequestParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._requestParameterKey = undefined;
+      this._required = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._requestParameterKey = value.requestParameterKey;
+      this._required = value.required;
+    }
+  }
+
+  // request_parameter_key - computed: false, optional: false, required: true
+  private _requestParameterKey?: string; 
+  public get requestParameterKey() {
+    return this.getStringAttribute('request_parameter_key');
+  }
+  public set requestParameterKey(value: string) {
+    this._requestParameterKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestParameterKeyInput() {
+    return this._requestParameterKey;
+  }
+
+  // required - computed: false, optional: false, required: true
+  private _required?: boolean | cdktf.IResolvable; 
+  public get required() {
+    return this.getBooleanAttribute('required');
+  }
+  public set required(value: boolean | cdktf.IResolvable) {
+    this._required = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredInput() {
+    return this._required;
+  }
+}
+
+export class Apigatewayv2RouteRequestParameterList extends cdktf.ComplexList {
+  public internalValue? : Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Apigatewayv2RouteRequestParameterOutputReference {
+    return new Apigatewayv2RouteRequestParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route aws_apigatewayv2_route}
@@ -120,13 +223,14 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
     this._authorizationScopes = config.authorizationScopes;
     this._authorizationType = config.authorizationType;
     this._authorizerId = config.authorizerId;
+    this._id = config.id;
     this._modelSelectionExpression = config.modelSelectionExpression;
     this._operationName = config.operationName;
     this._requestModels = config.requestModels;
     this._routeKey = config.routeKey;
     this._routeResponseSelectionExpression = config.routeResponseSelectionExpression;
     this._target = config.target;
-    this._requestParameter = config.requestParameter;
+    this._requestParameter.internalValue = config.requestParameter;
   }
 
   // ==========
@@ -211,8 +315,19 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // model_selection_expression - computed: false, optional: true, required: false
@@ -309,20 +424,19 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // request_parameter - computed: false, optional: true, required: false
-  private _requestParameter?: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable; 
+  private _requestParameter = new Apigatewayv2RouteRequestParameterList(this, "request_parameter", true);
   public get requestParameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('request_parameter')));
+    return this._requestParameter;
   }
-  public set requestParameter(value: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable) {
-    this._requestParameter = value;
+  public putRequestParameter(value: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable) {
+    this._requestParameter.internalValue = value;
   }
   public resetRequestParameter() {
-    this._requestParameter = undefined;
+    this._requestParameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestParameterInput() {
-    return this._requestParameter;
+    return this._requestParameter.internalValue;
   }
 
   // =========
@@ -336,13 +450,14 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
       authorization_type: cdktf.stringToTerraform(this._authorizationType),
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
+      id: cdktf.stringToTerraform(this._id),
       model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
       operation_name: cdktf.stringToTerraform(this._operationName),
       request_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestModels),
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
       target: cdktf.stringToTerraform(this._target),
-      request_parameter: cdktf.listMapper(apigatewayv2RouteRequestParameterToTerraform)(this._requestParameter),
+      request_parameter: cdktf.listMapper(apigatewayv2RouteRequestParameterToTerraform)(this._requestParameter.internalValue),
     };
   }
 }

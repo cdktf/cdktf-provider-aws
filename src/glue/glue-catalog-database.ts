@@ -16,6 +16,13 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#id GlueCatalogDatabase#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#location_uri GlueCatalogDatabase#location_uri}
   */
   readonly locationUri?: string;
@@ -129,6 +136,108 @@ export function glueCatalogDatabaseCreateTableDefaultPermissionToTerraform(struc
   }
 }
 
+export class GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._permissions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permissions = this._permissions;
+    }
+    if (this._principal?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._permissions = undefined;
+      this._principal.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._permissions = value.permissions;
+      this._principal.internalValue = value.principal;
+    }
+  }
+
+  // permissions - computed: false, optional: true, required: false
+  private _permissions?: string[]; 
+  public get permissions() {
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+  }
+  public set permissions(value: string[]) {
+    this._permissions = value;
+  }
+  public resetPermissions() {
+    this._permissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionsInput() {
+    return this._permissions;
+  }
+
+  // principal - computed: false, optional: true, required: false
+  private _principal = new GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference(this, "principal");
+  public get principal() {
+    return this._principal;
+  }
+  public putPrincipal(value: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal) {
+    this._principal.internalValue = value;
+  }
+  public resetPrincipal() {
+    this._principal.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal.internalValue;
+  }
+}
+
+export class GlueCatalogDatabaseCreateTableDefaultPermissionList extends cdktf.ComplexList {
+  public internalValue? : GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference {
+    return new GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCatalogDatabaseTargetDatabase {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
@@ -252,10 +361,11 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     });
     this._catalogId = config.catalogId;
     this._description = config.description;
+    this._id = config.id;
     this._locationUri = config.locationUri;
     this._name = config.name;
     this._parameters = config.parameters;
-    this._createTableDefaultPermission = config.createTableDefaultPermission;
+    this._createTableDefaultPermission.internalValue = config.createTableDefaultPermission;
     this._targetDatabase.internalValue = config.targetDatabase;
   }
 
@@ -301,8 +411,19 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // location_uri - computed: true, optional: true, required: false
@@ -351,20 +472,19 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   }
 
   // create_table_default_permission - computed: false, optional: true, required: false
-  private _createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable; 
+  private _createTableDefaultPermission = new GlueCatalogDatabaseCreateTableDefaultPermissionList(this, "create_table_default_permission", false);
   public get createTableDefaultPermission() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('create_table_default_permission');
+    return this._createTableDefaultPermission;
   }
-  public set createTableDefaultPermission(value: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable) {
-    this._createTableDefaultPermission = value;
+  public putCreateTableDefaultPermission(value: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable) {
+    this._createTableDefaultPermission.internalValue = value;
   }
   public resetCreateTableDefaultPermission() {
-    this._createTableDefaultPermission = undefined;
+    this._createTableDefaultPermission.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get createTableDefaultPermissionInput() {
-    return this._createTableDefaultPermission;
+    return this._createTableDefaultPermission.internalValue;
   }
 
   // target_database - computed: false, optional: true, required: false
@@ -391,10 +511,11 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     return {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       location_uri: cdktf.stringToTerraform(this._locationUri),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform)(this._createTableDefaultPermission),
+      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform)(this._createTableDefaultPermission.internalValue),
       target_database: glueCatalogDatabaseTargetDatabaseToTerraform(this._targetDatabase.internalValue),
     };
   }

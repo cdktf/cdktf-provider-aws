@@ -20,6 +20,13 @@ export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArgument
   */
   readonly elb?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment#id AutoscalingAttachment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment#lb_target_group_arn AutoscalingAttachment#lb_target_group_arn}
   */
   readonly lbTargetGroupArn?: string;
@@ -62,6 +69,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
     this._albTargetGroupArn = config.albTargetGroupArn;
     this._autoscalingGroupName = config.autoscalingGroupName;
     this._elb = config.elb;
+    this._id = config.id;
     this._lbTargetGroupArn = config.lbTargetGroupArn;
   }
 
@@ -115,8 +123,19 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lb_target_group_arn - computed: false, optional: true, required: false
@@ -144,6 +163,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
       alb_target_group_arn: cdktf.stringToTerraform(this._albTargetGroupArn),
       autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
       elb: cdktf.stringToTerraform(this._elb),
+      id: cdktf.stringToTerraform(this._id),
       lb_target_group_arn: cdktf.stringToTerraform(this._lbTargetGroupArn),
     };
   }

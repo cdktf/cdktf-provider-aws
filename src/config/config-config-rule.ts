@@ -12,6 +12,13 @@ export interface ConfigConfigRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#id ConfigConfigRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#input_parameters ConfigConfigRule#input_parameters}
   */
   readonly inputParameters?: string;
@@ -330,6 +337,130 @@ export function configConfigRuleSourceSourceDetailToTerraform(struct?: ConfigCon
   }
 }
 
+export class ConfigConfigRuleSourceSourceDetailOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConfigConfigRuleSourceSourceDetail | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eventSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventSource = this._eventSource;
+    }
+    if (this._maximumExecutionFrequency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumExecutionFrequency = this._maximumExecutionFrequency;
+    }
+    if (this._messageType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageType = this._messageType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigConfigRuleSourceSourceDetail | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._eventSource = undefined;
+      this._maximumExecutionFrequency = undefined;
+      this._messageType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._eventSource = value.eventSource;
+      this._maximumExecutionFrequency = value.maximumExecutionFrequency;
+      this._messageType = value.messageType;
+    }
+  }
+
+  // event_source - computed: false, optional: true, required: false
+  private _eventSource?: string; 
+  public get eventSource() {
+    return this.getStringAttribute('event_source');
+  }
+  public set eventSource(value: string) {
+    this._eventSource = value;
+  }
+  public resetEventSource() {
+    this._eventSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventSourceInput() {
+    return this._eventSource;
+  }
+
+  // maximum_execution_frequency - computed: false, optional: true, required: false
+  private _maximumExecutionFrequency?: string; 
+  public get maximumExecutionFrequency() {
+    return this.getStringAttribute('maximum_execution_frequency');
+  }
+  public set maximumExecutionFrequency(value: string) {
+    this._maximumExecutionFrequency = value;
+  }
+  public resetMaximumExecutionFrequency() {
+    this._maximumExecutionFrequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumExecutionFrequencyInput() {
+    return this._maximumExecutionFrequency;
+  }
+
+  // message_type - computed: false, optional: true, required: false
+  private _messageType?: string; 
+  public get messageType() {
+    return this.getStringAttribute('message_type');
+  }
+  public set messageType(value: string) {
+    this._messageType = value;
+  }
+  public resetMessageType() {
+    this._messageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageTypeInput() {
+    return this._messageType;
+  }
+}
+
+export class ConfigConfigRuleSourceSourceDetailList extends cdktf.ComplexList {
+  public internalValue? : ConfigConfigRuleSourceSourceDetail[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConfigConfigRuleSourceSourceDetailOutputReference {
+    return new ConfigConfigRuleSourceSourceDetailOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConfigConfigRuleSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#owner ConfigConfigRule#owner}
@@ -392,9 +523,9 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.customPolicyDetails = this._customPolicyDetails?.internalValue;
     }
-    if (this._sourceDetail !== undefined) {
+    if (this._sourceDetail?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.sourceDetail = this._sourceDetail;
+      internalValueResult.sourceDetail = this._sourceDetail?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -405,14 +536,14 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
       this._owner = undefined;
       this._sourceIdentifier = undefined;
       this._customPolicyDetails.internalValue = undefined;
-      this._sourceDetail = undefined;
+      this._sourceDetail.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._owner = value.owner;
       this._sourceIdentifier = value.sourceIdentifier;
       this._customPolicyDetails.internalValue = value.customPolicyDetails;
-      this._sourceDetail = value.sourceDetail;
+      this._sourceDetail.internalValue = value.sourceDetail;
     }
   }
 
@@ -462,20 +593,19 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // source_detail - computed: false, optional: true, required: false
-  private _sourceDetail?: ConfigConfigRuleSourceSourceDetail[] | cdktf.IResolvable; 
+  private _sourceDetail = new ConfigConfigRuleSourceSourceDetailList(this, "source_detail", true);
   public get sourceDetail() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('source_detail')));
+    return this._sourceDetail;
   }
-  public set sourceDetail(value: ConfigConfigRuleSourceSourceDetail[] | cdktf.IResolvable) {
-    this._sourceDetail = value;
+  public putSourceDetail(value: ConfigConfigRuleSourceSourceDetail[] | cdktf.IResolvable) {
+    this._sourceDetail.internalValue = value;
   }
   public resetSourceDetail() {
-    this._sourceDetail = undefined;
+    this._sourceDetail.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sourceDetailInput() {
-    return this._sourceDetail;
+    return this._sourceDetail.internalValue;
   }
 }
 
@@ -514,6 +644,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._inputParameters = config.inputParameters;
     this._maximumExecutionFrequency = config.maximumExecutionFrequency;
     this._name = config.name;
@@ -549,8 +680,19 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // input_parameters - computed: false, optional: true, required: false
@@ -671,6 +813,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       input_parameters: cdktf.stringToTerraform(this._inputParameters),
       maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
       name: cdktf.stringToTerraform(this._name),

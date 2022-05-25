@@ -12,6 +12,13 @@ export interface Route53QueryLogConfig extends cdktf.TerraformMetaArguments {
   */
   readonly cloudwatchLogGroupArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_query_log#id Route53QueryLog#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_query_log#zone_id Route53QueryLog#zone_id}
   */
   readonly zoneId: string;
@@ -52,6 +59,7 @@ export class Route53QueryLog extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._cloudwatchLogGroupArn = config.cloudwatchLogGroupArn;
+    this._id = config.id;
     this._zoneId = config.zoneId;
   }
 
@@ -78,8 +86,19 @@ export class Route53QueryLog extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -102,6 +121,7 @@ export class Route53QueryLog extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
+      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }

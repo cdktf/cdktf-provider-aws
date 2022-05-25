@@ -12,6 +12,13 @@ export interface ConnectQuickConnectConfig extends cdktf.TerraformMetaArguments 
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#id ConnectQuickConnect#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}
   */
   readonly instanceId: string;
@@ -51,6 +58,83 @@ export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(stru
   }
 }
 
+export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._phoneNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumber = this._phoneNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._phoneNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._phoneNumber = value.phoneNumber;
+    }
+  }
+
+  // phone_number - computed: false, optional: false, required: true
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+}
+
+export class ConnectQuickConnectQuickConnectConfigPhoneConfigList extends cdktf.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference {
+    return new ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConnectQuickConnectQuickConnectConfigQueueConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
@@ -73,6 +157,102 @@ export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(stru
   }
 }
 
+export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contactFlowId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contactFlowId = this._contactFlowId;
+    }
+    if (this._queueId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueId = this._queueId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contactFlowId = undefined;
+      this._queueId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contactFlowId = value.contactFlowId;
+      this._queueId = value.queueId;
+    }
+  }
+
+  // contact_flow_id - computed: false, optional: false, required: true
+  private _contactFlowId?: string; 
+  public get contactFlowId() {
+    return this.getStringAttribute('contact_flow_id');
+  }
+  public set contactFlowId(value: string) {
+    this._contactFlowId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contactFlowIdInput() {
+    return this._contactFlowId;
+  }
+
+  // queue_id - computed: false, optional: false, required: true
+  private _queueId?: string; 
+  public get queueId() {
+    return this.getStringAttribute('queue_id');
+  }
+  public set queueId(value: string) {
+    this._queueId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueIdInput() {
+    return this._queueId;
+  }
+}
+
+export class ConnectQuickConnectQuickConnectConfigQueueConfigList extends cdktf.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference {
+    return new ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConnectQuickConnectQuickConnectConfigUserConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}
@@ -95,6 +275,102 @@ export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struc
   }
 }
 
+export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contactFlowId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contactFlowId = this._contactFlowId;
+    }
+    if (this._userId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contactFlowId = undefined;
+      this._userId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contactFlowId = value.contactFlowId;
+      this._userId = value.userId;
+    }
+  }
+
+  // contact_flow_id - computed: false, optional: false, required: true
+  private _contactFlowId?: string; 
+  public get contactFlowId() {
+    return this.getStringAttribute('contact_flow_id');
+  }
+  public set contactFlowId(value: string) {
+    this._contactFlowId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contactFlowIdInput() {
+    return this._contactFlowId;
+  }
+
+  // user_id - computed: false, optional: false, required: true
+  private _userId?: string; 
+  public get userId() {
+    return this.getStringAttribute('user_id');
+  }
+  public set userId(value: string) {
+    this._userId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
+  }
+}
+
+export class ConnectQuickConnectQuickConnectConfigUserConfigList extends cdktf.ComplexList {
+  public internalValue? : ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConnectQuickConnectQuickConnectConfigUserConfigOutputReference {
+    return new ConnectQuickConnectQuickConnectConfigUserConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConnectQuickConnectQuickConnectConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}
@@ -151,17 +427,17 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.quickConnectType = this._quickConnectType;
     }
-    if (this._phoneConfig !== undefined) {
+    if (this._phoneConfig?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.phoneConfig = this._phoneConfig;
+      internalValueResult.phoneConfig = this._phoneConfig?.internalValue;
     }
-    if (this._queueConfig !== undefined) {
+    if (this._queueConfig?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.queueConfig = this._queueConfig;
+      internalValueResult.queueConfig = this._queueConfig?.internalValue;
     }
-    if (this._userConfig !== undefined) {
+    if (this._userConfig?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.userConfig = this._userConfig;
+      internalValueResult.userConfig = this._userConfig?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -170,16 +446,16 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
     if (value === undefined) {
       this.isEmptyObject = false;
       this._quickConnectType = undefined;
-      this._phoneConfig = undefined;
-      this._queueConfig = undefined;
-      this._userConfig = undefined;
+      this._phoneConfig.internalValue = undefined;
+      this._queueConfig.internalValue = undefined;
+      this._userConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._quickConnectType = value.quickConnectType;
-      this._phoneConfig = value.phoneConfig;
-      this._queueConfig = value.queueConfig;
-      this._userConfig = value.userConfig;
+      this._phoneConfig.internalValue = value.phoneConfig;
+      this._queueConfig.internalValue = value.queueConfig;
+      this._userConfig.internalValue = value.userConfig;
     }
   }
 
@@ -197,54 +473,51 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   }
 
   // phone_config - computed: false, optional: true, required: false
-  private _phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable; 
+  private _phoneConfig = new ConnectQuickConnectQuickConnectConfigPhoneConfigList(this, "phone_config", false);
   public get phoneConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('phone_config');
+    return this._phoneConfig;
   }
-  public set phoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable) {
-    this._phoneConfig = value;
+  public putPhoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable) {
+    this._phoneConfig.internalValue = value;
   }
   public resetPhoneConfig() {
-    this._phoneConfig = undefined;
+    this._phoneConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get phoneConfigInput() {
-    return this._phoneConfig;
+    return this._phoneConfig.internalValue;
   }
 
   // queue_config - computed: false, optional: true, required: false
-  private _queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable; 
+  private _queueConfig = new ConnectQuickConnectQuickConnectConfigQueueConfigList(this, "queue_config", false);
   public get queueConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('queue_config');
+    return this._queueConfig;
   }
-  public set queueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable) {
-    this._queueConfig = value;
+  public putQueueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable) {
+    this._queueConfig.internalValue = value;
   }
   public resetQueueConfig() {
-    this._queueConfig = undefined;
+    this._queueConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get queueConfigInput() {
-    return this._queueConfig;
+    return this._queueConfig.internalValue;
   }
 
   // user_config - computed: false, optional: true, required: false
-  private _userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable; 
+  private _userConfig = new ConnectQuickConnectQuickConnectConfigUserConfigList(this, "user_config", false);
   public get userConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_config');
+    return this._userConfig;
   }
-  public set userConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable) {
-    this._userConfig = value;
+  public putUserConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable) {
+    this._userConfig.internalValue = value;
   }
   public resetUserConfig() {
-    this._userConfig = undefined;
+    this._userConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userConfigInput() {
-    return this._userConfig;
+    return this._userConfig.internalValue;
   }
 }
 
@@ -283,6 +556,7 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._name = config.name;
     this._tags = config.tags;
@@ -316,8 +590,19 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: false, optional: false, required: true
@@ -403,6 +688,7 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

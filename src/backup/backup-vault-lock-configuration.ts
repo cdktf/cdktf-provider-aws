@@ -16,6 +16,13 @@ export interface BackupVaultLockConfigurationConfig extends cdktf.TerraformMetaA
   */
   readonly changeableForDays?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_lock_configuration#id BackupVaultLockConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_lock_configuration#max_retention_days BackupVaultLockConfiguration#max_retention_days}
   */
   readonly maxRetentionDays?: number;
@@ -61,6 +68,7 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
     });
     this._backupVaultName = config.backupVaultName;
     this._changeableForDays = config.changeableForDays;
+    this._id = config.id;
     this._maxRetentionDays = config.maxRetentionDays;
     this._minRetentionDays = config.minRetentionDays;
   }
@@ -104,8 +112,19 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_retention_days - computed: false, optional: true, required: false
@@ -148,6 +167,7 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
     return {
       backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
       changeable_for_days: cdktf.numberToTerraform(this._changeableForDays),
+      id: cdktf.stringToTerraform(this._id),
       max_retention_days: cdktf.numberToTerraform(this._maxRetentionDays),
       min_retention_days: cdktf.numberToTerraform(this._minRetentionDays),
     };

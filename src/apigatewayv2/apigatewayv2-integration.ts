@@ -32,6 +32,13 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#id Apigatewayv2Integration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#integration_method Apigatewayv2Integration#integration_method}
   */
   readonly integrationMethod?: string;
@@ -106,6 +113,102 @@ export function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Ap
   }
 }
 
+export class Apigatewayv2IntegrationResponseParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mappings !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mappings = this._mappings;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mappings = undefined;
+      this._statusCode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mappings = value.mappings;
+      this._statusCode = value.statusCode;
+    }
+  }
+
+  // mappings - computed: false, optional: false, required: true
+  private _mappings?: { [key: string]: string }; 
+  public get mappings() {
+    return this.getStringMapAttribute('mappings');
+  }
+  public set mappings(value: { [key: string]: string }) {
+    this._mappings = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mappingsInput() {
+    return this._mappings;
+  }
+
+  // status_code - computed: false, optional: false, required: true
+  private _statusCode?: string; 
+  public get statusCode() {
+    return this.getStringAttribute('status_code');
+  }
+  public set statusCode(value: string) {
+    this._statusCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
+}
+
+export class Apigatewayv2IntegrationResponseParametersList extends cdktf.ComplexList {
+  public internalValue? : Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Apigatewayv2IntegrationResponseParametersOutputReference {
+    return new Apigatewayv2IntegrationResponseParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Apigatewayv2IntegrationTlsConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#server_name_to_verify Apigatewayv2Integration#server_name_to_verify}
@@ -212,6 +315,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     this._contentHandlingStrategy = config.contentHandlingStrategy;
     this._credentialsArn = config.credentialsArn;
     this._description = config.description;
+    this._id = config.id;
     this._integrationMethod = config.integrationMethod;
     this._integrationSubtype = config.integrationSubtype;
     this._integrationType = config.integrationType;
@@ -222,7 +326,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     this._requestTemplates = config.requestTemplates;
     this._templateSelectionExpression = config.templateSelectionExpression;
     this._timeoutMilliseconds = config.timeoutMilliseconds;
-    this._responseParameters = config.responseParameters;
+    this._responseParameters.internalValue = config.responseParameters;
     this._tlsConfig.internalValue = config.tlsConfig;
   }
 
@@ -324,8 +428,19 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // integration_method - computed: false, optional: true, required: false
@@ -491,20 +606,19 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // response_parameters - computed: false, optional: true, required: false
-  private _responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable; 
+  private _responseParameters = new Apigatewayv2IntegrationResponseParametersList(this, "response_parameters", true);
   public get responseParameters() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('response_parameters')));
+    return this._responseParameters;
   }
-  public set responseParameters(value: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable) {
-    this._responseParameters = value;
+  public putResponseParameters(value: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable) {
+    this._responseParameters.internalValue = value;
   }
   public resetResponseParameters() {
-    this._responseParameters = undefined;
+    this._responseParameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseParametersInput() {
-    return this._responseParameters;
+    return this._responseParameters.internalValue;
   }
 
   // tls_config - computed: false, optional: true, required: false
@@ -535,6 +649,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
       credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       integration_method: cdktf.stringToTerraform(this._integrationMethod),
       integration_subtype: cdktf.stringToTerraform(this._integrationSubtype),
       integration_type: cdktf.stringToTerraform(this._integrationType),
@@ -545,7 +660,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       request_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
       timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
-      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform)(this._responseParameters),
+      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform)(this._responseParameters.internalValue),
       tls_config: apigatewayv2IntegrationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
   }

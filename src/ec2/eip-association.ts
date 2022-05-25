@@ -16,6 +16,13 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowReassociation?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association#id EipAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association#instance_id EipAssociation#instance_id}
   */
   readonly instanceId?: string;
@@ -69,6 +76,7 @@ export class EipAssociation extends cdktf.TerraformResource {
     });
     this._allocationId = config.allocationId;
     this._allowReassociation = config.allowReassociation;
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._networkInterfaceId = config.networkInterfaceId;
     this._privateIpAddress = config.privateIpAddress;
@@ -112,8 +120,19 @@ export class EipAssociation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: true, optional: true, required: false
@@ -188,6 +207,7 @@ export class EipAssociation extends cdktf.TerraformResource {
     return {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
       allow_reassociation: cdktf.booleanToTerraform(this._allowReassociation),
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),

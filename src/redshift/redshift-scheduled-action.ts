@@ -24,6 +24,13 @@ export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArgume
   */
   readonly iamRole: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#id RedshiftScheduledAction#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#name RedshiftScheduledAction#name}
   */
   readonly name: string;
@@ -500,6 +507,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
     this._enable = config.enable;
     this._endTime = config.endTime;
     this._iamRole = config.iamRole;
+    this._id = config.id;
     this._name = config.name;
     this._schedule = config.schedule;
     this._startTime = config.startTime;
@@ -572,8 +580,19 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -641,6 +660,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
       enable: cdktf.booleanToTerraform(this._enable),
       end_time: cdktf.stringToTerraform(this._endTime),
       iam_role: cdktf.stringToTerraform(this._iamRole),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
       start_time: cdktf.stringToTerraform(this._startTime),

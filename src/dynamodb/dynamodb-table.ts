@@ -16,6 +16,13 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hashKey?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#id DynamodbTable#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#name DynamodbTable#name}
   */
   readonly name: string;
@@ -134,6 +141,102 @@ export function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribut
   }
 }
 
+export class DynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DynamodbTableAttribute | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamodbTableAttribute | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class DynamodbTableAttributeList extends cdktf.ComplexList {
+  public internalValue? : DynamodbTableAttribute[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DynamodbTableAttributeOutputReference {
+    return new DynamodbTableAttributeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DynamodbTableGlobalSecondaryIndex {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#hash_key DynamodbTable#hash_key}
@@ -181,6 +284,209 @@ export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTa
   }
 }
 
+export class DynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hashKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hashKey = this._hashKey;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._nonKeyAttributes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nonKeyAttributes = this._nonKeyAttributes;
+    }
+    if (this._projectionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectionType = this._projectionType;
+    }
+    if (this._rangeKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeKey = this._rangeKey;
+    }
+    if (this._readCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readCapacity = this._readCapacity;
+    }
+    if (this._writeCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.writeCapacity = this._writeCapacity;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamodbTableGlobalSecondaryIndex | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hashKey = undefined;
+      this._name = undefined;
+      this._nonKeyAttributes = undefined;
+      this._projectionType = undefined;
+      this._rangeKey = undefined;
+      this._readCapacity = undefined;
+      this._writeCapacity = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hashKey = value.hashKey;
+      this._name = value.name;
+      this._nonKeyAttributes = value.nonKeyAttributes;
+      this._projectionType = value.projectionType;
+      this._rangeKey = value.rangeKey;
+      this._readCapacity = value.readCapacity;
+      this._writeCapacity = value.writeCapacity;
+    }
+  }
+
+  // hash_key - computed: false, optional: false, required: true
+  private _hashKey?: string; 
+  public get hashKey() {
+    return this.getStringAttribute('hash_key');
+  }
+  public set hashKey(value: string) {
+    this._hashKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hashKeyInput() {
+    return this._hashKey;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // non_key_attributes - computed: false, optional: true, required: false
+  private _nonKeyAttributes?: string[]; 
+  public get nonKeyAttributes() {
+    return cdktf.Fn.tolist(this.getListAttribute('non_key_attributes'));
+  }
+  public set nonKeyAttributes(value: string[]) {
+    this._nonKeyAttributes = value;
+  }
+  public resetNonKeyAttributes() {
+    this._nonKeyAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nonKeyAttributesInput() {
+    return this._nonKeyAttributes;
+  }
+
+  // projection_type - computed: false, optional: false, required: true
+  private _projectionType?: string; 
+  public get projectionType() {
+    return this.getStringAttribute('projection_type');
+  }
+  public set projectionType(value: string) {
+    this._projectionType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectionTypeInput() {
+    return this._projectionType;
+  }
+
+  // range_key - computed: false, optional: true, required: false
+  private _rangeKey?: string; 
+  public get rangeKey() {
+    return this.getStringAttribute('range_key');
+  }
+  public set rangeKey(value: string) {
+    this._rangeKey = value;
+  }
+  public resetRangeKey() {
+    this._rangeKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyInput() {
+    return this._rangeKey;
+  }
+
+  // read_capacity - computed: false, optional: true, required: false
+  private _readCapacity?: number; 
+  public get readCapacity() {
+    return this.getNumberAttribute('read_capacity');
+  }
+  public set readCapacity(value: number) {
+    this._readCapacity = value;
+  }
+  public resetReadCapacity() {
+    this._readCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readCapacityInput() {
+    return this._readCapacity;
+  }
+
+  // write_capacity - computed: false, optional: true, required: false
+  private _writeCapacity?: number; 
+  public get writeCapacity() {
+    return this.getNumberAttribute('write_capacity');
+  }
+  public set writeCapacity(value: number) {
+    this._writeCapacity = value;
+  }
+  public resetWriteCapacity() {
+    this._writeCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeCapacityInput() {
+    return this._writeCapacity;
+  }
+}
+
+export class DynamodbTableGlobalSecondaryIndexList extends cdktf.ComplexList {
+  public internalValue? : DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DynamodbTableGlobalSecondaryIndexOutputReference {
+    return new DynamodbTableGlobalSecondaryIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DynamodbTableLocalSecondaryIndex {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#name DynamodbTable#name}
@@ -213,6 +519,143 @@ export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTab
   }
 }
 
+export class DynamodbTableLocalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DynamodbTableLocalSecondaryIndex | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._nonKeyAttributes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nonKeyAttributes = this._nonKeyAttributes;
+    }
+    if (this._projectionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectionType = this._projectionType;
+    }
+    if (this._rangeKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeKey = this._rangeKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamodbTableLocalSecondaryIndex | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._nonKeyAttributes = undefined;
+      this._projectionType = undefined;
+      this._rangeKey = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._nonKeyAttributes = value.nonKeyAttributes;
+      this._projectionType = value.projectionType;
+      this._rangeKey = value.rangeKey;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // non_key_attributes - computed: false, optional: true, required: false
+  private _nonKeyAttributes?: string[]; 
+  public get nonKeyAttributes() {
+    return this.getListAttribute('non_key_attributes');
+  }
+  public set nonKeyAttributes(value: string[]) {
+    this._nonKeyAttributes = value;
+  }
+  public resetNonKeyAttributes() {
+    this._nonKeyAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nonKeyAttributesInput() {
+    return this._nonKeyAttributes;
+  }
+
+  // projection_type - computed: false, optional: false, required: true
+  private _projectionType?: string; 
+  public get projectionType() {
+    return this.getStringAttribute('projection_type');
+  }
+  public set projectionType(value: string) {
+    this._projectionType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectionTypeInput() {
+    return this._projectionType;
+  }
+
+  // range_key - computed: false, optional: false, required: true
+  private _rangeKey?: string; 
+  public get rangeKey() {
+    return this.getStringAttribute('range_key');
+  }
+  public set rangeKey(value: string) {
+    this._rangeKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyInput() {
+    return this._rangeKey;
+  }
+}
+
+export class DynamodbTableLocalSecondaryIndexList extends cdktf.ComplexList {
+  public internalValue? : DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DynamodbTableLocalSecondaryIndexOutputReference {
+    return new DynamodbTableLocalSecondaryIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DynamodbTablePointInTimeRecovery {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#enabled DynamodbTable#enabled}
@@ -297,6 +740,105 @@ export function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica | 
   }
 }
 
+export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DynamodbTableReplica | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    if (this._regionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionName = this._regionName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamodbTableReplica | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = undefined;
+      this._regionName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = value.kmsKeyArn;
+      this._regionName = value.regionName;
+    }
+  }
+
+  // kms_key_arn - computed: true, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+
+  // region_name - computed: false, optional: false, required: true
+  private _regionName?: string; 
+  public get regionName() {
+    return this.getStringAttribute('region_name');
+  }
+  public set regionName(value: string) {
+    this._regionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionNameInput() {
+    return this._regionName;
+  }
+}
+
+export class DynamodbTableReplicaList extends cdktf.ComplexList {
+  public internalValue? : DynamodbTableReplica[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DynamodbTableReplicaOutputReference {
+    return new DynamodbTableReplicaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DynamodbTableServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#enabled DynamodbTable#enabled}
@@ -415,6 +957,7 @@ export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeoutsO
 
 export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -424,7 +967,10 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DynamodbTableTimeouts | undefined {
+  public get internalValue(): DynamodbTableTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -442,15 +988,21 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamodbTableTimeouts | undefined) {
+  public set internalValue(value: DynamodbTableTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -631,6 +1183,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     });
     this._billingMode = config.billingMode;
     this._hashKey = config.hashKey;
+    this._id = config.id;
     this._name = config.name;
     this._rangeKey = config.rangeKey;
     this._readCapacity = config.readCapacity;
@@ -643,11 +1196,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._writeCapacity = config.writeCapacity;
-    this._attribute = config.attribute;
-    this._globalSecondaryIndex = config.globalSecondaryIndex;
-    this._localSecondaryIndex = config.localSecondaryIndex;
+    this._attribute.internalValue = config.attribute;
+    this._globalSecondaryIndex.internalValue = config.globalSecondaryIndex;
+    this._localSecondaryIndex.internalValue = config.localSecondaryIndex;
     this._pointInTimeRecovery.internalValue = config.pointInTimeRecovery;
-    this._replica = config.replica;
+    this._replica.internalValue = config.replica;
     this._serverSideEncryption.internalValue = config.serverSideEncryption;
     this._timeouts.internalValue = config.timeouts;
     this._ttl.internalValue = config.ttl;
@@ -695,8 +1248,19 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -899,54 +1463,51 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // attribute - computed: false, optional: true, required: false
-  private _attribute?: DynamodbTableAttribute[] | cdktf.IResolvable; 
+  private _attribute = new DynamodbTableAttributeList(this, "attribute", true);
   public get attribute() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('attribute')));
+    return this._attribute;
   }
-  public set attribute(value: DynamodbTableAttribute[] | cdktf.IResolvable) {
-    this._attribute = value;
+  public putAttribute(value: DynamodbTableAttribute[] | cdktf.IResolvable) {
+    this._attribute.internalValue = value;
   }
   public resetAttribute() {
-    this._attribute = undefined;
+    this._attribute.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get attributeInput() {
-    return this._attribute;
+    return this._attribute.internalValue;
   }
 
   // global_secondary_index - computed: false, optional: true, required: false
-  private _globalSecondaryIndex?: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable; 
+  private _globalSecondaryIndex = new DynamodbTableGlobalSecondaryIndexList(this, "global_secondary_index", true);
   public get globalSecondaryIndex() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('global_secondary_index')));
+    return this._globalSecondaryIndex;
   }
-  public set globalSecondaryIndex(value: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable) {
-    this._globalSecondaryIndex = value;
+  public putGlobalSecondaryIndex(value: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable) {
+    this._globalSecondaryIndex.internalValue = value;
   }
   public resetGlobalSecondaryIndex() {
-    this._globalSecondaryIndex = undefined;
+    this._globalSecondaryIndex.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get globalSecondaryIndexInput() {
-    return this._globalSecondaryIndex;
+    return this._globalSecondaryIndex.internalValue;
   }
 
   // local_secondary_index - computed: false, optional: true, required: false
-  private _localSecondaryIndex?: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable; 
+  private _localSecondaryIndex = new DynamodbTableLocalSecondaryIndexList(this, "local_secondary_index", true);
   public get localSecondaryIndex() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('local_secondary_index')));
+    return this._localSecondaryIndex;
   }
-  public set localSecondaryIndex(value: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable) {
-    this._localSecondaryIndex = value;
+  public putLocalSecondaryIndex(value: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable) {
+    this._localSecondaryIndex.internalValue = value;
   }
   public resetLocalSecondaryIndex() {
-    this._localSecondaryIndex = undefined;
+    this._localSecondaryIndex.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get localSecondaryIndexInput() {
-    return this._localSecondaryIndex;
+    return this._localSecondaryIndex.internalValue;
   }
 
   // point_in_time_recovery - computed: false, optional: true, required: false
@@ -966,20 +1527,19 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // replica - computed: false, optional: true, required: false
-  private _replica?: DynamodbTableReplica[] | cdktf.IResolvable; 
+  private _replica = new DynamodbTableReplicaList(this, "replica", true);
   public get replica() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('replica')));
+    return this._replica;
   }
-  public set replica(value: DynamodbTableReplica[] | cdktf.IResolvable) {
-    this._replica = value;
+  public putReplica(value: DynamodbTableReplica[] | cdktf.IResolvable) {
+    this._replica.internalValue = value;
   }
   public resetReplica() {
-    this._replica = undefined;
+    this._replica.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get replicaInput() {
-    return this._replica;
+    return this._replica.internalValue;
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
@@ -1038,6 +1598,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return {
       billing_mode: cdktf.stringToTerraform(this._billingMode),
       hash_key: cdktf.stringToTerraform(this._hashKey),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       range_key: cdktf.stringToTerraform(this._rangeKey),
       read_capacity: cdktf.numberToTerraform(this._readCapacity),
@@ -1050,11 +1611,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       write_capacity: cdktf.numberToTerraform(this._writeCapacity),
-      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform)(this._attribute),
-      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform)(this._globalSecondaryIndex),
-      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform)(this._localSecondaryIndex),
+      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform)(this._attribute.internalValue),
+      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform)(this._globalSecondaryIndex.internalValue),
+      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform)(this._localSecondaryIndex.internalValue),
       point_in_time_recovery: dynamodbTablePointInTimeRecoveryToTerraform(this._pointInTimeRecovery.internalValue),
-      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform)(this._replica),
+      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform)(this._replica.internalValue),
       server_side_encryption: dynamodbTableServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       timeouts: dynamodbTableTimeoutsToTerraform(this._timeouts.internalValue),
       ttl: dynamodbTableTtlToTerraform(this._ttl.internalValue),

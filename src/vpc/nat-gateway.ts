@@ -16,6 +16,13 @@ export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly connectivityType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway#id NatGateway#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway#subnet_id NatGateway#subnet_id}
   */
   readonly subnetId: string;
@@ -65,6 +72,7 @@ export class NatGateway extends cdktf.TerraformResource {
     });
     this._allocationId = config.allocationId;
     this._connectivityType = config.connectivityType;
+    this._id = config.id;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -107,8 +115,19 @@ export class NatGateway extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // network_interface_id - computed: true, optional: false, required: false
@@ -179,6 +198,7 @@ export class NatGateway extends cdktf.TerraformResource {
     return {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
       connectivity_type: cdktf.stringToTerraform(this._connectivityType),
+      id: cdktf.stringToTerraform(this._id),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

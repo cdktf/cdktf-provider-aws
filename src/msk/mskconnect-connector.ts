@@ -16,6 +16,13 @@ export interface MskconnectConnectorConfig extends cdktf.TerraformMetaArguments 
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector#id MskconnectConnector#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector#kafkaconnect_version MskconnectConnector#kafkaconnect_version}
   */
   readonly kafkaconnectVersion: string;
@@ -1518,6 +1525,83 @@ export function mskconnectConnectorPluginToTerraform(struct?: MskconnectConnecto
   }
 }
 
+export class MskconnectConnectorPluginOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MskconnectConnectorPlugin | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customPlugin?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customPlugin = this._customPlugin?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskconnectConnectorPlugin | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customPlugin.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customPlugin.internalValue = value.customPlugin;
+    }
+  }
+
+  // custom_plugin - computed: false, optional: false, required: true
+  private _customPlugin = new MskconnectConnectorPluginCustomPluginOutputReference(this, "custom_plugin");
+  public get customPlugin() {
+    return this._customPlugin;
+  }
+  public putCustomPlugin(value: MskconnectConnectorPluginCustomPlugin) {
+    this._customPlugin.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPluginInput() {
+    return this._customPlugin.internalValue;
+  }
+}
+
+export class MskconnectConnectorPluginList extends cdktf.ComplexList {
+  public internalValue? : MskconnectConnectorPlugin[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MskconnectConnectorPluginOutputReference {
+    return new MskconnectConnectorPluginOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface MskconnectConnectorTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector#create MskconnectConnector#create}
@@ -1547,6 +1631,7 @@ export function mskconnectConnectorTimeoutsToTerraform(struct?: MskconnectConnec
 
 export class MskconnectConnectorTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1556,7 +1641,10 @@ export class MskconnectConnectorTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MskconnectConnectorTimeouts | undefined {
+  public get internalValue(): MskconnectConnectorTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1574,15 +1662,21 @@ export class MskconnectConnectorTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskconnectConnectorTimeouts | undefined) {
+  public set internalValue(value: MskconnectConnectorTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -1760,6 +1854,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
     });
     this._connectorConfiguration = config.connectorConfiguration;
     this._description = config.description;
+    this._id = config.id;
     this._kafkaconnectVersion = config.kafkaconnectVersion;
     this._name = config.name;
     this._serviceExecutionRoleArn = config.serviceExecutionRoleArn;
@@ -1768,7 +1863,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
     this._kafkaClusterClientAuthentication.internalValue = config.kafkaClusterClientAuthentication;
     this._kafkaClusterEncryptionInTransit.internalValue = config.kafkaClusterEncryptionInTransit;
     this._logDelivery.internalValue = config.logDelivery;
-    this._plugin = config.plugin;
+    this._plugin.internalValue = config.plugin;
     this._timeouts.internalValue = config.timeouts;
     this._workerConfiguration.internalValue = config.workerConfiguration;
   }
@@ -1812,8 +1907,19 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kafkaconnect_version - computed: false, optional: false, required: true
@@ -1929,17 +2035,16 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // plugin - computed: false, optional: false, required: true
-  private _plugin?: MskconnectConnectorPlugin[] | cdktf.IResolvable; 
+  private _plugin = new MskconnectConnectorPluginList(this, "plugin", true);
   public get plugin() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('plugin')));
+    return this._plugin;
   }
-  public set plugin(value: MskconnectConnectorPlugin[] | cdktf.IResolvable) {
-    this._plugin = value;
+  public putPlugin(value: MskconnectConnectorPlugin[] | cdktf.IResolvable) {
+    this._plugin.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get pluginInput() {
-    return this._plugin;
+    return this._plugin.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1982,6 +2087,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
     return {
       connector_configuration: cdktf.hashMapper(cdktf.stringToTerraform)(this._connectorConfiguration),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       kafkaconnect_version: cdktf.stringToTerraform(this._kafkaconnectVersion),
       name: cdktf.stringToTerraform(this._name),
       service_execution_role_arn: cdktf.stringToTerraform(this._serviceExecutionRoleArn),
@@ -1990,7 +2096,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
       kafka_cluster_client_authentication: mskconnectConnectorKafkaClusterClientAuthenticationToTerraform(this._kafkaClusterClientAuthentication.internalValue),
       kafka_cluster_encryption_in_transit: mskconnectConnectorKafkaClusterEncryptionInTransitToTerraform(this._kafkaClusterEncryptionInTransit.internalValue),
       log_delivery: mskconnectConnectorLogDeliveryToTerraform(this._logDelivery.internalValue),
-      plugin: cdktf.listMapper(mskconnectConnectorPluginToTerraform)(this._plugin),
+      plugin: cdktf.listMapper(mskconnectConnectorPluginToTerraform)(this._plugin.internalValue),
       timeouts: mskconnectConnectorTimeoutsToTerraform(this._timeouts.internalValue),
       worker_configuration: mskconnectConnectorWorkerConfigurationToTerraform(this._workerConfiguration.internalValue),
     };

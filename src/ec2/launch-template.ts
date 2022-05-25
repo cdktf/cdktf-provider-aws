@@ -24,6 +24,13 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ebsOptimized?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#id LaunchTemplate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#image_id LaunchTemplate#image_id}
   */
   readonly imageId?: string;
@@ -482,6 +489,152 @@ export function launchTemplateBlockDeviceMappingsToTerraform(struct?: LaunchTemp
   }
 }
 
+export class LaunchTemplateBlockDeviceMappingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LaunchTemplateBlockDeviceMappings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._noDevice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noDevice = this._noDevice;
+    }
+    if (this._virtualName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualName = this._virtualName;
+    }
+    if (this._ebs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebs = this._ebs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateBlockDeviceMappings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceName = undefined;
+      this._noDevice = undefined;
+      this._virtualName = undefined;
+      this._ebs.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceName = value.deviceName;
+      this._noDevice = value.noDevice;
+      this._virtualName = value.virtualName;
+      this._ebs.internalValue = value.ebs;
+    }
+  }
+
+  // device_name - computed: false, optional: true, required: false
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // no_device - computed: false, optional: true, required: false
+  private _noDevice?: string; 
+  public get noDevice() {
+    return this.getStringAttribute('no_device');
+  }
+  public set noDevice(value: string) {
+    this._noDevice = value;
+  }
+  public resetNoDevice() {
+    this._noDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noDeviceInput() {
+    return this._noDevice;
+  }
+
+  // virtual_name - computed: false, optional: true, required: false
+  private _virtualName?: string; 
+  public get virtualName() {
+    return this.getStringAttribute('virtual_name');
+  }
+  public set virtualName(value: string) {
+    this._virtualName = value;
+  }
+  public resetVirtualName() {
+    this._virtualName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNameInput() {
+    return this._virtualName;
+  }
+
+  // ebs - computed: false, optional: true, required: false
+  private _ebs = new LaunchTemplateBlockDeviceMappingsEbsOutputReference(this, "ebs");
+  public get ebs() {
+    return this._ebs;
+  }
+  public putEbs(value: LaunchTemplateBlockDeviceMappingsEbs) {
+    this._ebs.internalValue = value;
+  }
+  public resetEbs() {
+    this._ebs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsInput() {
+    return this._ebs.internalValue;
+  }
+}
+
+export class LaunchTemplateBlockDeviceMappingsList extends cdktf.ComplexList {
+  public internalValue? : LaunchTemplateBlockDeviceMappings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LaunchTemplateBlockDeviceMappingsOutputReference {
+    return new LaunchTemplateBlockDeviceMappingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}
@@ -842,6 +995,83 @@ export function launchTemplateElasticGpuSpecificationsToTerraform(struct?: Launc
   }
 }
 
+export class LaunchTemplateElasticGpuSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LaunchTemplateElasticGpuSpecifications | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateElasticGpuSpecifications | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class LaunchTemplateElasticGpuSpecificationsList extends cdktf.ComplexList {
+  public internalValue? : LaunchTemplateElasticGpuSpecifications[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LaunchTemplateElasticGpuSpecificationsOutputReference {
+    return new LaunchTemplateElasticGpuSpecificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LaunchTemplateElasticInferenceAccelerator {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#type LaunchTemplate#type}
@@ -2752,6 +2982,83 @@ export function launchTemplateLicenseSpecificationToTerraform(struct?: LaunchTem
   }
 }
 
+export class LaunchTemplateLicenseSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LaunchTemplateLicenseSpecification | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._licenseConfigurationArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.licenseConfigurationArn = this._licenseConfigurationArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateLicenseSpecification | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._licenseConfigurationArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._licenseConfigurationArn = value.licenseConfigurationArn;
+    }
+  }
+
+  // license_configuration_arn - computed: false, optional: false, required: true
+  private _licenseConfigurationArn?: string; 
+  public get licenseConfigurationArn() {
+    return this.getStringAttribute('license_configuration_arn');
+  }
+  public set licenseConfigurationArn(value: string) {
+    this._licenseConfigurationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseConfigurationArnInput() {
+    return this._licenseConfigurationArn;
+  }
+}
+
+export class LaunchTemplateLicenseSpecificationList extends cdktf.ComplexList {
+  public internalValue? : LaunchTemplateLicenseSpecification[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LaunchTemplateLicenseSpecificationOutputReference {
+    return new LaunchTemplateLicenseSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LaunchTemplateMaintenanceOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#auto_recovery LaunchTemplate#auto_recovery}
@@ -3162,6 +3469,482 @@ export function launchTemplateNetworkInterfacesToTerraform(struct?: LaunchTempla
   }
 }
 
+export class LaunchTemplateNetworkInterfacesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LaunchTemplateNetworkInterfaces | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._associateCarrierIpAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.associateCarrierIpAddress = this._associateCarrierIpAddress;
+    }
+    if (this._associatePublicIpAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.associatePublicIpAddress = this._associatePublicIpAddress;
+    }
+    if (this._deleteOnTermination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteOnTermination = this._deleteOnTermination;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._deviceIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceIndex = this._deviceIndex;
+    }
+    if (this._interfaceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceType = this._interfaceType;
+    }
+    if (this._ipv4AddressCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4AddressCount = this._ipv4AddressCount;
+    }
+    if (this._ipv4Addresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4Addresses = this._ipv4Addresses;
+    }
+    if (this._ipv4PrefixCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4PrefixCount = this._ipv4PrefixCount;
+    }
+    if (this._ipv4Prefixes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4Prefixes = this._ipv4Prefixes;
+    }
+    if (this._ipv6AddressCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6AddressCount = this._ipv6AddressCount;
+    }
+    if (this._ipv6Addresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Addresses = this._ipv6Addresses;
+    }
+    if (this._ipv6PrefixCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6PrefixCount = this._ipv6PrefixCount;
+    }
+    if (this._ipv6Prefixes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Prefixes = this._ipv6Prefixes;
+    }
+    if (this._networkCardIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkCardIndex = this._networkCardIndex;
+    }
+    if (this._networkInterfaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkInterfaceId = this._networkInterfaceId;
+    }
+    if (this._privateIpAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateIpAddress = this._privateIpAddress;
+    }
+    if (this._securityGroups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroups = this._securityGroups;
+    }
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateNetworkInterfaces | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._associateCarrierIpAddress = undefined;
+      this._associatePublicIpAddress = undefined;
+      this._deleteOnTermination = undefined;
+      this._description = undefined;
+      this._deviceIndex = undefined;
+      this._interfaceType = undefined;
+      this._ipv4AddressCount = undefined;
+      this._ipv4Addresses = undefined;
+      this._ipv4PrefixCount = undefined;
+      this._ipv4Prefixes = undefined;
+      this._ipv6AddressCount = undefined;
+      this._ipv6Addresses = undefined;
+      this._ipv6PrefixCount = undefined;
+      this._ipv6Prefixes = undefined;
+      this._networkCardIndex = undefined;
+      this._networkInterfaceId = undefined;
+      this._privateIpAddress = undefined;
+      this._securityGroups = undefined;
+      this._subnetId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._associateCarrierIpAddress = value.associateCarrierIpAddress;
+      this._associatePublicIpAddress = value.associatePublicIpAddress;
+      this._deleteOnTermination = value.deleteOnTermination;
+      this._description = value.description;
+      this._deviceIndex = value.deviceIndex;
+      this._interfaceType = value.interfaceType;
+      this._ipv4AddressCount = value.ipv4AddressCount;
+      this._ipv4Addresses = value.ipv4Addresses;
+      this._ipv4PrefixCount = value.ipv4PrefixCount;
+      this._ipv4Prefixes = value.ipv4Prefixes;
+      this._ipv6AddressCount = value.ipv6AddressCount;
+      this._ipv6Addresses = value.ipv6Addresses;
+      this._ipv6PrefixCount = value.ipv6PrefixCount;
+      this._ipv6Prefixes = value.ipv6Prefixes;
+      this._networkCardIndex = value.networkCardIndex;
+      this._networkInterfaceId = value.networkInterfaceId;
+      this._privateIpAddress = value.privateIpAddress;
+      this._securityGroups = value.securityGroups;
+      this._subnetId = value.subnetId;
+    }
+  }
+
+  // associate_carrier_ip_address - computed: false, optional: true, required: false
+  private _associateCarrierIpAddress?: string; 
+  public get associateCarrierIpAddress() {
+    return this.getStringAttribute('associate_carrier_ip_address');
+  }
+  public set associateCarrierIpAddress(value: string) {
+    this._associateCarrierIpAddress = value;
+  }
+  public resetAssociateCarrierIpAddress() {
+    this._associateCarrierIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get associateCarrierIpAddressInput() {
+    return this._associateCarrierIpAddress;
+  }
+
+  // associate_public_ip_address - computed: false, optional: true, required: false
+  private _associatePublicIpAddress?: string; 
+  public get associatePublicIpAddress() {
+    return this.getStringAttribute('associate_public_ip_address');
+  }
+  public set associatePublicIpAddress(value: string) {
+    this._associatePublicIpAddress = value;
+  }
+  public resetAssociatePublicIpAddress() {
+    this._associatePublicIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get associatePublicIpAddressInput() {
+    return this._associatePublicIpAddress;
+  }
+
+  // delete_on_termination - computed: false, optional: true, required: false
+  private _deleteOnTermination?: string; 
+  public get deleteOnTermination() {
+    return this.getStringAttribute('delete_on_termination');
+  }
+  public set deleteOnTermination(value: string) {
+    this._deleteOnTermination = value;
+  }
+  public resetDeleteOnTermination() {
+    this._deleteOnTermination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteOnTerminationInput() {
+    return this._deleteOnTermination;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // device_index - computed: false, optional: true, required: false
+  private _deviceIndex?: number; 
+  public get deviceIndex() {
+    return this.getNumberAttribute('device_index');
+  }
+  public set deviceIndex(value: number) {
+    this._deviceIndex = value;
+  }
+  public resetDeviceIndex() {
+    this._deviceIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceIndexInput() {
+    return this._deviceIndex;
+  }
+
+  // interface_type - computed: false, optional: true, required: false
+  private _interfaceType?: string; 
+  public get interfaceType() {
+    return this.getStringAttribute('interface_type');
+  }
+  public set interfaceType(value: string) {
+    this._interfaceType = value;
+  }
+  public resetInterfaceType() {
+    this._interfaceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceTypeInput() {
+    return this._interfaceType;
+  }
+
+  // ipv4_address_count - computed: false, optional: true, required: false
+  private _ipv4AddressCount?: number; 
+  public get ipv4AddressCount() {
+    return this.getNumberAttribute('ipv4_address_count');
+  }
+  public set ipv4AddressCount(value: number) {
+    this._ipv4AddressCount = value;
+  }
+  public resetIpv4AddressCount() {
+    this._ipv4AddressCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4AddressCountInput() {
+    return this._ipv4AddressCount;
+  }
+
+  // ipv4_addresses - computed: false, optional: true, required: false
+  private _ipv4Addresses?: string[]; 
+  public get ipv4Addresses() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_addresses'));
+  }
+  public set ipv4Addresses(value: string[]) {
+    this._ipv4Addresses = value;
+  }
+  public resetIpv4Addresses() {
+    this._ipv4Addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4AddressesInput() {
+    return this._ipv4Addresses;
+  }
+
+  // ipv4_prefix_count - computed: false, optional: true, required: false
+  private _ipv4PrefixCount?: number; 
+  public get ipv4PrefixCount() {
+    return this.getNumberAttribute('ipv4_prefix_count');
+  }
+  public set ipv4PrefixCount(value: number) {
+    this._ipv4PrefixCount = value;
+  }
+  public resetIpv4PrefixCount() {
+    this._ipv4PrefixCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4PrefixCountInput() {
+    return this._ipv4PrefixCount;
+  }
+
+  // ipv4_prefixes - computed: false, optional: true, required: false
+  private _ipv4Prefixes?: string[]; 
+  public get ipv4Prefixes() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_prefixes'));
+  }
+  public set ipv4Prefixes(value: string[]) {
+    this._ipv4Prefixes = value;
+  }
+  public resetIpv4Prefixes() {
+    this._ipv4Prefixes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4PrefixesInput() {
+    return this._ipv4Prefixes;
+  }
+
+  // ipv6_address_count - computed: false, optional: true, required: false
+  private _ipv6AddressCount?: number; 
+  public get ipv6AddressCount() {
+    return this.getNumberAttribute('ipv6_address_count');
+  }
+  public set ipv6AddressCount(value: number) {
+    this._ipv6AddressCount = value;
+  }
+  public resetIpv6AddressCount() {
+    this._ipv6AddressCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressCountInput() {
+    return this._ipv6AddressCount;
+  }
+
+  // ipv6_addresses - computed: false, optional: true, required: false
+  private _ipv6Addresses?: string[]; 
+  public get ipv6Addresses() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_addresses'));
+  }
+  public set ipv6Addresses(value: string[]) {
+    this._ipv6Addresses = value;
+  }
+  public resetIpv6Addresses() {
+    this._ipv6Addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressesInput() {
+    return this._ipv6Addresses;
+  }
+
+  // ipv6_prefix_count - computed: false, optional: true, required: false
+  private _ipv6PrefixCount?: number; 
+  public get ipv6PrefixCount() {
+    return this.getNumberAttribute('ipv6_prefix_count');
+  }
+  public set ipv6PrefixCount(value: number) {
+    this._ipv6PrefixCount = value;
+  }
+  public resetIpv6PrefixCount() {
+    this._ipv6PrefixCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6PrefixCountInput() {
+    return this._ipv6PrefixCount;
+  }
+
+  // ipv6_prefixes - computed: false, optional: true, required: false
+  private _ipv6Prefixes?: string[]; 
+  public get ipv6Prefixes() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_prefixes'));
+  }
+  public set ipv6Prefixes(value: string[]) {
+    this._ipv6Prefixes = value;
+  }
+  public resetIpv6Prefixes() {
+    this._ipv6Prefixes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6PrefixesInput() {
+    return this._ipv6Prefixes;
+  }
+
+  // network_card_index - computed: false, optional: true, required: false
+  private _networkCardIndex?: number; 
+  public get networkCardIndex() {
+    return this.getNumberAttribute('network_card_index');
+  }
+  public set networkCardIndex(value: number) {
+    this._networkCardIndex = value;
+  }
+  public resetNetworkCardIndex() {
+    this._networkCardIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkCardIndexInput() {
+    return this._networkCardIndex;
+  }
+
+  // network_interface_id - computed: false, optional: true, required: false
+  private _networkInterfaceId?: string; 
+  public get networkInterfaceId() {
+    return this.getStringAttribute('network_interface_id');
+  }
+  public set networkInterfaceId(value: string) {
+    this._networkInterfaceId = value;
+  }
+  public resetNetworkInterfaceId() {
+    this._networkInterfaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId;
+  }
+
+  // private_ip_address - computed: false, optional: true, required: false
+  private _privateIpAddress?: string; 
+  public get privateIpAddress() {
+    return this.getStringAttribute('private_ip_address');
+  }
+  public set privateIpAddress(value: string) {
+    this._privateIpAddress = value;
+  }
+  public resetPrivateIpAddress() {
+    this._privateIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpAddressInput() {
+    return this._privateIpAddress;
+  }
+
+  // security_groups - computed: false, optional: true, required: false
+  private _securityGroups?: string[]; 
+  public get securityGroups() {
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+  }
+  public set securityGroups(value: string[]) {
+    this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups;
+  }
+
+  // subnet_id - computed: false, optional: true, required: false
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+}
+
+export class LaunchTemplateNetworkInterfacesList extends cdktf.ComplexList {
+  public internalValue? : LaunchTemplateNetworkInterfaces[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LaunchTemplateNetworkInterfacesOutputReference {
+    return new LaunchTemplateNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LaunchTemplatePlacement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#affinity LaunchTemplate#affinity}
@@ -3557,6 +4340,108 @@ export function launchTemplateTagSpecificationsToTerraform(struct?: LaunchTempla
   }
 }
 
+export class LaunchTemplateTagSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LaunchTemplateTagSpecifications | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceType = this._resourceType;
+    }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateTagSpecifications | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._resourceType = undefined;
+      this._tags = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._resourceType = value.resourceType;
+      this._tags = value.tags;
+    }
+  }
+
+  // resource_type - computed: false, optional: true, required: false
+  private _resourceType?: string; 
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  public resetResourceType() {
+    this._resourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+}
+
+export class LaunchTemplateTagSpecificationsList extends cdktf.ComplexList {
+  public internalValue? : LaunchTemplateTagSpecifications[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LaunchTemplateTagSpecificationsOutputReference {
+    return new LaunchTemplateTagSpecificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/launch_template aws_launch_template}
@@ -3596,6 +4481,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._description = config.description;
     this._disableApiTermination = config.disableApiTermination;
     this._ebsOptimized = config.ebsOptimized;
+    this._id = config.id;
     this._imageId = config.imageId;
     this._instanceInitiatedShutdownBehavior = config.instanceInitiatedShutdownBehavior;
     this._instanceType = config.instanceType;
@@ -3610,25 +4496,25 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._updateDefaultVersion = config.updateDefaultVersion;
     this._userData = config.userData;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
-    this._blockDeviceMappings = config.blockDeviceMappings;
+    this._blockDeviceMappings.internalValue = config.blockDeviceMappings;
     this._capacityReservationSpecification.internalValue = config.capacityReservationSpecification;
     this._cpuOptions.internalValue = config.cpuOptions;
     this._creditSpecification.internalValue = config.creditSpecification;
-    this._elasticGpuSpecifications = config.elasticGpuSpecifications;
+    this._elasticGpuSpecifications.internalValue = config.elasticGpuSpecifications;
     this._elasticInferenceAccelerator.internalValue = config.elasticInferenceAccelerator;
     this._enclaveOptions.internalValue = config.enclaveOptions;
     this._hibernationOptions.internalValue = config.hibernationOptions;
     this._iamInstanceProfile.internalValue = config.iamInstanceProfile;
     this._instanceMarketOptions.internalValue = config.instanceMarketOptions;
     this._instanceRequirements.internalValue = config.instanceRequirements;
-    this._licenseSpecification = config.licenseSpecification;
+    this._licenseSpecification.internalValue = config.licenseSpecification;
     this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
     this._monitoring.internalValue = config.monitoring;
-    this._networkInterfaces = config.networkInterfaces;
+    this._networkInterfaces.internalValue = config.networkInterfaces;
     this._placement.internalValue = config.placement;
     this._privateDnsNameOptions.internalValue = config.privateDnsNameOptions;
-    this._tagSpecifications = config.tagSpecifications;
+    this._tagSpecifications.internalValue = config.tagSpecifications;
   }
 
   // ==========
@@ -3705,8 +4591,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_id - computed: false, optional: true, required: false
@@ -3939,20 +4836,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // block_device_mappings - computed: false, optional: true, required: false
-  private _blockDeviceMappings?: LaunchTemplateBlockDeviceMappings[] | cdktf.IResolvable; 
+  private _blockDeviceMappings = new LaunchTemplateBlockDeviceMappingsList(this, "block_device_mappings", false);
   public get blockDeviceMappings() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('block_device_mappings');
+    return this._blockDeviceMappings;
   }
-  public set blockDeviceMappings(value: LaunchTemplateBlockDeviceMappings[] | cdktf.IResolvable) {
-    this._blockDeviceMappings = value;
+  public putBlockDeviceMappings(value: LaunchTemplateBlockDeviceMappings[] | cdktf.IResolvable) {
+    this._blockDeviceMappings.internalValue = value;
   }
   public resetBlockDeviceMappings() {
-    this._blockDeviceMappings = undefined;
+    this._blockDeviceMappings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get blockDeviceMappingsInput() {
-    return this._blockDeviceMappings;
+    return this._blockDeviceMappings.internalValue;
   }
 
   // capacity_reservation_specification - computed: false, optional: true, required: false
@@ -4004,20 +4900,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // elastic_gpu_specifications - computed: false, optional: true, required: false
-  private _elasticGpuSpecifications?: LaunchTemplateElasticGpuSpecifications[] | cdktf.IResolvable; 
+  private _elasticGpuSpecifications = new LaunchTemplateElasticGpuSpecificationsList(this, "elastic_gpu_specifications", false);
   public get elasticGpuSpecifications() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('elastic_gpu_specifications');
+    return this._elasticGpuSpecifications;
   }
-  public set elasticGpuSpecifications(value: LaunchTemplateElasticGpuSpecifications[] | cdktf.IResolvable) {
-    this._elasticGpuSpecifications = value;
+  public putElasticGpuSpecifications(value: LaunchTemplateElasticGpuSpecifications[] | cdktf.IResolvable) {
+    this._elasticGpuSpecifications.internalValue = value;
   }
   public resetElasticGpuSpecifications() {
-    this._elasticGpuSpecifications = undefined;
+    this._elasticGpuSpecifications.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get elasticGpuSpecificationsInput() {
-    return this._elasticGpuSpecifications;
+    return this._elasticGpuSpecifications.internalValue;
   }
 
   // elastic_inference_accelerator - computed: false, optional: true, required: false
@@ -4117,20 +5012,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // license_specification - computed: false, optional: true, required: false
-  private _licenseSpecification?: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable; 
+  private _licenseSpecification = new LaunchTemplateLicenseSpecificationList(this, "license_specification", true);
   public get licenseSpecification() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('license_specification')));
+    return this._licenseSpecification;
   }
-  public set licenseSpecification(value: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable) {
-    this._licenseSpecification = value;
+  public putLicenseSpecification(value: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable) {
+    this._licenseSpecification.internalValue = value;
   }
   public resetLicenseSpecification() {
-    this._licenseSpecification = undefined;
+    this._licenseSpecification.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get licenseSpecificationInput() {
-    return this._licenseSpecification;
+    return this._licenseSpecification.internalValue;
   }
 
   // maintenance_options - computed: false, optional: true, required: false
@@ -4182,20 +5076,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // network_interfaces - computed: false, optional: true, required: false
-  private _networkInterfaces?: LaunchTemplateNetworkInterfaces[] | cdktf.IResolvable; 
+  private _networkInterfaces = new LaunchTemplateNetworkInterfacesList(this, "network_interfaces", false);
   public get networkInterfaces() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network_interfaces');
+    return this._networkInterfaces;
   }
-  public set networkInterfaces(value: LaunchTemplateNetworkInterfaces[] | cdktf.IResolvable) {
-    this._networkInterfaces = value;
+  public putNetworkInterfaces(value: LaunchTemplateNetworkInterfaces[] | cdktf.IResolvable) {
+    this._networkInterfaces.internalValue = value;
   }
   public resetNetworkInterfaces() {
-    this._networkInterfaces = undefined;
+    this._networkInterfaces.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networkInterfacesInput() {
-    return this._networkInterfaces;
+    return this._networkInterfaces.internalValue;
   }
 
   // placement - computed: false, optional: true, required: false
@@ -4231,20 +5124,19 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // tag_specifications - computed: false, optional: true, required: false
-  private _tagSpecifications?: LaunchTemplateTagSpecifications[] | cdktf.IResolvable; 
+  private _tagSpecifications = new LaunchTemplateTagSpecificationsList(this, "tag_specifications", false);
   public get tagSpecifications() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_specifications');
+    return this._tagSpecifications;
   }
-  public set tagSpecifications(value: LaunchTemplateTagSpecifications[] | cdktf.IResolvable) {
-    this._tagSpecifications = value;
+  public putTagSpecifications(value: LaunchTemplateTagSpecifications[] | cdktf.IResolvable) {
+    this._tagSpecifications.internalValue = value;
   }
   public resetTagSpecifications() {
-    this._tagSpecifications = undefined;
+    this._tagSpecifications.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagSpecificationsInput() {
-    return this._tagSpecifications;
+    return this._tagSpecifications.internalValue;
   }
 
   // =========
@@ -4257,6 +5149,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       disable_api_termination: cdktf.booleanToTerraform(this._disableApiTermination),
       ebs_optimized: cdktf.stringToTerraform(this._ebsOptimized),
+      id: cdktf.stringToTerraform(this._id),
       image_id: cdktf.stringToTerraform(this._imageId),
       instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),
       instance_type: cdktf.stringToTerraform(this._instanceType),
@@ -4271,25 +5164,25 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       update_default_version: cdktf.booleanToTerraform(this._updateDefaultVersion),
       user_data: cdktf.stringToTerraform(this._userData),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
-      block_device_mappings: cdktf.listMapper(launchTemplateBlockDeviceMappingsToTerraform)(this._blockDeviceMappings),
+      block_device_mappings: cdktf.listMapper(launchTemplateBlockDeviceMappingsToTerraform)(this._blockDeviceMappings.internalValue),
       capacity_reservation_specification: launchTemplateCapacityReservationSpecificationToTerraform(this._capacityReservationSpecification.internalValue),
       cpu_options: launchTemplateCpuOptionsToTerraform(this._cpuOptions.internalValue),
       credit_specification: launchTemplateCreditSpecificationToTerraform(this._creditSpecification.internalValue),
-      elastic_gpu_specifications: cdktf.listMapper(launchTemplateElasticGpuSpecificationsToTerraform)(this._elasticGpuSpecifications),
+      elastic_gpu_specifications: cdktf.listMapper(launchTemplateElasticGpuSpecificationsToTerraform)(this._elasticGpuSpecifications.internalValue),
       elastic_inference_accelerator: launchTemplateElasticInferenceAcceleratorToTerraform(this._elasticInferenceAccelerator.internalValue),
       enclave_options: launchTemplateEnclaveOptionsToTerraform(this._enclaveOptions.internalValue),
       hibernation_options: launchTemplateHibernationOptionsToTerraform(this._hibernationOptions.internalValue),
       iam_instance_profile: launchTemplateIamInstanceProfileToTerraform(this._iamInstanceProfile.internalValue),
       instance_market_options: launchTemplateInstanceMarketOptionsToTerraform(this._instanceMarketOptions.internalValue),
       instance_requirements: launchTemplateInstanceRequirementsToTerraform(this._instanceRequirements.internalValue),
-      license_specification: cdktf.listMapper(launchTemplateLicenseSpecificationToTerraform)(this._licenseSpecification),
+      license_specification: cdktf.listMapper(launchTemplateLicenseSpecificationToTerraform)(this._licenseSpecification.internalValue),
       maintenance_options: launchTemplateMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: launchTemplateMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       monitoring: launchTemplateMonitoringToTerraform(this._monitoring.internalValue),
-      network_interfaces: cdktf.listMapper(launchTemplateNetworkInterfacesToTerraform)(this._networkInterfaces),
+      network_interfaces: cdktf.listMapper(launchTemplateNetworkInterfacesToTerraform)(this._networkInterfaces.internalValue),
       placement: launchTemplatePlacementToTerraform(this._placement.internalValue),
       private_dns_name_options: launchTemplatePrivateDnsNameOptionsToTerraform(this._privateDnsNameOptions.internalValue),
-      tag_specifications: cdktf.listMapper(launchTemplateTagSpecificationsToTerraform)(this._tagSpecifications),
+      tag_specifications: cdktf.listMapper(launchTemplateTagSpecificationsToTerraform)(this._tagSpecifications.internalValue),
     };
   }
 }

@@ -52,6 +52,13 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamServiceRoleArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#id AmplifyApp#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#name AmplifyApp#name}
   */
   readonly name: string;
@@ -507,6 +514,146 @@ export function amplifyAppCustomRuleToTerraform(struct?: AmplifyAppCustomRule | 
   }
 }
 
+export class AmplifyAppCustomRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AmplifyAppCustomRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._condition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AmplifyAppCustomRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._condition = undefined;
+      this._source = undefined;
+      this._status = undefined;
+      this._target = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._condition = value.condition;
+      this._source = value.source;
+      this._status = value.status;
+      this._target = value.target;
+    }
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition?: string; 
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+  public set condition(value: string) {
+    this._condition = value;
+  }
+  public resetCondition() {
+    this._condition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // status - computed: false, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+}
+
+export class AmplifyAppCustomRuleList extends cdktf.ComplexList {
+  public internalValue? : AmplifyAppCustomRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AmplifyAppCustomRuleOutputReference {
+    return new AmplifyAppCustomRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_app aws_amplify_app}
@@ -553,6 +700,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
     this._enableBranchAutoDeletion = config.enableBranchAutoDeletion;
     this._environmentVariables = config.environmentVariables;
     this._iamServiceRoleArn = config.iamServiceRoleArn;
+    this._id = config.id;
     this._name = config.name;
     this._oauthToken = config.oauthToken;
     this._platform = config.platform;
@@ -560,7 +708,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._autoBranchCreationConfig.internalValue = config.autoBranchCreationConfig;
-    this._customRule = config.customRule;
+    this._customRule.internalValue = config.customRule;
   }
 
   // ==========
@@ -754,8 +902,19 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -874,20 +1033,19 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // custom_rule - computed: false, optional: true, required: false
-  private _customRule?: AmplifyAppCustomRule[] | cdktf.IResolvable; 
+  private _customRule = new AmplifyAppCustomRuleList(this, "custom_rule", false);
   public get customRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_rule');
+    return this._customRule;
   }
-  public set customRule(value: AmplifyAppCustomRule[] | cdktf.IResolvable) {
-    this._customRule = value;
+  public putCustomRule(value: AmplifyAppCustomRule[] | cdktf.IResolvable) {
+    this._customRule.internalValue = value;
   }
   public resetCustomRule() {
-    this._customRule = undefined;
+    this._customRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customRuleInput() {
-    return this._customRule;
+    return this._customRule.internalValue;
   }
 
   // =========
@@ -907,6 +1065,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
       enable_branch_auto_deletion: cdktf.booleanToTerraform(this._enableBranchAutoDeletion),
       environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._environmentVariables),
       iam_service_role_arn: cdktf.stringToTerraform(this._iamServiceRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       platform: cdktf.stringToTerraform(this._platform),
@@ -914,7 +1073,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       auto_branch_creation_config: amplifyAppAutoBranchCreationConfigToTerraform(this._autoBranchCreationConfig.internalValue),
-      custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform)(this._customRule),
+      custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform)(this._customRule.internalValue),
     };
   }
 }

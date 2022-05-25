@@ -16,6 +16,13 @@ export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArgume
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service#id ServiceDiscoveryService#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service#name ServiceDiscoveryService#name}
   */
   readonly name: string;
@@ -72,6 +79,102 @@ export function serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: S
   }
 }
 
+export class ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceDiscoveryServiceDnsConfigDnsRecords | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ttl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttl = this._ttl;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceDiscoveryServiceDnsConfigDnsRecords | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ttl = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ttl = value.ttl;
+      this._type = value.type;
+    }
+  }
+
+  // ttl - computed: false, optional: false, required: true
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ServiceDiscoveryServiceDnsConfigDnsRecordsList extends cdktf.ComplexList {
+  public internalValue? : ServiceDiscoveryServiceDnsConfigDnsRecords[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference {
+    return new ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceDiscoveryServiceDnsConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}
@@ -123,9 +226,9 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.routingPolicy = this._routingPolicy;
     }
-    if (this._dnsRecords !== undefined) {
+    if (this._dnsRecords?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dnsRecords = this._dnsRecords;
+      internalValueResult.dnsRecords = this._dnsRecords?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -135,13 +238,13 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
       this.isEmptyObject = false;
       this._namespaceId = undefined;
       this._routingPolicy = undefined;
-      this._dnsRecords = undefined;
+      this._dnsRecords.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._namespaceId = value.namespaceId;
       this._routingPolicy = value.routingPolicy;
-      this._dnsRecords = value.dnsRecords;
+      this._dnsRecords.internalValue = value.dnsRecords;
     }
   }
 
@@ -175,17 +278,16 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
   }
 
   // dns_records - computed: false, optional: false, required: true
-  private _dnsRecords?: ServiceDiscoveryServiceDnsConfigDnsRecords[] | cdktf.IResolvable; 
+  private _dnsRecords = new ServiceDiscoveryServiceDnsConfigDnsRecordsList(this, "dns_records", false);
   public get dnsRecords() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dns_records');
+    return this._dnsRecords;
   }
-  public set dnsRecords(value: ServiceDiscoveryServiceDnsConfigDnsRecords[] | cdktf.IResolvable) {
-    this._dnsRecords = value;
+  public putDnsRecords(value: ServiceDiscoveryServiceDnsConfigDnsRecords[] | cdktf.IResolvable) {
+    this._dnsRecords.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dnsRecordsInput() {
-    return this._dnsRecords;
+    return this._dnsRecords.internalValue;
   }
 }
 export interface ServiceDiscoveryServiceHealthCheckConfig {
@@ -409,6 +511,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._forceDestroy = config.forceDestroy;
+    this._id = config.id;
     this._name = config.name;
     this._namespaceId = config.namespaceId;
     this._tags = config.tags;
@@ -460,8 +563,19 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -581,6 +695,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace_id: cdktf.stringToTerraform(this._namespaceId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

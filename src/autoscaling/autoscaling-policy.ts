@@ -28,6 +28,13 @@ export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly estimatedInstanceWarmup?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#id AutoscalingPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_aggregation_type AutoscalingPolicy#metric_aggregation_type}
   */
   readonly metricAggregationType?: string;
@@ -88,6 +95,102 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}
@@ -139,9 +242,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._dimensions !== undefined) {
+    if (this._dimensions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimensions = this._dimensions;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -151,13 +254,13 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
-      this._dimensions = undefined;
+      this._dimensions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
-      this._dimensions = value.dimensions;
+      this._dimensions.internalValue = value.dimensions;
     }
   }
 
@@ -188,20 +291,19 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable; 
+  private _dimensions = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(this, "dimensions", true);
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dimensions')));
+    return this._dimensions;
   }
-  public set dimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
-    this._dimensions = value;
+  public putDimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
+    this._dimensions.internalValue = value;
   }
   public resetDimensions() {
-    this._dimensions = undefined;
+    this._dimensions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionsInput() {
-    return this._dimensions;
+    return this._dimensions.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat {
@@ -326,6 +428,9 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   readonly expression?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#id AutoscalingPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -358,6 +463,171 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._returnData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnData = this._returnData;
+    }
+    if (this._metricStat?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricStat = this._metricStat?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._id = undefined;
+      this._label = undefined;
+      this._returnData = undefined;
+      this._metricStat.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._id = value.id;
+      this._label = value.label;
+      this._returnData = value.returnData;
+      this._metricStat.internalValue = value.metricStat;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // return_data - computed: false, optional: true, required: false
+  private _returnData?: boolean | cdktf.IResolvable; 
+  public get returnData() {
+    return this.getBooleanAttribute('return_data');
+  }
+  public set returnData(value: boolean | cdktf.IResolvable) {
+    this._returnData = value;
+  }
+  public resetReturnData() {
+    this._returnData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnDataInput() {
+    return this._returnData;
+  }
+
+  // metric_stat - computed: false, optional: true, required: false
+  private _metricStat = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatOutputReference(this, "metric_stat");
+  public get metricStat() {
+    return this._metricStat;
+  }
+  public putMetricStat(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat) {
+    this._metricStat.internalValue = value;
+  }
+  public resetMetricStat() {
+    this._metricStat.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricStatInput() {
+    return this._metricStat.internalValue;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification {
   /**
   * metric_data_queries block
@@ -391,9 +661,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricDataQueries !== undefined) {
+    if (this._metricDataQueries?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metricDataQueries = this._metricDataQueries;
+      internalValueResult.metricDataQueries = this._metricDataQueries?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -401,26 +671,25 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._metricDataQueries = undefined;
+      this._metricDataQueries.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._metricDataQueries = value.metricDataQueries;
+      this._metricDataQueries.internalValue = value.metricDataQueries;
     }
   }
 
   // metric_data_queries - computed: false, optional: false, required: true
-  private _metricDataQueries?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries[] | cdktf.IResolvable; 
+  private _metricDataQueries = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesList(this, "metric_data_queries", false);
   public get metricDataQueries() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_data_queries');
+    return this._metricDataQueries;
   }
-  public set metricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
-    this._metricDataQueries = value;
+  public putMetricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
+    this._metricDataQueries.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get metricDataQueriesInput() {
-    return this._metricDataQueries;
+    return this._metricDataQueries.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions {
@@ -445,6 +714,102 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}
@@ -496,9 +861,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._dimensions !== undefined) {
+    if (this._dimensions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimensions = this._dimensions;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -508,13 +873,13 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
-      this._dimensions = undefined;
+      this._dimensions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
-      this._dimensions = value.dimensions;
+      this._dimensions.internalValue = value.dimensions;
     }
   }
 
@@ -545,20 +910,19 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable; 
+  private _dimensions = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(this, "dimensions", true);
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dimensions')));
+    return this._dimensions;
   }
-  public set dimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
-    this._dimensions = value;
+  public putDimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
+    this._dimensions.internalValue = value;
   }
   public resetDimensions() {
-    this._dimensions = undefined;
+    this._dimensions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionsInput() {
-    return this._dimensions;
+    return this._dimensions.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat {
@@ -683,6 +1047,9 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   readonly expression?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#id AutoscalingPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -715,6 +1082,171 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._returnData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnData = this._returnData;
+    }
+    if (this._metricStat?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricStat = this._metricStat?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._id = undefined;
+      this._label = undefined;
+      this._returnData = undefined;
+      this._metricStat.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._id = value.id;
+      this._label = value.label;
+      this._returnData = value.returnData;
+      this._metricStat.internalValue = value.metricStat;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // return_data - computed: false, optional: true, required: false
+  private _returnData?: boolean | cdktf.IResolvable; 
+  public get returnData() {
+    return this.getBooleanAttribute('return_data');
+  }
+  public set returnData(value: boolean | cdktf.IResolvable) {
+    this._returnData = value;
+  }
+  public resetReturnData() {
+    this._returnData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnDataInput() {
+    return this._returnData;
+  }
+
+  // metric_stat - computed: false, optional: true, required: false
+  private _metricStat = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatOutputReference(this, "metric_stat");
+  public get metricStat() {
+    return this._metricStat;
+  }
+  public putMetricStat(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat) {
+    this._metricStat.internalValue = value;
+  }
+  public resetMetricStat() {
+    this._metricStat.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricStatInput() {
+    return this._metricStat.internalValue;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification {
   /**
   * metric_data_queries block
@@ -748,9 +1280,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricDataQueries !== undefined) {
+    if (this._metricDataQueries?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metricDataQueries = this._metricDataQueries;
+      internalValueResult.metricDataQueries = this._metricDataQueries?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -758,26 +1290,25 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._metricDataQueries = undefined;
+      this._metricDataQueries.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._metricDataQueries = value.metricDataQueries;
+      this._metricDataQueries.internalValue = value.metricDataQueries;
     }
   }
 
   // metric_data_queries - computed: false, optional: false, required: true
-  private _metricDataQueries?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries[] | cdktf.IResolvable; 
+  private _metricDataQueries = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesList(this, "metric_data_queries", false);
   public get metricDataQueries() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_data_queries');
+    return this._metricDataQueries;
   }
-  public set metricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
-    this._metricDataQueries = value;
+  public putMetricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
+    this._metricDataQueries.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get metricDataQueriesInput() {
-    return this._metricDataQueries;
+    return this._metricDataQueries.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions {
@@ -802,6 +1333,102 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}
@@ -853,9 +1480,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._dimensions !== undefined) {
+    if (this._dimensions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimensions = this._dimensions;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -865,13 +1492,13 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
       this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
-      this._dimensions = undefined;
+      this._dimensions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
-      this._dimensions = value.dimensions;
+      this._dimensions.internalValue = value.dimensions;
     }
   }
 
@@ -902,20 +1529,19 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable; 
+  private _dimensions = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(this, "dimensions", true);
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dimensions')));
+    return this._dimensions;
   }
-  public set dimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
-    this._dimensions = value;
+  public putDimensions(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions[] | cdktf.IResolvable) {
+    this._dimensions.internalValue = value;
   }
   public resetDimensions() {
-    this._dimensions = undefined;
+    this._dimensions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionsInput() {
-    return this._dimensions;
+    return this._dimensions.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat {
@@ -1040,6 +1666,9 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   readonly expression?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#id AutoscalingPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -1072,6 +1701,171 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   }
 }
 
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._returnData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnData = this._returnData;
+    }
+    if (this._metricStat?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricStat = this._metricStat?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._id = undefined;
+      this._label = undefined;
+      this._returnData = undefined;
+      this._metricStat.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._id = value.id;
+      this._label = value.label;
+      this._returnData = value.returnData;
+      this._metricStat.internalValue = value.metricStat;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // return_data - computed: false, optional: true, required: false
+  private _returnData?: boolean | cdktf.IResolvable; 
+  public get returnData() {
+    return this.getBooleanAttribute('return_data');
+  }
+  public set returnData(value: boolean | cdktf.IResolvable) {
+    this._returnData = value;
+  }
+  public resetReturnData() {
+    this._returnData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnDataInput() {
+    return this._returnData;
+  }
+
+  // metric_stat - computed: false, optional: true, required: false
+  private _metricStat = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatOutputReference(this, "metric_stat");
+  public get metricStat() {
+    return this._metricStat;
+  }
+  public putMetricStat(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat) {
+    this._metricStat.internalValue = value;
+  }
+  public resetMetricStat() {
+    this._metricStat.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricStatInput() {
+    return this._metricStat.internalValue;
+  }
+}
+
+export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference {
+    return new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification {
   /**
   * metric_data_queries block
@@ -1105,9 +1899,9 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricDataQueries !== undefined) {
+    if (this._metricDataQueries?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metricDataQueries = this._metricDataQueries;
+      internalValueResult.metricDataQueries = this._metricDataQueries?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1115,26 +1909,25 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationC
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._metricDataQueries = undefined;
+      this._metricDataQueries.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._metricDataQueries = value.metricDataQueries;
+      this._metricDataQueries.internalValue = value.metricDataQueries;
     }
   }
 
   // metric_data_queries - computed: false, optional: false, required: true
-  private _metricDataQueries?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries[] | cdktf.IResolvable; 
+  private _metricDataQueries = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesList(this, "metric_data_queries", false);
   public get metricDataQueries() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_data_queries');
+    return this._metricDataQueries;
   }
-  public set metricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
-    this._metricDataQueries = value;
+  public putMetricDataQueries(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries[] | cdktf.IResolvable) {
+    this._metricDataQueries.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get metricDataQueriesInput() {
-    return this._metricDataQueries;
+    return this._metricDataQueries.internalValue;
   }
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification {
@@ -1830,6 +2623,127 @@ export function autoscalingPolicyStepAdjustmentToTerraform(struct?: AutoscalingP
   }
 }
 
+export class AutoscalingPolicyStepAdjustmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyStepAdjustment | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricIntervalLowerBound !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricIntervalLowerBound = this._metricIntervalLowerBound;
+    }
+    if (this._metricIntervalUpperBound !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricIntervalUpperBound = this._metricIntervalUpperBound;
+    }
+    if (this._scalingAdjustment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scalingAdjustment = this._scalingAdjustment;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyStepAdjustment | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metricIntervalLowerBound = undefined;
+      this._metricIntervalUpperBound = undefined;
+      this._scalingAdjustment = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metricIntervalLowerBound = value.metricIntervalLowerBound;
+      this._metricIntervalUpperBound = value.metricIntervalUpperBound;
+      this._scalingAdjustment = value.scalingAdjustment;
+    }
+  }
+
+  // metric_interval_lower_bound - computed: false, optional: true, required: false
+  private _metricIntervalLowerBound?: string; 
+  public get metricIntervalLowerBound() {
+    return this.getStringAttribute('metric_interval_lower_bound');
+  }
+  public set metricIntervalLowerBound(value: string) {
+    this._metricIntervalLowerBound = value;
+  }
+  public resetMetricIntervalLowerBound() {
+    this._metricIntervalLowerBound = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricIntervalLowerBoundInput() {
+    return this._metricIntervalLowerBound;
+  }
+
+  // metric_interval_upper_bound - computed: false, optional: true, required: false
+  private _metricIntervalUpperBound?: string; 
+  public get metricIntervalUpperBound() {
+    return this.getStringAttribute('metric_interval_upper_bound');
+  }
+  public set metricIntervalUpperBound(value: string) {
+    this._metricIntervalUpperBound = value;
+  }
+  public resetMetricIntervalUpperBound() {
+    this._metricIntervalUpperBound = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricIntervalUpperBoundInput() {
+    return this._metricIntervalUpperBound;
+  }
+
+  // scaling_adjustment - computed: false, optional: false, required: true
+  private _scalingAdjustment?: number; 
+  public get scalingAdjustment() {
+    return this.getNumberAttribute('scaling_adjustment');
+  }
+  public set scalingAdjustment(value: number) {
+    this._scalingAdjustment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingAdjustmentInput() {
+    return this._scalingAdjustment;
+  }
+}
+
+export class AutoscalingPolicyStepAdjustmentList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyStepAdjustmentOutputReference {
+    return new AutoscalingPolicyStepAdjustmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#name AutoscalingPolicy#name}
@@ -1852,6 +2766,102 @@ export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpec
   }
 }
 
+export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference {
+    return new AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}
@@ -1921,9 +2931,9 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._metricDimension !== undefined) {
+    if (this._metricDimension?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metricDimension = this._metricDimension;
+      internalValueResult.metricDimension = this._metricDimension?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1935,7 +2945,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
       this._namespace = undefined;
       this._statistic = undefined;
       this._unit = undefined;
-      this._metricDimension = undefined;
+      this._metricDimension.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1943,7 +2953,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
       this._namespace = value.namespace;
       this._statistic = value.statistic;
       this._unit = value.unit;
-      this._metricDimension = value.metricDimension;
+      this._metricDimension.internalValue = value.metricDimension;
     }
   }
 
@@ -2003,20 +3013,19 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
   }
 
   // metric_dimension - computed: false, optional: true, required: false
-  private _metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable; 
+  private _metricDimension = new AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionList(this, "metric_dimension", false);
   public get metricDimension() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_dimension');
+    return this._metricDimension;
   }
-  public set metricDimension(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable) {
-    this._metricDimension = value;
+  public putMetricDimension(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable) {
+    this._metricDimension.internalValue = value;
   }
   public resetMetricDimension() {
-    this._metricDimension = undefined;
+    this._metricDimension.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metricDimensionInput() {
-    return this._metricDimension;
+    return this._metricDimension.internalValue;
   }
 }
 export interface AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification {
@@ -2295,13 +3304,14 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     this._cooldown = config.cooldown;
     this._enabled = config.enabled;
     this._estimatedInstanceWarmup = config.estimatedInstanceWarmup;
+    this._id = config.id;
     this._metricAggregationType = config.metricAggregationType;
     this._minAdjustmentMagnitude = config.minAdjustmentMagnitude;
     this._name = config.name;
     this._policyType = config.policyType;
     this._scalingAdjustment = config.scalingAdjustment;
     this._predictiveScalingConfiguration.internalValue = config.predictiveScalingConfiguration;
-    this._stepAdjustment = config.stepAdjustment;
+    this._stepAdjustment.internalValue = config.stepAdjustment;
     this._targetTrackingConfiguration.internalValue = config.targetTrackingConfiguration;
   }
 
@@ -2392,8 +3402,19 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metric_aggregation_type - computed: true, optional: true, required: false
@@ -2490,20 +3511,19 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // step_adjustment - computed: false, optional: true, required: false
-  private _stepAdjustment?: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable; 
+  private _stepAdjustment = new AutoscalingPolicyStepAdjustmentList(this, "step_adjustment", true);
   public get stepAdjustment() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('step_adjustment')));
+    return this._stepAdjustment;
   }
-  public set stepAdjustment(value: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable) {
-    this._stepAdjustment = value;
+  public putStepAdjustment(value: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable) {
+    this._stepAdjustment.internalValue = value;
   }
   public resetStepAdjustment() {
-    this._stepAdjustment = undefined;
+    this._stepAdjustment.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get stepAdjustmentInput() {
-    return this._stepAdjustment;
+    return this._stepAdjustment.internalValue;
   }
 
   // target_tracking_configuration - computed: false, optional: true, required: false
@@ -2533,13 +3553,14 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       cooldown: cdktf.numberToTerraform(this._cooldown),
       enabled: cdktf.booleanToTerraform(this._enabled),
       estimated_instance_warmup: cdktf.numberToTerraform(this._estimatedInstanceWarmup),
+      id: cdktf.stringToTerraform(this._id),
       metric_aggregation_type: cdktf.stringToTerraform(this._metricAggregationType),
       min_adjustment_magnitude: cdktf.numberToTerraform(this._minAdjustmentMagnitude),
       name: cdktf.stringToTerraform(this._name),
       policy_type: cdktf.stringToTerraform(this._policyType),
       scaling_adjustment: cdktf.numberToTerraform(this._scalingAdjustment),
       predictive_scaling_configuration: autoscalingPolicyPredictiveScalingConfigurationToTerraform(this._predictiveScalingConfiguration.internalValue),
-      step_adjustment: cdktf.listMapper(autoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment),
+      step_adjustment: cdktf.listMapper(autoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment.internalValue),
       target_tracking_configuration: autoscalingPolicyTargetTrackingConfigurationToTerraform(this._targetTrackingConfiguration.internalValue),
     };
   }

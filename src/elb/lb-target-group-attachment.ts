@@ -12,6 +12,13 @@ export interface LbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArgume
   */
   readonly availabilityZone?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group_attachment#id LbTargetGroupAttachment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group_attachment#port LbTargetGroupAttachment#port}
   */
   readonly port?: number;
@@ -60,6 +67,7 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._availabilityZone = config.availabilityZone;
+    this._id = config.id;
     this._port = config.port;
     this._targetGroupArn = config.targetGroupArn;
     this._targetId = config.targetId;
@@ -86,8 +94,19 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // port - computed: false, optional: true, required: false
@@ -139,6 +158,7 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      id: cdktf.stringToTerraform(this._id),
       port: cdktf.numberToTerraform(this._port),
       target_group_arn: cdktf.stringToTerraform(this._targetGroupArn),
       target_id: cdktf.stringToTerraform(this._targetId),

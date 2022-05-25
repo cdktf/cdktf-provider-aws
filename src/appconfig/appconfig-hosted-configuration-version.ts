@@ -27,6 +27,13 @@ export interface AppconfigHostedConfigurationVersionConfig extends cdktf.Terrafo
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_hosted_configuration_version#description AppconfigHostedConfigurationVersion#description}
   */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_hosted_configuration_version#id AppconfigHostedConfigurationVersion#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -68,6 +75,7 @@ export class AppconfigHostedConfigurationVersion extends cdktf.TerraformResource
     this._content = config.content;
     this._contentType = config.contentType;
     this._description = config.description;
+    this._id = config.id;
   }
 
   // ==========
@@ -148,8 +156,19 @@ export class AppconfigHostedConfigurationVersion extends cdktf.TerraformResource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // version_number - computed: true, optional: false, required: false
@@ -168,6 +187,7 @@ export class AppconfigHostedConfigurationVersion extends cdktf.TerraformResource
       content: cdktf.stringToTerraform(this._content),
       content_type: cdktf.stringToTerraform(this._contentType),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

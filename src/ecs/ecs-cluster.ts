@@ -12,6 +12,13 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly capacityProviders?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#id EcsCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#name EcsCluster#name}
   */
   readonly name: string;
@@ -430,6 +437,127 @@ export function ecsClusterDefaultCapacityProviderStrategyToTerraform(struct?: Ec
   }
 }
 
+export class EcsClusterDefaultCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsClusterDefaultCapacityProviderStrategy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._base !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.base = this._base;
+    }
+    if (this._capacityProvider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityProvider = this._capacityProvider;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsClusterDefaultCapacityProviderStrategy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._base = undefined;
+      this._capacityProvider = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._base = value.base;
+      this._capacityProvider = value.capacityProvider;
+      this._weight = value.weight;
+    }
+  }
+
+  // base - computed: false, optional: true, required: false
+  private _base?: number; 
+  public get base() {
+    return this.getNumberAttribute('base');
+  }
+  public set base(value: number) {
+    this._base = value;
+  }
+  public resetBase() {
+    this._base = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseInput() {
+    return this._base;
+  }
+
+  // capacity_provider - computed: false, optional: false, required: true
+  private _capacityProvider?: string; 
+  public get capacityProvider() {
+    return this.getStringAttribute('capacity_provider');
+  }
+  public set capacityProvider(value: string) {
+    this._capacityProvider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityProviderInput() {
+    return this._capacityProvider;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class EcsClusterDefaultCapacityProviderStrategyList extends cdktf.ComplexList {
+  public internalValue? : EcsClusterDefaultCapacityProviderStrategy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsClusterDefaultCapacityProviderStrategyOutputReference {
+    return new EcsClusterDefaultCapacityProviderStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsClusterSetting {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#name EcsCluster#name}
@@ -452,6 +580,102 @@ export function ecsClusterSettingToTerraform(struct?: EcsClusterSetting | cdktf.
   }
 }
 
+export class EcsClusterSettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsClusterSetting | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsClusterSetting | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class EcsClusterSettingList extends cdktf.ComplexList {
+  public internalValue? : EcsClusterSetting[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsClusterSettingOutputReference {
+    return new EcsClusterSettingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster aws_ecs_cluster}
@@ -488,12 +712,13 @@ export class EcsCluster extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._capacityProviders = config.capacityProviders;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._configuration.internalValue = config.configuration;
-    this._defaultCapacityProviderStrategy = config.defaultCapacityProviderStrategy;
-    this._setting = config.setting;
+    this._defaultCapacityProviderStrategy.internalValue = config.defaultCapacityProviderStrategy;
+    this._setting.internalValue = config.setting;
   }
 
   // ==========
@@ -522,8 +747,19 @@ export class EcsCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -588,37 +824,35 @@ export class EcsCluster extends cdktf.TerraformResource {
   }
 
   // default_capacity_provider_strategy - computed: false, optional: true, required: false
-  private _defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[] | cdktf.IResolvable; 
+  private _defaultCapacityProviderStrategy = new EcsClusterDefaultCapacityProviderStrategyList(this, "default_capacity_provider_strategy", true);
   public get defaultCapacityProviderStrategy() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('default_capacity_provider_strategy')));
+    return this._defaultCapacityProviderStrategy;
   }
-  public set defaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] | cdktf.IResolvable) {
-    this._defaultCapacityProviderStrategy = value;
+  public putDefaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] | cdktf.IResolvable) {
+    this._defaultCapacityProviderStrategy.internalValue = value;
   }
   public resetDefaultCapacityProviderStrategy() {
-    this._defaultCapacityProviderStrategy = undefined;
+    this._defaultCapacityProviderStrategy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get defaultCapacityProviderStrategyInput() {
-    return this._defaultCapacityProviderStrategy;
+    return this._defaultCapacityProviderStrategy.internalValue;
   }
 
   // setting - computed: false, optional: true, required: false
-  private _setting?: EcsClusterSetting[] | cdktf.IResolvable; 
+  private _setting = new EcsClusterSettingList(this, "setting", true);
   public get setting() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('setting')));
+    return this._setting;
   }
-  public set setting(value: EcsClusterSetting[] | cdktf.IResolvable) {
-    this._setting = value;
+  public putSetting(value: EcsClusterSetting[] | cdktf.IResolvable) {
+    this._setting.internalValue = value;
   }
   public resetSetting() {
-    this._setting = undefined;
+    this._setting.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get settingInput() {
-    return this._setting;
+    return this._setting.internalValue;
   }
 
   // =========
@@ -628,12 +862,13 @@ export class EcsCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: ecsClusterConfigurationToTerraform(this._configuration.internalValue),
-      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy),
-      setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting),
+      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy.internalValue),
+      setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting.internalValue),
     };
   }
 }

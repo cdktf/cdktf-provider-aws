@@ -12,6 +12,13 @@ export interface Ec2TransitGatewayConnectPeerConfig extends cdktf.TerraformMetaA
   */
   readonly bgpAsn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_connect_peer#id Ec2TransitGatewayConnectPeer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_connect_peer#inside_cidr_blocks Ec2TransitGatewayConnectPeer#inside_cidr_blocks}
   */
   readonly insideCidrBlocks: string[];
@@ -66,6 +73,7 @@ export function ec2TransitGatewayConnectPeerTimeoutsToTerraform(struct?: Ec2Tran
 
 export class Ec2TransitGatewayConnectPeerTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,7 +83,10 @@ export class Ec2TransitGatewayConnectPeerTimeoutsOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Ec2TransitGatewayConnectPeerTimeouts | undefined {
+  public get internalValue(): Ec2TransitGatewayConnectPeerTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -89,14 +100,20 @@ export class Ec2TransitGatewayConnectPeerTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2TransitGatewayConnectPeerTimeouts | undefined) {
+  public set internalValue(value: Ec2TransitGatewayConnectPeerTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -170,6 +187,7 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bgpAsn = config.bgpAsn;
+    this._id = config.id;
     this._insideCidrBlocks = config.insideCidrBlocks;
     this._peerAddress = config.peerAddress;
     this._tags = config.tags;
@@ -205,8 +223,19 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // inside_cidr_blocks - computed: false, optional: false, required: true
@@ -319,6 +348,7 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
+      id: cdktf.stringToTerraform(this._id),
       inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._insideCidrBlocks),
       peer_address: cdktf.stringToTerraform(this._peerAddress),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

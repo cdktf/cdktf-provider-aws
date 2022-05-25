@@ -16,6 +16,13 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
   */
   readonly dbClusterSnapshotIdentifier?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot#id DataAwsDbClusterSnapshot#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot#include_public DataAwsDbClusterSnapshot#include_public}
   */
   readonly includePublic?: boolean | cdktf.IResolvable;
@@ -73,6 +80,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
     });
     this._dbClusterIdentifier = config.dbClusterIdentifier;
     this._dbClusterSnapshotIdentifier = config.dbClusterSnapshotIdentifier;
+    this._id = config.id;
     this._includePublic = config.includePublic;
     this._includeShared = config.includeShared;
     this._mostRecent = config.mostRecent;
@@ -142,8 +150,19 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_public - computed: false, optional: true, required: false
@@ -274,6 +293,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
     return {
       db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
       db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      id: cdktf.stringToTerraform(this._id),
       include_public: cdktf.booleanToTerraform(this._includePublic),
       include_shared: cdktf.booleanToTerraform(this._includeShared),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),

@@ -24,6 +24,13 @@ export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.Terrafor
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application_version#id ElasticBeanstalkApplicationVersion#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application_version#key ElasticBeanstalkApplicationVersion#key}
   */
   readonly key: string;
@@ -79,6 +86,7 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
     this._bucket = config.bucket;
     this._description = config.description;
     this._forceDelete = config.forceDelete;
+    this._id = config.id;
     this._key = config.key;
     this._name = config.name;
     this._tags = config.tags;
@@ -153,8 +161,19 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -225,6 +244,7 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
       bucket: cdktf.stringToTerraform(this._bucket),
       description: cdktf.stringToTerraform(this._description),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
+      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

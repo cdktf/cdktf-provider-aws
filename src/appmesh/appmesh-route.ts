@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#id AppmeshRoute#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#mesh_name AppmeshRoute#mesh_name}
   */
   readonly meshName: string;
@@ -60,6 +67,102 @@ export function appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?
   }
 }
 
+export class AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecGrpcRouteActionWeightedTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._virtualNode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualNode = this._virtualNode;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecGrpcRouteActionWeightedTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._virtualNode = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._virtualNode = value.virtualNode;
+      this._weight = value.weight;
+    }
+  }
+
+  // virtual_node - computed: false, optional: false, required: true
+  private _virtualNode?: string; 
+  public get virtualNode() {
+    return this.getStringAttribute('virtual_node');
+  }
+  public set virtualNode(value: string) {
+    this._virtualNode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNodeInput() {
+    return this._virtualNode;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class AppmeshRouteSpecGrpcRouteActionWeightedTargetList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecGrpcRouteActionWeightedTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference {
+    return new AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecGrpcRouteAction {
   /**
   * weighted_target block
@@ -93,9 +196,9 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecGrpcRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget !== undefined) {
+    if (this._weightedTarget?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedTarget = this._weightedTarget;
+      internalValueResult.weightedTarget = this._weightedTarget?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -103,26 +206,25 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
   public set internalValue(value: AppmeshRouteSpecGrpcRouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._weightedTarget = undefined;
+      this._weightedTarget.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._weightedTarget = value.weightedTarget;
+      this._weightedTarget.internalValue = value.weightedTarget;
     }
   }
 
   // weighted_target - computed: false, optional: false, required: true
-  private _weightedTarget?: AppmeshRouteSpecGrpcRouteActionWeightedTarget[] | cdktf.IResolvable; 
+  private _weightedTarget = new AppmeshRouteSpecGrpcRouteActionWeightedTargetList(this, "weighted_target", true);
   public get weightedTarget() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('weighted_target')));
+    return this._weightedTarget;
   }
-  public set weightedTarget(value: AppmeshRouteSpecGrpcRouteActionWeightedTarget[] | cdktf.IResolvable) {
-    this._weightedTarget = value;
+  public putWeightedTarget(value: AppmeshRouteSpecGrpcRouteActionWeightedTarget[] | cdktf.IResolvable) {
+    this._weightedTarget.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedTargetInput() {
-    return this._weightedTarget;
+    return this._weightedTarget.internalValue;
   }
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
@@ -415,6 +517,127 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: Appme
   }
 }
 
+export class AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadata | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._invert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invert = this._invert;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecGrpcRouteMatchMetadata | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._invert = undefined;
+      this._name = undefined;
+      this._match.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._invert = value.invert;
+      this._name = value.name;
+      this._match.internalValue = value.match;
+    }
+  }
+
+  // invert - computed: false, optional: true, required: false
+  private _invert?: boolean | cdktf.IResolvable; 
+  public get invert() {
+    return this.getBooleanAttribute('invert');
+  }
+  public set invert(value: boolean | cdktf.IResolvable) {
+    this._invert = value;
+  }
+  public resetInvert() {
+    this._invert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertInput() {
+    return this._invert;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecGrpcRouteMatchMetadataMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+}
+
+export class AppmeshRouteSpecGrpcRouteMatchMetadataList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecGrpcRouteMatchMetadata[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference {
+    return new AppmeshRouteSpecGrpcRouteMatchMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecGrpcRouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method_name AppmeshRoute#method_name}
@@ -475,9 +698,9 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
     }
-    if (this._metadata !== undefined) {
+    if (this._metadata?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metadata = this._metadata;
+      internalValueResult.metadata = this._metadata?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -488,14 +711,14 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
       this._methodName = undefined;
       this._prefix = undefined;
       this._serviceName = undefined;
-      this._metadata = undefined;
+      this._metadata.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._methodName = value.methodName;
       this._prefix = value.prefix;
       this._serviceName = value.serviceName;
-      this._metadata = value.metadata;
+      this._metadata.internalValue = value.metadata;
     }
   }
 
@@ -548,20 +771,19 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: AppmeshRouteSpecGrpcRouteMatchMetadata[] | cdktf.IResolvable; 
+  private _metadata = new AppmeshRouteSpecGrpcRouteMatchMetadataList(this, "metadata", true);
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('metadata')));
+    return this._metadata;
   }
-  public set metadata(value: AppmeshRouteSpecGrpcRouteMatchMetadata[] | cdktf.IResolvable) {
-    this._metadata = value;
+  public putMetadata(value: AppmeshRouteSpecGrpcRouteMatchMetadata[] | cdktf.IResolvable) {
+    this._metadata.internalValue = value;
   }
   public resetMetadata() {
-    this._metadata = undefined;
+    this._metadata.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
-    return this._metadata;
+    return this._metadata.internalValue;
   }
 }
 export interface AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
@@ -1260,6 +1482,102 @@ export function appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct
   }
 }
 
+export class AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttp2RouteActionWeightedTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._virtualNode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualNode = this._virtualNode;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttp2RouteActionWeightedTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._virtualNode = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._virtualNode = value.virtualNode;
+      this._weight = value.weight;
+    }
+  }
+
+  // virtual_node - computed: false, optional: false, required: true
+  private _virtualNode?: string; 
+  public get virtualNode() {
+    return this.getStringAttribute('virtual_node');
+  }
+  public set virtualNode(value: string) {
+    this._virtualNode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNodeInput() {
+    return this._virtualNode;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteActionWeightedTargetList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttp2RouteActionWeightedTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference {
+    return new AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttp2RouteAction {
   /**
   * weighted_target block
@@ -1293,9 +1611,9 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshRouteSpecHttp2RouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget !== undefined) {
+    if (this._weightedTarget?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedTarget = this._weightedTarget;
+      internalValueResult.weightedTarget = this._weightedTarget?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1303,26 +1621,25 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
   public set internalValue(value: AppmeshRouteSpecHttp2RouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._weightedTarget = undefined;
+      this._weightedTarget.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._weightedTarget = value.weightedTarget;
+      this._weightedTarget.internalValue = value.weightedTarget;
     }
   }
 
   // weighted_target - computed: false, optional: false, required: true
-  private _weightedTarget?: AppmeshRouteSpecHttp2RouteActionWeightedTarget[] | cdktf.IResolvable; 
+  private _weightedTarget = new AppmeshRouteSpecHttp2RouteActionWeightedTargetList(this, "weighted_target", true);
   public get weightedTarget() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('weighted_target')));
+    return this._weightedTarget;
   }
-  public set weightedTarget(value: AppmeshRouteSpecHttp2RouteActionWeightedTarget[] | cdktf.IResolvable) {
-    this._weightedTarget = value;
+  public putWeightedTarget(value: AppmeshRouteSpecHttp2RouteActionWeightedTarget[] | cdktf.IResolvable) {
+    this._weightedTarget.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedTargetInput() {
-    return this._weightedTarget;
+    return this._weightedTarget.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
@@ -1615,6 +1932,127 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: Appmes
   }
 }
 
+export class AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._invert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invert = this._invert;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._invert = undefined;
+      this._name = undefined;
+      this._match.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._invert = value.invert;
+      this._name = value.name;
+      this._match.internalValue = value.match;
+    }
+  }
+
+  // invert - computed: false, optional: true, required: false
+  private _invert?: boolean | cdktf.IResolvable; 
+  public get invert() {
+    return this.getBooleanAttribute('invert');
+  }
+  public set invert(value: boolean | cdktf.IResolvable) {
+    this._invert = value;
+  }
+  public resetInvert() {
+    this._invert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertInput() {
+    return this._invert;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecHttp2RouteMatchHeaderMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference {
+    return new AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttp2RouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
@@ -1675,9 +2113,9 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.scheme = this._scheme;
     }
-    if (this._header !== undefined) {
+    if (this._header?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.header = this._header;
+      internalValueResult.header = this._header?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1688,14 +2126,14 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       this._method = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
-      this._header = undefined;
+      this._header.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
-      this._header = value.header;
+      this._header.internalValue = value.header;
     }
   }
 
@@ -1745,20 +2183,19 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktf.IResolvable; 
+  private _header = new AppmeshRouteSpecHttp2RouteMatchHeaderList(this, "header", true);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('header')));
+    return this._header;
   }
-  public set header(value: AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
@@ -2427,6 +2864,102 @@ export function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?
   }
 }
 
+export class AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttpRouteActionWeightedTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._virtualNode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualNode = this._virtualNode;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttpRouteActionWeightedTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._virtualNode = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._virtualNode = value.virtualNode;
+      this._weight = value.weight;
+    }
+  }
+
+  // virtual_node - computed: false, optional: false, required: true
+  private _virtualNode?: string; 
+  public get virtualNode() {
+    return this.getStringAttribute('virtual_node');
+  }
+  public set virtualNode(value: string) {
+    this._virtualNode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNodeInput() {
+    return this._virtualNode;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteActionWeightedTargetList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttpRouteActionWeightedTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference {
+    return new AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttpRouteAction {
   /**
   * weighted_target block
@@ -2460,9 +2993,9 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecHttpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget !== undefined) {
+    if (this._weightedTarget?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedTarget = this._weightedTarget;
+      internalValueResult.weightedTarget = this._weightedTarget?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2470,26 +3003,25 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
   public set internalValue(value: AppmeshRouteSpecHttpRouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._weightedTarget = undefined;
+      this._weightedTarget.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._weightedTarget = value.weightedTarget;
+      this._weightedTarget.internalValue = value.weightedTarget;
     }
   }
 
   // weighted_target - computed: false, optional: false, required: true
-  private _weightedTarget?: AppmeshRouteSpecHttpRouteActionWeightedTarget[] | cdktf.IResolvable; 
+  private _weightedTarget = new AppmeshRouteSpecHttpRouteActionWeightedTargetList(this, "weighted_target", true);
   public get weightedTarget() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('weighted_target')));
+    return this._weightedTarget;
   }
-  public set weightedTarget(value: AppmeshRouteSpecHttpRouteActionWeightedTarget[] | cdktf.IResolvable) {
-    this._weightedTarget = value;
+  public putWeightedTarget(value: AppmeshRouteSpecHttpRouteActionWeightedTarget[] | cdktf.IResolvable) {
+    this._weightedTarget.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedTargetInput() {
-    return this._weightedTarget;
+    return this._weightedTarget.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
@@ -2782,6 +3314,127 @@ export function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: Appmesh
   }
 }
 
+export class AppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._invert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invert = this._invert;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttpRouteMatchHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._invert = undefined;
+      this._name = undefined;
+      this._match.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._invert = value.invert;
+      this._name = value.name;
+      this._match.internalValue = value.match;
+    }
+  }
+
+  // invert - computed: false, optional: true, required: false
+  private _invert?: boolean | cdktf.IResolvable; 
+  public get invert() {
+    return this.getBooleanAttribute('invert');
+  }
+  public set invert(value: boolean | cdktf.IResolvable) {
+    this._invert = value;
+  }
+  public resetInvert() {
+    this._invert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertInput() {
+    return this._invert;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecHttpRouteMatchHeaderMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteMatchHeaderList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttpRouteMatchHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttpRouteMatchHeaderOutputReference {
+    return new AppmeshRouteSpecHttpRouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttpRouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
@@ -2842,9 +3495,9 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.scheme = this._scheme;
     }
-    if (this._header !== undefined) {
+    if (this._header?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.header = this._header;
+      internalValueResult.header = this._header?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2855,14 +3508,14 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       this._method = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
-      this._header = undefined;
+      this._header.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
-      this._header = value.header;
+      this._header.internalValue = value.header;
     }
   }
 
@@ -2912,20 +3565,19 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: AppmeshRouteSpecHttpRouteMatchHeader[] | cdktf.IResolvable; 
+  private _header = new AppmeshRouteSpecHttpRouteMatchHeaderList(this, "header", true);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('header')));
+    return this._header;
   }
-  public set header(value: AppmeshRouteSpecHttpRouteMatchHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: AppmeshRouteSpecHttpRouteMatchHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
@@ -3594,6 +4246,102 @@ export function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?:
   }
 }
 
+export class AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecTcpRouteActionWeightedTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._virtualNode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualNode = this._virtualNode;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecTcpRouteActionWeightedTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._virtualNode = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._virtualNode = value.virtualNode;
+      this._weight = value.weight;
+    }
+  }
+
+  // virtual_node - computed: false, optional: false, required: true
+  private _virtualNode?: string; 
+  public get virtualNode() {
+    return this.getStringAttribute('virtual_node');
+  }
+  public set virtualNode(value: string) {
+    this._virtualNode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNodeInput() {
+    return this._virtualNode;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class AppmeshRouteSpecTcpRouteActionWeightedTargetList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecTcpRouteActionWeightedTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference {
+    return new AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecTcpRouteAction {
   /**
   * weighted_target block
@@ -3627,9 +4375,9 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   public get internalValue(): AppmeshRouteSpecTcpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget !== undefined) {
+    if (this._weightedTarget?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedTarget = this._weightedTarget;
+      internalValueResult.weightedTarget = this._weightedTarget?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3637,26 +4385,25 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   public set internalValue(value: AppmeshRouteSpecTcpRouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._weightedTarget = undefined;
+      this._weightedTarget.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._weightedTarget = value.weightedTarget;
+      this._weightedTarget.internalValue = value.weightedTarget;
     }
   }
 
   // weighted_target - computed: false, optional: false, required: true
-  private _weightedTarget?: AppmeshRouteSpecTcpRouteActionWeightedTarget[] | cdktf.IResolvable; 
+  private _weightedTarget = new AppmeshRouteSpecTcpRouteActionWeightedTargetList(this, "weighted_target", true);
   public get weightedTarget() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('weighted_target')));
+    return this._weightedTarget;
   }
-  public set weightedTarget(value: AppmeshRouteSpecTcpRouteActionWeightedTarget[] | cdktf.IResolvable) {
-    this._weightedTarget = value;
+  public putWeightedTarget(value: AppmeshRouteSpecTcpRouteActionWeightedTarget[] | cdktf.IResolvable) {
+    this._weightedTarget.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedTargetInput() {
-    return this._weightedTarget;
+    return this._weightedTarget.internalValue;
   }
 }
 export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
@@ -4121,6 +4868,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._meshName = config.meshName;
     this._meshOwner = config.meshOwner;
     this._name = config.name;
@@ -4145,8 +4893,19 @@ export class AppmeshRoute extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_updated_date - computed: true, optional: false, required: false
@@ -4265,6 +5024,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       mesh_name: cdktf.stringToTerraform(this._meshName),
       mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),

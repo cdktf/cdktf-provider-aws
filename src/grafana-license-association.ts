@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface GrafanaLicenseAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_license_association#id GrafanaLicenseAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_license_association#license_type GrafanaLicenseAssociation#license_type}
   */
   readonly licenseType: string;
@@ -46,6 +53,7 @@ export function grafanaLicenseAssociationTimeoutsToTerraform(struct?: GrafanaLic
 
 export class GrafanaLicenseAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -55,7 +63,10 @@ export class GrafanaLicenseAssociationTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GrafanaLicenseAssociationTimeouts | undefined {
+  public get internalValue(): GrafanaLicenseAssociationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -69,14 +80,20 @@ export class GrafanaLicenseAssociationTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrafanaLicenseAssociationTimeouts | undefined) {
+  public set internalValue(value: GrafanaLicenseAssociationTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -149,6 +166,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._licenseType = config.licenseType;
     this._workspaceId = config.workspaceId;
     this._timeouts.internalValue = config.timeouts;
@@ -164,8 +182,19 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // license_expiration - computed: true, optional: false, required: false
@@ -221,6 +250,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       license_type: cdktf.stringToTerraform(this._licenseType),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
       timeouts: grafanaLicenseAssociationTimeoutsToTerraform(this._timeouts.internalValue),

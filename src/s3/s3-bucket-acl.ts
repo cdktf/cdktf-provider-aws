@@ -20,6 +20,13 @@ export interface S3BucketAclConfig extends cdktf.TerraformMetaArguments {
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_acl#id S3BucketAcl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * access_control_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
@@ -33,6 +40,9 @@ export interface S3BucketAclAccessControlPolicyGrantGrantee {
   readonly emailAddress?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_acl#id S3BucketAcl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -198,6 +208,105 @@ export function s3BucketAclAccessControlPolicyGrantToTerraform(struct?: S3Bucket
   }
 }
 
+export class S3BucketAclAccessControlPolicyGrantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketAclAccessControlPolicyGrant | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    if (this._grantee?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grantee = this._grantee?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketAclAccessControlPolicyGrant | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._permission = undefined;
+      this._grantee.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._permission = value.permission;
+      this._grantee.internalValue = value.grantee;
+    }
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+
+  // grantee - computed: false, optional: true, required: false
+  private _grantee = new S3BucketAclAccessControlPolicyGrantGranteeOutputReference(this, "grantee");
+  public get grantee() {
+    return this._grantee;
+  }
+  public putGrantee(value: S3BucketAclAccessControlPolicyGrantGrantee) {
+    this._grantee.internalValue = value;
+  }
+  public resetGrantee() {
+    this._grantee.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get granteeInput() {
+    return this._grantee.internalValue;
+  }
+}
+
+export class S3BucketAclAccessControlPolicyGrantList extends cdktf.ComplexList {
+  public internalValue? : S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketAclAccessControlPolicyGrantOutputReference {
+    return new S3BucketAclAccessControlPolicyGrantOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketAclAccessControlPolicyOwner {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_acl#display_name S3BucketAcl#display_name}
@@ -205,6 +314,9 @@ export interface S3BucketAclAccessControlPolicyOwner {
   readonly displayName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_acl#id S3BucketAcl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -327,9 +439,9 @@ export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.Complex
   public get internalValue(): S3BucketAclAccessControlPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grant !== undefined) {
+    if (this._grant?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.grant = this._grant;
+      internalValueResult.grant = this._grant?.internalValue;
     }
     if (this._owner?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -341,31 +453,30 @@ export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.Complex
   public set internalValue(value: S3BucketAclAccessControlPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._grant = undefined;
+      this._grant.internalValue = undefined;
       this._owner.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._grant = value.grant;
+      this._grant.internalValue = value.grant;
       this._owner.internalValue = value.owner;
     }
   }
 
   // grant - computed: false, optional: true, required: false
-  private _grant?: S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable; 
+  private _grant = new S3BucketAclAccessControlPolicyGrantList(this, "grant", true);
   public get grant() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('grant')));
+    return this._grant;
   }
-  public set grant(value: S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable) {
-    this._grant = value;
+  public putGrant(value: S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable) {
+    this._grant.internalValue = value;
   }
   public resetGrant() {
-    this._grant = undefined;
+    this._grant.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get grantInput() {
-    return this._grant;
+    return this._grant.internalValue;
   }
 
   // owner - computed: false, optional: false, required: true
@@ -419,6 +530,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
     this._acl = config.acl;
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
+    this._id = config.id;
     this._accessControlPolicy.internalValue = config.accessControlPolicy;
   }
 
@@ -472,8 +584,19 @@ export class S3BucketAcl extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // access_control_policy - computed: false, optional: true, required: false
@@ -501,6 +624,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
       acl: cdktf.stringToTerraform(this._acl),
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
+      id: cdktf.stringToTerraform(this._id),
       access_control_policy: s3BucketAclAccessControlPolicyToTerraform(this._accessControlPolicy.internalValue),
     };
   }

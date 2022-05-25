@@ -24,6 +24,13 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly family: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#id EcsTaskDefinition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}
   */
   readonly ipcMode?: string;
@@ -180,6 +187,102 @@ export function ecsTaskDefinitionInferenceAcceleratorToTerraform(struct?: EcsTas
   }
 }
 
+export class EcsTaskDefinitionInferenceAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsTaskDefinitionInferenceAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._deviceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceType = this._deviceType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsTaskDefinitionInferenceAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceName = undefined;
+      this._deviceType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceName = value.deviceName;
+      this._deviceType = value.deviceType;
+    }
+  }
+
+  // device_name - computed: false, optional: false, required: true
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // device_type - computed: false, optional: false, required: true
+  private _deviceType?: string; 
+  public get deviceType() {
+    return this.getStringAttribute('device_type');
+  }
+  public set deviceType(value: string) {
+    this._deviceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceTypeInput() {
+    return this._deviceType;
+  }
+}
+
+export class EcsTaskDefinitionInferenceAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsTaskDefinitionInferenceAcceleratorOutputReference {
+    return new EcsTaskDefinitionInferenceAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsTaskDefinitionPlacementConstraints {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#expression EcsTaskDefinition#expression}
@@ -202,6 +305,105 @@ export function ecsTaskDefinitionPlacementConstraintsToTerraform(struct?: EcsTas
   }
 }
 
+export class EcsTaskDefinitionPlacementConstraintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsTaskDefinitionPlacementConstraints | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsTaskDefinitionPlacementConstraints | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._type = value.type;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class EcsTaskDefinitionPlacementConstraintsList extends cdktf.ComplexList {
+  public internalValue? : EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsTaskDefinitionPlacementConstraintsOutputReference {
+    return new EcsTaskDefinitionPlacementConstraintsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsTaskDefinitionProxyConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#container_name EcsTaskDefinition#container_name}
@@ -1088,6 +1290,171 @@ export function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVol
   }
 }
 
+export class EcsTaskDefinitionVolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsTaskDefinitionVolume | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostPath = this._hostPath;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._dockerVolumeConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dockerVolumeConfiguration = this._dockerVolumeConfiguration?.internalValue;
+    }
+    if (this._efsVolumeConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.efsVolumeConfiguration = this._efsVolumeConfiguration?.internalValue;
+    }
+    if (this._fsxWindowsFileServerVolumeConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fsxWindowsFileServerVolumeConfiguration = this._fsxWindowsFileServerVolumeConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsTaskDefinitionVolume | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hostPath = undefined;
+      this._name = undefined;
+      this._dockerVolumeConfiguration.internalValue = undefined;
+      this._efsVolumeConfiguration.internalValue = undefined;
+      this._fsxWindowsFileServerVolumeConfiguration.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hostPath = value.hostPath;
+      this._name = value.name;
+      this._dockerVolumeConfiguration.internalValue = value.dockerVolumeConfiguration;
+      this._efsVolumeConfiguration.internalValue = value.efsVolumeConfiguration;
+      this._fsxWindowsFileServerVolumeConfiguration.internalValue = value.fsxWindowsFileServerVolumeConfiguration;
+    }
+  }
+
+  // host_path - computed: false, optional: true, required: false
+  private _hostPath?: string; 
+  public get hostPath() {
+    return this.getStringAttribute('host_path');
+  }
+  public set hostPath(value: string) {
+    this._hostPath = value;
+  }
+  public resetHostPath() {
+    this._hostPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostPathInput() {
+    return this._hostPath;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // docker_volume_configuration - computed: false, optional: true, required: false
+  private _dockerVolumeConfiguration = new EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference(this, "docker_volume_configuration");
+  public get dockerVolumeConfiguration() {
+    return this._dockerVolumeConfiguration;
+  }
+  public putDockerVolumeConfiguration(value: EcsTaskDefinitionVolumeDockerVolumeConfiguration) {
+    this._dockerVolumeConfiguration.internalValue = value;
+  }
+  public resetDockerVolumeConfiguration() {
+    this._dockerVolumeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerVolumeConfigurationInput() {
+    return this._dockerVolumeConfiguration.internalValue;
+  }
+
+  // efs_volume_configuration - computed: false, optional: true, required: false
+  private _efsVolumeConfiguration = new EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(this, "efs_volume_configuration");
+  public get efsVolumeConfiguration() {
+    return this._efsVolumeConfiguration;
+  }
+  public putEfsVolumeConfiguration(value: EcsTaskDefinitionVolumeEfsVolumeConfiguration) {
+    this._efsVolumeConfiguration.internalValue = value;
+  }
+  public resetEfsVolumeConfiguration() {
+    this._efsVolumeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get efsVolumeConfigurationInput() {
+    return this._efsVolumeConfiguration.internalValue;
+  }
+
+  // fsx_windows_file_server_volume_configuration - computed: false, optional: true, required: false
+  private _fsxWindowsFileServerVolumeConfiguration = new EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(this, "fsx_windows_file_server_volume_configuration");
+  public get fsxWindowsFileServerVolumeConfiguration() {
+    return this._fsxWindowsFileServerVolumeConfiguration;
+  }
+  public putFsxWindowsFileServerVolumeConfiguration(value: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration) {
+    this._fsxWindowsFileServerVolumeConfiguration.internalValue = value;
+  }
+  public resetFsxWindowsFileServerVolumeConfiguration() {
+    this._fsxWindowsFileServerVolumeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fsxWindowsFileServerVolumeConfigurationInput() {
+    return this._fsxWindowsFileServerVolumeConfiguration.internalValue;
+  }
+}
+
+export class EcsTaskDefinitionVolumeList extends cdktf.ComplexList {
+  public internalValue? : EcsTaskDefinitionVolume[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsTaskDefinitionVolumeOutputReference {
+    return new EcsTaskDefinitionVolumeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition}
@@ -1127,6 +1494,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._cpu = config.cpu;
     this._executionRoleArn = config.executionRoleArn;
     this._family = config.family;
+    this._id = config.id;
     this._ipcMode = config.ipcMode;
     this._memory = config.memory;
     this._networkMode = config.networkMode;
@@ -1137,11 +1505,11 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._taskRoleArn = config.taskRoleArn;
     this._ephemeralStorage.internalValue = config.ephemeralStorage;
-    this._inferenceAccelerator = config.inferenceAccelerator;
-    this._placementConstraints = config.placementConstraints;
+    this._inferenceAccelerator.internalValue = config.inferenceAccelerator;
+    this._placementConstraints.internalValue = config.placementConstraints;
     this._proxyConfiguration.internalValue = config.proxyConfiguration;
     this._runtimePlatform.internalValue = config.runtimePlatform;
-    this._volume = config.volume;
+    this._volume.internalValue = config.volume;
   }
 
   // ==========
@@ -1212,8 +1580,19 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ipc_mode - computed: false, optional: true, required: false
@@ -1382,37 +1761,35 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // inference_accelerator - computed: false, optional: true, required: false
-  private _inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable; 
+  private _inferenceAccelerator = new EcsTaskDefinitionInferenceAcceleratorList(this, "inference_accelerator", true);
   public get inferenceAccelerator() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('inference_accelerator')));
+    return this._inferenceAccelerator;
   }
-  public set inferenceAccelerator(value: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable) {
-    this._inferenceAccelerator = value;
+  public putInferenceAccelerator(value: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable) {
+    this._inferenceAccelerator.internalValue = value;
   }
   public resetInferenceAccelerator() {
-    this._inferenceAccelerator = undefined;
+    this._inferenceAccelerator.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get inferenceAcceleratorInput() {
-    return this._inferenceAccelerator;
+    return this._inferenceAccelerator.internalValue;
   }
 
   // placement_constraints - computed: false, optional: true, required: false
-  private _placementConstraints?: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable; 
+  private _placementConstraints = new EcsTaskDefinitionPlacementConstraintsList(this, "placement_constraints", true);
   public get placementConstraints() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('placement_constraints')));
+    return this._placementConstraints;
   }
-  public set placementConstraints(value: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable) {
-    this._placementConstraints = value;
+  public putPlacementConstraints(value: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable) {
+    this._placementConstraints.internalValue = value;
   }
   public resetPlacementConstraints() {
-    this._placementConstraints = undefined;
+    this._placementConstraints.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get placementConstraintsInput() {
-    return this._placementConstraints;
+    return this._placementConstraints.internalValue;
   }
 
   // proxy_configuration - computed: false, optional: true, required: false
@@ -1448,20 +1825,19 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: true, required: false
-  private _volume?: EcsTaskDefinitionVolume[] | cdktf.IResolvable; 
+  private _volume = new EcsTaskDefinitionVolumeList(this, "volume", true);
   public get volume() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('volume')));
+    return this._volume;
   }
-  public set volume(value: EcsTaskDefinitionVolume[] | cdktf.IResolvable) {
-    this._volume = value;
+  public putVolume(value: EcsTaskDefinitionVolume[] | cdktf.IResolvable) {
+    this._volume.internalValue = value;
   }
   public resetVolume() {
-    this._volume = undefined;
+    this._volume.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get volumeInput() {
-    return this._volume;
+    return this._volume.internalValue;
   }
 
   // =========
@@ -1474,6 +1850,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       cpu: cdktf.stringToTerraform(this._cpu),
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
       family: cdktf.stringToTerraform(this._family),
+      id: cdktf.stringToTerraform(this._id),
       ipc_mode: cdktf.stringToTerraform(this._ipcMode),
       memory: cdktf.stringToTerraform(this._memory),
       network_mode: cdktf.stringToTerraform(this._networkMode),
@@ -1484,11 +1861,11 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       task_role_arn: cdktf.stringToTerraform(this._taskRoleArn),
       ephemeral_storage: ecsTaskDefinitionEphemeralStorageToTerraform(this._ephemeralStorage.internalValue),
-      inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator),
-      placement_constraints: cdktf.listMapper(ecsTaskDefinitionPlacementConstraintsToTerraform)(this._placementConstraints),
+      inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator.internalValue),
+      placement_constraints: cdktf.listMapper(ecsTaskDefinitionPlacementConstraintsToTerraform)(this._placementConstraints.internalValue),
       proxy_configuration: ecsTaskDefinitionProxyConfigurationToTerraform(this._proxyConfiguration.internalValue),
       runtime_platform: ecsTaskDefinitionRuntimePlatformToTerraform(this._runtimePlatform.internalValue),
-      volume: cdktf.listMapper(ecsTaskDefinitionVolumeToTerraform)(this._volume),
+      volume: cdktf.listMapper(ecsTaskDefinitionVolumeToTerraform)(this._volume.internalValue),
     };
   }
 }

@@ -16,6 +16,13 @@ export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function#id CloudfrontFunction#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function#name CloudfrontFunction#name}
   */
   readonly name: string;
@@ -65,6 +72,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
     });
     this._code = config.code;
     this._comment = config.comment;
+    this._id = config.id;
     this._name = config.name;
     this._publish = config.publish;
     this._runtime = config.runtime;
@@ -114,8 +122,19 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // live_stage_etag - computed: true, optional: false, required: false
@@ -178,6 +197,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
     return {
       code: cdktf.stringToTerraform(this._code),
       comment: cdktf.stringToTerraform(this._comment),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       publish: cdktf.booleanToTerraform(this._publish),
       runtime: cdktf.stringToTerraform(this._runtime),

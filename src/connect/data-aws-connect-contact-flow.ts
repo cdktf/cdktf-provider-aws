@@ -12,6 +12,13 @@ export interface DataAwsConnectContactFlowConfig extends cdktf.TerraformMetaArgu
   */
   readonly contactFlowId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_contact_flow#id DataAwsConnectContactFlow#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}
   */
   readonly instanceId: string;
@@ -64,6 +71,7 @@ export class DataAwsConnectContactFlow extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._contactFlowId = config.contactFlowId;
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._name = config.name;
     this._tags = config.tags;
@@ -106,8 +114,19 @@ export class DataAwsConnectContactFlow extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: false, optional: false, required: true
@@ -178,6 +197,7 @@ export class DataAwsConnectContactFlow extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       contact_flow_id: cdktf.stringToTerraform(this._contactFlowId),
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

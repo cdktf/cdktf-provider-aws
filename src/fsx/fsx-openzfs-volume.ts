@@ -16,6 +16,13 @@ export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dataCompressionType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#id FsxOpenzfsVolume#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#name FsxOpenzfsVolume#name}
   */
   readonly name: string;
@@ -94,6 +101,102 @@ export function fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform(struct
   }
 }
 
+export class FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxOpenzfsVolumeNfsExportsClientConfigurations | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clients !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clients = this._clients;
+    }
+    if (this._options !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.options = this._options;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxOpenzfsVolumeNfsExportsClientConfigurations | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clients = undefined;
+      this._options = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clients = value.clients;
+      this._options = value.options;
+    }
+  }
+
+  // clients - computed: false, optional: false, required: true
+  private _clients?: string; 
+  public get clients() {
+    return this.getStringAttribute('clients');
+  }
+  public set clients(value: string) {
+    this._clients = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientsInput() {
+    return this._clients;
+  }
+
+  // options - computed: false, optional: false, required: true
+  private _options?: string[]; 
+  public get options() {
+    return this.getListAttribute('options');
+  }
+  public set options(value: string[]) {
+    this._options = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options;
+  }
+}
+
+export class FsxOpenzfsVolumeNfsExportsClientConfigurationsList extends cdktf.ComplexList {
+  public internalValue? : FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference {
+    return new FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface FsxOpenzfsVolumeNfsExports {
   /**
   * client_configurations block
@@ -127,9 +230,9 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   public get internalValue(): FsxOpenzfsVolumeNfsExports | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientConfigurations !== undefined) {
+    if (this._clientConfigurations?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.clientConfigurations = this._clientConfigurations;
+      internalValueResult.clientConfigurations = this._clientConfigurations?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -137,26 +240,25 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   public set internalValue(value: FsxOpenzfsVolumeNfsExports | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._clientConfigurations = undefined;
+      this._clientConfigurations.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._clientConfigurations = value.clientConfigurations;
+      this._clientConfigurations.internalValue = value.clientConfigurations;
     }
   }
 
   // client_configurations - computed: false, optional: false, required: true
-  private _clientConfigurations?: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable; 
+  private _clientConfigurations = new FsxOpenzfsVolumeNfsExportsClientConfigurationsList(this, "client_configurations", true);
   public get clientConfigurations() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('client_configurations')));
+    return this._clientConfigurations;
   }
-  public set clientConfigurations(value: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable) {
-    this._clientConfigurations = value;
+  public putClientConfigurations(value: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable) {
+    this._clientConfigurations.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get clientConfigurationsInput() {
-    return this._clientConfigurations;
+    return this._clientConfigurations.internalValue;
   }
 }
 export interface FsxOpenzfsVolumeOriginSnapshot {
@@ -274,6 +376,7 @@ export function fsxOpenzfsVolumeTimeoutsToTerraform(struct?: FsxOpenzfsVolumeTim
 
 export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -283,7 +386,10 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): FsxOpenzfsVolumeTimeouts | undefined {
+  public get internalValue(): FsxOpenzfsVolumeTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -301,15 +407,21 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FsxOpenzfsVolumeTimeouts | undefined) {
+  public set internalValue(value: FsxOpenzfsVolumeTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -367,6 +479,9 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
 export interface FsxOpenzfsVolumeUserAndGroupQuotas {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#id FsxOpenzfsVolume#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: number;
   /**
@@ -391,6 +506,121 @@ export function fsxOpenzfsVolumeUserAndGroupQuotasToTerraform(struct?: FsxOpenzf
   }
 }
 
+export class FsxOpenzfsVolumeUserAndGroupQuotasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FsxOpenzfsVolumeUserAndGroupQuotas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._storageCapacityQuotaGib !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageCapacityQuotaGib = this._storageCapacityQuotaGib;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxOpenzfsVolumeUserAndGroupQuotas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._storageCapacityQuotaGib = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._storageCapacityQuotaGib = value.storageCapacityQuotaGib;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: number; 
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+  public set id(value: number) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // storage_capacity_quota_gib - computed: false, optional: false, required: true
+  private _storageCapacityQuotaGib?: number; 
+  public get storageCapacityQuotaGib() {
+    return this.getNumberAttribute('storage_capacity_quota_gib');
+  }
+  public set storageCapacityQuotaGib(value: number) {
+    this._storageCapacityQuotaGib = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageCapacityQuotaGibInput() {
+    return this._storageCapacityQuotaGib;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class FsxOpenzfsVolumeUserAndGroupQuotasList extends cdktf.ComplexList {
+  public internalValue? : FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FsxOpenzfsVolumeUserAndGroupQuotasOutputReference {
+    return new FsxOpenzfsVolumeUserAndGroupQuotasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume aws_fsx_openzfs_volume}
@@ -428,6 +658,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
     });
     this._copyTagsToSnapshots = config.copyTagsToSnapshots;
     this._dataCompressionType = config.dataCompressionType;
+    this._id = config.id;
     this._name = config.name;
     this._parentVolumeId = config.parentVolumeId;
     this._readOnly = config.readOnly;
@@ -439,7 +670,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
     this._nfsExports.internalValue = config.nfsExports;
     this._originSnapshot.internalValue = config.originSnapshot;
     this._timeouts.internalValue = config.timeouts;
-    this._userAndGroupQuotas = config.userAndGroupQuotas;
+    this._userAndGroupQuotas.internalValue = config.userAndGroupQuotas;
   }
 
   // ==========
@@ -484,8 +715,19 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -659,20 +901,19 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // user_and_group_quotas - computed: false, optional: true, required: false
-  private _userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable; 
+  private _userAndGroupQuotas = new FsxOpenzfsVolumeUserAndGroupQuotasList(this, "user_and_group_quotas", true);
   public get userAndGroupQuotas() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user_and_group_quotas')));
+    return this._userAndGroupQuotas;
   }
-  public set userAndGroupQuotas(value: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable) {
-    this._userAndGroupQuotas = value;
+  public putUserAndGroupQuotas(value: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable) {
+    this._userAndGroupQuotas.internalValue = value;
   }
   public resetUserAndGroupQuotas() {
-    this._userAndGroupQuotas = undefined;
+    this._userAndGroupQuotas.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userAndGroupQuotasInput() {
-    return this._userAndGroupQuotas;
+    return this._userAndGroupQuotas.internalValue;
   }
 
   // =========
@@ -683,6 +924,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
     return {
       copy_tags_to_snapshots: cdktf.booleanToTerraform(this._copyTagsToSnapshots),
       data_compression_type: cdktf.stringToTerraform(this._dataCompressionType),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent_volume_id: cdktf.stringToTerraform(this._parentVolumeId),
       read_only: cdktf.booleanToTerraform(this._readOnly),
@@ -694,7 +936,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       nfs_exports: fsxOpenzfsVolumeNfsExportsToTerraform(this._nfsExports.internalValue),
       origin_snapshot: fsxOpenzfsVolumeOriginSnapshotToTerraform(this._originSnapshot.internalValue),
       timeouts: fsxOpenzfsVolumeTimeoutsToTerraform(this._timeouts.internalValue),
-      user_and_group_quotas: cdktf.listMapper(fsxOpenzfsVolumeUserAndGroupQuotasToTerraform)(this._userAndGroupQuotas),
+      user_and_group_quotas: cdktf.listMapper(fsxOpenzfsVolumeUserAndGroupQuotasToTerraform)(this._userAndGroupQuotas.internalValue),
     };
   }
 }

@@ -19,6 +19,13 @@ export interface OrganizationsOrganizationConfig extends cdktf.TerraformMetaArgu
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization#feature_set OrganizationsOrganization#feature_set}
   */
   readonly featureSet?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization#id OrganizationsOrganization#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 export interface OrganizationsOrganizationAccounts {
 }
@@ -375,6 +382,7 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
     this._awsServiceAccessPrincipals = config.awsServiceAccessPrincipals;
     this._enabledPolicyTypes = config.enabledPolicyTypes;
     this._featureSet = config.featureSet;
+    this._id = config.id;
   }
 
   // ==========
@@ -441,8 +449,19 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // master_account_arn - computed: true, optional: false, required: false
@@ -481,6 +500,7 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
       aws_service_access_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._awsServiceAccessPrincipals),
       enabled_policy_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledPolicyTypes),
       feature_set: cdktf.stringToTerraform(this._featureSet),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

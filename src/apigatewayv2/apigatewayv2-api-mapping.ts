@@ -20,6 +20,13 @@ export interface Apigatewayv2ApiMappingConfig extends cdktf.TerraformMetaArgumen
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api_mapping#id Apigatewayv2ApiMapping#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api_mapping#stage Apigatewayv2ApiMapping#stage}
   */
   readonly stage: string;
@@ -62,6 +69,7 @@ export class Apigatewayv2ApiMapping extends cdktf.TerraformResource {
     this._apiId = config.apiId;
     this._apiMappingKey = config.apiMappingKey;
     this._domainName = config.domainName;
+    this._id = config.id;
     this._stage = config.stage;
   }
 
@@ -112,8 +120,19 @@ export class Apigatewayv2ApiMapping extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // stage - computed: false, optional: false, required: true
@@ -138,6 +157,7 @@ export class Apigatewayv2ApiMapping extends cdktf.TerraformResource {
       api_id: cdktf.stringToTerraform(this._apiId),
       api_mapping_key: cdktf.stringToTerraform(this._apiMappingKey),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      id: cdktf.stringToTerraform(this._id),
       stage: cdktf.stringToTerraform(this._stage),
     };
   }

@@ -28,6 +28,13 @@ export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArgument
   */
   readonly iamRoleArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder#id AppstreamImageBuilder#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder#image_arn AppstreamImageBuilder#image_arn}
   */
   readonly imageArn?: string;
@@ -92,6 +99,105 @@ export function appstreamImageBuilderAccessEndpointToTerraform(struct?: Appstrea
   }
 }
 
+export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointType = this._endpointType;
+    }
+    if (this._vpceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpceId = this._vpceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpointType = undefined;
+      this._vpceId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpointType = value.endpointType;
+      this._vpceId = value.vpceId;
+    }
+  }
+
+  // endpoint_type - computed: false, optional: false, required: true
+  private _endpointType?: string; 
+  public get endpointType() {
+    return this.getStringAttribute('endpoint_type');
+  }
+  public set endpointType(value: string) {
+    this._endpointType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointTypeInput() {
+    return this._endpointType;
+  }
+
+  // vpce_id - computed: true, optional: true, required: false
+  private _vpceId?: string; 
+  public get vpceId() {
+    return this.getStringAttribute('vpce_id');
+  }
+  public set vpceId(value: string) {
+    this._vpceId = value;
+  }
+  public resetVpceId() {
+    this._vpceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpceIdInput() {
+    return this._vpceId;
+  }
+}
+
+export class AppstreamImageBuilderAccessEndpointList extends cdktf.ComplexList {
+  public internalValue? : AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppstreamImageBuilderAccessEndpointOutputReference {
+    return new AppstreamImageBuilderAccessEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppstreamImageBuilderDomainJoinInfo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder#directory_name AppstreamImageBuilder#directory_name}
@@ -316,13 +422,14 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._enableDefaultInternetAccess = config.enableDefaultInternetAccess;
     this._iamRoleArn = config.iamRoleArn;
+    this._id = config.id;
     this._imageArn = config.imageArn;
     this._imageName = config.imageName;
     this._instanceType = config.instanceType;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._accessEndpoint = config.accessEndpoint;
+    this._accessEndpoint.internalValue = config.accessEndpoint;
     this._domainJoinInfo.internalValue = config.domainJoinInfo;
     this._vpcConfig.internalValue = config.vpcConfig;
   }
@@ -422,8 +529,19 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_arn - computed: true, optional: true, required: false
@@ -522,20 +640,19 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   }
 
   // access_endpoint - computed: false, optional: true, required: false
-  private _accessEndpoint?: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable; 
+  private _accessEndpoint = new AppstreamImageBuilderAccessEndpointList(this, "access_endpoint", true);
   public get accessEndpoint() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('access_endpoint')));
+    return this._accessEndpoint;
   }
-  public set accessEndpoint(value: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable) {
-    this._accessEndpoint = value;
+  public putAccessEndpoint(value: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable) {
+    this._accessEndpoint.internalValue = value;
   }
   public resetAccessEndpoint() {
-    this._accessEndpoint = undefined;
+    this._accessEndpoint.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accessEndpointInput() {
-    return this._accessEndpoint;
+    return this._accessEndpoint.internalValue;
   }
 
   // domain_join_info - computed: false, optional: true, required: false
@@ -581,13 +698,14 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       enable_default_internet_access: cdktf.booleanToTerraform(this._enableDefaultInternetAccess),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       image_arn: cdktf.stringToTerraform(this._imageArn),
       image_name: cdktf.stringToTerraform(this._imageName),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoint: cdktf.listMapper(appstreamImageBuilderAccessEndpointToTerraform)(this._accessEndpoint),
+      access_endpoint: cdktf.listMapper(appstreamImageBuilderAccessEndpointToTerraform)(this._accessEndpoint.internalValue),
       domain_join_info: appstreamImageBuilderDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamImageBuilderVpcConfigToTerraform(this._vpcConfig.internalValue),
     };

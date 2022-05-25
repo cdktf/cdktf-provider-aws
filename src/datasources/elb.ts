@@ -28,6 +28,13 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   */
   readonly desyncMitigationMode?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb#id Elb#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb#idle_timeout Elb#idle_timeout}
   */
   readonly idleTimeout?: number;
@@ -424,6 +431,162 @@ export function elbListenerToTerraform(struct?: ElbListener | cdktf.IResolvable)
   }
 }
 
+export class ElbListenerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ElbListener | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instancePort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePort = this._instancePort;
+    }
+    if (this._instanceProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceProtocol = this._instanceProtocol;
+    }
+    if (this._lbPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lbPort = this._lbPort;
+    }
+    if (this._lbProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lbProtocol = this._lbProtocol;
+    }
+    if (this._sslCertificateId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCertificateId = this._sslCertificateId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElbListener | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._instancePort = undefined;
+      this._instanceProtocol = undefined;
+      this._lbPort = undefined;
+      this._lbProtocol = undefined;
+      this._sslCertificateId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._instancePort = value.instancePort;
+      this._instanceProtocol = value.instanceProtocol;
+      this._lbPort = value.lbPort;
+      this._lbProtocol = value.lbProtocol;
+      this._sslCertificateId = value.sslCertificateId;
+    }
+  }
+
+  // instance_port - computed: false, optional: false, required: true
+  private _instancePort?: number; 
+  public get instancePort() {
+    return this.getNumberAttribute('instance_port');
+  }
+  public set instancePort(value: number) {
+    this._instancePort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePortInput() {
+    return this._instancePort;
+  }
+
+  // instance_protocol - computed: false, optional: false, required: true
+  private _instanceProtocol?: string; 
+  public get instanceProtocol() {
+    return this.getStringAttribute('instance_protocol');
+  }
+  public set instanceProtocol(value: string) {
+    this._instanceProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceProtocolInput() {
+    return this._instanceProtocol;
+  }
+
+  // lb_port - computed: false, optional: false, required: true
+  private _lbPort?: number; 
+  public get lbPort() {
+    return this.getNumberAttribute('lb_port');
+  }
+  public set lbPort(value: number) {
+    this._lbPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lbPortInput() {
+    return this._lbPort;
+  }
+
+  // lb_protocol - computed: false, optional: false, required: true
+  private _lbProtocol?: string; 
+  public get lbProtocol() {
+    return this.getStringAttribute('lb_protocol');
+  }
+  public set lbProtocol(value: string) {
+    this._lbProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lbProtocolInput() {
+    return this._lbProtocol;
+  }
+
+  // ssl_certificate_id - computed: false, optional: true, required: false
+  private _sslCertificateId?: string; 
+  public get sslCertificateId() {
+    return this.getStringAttribute('ssl_certificate_id');
+  }
+  public set sslCertificateId(value: string) {
+    this._sslCertificateId = value;
+  }
+  public resetSslCertificateId() {
+    this._sslCertificateId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCertificateIdInput() {
+    return this._sslCertificateId;
+  }
+}
+
+export class ElbListenerList extends cdktf.ComplexList {
+  public internalValue? : ElbListener[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ElbListenerOutputReference {
+    return new ElbListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elb aws_elb}
@@ -464,6 +627,7 @@ export class Elb extends cdktf.TerraformResource {
     this._connectionDrainingTimeout = config.connectionDrainingTimeout;
     this._crossZoneLoadBalancing = config.crossZoneLoadBalancing;
     this._desyncMitigationMode = config.desyncMitigationMode;
+    this._id = config.id;
     this._idleTimeout = config.idleTimeout;
     this._instances = config.instances;
     this._internal = config.internal;
@@ -476,7 +640,7 @@ export class Elb extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._accessLogs.internalValue = config.accessLogs;
     this._healthCheck.internalValue = config.healthCheck;
-    this._listener = config.listener;
+    this._listener.internalValue = config.listener;
   }
 
   // ==========
@@ -574,8 +738,19 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_timeout - computed: false, optional: true, required: false
@@ -781,17 +956,16 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener?: ElbListener[] | cdktf.IResolvable; 
+  private _listener = new ElbListenerList(this, "listener", true);
   public get listener() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('listener')));
+    return this._listener;
   }
-  public set listener(value: ElbListener[] | cdktf.IResolvable) {
-    this._listener = value;
+  public putListener(value: ElbListener[] | cdktf.IResolvable) {
+    this._listener.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get listenerInput() {
-    return this._listener;
+    return this._listener.internalValue;
   }
 
   // =========
@@ -805,6 +979,7 @@ export class Elb extends cdktf.TerraformResource {
       connection_draining_timeout: cdktf.numberToTerraform(this._connectionDrainingTimeout),
       cross_zone_load_balancing: cdktf.booleanToTerraform(this._crossZoneLoadBalancing),
       desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
+      id: cdktf.stringToTerraform(this._id),
       idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
       instances: cdktf.listMapper(cdktf.stringToTerraform)(this._instances),
       internal: cdktf.booleanToTerraform(this._internal),
@@ -817,7 +992,7 @@ export class Elb extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: elbAccessLogsToTerraform(this._accessLogs.internalValue),
       health_check: elbHealthCheckToTerraform(this._healthCheck.internalValue),
-      listener: cdktf.listMapper(elbListenerToTerraform)(this._listener),
+      listener: cdktf.listMapper(elbListenerToTerraform)(this._listener.internalValue),
     };
   }
 }

@@ -20,6 +20,13 @@ export interface GameliftGameServerGroupConfig extends cdktf.TerraformMetaArgume
   */
   readonly gameServerProtectionPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_server_group#id GameliftGameServerGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_server_group#max_size GameliftGameServerGroup#max_size}
   */
   readonly maxSize: number;
@@ -243,9 +250,111 @@ export function gameliftGameServerGroupInstanceDefinitionToTerraform(struct?: Ga
   }
 }
 
+export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._weightedCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weightedCapacity = this._weightedCapacity;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._instanceType = undefined;
+      this._weightedCapacity = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._instanceType = value.instanceType;
+      this._weightedCapacity = value.weightedCapacity;
+    }
+  }
+
+  // instance_type - computed: false, optional: false, required: true
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // weighted_capacity - computed: false, optional: true, required: false
+  private _weightedCapacity?: string; 
+  public get weightedCapacity() {
+    return this.getStringAttribute('weighted_capacity');
+  }
+  public set weightedCapacity(value: string) {
+    this._weightedCapacity = value;
+  }
+  public resetWeightedCapacity() {
+    this._weightedCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightedCapacityInput() {
+    return this._weightedCapacity;
+  }
+}
+
+export class GameliftGameServerGroupInstanceDefinitionList extends cdktf.ComplexList {
+  public internalValue? : GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GameliftGameServerGroupInstanceDefinitionOutputReference {
+    return new GameliftGameServerGroupInstanceDefinitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GameliftGameServerGroupLaunchTemplate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_server_group#id GameliftGameServerGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -264,6 +373,7 @@ export function gameliftGameServerGroupLaunchTemplateToTerraform(struct?: Gameli
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     version: cdktf.stringToTerraform(struct!.version),
   }
@@ -283,6 +393,10 @@ export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.
   public get internalValue(): GameliftGameServerGroupLaunchTemplate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -297,19 +411,32 @@ export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.
   public set internalValue(value: GameliftGameServerGroupLaunchTemplate | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._id = undefined;
       this._name = undefined;
       this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
       this._name = value.name;
       this._version = value.version;
     }
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -368,6 +495,7 @@ export function gameliftGameServerGroupTimeoutsToTerraform(struct?: GameliftGame
 
 export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -377,7 +505,10 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GameliftGameServerGroupTimeouts | undefined {
+  public get internalValue(): GameliftGameServerGroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -391,14 +522,20 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GameliftGameServerGroupTimeouts | undefined) {
+  public set internalValue(value: GameliftGameServerGroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -474,6 +611,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
     this._balancingStrategy = config.balancingStrategy;
     this._gameServerGroupName = config.gameServerGroupName;
     this._gameServerProtectionPolicy = config.gameServerProtectionPolicy;
+    this._id = config.id;
     this._maxSize = config.maxSize;
     this._minSize = config.minSize;
     this._roleArn = config.roleArn;
@@ -481,7 +619,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._vpcSubnets = config.vpcSubnets;
     this._autoScalingPolicy.internalValue = config.autoScalingPolicy;
-    this._instanceDefinition = config.instanceDefinition;
+    this._instanceDefinition.internalValue = config.instanceDefinition;
     this._launchTemplate.internalValue = config.launchTemplate;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -546,8 +684,19 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_size - computed: false, optional: false, required: true
@@ -654,17 +803,16 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   }
 
   // instance_definition - computed: false, optional: false, required: true
-  private _instanceDefinition?: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable; 
+  private _instanceDefinition = new GameliftGameServerGroupInstanceDefinitionList(this, "instance_definition", true);
   public get instanceDefinition() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('instance_definition')));
+    return this._instanceDefinition;
   }
-  public set instanceDefinition(value: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable) {
-    this._instanceDefinition = value;
+  public putInstanceDefinition(value: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable) {
+    this._instanceDefinition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceDefinitionInput() {
-    return this._instanceDefinition;
+    return this._instanceDefinition.internalValue;
   }
 
   // launch_template - computed: false, optional: false, required: true
@@ -705,6 +853,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       balancing_strategy: cdktf.stringToTerraform(this._balancingStrategy),
       game_server_group_name: cdktf.stringToTerraform(this._gameServerGroupName),
       game_server_protection_policy: cdktf.stringToTerraform(this._gameServerProtectionPolicy),
+      id: cdktf.stringToTerraform(this._id),
       max_size: cdktf.numberToTerraform(this._maxSize),
       min_size: cdktf.numberToTerraform(this._minSize),
       role_arn: cdktf.stringToTerraform(this._roleArn),
@@ -712,7 +861,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnets),
       auto_scaling_policy: gameliftGameServerGroupAutoScalingPolicyToTerraform(this._autoScalingPolicy.internalValue),
-      instance_definition: cdktf.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform)(this._instanceDefinition),
+      instance_definition: cdktf.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform)(this._instanceDefinition.internalValue),
       launch_template: gameliftGameServerGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       timeouts: gameliftGameServerGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };

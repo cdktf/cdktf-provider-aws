@@ -16,6 +16,13 @@ export interface CloudwatchEventConnectionConfig extends cdktf.TerraformMetaArgu
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#id CloudwatchEventConnection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#name CloudwatchEventConnection#name}
   */
   readonly name: string;
@@ -225,6 +232,130 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersB
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference {
+    return new CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
@@ -252,6 +383,130 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersH
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference {
+    return new CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
@@ -279,6 +534,130 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference {
+    return new CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters {
   /**
   * body block
@@ -326,17 +705,17 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._body !== undefined) {
+    if (this._body?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.body = this._body;
+      internalValueResult.body = this._body?.internalValue;
     }
-    if (this._header !== undefined) {
+    if (this._header?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.header = this._header;
+      internalValueResult.header = this._header?.internalValue;
     }
-    if (this._queryString !== undefined) {
+    if (this._queryString?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.queryString = this._queryString;
+      internalValueResult.queryString = this._queryString?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -344,67 +723,64 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParameters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._body = undefined;
-      this._header = undefined;
-      this._queryString = undefined;
+      this._body.internalValue = undefined;
+      this._header.internalValue = undefined;
+      this._queryString.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._body = value.body;
-      this._header = value.header;
-      this._queryString = value.queryString;
+      this._body.internalValue = value.body;
+      this._header.internalValue = value.header;
+      this._queryString.internalValue = value.queryString;
     }
   }
 
   // body - computed: false, optional: true, required: false
-  private _body?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable; 
+  private _body = new CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList(this, "body", false);
   public get body() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('body');
+    return this._body;
   }
-  public set body(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable) {
-    this._body = value;
+  public putBody(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable) {
+    this._body.internalValue = value;
   }
   public resetBody() {
-    this._body = undefined;
+    this._body.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
-    return this._body;
+    return this._body.internalValue;
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable; 
+  private _header = new CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList(this, "header", false);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('header');
+    return this._header;
   }
-  public set header(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable; 
+  private _queryString = new CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList(this, "query_string", false);
   public get queryString() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query_string');
+    return this._queryString;
   }
-  public set queryString(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable) {
-    this._queryString = value;
+  public putQueryString(value: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable) {
+    this._queryString.internalValue = value;
   }
   public resetQueryString() {
-    this._queryString = undefined;
+    this._queryString.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get queryStringInput() {
-    return this._queryString;
+    return this._queryString.internalValue;
   }
 }
 export interface CloudwatchEventConnectionAuthParametersOauthClientParameters {
@@ -520,6 +896,130 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersB
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference {
+    return new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
@@ -547,6 +1047,130 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersH
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference {
+    return new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
@@ -574,6 +1198,130 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQ
   }
 }
 
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isValueSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isValueSecret = this._isValueSecret;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isValueSecret = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isValueSecret = value.isValueSecret;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // is_value_secret - computed: false, optional: true, required: false
+  private _isValueSecret?: boolean | cdktf.IResolvable; 
+  public get isValueSecret() {
+    return this.getBooleanAttribute('is_value_secret');
+  }
+  public set isValueSecret(value: boolean | cdktf.IResolvable) {
+    this._isValueSecret = value;
+  }
+  public resetIsValueSecret() {
+    this._isValueSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isValueSecretInput() {
+    return this._isValueSecret;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference {
+    return new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters {
   /**
   * body block
@@ -621,17 +1369,17 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._body !== undefined) {
+    if (this._body?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.body = this._body;
+      internalValueResult.body = this._body?.internalValue;
     }
-    if (this._header !== undefined) {
+    if (this._header?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.header = this._header;
+      internalValueResult.header = this._header?.internalValue;
     }
-    if (this._queryString !== undefined) {
+    if (this._queryString?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.queryString = this._queryString;
+      internalValueResult.queryString = this._queryString?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -639,67 +1387,64 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._body = undefined;
-      this._header = undefined;
-      this._queryString = undefined;
+      this._body.internalValue = undefined;
+      this._header.internalValue = undefined;
+      this._queryString.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._body = value.body;
-      this._header = value.header;
-      this._queryString = value.queryString;
+      this._body.internalValue = value.body;
+      this._header.internalValue = value.header;
+      this._queryString.internalValue = value.queryString;
     }
   }
 
   // body - computed: false, optional: true, required: false
-  private _body?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable; 
+  private _body = new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList(this, "body", false);
   public get body() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('body');
+    return this._body;
   }
-  public set body(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable) {
-    this._body = value;
+  public putBody(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable) {
+    this._body.internalValue = value;
   }
   public resetBody() {
-    this._body = undefined;
+    this._body.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
-    return this._body;
+    return this._body.internalValue;
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable; 
+  private _header = new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList(this, "header", false);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('header');
+    return this._header;
   }
-  public set header(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable; 
+  private _queryString = new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList(this, "query_string", false);
   public get queryString() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query_string');
+    return this._queryString;
   }
-  public set queryString(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable) {
-    this._queryString = value;
+  public putQueryString(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable) {
+    this._queryString.internalValue = value;
   }
   public resetQueryString() {
-    this._queryString = undefined;
+    this._queryString.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get queryStringInput() {
-    return this._queryString;
+    return this._queryString.internalValue;
   }
 }
 export interface CloudwatchEventConnectionAuthParametersOauth {
@@ -1034,6 +1779,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
     });
     this._authorizationType = config.authorizationType;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._authParameters.internalValue = config.authParameters;
   }
@@ -1077,8 +1823,19 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1120,6 +1877,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
     return {
       authorization_type: cdktf.stringToTerraform(this._authorizationType),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       auth_parameters: cloudwatchEventConnectionAuthParametersToTerraform(this._authParameters.internalValue),
     };

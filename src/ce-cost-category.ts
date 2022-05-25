@@ -12,6 +12,13 @@ export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultValue?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#id CeCostCategory#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#name CeCostCategory#name}
   */
   readonly name: string;
@@ -514,6 +521,130 @@ export function ceCostCategoryRuleRuleAndToTerraform(struct?: CeCostCategoryRule
   }
 }
 
+export class CeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CeCostCategoryRuleRuleAnd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategory?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategory = this._costCategory?.internalValue;
+    }
+    if (this._dimension?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimension = this._dimension?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CeCostCategoryRuleRuleAnd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategory.internalValue = undefined;
+      this._dimension.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategory.internalValue = value.costCategory;
+      this._dimension.internalValue = value.dimension;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_category - computed: false, optional: true, required: false
+  private _costCategory = new CeCostCategoryRuleRuleAndCostCategoryOutputReference(this, "cost_category");
+  public get costCategory() {
+    return this._costCategory;
+  }
+  public putCostCategory(value: CeCostCategoryRuleRuleAndCostCategory) {
+    this._costCategory.internalValue = value;
+  }
+  public resetCostCategory() {
+    this._costCategory.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoryInput() {
+    return this._costCategory.internalValue;
+  }
+
+  // dimension - computed: false, optional: true, required: false
+  private _dimension = new CeCostCategoryRuleRuleAndDimensionOutputReference(this, "dimension");
+  public get dimension() {
+    return this._dimension;
+  }
+  public putDimension(value: CeCostCategoryRuleRuleAndDimension) {
+    this._dimension.internalValue = value;
+  }
+  public resetDimension() {
+    this._dimension.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionInput() {
+    return this._dimension.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new CeCostCategoryRuleRuleAndTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: CeCostCategoryRuleRuleAndTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class CeCostCategoryRuleRuleAndList extends cdktf.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CeCostCategoryRuleRuleAndOutputReference {
+    return new CeCostCategoryRuleRuleAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CeCostCategoryRuleRuleCostCategory {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#key CeCostCategory#key}
@@ -1624,6 +1755,130 @@ export function ceCostCategoryRuleRuleOrToTerraform(struct?: CeCostCategoryRuleR
   }
 }
 
+export class CeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CeCostCategoryRuleRuleOr | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategory?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategory = this._costCategory?.internalValue;
+    }
+    if (this._dimension?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimension = this._dimension?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CeCostCategoryRuleRuleOr | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategory.internalValue = undefined;
+      this._dimension.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategory.internalValue = value.costCategory;
+      this._dimension.internalValue = value.dimension;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_category - computed: false, optional: true, required: false
+  private _costCategory = new CeCostCategoryRuleRuleOrCostCategoryOutputReference(this, "cost_category");
+  public get costCategory() {
+    return this._costCategory;
+  }
+  public putCostCategory(value: CeCostCategoryRuleRuleOrCostCategory) {
+    this._costCategory.internalValue = value;
+  }
+  public resetCostCategory() {
+    this._costCategory.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoryInput() {
+    return this._costCategory.internalValue;
+  }
+
+  // dimension - computed: false, optional: true, required: false
+  private _dimension = new CeCostCategoryRuleRuleOrDimensionOutputReference(this, "dimension");
+  public get dimension() {
+    return this._dimension;
+  }
+  public putDimension(value: CeCostCategoryRuleRuleOrDimension) {
+    this._dimension.internalValue = value;
+  }
+  public resetDimension() {
+    this._dimension.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionInput() {
+    return this._dimension.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new CeCostCategoryRuleRuleOrTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: CeCostCategoryRuleRuleOrTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class CeCostCategoryRuleRuleOrList extends cdktf.ComplexList {
+  public internalValue? : CeCostCategoryRuleRuleOr[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CeCostCategoryRuleRuleOrOutputReference {
+    return new CeCostCategoryRuleRuleOrOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CeCostCategoryRuleRuleTags {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#key CeCostCategory#key}
@@ -1811,9 +2066,9 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CeCostCategoryRuleRule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._and !== undefined) {
+    if (this._and?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.and = this._and;
+      internalValueResult.and = this._and?.internalValue;
     }
     if (this._costCategory?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1827,9 +2082,9 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.not = this._not?.internalValue;
     }
-    if (this._or !== undefined) {
+    if (this._or?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.or = this._or;
+      internalValueResult.or = this._or?.internalValue;
     }
     if (this._tags?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1841,39 +2096,38 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: CeCostCategoryRuleRule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._and = undefined;
+      this._and.internalValue = undefined;
       this._costCategory.internalValue = undefined;
       this._dimension.internalValue = undefined;
       this._not.internalValue = undefined;
-      this._or = undefined;
+      this._or.internalValue = undefined;
       this._tags.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._and = value.and;
+      this._and.internalValue = value.and;
       this._costCategory.internalValue = value.costCategory;
       this._dimension.internalValue = value.dimension;
       this._not.internalValue = value.not;
-      this._or = value.or;
+      this._or.internalValue = value.or;
       this._tags.internalValue = value.tags;
     }
   }
 
   // and - computed: false, optional: true, required: false
-  private _and?: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable; 
+  private _and = new CeCostCategoryRuleRuleAndList(this, "and", true);
   public get and() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('and')));
+    return this._and;
   }
-  public set and(value: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable) {
-    this._and = value;
+  public putAnd(value: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable) {
+    this._and.internalValue = value;
   }
   public resetAnd() {
-    this._and = undefined;
+    this._and.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get andInput() {
-    return this._and;
+    return this._and.internalValue;
   }
 
   // cost_category - computed: false, optional: true, required: false
@@ -1925,20 +2179,19 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
   }
 
   // or - computed: false, optional: true, required: false
-  private _or?: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable; 
+  private _or = new CeCostCategoryRuleRuleOrList(this, "or", true);
   public get or() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('or')));
+    return this._or;
   }
-  public set or(value: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable) {
-    this._or = value;
+  public putOr(value: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable) {
+    this._or.internalValue = value;
   }
   public resetOr() {
-    this._or = undefined;
+    this._or.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get orInput() {
-    return this._or;
+    return this._or.internalValue;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -1993,6 +2246,152 @@ export function ceCostCategoryRuleToTerraform(struct?: CeCostCategoryRule | cdkt
   }
 }
 
+export class CeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CeCostCategoryRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    if (this._inheritedValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inheritedValue = this._inheritedValue?.internalValue;
+    }
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CeCostCategoryRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._value = undefined;
+      this._inheritedValue.internalValue = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._value = value.value;
+      this._inheritedValue.internalValue = value.inheritedValue;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+
+  // inherited_value - computed: false, optional: true, required: false
+  private _inheritedValue = new CeCostCategoryRuleInheritedValueOutputReference(this, "inherited_value");
+  public get inheritedValue() {
+    return this._inheritedValue;
+  }
+  public putInheritedValue(value: CeCostCategoryRuleInheritedValue) {
+    this._inheritedValue.internalValue = value;
+  }
+  public resetInheritedValue() {
+    this._inheritedValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritedValueInput() {
+    return this._inheritedValue.internalValue;
+  }
+
+  // rule - computed: false, optional: true, required: false
+  private _rule = new CeCostCategoryRuleRuleOutputReference(this, "rule");
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: CeCostCategoryRuleRule) {
+    this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
+
+export class CeCostCategoryRuleList extends cdktf.ComplexList {
+  public internalValue? : CeCostCategoryRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CeCostCategoryRuleOutputReference {
+    return new CeCostCategoryRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CeCostCategorySplitChargeRuleParameter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#type CeCostCategory#type}
@@ -2015,6 +2414,108 @@ export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCos
   }
 }
 
+export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CeCostCategorySplitChargeRuleParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._values = value.values;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return cdktf.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CeCostCategorySplitChargeRuleParameterList extends cdktf.ComplexList {
+  public internalValue? : CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CeCostCategorySplitChargeRuleParameterOutputReference {
+    return new CeCostCategorySplitChargeRuleParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CeCostCategorySplitChargeRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#method CeCostCategory#method}
@@ -2049,6 +2550,143 @@ export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategory
   }
 }
 
+export class CeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CeCostCategorySplitChargeRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._method !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._targets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targets = this._targets;
+    }
+    if (this._parameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameter = this._parameter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CeCostCategorySplitChargeRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._method = undefined;
+      this._source = undefined;
+      this._targets = undefined;
+      this._parameter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._method = value.method;
+      this._source = value.source;
+      this._targets = value.targets;
+      this._parameter.internalValue = value.parameter;
+    }
+  }
+
+  // method - computed: false, optional: false, required: true
+  private _method?: string; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string) {
+    this._method = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // targets - computed: false, optional: false, required: true
+  private _targets?: string[]; 
+  public get targets() {
+    return cdktf.Fn.tolist(this.getListAttribute('targets'));
+  }
+  public set targets(value: string[]) {
+    this._targets = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetsInput() {
+    return this._targets;
+  }
+
+  // parameter - computed: false, optional: true, required: false
+  private _parameter = new CeCostCategorySplitChargeRuleParameterList(this, "parameter", true);
+  public get parameter() {
+    return this._parameter;
+  }
+  public putParameter(value: CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
+  }
+  public resetParameter() {
+    this._parameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter.internalValue;
+  }
+}
+
+export class CeCostCategorySplitChargeRuleList extends cdktf.ComplexList {
+  public internalValue? : CeCostCategorySplitChargeRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CeCostCategorySplitChargeRuleOutputReference {
+    return new CeCostCategorySplitChargeRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category aws_ce_cost_category}
@@ -2085,10 +2723,11 @@ export class CeCostCategory extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._defaultValue = config.defaultValue;
+    this._id = config.id;
     this._name = config.name;
     this._ruleVersion = config.ruleVersion;
-    this._rule = config.rule;
-    this._splitChargeRule = config.splitChargeRule;
+    this._rule.internalValue = config.rule;
+    this._splitChargeRule.internalValue = config.splitChargeRule;
   }
 
   // ==========
@@ -2127,8 +2766,19 @@ export class CeCostCategory extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -2158,34 +2808,32 @@ export class CeCostCategory extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: CeCostCategoryRule[] | cdktf.IResolvable; 
+  private _rule = new CeCostCategoryRuleList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: CeCostCategoryRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: CeCostCategoryRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // split_charge_rule - computed: false, optional: true, required: false
-  private _splitChargeRule?: CeCostCategorySplitChargeRule[] | cdktf.IResolvable; 
+  private _splitChargeRule = new CeCostCategorySplitChargeRuleList(this, "split_charge_rule", true);
   public get splitChargeRule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('split_charge_rule')));
+    return this._splitChargeRule;
   }
-  public set splitChargeRule(value: CeCostCategorySplitChargeRule[] | cdktf.IResolvable) {
-    this._splitChargeRule = value;
+  public putSplitChargeRule(value: CeCostCategorySplitChargeRule[] | cdktf.IResolvable) {
+    this._splitChargeRule.internalValue = value;
   }
   public resetSplitChargeRule() {
-    this._splitChargeRule = undefined;
+    this._splitChargeRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get splitChargeRuleInput() {
-    return this._splitChargeRule;
+    return this._splitChargeRule.internalValue;
   }
 
   // =========
@@ -2195,10 +2843,11 @@ export class CeCostCategory extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_value: cdktf.stringToTerraform(this._defaultValue),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       rule_version: cdktf.stringToTerraform(this._ruleVersion),
-      rule: cdktf.listMapper(ceCostCategoryRuleToTerraform)(this._rule),
-      split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform)(this._splitChargeRule),
+      rule: cdktf.listMapper(ceCostCategoryRuleToTerraform)(this._rule.internalValue),
+      split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform)(this._splitChargeRule.internalValue),
     };
   }
 }

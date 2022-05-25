@@ -16,6 +16,13 @@ export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaAr
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#id KinesisAnalyticsApplication#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#name KinesisAnalyticsApplication#name}
   */
   readonly name: string;
@@ -561,6 +568,124 @@ export function kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform(
   }
 }
 
+export class KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisAnalyticsApplicationInputsSchemaRecordColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mapping !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mapping = this._mapping;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sqlType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sqlType = this._sqlType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisAnalyticsApplicationInputsSchemaRecordColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mapping = undefined;
+      this._name = undefined;
+      this._sqlType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mapping = value.mapping;
+      this._name = value.name;
+      this._sqlType = value.sqlType;
+    }
+  }
+
+  // mapping - computed: false, optional: true, required: false
+  private _mapping?: string; 
+  public get mapping() {
+    return this.getStringAttribute('mapping');
+  }
+  public set mapping(value: string) {
+    this._mapping = value;
+  }
+  public resetMapping() {
+    this._mapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mappingInput() {
+    return this._mapping;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // sql_type - computed: false, optional: false, required: true
+  private _sqlType?: string; 
+  public get sqlType() {
+    return this.getStringAttribute('sql_type');
+  }
+  public set sqlType(value: string) {
+    this._sqlType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlTypeInput() {
+    return this._sqlType;
+  }
+}
+
+export class KinesisAnalyticsApplicationInputsSchemaRecordColumnsList extends cdktf.ComplexList {
+  public internalValue? : KinesisAnalyticsApplicationInputsSchemaRecordColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference {
+    return new KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#record_column_delimiter KinesisAnalyticsApplication#record_column_delimiter}
@@ -926,9 +1051,9 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.recordEncoding = this._recordEncoding;
     }
-    if (this._recordColumns !== undefined) {
+    if (this._recordColumns?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.recordColumns = this._recordColumns;
+      internalValueResult.recordColumns = this._recordColumns?.internalValue;
     }
     if (this._recordFormat?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -941,13 +1066,13 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this._recordEncoding = undefined;
-      this._recordColumns = undefined;
+      this._recordColumns.internalValue = undefined;
       this._recordFormat.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._recordEncoding = value.recordEncoding;
-      this._recordColumns = value.recordColumns;
+      this._recordColumns.internalValue = value.recordColumns;
       this._recordFormat.internalValue = value.recordFormat;
     }
   }
@@ -969,17 +1094,16 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
   }
 
   // record_columns - computed: false, optional: false, required: true
-  private _recordColumns?: KinesisAnalyticsApplicationInputsSchemaRecordColumns[] | cdktf.IResolvable; 
+  private _recordColumns = new KinesisAnalyticsApplicationInputsSchemaRecordColumnsList(this, "record_columns", false);
   public get recordColumns() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('record_columns');
+    return this._recordColumns;
   }
-  public set recordColumns(value: KinesisAnalyticsApplicationInputsSchemaRecordColumns[] | cdktf.IResolvable) {
-    this._recordColumns = value;
+  public putRecordColumns(value: KinesisAnalyticsApplicationInputsSchemaRecordColumns[] | cdktf.IResolvable) {
+    this._recordColumns.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get recordColumnsInput() {
-    return this._recordColumns;
+    return this._recordColumns.internalValue;
   }
 
   // record_format - computed: false, optional: false, required: true
@@ -1012,6 +1136,86 @@ export function kinesisAnalyticsApplicationInputsStartingPositionConfigurationTo
   }
 }
 
+export class KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisAnalyticsApplicationInputsStartingPositionConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._startingPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startingPosition = this._startingPosition;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisAnalyticsApplicationInputsStartingPositionConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._startingPosition = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._startingPosition = value.startingPosition;
+    }
+  }
+
+  // starting_position - computed: true, optional: true, required: false
+  private _startingPosition?: string; 
+  public get startingPosition() {
+    return this.getStringAttribute('starting_position');
+  }
+  public set startingPosition(value: string) {
+    this._startingPosition = value;
+  }
+  public resetStartingPosition() {
+    this._startingPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startingPositionInput() {
+    return this._startingPosition;
+  }
+}
+
+export class KinesisAnalyticsApplicationInputsStartingPositionConfigurationList extends cdktf.ComplexList {
+  public internalValue? : KinesisAnalyticsApplicationInputsStartingPositionConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference {
+    return new KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisAnalyticsApplicationInputs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#name_prefix KinesisAnalyticsApplication#name_prefix}
@@ -1109,9 +1313,9 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.schema = this._schema?.internalValue;
     }
-    if (this._startingPositionConfiguration !== undefined) {
+    if (this._startingPositionConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.startingPositionConfiguration = this._startingPositionConfiguration;
+      internalValueResult.startingPositionConfiguration = this._startingPositionConfiguration?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1125,7 +1329,7 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
       this._parallelism.internalValue = undefined;
       this._processingConfiguration.internalValue = undefined;
       this._schema.internalValue = undefined;
-      this._startingPositionConfiguration = undefined;
+      this._startingPositionConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1135,7 +1339,7 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
       this._parallelism.internalValue = value.parallelism;
       this._processingConfiguration.internalValue = value.processingConfiguration;
       this._schema.internalValue = value.schema;
-      this._startingPositionConfiguration = value.startingPositionConfiguration;
+      this._startingPositionConfiguration.internalValue = value.startingPositionConfiguration;
     }
   }
 
@@ -1240,20 +1444,19 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
   }
 
   // starting_position_configuration - computed: false, optional: true, required: false
-  private _startingPositionConfiguration?: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[] | cdktf.IResolvable; 
+  private _startingPositionConfiguration = new KinesisAnalyticsApplicationInputsStartingPositionConfigurationList(this, "starting_position_configuration", false);
   public get startingPositionConfiguration() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('starting_position_configuration');
+    return this._startingPositionConfiguration;
   }
-  public set startingPositionConfiguration(value: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[] | cdktf.IResolvable) {
-    this._startingPositionConfiguration = value;
+  public putStartingPositionConfiguration(value: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[] | cdktf.IResolvable) {
+    this._startingPositionConfiguration.internalValue = value;
   }
   public resetStartingPositionConfiguration() {
-    this._startingPositionConfiguration = undefined;
+    this._startingPositionConfiguration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get startingPositionConfigurationInput() {
-    return this._startingPositionConfiguration;
+    return this._startingPositionConfiguration.internalValue;
   }
 }
 export interface KinesisAnalyticsApplicationOutputsKinesisFirehose {
@@ -1621,6 +1824,173 @@ export function kinesisAnalyticsApplicationOutputsToTerraform(struct?: KinesisAn
   }
 }
 
+export class KinesisAnalyticsApplicationOutputsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisAnalyticsApplicationOutputs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._kinesisFirehose?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kinesisFirehose = this._kinesisFirehose?.internalValue;
+    }
+    if (this._kinesisStream?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kinesisStream = this._kinesisStream?.internalValue;
+    }
+    if (this._lambda?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lambda = this._lambda?.internalValue;
+    }
+    if (this._schema?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisAnalyticsApplicationOutputs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._kinesisFirehose.internalValue = undefined;
+      this._kinesisStream.internalValue = undefined;
+      this._lambda.internalValue = undefined;
+      this._schema.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._kinesisFirehose.internalValue = value.kinesisFirehose;
+      this._kinesisStream.internalValue = value.kinesisStream;
+      this._lambda.internalValue = value.lambda;
+      this._schema.internalValue = value.schema;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // kinesis_firehose - computed: false, optional: true, required: false
+  private _kinesisFirehose = new KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference(this, "kinesis_firehose");
+  public get kinesisFirehose() {
+    return this._kinesisFirehose;
+  }
+  public putKinesisFirehose(value: KinesisAnalyticsApplicationOutputsKinesisFirehose) {
+    this._kinesisFirehose.internalValue = value;
+  }
+  public resetKinesisFirehose() {
+    this._kinesisFirehose.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisFirehoseInput() {
+    return this._kinesisFirehose.internalValue;
+  }
+
+  // kinesis_stream - computed: false, optional: true, required: false
+  private _kinesisStream = new KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(this, "kinesis_stream");
+  public get kinesisStream() {
+    return this._kinesisStream;
+  }
+  public putKinesisStream(value: KinesisAnalyticsApplicationOutputsKinesisStream) {
+    this._kinesisStream.internalValue = value;
+  }
+  public resetKinesisStream() {
+    this._kinesisStream.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisStreamInput() {
+    return this._kinesisStream.internalValue;
+  }
+
+  // lambda - computed: false, optional: true, required: false
+  private _lambda = new KinesisAnalyticsApplicationOutputsLambdaOutputReference(this, "lambda");
+  public get lambda() {
+    return this._lambda;
+  }
+  public putLambda(value: KinesisAnalyticsApplicationOutputsLambda) {
+    this._lambda.internalValue = value;
+  }
+  public resetLambda() {
+    this._lambda.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaInput() {
+    return this._lambda.internalValue;
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema = new KinesisAnalyticsApplicationOutputsSchemaOutputReference(this, "schema");
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: KinesisAnalyticsApplicationOutputsSchema) {
+    this._schema.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
+}
+
+export class KinesisAnalyticsApplicationOutputsList extends cdktf.ComplexList {
+  public internalValue? : KinesisAnalyticsApplicationOutputs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisAnalyticsApplicationOutputsOutputReference {
+    return new KinesisAnalyticsApplicationOutputsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisAnalyticsApplicationReferenceDataSourcesS3 {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#bucket_arn KinesisAnalyticsApplication#bucket_arn}
@@ -1758,6 +2128,124 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColum
   }
 }
 
+export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mapping !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mapping = this._mapping;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sqlType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sqlType = this._sqlType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mapping = undefined;
+      this._name = undefined;
+      this._sqlType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mapping = value.mapping;
+      this._name = value.name;
+      this._sqlType = value.sqlType;
+    }
+  }
+
+  // mapping - computed: false, optional: true, required: false
+  private _mapping?: string; 
+  public get mapping() {
+    return this.getStringAttribute('mapping');
+  }
+  public set mapping(value: string) {
+    this._mapping = value;
+  }
+  public resetMapping() {
+    this._mapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mappingInput() {
+    return this._mapping;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // sql_type - computed: false, optional: false, required: true
+  private _sqlType?: string; 
+  public get sqlType() {
+    return this.getStringAttribute('sql_type');
+  }
+  public set sqlType(value: string) {
+    this._sqlType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlTypeInput() {
+    return this._sqlType;
+  }
+}
+
+export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList extends cdktf.ComplexList {
+  public internalValue? : KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference {
+    return new KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application#record_column_delimiter KinesisAnalyticsApplication#record_column_delimiter}
@@ -2123,9 +2611,9 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
       hasAnyValues = true;
       internalValueResult.recordEncoding = this._recordEncoding;
     }
-    if (this._recordColumns !== undefined) {
+    if (this._recordColumns?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.recordColumns = this._recordColumns;
+      internalValueResult.recordColumns = this._recordColumns?.internalValue;
     }
     if (this._recordFormat?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2138,13 +2626,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
     if (value === undefined) {
       this.isEmptyObject = false;
       this._recordEncoding = undefined;
-      this._recordColumns = undefined;
+      this._recordColumns.internalValue = undefined;
       this._recordFormat.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._recordEncoding = value.recordEncoding;
-      this._recordColumns = value.recordColumns;
+      this._recordColumns.internalValue = value.recordColumns;
       this._recordFormat.internalValue = value.recordFormat;
     }
   }
@@ -2166,17 +2654,16 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
   }
 
   // record_columns - computed: false, optional: false, required: true
-  private _recordColumns?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[] | cdktf.IResolvable; 
+  private _recordColumns = new KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList(this, "record_columns", false);
   public get recordColumns() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('record_columns');
+    return this._recordColumns;
   }
-  public set recordColumns(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[] | cdktf.IResolvable) {
-    this._recordColumns = value;
+  public putRecordColumns(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[] | cdktf.IResolvable) {
+    this._recordColumns.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get recordColumnsInput() {
-    return this._recordColumns;
+    return this._recordColumns.internalValue;
   }
 
   // record_format - computed: false, optional: false, required: true
@@ -2348,13 +2835,14 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
     });
     this._code = config.code;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._startApplication = config.startApplication;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._cloudwatchLoggingOptions.internalValue = config.cloudwatchLoggingOptions;
     this._inputs.internalValue = config.inputs;
-    this._outputs = config.outputs;
+    this._outputs.internalValue = config.outputs;
     this._referenceDataSources.internalValue = config.referenceDataSources;
   }
 
@@ -2405,8 +2893,19 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_update_timestamp - computed: true, optional: false, required: false
@@ -2518,20 +3017,19 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
   }
 
   // outputs - computed: false, optional: true, required: false
-  private _outputs?: KinesisAnalyticsApplicationOutputs[] | cdktf.IResolvable; 
+  private _outputs = new KinesisAnalyticsApplicationOutputsList(this, "outputs", true);
   public get outputs() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('outputs')));
+    return this._outputs;
   }
-  public set outputs(value: KinesisAnalyticsApplicationOutputs[] | cdktf.IResolvable) {
-    this._outputs = value;
+  public putOutputs(value: KinesisAnalyticsApplicationOutputs[] | cdktf.IResolvable) {
+    this._outputs.internalValue = value;
   }
   public resetOutputs() {
-    this._outputs = undefined;
+    this._outputs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get outputsInput() {
-    return this._outputs;
+    return this._outputs.internalValue;
   }
 
   // reference_data_sources - computed: false, optional: true, required: false
@@ -2558,13 +3056,14 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
     return {
       code: cdktf.stringToTerraform(this._code),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       start_application: cdktf.booleanToTerraform(this._startApplication),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       cloudwatch_logging_options: kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform(this._cloudwatchLoggingOptions.internalValue),
       inputs: kinesisAnalyticsApplicationInputsToTerraform(this._inputs.internalValue),
-      outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform)(this._outputs),
+      outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform)(this._outputs.internalValue),
       reference_data_sources: kinesisAnalyticsApplicationReferenceDataSourcesToTerraform(this._referenceDataSources.internalValue),
     };
   }

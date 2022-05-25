@@ -24,6 +24,13 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
   */
   readonly format: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cur_report_definition#id CurReportDefinition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cur_report_definition#refresh_closed_reports CurReportDefinition#refresh_closed_reports}
   */
   readonly refreshClosedReports?: boolean | cdktf.IResolvable;
@@ -91,6 +98,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
     this._additionalSchemaElements = config.additionalSchemaElements;
     this._compression = config.compression;
     this._format = config.format;
+    this._id = config.id;
     this._refreshClosedReports = config.refreshClosedReports;
     this._reportName = config.reportName;
     this._reportVersioning = config.reportVersioning;
@@ -165,8 +173,19 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // refresh_closed_reports - computed: false, optional: true, required: false
@@ -279,6 +298,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
       additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalSchemaElements),
       compression: cdktf.stringToTerraform(this._compression),
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       refresh_closed_reports: cdktf.booleanToTerraform(this._refreshClosedReports),
       report_name: cdktf.stringToTerraform(this._reportName),
       report_versioning: cdktf.stringToTerraform(this._reportVersioning),

@@ -28,6 +28,13 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group#id EmrInstanceGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group#instance_count EmrInstanceGroup#instance_count}
   */
   readonly instanceCount?: number;
@@ -78,6 +85,146 @@ export function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEb
   }
 }
 
+export class EmrInstanceGroupEbsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceGroupEbsConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._iops !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iops = this._iops;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._volumesPerInstance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumesPerInstance = this._volumesPerInstance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceGroupEbsConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._iops = undefined;
+      this._size = undefined;
+      this._type = undefined;
+      this._volumesPerInstance = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._iops = value.iops;
+      this._size = value.size;
+      this._type = value.type;
+      this._volumesPerInstance = value.volumesPerInstance;
+    }
+  }
+
+  // iops - computed: false, optional: true, required: false
+  private _iops?: number; 
+  public get iops() {
+    return this.getNumberAttribute('iops');
+  }
+  public set iops(value: number) {
+    this._iops = value;
+  }
+  public resetIops() {
+    this._iops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iopsInput() {
+    return this._iops;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // volumes_per_instance - computed: false, optional: true, required: false
+  private _volumesPerInstance?: number; 
+  public get volumesPerInstance() {
+    return this.getNumberAttribute('volumes_per_instance');
+  }
+  public set volumesPerInstance(value: number) {
+    this._volumesPerInstance = value;
+  }
+  public resetVolumesPerInstance() {
+    this._volumesPerInstance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumesPerInstanceInput() {
+    return this._volumesPerInstance;
+  }
+}
+
+export class EmrInstanceGroupEbsConfigList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceGroupEbsConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceGroupEbsConfigOutputReference {
+    return new EmrInstanceGroupEbsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group aws_emr_instance_group}
@@ -118,10 +265,11 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._configurationsJson = config.configurationsJson;
     this._ebsOptimized = config.ebsOptimized;
+    this._id = config.id;
     this._instanceCount = config.instanceCount;
     this._instanceType = config.instanceType;
     this._name = config.name;
-    this._ebsConfig = config.ebsConfig;
+    this._ebsConfig.internalValue = config.ebsConfig;
   }
 
   // ==========
@@ -206,8 +354,19 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_count - computed: false, optional: true, required: false
@@ -266,20 +425,19 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   }
 
   // ebs_config - computed: false, optional: true, required: false
-  private _ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable; 
+  private _ebsConfig = new EmrInstanceGroupEbsConfigList(this, "ebs_config", true);
   public get ebsConfig() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_config')));
+    return this._ebsConfig;
   }
-  public set ebsConfig(value: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable) {
-    this._ebsConfig = value;
+  public putEbsConfig(value: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable) {
+    this._ebsConfig.internalValue = value;
   }
   public resetEbsConfig() {
-    this._ebsConfig = undefined;
+    this._ebsConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ebsConfigInput() {
-    return this._ebsConfig;
+    return this._ebsConfig.internalValue;
   }
 
   // =========
@@ -293,10 +451,11 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       configurations_json: cdktf.stringToTerraform(this._configurationsJson),
       ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      id: cdktf.stringToTerraform(this._id),
       instance_count: cdktf.numberToTerraform(this._instanceCount),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       name: cdktf.stringToTerraform(this._name),
-      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform)(this._ebsConfig),
+      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform)(this._ebsConfig.internalValue),
     };
   }
 }

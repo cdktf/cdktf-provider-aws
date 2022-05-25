@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface LbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule#id LbListenerRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule#listener_arn LbListenerRule#listener_arn}
   */
   readonly listenerArn: string;
@@ -825,6 +832,105 @@ export function lbListenerRuleActionForwardTargetGroupToTerraform(struct?: LbLis
   }
 }
 
+export class LbListenerRuleActionForwardTargetGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbListenerRuleActionForwardTargetGroup | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arn = this._arn;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerRuleActionForwardTargetGroup | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arn = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arn = value.arn;
+      this._weight = value.weight;
+    }
+  }
+
+  // arn - computed: false, optional: false, required: true
+  private _arn?: string; 
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class LbListenerRuleActionForwardTargetGroupList extends cdktf.ComplexList {
+  public internalValue? : LbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbListenerRuleActionForwardTargetGroupOutputReference {
+    return new LbListenerRuleActionForwardTargetGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LbListenerRuleActionForward {
   /**
   * stickiness block
@@ -869,9 +975,9 @@ export class LbListenerRuleActionForwardOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.stickiness = this._stickiness?.internalValue;
     }
-    if (this._targetGroup !== undefined) {
+    if (this._targetGroup?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.targetGroup = this._targetGroup;
+      internalValueResult.targetGroup = this._targetGroup?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -880,12 +986,12 @@ export class LbListenerRuleActionForwardOutputReference extends cdktf.ComplexObj
     if (value === undefined) {
       this.isEmptyObject = false;
       this._stickiness.internalValue = undefined;
-      this._targetGroup = undefined;
+      this._targetGroup.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._stickiness.internalValue = value.stickiness;
-      this._targetGroup = value.targetGroup;
+      this._targetGroup.internalValue = value.targetGroup;
     }
   }
 
@@ -906,17 +1012,16 @@ export class LbListenerRuleActionForwardOutputReference extends cdktf.ComplexObj
   }
 
   // target_group - computed: false, optional: false, required: true
-  private _targetGroup?: LbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable; 
+  private _targetGroup = new LbListenerRuleActionForwardTargetGroupList(this, "target_group", true);
   public get targetGroup() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_group')));
+    return this._targetGroup;
   }
-  public set targetGroup(value: LbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable) {
-    this._targetGroup = value;
+  public putTargetGroup(value: LbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable) {
+    this._targetGroup.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get targetGroupInput() {
-    return this._targetGroup;
+    return this._targetGroup.internalValue;
   }
 }
 export interface LbListenerRuleActionRedirect {
@@ -1178,6 +1283,237 @@ export function lbListenerRuleActionToTerraform(struct?: LbListenerRuleAction | 
   }
 }
 
+export class LbListenerRuleActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbListenerRuleAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._order !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.order = this._order;
+    }
+    if (this._targetGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetGroupArn = this._targetGroupArn;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._authenticateCognito?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authenticateCognito = this._authenticateCognito?.internalValue;
+    }
+    if (this._authenticateOidc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authenticateOidc = this._authenticateOidc?.internalValue;
+    }
+    if (this._fixedResponse?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fixedResponse = this._fixedResponse?.internalValue;
+    }
+    if (this._forward?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forward = this._forward?.internalValue;
+    }
+    if (this._redirect?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redirect = this._redirect?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerRuleAction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._order = undefined;
+      this._targetGroupArn = undefined;
+      this._type = undefined;
+      this._authenticateCognito.internalValue = undefined;
+      this._authenticateOidc.internalValue = undefined;
+      this._fixedResponse.internalValue = undefined;
+      this._forward.internalValue = undefined;
+      this._redirect.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._order = value.order;
+      this._targetGroupArn = value.targetGroupArn;
+      this._type = value.type;
+      this._authenticateCognito.internalValue = value.authenticateCognito;
+      this._authenticateOidc.internalValue = value.authenticateOidc;
+      this._fixedResponse.internalValue = value.fixedResponse;
+      this._forward.internalValue = value.forward;
+      this._redirect.internalValue = value.redirect;
+    }
+  }
+
+  // order - computed: true, optional: true, required: false
+  private _order?: number; 
+  public get order() {
+    return this.getNumberAttribute('order');
+  }
+  public set order(value: number) {
+    this._order = value;
+  }
+  public resetOrder() {
+    this._order = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderInput() {
+    return this._order;
+  }
+
+  // target_group_arn - computed: false, optional: true, required: false
+  private _targetGroupArn?: string; 
+  public get targetGroupArn() {
+    return this.getStringAttribute('target_group_arn');
+  }
+  public set targetGroupArn(value: string) {
+    this._targetGroupArn = value;
+  }
+  public resetTargetGroupArn() {
+    this._targetGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetGroupArnInput() {
+    return this._targetGroupArn;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // authenticate_cognito - computed: false, optional: true, required: false
+  private _authenticateCognito = new LbListenerRuleActionAuthenticateCognitoOutputReference(this, "authenticate_cognito");
+  public get authenticateCognito() {
+    return this._authenticateCognito;
+  }
+  public putAuthenticateCognito(value: LbListenerRuleActionAuthenticateCognito) {
+    this._authenticateCognito.internalValue = value;
+  }
+  public resetAuthenticateCognito() {
+    this._authenticateCognito.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticateCognitoInput() {
+    return this._authenticateCognito.internalValue;
+  }
+
+  // authenticate_oidc - computed: false, optional: true, required: false
+  private _authenticateOidc = new LbListenerRuleActionAuthenticateOidcOutputReference(this, "authenticate_oidc");
+  public get authenticateOidc() {
+    return this._authenticateOidc;
+  }
+  public putAuthenticateOidc(value: LbListenerRuleActionAuthenticateOidc) {
+    this._authenticateOidc.internalValue = value;
+  }
+  public resetAuthenticateOidc() {
+    this._authenticateOidc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticateOidcInput() {
+    return this._authenticateOidc.internalValue;
+  }
+
+  // fixed_response - computed: false, optional: true, required: false
+  private _fixedResponse = new LbListenerRuleActionFixedResponseOutputReference(this, "fixed_response");
+  public get fixedResponse() {
+    return this._fixedResponse;
+  }
+  public putFixedResponse(value: LbListenerRuleActionFixedResponse) {
+    this._fixedResponse.internalValue = value;
+  }
+  public resetFixedResponse() {
+    this._fixedResponse.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedResponseInput() {
+    return this._fixedResponse.internalValue;
+  }
+
+  // forward - computed: false, optional: true, required: false
+  private _forward = new LbListenerRuleActionForwardOutputReference(this, "forward");
+  public get forward() {
+    return this._forward;
+  }
+  public putForward(value: LbListenerRuleActionForward) {
+    this._forward.internalValue = value;
+  }
+  public resetForward() {
+    this._forward.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardInput() {
+    return this._forward.internalValue;
+  }
+
+  // redirect - computed: false, optional: true, required: false
+  private _redirect = new LbListenerRuleActionRedirectOutputReference(this, "redirect");
+  public get redirect() {
+    return this._redirect;
+  }
+  public putRedirect(value: LbListenerRuleActionRedirect) {
+    this._redirect.internalValue = value;
+  }
+  public resetRedirect() {
+    this._redirect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectInput() {
+    return this._redirect.internalValue;
+  }
+}
+
+export class LbListenerRuleActionList extends cdktf.ComplexList {
+  public internalValue? : LbListenerRuleAction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbListenerRuleActionOutputReference {
+    return new LbListenerRuleActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LbListenerRuleConditionHostHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule#values LbListenerRule#values}
@@ -1472,6 +1808,105 @@ export function lbListenerRuleConditionQueryStringToTerraform(struct?: LbListene
   }
 }
 
+export class LbListenerRuleConditionQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbListenerRuleConditionQueryString | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerRuleConditionQueryString | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class LbListenerRuleConditionQueryStringList extends cdktf.ComplexList {
+  public internalValue? : LbListenerRuleConditionQueryString[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbListenerRuleConditionQueryStringOutputReference {
+    return new LbListenerRuleConditionQueryStringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LbListenerRuleConditionSourceIp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule#values LbListenerRule#values}
@@ -1588,6 +2023,196 @@ export function lbListenerRuleConditionToTerraform(struct?: LbListenerRuleCondit
   }
 }
 
+export class LbListenerRuleConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbListenerRuleCondition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostHeader = this._hostHeader?.internalValue;
+    }
+    if (this._httpHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeader = this._httpHeader?.internalValue;
+    }
+    if (this._httpRequestMethod?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpRequestMethod = this._httpRequestMethod?.internalValue;
+    }
+    if (this._pathPattern?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathPattern = this._pathPattern?.internalValue;
+    }
+    if (this._queryString?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryString = this._queryString?.internalValue;
+    }
+    if (this._sourceIp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceIp = this._sourceIp?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerRuleCondition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hostHeader.internalValue = undefined;
+      this._httpHeader.internalValue = undefined;
+      this._httpRequestMethod.internalValue = undefined;
+      this._pathPattern.internalValue = undefined;
+      this._queryString.internalValue = undefined;
+      this._sourceIp.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hostHeader.internalValue = value.hostHeader;
+      this._httpHeader.internalValue = value.httpHeader;
+      this._httpRequestMethod.internalValue = value.httpRequestMethod;
+      this._pathPattern.internalValue = value.pathPattern;
+      this._queryString.internalValue = value.queryString;
+      this._sourceIp.internalValue = value.sourceIp;
+    }
+  }
+
+  // host_header - computed: false, optional: true, required: false
+  private _hostHeader = new LbListenerRuleConditionHostHeaderOutputReference(this, "host_header");
+  public get hostHeader() {
+    return this._hostHeader;
+  }
+  public putHostHeader(value: LbListenerRuleConditionHostHeader) {
+    this._hostHeader.internalValue = value;
+  }
+  public resetHostHeader() {
+    this._hostHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostHeaderInput() {
+    return this._hostHeader.internalValue;
+  }
+
+  // http_header - computed: false, optional: true, required: false
+  private _httpHeader = new LbListenerRuleConditionHttpHeaderOutputReference(this, "http_header");
+  public get httpHeader() {
+    return this._httpHeader;
+  }
+  public putHttpHeader(value: LbListenerRuleConditionHttpHeader) {
+    this._httpHeader.internalValue = value;
+  }
+  public resetHttpHeader() {
+    this._httpHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeaderInput() {
+    return this._httpHeader.internalValue;
+  }
+
+  // http_request_method - computed: false, optional: true, required: false
+  private _httpRequestMethod = new LbListenerRuleConditionHttpRequestMethodOutputReference(this, "http_request_method");
+  public get httpRequestMethod() {
+    return this._httpRequestMethod;
+  }
+  public putHttpRequestMethod(value: LbListenerRuleConditionHttpRequestMethod) {
+    this._httpRequestMethod.internalValue = value;
+  }
+  public resetHttpRequestMethod() {
+    this._httpRequestMethod.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpRequestMethodInput() {
+    return this._httpRequestMethod.internalValue;
+  }
+
+  // path_pattern - computed: false, optional: true, required: false
+  private _pathPattern = new LbListenerRuleConditionPathPatternOutputReference(this, "path_pattern");
+  public get pathPattern() {
+    return this._pathPattern;
+  }
+  public putPathPattern(value: LbListenerRuleConditionPathPattern) {
+    this._pathPattern.internalValue = value;
+  }
+  public resetPathPattern() {
+    this._pathPattern.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathPatternInput() {
+    return this._pathPattern.internalValue;
+  }
+
+  // query_string - computed: false, optional: true, required: false
+  private _queryString = new LbListenerRuleConditionQueryStringList(this, "query_string", true);
+  public get queryString() {
+    return this._queryString;
+  }
+  public putQueryString(value: LbListenerRuleConditionQueryString[] | cdktf.IResolvable) {
+    this._queryString.internalValue = value;
+  }
+  public resetQueryString() {
+    this._queryString.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryStringInput() {
+    return this._queryString.internalValue;
+  }
+
+  // source_ip - computed: false, optional: true, required: false
+  private _sourceIp = new LbListenerRuleConditionSourceIpOutputReference(this, "source_ip");
+  public get sourceIp() {
+    return this._sourceIp;
+  }
+  public putSourceIp(value: LbListenerRuleConditionSourceIp) {
+    this._sourceIp.internalValue = value;
+  }
+  public resetSourceIp() {
+    this._sourceIp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIpInput() {
+    return this._sourceIp.internalValue;
+  }
+}
+
+export class LbListenerRuleConditionList extends cdktf.ComplexList {
+  public internalValue? : LbListenerRuleCondition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbListenerRuleConditionOutputReference {
+    return new LbListenerRuleConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule aws_lb_listener_rule}
@@ -1623,12 +2248,13 @@ export class LbListenerRule extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._listenerArn = config.listenerArn;
     this._priority = config.priority;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._action = config.action;
-    this._condition = config.condition;
+    this._action.internalValue = config.action;
+    this._condition.internalValue = config.condition;
   }
 
   // ==========
@@ -1641,8 +2267,19 @@ export class LbListenerRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // listener_arn - computed: false, optional: false, required: true
@@ -1707,31 +2344,29 @@ export class LbListenerRule extends cdktf.TerraformResource {
   }
 
   // action - computed: false, optional: false, required: true
-  private _action?: LbListenerRuleAction[] | cdktf.IResolvable; 
+  private _action = new LbListenerRuleActionList(this, "action", false);
   public get action() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('action');
+    return this._action;
   }
-  public set action(value: LbListenerRuleAction[] | cdktf.IResolvable) {
-    this._action = value;
+  public putAction(value: LbListenerRuleAction[] | cdktf.IResolvable) {
+    this._action.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action;
+    return this._action.internalValue;
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition?: LbListenerRuleCondition[] | cdktf.IResolvable; 
+  private _condition = new LbListenerRuleConditionList(this, "condition", true);
   public get condition() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('condition')));
+    return this._condition;
   }
-  public set condition(value: LbListenerRuleCondition[] | cdktf.IResolvable) {
-    this._condition = value;
+  public putCondition(value: LbListenerRuleCondition[] | cdktf.IResolvable) {
+    this._condition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionInput() {
-    return this._condition;
+    return this._condition.internalValue;
   }
 
   // =========
@@ -1740,12 +2375,13 @@ export class LbListenerRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       listener_arn: cdktf.stringToTerraform(this._listenerArn),
       priority: cdktf.numberToTerraform(this._priority),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      action: cdktf.listMapper(lbListenerRuleActionToTerraform)(this._action),
-      condition: cdktf.listMapper(lbListenerRuleConditionToTerraform)(this._condition),
+      action: cdktf.listMapper(lbListenerRuleActionToTerraform)(this._action.internalValue),
+      condition: cdktf.listMapper(lbListenerRuleConditionToTerraform)(this._condition.internalValue),
     };
   }
 }

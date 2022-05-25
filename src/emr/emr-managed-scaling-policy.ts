@@ -12,6 +12,13 @@ export interface EmrManagedScalingPolicyConfig extends cdktf.TerraformMetaArgume
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy#id EmrManagedScalingPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * compute_limits block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy#compute_limits EmrManagedScalingPolicy#compute_limits}
@@ -55,6 +62,165 @@ export function emrManagedScalingPolicyComputeLimitsToTerraform(struct?: EmrMana
   }
 }
 
+export class EmrManagedScalingPolicyComputeLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrManagedScalingPolicyComputeLimits | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumCapacityUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumCapacityUnits = this._maximumCapacityUnits;
+    }
+    if (this._maximumCoreCapacityUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumCoreCapacityUnits = this._maximumCoreCapacityUnits;
+    }
+    if (this._maximumOndemandCapacityUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumOndemandCapacityUnits = this._maximumOndemandCapacityUnits;
+    }
+    if (this._minimumCapacityUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimumCapacityUnits = this._minimumCapacityUnits;
+    }
+    if (this._unitType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unitType = this._unitType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrManagedScalingPolicyComputeLimits | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maximumCapacityUnits = undefined;
+      this._maximumCoreCapacityUnits = undefined;
+      this._maximumOndemandCapacityUnits = undefined;
+      this._minimumCapacityUnits = undefined;
+      this._unitType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maximumCapacityUnits = value.maximumCapacityUnits;
+      this._maximumCoreCapacityUnits = value.maximumCoreCapacityUnits;
+      this._maximumOndemandCapacityUnits = value.maximumOndemandCapacityUnits;
+      this._minimumCapacityUnits = value.minimumCapacityUnits;
+      this._unitType = value.unitType;
+    }
+  }
+
+  // maximum_capacity_units - computed: false, optional: false, required: true
+  private _maximumCapacityUnits?: number; 
+  public get maximumCapacityUnits() {
+    return this.getNumberAttribute('maximum_capacity_units');
+  }
+  public set maximumCapacityUnits(value: number) {
+    this._maximumCapacityUnits = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumCapacityUnitsInput() {
+    return this._maximumCapacityUnits;
+  }
+
+  // maximum_core_capacity_units - computed: false, optional: true, required: false
+  private _maximumCoreCapacityUnits?: number; 
+  public get maximumCoreCapacityUnits() {
+    return this.getNumberAttribute('maximum_core_capacity_units');
+  }
+  public set maximumCoreCapacityUnits(value: number) {
+    this._maximumCoreCapacityUnits = value;
+  }
+  public resetMaximumCoreCapacityUnits() {
+    this._maximumCoreCapacityUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumCoreCapacityUnitsInput() {
+    return this._maximumCoreCapacityUnits;
+  }
+
+  // maximum_ondemand_capacity_units - computed: false, optional: true, required: false
+  private _maximumOndemandCapacityUnits?: number; 
+  public get maximumOndemandCapacityUnits() {
+    return this.getNumberAttribute('maximum_ondemand_capacity_units');
+  }
+  public set maximumOndemandCapacityUnits(value: number) {
+    this._maximumOndemandCapacityUnits = value;
+  }
+  public resetMaximumOndemandCapacityUnits() {
+    this._maximumOndemandCapacityUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumOndemandCapacityUnitsInput() {
+    return this._maximumOndemandCapacityUnits;
+  }
+
+  // minimum_capacity_units - computed: false, optional: false, required: true
+  private _minimumCapacityUnits?: number; 
+  public get minimumCapacityUnits() {
+    return this.getNumberAttribute('minimum_capacity_units');
+  }
+  public set minimumCapacityUnits(value: number) {
+    this._minimumCapacityUnits = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumCapacityUnitsInput() {
+    return this._minimumCapacityUnits;
+  }
+
+  // unit_type - computed: false, optional: false, required: true
+  private _unitType?: string; 
+  public get unitType() {
+    return this.getStringAttribute('unit_type');
+  }
+  public set unitType(value: string) {
+    this._unitType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unitTypeInput() {
+    return this._unitType;
+  }
+}
+
+export class EmrManagedScalingPolicyComputeLimitsList extends cdktf.ComplexList {
+  public internalValue? : EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrManagedScalingPolicyComputeLimitsOutputReference {
+    return new EmrManagedScalingPolicyComputeLimitsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy aws_emr_managed_scaling_policy}
@@ -91,7 +257,8 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clusterId = config.clusterId;
-    this._computeLimits = config.computeLimits;
+    this._id = config.id;
+    this._computeLimits.internalValue = config.computeLimits;
   }
 
   // ==========
@@ -112,22 +279,32 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // compute_limits - computed: false, optional: false, required: true
-  private _computeLimits?: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable; 
+  private _computeLimits = new EmrManagedScalingPolicyComputeLimitsList(this, "compute_limits", true);
   public get computeLimits() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('compute_limits')));
+    return this._computeLimits;
   }
-  public set computeLimits(value: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable) {
-    this._computeLimits = value;
+  public putComputeLimits(value: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable) {
+    this._computeLimits.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get computeLimitsInput() {
-    return this._computeLimits;
+    return this._computeLimits.internalValue;
   }
 
   // =========
@@ -137,7 +314,8 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
-      compute_limits: cdktf.listMapper(emrManagedScalingPolicyComputeLimitsToTerraform)(this._computeLimits),
+      id: cdktf.stringToTerraform(this._id),
+      compute_limits: cdktf.listMapper(emrManagedScalingPolicyComputeLimitsToTerraform)(this._computeLimits.internalValue),
     };
   }
 }

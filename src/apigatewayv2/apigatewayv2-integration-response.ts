@@ -16,6 +16,13 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
   */
   readonly contentHandlingStrategy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response#id Apigatewayv2IntegrationResponse#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response#integration_id Apigatewayv2IntegrationResponse#integration_id}
   */
   readonly integrationId: string;
@@ -69,6 +76,7 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
     });
     this._apiId = config.apiId;
     this._contentHandlingStrategy = config.contentHandlingStrategy;
+    this._id = config.id;
     this._integrationId = config.integrationId;
     this._integrationResponseKey = config.integrationResponseKey;
     this._responseTemplates = config.responseTemplates;
@@ -109,8 +117,19 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // integration_id - computed: false, optional: false, required: true
@@ -179,6 +198,7 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
+      id: cdktf.stringToTerraform(this._id),
       integration_id: cdktf.stringToTerraform(this._integrationId),
       integration_response_key: cdktf.stringToTerraform(this._integrationResponseKey),
       response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),

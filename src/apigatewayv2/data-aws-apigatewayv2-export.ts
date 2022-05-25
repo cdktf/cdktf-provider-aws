@@ -16,6 +16,13 @@ export interface DataAwsApigatewayv2ExportConfig extends cdktf.TerraformMetaArgu
   */
   readonly exportVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_export#id DataAwsApigatewayv2Export#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_export#include_extensions DataAwsApigatewayv2Export#include_extensions}
   */
   readonly includeExtensions?: boolean | cdktf.IResolvable;
@@ -69,6 +76,7 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
     });
     this._apiId = config.apiId;
     this._exportVersion = config.exportVersion;
+    this._id = config.id;
     this._includeExtensions = config.includeExtensions;
     this._outputType = config.outputType;
     this._specification = config.specification;
@@ -114,8 +122,19 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_extensions - computed: false, optional: true, required: false
@@ -184,6 +203,7 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       export_version: cdktf.stringToTerraform(this._exportVersion),
+      id: cdktf.stringToTerraform(this._id),
       include_extensions: cdktf.booleanToTerraform(this._includeExtensions),
       output_type: cdktf.stringToTerraform(this._outputType),
       specification: cdktf.stringToTerraform(this._specification),

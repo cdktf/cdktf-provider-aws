@@ -12,6 +12,13 @@ export interface S3ControlMultiRegionAccessPointConfig extends cdktf.TerraformMe
   */
   readonly accountId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#id S3ControlMultiRegionAccessPoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * details block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#details S3ControlMultiRegionAccessPoint#details}
@@ -187,6 +194,83 @@ export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?:
   }
 }
 
+export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucket = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucket = value.bucket;
+    }
+  }
+
+  // bucket - computed: false, optional: false, required: true
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+}
+
+export class S3ControlMultiRegionAccessPointDetailsRegionList extends cdktf.ComplexList {
+  public internalValue? : S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3ControlMultiRegionAccessPointDetailsRegionOutputReference {
+    return new S3ControlMultiRegionAccessPointDetailsRegionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3ControlMultiRegionAccessPointDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#name S3ControlMultiRegionAccessPoint#name}
@@ -240,9 +324,9 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.publicAccessBlock = this._publicAccessBlock?.internalValue;
     }
-    if (this._region !== undefined) {
+    if (this._region?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.region = this._region;
+      internalValueResult.region = this._region?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -252,13 +336,13 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
       this.isEmptyObject = false;
       this._name = undefined;
       this._publicAccessBlock.internalValue = undefined;
-      this._region = undefined;
+      this._region.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._publicAccessBlock.internalValue = value.publicAccessBlock;
-      this._region = value.region;
+      this._region.internalValue = value.region;
     }
   }
 
@@ -292,17 +376,16 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
   }
 
   // region - computed: false, optional: false, required: true
-  private _region?: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable; 
+  private _region = new S3ControlMultiRegionAccessPointDetailsRegionList(this, "region", true);
   public get region() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('region')));
+    return this._region;
   }
-  public set region(value: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable) {
-    this._region = value;
+  public putRegion(value: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable) {
+    this._region.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region;
+    return this._region.internalValue;
   }
 }
 export interface S3ControlMultiRegionAccessPointTimeouts {
@@ -329,6 +412,7 @@ export function s3ControlMultiRegionAccessPointTimeoutsToTerraform(struct?: S3Co
 
 export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -338,7 +422,10 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | undefined {
+  public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -352,14 +439,20 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3ControlMultiRegionAccessPointTimeouts | undefined) {
+  public set internalValue(value: S3ControlMultiRegionAccessPointTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -433,6 +526,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._details.internalValue = config.details;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -473,8 +567,19 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // status - computed: true, optional: false, required: false
@@ -518,6 +623,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       details: s3ControlMultiRegionAccessPointDetailsToTerraform(this._details.internalValue),
       timeouts: s3ControlMultiRegionAccessPointTimeoutsToTerraform(this._timeouts.internalValue),
     };

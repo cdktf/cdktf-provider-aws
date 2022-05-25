@@ -12,6 +12,13 @@ export interface NetworkfirewallFirewallPolicyConfig extends cdktf.TerraformMeta
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#id NetworkfirewallFirewallPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#name NetworkfirewallFirewallPolicy#name}
   */
   readonly name: string;
@@ -114,6 +121,105 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupRefe
   }
 }
 
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._resourceArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceArn = this._resourceArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._priority = undefined;
+      this._resourceArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._priority = value.priority;
+      this._resourceArn = value.resourceArn;
+    }
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // resource_arn - computed: false, optional: false, required: true
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference {
+    return new NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#value NetworkfirewallFirewallPolicy#value}
@@ -131,6 +237,83 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction
   }
 }
 
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference {
+    return new NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction {
   /**
   * dimension block
@@ -164,9 +347,9 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
   public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dimension !== undefined) {
+    if (this._dimension?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimension = this._dimension;
+      internalValueResult.dimension = this._dimension?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -174,26 +357,25 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
   public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._dimension = undefined;
+      this._dimension.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._dimension = value.dimension;
+      this._dimension.internalValue = value.dimension;
     }
   }
 
   // dimension - computed: false, optional: false, required: true
-  private _dimension?: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable; 
+  private _dimension = new NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionList(this, "dimension", true);
   public get dimension() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dimension')));
+    return this._dimension;
   }
-  public set dimension(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable) {
-    this._dimension = value;
+  public putDimension(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable) {
+    this._dimension.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionInput() {
-    return this._dimension;
+    return this._dimension.internalValue;
   }
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition {
@@ -284,6 +466,102 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction
   }
 }
 
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._actionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actionName = this._actionName;
+    }
+    if (this._actionDefinition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actionDefinition = this._actionDefinition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._actionName = undefined;
+      this._actionDefinition.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._actionName = value.actionName;
+      this._actionDefinition.internalValue = value.actionDefinition;
+    }
+  }
+
+  // action_name - computed: false, optional: false, required: true
+  private _actionName?: string; 
+  public get actionName() {
+    return this.getStringAttribute('action_name');
+  }
+  public set actionName(value: string) {
+    this._actionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionNameInput() {
+    return this._actionName;
+  }
+
+  // action_definition - computed: false, optional: false, required: true
+  private _actionDefinition = new NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference(this, "action_definition");
+  public get actionDefinition() {
+    return this._actionDefinition;
+  }
+  public putActionDefinition(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition) {
+    this._actionDefinition.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionDefinitionInput() {
+    return this._actionDefinition.internalValue;
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference {
+    return new NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
@@ -306,6 +584,102 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupRef
   }
 }
 
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._resourceArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceArn = this._resourceArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._priority = undefined;
+      this._resourceArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._priority = value.priority;
+      this._resourceArn = value.resourceArn;
+    }
+  }
+
+  // priority - computed: false, optional: false, required: true
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // resource_arn - computed: false, optional: false, required: true
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference {
+    return new NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#stateful_default_actions NetworkfirewallFirewallPolicy#stateful_default_actions}
@@ -391,17 +765,17 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       hasAnyValues = true;
       internalValueResult.statefulEngineOptions = this._statefulEngineOptions?.internalValue;
     }
-    if (this._statefulRuleGroupReference !== undefined) {
+    if (this._statefulRuleGroupReference?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.statefulRuleGroupReference = this._statefulRuleGroupReference;
+      internalValueResult.statefulRuleGroupReference = this._statefulRuleGroupReference?.internalValue;
     }
-    if (this._statelessCustomAction !== undefined) {
+    if (this._statelessCustomAction?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.statelessCustomAction = this._statelessCustomAction;
+      internalValueResult.statelessCustomAction = this._statelessCustomAction?.internalValue;
     }
-    if (this._statelessRuleGroupReference !== undefined) {
+    if (this._statelessRuleGroupReference?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.statelessRuleGroupReference = this._statelessRuleGroupReference;
+      internalValueResult.statelessRuleGroupReference = this._statelessRuleGroupReference?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -413,9 +787,9 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       this._statelessDefaultActions = undefined;
       this._statelessFragmentDefaultActions = undefined;
       this._statefulEngineOptions.internalValue = undefined;
-      this._statefulRuleGroupReference = undefined;
-      this._statelessCustomAction = undefined;
-      this._statelessRuleGroupReference = undefined;
+      this._statefulRuleGroupReference.internalValue = undefined;
+      this._statelessCustomAction.internalValue = undefined;
+      this._statelessRuleGroupReference.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -423,9 +797,9 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       this._statelessDefaultActions = value.statelessDefaultActions;
       this._statelessFragmentDefaultActions = value.statelessFragmentDefaultActions;
       this._statefulEngineOptions.internalValue = value.statefulEngineOptions;
-      this._statefulRuleGroupReference = value.statefulRuleGroupReference;
-      this._statelessCustomAction = value.statelessCustomAction;
-      this._statelessRuleGroupReference = value.statelessRuleGroupReference;
+      this._statefulRuleGroupReference.internalValue = value.statefulRuleGroupReference;
+      this._statelessCustomAction.internalValue = value.statelessCustomAction;
+      this._statelessRuleGroupReference.internalValue = value.statelessRuleGroupReference;
     }
   }
 
@@ -488,54 +862,51 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   }
 
   // stateful_rule_group_reference - computed: false, optional: true, required: false
-  private _statefulRuleGroupReference?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference[] | cdktf.IResolvable; 
+  private _statefulRuleGroupReference = new NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList(this, "stateful_rule_group_reference", true);
   public get statefulRuleGroupReference() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('stateful_rule_group_reference')));
+    return this._statefulRuleGroupReference;
   }
-  public set statefulRuleGroupReference(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference[] | cdktf.IResolvable) {
-    this._statefulRuleGroupReference = value;
+  public putStatefulRuleGroupReference(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference[] | cdktf.IResolvable) {
+    this._statefulRuleGroupReference.internalValue = value;
   }
   public resetStatefulRuleGroupReference() {
-    this._statefulRuleGroupReference = undefined;
+    this._statefulRuleGroupReference.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get statefulRuleGroupReferenceInput() {
-    return this._statefulRuleGroupReference;
+    return this._statefulRuleGroupReference.internalValue;
   }
 
   // stateless_custom_action - computed: false, optional: true, required: false
-  private _statelessCustomAction?: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction[] | cdktf.IResolvable; 
+  private _statelessCustomAction = new NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList(this, "stateless_custom_action", true);
   public get statelessCustomAction() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('stateless_custom_action')));
+    return this._statelessCustomAction;
   }
-  public set statelessCustomAction(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction[] | cdktf.IResolvable) {
-    this._statelessCustomAction = value;
+  public putStatelessCustomAction(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction[] | cdktf.IResolvable) {
+    this._statelessCustomAction.internalValue = value;
   }
   public resetStatelessCustomAction() {
-    this._statelessCustomAction = undefined;
+    this._statelessCustomAction.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get statelessCustomActionInput() {
-    return this._statelessCustomAction;
+    return this._statelessCustomAction.internalValue;
   }
 
   // stateless_rule_group_reference - computed: false, optional: true, required: false
-  private _statelessRuleGroupReference?: NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference[] | cdktf.IResolvable; 
+  private _statelessRuleGroupReference = new NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList(this, "stateless_rule_group_reference", true);
   public get statelessRuleGroupReference() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('stateless_rule_group_reference')));
+    return this._statelessRuleGroupReference;
   }
-  public set statelessRuleGroupReference(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference[] | cdktf.IResolvable) {
-    this._statelessRuleGroupReference = value;
+  public putStatelessRuleGroupReference(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference[] | cdktf.IResolvable) {
+    this._statelessRuleGroupReference.internalValue = value;
   }
   public resetStatelessRuleGroupReference() {
-    this._statelessRuleGroupReference = undefined;
+    this._statelessRuleGroupReference.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get statelessRuleGroupReferenceInput() {
-    return this._statelessRuleGroupReference;
+    return this._statelessRuleGroupReference.internalValue;
   }
 }
 
@@ -574,6 +945,7 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -606,8 +978,19 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -680,6 +1063,7 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

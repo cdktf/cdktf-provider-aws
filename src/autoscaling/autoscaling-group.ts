@@ -44,6 +44,13 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly healthCheckType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#id AutoscalingGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#launch_configuration AutoscalingGroup#launch_configuration}
   */
   readonly launchConfiguration?: string;
@@ -209,6 +216,212 @@ export function autoscalingGroupInitialLifecycleHookToTerraform(struct?: Autosca
   }
 }
 
+export class AutoscalingGroupInitialLifecycleHookOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingGroupInitialLifecycleHook | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultResult !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultResult = this._defaultResult;
+    }
+    if (this._heartbeatTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heartbeatTimeout = this._heartbeatTimeout;
+    }
+    if (this._lifecycleTransition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleTransition = this._lifecycleTransition;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._notificationMetadata !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationMetadata = this._notificationMetadata;
+    }
+    if (this._notificationTargetArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationTargetArn = this._notificationTargetArn;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupInitialLifecycleHook | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultResult = undefined;
+      this._heartbeatTimeout = undefined;
+      this._lifecycleTransition = undefined;
+      this._name = undefined;
+      this._notificationMetadata = undefined;
+      this._notificationTargetArn = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultResult = value.defaultResult;
+      this._heartbeatTimeout = value.heartbeatTimeout;
+      this._lifecycleTransition = value.lifecycleTransition;
+      this._name = value.name;
+      this._notificationMetadata = value.notificationMetadata;
+      this._notificationTargetArn = value.notificationTargetArn;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // default_result - computed: true, optional: true, required: false
+  private _defaultResult?: string; 
+  public get defaultResult() {
+    return this.getStringAttribute('default_result');
+  }
+  public set defaultResult(value: string) {
+    this._defaultResult = value;
+  }
+  public resetDefaultResult() {
+    this._defaultResult = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultResultInput() {
+    return this._defaultResult;
+  }
+
+  // heartbeat_timeout - computed: false, optional: true, required: false
+  private _heartbeatTimeout?: number; 
+  public get heartbeatTimeout() {
+    return this.getNumberAttribute('heartbeat_timeout');
+  }
+  public set heartbeatTimeout(value: number) {
+    this._heartbeatTimeout = value;
+  }
+  public resetHeartbeatTimeout() {
+    this._heartbeatTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heartbeatTimeoutInput() {
+    return this._heartbeatTimeout;
+  }
+
+  // lifecycle_transition - computed: false, optional: false, required: true
+  private _lifecycleTransition?: string; 
+  public get lifecycleTransition() {
+    return this.getStringAttribute('lifecycle_transition');
+  }
+  public set lifecycleTransition(value: string) {
+    this._lifecycleTransition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleTransitionInput() {
+    return this._lifecycleTransition;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // notification_metadata - computed: false, optional: true, required: false
+  private _notificationMetadata?: string; 
+  public get notificationMetadata() {
+    return this.getStringAttribute('notification_metadata');
+  }
+  public set notificationMetadata(value: string) {
+    this._notificationMetadata = value;
+  }
+  public resetNotificationMetadata() {
+    this._notificationMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationMetadataInput() {
+    return this._notificationMetadata;
+  }
+
+  // notification_target_arn - computed: false, optional: true, required: false
+  private _notificationTargetArn?: string; 
+  public get notificationTargetArn() {
+    return this.getStringAttribute('notification_target_arn');
+  }
+  public set notificationTargetArn(value: string) {
+    this._notificationTargetArn = value;
+  }
+  public resetNotificationTargetArn() {
+    this._notificationTargetArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTargetArnInput() {
+    return this._notificationTargetArn;
+  }
+
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class AutoscalingGroupInitialLifecycleHookList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingGroupInitialLifecycleHookOutputReference {
+    return new AutoscalingGroupInitialLifecycleHookOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingGroupInstanceRefreshPreferences {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}
@@ -503,6 +716,9 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
 export interface AutoscalingGroupLaunchTemplate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#id AutoscalingGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -521,6 +737,7 @@ export function autoscalingGroupLaunchTemplateToTerraform(struct?: AutoscalingGr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     version: cdktf.stringToTerraform(struct!.version),
   }
@@ -540,6 +757,10 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
   public get internalValue(): AutoscalingGroupLaunchTemplate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -554,19 +775,32 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
   public set internalValue(value: AutoscalingGroupLaunchTemplate | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._id = undefined;
       this._name = undefined;
       this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
       this._name = value.name;
       this._version = value.version;
     }
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -1068,6 +1302,130 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerr
   }
 }
 
+export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._weightedCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weightedCapacity = this._weightedCapacity;
+    }
+    if (this._launchTemplateSpecification?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._instanceType = undefined;
+      this._weightedCapacity = undefined;
+      this._launchTemplateSpecification.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._instanceType = value.instanceType;
+      this._weightedCapacity = value.weightedCapacity;
+      this._launchTemplateSpecification.internalValue = value.launchTemplateSpecification;
+    }
+  }
+
+  // instance_type - computed: false, optional: true, required: false
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // weighted_capacity - computed: false, optional: true, required: false
+  private _weightedCapacity?: string; 
+  public get weightedCapacity() {
+    return this.getStringAttribute('weighted_capacity');
+  }
+  public set weightedCapacity(value: string) {
+    this._weightedCapacity = value;
+  }
+  public resetWeightedCapacity() {
+    this._weightedCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightedCapacityInput() {
+    return this._weightedCapacity;
+  }
+
+  // launch_template_specification - computed: false, optional: true, required: false
+  private _launchTemplateSpecification = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference(this, "launch_template_specification");
+  public get launchTemplateSpecification() {
+    return this._launchTemplateSpecification;
+  }
+  public putLaunchTemplateSpecification(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification) {
+    this._launchTemplateSpecification.internalValue = value;
+  }
+  public resetLaunchTemplateSpecification() {
+    this._launchTemplateSpecification.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateSpecificationInput() {
+    return this._launchTemplateSpecification.internalValue;
+  }
+}
+
+export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference {
+    return new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplate {
   /**
   * launch_template_specification block
@@ -1112,9 +1470,9 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
       hasAnyValues = true;
       internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
     }
-    if (this._override !== undefined) {
+    if (this._override?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.override = this._override;
+      internalValueResult.override = this._override?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1123,12 +1481,12 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
     if (value === undefined) {
       this.isEmptyObject = false;
       this._launchTemplateSpecification.internalValue = undefined;
-      this._override = undefined;
+      this._override.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateSpecification.internalValue = value.launchTemplateSpecification;
-      this._override = value.override;
+      this._override.internalValue = value.override;
     }
   }
 
@@ -1146,20 +1504,19 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   }
 
   // override - computed: false, optional: true, required: false
-  private _override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable; 
+  private _override = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList(this, "override", false);
   public get override() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('override');
+    return this._override;
   }
-  public set override(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable) {
-    this._override = value;
+  public putOverride(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable) {
+    this._override.internalValue = value;
   }
   public resetOverride() {
-    this._override = undefined;
+    this._override.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get overrideInput() {
-    return this._override;
+    return this._override.internalValue;
   }
 }
 export interface AutoscalingGroupMixedInstancesPolicy {
@@ -1282,6 +1639,121 @@ export function autoscalingGroupTagToTerraform(struct?: AutoscalingGroupTag | cd
   }
 }
 
+export class AutoscalingGroupTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingGroupTag | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._propagateAtLaunch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.propagateAtLaunch = this._propagateAtLaunch;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupTag | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._propagateAtLaunch = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._propagateAtLaunch = value.propagateAtLaunch;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // propagate_at_launch - computed: false, optional: false, required: true
+  private _propagateAtLaunch?: boolean | cdktf.IResolvable; 
+  public get propagateAtLaunch() {
+    return this.getBooleanAttribute('propagate_at_launch');
+  }
+  public set propagateAtLaunch(value: boolean | cdktf.IResolvable) {
+    this._propagateAtLaunch = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagateAtLaunchInput() {
+    return this._propagateAtLaunch;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AutoscalingGroupTagList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingGroupTag[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingGroupTagOutputReference {
+    return new AutoscalingGroupTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#delete AutoscalingGroup#delete}
@@ -1301,6 +1773,7 @@ export function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTim
 
 export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1310,7 +1783,10 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): AutoscalingGroupTimeouts | undefined {
+  public get internalValue(): AutoscalingGroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -1320,13 +1796,19 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutoscalingGroupTimeouts | undefined) {
+  public set internalValue(value: AutoscalingGroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._delete = value.delete;
     }
   }
@@ -1604,6 +2086,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._forceDeleteWarmPool = config.forceDeleteWarmPool;
     this._healthCheckGracePeriod = config.healthCheckGracePeriod;
     this._healthCheckType = config.healthCheckType;
+    this._id = config.id;
     this._launchConfiguration = config.launchConfiguration;
     this._loadBalancers = config.loadBalancers;
     this._maxInstanceLifetime = config.maxInstanceLifetime;
@@ -1623,11 +2106,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._vpcZoneIdentifier = config.vpcZoneIdentifier;
     this._waitForCapacityTimeout = config.waitForCapacityTimeout;
     this._waitForElbCapacity = config.waitForElbCapacity;
-    this._initialLifecycleHook = config.initialLifecycleHook;
+    this._initialLifecycleHook.internalValue = config.initialLifecycleHook;
     this._instanceRefresh.internalValue = config.instanceRefresh;
     this._launchTemplate.internalValue = config.launchTemplate;
     this._mixedInstancesPolicy.internalValue = config.mixedInstancesPolicy;
-    this._tag = config.tag;
+    this._tag.internalValue = config.tag;
     this._timeouts.internalValue = config.timeouts;
     this._warmPool.internalValue = config.warmPool;
   }
@@ -1786,8 +2269,19 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // launch_configuration - computed: false, optional: true, required: false
@@ -2089,20 +2583,19 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // initial_lifecycle_hook - computed: false, optional: true, required: false
-  private _initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable; 
+  private _initialLifecycleHook = new AutoscalingGroupInitialLifecycleHookList(this, "initial_lifecycle_hook", true);
   public get initialLifecycleHook() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('initial_lifecycle_hook')));
+    return this._initialLifecycleHook;
   }
-  public set initialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable) {
-    this._initialLifecycleHook = value;
+  public putInitialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable) {
+    this._initialLifecycleHook.internalValue = value;
   }
   public resetInitialLifecycleHook() {
-    this._initialLifecycleHook = undefined;
+    this._initialLifecycleHook.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initialLifecycleHookInput() {
-    return this._initialLifecycleHook;
+    return this._initialLifecycleHook.internalValue;
   }
 
   // instance_refresh - computed: false, optional: true, required: false
@@ -2154,20 +2647,19 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: AutoscalingGroupTag[] | cdktf.IResolvable; 
+  private _tag = new AutoscalingGroupTagList(this, "tag", true);
   public get tag() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tag')));
+    return this._tag;
   }
-  public set tag(value: AutoscalingGroupTag[] | cdktf.IResolvable) {
-    this._tag = value;
+  public putTag(value: AutoscalingGroupTag[] | cdktf.IResolvable) {
+    this._tag.internalValue = value;
   }
   public resetTag() {
-    this._tag = undefined;
+    this._tag.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
-    return this._tag;
+    return this._tag.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -2217,6 +2709,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       force_delete_warm_pool: cdktf.booleanToTerraform(this._forceDeleteWarmPool),
       health_check_grace_period: cdktf.numberToTerraform(this._healthCheckGracePeriod),
       health_check_type: cdktf.stringToTerraform(this._healthCheckType),
+      id: cdktf.stringToTerraform(this._id),
       launch_configuration: cdktf.stringToTerraform(this._launchConfiguration),
       load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
       max_instance_lifetime: cdktf.numberToTerraform(this._maxInstanceLifetime),
@@ -2236,11 +2729,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcZoneIdentifier),
       wait_for_capacity_timeout: cdktf.stringToTerraform(this._waitForCapacityTimeout),
       wait_for_elb_capacity: cdktf.numberToTerraform(this._waitForElbCapacity),
-      initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform)(this._initialLifecycleHook),
+      initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform)(this._initialLifecycleHook.internalValue),
       instance_refresh: autoscalingGroupInstanceRefreshToTerraform(this._instanceRefresh.internalValue),
       launch_template: autoscalingGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       mixed_instances_policy: autoscalingGroupMixedInstancesPolicyToTerraform(this._mixedInstancesPolicy.internalValue),
-      tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag),
+      tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag.internalValue),
       timeouts: autoscalingGroupTimeoutsToTerraform(this._timeouts.internalValue),
       warm_pool: autoscalingGroupWarmPoolToTerraform(this._warmPool.internalValue),
     };

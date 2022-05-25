@@ -12,6 +12,13 @@ export interface Ec2TransitGatewayMulticastGroupSourceConfig extends cdktf.Terra
   */
   readonly groupIpAddress: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_multicast_group_source#id Ec2TransitGatewayMulticastGroupSource#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_multicast_group_source#network_interface_id Ec2TransitGatewayMulticastGroupSource#network_interface_id}
   */
   readonly networkInterfaceId: string;
@@ -56,6 +63,7 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
       lifecycle: config.lifecycle
     });
     this._groupIpAddress = config.groupIpAddress;
+    this._id = config.id;
     this._networkInterfaceId = config.networkInterfaceId;
     this._transitGatewayMulticastDomainId = config.transitGatewayMulticastDomainId;
   }
@@ -78,8 +86,19 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // network_interface_id - computed: false, optional: false, required: true
@@ -115,6 +134,7 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_ip_address: cdktf.stringToTerraform(this._groupIpAddress),
+      id: cdktf.stringToTerraform(this._id),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       transit_gateway_multicast_domain_id: cdktf.stringToTerraform(this._transitGatewayMulticastDomainId),
     };

@@ -20,6 +20,13 @@ export interface DataAwsEc2InstanceTypeConfig extends cdktf.TerraformMetaArgumen
   */
   readonly hypervisor?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type#id DataAwsEc2InstanceType#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}
   */
   readonly instanceType: string;
@@ -76,6 +83,84 @@ export function dataAwsEc2InstanceTypeFpgasToTerraform(struct?: DataAwsEc2Instan
   }
 }
 
+export class DataAwsEc2InstanceTypeFpgasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeFpgas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeFpgas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // manufacturer - computed: true, optional: false, required: false
+  public get manufacturer() {
+    return this.getStringAttribute('manufacturer');
+  }
+
+  // memory_size - computed: true, optional: false, required: false
+  public get memorySize() {
+    return this.getNumberAttribute('memory_size');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsEc2InstanceTypeFpgasList extends cdktf.ComplexList {
+  public internalValue? : DataAwsEc2InstanceTypeFpgas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeFpgasOutputReference {
+    return new DataAwsEc2InstanceTypeFpgasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2InstanceTypeGpus {
 }
 
@@ -88,6 +173,84 @@ export function dataAwsEc2InstanceTypeGpusToTerraform(struct?: DataAwsEc2Instanc
   }
 }
 
+export class DataAwsEc2InstanceTypeGpusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeGpus | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeGpus | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // manufacturer - computed: true, optional: false, required: false
+  public get manufacturer() {
+    return this.getStringAttribute('manufacturer');
+  }
+
+  // memory_size - computed: true, optional: false, required: false
+  public get memorySize() {
+    return this.getNumberAttribute('memory_size');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsEc2InstanceTypeGpusList extends cdktf.ComplexList {
+  public internalValue? : DataAwsEc2InstanceTypeGpus[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeGpusOutputReference {
+    return new DataAwsEc2InstanceTypeGpusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2InstanceTypeInferenceAccelerators {
 }
 
@@ -100,6 +263,79 @@ export function dataAwsEc2InstanceTypeInferenceAcceleratorsToTerraform(struct?: 
   }
 }
 
+export class DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeInferenceAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeInferenceAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // manufacturer - computed: true, optional: false, required: false
+  public get manufacturer() {
+    return this.getStringAttribute('manufacturer');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsEc2InstanceTypeInferenceAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : DataAwsEc2InstanceTypeInferenceAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference {
+    return new DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2InstanceTypeInstanceDisks {
 }
 
@@ -112,6 +348,79 @@ export function dataAwsEc2InstanceTypeInstanceDisksToTerraform(struct?: DataAwsE
   }
 }
 
+export class DataAwsEc2InstanceTypeInstanceDisksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeInstanceDisks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeInstanceDisks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataAwsEc2InstanceTypeInstanceDisksList extends cdktf.ComplexList {
+  public internalValue? : DataAwsEc2InstanceTypeInstanceDisks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeInstanceDisksOutputReference {
+    return new DataAwsEc2InstanceTypeInstanceDisksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type aws_ec2_instance_type}
@@ -150,15 +459,16 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     this._defaultCores = config.defaultCores;
     this._defaultThreadsPerCore = config.defaultThreadsPerCore;
     this._hypervisor = config.hypervisor;
+    this._id = config.id;
     this._instanceType = config.instanceType;
     this._maximumIpv6AddressesPerInterface = config.maximumIpv6AddressesPerInterface;
     this._totalFpgaMemory = config.totalFpgaMemory;
     this._totalGpuMemory = config.totalGpuMemory;
     this._totalInstanceStorage = config.totalInstanceStorage;
-    this._fpgas = config.fpgas;
-    this._gpus = config.gpus;
-    this._inferenceAccelerators = config.inferenceAccelerators;
-    this._instanceDisks = config.instanceDisks;
+    this._fpgas.internalValue = config.fpgas;
+    this._gpus.internalValue = config.gpus;
+    this._inferenceAccelerators.internalValue = config.inferenceAccelerators;
+    this._instanceDisks.internalValue = config.instanceDisks;
   }
 
   // ==========
@@ -314,8 +624,19 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_storage_supported - computed: true, optional: false, required: false
@@ -466,71 +787,67 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   }
 
   // fpgas - computed: false, optional: true, required: false
-  private _fpgas?: DataAwsEc2InstanceTypeFpgas[] | cdktf.IResolvable; 
+  private _fpgas = new DataAwsEc2InstanceTypeFpgasList(this, "fpgas", true);
   public get fpgas() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('fpgas')));
+    return this._fpgas;
   }
-  public set fpgas(value: DataAwsEc2InstanceTypeFpgas[] | cdktf.IResolvable) {
-    this._fpgas = value;
+  public putFpgas(value: DataAwsEc2InstanceTypeFpgas[] | cdktf.IResolvable) {
+    this._fpgas.internalValue = value;
   }
   public resetFpgas() {
-    this._fpgas = undefined;
+    this._fpgas.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get fpgasInput() {
-    return this._fpgas;
+    return this._fpgas.internalValue;
   }
 
   // gpus - computed: false, optional: true, required: false
-  private _gpus?: DataAwsEc2InstanceTypeGpus[] | cdktf.IResolvable; 
+  private _gpus = new DataAwsEc2InstanceTypeGpusList(this, "gpus", true);
   public get gpus() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('gpus')));
+    return this._gpus;
   }
-  public set gpus(value: DataAwsEc2InstanceTypeGpus[] | cdktf.IResolvable) {
-    this._gpus = value;
+  public putGpus(value: DataAwsEc2InstanceTypeGpus[] | cdktf.IResolvable) {
+    this._gpus.internalValue = value;
   }
   public resetGpus() {
-    this._gpus = undefined;
+    this._gpus.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get gpusInput() {
-    return this._gpus;
+    return this._gpus.internalValue;
   }
 
   // inference_accelerators - computed: false, optional: true, required: false
-  private _inferenceAccelerators?: DataAwsEc2InstanceTypeInferenceAccelerators[] | cdktf.IResolvable; 
+  private _inferenceAccelerators = new DataAwsEc2InstanceTypeInferenceAcceleratorsList(this, "inference_accelerators", true);
   public get inferenceAccelerators() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('inference_accelerators')));
+    return this._inferenceAccelerators;
   }
-  public set inferenceAccelerators(value: DataAwsEc2InstanceTypeInferenceAccelerators[] | cdktf.IResolvable) {
-    this._inferenceAccelerators = value;
+  public putInferenceAccelerators(value: DataAwsEc2InstanceTypeInferenceAccelerators[] | cdktf.IResolvable) {
+    this._inferenceAccelerators.internalValue = value;
   }
   public resetInferenceAccelerators() {
-    this._inferenceAccelerators = undefined;
+    this._inferenceAccelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get inferenceAcceleratorsInput() {
-    return this._inferenceAccelerators;
+    return this._inferenceAccelerators.internalValue;
   }
 
   // instance_disks - computed: false, optional: true, required: false
-  private _instanceDisks?: DataAwsEc2InstanceTypeInstanceDisks[] | cdktf.IResolvable; 
+  private _instanceDisks = new DataAwsEc2InstanceTypeInstanceDisksList(this, "instance_disks", true);
   public get instanceDisks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('instance_disks')));
+    return this._instanceDisks;
   }
-  public set instanceDisks(value: DataAwsEc2InstanceTypeInstanceDisks[] | cdktf.IResolvable) {
-    this._instanceDisks = value;
+  public putInstanceDisks(value: DataAwsEc2InstanceTypeInstanceDisks[] | cdktf.IResolvable) {
+    this._instanceDisks.internalValue = value;
   }
   public resetInstanceDisks() {
-    this._instanceDisks = undefined;
+    this._instanceDisks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceDisksInput() {
-    return this._instanceDisks;
+    return this._instanceDisks.internalValue;
   }
 
   // =========
@@ -542,15 +859,16 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
       default_cores: cdktf.numberToTerraform(this._defaultCores),
       default_threads_per_core: cdktf.numberToTerraform(this._defaultThreadsPerCore),
       hypervisor: cdktf.stringToTerraform(this._hypervisor),
+      id: cdktf.stringToTerraform(this._id),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       maximum_ipv6_addresses_per_interface: cdktf.numberToTerraform(this._maximumIpv6AddressesPerInterface),
       total_fpga_memory: cdktf.numberToTerraform(this._totalFpgaMemory),
       total_gpu_memory: cdktf.numberToTerraform(this._totalGpuMemory),
       total_instance_storage: cdktf.numberToTerraform(this._totalInstanceStorage),
-      fpgas: cdktf.listMapper(dataAwsEc2InstanceTypeFpgasToTerraform)(this._fpgas),
-      gpus: cdktf.listMapper(dataAwsEc2InstanceTypeGpusToTerraform)(this._gpus),
-      inference_accelerators: cdktf.listMapper(dataAwsEc2InstanceTypeInferenceAcceleratorsToTerraform)(this._inferenceAccelerators),
-      instance_disks: cdktf.listMapper(dataAwsEc2InstanceTypeInstanceDisksToTerraform)(this._instanceDisks),
+      fpgas: cdktf.listMapper(dataAwsEc2InstanceTypeFpgasToTerraform)(this._fpgas.internalValue),
+      gpus: cdktf.listMapper(dataAwsEc2InstanceTypeGpusToTerraform)(this._gpus.internalValue),
+      inference_accelerators: cdktf.listMapper(dataAwsEc2InstanceTypeInferenceAcceleratorsToTerraform)(this._inferenceAccelerators.internalValue),
+      instance_disks: cdktf.listMapper(dataAwsEc2InstanceTypeInstanceDisksToTerraform)(this._instanceDisks.internalValue),
     };
   }
 }

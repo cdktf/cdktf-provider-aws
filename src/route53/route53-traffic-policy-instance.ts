@@ -12,6 +12,13 @@ export interface Route53TrafficPolicyInstanceConfig extends cdktf.TerraformMetaA
   */
   readonly hostedZoneId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_traffic_policy_instance#id Route53TrafficPolicyInstance#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_traffic_policy_instance#name Route53TrafficPolicyInstance#name}
   */
   readonly name: string;
@@ -64,6 +71,7 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._hostedZoneId = config.hostedZoneId;
+    this._id = config.id;
     this._name = config.name;
     this._trafficPolicyId = config.trafficPolicyId;
     this._trafficPolicyVersion = config.trafficPolicyVersion;
@@ -88,8 +96,19 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -151,6 +170,7 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       traffic_policy_id: cdktf.stringToTerraform(this._trafficPolicyId),
       traffic_policy_version: cdktf.numberToTerraform(this._trafficPolicyVersion),

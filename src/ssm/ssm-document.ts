@@ -20,6 +20,13 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly documentType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#id SsmDocument#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#name SsmDocument#name}
   */
   readonly name: string;
@@ -156,6 +163,124 @@ export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAtta
   }
 }
 
+export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SsmDocumentAttachmentsSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmDocumentAttachmentsSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._name = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._name = value.name;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SsmDocumentAttachmentsSourceList extends cdktf.ComplexList {
+  public internalValue? : SsmDocumentAttachmentsSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SsmDocumentAttachmentsSourceOutputReference {
+    return new SsmDocumentAttachmentsSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_document aws_ssm_document}
@@ -194,13 +319,14 @@ export class SsmDocument extends cdktf.TerraformResource {
     this._content = config.content;
     this._documentFormat = config.documentFormat;
     this._documentType = config.documentType;
+    this._id = config.id;
     this._name = config.name;
     this._permissions = config.permissions;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._targetType = config.targetType;
     this._versionName = config.versionName;
-    this._attachmentsSource = config.attachmentsSource;
+    this._attachmentsSource.internalValue = config.attachmentsSource;
   }
 
   // ==========
@@ -285,8 +411,19 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // latest_version - computed: true, optional: false, required: false
@@ -414,20 +551,19 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // attachments_source - computed: false, optional: true, required: false
-  private _attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktf.IResolvable; 
+  private _attachmentsSource = new SsmDocumentAttachmentsSourceList(this, "attachments_source", false);
   public get attachmentsSource() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attachments_source');
+    return this._attachmentsSource;
   }
-  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] | cdktf.IResolvable) {
-    this._attachmentsSource = value;
+  public putAttachmentsSource(value: SsmDocumentAttachmentsSource[] | cdktf.IResolvable) {
+    this._attachmentsSource.internalValue = value;
   }
   public resetAttachmentsSource() {
-    this._attachmentsSource = undefined;
+    this._attachmentsSource.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get attachmentsSourceInput() {
-    return this._attachmentsSource;
+    return this._attachmentsSource.internalValue;
   }
 
   // =========
@@ -439,13 +575,14 @@ export class SsmDocument extends cdktf.TerraformResource {
       content: cdktf.stringToTerraform(this._content),
       document_format: cdktf.stringToTerraform(this._documentFormat),
       document_type: cdktf.stringToTerraform(this._documentType),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       permissions: cdktf.hashMapper(cdktf.stringToTerraform)(this._permissions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       version_name: cdktf.stringToTerraform(this._versionName),
-      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),
+      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource.internalValue),
     };
   }
 }

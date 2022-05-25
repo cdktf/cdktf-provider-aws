@@ -16,6 +16,13 @@ export interface ConfigRemediationConfigurationConfig extends cdktf.TerraformMet
   */
   readonly configRuleName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#id ConfigRemediationConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#maximum_automatic_attempts ConfigRemediationConfiguration#maximum_automatic_attempts}
   */
   readonly maximumAutomaticAttempts?: number;
@@ -238,6 +245,127 @@ export function configRemediationConfigurationParameterToTerraform(struct?: Conf
   }
 }
 
+export class ConfigRemediationConfigurationParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConfigRemediationConfigurationParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._resourceValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceValue = this._resourceValue;
+    }
+    if (this._staticValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticValue = this._staticValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigRemediationConfigurationParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._resourceValue = undefined;
+      this._staticValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._resourceValue = value.resourceValue;
+      this._staticValue = value.staticValue;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // resource_value - computed: false, optional: true, required: false
+  private _resourceValue?: string; 
+  public get resourceValue() {
+    return this.getStringAttribute('resource_value');
+  }
+  public set resourceValue(value: string) {
+    this._resourceValue = value;
+  }
+  public resetResourceValue() {
+    this._resourceValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceValueInput() {
+    return this._resourceValue;
+  }
+
+  // static_value - computed: false, optional: true, required: false
+  private _staticValue?: string; 
+  public get staticValue() {
+    return this.getStringAttribute('static_value');
+  }
+  public set staticValue(value: string) {
+    this._staticValue = value;
+  }
+  public resetStaticValue() {
+    this._staticValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticValueInput() {
+    return this._staticValue;
+  }
+}
+
+export class ConfigRemediationConfigurationParameterList extends cdktf.ComplexList {
+  public internalValue? : ConfigRemediationConfigurationParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConfigRemediationConfigurationParameterOutputReference {
+    return new ConfigRemediationConfigurationParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration aws_config_remediation_configuration}
@@ -275,6 +403,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
     });
     this._automatic = config.automatic;
     this._configRuleName = config.configRuleName;
+    this._id = config.id;
     this._maximumAutomaticAttempts = config.maximumAutomaticAttempts;
     this._resourceType = config.resourceType;
     this._retryAttemptSeconds = config.retryAttemptSeconds;
@@ -282,7 +411,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
     this._targetType = config.targetType;
     this._targetVersion = config.targetVersion;
     this._executionControls.internalValue = config.executionControls;
-    this._parameter = config.parameter;
+    this._parameter.internalValue = config.parameter;
   }
 
   // ==========
@@ -324,8 +453,19 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // maximum_automatic_attempts - computed: false, optional: true, required: false
@@ -435,20 +575,19 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable; 
+  private _parameter = new ConfigRemediationConfigurationParameterList(this, "parameter", true);
   public get parameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
+    return this._parameter;
   }
-  public set parameter(value: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable) {
-    this._parameter = value;
+  public putParameter(value: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
   }
   public resetParameter() {
-    this._parameter = undefined;
+    this._parameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parameterInput() {
-    return this._parameter;
+    return this._parameter.internalValue;
   }
 
   // =========
@@ -459,6 +598,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
     return {
       automatic: cdktf.booleanToTerraform(this._automatic),
       config_rule_name: cdktf.stringToTerraform(this._configRuleName),
+      id: cdktf.stringToTerraform(this._id),
       maximum_automatic_attempts: cdktf.numberToTerraform(this._maximumAutomaticAttempts),
       resource_type: cdktf.stringToTerraform(this._resourceType),
       retry_attempt_seconds: cdktf.numberToTerraform(this._retryAttemptSeconds),
@@ -466,7 +606,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
       target_type: cdktf.stringToTerraform(this._targetType),
       target_version: cdktf.stringToTerraform(this._targetVersion),
       execution_controls: configRemediationConfigurationExecutionControlsToTerraform(this._executionControls.internalValue),
-      parameter: cdktf.listMapper(configRemediationConfigurationParameterToTerraform)(this._parameter),
+      parameter: cdktf.listMapper(configRemediationConfigurationParameterToTerraform)(this._parameter.internalValue),
     };
   }
 }

@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository#id EcrRepository#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository#image_tag_mutability EcrRepository#image_tag_mutability}
   */
   readonly imageTagMutability?: string;
@@ -64,6 +71,108 @@ export function ecrRepositoryEncryptionConfigurationToTerraform(struct?: EcrRepo
   }
 }
 
+export class EcrRepositoryEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcrRepositoryEncryptionConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encryptionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionType = this._encryptionType;
+    }
+    if (this._kmsKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKey = this._kmsKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcrRepositoryEncryptionConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._encryptionType = undefined;
+      this._kmsKey = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._encryptionType = value.encryptionType;
+      this._kmsKey = value.kmsKey;
+    }
+  }
+
+  // encryption_type - computed: false, optional: true, required: false
+  private _encryptionType?: string; 
+  public get encryptionType() {
+    return this.getStringAttribute('encryption_type');
+  }
+  public set encryptionType(value: string) {
+    this._encryptionType = value;
+  }
+  public resetEncryptionType() {
+    this._encryptionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionTypeInput() {
+    return this._encryptionType;
+  }
+
+  // kms_key - computed: true, optional: true, required: false
+  private _kmsKey?: string; 
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string) {
+    this._kmsKey = value;
+  }
+  public resetKmsKey() {
+    this._kmsKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey;
+  }
+}
+
+export class EcrRepositoryEncryptionConfigurationList extends cdktf.ComplexList {
+  public internalValue? : EcrRepositoryEncryptionConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcrRepositoryEncryptionConfigurationOutputReference {
+    return new EcrRepositoryEncryptionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcrRepositoryImageScanningConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository#scan_on_push EcrRepository#scan_on_push}
@@ -145,6 +254,7 @@ export function ecrRepositoryTimeoutsToTerraform(struct?: EcrRepositoryTimeoutsO
 
 export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -154,7 +264,10 @@ export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): EcrRepositoryTimeouts | undefined {
+  public get internalValue(): EcrRepositoryTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -164,13 +277,19 @@ export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcrRepositoryTimeouts | undefined) {
+  public set internalValue(value: EcrRepositoryTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._delete = value.delete;
     }
   }
@@ -226,11 +345,12 @@ export class EcrRepository extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._imageTagMutability = config.imageTagMutability;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._encryptionConfiguration = config.encryptionConfiguration;
+    this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
     this._imageScanningConfiguration.internalValue = config.imageScanningConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -245,8 +365,19 @@ export class EcrRepository extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_tag_mutability - computed: false, optional: true, required: false
@@ -321,20 +452,19 @@ export class EcrRepository extends cdktf.TerraformResource {
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
-  private _encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[] | cdktf.IResolvable; 
+  private _encryptionConfiguration = new EcrRepositoryEncryptionConfigurationList(this, "encryption_configuration", false);
   public get encryptionConfiguration() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('encryption_configuration');
+    return this._encryptionConfiguration;
   }
-  public set encryptionConfiguration(value: EcrRepositoryEncryptionConfiguration[] | cdktf.IResolvable) {
-    this._encryptionConfiguration = value;
+  public putEncryptionConfiguration(value: EcrRepositoryEncryptionConfiguration[] | cdktf.IResolvable) {
+    this._encryptionConfiguration.internalValue = value;
   }
   public resetEncryptionConfiguration() {
-    this._encryptionConfiguration = undefined;
+    this._encryptionConfiguration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionConfigurationInput() {
-    return this._encryptionConfiguration;
+    return this._encryptionConfiguration.internalValue;
   }
 
   // image_scanning_configuration - computed: false, optional: true, required: false
@@ -375,11 +505,12 @@ export class EcrRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
+      encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform)(this._encryptionConfiguration.internalValue),
       image_scanning_configuration: ecrRepositoryImageScanningConfigurationToTerraform(this._imageScanningConfiguration.internalValue),
       timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };

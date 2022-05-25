@@ -28,6 +28,13 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fifoThroughputLimit?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue#id SqsQueue#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue#kms_data_key_reuse_period_seconds SqsQueue#kms_data_key_reuse_period_seconds}
   */
   readonly kmsDataKeyReusePeriodSeconds?: number;
@@ -124,6 +131,7 @@ export class SqsQueue extends cdktf.TerraformResource {
     this._delaySeconds = config.delaySeconds;
     this._fifoQueue = config.fifoQueue;
     this._fifoThroughputLimit = config.fifoThroughputLimit;
+    this._id = config.id;
     this._kmsDataKeyReusePeriodSeconds = config.kmsDataKeyReusePeriodSeconds;
     this._kmsMasterKeyId = config.kmsMasterKeyId;
     this._maxMessageSize = config.maxMessageSize;
@@ -230,8 +238,19 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_data_key_reuse_period_seconds - computed: true, optional: true, required: false
@@ -474,6 +493,7 @@ export class SqsQueue extends cdktf.TerraformResource {
       delay_seconds: cdktf.numberToTerraform(this._delaySeconds),
       fifo_queue: cdktf.booleanToTerraform(this._fifoQueue),
       fifo_throughput_limit: cdktf.stringToTerraform(this._fifoThroughputLimit),
+      id: cdktf.stringToTerraform(this._id),
       kms_data_key_reuse_period_seconds: cdktf.numberToTerraform(this._kmsDataKeyReusePeriodSeconds),
       kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
       max_message_size: cdktf.numberToTerraform(this._maxMessageSize),

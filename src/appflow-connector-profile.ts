@@ -20,6 +20,13 @@ export interface AppflowConnectorProfileConfig extends cdktf.TerraformMetaArgume
   */
   readonly connectorType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#id AppflowConnectorProfile#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#kms_arn AppflowConnectorProfile#kms_arn}
   */
   readonly kmsArn?: string;
@@ -6356,6 +6363,7 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
     this._connectionMode = config.connectionMode;
     this._connectorLabel = config.connectorLabel;
     this._connectorType = config.connectorType;
+    this._id = config.id;
     this._kmsArn = config.kmsArn;
     this._name = config.name;
     this._connectorProfileConfig.internalValue = config.connectorProfileConfig;
@@ -6418,8 +6426,19 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_arn - computed: true, optional: true, required: false
@@ -6473,6 +6492,7 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
       connection_mode: cdktf.stringToTerraform(this._connectionMode),
       connector_label: cdktf.stringToTerraform(this._connectorLabel),
       connector_type: cdktf.stringToTerraform(this._connectorType),
+      id: cdktf.stringToTerraform(this._id),
       kms_arn: cdktf.stringToTerraform(this._kmsArn),
       name: cdktf.stringToTerraform(this._name),
       connector_profile_config: appflowConnectorProfileConnectorProfileConfigToTerraform(this._connectorProfileConfig.internalValue),

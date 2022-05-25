@@ -12,6 +12,13 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#id NetworkInterface#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#interface_type NetworkInterface#interface_type}
   */
   readonly interfaceType?: string;
@@ -116,6 +123,107 @@ export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceA
   }
 }
 
+export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkInterfaceAttachment | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceIndex = this._deviceIndex;
+    }
+    if (this._instance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instance = this._instance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkInterfaceAttachment | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceIndex = undefined;
+      this._instance = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceIndex = value.deviceIndex;
+      this._instance = value.instance;
+    }
+  }
+
+  // attachment_id - computed: true, optional: false, required: false
+  public get attachmentId() {
+    return this.getStringAttribute('attachment_id');
+  }
+
+  // device_index - computed: false, optional: false, required: true
+  private _deviceIndex?: number; 
+  public get deviceIndex() {
+    return this.getNumberAttribute('device_index');
+  }
+  public set deviceIndex(value: number) {
+    this._deviceIndex = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceIndexInput() {
+    return this._deviceIndex;
+  }
+
+  // instance - computed: false, optional: false, required: true
+  private _instance?: string; 
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+  public set instance(value: string) {
+    this._instance = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceInput() {
+    return this._instance;
+  }
+}
+
+export class NetworkInterfaceAttachmentList extends cdktf.ComplexList {
+  public internalValue? : NetworkInterfaceAttachment[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkInterfaceAttachmentOutputReference {
+    return new NetworkInterfaceAttachmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_interface aws_network_interface}
@@ -152,6 +260,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._interfaceType = config.interfaceType;
     this._ipv4PrefixCount = config.ipv4PrefixCount;
     this._ipv4Prefixes = config.ipv4Prefixes;
@@ -171,7 +280,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._attachment = config.attachment;
+    this._attachment.internalValue = config.attachment;
   }
 
   // ==========
@@ -200,8 +309,19 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // interface_type - computed: true, optional: true, required: false
@@ -526,20 +646,19 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // attachment - computed: false, optional: true, required: false
-  private _attachment?: NetworkInterfaceAttachment[] | cdktf.IResolvable; 
+  private _attachment = new NetworkInterfaceAttachmentList(this, "attachment", true);
   public get attachment() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('attachment')));
+    return this._attachment;
   }
-  public set attachment(value: NetworkInterfaceAttachment[] | cdktf.IResolvable) {
-    this._attachment = value;
+  public putAttachment(value: NetworkInterfaceAttachment[] | cdktf.IResolvable) {
+    this._attachment.internalValue = value;
   }
   public resetAttachment() {
-    this._attachment = undefined;
+    this._attachment.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get attachmentInput() {
-    return this._attachment;
+    return this._attachment.internalValue;
   }
 
   // =========
@@ -549,6 +668,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       interface_type: cdktf.stringToTerraform(this._interfaceType),
       ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
       ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv4Prefixes),
@@ -568,7 +688,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment),
+      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment.internalValue),
     };
   }
 }

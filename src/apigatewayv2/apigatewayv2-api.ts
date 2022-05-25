@@ -32,6 +32,13 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly failOnWarnings?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api#id Apigatewayv2Api#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api#name Apigatewayv2Api#name}
   */
   readonly name: string;
@@ -311,6 +318,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     this._description = config.description;
     this._disableExecuteApiEndpoint = config.disableExecuteApiEndpoint;
     this._failOnWarnings = config.failOnWarnings;
+    this._id = config.id;
     this._name = config.name;
     this._protocolType = config.protocolType;
     this._routeKey = config.routeKey;
@@ -438,8 +446,19 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -592,6 +611,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
       fail_on_warnings: cdktf.booleanToTerraform(this._failOnWarnings),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       route_key: cdktf.stringToTerraform(this._routeKey),

@@ -28,6 +28,13 @@ export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster#id DaxCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster#maintenance_window DaxCluster#maintenance_window}
   */
   readonly maintenanceWindow?: string;
@@ -249,6 +256,7 @@ export function daxClusterTimeoutsToTerraform(struct?: DaxClusterTimeoutsOutputR
 
 export class DaxClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -258,7 +266,10 @@ export class DaxClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DaxClusterTimeouts | undefined {
+  public get internalValue(): DaxClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -276,15 +287,21 @@ export class DaxClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DaxClusterTimeouts | undefined) {
+  public set internalValue(value: DaxClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -379,6 +396,7 @@ export class DaxCluster extends cdktf.TerraformResource {
     this._clusterName = config.clusterName;
     this._description = config.description;
     this._iamRoleArn = config.iamRoleArn;
+    this._id = config.id;
     this._maintenanceWindow = config.maintenanceWindow;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
@@ -486,8 +504,19 @@ export class DaxCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // maintenance_window - computed: true, optional: true, required: false
@@ -682,6 +711,7 @@ export class DaxCluster extends cdktf.TerraformResource {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       description: cdktf.stringToTerraform(this._description),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
       node_type: cdktf.stringToTerraform(this._nodeType),
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),

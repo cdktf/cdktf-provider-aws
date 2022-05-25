@@ -60,6 +60,13 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoles?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#id NeptuneCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#kms_key_arn NeptuneCluster#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
@@ -147,6 +154,7 @@ export function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeout
 
 export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -156,7 +164,10 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): NeptuneClusterTimeouts | undefined {
+  public get internalValue(): NeptuneClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -174,15 +185,21 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NeptuneClusterTimeouts | undefined) {
+  public set internalValue(value: NeptuneClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -285,6 +302,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._iamDatabaseAuthenticationEnabled = config.iamDatabaseAuthenticationEnabled;
     this._iamRoles = config.iamRoles;
+    this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
     this._neptuneClusterParameterGroupName = config.neptuneClusterParameterGroupName;
     this._neptuneSubnetGroupName = config.neptuneSubnetGroupName;
@@ -539,8 +557,19 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_arn - computed: true, optional: true, required: false
@@ -791,6 +820,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
       iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
       neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),

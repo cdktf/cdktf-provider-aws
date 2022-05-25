@@ -20,6 +20,13 @@ export interface CloudwatchEventApiDestinationConfig extends cdktf.TerraformMeta
   */
   readonly httpMethod: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_api_destination#id CloudwatchEventApiDestination#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_api_destination#invocation_endpoint CloudwatchEventApiDestination#invocation_endpoint}
   */
   readonly invocationEndpoint: string;
@@ -70,6 +77,7 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
     this._connectionArn = config.connectionArn;
     this._description = config.description;
     this._httpMethod = config.httpMethod;
+    this._id = config.id;
     this._invocationEndpoint = config.invocationEndpoint;
     this._invocationRateLimitPerSecond = config.invocationRateLimitPerSecond;
     this._name = config.name;
@@ -127,8 +135,19 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // invocation_endpoint - computed: false, optional: false, required: true
@@ -182,6 +201,7 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
       connection_arn: cdktf.stringToTerraform(this._connectionArn),
       description: cdktf.stringToTerraform(this._description),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      id: cdktf.stringToTerraform(this._id),
       invocation_endpoint: cdktf.stringToTerraform(this._invocationEndpoint),
       invocation_rate_limit_per_second: cdktf.numberToTerraform(this._invocationRateLimitPerSecond),
       name: cdktf.stringToTerraform(this._name),

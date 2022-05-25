@@ -20,6 +20,13 @@ export interface CloudwatchEventArchiveConfig extends cdktf.TerraformMetaArgumen
   */
   readonly eventSourceArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_archive#id CloudwatchEventArchive#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_archive#name CloudwatchEventArchive#name}
   */
   readonly name: string;
@@ -66,6 +73,7 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
     this._description = config.description;
     this._eventPattern = config.eventPattern;
     this._eventSourceArn = config.eventSourceArn;
+    this._id = config.id;
     this._name = config.name;
     this._retentionDays = config.retentionDays;
   }
@@ -125,8 +133,19 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -167,6 +186,7 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       event_pattern: cdktf.stringToTerraform(this._eventPattern),
       event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       retention_days: cdktf.numberToTerraform(this._retentionDays),
     };

@@ -16,6 +16,13 @@ export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly excessCapacityTerminationPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#id Ec2Fleet#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replace_unhealthy_instances Ec2Fleet#replace_unhealthy_instances}
   */
   readonly replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
@@ -1580,6 +1587,218 @@ export function ec2FleetLaunchTemplateConfigOverrideToTerraform(struct?: Ec2Flee
   }
 }
 
+export class Ec2FleetLaunchTemplateConfigOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Ec2FleetLaunchTemplateConfigOverride | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availabilityZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZone = this._availabilityZone;
+    }
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._maxPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxPrice = this._maxPrice;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    if (this._weightedCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weightedCapacity = this._weightedCapacity;
+    }
+    if (this._instanceRequirements?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceRequirements = this._instanceRequirements?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2FleetLaunchTemplateConfigOverride | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._availabilityZone = undefined;
+      this._instanceType = undefined;
+      this._maxPrice = undefined;
+      this._priority = undefined;
+      this._subnetId = undefined;
+      this._weightedCapacity = undefined;
+      this._instanceRequirements.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._availabilityZone = value.availabilityZone;
+      this._instanceType = value.instanceType;
+      this._maxPrice = value.maxPrice;
+      this._priority = value.priority;
+      this._subnetId = value.subnetId;
+      this._weightedCapacity = value.weightedCapacity;
+      this._instanceRequirements.internalValue = value.instanceRequirements;
+    }
+  }
+
+  // availability_zone - computed: false, optional: true, required: false
+  private _availabilityZone?: string; 
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+  public set availabilityZone(value: string) {
+    this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone;
+  }
+
+  // instance_type - computed: false, optional: true, required: false
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // max_price - computed: false, optional: true, required: false
+  private _maxPrice?: string; 
+  public get maxPrice() {
+    return this.getStringAttribute('max_price');
+  }
+  public set maxPrice(value: string) {
+    this._maxPrice = value;
+  }
+  public resetMaxPrice() {
+    this._maxPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxPriceInput() {
+    return this._maxPrice;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // subnet_id - computed: false, optional: true, required: false
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+
+  // weighted_capacity - computed: false, optional: true, required: false
+  private _weightedCapacity?: number; 
+  public get weightedCapacity() {
+    return this.getNumberAttribute('weighted_capacity');
+  }
+  public set weightedCapacity(value: number) {
+    this._weightedCapacity = value;
+  }
+  public resetWeightedCapacity() {
+    this._weightedCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightedCapacityInput() {
+    return this._weightedCapacity;
+  }
+
+  // instance_requirements - computed: false, optional: true, required: false
+  private _instanceRequirements = new Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference(this, "instance_requirements");
+  public get instanceRequirements() {
+    return this._instanceRequirements;
+  }
+  public putInstanceRequirements(value: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements) {
+    this._instanceRequirements.internalValue = value;
+  }
+  public resetInstanceRequirements() {
+    this._instanceRequirements.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceRequirementsInput() {
+    return this._instanceRequirements.internalValue;
+  }
+}
+
+export class Ec2FleetLaunchTemplateConfigOverrideList extends cdktf.ComplexList {
+  public internalValue? : Ec2FleetLaunchTemplateConfigOverride[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Ec2FleetLaunchTemplateConfigOverrideOutputReference {
+    return new Ec2FleetLaunchTemplateConfigOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Ec2FleetLaunchTemplateConfig {
   /**
   * launch_template_specification block
@@ -1624,9 +1843,9 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
     }
-    if (this._override !== undefined) {
+    if (this._override?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.override = this._override;
+      internalValueResult.override = this._override?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1635,12 +1854,12 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this._launchTemplateSpecification.internalValue = undefined;
-      this._override = undefined;
+      this._override.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateSpecification.internalValue = value.launchTemplateSpecification;
-      this._override = value.override;
+      this._override.internalValue = value.override;
     }
   }
 
@@ -1658,20 +1877,19 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
   }
 
   // override - computed: false, optional: true, required: false
-  private _override?: Ec2FleetLaunchTemplateConfigOverride[] | cdktf.IResolvable; 
+  private _override = new Ec2FleetLaunchTemplateConfigOverrideList(this, "override", false);
   public get override() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('override');
+    return this._override;
   }
-  public set override(value: Ec2FleetLaunchTemplateConfigOverride[] | cdktf.IResolvable) {
-    this._override = value;
+  public putOverride(value: Ec2FleetLaunchTemplateConfigOverride[] | cdktf.IResolvable) {
+    this._override.internalValue = value;
   }
   public resetOverride() {
-    this._override = undefined;
+    this._override.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get overrideInput() {
-    return this._override;
+    return this._override.internalValue;
   }
 }
 export interface Ec2FleetOnDemandOptions {
@@ -2188,6 +2406,7 @@ export function ec2FleetTimeoutsToTerraform(struct?: Ec2FleetTimeoutsOutputRefer
 
 export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2197,7 +2416,10 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Ec2FleetTimeouts | undefined {
+  public get internalValue(): Ec2FleetTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2215,15 +2437,21 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2FleetTimeouts | undefined) {
+  public set internalValue(value: Ec2FleetTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2315,6 +2543,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
     });
     this._context = config.context;
     this._excessCapacityTerminationPolicy = config.excessCapacityTerminationPolicy;
+    this._id = config.id;
     this._replaceUnhealthyInstances = config.replaceUnhealthyInstances;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -2370,8 +2599,19 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // replace_unhealthy_instances - computed: false, optional: true, required: false
@@ -2552,6 +2792,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
     return {
       context: cdktf.stringToTerraform(this._context),
       excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
+      id: cdktf.stringToTerraform(this._id),
       replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

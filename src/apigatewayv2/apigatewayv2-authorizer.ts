@@ -36,6 +36,13 @@ export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArgumen
   */
   readonly enableSimpleResponses?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer#id Apigatewayv2Authorizer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer#identity_sources Apigatewayv2Authorizer#identity_sources}
   */
   readonly identitySources?: string[];
@@ -184,6 +191,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     this._authorizerType = config.authorizerType;
     this._authorizerUri = config.authorizerUri;
     this._enableSimpleResponses = config.enableSimpleResponses;
+    this._id = config.id;
     this._identitySources = config.identitySources;
     this._name = config.name;
     this._jwtConfiguration.internalValue = config.jwtConfiguration;
@@ -300,8 +308,19 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identity_sources - computed: false, optional: true, required: false
@@ -362,6 +381,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
       authorizer_type: cdktf.stringToTerraform(this._authorizerType),
       authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
       enable_simple_responses: cdktf.booleanToTerraform(this._enableSimpleResponses),
+      id: cdktf.stringToTerraform(this._id),
       identity_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._identitySources),
       name: cdktf.stringToTerraform(this._name),
       jwt_configuration: apigatewayv2AuthorizerJwtConfigurationToTerraform(this._jwtConfiguration.internalValue),

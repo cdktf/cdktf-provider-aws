@@ -28,6 +28,13 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly documentVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#id SsmAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#instance_id SsmAssociation#instance_id}
   */
   readonly instanceId?: string;
@@ -206,6 +213,102 @@ export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets 
   }
 }
 
+export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SsmAssociationTargets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmAssociationTargets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SsmAssociationTargetsList extends cdktf.ComplexList {
+  public internalValue? : SsmAssociationTargets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SsmAssociationTargetsOutputReference {
+    return new SsmAssociationTargetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_association aws_ssm_association}
@@ -246,6 +349,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
     this._automationTargetParameterName = config.automationTargetParameterName;
     this._complianceSeverity = config.complianceSeverity;
     this._documentVersion = config.documentVersion;
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._maxConcurrency = config.maxConcurrency;
     this._maxErrors = config.maxErrors;
@@ -254,7 +358,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
     this._scheduleExpression = config.scheduleExpression;
     this._waitForSuccessTimeoutSeconds = config.waitForSuccessTimeoutSeconds;
     this._outputLocation.internalValue = config.outputLocation;
-    this._targets = config.targets;
+    this._targets.internalValue = config.targets;
   }
 
   // ==========
@@ -352,8 +456,19 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: false, optional: true, required: false
@@ -482,20 +597,19 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // targets - computed: false, optional: true, required: false
-  private _targets?: SsmAssociationTargets[] | cdktf.IResolvable; 
+  private _targets = new SsmAssociationTargetsList(this, "targets", false);
   public get targets() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('targets');
+    return this._targets;
   }
-  public set targets(value: SsmAssociationTargets[] | cdktf.IResolvable) {
-    this._targets = value;
+  public putTargets(value: SsmAssociationTargets[] | cdktf.IResolvable) {
+    this._targets.internalValue = value;
   }
   public resetTargets() {
-    this._targets = undefined;
+    this._targets.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetsInput() {
-    return this._targets;
+    return this._targets.internalValue;
   }
 
   // =========
@@ -509,6 +623,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       automation_target_parameter_name: cdktf.stringToTerraform(this._automationTargetParameterName),
       compliance_severity: cdktf.stringToTerraform(this._complianceSeverity),
       document_version: cdktf.stringToTerraform(this._documentVersion),
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
       max_errors: cdktf.stringToTerraform(this._maxErrors),
@@ -517,7 +632,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
       wait_for_success_timeout_seconds: cdktf.numberToTerraform(this._waitForSuccessTimeoutSeconds),
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
-      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets),
+      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets.internalValue),
     };
   }
 }

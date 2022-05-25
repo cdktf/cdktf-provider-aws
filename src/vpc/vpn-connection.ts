@@ -16,6 +16,13 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableAcceleration?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#id VpnConnection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}
   */
   readonly localIpv4NetworkCidr?: string;
@@ -404,6 +411,7 @@ export class VpnConnection extends cdktf.TerraformResource {
     });
     this._customerGatewayId = config.customerGatewayId;
     this._enableAcceleration = config.enableAcceleration;
+    this._id = config.id;
     this._localIpv4NetworkCidr = config.localIpv4NetworkCidr;
     this._localIpv6NetworkCidr = config.localIpv6NetworkCidr;
     this._remoteIpv4NetworkCidr = config.remoteIpv4NetworkCidr;
@@ -507,8 +515,19 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // local_ipv4_network_cidr - computed: true, optional: true, required: false
@@ -1335,6 +1354,7 @@ export class VpnConnection extends cdktf.TerraformResource {
     return {
       customer_gateway_id: cdktf.stringToTerraform(this._customerGatewayId),
       enable_acceleration: cdktf.booleanToTerraform(this._enableAcceleration),
+      id: cdktf.stringToTerraform(this._id),
       local_ipv4_network_cidr: cdktf.stringToTerraform(this._localIpv4NetworkCidr),
       local_ipv6_network_cidr: cdktf.stringToTerraform(this._localIpv6NetworkCidr),
       remote_ipv4_network_cidr: cdktf.stringToTerraform(this._remoteIpv4NetworkCidr),

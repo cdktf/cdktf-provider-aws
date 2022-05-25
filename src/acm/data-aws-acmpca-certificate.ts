@@ -15,6 +15,13 @@ export interface DataAwsAcmpcaCertificateConfig extends cdktf.TerraformMetaArgum
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate#certificate_authority_arn DataAwsAcmpcaCertificate#certificate_authority_arn}
   */
   readonly certificateAuthorityArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate#id DataAwsAcmpcaCertificate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -53,6 +60,7 @@ export class DataAwsAcmpcaCertificate extends cdktf.TerraformDataSource {
     });
     this._arn = config.arn;
     this._certificateAuthorityArn = config.certificateAuthorityArn;
+    this._id = config.id;
   }
 
   // ==========
@@ -96,8 +104,19 @@ export class DataAwsAcmpcaCertificate extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -108,6 +127,7 @@ export class DataAwsAcmpcaCertificate extends cdktf.TerraformDataSource {
     return {
       arn: cdktf.stringToTerraform(this._arn),
       certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

@@ -20,6 +20,13 @@ export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArgument
   */
   readonly featureGroupName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#id SagemakerFeatureGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#record_identifier_feature_name SagemakerFeatureGroup#record_identifier_feature_name}
   */
   readonly recordIdentifierFeatureName: string;
@@ -76,6 +83,108 @@ export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: Sagem
   }
 }
 
+export class SagemakerFeatureGroupFeatureDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._featureName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.featureName = this._featureName;
+    }
+    if (this._featureType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.featureType = this._featureType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._featureName = undefined;
+      this._featureType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._featureName = value.featureName;
+      this._featureType = value.featureType;
+    }
+  }
+
+  // feature_name - computed: false, optional: true, required: false
+  private _featureName?: string; 
+  public get featureName() {
+    return this.getStringAttribute('feature_name');
+  }
+  public set featureName(value: string) {
+    this._featureName = value;
+  }
+  public resetFeatureName() {
+    this._featureName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureNameInput() {
+    return this._featureName;
+  }
+
+  // feature_type - computed: false, optional: true, required: false
+  private _featureType?: string; 
+  public get featureType() {
+    return this.getStringAttribute('feature_type');
+  }
+  public set featureType(value: string) {
+    this._featureType = value;
+  }
+  public resetFeatureType() {
+    this._featureType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureTypeInput() {
+    return this._featureType;
+  }
+}
+
+export class SagemakerFeatureGroupFeatureDefinitionList extends cdktf.ComplexList {
+  public internalValue? : SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerFeatureGroupFeatureDefinitionOutputReference {
+    return new SagemakerFeatureGroupFeatureDefinitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#catalog SagemakerFeatureGroup#catalog}
@@ -601,11 +710,12 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
     this._description = config.description;
     this._eventTimeFeatureName = config.eventTimeFeatureName;
     this._featureGroupName = config.featureGroupName;
+    this._id = config.id;
     this._recordIdentifierFeatureName = config.recordIdentifierFeatureName;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._featureDefinition = config.featureDefinition;
+    this._featureDefinition.internalValue = config.featureDefinition;
     this._offlineStoreConfig.internalValue = config.offlineStoreConfig;
     this._onlineStoreConfig.internalValue = config.onlineStoreConfig;
   }
@@ -662,8 +772,19 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // record_identifier_feature_name - computed: false, optional: false, required: true
@@ -725,17 +846,16 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // feature_definition - computed: false, optional: false, required: true
-  private _featureDefinition?: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable; 
+  private _featureDefinition = new SagemakerFeatureGroupFeatureDefinitionList(this, "feature_definition", false);
   public get featureDefinition() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_definition');
+    return this._featureDefinition;
   }
-  public set featureDefinition(value: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable) {
-    this._featureDefinition = value;
+  public putFeatureDefinition(value: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable) {
+    this._featureDefinition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get featureDefinitionInput() {
-    return this._featureDefinition;
+    return this._featureDefinition.internalValue;
   }
 
   // offline_store_config - computed: false, optional: true, required: false
@@ -779,11 +899,12 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       event_time_feature_name: cdktf.stringToTerraform(this._eventTimeFeatureName),
       feature_group_name: cdktf.stringToTerraform(this._featureGroupName),
+      id: cdktf.stringToTerraform(this._id),
       record_identifier_feature_name: cdktf.stringToTerraform(this._recordIdentifierFeatureName),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      feature_definition: cdktf.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform)(this._featureDefinition),
+      feature_definition: cdktf.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform)(this._featureDefinition.internalValue),
       offline_store_config: sagemakerFeatureGroupOfflineStoreConfigToTerraform(this._offlineStoreConfig.internalValue),
       online_store_config: sagemakerFeatureGroupOnlineStoreConfigToTerraform(this._onlineStoreConfig.internalValue),
     };

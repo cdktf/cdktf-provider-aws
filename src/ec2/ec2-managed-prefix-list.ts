@@ -12,6 +12,13 @@ export interface Ec2ManagedPrefixListConfig extends cdktf.TerraformMetaArguments
   */
   readonly addressFamily: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list#id Ec2ManagedPrefixList#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list#max_entries Ec2ManagedPrefixList#max_entries}
   */
   readonly maxEntries: number;
@@ -56,6 +63,105 @@ export function ec2ManagedPrefixListEntryToTerraform(struct?: Ec2ManagedPrefixLi
   }
 }
 
+export class Ec2ManagedPrefixListEntryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Ec2ManagedPrefixListEntry | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cidr !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidr = this._cidr;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2ManagedPrefixListEntry | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cidr = undefined;
+      this._description = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cidr = value.cidr;
+      this._description = value.description;
+    }
+  }
+
+  // cidr - computed: false, optional: false, required: true
+  private _cidr?: string; 
+  public get cidr() {
+    return this.getStringAttribute('cidr');
+  }
+  public set cidr(value: string) {
+    this._cidr = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrInput() {
+    return this._cidr;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+}
+
+export class Ec2ManagedPrefixListEntryList extends cdktf.ComplexList {
+  public internalValue? : Ec2ManagedPrefixListEntry[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Ec2ManagedPrefixListEntryOutputReference {
+    return new Ec2ManagedPrefixListEntryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list aws_ec2_managed_prefix_list}
@@ -92,11 +198,12 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._addressFamily = config.addressFamily;
+    this._id = config.id;
     this._maxEntries = config.maxEntries;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._entry = config.entry;
+    this._entry.internalValue = config.entry;
   }
 
   // ==========
@@ -122,8 +229,19 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_entries - computed: false, optional: false, required: true
@@ -195,20 +313,19 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
   }
 
   // entry - computed: false, optional: true, required: false
-  private _entry?: Ec2ManagedPrefixListEntry[] | cdktf.IResolvable; 
+  private _entry = new Ec2ManagedPrefixListEntryList(this, "entry", true);
   public get entry() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('entry')));
+    return this._entry;
   }
-  public set entry(value: Ec2ManagedPrefixListEntry[] | cdktf.IResolvable) {
-    this._entry = value;
+  public putEntry(value: Ec2ManagedPrefixListEntry[] | cdktf.IResolvable) {
+    this._entry.internalValue = value;
   }
   public resetEntry() {
-    this._entry = undefined;
+    this._entry.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get entryInput() {
-    return this._entry;
+    return this._entry.internalValue;
   }
 
   // =========
@@ -218,11 +335,12 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       address_family: cdktf.stringToTerraform(this._addressFamily),
+      id: cdktf.stringToTerraform(this._id),
       max_entries: cdktf.numberToTerraform(this._maxEntries),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      entry: cdktf.listMapper(ec2ManagedPrefixListEntryToTerraform)(this._entry),
+      entry: cdktf.listMapper(ec2ManagedPrefixListEntryToTerraform)(this._entry.internalValue),
     };
   }
 }

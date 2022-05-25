@@ -16,6 +16,13 @@ export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArgu
   */
   readonly compatibleRuntime?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_layer_version#id DataAwsLambdaLayerVersion#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}
   */
   readonly layerName: string;
@@ -61,6 +68,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
     });
     this._compatibleArchitecture = config.compatibleArchitecture;
     this._compatibleRuntime = config.compatibleRuntime;
+    this._id = config.id;
     this._layerName = config.layerName;
     this._version = config.version;
   }
@@ -127,8 +135,19 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // layer_arn - computed: true, optional: false, required: false
@@ -198,6 +217,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
     return {
       compatible_architecture: cdktf.stringToTerraform(this._compatibleArchitecture),
       compatible_runtime: cdktf.stringToTerraform(this._compatibleRuntime),
+      id: cdktf.stringToTerraform(this._id),
       layer_name: cdktf.stringToTerraform(this._layerName),
       version: cdktf.numberToTerraform(this._version),
     };

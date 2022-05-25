@@ -16,6 +16,13 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly executionRoleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#id SagemakerModel#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#name SagemakerModel#name}
   */
   readonly name?: string;
@@ -158,6 +165,193 @@ export function sagemakerModelContainerToTerraform(struct?: SagemakerModelContai
   }
 }
 
+export class SagemakerModelContainerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerModelContainer | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._containerHostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerHostname = this._containerHostname;
+    }
+    if (this._environment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environment = this._environment;
+    }
+    if (this._image !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.image = this._image;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._modelDataUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelDataUrl = this._modelDataUrl;
+    }
+    if (this._imageConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageConfig = this._imageConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelContainer | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._containerHostname = undefined;
+      this._environment = undefined;
+      this._image = undefined;
+      this._mode = undefined;
+      this._modelDataUrl = undefined;
+      this._imageConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._containerHostname = value.containerHostname;
+      this._environment = value.environment;
+      this._image = value.image;
+      this._mode = value.mode;
+      this._modelDataUrl = value.modelDataUrl;
+      this._imageConfig.internalValue = value.imageConfig;
+    }
+  }
+
+  // container_hostname - computed: false, optional: true, required: false
+  private _containerHostname?: string; 
+  public get containerHostname() {
+    return this.getStringAttribute('container_hostname');
+  }
+  public set containerHostname(value: string) {
+    this._containerHostname = value;
+  }
+  public resetContainerHostname() {
+    this._containerHostname = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerHostnameInput() {
+    return this._containerHostname;
+  }
+
+  // environment - computed: false, optional: true, required: false
+  private _environment?: { [key: string]: string }; 
+  public get environment() {
+    return this.getStringMapAttribute('environment');
+  }
+  public set environment(value: { [key: string]: string }) {
+    this._environment = value;
+  }
+  public resetEnvironment() {
+    this._environment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment;
+  }
+
+  // image - computed: false, optional: false, required: true
+  private _image?: string; 
+  public get image() {
+    return this.getStringAttribute('image');
+  }
+  public set image(value: string) {
+    this._image = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageInput() {
+    return this._image;
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // model_data_url - computed: false, optional: true, required: false
+  private _modelDataUrl?: string; 
+  public get modelDataUrl() {
+    return this.getStringAttribute('model_data_url');
+  }
+  public set modelDataUrl(value: string) {
+    this._modelDataUrl = value;
+  }
+  public resetModelDataUrl() {
+    this._modelDataUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelDataUrlInput() {
+    return this._modelDataUrl;
+  }
+
+  // image_config - computed: false, optional: true, required: false
+  private _imageConfig = new SagemakerModelContainerImageConfigOutputReference(this, "image_config");
+  public get imageConfig() {
+    return this._imageConfig;
+  }
+  public putImageConfig(value: SagemakerModelContainerImageConfig) {
+    this._imageConfig.internalValue = value;
+  }
+  public resetImageConfig() {
+    this._imageConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageConfigInput() {
+    return this._imageConfig.internalValue;
+  }
+}
+
+export class SagemakerModelContainerList extends cdktf.ComplexList {
+  public internalValue? : SagemakerModelContainer[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerModelContainerOutputReference {
+    return new SagemakerModelContainerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerModelInferenceExecutionConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#mode SagemakerModel#mode}
@@ -604,10 +798,11 @@ export class SagemakerModel extends cdktf.TerraformResource {
     });
     this._enableNetworkIsolation = config.enableNetworkIsolation;
     this._executionRoleArn = config.executionRoleArn;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._container = config.container;
+    this._container.internalValue = config.container;
     this._inferenceExecutionConfig.internalValue = config.inferenceExecutionConfig;
     this._primaryContainer.internalValue = config.primaryContainer;
     this._vpcConfig.internalValue = config.vpcConfig;
@@ -652,8 +847,19 @@ export class SagemakerModel extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -705,20 +911,19 @@ export class SagemakerModel extends cdktf.TerraformResource {
   }
 
   // container - computed: false, optional: true, required: false
-  private _container?: SagemakerModelContainer[] | cdktf.IResolvable; 
+  private _container = new SagemakerModelContainerList(this, "container", false);
   public get container() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('container');
+    return this._container;
   }
-  public set container(value: SagemakerModelContainer[] | cdktf.IResolvable) {
-    this._container = value;
+  public putContainer(value: SagemakerModelContainer[] | cdktf.IResolvable) {
+    this._container.internalValue = value;
   }
   public resetContainer() {
-    this._container = undefined;
+    this._container.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get containerInput() {
-    return this._container;
+    return this._container.internalValue;
   }
 
   // inference_execution_config - computed: false, optional: true, required: false
@@ -777,10 +982,11 @@ export class SagemakerModel extends cdktf.TerraformResource {
     return {
       enable_network_isolation: cdktf.booleanToTerraform(this._enableNetworkIsolation),
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container),
+      container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container.internalValue),
       inference_execution_config: sagemakerModelInferenceExecutionConfigToTerraform(this._inferenceExecutionConfig.internalValue),
       primary_container: sagemakerModelPrimaryContainerToTerraform(this._primaryContainer.internalValue),
       vpc_config: sagemakerModelVpcConfigToTerraform(this._vpcConfig.internalValue),

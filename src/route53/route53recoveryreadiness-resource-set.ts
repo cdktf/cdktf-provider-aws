@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53RecoveryreadinessResourceSetConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_resource_set#id Route53RecoveryreadinessResourceSet#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_resource_set#resource_set_name Route53RecoveryreadinessResourceSet#resource_set_name}
   */
   readonly resourceSetName: string;
@@ -490,6 +497,135 @@ export function route53RecoveryreadinessResourceSetResourcesToTerraform(struct?:
   }
 }
 
+export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._readinessScopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readinessScopes = this._readinessScopes;
+    }
+    if (this._resourceArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceArn = this._resourceArn;
+    }
+    if (this._dnsTargetResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dnsTargetResource = this._dnsTargetResource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._readinessScopes = undefined;
+      this._resourceArn = undefined;
+      this._dnsTargetResource.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._readinessScopes = value.readinessScopes;
+      this._resourceArn = value.resourceArn;
+      this._dnsTargetResource.internalValue = value.dnsTargetResource;
+    }
+  }
+
+  // component_id - computed: true, optional: false, required: false
+  public get componentId() {
+    return this.getStringAttribute('component_id');
+  }
+
+  // readiness_scopes - computed: false, optional: true, required: false
+  private _readinessScopes?: string[]; 
+  public get readinessScopes() {
+    return this.getListAttribute('readiness_scopes');
+  }
+  public set readinessScopes(value: string[]) {
+    this._readinessScopes = value;
+  }
+  public resetReadinessScopes() {
+    this._readinessScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readinessScopesInput() {
+    return this._readinessScopes;
+  }
+
+  // resource_arn - computed: false, optional: true, required: false
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  public resetResourceArn() {
+    this._resourceArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
+  }
+
+  // dns_target_resource - computed: false, optional: true, required: false
+  private _dnsTargetResource = new Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference(this, "dns_target_resource");
+  public get dnsTargetResource() {
+    return this._dnsTargetResource;
+  }
+  public putDnsTargetResource(value: Route53RecoveryreadinessResourceSetResourcesDnsTargetResource) {
+    this._dnsTargetResource.internalValue = value;
+  }
+  public resetDnsTargetResource() {
+    this._dnsTargetResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsTargetResourceInput() {
+    return this._dnsTargetResource.internalValue;
+  }
+}
+
+export class Route53RecoveryreadinessResourceSetResourcesList extends cdktf.ComplexList {
+  public internalValue? : Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Route53RecoveryreadinessResourceSetResourcesOutputReference {
+    return new Route53RecoveryreadinessResourceSetResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Route53RecoveryreadinessResourceSetTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_resource_set#delete Route53RecoveryreadinessResourceSet#delete}
@@ -509,6 +645,7 @@ export function route53RecoveryreadinessResourceSetTimeoutsToTerraform(struct?: 
 
 export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -518,7 +655,10 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecoveryreadinessResourceSetTimeouts | undefined {
+  public get internalValue(): Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -528,13 +668,19 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecoveryreadinessResourceSetTimeouts | undefined) {
+  public set internalValue(value: Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._delete = value.delete;
     }
   }
@@ -590,11 +736,12 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._resourceSetName = config.resourceSetName;
     this._resourceSetType = config.resourceSetType;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._resources = config.resources;
+    this._resources.internalValue = config.resources;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -608,8 +755,19 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // resource_set_name - computed: false, optional: false, required: true
@@ -671,17 +829,16 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
   }
 
   // resources - computed: false, optional: false, required: true
-  private _resources?: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable; 
+  private _resources = new Route53RecoveryreadinessResourceSetResourcesList(this, "resources", false);
   public get resources() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resources');
+    return this._resources;
   }
-  public set resources(value: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable) {
-    this._resources = value;
+  public putResources(value: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable) {
+    this._resources.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get resourcesInput() {
-    return this._resources;
+    return this._resources.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -706,11 +863,12 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       resource_set_name: cdktf.stringToTerraform(this._resourceSetName),
       resource_set_type: cdktf.stringToTerraform(this._resourceSetType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform)(this._resources),
+      resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform)(this._resources.internalValue),
       timeouts: route53RecoveryreadinessResourceSetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

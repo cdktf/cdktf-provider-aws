@@ -28,6 +28,13 @@ export interface DevicefarmNetworkProfileConfig extends cdktf.TerraformMetaArgum
   */
   readonly downlinkLossPercent?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_network_profile#id DevicefarmNetworkProfile#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_network_profile#name DevicefarmNetworkProfile#name}
   */
   readonly name: string;
@@ -104,6 +111,7 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
     this._downlinkDelayMs = config.downlinkDelayMs;
     this._downlinkJitterMs = config.downlinkJitterMs;
     this._downlinkLossPercent = config.downlinkLossPercent;
+    this._id = config.id;
     this._name = config.name;
     this._projectArn = config.projectArn;
     this._tags = config.tags;
@@ -205,8 +213,19 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -358,6 +377,7 @@ export class DevicefarmNetworkProfile extends cdktf.TerraformResource {
       downlink_delay_ms: cdktf.numberToTerraform(this._downlinkDelayMs),
       downlink_jitter_ms: cdktf.numberToTerraform(this._downlinkJitterMs),
       downlink_loss_percent: cdktf.numberToTerraform(this._downlinkLossPercent),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project_arn: cdktf.stringToTerraform(this._projectArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

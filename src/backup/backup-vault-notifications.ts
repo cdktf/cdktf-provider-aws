@@ -16,6 +16,13 @@ export interface BackupVaultNotificationsConfig extends cdktf.TerraformMetaArgum
   */
   readonly backupVaultName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications#id BackupVaultNotifications#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications#sns_topic_arn BackupVaultNotifications#sns_topic_arn}
   */
   readonly snsTopicArn: string;
@@ -57,6 +64,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
     });
     this._backupVaultEvents = config.backupVaultEvents;
     this._backupVaultName = config.backupVaultName;
+    this._id = config.id;
     this._snsTopicArn = config.snsTopicArn;
   }
 
@@ -96,8 +104,19 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // sns_topic_arn - computed: false, optional: false, required: true
@@ -121,6 +140,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
     return {
       backup_vault_events: cdktf.listMapper(cdktf.stringToTerraform)(this._backupVaultEvents),
       backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
+      id: cdktf.stringToTerraform(this._id),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
     };
   }

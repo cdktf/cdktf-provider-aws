@@ -20,6 +20,13 @@ export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArgum
   */
   readonly heartbeatTimeout?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook#id AutoscalingLifecycleHook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook#lifecycle_transition AutoscalingLifecycleHook#lifecycle_transition}
   */
   readonly lifecycleTransition: string;
@@ -78,6 +85,7 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
     this._autoscalingGroupName = config.autoscalingGroupName;
     this._defaultResult = config.defaultResult;
     this._heartbeatTimeout = config.heartbeatTimeout;
+    this._id = config.id;
     this._lifecycleTransition = config.lifecycleTransition;
     this._name = config.name;
     this._notificationMetadata = config.notificationMetadata;
@@ -135,8 +143,19 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lifecycle_transition - computed: false, optional: false, required: true
@@ -222,6 +241,7 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
       autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
       default_result: cdktf.stringToTerraform(this._defaultResult),
       heartbeat_timeout: cdktf.numberToTerraform(this._heartbeatTimeout),
+      id: cdktf.stringToTerraform(this._id),
       lifecycle_transition: cdktf.stringToTerraform(this._lifecycleTransition),
       name: cdktf.stringToTerraform(this._name),
       notification_metadata: cdktf.stringToTerraform(this._notificationMetadata),

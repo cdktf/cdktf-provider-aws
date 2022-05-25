@@ -16,6 +16,13 @@ export interface Macie2ClassificationJobConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#id Macie2ClassificationJob#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#initial_run Macie2ClassificationJob#initial_run}
   */
   readonly initialRun?: boolean | cdktf.IResolvable;
@@ -156,6 +163,102 @@ export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerrafo
   }
 }
 
+export class Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobS3JobDefinitionBucketDefinitions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._buckets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.buckets = this._buckets;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobS3JobDefinitionBucketDefinitions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accountId = undefined;
+      this._buckets = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accountId = value.accountId;
+      this._buckets = value.buckets;
+    }
+  }
+
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // buckets - computed: false, optional: false, required: true
+  private _buckets?: string[]; 
+  public get buckets() {
+    return this.getListAttribute('buckets');
+  }
+  public set buckets(value: string[]) {
+    this._buckets = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketsInput() {
+    return this._buckets;
+  }
+}
+
+export class Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList extends cdktf.ComplexList {
+  public internalValue? : Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference {
+    return new Macie2ClassificationJobS3JobDefinitionBucketDefinitionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
@@ -297,6 +400,108 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScope
   }
 }
 
+export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: true, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: true, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList extends cdktf.ComplexList {
+  public internalValue? : Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference {
+    return new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
@@ -357,9 +562,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._tagValues !== undefined) {
+    if (this._tagValues?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.tagValues = this._tagValues;
+      internalValueResult.tagValues = this._tagValues?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -370,14 +575,14 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
       this._comparator = undefined;
       this._key = undefined;
       this._target = undefined;
-      this._tagValues = undefined;
+      this._tagValues.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._target = value.target;
-      this._tagValues = value.tagValues;
+      this._tagValues.internalValue = value.tagValues;
     }
   }
 
@@ -430,20 +635,19 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
   }
 
   // tag_values - computed: false, optional: true, required: false
-  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable; 
+  private _tagValues = new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesList(this, "tag_values", false);
   public get tagValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_values');
+    return this._tagValues;
   }
-  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
-    this._tagValues = value;
+  public putTagValues(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
+    this._tagValues.internalValue = value;
   }
   public resetTagValues() {
-    this._tagValues = undefined;
+    this._tagValues.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagValuesInput() {
-    return this._tagValues;
+    return this._tagValues.internalValue;
   }
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd {
@@ -472,6 +676,108 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraf
   }
 }
 
+export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._simpleScopeTerm?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.simpleScopeTerm = this._simpleScopeTerm?.internalValue;
+    }
+    if (this._tagScopeTerm?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagScopeTerm = this._tagScopeTerm?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._simpleScopeTerm.internalValue = undefined;
+      this._tagScopeTerm.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._simpleScopeTerm.internalValue = value.simpleScopeTerm;
+      this._tagScopeTerm.internalValue = value.tagScopeTerm;
+    }
+  }
+
+  // simple_scope_term - computed: false, optional: true, required: false
+  private _simpleScopeTerm = new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference(this, "simple_scope_term");
+  public get simpleScopeTerm() {
+    return this._simpleScopeTerm;
+  }
+  public putSimpleScopeTerm(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm) {
+    this._simpleScopeTerm.internalValue = value;
+  }
+  public resetSimpleScopeTerm() {
+    this._simpleScopeTerm.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get simpleScopeTermInput() {
+    return this._simpleScopeTerm.internalValue;
+  }
+
+  // tag_scope_term - computed: false, optional: true, required: false
+  private _tagScopeTerm = new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference(this, "tag_scope_term");
+  public get tagScopeTerm() {
+    return this._tagScopeTerm;
+  }
+  public putTagScopeTerm(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm) {
+    this._tagScopeTerm.internalValue = value;
+  }
+  public resetTagScopeTerm() {
+    this._tagScopeTerm.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagScopeTermInput() {
+    return this._tagScopeTerm.internalValue;
+  }
+}
+
+export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList extends cdktf.ComplexList {
+  public internalValue? : Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference {
+    return new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2ClassificationJobS3JobDefinitionScopingExcludes {
   /**
   * and block
@@ -505,9 +811,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._and !== undefined) {
+    if (this._and?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.and = this._and;
+      internalValueResult.and = this._and?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -515,29 +821,28 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._and = undefined;
+      this._and.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._and = value.and;
+      this._and.internalValue = value.and;
     }
   }
 
   // and - computed: false, optional: true, required: false
-  private _and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable; 
+  private _and = new Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList(this, "and", false);
   public get and() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('and');
+    return this._and;
   }
-  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable) {
-    this._and = value;
+  public putAnd(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable) {
+    this._and.internalValue = value;
   }
   public resetAnd() {
-    this._and = undefined;
+    this._and.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get andInput() {
-    return this._and;
+    return this._and.internalValue;
   }
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm {
@@ -681,6 +986,108 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
   }
 }
 
+export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: true, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: true, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList extends cdktf.ComplexList {
+  public internalValue? : Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference {
+    return new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#comparator Macie2ClassificationJob#comparator}
@@ -741,9 +1148,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._tagValues !== undefined) {
+    if (this._tagValues?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.tagValues = this._tagValues;
+      internalValueResult.tagValues = this._tagValues?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -754,14 +1161,14 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
       this._comparator = undefined;
       this._key = undefined;
       this._target = undefined;
-      this._tagValues = undefined;
+      this._tagValues.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._target = value.target;
-      this._tagValues = value.tagValues;
+      this._tagValues.internalValue = value.tagValues;
     }
   }
 
@@ -814,20 +1221,19 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
   }
 
   // tag_values - computed: false, optional: true, required: false
-  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable; 
+  private _tagValues = new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesList(this, "tag_values", false);
   public get tagValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_values');
+    return this._tagValues;
   }
-  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
-    this._tagValues = value;
+  public putTagValues(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
+    this._tagValues.internalValue = value;
   }
   public resetTagValues() {
-    this._tagValues = undefined;
+    this._tagValues.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagValuesInput() {
-    return this._tagValues;
+    return this._tagValues.internalValue;
   }
 }
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd {
@@ -856,6 +1262,108 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraf
   }
 }
 
+export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._simpleScopeTerm?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.simpleScopeTerm = this._simpleScopeTerm?.internalValue;
+    }
+    if (this._tagScopeTerm?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagScopeTerm = this._tagScopeTerm?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._simpleScopeTerm.internalValue = undefined;
+      this._tagScopeTerm.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._simpleScopeTerm.internalValue = value.simpleScopeTerm;
+      this._tagScopeTerm.internalValue = value.tagScopeTerm;
+    }
+  }
+
+  // simple_scope_term - computed: false, optional: true, required: false
+  private _simpleScopeTerm = new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference(this, "simple_scope_term");
+  public get simpleScopeTerm() {
+    return this._simpleScopeTerm;
+  }
+  public putSimpleScopeTerm(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm) {
+    this._simpleScopeTerm.internalValue = value;
+  }
+  public resetSimpleScopeTerm() {
+    this._simpleScopeTerm.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get simpleScopeTermInput() {
+    return this._simpleScopeTerm.internalValue;
+  }
+
+  // tag_scope_term - computed: false, optional: true, required: false
+  private _tagScopeTerm = new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference(this, "tag_scope_term");
+  public get tagScopeTerm() {
+    return this._tagScopeTerm;
+  }
+  public putTagScopeTerm(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm) {
+    this._tagScopeTerm.internalValue = value;
+  }
+  public resetTagScopeTerm() {
+    this._tagScopeTerm.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagScopeTermInput() {
+    return this._tagScopeTerm.internalValue;
+  }
+}
+
+export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList extends cdktf.ComplexList {
+  public internalValue? : Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference {
+    return new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2ClassificationJobS3JobDefinitionScopingIncludes {
   /**
   * and block
@@ -889,9 +1397,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._and !== undefined) {
+    if (this._and?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.and = this._and;
+      internalValueResult.and = this._and?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -899,29 +1407,28 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._and = undefined;
+      this._and.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._and = value.and;
+      this._and.internalValue = value.and;
     }
   }
 
   // and - computed: false, optional: true, required: false
-  private _and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable; 
+  private _and = new Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList(this, "and", false);
   public get and() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('and');
+    return this._and;
   }
-  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable) {
-    this._and = value;
+  public putAnd(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable) {
+    this._and.internalValue = value;
   }
   public resetAnd() {
-    this._and = undefined;
+    this._and.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get andInput() {
-    return this._and;
+    return this._and.internalValue;
   }
 }
 export interface Macie2ClassificationJobS3JobDefinitionScoping {
@@ -1060,9 +1567,9 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   public get internalValue(): Macie2ClassificationJobS3JobDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketDefinitions !== undefined) {
+    if (this._bucketDefinitions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.bucketDefinitions = this._bucketDefinitions;
+      internalValueResult.bucketDefinitions = this._bucketDefinitions?.internalValue;
     }
     if (this._scoping?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1074,31 +1581,30 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   public set internalValue(value: Macie2ClassificationJobS3JobDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._bucketDefinitions = undefined;
+      this._bucketDefinitions.internalValue = undefined;
       this._scoping.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._bucketDefinitions = value.bucketDefinitions;
+      this._bucketDefinitions.internalValue = value.bucketDefinitions;
       this._scoping.internalValue = value.scoping;
     }
   }
 
   // bucket_definitions - computed: false, optional: true, required: false
-  private _bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable; 
+  private _bucketDefinitions = new Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList(this, "bucket_definitions", false);
   public get bucketDefinitions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bucket_definitions');
+    return this._bucketDefinitions;
   }
-  public set bucketDefinitions(value: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable) {
-    this._bucketDefinitions = value;
+  public putBucketDefinitions(value: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable) {
+    this._bucketDefinitions.internalValue = value;
   }
   public resetBucketDefinitions() {
-    this._bucketDefinitions = undefined;
+    this._bucketDefinitions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bucketDefinitionsInput() {
-    return this._bucketDefinitions;
+    return this._bucketDefinitions.internalValue;
   }
 
   // scoping - computed: false, optional: true, required: false
@@ -1273,6 +1779,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
     });
     this._customDataIdentifierIds = config.customDataIdentifierIds;
     this._description = config.description;
+    this._id = config.id;
     this._initialRun = config.initialRun;
     this._jobStatus = config.jobStatus;
     this._jobType = config.jobType;
@@ -1327,8 +1834,19 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // initial_run - computed: false, optional: true, required: false
@@ -1509,6 +2027,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
     return {
       custom_data_identifier_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customDataIdentifierIds),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       initial_run: cdktf.booleanToTerraform(this._initialRun),
       job_status: cdktf.stringToTerraform(this._jobStatus),
       job_type: cdktf.stringToTerraform(this._jobType),

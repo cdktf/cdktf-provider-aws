@@ -16,6 +16,13 @@ export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging#id S3BucketLoggingA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}
   */
   readonly targetBucket: string;
@@ -37,6 +44,9 @@ export interface S3BucketLoggingTargetGrantGrantee {
   readonly emailAddress?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging#id S3BucketLoggingA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -202,6 +212,102 @@ export function s3BucketLoggingTargetGrantToTerraform(struct?: S3BucketLoggingTa
   }
 }
 
+export class S3BucketLoggingTargetGrantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketLoggingTargetGrant | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    if (this._grantee?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grantee = this._grantee?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketLoggingTargetGrant | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._permission = undefined;
+      this._grantee.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._permission = value.permission;
+      this._grantee.internalValue = value.grantee;
+    }
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+
+  // grantee - computed: false, optional: false, required: true
+  private _grantee = new S3BucketLoggingTargetGrantGranteeOutputReference(this, "grantee");
+  public get grantee() {
+    return this._grantee;
+  }
+  public putGrantee(value: S3BucketLoggingTargetGrantGrantee) {
+    this._grantee.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get granteeInput() {
+    return this._grantee.internalValue;
+  }
+}
+
+export class S3BucketLoggingTargetGrantList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLoggingTargetGrant[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLoggingTargetGrantOutputReference {
+    return new S3BucketLoggingTargetGrantOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging aws_s3_bucket_logging}
@@ -239,9 +345,10 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
+    this._id = config.id;
     this._targetBucket = config.targetBucket;
     this._targetPrefix = config.targetPrefix;
-    this._targetGrant = config.targetGrant;
+    this._targetGrant.internalValue = config.targetGrant;
   }
 
   // ==========
@@ -278,8 +385,19 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // target_bucket - computed: false, optional: false, required: true
@@ -309,20 +427,19 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   }
 
   // target_grant - computed: false, optional: true, required: false
-  private _targetGrant?: S3BucketLoggingTargetGrant[] | cdktf.IResolvable; 
+  private _targetGrant = new S3BucketLoggingTargetGrantList(this, "target_grant", true);
   public get targetGrant() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_grant')));
+    return this._targetGrant;
   }
-  public set targetGrant(value: S3BucketLoggingTargetGrant[] | cdktf.IResolvable) {
-    this._targetGrant = value;
+  public putTargetGrant(value: S3BucketLoggingTargetGrant[] | cdktf.IResolvable) {
+    this._targetGrant.internalValue = value;
   }
   public resetTargetGrant() {
-    this._targetGrant = undefined;
+    this._targetGrant.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetGrantInput() {
-    return this._targetGrant;
+    return this._targetGrant.internalValue;
   }
 
   // =========
@@ -333,9 +450,10 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
+      id: cdktf.stringToTerraform(this._id),
       target_bucket: cdktf.stringToTerraform(this._targetBucket),
       target_prefix: cdktf.stringToTerraform(this._targetPrefix),
-      target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform)(this._targetGrant),
+      target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform)(this._targetGrant.internalValue),
     };
   }
 }

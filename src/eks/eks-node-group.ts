@@ -28,6 +28,13 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceUpdateVersion?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group#id EksNodeGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group#instance_types EksNodeGroup#instance_types}
   */
   readonly instanceTypes?: string[];
@@ -241,6 +248,9 @@ export class EksNodeGroupResourcesList extends cdktf.ComplexList {
 export interface EksNodeGroupLaunchTemplate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group#id EksNodeGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -259,6 +269,7 @@ export function eksNodeGroupLaunchTemplateToTerraform(struct?: EksNodeGroupLaunc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     version: cdktf.stringToTerraform(struct!.version),
   }
@@ -278,6 +289,10 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
   public get internalValue(): EksNodeGroupLaunchTemplate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -292,19 +307,32 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
   public set internalValue(value: EksNodeGroupLaunchTemplate | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._id = undefined;
       this._name = undefined;
       this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._id = value.id;
       this._name = value.name;
       this._version = value.version;
     }
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -565,6 +593,124 @@ export function eksNodeGroupTaintToTerraform(struct?: EksNodeGroupTaint | cdktf.
   }
 }
 
+export class EksNodeGroupTaintOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EksNodeGroupTaint | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._effect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effect = this._effect;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksNodeGroupTaint | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._effect = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._effect = value.effect;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // effect - computed: false, optional: false, required: true
+  private _effect?: string; 
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+  public set effect(value: string) {
+    this._effect = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectInput() {
+    return this._effect;
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class EksNodeGroupTaintList extends cdktf.ComplexList {
+  public internalValue? : EksNodeGroupTaint[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EksNodeGroupTaintOutputReference {
+    return new EksNodeGroupTaintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EksNodeGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group#create EksNodeGroup#create}
@@ -594,6 +740,7 @@ export function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeoutsOut
 
 export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -603,7 +750,10 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): EksNodeGroupTimeouts | undefined {
+  public get internalValue(): EksNodeGroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -621,15 +771,21 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EksNodeGroupTimeouts | undefined) {
+  public set internalValue(value: EksNodeGroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -816,6 +972,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._clusterName = config.clusterName;
     this._diskSize = config.diskSize;
     this._forceUpdateVersion = config.forceUpdateVersion;
+    this._id = config.id;
     this._instanceTypes = config.instanceTypes;
     this._labels = config.labels;
     this._nodeGroupName = config.nodeGroupName;
@@ -829,7 +986,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._launchTemplate.internalValue = config.launchTemplate;
     this._remoteAccess.internalValue = config.remoteAccess;
     this._scalingConfig.internalValue = config.scalingConfig;
-    this._taint = config.taint;
+    this._taint.internalValue = config.taint;
     this._timeouts.internalValue = config.timeouts;
     this._updateConfig.internalValue = config.updateConfig;
   }
@@ -921,8 +1078,19 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_types - computed: true, optional: true, required: false
@@ -1136,20 +1304,19 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // taint - computed: false, optional: true, required: false
-  private _taint?: EksNodeGroupTaint[] | cdktf.IResolvable; 
+  private _taint = new EksNodeGroupTaintList(this, "taint", true);
   public get taint() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('taint')));
+    return this._taint;
   }
-  public set taint(value: EksNodeGroupTaint[] | cdktf.IResolvable) {
-    this._taint = value;
+  public putTaint(value: EksNodeGroupTaint[] | cdktf.IResolvable) {
+    this._taint.internalValue = value;
   }
   public resetTaint() {
-    this._taint = undefined;
+    this._taint.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get taintInput() {
-    return this._taint;
+    return this._taint.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1195,6 +1362,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       disk_size: cdktf.numberToTerraform(this._diskSize),
       force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
+      id: cdktf.stringToTerraform(this._id),
       instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
@@ -1208,7 +1376,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       launch_template: eksNodeGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       remote_access: eksNodeGroupRemoteAccessToTerraform(this._remoteAccess.internalValue),
       scaling_config: eksNodeGroupScalingConfigToTerraform(this._scalingConfig.internalValue),
-      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform)(this._taint),
+      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform)(this._taint.internalValue),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts.internalValue),
       update_config: eksNodeGroupUpdateConfigToTerraform(this._updateConfig.internalValue),
     };

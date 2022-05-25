@@ -16,6 +16,13 @@ export interface CodestarnotificationsNotificationRuleConfig extends cdktf.Terra
   */
   readonly eventTypeIds: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule#id CodestarnotificationsNotificationRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule#name CodestarnotificationsNotificationRule#name}
   */
   readonly name: string;
@@ -64,6 +71,110 @@ export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: 
   }
 }
 
+export class CodestarnotificationsNotificationRuleTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._type = value.type;
+    }
+  }
+
+  // address - computed: false, optional: false, required: true
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CodestarnotificationsNotificationRuleTargetList extends cdktf.ComplexList {
+  public internalValue? : CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodestarnotificationsNotificationRuleTargetOutputReference {
+    return new CodestarnotificationsNotificationRuleTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}
@@ -101,12 +212,13 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
     });
     this._detailType = config.detailType;
     this._eventTypeIds = config.eventTypeIds;
+    this._id = config.id;
     this._name = config.name;
     this._resource = config.resource;
     this._status = config.status;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._target = config.target;
+    this._target.internalValue = config.target;
   }
 
   // ==========
@@ -145,8 +257,19 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -224,20 +347,19 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   }
 
   // target - computed: false, optional: true, required: false
-  private _target?: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable; 
+  private _target = new CodestarnotificationsNotificationRuleTargetList(this, "target", true);
   public get target() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target')));
+    return this._target;
   }
-  public set target(value: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable) {
-    this._target = value;
+  public putTarget(value: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable) {
+    this._target.internalValue = value;
   }
   public resetTarget() {
-    this._target = undefined;
+    this._target.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target;
+    return this._target.internalValue;
   }
 
   // =========
@@ -248,12 +370,13 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
     return {
       detail_type: cdktf.stringToTerraform(this._detailType),
       event_type_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eventTypeIds),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       resource: cdktf.stringToTerraform(this._resource),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform)(this._target),
+      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform)(this._target.internalValue),
     };
   }
 }

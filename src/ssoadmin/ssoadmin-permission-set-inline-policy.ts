@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SsoadminPermissionSetInlinePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_permission_set_inline_policy#id SsoadminPermissionSetInlinePolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_permission_set_inline_policy#inline_policy SsoadminPermissionSetInlinePolicy#inline_policy}
   */
   readonly inlinePolicy: string;
@@ -55,6 +62,7 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._inlinePolicy = config.inlinePolicy;
     this._instanceArn = config.instanceArn;
     this._permissionSetArn = config.permissionSetArn;
@@ -65,8 +73,19 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // inline_policy - computed: false, optional: false, required: true
@@ -114,6 +133,7 @@ export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       inline_policy: cdktf.stringToTerraform(this._inlinePolicy),
       instance_arn: cdktf.stringToTerraform(this._instanceArn),
       permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),

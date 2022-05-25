@@ -16,6 +16,13 @@ export interface DataAwsDbSnapshotConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dbSnapshotIdentifier?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot#id DataAwsDbSnapshot#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot#include_public DataAwsDbSnapshot#include_public}
   */
   readonly includePublic?: boolean | cdktf.IResolvable;
@@ -69,6 +76,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
     });
     this._dbInstanceIdentifier = config.dbInstanceIdentifier;
     this._dbSnapshotIdentifier = config.dbSnapshotIdentifier;
+    this._id = config.id;
     this._includePublic = config.includePublic;
     this._includeShared = config.includeShared;
     this._mostRecent = config.mostRecent;
@@ -142,8 +150,19 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_public - computed: false, optional: true, required: false
@@ -273,6 +292,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
     return {
       db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
       db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
+      id: cdktf.stringToTerraform(this._id),
       include_public: cdktf.booleanToTerraform(this._includePublic),
       include_shared: cdktf.booleanToTerraform(this._includeShared),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),

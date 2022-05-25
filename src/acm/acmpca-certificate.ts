@@ -16,6 +16,13 @@ export interface AcmpcaCertificateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly certificateSigningRequest: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#id AcmpcaCertificate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#signing_algorithm AcmpcaCertificate#signing_algorithm}
   */
   readonly signingAlgorithm: string;
@@ -153,6 +160,7 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
     });
     this._certificateAuthorityArn = config.certificateAuthorityArn;
     this._certificateSigningRequest = config.certificateSigningRequest;
+    this._id = config.id;
     this._signingAlgorithm = config.signingAlgorithm;
     this._templateArn = config.templateArn;
     this._validity.internalValue = config.validity;
@@ -204,8 +212,19 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // signing_algorithm - computed: false, optional: false, required: true
@@ -258,6 +277,7 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
     return {
       certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
       certificate_signing_request: cdktf.stringToTerraform(this._certificateSigningRequest),
+      id: cdktf.stringToTerraform(this._id),
       signing_algorithm: cdktf.stringToTerraform(this._signingAlgorithm),
       template_arn: cdktf.stringToTerraform(this._templateArn),
       validity: acmpcaCertificateValidityToTerraform(this._validity.internalValue),

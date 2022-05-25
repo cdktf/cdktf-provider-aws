@@ -20,6 +20,13 @@ export interface GlueCatalogTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#id GlueCatalogTable#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name: string;
@@ -94,6 +101,107 @@ export function glueCatalogTablePartitionIndexToTerraform(struct?: GlueCatalogTa
   }
 }
 
+export class GlueCatalogTablePartitionIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTablePartitionIndex | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._indexName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indexName = this._indexName;
+    }
+    if (this._keys !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keys = this._keys;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTablePartitionIndex | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._indexName = undefined;
+      this._keys = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._indexName = value.indexName;
+      this._keys = value.keys;
+    }
+  }
+
+  // index_name - computed: false, optional: false, required: true
+  private _indexName?: string; 
+  public get indexName() {
+    return this.getStringAttribute('index_name');
+  }
+  public set indexName(value: string) {
+    this._indexName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexNameInput() {
+    return this._indexName;
+  }
+
+  // index_status - computed: true, optional: false, required: false
+  public get indexStatus() {
+    return this.getStringAttribute('index_status');
+  }
+
+  // keys - computed: false, optional: false, required: true
+  private _keys?: string[]; 
+  public get keys() {
+    return this.getListAttribute('keys');
+  }
+  public set keys(value: string[]) {
+    this._keys = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keysInput() {
+    return this._keys;
+  }
+}
+
+export class GlueCatalogTablePartitionIndexList extends cdktf.ComplexList {
+  public internalValue? : GlueCatalogTablePartitionIndex[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTablePartitionIndexOutputReference {
+    return new GlueCatalogTablePartitionIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCatalogTablePartitionKeys {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#comment GlueCatalogTable#comment}
@@ -121,6 +229,127 @@ export function glueCatalogTablePartitionKeysToTerraform(struct?: GlueCatalogTab
   }
 }
 
+export class GlueCatalogTablePartitionKeysOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTablePartitionKeys | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comment = this._comment;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTablePartitionKeys | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comment = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comment = value.comment;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GlueCatalogTablePartitionKeysList extends cdktf.ComplexList {
+  public internalValue? : GlueCatalogTablePartitionKeys[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTablePartitionKeysOutputReference {
+    return new GlueCatalogTablePartitionKeysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCatalogTableStorageDescriptorColumns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#comment GlueCatalogTable#comment}
@@ -153,6 +382,149 @@ export function glueCatalogTableStorageDescriptorColumnsToTerraform(struct?: Glu
   }
 }
 
+export class GlueCatalogTableStorageDescriptorColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableStorageDescriptorColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comment = this._comment;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableStorageDescriptorColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comment = undefined;
+      this._name = undefined;
+      this._parameters = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comment = value.comment;
+      this._name = value.name;
+      this._parameters = value.parameters;
+      this._type = value.type;
+    }
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters?: { [key: string]: string }; 
+  public get parameters() {
+    return this.getStringMapAttribute('parameters');
+  }
+  public set parameters(value: { [key: string]: string }) {
+    this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GlueCatalogTableStorageDescriptorColumnsList extends cdktf.ComplexList {
+  public internalValue? : GlueCatalogTableStorageDescriptorColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableStorageDescriptorColumnsOutputReference {
+    return new GlueCatalogTableStorageDescriptorColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#registry_name GlueCatalogTable#registry_name}
@@ -650,6 +1022,102 @@ export function glueCatalogTableStorageDescriptorSortColumnsToTerraform(struct?:
   }
 }
 
+export class GlueCatalogTableStorageDescriptorSortColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableStorageDescriptorSortColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._column !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.column = this._column;
+    }
+    if (this._sortOrder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sortOrder = this._sortOrder;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableStorageDescriptorSortColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._column = undefined;
+      this._sortOrder = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._column = value.column;
+      this._sortOrder = value.sortOrder;
+    }
+  }
+
+  // column - computed: false, optional: false, required: true
+  private _column?: string; 
+  public get column() {
+    return this.getStringAttribute('column');
+  }
+  public set column(value: string) {
+    this._column = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnInput() {
+    return this._column;
+  }
+
+  // sort_order - computed: false, optional: false, required: true
+  private _sortOrder?: number; 
+  public get sortOrder() {
+    return this.getNumberAttribute('sort_order');
+  }
+  public set sortOrder(value: number) {
+    this._sortOrder = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortOrderInput() {
+    return this._sortOrder;
+  }
+}
+
+export class GlueCatalogTableStorageDescriptorSortColumnsList extends cdktf.ComplexList {
+  public internalValue? : GlueCatalogTableStorageDescriptorSortColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableStorageDescriptorSortColumnsOutputReference {
+    return new GlueCatalogTableStorageDescriptorSortColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCatalogTableStorageDescriptor {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_table#bucket_columns GlueCatalogTable#bucket_columns}
@@ -783,9 +1251,9 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.storedAsSubDirectories = this._storedAsSubDirectories;
     }
-    if (this._columns !== undefined) {
+    if (this._columns?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.columns = this._columns;
+      internalValueResult.columns = this._columns?.internalValue;
     }
     if (this._schemaReference?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -799,9 +1267,9 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.skewedInfo = this._skewedInfo?.internalValue;
     }
-    if (this._sortColumns !== undefined) {
+    if (this._sortColumns?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.sortColumns = this._sortColumns;
+      internalValueResult.sortColumns = this._sortColumns?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -817,11 +1285,11 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       this._outputFormat = undefined;
       this._parameters = undefined;
       this._storedAsSubDirectories = undefined;
-      this._columns = undefined;
+      this._columns.internalValue = undefined;
       this._schemaReference.internalValue = undefined;
       this._serDeInfo.internalValue = undefined;
       this._skewedInfo.internalValue = undefined;
-      this._sortColumns = undefined;
+      this._sortColumns.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -833,11 +1301,11 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       this._outputFormat = value.outputFormat;
       this._parameters = value.parameters;
       this._storedAsSubDirectories = value.storedAsSubDirectories;
-      this._columns = value.columns;
+      this._columns.internalValue = value.columns;
       this._schemaReference.internalValue = value.schemaReference;
       this._serDeInfo.internalValue = value.serDeInfo;
       this._skewedInfo.internalValue = value.skewedInfo;
-      this._sortColumns = value.sortColumns;
+      this._sortColumns.internalValue = value.sortColumns;
     }
   }
 
@@ -970,20 +1438,19 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   // columns - computed: false, optional: true, required: false
-  private _columns?: GlueCatalogTableStorageDescriptorColumns[] | cdktf.IResolvable; 
+  private _columns = new GlueCatalogTableStorageDescriptorColumnsList(this, "columns", false);
   public get columns() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('columns');
+    return this._columns;
   }
-  public set columns(value: GlueCatalogTableStorageDescriptorColumns[] | cdktf.IResolvable) {
-    this._columns = value;
+  public putColumns(value: GlueCatalogTableStorageDescriptorColumns[] | cdktf.IResolvable) {
+    this._columns.internalValue = value;
   }
   public resetColumns() {
-    this._columns = undefined;
+    this._columns.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get columnsInput() {
-    return this._columns;
+    return this._columns.internalValue;
   }
 
   // schema_reference - computed: false, optional: true, required: false
@@ -1035,20 +1502,19 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   // sort_columns - computed: false, optional: true, required: false
-  private _sortColumns?: GlueCatalogTableStorageDescriptorSortColumns[] | cdktf.IResolvable; 
+  private _sortColumns = new GlueCatalogTableStorageDescriptorSortColumnsList(this, "sort_columns", false);
   public get sortColumns() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('sort_columns');
+    return this._sortColumns;
   }
-  public set sortColumns(value: GlueCatalogTableStorageDescriptorSortColumns[] | cdktf.IResolvable) {
-    this._sortColumns = value;
+  public putSortColumns(value: GlueCatalogTableStorageDescriptorSortColumns[] | cdktf.IResolvable) {
+    this._sortColumns.internalValue = value;
   }
   public resetSortColumns() {
-    this._sortColumns = undefined;
+    this._sortColumns.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sortColumnsInput() {
-    return this._sortColumns;
+    return this._sortColumns.internalValue;
   }
 }
 export interface GlueCatalogTableTargetTable {
@@ -1199,6 +1665,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
     this._catalogId = config.catalogId;
     this._databaseName = config.databaseName;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._owner = config.owner;
     this._parameters = config.parameters;
@@ -1206,8 +1673,8 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
     this._tableType = config.tableType;
     this._viewExpandedText = config.viewExpandedText;
     this._viewOriginalText = config.viewOriginalText;
-    this._partitionIndex = config.partitionIndex;
-    this._partitionKeys = config.partitionKeys;
+    this._partitionIndex.internalValue = config.partitionIndex;
+    this._partitionKeys.internalValue = config.partitionKeys;
     this._storageDescriptor.internalValue = config.storageDescriptor;
     this._targetTable.internalValue = config.targetTable;
   }
@@ -1267,8 +1734,19 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1381,37 +1859,35 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
   }
 
   // partition_index - computed: false, optional: true, required: false
-  private _partitionIndex?: GlueCatalogTablePartitionIndex[] | cdktf.IResolvable; 
+  private _partitionIndex = new GlueCatalogTablePartitionIndexList(this, "partition_index", false);
   public get partitionIndex() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('partition_index');
+    return this._partitionIndex;
   }
-  public set partitionIndex(value: GlueCatalogTablePartitionIndex[] | cdktf.IResolvable) {
-    this._partitionIndex = value;
+  public putPartitionIndex(value: GlueCatalogTablePartitionIndex[] | cdktf.IResolvable) {
+    this._partitionIndex.internalValue = value;
   }
   public resetPartitionIndex() {
-    this._partitionIndex = undefined;
+    this._partitionIndex.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get partitionIndexInput() {
-    return this._partitionIndex;
+    return this._partitionIndex.internalValue;
   }
 
   // partition_keys - computed: false, optional: true, required: false
-  private _partitionKeys?: GlueCatalogTablePartitionKeys[] | cdktf.IResolvable; 
+  private _partitionKeys = new GlueCatalogTablePartitionKeysList(this, "partition_keys", false);
   public get partitionKeys() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('partition_keys');
+    return this._partitionKeys;
   }
-  public set partitionKeys(value: GlueCatalogTablePartitionKeys[] | cdktf.IResolvable) {
-    this._partitionKeys = value;
+  public putPartitionKeys(value: GlueCatalogTablePartitionKeys[] | cdktf.IResolvable) {
+    this._partitionKeys.internalValue = value;
   }
   public resetPartitionKeys() {
-    this._partitionKeys = undefined;
+    this._partitionKeys.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get partitionKeysInput() {
-    return this._partitionKeys;
+    return this._partitionKeys.internalValue;
   }
 
   // storage_descriptor - computed: false, optional: true, required: false
@@ -1455,6 +1931,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       database_name: cdktf.stringToTerraform(this._databaseName),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
@@ -1462,8 +1939,8 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
       table_type: cdktf.stringToTerraform(this._tableType),
       view_expanded_text: cdktf.stringToTerraform(this._viewExpandedText),
       view_original_text: cdktf.stringToTerraform(this._viewOriginalText),
-      partition_index: cdktf.listMapper(glueCatalogTablePartitionIndexToTerraform)(this._partitionIndex),
-      partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform)(this._partitionKeys),
+      partition_index: cdktf.listMapper(glueCatalogTablePartitionIndexToTerraform)(this._partitionIndex.internalValue),
+      partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform)(this._partitionKeys.internalValue),
       storage_descriptor: glueCatalogTableStorageDescriptorToTerraform(this._storageDescriptor.internalValue),
       target_table: glueCatalogTableTargetTableToTerraform(this._targetTable.internalValue),
     };

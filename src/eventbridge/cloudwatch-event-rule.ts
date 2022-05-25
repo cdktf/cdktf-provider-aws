@@ -20,6 +20,13 @@ export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments 
   */
   readonly eventPattern?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule#id CloudwatchEventRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule#is_enabled CloudwatchEventRule#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
@@ -86,6 +93,7 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
     this._description = config.description;
     this._eventBusName = config.eventBusName;
     this._eventPattern = config.eventPattern;
+    this._id = config.id;
     this._isEnabled = config.isEnabled;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
@@ -153,8 +161,19 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_enabled - computed: false, optional: true, required: false
@@ -278,6 +297,7 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       event_bus_name: cdktf.stringToTerraform(this._eventBusName),
       event_pattern: cdktf.stringToTerraform(this._eventPattern),
+      id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),

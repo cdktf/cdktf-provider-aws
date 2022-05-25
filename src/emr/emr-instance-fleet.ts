@@ -12,6 +12,13 @@ export interface EmrInstanceFleetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#id EmrInstanceFleet#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#name EmrInstanceFleet#name}
   */
   readonly name?: string;
@@ -58,6 +65,108 @@ export function emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(str
   }
 }
 
+export class EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceFleetInstanceTypeConfigsConfigurations | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._classification !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.classification = this._classification;
+    }
+    if (this._properties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.properties = this._properties;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceFleetInstanceTypeConfigsConfigurations | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._classification = undefined;
+      this._properties = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._classification = value.classification;
+      this._properties = value.properties;
+    }
+  }
+
+  // classification - computed: false, optional: true, required: false
+  private _classification?: string; 
+  public get classification() {
+    return this.getStringAttribute('classification');
+  }
+  public set classification(value: string) {
+    this._classification = value;
+  }
+  public resetClassification() {
+    this._classification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get classificationInput() {
+    return this._classification;
+  }
+
+  // properties - computed: false, optional: true, required: false
+  private _properties?: { [key: string]: string }; 
+  public get properties() {
+    return this.getStringMapAttribute('properties');
+  }
+  public set properties(value: { [key: string]: string }) {
+    this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties;
+  }
+}
+
+export class EmrInstanceFleetInstanceTypeConfigsConfigurationsList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceFleetInstanceTypeConfigsConfigurations[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference {
+    return new EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EmrInstanceFleetInstanceTypeConfigsEbsConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#iops EmrInstanceFleet#iops}
@@ -90,6 +199,146 @@ export function emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?:
   }
 }
 
+export class EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceFleetInstanceTypeConfigsEbsConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._iops !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iops = this._iops;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._volumesPerInstance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumesPerInstance = this._volumesPerInstance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceFleetInstanceTypeConfigsEbsConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._iops = undefined;
+      this._size = undefined;
+      this._type = undefined;
+      this._volumesPerInstance = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._iops = value.iops;
+      this._size = value.size;
+      this._type = value.type;
+      this._volumesPerInstance = value.volumesPerInstance;
+    }
+  }
+
+  // iops - computed: false, optional: true, required: false
+  private _iops?: number; 
+  public get iops() {
+    return this.getNumberAttribute('iops');
+  }
+  public set iops(value: number) {
+    this._iops = value;
+  }
+  public resetIops() {
+    this._iops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iopsInput() {
+    return this._iops;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // volumes_per_instance - computed: false, optional: true, required: false
+  private _volumesPerInstance?: number; 
+  public get volumesPerInstance() {
+    return this.getNumberAttribute('volumes_per_instance');
+  }
+  public set volumesPerInstance(value: number) {
+    this._volumesPerInstance = value;
+  }
+  public resetVolumesPerInstance() {
+    this._volumesPerInstance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumesPerInstanceInput() {
+    return this._volumesPerInstance;
+  }
+}
+
+export class EmrInstanceFleetInstanceTypeConfigsEbsConfigList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceFleetInstanceTypeConfigsEbsConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference {
+    return new EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EmrInstanceFleetInstanceTypeConfigs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#bid_price EmrInstanceFleet#bid_price}
@@ -136,6 +385,193 @@ export function emrInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrInsta
   }
 }
 
+export class EmrInstanceFleetInstanceTypeConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceFleetInstanceTypeConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bidPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bidPrice = this._bidPrice;
+    }
+    if (this._bidPriceAsPercentageOfOnDemandPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bidPriceAsPercentageOfOnDemandPrice = this._bidPriceAsPercentageOfOnDemandPrice;
+    }
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._weightedCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weightedCapacity = this._weightedCapacity;
+    }
+    if (this._configurations?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configurations = this._configurations?.internalValue;
+    }
+    if (this._ebsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsConfig = this._ebsConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceFleetInstanceTypeConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bidPrice = undefined;
+      this._bidPriceAsPercentageOfOnDemandPrice = undefined;
+      this._instanceType = undefined;
+      this._weightedCapacity = undefined;
+      this._configurations.internalValue = undefined;
+      this._ebsConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bidPrice = value.bidPrice;
+      this._bidPriceAsPercentageOfOnDemandPrice = value.bidPriceAsPercentageOfOnDemandPrice;
+      this._instanceType = value.instanceType;
+      this._weightedCapacity = value.weightedCapacity;
+      this._configurations.internalValue = value.configurations;
+      this._ebsConfig.internalValue = value.ebsConfig;
+    }
+  }
+
+  // bid_price - computed: false, optional: true, required: false
+  private _bidPrice?: string; 
+  public get bidPrice() {
+    return this.getStringAttribute('bid_price');
+  }
+  public set bidPrice(value: string) {
+    this._bidPrice = value;
+  }
+  public resetBidPrice() {
+    this._bidPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bidPriceInput() {
+    return this._bidPrice;
+  }
+
+  // bid_price_as_percentage_of_on_demand_price - computed: false, optional: true, required: false
+  private _bidPriceAsPercentageOfOnDemandPrice?: number; 
+  public get bidPriceAsPercentageOfOnDemandPrice() {
+    return this.getNumberAttribute('bid_price_as_percentage_of_on_demand_price');
+  }
+  public set bidPriceAsPercentageOfOnDemandPrice(value: number) {
+    this._bidPriceAsPercentageOfOnDemandPrice = value;
+  }
+  public resetBidPriceAsPercentageOfOnDemandPrice() {
+    this._bidPriceAsPercentageOfOnDemandPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bidPriceAsPercentageOfOnDemandPriceInput() {
+    return this._bidPriceAsPercentageOfOnDemandPrice;
+  }
+
+  // instance_type - computed: false, optional: false, required: true
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // weighted_capacity - computed: false, optional: true, required: false
+  private _weightedCapacity?: number; 
+  public get weightedCapacity() {
+    return this.getNumberAttribute('weighted_capacity');
+  }
+  public set weightedCapacity(value: number) {
+    this._weightedCapacity = value;
+  }
+  public resetWeightedCapacity() {
+    this._weightedCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightedCapacityInput() {
+    return this._weightedCapacity;
+  }
+
+  // configurations - computed: false, optional: true, required: false
+  private _configurations = new EmrInstanceFleetInstanceTypeConfigsConfigurationsList(this, "configurations", true);
+  public get configurations() {
+    return this._configurations;
+  }
+  public putConfigurations(value: EmrInstanceFleetInstanceTypeConfigsConfigurations[] | cdktf.IResolvable) {
+    this._configurations.internalValue = value;
+  }
+  public resetConfigurations() {
+    this._configurations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationsInput() {
+    return this._configurations.internalValue;
+  }
+
+  // ebs_config - computed: false, optional: true, required: false
+  private _ebsConfig = new EmrInstanceFleetInstanceTypeConfigsEbsConfigList(this, "ebs_config", true);
+  public get ebsConfig() {
+    return this._ebsConfig;
+  }
+  public putEbsConfig(value: EmrInstanceFleetInstanceTypeConfigsEbsConfig[] | cdktf.IResolvable) {
+    this._ebsConfig.internalValue = value;
+  }
+  public resetEbsConfig() {
+    this._ebsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsConfigInput() {
+    return this._ebsConfig.internalValue;
+  }
+}
+
+export class EmrInstanceFleetInstanceTypeConfigsList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceFleetInstanceTypeConfigsOutputReference {
+    return new EmrInstanceFleetInstanceTypeConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EmrInstanceFleetLaunchSpecificationsOnDemandSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#allocation_strategy EmrInstanceFleet#allocation_strategy}
@@ -153,6 +589,83 @@ export function emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerra
   }
 }
 
+export class EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceFleetLaunchSpecificationsOnDemandSpecification | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationStrategy = this._allocationStrategy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allocationStrategy = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allocationStrategy = value.allocationStrategy;
+    }
+  }
+
+  // allocation_strategy - computed: false, optional: false, required: true
+  private _allocationStrategy?: string; 
+  public get allocationStrategy() {
+    return this.getStringAttribute('allocation_strategy');
+  }
+  public set allocationStrategy(value: string) {
+    this._allocationStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationStrategyInput() {
+    return this._allocationStrategy;
+  }
+}
+
+export class EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference {
+    return new EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EmrInstanceFleetLaunchSpecificationsSpotSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#allocation_strategy EmrInstanceFleet#allocation_strategy}
@@ -185,6 +698,143 @@ export function emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform
   }
 }
 
+export class EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmrInstanceFleetLaunchSpecificationsSpotSpecification | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocationStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocationStrategy = this._allocationStrategy;
+    }
+    if (this._blockDurationMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.blockDurationMinutes = this._blockDurationMinutes;
+    }
+    if (this._timeoutAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutAction = this._timeoutAction;
+    }
+    if (this._timeoutDurationMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutDurationMinutes = this._timeoutDurationMinutes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrInstanceFleetLaunchSpecificationsSpotSpecification | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allocationStrategy = undefined;
+      this._blockDurationMinutes = undefined;
+      this._timeoutAction = undefined;
+      this._timeoutDurationMinutes = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allocationStrategy = value.allocationStrategy;
+      this._blockDurationMinutes = value.blockDurationMinutes;
+      this._timeoutAction = value.timeoutAction;
+      this._timeoutDurationMinutes = value.timeoutDurationMinutes;
+    }
+  }
+
+  // allocation_strategy - computed: false, optional: false, required: true
+  private _allocationStrategy?: string; 
+  public get allocationStrategy() {
+    return this.getStringAttribute('allocation_strategy');
+  }
+  public set allocationStrategy(value: string) {
+    this._allocationStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationStrategyInput() {
+    return this._allocationStrategy;
+  }
+
+  // block_duration_minutes - computed: false, optional: true, required: false
+  private _blockDurationMinutes?: number; 
+  public get blockDurationMinutes() {
+    return this.getNumberAttribute('block_duration_minutes');
+  }
+  public set blockDurationMinutes(value: number) {
+    this._blockDurationMinutes = value;
+  }
+  public resetBlockDurationMinutes() {
+    this._blockDurationMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockDurationMinutesInput() {
+    return this._blockDurationMinutes;
+  }
+
+  // timeout_action - computed: false, optional: false, required: true
+  private _timeoutAction?: string; 
+  public get timeoutAction() {
+    return this.getStringAttribute('timeout_action');
+  }
+  public set timeoutAction(value: string) {
+    this._timeoutAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutActionInput() {
+    return this._timeoutAction;
+  }
+
+  // timeout_duration_minutes - computed: false, optional: false, required: true
+  private _timeoutDurationMinutes?: number; 
+  public get timeoutDurationMinutes() {
+    return this.getNumberAttribute('timeout_duration_minutes');
+  }
+  public set timeoutDurationMinutes(value: number) {
+    this._timeoutDurationMinutes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutDurationMinutesInput() {
+    return this._timeoutDurationMinutes;
+  }
+}
+
+export class EmrInstanceFleetLaunchSpecificationsSpotSpecificationList extends cdktf.ComplexList {
+  public internalValue? : EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference {
+    return new EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EmrInstanceFleetLaunchSpecifications {
   /**
   * on_demand_specification block
@@ -225,13 +875,13 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   public get internalValue(): EmrInstanceFleetLaunchSpecifications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._onDemandSpecification !== undefined) {
+    if (this._onDemandSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.onDemandSpecification = this._onDemandSpecification;
+      internalValueResult.onDemandSpecification = this._onDemandSpecification?.internalValue;
     }
-    if (this._spotSpecification !== undefined) {
+    if (this._spotSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.spotSpecification = this._spotSpecification;
+      internalValueResult.spotSpecification = this._spotSpecification?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -239,48 +889,46 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   public set internalValue(value: EmrInstanceFleetLaunchSpecifications | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._onDemandSpecification = undefined;
-      this._spotSpecification = undefined;
+      this._onDemandSpecification.internalValue = undefined;
+      this._spotSpecification.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._onDemandSpecification = value.onDemandSpecification;
-      this._spotSpecification = value.spotSpecification;
+      this._onDemandSpecification.internalValue = value.onDemandSpecification;
+      this._spotSpecification.internalValue = value.spotSpecification;
     }
   }
 
   // on_demand_specification - computed: false, optional: true, required: false
-  private _onDemandSpecification?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable; 
+  private _onDemandSpecification = new EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList(this, "on_demand_specification", false);
   public get onDemandSpecification() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('on_demand_specification');
+    return this._onDemandSpecification;
   }
-  public set onDemandSpecification(value: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable) {
-    this._onDemandSpecification = value;
+  public putOnDemandSpecification(value: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable) {
+    this._onDemandSpecification.internalValue = value;
   }
   public resetOnDemandSpecification() {
-    this._onDemandSpecification = undefined;
+    this._onDemandSpecification.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get onDemandSpecificationInput() {
-    return this._onDemandSpecification;
+    return this._onDemandSpecification.internalValue;
   }
 
   // spot_specification - computed: false, optional: true, required: false
-  private _spotSpecification?: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable; 
+  private _spotSpecification = new EmrInstanceFleetLaunchSpecificationsSpotSpecificationList(this, "spot_specification", false);
   public get spotSpecification() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('spot_specification');
+    return this._spotSpecification;
   }
-  public set spotSpecification(value: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable) {
-    this._spotSpecification = value;
+  public putSpotSpecification(value: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable) {
+    this._spotSpecification.internalValue = value;
   }
   public resetSpotSpecification() {
-    this._spotSpecification = undefined;
+    this._spotSpecification.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get spotSpecificationInput() {
-    return this._spotSpecification;
+    return this._spotSpecification.internalValue;
   }
 }
 
@@ -319,10 +967,11 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clusterId = config.clusterId;
+    this._id = config.id;
     this._name = config.name;
     this._targetOnDemandCapacity = config.targetOnDemandCapacity;
     this._targetSpotCapacity = config.targetSpotCapacity;
-    this._instanceTypeConfigs = config.instanceTypeConfigs;
+    this._instanceTypeConfigs.internalValue = config.instanceTypeConfigs;
     this._launchSpecifications.internalValue = config.launchSpecifications;
   }
 
@@ -344,8 +993,19 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -407,20 +1067,19 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
   }
 
   // instance_type_configs - computed: false, optional: true, required: false
-  private _instanceTypeConfigs?: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable; 
+  private _instanceTypeConfigs = new EmrInstanceFleetInstanceTypeConfigsList(this, "instance_type_configs", true);
   public get instanceTypeConfigs() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('instance_type_configs')));
+    return this._instanceTypeConfigs;
   }
-  public set instanceTypeConfigs(value: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable) {
-    this._instanceTypeConfigs = value;
+  public putInstanceTypeConfigs(value: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable) {
+    this._instanceTypeConfigs.internalValue = value;
   }
   public resetInstanceTypeConfigs() {
-    this._instanceTypeConfigs = undefined;
+    this._instanceTypeConfigs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTypeConfigsInput() {
-    return this._instanceTypeConfigs;
+    return this._instanceTypeConfigs.internalValue;
   }
 
   // launch_specifications - computed: false, optional: true, required: false
@@ -446,10 +1105,11 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       target_on_demand_capacity: cdktf.numberToTerraform(this._targetOnDemandCapacity),
       target_spot_capacity: cdktf.numberToTerraform(this._targetSpotCapacity),
-      instance_type_configs: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsToTerraform)(this._instanceTypeConfigs),
+      instance_type_configs: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsToTerraform)(this._instanceTypeConfigs.internalValue),
       launch_specifications: emrInstanceFleetLaunchSpecificationsToTerraform(this._launchSpecifications.internalValue),
     };
   }

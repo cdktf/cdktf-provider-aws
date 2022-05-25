@@ -24,6 +24,13 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   */
   readonly firewallPolicyChangeProtection?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#id NetworkfirewallFirewall#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#name NetworkfirewallFirewall#name}
   */
   readonly name: string;
@@ -271,6 +278,83 @@ export function networkfirewallFirewallSubnetMappingToTerraform(struct?: Network
   }
 }
 
+export class NetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallSubnetMapping | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallSubnetMapping | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._subnetId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._subnetId = value.subnetId;
+    }
+  }
+
+  // subnet_id - computed: false, optional: false, required: true
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+}
+
+export class NetworkfirewallFirewallSubnetMappingList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallSubnetMappingOutputReference {
+    return new NetworkfirewallFirewallSubnetMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall aws_networkfirewall_firewall}
@@ -310,12 +394,13 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
     this._description = config.description;
     this._firewallPolicyArn = config.firewallPolicyArn;
     this._firewallPolicyChangeProtection = config.firewallPolicyChangeProtection;
+    this._id = config.id;
     this._name = config.name;
     this._subnetChangeProtection = config.subnetChangeProtection;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
-    this._subnetMapping = config.subnetMapping;
+    this._subnetMapping.internalValue = config.subnetMapping;
   }
 
   // ==========
@@ -395,8 +480,19 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -479,17 +575,16 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // subnet_mapping - computed: false, optional: false, required: true
-  private _subnetMapping?: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable; 
+  private _subnetMapping = new NetworkfirewallFirewallSubnetMappingList(this, "subnet_mapping", true);
   public get subnetMapping() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('subnet_mapping')));
+    return this._subnetMapping;
   }
-  public set subnetMapping(value: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable) {
-    this._subnetMapping = value;
+  public putSubnetMapping(value: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable) {
+    this._subnetMapping.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get subnetMappingInput() {
-    return this._subnetMapping;
+    return this._subnetMapping.internalValue;
   }
 
   // =========
@@ -502,12 +597,13 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       firewall_policy_arn: cdktf.stringToTerraform(this._firewallPolicyArn),
       firewall_policy_change_protection: cdktf.booleanToTerraform(this._firewallPolicyChangeProtection),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       subnet_change_protection: cdktf.booleanToTerraform(this._subnetChangeProtection),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform)(this._subnetMapping),
+      subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform)(this._subnetMapping.internalValue),
     };
   }
 }

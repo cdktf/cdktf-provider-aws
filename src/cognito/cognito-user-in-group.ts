@@ -12,6 +12,13 @@ export interface CognitoUserInGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_in_group#id CognitoUserInGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}
   */
   readonly userPoolId: string;
@@ -56,6 +63,7 @@ export class CognitoUserInGroup extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._groupName = config.groupName;
+    this._id = config.id;
     this._userPoolId = config.userPoolId;
     this._username = config.username;
   }
@@ -78,8 +86,19 @@ export class CognitoUserInGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // user_pool_id - computed: false, optional: false, required: true
@@ -115,6 +134,7 @@ export class CognitoUserInGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_name: cdktf.stringToTerraform(this._groupName),
+      id: cdktf.stringToTerraform(this._id),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
       username: cdktf.stringToTerraform(this._username),
     };

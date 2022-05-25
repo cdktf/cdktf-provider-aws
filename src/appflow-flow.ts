@@ -12,6 +12,13 @@ export interface AppflowFlowConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#id AppflowFlow#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#kms_arn AppflowFlow#kms_arn}
   */
   readonly kmsArn?: string;
@@ -3771,6 +3778,146 @@ export function appflowFlowDestinationFlowConfigToTerraform(struct?: AppflowFlow
   }
 }
 
+export class AppflowFlowDestinationFlowConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppflowFlowDestinationFlowConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apiVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apiVersion = this._apiVersion;
+    }
+    if (this._connectorProfileName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorProfileName = this._connectorProfileName;
+    }
+    if (this._connectorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorType = this._connectorType;
+    }
+    if (this._destinationConnectorProperties?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationConnectorProperties = this._destinationConnectorProperties?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppflowFlowDestinationFlowConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._apiVersion = undefined;
+      this._connectorProfileName = undefined;
+      this._connectorType = undefined;
+      this._destinationConnectorProperties.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._apiVersion = value.apiVersion;
+      this._connectorProfileName = value.connectorProfileName;
+      this._connectorType = value.connectorType;
+      this._destinationConnectorProperties.internalValue = value.destinationConnectorProperties;
+    }
+  }
+
+  // api_version - computed: false, optional: true, required: false
+  private _apiVersion?: string; 
+  public get apiVersion() {
+    return this.getStringAttribute('api_version');
+  }
+  public set apiVersion(value: string) {
+    this._apiVersion = value;
+  }
+  public resetApiVersion() {
+    this._apiVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiVersionInput() {
+    return this._apiVersion;
+  }
+
+  // connector_profile_name - computed: false, optional: true, required: false
+  private _connectorProfileName?: string; 
+  public get connectorProfileName() {
+    return this.getStringAttribute('connector_profile_name');
+  }
+  public set connectorProfileName(value: string) {
+    this._connectorProfileName = value;
+  }
+  public resetConnectorProfileName() {
+    this._connectorProfileName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorProfileNameInput() {
+    return this._connectorProfileName;
+  }
+
+  // connector_type - computed: false, optional: false, required: true
+  private _connectorType?: string; 
+  public get connectorType() {
+    return this.getStringAttribute('connector_type');
+  }
+  public set connectorType(value: string) {
+    this._connectorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorTypeInput() {
+    return this._connectorType;
+  }
+
+  // destination_connector_properties - computed: false, optional: false, required: true
+  private _destinationConnectorProperties = new AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference(this, "destination_connector_properties");
+  public get destinationConnectorProperties() {
+    return this._destinationConnectorProperties;
+  }
+  public putDestinationConnectorProperties(value: AppflowFlowDestinationFlowConfigDestinationConnectorProperties) {
+    this._destinationConnectorProperties.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationConnectorPropertiesInput() {
+    return this._destinationConnectorProperties.internalValue;
+  }
+}
+
+export class AppflowFlowDestinationFlowConfigList extends cdktf.ComplexList {
+  public internalValue? : AppflowFlowDestinationFlowConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppflowFlowDestinationFlowConfigOutputReference {
+    return new AppflowFlowDestinationFlowConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppflowFlowSourceFlowConfigIncrementalPullConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#datetime_type_field_name AppflowFlow#datetime_type_field_name}
@@ -5903,6 +6050,416 @@ export function appflowFlowTaskConnectorOperatorToTerraform(struct?: AppflowFlow
   }
 }
 
+export class AppflowFlowTaskConnectorOperatorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppflowFlowTaskConnectorOperator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._amplitude !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.amplitude = this._amplitude;
+    }
+    if (this._customConnector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customConnector = this._customConnector;
+    }
+    if (this._datadog !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datadog = this._datadog;
+    }
+    if (this._dynatrace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynatrace = this._dynatrace;
+    }
+    if (this._googleAnalytics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleAnalytics = this._googleAnalytics;
+    }
+    if (this._inforNexus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inforNexus = this._inforNexus;
+    }
+    if (this._marketo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.marketo = this._marketo;
+    }
+    if (this._s3 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3;
+    }
+    if (this._salesforce !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.salesforce = this._salesforce;
+    }
+    if (this._sapoData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sapoData = this._sapoData;
+    }
+    if (this._serviceNow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceNow = this._serviceNow;
+    }
+    if (this._singular !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singular = this._singular;
+    }
+    if (this._slack !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slack = this._slack;
+    }
+    if (this._trendmicro !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trendmicro = this._trendmicro;
+    }
+    if (this._veeva !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.veeva = this._veeva;
+    }
+    if (this._zendesk !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zendesk = this._zendesk;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppflowFlowTaskConnectorOperator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._amplitude = undefined;
+      this._customConnector = undefined;
+      this._datadog = undefined;
+      this._dynatrace = undefined;
+      this._googleAnalytics = undefined;
+      this._inforNexus = undefined;
+      this._marketo = undefined;
+      this._s3 = undefined;
+      this._salesforce = undefined;
+      this._sapoData = undefined;
+      this._serviceNow = undefined;
+      this._singular = undefined;
+      this._slack = undefined;
+      this._trendmicro = undefined;
+      this._veeva = undefined;
+      this._zendesk = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._amplitude = value.amplitude;
+      this._customConnector = value.customConnector;
+      this._datadog = value.datadog;
+      this._dynatrace = value.dynatrace;
+      this._googleAnalytics = value.googleAnalytics;
+      this._inforNexus = value.inforNexus;
+      this._marketo = value.marketo;
+      this._s3 = value.s3;
+      this._salesforce = value.salesforce;
+      this._sapoData = value.sapoData;
+      this._serviceNow = value.serviceNow;
+      this._singular = value.singular;
+      this._slack = value.slack;
+      this._trendmicro = value.trendmicro;
+      this._veeva = value.veeva;
+      this._zendesk = value.zendesk;
+    }
+  }
+
+  // amplitude - computed: false, optional: true, required: false
+  private _amplitude?: string; 
+  public get amplitude() {
+    return this.getStringAttribute('amplitude');
+  }
+  public set amplitude(value: string) {
+    this._amplitude = value;
+  }
+  public resetAmplitude() {
+    this._amplitude = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amplitudeInput() {
+    return this._amplitude;
+  }
+
+  // custom_connector - computed: false, optional: true, required: false
+  private _customConnector?: string; 
+  public get customConnector() {
+    return this.getStringAttribute('custom_connector');
+  }
+  public set customConnector(value: string) {
+    this._customConnector = value;
+  }
+  public resetCustomConnector() {
+    this._customConnector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customConnectorInput() {
+    return this._customConnector;
+  }
+
+  // datadog - computed: false, optional: true, required: false
+  private _datadog?: string; 
+  public get datadog() {
+    return this.getStringAttribute('datadog');
+  }
+  public set datadog(value: string) {
+    this._datadog = value;
+  }
+  public resetDatadog() {
+    this._datadog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datadogInput() {
+    return this._datadog;
+  }
+
+  // dynatrace - computed: false, optional: true, required: false
+  private _dynatrace?: string; 
+  public get dynatrace() {
+    return this.getStringAttribute('dynatrace');
+  }
+  public set dynatrace(value: string) {
+    this._dynatrace = value;
+  }
+  public resetDynatrace() {
+    this._dynatrace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynatraceInput() {
+    return this._dynatrace;
+  }
+
+  // google_analytics - computed: false, optional: true, required: false
+  private _googleAnalytics?: string; 
+  public get googleAnalytics() {
+    return this.getStringAttribute('google_analytics');
+  }
+  public set googleAnalytics(value: string) {
+    this._googleAnalytics = value;
+  }
+  public resetGoogleAnalytics() {
+    this._googleAnalytics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleAnalyticsInput() {
+    return this._googleAnalytics;
+  }
+
+  // infor_nexus - computed: false, optional: true, required: false
+  private _inforNexus?: string; 
+  public get inforNexus() {
+    return this.getStringAttribute('infor_nexus');
+  }
+  public set inforNexus(value: string) {
+    this._inforNexus = value;
+  }
+  public resetInforNexus() {
+    this._inforNexus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inforNexusInput() {
+    return this._inforNexus;
+  }
+
+  // marketo - computed: false, optional: true, required: false
+  private _marketo?: string; 
+  public get marketo() {
+    return this.getStringAttribute('marketo');
+  }
+  public set marketo(value: string) {
+    this._marketo = value;
+  }
+  public resetMarketo() {
+    this._marketo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get marketoInput() {
+    return this._marketo;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3?: string; 
+  public get s3() {
+    return this.getStringAttribute('s3');
+  }
+  public set s3(value: string) {
+    this._s3 = value;
+  }
+  public resetS3() {
+    this._s3 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3;
+  }
+
+  // salesforce - computed: false, optional: true, required: false
+  private _salesforce?: string; 
+  public get salesforce() {
+    return this.getStringAttribute('salesforce');
+  }
+  public set salesforce(value: string) {
+    this._salesforce = value;
+  }
+  public resetSalesforce() {
+    this._salesforce = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get salesforceInput() {
+    return this._salesforce;
+  }
+
+  // sapo_data - computed: false, optional: true, required: false
+  private _sapoData?: string; 
+  public get sapoData() {
+    return this.getStringAttribute('sapo_data');
+  }
+  public set sapoData(value: string) {
+    this._sapoData = value;
+  }
+  public resetSapoData() {
+    this._sapoData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sapoDataInput() {
+    return this._sapoData;
+  }
+
+  // service_now - computed: false, optional: true, required: false
+  private _serviceNow?: string; 
+  public get serviceNow() {
+    return this.getStringAttribute('service_now');
+  }
+  public set serviceNow(value: string) {
+    this._serviceNow = value;
+  }
+  public resetServiceNow() {
+    this._serviceNow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNowInput() {
+    return this._serviceNow;
+  }
+
+  // singular - computed: false, optional: true, required: false
+  private _singular?: string; 
+  public get singular() {
+    return this.getStringAttribute('singular');
+  }
+  public set singular(value: string) {
+    this._singular = value;
+  }
+  public resetSingular() {
+    this._singular = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singularInput() {
+    return this._singular;
+  }
+
+  // slack - computed: false, optional: true, required: false
+  private _slack?: string; 
+  public get slack() {
+    return this.getStringAttribute('slack');
+  }
+  public set slack(value: string) {
+    this._slack = value;
+  }
+  public resetSlack() {
+    this._slack = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slackInput() {
+    return this._slack;
+  }
+
+  // trendmicro - computed: false, optional: true, required: false
+  private _trendmicro?: string; 
+  public get trendmicro() {
+    return this.getStringAttribute('trendmicro');
+  }
+  public set trendmicro(value: string) {
+    this._trendmicro = value;
+  }
+  public resetTrendmicro() {
+    this._trendmicro = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trendmicroInput() {
+    return this._trendmicro;
+  }
+
+  // veeva - computed: false, optional: true, required: false
+  private _veeva?: string; 
+  public get veeva() {
+    return this.getStringAttribute('veeva');
+  }
+  public set veeva(value: string) {
+    this._veeva = value;
+  }
+  public resetVeeva() {
+    this._veeva = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get veevaInput() {
+    return this._veeva;
+  }
+
+  // zendesk - computed: false, optional: true, required: false
+  private _zendesk?: string; 
+  public get zendesk() {
+    return this.getStringAttribute('zendesk');
+  }
+  public set zendesk(value: string) {
+    this._zendesk = value;
+  }
+  public resetZendesk() {
+    this._zendesk = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zendeskInput() {
+    return this._zendesk;
+  }
+}
+
+export class AppflowFlowTaskConnectorOperatorList extends cdktf.ComplexList {
+  public internalValue? : AppflowFlowTaskConnectorOperator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppflowFlowTaskConnectorOperatorOutputReference {
+    return new AppflowFlowTaskConnectorOperatorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppflowFlowTask {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#destination_field AppflowFlow#destination_field}
@@ -5942,6 +6499,168 @@ export function appflowFlowTaskToTerraform(struct?: AppflowFlowTask | cdktf.IRes
   }
 }
 
+export class AppflowFlowTaskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppflowFlowTask | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinationField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationField = this._destinationField;
+    }
+    if (this._sourceFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceFields = this._sourceFields;
+    }
+    if (this._taskProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.taskProperties = this._taskProperties;
+    }
+    if (this._taskType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.taskType = this._taskType;
+    }
+    if (this._connectorOperator?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorOperator = this._connectorOperator?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppflowFlowTask | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destinationField = undefined;
+      this._sourceFields = undefined;
+      this._taskProperties = undefined;
+      this._taskType = undefined;
+      this._connectorOperator.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destinationField = value.destinationField;
+      this._sourceFields = value.sourceFields;
+      this._taskProperties = value.taskProperties;
+      this._taskType = value.taskType;
+      this._connectorOperator.internalValue = value.connectorOperator;
+    }
+  }
+
+  // destination_field - computed: false, optional: true, required: false
+  private _destinationField?: string; 
+  public get destinationField() {
+    return this.getStringAttribute('destination_field');
+  }
+  public set destinationField(value: string) {
+    this._destinationField = value;
+  }
+  public resetDestinationField() {
+    this._destinationField = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationFieldInput() {
+    return this._destinationField;
+  }
+
+  // source_fields - computed: false, optional: false, required: true
+  private _sourceFields?: string[]; 
+  public get sourceFields() {
+    return this.getListAttribute('source_fields');
+  }
+  public set sourceFields(value: string[]) {
+    this._sourceFields = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceFieldsInput() {
+    return this._sourceFields;
+  }
+
+  // task_properties - computed: false, optional: true, required: false
+  private _taskProperties?: { [key: string]: string }; 
+  public get taskProperties() {
+    return this.getStringMapAttribute('task_properties');
+  }
+  public set taskProperties(value: { [key: string]: string }) {
+    this._taskProperties = value;
+  }
+  public resetTaskProperties() {
+    this._taskProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskPropertiesInput() {
+    return this._taskProperties;
+  }
+
+  // task_type - computed: false, optional: false, required: true
+  private _taskType?: string; 
+  public get taskType() {
+    return this.getStringAttribute('task_type');
+  }
+  public set taskType(value: string) {
+    this._taskType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskTypeInput() {
+    return this._taskType;
+  }
+
+  // connector_operator - computed: false, optional: true, required: false
+  private _connectorOperator = new AppflowFlowTaskConnectorOperatorList(this, "connector_operator", false);
+  public get connectorOperator() {
+    return this._connectorOperator;
+  }
+  public putConnectorOperator(value: AppflowFlowTaskConnectorOperator[] | cdktf.IResolvable) {
+    this._connectorOperator.internalValue = value;
+  }
+  public resetConnectorOperator() {
+    this._connectorOperator.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorOperatorInput() {
+    return this._connectorOperator.internalValue;
+  }
+}
+
+export class AppflowFlowTaskList extends cdktf.ComplexList {
+  public internalValue? : AppflowFlowTask[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppflowFlowTaskOutputReference {
+    return new AppflowFlowTaskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppflowFlowTriggerConfigTriggerPropertiesScheduled {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#data_pull_mode AppflowFlow#data_pull_mode}
@@ -6360,13 +7079,14 @@ export class AppflowFlow extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._kmsArn = config.kmsArn;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._destinationFlowConfig = config.destinationFlowConfig;
+    this._destinationFlowConfig.internalValue = config.destinationFlowConfig;
     this._sourceFlowConfig.internalValue = config.sourceFlowConfig;
-    this._task = config.task;
+    this._task.internalValue = config.task;
     this._triggerConfig.internalValue = config.triggerConfig;
   }
 
@@ -6396,8 +7116,19 @@ export class AppflowFlow extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_arn - computed: true, optional: true, required: false
@@ -6462,17 +7193,16 @@ export class AppflowFlow extends cdktf.TerraformResource {
   }
 
   // destination_flow_config - computed: false, optional: false, required: true
-  private _destinationFlowConfig?: AppflowFlowDestinationFlowConfig[] | cdktf.IResolvable; 
+  private _destinationFlowConfig = new AppflowFlowDestinationFlowConfigList(this, "destination_flow_config", true);
   public get destinationFlowConfig() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('destination_flow_config')));
+    return this._destinationFlowConfig;
   }
-  public set destinationFlowConfig(value: AppflowFlowDestinationFlowConfig[] | cdktf.IResolvable) {
-    this._destinationFlowConfig = value;
+  public putDestinationFlowConfig(value: AppflowFlowDestinationFlowConfig[] | cdktf.IResolvable) {
+    this._destinationFlowConfig.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get destinationFlowConfigInput() {
-    return this._destinationFlowConfig;
+    return this._destinationFlowConfig.internalValue;
   }
 
   // source_flow_config - computed: false, optional: false, required: true
@@ -6489,17 +7219,16 @@ export class AppflowFlow extends cdktf.TerraformResource {
   }
 
   // task - computed: false, optional: false, required: true
-  private _task?: AppflowFlowTask[] | cdktf.IResolvable; 
+  private _task = new AppflowFlowTaskList(this, "task", true);
   public get task() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('task')));
+    return this._task;
   }
-  public set task(value: AppflowFlowTask[] | cdktf.IResolvable) {
-    this._task = value;
+  public putTask(value: AppflowFlowTask[] | cdktf.IResolvable) {
+    this._task.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get taskInput() {
-    return this._task;
+    return this._task.internalValue;
   }
 
   // trigger_config - computed: false, optional: false, required: true
@@ -6522,13 +7251,14 @@ export class AppflowFlow extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       kms_arn: cdktf.stringToTerraform(this._kmsArn),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      destination_flow_config: cdktf.listMapper(appflowFlowDestinationFlowConfigToTerraform)(this._destinationFlowConfig),
+      destination_flow_config: cdktf.listMapper(appflowFlowDestinationFlowConfigToTerraform)(this._destinationFlowConfig.internalValue),
       source_flow_config: appflowFlowSourceFlowConfigToTerraform(this._sourceFlowConfig.internalValue),
-      task: cdktf.listMapper(appflowFlowTaskToTerraform)(this._task),
+      task: cdktf.listMapper(appflowFlowTaskToTerraform)(this._task.internalValue),
       trigger_config: appflowFlowTriggerConfigToTerraform(this._triggerConfig.internalValue),
     };
   }

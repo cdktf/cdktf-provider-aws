@@ -32,6 +32,13 @@ export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_domain_name#id ApiGatewayDomainName#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}
   */
   readonly ownershipVerificationCertificateArn?: string;
@@ -260,6 +267,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     this._certificateName = config.certificateName;
     this._certificatePrivateKey = config.certificatePrivateKey;
     this._domainName = config.domainName;
+    this._id = config.id;
     this._ownershipVerificationCertificateArn = config.ownershipVerificationCertificateArn;
     this._regionalCertificateArn = config.regionalCertificateArn;
     this._regionalCertificateName = config.regionalCertificateName;
@@ -388,8 +396,19 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ownership_verification_certificate_arn - computed: true, optional: true, required: false
@@ -542,6 +561,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
       certificate_name: cdktf.stringToTerraform(this._certificateName),
       certificate_private_key: cdktf.stringToTerraform(this._certificatePrivateKey),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      id: cdktf.stringToTerraform(this._id),
       ownership_verification_certificate_arn: cdktf.stringToTerraform(this._ownershipVerificationCertificateArn),
       regional_certificate_arn: cdktf.stringToTerraform(this._regionalCertificateArn),
       regional_certificate_name: cdktf.stringToTerraform(this._regionalCertificateName),

@@ -16,6 +16,13 @@ export interface S3BucketVersioningAConfig extends cdktf.TerraformMetaArguments 
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_versioning#id S3BucketVersioningA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_versioning#mfa S3BucketVersioningA#mfa}
   */
   readonly mfa?: string;
@@ -152,6 +159,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
+    this._id = config.id;
     this._mfa = config.mfa;
     this._versioningConfiguration.internalValue = config.versioningConfiguration;
   }
@@ -190,8 +198,19 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mfa - computed: false, optional: true, required: false
@@ -231,6 +250,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
+      id: cdktf.stringToTerraform(this._id),
       mfa: cdktf.stringToTerraform(this._mfa),
       versioning_configuration: s3BucketVersioningVersioningConfigurationToTerraform(this._versioningConfiguration.internalValue),
     };
