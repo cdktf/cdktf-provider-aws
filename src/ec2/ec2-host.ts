@@ -70,7 +70,7 @@ export class Ec2Host extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

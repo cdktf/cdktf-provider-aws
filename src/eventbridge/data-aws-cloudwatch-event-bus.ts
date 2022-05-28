@@ -46,7 +46,7 @@ export class DataAwsCloudwatchEventBus extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cloudwatch_event_bus',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -46,7 +46,7 @@ export class DataAwsOutpostsOutpostInstanceTypes extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_outposts_outpost_instance_types',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

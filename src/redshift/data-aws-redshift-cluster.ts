@@ -23,6 +23,80 @@ export interface DataAwsRedshiftClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly tags?: { [key: string]: string };
 }
+export interface DataAwsRedshiftClusterClusterNodes {
+}
+
+export function dataAwsRedshiftClusterClusterNodesToTerraform(struct?: DataAwsRedshiftClusterClusterNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsRedshiftClusterClusterNodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsRedshiftClusterClusterNodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsRedshiftClusterClusterNodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // node_role - computed: true, optional: false, required: false
+  public get nodeRole() {
+    return this.getStringAttribute('node_role');
+  }
+
+  // private_ip_address - computed: true, optional: false, required: false
+  public get privateIpAddress() {
+    return this.getStringAttribute('private_ip_address');
+  }
+
+  // public_ip_address - computed: true, optional: false, required: false
+  public get publicIpAddress() {
+    return this.getStringAttribute('public_ip_address');
+  }
+}
+
+export class DataAwsRedshiftClusterClusterNodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsRedshiftClusterClusterNodesOutputReference {
+    return new DataAwsRedshiftClusterClusterNodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster aws_redshift_cluster}
@@ -50,7 +124,7 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_redshift_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -70,6 +144,16 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
   // allow_version_upgrade - computed: true, optional: false, required: false
   public get allowVersionUpgrade() {
     return this.getBooleanAttribute('allow_version_upgrade');
+  }
+
+  // aqua_configuration_status - computed: true, optional: false, required: false
+  public get aquaConfigurationStatus() {
+    return this.getStringAttribute('aqua_configuration_status');
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
   }
 
   // automated_snapshot_retention_period - computed: true, optional: false, required: false
@@ -103,6 +187,12 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdentifierInput() {
     return this._clusterIdentifier;
+  }
+
+  // cluster_nodes - computed: true, optional: false, required: false
+  private _clusterNodes = new DataAwsRedshiftClusterClusterNodesList(this, "cluster_nodes", false);
+  public get clusterNodes() {
+    return this._clusterNodes;
   }
 
   // cluster_parameter_group_name - computed: true, optional: false, required: false
@@ -143,6 +233,11 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
   // database_name - computed: true, optional: false, required: false
   public get databaseName() {
     return this.getStringAttribute('database_name');
+  }
+
+  // default_iam_role_arn - computed: true, optional: false, required: false
+  public get defaultIamRoleArn() {
+    return this.getStringAttribute('default_iam_role_arn');
   }
 
   // elastic_ip - computed: true, optional: false, required: false
@@ -194,6 +289,26 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
+  }
+
+  // log_destination_type - computed: true, optional: false, required: false
+  public get logDestinationType() {
+    return this.getStringAttribute('log_destination_type');
+  }
+
+  // log_exports - computed: true, optional: false, required: false
+  public get logExports() {
+    return cdktf.Fn.tolist(this.getListAttribute('log_exports'));
+  }
+
+  // maintenance_track_name - computed: true, optional: false, required: false
+  public get maintenanceTrackName() {
+    return this.getStringAttribute('maintenance_track_name');
+  }
+
+  // manual_snapshot_retention_period - computed: true, optional: false, required: false
+  public get manualSnapshotRetentionPeriod() {
+    return this.getNumberAttribute('manual_snapshot_retention_period');
   }
 
   // master_username - computed: true, optional: false, required: false

@@ -424,7 +424,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_copy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -707,6 +707,11 @@ export class AmiCopy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsAllInput() {
     return this._tagsAll;
+  }
+
+  // tpm_support - computed: true, optional: false, required: false
+  public get tpmSupport() {
+    return this.getStringAttribute('tpm_support');
   }
 
   // usage_operation - computed: true, optional: false, required: false

@@ -44,6 +44,12 @@ export interface CloudfrontResponseHeadersPolicyConfig extends cdktf.TerraformMe
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#security_headers_config CloudfrontResponseHeadersPolicy#security_headers_config}
   */
   readonly securityHeadersConfig?: CloudfrontResponseHeadersPolicySecurityHeadersConfig;
+  /**
+  * server_timing_headers_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#server_timing_headers_config CloudfrontResponseHeadersPolicy#server_timing_headers_config}
+  */
+  readonly serverTimingHeadersConfig?: CloudfrontResponseHeadersPolicyServerTimingHeadersConfig;
 }
 export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders {
   /**
@@ -1546,6 +1552,92 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
     return this._xssProtection.internalValue;
   }
 }
+export interface CloudfrontResponseHeadersPolicyServerTimingHeadersConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#enabled CloudfrontResponseHeadersPolicy#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#sampling_rate CloudfrontResponseHeadersPolicy#sampling_rate}
+  */
+  readonly samplingRate: number;
+}
+
+export function cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToTerraform(struct?: CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyServerTimingHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    sampling_rate: cdktf.numberToTerraform(struct!.samplingRate),
+  }
+}
+
+export class CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudfrontResponseHeadersPolicyServerTimingHeadersConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._samplingRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.samplingRate = this._samplingRate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudfrontResponseHeadersPolicyServerTimingHeadersConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._samplingRate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._samplingRate = value.samplingRate;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // sampling_rate - computed: false, optional: false, required: true
+  private _samplingRate?: number; 
+  public get samplingRate() {
+    return this.getNumberAttribute('sampling_rate');
+  }
+  public set samplingRate(value: number) {
+    this._samplingRate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samplingRateInput() {
+    return this._samplingRate;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}
@@ -1573,7 +1665,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudfront_response_headers_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1588,6 +1680,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
     this._corsConfig.internalValue = config.corsConfig;
     this._customHeadersConfig.internalValue = config.customHeadersConfig;
     this._securityHeadersConfig.internalValue = config.securityHeadersConfig;
+    this._serverTimingHeadersConfig.internalValue = config.serverTimingHeadersConfig;
   }
 
   // ==========
@@ -1703,6 +1796,22 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
     return this._securityHeadersConfig.internalValue;
   }
 
+  // server_timing_headers_config - computed: false, optional: true, required: false
+  private _serverTimingHeadersConfig = new CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference(this, "server_timing_headers_config");
+  public get serverTimingHeadersConfig() {
+    return this._serverTimingHeadersConfig;
+  }
+  public putServerTimingHeadersConfig(value: CloudfrontResponseHeadersPolicyServerTimingHeadersConfig) {
+    this._serverTimingHeadersConfig.internalValue = value;
+  }
+  public resetServerTimingHeadersConfig() {
+    this._serverTimingHeadersConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverTimingHeadersConfigInput() {
+    return this._serverTimingHeadersConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1716,6 +1825,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
       cors_config: cloudfrontResponseHeadersPolicyCorsConfigToTerraform(this._corsConfig.internalValue),
       custom_headers_config: cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(this._customHeadersConfig.internalValue),
       security_headers_config: cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(this._securityHeadersConfig.internalValue),
+      server_timing_headers_config: cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToTerraform(this._serverTimingHeadersConfig.internalValue),
     };
   }
 }

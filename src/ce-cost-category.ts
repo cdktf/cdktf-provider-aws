@@ -2714,7 +2714,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

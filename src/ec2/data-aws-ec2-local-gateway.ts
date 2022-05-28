@@ -174,7 +174,7 @@ export class DataAwsEc2LocalGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_local_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

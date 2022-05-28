@@ -67,6 +67,10 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#tpm_support Ami#tpm_support}
+  */
+  readonly tpmSupport?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#virtualization_type Ami#virtualization_type}
   */
   readonly virtualizationType?: string;
@@ -673,7 +677,7 @@ export class Ami extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -695,6 +699,7 @@ export class Ami extends cdktf.TerraformResource {
     this._sriovNetSupport = config.sriovNetSupport;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._tpmSupport = config.tpmSupport;
     this._virtualizationType = config.virtualizationType;
     this._ebsBlockDevice.internalValue = config.ebsBlockDevice;
     this._ephemeralBlockDevice.internalValue = config.ephemeralBlockDevice;
@@ -976,6 +981,22 @@ export class Ami extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // tpm_support - computed: false, optional: true, required: false
+  private _tpmSupport?: string; 
+  public get tpmSupport() {
+    return this.getStringAttribute('tpm_support');
+  }
+  public set tpmSupport(value: string) {
+    this._tpmSupport = value;
+  }
+  public resetTpmSupport() {
+    this._tpmSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tpmSupportInput() {
+    return this._tpmSupport;
+  }
+
   // usage_operation - computed: true, optional: false, required: false
   public get usageOperation() {
     return this.getStringAttribute('usage_operation');
@@ -1065,6 +1086,7 @@ export class Ami extends cdktf.TerraformResource {
       sriov_net_support: cdktf.stringToTerraform(this._sriovNetSupport),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      tpm_support: cdktf.stringToTerraform(this._tpmSupport),
       virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
       ebs_block_device: cdktf.listMapper(amiEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
       ephemeral_block_device: cdktf.listMapper(amiEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
