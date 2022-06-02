@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface ElasticacheGlobalReplicationGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#engine_version ElasticacheGlobalReplicationGroup#engine_version}
+  */
+  readonly engineVersion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#global_replication_group_description ElasticacheGlobalReplicationGroup#global_replication_group_description}
   */
   readonly globalReplicationGroupDescription?: string;
@@ -22,6 +26,10 @@ export interface ElasticacheGlobalReplicationGroupConfig extends cdktf.Terraform
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#parameter_group_name ElasticacheGlobalReplicationGroup#parameter_group_name}
+  */
+  readonly parameterGroupName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#primary_replication_group_id ElasticacheGlobalReplicationGroup#primary_replication_group_id}
   */
@@ -54,7 +62,7 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_global_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -62,9 +70,11 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._engineVersion = config.engineVersion;
     this._globalReplicationGroupDescription = config.globalReplicationGroupDescription;
     this._globalReplicationGroupIdSuffix = config.globalReplicationGroupIdSuffix;
     this._id = config.id;
+    this._parameterGroupName = config.parameterGroupName;
     this._primaryReplicationGroupId = config.primaryReplicationGroupId;
   }
 
@@ -100,6 +110,22 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
   // engine - computed: true, optional: false, required: false
   public get engine() {
     return this.getStringAttribute('engine');
+  }
+
+  // engine_version - computed: true, optional: true, required: false
+  private _engineVersion?: string; 
+  public get engineVersion() {
+    return this.getStringAttribute('engine_version');
+  }
+  public set engineVersion(value: string) {
+    this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion;
   }
 
   // engine_version_actual - computed: true, optional: false, required: false
@@ -157,6 +183,22 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // parameter_group_name - computed: false, optional: true, required: false
+  private _parameterGroupName?: string; 
+  public get parameterGroupName() {
+    return this.getStringAttribute('parameter_group_name');
+  }
+  public set parameterGroupName(value: string) {
+    this._parameterGroupName = value;
+  }
+  public resetParameterGroupName() {
+    this._parameterGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterGroupNameInput() {
+    return this._parameterGroupName;
+  }
+
   // primary_replication_group_id - computed: false, optional: false, required: true
   private _primaryReplicationGroupId?: string; 
   public get primaryReplicationGroupId() {
@@ -181,9 +223,11 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
       global_replication_group_description: cdktf.stringToTerraform(this._globalReplicationGroupDescription),
       global_replication_group_id_suffix: cdktf.stringToTerraform(this._globalReplicationGroupIdSuffix),
       id: cdktf.stringToTerraform(this._id),
+      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       primary_replication_group_id: cdktf.stringToTerraform(this._primaryReplicationGroupId),
     };
   }

@@ -4,6 +4,7 @@ export * from './efs-backup-policy';
 export * from './efs-file-system';
 export * from './efs-file-system-policy';
 export * from './efs-mount-target';
+export * from './efs-replication-configuration';
 export * from './data-aws-efs-access-point';
 export * from './data-aws-efs-access-points';
 export * from './data-aws-efs-file-system';

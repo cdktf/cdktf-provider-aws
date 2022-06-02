@@ -1036,6 +1036,75 @@ export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList ext
     return new DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfig {
+}
+
+export function dataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigToTerraform(struct?: DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // sampling_rate - computed: true, optional: false, required: false
+  public get samplingRate() {
+    return this.getNumberAttribute('sampling_rate');
+  }
+}
+
+export class DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference {
+    return new DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}
@@ -1063,7 +1132,7 @@ export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataS
       terraformResourceType: 'aws_cloudfront_response_headers_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1137,6 +1206,12 @@ export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataS
   private _securityHeadersConfig = new DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList(this, "security_headers_config", false);
   public get securityHeadersConfig() {
     return this._securityHeadersConfig;
+  }
+
+  // server_timing_headers_config - computed: true, optional: false, required: false
+  private _serverTimingHeadersConfig = new DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigList(this, "server_timing_headers_config", false);
+  public get serverTimingHeadersConfig() {
+    return this._serverTimingHeadersConfig;
   }
 
   // =========

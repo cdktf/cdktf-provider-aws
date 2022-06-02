@@ -335,7 +335,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -585,6 +585,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // tpm_support - computed: true, optional: false, required: false
+  public get tpmSupport() {
+    return this.getStringAttribute('tpm_support');
   }
 
   // usage_operation - computed: true, optional: false, required: false

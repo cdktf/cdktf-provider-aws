@@ -193,7 +193,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_detector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

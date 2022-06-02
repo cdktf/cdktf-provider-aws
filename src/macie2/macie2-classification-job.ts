@@ -1769,7 +1769,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie2_classification_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

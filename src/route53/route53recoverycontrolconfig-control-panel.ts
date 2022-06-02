@@ -50,7 +50,7 @@ export class Route53RecoverycontrolconfigControlPanel extends cdktf.TerraformRes
       terraformResourceType: 'aws_route53recoverycontrolconfig_control_panel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

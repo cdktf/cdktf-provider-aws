@@ -173,6 +173,10 @@ export interface CloudsearchDomainIndexField {
   */
   readonly sort?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}
+  */
+  readonly sourceFields?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain#type CloudsearchDomain#type}
   */
   readonly type: string;
@@ -192,6 +196,7 @@ export function cloudsearchDomainIndexFieldToTerraform(struct?: CloudsearchDomai
     return: cdktf.booleanToTerraform(struct!.return),
     search: cdktf.booleanToTerraform(struct!.search),
     sort: cdktf.booleanToTerraform(struct!.sort),
+    source_fields: cdktf.stringToTerraform(struct!.sourceFields),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -248,6 +253,10 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
+    if (this._sourceFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceFields = this._sourceFields;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -267,6 +276,7 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
       this._return = undefined;
       this._search = undefined;
       this._sort = undefined;
+      this._sourceFields = undefined;
       this._type = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -284,6 +294,7 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
       this._return = value.return;
       this._search = value.search;
       this._sort = value.sort;
+      this._sourceFields = value.sourceFields;
       this._type = value.type;
     }
   }
@@ -411,6 +422,22 @@ export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get sortInput() {
     return this._sort;
+  }
+
+  // source_fields - computed: false, optional: true, required: false
+  private _sourceFields?: string; 
+  public get sourceFields() {
+    return this.getStringAttribute('source_fields');
+  }
+  public set sourceFields(value: string) {
+    this._sourceFields = value;
+  }
+  public resetSourceFields() {
+    this._sourceFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceFieldsInput() {
+    return this._sourceFields;
   }
 
   // type - computed: false, optional: false, required: true
@@ -721,7 +748,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudsearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

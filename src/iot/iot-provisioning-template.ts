@@ -165,7 +165,7 @@ export class IotProvisioningTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_provisioning_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

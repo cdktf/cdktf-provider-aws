@@ -115,7 +115,7 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_organizations_delegated_services',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

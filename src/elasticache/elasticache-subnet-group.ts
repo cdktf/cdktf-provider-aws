@@ -62,7 +62,7 @@ export class ElasticacheSubnetGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_subnet_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -189,7 +189,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       terraformResourceType: 'aws_gamelift_game_session_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -525,7 +525,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.1',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
