@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#allow_major_version_upgrade NeptuneCluster#allow_major_version_upgrade}
+  */
+  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#apply_immediately NeptuneCluster#apply_immediately}
   */
   readonly applyImmediately?: boolean | cdktf.IResolvable;
@@ -281,7 +285,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -289,6 +293,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
     this._availabilityZones = config.availabilityZones;
     this._backupRetentionPeriod = config.backupRetentionPeriod;
@@ -322,6 +327,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_major_version_upgrade - computed: true, optional: true, required: false
+  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  public get allowMajorVersionUpgrade() {
+    return this.getBooleanAttribute('allow_major_version_upgrade');
+  }
+  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+    this._allowMajorVersionUpgrade = value;
+  }
+  public resetAllowMajorVersionUpgrade() {
+    this._allowMajorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMajorVersionUpgradeInput() {
+    return this._allowMajorVersionUpgrade;
+  }
 
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean | cdktf.IResolvable; 
@@ -807,6 +828,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),

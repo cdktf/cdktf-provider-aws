@@ -1139,6 +1139,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#emrserverless AwsProvider#emrserverless}
+  */
+  readonly emrserverless?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#es AwsProvider#es}
   */
   readonly es?: string;
@@ -2665,6 +2671,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     elbv2: cdktf.stringToTerraform(struct!.elbv2),
     emr: cdktf.stringToTerraform(struct!.emr),
     emrcontainers: cdktf.stringToTerraform(struct!.emrcontainers),
+    emrserverless: cdktf.stringToTerraform(struct!.emrserverless),
     es: cdktf.stringToTerraform(struct!.es),
     eventbridge: cdktf.stringToTerraform(struct!.eventbridge),
     events: cdktf.stringToTerraform(struct!.events),
@@ -2953,7 +2960,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

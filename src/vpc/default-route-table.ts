@@ -564,7 +564,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_route_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

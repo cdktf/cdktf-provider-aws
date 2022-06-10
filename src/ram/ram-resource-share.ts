@@ -23,6 +23,10 @@ export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share#permission_arns RamResourceShare#permission_arns}
+  */
+  readonly permissionArns?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share#tags RamResourceShare#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -166,7 +170,7 @@ export class RamResourceShare extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ram_resource_share',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -177,6 +181,7 @@ export class RamResourceShare extends cdktf.TerraformResource {
     this._allowExternalPrincipals = config.allowExternalPrincipals;
     this._id = config.id;
     this._name = config.name;
+    this._permissionArns = config.permissionArns;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
@@ -236,6 +241,22 @@ export class RamResourceShare extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // permission_arns - computed: true, optional: true, required: false
+  private _permissionArns?: string[]; 
+  public get permissionArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('permission_arns'));
+  }
+  public set permissionArns(value: string[]) {
+    this._permissionArns = value;
+  }
+  public resetPermissionArns() {
+    this._permissionArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionArnsInput() {
+    return this._permissionArns;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -293,6 +314,7 @@ export class RamResourceShare extends cdktf.TerraformResource {
       allow_external_principals: cdktf.booleanToTerraform(this._allowExternalPrincipals),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      permission_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._permissionArns),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: ramResourceShareTimeoutsToTerraform(this._timeouts.internalValue),

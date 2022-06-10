@@ -17,7 +17,7 @@ export interface DataAwsCloudwatchLogGroupsConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_log_groups#log_group_name_prefix DataAwsCloudwatchLogGroups#log_group_name_prefix}
   */
-  readonly logGroupNamePrefix: string;
+  readonly logGroupNamePrefix?: string;
 }
 
 /**
@@ -39,14 +39,14 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsCloudwatchLogGroupsConfig
+  * @param options DataAwsCloudwatchLogGroupsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsCloudwatchLogGroupsConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsCloudwatchLogGroupsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_log_groups',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -83,13 +83,16 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // log_group_name_prefix - computed: false, optional: false, required: true
+  // log_group_name_prefix - computed: false, optional: true, required: false
   private _logGroupNamePrefix?: string; 
   public get logGroupNamePrefix() {
     return this.getStringAttribute('log_group_name_prefix');
   }
   public set logGroupNamePrefix(value: string) {
     this._logGroupNamePrefix = value;
+  }
+  public resetLogGroupNamePrefix() {
+    this._logGroupNamePrefix = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get logGroupNamePrefixInput() {

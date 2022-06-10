@@ -461,7 +461,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codedeploy_deployment_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
