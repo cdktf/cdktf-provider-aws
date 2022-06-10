@@ -3,6 +3,7 @@ export * from './account-alternate-contact';
 export * from './appflow-connector-profile';
 export * from './appflow-flow';
 export * from './appintegrations-event-integration';
+export * from './ce-anomaly-monitor';
 export * from './ce-cost-category';
 export * from './cloudcontrolapi-resource';
 export * from './cloudsearch-domain';

@@ -705,7 +705,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1010,7 +1010,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     return this._databaseName;
   }
 
-  // default_iam_role_arn - computed: false, optional: true, required: false
+  // default_iam_role_arn - computed: true, optional: true, required: false
   private _defaultIamRoleArn?: string; 
   public get defaultIamRoleArn() {
     return this.getStringAttribute('default_iam_role_arn');

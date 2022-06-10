@@ -54,7 +54,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_addon_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -4,6 +4,7 @@ export * from './acm-certificate-validation';
 export * from './acmpca-certificate';
 export * from './acmpca-certificate-authority';
 export * from './acmpca-certificate-authority-certificate';
+export * from './acmpca-policy';
 export * from './data-aws-acm-certificate';
 export * from './data-aws-acmpca-certificate';
 export * from './data-aws-acmpca-certificate-authority';

@@ -107,11 +107,23 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly mongodbSettings?: DmsEndpointMongodbSettings;
   /**
+  * redshift_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
+  */
+  readonly redshiftSettings?: DmsEndpointRedshiftSettings;
+  /**
   * s3_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#s3_settings DmsEndpoint#s3_settings}
   */
   readonly s3Settings?: DmsEndpointS3Settings;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#timeouts DmsEndpoint#timeouts}
+  */
+  readonly timeouts?: DmsEndpointTimeouts;
 }
 export interface DmsEndpointElasticsearchSettings {
   /**
@@ -1255,6 +1267,179 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
     return this._nestingLevel;
   }
 }
+export interface DmsEndpointRedshiftSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}
+  */
+  readonly bucketFolder?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#bucket_name DmsEndpoint#bucket_name}
+  */
+  readonly bucketName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}
+  */
+  readonly encryptionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}
+  */
+  readonly serverSideEncryptionKmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  */
+  readonly serviceAccessRoleArn?: string;
+}
+
+export function dmsEndpointRedshiftSettingsToTerraform(struct?: DmsEndpointRedshiftSettingsOutputReference | DmsEndpointRedshiftSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket_folder: cdktf.stringToTerraform(struct!.bucketFolder),
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
+    server_side_encryption_kms_key_id: cdktf.stringToTerraform(struct!.serverSideEncryptionKmsKeyId),
+    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+  }
+}
+
+export class DmsEndpointRedshiftSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DmsEndpointRedshiftSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketFolder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketFolder = this._bucketFolder;
+    }
+    if (this._bucketName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketName = this._bucketName;
+    }
+    if (this._encryptionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionMode = this._encryptionMode;
+    }
+    if (this._serverSideEncryptionKmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverSideEncryptionKmsKeyId = this._serverSideEncryptionKmsKeyId;
+    }
+    if (this._serviceAccessRoleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAccessRoleArn = this._serviceAccessRoleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DmsEndpointRedshiftSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucketFolder = undefined;
+      this._bucketName = undefined;
+      this._encryptionMode = undefined;
+      this._serverSideEncryptionKmsKeyId = undefined;
+      this._serviceAccessRoleArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucketFolder = value.bucketFolder;
+      this._bucketName = value.bucketName;
+      this._encryptionMode = value.encryptionMode;
+      this._serverSideEncryptionKmsKeyId = value.serverSideEncryptionKmsKeyId;
+      this._serviceAccessRoleArn = value.serviceAccessRoleArn;
+    }
+  }
+
+  // bucket_folder - computed: false, optional: true, required: false
+  private _bucketFolder?: string; 
+  public get bucketFolder() {
+    return this.getStringAttribute('bucket_folder');
+  }
+  public set bucketFolder(value: string) {
+    this._bucketFolder = value;
+  }
+  public resetBucketFolder() {
+    this._bucketFolder = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketFolderInput() {
+    return this._bucketFolder;
+  }
+
+  // bucket_name - computed: false, optional: true, required: false
+  private _bucketName?: string; 
+  public get bucketName() {
+    return this.getStringAttribute('bucket_name');
+  }
+  public set bucketName(value: string) {
+    this._bucketName = value;
+  }
+  public resetBucketName() {
+    this._bucketName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketNameInput() {
+    return this._bucketName;
+  }
+
+  // encryption_mode - computed: false, optional: true, required: false
+  private _encryptionMode?: string; 
+  public get encryptionMode() {
+    return this.getStringAttribute('encryption_mode');
+  }
+  public set encryptionMode(value: string) {
+    this._encryptionMode = value;
+  }
+  public resetEncryptionMode() {
+    this._encryptionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionModeInput() {
+    return this._encryptionMode;
+  }
+
+  // server_side_encryption_kms_key_id - computed: false, optional: true, required: false
+  private _serverSideEncryptionKmsKeyId?: string; 
+  public get serverSideEncryptionKmsKeyId() {
+    return this.getStringAttribute('server_side_encryption_kms_key_id');
+  }
+  public set serverSideEncryptionKmsKeyId(value: string) {
+    this._serverSideEncryptionKmsKeyId = value;
+  }
+  public resetServerSideEncryptionKmsKeyId() {
+    this._serverSideEncryptionKmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverSideEncryptionKmsKeyIdInput() {
+    return this._serverSideEncryptionKmsKeyId;
+  }
+
+  // service_access_role_arn - computed: false, optional: true, required: false
+  private _serviceAccessRoleArn?: string; 
+  public get serviceAccessRoleArn() {
+    return this.getStringAttribute('service_access_role_arn');
+  }
+  public set serviceAccessRoleArn(value: string) {
+    this._serviceAccessRoleArn = value;
+  }
+  public resetServiceAccessRoleArn() {
+    this._serviceAccessRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccessRoleArnInput() {
+    return this._serviceAccessRoleArn;
+  }
+}
 export interface DmsEndpointS3Settings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#add_column_name DmsEndpoint#add_column_name}
@@ -2265,6 +2450,108 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._useCsvNoSupValue;
   }
 }
+export interface DmsEndpointTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#create DmsEndpoint#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#delete DmsEndpoint#delete}
+  */
+  readonly delete?: string;
+}
+
+export function dmsEndpointTimeoutsToTerraform(struct?: DmsEndpointTimeoutsOutputReference | DmsEndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+export class DmsEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DmsEndpointTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DmsEndpointTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint aws_dms_endpoint}
@@ -2292,7 +2579,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2322,7 +2609,9 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     this._kafkaSettings.internalValue = config.kafkaSettings;
     this._kinesisSettings.internalValue = config.kinesisSettings;
     this._mongodbSettings.internalValue = config.mongodbSettings;
+    this._redshiftSettings.internalValue = config.redshiftSettings;
     this._s3Settings.internalValue = config.s3Settings;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -2677,6 +2966,22 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     return this._mongodbSettings.internalValue;
   }
 
+  // redshift_settings - computed: false, optional: true, required: false
+  private _redshiftSettings = new DmsEndpointRedshiftSettingsOutputReference(this, "redshift_settings");
+  public get redshiftSettings() {
+    return this._redshiftSettings;
+  }
+  public putRedshiftSettings(value: DmsEndpointRedshiftSettings) {
+    this._redshiftSettings.internalValue = value;
+  }
+  public resetRedshiftSettings() {
+    this._redshiftSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redshiftSettingsInput() {
+    return this._redshiftSettings.internalValue;
+  }
+
   // s3_settings - computed: false, optional: true, required: false
   private _s3Settings = new DmsEndpointS3SettingsOutputReference(this, "s3_settings");
   public get s3Settings() {
@@ -2691,6 +2996,22 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get s3SettingsInput() {
     return this._s3Settings.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DmsEndpointTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DmsEndpointTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -2721,7 +3042,9 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       kafka_settings: dmsEndpointKafkaSettingsToTerraform(this._kafkaSettings.internalValue),
       kinesis_settings: dmsEndpointKinesisSettingsToTerraform(this._kinesisSettings.internalValue),
       mongodb_settings: dmsEndpointMongodbSettingsToTerraform(this._mongodbSettings.internalValue),
+      redshift_settings: dmsEndpointRedshiftSettingsToTerraform(this._redshiftSettings.internalValue),
       s3_settings: dmsEndpointS3SettingsToTerraform(this._s3Settings.internalValue),
+      timeouts: dmsEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

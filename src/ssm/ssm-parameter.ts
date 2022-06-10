@@ -90,7 +90,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_parameter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -274,7 +274,7 @@ export class SsmParameter extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // tier - computed: false, optional: true, required: false
+  // tier - computed: true, optional: true, required: false
   private _tier?: string; 
   public get tier() {
     return this.getStringAttribute('tier');

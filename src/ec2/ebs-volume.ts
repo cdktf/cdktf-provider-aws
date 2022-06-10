@@ -16,6 +16,10 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume#final_snapshot EbsVolume#final_snapshot}
+  */
+  readonly finalSnapshot?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume#id EbsVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -225,7 +229,7 @@ export class EbsVolume extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ebs_volume',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -235,6 +239,7 @@ export class EbsVolume extends cdktf.TerraformResource {
     });
     this._availabilityZone = config.availabilityZone;
     this._encrypted = config.encrypted;
+    this._finalSnapshot = config.finalSnapshot;
     this._id = config.id;
     this._iops = config.iops;
     this._kmsKeyId = config.kmsKeyId;
@@ -285,6 +290,22 @@ export class EbsVolume extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get encryptedInput() {
     return this._encrypted;
+  }
+
+  // final_snapshot - computed: false, optional: true, required: false
+  private _finalSnapshot?: boolean | cdktf.IResolvable; 
+  public get finalSnapshot() {
+    return this.getBooleanAttribute('final_snapshot');
+  }
+  public set finalSnapshot(value: boolean | cdktf.IResolvable) {
+    this._finalSnapshot = value;
+  }
+  public resetFinalSnapshot() {
+    this._finalSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get finalSnapshotInput() {
+    return this._finalSnapshot;
   }
 
   // id - computed: true, optional: true, required: false
@@ -487,6 +508,7 @@ export class EbsVolume extends cdktf.TerraformResource {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
+      final_snapshot: cdktf.booleanToTerraform(this._finalSnapshot),
       id: cdktf.stringToTerraform(this._id),
       iops: cdktf.numberToTerraform(this._iops),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),

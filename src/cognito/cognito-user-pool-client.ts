@@ -32,6 +32,10 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   */
   readonly defaultRedirectUri?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client#enable_propagate_additional_user_context_data CognitoUserPoolClient#enable_propagate_additional_user_context_data}
+  */
+  readonly enablePropagateAdditionalUserContextData?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client#enable_token_revocation CognitoUserPoolClient#enable_token_revocation}
   */
   readonly enableTokenRevocation?: boolean | cdktf.IResolvable;
@@ -418,7 +422,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_client',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.16.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -432,6 +436,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
     this._allowedOauthScopes = config.allowedOauthScopes;
     this._callbackUrls = config.callbackUrls;
     this._defaultRedirectUri = config.defaultRedirectUri;
+    this._enablePropagateAdditionalUserContextData = config.enablePropagateAdditionalUserContextData;
     this._enableTokenRevocation = config.enableTokenRevocation;
     this._explicitAuthFlows = config.explicitAuthFlows;
     this._generateSecret = config.generateSecret;
@@ -552,6 +557,22 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultRedirectUriInput() {
     return this._defaultRedirectUri;
+  }
+
+  // enable_propagate_additional_user_context_data - computed: false, optional: true, required: false
+  private _enablePropagateAdditionalUserContextData?: boolean | cdktf.IResolvable; 
+  public get enablePropagateAdditionalUserContextData() {
+    return this.getBooleanAttribute('enable_propagate_additional_user_context_data');
+  }
+  public set enablePropagateAdditionalUserContextData(value: boolean | cdktf.IResolvable) {
+    this._enablePropagateAdditionalUserContextData = value;
+  }
+  public resetEnablePropagateAdditionalUserContextData() {
+    this._enablePropagateAdditionalUserContextData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePropagateAdditionalUserContextDataInput() {
+    return this._enablePropagateAdditionalUserContextData;
   }
 
   // enable_token_revocation - computed: true, optional: true, required: false
@@ -800,6 +821,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthScopes),
       callback_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._callbackUrls),
       default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
+      enable_propagate_additional_user_context_data: cdktf.booleanToTerraform(this._enablePropagateAdditionalUserContextData),
       enable_token_revocation: cdktf.booleanToTerraform(this._enableTokenRevocation),
       explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._explicitAuthFlows),
       generate_secret: cdktf.booleanToTerraform(this._generateSecret),
