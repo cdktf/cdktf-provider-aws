@@ -3443,10 +3443,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.58.14:
-  version "0.58.14"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.58.14.tgz#ad5fe50df10f6f708163104f952f3eeac3f89698"
-  integrity sha512-xN7frkzQ1AV+UeNldiYW7sv+eW6g2CDG+YcOUmrFUvU4VEMzYBqyIu2NM2Vm4v+PMXI2vI06nu0GIm7kBwta5g==
+projen@^0.58.15:
+  version "0.58.15"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.58.15.tgz#37640b839c2af5d03dcfe276f25b9988d84308ab"
+  integrity sha512-js9tdlmyUqPdz46BDYcdCrN936Gcr8ndnjX0J5aYVgOxucS1EHWXdLHqAOyhZiuYevpQ2dXg2AYurEdgjRXPtA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
