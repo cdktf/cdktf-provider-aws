@@ -35,6 +35,10 @@ export interface Ec2HostConfig extends cdktf.TerraformMetaArguments {
   */
   readonly instanceType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_host#outpost_arn Ec2Host#outpost_arn}
+  */
+  readonly outpostArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_host#tags Ec2Host#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -70,7 +74,7 @@ export class Ec2Host extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -84,6 +88,7 @@ export class Ec2Host extends cdktf.TerraformResource {
     this._id = config.id;
     this._instanceFamily = config.instanceFamily;
     this._instanceType = config.instanceType;
+    this._outpostArn = config.outpostArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -190,6 +195,22 @@ export class Ec2Host extends cdktf.TerraformResource {
     return this._instanceType;
   }
 
+  // outpost_arn - computed: false, optional: true, required: false
+  private _outpostArn?: string; 
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+  public set outpostArn(value: string) {
+    this._outpostArn = value;
+  }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn;
+  }
+
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
@@ -239,6 +260,7 @@ export class Ec2Host extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       instance_family: cdktf.stringToTerraform(this._instanceFamily),
       instance_type: cdktf.stringToTerraform(this._instanceType),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

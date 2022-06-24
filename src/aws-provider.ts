@@ -587,6 +587,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#beanstalk AwsProvider#beanstalk}
+  */
+  readonly beanstalk?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#billingconductor AwsProvider#billingconductor}
   */
   readonly billingconductor?: string;
@@ -716,6 +722,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchevidently AwsProvider#cloudwatchevidently}
   */
   readonly cloudwatchevidently?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchlog AwsProvider#cloudwatchlog}
+  */
+  readonly cloudwatchlog?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -1547,6 +1559,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#lex AwsProvider#lex}
+  */
+  readonly lex?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#lexmodelbuilding AwsProvider#lexmodelbuilding}
   */
   readonly lexmodelbuilding?: string;
@@ -1826,6 +1844,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#mq AwsProvider#mq}
   */
   readonly mq?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#msk AwsProvider#msk}
+  */
+  readonly msk?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2579,6 +2603,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     backup: cdktf.stringToTerraform(struct!.backup),
     backupgateway: cdktf.stringToTerraform(struct!.backupgateway),
     batch: cdktf.stringToTerraform(struct!.batch),
+    beanstalk: cdktf.stringToTerraform(struct!.beanstalk),
     billingconductor: cdktf.stringToTerraform(struct!.billingconductor),
     braket: cdktf.stringToTerraform(struct!.braket),
     budgets: cdktf.stringToTerraform(struct!.budgets),
@@ -2601,6 +2626,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     cloudwatch: cdktf.stringToTerraform(struct!.cloudwatch),
     cloudwatchevents: cdktf.stringToTerraform(struct!.cloudwatchevents),
     cloudwatchevidently: cdktf.stringToTerraform(struct!.cloudwatchevidently),
+    cloudwatchlog: cdktf.stringToTerraform(struct!.cloudwatchlog),
     cloudwatchlogs: cdktf.stringToTerraform(struct!.cloudwatchlogs),
     cloudwatchrum: cdktf.stringToTerraform(struct!.cloudwatchrum),
     codeartifact: cdktf.stringToTerraform(struct!.codeartifact),
@@ -2739,6 +2765,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     kms: cdktf.stringToTerraform(struct!.kms),
     lakeformation: cdktf.stringToTerraform(struct!.lakeformation),
     lambda: cdktf.stringToTerraform(struct!.lambda),
+    lex: cdktf.stringToTerraform(struct!.lex),
     lexmodelbuilding: cdktf.stringToTerraform(struct!.lexmodelbuilding),
     lexmodelbuildingservice: cdktf.stringToTerraform(struct!.lexmodelbuildingservice),
     lexmodels: cdktf.stringToTerraform(struct!.lexmodels),
@@ -2786,6 +2813,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     migrationhubstrategyrecommendations: cdktf.stringToTerraform(struct!.migrationhubstrategyrecommendations),
     mobile: cdktf.stringToTerraform(struct!.mobile),
     mq: cdktf.stringToTerraform(struct!.mq),
+    msk: cdktf.stringToTerraform(struct!.msk),
     mturk: cdktf.stringToTerraform(struct!.mturk),
     mwaa: cdktf.stringToTerraform(struct!.mwaa),
     neptune: cdktf.stringToTerraform(struct!.neptune),
@@ -2960,7 +2988,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

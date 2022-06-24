@@ -35,6 +35,10 @@ export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly privateDnsName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#supported_ip_address_types VpcEndpointService#supported_ip_address_types}
+  */
+  readonly supportedIpAddressTypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#tags VpcEndpointService#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -42,6 +46,12 @@ export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#tags_all VpcEndpointService#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#timeouts VpcEndpointService#timeouts}
+  */
+  readonly timeouts?: VpcEndpointServiceTimeouts;
 }
 export interface VpcEndpointServicePrivateDnsNameConfiguration {
 }
@@ -122,6 +132,135 @@ export class VpcEndpointServicePrivateDnsNameConfigurationList extends cdktf.Com
     return new VpcEndpointServicePrivateDnsNameConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface VpcEndpointServiceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#create VpcEndpointService#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#delete VpcEndpointService#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service#update VpcEndpointService#update}
+  */
+  readonly update?: string;
+}
+
+export function vpcEndpointServiceTimeoutsToTerraform(struct?: VpcEndpointServiceTimeoutsOutputReference | VpcEndpointServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VpcEndpointServiceTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcEndpointServiceTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service aws_vpc_endpoint_service}
@@ -149,7 +288,7 @@ export class VpcEndpointService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_endpoint_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -163,8 +302,10 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     this._id = config.id;
     this._networkLoadBalancerArns = config.networkLoadBalancerArns;
     this._privateDnsName = config.privateDnsName;
+    this._supportedIpAddressTypes = config.supportedIpAddressTypes;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -305,6 +446,22 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
+  // supported_ip_address_types - computed: true, optional: true, required: false
+  private _supportedIpAddressTypes?: string[]; 
+  public get supportedIpAddressTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('supported_ip_address_types'));
+  }
+  public set supportedIpAddressTypes(value: string[]) {
+    this._supportedIpAddressTypes = value;
+  }
+  public resetSupportedIpAddressTypes() {
+    this._supportedIpAddressTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportedIpAddressTypesInput() {
+    return this._supportedIpAddressTypes;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -337,6 +494,22 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new VpcEndpointServiceTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: VpcEndpointServiceTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -349,8 +522,10 @@ export class VpcEndpointService extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._networkLoadBalancerArns),
       private_dns_name: cdktf.stringToTerraform(this._privateDnsName),
+      supported_ip_address_types: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedIpAddressTypes),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      timeouts: vpcEndpointServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

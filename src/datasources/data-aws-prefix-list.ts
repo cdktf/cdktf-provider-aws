@@ -117,7 +117,7 @@ export class DataAwsPrefixListFilterOutputReference extends cdktf.ComplexObject 
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return this.getListAttribute('values');
+    return cdktf.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -174,7 +174,7 @@ export class DataAwsPrefixList extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_prefix_list',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -798,6 +798,92 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
     return this._captureOptions.internalValue;
   }
 }
+export interface SagemakerEndpointConfigurationProductionVariantsServerlessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#max_concurrency SagemakerEndpointConfiguration#max_concurrency}
+  */
+  readonly maxConcurrency: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#memory_size_in_mb SagemakerEndpointConfiguration#memory_size_in_mb}
+  */
+  readonly memorySizeInMb: number;
+}
+
+export function sagemakerEndpointConfigurationProductionVariantsServerlessConfigToTerraform(struct?: SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference | SagemakerEndpointConfigurationProductionVariantsServerlessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_concurrency: cdktf.numberToTerraform(struct!.maxConcurrency),
+    memory_size_in_mb: cdktf.numberToTerraform(struct!.memorySizeInMb),
+  }
+}
+
+export class SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationProductionVariantsServerlessConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConcurrency = this._maxConcurrency;
+    }
+    if (this._memorySizeInMb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memorySizeInMb = this._memorySizeInMb;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationProductionVariantsServerlessConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxConcurrency = undefined;
+      this._memorySizeInMb = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxConcurrency = value.maxConcurrency;
+      this._memorySizeInMb = value.memorySizeInMb;
+    }
+  }
+
+  // max_concurrency - computed: false, optional: false, required: true
+  private _maxConcurrency?: number; 
+  public get maxConcurrency() {
+    return this.getNumberAttribute('max_concurrency');
+  }
+  public set maxConcurrency(value: number) {
+    this._maxConcurrency = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrencyInput() {
+    return this._maxConcurrency;
+  }
+
+  // memory_size_in_mb - computed: false, optional: false, required: true
+  private _memorySizeInMb?: number; 
+  public get memorySizeInMb() {
+    return this.getNumberAttribute('memory_size_in_mb');
+  }
+  public set memorySizeInMb(value: number) {
+    this._memorySizeInMb = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memorySizeInMbInput() {
+    return this._memorySizeInMb;
+  }
+}
 export interface SagemakerEndpointConfigurationProductionVariants {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#accelerator_type SagemakerEndpointConfiguration#accelerator_type}
@@ -806,7 +892,7 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
   */
-  readonly initialInstanceCount: number;
+  readonly initialInstanceCount?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_variant_weight SagemakerEndpointConfiguration#initial_variant_weight}
   */
@@ -814,7 +900,7 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#instance_type SagemakerEndpointConfiguration#instance_type}
   */
-  readonly instanceType: string;
+  readonly instanceType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_name SagemakerEndpointConfiguration#model_name}
   */
@@ -823,6 +909,12 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#variant_name SagemakerEndpointConfiguration#variant_name}
   */
   readonly variantName?: string;
+  /**
+  * serverless_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#serverless_config SagemakerEndpointConfiguration#serverless_config}
+  */
+  readonly serverlessConfig?: SagemakerEndpointConfigurationProductionVariantsServerlessConfig;
 }
 
 export function sagemakerEndpointConfigurationProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationProductionVariants | cdktf.IResolvable): any {
@@ -837,6 +929,7 @@ export function sagemakerEndpointConfigurationProductionVariantsToTerraform(stru
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     model_name: cdktf.stringToTerraform(struct!.modelName),
     variant_name: cdktf.stringToTerraform(struct!.variantName),
+    serverless_config: sagemakerEndpointConfigurationProductionVariantsServerlessConfigToTerraform(struct!.serverlessConfig),
   }
 }
 
@@ -884,6 +977,10 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       hasAnyValues = true;
       internalValueResult.variantName = this._variantName;
     }
+    if (this._serverlessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverlessConfig = this._serverlessConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -897,6 +994,7 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this._instanceType = undefined;
       this._modelName = undefined;
       this._variantName = undefined;
+      this._serverlessConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -911,6 +1009,7 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this._instanceType = value.instanceType;
       this._modelName = value.modelName;
       this._variantName = value.variantName;
+      this._serverlessConfig.internalValue = value.serverlessConfig;
     }
   }
 
@@ -930,13 +1029,16 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
     return this._acceleratorType;
   }
 
-  // initial_instance_count - computed: false, optional: false, required: true
+  // initial_instance_count - computed: false, optional: true, required: false
   private _initialInstanceCount?: number; 
   public get initialInstanceCount() {
     return this.getNumberAttribute('initial_instance_count');
   }
   public set initialInstanceCount(value: number) {
     this._initialInstanceCount = value;
+  }
+  public resetInitialInstanceCount() {
+    this._initialInstanceCount = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initialInstanceCountInput() {
@@ -959,13 +1061,16 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
     return this._initialVariantWeight;
   }
 
-  // instance_type - computed: false, optional: false, required: true
+  // instance_type - computed: false, optional: true, required: false
   private _instanceType?: string; 
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTypeInput() {
@@ -999,6 +1104,22 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get variantNameInput() {
     return this._variantName;
+  }
+
+  // serverless_config - computed: false, optional: true, required: false
+  private _serverlessConfig = new SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference(this, "serverless_config");
+  public get serverlessConfig() {
+    return this._serverlessConfig;
+  }
+  public putServerlessConfig(value: SagemakerEndpointConfigurationProductionVariantsServerlessConfig) {
+    this._serverlessConfig.internalValue = value;
+  }
+  public resetServerlessConfig() {
+    this._serverlessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessConfigInput() {
+    return this._serverlessConfig.internalValue;
   }
 }
 
@@ -1048,7 +1169,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_endpoint_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

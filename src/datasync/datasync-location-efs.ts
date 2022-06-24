@@ -8,9 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}
+  */
+  readonly accessPointArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#efs_file_system_arn DatasyncLocationEfs#efs_file_system_arn}
   */
   readonly efsFileSystemArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#file_system_access_role_arn DatasyncLocationEfs#file_system_access_role_arn}
+  */
+  readonly fileSystemAccessRoleArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#id DatasyncLocationEfs#id}
   *
@@ -18,6 +26,10 @@ export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments 
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#in_transit_encryption DatasyncLocationEfs#in_transit_encryption}
+  */
+  readonly inTransitEncryption?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}
   */
@@ -150,7 +162,7 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_location_efs',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -158,8 +170,11 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accessPointArn = config.accessPointArn;
     this._efsFileSystemArn = config.efsFileSystemArn;
+    this._fileSystemAccessRoleArn = config.fileSystemAccessRoleArn;
     this._id = config.id;
+    this._inTransitEncryption = config.inTransitEncryption;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -169,6 +184,22 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_point_arn - computed: false, optional: true, required: false
+  private _accessPointArn?: string; 
+  public get accessPointArn() {
+    return this.getStringAttribute('access_point_arn');
+  }
+  public set accessPointArn(value: string) {
+    this._accessPointArn = value;
+  }
+  public resetAccessPointArn() {
+    this._accessPointArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPointArnInput() {
+    return this._accessPointArn;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -188,6 +219,22 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
     return this._efsFileSystemArn;
   }
 
+  // file_system_access_role_arn - computed: false, optional: true, required: false
+  private _fileSystemAccessRoleArn?: string; 
+  public get fileSystemAccessRoleArn() {
+    return this.getStringAttribute('file_system_access_role_arn');
+  }
+  public set fileSystemAccessRoleArn(value: string) {
+    this._fileSystemAccessRoleArn = value;
+  }
+  public resetFileSystemAccessRoleArn() {
+    this._fileSystemAccessRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemAccessRoleArnInput() {
+    return this._fileSystemAccessRoleArn;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -202,6 +249,22 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // in_transit_encryption - computed: false, optional: true, required: false
+  private _inTransitEncryption?: string; 
+  public get inTransitEncryption() {
+    return this.getStringAttribute('in_transit_encryption');
+  }
+  public set inTransitEncryption(value: string) {
+    this._inTransitEncryption = value;
+  }
+  public resetInTransitEncryption() {
+    this._inTransitEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inTransitEncryptionInput() {
+    return this._inTransitEncryption;
   }
 
   // subdirectory - computed: false, optional: true, required: false
@@ -276,8 +339,11 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_point_arn: cdktf.stringToTerraform(this._accessPointArn),
       efs_file_system_arn: cdktf.stringToTerraform(this._efsFileSystemArn),
+      file_system_access_role_arn: cdktf.stringToTerraform(this._fileSystemAccessRoleArn),
       id: cdktf.stringToTerraform(this._id),
+      in_transit_encryption: cdktf.stringToTerraform(this._inTransitEncryption),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

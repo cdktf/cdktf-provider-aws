@@ -66,7 +66,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_email_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

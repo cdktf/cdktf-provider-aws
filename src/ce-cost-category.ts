@@ -2483,7 +2483,7 @@ export class CeCostCategorySplitChargeRuleParameterOutputReference extends cdktf
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return this.getListAttribute('values');
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2714,7 +2714,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

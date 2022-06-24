@@ -50,7 +50,7 @@ export class IotPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
