@@ -125,7 +125,7 @@ export class DataAwsVpcEndpointServiceFilterOutputReference extends cdktf.Comple
   // values - computed: false, optional: false, required: true
   private _values?: string[]; 
   public get values() {
-    return this.getListAttribute('values');
+    return cdktf.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -182,7 +182,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_endpoint_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -304,6 +304,11 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get serviceTypeInput() {
     return this._serviceType;
+  }
+
+  // supported_ip_address_types - computed: true, optional: false, required: false
+  public get supportedIpAddressTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('supported_ip_address_types'));
   }
 
   // tags - computed: true, optional: true, required: false

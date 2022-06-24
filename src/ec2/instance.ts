@@ -28,6 +28,10 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly cpuThreadsPerCore?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#disable_api_stop Instance#disable_api_stop}
+  */
+  readonly disableApiStop?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#disable_api_termination Instance#disable_api_termination}
   */
   readonly disableApiTermination?: boolean | cdktf.IResolvable;
@@ -196,6 +200,12 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#network_interface Instance#network_interface}
   */
   readonly networkInterface?: InstanceNetworkInterface[] | cdktf.IResolvable;
+  /**
+  * private_dns_name_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#private_dns_name_options Instance#private_dns_name_options}
+  */
+  readonly privateDnsNameOptions?: InstancePrivateDnsNameOptions;
   /**
   * root_block_device block
   * 
@@ -1520,6 +1530,125 @@ export class InstanceNetworkInterfaceList extends cdktf.ComplexList {
     return new InstanceNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface InstancePrivateDnsNameOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#enable_resource_name_dns_a_record Instance#enable_resource_name_dns_a_record}
+  */
+  readonly enableResourceNameDnsARecord?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#enable_resource_name_dns_aaaa_record Instance#enable_resource_name_dns_aaaa_record}
+  */
+  readonly enableResourceNameDnsAaaaRecord?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#hostname_type Instance#hostname_type}
+  */
+  readonly hostnameType?: string;
+}
+
+export function instancePrivateDnsNameOptionsToTerraform(struct?: InstancePrivateDnsNameOptionsOutputReference | InstancePrivateDnsNameOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_resource_name_dns_a_record: cdktf.booleanToTerraform(struct!.enableResourceNameDnsARecord),
+    enable_resource_name_dns_aaaa_record: cdktf.booleanToTerraform(struct!.enableResourceNameDnsAaaaRecord),
+    hostname_type: cdktf.stringToTerraform(struct!.hostnameType),
+  }
+}
+
+export class InstancePrivateDnsNameOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePrivateDnsNameOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableResourceNameDnsARecord !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableResourceNameDnsARecord = this._enableResourceNameDnsARecord;
+    }
+    if (this._enableResourceNameDnsAaaaRecord !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableResourceNameDnsAaaaRecord = this._enableResourceNameDnsAaaaRecord;
+    }
+    if (this._hostnameType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostnameType = this._hostnameType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePrivateDnsNameOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableResourceNameDnsARecord = undefined;
+      this._enableResourceNameDnsAaaaRecord = undefined;
+      this._hostnameType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableResourceNameDnsARecord = value.enableResourceNameDnsARecord;
+      this._enableResourceNameDnsAaaaRecord = value.enableResourceNameDnsAaaaRecord;
+      this._hostnameType = value.hostnameType;
+    }
+  }
+
+  // enable_resource_name_dns_a_record - computed: true, optional: true, required: false
+  private _enableResourceNameDnsARecord?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsARecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record');
+  }
+  public set enableResourceNameDnsARecord(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsARecord = value;
+  }
+  public resetEnableResourceNameDnsARecord() {
+    this._enableResourceNameDnsARecord = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsARecordInput() {
+    return this._enableResourceNameDnsARecord;
+  }
+
+  // enable_resource_name_dns_aaaa_record - computed: true, optional: true, required: false
+  private _enableResourceNameDnsAaaaRecord?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsAaaaRecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record');
+  }
+  public set enableResourceNameDnsAaaaRecord(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsAaaaRecord = value;
+  }
+  public resetEnableResourceNameDnsAaaaRecord() {
+    this._enableResourceNameDnsAaaaRecord = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsAaaaRecordInput() {
+    return this._enableResourceNameDnsAaaaRecord;
+  }
+
+  // hostname_type - computed: true, optional: true, required: false
+  private _hostnameType?: string; 
+  public get hostnameType() {
+    return this.getStringAttribute('hostname_type');
+  }
+  public set hostnameType(value: string) {
+    this._hostnameType = value;
+  }
+  public resetHostnameType() {
+    this._hostnameType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameTypeInput() {
+    return this._hostnameType;
+  }
+}
 export interface InstanceRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#delete_on_termination Instance#delete_on_termination}
@@ -1940,7 +2069,7 @@ export class Instance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1953,6 +2082,7 @@ export class Instance extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._cpuCoreCount = config.cpuCoreCount;
     this._cpuThreadsPerCore = config.cpuThreadsPerCore;
+    this._disableApiStop = config.disableApiStop;
     this._disableApiTermination = config.disableApiTermination;
     this._ebsOptimized = config.ebsOptimized;
     this._getPasswordData = config.fetchPasswordData;
@@ -1990,6 +2120,7 @@ export class Instance extends cdktf.TerraformResource {
     this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
     this._networkInterface.internalValue = config.networkInterface;
+    this._privateDnsNameOptions.internalValue = config.privateDnsNameOptions;
     this._rootBlockDevice.internalValue = config.rootBlockDevice;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -2081,6 +2212,22 @@ export class Instance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cpuThreadsPerCoreInput() {
     return this._cpuThreadsPerCore;
+  }
+
+  // disable_api_stop - computed: true, optional: true, required: false
+  private _disableApiStop?: boolean | cdktf.IResolvable; 
+  public get disableApiStop() {
+    return this.getBooleanAttribute('disable_api_stop');
+  }
+  public set disableApiStop(value: boolean | cdktf.IResolvable) {
+    this._disableApiStop = value;
+  }
+  public resetDisableApiStop() {
+    this._disableApiStop = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableApiStopInput() {
+    return this._disableApiStop;
   }
 
   // disable_api_termination - computed: true, optional: true, required: false
@@ -2710,6 +2857,22 @@ export class Instance extends cdktf.TerraformResource {
     return this._networkInterface.internalValue;
   }
 
+  // private_dns_name_options - computed: false, optional: true, required: false
+  private _privateDnsNameOptions = new InstancePrivateDnsNameOptionsOutputReference(this, "private_dns_name_options");
+  public get privateDnsNameOptions() {
+    return this._privateDnsNameOptions;
+  }
+  public putPrivateDnsNameOptions(value: InstancePrivateDnsNameOptions) {
+    this._privateDnsNameOptions.internalValue = value;
+  }
+  public resetPrivateDnsNameOptions() {
+    this._privateDnsNameOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsNameOptionsInput() {
+    return this._privateDnsNameOptions.internalValue;
+  }
+
   // root_block_device - computed: false, optional: true, required: false
   private _rootBlockDevice = new InstanceRootBlockDeviceOutputReference(this, "root_block_device");
   public get rootBlockDevice() {
@@ -2753,6 +2916,7 @@ export class Instance extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       cpu_core_count: cdktf.numberToTerraform(this._cpuCoreCount),
       cpu_threads_per_core: cdktf.numberToTerraform(this._cpuThreadsPerCore),
+      disable_api_stop: cdktf.booleanToTerraform(this._disableApiStop),
       disable_api_termination: cdktf.booleanToTerraform(this._disableApiTermination),
       ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
       get_password_data: cdktf.booleanToTerraform(this._getPasswordData),
@@ -2790,6 +2954,7 @@ export class Instance extends cdktf.TerraformResource {
       maintenance_options: instanceMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: instanceMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       network_interface: cdktf.listMapper(instanceNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
+      private_dns_name_options: instancePrivateDnsNameOptionsToTerraform(this._privateDnsNameOptions.internalValue),
       root_block_device: instanceRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),
       timeouts: instanceTimeoutsToTerraform(this._timeouts.internalValue),
     };

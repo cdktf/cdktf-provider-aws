@@ -12,6 +12,10 @@ export interface SyntheticsCanaryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly artifactS3Location: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#delete_lambda SyntheticsCanary#delete_lambda}
+  */
+  readonly deleteLambda?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#execution_role_arn SyntheticsCanary#execution_role_arn}
   */
   readonly executionRoleArn: string;
@@ -692,7 +696,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       terraformResourceType: 'aws_synthetics_canary',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -701,6 +705,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._artifactS3Location = config.artifactS3Location;
+    this._deleteLambda = config.deleteLambda;
     this._executionRoleArn = config.executionRoleArn;
     this._failureRetentionPeriod = config.failureRetentionPeriod;
     this._handler = config.handler;
@@ -741,6 +746,22 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get artifactS3LocationInput() {
     return this._artifactS3Location;
+  }
+
+  // delete_lambda - computed: false, optional: true, required: false
+  private _deleteLambda?: boolean | cdktf.IResolvable; 
+  public get deleteLambda() {
+    return this.getBooleanAttribute('delete_lambda');
+  }
+  public set deleteLambda(value: boolean | cdktf.IResolvable) {
+    this._deleteLambda = value;
+  }
+  public resetDeleteLambda() {
+    this._deleteLambda = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteLambdaInput() {
+    return this._deleteLambda;
   }
 
   // engine_arn - computed: true, optional: false, required: false
@@ -1044,6 +1065,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       artifact_s3_location: cdktf.stringToTerraform(this._artifactS3Location),
+      delete_lambda: cdktf.booleanToTerraform(this._deleteLambda),
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
       failure_retention_period: cdktf.numberToTerraform(this._failureRetentionPeriod),
       handler: cdktf.stringToTerraform(this._handler),

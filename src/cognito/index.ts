@@ -4,6 +4,7 @@ export * from './cognito-identity-pool-provider-principal-tag';
 export * from './cognito-identity-pool-roles-attachment';
 export * from './cognito-identity-provider';
 export * from './cognito-resource-server';
+export * from './cognito-risk-configuration';
 export * from './cognito-user';
 export * from './cognito-user-group';
 export * from './cognito-user-in-group';

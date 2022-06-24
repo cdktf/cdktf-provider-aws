@@ -16,6 +16,10 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}
+  */
+  readonly disableApiStop?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}
   */
   readonly disableApiTermination?: boolean | cdktf.IResolvable;
@@ -4469,7 +4473,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -4479,6 +4483,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     });
     this._defaultVersion = config.defaultVersion;
     this._description = config.description;
+    this._disableApiStop = config.disableApiStop;
     this._disableApiTermination = config.disableApiTermination;
     this._ebsOptimized = config.ebsOptimized;
     this._id = config.id;
@@ -4556,6 +4561,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_api_stop - computed: false, optional: true, required: false
+  private _disableApiStop?: boolean | cdktf.IResolvable; 
+  public get disableApiStop() {
+    return this.getBooleanAttribute('disable_api_stop');
+  }
+  public set disableApiStop(value: boolean | cdktf.IResolvable) {
+    this._disableApiStop = value;
+  }
+  public resetDisableApiStop() {
+    this._disableApiStop = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableApiStopInput() {
+    return this._disableApiStop;
   }
 
   // disable_api_termination - computed: false, optional: true, required: false
@@ -5147,6 +5168,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     return {
       default_version: cdktf.numberToTerraform(this._defaultVersion),
       description: cdktf.stringToTerraform(this._description),
+      disable_api_stop: cdktf.booleanToTerraform(this._disableApiStop),
       disable_api_termination: cdktf.booleanToTerraform(this._disableApiTermination),
       ebs_optimized: cdktf.stringToTerraform(this._ebsOptimized),
       id: cdktf.stringToTerraform(this._id),

@@ -214,7 +214,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_rate_based_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

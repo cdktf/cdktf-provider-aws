@@ -31,6 +31,10 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly localIpv6NetworkCidr?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#outside_ip_address_type VpnConnection#outside_ip_address_type}
+  */
+  readonly outsideIpAddressType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#remote_ipv4_network_cidr VpnConnection#remote_ipv4_network_cidr}
   */
   readonly remoteIpv4NetworkCidr?: string;
@@ -54,6 +58,10 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}
   */
   readonly transitGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#transport_transit_gateway_attachment_id VpnConnection#transport_transit_gateway_attachment_id}
+  */
+  readonly transportTransitGatewayAttachmentId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel1_dpd_timeout_action VpnConnection#tunnel1_dpd_timeout_action}
   */
@@ -401,7 +409,7 @@ export class VpnConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpn_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -414,12 +422,14 @@ export class VpnConnection extends cdktf.TerraformResource {
     this._id = config.id;
     this._localIpv4NetworkCidr = config.localIpv4NetworkCidr;
     this._localIpv6NetworkCidr = config.localIpv6NetworkCidr;
+    this._outsideIpAddressType = config.outsideIpAddressType;
     this._remoteIpv4NetworkCidr = config.remoteIpv4NetworkCidr;
     this._remoteIpv6NetworkCidr = config.remoteIpv6NetworkCidr;
     this._staticRoutesOnly = config.staticRoutesOnly;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._transitGatewayId = config.transitGatewayId;
+    this._transportTransitGatewayAttachmentId = config.transportTransitGatewayAttachmentId;
     this._tunnel1DpdTimeoutAction = config.tunnel1DpdTimeoutAction;
     this._tunnel1DpdTimeoutSeconds = config.tunnel1DpdTimeoutSeconds;
     this._tunnel1IkeVersions = config.tunnel1IkeVersions;
@@ -562,6 +572,22 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this._localIpv6NetworkCidr;
   }
 
+  // outside_ip_address_type - computed: true, optional: true, required: false
+  private _outsideIpAddressType?: string; 
+  public get outsideIpAddressType() {
+    return this.getStringAttribute('outside_ip_address_type');
+  }
+  public set outsideIpAddressType(value: string) {
+    this._outsideIpAddressType = value;
+  }
+  public resetOutsideIpAddressType() {
+    this._outsideIpAddressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outsideIpAddressTypeInput() {
+    return this._outsideIpAddressType;
+  }
+
   // remote_ipv4_network_cidr - computed: true, optional: true, required: false
   private _remoteIpv4NetworkCidr?: string; 
   public get remoteIpv4NetworkCidr() {
@@ -667,6 +693,22 @@ export class VpnConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get transitGatewayIdInput() {
     return this._transitGatewayId;
+  }
+
+  // transport_transit_gateway_attachment_id - computed: false, optional: true, required: false
+  private _transportTransitGatewayAttachmentId?: string; 
+  public get transportTransitGatewayAttachmentId() {
+    return this.getStringAttribute('transport_transit_gateway_attachment_id');
+  }
+  public set transportTransitGatewayAttachmentId(value: string) {
+    this._transportTransitGatewayAttachmentId = value;
+  }
+  public resetTransportTransitGatewayAttachmentId() {
+    this._transportTransitGatewayAttachmentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transportTransitGatewayAttachmentIdInput() {
+    return this._transportTransitGatewayAttachmentId;
   }
 
   // tunnel1_address - computed: true, optional: false, required: false
@@ -1357,12 +1399,14 @@ export class VpnConnection extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       local_ipv4_network_cidr: cdktf.stringToTerraform(this._localIpv4NetworkCidr),
       local_ipv6_network_cidr: cdktf.stringToTerraform(this._localIpv6NetworkCidr),
+      outside_ip_address_type: cdktf.stringToTerraform(this._outsideIpAddressType),
       remote_ipv4_network_cidr: cdktf.stringToTerraform(this._remoteIpv4NetworkCidr),
       remote_ipv6_network_cidr: cdktf.stringToTerraform(this._remoteIpv6NetworkCidr),
       static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      transport_transit_gateway_attachment_id: cdktf.stringToTerraform(this._transportTransitGatewayAttachmentId),
       tunnel1_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel1DpdTimeoutAction),
       tunnel1_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel1DpdTimeoutSeconds),
       tunnel1_ike_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1IkeVersions),

@@ -2501,7 +2501,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.18.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2556,6 +2556,11 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // disable_api_stop - computed: true, optional: false, required: false
+  public get disableApiStop() {
+    return this.getBooleanAttribute('disable_api_stop');
   }
 
   // disable_api_termination - computed: true, optional: false, required: false
