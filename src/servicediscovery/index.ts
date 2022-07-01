@@ -5,4 +5,6 @@ export * from './service-discovery-private-dns-namespace';
 export * from './service-discovery-public-dns-namespace';
 export * from './service-discovery-service';
 export * from './data-aws-service-discovery-dns-namespace';
+export * from './data-aws-service-discovery-http-namespace';
+export * from './data-aws-service-discovery-service';
 

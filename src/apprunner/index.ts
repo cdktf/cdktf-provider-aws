@@ -2,6 +2,7 @@
 export * from './apprunner-auto-scaling-configuration-version';
 export * from './apprunner-connection';
 export * from './apprunner-custom-domain-association';
+export * from './apprunner-observability-configuration';
 export * from './apprunner-service';
 export * from './apprunner-vpc-connector';
 

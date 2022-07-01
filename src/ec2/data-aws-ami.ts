@@ -19,6 +19,10 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#include_deprecated DataAwsAmi#include_deprecated}
+  */
+  readonly includeDeprecated?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#most_recent DataAwsAmi#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
@@ -29,7 +33,7 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#owners DataAwsAmi#owners}
   */
-  readonly owners: string[];
+  readonly owners?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#tags DataAwsAmi#tags}
   */
@@ -328,14 +332,14 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsAmiConfig
+  * @param options DataAwsAmiConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsAmiConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsAmiConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -345,6 +349,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     });
     this._executableUsers = config.executableUsers;
     this._id = config.id;
+    this._includeDeprecated = config.includeDeprecated;
     this._mostRecent = config.mostRecent;
     this._nameRegex = config.nameRegex;
     this._owners = config.owners;
@@ -454,6 +459,22 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return this.getStringAttribute('image_type');
   }
 
+  // include_deprecated - computed: false, optional: true, required: false
+  private _includeDeprecated?: boolean | cdktf.IResolvable; 
+  public get includeDeprecated() {
+    return this.getBooleanAttribute('include_deprecated');
+  }
+  public set includeDeprecated(value: boolean | cdktf.IResolvable) {
+    this._includeDeprecated = value;
+  }
+  public resetIncludeDeprecated() {
+    this._includeDeprecated = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeDeprecatedInput() {
+    return this._includeDeprecated;
+  }
+
   // kernel_id - computed: true, optional: false, required: false
   public get kernelId() {
     return this.getStringAttribute('kernel_id');
@@ -501,13 +522,16 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return this.getStringAttribute('owner_id');
   }
 
-  // owners - computed: false, optional: false, required: true
+  // owners - computed: false, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
     return this.getListAttribute('owners');
   }
   public set owners(value: string[]) {
     this._owners = value;
+  }
+  public resetOwners() {
+    this._owners = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ownersInput() {
@@ -626,6 +650,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return {
       executable_users: cdktf.listMapper(cdktf.stringToTerraform)(this._executableUsers),
       id: cdktf.stringToTerraform(this._id),
+      include_deprecated: cdktf.booleanToTerraform(this._includeDeprecated),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),

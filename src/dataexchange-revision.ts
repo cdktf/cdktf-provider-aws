@@ -58,7 +58,7 @@ export class DataexchangeRevision extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dataexchange_revision',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

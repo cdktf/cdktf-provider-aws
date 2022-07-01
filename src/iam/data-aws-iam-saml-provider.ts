@@ -50,7 +50,7 @@ export class DataAwsIamSamlProvider extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_iam_saml_provider',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

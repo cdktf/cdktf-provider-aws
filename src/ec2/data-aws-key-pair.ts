@@ -15,6 +15,10 @@ export interface DataAwsKeyPairConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/key_pair#include_public_key DataAwsKeyPair#include_public_key}
+  */
+  readonly includePublicKey?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/key_pair#key_name DataAwsKeyPair#key_name}
   */
   readonly keyName?: string;
@@ -178,7 +182,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_key_pair',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -187,6 +191,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._id = config.id;
+    this._includePublicKey = config.includePublicKey;
     this._keyName = config.keyName;
     this._keyPairId = config.keyPairId;
     this._tags = config.tags;
@@ -200,6 +205,11 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // create_time - computed: true, optional: false, required: false
+  public get createTime() {
+    return this.getStringAttribute('create_time');
   }
 
   // fingerprint - computed: true, optional: false, required: false
@@ -221,6 +231,22 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // include_public_key - computed: false, optional: true, required: false
+  private _includePublicKey?: boolean | cdktf.IResolvable; 
+  public get includePublicKey() {
+    return this.getBooleanAttribute('include_public_key');
+  }
+  public set includePublicKey(value: boolean | cdktf.IResolvable) {
+    this._includePublicKey = value;
+  }
+  public resetIncludePublicKey() {
+    this._includePublicKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includePublicKeyInput() {
+    return this._includePublicKey;
   }
 
   // key_name - computed: false, optional: true, required: false
@@ -253,6 +279,16 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get keyPairIdInput() {
     return this._keyPairId;
+  }
+
+  // key_type - computed: true, optional: false, required: false
+  public get keyType() {
+    return this.getStringAttribute('key_type');
+  }
+
+  // public_key - computed: true, optional: false, required: false
+  public get publicKey() {
+    return this.getStringAttribute('public_key');
   }
 
   // tags - computed: true, optional: true, required: false
@@ -294,6 +330,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      include_public_key: cdktf.booleanToTerraform(this._includePublicKey),
       key_name: cdktf.stringToTerraform(this._keyName),
       key_pair_id: cdktf.stringToTerraform(this._keyPairId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
