@@ -58,7 +58,7 @@ export class ServiceDiscoveryHttpNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_service_discovery_http_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -96,6 +96,11 @@ export class ServiceDiscoveryHttpNamespace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // http_name - computed: true, optional: false, required: false
+  public get httpName() {
+    return this.getStringAttribute('http_name');
   }
 
   // id - computed: true, optional: true, required: false

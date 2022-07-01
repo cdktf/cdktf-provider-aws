@@ -54,7 +54,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_vpc_dhcp_options',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -84,7 +84,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
 
   // domain_name_servers - computed: true, optional: false, required: false
   public get domainNameServers() {
-    return this.getListAttribute('domain_name_servers');
+    return this.getStringAttribute('domain_name_servers');
   }
 
   // id - computed: true, optional: true, required: false
@@ -105,7 +105,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
 
   // netbios_name_servers - computed: true, optional: false, required: false
   public get netbiosNameServers() {
-    return this.getListAttribute('netbios_name_servers');
+    return this.getStringAttribute('netbios_name_servers');
   }
 
   // netbios_node_type - computed: true, optional: false, required: false
@@ -115,7 +115,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
 
   // ntp_servers - computed: true, optional: false, required: false
   public get ntpServers() {
-    return this.getListAttribute('ntp_servers');
+    return this.getStringAttribute('ntp_servers');
   }
 
   // owner_id - computed: true, optional: true, required: false

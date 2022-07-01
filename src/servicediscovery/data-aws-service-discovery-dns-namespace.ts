@@ -19,6 +19,10 @@ export interface DataAwsServiceDiscoveryDnsNamespaceConfig extends cdktf.Terrafo
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/service_discovery_dns_namespace#tags DataAwsServiceDiscoveryDnsNamespace#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/service_discovery_dns_namespace#type DataAwsServiceDiscoveryDnsNamespace#type}
   */
   readonly type: string;
@@ -50,7 +54,7 @@ export class DataAwsServiceDiscoveryDnsNamespace extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_service_discovery_dns_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -60,6 +64,7 @@ export class DataAwsServiceDiscoveryDnsNamespace extends cdktf.TerraformDataSour
     });
     this._id = config.id;
     this._name = config.name;
+    this._tags = config.tags;
     this._type = config.type;
   }
 
@@ -111,6 +116,22 @@ export class DataAwsServiceDiscoveryDnsNamespace extends cdktf.TerraformDataSour
     return this._name;
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -132,6 +153,7 @@ export class DataAwsServiceDiscoveryDnsNamespace extends cdktf.TerraformDataSour
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
     };
   }

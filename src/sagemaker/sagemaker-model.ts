@@ -59,11 +59,79 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpcConfig?: SagemakerModelVpcConfig;
 }
+export interface SagemakerModelContainerImageConfigRepositoryAuthConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
+  */
+  readonly repositoryCredentialsProviderArn: string;
+}
+
+export function sagemakerModelContainerImageConfigRepositoryAuthConfigToTerraform(struct?: SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference | SagemakerModelContainerImageConfigRepositoryAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository_credentials_provider_arn: cdktf.stringToTerraform(struct!.repositoryCredentialsProviderArn),
+  }
+}
+
+export class SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerModelContainerImageConfigRepositoryAuthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repositoryCredentialsProviderArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryCredentialsProviderArn = this._repositoryCredentialsProviderArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelContainerImageConfigRepositoryAuthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._repositoryCredentialsProviderArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._repositoryCredentialsProviderArn = value.repositoryCredentialsProviderArn;
+    }
+  }
+
+  // repository_credentials_provider_arn - computed: false, optional: false, required: true
+  private _repositoryCredentialsProviderArn?: string; 
+  public get repositoryCredentialsProviderArn() {
+    return this.getStringAttribute('repository_credentials_provider_arn');
+  }
+  public set repositoryCredentialsProviderArn(value: string) {
+    this._repositoryCredentialsProviderArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryCredentialsProviderArnInput() {
+    return this._repositoryCredentialsProviderArn;
+  }
+}
 export interface SagemakerModelContainerImageConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
+  /**
+  * repository_auth_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+  */
+  readonly repositoryAuthConfig?: SagemakerModelContainerImageConfigRepositoryAuthConfig;
 }
 
 export function sagemakerModelContainerImageConfigToTerraform(struct?: SagemakerModelContainerImageConfigOutputReference | SagemakerModelContainerImageConfig): any {
@@ -73,6 +141,7 @@ export function sagemakerModelContainerImageConfigToTerraform(struct?: Sagemaker
   }
   return {
     repository_access_mode: cdktf.stringToTerraform(struct!.repositoryAccessMode),
+    repository_auth_config: sagemakerModelContainerImageConfigRepositoryAuthConfigToTerraform(struct!.repositoryAuthConfig),
   }
 }
 
@@ -94,6 +163,10 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.repositoryAccessMode = this._repositoryAccessMode;
     }
+    if (this._repositoryAuthConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryAuthConfig = this._repositoryAuthConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -101,10 +174,12 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
     if (value === undefined) {
       this.isEmptyObject = false;
       this._repositoryAccessMode = undefined;
+      this._repositoryAuthConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryAccessMode = value.repositoryAccessMode;
+      this._repositoryAuthConfig.internalValue = value.repositoryAuthConfig;
     }
   }
 
@@ -119,6 +194,22 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get repositoryAccessModeInput() {
     return this._repositoryAccessMode;
+  }
+
+  // repository_auth_config - computed: false, optional: true, required: false
+  private _repositoryAuthConfig = new SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(this, "repository_auth_config");
+  public get repositoryAuthConfig() {
+    return this._repositoryAuthConfig;
+  }
+  public putRepositoryAuthConfig(value: SagemakerModelContainerImageConfigRepositoryAuthConfig) {
+    this._repositoryAuthConfig.internalValue = value;
+  }
+  public resetRepositoryAuthConfig() {
+    this._repositoryAuthConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryAuthConfigInput() {
+    return this._repositoryAuthConfig.internalValue;
   }
 }
 export interface SagemakerModelContainer {
@@ -414,11 +505,79 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
     return this._mode;
   }
 }
+export interface SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_credentials_provider_arn SagemakerModel#repository_credentials_provider_arn}
+  */
+  readonly repositoryCredentialsProviderArn: string;
+}
+
+export function sagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigToTerraform(struct?: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference | SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository_credentials_provider_arn: cdktf.stringToTerraform(struct!.repositoryCredentialsProviderArn),
+  }
+}
+
+export class SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repositoryCredentialsProviderArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryCredentialsProviderArn = this._repositoryCredentialsProviderArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._repositoryCredentialsProviderArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._repositoryCredentialsProviderArn = value.repositoryCredentialsProviderArn;
+    }
+  }
+
+  // repository_credentials_provider_arn - computed: false, optional: false, required: true
+  private _repositoryCredentialsProviderArn?: string; 
+  public get repositoryCredentialsProviderArn() {
+    return this.getStringAttribute('repository_credentials_provider_arn');
+  }
+  public set repositoryCredentialsProviderArn(value: string) {
+    this._repositoryCredentialsProviderArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryCredentialsProviderArnInput() {
+    return this._repositoryCredentialsProviderArn;
+  }
+}
 export interface SagemakerModelPrimaryContainerImageConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
+  /**
+  * repository_auth_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
+  */
+  readonly repositoryAuthConfig?: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig;
 }
 
 export function sagemakerModelPrimaryContainerImageConfigToTerraform(struct?: SagemakerModelPrimaryContainerImageConfigOutputReference | SagemakerModelPrimaryContainerImageConfig): any {
@@ -428,6 +587,7 @@ export function sagemakerModelPrimaryContainerImageConfigToTerraform(struct?: Sa
   }
   return {
     repository_access_mode: cdktf.stringToTerraform(struct!.repositoryAccessMode),
+    repository_auth_config: sagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigToTerraform(struct!.repositoryAuthConfig),
   }
 }
 
@@ -449,6 +609,10 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.repositoryAccessMode = this._repositoryAccessMode;
     }
+    if (this._repositoryAuthConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryAuthConfig = this._repositoryAuthConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -456,10 +620,12 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
     if (value === undefined) {
       this.isEmptyObject = false;
       this._repositoryAccessMode = undefined;
+      this._repositoryAuthConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryAccessMode = value.repositoryAccessMode;
+      this._repositoryAuthConfig.internalValue = value.repositoryAuthConfig;
     }
   }
 
@@ -474,6 +640,22 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
   // Temporarily expose input value. Use with caution.
   public get repositoryAccessModeInput() {
     return this._repositoryAccessMode;
+  }
+
+  // repository_auth_config - computed: false, optional: true, required: false
+  private _repositoryAuthConfig = new SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference(this, "repository_auth_config");
+  public get repositoryAuthConfig() {
+    return this._repositoryAuthConfig;
+  }
+  public putRepositoryAuthConfig(value: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig) {
+    this._repositoryAuthConfig.internalValue = value;
+  }
+  public resetRepositoryAuthConfig() {
+    this._repositoryAuthConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryAuthConfigInput() {
+    return this._repositoryAuthConfig.internalValue;
   }
 }
 export interface SagemakerModelPrimaryContainer {
@@ -788,7 +970,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

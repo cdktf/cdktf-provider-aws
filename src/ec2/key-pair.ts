@@ -62,7 +62,7 @@ export class KeyPair extends cdktf.TerraformResource {
       terraformResourceType: 'aws_key_pair',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -143,6 +143,11 @@ export class KeyPair extends cdktf.TerraformResource {
   // key_pair_id - computed: true, optional: false, required: false
   public get keyPairId() {
     return this.getStringAttribute('key_pair_id');
+  }
+
+  // key_type - computed: true, optional: false, required: false
+  public get keyType() {
+    return this.getStringAttribute('key_type');
   }
 
   // public_key - computed: false, optional: false, required: true
