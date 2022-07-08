@@ -23,6 +23,10 @@ export interface PlacementGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly partitionCount?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#spread_level PlacementGroup#spread_level}
+  */
+  readonly spreadLevel?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#strategy PlacementGroup#strategy}
   */
   readonly strategy: string;
@@ -62,7 +66,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_placement_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -73,6 +77,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._partitionCount = config.partitionCount;
+    this._spreadLevel = config.spreadLevel;
     this._strategy = config.strategy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -137,6 +142,22 @@ export class PlacementGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('placement_group_id');
   }
 
+  // spread_level - computed: false, optional: true, required: false
+  private _spreadLevel?: string; 
+  public get spreadLevel() {
+    return this.getStringAttribute('spread_level');
+  }
+  public set spreadLevel(value: string) {
+    this._spreadLevel = value;
+  }
+  public resetSpreadLevel() {
+    this._spreadLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spreadLevelInput() {
+    return this._spreadLevel;
+  }
+
   // strategy - computed: false, optional: false, required: true
   private _strategy?: string; 
   public get strategy() {
@@ -191,6 +212,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       partition_count: cdktf.numberToTerraform(this._partitionCount),
+      spread_level: cdktf.stringToTerraform(this._spreadLevel),
       strategy: cdktf.stringToTerraform(this._strategy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

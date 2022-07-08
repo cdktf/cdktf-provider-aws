@@ -55,6 +55,12 @@ export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly networkConfiguration?: ApprunnerServiceNetworkConfiguration;
   /**
+  * observability_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#observability_configuration ApprunnerService#observability_configuration}
+  */
+  readonly observabilityConfiguration?: ApprunnerServiceObservabilityConfiguration;
+  /**
   * source_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#source_configuration ApprunnerService#source_configuration}
@@ -599,6 +605,92 @@ export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get egressConfigurationInput() {
     return this._egressConfiguration.internalValue;
+  }
+}
+export interface ApprunnerServiceObservabilityConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#observability_configuration_arn ApprunnerService#observability_configuration_arn}
+  */
+  readonly observabilityConfigurationArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#observability_enabled ApprunnerService#observability_enabled}
+  */
+  readonly observabilityEnabled: boolean | cdktf.IResolvable;
+}
+
+export function apprunnerServiceObservabilityConfigurationToTerraform(struct?: ApprunnerServiceObservabilityConfigurationOutputReference | ApprunnerServiceObservabilityConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    observability_configuration_arn: cdktf.stringToTerraform(struct!.observabilityConfigurationArn),
+    observability_enabled: cdktf.booleanToTerraform(struct!.observabilityEnabled),
+  }
+}
+
+export class ApprunnerServiceObservabilityConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ApprunnerServiceObservabilityConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._observabilityConfigurationArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.observabilityConfigurationArn = this._observabilityConfigurationArn;
+    }
+    if (this._observabilityEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.observabilityEnabled = this._observabilityEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApprunnerServiceObservabilityConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._observabilityConfigurationArn = undefined;
+      this._observabilityEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._observabilityConfigurationArn = value.observabilityConfigurationArn;
+      this._observabilityEnabled = value.observabilityEnabled;
+    }
+  }
+
+  // observability_configuration_arn - computed: false, optional: false, required: true
+  private _observabilityConfigurationArn?: string; 
+  public get observabilityConfigurationArn() {
+    return this.getStringAttribute('observability_configuration_arn');
+  }
+  public set observabilityConfigurationArn(value: string) {
+    this._observabilityConfigurationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get observabilityConfigurationArnInput() {
+    return this._observabilityConfigurationArn;
+  }
+
+  // observability_enabled - computed: false, optional: false, required: true
+  private _observabilityEnabled?: boolean | cdktf.IResolvable; 
+  public get observabilityEnabled() {
+    return this.getBooleanAttribute('observability_enabled');
+  }
+  public set observabilityEnabled(value: boolean | cdktf.IResolvable) {
+    this._observabilityEnabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get observabilityEnabledInput() {
+    return this._observabilityEnabled;
   }
 }
 export interface ApprunnerServiceSourceConfigurationAuthenticationConfiguration {
@@ -1570,7 +1662,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1587,6 +1679,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
     this._healthCheckConfiguration.internalValue = config.healthCheckConfiguration;
     this._instanceConfiguration.internalValue = config.instanceConfiguration;
     this._networkConfiguration.internalValue = config.networkConfiguration;
+    this._observabilityConfiguration.internalValue = config.observabilityConfiguration;
     this._sourceConfiguration.internalValue = config.sourceConfiguration;
   }
 
@@ -1755,6 +1848,22 @@ export class ApprunnerService extends cdktf.TerraformResource {
     return this._networkConfiguration.internalValue;
   }
 
+  // observability_configuration - computed: false, optional: true, required: false
+  private _observabilityConfiguration = new ApprunnerServiceObservabilityConfigurationOutputReference(this, "observability_configuration");
+  public get observabilityConfiguration() {
+    return this._observabilityConfiguration;
+  }
+  public putObservabilityConfiguration(value: ApprunnerServiceObservabilityConfiguration) {
+    this._observabilityConfiguration.internalValue = value;
+  }
+  public resetObservabilityConfiguration() {
+    this._observabilityConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get observabilityConfigurationInput() {
+    return this._observabilityConfiguration.internalValue;
+  }
+
   // source_configuration - computed: false, optional: false, required: true
   private _sourceConfiguration = new ApprunnerServiceSourceConfigurationOutputReference(this, "source_configuration");
   public get sourceConfiguration() {
@@ -1783,6 +1892,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       health_check_configuration: apprunnerServiceHealthCheckConfigurationToTerraform(this._healthCheckConfiguration.internalValue),
       instance_configuration: apprunnerServiceInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
       network_configuration: apprunnerServiceNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
+      observability_configuration: apprunnerServiceObservabilityConfigurationToTerraform(this._observabilityConfiguration.internalValue),
       source_configuration: apprunnerServiceSourceConfigurationToTerraform(this._sourceConfiguration.internalValue),
     };
   }

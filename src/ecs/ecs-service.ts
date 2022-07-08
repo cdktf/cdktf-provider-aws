@@ -1115,9 +1115,17 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObj
 }
 export interface EcsServiceTimeouts {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#create EcsService#create}
+  */
+  readonly create?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#delete EcsService#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#update EcsService#update}
+  */
+  readonly update?: string;
 }
 
 export function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeoutsOutputReference | EcsServiceTimeouts | cdktf.IResolvable): any {
@@ -1126,7 +1134,9 @@ export function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeoutsOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -1148,9 +1158,17 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
     if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1159,7 +1177,9 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1168,8 +1188,26 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
@@ -1186,6 +1224,22 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
     return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
   }
 }
 
@@ -1215,7 +1269,7 @@ export class EcsService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

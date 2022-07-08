@@ -24,6 +24,10 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultCooldown?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#default_instance_warmup AutoscalingGroup#default_instance_warmup}
+  */
+  readonly defaultInstanceWarmup?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#desired_capacity AutoscalingGroup#desired_capacity}
   */
   readonly desiredCapacity?: number;
@@ -3486,7 +3490,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3498,6 +3502,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._capacityRebalance = config.capacityRebalance;
     this._context = config.context;
     this._defaultCooldown = config.defaultCooldown;
+    this._defaultInstanceWarmup = config.defaultInstanceWarmup;
     this._desiredCapacity = config.desiredCapacity;
     this._enabledMetrics = config.enabledMetrics;
     this._forceDelete = config.forceDelete;
@@ -3604,6 +3609,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultCooldownInput() {
     return this._defaultCooldown;
+  }
+
+  // default_instance_warmup - computed: false, optional: true, required: false
+  private _defaultInstanceWarmup?: number; 
+  public get defaultInstanceWarmup() {
+    return this.getNumberAttribute('default_instance_warmup');
+  }
+  public set defaultInstanceWarmup(value: number) {
+    this._defaultInstanceWarmup = value;
+  }
+  public resetDefaultInstanceWarmup() {
+    this._defaultInstanceWarmup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultInstanceWarmupInput() {
+    return this._defaultInstanceWarmup;
   }
 
   // desired_capacity - computed: true, optional: true, required: false
@@ -4138,6 +4159,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       capacity_rebalance: cdktf.booleanToTerraform(this._capacityRebalance),
       context: cdktf.stringToTerraform(this._context),
       default_cooldown: cdktf.numberToTerraform(this._defaultCooldown),
+      default_instance_warmup: cdktf.numberToTerraform(this._defaultInstanceWarmup),
       desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
       enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledMetrics),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),

@@ -2,5 +2,7 @@
 export * from './directory-service-conditional-forwarder';
 export * from './directory-service-directory';
 export * from './directory-service-log-subscription';
+export * from './directory-service-shared-directory';
+export * from './directory-service-shared-directory-accepter';
 export * from './data-aws-directory-service-directory';
 

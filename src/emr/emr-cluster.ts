@@ -1780,6 +1780,10 @@ export interface EmrClusterCoreInstanceGroupEbsConfig {
   */
   readonly size: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#throughput EmrCluster#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#type EmrCluster#type}
   */
   readonly type: string;
@@ -1797,6 +1801,7 @@ export function emrClusterCoreInstanceGroupEbsConfigToTerraform(struct?: EmrClus
   return {
     iops: cdktf.numberToTerraform(struct!.iops),
     size: cdktf.numberToTerraform(struct!.size),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     type: cdktf.stringToTerraform(struct!.type),
     volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
   }
@@ -1830,6 +1835,10 @@ export class EmrClusterCoreInstanceGroupEbsConfigOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
+    if (this._throughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.throughput = this._throughput;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -1847,6 +1856,7 @@ export class EmrClusterCoreInstanceGroupEbsConfigOutputReference extends cdktf.C
       this.resolvableValue = undefined;
       this._iops = undefined;
       this._size = undefined;
+      this._throughput = undefined;
       this._type = undefined;
       this._volumesPerInstance = undefined;
     }
@@ -1859,6 +1869,7 @@ export class EmrClusterCoreInstanceGroupEbsConfigOutputReference extends cdktf.C
       this.resolvableValue = undefined;
       this._iops = value.iops;
       this._size = value.size;
+      this._throughput = value.throughput;
       this._type = value.type;
       this._volumesPerInstance = value.volumesPerInstance;
     }
@@ -1891,6 +1902,22 @@ export class EmrClusterCoreInstanceGroupEbsConfigOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
     return this._size;
+  }
+
+  // throughput - computed: false, optional: true, required: false
+  private _throughput?: number; 
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+  public set throughput(value: number) {
+    this._throughput = value;
+  }
+  public resetThroughput() {
+    this._throughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throughputInput() {
+    return this._throughput;
   }
 
   // type - computed: false, optional: false, required: true
@@ -3681,6 +3708,10 @@ export interface EmrClusterMasterInstanceGroupEbsConfig {
   */
   readonly size: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#throughput EmrCluster#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#type EmrCluster#type}
   */
   readonly type: string;
@@ -3698,6 +3729,7 @@ export function emrClusterMasterInstanceGroupEbsConfigToTerraform(struct?: EmrCl
   return {
     iops: cdktf.numberToTerraform(struct!.iops),
     size: cdktf.numberToTerraform(struct!.size),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     type: cdktf.stringToTerraform(struct!.type),
     volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
   }
@@ -3731,6 +3763,10 @@ export class EmrClusterMasterInstanceGroupEbsConfigOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
+    if (this._throughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.throughput = this._throughput;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -3748,6 +3784,7 @@ export class EmrClusterMasterInstanceGroupEbsConfigOutputReference extends cdktf
       this.resolvableValue = undefined;
       this._iops = undefined;
       this._size = undefined;
+      this._throughput = undefined;
       this._type = undefined;
       this._volumesPerInstance = undefined;
     }
@@ -3760,6 +3797,7 @@ export class EmrClusterMasterInstanceGroupEbsConfigOutputReference extends cdktf
       this.resolvableValue = undefined;
       this._iops = value.iops;
       this._size = value.size;
+      this._throughput = value.throughput;
       this._type = value.type;
       this._volumesPerInstance = value.volumesPerInstance;
     }
@@ -3792,6 +3830,22 @@ export class EmrClusterMasterInstanceGroupEbsConfigOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
     return this._size;
+  }
+
+  // throughput - computed: false, optional: true, required: false
+  private _throughput?: number; 
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+  public set throughput(value: number) {
+    this._throughput = value;
+  }
+  public resetThroughput() {
+    this._throughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throughputInput() {
+    return this._throughput;
   }
 
   // type - computed: false, optional: false, required: true
@@ -4047,7 +4101,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emr_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
