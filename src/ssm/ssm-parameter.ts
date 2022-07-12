@@ -31,6 +31,10 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_parameter#insecure_value SsmParameter#insecure_value}
+  */
+  readonly insecureValue?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_parameter#key_id SsmParameter#key_id}
   */
   readonly keyId?: string;
@@ -61,7 +65,7 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_parameter#value SsmParameter#value}
   */
-  readonly value: string;
+  readonly value?: string;
 }
 
 /**
@@ -90,7 +94,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_parameter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -103,6 +107,7 @@ export class SsmParameter extends cdktf.TerraformResource {
     this._dataType = config.dataType;
     this._description = config.description;
     this._id = config.id;
+    this._insecureValue = config.insecureValue;
     this._keyId = config.keyId;
     this._name = config.name;
     this._overwrite = config.overwrite;
@@ -195,6 +200,22 @@ export class SsmParameter extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // insecure_value - computed: true, optional: true, required: false
+  private _insecureValue?: string; 
+  public get insecureValue() {
+    return this.getStringAttribute('insecure_value');
+  }
+  public set insecureValue(value: string) {
+    this._insecureValue = value;
+  }
+  public resetInsecureValue() {
+    this._insecureValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureValueInput() {
+    return this._insecureValue;
   }
 
   // key_id - computed: true, optional: true, required: false
@@ -303,13 +324,16 @@ export class SsmParameter extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -332,6 +356,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       data_type: cdktf.stringToTerraform(this._dataType),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      insecure_value: cdktf.stringToTerraform(this._insecureValue),
       key_id: cdktf.stringToTerraform(this._keyId),
       name: cdktf.stringToTerraform(this._name),
       overwrite: cdktf.booleanToTerraform(this._overwrite),

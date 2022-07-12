@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository#force_delete EcrRepository#force_delete}
+  */
+  readonly forceDelete?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository#id EcrRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -337,7 +341,7 @@ export class EcrRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecr_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -345,6 +349,7 @@ export class EcrRepository extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._forceDelete = config.forceDelete;
     this._id = config.id;
     this._imageTagMutability = config.imageTagMutability;
     this._name = config.name;
@@ -362,6 +367,22 @@ export class EcrRepository extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // force_delete - computed: false, optional: true, required: false
+  private _forceDelete?: boolean | cdktf.IResolvable; 
+  public get forceDelete() {
+    return this.getBooleanAttribute('force_delete');
+  }
+  public set forceDelete(value: boolean | cdktf.IResolvable) {
+    this._forceDelete = value;
+  }
+  public resetForceDelete() {
+    this._forceDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteInput() {
+    return this._forceDelete;
   }
 
   // id - computed: true, optional: true, required: false
@@ -505,6 +526,7 @@ export class EcrRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      force_delete: cdktf.booleanToTerraform(this._forceDelete),
       id: cdktf.stringToTerraform(this._id),
       image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
       name: cdktf.stringToTerraform(this._name),

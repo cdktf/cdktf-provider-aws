@@ -231,6 +231,10 @@ export interface ConfigRemediationConfigurationParameter {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#static_value ConfigRemediationConfiguration#static_value}
   */
   readonly staticValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#static_values ConfigRemediationConfiguration#static_values}
+  */
+  readonly staticValues?: string[];
 }
 
 export function configRemediationConfigurationParameterToTerraform(struct?: ConfigRemediationConfigurationParameter | cdktf.IResolvable): any {
@@ -242,6 +246,7 @@ export function configRemediationConfigurationParameterToTerraform(struct?: Conf
     name: cdktf.stringToTerraform(struct!.name),
     resource_value: cdktf.stringToTerraform(struct!.resourceValue),
     static_value: cdktf.stringToTerraform(struct!.staticValue),
+    static_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.staticValues),
   }
 }
 
@@ -277,6 +282,10 @@ export class ConfigRemediationConfigurationParameterOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.staticValue = this._staticValue;
     }
+    if (this._staticValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticValues = this._staticValues;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -287,6 +296,7 @@ export class ConfigRemediationConfigurationParameterOutputReference extends cdkt
       this._name = undefined;
       this._resourceValue = undefined;
       this._staticValue = undefined;
+      this._staticValues = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -298,6 +308,7 @@ export class ConfigRemediationConfigurationParameterOutputReference extends cdkt
       this._name = value.name;
       this._resourceValue = value.resourceValue;
       this._staticValue = value.staticValue;
+      this._staticValues = value.staticValues;
     }
   }
 
@@ -344,6 +355,22 @@ export class ConfigRemediationConfigurationParameterOutputReference extends cdkt
   // Temporarily expose input value. Use with caution.
   public get staticValueInput() {
     return this._staticValue;
+  }
+
+  // static_values - computed: false, optional: true, required: false
+  private _staticValues?: string[]; 
+  public get staticValues() {
+    return this.getListAttribute('static_values');
+  }
+  public set staticValues(value: string[]) {
+    this._staticValues = value;
+  }
+  public resetStaticValues() {
+    this._staticValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticValuesInput() {
+    return this._staticValues;
   }
 }
 
@@ -393,7 +420,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_remediation_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance#accelerator_types SagemakerNotebookInstance#accelerator_types}
+  */
+  readonly acceleratorTypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance#additional_code_repositories SagemakerNotebookInstance#additional_code_repositories}
   */
   readonly additionalCodeRepositories?: string[];
@@ -173,7 +177,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_notebook_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -181,6 +185,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._acceleratorTypes = config.acceleratorTypes;
     this._additionalCodeRepositories = config.additionalCodeRepositories;
     this._defaultCodeRepository = config.defaultCodeRepository;
     this._directInternetAccess = config.directInternetAccess;
@@ -203,6 +208,22 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // accelerator_types - computed: false, optional: true, required: false
+  private _acceleratorTypes?: string[]; 
+  public get acceleratorTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('accelerator_types'));
+  }
+  public set acceleratorTypes(value: string[]) {
+    this._acceleratorTypes = value;
+  }
+  public resetAcceleratorTypes() {
+    this._acceleratorTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypesInput() {
+    return this._acceleratorTypes;
+  }
 
   // additional_code_repositories - computed: false, optional: true, required: false
   private _additionalCodeRepositories?: string[]; 
@@ -488,6 +509,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(this._acceleratorTypes),
       additional_code_repositories: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalCodeRepositories),
       default_code_repository: cdktf.stringToTerraform(this._defaultCodeRepository),
       direct_internet_access: cdktf.stringToTerraform(this._directInternetAccess),

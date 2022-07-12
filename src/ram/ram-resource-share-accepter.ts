@@ -154,7 +154,7 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ram_resource_share_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
