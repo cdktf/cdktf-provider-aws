@@ -337,6 +337,230 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionContainerDi
     return new DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate {
+}
+
+export function dataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateToTerraform(struct?: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // launch_template_id - computed: true, optional: false, required: false
+  public get launchTemplateId() {
+    return this.getStringAttribute('launch_template_id');
+  }
+
+  // launch_template_name - computed: true, optional: false, required: false
+  public get launchTemplateName() {
+    return this.getStringAttribute('launch_template_name');
+  }
+
+  // launch_template_version - computed: true, optional: false, required: false
+  public get launchTemplateVersion() {
+    return this.getStringAttribute('launch_template_version');
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference {
+    return new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration {
+}
+
+export function dataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationToTerraform(struct?: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // target_resource_count - computed: true, optional: false, required: false
+  public get targetResourceCount() {
+    return this.getNumberAttribute('target_resource_count');
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference {
+    return new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration {
+}
+
+export function dataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform(struct?: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // launch_template - computed: true, optional: false, required: false
+  private _launchTemplate = new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateList(this, "launch_template", true);
+  public get launchTemplate() {
+    return this._launchTemplate;
+  }
+
+  // max_parallel_launches - computed: true, optional: false, required: false
+  public get maxParallelLaunches() {
+    return this.getNumberAttribute('max_parallel_launches');
+  }
+
+  // snapshot_configuration - computed: true, optional: false, required: false
+  private _snapshotConfiguration = new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationList(this, "snapshot_configuration", true);
+  public get snapshotConfiguration() {
+    return this._snapshotConfiguration;
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference {
+    return new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration {
 }
 
@@ -463,6 +687,12 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionOutputRefer
     return this._containerDistributionConfiguration;
   }
 
+  // fast_launch_configuration - computed: true, optional: false, required: false
+  private _fastLaunchConfiguration = new DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList(this, "fast_launch_configuration", true);
+  public get fastLaunchConfiguration() {
+    return this._fastLaunchConfiguration;
+  }
+
   // launch_template_configuration - computed: true, optional: false, required: false
   private _launchTemplateConfiguration = new DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList(this, "launch_template_configuration", true);
   public get launchTemplateConfiguration() {
@@ -525,7 +755,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

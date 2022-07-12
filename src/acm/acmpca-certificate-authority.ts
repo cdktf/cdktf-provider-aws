@@ -724,6 +724,95 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
     return this._s3ObjectAcl;
   }
 }
+export interface AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#ocsp_custom_cname AcmpcaCertificateAuthority#ocsp_custom_cname}
+  */
+  readonly ocspCustomCname?: string;
+}
+
+export function acmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    ocsp_custom_cname: cdktf.stringToTerraform(struct!.ocspCustomCname),
+  }
+}
+
+export class AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._ocspCustomCname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ocspCustomCname = this._ocspCustomCname;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._ocspCustomCname = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._ocspCustomCname = value.ocspCustomCname;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // ocsp_custom_cname - computed: false, optional: true, required: false
+  private _ocspCustomCname?: string; 
+  public get ocspCustomCname() {
+    return this.getStringAttribute('ocsp_custom_cname');
+  }
+  public set ocspCustomCname(value: string) {
+    this._ocspCustomCname = value;
+  }
+  public resetOcspCustomCname() {
+    this._ocspCustomCname = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocspCustomCnameInput() {
+    return this._ocspCustomCname;
+  }
+}
 export interface AcmpcaCertificateAuthorityRevocationConfiguration {
   /**
   * crl_configuration block
@@ -731,6 +820,12 @@ export interface AcmpcaCertificateAuthorityRevocationConfiguration {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#crl_configuration AcmpcaCertificateAuthority#crl_configuration}
   */
   readonly crlConfiguration?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration;
+  /**
+  * ocsp_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#ocsp_configuration AcmpcaCertificateAuthority#ocsp_configuration}
+  */
+  readonly ocspConfiguration?: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration;
 }
 
 export function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationOutputReference | AcmpcaCertificateAuthorityRevocationConfiguration): any {
@@ -740,6 +835,7 @@ export function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(str
   }
   return {
     crl_configuration: acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct!.crlConfiguration),
+    ocsp_configuration: acmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform(struct!.ocspConfiguration),
   }
 }
 
@@ -761,6 +857,10 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
       hasAnyValues = true;
       internalValueResult.crlConfiguration = this._crlConfiguration?.internalValue;
     }
+    if (this._ocspConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ocspConfiguration = this._ocspConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -768,10 +868,12 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._crlConfiguration.internalValue = undefined;
+      this._ocspConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._crlConfiguration.internalValue = value.crlConfiguration;
+      this._ocspConfiguration.internalValue = value.ocspConfiguration;
     }
   }
 
@@ -789,6 +891,22 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get crlConfigurationInput() {
     return this._crlConfiguration.internalValue;
+  }
+
+  // ocsp_configuration - computed: false, optional: true, required: false
+  private _ocspConfiguration = new AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference(this, "ocsp_configuration");
+  public get ocspConfiguration() {
+    return this._ocspConfiguration;
+  }
+  public putOcspConfiguration(value: AcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration) {
+    this._ocspConfiguration.internalValue = value;
+  }
+  public resetOcspConfiguration() {
+    this._ocspConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocspConfigurationInput() {
+    return this._ocspConfiguration.internalValue;
   }
 }
 export interface AcmpcaCertificateAuthorityTimeouts {
@@ -893,7 +1011,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

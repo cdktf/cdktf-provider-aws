@@ -54,7 +54,7 @@ export class VpcEndpointSecurityGroupAssociation extends cdktf.TerraformResource
       terraformResourceType: 'aws_vpc_endpoint_security_group_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
