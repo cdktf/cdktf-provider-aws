@@ -2081,6 +2081,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#redshiftserverless AwsProvider#redshiftserverless}
+  */
+  readonly redshiftserverless?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#rekognition AwsProvider#rekognition}
   */
   readonly rekognition?: string;
@@ -2114,6 +2120,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#robomaker AwsProvider#robomaker}
   */
   readonly robomaker?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#rolesanywhere AwsProvider#rolesanywhere}
+  */
+  readonly rolesanywhere?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2852,12 +2864,14 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     redshift: cdktf.stringToTerraform(struct!.redshift),
     redshiftdata: cdktf.stringToTerraform(struct!.redshiftdata),
     redshiftdataapiservice: cdktf.stringToTerraform(struct!.redshiftdataapiservice),
+    redshiftserverless: cdktf.stringToTerraform(struct!.redshiftserverless),
     rekognition: cdktf.stringToTerraform(struct!.rekognition),
     resiliencehub: cdktf.stringToTerraform(struct!.resiliencehub),
     resourcegroups: cdktf.stringToTerraform(struct!.resourcegroups),
     resourcegroupstagging: cdktf.stringToTerraform(struct!.resourcegroupstagging),
     resourcegroupstaggingapi: cdktf.stringToTerraform(struct!.resourcegroupstaggingapi),
     robomaker: cdktf.stringToTerraform(struct!.robomaker),
+    rolesanywhere: cdktf.stringToTerraform(struct!.rolesanywhere),
     route53: cdktf.stringToTerraform(struct!.route53),
     route53domains: cdktf.stringToTerraform(struct!.route53Domains),
     route53recoverycluster: cdktf.stringToTerraform(struct!.route53Recoverycluster),
@@ -2988,7 +3002,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

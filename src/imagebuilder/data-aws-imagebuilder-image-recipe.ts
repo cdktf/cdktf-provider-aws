@@ -88,6 +88,11 @@ export class DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference 
     return this.getStringAttribute('snapshot_id');
   }
 
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
   // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
@@ -363,7 +368,7 @@ export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_imagebuilder_image_recipe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

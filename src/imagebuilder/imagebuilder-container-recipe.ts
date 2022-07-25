@@ -340,6 +340,10 @@ export interface ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapp
   */
   readonly snapshotId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#throughput ImagebuilderContainerRecipe#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#volume_size ImagebuilderContainerRecipe#volume_size}
   */
   readonly volumeSize?: number;
@@ -360,6 +364,7 @@ export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappi
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -399,6 +404,10 @@ export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingE
       hasAnyValues = true;
       internalValueResult.snapshotId = this._snapshotId;
     }
+    if (this._throughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.throughput = this._throughput;
+    }
     if (this._volumeSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeSize = this._volumeSize;
@@ -418,6 +427,7 @@ export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingE
       this._iops = undefined;
       this._kmsKeyId = undefined;
       this._snapshotId = undefined;
+      this._throughput = undefined;
       this._volumeSize = undefined;
       this._volumeType = undefined;
     }
@@ -428,6 +438,7 @@ export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingE
       this._iops = value.iops;
       this._kmsKeyId = value.kmsKeyId;
       this._snapshotId = value.snapshotId;
+      this._throughput = value.throughput;
       this._volumeSize = value.volumeSize;
       this._volumeType = value.volumeType;
     }
@@ -511,6 +522,22 @@ export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingE
   // Temporarily expose input value. Use with caution.
   public get snapshotIdInput() {
     return this._snapshotId;
+  }
+
+  // throughput - computed: false, optional: true, required: false
+  private _throughput?: number; 
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+  public set throughput(value: number) {
+    this._throughput = value;
+  }
+  public resetThroughput() {
+    this._throughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throughputInput() {
+    return this._throughput;
   }
 
   // volume_size - computed: false, optional: true, required: false
@@ -932,7 +959,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_container_recipe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -57,7 +57,15 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#traffic_type FlowLog#traffic_type}
   */
-  readonly trafficType: string;
+  readonly trafficType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}
+  */
+  readonly transitGatewayAttachmentId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#transit_gateway_id FlowLog#transit_gateway_id}
+  */
+  readonly transitGatewayId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#vpc_id FlowLog#vpc_id}
   */
@@ -208,14 +216,14 @@ export class FlowLog extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options FlowLogConfig
+  * @param options FlowLogConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: FlowLogConfig) {
+  public constructor(scope: Construct, id: string, config: FlowLogConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_flow_log',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -235,6 +243,8 @@ export class FlowLog extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._trafficType = config.trafficType;
+    this._transitGatewayAttachmentId = config.transitGatewayAttachmentId;
+    this._transitGatewayId = config.transitGatewayId;
     this._vpcId = config.vpcId;
     this._destinationOptions.internalValue = config.destinationOptions;
   }
@@ -424,7 +434,7 @@ export class FlowLog extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // traffic_type - computed: false, optional: false, required: true
+  // traffic_type - computed: false, optional: true, required: false
   private _trafficType?: string; 
   public get trafficType() {
     return this.getStringAttribute('traffic_type');
@@ -432,9 +442,44 @@ export class FlowLog extends cdktf.TerraformResource {
   public set trafficType(value: string) {
     this._trafficType = value;
   }
+  public resetTrafficType() {
+    this._trafficType = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get trafficTypeInput() {
     return this._trafficType;
+  }
+
+  // transit_gateway_attachment_id - computed: false, optional: true, required: false
+  private _transitGatewayAttachmentId?: string; 
+  public get transitGatewayAttachmentId() {
+    return this.getStringAttribute('transit_gateway_attachment_id');
+  }
+  public set transitGatewayAttachmentId(value: string) {
+    this._transitGatewayAttachmentId = value;
+  }
+  public resetTransitGatewayAttachmentId() {
+    this._transitGatewayAttachmentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayAttachmentIdInput() {
+    return this._transitGatewayAttachmentId;
+  }
+
+  // transit_gateway_id - computed: false, optional: true, required: false
+  private _transitGatewayId?: string; 
+  public get transitGatewayId() {
+    return this.getStringAttribute('transit_gateway_id');
+  }
+  public set transitGatewayId(value: string) {
+    this._transitGatewayId = value;
+  }
+  public resetTransitGatewayId() {
+    this._transitGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayIdInput() {
+    return this._transitGatewayId;
   }
 
   // vpc_id - computed: false, optional: true, required: false
@@ -487,6 +532,8 @@ export class FlowLog extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       traffic_type: cdktf.stringToTerraform(this._trafficType),
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       destination_options: flowLogDestinationOptionsToTerraform(this._destinationOptions.internalValue),
     };

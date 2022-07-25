@@ -58,7 +58,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_request_validator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -471,7 +471,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3control_object_lambda_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
