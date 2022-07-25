@@ -27,6 +27,14 @@ export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ruleVersion: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#tags CeCostCategory#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#tags_all CeCostCategory#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#rule CeCostCategory#rule}
@@ -2714,7 +2722,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2726,6 +2734,8 @@ export class CeCostCategory extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._ruleVersion = config.ruleVersion;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._rule.internalValue = config.rule;
     this._splitChargeRule.internalValue = config.splitChargeRule;
   }
@@ -2807,6 +2817,38 @@ export class CeCostCategory extends cdktf.TerraformResource {
     return this._ruleVersion;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // rule - computed: false, optional: false, required: true
   private _rule = new CeCostCategoryRuleList(this, "rule", true);
   public get rule() {
@@ -2846,6 +2888,8 @@ export class CeCostCategory extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       rule_version: cdktf.stringToTerraform(this._ruleVersion),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       rule: cdktf.listMapper(ceCostCategoryRuleToTerraform)(this._rule.internalValue),
       split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform)(this._splitChargeRule.internalValue),
     };

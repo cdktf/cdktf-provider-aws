@@ -387,6 +387,256 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
     return this._match.internalValue;
   }
 }
+export interface AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#default_target_hostname AppmeshGatewayRoute#default_target_hostname}
+  */
+  readonly defaultTargetHostname: string;
+}
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameToTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_target_hostname: cdktf.stringToTerraform(struct!.defaultTargetHostname),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultTargetHostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultTargetHostname = this._defaultTargetHostname;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultTargetHostname = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultTargetHostname = value.defaultTargetHostname;
+    }
+  }
+
+  // default_target_hostname - computed: false, optional: false, required: true
+  private _defaultTargetHostname?: string; 
+  public get defaultTargetHostname() {
+    return this.getStringAttribute('default_target_hostname');
+  }
+  public set defaultTargetHostname(value: string) {
+    this._defaultTargetHostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultTargetHostnameInput() {
+    return this._defaultTargetHostname;
+  }
+}
+export interface AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#default_prefix AppmeshGatewayRoute#default_prefix}
+  */
+  readonly defaultPrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#value AppmeshGatewayRoute#value}
+  */
+  readonly value?: string;
+}
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_prefix: cdktf.stringToTerraform(struct!.defaultPrefix),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultPrefix = this._defaultPrefix;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultPrefix = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultPrefix = value.defaultPrefix;
+      this._value = value.value;
+    }
+  }
+
+  // default_prefix - computed: false, optional: true, required: false
+  private _defaultPrefix?: string; 
+  public get defaultPrefix() {
+    return this.getStringAttribute('default_prefix');
+  }
+  public set defaultPrefix(value: string) {
+    this._defaultPrefix = value;
+  }
+  public resetDefaultPrefix() {
+    this._defaultPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultPrefixInput() {
+    return this._defaultPrefix;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface AppmeshGatewayRouteSpecHttp2RouteActionRewrite {
+  /**
+  * hostname block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
+  */
+  readonly hostname?: AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname;
+  /**
+  * prefix block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
+  */
+  readonly prefix?: AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix;
+}
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewriteToTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewrite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hostname: appmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameToTerraform(struct!.hostname),
+    prefix: appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToTerraform(struct!.prefix),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionRewrite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostname?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname?.internalValue;
+    }
+    if (this._prefix?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteActionRewrite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostname.internalValue = undefined;
+      this._prefix.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostname.internalValue = value.hostname;
+      this._prefix.internalValue = value.prefix;
+    }
+  }
+
+  // hostname - computed: false, optional: true, required: false
+  private _hostname = new AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference(this, "hostname");
+  public get hostname() {
+    return this._hostname;
+  }
+  public putHostname(value: AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname) {
+    this._hostname.internalValue = value;
+  }
+  public resetHostname() {
+    this._hostname.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname.internalValue;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix = new AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference(this, "prefix");
+  public get prefix() {
+    return this._prefix;
+  }
+  public putPrefix(value: AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix) {
+    this._prefix.internalValue = value;
+  }
+  public resetPrefix() {
+    this._prefix.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix.internalValue;
+  }
+}
 export interface AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
@@ -515,6 +765,12 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
 }
 export interface AppmeshGatewayRouteSpecHttp2RouteAction {
   /**
+  * rewrite block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#rewrite AppmeshGatewayRoute#rewrite}
+  */
+  readonly rewrite?: AppmeshGatewayRouteSpecHttp2RouteActionRewrite;
+  /**
   * target block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#target AppmeshGatewayRoute#target}
@@ -528,6 +784,7 @@ export function appmeshGatewayRouteSpecHttp2RouteActionToTerraform(struct?: Appm
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    rewrite: appmeshGatewayRouteSpecHttp2RouteActionRewriteToTerraform(struct!.rewrite),
     target: appmeshGatewayRouteSpecHttp2RouteActionTargetToTerraform(struct!.target),
   }
 }
@@ -546,6 +803,10 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._rewrite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rewrite = this._rewrite?.internalValue;
+    }
     if (this._target?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
@@ -556,12 +817,30 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._rewrite.internalValue = undefined;
       this._target.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._rewrite.internalValue = value.rewrite;
       this._target.internalValue = value.target;
     }
+  }
+
+  // rewrite - computed: false, optional: true, required: false
+  private _rewrite = new AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference(this, "rewrite");
+  public get rewrite() {
+    return this._rewrite;
+  }
+  public putRewrite(value: AppmeshGatewayRouteSpecHttp2RouteActionRewrite) {
+    this._rewrite.internalValue = value;
+  }
+  public resetRewrite() {
+    this._rewrite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rewriteInput() {
+    return this._rewrite.internalValue;
   }
 
   // target - computed: false, optional: false, required: true
@@ -577,11 +856,109 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
     return this._target.internalValue;
   }
 }
+export interface AppmeshGatewayRouteSpecHttp2RouteMatchHostname {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#exact AppmeshGatewayRoute#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#suffix AppmeshGatewayRoute#suffix}
+  */
+  readonly suffix?: string;
+}
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchHostnameToTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    suffix: cdktf.stringToTerraform(struct!.suffix),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteMatchHostname | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._suffix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.suffix = this._suffix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteMatchHostname | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._suffix = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._suffix = value.suffix;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // suffix - computed: false, optional: true, required: false
+  private _suffix?: string; 
+  public get suffix() {
+    return this.getStringAttribute('suffix');
+  }
+  public set suffix(value: string) {
+    this._suffix = value;
+  }
+  public resetSuffix() {
+    this._suffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suffixInput() {
+    return this._suffix;
+  }
+}
 export interface AppmeshGatewayRouteSpecHttp2RouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
-  readonly prefix: string;
+  readonly prefix?: string;
+  /**
+  * hostname block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
+  */
+  readonly hostname?: AppmeshGatewayRouteSpecHttp2RouteMatchHostname;
 }
 
 export function appmeshGatewayRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatch): any {
@@ -591,6 +968,7 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchToTerraform(struct?: Appme
   }
   return {
     prefix: cdktf.stringToTerraform(struct!.prefix),
+    hostname: appmeshGatewayRouteSpecHttp2RouteMatchHostnameToTerraform(struct!.hostname),
   }
 }
 
@@ -612,6 +990,10 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
+    if (this._hostname?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -619,14 +1001,16 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
     if (value === undefined) {
       this.isEmptyObject = false;
       this._prefix = undefined;
+      this._hostname.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
+      this._hostname.internalValue = value.hostname;
     }
   }
 
-  // prefix - computed: false, optional: false, required: true
+  // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -634,9 +1018,28 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   public set prefix(value: string) {
     this._prefix = value;
   }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
     return this._prefix;
+  }
+
+  // hostname - computed: false, optional: true, required: false
+  private _hostname = new AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference(this, "hostname");
+  public get hostname() {
+    return this._hostname;
+  }
+  public putHostname(value: AppmeshGatewayRouteSpecHttp2RouteMatchHostname) {
+    this._hostname.internalValue = value;
+  }
+  public resetHostname() {
+    this._hostname.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname.internalValue;
   }
 }
 export interface AppmeshGatewayRouteSpecHttp2Route {
@@ -727,6 +1130,256 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get matchInput() {
     return this._match.internalValue;
+  }
+}
+export interface AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#default_target_hostname AppmeshGatewayRoute#default_target_hostname}
+  */
+  readonly defaultTargetHostname: string;
+}
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewriteHostnameToTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_target_hostname: cdktf.stringToTerraform(struct!.defaultTargetHostname),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultTargetHostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultTargetHostname = this._defaultTargetHostname;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultTargetHostname = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultTargetHostname = value.defaultTargetHostname;
+    }
+  }
+
+  // default_target_hostname - computed: false, optional: false, required: true
+  private _defaultTargetHostname?: string; 
+  public get defaultTargetHostname() {
+    return this.getStringAttribute('default_target_hostname');
+  }
+  public set defaultTargetHostname(value: string) {
+    this._defaultTargetHostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultTargetHostnameInput() {
+    return this._defaultTargetHostname;
+  }
+}
+export interface AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#default_prefix AppmeshGatewayRoute#default_prefix}
+  */
+  readonly defaultPrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#value AppmeshGatewayRoute#value}
+  */
+  readonly value?: string;
+}
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_prefix: cdktf.stringToTerraform(struct!.defaultPrefix),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultPrefix = this._defaultPrefix;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultPrefix = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultPrefix = value.defaultPrefix;
+      this._value = value.value;
+    }
+  }
+
+  // default_prefix - computed: false, optional: true, required: false
+  private _defaultPrefix?: string; 
+  public get defaultPrefix() {
+    return this.getStringAttribute('default_prefix');
+  }
+  public set defaultPrefix(value: string) {
+    this._defaultPrefix = value;
+  }
+  public resetDefaultPrefix() {
+    this._defaultPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultPrefixInput() {
+    return this._defaultPrefix;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface AppmeshGatewayRouteSpecHttpRouteActionRewrite {
+  /**
+  * hostname block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
+  */
+  readonly hostname?: AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname;
+  /**
+  * prefix block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
+  */
+  readonly prefix?: AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix;
+}
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewriteToTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewrite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hostname: appmeshGatewayRouteSpecHttpRouteActionRewriteHostnameToTerraform(struct!.hostname),
+    prefix: appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToTerraform(struct!.prefix),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionRewrite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostname?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname?.internalValue;
+    }
+    if (this._prefix?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteActionRewrite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostname.internalValue = undefined;
+      this._prefix.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostname.internalValue = value.hostname;
+      this._prefix.internalValue = value.prefix;
+    }
+  }
+
+  // hostname - computed: false, optional: true, required: false
+  private _hostname = new AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference(this, "hostname");
+  public get hostname() {
+    return this._hostname;
+  }
+  public putHostname(value: AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname) {
+    this._hostname.internalValue = value;
+  }
+  public resetHostname() {
+    this._hostname.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname.internalValue;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix = new AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference(this, "prefix");
+  public get prefix() {
+    return this._prefix;
+  }
+  public putPrefix(value: AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix) {
+    this._prefix.internalValue = value;
+  }
+  public resetPrefix() {
+    this._prefix.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix.internalValue;
   }
 }
 export interface AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService {
@@ -857,6 +1510,12 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
 }
 export interface AppmeshGatewayRouteSpecHttpRouteAction {
   /**
+  * rewrite block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#rewrite AppmeshGatewayRoute#rewrite}
+  */
+  readonly rewrite?: AppmeshGatewayRouteSpecHttpRouteActionRewrite;
+  /**
   * target block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#target AppmeshGatewayRoute#target}
@@ -870,6 +1529,7 @@ export function appmeshGatewayRouteSpecHttpRouteActionToTerraform(struct?: Appme
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    rewrite: appmeshGatewayRouteSpecHttpRouteActionRewriteToTerraform(struct!.rewrite),
     target: appmeshGatewayRouteSpecHttpRouteActionTargetToTerraform(struct!.target),
   }
 }
@@ -888,6 +1548,10 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._rewrite?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rewrite = this._rewrite?.internalValue;
+    }
     if (this._target?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
@@ -898,12 +1562,30 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._rewrite.internalValue = undefined;
       this._target.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._rewrite.internalValue = value.rewrite;
       this._target.internalValue = value.target;
     }
+  }
+
+  // rewrite - computed: false, optional: true, required: false
+  private _rewrite = new AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference(this, "rewrite");
+  public get rewrite() {
+    return this._rewrite;
+  }
+  public putRewrite(value: AppmeshGatewayRouteSpecHttpRouteActionRewrite) {
+    this._rewrite.internalValue = value;
+  }
+  public resetRewrite() {
+    this._rewrite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rewriteInput() {
+    return this._rewrite.internalValue;
   }
 
   // target - computed: false, optional: false, required: true
@@ -919,11 +1601,109 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
     return this._target.internalValue;
   }
 }
+export interface AppmeshGatewayRouteSpecHttpRouteMatchHostname {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#exact AppmeshGatewayRoute#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#suffix AppmeshGatewayRoute#suffix}
+  */
+  readonly suffix?: string;
+}
+
+export function appmeshGatewayRouteSpecHttpRouteMatchHostnameToTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    suffix: cdktf.stringToTerraform(struct!.suffix),
+  }
+}
+
+export class AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshGatewayRouteSpecHttpRouteMatchHostname | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._suffix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.suffix = this._suffix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteMatchHostname | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._suffix = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._suffix = value.suffix;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // suffix - computed: false, optional: true, required: false
+  private _suffix?: string; 
+  public get suffix() {
+    return this.getStringAttribute('suffix');
+  }
+  public set suffix(value: string) {
+    this._suffix = value;
+  }
+  public resetSuffix() {
+    this._suffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suffixInput() {
+    return this._suffix;
+  }
+}
 export interface AppmeshGatewayRouteSpecHttpRouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
-  readonly prefix: string;
+  readonly prefix?: string;
+  /**
+  * hostname block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
+  */
+  readonly hostname?: AppmeshGatewayRouteSpecHttpRouteMatchHostname;
 }
 
 export function appmeshGatewayRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchOutputReference | AppmeshGatewayRouteSpecHttpRouteMatch): any {
@@ -933,6 +1713,7 @@ export function appmeshGatewayRouteSpecHttpRouteMatchToTerraform(struct?: Appmes
   }
   return {
     prefix: cdktf.stringToTerraform(struct!.prefix),
+    hostname: appmeshGatewayRouteSpecHttpRouteMatchHostnameToTerraform(struct!.hostname),
   }
 }
 
@@ -954,6 +1735,10 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
+    if (this._hostname?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -961,14 +1746,16 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
     if (value === undefined) {
       this.isEmptyObject = false;
       this._prefix = undefined;
+      this._hostname.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
+      this._hostname.internalValue = value.hostname;
     }
   }
 
-  // prefix - computed: false, optional: false, required: true
+  // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -976,9 +1763,28 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   public set prefix(value: string) {
     this._prefix = value;
   }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
     return this._prefix;
+  }
+
+  // hostname - computed: false, optional: true, required: false
+  private _hostname = new AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference(this, "hostname");
+  public get hostname() {
+    return this._hostname;
+  }
+  public putHostname(value: AppmeshGatewayRouteSpecHttpRouteMatchHostname) {
+    this._hostname.internalValue = value;
+  }
+  public resetHostname() {
+    this._hostname.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname.internalValue;
   }
 }
 export interface AppmeshGatewayRouteSpecHttpRoute {
@@ -1223,7 +2029,7 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_gateway_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

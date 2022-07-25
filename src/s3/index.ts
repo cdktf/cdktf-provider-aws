@@ -33,6 +33,7 @@ export * from './s3control-multi-region-access-point-policy';
 export * from './s3control-object-lambda-access-point';
 export * from './s3control-object-lambda-access-point-policy';
 export * from './s3outposts-endpoint';
+export * from './data-aws-s3-account-public-access-block';
 export * from './data-aws-s3-bucket';
 export * from './data-aws-s3-bucket-object';
 export * from './data-aws-s3-bucket-objects';
