@@ -212,7 +212,10 @@ export class DefaultSubnet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assignIpv6AddressOnCreation = config.assignIpv6AddressOnCreation;
     this._availabilityZone = config.availabilityZone;

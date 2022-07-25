@@ -184,7 +184,10 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._identifier = config.identifier;
@@ -283,7 +286,7 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
       identifier: cdktf.stringToTerraform(this._identifier),
       name: cdktf.stringToTerraform(this._name),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      scope: cdktf.listMapper(cognitoResourceServerScopeToTerraform)(this._scope.internalValue),
+      scope: cdktf.listMapper(cognitoResourceServerScopeToTerraform, true)(this._scope.internalValue),
     };
   }
 }

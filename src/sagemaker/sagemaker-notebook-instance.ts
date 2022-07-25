@@ -183,7 +183,10 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acceleratorTypes = config.acceleratorTypes;
     this._additionalCodeRepositories = config.additionalCodeRepositories;
@@ -509,8 +512,8 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(this._acceleratorTypes),
-      additional_code_repositories: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalCodeRepositories),
+      accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._acceleratorTypes),
+      additional_code_repositories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalCodeRepositories),
       default_code_repository: cdktf.stringToTerraform(this._defaultCodeRepository),
       direct_internet_access: cdktf.stringToTerraform(this._directInternetAccess),
       id: cdktf.stringToTerraform(this._id),
@@ -521,7 +524,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       platform_identifier: cdktf.stringToTerraform(this._platformIdentifier),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       root_access: cdktf.stringToTerraform(this._rootAccess),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

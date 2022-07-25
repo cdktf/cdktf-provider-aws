@@ -230,7 +230,7 @@ export function appautoscalingPolicyStepScalingPolicyConfigurationToTerraform(st
     cooldown: cdktf.numberToTerraform(struct!.cooldown),
     metric_aggregation_type: cdktf.stringToTerraform(struct!.metricAggregationType),
     min_adjustment_magnitude: cdktf.numberToTerraform(struct!.minAdjustmentMagnitude),
-    step_adjustment: cdktf.listMapper(appautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentToTerraform)(struct!.stepAdjustment),
+    step_adjustment: cdktf.listMapper(appautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentToTerraform, true)(struct!.stepAdjustment),
   }
 }
 
@@ -523,7 +523,7 @@ export function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCust
     namespace: cdktf.stringToTerraform(struct!.namespace),
     statistic: cdktf.stringToTerraform(struct!.statistic),
     unit: cdktf.stringToTerraform(struct!.unit),
-    dimensions: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsToTerraform)(struct!.dimensions),
+    dimensions: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsToTerraform, true)(struct!.dimensions),
   }
 }
 
@@ -977,7 +977,10 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

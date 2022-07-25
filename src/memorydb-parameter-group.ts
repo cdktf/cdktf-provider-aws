@@ -196,7 +196,10 @@ export class MemorydbParameterGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._family = config.family;
@@ -355,7 +358,7 @@ export class MemorydbParameterGroup extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      parameter: cdktf.listMapper(memorydbParameterGroupParameterToTerraform)(this._parameter.internalValue),
+      parameter: cdktf.listMapper(memorydbParameterGroupParameterToTerraform, true)(this._parameter.internalValue),
     };
   }
 }

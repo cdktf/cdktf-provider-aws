@@ -188,7 +188,7 @@ export function sagemakerProjectServiceCatalogProvisioningDetailsToTerraform(str
     path_id: cdktf.stringToTerraform(struct!.pathId),
     product_id: cdktf.stringToTerraform(struct!.productId),
     provisioning_artifact_id: cdktf.stringToTerraform(struct!.provisioningArtifactId),
-    provisioning_parameter: cdktf.listMapper(sagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterToTerraform)(struct!.provisioningParameter),
+    provisioning_parameter: cdktf.listMapper(sagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterToTerraform, true)(struct!.provisioningParameter),
   }
 }
 
@@ -336,7 +336,10 @@ export class SagemakerProject extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._projectDescription = config.projectDescription;

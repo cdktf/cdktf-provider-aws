@@ -176,7 +176,10 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessGroupId = config.accessGroupId;
     this._authorizeAllGroups = config.authorizeAllGroups;

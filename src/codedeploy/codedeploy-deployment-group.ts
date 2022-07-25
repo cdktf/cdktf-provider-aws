@@ -124,7 +124,7 @@ export function codedeployDeploymentGroupAlarmConfigurationToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alarms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.alarms),
+    alarms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alarms),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     ignore_poll_alarm_failure: cdktf.booleanToTerraform(struct!.ignorePollAlarmFailure),
   }
@@ -240,7 +240,7 @@ export function codedeployDeploymentGroupAutoRollbackConfigurationToTerraform(st
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
   }
 }
 
@@ -1097,7 +1097,7 @@ export function codedeployDeploymentGroupEc2TagSetToTerraform(struct?: Codedeplo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetEc2TagFilterToTerraform)(struct!.ec2TagFilter),
+    ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetEc2TagFilterToTerraform, true)(struct!.ec2TagFilter),
   }
 }
 
@@ -1474,7 +1474,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProd
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    listener_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.listenerArns),
+    listener_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.listenerArns),
   }
 }
 
@@ -1630,7 +1630,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTest
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    listener_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.listenerArns),
+    listener_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.listenerArns),
   }
 }
 
@@ -1707,7 +1707,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTe
   }
   return {
     prod_traffic_route: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteToTerraform(struct!.prodTrafficRoute),
-    target_group: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToTerraform)(struct!.targetGroup),
+    target_group: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToTerraform, true)(struct!.targetGroup),
     test_traffic_route: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToTerraform(struct!.testTrafficRoute),
   }
 }
@@ -1825,8 +1825,8 @@ export function codedeployDeploymentGroupLoadBalancerInfoToTerraform(struct?: Co
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    elb_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform)(struct!.elbInfo),
-    target_group_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraform)(struct!.targetGroupInfo),
+    elb_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform, true)(struct!.elbInfo),
+    target_group_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraform, true)(struct!.targetGroupInfo),
     target_group_pair_info: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTerraform(struct!.targetGroupPairInfo),
   }
 }
@@ -2095,7 +2095,7 @@ export function codedeployDeploymentGroupTriggerConfigurationToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    trigger_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.triggerEvents),
+    trigger_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.triggerEvents),
     trigger_name: cdktf.stringToTerraform(struct!.triggerName),
     trigger_target_arn: cdktf.stringToTerraform(struct!.triggerTargetArn),
   }
@@ -2249,7 +2249,10 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appName = config.appName;
     this._autoscalingGroups = config.autoscalingGroups;
@@ -2576,7 +2579,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       app_name: cdktf.stringToTerraform(this._appName),
-      autoscaling_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._autoscalingGroups),
+      autoscaling_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._autoscalingGroups),
       deployment_config_name: cdktf.stringToTerraform(this._deploymentConfigName),
       deployment_group_name: cdktf.stringToTerraform(this._deploymentGroupName),
       id: cdktf.stringToTerraform(this._id),
@@ -2587,12 +2590,12 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
       auto_rollback_configuration: codedeployDeploymentGroupAutoRollbackConfigurationToTerraform(this._autoRollbackConfiguration.internalValue),
       blue_green_deployment_config: codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform(this._blueGreenDeploymentConfig.internalValue),
       deployment_style: codedeployDeploymentGroupDeploymentStyleToTerraform(this._deploymentStyle.internalValue),
-      ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagFilterToTerraform)(this._ec2TagFilter.internalValue),
-      ec2_tag_set: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetToTerraform)(this._ec2TagSet.internalValue),
+      ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagFilterToTerraform, true)(this._ec2TagFilter.internalValue),
+      ec2_tag_set: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetToTerraform, true)(this._ec2TagSet.internalValue),
       ecs_service: codedeployDeploymentGroupEcsServiceToTerraform(this._ecsService.internalValue),
       load_balancer_info: codedeployDeploymentGroupLoadBalancerInfoToTerraform(this._loadBalancerInfo.internalValue),
-      on_premises_instance_tag_filter: cdktf.listMapper(codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform)(this._onPremisesInstanceTagFilter.internalValue),
-      trigger_configuration: cdktf.listMapper(codedeployDeploymentGroupTriggerConfigurationToTerraform)(this._triggerConfiguration.internalValue),
+      on_premises_instance_tag_filter: cdktf.listMapper(codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform, true)(this._onPremisesInstanceTagFilter.internalValue),
+      trigger_configuration: cdktf.listMapper(codedeployDeploymentGroupTriggerConfigurationToTerraform, true)(this._triggerConfiguration.internalValue),
     };
   }
 }

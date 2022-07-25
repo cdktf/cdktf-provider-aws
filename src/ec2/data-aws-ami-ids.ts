@@ -55,7 +55,7 @@ export function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter | cd
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -188,7 +188,10 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._executableUsers = config.executableUsers;
     this._id = config.id;
@@ -306,12 +309,12 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      executable_users: cdktf.listMapper(cdktf.stringToTerraform)(this._executableUsers),
+      executable_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._executableUsers),
       id: cdktf.stringToTerraform(this._id),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       sort_ascending: cdktf.booleanToTerraform(this._sortAscending),
-      filter: cdktf.listMapper(dataAwsAmiIdsFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsAmiIdsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

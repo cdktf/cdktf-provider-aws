@@ -428,7 +428,10 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessTokenValidity = config.accessTokenValidity;
     this._allowedOauthFlows = config.allowedOauthFlows;
@@ -816,25 +819,25 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_token_validity: cdktf.numberToTerraform(this._accessTokenValidity),
-      allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthFlows),
+      allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthFlows),
       allowed_oauth_flows_user_pool_client: cdktf.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
-      allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthScopes),
-      callback_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._callbackUrls),
+      allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthScopes),
+      callback_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._callbackUrls),
       default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
       enable_propagate_additional_user_context_data: cdktf.booleanToTerraform(this._enablePropagateAdditionalUserContextData),
       enable_token_revocation: cdktf.booleanToTerraform(this._enableTokenRevocation),
-      explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._explicitAuthFlows),
+      explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._explicitAuthFlows),
       generate_secret: cdktf.booleanToTerraform(this._generateSecret),
       id: cdktf.stringToTerraform(this._id),
       id_token_validity: cdktf.numberToTerraform(this._idTokenValidity),
-      logout_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._logoutUrls),
+      logout_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logoutUrls),
       name: cdktf.stringToTerraform(this._name),
       prevent_user_existence_errors: cdktf.stringToTerraform(this._preventUserExistenceErrors),
-      read_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._readAttributes),
+      read_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._readAttributes),
       refresh_token_validity: cdktf.numberToTerraform(this._refreshTokenValidity),
-      supported_identity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedIdentityProviders),
+      supported_identity_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedIdentityProviders),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      write_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._writeAttributes),
+      write_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeAttributes),
       analytics_configuration: cognitoUserPoolClientAnalyticsConfigurationToTerraform(this._analyticsConfiguration.internalValue),
       token_validity_units: cognitoUserPoolClientTokenValidityUnitsToTerraform(this._tokenValidityUnits.internalValue),
     };

@@ -60,7 +60,10 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backupVaultEvents = config.backupVaultEvents;
     this._backupVaultName = config.backupVaultName;
@@ -138,7 +141,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_vault_events: cdktf.listMapper(cdktf.stringToTerraform)(this._backupVaultEvents),
+      backup_vault_events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._backupVaultEvents),
       backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
       id: cdktf.stringToTerraform(this._id),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),

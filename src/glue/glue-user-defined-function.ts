@@ -196,7 +196,10 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._className = config.className;
@@ -348,7 +351,7 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       owner_name: cdktf.stringToTerraform(this._ownerName),
       owner_type: cdktf.stringToTerraform(this._ownerType),
-      resource_uris: cdktf.listMapper(glueUserDefinedFunctionResourceUrisToTerraform)(this._resourceUris.internalValue),
+      resource_uris: cdktf.listMapper(glueUserDefinedFunctionResourceUrisToTerraform, true)(this._resourceUris.internalValue),
     };
   }
 }

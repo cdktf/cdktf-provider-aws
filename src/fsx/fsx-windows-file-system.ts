@@ -257,7 +257,7 @@ export function fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dnsIps),
+    dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsIps),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     file_system_administrators_group: cdktf.stringToTerraform(struct!.fileSystemAdministratorsGroup),
     organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
@@ -574,7 +574,10 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activeDirectoryId = config.activeDirectoryId;
     this._aliases = config.aliases;
@@ -992,7 +995,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active_directory_id: cdktf.stringToTerraform(this._activeDirectoryId),
-      aliases: cdktf.listMapper(cdktf.stringToTerraform)(this._aliases),
+      aliases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._aliases),
       automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
       backup_id: cdktf.stringToTerraform(this._backupId),
       copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
@@ -1001,11 +1004,11 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       preferred_subnet_id: cdktf.stringToTerraform(this._preferredSubnetId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
       storage_type: cdktf.stringToTerraform(this._storageType),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_capacity: cdktf.numberToTerraform(this._throughputCapacity),

@@ -60,9 +60,9 @@ export function configConfigurationAggregatorAccountAggregationSourceToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.accountIds),
+    account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accountIds),
     all_regions: cdktf.booleanToTerraform(struct!.allRegions),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
+    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
   }
 }
 
@@ -177,7 +177,7 @@ export function configConfigurationAggregatorOrganizationAggregationSourceToTerr
   }
   return {
     all_regions: cdktf.booleanToTerraform(struct!.allRegions),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
+    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
 }
@@ -304,7 +304,10 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

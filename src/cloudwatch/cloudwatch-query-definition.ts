@@ -60,7 +60,10 @@ export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._logGroupNames = config.logGroupNames;
@@ -142,7 +145,7 @@ export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      log_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._logGroupNames),
+      log_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logGroupNames),
       name: cdktf.stringToTerraform(this._name),
       query_string: cdktf.stringToTerraform(this._queryString),
     };

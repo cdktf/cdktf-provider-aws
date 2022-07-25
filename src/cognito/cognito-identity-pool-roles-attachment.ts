@@ -225,7 +225,7 @@ export function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?
     ambiguous_role_resolution: cdktf.stringToTerraform(struct!.ambiguousRoleResolution),
     identity_provider: cdktf.stringToTerraform(struct!.identityProvider),
     type: cdktf.stringToTerraform(struct!.type),
-    mapping_rule: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform)(struct!.mappingRule),
+    mapping_rule: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform, true)(struct!.mappingRule),
   }
 }
 
@@ -402,7 +402,10 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._identityPoolId = config.identityPoolId;
@@ -481,7 +484,7 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
       id: cdktf.stringToTerraform(this._id),
       identity_pool_id: cdktf.stringToTerraform(this._identityPoolId),
       roles: cdktf.hashMapper(cdktf.stringToTerraform)(this._roles),
-      role_mapping: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform)(this._roleMapping.internalValue),
+      role_mapping: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform, true)(this._roleMapping.internalValue),
     };
   }
 }

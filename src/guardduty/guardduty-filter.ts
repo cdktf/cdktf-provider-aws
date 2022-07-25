@@ -86,13 +86,13 @@ export function guarddutyFilterFindingCriteriaCriterionToTerraform(struct?: Guar
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.equalTo),
+    equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.equalTo),
     field: cdktf.stringToTerraform(struct!.field),
     greater_than: cdktf.stringToTerraform(struct!.greaterThan),
     greater_than_or_equal: cdktf.stringToTerraform(struct!.greaterThanOrEqual),
     less_than: cdktf.stringToTerraform(struct!.lessThan),
     less_than_or_equal: cdktf.stringToTerraform(struct!.lessThanOrEqual),
-    not_equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEquals),
+    not_equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEquals),
   }
 }
 
@@ -320,7 +320,7 @@ export function guarddutyFilterFindingCriteriaToTerraform(struct?: GuarddutyFilt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    criterion: cdktf.listMapper(guarddutyFilterFindingCriteriaCriterionToTerraform)(struct!.criterion),
+    criterion: cdktf.listMapper(guarddutyFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
 }
 
@@ -402,7 +402,10 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._description = config.description;

@@ -200,7 +200,7 @@ export function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDisc
   return {
     namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
     routing_policy: cdktf.stringToTerraform(struct!.routingPolicy),
-    dns_records: cdktf.listMapper(serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform)(struct!.dnsRecords),
+    dns_records: cdktf.listMapper(serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform, true)(struct!.dnsRecords),
   }
 }
 
@@ -507,7 +507,10 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._forceDestroy = config.forceDestroy;

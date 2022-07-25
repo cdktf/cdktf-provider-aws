@@ -194,7 +194,10 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appId = config.appId;
     this._domainName = config.domainName;
@@ -298,7 +301,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       id: cdktf.stringToTerraform(this._id),
       wait_for_verification: cdktf.booleanToTerraform(this._waitForVerification),
-      sub_domain: cdktf.listMapper(amplifyDomainAssociationSubDomainToTerraform)(this._subDomain.internalValue),
+      sub_domain: cdktf.listMapper(amplifyDomainAssociationSubDomainToTerraform, true)(this._subDomain.internalValue),
     };
   }
 }

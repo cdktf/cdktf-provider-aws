@@ -258,7 +258,10 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoscalingPolicy = config.autoscalingPolicy;
     this._bidPrice = config.bidPrice;
@@ -455,7 +458,7 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
       instance_count: cdktf.numberToTerraform(this._instanceCount),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       name: cdktf.stringToTerraform(this._name),
-      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform)(this._ebsConfig.internalValue),
+      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform, true)(this._ebsConfig.internalValue),
     };
   }
 }

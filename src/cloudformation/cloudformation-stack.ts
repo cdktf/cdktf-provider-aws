@@ -239,7 +239,10 @@ export class CloudformationStack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._capabilities = config.capabilities;
     this._disableRollback = config.disableRollback;
@@ -528,12 +531,12 @@ export class CloudformationStack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
       disable_rollback: cdktf.booleanToTerraform(this._disableRollback),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      notification_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationArns),
+      notification_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationArns),
       on_failure: cdktf.stringToTerraform(this._onFailure),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       policy_body: cdktf.stringToTerraform(this._policyBody),

@@ -159,7 +159,7 @@ export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAtta
   return {
     key: cdktf.stringToTerraform(struct!.key),
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -314,7 +314,10 @@ export class SsmDocument extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._content = config.content;
     this._documentFormat = config.documentFormat;
@@ -582,7 +585,7 @@ export class SsmDocument extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       version_name: cdktf.stringToTerraform(this._versionName),
-      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource.internalValue),
+      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform, true)(this._attachmentsSource.internalValue),
     };
   }
 }

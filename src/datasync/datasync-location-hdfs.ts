@@ -318,7 +318,10 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._agentArns = config.agentArns;
     this._authenticationType = config.authenticationType;
@@ -591,7 +594,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
+      agent_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._agentArns),
       authentication_type: cdktf.stringToTerraform(this._authenticationType),
       block_size: cdktf.numberToTerraform(this._blockSize),
       id: cdktf.stringToTerraform(this._id),
@@ -604,7 +607,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      name_node: cdktf.listMapper(datasyncLocationHdfsNameNodeToTerraform)(this._nameNode.internalValue),
+      name_node: cdktf.listMapper(datasyncLocationHdfsNameNodeToTerraform, true)(this._nameNode.internalValue),
       qop_configuration: datasyncLocationHdfsQopConfigurationToTerraform(this._qopConfiguration.internalValue),
     };
   }

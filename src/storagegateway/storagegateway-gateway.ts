@@ -337,7 +337,7 @@ export function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_controllers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.domainControllers),
+    domain_controllers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domainControllers),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
     password: cdktf.stringToTerraform(struct!.password),
@@ -608,7 +608,10 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activationKey = config.activationKey;
     this._averageDownloadRateLimitInBitsPerSec = config.averageDownloadRateLimitInBitsPerSec;

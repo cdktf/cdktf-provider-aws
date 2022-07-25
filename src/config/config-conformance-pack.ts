@@ -192,7 +192,10 @@ export class ConfigConformancePack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deliveryS3Bucket = config.deliveryS3Bucket;
     this._deliveryS3KeyPrefix = config.deliveryS3KeyPrefix;
@@ -333,7 +336,7 @@ export class ConfigConformancePack extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_s3_uri: cdktf.stringToTerraform(this._templateS3Uri),
-      input_parameter: cdktf.listMapper(configConformancePackInputParameterToTerraform)(this._inputParameter.internalValue),
+      input_parameter: cdktf.listMapper(configConformancePackInputParameterToTerraform, true)(this._inputParameter.internalValue),
     };
   }
 }

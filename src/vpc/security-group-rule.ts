@@ -94,7 +94,10 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cidrBlocks = config.cidrBlocks;
     this._description = config.description;
@@ -297,12 +300,12 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._cidrBlocks),
+      cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cidrBlocks),
       description: cdktf.stringToTerraform(this._description),
       from_port: cdktf.numberToTerraform(this._fromPort),
       id: cdktf.stringToTerraform(this._id),
-      ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6CidrBlocks),
-      prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._prefixListIds),
+      ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6CidrBlocks),
+      prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._prefixListIds),
       protocol: cdktf.stringToTerraform(this._protocol),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       self: cdktf.booleanToTerraform(this._self),

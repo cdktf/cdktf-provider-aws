@@ -184,7 +184,10 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bgpAsn = config.bgpAsn;
     this._id = config.id;
@@ -349,7 +352,7 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
     return {
       bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
       id: cdktf.stringToTerraform(this._id),
-      inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._insideCidrBlocks),
+      inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._insideCidrBlocks),
       peer_address: cdktf.stringToTerraform(this._peerAddress),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

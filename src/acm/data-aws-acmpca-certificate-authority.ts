@@ -225,8 +225,8 @@ export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    crl_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform)(struct!.crlConfiguration),
-    ocsp_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform)(struct!.ocspConfiguration),
+    crl_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform, true)(struct!.crlConfiguration),
+    ocsp_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform, true)(struct!.ocspConfiguration),
   }
 }
 
@@ -365,7 +365,10 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._id = config.id;
@@ -487,7 +490,7 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      revocation_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform)(this._revocationConfiguration.internalValue),
+      revocation_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform, true)(this._revocationConfiguration.internalValue),
     };
   }
 }

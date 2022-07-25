@@ -248,7 +248,7 @@ export function lexIntentConclusionStatementToTerraform(struct?: LexIntentConclu
   }
   return {
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentConclusionStatementMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentConclusionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -489,7 +489,7 @@ export function lexIntentConfirmationPromptToTerraform(struct?: LexIntentConfirm
   return {
     max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentConfirmationPromptMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentConfirmationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -835,7 +835,7 @@ export function lexIntentFollowUpPromptPromptToTerraform(struct?: LexIntentFollo
   return {
     max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentFollowUpPromptPromptMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentFollowUpPromptPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -1090,7 +1090,7 @@ export function lexIntentFollowUpPromptRejectionStatementToTerraform(struct?: Le
   }
   return {
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentFollowUpPromptRejectionStatementMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentFollowUpPromptRejectionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -1593,7 +1593,7 @@ export function lexIntentRejectionStatementToTerraform(struct?: LexIntentRejecti
   }
   return {
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentRejectionStatementMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentRejectionStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -1834,7 +1834,7 @@ export function lexIntentSlotValueElicitationPromptToTerraform(struct?: LexInten
   return {
     max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexIntentSlotValueElicitationPromptMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexIntentSlotValueElicitationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -1975,7 +1975,7 @@ export function lexIntentSlotToTerraform(struct?: LexIntentSlot | cdktf.IResolva
     name: cdktf.stringToTerraform(struct!.name),
     priority: cdktf.numberToTerraform(struct!.priority),
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    sample_utterances: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sampleUtterances),
+    sample_utterances: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sampleUtterances),
     slot_constraint: cdktf.stringToTerraform(struct!.slotConstraint),
     slot_type: cdktf.stringToTerraform(struct!.slotType),
     slot_type_version: cdktf.stringToTerraform(struct!.slotTypeVersion),
@@ -2392,7 +2392,10 @@ export class LexIntent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._createVersion = config.createVersion;
     this._description = config.description;
@@ -2668,14 +2671,14 @@ export class LexIntent extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent_intent_signature: cdktf.stringToTerraform(this._parentIntentSignature),
-      sample_utterances: cdktf.listMapper(cdktf.stringToTerraform)(this._sampleUtterances),
+      sample_utterances: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sampleUtterances),
       conclusion_statement: lexIntentConclusionStatementToTerraform(this._conclusionStatement.internalValue),
       confirmation_prompt: lexIntentConfirmationPromptToTerraform(this._confirmationPrompt.internalValue),
       dialog_code_hook: lexIntentDialogCodeHookToTerraform(this._dialogCodeHook.internalValue),
       follow_up_prompt: lexIntentFollowUpPromptToTerraform(this._followUpPrompt.internalValue),
       fulfillment_activity: lexIntentFulfillmentActivityToTerraform(this._fulfillmentActivity.internalValue),
       rejection_statement: lexIntentRejectionStatementToTerraform(this._rejectionStatement.internalValue),
-      slot: cdktf.listMapper(lexIntentSlotToTerraform)(this._slot.internalValue),
+      slot: cdktf.listMapper(lexIntentSlotToTerraform, true)(this._slot.internalValue),
       timeouts: lexIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -348,7 +348,7 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -471,7 +471,7 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
@@ -567,8 +567,8 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig
   }
   return {
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -1181,7 +1181,7 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timestamp_formats: cdktf.listMapper(cdktf.stringToTerraform)(struct!.timestampFormats),
+    timestamp_formats: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.timestampFormats),
   }
 }
 
@@ -1562,7 +1562,7 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
   return {
     block_size_bytes: cdktf.numberToTerraform(struct!.blockSizeBytes),
-    bloom_filter_columns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.bloomFilterColumns),
+    bloom_filter_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bloomFilterColumns),
     bloom_filter_false_positive_probability: cdktf.numberToTerraform(struct!.bloomFilterFalsePositiveProbability),
     compression: cdktf.stringToTerraform(struct!.compression),
     dictionary_key_threshold: cdktf.numberToTerraform(struct!.dictionaryKeyThreshold),
@@ -2744,7 +2744,7 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -2867,7 +2867,7 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
@@ -4014,7 +4014,7 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -4137,7 +4137,7 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
@@ -4349,7 +4349,7 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
   }
   return {
     content_encoding: cdktf.stringToTerraform(struct!.contentEncoding),
-    common_attributes: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform)(struct!.commonAttributes),
+    common_attributes: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform, true)(struct!.commonAttributes),
   }
 }
 
@@ -5104,7 +5104,7 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -5227,7 +5227,7 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
@@ -6822,7 +6822,7 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -6945,7 +6945,7 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToTerraform, true)(struct!.processors),
   }
 }
 
@@ -7304,7 +7304,10 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._destination = config.destination;

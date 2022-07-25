@@ -215,7 +215,7 @@ export function imagebuilderContainerRecipeComponentToTerraform(struct?: Imagebu
   }
   return {
     component_arn: cdktf.stringToTerraform(struct!.componentArn),
-    parameter: cdktf.listMapper(imagebuilderContainerRecipeComponentParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(imagebuilderContainerRecipeComponentParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -772,7 +772,7 @@ export function imagebuilderContainerRecipeInstanceConfigurationToTerraform(stru
   }
   return {
     image: cdktf.stringToTerraform(struct!.image),
-    block_device_mapping: cdktf.listMapper(imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingToTerraform)(struct!.blockDeviceMapping),
+    block_device_mapping: cdktf.listMapper(imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingToTerraform, true)(struct!.blockDeviceMapping),
   }
 }
 
@@ -965,7 +965,10 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._containerType = config.containerType;
     this._description = config.description;
@@ -1253,7 +1256,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
-      component: cdktf.listMapper(imagebuilderContainerRecipeComponentToTerraform)(this._component.internalValue),
+      component: cdktf.listMapper(imagebuilderContainerRecipeComponentToTerraform, true)(this._component.internalValue),
       instance_configuration: imagebuilderContainerRecipeInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
       target_repository: imagebuilderContainerRecipeTargetRepositoryToTerraform(this._targetRepository.internalValue),
     };

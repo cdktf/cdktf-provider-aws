@@ -68,7 +68,10 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cidr = config.cidr;
     this._description = config.description;
@@ -203,7 +206,7 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
     return {
       cidr: cdktf.stringToTerraform(this._cidr),
       description: cdktf.stringToTerraform(this._description),
-      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedCidrs),
+      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disallowedCidrs),
       id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),

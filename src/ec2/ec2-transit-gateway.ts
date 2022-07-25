@@ -227,7 +227,10 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._amazonSideAsn = config.amazonSideAsn;
     this._autoAcceptSharedAttachments = config.autoAcceptSharedAttachments;
@@ -492,7 +495,7 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
       multicast_support: cdktf.stringToTerraform(this._multicastSupport),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      transit_gateway_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._transitGatewayCidrBlocks),
+      transit_gateway_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._transitGatewayCidrBlocks),
       vpn_ecmp_support: cdktf.stringToTerraform(this._vpnEcmpSupport),
       timeouts: ec2TransitGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };

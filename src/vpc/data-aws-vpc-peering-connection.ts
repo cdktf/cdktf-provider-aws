@@ -207,7 +207,7 @@ export function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpc
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -340,7 +340,10 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cidrBlock = config.cidrBlock;
     this._id = config.id;
@@ -593,7 +596,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      filter: cdktf.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

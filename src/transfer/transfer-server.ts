@@ -124,9 +124,9 @@ export function transferServerEndpointDetailsToTerraform(struct?: TransferServer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_allocation_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.addressAllocationIds),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    address_allocation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.addressAllocationIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
@@ -454,7 +454,10 @@ export class TransferServer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificate = config.certificate;
     this._directoryId = config.directoryId;
@@ -836,7 +839,7 @@ export class TransferServer extends cdktf.TerraformResource {
       logging_role: cdktf.stringToTerraform(this._loggingRole),
       post_authentication_login_banner: cdktf.stringToTerraform(this._postAuthenticationLoginBanner),
       pre_authentication_login_banner: cdktf.stringToTerraform(this._preAuthenticationLoginBanner),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform)(this._protocols),
+      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
       security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

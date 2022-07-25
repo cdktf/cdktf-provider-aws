@@ -207,7 +207,10 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._languageCode = config.languageCode;
@@ -363,7 +366,7 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       language_code: cdktf.stringToTerraform(this._languageCode),
-      phrases: cdktf.listMapper(cdktf.stringToTerraform)(this._phrases),
+      phrases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._phrases),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vocabulary_file_uri: cdktf.stringToTerraform(this._vocabularyFileUri),

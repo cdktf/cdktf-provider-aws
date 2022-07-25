@@ -172,7 +172,10 @@ export class NetworkmanagerTransitGatewayConnectPeerAssociation extends cdktf.Te
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deviceId = config.deviceId;
     this._globalNetworkId = config.globalNetworkId;

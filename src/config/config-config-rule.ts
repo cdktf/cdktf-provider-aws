@@ -77,7 +77,7 @@ export function configConfigRuleScopeToTerraform(struct?: ConfigConfigRuleScopeO
   }
   return {
     compliance_resource_id: cdktf.stringToTerraform(struct!.complianceResourceId),
-    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.complianceResourceTypes),
+    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.complianceResourceTypes),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
@@ -493,7 +493,7 @@ export function configConfigRuleSourceToTerraform(struct?: ConfigConfigRuleSourc
     owner: cdktf.stringToTerraform(struct!.owner),
     source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
     custom_policy_details: configConfigRuleSourceCustomPolicyDetailsToTerraform(struct!.customPolicyDetails),
-    source_detail: cdktf.listMapper(configConfigRuleSourceSourceDetailToTerraform)(struct!.sourceDetail),
+    source_detail: cdktf.listMapper(configConfigRuleSourceSourceDetailToTerraform, true)(struct!.sourceDetail),
   }
 }
 
@@ -641,7 +641,10 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

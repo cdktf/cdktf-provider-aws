@@ -55,7 +55,7 @@ export function dataAwsKeyPairFilterToTerraform(struct?: DataAwsKeyPairFilter | 
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -188,7 +188,10 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._includePublicKey = config.includePublicKey;
@@ -334,7 +337,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
       key_name: cdktf.stringToTerraform(this._keyName),
       key_pair_id: cdktf.stringToTerraform(this._keyPairId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsKeyPairFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsKeyPairFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

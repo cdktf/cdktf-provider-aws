@@ -358,7 +358,10 @@ export class ConnectUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._directoryUserId = config.directoryUserId;
     this._hierarchyGroupId = config.hierarchyGroupId;
@@ -578,7 +581,7 @@ export class ConnectUser extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
       routing_profile_id: cdktf.stringToTerraform(this._routingProfileId),
-      security_profile_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityProfileIds),
+      security_profile_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityProfileIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       identity_info: connectUserIdentityInfoToTerraform(this._identityInfo.internalValue),

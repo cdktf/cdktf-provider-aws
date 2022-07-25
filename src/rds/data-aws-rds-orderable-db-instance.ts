@@ -116,7 +116,10 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZoneGroup = config.availabilityZoneGroup;
     this._engine = config.engine;
@@ -494,8 +497,8 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
       license_model: cdktf.stringToTerraform(this._licenseModel),
-      preferred_engine_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredEngineVersions),
-      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceClasses),
+      preferred_engine_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredEngineVersions),
+      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceClasses),
       storage_type: cdktf.stringToTerraform(this._storageType),
       supports_enhanced_monitoring: cdktf.booleanToTerraform(this._supportsEnhancedMonitoring),
       supports_global_databases: cdktf.booleanToTerraform(this._supportsGlobalDatabases),

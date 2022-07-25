@@ -80,7 +80,10 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._domain = config.domain;
     this._fsxFilesystemArn = config.fsxFilesystemArn;
@@ -254,7 +257,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
       fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
       id: cdktf.stringToTerraform(this._id),
       password: cdktf.stringToTerraform(this._password),
-      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupArns),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

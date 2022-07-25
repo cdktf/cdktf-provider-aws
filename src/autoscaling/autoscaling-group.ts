@@ -460,7 +460,7 @@ export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: A
   }
   return {
     checkpoint_delay: cdktf.stringToTerraform(struct!.checkpointDelay),
-    checkpoint_percentages: cdktf.listMapper(cdktf.numberToTerraform)(struct!.checkpointPercentages),
+    checkpoint_percentages: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.checkpointPercentages),
     instance_warmup: cdktf.stringToTerraform(struct!.instanceWarmup),
     min_healthy_percentage: cdktf.numberToTerraform(struct!.minHealthyPercentage),
     skip_matching: cdktf.booleanToTerraform(struct!.skipMatching),
@@ -627,7 +627,7 @@ export function autoscalingGroupInstanceRefreshToTerraform(struct?: AutoscalingG
   }
   return {
     strategy: cdktf.stringToTerraform(struct!.strategy),
-    triggers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.triggers),
+    triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.triggers),
     preferences: autoscalingGroupInstanceRefreshPreferencesToTerraform(struct!.preferences),
   }
 }
@@ -2007,16 +2007,16 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstan
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorManufacturers),
-    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorNames),
-    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorTypes),
+    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
+    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
+    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
-    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cpuManufacturers),
-    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedInstanceTypes),
-    instance_generations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceGenerations),
+    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
+    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedInstanceTypes),
+    instance_generations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceGenerations),
     local_storage: cdktf.stringToTerraform(struct!.localStorage),
-    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.localStorageTypes),
+    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localStorageTypes),
     on_demand_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.onDemandMaxPricePercentageOverLowestPrice),
     require_hibernate_support: cdktf.booleanToTerraform(struct!.requireHibernateSupport),
     spot_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.spotMaxPricePercentageOverLowestPrice),
@@ -2842,7 +2842,7 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateToTerraform(st
   }
   return {
     launch_template_specification: autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationToTerraform(struct!.launchTemplateSpecification),
-    override: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform)(struct!.override),
+    override: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform, true)(struct!.override),
   }
 }
 
@@ -3496,7 +3496,10 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZones = config.availabilityZones;
     this._capacityRebalance = config.capacityRebalance;
@@ -4155,20 +4158,20 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       capacity_rebalance: cdktf.booleanToTerraform(this._capacityRebalance),
       context: cdktf.stringToTerraform(this._context),
       default_cooldown: cdktf.numberToTerraform(this._defaultCooldown),
       default_instance_warmup: cdktf.numberToTerraform(this._defaultInstanceWarmup),
       desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
-      enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledMetrics),
+      enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledMetrics),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
       force_delete_warm_pool: cdktf.booleanToTerraform(this._forceDeleteWarmPool),
       health_check_grace_period: cdktf.numberToTerraform(this._healthCheckGracePeriod),
       health_check_type: cdktf.stringToTerraform(this._healthCheckType),
       id: cdktf.stringToTerraform(this._id),
       launch_configuration: cdktf.stringToTerraform(this._launchConfiguration),
-      load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
+      load_balancers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._loadBalancers),
       max_instance_lifetime: cdktf.numberToTerraform(this._maxInstanceLifetime),
       max_size: cdktf.numberToTerraform(this._maxSize),
       metrics_granularity: cdktf.stringToTerraform(this._metricsGranularity),
@@ -4179,18 +4182,18 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       placement_group: cdktf.stringToTerraform(this._placementGroup),
       protect_from_scale_in: cdktf.booleanToTerraform(this._protectFromScaleIn),
       service_linked_role_arn: cdktf.stringToTerraform(this._serviceLinkedRoleArn),
-      suspended_processes: cdktf.listMapper(cdktf.stringToTerraform)(this._suspendedProcesses),
-      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._tags),
-      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
-      termination_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._terminationPolicies),
-      vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcZoneIdentifier),
+      suspended_processes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._suspendedProcesses),
+      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._tags),
+      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupArns),
+      termination_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._terminationPolicies),
+      vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcZoneIdentifier),
       wait_for_capacity_timeout: cdktf.stringToTerraform(this._waitForCapacityTimeout),
       wait_for_elb_capacity: cdktf.numberToTerraform(this._waitForElbCapacity),
-      initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform)(this._initialLifecycleHook.internalValue),
+      initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform, true)(this._initialLifecycleHook.internalValue),
       instance_refresh: autoscalingGroupInstanceRefreshToTerraform(this._instanceRefresh.internalValue),
       launch_template: autoscalingGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       mixed_instances_policy: autoscalingGroupMixedInstancesPolicyToTerraform(this._mixedInstancesPolicy.internalValue),
-      tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(autoscalingGroupTagToTerraform, true)(this._tag.internalValue),
       timeouts: autoscalingGroupTimeoutsToTerraform(this._timeouts.internalValue),
       warm_pool: autoscalingGroupWarmPoolToTerraform(this._warmPool.internalValue),
     };

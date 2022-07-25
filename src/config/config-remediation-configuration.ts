@@ -246,7 +246,7 @@ export function configRemediationConfigurationParameterToTerraform(struct?: Conf
     name: cdktf.stringToTerraform(struct!.name),
     resource_value: cdktf.stringToTerraform(struct!.resourceValue),
     static_value: cdktf.stringToTerraform(struct!.staticValue),
-    static_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.staticValues),
+    static_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.staticValues),
   }
 }
 
@@ -426,7 +426,10 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._automatic = config.automatic;
     this._configRuleName = config.configRuleName;
@@ -633,7 +636,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
       target_type: cdktf.stringToTerraform(this._targetType),
       target_version: cdktf.stringToTerraform(this._targetVersion),
       execution_controls: configRemediationConfigurationExecutionControlsToTerraform(this._executionControls.internalValue),
-      parameter: cdktf.listMapper(configRemediationConfigurationParameterToTerraform)(this._parameter.internalValue),
+      parameter: cdktf.listMapper(configRemediationConfigurationParameterToTerraform, true)(this._parameter.internalValue),
     };
   }
 }

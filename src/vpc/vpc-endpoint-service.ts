@@ -294,7 +294,10 @@ export class VpcEndpointService extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acceptanceRequired = config.acceptanceRequired;
     this._allowedPrincipals = config.allowedPrincipals;
@@ -517,12 +520,12 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       acceptance_required: cdktf.booleanToTerraform(this._acceptanceRequired),
-      allowed_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrincipals),
-      gateway_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._gatewayLoadBalancerArns),
+      allowed_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPrincipals),
+      gateway_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gatewayLoadBalancerArns),
       id: cdktf.stringToTerraform(this._id),
-      network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._networkLoadBalancerArns),
+      network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkLoadBalancerArns),
       private_dns_name: cdktf.stringToTerraform(this._privateDnsName),
-      supported_ip_address_types: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedIpAddressTypes),
+      supported_ip_address_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedIpAddressTypes),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: vpcEndpointServiceTimeoutsToTerraform(this._timeouts.internalValue),

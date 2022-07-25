@@ -72,7 +72,10 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._domain = config.domain;
     this._id = config.id;
@@ -224,11 +227,11 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
     return {
       domain: cdktf.stringToTerraform(this._domain),
       id: cdktf.stringToTerraform(this._id),
-      key_types: cdktf.listMapper(cdktf.stringToTerraform)(this._keyTypes),
+      key_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyTypes),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._statuses),
+      statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._statuses),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
+      types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
     };
   }
 }

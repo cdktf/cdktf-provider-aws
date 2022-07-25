@@ -443,7 +443,7 @@ export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfMan
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dnsIps),
+    dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsIps),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     file_system_administrators_group: cdktf.stringToTerraform(struct!.fileSystemAdministratorsGroup),
     organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
@@ -854,7 +854,10 @@ export class FsxOntapStorageVirtualMachine extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._fileSystemId = config.fileSystemId;
     this._id = config.id;

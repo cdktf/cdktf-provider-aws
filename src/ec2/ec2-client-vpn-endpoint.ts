@@ -626,7 +626,10 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clientCidrBlock = config.clientCidrBlock;
     this._description = config.description;
@@ -951,9 +954,9 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     return {
       client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
       description: cdktf.stringToTerraform(this._description),
-      dns_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsServers),
+      dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsServers),
       id: cdktf.stringToTerraform(this._id),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       self_service_portal: cdktf.stringToTerraform(this._selfServicePortal),
       server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
       session_timeout_hours: cdktf.numberToTerraform(this._sessionTimeoutHours),
@@ -963,7 +966,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       vpn_port: cdktf.numberToTerraform(this._vpnPort),
-      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions.internalValue),
+      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform, true)(this._authenticationOptions.internalValue),
       client_connect_options: ec2ClientVpnEndpointClientConnectOptionsToTerraform(this._clientConnectOptions.internalValue),
       client_login_banner_options: ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(this._clientLoginBannerOptions.internalValue),
       connection_log_options: ec2ClientVpnEndpointConnectionLogOptionsToTerraform(this._connectionLogOptions.internalValue),

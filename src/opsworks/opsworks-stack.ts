@@ -368,7 +368,10 @@ export class OpsworksStack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._agentVersion = config.agentVersion;
     this._berkshelfVersion = config.berkshelfVersion;
@@ -811,7 +814,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       use_custom_cookbooks: cdktf.booleanToTerraform(this._useCustomCookbooks),
       use_opsworks_security_groups: cdktf.booleanToTerraform(this._useOpsworksSecurityGroups),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform)(this._customCookbooksSource.internalValue),
+      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform, true)(this._customCookbooksSource.internalValue),
     };
   }
 }

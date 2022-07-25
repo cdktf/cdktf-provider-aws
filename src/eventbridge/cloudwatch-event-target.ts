@@ -330,8 +330,8 @@ export function cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(st
   }
   return {
     assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
   }
 }
 
@@ -612,7 +612,7 @@ export function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEve
     task_count: cdktf.numberToTerraform(struct!.taskCount),
     task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
     network_configuration: cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(struct!.networkConfiguration),
-    placement_constraint: cdktf.listMapper(cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform)(struct!.placementConstraint),
+    placement_constraint: cdktf.listMapper(cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform, true)(struct!.placementConstraint),
   }
 }
 
@@ -903,7 +903,7 @@ export function cloudwatchEventTargetHttpTargetToTerraform(struct?: CloudwatchEv
   }
   return {
     header_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headerParameters),
-    path_parameter_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.pathParameterValues),
+    path_parameter_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathParameterValues),
     query_string_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.queryStringParameters),
   }
 }
@@ -1461,7 +1461,7 @@ export function cloudwatchEventTargetRunCommandTargetsToTerraform(struct?: Cloud
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1659,7 +1659,10 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._eventBusName = config.eventBusName;
@@ -1989,7 +1992,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       kinesis_target: cloudwatchEventTargetKinesisTargetToTerraform(this._kinesisTarget.internalValue),
       redshift_target: cloudwatchEventTargetRedshiftTargetToTerraform(this._redshiftTarget.internalValue),
       retry_policy: cloudwatchEventTargetRetryPolicyToTerraform(this._retryPolicy.internalValue),
-      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets.internalValue),
+      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform, true)(this._runCommandTargets.internalValue),
       sqs_target: cloudwatchEventTargetSqsTargetToTerraform(this._sqsTarget.internalValue),
     };
   }

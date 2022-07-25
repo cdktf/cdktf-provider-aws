@@ -72,7 +72,10 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._engine = config.engine;
@@ -205,7 +208,7 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_group_id: cdktf.stringToTerraform(this._userGroupId),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userIds),
+      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
     };
   }
 }

@@ -60,7 +60,10 @@ export class LakeformationLfTag extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._id = config.id;
@@ -139,7 +142,7 @@ export class LakeformationLfTag extends cdktf.TerraformResource {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
-      values: cdktf.listMapper(cdktf.stringToTerraform)(this._values),
+      values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._values),
     };
   }
 }

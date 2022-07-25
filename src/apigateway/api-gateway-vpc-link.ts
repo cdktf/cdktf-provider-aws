@@ -68,7 +68,10 @@ export class ApiGatewayVpcLink extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -188,7 +191,7 @@ export class ApiGatewayVpcLink extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetArns),
+      target_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetArns),
     };
   }
 }

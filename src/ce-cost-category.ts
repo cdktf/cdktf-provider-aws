@@ -161,8 +161,8 @@ export function ceCostCategoryRuleRuleAndCostCategoryToTerraform(struct?: CeCost
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -280,8 +280,8 @@ export function ceCostCategoryRuleRuleAndDimensionToTerraform(struct?: CeCostCat
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -399,8 +399,8 @@ export function ceCostCategoryRuleRuleAndTagsToTerraform(struct?: CeCostCategory
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -675,8 +675,8 @@ export function ceCostCategoryRuleRuleCostCategoryToTerraform(struct?: CeCostCat
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -794,8 +794,8 @@ export function ceCostCategoryRuleRuleDimensionToTerraform(struct?: CeCostCatego
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -913,8 +913,8 @@ export function ceCostCategoryRuleRuleNotCostCategoryToTerraform(struct?: CeCost
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1032,8 +1032,8 @@ export function ceCostCategoryRuleRuleNotDimensionToTerraform(struct?: CeCostCat
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1151,8 +1151,8 @@ export function ceCostCategoryRuleRuleNotTagsToTerraform(struct?: CeCostCategory
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1395,8 +1395,8 @@ export function ceCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: CeCostC
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1514,8 +1514,8 @@ export function ceCostCategoryRuleRuleOrDimensionToTerraform(struct?: CeCostCate
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1633,8 +1633,8 @@ export function ceCostCategoryRuleRuleOrTagsToTerraform(struct?: CeCostCategoryR
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1909,8 +1909,8 @@ export function ceCostCategoryRuleRuleTagsToTerraform(struct?: CeCostCategoryRul
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2051,11 +2051,11 @@ export function ceCostCategoryRuleRuleToTerraform(struct?: CeCostCategoryRuleRul
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(ceCostCategoryRuleRuleAndToTerraform)(struct!.and),
+    and: cdktf.listMapper(ceCostCategoryRuleRuleAndToTerraform, true)(struct!.and),
     cost_category: ceCostCategoryRuleRuleCostCategoryToTerraform(struct!.costCategory),
     dimension: ceCostCategoryRuleRuleDimensionToTerraform(struct!.dimension),
     not: ceCostCategoryRuleRuleNotToTerraform(struct!.not),
-    or: cdktf.listMapper(ceCostCategoryRuleRuleOrToTerraform)(struct!.or),
+    or: cdktf.listMapper(ceCostCategoryRuleRuleOrToTerraform, true)(struct!.or),
     tags: ceCostCategoryRuleRuleTagsToTerraform(struct!.tags),
   }
 }
@@ -2418,7 +2418,7 @@ export function ceCostCategorySplitChargeRuleParameterToTerraform(struct?: CeCos
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2553,8 +2553,8 @@ export function ceCostCategorySplitChargeRuleToTerraform(struct?: CeCostCategory
   return {
     method: cdktf.stringToTerraform(struct!.method),
     source: cdktf.stringToTerraform(struct!.source),
-    targets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targets),
-    parameter: cdktf.listMapper(ceCostCategorySplitChargeRuleParameterToTerraform)(struct!.parameter),
+    targets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targets),
+    parameter: cdktf.listMapper(ceCostCategorySplitChargeRuleParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -2728,7 +2728,10 @@ export class CeCostCategory extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultValue = config.defaultValue;
     this._id = config.id;
@@ -2890,8 +2893,8 @@ export class CeCostCategory extends cdktf.TerraformResource {
       rule_version: cdktf.stringToTerraform(this._ruleVersion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rule: cdktf.listMapper(ceCostCategoryRuleToTerraform)(this._rule.internalValue),
-      split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform)(this._splitChargeRule.internalValue),
+      rule: cdktf.listMapper(ceCostCategoryRuleToTerraform, true)(this._rule.internalValue),
+      split_charge_rule: cdktf.listMapper(ceCostCategorySplitChargeRuleToTerraform, true)(this._splitChargeRule.internalValue),
     };
   }
 }

@@ -195,7 +195,10 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._addressFamily = config.addressFamily;
     this._id = config.id;
@@ -340,7 +343,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      entry: cdktf.listMapper(ec2ManagedPrefixListEntryToTerraform)(this._entry.internalValue),
+      entry: cdktf.listMapper(ec2ManagedPrefixListEntryToTerraform, true)(this._entry.internalValue),
     };
   }
 }

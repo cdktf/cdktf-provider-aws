@@ -164,7 +164,10 @@ export class Kinesisanalyticsv2ApplicationSnapshot extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationName = config.applicationName;
     this._id = config.id;

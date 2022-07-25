@@ -176,7 +176,10 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._voiceConnectorId = config.voiceConnectorId;
@@ -237,7 +240,7 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
     return {
       id: cdktf.stringToTerraform(this._id),
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
-      credentials: cdktf.listMapper(chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform)(this._credentials.internalValue),
+      credentials: cdktf.listMapper(chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform, true)(this._credentials.internalValue),
     };
   }
 }

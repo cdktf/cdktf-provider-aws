@@ -201,7 +201,7 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.actions),
+    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
     content_transformation: s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationToTerraform(struct!.contentTransformation),
   }
 }
@@ -329,10 +329,10 @@ export function s3ControlObjectLambdaAccessPointConfigurationToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_features: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedFeatures),
+    allowed_features: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedFeatures),
     cloud_watch_metrics_enabled: cdktf.booleanToTerraform(struct!.cloudWatchMetricsEnabled),
     supporting_access_point: cdktf.stringToTerraform(struct!.supportingAccessPoint),
-    transformation_configuration: cdktf.listMapper(s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationToTerraform)(struct!.transformationConfiguration),
+    transformation_configuration: cdktf.listMapper(s3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationToTerraform, true)(struct!.transformationConfiguration),
   }
 }
 
@@ -477,7 +477,10 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;

@@ -299,8 +299,8 @@ export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTem
     action_id: cdktf.stringToTerraform(struct!.actionId),
     description: cdktf.stringToTerraform(struct!.description),
     name: cdktf.stringToTerraform(struct!.name),
-    start_after: cdktf.listMapper(cdktf.stringToTerraform)(struct!.startAfter),
-    parameter: cdktf.listMapper(fisExperimentTemplateActionParameterToTerraform)(struct!.parameter),
+    start_after: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startAfter),
+    parameter: cdktf.listMapper(fisExperimentTemplateActionParameterToTerraform, true)(struct!.parameter),
     target: fisExperimentTemplateActionTargetToTerraform(struct!.target),
   }
 }
@@ -628,7 +628,7 @@ export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperim
   }
   return {
     path: cdktf.stringToTerraform(struct!.path),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -884,11 +884,11 @@ export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTem
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    resource_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceArns),
+    resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceArns),
     resource_type: cdktf.stringToTerraform(struct!.resourceType),
     selection_mode: cdktf.stringToTerraform(struct!.selectionMode),
-    filter: cdktf.listMapper(fisExperimentTemplateTargetFilterToTerraform)(struct!.filter),
-    resource_tag: cdktf.listMapper(fisExperimentTemplateTargetResourceTagToTerraform)(struct!.resourceTag),
+    filter: cdktf.listMapper(fisExperimentTemplateTargetFilterToTerraform, true)(struct!.filter),
+    resource_tag: cdktf.listMapper(fisExperimentTemplateTargetResourceTagToTerraform, true)(struct!.resourceTag),
   }
 }
 
@@ -1235,7 +1235,10 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -1395,9 +1398,9 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      action: cdktf.listMapper(fisExperimentTemplateActionToTerraform)(this._action.internalValue),
-      stop_condition: cdktf.listMapper(fisExperimentTemplateStopConditionToTerraform)(this._stopCondition.internalValue),
-      target: cdktf.listMapper(fisExperimentTemplateTargetToTerraform)(this._target.internalValue),
+      action: cdktf.listMapper(fisExperimentTemplateActionToTerraform, true)(this._action.internalValue),
+      stop_condition: cdktf.listMapper(fisExperimentTemplateStopConditionToTerraform, true)(this._stopCondition.internalValue),
+      target: cdktf.listMapper(fisExperimentTemplateTargetToTerraform, true)(this._target.internalValue),
       timeouts: fisExperimentTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -85,7 +85,7 @@ export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenan
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -203,7 +203,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -323,7 +323,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
   }
   return {
     document_version: cdktf.stringToTerraform(struct!.documentVersion),
-    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -630,7 +630,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   }
   return {
     notification_arn: cdktf.stringToTerraform(struct!.notificationArn),
-    notification_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notificationEvents),
+    notification_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationEvents),
     notification_type: cdktf.stringToTerraform(struct!.notificationType),
   }
 }
@@ -745,7 +745,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -914,7 +914,7 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
     cloudwatch_config: ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct!.cloudwatchConfig),
     notification_config: ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform(struct!.notificationConfig),
-    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -1465,7 +1465,10 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cutoffBehavior = config.cutoffBehavior;
     this._description = config.description;
@@ -1712,7 +1715,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
       task_arn: cdktf.stringToTerraform(this._taskArn),
       task_type: cdktf.stringToTerraform(this._taskType),
       window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform)(this._targets.internalValue),
+      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform, true)(this._targets.internalValue),
       task_invocation_parameters: ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(this._taskInvocationParameters.internalValue),
     };
   }

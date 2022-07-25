@@ -222,7 +222,10 @@ export class IamRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assumeRolePolicy = config.assumeRolePolicy;
     this._description = config.description;
@@ -473,7 +476,7 @@ export class IamRole extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       force_detach_policies: cdktf.booleanToTerraform(this._forceDetachPolicies),
       id: cdktf.stringToTerraform(this._id),
-      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._managedPolicyArns),
+      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._managedPolicyArns),
       max_session_duration: cdktf.numberToTerraform(this._maxSessionDuration),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
@@ -481,7 +484,7 @@ export class IamRole extends cdktf.TerraformResource {
       permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      inline_policy: cdktf.listMapper(iamRoleInlinePolicyToTerraform)(this._inlinePolicy.internalValue),
+      inline_policy: cdktf.listMapper(iamRoleInlinePolicyToTerraform, true)(this._inlinePolicy.internalValue),
     };
   }
 }

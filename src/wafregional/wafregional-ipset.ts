@@ -176,7 +176,10 @@ export class WafregionalIpset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -245,7 +248,7 @@ export class WafregionalIpset extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      ip_set_descriptor: cdktf.listMapper(wafregionalIpsetIpSetDescriptorToTerraform)(this._ipSetDescriptor.internalValue),
+      ip_set_descriptor: cdktf.listMapper(wafregionalIpsetIpSetDescriptorToTerraform, true)(this._ipSetDescriptor.internalValue),
     };
   }
 }
