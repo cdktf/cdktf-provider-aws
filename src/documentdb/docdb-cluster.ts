@@ -287,7 +287,10 @@ export class DocdbCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applyImmediately = config.applyImmediately;
     this._availabilityZones = config.availabilityZones;
@@ -803,15 +806,15 @@ export class DocdbCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
-      cluster_members: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterMembers),
+      cluster_members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusterMembers),
       db_cluster_parameter_group_name: cdktf.stringToTerraform(this._dbClusterParameterGroupName),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
+      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledCloudwatchLogsExports),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
@@ -828,7 +831,7 @@ export class DocdbCluster extends cdktf.TerraformResource {
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       timeouts: docdbClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

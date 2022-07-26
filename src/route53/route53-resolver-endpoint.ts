@@ -335,7 +335,10 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._direction = config.direction;
     this._id = config.id;
@@ -489,10 +492,10 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
       direction: cdktf.stringToTerraform(this._direction),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform)(this._ipAddress.internalValue),
+      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform, true)(this._ipAddress.internalValue),
       timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -183,7 +183,10 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cacheKeyParameters = config.cacheKeyParameters;
     this._cacheNamespace = config.cacheNamespace;
@@ -491,7 +494,7 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_key_parameters: cdktf.listMapper(cdktf.stringToTerraform)(this._cacheKeyParameters),
+      cache_key_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cacheKeyParameters),
       cache_namespace: cdktf.stringToTerraform(this._cacheNamespace),
       connection_id: cdktf.stringToTerraform(this._connectionId),
       connection_type: cdktf.stringToTerraform(this._connectionType),

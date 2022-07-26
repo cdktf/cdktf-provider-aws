@@ -606,7 +606,10 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._balancingStrategy = config.balancingStrategy;
     this._gameServerGroupName = config.gameServerGroupName;
@@ -859,9 +862,9 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnets),
+      vpc_subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSubnets),
       auto_scaling_policy: gameliftGameServerGroupAutoScalingPolicyToTerraform(this._autoScalingPolicy.internalValue),
-      instance_definition: cdktf.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform)(this._instanceDefinition.internalValue),
+      instance_definition: cdktf.listMapper(gameliftGameServerGroupInstanceDefinitionToTerraform, true)(this._instanceDefinition.internalValue),
       launch_template: gameliftGameServerGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       timeouts: gameliftGameServerGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };

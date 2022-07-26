@@ -754,7 +754,10 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._multiAz = config.multiAz;
@@ -908,7 +911,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       multi_az: cdktf.booleanToTerraform(this._multiAz),
       name: cdktf.stringToTerraform(this._name),
       endpoint_options: cloudsearchDomainEndpointOptionsToTerraform(this._endpointOptions.internalValue),
-      index_field: cdktf.listMapper(cloudsearchDomainIndexFieldToTerraform)(this._indexField.internalValue),
+      index_field: cdktf.listMapper(cloudsearchDomainIndexFieldToTerraform, true)(this._indexField.internalValue),
       scaling_parameters: cloudsearchDomainScalingParametersToTerraform(this._scalingParameters.internalValue),
       timeouts: cloudsearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };

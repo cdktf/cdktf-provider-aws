@@ -56,7 +56,7 @@ export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
     principal: cdktf.stringToTerraform(struct!.principal),
   }
 }
@@ -180,7 +180,7 @@ export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
     principal: cdktf.stringToTerraform(struct!.principal),
   }
 }
@@ -320,7 +320,10 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._admins = config.admins;
     this._catalogId = config.catalogId;
@@ -436,12 +439,12 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admins: cdktf.listMapper(cdktf.stringToTerraform)(this._admins),
+      admins: cdktf.listMapper(cdktf.stringToTerraform, false)(this._admins),
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       id: cdktf.stringToTerraform(this._id),
-      trusted_resource_owners: cdktf.listMapper(cdktf.stringToTerraform)(this._trustedResourceOwners),
-      create_database_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform)(this._createDatabaseDefaultPermissions.internalValue),
-      create_table_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform)(this._createTableDefaultPermissions.internalValue),
+      trusted_resource_owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._trustedResourceOwners),
+      create_database_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform, true)(this._createDatabaseDefaultPermissions.internalValue),
+      create_table_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform, true)(this._createTableDefaultPermissions.internalValue),
     };
   }
 }

@@ -720,7 +720,7 @@ export function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicateOut
   }
   return {
     logical: cdktf.stringToTerraform(struct!.logical),
-    conditions: cdktf.listMapper(glueTriggerPredicateConditionsToTerraform)(struct!.conditions),
+    conditions: cdktf.listMapper(glueTriggerPredicateConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
@@ -926,7 +926,10 @@ export class GlueTrigger extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._enabled = config.enabled;
@@ -1189,8 +1192,8 @@ export class GlueTrigger extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       workflow_name: cdktf.stringToTerraform(this._workflowName),
-      actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions.internalValue),
-      event_batching_condition: cdktf.listMapper(glueTriggerEventBatchingConditionToTerraform)(this._eventBatchingCondition.internalValue),
+      actions: cdktf.listMapper(glueTriggerActionsToTerraform, true)(this._actions.internalValue),
+      event_batching_condition: cdktf.listMapper(glueTriggerEventBatchingConditionToTerraform, true)(this._eventBatchingCondition.internalValue),
       predicate: glueTriggerPredicateToTerraform(this._predicate.internalValue),
       timeouts: glueTriggerTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -60,7 +60,10 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._groupNames = config.groupNames;
     this._id = config.id;
@@ -133,9 +136,9 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._groupNames),
+      group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupNames),
       id: cdktf.stringToTerraform(this._id),
-      notifications: cdktf.listMapper(cdktf.stringToTerraform)(this._notifications),
+      notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifications),
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }

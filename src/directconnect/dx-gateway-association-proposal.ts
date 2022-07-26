@@ -64,7 +64,10 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedPrefixes = config.allowedPrefixes;
     this._associatedGatewayId = config.associatedGatewayId;
@@ -164,7 +167,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrefixes),
+      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPrefixes),
       associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
       dx_gateway_owner_account_id: cdktf.stringToTerraform(this._dxGatewayOwnerAccountId),

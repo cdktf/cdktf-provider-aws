@@ -76,7 +76,10 @@ export class VpcDhcpOptions extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._domainName = config.domainName;
     this._domainNameServers = config.domainNameServers;
@@ -237,11 +240,11 @@ export class VpcDhcpOptions extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: cdktf.stringToTerraform(this._domainName),
-      domain_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._domainNameServers),
+      domain_name_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domainNameServers),
       id: cdktf.stringToTerraform(this._id),
-      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
+      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._netbiosNameServers),
       netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
-      ntp_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._ntpServers),
+      ntp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ntpServers),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

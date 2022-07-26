@@ -68,7 +68,10 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clientIdList = config.clientIdList;
     this._id = config.id;
@@ -180,11 +183,11 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientIdList),
+      client_id_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientIdList),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform)(this._thumbprintList),
+      thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._thumbprintList),
       url: cdktf.stringToTerraform(this._url),
     };
   }

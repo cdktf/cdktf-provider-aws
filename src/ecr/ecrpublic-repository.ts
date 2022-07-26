@@ -69,10 +69,10 @@ export function ecrpublicRepositoryCatalogDataToTerraform(struct?: EcrpublicRepo
   }
   return {
     about_text: cdktf.stringToTerraform(struct!.aboutText),
-    architectures: cdktf.listMapper(cdktf.stringToTerraform)(struct!.architectures),
+    architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.architectures),
     description: cdktf.stringToTerraform(struct!.description),
     logo_image_blob: cdktf.stringToTerraform(struct!.logoImageBlob),
-    operating_systems: cdktf.listMapper(cdktf.stringToTerraform)(struct!.operatingSystems),
+    operating_systems: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.operatingSystems),
     usage_text: cdktf.stringToTerraform(struct!.usageText),
   }
 }
@@ -343,7 +343,10 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._forceDestroy = config.forceDestroy;
     this._id = config.id;

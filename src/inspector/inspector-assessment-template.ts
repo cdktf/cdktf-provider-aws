@@ -72,7 +72,10 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._duration = config.duration;
     this._id = config.id;
@@ -201,7 +204,7 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
       duration: cdktf.numberToTerraform(this._duration),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      rules_package_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._rulesPackageArns),
+      rules_package_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rulesPackageArns),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_arn: cdktf.stringToTerraform(this._targetArn),

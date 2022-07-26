@@ -199,7 +199,10 @@ export class Route53Zone extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._delegationSetId = config.delegationSetId;
@@ -368,7 +371,7 @@ export class Route53Zone extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc: cdktf.listMapper(route53ZoneVpcToTerraform)(this._vpc.internalValue),
+      vpc: cdktf.listMapper(route53ZoneVpcToTerraform, true)(this._vpc.internalValue),
     };
   }
 }

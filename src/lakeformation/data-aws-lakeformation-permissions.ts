@@ -264,7 +264,7 @@ export function dataAwsLakeformationPermissionsLfTagToTerraform(struct?: DataAws
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -372,7 +372,7 @@ export function dataAwsLakeformationPermissionsLfTagPolicyExpressionToTerraform(
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -497,7 +497,7 @@ export function dataAwsLakeformationPermissionsLfTagPolicyToTerraform(struct?: D
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
     resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    expression: cdktf.listMapper(dataAwsLakeformationPermissionsLfTagPolicyExpressionToTerraform)(struct!.expression),
+    expression: cdktf.listMapper(dataAwsLakeformationPermissionsLfTagPolicyExpressionToTerraform, true)(struct!.expression),
   }
 }
 
@@ -764,9 +764,9 @@ export function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struc
   }
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.columnNames),
+    column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columnNames),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
-    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedColumnNames),
+    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedColumnNames),
     name: cdktf.stringToTerraform(struct!.name),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
@@ -957,7 +957,10 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._catalogResource = config.catalogResource;

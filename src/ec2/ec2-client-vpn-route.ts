@@ -172,7 +172,10 @@ export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clientVpnEndpointId = config.clientVpnEndpointId;
     this._description = config.description;

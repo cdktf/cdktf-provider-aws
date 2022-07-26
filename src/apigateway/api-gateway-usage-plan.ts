@@ -226,7 +226,7 @@ export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsage
   return {
     api_id: cdktf.stringToTerraform(struct!.apiId),
     stage: cdktf.stringToTerraform(struct!.stage),
-    throttle: cdktf.listMapper(apiGatewayUsagePlanApiStagesThrottleToTerraform)(struct!.throttle),
+    throttle: cdktf.listMapper(apiGatewayUsagePlanApiStagesThrottleToTerraform, true)(struct!.throttle),
   }
 }
 
@@ -586,7 +586,10 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -761,7 +764,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
       product_code: cdktf.stringToTerraform(this._productCode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages.internalValue),
+      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform, true)(this._apiStages.internalValue),
       quota_settings: apiGatewayUsagePlanQuotaSettingsToTerraform(this._quotaSettings.internalValue),
       throttle_settings: apiGatewayUsagePlanThrottleSettingsToTerraform(this._throttleSettings.internalValue),
     };

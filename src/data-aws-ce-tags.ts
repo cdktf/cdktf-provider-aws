@@ -63,8 +63,8 @@ export function dataAwsCeTagsFilterAndCostCategoryToTerraform(struct?: DataAwsCe
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -182,8 +182,8 @@ export function dataAwsCeTagsFilterAndDimensionToTerraform(struct?: DataAwsCeTag
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -301,8 +301,8 @@ export function dataAwsCeTagsFilterAndTagsToTerraform(struct?: DataAwsCeTagsFilt
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -577,8 +577,8 @@ export function dataAwsCeTagsFilterCostCategoryToTerraform(struct?: DataAwsCeTag
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -696,8 +696,8 @@ export function dataAwsCeTagsFilterDimensionToTerraform(struct?: DataAwsCeTagsFi
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -815,8 +815,8 @@ export function dataAwsCeTagsFilterNotCostCategoryToTerraform(struct?: DataAwsCe
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -934,8 +934,8 @@ export function dataAwsCeTagsFilterNotDimensionToTerraform(struct?: DataAwsCeTag
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1053,8 +1053,8 @@ export function dataAwsCeTagsFilterNotTagsToTerraform(struct?: DataAwsCeTagsFilt
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1297,8 +1297,8 @@ export function dataAwsCeTagsFilterOrCostCategoryToTerraform(struct?: DataAwsCeT
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1416,8 +1416,8 @@ export function dataAwsCeTagsFilterOrDimensionToTerraform(struct?: DataAwsCeTags
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1535,8 +1535,8 @@ export function dataAwsCeTagsFilterOrTagsToTerraform(struct?: DataAwsCeTagsFilte
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1811,8 +1811,8 @@ export function dataAwsCeTagsFilterTagsToTerraform(struct?: DataAwsCeTagsFilterT
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    match_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.matchOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    match_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1953,11 +1953,11 @@ export function dataAwsCeTagsFilterToTerraform(struct?: DataAwsCeTagsFilterOutpu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(dataAwsCeTagsFilterAndToTerraform)(struct!.and),
+    and: cdktf.listMapper(dataAwsCeTagsFilterAndToTerraform, true)(struct!.and),
     cost_category: dataAwsCeTagsFilterCostCategoryToTerraform(struct!.costCategory),
     dimension: dataAwsCeTagsFilterDimensionToTerraform(struct!.dimension),
     not: dataAwsCeTagsFilterNotToTerraform(struct!.not),
-    or: cdktf.listMapper(dataAwsCeTagsFilterOrToTerraform)(struct!.or),
+    or: cdktf.listMapper(dataAwsCeTagsFilterOrToTerraform, true)(struct!.or),
     tags: dataAwsCeTagsFilterTagsToTerraform(struct!.tags),
   }
 }
@@ -2363,7 +2363,10 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._searchString = config.searchString;
@@ -2485,7 +2488,7 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
       search_string: cdktf.stringToTerraform(this._searchString),
       tag_key: cdktf.stringToTerraform(this._tagKey),
       filter: dataAwsCeTagsFilterToTerraform(this._filter.internalValue),
-      sort_by: cdktf.listMapper(dataAwsCeTagsSortByToTerraform)(this._sortBy.internalValue),
+      sort_by: cdktf.listMapper(dataAwsCeTagsSortByToTerraform, true)(this._sortBy.internalValue),
       time_period: dataAwsCeTagsTimePeriodToTerraform(this._timePeriod.internalValue),
     };
   }

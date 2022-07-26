@@ -72,7 +72,7 @@ export function fsxDataRepositoryAssociationS3AutoExportPolicyToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
   }
 }
 
@@ -137,7 +137,7 @@ export function fsxDataRepositoryAssociationS3AutoImportPolicyToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
   }
 }
 
@@ -447,7 +447,10 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._batchImportMetaDataOnCreate = config.batchImportMetaDataOnCreate;
     this._dataRepositoryPath = config.dataRepositoryPath;

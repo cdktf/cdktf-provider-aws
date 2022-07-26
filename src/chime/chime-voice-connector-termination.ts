@@ -72,7 +72,10 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._callingRegions = config.callingRegions;
     this._cidrAllowList = config.cidrAllowList;
@@ -196,8 +199,8 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      calling_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._callingRegions),
-      cidr_allow_list: cdktf.listMapper(cdktf.stringToTerraform)(this._cidrAllowList),
+      calling_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._callingRegions),
+      cidr_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cidrAllowList),
       cps_limit: cdktf.numberToTerraform(this._cpsLimit),
       default_phone_number: cdktf.stringToTerraform(this._defaultPhoneNumber),
       disabled: cdktf.booleanToTerraform(this._disabled),

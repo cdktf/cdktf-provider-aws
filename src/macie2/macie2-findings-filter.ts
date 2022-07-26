@@ -90,14 +90,14 @@ export function macie2FindingsFilterFindingCriteriaCriterionToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eq: cdktf.listMapper(cdktf.stringToTerraform)(struct!.eq),
-    eq_exact_match: cdktf.listMapper(cdktf.stringToTerraform)(struct!.eqExactMatch),
+    eq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eq),
+    eq_exact_match: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eqExactMatch),
     field: cdktf.stringToTerraform(struct!.field),
     gt: cdktf.stringToTerraform(struct!.gt),
     gte: cdktf.stringToTerraform(struct!.gte),
     lt: cdktf.stringToTerraform(struct!.lt),
     lte: cdktf.stringToTerraform(struct!.lte),
-    neq: cdktf.listMapper(cdktf.stringToTerraform)(struct!.neq),
+    neq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.neq),
   }
 }
 
@@ -347,7 +347,7 @@ export function macie2FindingsFilterFindingCriteriaToTerraform(struct?: Macie2Fi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    criterion: cdktf.listMapper(macie2FindingsFilterFindingCriteriaCriterionToTerraform)(struct!.criterion),
+    criterion: cdktf.listMapper(macie2FindingsFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
 }
 
@@ -432,7 +432,10 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._description = config.description;

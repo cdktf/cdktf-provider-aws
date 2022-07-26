@@ -75,7 +75,7 @@ export function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?:
   }
   return {
     availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    security_group_id_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIdList),
+    security_group_id_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIdList),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }
 }
@@ -205,7 +205,10 @@ export class GlueConnection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._connectionProperties = config.connectionProperties;
@@ -396,7 +399,7 @@ export class GlueConnection extends cdktf.TerraformResource {
       connection_type: cdktf.stringToTerraform(this._connectionType),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      match_criteria: cdktf.listMapper(cdktf.stringToTerraform)(this._matchCriteria),
+      match_criteria: cdktf.listMapper(cdktf.stringToTerraform, false)(this._matchCriteria),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

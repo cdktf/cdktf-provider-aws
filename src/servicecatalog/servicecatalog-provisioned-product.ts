@@ -340,12 +340,12 @@ export function servicecatalogProvisionedProductStackSetProvisioningPreferencesT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accounts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.accounts),
+    accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accounts),
     failure_tolerance_count: cdktf.numberToTerraform(struct!.failureToleranceCount),
     failure_tolerance_percentage: cdktf.numberToTerraform(struct!.failureTolerancePercentage),
     max_concurrency_count: cdktf.numberToTerraform(struct!.maxConcurrencyCount),
     max_concurrency_percentage: cdktf.numberToTerraform(struct!.maxConcurrencyPercentage),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
+    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
   }
 }
 
@@ -696,7 +696,10 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acceptLanguage = config.acceptLanguage;
     this._id = config.id;
@@ -1056,7 +1059,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ignore_errors: cdktf.booleanToTerraform(this._ignoreErrors),
       name: cdktf.stringToTerraform(this._name),
-      notification_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationArns),
+      notification_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationArns),
       path_id: cdktf.stringToTerraform(this._pathId),
       path_name: cdktf.stringToTerraform(this._pathName),
       product_id: cdktf.stringToTerraform(this._productId),
@@ -1066,7 +1069,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       retain_physical_resources: cdktf.booleanToTerraform(this._retainPhysicalResources),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      provisioning_parameters: cdktf.listMapper(servicecatalogProvisionedProductProvisioningParametersToTerraform)(this._provisioningParameters.internalValue),
+      provisioning_parameters: cdktf.listMapper(servicecatalogProvisionedProductProvisioningParametersToTerraform, true)(this._provisioningParameters.internalValue),
       stack_set_provisioning_preferences: servicecatalogProvisionedProductStackSetProvisioningPreferencesToTerraform(this._stackSetProvisioningPreferences.internalValue),
       timeouts: servicecatalogProvisionedProductTimeoutsToTerraform(this._timeouts.internalValue),
     };

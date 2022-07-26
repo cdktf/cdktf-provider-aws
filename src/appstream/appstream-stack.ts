@@ -306,7 +306,7 @@ export function appstreamStackStorageConnectorsToTerraform(struct?: AppstreamSta
   }
   return {
     connector_type: cdktf.stringToTerraform(struct!.connectorType),
-    domains: cdktf.listMapper(cdktf.stringToTerraform)(struct!.domains),
+    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
     resource_identifier: cdktf.stringToTerraform(struct!.resourceIdentifier),
   }
 }
@@ -583,7 +583,10 @@ export class AppstreamStack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;
@@ -827,17 +830,17 @@ export class AppstreamStack extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
-      embed_host_domains: cdktf.listMapper(cdktf.stringToTerraform)(this._embedHostDomains),
+      embed_host_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._embedHostDomains),
       feedback_url: cdktf.stringToTerraform(this._feedbackUrl),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       redirect_url: cdktf.stringToTerraform(this._redirectUrl),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform)(this._accessEndpoints.internalValue),
+      access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform, true)(this._accessEndpoints.internalValue),
       application_settings: appstreamStackApplicationSettingsToTerraform(this._applicationSettings.internalValue),
-      storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform)(this._storageConnectors.internalValue),
-      user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform)(this._userSettings.internalValue),
+      storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform, true)(this._storageConnectors.internalValue),
+      user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform, true)(this._userSettings.internalValue),
     };
   }
 }

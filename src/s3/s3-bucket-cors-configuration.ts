@@ -65,10 +65,10 @@ export function s3BucketCorsConfigurationCorsRuleToTerraform(struct?: S3BucketCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     id: cdktf.stringToTerraform(struct!.id),
     max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
   }
@@ -291,7 +291,10 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
@@ -370,7 +373,7 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
       id: cdktf.stringToTerraform(this._id),
-      cors_rule: cdktf.listMapper(s3BucketCorsConfigurationCorsRuleToTerraform)(this._corsRule.internalValue),
+      cors_rule: cdktf.listMapper(s3BucketCorsConfigurationCorsRuleToTerraform, true)(this._corsRule.internalValue),
     };
   }
 }

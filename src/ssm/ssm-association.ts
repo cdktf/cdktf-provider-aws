@@ -209,7 +209,7 @@ export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets 
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -342,7 +342,10 @@ export class SsmAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applyOnlyAtCronInterval = config.applyOnlyAtCronInterval;
     this._associationName = config.associationName;
@@ -632,7 +635,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
       wait_for_success_timeout_seconds: cdktf.numberToTerraform(this._waitForSuccessTimeoutSeconds),
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
-      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets.internalValue),
+      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform, true)(this._targets.internalValue),
     };
   }
 }

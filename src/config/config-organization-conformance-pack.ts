@@ -331,7 +331,10 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deliveryS3Bucket = config.deliveryS3Bucket;
     this._deliveryS3KeyPrefix = config.deliveryS3KeyPrefix;
@@ -502,12 +505,12 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
     return {
       delivery_s3_bucket: cdktf.stringToTerraform(this._deliveryS3Bucket),
       delivery_s3_key_prefix: cdktf.stringToTerraform(this._deliveryS3KeyPrefix),
-      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedAccounts),
+      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedAccounts),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_s3_uri: cdktf.stringToTerraform(this._templateS3Uri),
-      input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform)(this._inputParameter.internalValue),
+      input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform, true)(this._inputParameter.internalValue),
       timeouts: configOrganizationConformancePackTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

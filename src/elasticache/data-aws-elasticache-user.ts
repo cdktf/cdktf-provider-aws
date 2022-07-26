@@ -72,7 +72,10 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessString = config.accessString;
     this._engine = config.engine;
@@ -206,7 +209,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       no_password_required: cdktf.booleanToTerraform(this._noPasswordRequired),
-      passwords: cdktf.listMapper(cdktf.stringToTerraform)(this._passwords),
+      passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwords),
       user_id: cdktf.stringToTerraform(this._userId),
       user_name: cdktf.stringToTerraform(this._userName),
     };

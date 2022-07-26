@@ -68,7 +68,10 @@ export class OpsworksPermission extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowSsh = config.allowSsh;
     this._allowSudo = config.allowSudo;

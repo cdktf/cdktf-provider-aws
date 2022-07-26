@@ -325,7 +325,10 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acceleratorArn = config.acceleratorArn;
     this._clientAffinity = config.clientAffinity;
@@ -436,7 +439,7 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
       client_affinity: cdktf.stringToTerraform(this._clientAffinity),
       id: cdktf.stringToTerraform(this._id),
       protocol: cdktf.stringToTerraform(this._protocol),
-      port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform)(this._portRange.internalValue),
+      port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform, true)(this._portRange.internalValue),
       timeouts: globalacceleratorListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

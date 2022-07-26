@@ -642,7 +642,10 @@ export class S3BucketInventory extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._enabled = config.enabled;
@@ -799,7 +802,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       included_object_versions: cdktf.stringToTerraform(this._includedObjectVersions),
       name: cdktf.stringToTerraform(this._name),
-      optional_fields: cdktf.listMapper(cdktf.stringToTerraform)(this._optionalFields),
+      optional_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._optionalFields),
       destination: s3BucketInventoryDestinationToTerraform(this._destination.internalValue),
       filter: s3BucketInventoryFilterToTerraform(this._filter.internalValue),
       schedule: s3BucketInventoryScheduleToTerraform(this._schedule.internalValue),

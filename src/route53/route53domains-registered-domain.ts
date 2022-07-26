@@ -510,7 +510,7 @@ export function route53DomainsRegisteredDomainNameServerToTerraform(struct?: Rou
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    glue_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.glueIps),
+    glue_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.glueIps),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -1581,7 +1581,10 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminPrivacy = config.adminPrivacy;
     this._autoRenew = config.autoRenew;
@@ -1890,7 +1893,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       tech_privacy: cdktf.booleanToTerraform(this._techPrivacy),
       transfer_lock: cdktf.booleanToTerraform(this._transferLock),
       admin_contact: route53DomainsRegisteredDomainAdminContactToTerraform(this._adminContact.internalValue),
-      name_server: cdktf.listMapper(route53DomainsRegisteredDomainNameServerToTerraform)(this._nameServer.internalValue),
+      name_server: cdktf.listMapper(route53DomainsRegisteredDomainNameServerToTerraform, true)(this._nameServer.internalValue),
       registrant_contact: route53DomainsRegisteredDomainRegistrantContactToTerraform(this._registrantContact.internalValue),
       tech_contact: route53DomainsRegisteredDomainTechContactToTerraform(this._techContact.internalValue),
       timeouts: route53DomainsRegisteredDomainTimeoutsToTerraform(this._timeouts.internalValue),

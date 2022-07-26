@@ -64,7 +64,10 @@ export class EfsMountTarget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._fileSystemId = config.fileSystemId;
     this._id = config.id;
@@ -195,7 +198,7 @@ export class EfsMountTarget extends cdktf.TerraformResource {
       file_system_id: cdktf.stringToTerraform(this._fileSystemId),
       id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }

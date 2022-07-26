@@ -168,7 +168,10 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clientVpnEndpointId = config.clientVpnEndpointId;
     this._id = config.id;
@@ -278,7 +281,7 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
     return {
       client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
       id: cdktf.stringToTerraform(this._id),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       timeouts: ec2ClientVpnNetworkAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };

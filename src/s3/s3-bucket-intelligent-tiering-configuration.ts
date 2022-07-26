@@ -282,7 +282,10 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._id = config.id;
@@ -394,7 +397,7 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
       filter: s3BucketIntelligentTieringConfigurationFilterToTerraform(this._filter.internalValue),
-      tiering: cdktf.listMapper(s3BucketIntelligentTieringConfigurationTieringToTerraform)(this._tiering.internalValue),
+      tiering: cdktf.listMapper(s3BucketIntelligentTieringConfigurationTieringToTerraform, true)(this._tiering.internalValue),
     };
   }
 }

@@ -64,7 +64,10 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._domains = config.domains;
     this._id = config.id;
@@ -165,7 +168,7 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domains: cdktf.listMapper(cdktf.stringToTerraform)(this._domains),
+      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

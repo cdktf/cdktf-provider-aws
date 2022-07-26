@@ -68,7 +68,10 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._blockPublicAcls = config.blockPublicAcls;
     this._blockPublicPolicy = config.blockPublicPolicy;

@@ -50,7 +50,7 @@ export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: Lightsa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidrs: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrs),
+    cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     protocol: cdktf.stringToTerraform(struct!.protocol),
     to_port: cdktf.numberToTerraform(struct!.toPort),
@@ -227,7 +227,10 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._instanceName = config.instanceName;
@@ -288,7 +291,7 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       instance_name: cdktf.stringToTerraform(this._instanceName),
-      port_info: cdktf.listMapper(lightsailInstancePublicPortsPortInfoToTerraform)(this._portInfo.internalValue),
+      port_info: cdktf.listMapper(lightsailInstancePublicPortsPortInfoToTerraform, true)(this._portInfo.internalValue),
     };
   }
 }

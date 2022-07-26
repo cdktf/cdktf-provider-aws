@@ -1286,7 +1286,10 @@ export class SesReceiptRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._after = config.after;
     this._enabled = config.enabled;
@@ -1558,17 +1561,17 @@ export class SesReceiptRule extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      recipients: cdktf.listMapper(cdktf.stringToTerraform)(this._recipients),
+      recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recipients),
       rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
       scan_enabled: cdktf.booleanToTerraform(this._scanEnabled),
       tls_policy: cdktf.stringToTerraform(this._tlsPolicy),
-      add_header_action: cdktf.listMapper(sesReceiptRuleAddHeaderActionToTerraform)(this._addHeaderAction.internalValue),
-      bounce_action: cdktf.listMapper(sesReceiptRuleBounceActionToTerraform)(this._bounceAction.internalValue),
-      lambda_action: cdktf.listMapper(sesReceiptRuleLambdaActionToTerraform)(this._lambdaAction.internalValue),
-      s3_action: cdktf.listMapper(sesReceiptRuleS3ActionToTerraform)(this._s3Action.internalValue),
-      sns_action: cdktf.listMapper(sesReceiptRuleSnsActionToTerraform)(this._snsAction.internalValue),
-      stop_action: cdktf.listMapper(sesReceiptRuleStopActionToTerraform)(this._stopAction.internalValue),
-      workmail_action: cdktf.listMapper(sesReceiptRuleWorkmailActionToTerraform)(this._workmailAction.internalValue),
+      add_header_action: cdktf.listMapper(sesReceiptRuleAddHeaderActionToTerraform, true)(this._addHeaderAction.internalValue),
+      bounce_action: cdktf.listMapper(sesReceiptRuleBounceActionToTerraform, true)(this._bounceAction.internalValue),
+      lambda_action: cdktf.listMapper(sesReceiptRuleLambdaActionToTerraform, true)(this._lambdaAction.internalValue),
+      s3_action: cdktf.listMapper(sesReceiptRuleS3ActionToTerraform, true)(this._s3Action.internalValue),
+      sns_action: cdktf.listMapper(sesReceiptRuleSnsActionToTerraform, true)(this._snsAction.internalValue),
+      stop_action: cdktf.listMapper(sesReceiptRuleStopActionToTerraform, true)(this._stopAction.internalValue),
+      workmail_action: cdktf.listMapper(sesReceiptRuleWorkmailActionToTerraform, true)(this._workmailAction.internalValue),
     };
   }
 }

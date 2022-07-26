@@ -365,10 +365,10 @@ export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAct
   return {
     category: cdktf.stringToTerraform(struct!.category),
     configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
-    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.inputArtifacts),
+    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
     name: cdktf.stringToTerraform(struct!.name),
     namespace: cdktf.stringToTerraform(struct!.namespace),
-    output_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.outputArtifacts),
+    output_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.outputArtifacts),
     owner: cdktf.stringToTerraform(struct!.owner),
     provider: cdktf.stringToTerraform(struct!.provider),
     region: cdktf.stringToTerraform(struct!.region),
@@ -705,7 +705,7 @@ export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    action: cdktf.listMapper(codepipelineStageActionToTerraform)(struct!.action),
+    action: cdktf.listMapper(codepipelineStageActionToTerraform, true)(struct!.action),
   }
 }
 
@@ -838,7 +838,10 @@ export class Codepipeline extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -969,8 +972,8 @@ export class Codepipeline extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform)(this._artifactStore.internalValue),
-      stage: cdktf.listMapper(codepipelineStageToTerraform)(this._stage.internalValue),
+      artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform, true)(this._artifactStore.internalValue),
+      stage: cdktf.listMapper(codepipelineStageToTerraform, true)(this._stage.internalValue),
     };
   }
 }

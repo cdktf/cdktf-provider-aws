@@ -60,7 +60,10 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._id = config.id;
@@ -143,7 +146,7 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
     return {
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
-      items: cdktf.listMapper(cdktf.stringToTerraform)(this._items),
+      items: cdktf.listMapper(cdktf.stringToTerraform, false)(this._items),
       name: cdktf.stringToTerraform(this._name),
     };
   }

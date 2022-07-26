@@ -211,7 +211,7 @@ export function cloudformationStackSetOperationPreferencesToTerraform(struct?: C
     max_concurrent_count: cdktf.numberToTerraform(struct!.maxConcurrentCount),
     max_concurrent_percentage: cdktf.numberToTerraform(struct!.maxConcurrentPercentage),
     region_concurrency_type: cdktf.stringToTerraform(struct!.regionConcurrencyType),
-    region_order: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regionOrder),
+    region_order: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regionOrder),
   }
 }
 
@@ -481,7 +481,10 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._administrationRoleArn = config.administrationRoleArn;
     this._callAs = config.callAs;
@@ -776,7 +779,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     return {
       administration_role_arn: cdktf.stringToTerraform(this._administrationRoleArn),
       call_as: cdktf.stringToTerraform(this._callAs),
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
       description: cdktf.stringToTerraform(this._description),
       execution_role_name: cdktf.stringToTerraform(this._executionRoleName),
       id: cdktf.stringToTerraform(this._id),

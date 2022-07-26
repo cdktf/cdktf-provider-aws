@@ -347,7 +347,10 @@ export class EcrRepository extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._forceDelete = config.forceDelete;
     this._id = config.id;
@@ -532,7 +535,7 @@ export class EcrRepository extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform)(this._encryptionConfiguration.internalValue),
+      encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform, true)(this._encryptionConfiguration.internalValue),
       image_scanning_configuration: ecrRepositoryImageScanningConfigurationToTerraform(this._imageScanningConfiguration.internalValue),
       timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };

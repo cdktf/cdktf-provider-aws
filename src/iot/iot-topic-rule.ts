@@ -2641,7 +2641,7 @@ export function iotTopicRuleErrorActionHttpToTerraform(struct?: IotTopicRuleErro
   return {
     confirmation_url: cdktf.stringToTerraform(struct!.confirmationUrl),
     url: cdktf.stringToTerraform(struct!.url),
-    http_header: cdktf.listMapper(iotTopicRuleErrorActionHttpHttpHeaderToTerraform)(struct!.httpHeader),
+    http_header: cdktf.listMapper(iotTopicRuleErrorActionHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
@@ -4098,7 +4098,7 @@ export function iotTopicRuleErrorActionTimestreamToTerraform(struct?: IotTopicRu
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     table_name: cdktf.stringToTerraform(struct!.tableName),
-    dimension: cdktf.listMapper(iotTopicRuleErrorActionTimestreamDimensionToTerraform)(struct!.dimension),
+    dimension: cdktf.listMapper(iotTopicRuleErrorActionTimestreamDimensionToTerraform, true)(struct!.dimension),
     timestamp: iotTopicRuleErrorActionTimestreamTimestampToTerraform(struct!.timestamp),
   }
 }
@@ -5104,7 +5104,7 @@ export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktf.IR
   return {
     confirmation_url: cdktf.stringToTerraform(struct!.confirmationUrl),
     url: cdktf.stringToTerraform(struct!.url),
-    http_header: cdktf.listMapper(iotTopicRuleHttpHttpHeaderToTerraform)(struct!.httpHeader),
+    http_header: cdktf.listMapper(iotTopicRuleHttpHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
@@ -6913,7 +6913,7 @@ export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestrea
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     table_name: cdktf.stringToTerraform(struct!.tableName),
-    dimension: cdktf.listMapper(iotTopicRuleTimestreamDimensionToTerraform)(struct!.dimension),
+    dimension: cdktf.listMapper(iotTopicRuleTimestreamDimensionToTerraform, true)(struct!.dimension),
     timestamp: iotTopicRuleTimestreamTimestampToTerraform(struct!.timestamp),
   }
 }
@@ -7107,7 +7107,10 @@ export class IotTopicRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._enabled = config.enabled;
@@ -7598,26 +7601,26 @@ export class IotTopicRule extends cdktf.TerraformResource {
       sql_version: cdktf.stringToTerraform(this._sqlVersion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform)(this._cloudwatchAlarm.internalValue),
-      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform)(this._cloudwatchLogs.internalValue),
-      cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform)(this._cloudwatchMetric.internalValue),
-      dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform)(this._dynamodb.internalValue),
-      dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform)(this._dynamodbv2.internalValue),
-      elasticsearch: cdktf.listMapper(iotTopicRuleElasticsearchToTerraform)(this._elasticsearch.internalValue),
+      cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform, true)(this._cloudwatchAlarm.internalValue),
+      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform, true)(this._cloudwatchLogs.internalValue),
+      cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform, true)(this._cloudwatchMetric.internalValue),
+      dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform, true)(this._dynamodb.internalValue),
+      dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform, true)(this._dynamodbv2.internalValue),
+      elasticsearch: cdktf.listMapper(iotTopicRuleElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
       error_action: iotTopicRuleErrorActionToTerraform(this._errorAction.internalValue),
-      firehose: cdktf.listMapper(iotTopicRuleFirehoseToTerraform)(this._firehose.internalValue),
-      http: cdktf.listMapper(iotTopicRuleHttpToTerraform)(this._http.internalValue),
-      iot_analytics: cdktf.listMapper(iotTopicRuleIotAnalyticsToTerraform)(this._iotAnalytics.internalValue),
-      iot_events: cdktf.listMapper(iotTopicRuleIotEventsToTerraform)(this._iotEvents.internalValue),
-      kafka: cdktf.listMapper(iotTopicRuleKafkaToTerraform)(this._kafka.internalValue),
-      kinesis: cdktf.listMapper(iotTopicRuleKinesisToTerraform)(this._kinesis.internalValue),
-      lambda: cdktf.listMapper(iotTopicRuleLambdaToTerraform)(this._lambda.internalValue),
-      republish: cdktf.listMapper(iotTopicRuleRepublishToTerraform)(this._republish.internalValue),
-      s3: cdktf.listMapper(iotTopicRuleS3ToTerraform)(this._s3.internalValue),
-      sns: cdktf.listMapper(iotTopicRuleSnsToTerraform)(this._sns.internalValue),
-      sqs: cdktf.listMapper(iotTopicRuleSqsToTerraform)(this._sqs.internalValue),
-      step_functions: cdktf.listMapper(iotTopicRuleStepFunctionsToTerraform)(this._stepFunctions.internalValue),
-      timestream: cdktf.listMapper(iotTopicRuleTimestreamToTerraform)(this._timestream.internalValue),
+      firehose: cdktf.listMapper(iotTopicRuleFirehoseToTerraform, true)(this._firehose.internalValue),
+      http: cdktf.listMapper(iotTopicRuleHttpToTerraform, true)(this._http.internalValue),
+      iot_analytics: cdktf.listMapper(iotTopicRuleIotAnalyticsToTerraform, true)(this._iotAnalytics.internalValue),
+      iot_events: cdktf.listMapper(iotTopicRuleIotEventsToTerraform, true)(this._iotEvents.internalValue),
+      kafka: cdktf.listMapper(iotTopicRuleKafkaToTerraform, true)(this._kafka.internalValue),
+      kinesis: cdktf.listMapper(iotTopicRuleKinesisToTerraform, true)(this._kinesis.internalValue),
+      lambda: cdktf.listMapper(iotTopicRuleLambdaToTerraform, true)(this._lambda.internalValue),
+      republish: cdktf.listMapper(iotTopicRuleRepublishToTerraform, true)(this._republish.internalValue),
+      s3: cdktf.listMapper(iotTopicRuleS3ToTerraform, true)(this._s3.internalValue),
+      sns: cdktf.listMapper(iotTopicRuleSnsToTerraform, true)(this._sns.internalValue),
+      sqs: cdktf.listMapper(iotTopicRuleSqsToTerraform, true)(this._sqs.internalValue),
+      step_functions: cdktf.listMapper(iotTopicRuleStepFunctionsToTerraform, true)(this._stepFunctions.internalValue),
+      timestream: cdktf.listMapper(iotTopicRuleTimestreamToTerraform, true)(this._timestream.internalValue),
     };
   }
 }

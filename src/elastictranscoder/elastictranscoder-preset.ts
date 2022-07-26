@@ -1403,7 +1403,10 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._container = config.container;
     this._description = config.description;
@@ -1616,7 +1619,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
       audio_codec_options: elastictranscoderPresetAudioCodecOptionsToTerraform(this._audioCodecOptions.internalValue),
       thumbnails: elastictranscoderPresetThumbnailsToTerraform(this._thumbnails.internalValue),
       video: elastictranscoderPresetVideoToTerraform(this._video.internalValue),
-      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform)(this._videoWatermarks.internalValue),
+      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform, true)(this._videoWatermarks.internalValue),
     };
   }
 }

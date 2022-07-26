@@ -70,7 +70,7 @@ export function cloudformationStackSetInstanceDeploymentTargetsToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    organizational_unit_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationalUnitIds),
+    organizational_unit_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationalUnitIds),
   }
 }
 
@@ -160,7 +160,7 @@ export function cloudformationStackSetInstanceOperationPreferencesToTerraform(st
     max_concurrent_count: cdktf.numberToTerraform(struct!.maxConcurrentCount),
     max_concurrent_percentage: cdktf.numberToTerraform(struct!.maxConcurrentPercentage),
     region_concurrency_type: cdktf.stringToTerraform(struct!.regionConcurrencyType),
-    region_order: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regionOrder),
+    region_order: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regionOrder),
   }
 }
 
@@ -484,7 +484,10 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._callAs = config.callAs;

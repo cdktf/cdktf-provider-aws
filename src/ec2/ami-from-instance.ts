@@ -418,7 +418,10 @@ export class AmiFromInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deprecationTime = config.deprecationTime;
     this._description = config.description;
@@ -726,8 +729,8 @@ export class AmiFromInstance extends cdktf.TerraformResource {
       source_instance_id: cdktf.stringToTerraform(this._sourceInstanceId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ebs_block_device: cdktf.listMapper(amiFromInstanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(amiFromInstanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
+      ebs_block_device: cdktf.listMapper(amiFromInstanceEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktf.listMapper(amiFromInstanceEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
       timeouts: amiFromInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

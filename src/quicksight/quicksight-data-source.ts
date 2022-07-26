@@ -2848,7 +2848,7 @@ export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.actions),
+    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
     principal: cdktf.stringToTerraform(struct!.principal),
   }
 }
@@ -3106,7 +3106,10 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._awsAccountId = config.awsAccountId;
     this._dataSourceId = config.dataSourceId;
@@ -3326,7 +3329,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       credentials: quicksightDataSourceCredentialsToTerraform(this._credentials.internalValue),
       parameters: quicksightDataSourceParametersToTerraform(this._parameters.internalValue),
-      permission: cdktf.listMapper(quicksightDataSourcePermissionToTerraform)(this._permission.internalValue),
+      permission: cdktf.listMapper(quicksightDataSourcePermissionToTerraform, true)(this._permission.internalValue),
       ssl_properties: quicksightDataSourceSslPropertiesToTerraform(this._sslProperties.internalValue),
       vpc_connection_properties: quicksightDataSourceVpcConnectionPropertiesToTerraform(this._vpcConnectionProperties.internalValue),
     };

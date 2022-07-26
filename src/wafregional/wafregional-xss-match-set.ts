@@ -267,7 +267,10 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -331,7 +334,7 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      xss_match_tuple: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleToTerraform)(this._xssMatchTuple.internalValue),
+      xss_match_tuple: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleToTerraform, true)(this._xssMatchTuple.internalValue),
     };
   }
 }

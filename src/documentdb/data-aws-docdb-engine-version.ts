@@ -64,7 +64,10 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._engine = config.engine;
     this._id = config.id;
@@ -191,7 +194,7 @@ export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
-      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredVersions),
+      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
       version: cdktf.stringToTerraform(this._version),
     };
   }

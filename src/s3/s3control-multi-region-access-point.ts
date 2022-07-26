@@ -298,7 +298,7 @@ export function s3ControlMultiRegionAccessPointDetailsToTerraform(struct?: S3Con
   return {
     name: cdktf.stringToTerraform(struct!.name),
     public_access_block: s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToTerraform(struct!.publicAccessBlock),
-    region: cdktf.listMapper(s3ControlMultiRegionAccessPointDetailsRegionToTerraform)(struct!.region),
+    region: cdktf.listMapper(s3ControlMultiRegionAccessPointDetailsRegionToTerraform, true)(struct!.region),
   }
 }
 
@@ -523,7 +523,10 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;

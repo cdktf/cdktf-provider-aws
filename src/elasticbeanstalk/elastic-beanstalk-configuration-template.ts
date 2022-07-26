@@ -243,7 +243,10 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._application = config.application;
     this._description = config.description;
@@ -376,7 +379,7 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
-      setting: cdktf.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform)(this._setting.internalValue),
+      setting: cdktf.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform, true)(this._setting.internalValue),
     };
   }
 }

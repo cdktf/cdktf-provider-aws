@@ -92,13 +92,13 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.endsWith),
-    equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.equalTo),
+    ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.endsWith),
+    equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.equalTo),
     field: cdktf.stringToTerraform(struct!.field),
-    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEndsWith),
-    not_equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEquals),
-    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notStartsWith),
-    starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.startsWith),
+    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEndsWith),
+    not_equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEquals),
+    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notStartsWith),
+    starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startsWith),
   }
 }
 
@@ -334,7 +334,7 @@ export function cloudtrailEventDataStoreAdvancedEventSelectorToTerraform(struct?
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    field_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform)(struct!.fieldSelector),
+    field_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorToTerraform, true)(struct!.fieldSelector),
   }
 }
 
@@ -602,7 +602,10 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._multiRegionEnabled = config.multiRegionEnabled;
@@ -796,7 +799,7 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
-      advanced_event_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorToTerraform)(this._advancedEventSelector.internalValue),
+      advanced_event_selector: cdktf.listMapper(cloudtrailEventDataStoreAdvancedEventSelectorToTerraform, true)(this._advancedEventSelector.internalValue),
       timeouts: cloudtrailEventDataStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

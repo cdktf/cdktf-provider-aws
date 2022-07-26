@@ -552,10 +552,10 @@ export function backupSelectionConditionToTerraform(struct?: BackupSelectionCond
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    string_equals: cdktf.listMapper(backupSelectionConditionStringEqualsToTerraform)(struct!.stringEquals),
-    string_like: cdktf.listMapper(backupSelectionConditionStringLikeToTerraform)(struct!.stringLike),
-    string_not_equals: cdktf.listMapper(backupSelectionConditionStringNotEqualsToTerraform)(struct!.stringNotEquals),
-    string_not_like: cdktf.listMapper(backupSelectionConditionStringNotLikeToTerraform)(struct!.stringNotLike),
+    string_equals: cdktf.listMapper(backupSelectionConditionStringEqualsToTerraform, true)(struct!.stringEquals),
+    string_like: cdktf.listMapper(backupSelectionConditionStringLikeToTerraform, true)(struct!.stringLike),
+    string_not_equals: cdktf.listMapper(backupSelectionConditionStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
+    string_not_like: cdktf.listMapper(backupSelectionConditionStringNotLikeToTerraform, true)(struct!.stringNotLike),
   }
 }
 
@@ -880,7 +880,10 @@ export class BackupSelection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._iamRoleArn = config.iamRoleArn;
     this._id = config.id;
@@ -1024,11 +1027,11 @@ export class BackupSelection extends cdktf.TerraformResource {
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      not_resources: cdktf.listMapper(cdktf.stringToTerraform)(this._notResources),
+      not_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notResources),
       plan_id: cdktf.stringToTerraform(this._planId),
-      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
-      condition: cdktf.listMapper(backupSelectionConditionToTerraform)(this._condition.internalValue),
-      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform)(this._selectionTag.internalValue),
+      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
+      condition: cdktf.listMapper(backupSelectionConditionToTerraform, true)(this._condition.internalValue),
+      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform, true)(this._selectionTag.internalValue),
     };
   }
 }

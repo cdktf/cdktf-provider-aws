@@ -703,7 +703,7 @@ export function dataAwsInstanceFilterToTerraform(struct?: DataAwsInstanceFilter 
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -836,7 +836,10 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._getPasswordData = config.fetchPasswordData;
     this._getUserData = config.fetchUserData;
@@ -1178,7 +1181,7 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       instance_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._instanceTags),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsInstanceFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsInstanceFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

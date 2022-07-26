@@ -250,7 +250,10 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._domain = config.domain;
@@ -429,7 +432,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       external_connections: codeartifactRepositoryExternalConnectionsToTerraform(this._externalConnections.internalValue),
-      upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform)(this._upstream.internalValue),
+      upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform, true)(this._upstream.internalValue),
     };
   }
 }

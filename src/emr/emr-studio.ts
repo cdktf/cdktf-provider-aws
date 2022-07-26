@@ -104,7 +104,10 @@ export class EmrStudio extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authMode = config.authMode;
     this._defaultS3Location = config.defaultS3Location;
@@ -368,7 +371,7 @@ export class EmrStudio extends cdktf.TerraformResource {
       idp_relay_state_parameter_name: cdktf.stringToTerraform(this._idpRelayStateParameterName),
       name: cdktf.stringToTerraform(this._name),
       service_role: cdktf.stringToTerraform(this._serviceRole),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_role: cdktf.stringToTerraform(this._userRole),

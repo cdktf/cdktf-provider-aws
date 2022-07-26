@@ -178,7 +178,7 @@ export function appmeshRouteSpecGrpcRouteActionToTerraform(struct?: AppmeshRoute
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weighted_target: cdktf.listMapper(appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+    weighted_target: cdktf.listMapper(appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
   }
 }
 
@@ -668,7 +668,7 @@ export function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteS
     method_name: cdktf.stringToTerraform(struct!.methodName),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
-    metadata: cdktf.listMapper(appmeshRouteSpecGrpcRouteMatchMetadataToTerraform)(struct!.metadata),
+    metadata: cdktf.listMapper(appmeshRouteSpecGrpcRouteMatchMetadataToTerraform, true)(struct!.metadata),
   }
 }
 
@@ -903,10 +903,10 @@ export function appmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: Appmesh
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grpc_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.grpcRetryEvents),
-    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.httpRetryEvents),
+    grpc_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.grpcRetryEvents),
+    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.httpRetryEvents),
     max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tcpRetryEvents),
+    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tcpRetryEvents),
     per_retry_timeout: appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(struct!.perRetryTimeout),
   }
 }
@@ -1593,7 +1593,7 @@ export function appmeshRouteSpecHttp2RouteActionToTerraform(struct?: AppmeshRout
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weighted_target: cdktf.listMapper(appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+    weighted_target: cdktf.listMapper(appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
   }
 }
 
@@ -2083,7 +2083,7 @@ export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRoute
     method: cdktf.stringToTerraform(struct!.method),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
-    header: cdktf.listMapper(appmeshRouteSpecHttp2RouteMatchHeaderToTerraform)(struct!.header),
+    header: cdktf.listMapper(appmeshRouteSpecHttp2RouteMatchHeaderToTerraform, true)(struct!.header),
   }
 }
 
@@ -2311,9 +2311,9 @@ export function appmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: Appmes
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.httpRetryEvents),
+    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.httpRetryEvents),
     max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tcpRetryEvents),
+    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tcpRetryEvents),
     per_retry_timeout: appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(struct!.perRetryTimeout),
   }
 }
@@ -2975,7 +2975,7 @@ export function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRoute
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weighted_target: cdktf.listMapper(appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+    weighted_target: cdktf.listMapper(appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
   }
 }
 
@@ -3465,7 +3465,7 @@ export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteS
     method: cdktf.stringToTerraform(struct!.method),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
-    header: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderToTerraform)(struct!.header),
+    header: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderToTerraform, true)(struct!.header),
   }
 }
 
@@ -3693,9 +3693,9 @@ export function appmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: Appmesh
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.httpRetryEvents),
+    http_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.httpRetryEvents),
     max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tcpRetryEvents),
+    tcp_retry_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tcpRetryEvents),
     per_retry_timeout: appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(struct!.perRetryTimeout),
   }
 }
@@ -4357,7 +4357,7 @@ export function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteS
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weighted_target: cdktf.listMapper(appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+    weighted_target: cdktf.listMapper(appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform, true)(struct!.weightedTarget),
   }
 }
 
@@ -4866,7 +4866,10 @@ export class AppmeshRoute extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._meshName = config.meshName;

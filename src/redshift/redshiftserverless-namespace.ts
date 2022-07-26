@@ -88,7 +88,10 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminUserPassword = config.adminUserPassword;
     this._adminUsername = config.adminUsername;
@@ -300,10 +303,10 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
       admin_username: cdktf.stringToTerraform(this._adminUsername),
       db_name: cdktf.stringToTerraform(this._dbName),
       default_iam_role_arn: cdktf.stringToTerraform(this._defaultIamRoleArn),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      log_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._logExports),
+      log_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logExports),
       namespace_name: cdktf.stringToTerraform(this._namespaceName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

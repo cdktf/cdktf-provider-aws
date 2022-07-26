@@ -278,8 +278,8 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform)(struct!.destination),
-    repository_filter: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform)(struct!.repositoryFilter),
+    destination: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTerraform, true)(struct!.destination),
+    repository_filter: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
   }
 }
 
@@ -397,7 +397,7 @@ export function ecrReplicationConfigurationReplicationConfigurationToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleToTerraform)(struct!.rule),
+    rule: cdktf.listMapper(ecrReplicationConfigurationReplicationConfigurationRuleToTerraform, true)(struct!.rule),
   }
 }
 
@@ -479,7 +479,10 @@ export class EcrReplicationConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._replicationConfiguration.internalValue = config.replicationConfiguration;

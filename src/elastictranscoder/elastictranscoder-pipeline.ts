@@ -178,7 +178,7 @@ export function elastictranscoderPipelineContentConfigPermissionsToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
+    access: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.access),
     grantee: cdktf.stringToTerraform(struct!.grantee),
     grantee_type: cdktf.stringToTerraform(struct!.granteeType),
   }
@@ -567,7 +567,7 @@ export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
+    access: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.access),
     grantee: cdktf.stringToTerraform(struct!.grantee),
     grantee_type: cdktf.stringToTerraform(struct!.granteeType),
   }
@@ -730,7 +730,10 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._awsKmsKeyArn = config.awsKmsKeyArn;
     this._id = config.id;
@@ -937,10 +940,10 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
       output_bucket: cdktf.stringToTerraform(this._outputBucket),
       role: cdktf.stringToTerraform(this._role),
       content_config: elastictranscoderPipelineContentConfigToTerraform(this._contentConfig.internalValue),
-      content_config_permissions: cdktf.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform)(this._contentConfigPermissions.internalValue),
+      content_config_permissions: cdktf.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform, true)(this._contentConfigPermissions.internalValue),
       notifications: elastictranscoderPipelineNotificationsToTerraform(this._notifications.internalValue),
       thumbnail_config: elastictranscoderPipelineThumbnailConfigToTerraform(this._thumbnailConfig.internalValue),
-      thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform)(this._thumbnailConfigPermissions.internalValue),
+      thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform, true)(this._thumbnailConfigPermissions.internalValue),
     };
   }
 }

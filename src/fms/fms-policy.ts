@@ -90,8 +90,8 @@ export function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMapOutpu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.listMapper(cdktf.stringToTerraform)(struct!.account),
-    orgunit: cdktf.listMapper(cdktf.stringToTerraform)(struct!.orgunit),
+    account: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.account),
+    orgunit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.orgunit),
   }
 }
 
@@ -182,8 +182,8 @@ export function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMapOutpu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.listMapper(cdktf.stringToTerraform)(struct!.account),
-    orgunit: cdktf.listMapper(cdktf.stringToTerraform)(struct!.orgunit),
+    account: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.account),
+    orgunit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.orgunit),
   }
 }
 
@@ -379,7 +379,10 @@ export class FmsPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deleteAllPolicyResources = config.deleteAllPolicyResources;
     this._deleteUnusedFmManagedResources = config.deleteUnusedFmManagedResources;
@@ -640,7 +643,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
       remediation_enabled: cdktf.booleanToTerraform(this._remediationEnabled),
       resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
       resource_type: cdktf.stringToTerraform(this._resourceType),
-      resource_type_list: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypeList),
+      resource_type_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypeList),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       exclude_map: fmsPolicyExcludeMapToTerraform(this._excludeMap.internalValue),

@@ -205,7 +205,7 @@ export function dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform(str
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -341,7 +341,10 @@ export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDat
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._excludeCompliantResources = config.excludeCompliantResources;
     this._id = config.id;
@@ -466,9 +469,9 @@ export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDat
       exclude_compliant_resources: cdktf.booleanToTerraform(this._excludeCompliantResources),
       id: cdktf.stringToTerraform(this._id),
       include_compliance_details: cdktf.booleanToTerraform(this._includeComplianceDetails),
-      resource_arn_list: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceArnList),
-      resource_type_filters: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypeFilters),
-      tag_filter: cdktf.listMapper(dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform)(this._tagFilter.internalValue),
+      resource_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceArnList),
+      resource_type_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypeFilters),
+      tag_filter: cdktf.listMapper(dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform, true)(this._tagFilter.internalValue),
     };
   }
 }

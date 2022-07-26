@@ -172,7 +172,10 @@ export class NetworkmanagerCustomerGatewayAssociation extends cdktf.TerraformRes
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customerGatewayArn = config.customerGatewayArn;
     this._deviceId = config.deviceId;

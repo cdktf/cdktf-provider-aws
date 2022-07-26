@@ -203,7 +203,7 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfi
   }
   return {
     clients: cdktf.stringToTerraform(struct!.clients),
-    options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.options),
+    options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
   }
 }
 
@@ -318,7 +318,7 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_configurations: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsToTerraform)(struct!.clientConfigurations),
+    client_configurations: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsToTerraform, true)(struct!.clientConfigurations),
   }
 }
 
@@ -549,7 +549,7 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationToTerraform(struct?: 
     data_compression_type: cdktf.stringToTerraform(struct!.dataCompressionType),
     read_only: cdktf.booleanToTerraform(struct!.readOnly),
     nfs_exports: fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToTerraform(struct!.nfsExports),
-    user_and_group_quotas: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToTerraform)(struct!.userAndGroupQuotas),
+    user_and_group_quotas: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToTerraform, true)(struct!.userAndGroupQuotas),
   }
 }
 
@@ -851,7 +851,10 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
     this._backupId = config.backupId;
@@ -1217,10 +1220,10 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
       deployment_type: cdktf.stringToTerraform(this._deploymentType),
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
       storage_type: cdktf.stringToTerraform(this._storageType),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_capacity: cdktf.numberToTerraform(this._throughputCapacity),

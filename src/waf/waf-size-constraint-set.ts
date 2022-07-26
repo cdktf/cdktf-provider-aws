@@ -315,7 +315,10 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -384,7 +387,7 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      size_constraints: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform)(this._sizeConstraints.internalValue),
+      size_constraints: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform, true)(this._sizeConstraints.internalValue),
     };
   }
 }

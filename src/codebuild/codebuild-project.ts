@@ -455,7 +455,7 @@ export function codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compute_types_allowed: cdktf.listMapper(cdktf.stringToTerraform)(struct!.computeTypesAllowed),
+    compute_types_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.computeTypesAllowed),
     maximum_builds_allowed: cdktf.numberToTerraform(struct!.maximumBuildsAllowed),
   }
 }
@@ -697,7 +697,7 @@ export function codebuildProjectCacheToTerraform(struct?: CodebuildProjectCacheO
   }
   return {
     location: cdktf.stringToTerraform(struct!.location),
-    modes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.modes),
+    modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.modes),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -1076,7 +1076,7 @@ export function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProject
     image_pull_credentials_type: cdktf.stringToTerraform(struct!.imagePullCredentialsType),
     privileged_mode: cdktf.booleanToTerraform(struct!.privilegedMode),
     type: cdktf.stringToTerraform(struct!.type),
-    environment_variable: cdktf.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform)(struct!.environmentVariable),
+    environment_variable: cdktf.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform, true)(struct!.environmentVariable),
     registry_credential: codebuildProjectEnvironmentRegistryCredentialToTerraform(struct!.registryCredential),
   }
 }
@@ -3423,8 +3423,8 @@ export function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVp
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
@@ -3545,7 +3545,10 @@ export class CodebuildProject extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._badgeEnabled = config.badgeEnabled;
     this._buildTimeout = config.buildTimeout;
@@ -4002,11 +4005,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
       build_batch_config: codebuildProjectBuildBatchConfigToTerraform(this._buildBatchConfig.internalValue),
       cache: codebuildProjectCacheToTerraform(this._cache.internalValue),
       environment: codebuildProjectEnvironmentToTerraform(this._environment.internalValue),
-      file_system_locations: cdktf.listMapper(codebuildProjectFileSystemLocationsToTerraform)(this._fileSystemLocations.internalValue),
+      file_system_locations: cdktf.listMapper(codebuildProjectFileSystemLocationsToTerraform, true)(this._fileSystemLocations.internalValue),
       logs_config: codebuildProjectLogsConfigToTerraform(this._logsConfig.internalValue),
-      secondary_artifacts: cdktf.listMapper(codebuildProjectSecondaryArtifactsToTerraform)(this._secondaryArtifacts.internalValue),
-      secondary_source_version: cdktf.listMapper(codebuildProjectSecondarySourceVersionToTerraform)(this._secondarySourceVersion.internalValue),
-      secondary_sources: cdktf.listMapper(codebuildProjectSecondarySourcesToTerraform)(this._secondarySources.internalValue),
+      secondary_artifacts: cdktf.listMapper(codebuildProjectSecondaryArtifactsToTerraform, true)(this._secondaryArtifacts.internalValue),
+      secondary_source_version: cdktf.listMapper(codebuildProjectSecondarySourceVersionToTerraform, true)(this._secondarySourceVersion.internalValue),
+      secondary_sources: cdktf.listMapper(codebuildProjectSecondarySourcesToTerraform, true)(this._secondarySources.internalValue),
       source: codebuildProjectSourceToTerraform(this._source.internalValue),
       vpc_config: codebuildProjectVpcConfigToTerraform(this._vpcConfig.internalValue),
     };

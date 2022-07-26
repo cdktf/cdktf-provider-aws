@@ -64,7 +64,10 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._secretBinary = config.secretBinary;
@@ -174,7 +177,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       secret_binary: cdktf.stringToTerraform(this._secretBinary),
       secret_id: cdktf.stringToTerraform(this._secretId),
       secret_string: cdktf.stringToTerraform(this._secretString),
-      version_stages: cdktf.listMapper(cdktf.stringToTerraform)(this._versionStages),
+      version_stages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._versionStages),
     };
   }
 }

@@ -399,7 +399,10 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applyImmediately = config.applyImmediately;
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
@@ -910,18 +913,18 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       num_cache_nodes: cdktf.numberToTerraform(this._numCacheNodes),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       port: cdktf.numberToTerraform(this._port),
-      preferred_availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredAvailabilityZones),
+      preferred_availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredAvailabilityZones),
       replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupNames),
+      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArns),
       snapshot_name: cdktf.stringToTerraform(this._snapshotName),
       snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration.internalValue),
+      log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
     };
   }
 }

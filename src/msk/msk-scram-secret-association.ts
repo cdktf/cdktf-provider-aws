@@ -56,7 +56,10 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterArn = config.clusterArn;
     this._id = config.id;
@@ -117,7 +120,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
     return {
       cluster_arn: cdktf.stringToTerraform(this._clusterArn),
       id: cdktf.stringToTerraform(this._id),
-      secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform)(this._secretArnList),
+      secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretArnList),
     };
   }
 }

@@ -176,7 +176,10 @@ export class RamResourceShare extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowExternalPrincipals = config.allowExternalPrincipals;
     this._id = config.id;
@@ -314,7 +317,7 @@ export class RamResourceShare extends cdktf.TerraformResource {
       allow_external_principals: cdktf.booleanToTerraform(this._allowExternalPrincipals),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      permission_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._permissionArns),
+      permission_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissionArns),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: ramResourceShareTimeoutsToTerraform(this._timeouts.internalValue),

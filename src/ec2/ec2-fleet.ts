@@ -1032,16 +1032,16 @@ export function ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorManufacturers),
-    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorNames),
-    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorTypes),
+    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
+    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
+    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
-    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cpuManufacturers),
-    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedInstanceTypes),
-    instance_generations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceGenerations),
+    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
+    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedInstanceTypes),
+    instance_generations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceGenerations),
     local_storage: cdktf.stringToTerraform(struct!.localStorage),
-    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.localStorageTypes),
+    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localStorageTypes),
     on_demand_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.onDemandMaxPricePercentageOverLowestPrice),
     require_hibernate_support: cdktf.booleanToTerraform(struct!.requireHibernateSupport),
     spot_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.spotMaxPricePercentageOverLowestPrice),
@@ -1821,7 +1821,7 @@ export function ec2FleetLaunchTemplateConfigToTerraform(struct?: Ec2FleetLaunchT
   }
   return {
     launch_template_specification: ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationToTerraform(struct!.launchTemplateSpecification),
-    override: cdktf.listMapper(ec2FleetLaunchTemplateConfigOverrideToTerraform)(struct!.override),
+    override: cdktf.listMapper(ec2FleetLaunchTemplateConfigOverrideToTerraform, true)(struct!.override),
   }
 }
 
@@ -2539,7 +2539,10 @@ export class Ec2Fleet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._context = config.context;
     this._excessCapacityTerminationPolicy = config.excessCapacityTerminationPolicy;

@@ -341,7 +341,10 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
@@ -453,7 +456,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       target_bucket: cdktf.stringToTerraform(this._targetBucket),
       target_prefix: cdktf.stringToTerraform(this._targetPrefix),
-      target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform)(this._targetGrant.internalValue),
+      target_grant: cdktf.listMapper(s3BucketLoggingTargetGrantToTerraform, true)(this._targetGrant.internalValue),
     };
   }
 }

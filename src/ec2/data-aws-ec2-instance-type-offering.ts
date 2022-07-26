@@ -47,7 +47,7 @@ export function dataAwsEc2InstanceTypeOfferingFilterToTerraform(struct?: DataAws
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._locationType = config.locationType;
@@ -269,8 +272,8 @@ export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       location_type: cdktf.stringToTerraform(this._locationType),
-      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceTypes),
-      filter: cdktf.listMapper(dataAwsEc2InstanceTypeOfferingFilterToTerraform)(this._filter.internalValue),
+      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceTypes),
+      filter: cdktf.listMapper(dataAwsEc2InstanceTypeOfferingFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

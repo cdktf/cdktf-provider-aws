@@ -51,7 +51,7 @@ export function dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform(str
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -184,7 +184,10 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dxGatewayId = config.dxGatewayId;
     this._id = config.id;
@@ -287,7 +290,7 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      filter: cdktf.listMapper(dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

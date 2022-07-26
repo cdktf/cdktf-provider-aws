@@ -64,7 +64,7 @@ export function dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(struct?
     init_query: cdktf.stringToTerraform(struct!.initQuery),
     max_connections_percent: cdktf.numberToTerraform(struct!.maxConnectionsPercent),
     max_idle_connections_percent: cdktf.numberToTerraform(struct!.maxIdleConnectionsPercent),
-    session_pinning_filters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sessionPinningFilters),
+    session_pinning_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sessionPinningFilters),
   }
 }
 
@@ -339,7 +339,10 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dbProxyName = config.dbProxyName;
     this._id = config.id;

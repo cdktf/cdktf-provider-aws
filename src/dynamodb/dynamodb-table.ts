@@ -276,7 +276,7 @@ export function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTa
   return {
     hash_key: cdktf.stringToTerraform(struct!.hashKey),
     name: cdktf.stringToTerraform(struct!.name),
-    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nonKeyAttributes),
+    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonKeyAttributes),
     projection_type: cdktf.stringToTerraform(struct!.projectionType),
     range_key: cdktf.stringToTerraform(struct!.rangeKey),
     read_capacity: cdktf.numberToTerraform(struct!.readCapacity),
@@ -513,7 +513,7 @@ export function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTab
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nonKeyAttributes),
+    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonKeyAttributes),
     projection_type: cdktf.stringToTerraform(struct!.projectionType),
     range_key: cdktf.stringToTerraform(struct!.rangeKey),
   }
@@ -1233,7 +1233,10 @@ export class DynamodbTable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._billingMode = config.billingMode;
     this._hashKey = config.hashKey;
@@ -1665,11 +1668,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       write_capacity: cdktf.numberToTerraform(this._writeCapacity),
-      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform)(this._attribute.internalValue),
-      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform)(this._globalSecondaryIndex.internalValue),
-      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform)(this._localSecondaryIndex.internalValue),
+      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform, true)(this._attribute.internalValue),
+      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform, true)(this._globalSecondaryIndex.internalValue),
+      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform, true)(this._localSecondaryIndex.internalValue),
       point_in_time_recovery: dynamodbTablePointInTimeRecoveryToTerraform(this._pointInTimeRecovery.internalValue),
-      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform)(this._replica.internalValue),
+      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform, true)(this._replica.internalValue),
       server_side_encryption: dynamodbTableServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       timeouts: dynamodbTableTimeoutsToTerraform(this._timeouts.internalValue),
       ttl: dynamodbTableTtlToTerraform(this._ttl.internalValue),

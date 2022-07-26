@@ -579,7 +579,10 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._glueVersion = config.glueVersion;
@@ -847,7 +850,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
-      input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform)(this._inputRecordTables.internalValue),
+      input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform, true)(this._inputRecordTables.internalValue),
       parameters: glueMlTransformParametersToTerraform(this._parameters.internalValue),
     };
   }

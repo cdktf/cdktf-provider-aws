@@ -60,7 +60,10 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessPointId = config.accessPointId;
     this._fileSystemId = config.fileSystemId;

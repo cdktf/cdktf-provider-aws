@@ -82,7 +82,7 @@ export function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolver
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachingKeys),
+    caching_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cachingKeys),
     ttl: cdktf.numberToTerraform(struct!.ttl),
   }
 }
@@ -170,7 +170,7 @@ export function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolve
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    functions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.functions),
+    functions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.functions),
   }
 }
 
@@ -441,7 +441,10 @@ export class AppsyncResolver extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiId = config.apiId;
     this._dataSource = config.dataSource;

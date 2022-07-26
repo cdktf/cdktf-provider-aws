@@ -97,7 +97,7 @@ export function glueCatalogTablePartitionIndexToTerraform(struct?: GlueCatalogTa
   }
   return {
     index_name: cdktf.stringToTerraform(struct!.indexName),
-    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
   }
 }
 
@@ -902,9 +902,9 @@ export function glueCatalogTableStorageDescriptorSkewedInfoToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    skewed_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnNames),
+    skewed_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skewedColumnNames),
     skewed_column_value_location_maps: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.skewedColumnValueLocationMaps),
-    skewed_column_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnValues),
+    skewed_column_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skewedColumnValues),
   }
 }
 
@@ -1189,7 +1189,7 @@ export function glueCatalogTableStorageDescriptorToTerraform(struct?: GlueCatalo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_columns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.bucketColumns),
+    bucket_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bucketColumns),
     compressed: cdktf.booleanToTerraform(struct!.compressed),
     input_format: cdktf.stringToTerraform(struct!.inputFormat),
     location: cdktf.stringToTerraform(struct!.location),
@@ -1197,11 +1197,11 @@ export function glueCatalogTableStorageDescriptorToTerraform(struct?: GlueCatalo
     output_format: cdktf.stringToTerraform(struct!.outputFormat),
     parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
     stored_as_sub_directories: cdktf.booleanToTerraform(struct!.storedAsSubDirectories),
-    columns: cdktf.listMapper(glueCatalogTableStorageDescriptorColumnsToTerraform)(struct!.columns),
+    columns: cdktf.listMapper(glueCatalogTableStorageDescriptorColumnsToTerraform, true)(struct!.columns),
     schema_reference: glueCatalogTableStorageDescriptorSchemaReferenceToTerraform(struct!.schemaReference),
     ser_de_info: glueCatalogTableStorageDescriptorSerDeInfoToTerraform(struct!.serDeInfo),
     skewed_info: glueCatalogTableStorageDescriptorSkewedInfoToTerraform(struct!.skewedInfo),
-    sort_columns: cdktf.listMapper(glueCatalogTableStorageDescriptorSortColumnsToTerraform)(struct!.sortColumns),
+    sort_columns: cdktf.listMapper(glueCatalogTableStorageDescriptorSortColumnsToTerraform, true)(struct!.sortColumns),
   }
 }
 
@@ -1660,7 +1660,10 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._databaseName = config.databaseName;
@@ -1939,8 +1942,8 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
       table_type: cdktf.stringToTerraform(this._tableType),
       view_expanded_text: cdktf.stringToTerraform(this._viewExpandedText),
       view_original_text: cdktf.stringToTerraform(this._viewOriginalText),
-      partition_index: cdktf.listMapper(glueCatalogTablePartitionIndexToTerraform)(this._partitionIndex.internalValue),
-      partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform)(this._partitionKeys.internalValue),
+      partition_index: cdktf.listMapper(glueCatalogTablePartitionIndexToTerraform, true)(this._partitionIndex.internalValue),
+      partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform, true)(this._partitionKeys.internalValue),
       storage_descriptor: glueCatalogTableStorageDescriptorToTerraform(this._storageDescriptor.internalValue),
       target_table: glueCatalogTableTargetTableToTerraform(this._targetTable.internalValue),
     };

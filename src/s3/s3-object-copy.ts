@@ -207,7 +207,7 @@ export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant | cdktf.
   return {
     email: cdktf.stringToTerraform(struct!.email),
     id: cdktf.stringToTerraform(struct!.id),
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
     type: cdktf.stringToTerraform(struct!.type),
     uri: cdktf.stringToTerraform(struct!.uri),
   }
@@ -408,7 +408,10 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acl = config.acl;
     this._bucket = config.bucket;
@@ -1162,7 +1165,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
-      grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform)(this._grant.internalValue),
+      grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform, true)(this._grant.internalValue),
     };
   }
 }

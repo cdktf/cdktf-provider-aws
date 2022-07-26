@@ -431,8 +431,8 @@ export function ecsTaskSetNetworkConfigurationToTerraform(struct?: EcsTaskSetNet
   }
   return {
     assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
   }
 }
 
@@ -793,7 +793,10 @@ export class EcsTaskSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cluster = config.cluster;
     this._externalId = config.externalId;
@@ -1119,8 +1122,8 @@ export class EcsTaskSet extends cdktf.TerraformResource {
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       wait_until_stable: cdktf.booleanToTerraform(this._waitUntilStable),
       wait_until_stable_timeout: cdktf.stringToTerraform(this._waitUntilStableTimeout),
-      capacity_provider_strategy: cdktf.listMapper(ecsTaskSetCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy.internalValue),
-      load_balancer: cdktf.listMapper(ecsTaskSetLoadBalancerToTerraform)(this._loadBalancer.internalValue),
+      capacity_provider_strategy: cdktf.listMapper(ecsTaskSetCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
+      load_balancer: cdktf.listMapper(ecsTaskSetLoadBalancerToTerraform, true)(this._loadBalancer.internalValue),
       network_configuration: ecsTaskSetNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
       scale: ecsTaskSetScaleToTerraform(this._scale.internalValue),
       service_registries: ecsTaskSetServiceRegistriesToTerraform(this._serviceRegistries.internalValue),

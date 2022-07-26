@@ -84,7 +84,10 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._durationSeconds = config.durationSeconds;
     this._enabled = config.enabled;
@@ -270,10 +273,10 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
       duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
-      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._managedPolicyArns),
+      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._managedPolicyArns),
       name: cdktf.stringToTerraform(this._name),
       require_instance_properties: cdktf.booleanToTerraform(this._requireInstanceProperties),
-      role_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._roleArns),
+      role_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleArns),
       session_policy: cdktf.stringToTerraform(this._sessionPolicy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

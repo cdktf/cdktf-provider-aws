@@ -281,7 +281,10 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterIdentifier = config.clusterIdentifier;
     this._database = config.database;
@@ -464,7 +467,7 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
       sql: cdktf.stringToTerraform(this._sql),
       statement_name: cdktf.stringToTerraform(this._statementName),
       with_event: cdktf.booleanToTerraform(this._withEvent),
-      parameters: cdktf.listMapper(redshiftdataStatementParametersToTerraform)(this._parameters.internalValue),
+      parameters: cdktf.listMapper(redshiftdataStatementParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: redshiftdataStatementTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -73,7 +73,7 @@ export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketN
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
     filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
     id: cdktf.stringToTerraform(struct!.id),
@@ -278,7 +278,7 @@ export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
     filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
     id: cdktf.stringToTerraform(struct!.id),
@@ -480,7 +480,7 @@ export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
     filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
     id: cdktf.stringToTerraform(struct!.id),
@@ -683,7 +683,10 @@ export class S3BucketNotification extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._eventbridge = config.eventbridge;
@@ -799,9 +802,9 @@ export class S3BucketNotification extends cdktf.TerraformResource {
       bucket: cdktf.stringToTerraform(this._bucket),
       eventbridge: cdktf.booleanToTerraform(this._eventbridge),
       id: cdktf.stringToTerraform(this._id),
-      lambda_function: cdktf.listMapper(s3BucketNotificationLambdaFunctionToTerraform)(this._lambdaFunction.internalValue),
-      queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform)(this._queue.internalValue),
-      topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform)(this._topic.internalValue),
+      lambda_function: cdktf.listMapper(s3BucketNotificationLambdaFunctionToTerraform, true)(this._lambdaFunction.internalValue),
+      queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform, true)(this._queue.internalValue),
+      topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform, true)(this._topic.internalValue),
     };
   }
 }

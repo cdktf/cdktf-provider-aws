@@ -145,7 +145,10 @@ export class Route53RecoveryreadinessRecoveryGroup extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cells = config.cells;
     this._id = config.id;
@@ -263,7 +266,7 @@ export class Route53RecoveryreadinessRecoveryGroup extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cells: cdktf.listMapper(cdktf.stringToTerraform)(this._cells),
+      cells: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cells),
       id: cdktf.stringToTerraform(this._id),
       recovery_group_name: cdktf.stringToTerraform(this._recoveryGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

@@ -188,8 +188,8 @@ export function backupFrameworkControlScopeToTerraform(struct?: BackupFrameworkC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compliance_resource_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.complianceResourceIds),
-    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.complianceResourceTypes),
+    compliance_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.complianceResourceIds),
+    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.complianceResourceTypes),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
 }
@@ -312,7 +312,7 @@ export function backupFrameworkControlToTerraform(struct?: BackupFrameworkContro
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    input_parameter: cdktf.listMapper(backupFrameworkControlInputParameterToTerraform)(struct!.inputParameter),
+    input_parameter: cdktf.listMapper(backupFrameworkControlInputParameterToTerraform, true)(struct!.inputParameter),
     scope: backupFrameworkControlScopeToTerraform(struct!.scope),
   }
 }
@@ -600,7 +600,10 @@ export class BackupFramework extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -752,7 +755,7 @@ export class BackupFramework extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      control: cdktf.listMapper(backupFrameworkControlToTerraform)(this._control.internalValue),
+      control: cdktf.listMapper(backupFrameworkControlToTerraform, true)(this._control.internalValue),
       timeouts: backupFrameworkTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

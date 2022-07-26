@@ -91,7 +91,7 @@ export function budgetsBudgetCostFilterToTerraform(struct?: BudgetsBudgetCostFil
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -561,8 +561,8 @@ export function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotif
   return {
     comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
     notification_type: cdktf.stringToTerraform(struct!.notificationType),
-    subscriber_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberEmailAddresses),
-    subscriber_sns_topic_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberSnsTopicArns),
+    subscriber_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subscriberEmailAddresses),
+    subscriber_sns_topic_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subscriberSnsTopicArns),
     threshold: cdktf.numberToTerraform(struct!.threshold),
     threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
   }
@@ -779,7 +779,10 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._budgetType = config.budgetType;
@@ -1035,9 +1038,9 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       time_period_end: cdktf.stringToTerraform(this._timePeriodEnd),
       time_period_start: cdktf.stringToTerraform(this._timePeriodStart),
       time_unit: cdktf.stringToTerraform(this._timeUnit),
-      cost_filter: cdktf.listMapper(budgetsBudgetCostFilterToTerraform)(this._costFilter.internalValue),
+      cost_filter: cdktf.listMapper(budgetsBudgetCostFilterToTerraform, true)(this._costFilter.internalValue),
       cost_types: budgetsBudgetCostTypesToTerraform(this._costTypes.internalValue),
-      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification.internalValue),
+      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform, true)(this._notification.internalValue),
     };
   }
 }

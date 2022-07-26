@@ -164,7 +164,10 @@ export class VpcIpam extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cascade = config.cascade;
     this._description = config.description;
@@ -302,7 +305,7 @@ export class VpcIpam extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform)(this._operatingRegions.internalValue),
+      operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform, true)(this._operatingRegions.internalValue),
     };
   }
 }

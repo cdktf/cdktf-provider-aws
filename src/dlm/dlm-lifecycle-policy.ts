@@ -388,7 +388,7 @@ export function dlmLifecyclePolicyPolicyDetailsActionToTerraform(struct?: DlmLif
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    cross_region_copy: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform)(struct!.crossRegionCopy),
+    cross_region_copy: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform, true)(struct!.crossRegionCopy),
   }
 }
 
@@ -479,7 +479,7 @@ export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToTerraform(
   return {
     description_regex: cdktf.stringToTerraform(struct!.descriptionRegex),
     event_type: cdktf.stringToTerraform(struct!.eventType),
-    snapshot_owner: cdktf.listMapper(cdktf.stringToTerraform)(struct!.snapshotOwner),
+    snapshot_owner: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.snapshotOwner),
   }
 }
 
@@ -779,7 +779,7 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(str
     interval: cdktf.numberToTerraform(struct!.interval),
     interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
     location: cdktf.stringToTerraform(struct!.location),
-    times: cdktf.listMapper(cdktf.stringToTerraform)(struct!.times),
+    times: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.times),
   }
 }
 
@@ -1465,7 +1465,7 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(struct!.availabilityZones),
+    availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.availabilityZones),
     count: cdktf.numberToTerraform(struct!.count),
     interval: cdktf.numberToTerraform(struct!.interval),
     interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
@@ -1723,7 +1723,7 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_accounts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targetAccounts),
+    target_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetAccounts),
     unshare_interval: cdktf.numberToTerraform(struct!.unshareInterval),
     unshare_interval_unit: cdktf.stringToTerraform(struct!.unshareIntervalUnit),
   }
@@ -1884,7 +1884,7 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmL
     tags_to_add: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tagsToAdd),
     variable_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.variableTags),
     create_rule: dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(struct!.createRule),
-    cross_region_copy_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform)(struct!.crossRegionCopyRule),
+    cross_region_copy_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform, true)(struct!.crossRegionCopyRule),
     deprecate_rule: dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToTerraform(struct!.deprecateRule),
     fast_restore_rule: dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToTerraform(struct!.fastRestoreRule),
     retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct!.retainRule),
@@ -2211,13 +2211,13 @@ export function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecycle
   }
   return {
     policy_type: cdktf.stringToTerraform(struct!.policyType),
-    resource_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceLocations),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceTypes),
+    resource_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceLocations),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
     target_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.targetTags),
     action: dlmLifecyclePolicyPolicyDetailsActionToTerraform(struct!.action),
     event_source: dlmLifecyclePolicyPolicyDetailsEventSourceToTerraform(struct!.eventSource),
     parameters: dlmLifecyclePolicyPolicyDetailsParametersToTerraform(struct!.parameters),
-    schedule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform)(struct!.schedule),
+    schedule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform, true)(struct!.schedule),
   }
 }
 
@@ -2456,7 +2456,10 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._executionRoleArn = config.executionRoleArn;

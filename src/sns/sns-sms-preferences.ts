@@ -72,7 +72,10 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultSenderId = config.defaultSenderId;
     this._defaultSmsType = config.defaultSmsType;

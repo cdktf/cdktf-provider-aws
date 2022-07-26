@@ -316,7 +316,7 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform(st
   return {
     behavior: cdktf.stringToTerraform(struct!.behavior),
     requirement: cdktf.stringToTerraform(struct!.requirement),
-    condition: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform)(struct!.condition),
+    condition: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform, true)(struct!.condition),
   }
 }
 
@@ -455,7 +455,7 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(struct?:
   }
   return {
     default_behavior: cdktf.stringToTerraform(struct!.defaultBehavior),
-    filter: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform)(struct!.filter),
+    filter: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform, true)(struct!.filter),
   }
 }
 
@@ -1143,7 +1143,10 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._logDestinationConfigs = config.logDestinationConfigs;
@@ -1237,10 +1240,10 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      log_destination_configs: cdktf.listMapper(cdktf.stringToTerraform)(this._logDestinationConfigs),
+      log_destination_configs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._logDestinationConfigs),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
       logging_filter: wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(this._loggingFilter.internalValue),
-      redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform)(this._redactedFields.internalValue),
+      redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform, true)(this._redactedFields.internalValue),
     };
   }
 }
