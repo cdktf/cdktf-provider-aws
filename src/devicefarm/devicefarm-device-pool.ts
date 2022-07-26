@@ -229,7 +229,10 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -387,7 +390,7 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
       project_arn: cdktf.stringToTerraform(this._projectArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rule: cdktf.listMapper(devicefarmDevicePoolRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(devicefarmDevicePoolRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

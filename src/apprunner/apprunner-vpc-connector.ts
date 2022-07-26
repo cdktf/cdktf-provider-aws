@@ -64,7 +64,10 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._securityGroups = config.securityGroups;
@@ -170,8 +173,8 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
+      subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_connector_name: cdktf.stringToTerraform(this._vpcConnectorName),
     };

@@ -354,7 +354,10 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessBasedEnumeration = config.accessBasedEnumeration;
     this._adminUserList = config.adminUserList;
@@ -851,7 +854,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_based_enumeration: cdktf.booleanToTerraform(this._accessBasedEnumeration),
-      admin_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._adminUserList),
+      admin_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminUserList),
       audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
       authentication: cdktf.stringToTerraform(this._authentication),
       bucket_region: cdktf.stringToTerraform(this._bucketRegion),
@@ -861,7 +864,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
       guess_mime_type_enabled: cdktf.booleanToTerraform(this._guessMimeTypeEnabled),
       id: cdktf.stringToTerraform(this._id),
-      invalid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._invalidUserList),
+      invalid_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._invalidUserList),
       kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       location_arn: cdktf.stringToTerraform(this._locationArn),
@@ -874,7 +877,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       smb_acl_enabled: cdktf.booleanToTerraform(this._smbAclEnabled),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      valid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._validUserList),
+      valid_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._validUserList),
       vpc_endpoint_dns_name: cdktf.stringToTerraform(this._vpcEndpointDnsName),
       cache_attributes: storagegatewaySmbFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts.internalValue),

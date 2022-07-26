@@ -76,7 +76,10 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._addresses = config.addresses;
     this._description = config.description;
@@ -227,7 +230,7 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._addresses),
+      addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addresses),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       ip_address_version: cdktf.stringToTerraform(this._ipAddressVersion),

@@ -186,8 +186,8 @@ export function iotTopicRuleDestinationVpcConfigurationToTerraform(struct?: IotT
   }
   return {
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
@@ -330,7 +330,10 @@ export class IotTopicRuleDestination extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._id = config.id;

@@ -131,7 +131,7 @@ export function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogT
   }
   return {
     database_name: cdktf.stringToTerraform(struct!.databaseName),
-    tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tables),
+    tables: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tables),
   }
 }
 
@@ -253,7 +253,7 @@ export function glueCrawlerDeltaTargetToTerraform(struct?: GlueCrawlerDeltaTarge
   }
   return {
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
-    delta_tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.deltaTables),
+    delta_tables: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deltaTables),
     write_manifest: cdktf.booleanToTerraform(struct!.writeManifest),
   }
 }
@@ -543,7 +543,7 @@ export function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget 
   }
   return {
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     path: cdktf.stringToTerraform(struct!.path),
   }
 }
@@ -977,7 +977,7 @@ export function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target | cd
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
     dlq_event_queue_arn: cdktf.stringToTerraform(struct!.dlqEventQueueArn),
     event_queue_arn: cdktf.stringToTerraform(struct!.eventQueueArn),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     path: cdktf.stringToTerraform(struct!.path),
     sample_size: cdktf.numberToTerraform(struct!.sampleSize),
   }
@@ -1295,7 +1295,10 @@ export class GlueCrawler extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._classifiers = config.classifiers;
     this._configuration = config.configuration;
@@ -1662,7 +1665,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      classifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._classifiers),
+      classifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._classifiers),
       configuration: cdktf.stringToTerraform(this._configuration),
       database_name: cdktf.stringToTerraform(this._databaseName),
       description: cdktf.stringToTerraform(this._description),
@@ -1674,14 +1677,14 @@ export class GlueCrawler extends cdktf.TerraformResource {
       table_prefix: cdktf.stringToTerraform(this._tablePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget.internalValue),
-      delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform)(this._deltaTarget.internalValue),
-      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget.internalValue),
-      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget.internalValue),
+      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform, true)(this._catalogTarget.internalValue),
+      delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform, true)(this._deltaTarget.internalValue),
+      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform, true)(this._dynamodbTarget.internalValue),
+      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform, true)(this._jdbcTarget.internalValue),
       lineage_configuration: glueCrawlerLineageConfigurationToTerraform(this._lineageConfiguration.internalValue),
-      mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform)(this._mongodbTarget.internalValue),
+      mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform, true)(this._mongodbTarget.internalValue),
       recrawl_policy: glueCrawlerRecrawlPolicyToTerraform(this._recrawlPolicy.internalValue),
-      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target.internalValue),
+      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform, true)(this._s3Target.internalValue),
       schema_change_policy: glueCrawlerSchemaChangePolicyToTerraform(this._schemaChangePolicy.internalValue),
     };
   }

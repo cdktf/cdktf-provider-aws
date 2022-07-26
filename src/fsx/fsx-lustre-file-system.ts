@@ -365,7 +365,10 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoImportPolicy = config.autoImportPolicy;
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
@@ -829,10 +832,10 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       imported_file_chunk_size: cdktf.numberToTerraform(this._importedFileChunkSize),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       per_unit_storage_throughput: cdktf.numberToTerraform(this._perUnitStorageThroughput),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
       storage_type: cdktf.stringToTerraform(this._storageType),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       weekly_maintenance_start_time: cdktf.stringToTerraform(this._weeklyMaintenanceStartTime),

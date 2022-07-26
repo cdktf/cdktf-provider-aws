@@ -343,12 +343,12 @@ export function batchComputeEnvironmentComputeResourcesToTerraform(struct?: Batc
     ec2_key_pair: cdktf.stringToTerraform(struct!.ec2KeyPair),
     image_id: cdktf.stringToTerraform(struct!.imageId),
     instance_role: cdktf.stringToTerraform(struct!.instanceRole),
-    instance_type: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceType),
+    instance_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceType),
     max_vcpus: cdktf.numberToTerraform(struct!.maxVcpus),
     min_vcpus: cdktf.numberToTerraform(struct!.minVcpus),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     spot_iam_fleet_role: cdktf.stringToTerraform(struct!.spotIamFleetRole),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     type: cdktf.stringToTerraform(struct!.type),
     ec2_configuration: batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct!.ec2Configuration),
@@ -755,7 +755,10 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._computeEnvironmentName = config.computeEnvironmentName;
     this._computeEnvironmentNamePrefix = config.computeEnvironmentNamePrefix;

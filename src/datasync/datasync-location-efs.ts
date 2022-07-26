@@ -66,7 +66,7 @@ export function datasyncLocationEfsEc2ConfigToTerraform(struct?: DatasyncLocatio
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupArns),
+    security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupArns),
     subnet_arn: cdktf.stringToTerraform(struct!.subnetArn),
   }
 }
@@ -168,7 +168,10 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessPointArn = config.accessPointArn;
     this._efsFileSystemArn = config.efsFileSystemArn;

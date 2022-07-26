@@ -382,7 +382,7 @@ export function eksNodeGroupRemoteAccessToTerraform(struct?: EksNodeGroupRemoteA
   }
   return {
     ec2_ssh_key: cdktf.stringToTerraform(struct!.ec2SshKey),
-    source_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sourceSecurityGroupIds),
+    source_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceSecurityGroupIds),
   }
 }
 
@@ -965,7 +965,10 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._amiType = config.amiType;
     this._capacityType = config.capacityType;
@@ -1363,20 +1366,20 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       disk_size: cdktf.numberToTerraform(this._diskSize),
       force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
       id: cdktf.stringToTerraform(this._id),
-      instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
+      instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceTypes),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
       node_group_name_prefix: cdktf.stringToTerraform(this._nodeGroupNamePrefix),
       node_role_arn: cdktf.stringToTerraform(this._nodeRoleArn),
       release_version: cdktf.stringToTerraform(this._releaseVersion),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       launch_template: eksNodeGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       remote_access: eksNodeGroupRemoteAccessToTerraform(this._remoteAccess.internalValue),
       scaling_config: eksNodeGroupScalingConfigToTerraform(this._scalingConfig.internalValue),
-      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform)(this._taint.internalValue),
+      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform, true)(this._taint.internalValue),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts.internalValue),
       update_config: eksNodeGroupUpdateConfigToTerraform(this._updateConfig.internalValue),
     };

@@ -60,7 +60,10 @@ export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deviceIndex = config.deviceIndex;
     this._id = config.id;

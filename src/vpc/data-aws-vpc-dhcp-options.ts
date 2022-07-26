@@ -47,7 +47,7 @@ export function dataAwsVpcDhcpOptionsFilterToTerraform(struct?: DataAwsVpcDhcpOp
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dhcpOptionsId = config.dhcpOptionsId;
     this._id = config.id;
@@ -300,7 +303,7 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
       dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpcDhcpOptionsFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsVpcDhcpOptionsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

@@ -54,7 +54,7 @@ export function glacierVaultNotificationToTerraform(struct?: GlacierVaultNotific
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     sns_topic: cdktf.stringToTerraform(struct!.snsTopic),
   }
 }
@@ -156,7 +156,10 @@ export class GlacierVault extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessPolicy = config.accessPolicy;
     this._id = config.id;

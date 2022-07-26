@@ -76,7 +76,10 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activate = config.activate;
     this._detectorId = config.detectorId;

@@ -126,13 +126,13 @@ export function cloudtrailAdvancedEventSelectorFieldSelectorToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.endsWith),
-    equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.equalTo),
+    ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.endsWith),
+    equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.equalTo),
     field: cdktf.stringToTerraform(struct!.field),
-    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEndsWith),
-    not_equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEquals),
-    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notStartsWith),
-    starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.startsWith),
+    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEndsWith),
+    not_equals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notEquals),
+    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notStartsWith),
+    starts_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.startsWith),
   }
 }
 
@@ -365,7 +365,7 @@ export function cloudtrailAdvancedEventSelectorToTerraform(struct?: CloudtrailAd
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    field_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorFieldSelectorToTerraform)(struct!.fieldSelector),
+    field_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorFieldSelectorToTerraform, true)(struct!.fieldSelector),
   }
 }
 
@@ -486,7 +486,7 @@ export function cloudtrailEventSelectorDataResourceToTerraform(struct?: Cloudtra
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -613,10 +613,10 @@ export function cloudtrailEventSelectorToTerraform(struct?: CloudtrailEventSelec
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_management_event_sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludeManagementEventSources),
+    exclude_management_event_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeManagementEventSources),
     include_management_events: cdktf.booleanToTerraform(struct!.includeManagementEvents),
     read_write_type: cdktf.stringToTerraform(struct!.readWriteType),
-    data_resource: cdktf.listMapper(cloudtrailEventSelectorDataResourceToTerraform)(struct!.dataResource),
+    data_resource: cdktf.listMapper(cloudtrailEventSelectorDataResourceToTerraform, true)(struct!.dataResource),
   }
 }
 
@@ -893,7 +893,10 @@ export class Cloudtrail extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cloudWatchLogsGroupArn = config.cloudWatchLogsGroupArn;
     this._cloudWatchLogsRoleArn = config.cloudWatchLogsRoleArn;
@@ -1232,9 +1235,9 @@ export class Cloudtrail extends cdktf.TerraformResource {
       sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      advanced_event_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorToTerraform)(this._advancedEventSelector.internalValue),
-      event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector.internalValue),
-      insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector.internalValue),
+      advanced_event_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorToTerraform, true)(this._advancedEventSelector.internalValue),
+      event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform, true)(this._eventSelector.internalValue),
+      insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform, true)(this._insightSelector.internalValue),
     };
   }
 }

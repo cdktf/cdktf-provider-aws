@@ -603,7 +603,7 @@ export function opensearchDomainAutoTuneOptionsToTerraform(struct?: OpensearchDo
   return {
     desired_state: cdktf.stringToTerraform(struct!.desiredState),
     rollback_on_disable: cdktf.stringToTerraform(struct!.rollbackOnDisable),
-    maintenance_schedule: cdktf.listMapper(opensearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform)(struct!.maintenanceSchedule),
+    maintenance_schedule: cdktf.listMapper(opensearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform, true)(struct!.maintenanceSchedule),
   }
 }
 
@@ -2122,8 +2122,8 @@ export function opensearchDomainVpcOptionsToTerraform(struct?: OpensearchDomainV
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -2240,7 +2240,10 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessPolicies = config.accessPolicies;
     this._advancedOptions = config.advancedOptions;
@@ -2608,7 +2611,7 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       domain_endpoint_options: opensearchDomainDomainEndpointOptionsToTerraform(this._domainEndpointOptions.internalValue),
       ebs_options: opensearchDomainEbsOptionsToTerraform(this._ebsOptions.internalValue),
       encrypt_at_rest: opensearchDomainEncryptAtRestToTerraform(this._encryptAtRest.internalValue),
-      log_publishing_options: cdktf.listMapper(opensearchDomainLogPublishingOptionsToTerraform)(this._logPublishingOptions.internalValue),
+      log_publishing_options: cdktf.listMapper(opensearchDomainLogPublishingOptionsToTerraform, true)(this._logPublishingOptions.internalValue),
       node_to_node_encryption: opensearchDomainNodeToNodeEncryptionToTerraform(this._nodeToNodeEncryption.internalValue),
       snapshot_options: opensearchDomainSnapshotOptionsToTerraform(this._snapshotOptions.internalValue),
       timeouts: opensearchDomainTimeoutsToTerraform(this._timeouts.internalValue),

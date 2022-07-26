@@ -193,7 +193,7 @@ export function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhook
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.listMapper(codebuildWebhookFilterGroupFilterToTerraform)(struct!.filter),
+    filter: cdktf.listMapper(codebuildWebhookFilterGroupFilterToTerraform, true)(struct!.filter),
   }
 }
 
@@ -310,7 +310,10 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._branchFilter = config.branchFilter;
     this._buildType = config.buildType;
@@ -425,7 +428,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       build_type: cdktf.stringToTerraform(this._buildType),
       id: cdktf.stringToTerraform(this._id),
       project_name: cdktf.stringToTerraform(this._projectName),
-      filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform)(this._filterGroup.internalValue),
+      filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform, true)(this._filterGroup.internalValue),
     };
   }
 }

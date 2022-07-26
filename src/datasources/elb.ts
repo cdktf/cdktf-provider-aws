@@ -620,7 +620,10 @@ export class Elb extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZones = config.availabilityZones;
     this._connectionDraining = config.connectionDraining;
@@ -974,25 +977,25 @@ export class Elb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       connection_draining: cdktf.booleanToTerraform(this._connectionDraining),
       connection_draining_timeout: cdktf.numberToTerraform(this._connectionDrainingTimeout),
       cross_zone_load_balancing: cdktf.booleanToTerraform(this._crossZoneLoadBalancing),
       desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
       id: cdktf.stringToTerraform(this._id),
       idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
-      instances: cdktf.listMapper(cdktf.stringToTerraform)(this._instances),
+      instances: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instances),
       internal: cdktf.booleanToTerraform(this._internal),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       source_security_group: cdktf.stringToTerraform(this._sourceSecurityGroup),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
+      subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: elbAccessLogsToTerraform(this._accessLogs.internalValue),
       health_check: elbHealthCheckToTerraform(this._healthCheck.internalValue),
-      listener: cdktf.listMapper(elbListenerToTerraform)(this._listener.internalValue),
+      listener: cdktf.listMapper(elbListenerToTerraform, true)(this._listener.internalValue),
     };
   }
 }

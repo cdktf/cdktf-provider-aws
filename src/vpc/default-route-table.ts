@@ -570,7 +570,10 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultRouteTableId = config.defaultRouteTableId;
     this._id = config.id;
@@ -717,8 +720,8 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
     return {
       default_route_table_id: cdktf.stringToTerraform(this._defaultRouteTableId),
       id: cdktf.stringToTerraform(this._id),
-      propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform)(this._propagatingVgws),
-      route: cdktf.listMapper(defaultRouteTableRouteToTerraform)(this._route.internalValue),
+      propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform, false)(this._propagatingVgws),
+      route: cdktf.listMapper(defaultRouteTableRouteToTerraform, false)(this._route.internalValue),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: defaultRouteTableTimeoutsToTerraform(this._timeouts.internalValue),

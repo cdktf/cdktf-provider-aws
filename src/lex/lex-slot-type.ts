@@ -60,7 +60,7 @@ export function lexSlotTypeEnumerationValueToTerraform(struct?: LexSlotTypeEnume
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    synonyms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.synonyms),
+    synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
     value: cdktf.stringToTerraform(struct!.value),
   }
 }
@@ -326,7 +326,10 @@ export class LexSlotType extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._createVersion = config.createVersion;
     this._description = config.description;
@@ -478,7 +481,7 @@ export class LexSlotType extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       value_selection_strategy: cdktf.stringToTerraform(this._valueSelectionStrategy),
-      enumeration_value: cdktf.listMapper(lexSlotTypeEnumerationValueToTerraform)(this._enumerationValue.internalValue),
+      enumeration_value: cdktf.listMapper(lexSlotTypeEnumerationValueToTerraform, true)(this._enumerationValue.internalValue),
       timeouts: lexSlotTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

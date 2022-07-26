@@ -450,8 +450,8 @@ export function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImag
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform)(struct!.command),
-    entry_point: cdktf.listMapper(cdktf.stringToTerraform)(struct!.entryPoint),
+    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    entry_point: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.entryPoint),
     working_directory: cdktf.stringToTerraform(struct!.workingDirectory),
   }
 }
@@ -702,8 +702,8 @@ export function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcCon
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -809,7 +809,10 @@ export class LambdaFunction extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._architectures = config.architectures;
     this._codeSigningConfigArn = config.codeSigningConfigArn;
@@ -1384,7 +1387,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      architectures: cdktf.listMapper(cdktf.stringToTerraform)(this._architectures),
+      architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(this._architectures),
       code_signing_config_arn: cdktf.stringToTerraform(this._codeSigningConfigArn),
       description: cdktf.stringToTerraform(this._description),
       filename: cdktf.stringToTerraform(this._filename),
@@ -1393,7 +1396,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       image_uri: cdktf.stringToTerraform(this._imageUri),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      layers: cdktf.listMapper(cdktf.stringToTerraform)(this._layers),
+      layers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._layers),
       memory_size: cdktf.numberToTerraform(this._memorySize),
       package_type: cdktf.stringToTerraform(this._packageType),
       publish: cdktf.booleanToTerraform(this._publish),

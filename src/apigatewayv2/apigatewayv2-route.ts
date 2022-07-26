@@ -216,7 +216,10 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiId = config.apiId;
     this._apiKeyRequired = config.apiKeyRequired;
@@ -447,7 +450,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
-      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
+      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizationScopes),
       authorization_type: cdktf.stringToTerraform(this._authorizationType),
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       id: cdktf.stringToTerraform(this._id),
@@ -457,7 +460,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
       target: cdktf.stringToTerraform(this._target),
-      request_parameter: cdktf.listMapper(apigatewayv2RouteRequestParameterToTerraform)(this._requestParameter.internalValue),
+      request_parameter: cdktf.listMapper(apigatewayv2RouteRequestParameterToTerraform, true)(this._requestParameter.internalValue),
     };
   }
 }

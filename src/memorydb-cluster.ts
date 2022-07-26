@@ -577,7 +577,10 @@ export class MemorydbCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._aclName = config.aclName;
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
@@ -1064,8 +1067,8 @@ export class MemorydbCluster extends cdktf.TerraformResource {
       num_shards: cdktf.numberToTerraform(this._numShards),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       port: cdktf.numberToTerraform(this._port),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
+      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArns),
       snapshot_name: cdktf.stringToTerraform(this._snapshotName),
       snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),

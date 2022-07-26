@@ -686,7 +686,10 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._directoryId = config.directoryId;
     this._id = config.id;
@@ -892,8 +895,8 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     return {
       directory_id: cdktf.stringToTerraform(this._directoryId),
       id: cdktf.stringToTerraform(this._id),
-      ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ipGroupIds),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipGroupIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       self_service_permissions: workspacesDirectorySelfServicePermissionsToTerraform(this._selfServicePermissions.internalValue),

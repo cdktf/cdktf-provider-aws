@@ -92,7 +92,10 @@ export class CurReportDefinition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._additionalArtifacts = config.additionalArtifacts;
     this._additionalSchemaElements = config.additionalSchemaElements;
@@ -294,8 +297,8 @@ export class CurReportDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalArtifacts),
-      additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalSchemaElements),
+      additional_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalArtifacts),
+      additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalSchemaElements),
       compression: cdktf.stringToTerraform(this._compression),
       format: cdktf.stringToTerraform(this._format),
       id: cdktf.stringToTerraform(this._id),

@@ -241,7 +241,10 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowClassicFlow = config.allowClassicFlow;
     this._allowUnauthenticatedIdentities = config.allowUnauthenticatedIdentities;
@@ -449,12 +452,12 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
       developer_provider_name: cdktf.stringToTerraform(this._developerProviderName),
       id: cdktf.stringToTerraform(this._id),
       identity_pool_name: cdktf.stringToTerraform(this._identityPoolName),
-      openid_connect_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._openidConnectProviderArns),
-      saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._samlProviderArns),
+      openid_connect_provider_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._openidConnectProviderArns),
+      saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._samlProviderArns),
       supported_login_providers: cdktf.hashMapper(cdktf.stringToTerraform)(this._supportedLoginProviders),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders.internalValue),
+      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform, true)(this._cognitoIdentityProviders.internalValue),
     };
   }
 }

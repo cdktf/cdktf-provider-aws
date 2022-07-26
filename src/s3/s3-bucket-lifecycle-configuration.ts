@@ -1077,8 +1077,8 @@ export function s3BucketLifecycleConfigurationRuleToTerraform(struct?: S3BucketL
     expiration: s3BucketLifecycleConfigurationRuleExpirationToTerraform(struct!.expiration),
     filter: s3BucketLifecycleConfigurationRuleFilterToTerraform(struct!.filter),
     noncurrent_version_expiration: s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform(struct!.noncurrentVersionExpiration),
-    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToTerraform)(struct!.noncurrentVersionTransition),
-    transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleTransitionToTerraform)(struct!.transition),
+    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
+    transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleTransitionToTerraform, true)(struct!.transition),
   }
 }
 
@@ -1365,7 +1365,10 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
@@ -1444,7 +1447,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
       id: cdktf.stringToTerraform(this._id),
-      rule: cdktf.listMapper(s3BucketLifecycleConfigurationRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(s3BucketLifecycleConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

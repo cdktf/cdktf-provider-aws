@@ -371,7 +371,10 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoAccept = config.autoAccept;
     this._id = config.id;
@@ -680,10 +683,10 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       policy: cdktf.stringToTerraform(this._policy),
       private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
-      route_table_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTableIds),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      route_table_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeTableIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       service_name: cdktf.stringToTerraform(this._serviceName),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_endpoint_type: cdktf.stringToTerraform(this._vpcEndpointType),

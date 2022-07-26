@@ -51,7 +51,7 @@ export function dataAwsVpcIpamPoolFilterToTerraform(struct?: DataAwsVpcIpamPoolF
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -184,7 +184,10 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allocationResourceTags = config.allocationResourceTags;
     this._id = config.id;
@@ -362,7 +365,7 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpcIpamPoolFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsVpcIpamPoolFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

@@ -84,7 +84,10 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authorizerCredentials = config.authorizerCredentials;
     this._authorizerResultTtlInSeconds = config.authorizerResultTtlInSeconds;
@@ -274,7 +277,7 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
       identity_source: cdktf.stringToTerraform(this._identitySource),
       identity_validation_expression: cdktf.stringToTerraform(this._identityValidationExpression),
       name: cdktf.stringToTerraform(this._name),
-      provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._providerArns),
+      provider_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._providerArns),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       type: cdktf.stringToTerraform(this._type),
     };

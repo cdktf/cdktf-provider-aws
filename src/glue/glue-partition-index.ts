@@ -57,7 +57,7 @@ export function gluePartitionIndexPartitionIndexToTerraform(struct?: GluePartiti
   }
   return {
     index_name: cdktf.stringToTerraform(struct!.indexName),
-    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
   }
 }
 
@@ -271,7 +271,10 @@ export class GluePartitionIndex extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._databaseName = config.databaseName;

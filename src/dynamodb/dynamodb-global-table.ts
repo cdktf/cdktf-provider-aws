@@ -287,7 +287,10 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -370,7 +373,7 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      replica: cdktf.listMapper(dynamodbGlobalTableReplicaToTerraform)(this._replica.internalValue),
+      replica: cdktf.listMapper(dynamodbGlobalTableReplicaToTerraform, true)(this._replica.internalValue),
       timeouts: dynamodbGlobalTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

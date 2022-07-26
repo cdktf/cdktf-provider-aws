@@ -163,7 +163,7 @@ export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegi
   }
   return {
     scan_frequency: cdktf.stringToTerraform(struct!.scanFrequency),
-    repository_filter: cdktf.listMapper(ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform)(struct!.repositoryFilter),
+    repository_filter: cdktf.listMapper(ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
   }
 }
 
@@ -296,7 +296,10 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._scanType = config.scanType;
@@ -365,7 +368,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       scan_type: cdktf.stringToTerraform(this._scanType),
-      rule: cdktf.listMapper(ecrRegistryScanningConfigurationRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(ecrRegistryScanningConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

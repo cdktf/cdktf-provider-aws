@@ -208,7 +208,10 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountAccessType = config.accountAccessType;
     this._authenticationProviders = config.authenticationProviders;
@@ -489,14 +492,14 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_access_type: cdktf.stringToTerraform(this._accountAccessType),
-      authentication_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._authenticationProviders),
-      data_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._dataSources),
+      authentication_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authenticationProviders),
+      data_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dataSources),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      notification_destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationDestinations),
+      notification_destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationDestinations),
       organization_role_name: cdktf.stringToTerraform(this._organizationRoleName),
-      organizational_units: cdktf.listMapper(cdktf.stringToTerraform)(this._organizationalUnits),
+      organizational_units: cdktf.listMapper(cdktf.stringToTerraform, false)(this._organizationalUnits),
       permission_type: cdktf.stringToTerraform(this._permissionType),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       stack_set_name: cdktf.stringToTerraform(this._stackSetName),

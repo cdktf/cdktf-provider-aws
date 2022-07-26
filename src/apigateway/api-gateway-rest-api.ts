@@ -82,8 +82,8 @@ export function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.types),
-    vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcEndpointIds),
+    types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.types),
+    vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcEndpointIds),
   }
 }
 
@@ -187,7 +187,10 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiKeySource = config.apiKeySource;
     this._binaryMediaTypes = config.binaryMediaTypes;
@@ -440,7 +443,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_key_source: cdktf.stringToTerraform(this._apiKeySource),
-      binary_media_types: cdktf.listMapper(cdktf.stringToTerraform)(this._binaryMediaTypes),
+      binary_media_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._binaryMediaTypes),
       body: cdktf.stringToTerraform(this._body),
       description: cdktf.stringToTerraform(this._description),
       disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),

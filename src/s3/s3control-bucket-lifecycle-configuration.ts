@@ -542,7 +542,10 @@ export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._id = config.id;
@@ -603,7 +606,7 @@ export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResour
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       id: cdktf.stringToTerraform(this._id),
-      rule: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

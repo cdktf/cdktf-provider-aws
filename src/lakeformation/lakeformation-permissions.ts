@@ -272,7 +272,7 @@ export function lakeformationPermissionsLfTagToTerraform(struct?: LakeformationP
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -380,7 +380,7 @@ export function lakeformationPermissionsLfTagPolicyExpressionToTerraform(struct?
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -505,7 +505,7 @@ export function lakeformationPermissionsLfTagPolicyToTerraform(struct?: Lakeform
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
     resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    expression: cdktf.listMapper(lakeformationPermissionsLfTagPolicyExpressionToTerraform)(struct!.expression),
+    expression: cdktf.listMapper(lakeformationPermissionsLfTagPolicyExpressionToTerraform, true)(struct!.expression),
   }
 }
 
@@ -772,9 +772,9 @@ export function lakeformationPermissionsTableWithColumnsToTerraform(struct?: Lak
   }
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.columnNames),
+    column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columnNames),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
-    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedColumnNames),
+    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedColumnNames),
     name: cdktf.stringToTerraform(struct!.name),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
@@ -965,7 +965,10 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._catalogResource = config.catalogResource;
@@ -1180,8 +1183,8 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       catalog_resource: cdktf.booleanToTerraform(this._catalogResource),
       id: cdktf.stringToTerraform(this._id),
-      permissions: cdktf.listMapper(cdktf.stringToTerraform)(this._permissions),
-      permissions_with_grant_option: cdktf.listMapper(cdktf.stringToTerraform)(this._permissionsWithGrantOption),
+      permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissions),
+      permissions_with_grant_option: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissionsWithGrantOption),
       principal: cdktf.stringToTerraform(this._principal),
       data_location: lakeformationPermissionsDataLocationToTerraform(this._dataLocation.internalValue),
       database: lakeformationPermissionsDatabaseToTerraform(this._database.internalValue),

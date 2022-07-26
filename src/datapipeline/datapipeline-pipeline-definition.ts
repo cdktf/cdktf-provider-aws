@@ -178,7 +178,7 @@ export function datapipelinePipelineDefinitionParameterObjectToTerraform(struct?
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    attribute: cdktf.listMapper(datapipelinePipelineDefinitionParameterObjectAttributeToTerraform)(struct!.attribute),
+    attribute: cdktf.listMapper(datapipelinePipelineDefinitionParameterObjectAttributeToTerraform, true)(struct!.attribute),
   }
 }
 
@@ -578,7 +578,7 @@ export function datapipelinePipelineDefinitionPipelineObjectToTerraform(struct?:
   return {
     id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
-    field: cdktf.listMapper(datapipelinePipelineDefinitionPipelineObjectFieldToTerraform)(struct!.field),
+    field: cdktf.listMapper(datapipelinePipelineDefinitionPipelineObjectFieldToTerraform, true)(struct!.field),
   }
 }
 
@@ -733,7 +733,10 @@ export class DatapipelinePipelineDefinition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._pipelineId = config.pipelineId;
@@ -828,9 +831,9 @@ export class DatapipelinePipelineDefinition extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       pipeline_id: cdktf.stringToTerraform(this._pipelineId),
-      parameter_object: cdktf.listMapper(datapipelinePipelineDefinitionParameterObjectToTerraform)(this._parameterObject.internalValue),
-      parameter_value: cdktf.listMapper(datapipelinePipelineDefinitionParameterValueToTerraform)(this._parameterValue.internalValue),
-      pipeline_object: cdktf.listMapper(datapipelinePipelineDefinitionPipelineObjectToTerraform)(this._pipelineObject.internalValue),
+      parameter_object: cdktf.listMapper(datapipelinePipelineDefinitionParameterObjectToTerraform, true)(this._parameterObject.internalValue),
+      parameter_value: cdktf.listMapper(datapipelinePipelineDefinitionParameterValueToTerraform, true)(this._parameterValue.internalValue),
+      pipeline_object: cdktf.listMapper(datapipelinePipelineDefinitionPipelineObjectToTerraform, true)(this._pipelineObject.internalValue),
     };
   }
 }

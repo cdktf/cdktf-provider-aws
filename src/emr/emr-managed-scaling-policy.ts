@@ -254,7 +254,10 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
@@ -315,7 +318,7 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
-      compute_limits: cdktf.listMapper(emrManagedScalingPolicyComputeLimitsToTerraform)(this._computeLimits.internalValue),
+      compute_limits: cdktf.listMapper(emrManagedScalingPolicyComputeLimitsToTerraform, true)(this._computeLimits.internalValue),
     };
   }
 }

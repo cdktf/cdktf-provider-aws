@@ -601,7 +601,10 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applyImmediately = config.applyImmediately;
     this._atRestEncryptionEnabled = config.atRestEncryptionEnabled;
@@ -1349,7 +1352,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       auth_token: cdktf.stringToTerraform(this._authToken),
       auto_minor_version_upgrade: cdktf.stringToTerraform(this._autoMinorVersionUpgrade),
       automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       data_tiering_enabled: cdktf.booleanToTerraform(this._dataTieringEnabled),
       description: cdktf.stringToTerraform(this._description),
       engine: cdktf.stringToTerraform(this._engine),
@@ -1367,13 +1370,13 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       number_cache_clusters: cdktf.numberToTerraform(this._numberCacheClusters),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       port: cdktf.numberToTerraform(this._port),
-      preferred_cache_cluster_azs: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredCacheClusterAzs),
+      preferred_cache_cluster_azs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredCacheClusterAzs),
       replicas_per_node_group: cdktf.numberToTerraform(this._replicasPerNodeGroup),
       replication_group_description: cdktf.stringToTerraform(this._replicationGroupDescription),
       replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupNames),
+      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotArns),
       snapshot_name: cdktf.stringToTerraform(this._snapshotName),
       snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
@@ -1381,9 +1384,9 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
-      user_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userGroupIds),
+      user_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userGroupIds),
       cluster_mode: elasticacheReplicationGroupClusterModeToTerraform(this._clusterMode.internalValue),
-      log_delivery_configuration: cdktf.listMapper(elasticacheReplicationGroupLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration.internalValue),
+      log_delivery_configuration: cdktf.listMapper(elasticacheReplicationGroupLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
       timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

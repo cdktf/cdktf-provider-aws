@@ -687,7 +687,10 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
@@ -851,7 +854,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
       error_document: s3BucketWebsiteConfigurationErrorDocumentToTerraform(this._errorDocument.internalValue),
       index_document: s3BucketWebsiteConfigurationIndexDocumentToTerraform(this._indexDocument.internalValue),
       redirect_all_requests_to: s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(this._redirectAllRequestsTo.internalValue),
-      routing_rule: cdktf.listMapper(s3BucketWebsiteConfigurationRoutingRuleToTerraform)(this._routingRule.internalValue),
+      routing_rule: cdktf.listMapper(s3BucketWebsiteConfigurationRoutingRuleToTerraform, true)(this._routingRule.internalValue),
     };
   }
 }

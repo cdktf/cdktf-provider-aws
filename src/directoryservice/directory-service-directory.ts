@@ -96,9 +96,9 @@ export function directoryServiceDirectoryConnectSettingsToTerraform(struct?: Dir
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.customerDnsIps),
+    customer_dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customerDnsIps),
     customer_username: cdktf.stringToTerraform(struct!.customerUsername),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
@@ -232,7 +232,7 @@ export function directoryServiceDirectoryVpcSettingsToTerraform(struct?: Directo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
@@ -339,7 +339,10 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alias = config.alias;
     this._description = config.description;

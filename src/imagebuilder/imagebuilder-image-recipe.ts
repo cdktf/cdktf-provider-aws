@@ -637,7 +637,7 @@ export function imagebuilderImageRecipeComponentToTerraform(struct?: Imagebuilde
   }
   return {
     component_arn: cdktf.stringToTerraform(struct!.componentArn),
-    parameter: cdktf.listMapper(imagebuilderImageRecipeComponentParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(imagebuilderImageRecipeComponentParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -835,7 +835,10 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -1070,8 +1073,8 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
-      block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform)(this._blockDeviceMapping.internalValue),
-      component: cdktf.listMapper(imagebuilderImageRecipeComponentToTerraform)(this._component.internalValue),
+      block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform, true)(this._blockDeviceMapping.internalValue),
+      component: cdktf.listMapper(imagebuilderImageRecipeComponentToTerraform, true)(this._component.internalValue),
       systems_manager_agent: imagebuilderImageRecipeSystemsManagerAgentToTerraform(this._systemsManagerAgent.internalValue),
     };
   }

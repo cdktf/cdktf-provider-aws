@@ -136,7 +136,10 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._childHealthThreshold = config.childHealthThreshold;
     this._childHealthchecks = config.childHealthchecks;
@@ -544,7 +547,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       child_health_threshold: cdktf.numberToTerraform(this._childHealthThreshold),
-      child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform)(this._childHealthchecks),
+      child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._childHealthchecks),
       cloudwatch_alarm_name: cdktf.stringToTerraform(this._cloudwatchAlarmName),
       cloudwatch_alarm_region: cdktf.stringToTerraform(this._cloudwatchAlarmRegion),
       disabled: cdktf.booleanToTerraform(this._disabled),
@@ -558,7 +561,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       measure_latency: cdktf.booleanToTerraform(this._measureLatency),
       port: cdktf.numberToTerraform(this._port),
       reference_name: cdktf.stringToTerraform(this._referenceName),
-      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
+      regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
       request_interval: cdktf.numberToTerraform(this._requestInterval),
       resource_path: cdktf.stringToTerraform(this._resourcePath),
       routing_control_arn: cdktf.stringToTerraform(this._routingControlArn),

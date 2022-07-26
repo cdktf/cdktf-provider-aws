@@ -176,7 +176,7 @@ export function emrClusterStepHadoopJarStepToTerraform(struct?: EmrClusterStepHa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: struct!.args === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    args: struct!.args === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
     jar: struct!.jar === undefined ? null : cdktf.stringToTerraform(struct!.jar),
     main_class: struct!.mainClass === undefined ? null : cdktf.stringToTerraform(struct!.mainClass),
     properties: struct!.properties === undefined ? null : cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
@@ -351,7 +351,7 @@ export function emrClusterStepToTerraform(struct?: EmrClusterStep | cdktf.IResol
   }
   return {
     action_on_failure: struct!.actionOnFailure === undefined ? null : cdktf.stringToTerraform(struct!.actionOnFailure),
-    hadoop_jar_step: struct!.hadoopJarStep === undefined ? null : cdktf.listMapper(emrClusterStepHadoopJarStepToTerraform)(struct!.hadoopJarStep),
+    hadoop_jar_step: struct!.hadoopJarStep === undefined ? null : cdktf.listMapper(emrClusterStepHadoopJarStepToTerraform, false)(struct!.hadoopJarStep),
     name: struct!.name === undefined ? null : cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -566,7 +566,7 @@ export function emrClusterBootstrapActionToTerraform(struct?: EmrClusterBootstra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
     name: cdktf.stringToTerraform(struct!.name),
     path: cdktf.stringToTerraform(struct!.path),
   }
@@ -1027,8 +1027,8 @@ export function emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform(struct
     bid_price_as_percentage_of_on_demand_price: cdktf.numberToTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
-    configurations: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform)(struct!.configurations),
-    ebs_config: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigToTerraform)(struct!.ebsConfig),
+    configurations: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform, true)(struct!.configurations),
+    ebs_config: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
 }
 
@@ -1503,8 +1503,8 @@ export function emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_demand_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform)(struct!.onDemandSpecification),
-    spot_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform)(struct!.spotSpecification),
+    on_demand_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform, true)(struct!.onDemandSpecification),
+    spot_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform, true)(struct!.spotSpecification),
   }
 }
 
@@ -1614,7 +1614,7 @@ export function emrClusterCoreInstanceFleetToTerraform(struct?: EmrClusterCoreIn
     name: cdktf.stringToTerraform(struct!.name),
     target_on_demand_capacity: cdktf.numberToTerraform(struct!.targetOnDemandCapacity),
     target_spot_capacity: cdktf.numberToTerraform(struct!.targetSpotCapacity),
-    instance_type_configs: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform)(struct!.instanceTypeConfigs),
+    instance_type_configs: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform, true)(struct!.instanceTypeConfigs),
     launch_specifications: emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform(struct!.launchSpecifications),
   }
 }
@@ -2009,7 +2009,7 @@ export function emrClusterCoreInstanceGroupToTerraform(struct?: EmrClusterCoreIn
     instance_count: cdktf.numberToTerraform(struct!.instanceCount),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     name: cdktf.stringToTerraform(struct!.name),
-    ebs_config: cdktf.listMapper(emrClusterCoreInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
+    ebs_config: cdktf.listMapper(emrClusterCoreInstanceGroupEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
 }
 
@@ -2226,7 +2226,7 @@ export function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attribu
     key_name: cdktf.stringToTerraform(struct!.keyName),
     service_access_security_group: cdktf.stringToTerraform(struct!.serviceAccessSecurityGroup),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -2955,8 +2955,8 @@ export function emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform(stru
     bid_price_as_percentage_of_on_demand_price: cdktf.numberToTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
-    configurations: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerraform)(struct!.configurations),
-    ebs_config: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigToTerraform)(struct!.ebsConfig),
+    configurations: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerraform, true)(struct!.configurations),
+    ebs_config: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
 }
 
@@ -3431,8 +3431,8 @@ export function emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_demand_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform)(struct!.onDemandSpecification),
-    spot_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform)(struct!.spotSpecification),
+    on_demand_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform, true)(struct!.onDemandSpecification),
+    spot_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform, true)(struct!.spotSpecification),
   }
 }
 
@@ -3542,7 +3542,7 @@ export function emrClusterMasterInstanceFleetToTerraform(struct?: EmrClusterMast
     name: cdktf.stringToTerraform(struct!.name),
     target_on_demand_capacity: cdktf.numberToTerraform(struct!.targetOnDemandCapacity),
     target_spot_capacity: cdktf.numberToTerraform(struct!.targetSpotCapacity),
-    instance_type_configs: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform)(struct!.instanceTypeConfigs),
+    instance_type_configs: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform, true)(struct!.instanceTypeConfigs),
     launch_specifications: emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform(struct!.launchSpecifications),
   }
 }
@@ -3932,7 +3932,7 @@ export function emrClusterMasterInstanceGroupToTerraform(struct?: EmrClusterMast
     instance_count: cdktf.numberToTerraform(struct!.instanceCount),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     name: cdktf.stringToTerraform(struct!.name),
-    ebs_config: cdktf.listMapper(emrClusterMasterInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
+    ebs_config: cdktf.listMapper(emrClusterMasterInstanceGroupEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
 }
 
@@ -4107,7 +4107,10 @@ export class EmrCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._additionalInfo = config.additionalInfo;
     this._applications = config.applications;
@@ -4655,7 +4658,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       additional_info: cdktf.stringToTerraform(this._additionalInfo),
-      applications: cdktf.listMapper(cdktf.stringToTerraform)(this._applications),
+      applications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applications),
       autoscaling_role: cdktf.stringToTerraform(this._autoscalingRole),
       configurations: cdktf.stringToTerraform(this._configurations),
       configurations_json: cdktf.stringToTerraform(this._configurationsJson),
@@ -4663,7 +4666,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       ebs_root_volume_size: cdktf.numberToTerraform(this._ebsRootVolumeSize),
       id: cdktf.stringToTerraform(this._id),
       keep_job_flow_alive_when_no_steps: cdktf.booleanToTerraform(this._keepJobFlowAliveWhenNoSteps),
-      list_steps_states: cdktf.listMapper(cdktf.stringToTerraform)(this._listStepsStates),
+      list_steps_states: cdktf.listMapper(cdktf.stringToTerraform, false)(this._listStepsStates),
       log_encryption_kms_key_id: cdktf.stringToTerraform(this._logEncryptionKmsKeyId),
       log_uri: cdktf.stringToTerraform(this._logUri),
       name: cdktf.stringToTerraform(this._name),
@@ -4671,14 +4674,14 @@ export class EmrCluster extends cdktf.TerraformResource {
       scale_down_behavior: cdktf.stringToTerraform(this._scaleDownBehavior),
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
       service_role: cdktf.stringToTerraform(this._serviceRole),
-      step: cdktf.listMapper(emrClusterStepToTerraform)(this._step.internalValue),
+      step: cdktf.listMapper(emrClusterStepToTerraform, false)(this._step.internalValue),
       step_concurrency_level: cdktf.numberToTerraform(this._stepConcurrencyLevel),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       termination_protection: cdktf.booleanToTerraform(this._terminationProtection),
       visible_to_all_users: cdktf.booleanToTerraform(this._visibleToAllUsers),
       auto_termination_policy: emrClusterAutoTerminationPolicyToTerraform(this._autoTerminationPolicy.internalValue),
-      bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform)(this._bootstrapAction.internalValue),
+      bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform, true)(this._bootstrapAction.internalValue),
       core_instance_fleet: emrClusterCoreInstanceFleetToTerraform(this._coreInstanceFleet.internalValue),
       core_instance_group: emrClusterCoreInstanceGroupToTerraform(this._coreInstanceGroup.internalValue),
       ec2_attributes: emrClusterEc2AttributesToTerraform(this._ec2Attributes.internalValue),

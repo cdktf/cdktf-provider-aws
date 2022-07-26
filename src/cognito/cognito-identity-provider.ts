@@ -72,7 +72,10 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._attributeMapping = config.attributeMapping;
     this._id = config.id;
@@ -195,7 +198,7 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
     return {
       attribute_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributeMapping),
       id: cdktf.stringToTerraform(this._id),
-      idp_identifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._idpIdentifiers),
+      idp_identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._idpIdentifiers),
       provider_details: cdktf.hashMapper(cdktf.stringToTerraform)(this._providerDetails),
       provider_name: cdktf.stringToTerraform(this._providerName),
       provider_type: cdktf.stringToTerraform(this._providerType),

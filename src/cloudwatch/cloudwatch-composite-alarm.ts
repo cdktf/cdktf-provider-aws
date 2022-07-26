@@ -84,7 +84,10 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._actionsEnabled = config.actionsEnabled;
     this._alarmActions = config.alarmActions;
@@ -268,13 +271,13 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
-      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._alarmActions),
+      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alarmActions),
       alarm_description: cdktf.stringToTerraform(this._alarmDescription),
       alarm_name: cdktf.stringToTerraform(this._alarmName),
       alarm_rule: cdktf.stringToTerraform(this._alarmRule),
       id: cdktf.stringToTerraform(this._id),
-      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
-      ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
+      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._insufficientDataActions),
+      ok_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._okActions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

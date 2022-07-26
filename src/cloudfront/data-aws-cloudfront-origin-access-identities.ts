@@ -52,7 +52,10 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comments = config.comments;
     this._id = config.id;
@@ -115,7 +118,7 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comments: cdktf.listMapper(cdktf.stringToTerraform)(this._comments),
+      comments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._comments),
       id: cdktf.stringToTerraform(this._id),
     };
   }

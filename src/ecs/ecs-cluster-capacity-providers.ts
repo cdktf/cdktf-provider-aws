@@ -210,7 +210,10 @@ export class EcsClusterCapacityProviders extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._capacityProviders = config.capacityProviders;
     this._clusterName = config.clusterName;
@@ -289,10 +292,10 @@ export class EcsClusterCapacityProviders extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
+      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capacityProviders),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       id: cdktf.stringToTerraform(this._id),
-      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterCapacityProvidersDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy.internalValue),
+      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterCapacityProvidersDefaultCapacityProviderStrategyToTerraform, true)(this._defaultCapacityProviderStrategy.internalValue),
     };
   }
 }

@@ -68,7 +68,10 @@ export class DmsReplicationSubnetGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._replicationSubnetGroupDescription = config.replicationSubnetGroupDescription;
@@ -188,7 +191,7 @@ export class DmsReplicationSubnetGroup extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       replication_subnet_group_description: cdktf.stringToTerraform(this._replicationSubnetGroupDescription),
       replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

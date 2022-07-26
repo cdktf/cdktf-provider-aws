@@ -62,7 +62,7 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    definition: cdktf.listMapper(cdktf.stringToTerraform)(struct!.definition),
+    definition: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.definition),
   }
 }
 
@@ -244,7 +244,7 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    definition: cdktf.listMapper(cdktf.stringToTerraform)(struct!.definition),
+    definition: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.definition),
   }
 }
 
@@ -434,8 +434,8 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_sets: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToTerraform)(struct!.ipSets),
-    port_sets: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsToTerraform)(struct!.portSets),
+    ip_sets: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToTerraform, true)(struct!.ipSets),
+    port_sets: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsToTerraform, true)(struct!.portSets),
   }
 }
 
@@ -531,8 +531,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListToTer
   }
   return {
     generated_rules_type: cdktf.stringToTerraform(struct!.generatedRulesType),
-    target_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targetTypes),
-    targets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targets),
+    target_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetTypes),
+    targets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targets),
   }
 }
 
@@ -819,7 +819,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOpti
   }
   return {
     keyword: cdktf.stringToTerraform(struct!.keyword),
-    settings: cdktf.listMapper(cdktf.stringToTerraform)(struct!.settings),
+    settings: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.settings),
   }
 }
 
@@ -949,7 +949,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraf
   return {
     action: cdktf.stringToTerraform(struct!.action),
     header: networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderToTerraform(struct!.header),
-    rule_option: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionToTerraform)(struct!.ruleOption),
+    rule_option: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionToTerraform, true)(struct!.ruleOption),
   }
 }
 
@@ -1177,7 +1177,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionToTerraform)(struct!.dimension),
+    dimension: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionToTerraform, true)(struct!.dimension),
   }
 }
 
@@ -1857,8 +1857,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.flags),
-    masks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.masks),
+    flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.flags),
+    masks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.masks),
   }
 }
 
@@ -2004,12 +2004,12 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    protocols: cdktf.listMapper(cdktf.numberToTerraform)(struct!.protocols),
-    destination: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationToTerraform)(struct!.destination),
-    destination_port: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortToTerraform)(struct!.destinationPort),
-    source: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceToTerraform)(struct!.source),
-    source_port: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortToTerraform)(struct!.sourcePort),
-    tcp_flag: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagToTerraform)(struct!.tcpFlag),
+    protocols: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.protocols),
+    destination: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationToTerraform, true)(struct!.destination),
+    destination_port: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortToTerraform, true)(struct!.destinationPort),
+    source: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceToTerraform, true)(struct!.source),
+    source_port: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortToTerraform, true)(struct!.sourcePort),
+    tcp_flag: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagToTerraform, true)(struct!.tcpFlag),
   }
 }
 
@@ -2190,7 +2190,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.actions),
+    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
     match_attributes: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesToTerraform(struct!.matchAttributes),
   }
 }
@@ -2400,8 +2400,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_action: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionToTerraform)(struct!.customAction),
-    stateless_rule: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleToTerraform)(struct!.statelessRule),
+    custom_action: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionToTerraform, true)(struct!.customAction),
+    stateless_rule: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleToTerraform, true)(struct!.statelessRule),
   }
 }
 
@@ -2505,7 +2505,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceToTerraform(struct?:
   return {
     rules_string: cdktf.stringToTerraform(struct!.rulesString),
     rules_source_list: networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListToTerraform(struct!.rulesSourceList),
-    stateful_rule: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraform)(struct!.statefulRule),
+    stateful_rule: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraform, true)(struct!.statefulRule),
     stateless_rules_and_custom_actions: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsToTerraform(struct!.statelessRulesAndCustomActions),
   }
 }
@@ -2841,7 +2841,10 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._capacity = config.capacity;
     this._description = config.description;

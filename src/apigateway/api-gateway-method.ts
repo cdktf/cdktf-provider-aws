@@ -92,7 +92,10 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiKeyRequired = config.apiKeyRequired;
     this._authorization = config.authorization;
@@ -300,7 +303,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     return {
       api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
       authorization: cdktf.stringToTerraform(this._authorization),
-      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
+      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizationScopes),
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       http_method: cdktf.stringToTerraform(this._httpMethod),
       id: cdktf.stringToTerraform(this._id),

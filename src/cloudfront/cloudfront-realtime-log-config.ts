@@ -240,7 +240,10 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._fields = config.fields;
     this._id = config.id;
@@ -332,7 +335,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fields: cdktf.listMapper(cdktf.stringToTerraform)(this._fields),
+      fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._fields),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       sampling_rate: cdktf.numberToTerraform(this._samplingRate),

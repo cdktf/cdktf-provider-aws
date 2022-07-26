@@ -953,7 +953,7 @@ export function albListenerRuleActionForwardToTerraform(struct?: AlbListenerRule
   }
   return {
     stickiness: albListenerRuleActionForwardStickinessToTerraform(struct!.stickiness),
-    target_group: cdktf.listMapper(albListenerRuleActionForwardTargetGroupToTerraform)(struct!.targetGroup),
+    target_group: cdktf.listMapper(albListenerRuleActionForwardTargetGroupToTerraform, true)(struct!.targetGroup),
   }
 }
 
@@ -1527,7 +1527,7 @@ export function albListenerRuleConditionHostHeaderToTerraform(struct?: AlbListen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1594,7 +1594,7 @@ export function albListenerRuleConditionHttpHeaderToTerraform(struct?: AlbListen
   }
   return {
     http_header_name: cdktf.stringToTerraform(struct!.httpHeaderName),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1675,7 +1675,7 @@ export function albListenerRuleConditionHttpRequestMethodToTerraform(struct?: Al
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1737,7 +1737,7 @@ export function albListenerRuleConditionPathPatternToTerraform(struct?: AlbListe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1920,7 +1920,7 @@ export function albListenerRuleConditionSourceIpToTerraform(struct?: AlbListener
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2018,7 +2018,7 @@ export function albListenerRuleConditionToTerraform(struct?: AlbListenerRuleCond
     http_header: albListenerRuleConditionHttpHeaderToTerraform(struct!.httpHeader),
     http_request_method: albListenerRuleConditionHttpRequestMethodToTerraform(struct!.httpRequestMethod),
     path_pattern: albListenerRuleConditionPathPatternToTerraform(struct!.pathPattern),
-    query_string: cdktf.listMapper(albListenerRuleConditionQueryStringToTerraform)(struct!.queryString),
+    query_string: cdktf.listMapper(albListenerRuleConditionQueryStringToTerraform, true)(struct!.queryString),
     source_ip: albListenerRuleConditionSourceIpToTerraform(struct!.sourceIp),
   }
 }
@@ -2246,7 +2246,10 @@ export class AlbListenerRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._listenerArn = config.listenerArn;
@@ -2380,8 +2383,8 @@ export class AlbListenerRule extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      action: cdktf.listMapper(albListenerRuleActionToTerraform)(this._action.internalValue),
-      condition: cdktf.listMapper(albListenerRuleConditionToTerraform)(this._condition.internalValue),
+      action: cdktf.listMapper(albListenerRuleActionToTerraform, true)(this._action.internalValue),
+      condition: cdktf.listMapper(albListenerRuleConditionToTerraform, true)(this._condition.internalValue),
     };
   }
 }

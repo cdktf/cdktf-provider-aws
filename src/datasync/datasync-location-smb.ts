@@ -151,7 +151,10 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._agentArns = config.agentArns;
     this._domain = config.domain;
@@ -330,7 +333,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
+      agent_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._agentArns),
       domain: cdktf.stringToTerraform(this._domain),
       id: cdktf.stringToTerraform(this._id),
       password: cdktf.stringToTerraform(this._password),

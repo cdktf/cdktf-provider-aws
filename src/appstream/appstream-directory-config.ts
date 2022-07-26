@@ -148,7 +148,10 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._directoryName = config.directoryName;
     this._id = config.id;
@@ -228,7 +231,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
     return {
       directory_name: cdktf.stringToTerraform(this._directoryName),
       id: cdktf.stringToTerraform(this._id),
-      organizational_unit_distinguished_names: cdktf.listMapper(cdktf.stringToTerraform)(this._organizationalUnitDistinguishedNames),
+      organizational_unit_distinguished_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._organizationalUnitDistinguishedNames),
       service_account_credentials: appstreamDirectoryConfigServiceAccountCredentialsToTerraform(this._serviceAccountCredentials.internalValue),
     };
   }

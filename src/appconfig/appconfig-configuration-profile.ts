@@ -207,7 +207,10 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationId = config.applicationId;
     this._description = config.description;
@@ -401,7 +404,7 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
-      validator: cdktf.listMapper(appconfigConfigurationProfileValidatorToTerraform)(this._validator.internalValue),
+      validator: cdktf.listMapper(appconfigConfigurationProfileValidatorToTerraform, true)(this._validator.internalValue),
     };
   }
 }

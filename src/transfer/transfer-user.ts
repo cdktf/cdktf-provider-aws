@@ -199,7 +199,7 @@ export function transferUserPosixProfileToTerraform(struct?: TransferUserPosixPr
   }
   return {
     gid: cdktf.numberToTerraform(struct!.gid),
-    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.secondaryGids),
+    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.secondaryGids),
     uid: cdktf.numberToTerraform(struct!.uid),
   }
 }
@@ -323,7 +323,10 @@ export class TransferUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._homeDirectory = config.homeDirectory;
     this._homeDirectoryType = config.homeDirectoryType;
@@ -529,7 +532,7 @@ export class TransferUser extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
-      home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform)(this._homeDirectoryMappings.internalValue),
+      home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform, true)(this._homeDirectoryMappings.internalValue),
       posix_profile: transferUserPosixProfileToTerraform(this._posixProfile.internalValue),
     };
   }

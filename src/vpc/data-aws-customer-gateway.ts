@@ -43,7 +43,7 @@ export function dataAwsCustomerGatewayFilterToTerraform(struct?: DataAwsCustomer
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -176,7 +176,10 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._tags = config.tags;
@@ -273,7 +276,7 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsCustomerGatewayFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsCustomerGatewayFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

@@ -47,7 +47,7 @@ export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilte
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._instanceStateNames = config.instanceStateNames;
@@ -278,9 +281,9 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      instance_state_names: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceStateNames),
+      instance_state_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceStateNames),
       instance_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._instanceTags),
-      filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

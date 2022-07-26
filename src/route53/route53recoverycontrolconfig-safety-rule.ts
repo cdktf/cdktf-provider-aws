@@ -188,7 +188,10 @@ export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assertedControls = config.assertedControls;
     this._controlPanelArn = config.controlPanelArn;
@@ -336,12 +339,12 @@ export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      asserted_controls: cdktf.listMapper(cdktf.stringToTerraform)(this._assertedControls),
+      asserted_controls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assertedControls),
       control_panel_arn: cdktf.stringToTerraform(this._controlPanelArn),
-      gating_controls: cdktf.listMapper(cdktf.stringToTerraform)(this._gatingControls),
+      gating_controls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gatingControls),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      target_controls: cdktf.listMapper(cdktf.stringToTerraform)(this._targetControls),
+      target_controls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetControls),
       wait_period_ms: cdktf.numberToTerraform(this._waitPeriodMs),
       rule_config: route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(this._ruleConfig.internalValue),
     };

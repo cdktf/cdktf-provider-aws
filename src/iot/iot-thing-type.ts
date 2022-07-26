@@ -55,7 +55,7 @@ export function iotThingTypePropertiesToTerraform(struct?: IotThingTypePropertie
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    searchable_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.searchableAttributes),
+    searchable_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.searchableAttributes),
   }
 }
 
@@ -162,7 +162,10 @@ export class IotThingType extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deprecated = config.deprecated;
     this._id = config.id;

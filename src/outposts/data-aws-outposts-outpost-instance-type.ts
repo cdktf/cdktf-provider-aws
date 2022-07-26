@@ -60,7 +60,10 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._id = config.id;
@@ -142,7 +145,7 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
       instance_type: cdktf.stringToTerraform(this._instanceType),
-      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceTypes),
+      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceTypes),
     };
   }
 }

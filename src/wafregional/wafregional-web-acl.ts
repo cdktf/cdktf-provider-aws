@@ -247,7 +247,7 @@ export function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field_to_match: cdktf.listMapper(wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform)(struct!.fieldToMatch),
+    field_to_match: cdktf.listMapper(wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform, true)(struct!.fieldToMatch),
   }
 }
 
@@ -747,7 +747,10 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._metricName = config.metricName;
@@ -900,7 +903,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       default_action: wafregionalWebAclDefaultActionToTerraform(this._defaultAction.internalValue),
       logging_configuration: wafregionalWebAclLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
-      rule: cdktf.listMapper(wafregionalWebAclRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(wafregionalWebAclRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

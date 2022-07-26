@@ -131,7 +131,7 @@ export function glueCatalogDatabaseCreateTableDefaultPermissionToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
     principal: glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToTerraform(struct!.principal),
   }
 }
@@ -357,7 +357,10 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._description = config.description;
@@ -515,7 +518,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       location_uri: cdktf.stringToTerraform(this._locationUri),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform)(this._createTableDefaultPermission.internalValue),
+      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform, true)(this._createTableDefaultPermission.internalValue),
       target_database: glueCatalogDatabaseTargetDatabaseToTerraform(this._targetDatabase.internalValue),
     };
   }

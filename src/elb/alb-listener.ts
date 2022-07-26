@@ -969,7 +969,7 @@ export function albListenerDefaultActionForwardToTerraform(struct?: AlbListenerD
   }
   return {
     stickiness: albListenerDefaultActionForwardStickinessToTerraform(struct!.stickiness),
-    target_group: cdktf.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform)(struct!.targetGroup),
+    target_group: cdktf.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform, true)(struct!.targetGroup),
   }
 }
 
@@ -1638,7 +1638,10 @@ export class AlbListener extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alpnPolicy = config.alpnPolicy;
     this._certificateArn = config.certificateArn;
@@ -1847,7 +1850,7 @@ export class AlbListener extends cdktf.TerraformResource {
       ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      default_action: cdktf.listMapper(albListenerDefaultActionToTerraform)(this._defaultAction.internalValue),
+      default_action: cdktf.listMapper(albListenerDefaultActionToTerraform, true)(this._defaultAction.internalValue),
       timeouts: albListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

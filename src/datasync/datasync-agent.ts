@@ -165,7 +165,10 @@ export class DatasyncAgent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activationKey = config.activationKey;
     this._id = config.id;
@@ -376,8 +379,8 @@ export class DatasyncAgent extends cdktf.TerraformResource {
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       name: cdktf.stringToTerraform(this._name),
       private_link_endpoint: cdktf.stringToTerraform(this._privateLinkEndpoint),
-      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
-      subnet_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetArns),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupArns),
+      subnet_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetArns),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),

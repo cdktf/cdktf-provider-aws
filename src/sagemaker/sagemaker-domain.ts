@@ -224,7 +224,7 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lifecycleConfigArns),
+    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
     default_resource_spec: sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
@@ -615,8 +615,8 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lifecycleConfigArns),
-    custom_image: cdktf.listMapper(sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageToTerraform)(struct!.customImage),
+    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
+    custom_image: cdktf.listMapper(sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageToTerraform, true)(struct!.customImage),
     default_resource_spec: sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
@@ -1087,7 +1087,7 @@ export function sagemakerDomainDefaultUserSettingsToTerraform(struct?: Sagemaker
   }
   return {
     execution_role: cdktf.stringToTerraform(struct!.executionRole),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
     jupyter_server_app_settings: sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToTerraform(struct!.jupyterServerAppSettings),
     kernel_gateway_app_settings: sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToTerraform(struct!.kernelGatewayAppSettings),
     sharing_settings: sagemakerDomainDefaultUserSettingsSharingSettingsToTerraform(struct!.sharingSettings),
@@ -1348,7 +1348,10 @@ export class SagemakerDomain extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appNetworkAccessType = config.appNetworkAccessType;
     this._authMode = config.authMode;
@@ -1559,7 +1562,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

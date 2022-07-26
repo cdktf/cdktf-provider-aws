@@ -372,7 +372,10 @@ export class GlueJob extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._connections = config.connections;
     this._defaultArguments = config.defaultArguments;
@@ -705,7 +708,7 @@ export class GlueJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connections: cdktf.listMapper(cdktf.stringToTerraform)(this._connections),
+      connections: cdktf.listMapper(cdktf.stringToTerraform, false)(this._connections),
       default_arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultArguments),
       description: cdktf.stringToTerraform(this._description),
       glue_version: cdktf.stringToTerraform(this._glueVersion),

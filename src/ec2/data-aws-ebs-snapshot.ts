@@ -59,7 +59,7 @@ export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotF
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -192,7 +192,10 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._mostRecent = config.mostRecent;
@@ -392,11 +395,11 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
-      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
-      snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotIds),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
+      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restorableByUserIds),
+      snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._snapshotIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

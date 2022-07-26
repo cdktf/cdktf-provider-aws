@@ -56,7 +56,10 @@ export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformRe
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._approvalRuleTemplateName = config.approvalRuleTemplateName;
     this._id = config.id;

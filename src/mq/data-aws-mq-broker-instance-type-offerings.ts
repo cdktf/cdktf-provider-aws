@@ -214,7 +214,10 @@ export class DataAwsMqBrokerInstanceTypeOfferings extends cdktf.TerraformDataSou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._engineType = config.engineType;
     this._hostInstanceType = config.hostInstanceType;

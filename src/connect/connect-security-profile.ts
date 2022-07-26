@@ -72,7 +72,10 @@ export class ConnectSecurityProfile extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -218,7 +221,7 @@ export class ConnectSecurityProfile extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.listMapper(cdktf.stringToTerraform)(this._permissions),
+      permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

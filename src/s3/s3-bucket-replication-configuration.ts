@@ -1690,7 +1690,10 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._id = config.id;
@@ -1784,7 +1787,7 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       role: cdktf.stringToTerraform(this._role),
       token: cdktf.stringToTerraform(this._token),
-      rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

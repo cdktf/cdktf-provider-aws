@@ -76,7 +76,10 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterEndpointIdentifier = config.clusterEndpointIdentifier;
     this._clusterIdentifier = config.clusterIdentifier;
@@ -230,9 +233,9 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
       cluster_endpoint_identifier: cdktf.stringToTerraform(this._clusterEndpointIdentifier),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       custom_endpoint_type: cdktf.stringToTerraform(this._customEndpointType),
-      excluded_members: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedMembers),
+      excluded_members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedMembers),
       id: cdktf.stringToTerraform(this._id),
-      static_members: cdktf.listMapper(cdktf.stringToTerraform)(this._staticMembers),
+      static_members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._staticMembers),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

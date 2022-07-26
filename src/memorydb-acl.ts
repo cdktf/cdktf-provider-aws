@@ -68,7 +68,10 @@ export class MemorydbAcl extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -199,7 +202,7 @@ export class MemorydbAcl extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      user_names: cdktf.listMapper(cdktf.stringToTerraform)(this._userNames),
+      user_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userNames),
     };
   }
 }

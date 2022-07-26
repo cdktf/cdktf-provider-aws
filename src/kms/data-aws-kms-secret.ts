@@ -47,7 +47,7 @@ export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecre
   }
   return {
     context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.context),
-    grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(struct!.grantTokens),
+    grant_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.grantTokens),
     name: cdktf.stringToTerraform(struct!.name),
     payload: cdktf.stringToTerraform(struct!.payload),
   }
@@ -226,7 +226,10 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._secret.internalValue = config.secret;
@@ -272,7 +275,7 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      secret: cdktf.listMapper(dataAwsKmsSecretSecretToTerraform)(this._secret.internalValue),
+      secret: cdktf.listMapper(dataAwsKmsSecretSecretToTerraform, true)(this._secret.internalValue),
     };
   }
 }

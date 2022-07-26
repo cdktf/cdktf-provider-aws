@@ -64,7 +64,10 @@ export class Ec2TrafficMirrorFilter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -170,7 +173,7 @@ export class Ec2TrafficMirrorFilter extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      network_services: cdktf.listMapper(cdktf.stringToTerraform)(this._networkServices),
+      network_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkServices),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

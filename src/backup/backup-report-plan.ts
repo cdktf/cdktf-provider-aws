@@ -64,7 +64,7 @@ export function backupReportPlanReportDeliveryChannelToTerraform(struct?: Backup
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    formats: cdktf.listMapper(cdktf.stringToTerraform)(struct!.formats),
+    formats: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.formats),
     s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
     s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
   }
@@ -180,7 +180,7 @@ export function backupReportPlanReportSettingToTerraform(struct?: BackupReportPl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    framework_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.frameworkArns),
+    framework_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.frameworkArns),
     number_of_frameworks: cdktf.numberToTerraform(struct!.numberOfFrameworks),
     report_template: cdktf.stringToTerraform(struct!.reportTemplate),
   }
@@ -308,7 +308,10 @@ export class BackupReportPlan extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

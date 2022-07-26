@@ -72,7 +72,10 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
@@ -285,7 +288,7 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
       id: cdktf.stringToTerraform(this._id),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
       license_model: cdktf.stringToTerraform(this._licenseModel),
-      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceClasses),
+      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredInstanceClasses),
       vpc: cdktf.booleanToTerraform(this._vpc),
     };
   }

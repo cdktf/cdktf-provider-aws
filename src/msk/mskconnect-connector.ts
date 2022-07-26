@@ -586,8 +586,8 @@ export function mskconnectConnectorKafkaClusterApacheKafkaClusterVpcToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
   }
 }
 
@@ -1850,7 +1850,10 @@ export class MskconnectConnector extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._connectorConfiguration = config.connectorConfiguration;
     this._description = config.description;
@@ -2096,7 +2099,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
       kafka_cluster_client_authentication: mskconnectConnectorKafkaClusterClientAuthenticationToTerraform(this._kafkaClusterClientAuthentication.internalValue),
       kafka_cluster_encryption_in_transit: mskconnectConnectorKafkaClusterEncryptionInTransitToTerraform(this._kafkaClusterEncryptionInTransit.internalValue),
       log_delivery: mskconnectConnectorLogDeliveryToTerraform(this._logDelivery.internalValue),
-      plugin: cdktf.listMapper(mskconnectConnectorPluginToTerraform)(this._plugin.internalValue),
+      plugin: cdktf.listMapper(mskconnectConnectorPluginToTerraform, true)(this._plugin.internalValue),
       timeouts: mskconnectConnectorTimeoutsToTerraform(this._timeouts.internalValue),
       worker_configuration: mskconnectConnectorWorkerConfigurationToTerraform(this._workerConfiguration.internalValue),
     };

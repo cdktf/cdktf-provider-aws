@@ -366,7 +366,7 @@ export function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidrs: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrs),
+    cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
   }
 }
 
@@ -448,7 +448,10 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._workforceName = config.workforceName;

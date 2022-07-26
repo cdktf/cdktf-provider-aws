@@ -227,7 +227,10 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._excludedAccounts = config.excludedAccounts;
@@ -459,17 +462,17 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedAccounts),
+      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedAccounts),
       id: cdktf.stringToTerraform(this._id),
       input_parameters: cdktf.stringToTerraform(this._inputParameters),
       lambda_function_arn: cdktf.stringToTerraform(this._lambdaFunctionArn),
       maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
       name: cdktf.stringToTerraform(this._name),
       resource_id_scope: cdktf.stringToTerraform(this._resourceIdScope),
-      resource_types_scope: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypesScope),
+      resource_types_scope: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypesScope),
       tag_key_scope: cdktf.stringToTerraform(this._tagKeyScope),
       tag_value_scope: cdktf.stringToTerraform(this._tagValueScope),
-      trigger_types: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerTypes),
+      trigger_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggerTypes),
       timeouts: configOrganizationCustomRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

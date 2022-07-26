@@ -67,7 +67,7 @@ export function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: D
   }
   return {
     test: cdktf.stringToTerraform(struct!.test),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     variable: cdktf.stringToTerraform(struct!.variable),
   }
 }
@@ -204,7 +204,7 @@ export function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifiers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.identifiers),
+    identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identifiers),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -322,7 +322,7 @@ export function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifiers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.identifiers),
+    identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identifiers),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -474,15 +474,15 @@ export function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIam
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.actions),
+    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
     effect: cdktf.stringToTerraform(struct!.effect),
-    not_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notActions),
-    not_resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notResources),
-    resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resources),
+    not_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notActions),
+    not_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notResources),
+    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
     sid: cdktf.stringToTerraform(struct!.sid),
-    condition: cdktf.listMapper(dataAwsIamPolicyDocumentStatementConditionToTerraform)(struct!.condition),
-    not_principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform)(struct!.notPrincipals),
-    principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementPrincipalsToTerraform)(struct!.principals),
+    condition: cdktf.listMapper(dataAwsIamPolicyDocumentStatementConditionToTerraform, true)(struct!.condition),
+    not_principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform, true)(struct!.notPrincipals),
+    principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementPrincipalsToTerraform, true)(struct!.principals),
   }
 }
 
@@ -775,7 +775,10 @@ export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._overrideJson = config.overrideJson;
@@ -932,12 +935,12 @@ export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       override_json: cdktf.stringToTerraform(this._overrideJson),
-      override_policy_documents: cdktf.listMapper(cdktf.stringToTerraform)(this._overridePolicyDocuments),
+      override_policy_documents: cdktf.listMapper(cdktf.stringToTerraform, false)(this._overridePolicyDocuments),
       policy_id: cdktf.stringToTerraform(this._policyId),
       source_json: cdktf.stringToTerraform(this._sourceJson),
-      source_policy_documents: cdktf.listMapper(cdktf.stringToTerraform)(this._sourcePolicyDocuments),
+      source_policy_documents: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourcePolicyDocuments),
       version: cdktf.stringToTerraform(this._version),
-      statement: cdktf.listMapper(dataAwsIamPolicyDocumentStatementToTerraform)(this._statement.internalValue),
+      statement: cdktf.listMapper(dataAwsIamPolicyDocumentStatementToTerraform, true)(this._statement.internalValue),
     };
   }
 }

@@ -875,10 +875,10 @@ export function keyspacesTableSchemaDefinitionToTerraform(struct?: KeyspacesTabl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    clustering_key: cdktf.listMapper(keyspacesTableSchemaDefinitionClusteringKeyToTerraform)(struct!.clusteringKey),
-    column: cdktf.listMapper(keyspacesTableSchemaDefinitionColumnToTerraform)(struct!.column),
-    partition_key: cdktf.listMapper(keyspacesTableSchemaDefinitionPartitionKeyToTerraform)(struct!.partitionKey),
-    static_column: cdktf.listMapper(keyspacesTableSchemaDefinitionStaticColumnToTerraform)(struct!.staticColumn),
+    clustering_key: cdktf.listMapper(keyspacesTableSchemaDefinitionClusteringKeyToTerraform, true)(struct!.clusteringKey),
+    column: cdktf.listMapper(keyspacesTableSchemaDefinitionColumnToTerraform, true)(struct!.column),
+    partition_key: cdktf.listMapper(keyspacesTableSchemaDefinitionPartitionKeyToTerraform, true)(struct!.partitionKey),
+    static_column: cdktf.listMapper(keyspacesTableSchemaDefinitionStaticColumnToTerraform, true)(struct!.staticColumn),
   }
 }
 
@@ -1214,7 +1214,10 @@ export class KeyspacesTable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultTimeToLive = config.defaultTimeToLive;
     this._id = config.id;

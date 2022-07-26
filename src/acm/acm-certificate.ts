@@ -358,7 +358,10 @@ export class AcmCertificate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateAuthorityArn = config.certificateAuthorityArn;
     this._certificateBody = config.certificateBody;
@@ -603,12 +606,12 @@ export class AcmCertificate extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       id: cdktf.stringToTerraform(this._id),
       private_key: cdktf.stringToTerraform(this._privateKey),
-      subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform)(this._subjectAlternativeNames),
+      subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subjectAlternativeNames),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       validation_method: cdktf.stringToTerraform(this._validationMethod),
       options: acmCertificateOptionsToTerraform(this._options.internalValue),
-      validation_option: cdktf.listMapper(acmCertificateValidationOptionToTerraform)(this._validationOption.internalValue),
+      validation_option: cdktf.listMapper(acmCertificateValidationOptionToTerraform, true)(this._validationOption.internalValue),
     };
   }
 }

@@ -172,7 +172,10 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._groupIds = config.groupIds;
     this._id = config.id;
@@ -282,10 +285,10 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._groupIds),
+      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
       id: cdktf.stringToTerraform(this._id),
       role: cdktf.stringToTerraform(this._role),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userIds),
+      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
       timeouts: grafanaRoleAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -84,7 +84,10 @@ export class ElasticacheUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessString = config.accessString;
     this._arn = config.arn;
@@ -261,7 +264,7 @@ export class ElasticacheUser extends cdktf.TerraformResource {
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       no_password_required: cdktf.booleanToTerraform(this._noPasswordRequired),
-      passwords: cdktf.listMapper(cdktf.stringToTerraform)(this._passwords),
+      passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwords),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_id: cdktf.stringToTerraform(this._userId),

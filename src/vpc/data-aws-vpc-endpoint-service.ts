@@ -55,7 +55,7 @@ export function dataAwsVpcEndpointServiceFilterToTerraform(struct?: DataAwsVpcEn
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -188,7 +188,10 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._service = config.service;
@@ -359,7 +362,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
       service_name: cdktf.stringToTerraform(this._serviceName),
       service_type: cdktf.stringToTerraform(this._serviceType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }
