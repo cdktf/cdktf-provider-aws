@@ -56,7 +56,10 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._instancePorts = config.instancePorts;
@@ -116,7 +119,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      instance_ports: cdktf.listMapper(cdktf.stringToTerraform)(this._instancePorts),
+      instance_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instancePorts),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
     };
   }

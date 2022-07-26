@@ -92,7 +92,10 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._eventDeliveryFailureTopicArn = config.eventDeliveryFailureTopicArn;
     this._eventEndpointCreatedTopicArn = config.eventEndpointCreatedTopicArn;

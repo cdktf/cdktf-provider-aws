@@ -84,7 +84,10 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -280,8 +283,8 @@ export class Macie2CustomDataIdentifier extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      ignore_words: cdktf.listMapper(cdktf.stringToTerraform)(this._ignoreWords),
-      keywords: cdktf.listMapper(cdktf.stringToTerraform)(this._keywords),
+      ignore_words: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ignoreWords),
+      keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keywords),
       maximum_match_distance: cdktf.numberToTerraform(this._maximumMatchDistance),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),

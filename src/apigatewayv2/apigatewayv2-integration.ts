@@ -307,7 +307,10 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiId = config.apiId;
     this._connectionId = config.connectionId;
@@ -660,7 +663,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       request_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
       timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
-      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform)(this._responseParameters.internalValue),
+      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform, true)(this._responseParameters.internalValue),
       tls_config: apigatewayv2IntegrationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
   }

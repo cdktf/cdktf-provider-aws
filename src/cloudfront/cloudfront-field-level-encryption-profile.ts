@@ -42,7 +42,7 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFiel
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
 }
 
@@ -253,7 +253,7 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform)(struct!.items),
+    items: cdktf.listMapper(cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform, true)(struct!.items),
   }
 }
 
@@ -338,7 +338,10 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._id = config.id;

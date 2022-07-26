@@ -64,7 +64,10 @@ export class PinpointBaiduChannel extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiKey = config.apiKey;
     this._applicationId = config.applicationId;

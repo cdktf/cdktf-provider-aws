@@ -104,7 +104,10 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -297,9 +300,9 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      custom_response_body: cdktf.listMapper(wafv2WebAclCustomResponseBodyToTerraform)(this._customResponseBody.internalValue),
+      custom_response_body: cdktf.listMapper(wafv2WebAclCustomResponseBodyToTerraform, true)(this._customResponseBody.internalValue),
       default_action: wafv2WebAclDefaultActionToTerraform(this._defaultAction.internalValue),
-      rule: cdktf.listMapper(wafv2WebAclRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(wafv2WebAclRuleToTerraform, true)(this._rule.internalValue),
       visibility_config: wafv2WebAclVisibilityConfigToTerraform(this._visibilityConfig.internalValue),
     };
   }

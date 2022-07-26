@@ -56,7 +56,10 @@ export class DataAwsMskKafkaVersion extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._preferredVersions = config.preferredVersions;
@@ -127,7 +130,7 @@ export class DataAwsMskKafkaVersion extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredVersions),
+      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
       version: cdktf.stringToTerraform(this._version),
     };
   }

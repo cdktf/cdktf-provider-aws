@@ -291,7 +291,10 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
@@ -830,18 +833,18 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     return {
       allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enableCloudwatchLogsExports),
+      enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enableCloudwatchLogsExports),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
       id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
@@ -855,7 +858,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

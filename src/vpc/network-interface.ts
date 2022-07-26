@@ -257,7 +257,10 @@ export class NetworkInterface extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -671,24 +674,24 @@ export class NetworkInterface extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       interface_type: cdktf.stringToTerraform(this._interfaceType),
       ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
-      ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv4Prefixes),
+      ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv4Prefixes),
       ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
-      ipv6_address_list: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6AddressList),
+      ipv6_address_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6AddressList),
       ipv6_address_list_enabled: cdktf.booleanToTerraform(this._ipv6AddressListEnabled),
-      ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
+      ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Addresses),
       ipv6_prefix_count: cdktf.numberToTerraform(this._ipv6PrefixCount),
-      ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Prefixes),
+      ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Prefixes),
       private_ip: cdktf.stringToTerraform(this._privateIp),
-      private_ip_list: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIpList),
+      private_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privateIpList),
       private_ip_list_enabled: cdktf.booleanToTerraform(this._privateIpListEnabled),
-      private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
+      private_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privateIps),
       private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment.internalValue),
+      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform, true)(this._attachment.internalValue),
     };
   }
 }

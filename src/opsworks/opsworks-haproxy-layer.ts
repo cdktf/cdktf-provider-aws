@@ -516,7 +516,7 @@ export function opsworksHaproxyLayerCloudwatchConfigurationToTerraform(struct?: 
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_streams: cdktf.listMapper(opsworksHaproxyLayerCloudwatchConfigurationLogStreamsToTerraform)(struct!.logStreams),
+    log_streams: cdktf.listMapper(opsworksHaproxyLayerCloudwatchConfigurationLogStreamsToTerraform, true)(struct!.logStreams),
   }
 }
 
@@ -873,7 +873,10 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoAssignElasticIps = config.autoAssignElasticIps;
     this._autoAssignPublicIps = config.autoAssignPublicIps;
@@ -1399,14 +1402,14 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
       auto_assign_elastic_ips: cdktf.booleanToTerraform(this._autoAssignElasticIps),
       auto_assign_public_ips: cdktf.booleanToTerraform(this._autoAssignPublicIps),
       auto_healing: cdktf.booleanToTerraform(this._autoHealing),
-      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customConfigureRecipes),
-      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customDeployRecipes),
+      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customConfigureRecipes),
+      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customDeployRecipes),
       custom_instance_profile_arn: cdktf.stringToTerraform(this._customInstanceProfileArn),
       custom_json: cdktf.stringToTerraform(this._customJson),
-      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customSecurityGroupIds),
-      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customSetupRecipes),
-      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customShutdownRecipes),
-      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customUndeployRecipes),
+      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customSecurityGroupIds),
+      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customSetupRecipes),
+      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customShutdownRecipes),
+      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customUndeployRecipes),
       drain_elb_on_shutdown: cdktf.booleanToTerraform(this._drainElbOnShutdown),
       elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
       healthcheck_method: cdktf.stringToTerraform(this._healthcheckMethod),
@@ -1420,12 +1423,12 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
       stats_password: cdktf.stringToTerraform(this._statsPassword),
       stats_url: cdktf.stringToTerraform(this._statsUrl),
       stats_user: cdktf.stringToTerraform(this._statsUser),
-      system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
+      system_packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._systemPackages),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       cloudwatch_configuration: opsworksHaproxyLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
-      ebs_volume: cdktf.listMapper(opsworksHaproxyLayerEbsVolumeToTerraform)(this._ebsVolume.internalValue),
+      ebs_volume: cdktf.listMapper(opsworksHaproxyLayerEbsVolumeToTerraform, true)(this._ebsVolume.internalValue),
     };
   }
 }

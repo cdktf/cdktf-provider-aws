@@ -43,7 +43,7 @@ export function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutosc
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -176,7 +176,10 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._names = config.names;
@@ -247,8 +250,8 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      names: cdktf.listMapper(cdktf.stringToTerraform)(this._names),
-      filter: cdktf.listMapper(dataAwsAutoscalingGroupsFilterToTerraform)(this._filter.internalValue),
+      names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._names),
+      filter: cdktf.listMapper(dataAwsAutoscalingGroupsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

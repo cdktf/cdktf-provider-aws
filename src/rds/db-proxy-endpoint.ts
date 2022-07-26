@@ -211,7 +211,10 @@ export class DbProxyEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dbProxyEndpointName = config.dbProxyEndpointName;
     this._dbProxyName = config.dbProxyName;
@@ -395,8 +398,8 @@ export class DbProxyEndpoint extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_role: cdktf.stringToTerraform(this._targetRole),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
-      vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnetIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSubnetIds),
       timeouts: dbProxyEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

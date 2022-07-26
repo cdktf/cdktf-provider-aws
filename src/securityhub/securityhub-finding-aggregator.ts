@@ -56,7 +56,10 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._linkingMode = config.linkingMode;
@@ -120,7 +123,7 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       linking_mode: cdktf.stringToTerraform(this._linkingMode),
-      specified_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._specifiedRegions),
+      specified_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._specifiedRegions),
     };
   }
 }

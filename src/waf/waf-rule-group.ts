@@ -303,7 +303,10 @@ export class WafRuleGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._metricName = config.metricName;
@@ -423,7 +426,7 @@ export class WafRuleGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      activated_rule: cdktf.listMapper(wafRuleGroupActivatedRuleToTerraform)(this._activatedRule.internalValue),
+      activated_rule: cdktf.listMapper(wafRuleGroupActivatedRuleToTerraform, true)(this._activatedRule.internalValue),
     };
   }
 }

@@ -59,7 +59,7 @@ export function dataAwsVpnGatewayFilterToTerraform(struct?: DataAwsVpnGatewayFil
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -192,7 +192,10 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._amazonSideAsn = config.amazonSideAsn;
     this._attachedVpcId = config.attachedVpcId;
@@ -336,7 +339,7 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       state: cdktf.stringToTerraform(this._state),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpnGatewayFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsVpnGatewayFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

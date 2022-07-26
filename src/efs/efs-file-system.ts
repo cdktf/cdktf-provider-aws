@@ -288,7 +288,10 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZoneName = config.availabilityZoneName;
     this._creationToken = config.creationToken;
@@ -530,7 +533,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
-      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy.internalValue),
+      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform, true)(this._lifecyclePolicy.internalValue),
     };
   }
 }

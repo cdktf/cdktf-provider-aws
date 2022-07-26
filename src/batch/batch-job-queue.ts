@@ -76,7 +76,10 @@ export class BatchJobQueue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._computeEnvironments = config.computeEnvironments;
     this._id = config.id;
@@ -219,7 +222,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_environments: cdktf.listMapper(cdktf.stringToTerraform)(this._computeEnvironments),
+      compute_environments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._computeEnvironments),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),

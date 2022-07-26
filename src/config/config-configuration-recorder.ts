@@ -52,7 +52,7 @@ export function configConfigurationRecorderRecordingGroupToTerraform(struct?: Co
   return {
     all_supported: cdktf.booleanToTerraform(struct!.allSupported),
     include_global_resource_types: cdktf.booleanToTerraform(struct!.includeGlobalResourceTypes),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceTypes),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
@@ -181,7 +181,10 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

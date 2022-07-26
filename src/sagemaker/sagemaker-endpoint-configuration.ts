@@ -434,8 +434,8 @@ export function sagemakerEndpointConfigurationDataCaptureConfigCaptureContentTyp
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    csv_content_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.csvContentTypes),
-    json_content_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jsonContentTypes),
+    csv_content_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.csvContentTypes),
+    json_content_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jsonContentTypes),
   }
 }
 
@@ -645,7 +645,7 @@ export function sagemakerEndpointConfigurationDataCaptureConfigToTerraform(struc
     initial_sampling_percentage: cdktf.numberToTerraform(struct!.initialSamplingPercentage),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     capture_content_type_header: sagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderToTerraform(struct!.captureContentTypeHeader),
-    capture_options: cdktf.listMapper(sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToTerraform)(struct!.captureOptions),
+    capture_options: cdktf.listMapper(sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToTerraform, true)(struct!.captureOptions),
   }
 }
 
@@ -1175,7 +1175,10 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
@@ -1334,7 +1337,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       async_inference_config: sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(this._asyncInferenceConfig.internalValue),
       data_capture_config: sagemakerEndpointConfigurationDataCaptureConfigToTerraform(this._dataCaptureConfig.internalValue),
-      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants.internalValue),
+      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform, true)(this._productionVariants.internalValue),
     };
   }
 }

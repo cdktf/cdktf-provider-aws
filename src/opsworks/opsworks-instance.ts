@@ -834,7 +834,10 @@ export class OpsworksInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._agentVersion = config.agentVersion;
     this._amiId = config.amiId;
@@ -1478,10 +1481,10 @@ export class OpsworksInstance extends cdktf.TerraformResource {
       install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
       instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
       instance_type: cdktf.stringToTerraform(this._instanceType),
-      layer_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._layerIds),
+      layer_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._layerIds),
       os: cdktf.stringToTerraform(this._os),
       root_device_type: cdktf.stringToTerraform(this._rootDeviceType),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       ssh_key_name: cdktf.stringToTerraform(this._sshKeyName),
       stack_id: cdktf.stringToTerraform(this._stackId),
       state: cdktf.stringToTerraform(this._state),
@@ -1489,9 +1492,9 @@ export class OpsworksInstance extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tenancy: cdktf.stringToTerraform(this._tenancy),
       virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
-      ebs_block_device: cdktf.listMapper(opsworksInstanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(opsworksInstanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
-      root_block_device: cdktf.listMapper(opsworksInstanceRootBlockDeviceToTerraform)(this._rootBlockDevice.internalValue),
+      ebs_block_device: cdktf.listMapper(opsworksInstanceEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktf.listMapper(opsworksInstanceEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
+      root_block_device: cdktf.listMapper(opsworksInstanceRootBlockDeviceToTerraform, true)(this._rootBlockDevice.internalValue),
       timeouts: opsworksInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

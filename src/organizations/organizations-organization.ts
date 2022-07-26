@@ -377,7 +377,10 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._awsServiceAccessPrincipals = config.awsServiceAccessPrincipals;
     this._enabledPolicyTypes = config.enabledPolicyTypes;
@@ -497,8 +500,8 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_service_access_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._awsServiceAccessPrincipals),
-      enabled_policy_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledPolicyTypes),
+      aws_service_access_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._awsServiceAccessPrincipals),
+      enabled_policy_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledPolicyTypes),
       feature_set: cdktf.stringToTerraform(this._featureSet),
       id: cdktf.stringToTerraform(this._id),
     };

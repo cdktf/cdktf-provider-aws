@@ -58,11 +58,11 @@ export function accessanalyzerArchiveRuleFilterToTerraform(struct?: Accessanalyz
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contains),
+    contains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contains),
     criteria: cdktf.stringToTerraform(struct!.criteria),
-    eq: cdktf.listMapper(cdktf.stringToTerraform)(struct!.eq),
+    eq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eq),
     exists: cdktf.stringToTerraform(struct!.exists),
-    neq: cdktf.listMapper(cdktf.stringToTerraform)(struct!.neq),
+    neq: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.neq),
   }
 }
 
@@ -264,7 +264,10 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._analyzerName = config.analyzerName;
     this._id = config.id;
@@ -340,7 +343,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
       analyzer_name: cdktf.stringToTerraform(this._analyzerName),
       id: cdktf.stringToTerraform(this._id),
       rule_name: cdktf.stringToTerraform(this._ruleName),
-      filter: cdktf.listMapper(accessanalyzerArchiveRuleFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(accessanalyzerArchiveRuleFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

@@ -482,7 +482,10 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auditDestinationArn = config.auditDestinationArn;
     this._bucketRegion = config.bucketRegion;
@@ -892,7 +895,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     return {
       audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
       bucket_region: cdktf.stringToTerraform(this._bucketRegion),
-      client_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientList),
+      client_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientList),
       default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
       file_share_name: cdktf.stringToTerraform(this._fileShareName),
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),

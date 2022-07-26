@@ -749,7 +749,10 @@ export class DbInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allocatedStorage = config.allocatedStorage;
     this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
@@ -1825,7 +1828,7 @@ export class DbInstance extends cdktf.TerraformResource {
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       domain: cdktf.stringToTerraform(this._domain),
       domain_iam_role_name: cdktf.stringToTerraform(this._domainIamRoleName),
-      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
+      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledCloudwatchLogsExports),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
@@ -1854,7 +1857,7 @@ export class DbInstance extends cdktf.TerraformResource {
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
       replica_mode: cdktf.stringToTerraform(this._replicaMode),
       replicate_source_db: cdktf.stringToTerraform(this._replicateSourceDb),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupNames),
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
@@ -1863,7 +1866,7 @@ export class DbInstance extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timezone: cdktf.stringToTerraform(this._timezone),
       username: cdktf.stringToTerraform(this._username),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       restore_to_point_in_time: dbInstanceRestoreToPointInTimeToTerraform(this._restoreToPointInTime.internalValue),
       s3_import: dbInstanceS3ImportToTerraform(this._s3Import.internalValue),
       timeouts: dbInstanceTimeoutsToTerraform(this._timeouts.internalValue),

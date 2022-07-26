@@ -112,7 +112,10 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arguments = config.arguments;
     this._extraJarsS3Path = config.extraJarsS3Path;
@@ -463,10 +466,10 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
       number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
       number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
       public_key: cdktf.stringToTerraform(this._publicKey),
-      public_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._publicKeys),
+      public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicKeys),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

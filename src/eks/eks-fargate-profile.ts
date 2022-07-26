@@ -307,7 +307,10 @@ export class EksFargateProfile extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterName = config.clusterName;
     this._fargateProfileName = config.fargateProfileName;
@@ -476,10 +479,10 @@ export class EksFargateProfile extends cdktf.TerraformResource {
       fargate_profile_name: cdktf.stringToTerraform(this._fargateProfileName),
       id: cdktf.stringToTerraform(this._id),
       pod_execution_role_arn: cdktf.stringToTerraform(this._podExecutionRoleArn),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      selector: cdktf.listMapper(eksFargateProfileSelectorToTerraform)(this._selector.internalValue),
+      selector: cdktf.listMapper(eksFargateProfileSelectorToTerraform, true)(this._selector.internalValue),
       timeouts: eksFargateProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

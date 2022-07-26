@@ -291,7 +291,10 @@ export class KinesisStream extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arn = config.arn;
     this._encryptionType = config.encryptionType;
@@ -531,7 +534,7 @@ export class KinesisStream extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       retention_period: cdktf.numberToTerraform(this._retentionPeriod),
       shard_count: cdktf.numberToTerraform(this._shardCount),
-      shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._shardLevelMetrics),
+      shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shardLevelMetrics),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       stream_mode_details: kinesisStreamStreamModeDetailsToTerraform(this._streamModeDetails.internalValue),

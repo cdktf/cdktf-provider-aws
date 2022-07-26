@@ -295,7 +295,7 @@ export function redshiftClusterLoggingToTerraform(struct?: RedshiftClusterLoggin
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     enable: cdktf.booleanToTerraform(struct!.enable),
     log_destination_type: cdktf.stringToTerraform(struct!.logDestinationType),
-    log_exports: cdktf.listMapper(cdktf.stringToTerraform)(struct!.logExports),
+    log_exports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.logExports),
     s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
   }
 }
@@ -711,7 +711,10 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowVersionUpgrade = config.allowVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
@@ -1476,7 +1479,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       cluster_parameter_group_name: cdktf.stringToTerraform(this._clusterParameterGroupName),
       cluster_public_key: cdktf.stringToTerraform(this._clusterPublicKey),
       cluster_revision_number: cdktf.stringToTerraform(this._clusterRevisionNumber),
-      cluster_security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterSecurityGroups),
+      cluster_security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusterSecurityGroups),
       cluster_subnet_group_name: cdktf.stringToTerraform(this._clusterSubnetGroupName),
       cluster_type: cdktf.stringToTerraform(this._clusterType),
       cluster_version: cdktf.stringToTerraform(this._clusterVersion),
@@ -1487,7 +1490,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       endpoint: cdktf.stringToTerraform(this._endpoint),
       enhanced_vpc_routing: cdktf.booleanToTerraform(this._enhancedVpcRouting),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
       id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       maintenance_track_name: cdktf.stringToTerraform(this._maintenanceTrackName),
@@ -1505,7 +1508,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       logging: redshiftClusterLoggingToTerraform(this._logging.internalValue),
       snapshot_copy: redshiftClusterSnapshotCopyToTerraform(this._snapshotCopy.internalValue),
       timeouts: redshiftClusterTimeoutsToTerraform(this._timeouts.internalValue),

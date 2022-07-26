@@ -80,7 +80,7 @@ export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCs
     contains_header: cdktf.stringToTerraform(struct!.containsHeader),
     delimiter: cdktf.stringToTerraform(struct!.delimiter),
     disable_value_trimming: cdktf.booleanToTerraform(struct!.disableValueTrimming),
-    header: cdktf.listMapper(cdktf.stringToTerraform)(struct!.header),
+    header: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.header),
     quote_symbol: cdktf.stringToTerraform(struct!.quoteSymbol),
   }
 }
@@ -537,7 +537,10 @@ export class GlueClassifier extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

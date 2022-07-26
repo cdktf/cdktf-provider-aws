@@ -176,7 +176,10 @@ export class ChimeVoiceConnectorGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -240,7 +243,7 @@ export class ChimeVoiceConnectorGroup extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      connector: cdktf.listMapper(chimeVoiceConnectorGroupConnectorToTerraform)(this._connector.internalValue),
+      connector: cdktf.listMapper(chimeVoiceConnectorGroupConnectorToTerraform, true)(this._connector.internalValue),
     };
   }
 }

@@ -92,7 +92,10 @@ export class CognitoUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._attributes = config.attributes;
     this._clientMetadata = config.clientMetadata;
@@ -336,7 +339,7 @@ export class CognitoUser extends cdktf.TerraformResource {
     return {
       attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
       client_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._clientMetadata),
-      desired_delivery_mediums: cdktf.listMapper(cdktf.stringToTerraform)(this._desiredDeliveryMediums),
+      desired_delivery_mediums: cdktf.listMapper(cdktf.stringToTerraform, false)(this._desiredDeliveryMediums),
       enabled: cdktf.booleanToTerraform(this._enabled),
       force_alias_creation: cdktf.booleanToTerraform(this._forceAliasCreation),
       id: cdktf.stringToTerraform(this._id),

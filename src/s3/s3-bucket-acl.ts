@@ -420,7 +420,7 @@ export function s3BucketAclAccessControlPolicyToTerraform(struct?: S3BucketAclAc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grant: cdktf.listMapper(s3BucketAclAccessControlPolicyGrantToTerraform)(struct!.grant),
+    grant: cdktf.listMapper(s3BucketAclAccessControlPolicyGrantToTerraform, true)(struct!.grant),
     owner: s3BucketAclAccessControlPolicyOwnerToTerraform(struct!.owner),
   }
 }
@@ -525,7 +525,10 @@ export class S3BucketAcl extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acl = config.acl;
     this._bucket = config.bucket;

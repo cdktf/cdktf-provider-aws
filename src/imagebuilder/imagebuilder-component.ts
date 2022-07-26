@@ -92,7 +92,10 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._changeDescription = config.changeDescription;
     this._data = config.data;
@@ -333,7 +336,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       platform: cdktf.stringToTerraform(this._platform),
-      supported_os_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedOsVersions),
+      supported_os_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedOsVersions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       uri: cdktf.stringToTerraform(this._uri),

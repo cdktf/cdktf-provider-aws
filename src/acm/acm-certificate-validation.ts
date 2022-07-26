@@ -137,7 +137,10 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateArn = config.certificateArn;
     this._id = config.id;
@@ -218,7 +221,7 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
     return {
       certificate_arn: cdktf.stringToTerraform(this._certificateArn),
       id: cdktf.stringToTerraform(this._id),
-      validation_record_fqdns: cdktf.listMapper(cdktf.stringToTerraform)(this._validationRecordFqdns),
+      validation_record_fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._validationRecordFqdns),
       timeouts: acmCertificateValidationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

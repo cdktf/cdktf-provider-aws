@@ -398,7 +398,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
     description: cdktf.stringToTerraform(struct!.description),
     rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
     action: dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToTerraform(struct!.action),
-    conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform)(struct!.conditions),
+    conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
@@ -583,7 +583,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
   }
   return {
     asn: cdktf.numberToTerraform(struct!.asn),
-    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.insideCidrBlocks),
+    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insideCidrBlocks),
     location: cdktf.stringToTerraform(struct!.location),
   }
 }
@@ -736,10 +736,10 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asn_ranges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.asnRanges),
-    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.insideCidrBlocks),
+    asn_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.asnRanges),
+    inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insideCidrBlocks),
     vpn_ecmp_support: cdktf.booleanToTerraform(struct!.vpnEcmpSupport),
-    edge_locations: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform)(struct!.edgeLocations),
+    edge_locations: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform, true)(struct!.edgeLocations),
   }
 }
 
@@ -926,12 +926,12 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTe
   return {
     action: cdktf.stringToTerraform(struct!.action),
     description: cdktf.stringToTerraform(struct!.description),
-    destination_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.destinationCidrBlocks),
-    destinations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.destinations),
+    destination_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationCidrBlocks),
+    destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinations),
     mode: cdktf.stringToTerraform(struct!.mode),
     segment: cdktf.stringToTerraform(struct!.segment),
-    share_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.shareWith),
-    share_with_except: cdktf.listMapper(cdktf.stringToTerraform)(struct!.shareWithExcept),
+    share_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWith),
+    share_with_except: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWithExcept),
   }
 }
 
@@ -1200,10 +1200,10 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_filter: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowFilter),
-    deny_filter: cdktf.listMapper(cdktf.stringToTerraform)(struct!.denyFilter),
+    allow_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowFilter),
+    deny_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.denyFilter),
     description: cdktf.stringToTerraform(struct!.description),
-    edge_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.edgeLocations),
+    edge_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.edgeLocations),
     isolate_attachments: cdktf.booleanToTerraform(struct!.isolateAttachments),
     name: cdktf.stringToTerraform(struct!.name),
     require_attachment_acceptance: cdktf.booleanToTerraform(struct!.requireAttachmentAcceptance),
@@ -1452,7 +1452,10 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._version = config.version;
@@ -1569,10 +1572,10 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
     return {
       id: cdktf.stringToTerraform(this._id),
       version: cdktf.stringToTerraform(this._version),
-      attachment_policies: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform)(this._attachmentPolicies.internalValue),
-      core_network_configuration: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform)(this._coreNetworkConfiguration.internalValue),
-      segment_actions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform)(this._segmentActions.internalValue),
-      segments: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform)(this._segments.internalValue),
+      attachment_policies: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToTerraform, true)(this._attachmentPolicies.internalValue),
+      core_network_configuration: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToTerraform, true)(this._coreNetworkConfiguration.internalValue),
+      segment_actions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform, true)(this._segmentActions.internalValue),
+      segments: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform, true)(this._segments.internalValue),
     };
   }
 }

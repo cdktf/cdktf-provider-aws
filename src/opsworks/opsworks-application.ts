@@ -641,7 +641,10 @@ export class OpsworksApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoBundleOnDeploy = config.autoBundleOnDeploy;
     this._awsFlowRubySettings = config.awsFlowRubySettings;
@@ -959,7 +962,7 @@ export class OpsworksApplication extends cdktf.TerraformResource {
       data_source_type: cdktf.stringToTerraform(this._dataSourceType),
       description: cdktf.stringToTerraform(this._description),
       document_root: cdktf.stringToTerraform(this._documentRoot),
-      domains: cdktf.listMapper(cdktf.stringToTerraform)(this._domains),
+      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
       enable_ssl: cdktf.booleanToTerraform(this._enableSsl),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
@@ -967,9 +970,9 @@ export class OpsworksApplication extends cdktf.TerraformResource {
       short_name: cdktf.stringToTerraform(this._shortName),
       stack_id: cdktf.stringToTerraform(this._stackId),
       type: cdktf.stringToTerraform(this._type),
-      app_source: cdktf.listMapper(opsworksApplicationAppSourceToTerraform)(this._appSource.internalValue),
-      environment: cdktf.listMapper(opsworksApplicationEnvironmentToTerraform)(this._environment.internalValue),
-      ssl_configuration: cdktf.listMapper(opsworksApplicationSslConfigurationToTerraform)(this._sslConfiguration.internalValue),
+      app_source: cdktf.listMapper(opsworksApplicationAppSourceToTerraform, true)(this._appSource.internalValue),
+      environment: cdktf.listMapper(opsworksApplicationEnvironmentToTerraform, true)(this._environment.internalValue),
+      ssl_configuration: cdktf.listMapper(opsworksApplicationSslConfigurationToTerraform, true)(this._sslConfiguration.internalValue),
     };
   }
 }

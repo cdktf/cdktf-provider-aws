@@ -403,9 +403,9 @@ export function connectQuickConnectQuickConnectConfigToTerraform(struct?: Connec
   }
   return {
     quick_connect_type: cdktf.stringToTerraform(struct!.quickConnectType),
-    phone_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigPhoneConfigToTerraform)(struct!.phoneConfig),
-    queue_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigQueueConfigToTerraform)(struct!.queueConfig),
-    user_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigUserConfigToTerraform)(struct!.userConfig),
+    phone_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigPhoneConfigToTerraform, true)(struct!.phoneConfig),
+    queue_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigQueueConfigToTerraform, true)(struct!.queueConfig),
+    user_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigUserConfigToTerraform, true)(struct!.userConfig),
   }
 }
 
@@ -553,7 +553,10 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

@@ -307,8 +307,8 @@ export function appstreamImageBuilderVpcConfigToTerraform(struct?: AppstreamImag
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -415,7 +415,10 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appstreamAgentVersion = config.appstreamAgentVersion;
     this._description = config.description;
@@ -705,7 +708,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoint: cdktf.listMapper(appstreamImageBuilderAccessEndpointToTerraform)(this._accessEndpoint.internalValue),
+      access_endpoint: cdktf.listMapper(appstreamImageBuilderAccessEndpointToTerraform, true)(this._accessEndpoint.internalValue),
       domain_join_info: appstreamImageBuilderDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamImageBuilderVpcConfigToTerraform(this._vpcConfig.internalValue),
     };

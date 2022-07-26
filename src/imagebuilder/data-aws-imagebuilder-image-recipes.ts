@@ -43,7 +43,7 @@ export function dataAwsImagebuilderImageRecipesFilterToTerraform(struct?: DataAw
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -176,7 +176,10 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._owner = config.owner;
@@ -253,7 +256,7 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       owner: cdktf.stringToTerraform(this._owner),
-      filter: cdktf.listMapper(dataAwsImagebuilderImageRecipesFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsImagebuilderImageRecipesFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

@@ -634,8 +634,8 @@ export function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNet
   }
   return {
     assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
   }
 }
 
@@ -1275,7 +1275,10 @@ export class EcsService extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cluster = config.cluster;
     this._deploymentMaximumPercent = config.deploymentMaximumPercent;
@@ -1781,13 +1784,13 @@ export class EcsService extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
-      capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy.internalValue),
+      capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
       deployment_circuit_breaker: ecsServiceDeploymentCircuitBreakerToTerraform(this._deploymentCircuitBreaker.internalValue),
       deployment_controller: ecsServiceDeploymentControllerToTerraform(this._deploymentController.internalValue),
-      load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform)(this._loadBalancer.internalValue),
+      load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform, true)(this._loadBalancer.internalValue),
       network_configuration: ecsServiceNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
-      ordered_placement_strategy: cdktf.listMapper(ecsServiceOrderedPlacementStrategyToTerraform)(this._orderedPlacementStrategy.internalValue),
-      placement_constraints: cdktf.listMapper(ecsServicePlacementConstraintsToTerraform)(this._placementConstraints.internalValue),
+      ordered_placement_strategy: cdktf.listMapper(ecsServiceOrderedPlacementStrategyToTerraform, true)(this._orderedPlacementStrategy.internalValue),
+      placement_constraints: cdktf.listMapper(ecsServicePlacementConstraintsToTerraform, true)(this._placementConstraints.internalValue),
       service_registries: ecsServiceServiceRegistriesToTerraform(this._serviceRegistries.internalValue),
       timeouts: ecsServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };

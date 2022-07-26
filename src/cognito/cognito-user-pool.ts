@@ -264,7 +264,7 @@ export function cognitoUserPoolAccountRecoverySettingToTerraform(struct?: Cognit
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recovery_mechanism: cdktf.listMapper(cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform)(struct!.recoveryMechanism),
+    recovery_mechanism: cdktf.listMapper(cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform, true)(struct!.recoveryMechanism),
   }
 }
 
@@ -2502,7 +2502,10 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._aliasAttributes = config.aliasAttributes;
     this._autoVerifiedAttributes = config.autoVerifiedAttributes;
@@ -2956,8 +2959,8 @@ export class CognitoUserPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._aliasAttributes),
-      auto_verified_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._autoVerifiedAttributes),
+      alias_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._aliasAttributes),
+      auto_verified_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._autoVerifiedAttributes),
       email_verification_message: cdktf.stringToTerraform(this._emailVerificationMessage),
       email_verification_subject: cdktf.stringToTerraform(this._emailVerificationSubject),
       id: cdktf.stringToTerraform(this._id),
@@ -2967,14 +2970,14 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       sms_verification_message: cdktf.stringToTerraform(this._smsVerificationMessage),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      username_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._usernameAttributes),
+      username_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usernameAttributes),
       account_recovery_setting: cognitoUserPoolAccountRecoverySettingToTerraform(this._accountRecoverySetting.internalValue),
       admin_create_user_config: cognitoUserPoolAdminCreateUserConfigToTerraform(this._adminCreateUserConfig.internalValue),
       device_configuration: cognitoUserPoolDeviceConfigurationToTerraform(this._deviceConfiguration.internalValue),
       email_configuration: cognitoUserPoolEmailConfigurationToTerraform(this._emailConfiguration.internalValue),
       lambda_config: cognitoUserPoolLambdaConfigToTerraform(this._lambdaConfig.internalValue),
       password_policy: cognitoUserPoolPasswordPolicyToTerraform(this._passwordPolicy.internalValue),
-      schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform)(this._schema.internalValue),
+      schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform, true)(this._schema.internalValue),
       sms_configuration: cognitoUserPoolSmsConfigurationToTerraform(this._smsConfiguration.internalValue),
       software_token_mfa_configuration: cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(this._softwareTokenMfaConfiguration.internalValue),
       user_pool_add_ons: cognitoUserPoolUserPoolAddOnsToTerraform(this._userPoolAddOns.internalValue),

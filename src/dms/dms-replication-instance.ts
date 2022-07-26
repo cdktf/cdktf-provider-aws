@@ -247,7 +247,10 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allocatedStorage = config.allocatedStorage;
     this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
@@ -592,7 +595,7 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
       replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
       timeouts: dmsReplicationInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

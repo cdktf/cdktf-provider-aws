@@ -191,7 +191,10 @@ export class WorkspacesIpGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -309,7 +312,7 @@ export class WorkspacesIpGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rules: cdktf.listMapper(workspacesIpGroupRulesToTerraform)(this._rules.internalValue),
+      rules: cdktf.listMapper(workspacesIpGroupRulesToTerraform, true)(this._rules.internalValue),
     };
   }
 }

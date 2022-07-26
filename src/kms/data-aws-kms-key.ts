@@ -270,7 +270,10 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._grantTokens = config.grantTokens;
     this._id = config.id;
@@ -408,7 +411,7 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTokens),
+      grant_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantTokens),
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
     };

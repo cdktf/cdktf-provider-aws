@@ -146,10 +146,10 @@ export function s3BucketCorsRuleToTerraform(struct?: S3BucketCorsRule | cdktf.IR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
   }
 }
@@ -345,7 +345,7 @@ export function s3BucketGrantToTerraform(struct?: S3BucketGrant | cdktf.IResolva
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permissions),
     type: cdktf.stringToTerraform(struct!.type),
     uri: cdktf.stringToTerraform(struct!.uri),
   }
@@ -1007,8 +1007,8 @@ export function s3BucketLifecycleRuleToTerraform(struct?: S3BucketLifecycleRule 
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     expiration: s3BucketLifecycleRuleExpirationToTerraform(struct!.expiration),
     noncurrent_version_expiration: s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct!.noncurrentVersionExpiration),
-    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform)(struct!.noncurrentVersionTransition),
-    transition: cdktf.listMapper(s3BucketLifecycleRuleTransitionToTerraform)(struct!.transition),
+    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
+    transition: cdktf.listMapper(s3BucketLifecycleRuleTransitionToTerraform, true)(struct!.transition),
   }
 }
 
@@ -2634,7 +2634,7 @@ export function s3BucketReplicationConfigurationToTerraform(struct?: S3BucketRep
   }
   return {
     role: cdktf.stringToTerraform(struct!.role),
-    rules: cdktf.listMapper(s3BucketReplicationConfigurationRulesToTerraform)(struct!.rules),
+    rules: cdktf.listMapper(s3BucketReplicationConfigurationRulesToTerraform, true)(struct!.rules),
   }
 }
 
@@ -3217,7 +3217,10 @@ export class S3Bucket extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accelerationStatus = config.accelerationStatus;
     this._acl = config.acl;
@@ -3643,9 +3646,9 @@ export class S3Bucket extends cdktf.TerraformResource {
       request_payer: cdktf.stringToTerraform(this._requestPayer),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform)(this._corsRule.internalValue),
-      grant: cdktf.listMapper(s3BucketGrantToTerraform)(this._grant.internalValue),
-      lifecycle_rule: cdktf.listMapper(s3BucketLifecycleRuleToTerraform)(this._lifecycleRule.internalValue),
+      cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform, true)(this._corsRule.internalValue),
+      grant: cdktf.listMapper(s3BucketGrantToTerraform, true)(this._grant.internalValue),
+      lifecycle_rule: cdktf.listMapper(s3BucketLifecycleRuleToTerraform, true)(this._lifecycleRule.internalValue),
       logging: s3BucketLoggingToTerraform(this._logging.internalValue),
       object_lock_configuration: s3BucketObjectLockConfigurationToTerraform(this._objectLockConfiguration.internalValue),
       replication_configuration: s3BucketReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),

@@ -176,7 +176,10 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._serviceCode = config.serviceCode;
@@ -242,7 +245,7 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       service_code: cdktf.stringToTerraform(this._serviceCode),
-      filters: cdktf.listMapper(dataAwsPricingProductFiltersToTerraform)(this._filters.internalValue),
+      filters: cdktf.listMapper(dataAwsPricingProductFiltersToTerraform, true)(this._filters.internalValue),
     };
   }
 }

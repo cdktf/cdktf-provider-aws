@@ -216,7 +216,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   return {
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
-    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform)(struct!.dimensions),
+    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform, true)(struct!.dimensions),
   }
 }
 
@@ -643,7 +643,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesToTerraform)(struct!.metricDataQueries),
+    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesToTerraform, true)(struct!.metricDataQueries),
   }
 }
 
@@ -835,7 +835,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   return {
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
-    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform)(struct!.dimensions),
+    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform, true)(struct!.dimensions),
   }
 }
 
@@ -1262,7 +1262,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesToTerraform)(struct!.metricDataQueries),
+    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesToTerraform, true)(struct!.metricDataQueries),
   }
 }
 
@@ -1454,7 +1454,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
   return {
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
-    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform)(struct!.dimensions),
+    dimensions: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsToTerraform, true)(struct!.dimensions),
   }
 }
 
@@ -1881,7 +1881,7 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesToTerraform)(struct!.metricDataQueries),
+    metric_data_queries: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesToTerraform, true)(struct!.metricDataQueries),
   }
 }
 
@@ -2897,7 +2897,7 @@ export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpec
     namespace: cdktf.stringToTerraform(struct!.namespace),
     statistic: cdktf.stringToTerraform(struct!.statistic),
     unit: cdktf.stringToTerraform(struct!.unit),
-    metric_dimension: cdktf.listMapper(autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionToTerraform)(struct!.metricDimension),
+    metric_dimension: cdktf.listMapper(autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionToTerraform, true)(struct!.metricDimension),
   }
 }
 
@@ -3297,7 +3297,10 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adjustmentType = config.adjustmentType;
     this._autoscalingGroupName = config.autoscalingGroupName;
@@ -3560,7 +3563,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       policy_type: cdktf.stringToTerraform(this._policyType),
       scaling_adjustment: cdktf.numberToTerraform(this._scalingAdjustment),
       predictive_scaling_configuration: autoscalingPolicyPredictiveScalingConfigurationToTerraform(this._predictiveScalingConfiguration.internalValue),
-      step_adjustment: cdktf.listMapper(autoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment.internalValue),
+      step_adjustment: cdktf.listMapper(autoscalingPolicyStepAdjustmentToTerraform, true)(this._stepAdjustment.internalValue),
       target_tracking_configuration: autoscalingPolicyTargetTrackingConfigurationToTerraform(this._targetTrackingConfiguration.internalValue),
     };
   }

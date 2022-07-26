@@ -168,10 +168,10 @@ export function budgetsBudgetActionDefinitionIamActionDefinitionToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groups),
+    groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
     policy_arn: cdktf.stringToTerraform(struct!.policyArn),
-    roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.roles),
-    users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.users),
+    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
+    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
   }
 }
 
@@ -304,7 +304,7 @@ export function budgetsBudgetActionDefinitionScpActionDefinitionToTerraform(stru
   }
   return {
     policy_id: cdktf.stringToTerraform(struct!.policyId),
-    target_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targetIds),
+    target_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetIds),
   }
 }
 
@@ -394,7 +394,7 @@ export function budgetsBudgetActionDefinitionSsmActionDefinitionToTerraform(stru
   }
   return {
     action_sub_type: cdktf.stringToTerraform(struct!.actionSubType),
-    instance_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceIds),
+    instance_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceIds),
     region: cdktf.stringToTerraform(struct!.region),
   }
 }
@@ -758,7 +758,10 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._actionType = config.actionType;
@@ -942,7 +945,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       notification_type: cdktf.stringToTerraform(this._notificationType),
       action_threshold: budgetsBudgetActionActionThresholdToTerraform(this._actionThreshold.internalValue),
       definition: budgetsBudgetActionDefinitionToTerraform(this._definition.internalValue),
-      subscriber: cdktf.listMapper(budgetsBudgetActionSubscriberToTerraform)(this._subscriber.internalValue),
+      subscriber: cdktf.listMapper(budgetsBudgetActionSubscriberToTerraform, true)(this._subscriber.internalValue),
     };
   }
 }

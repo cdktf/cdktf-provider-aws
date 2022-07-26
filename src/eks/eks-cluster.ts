@@ -337,7 +337,7 @@ export function eksClusterEncryptionConfigToTerraform(struct?: EksClusterEncrypt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resources),
+    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
     provider: eksClusterEncryptionConfigProviderToTerraform(struct!.provider),
   }
 }
@@ -658,9 +658,9 @@ export function eksClusterVpcConfigToTerraform(struct?: EksClusterVpcConfigOutpu
   return {
     endpoint_private_access: cdktf.booleanToTerraform(struct!.endpointPrivateAccess),
     endpoint_public_access: cdktf.booleanToTerraform(struct!.endpointPublicAccess),
-    public_access_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(struct!.publicAccessCidrs),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    public_access_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicAccessCidrs),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -840,7 +840,10 @@ export class EksCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabledClusterLogTypes = config.enabledClusterLogTypes;
     this._id = config.id;
@@ -1069,7 +1072,7 @@ export class EksCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled_cluster_log_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledClusterLogTypes),
+      enabled_cluster_log_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledClusterLogTypes),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),

@@ -54,10 +54,10 @@ export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branches: cdktf.listMapper(cdktf.stringToTerraform)(struct!.branches),
+    branches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.branches),
     custom_data: cdktf.stringToTerraform(struct!.customData),
     destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -254,7 +254,10 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._repositoryName = config.repositoryName;
@@ -320,7 +323,7 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       repository_name: cdktf.stringToTerraform(this._repositoryName),
-      trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform)(this._trigger.internalValue),
+      trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform, true)(this._trigger.internalValue),
     };
   }
 }

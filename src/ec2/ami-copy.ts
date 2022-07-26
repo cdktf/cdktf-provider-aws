@@ -430,7 +430,10 @@ export class AmiCopy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deprecationTime = config.deprecationTime;
     this._description = config.description;
@@ -789,8 +792,8 @@ export class AmiCopy extends cdktf.TerraformResource {
       source_ami_region: cdktf.stringToTerraform(this._sourceAmiRegion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
+      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
       timeouts: amiCopyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

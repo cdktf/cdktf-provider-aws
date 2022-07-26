@@ -559,7 +559,10 @@ export class Lb extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._desyncMitigationMode = config.desyncMitigationMode;
@@ -969,12 +972,12 @@ export class Lb extends cdktf.TerraformResource {
       load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
+      subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: lbAccessLogsToTerraform(this._accessLogs.internalValue),
-      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping.internalValue),
+      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: lbTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

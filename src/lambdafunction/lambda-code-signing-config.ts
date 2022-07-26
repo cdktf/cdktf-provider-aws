@@ -44,7 +44,7 @@ export function lambdaCodeSigningConfigAllowedPublishersToTerraform(struct?: Lam
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    signing_profile_version_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.signingProfileVersionArns),
+    signing_profile_version_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.signingProfileVersionArns),
   }
 }
 
@@ -188,7 +188,10 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

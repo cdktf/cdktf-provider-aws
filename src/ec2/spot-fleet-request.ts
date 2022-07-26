@@ -920,11 +920,11 @@ export function spotFleetRequestLaunchSpecificationToTerraform(struct?: SpotFlee
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     user_data: cdktf.stringToTerraform(struct!.userData),
-    vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcSecurityGroupIds),
+    vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcSecurityGroupIds),
     weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
-    ebs_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform)(struct!.ebsBlockDevice),
-    ephemeral_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform)(struct!.ephemeralBlockDevice),
-    root_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform)(struct!.rootBlockDevice),
+    ebs_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform, true)(struct!.ebsBlockDevice),
+    ephemeral_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform, true)(struct!.ephemeralBlockDevice),
+    root_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform, true)(struct!.rootBlockDevice),
   }
 }
 
@@ -2387,16 +2387,16 @@ export function spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirement
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorManufacturers),
-    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorNames),
-    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorTypes),
+    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
+    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
+    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
-    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cpuManufacturers),
-    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedInstanceTypes),
-    instance_generations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceGenerations),
+    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
+    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedInstanceTypes),
+    instance_generations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceGenerations),
     local_storage: cdktf.stringToTerraform(struct!.localStorage),
-    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.localStorageTypes),
+    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localStorageTypes),
     on_demand_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.onDemandMaxPricePercentageOverLowestPrice),
     require_hibernate_support: cdktf.booleanToTerraform(struct!.requireHibernateSupport),
     spot_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.spotMaxPricePercentageOverLowestPrice),
@@ -3182,7 +3182,7 @@ export function spotFleetRequestLaunchTemplateConfigToTerraform(struct?: SpotFle
   }
   return {
     launch_template_specification: spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationToTerraform(struct!.launchTemplateSpecification),
-    overrides: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigOverridesToTerraform)(struct!.overrides),
+    overrides: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigOverridesToTerraform, true)(struct!.overrides),
   }
 }
 
@@ -3579,7 +3579,10 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allocationStrategy = config.allocationStrategy;
     this._excessCapacityTerminationPolicy = config.excessCapacityTerminationPolicy;
@@ -4046,7 +4049,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
       instance_pools_to_use_count: cdktf.numberToTerraform(this._instancePoolsToUseCount),
-      load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
+      load_balancers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._loadBalancers),
       on_demand_allocation_strategy: cdktf.stringToTerraform(this._onDemandAllocationStrategy),
       on_demand_max_total_price: cdktf.stringToTerraform(this._onDemandMaxTotalPrice),
       on_demand_target_capacity: cdktf.numberToTerraform(this._onDemandTargetCapacity),
@@ -4055,14 +4058,14 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_capacity: cdktf.numberToTerraform(this._targetCapacity),
-      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
+      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupArns),
       terminate_instances_on_delete: cdktf.stringToTerraform(this._terminateInstancesOnDelete),
       terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
       valid_from: cdktf.stringToTerraform(this._validFrom),
       valid_until: cdktf.stringToTerraform(this._validUntil),
       wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
-      launch_specification: cdktf.listMapper(spotFleetRequestLaunchSpecificationToTerraform)(this._launchSpecification.internalValue),
-      launch_template_config: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigToTerraform)(this._launchTemplateConfig.internalValue),
+      launch_specification: cdktf.listMapper(spotFleetRequestLaunchSpecificationToTerraform, true)(this._launchSpecification.internalValue),
+      launch_template_config: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigToTerraform, true)(this._launchTemplateConfig.internalValue),
       spot_maintenance_strategies: spotFleetRequestSpotMaintenanceStrategiesToTerraform(this._spotMaintenanceStrategies.internalValue),
       timeouts: spotFleetRequestTimeoutsToTerraform(this._timeouts.internalValue),
     };

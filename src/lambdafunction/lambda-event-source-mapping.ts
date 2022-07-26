@@ -340,7 +340,7 @@ export function lambdaEventSourceMappingFilterCriteriaToTerraform(struct?: Lambd
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.listMapper(lambdaEventSourceMappingFilterCriteriaFilterToTerraform)(struct!.filter),
+    filter: cdktf.listMapper(lambdaEventSourceMappingFilterCriteriaFilterToTerraform, true)(struct!.filter),
   }
 }
 
@@ -605,7 +605,10 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._batchSize = config.batchSize;
     this._bisectBatchOnFunctionError = config.bisectBatchOnFunctionError;
@@ -991,21 +994,21 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
       function_name: cdktf.stringToTerraform(this._functionName),
-      function_response_types: cdktf.listMapper(cdktf.stringToTerraform)(this._functionResponseTypes),
+      function_response_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._functionResponseTypes),
       id: cdktf.stringToTerraform(this._id),
       maximum_batching_window_in_seconds: cdktf.numberToTerraform(this._maximumBatchingWindowInSeconds),
       maximum_record_age_in_seconds: cdktf.numberToTerraform(this._maximumRecordAgeInSeconds),
       maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
       parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
-      queues: cdktf.listMapper(cdktf.stringToTerraform)(this._queues),
+      queues: cdktf.listMapper(cdktf.stringToTerraform, false)(this._queues),
       starting_position: cdktf.stringToTerraform(this._startingPosition),
       starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
-      topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      topics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._topics),
       tumbling_window_in_seconds: cdktf.numberToTerraform(this._tumblingWindowInSeconds),
       destination_config: lambdaEventSourceMappingDestinationConfigToTerraform(this._destinationConfig.internalValue),
       filter_criteria: lambdaEventSourceMappingFilterCriteriaToTerraform(this._filterCriteria.internalValue),
       self_managed_event_source: lambdaEventSourceMappingSelfManagedEventSourceToTerraform(this._selfManagedEventSource.internalValue),
-      source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform)(this._sourceAccessConfiguration.internalValue),
+      source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform, true)(this._sourceAccessConfiguration.internalValue),
     };
   }
 }

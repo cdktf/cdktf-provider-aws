@@ -389,7 +389,10 @@ export class DaxCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZones = config.availabilityZones;
     this._clusterEndpointEncryptionType = config.clusterEndpointEncryptionType;
@@ -706,7 +709,7 @@ export class DaxCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       cluster_endpoint_encryption_type: cdktf.stringToTerraform(this._clusterEndpointEncryptionType),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       description: cdktf.stringToTerraform(this._description),
@@ -717,7 +720,7 @@ export class DaxCluster extends cdktf.TerraformResource {
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       replication_factor: cdktf.numberToTerraform(this._replicationFactor),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

@@ -64,7 +64,10 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterType = config.clusterType;
     this._clusterVersion = config.clusterVersion;
@@ -172,7 +175,7 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
       cluster_version: cdktf.stringToTerraform(this._clusterVersion),
       id: cdktf.stringToTerraform(this._id),
       node_type: cdktf.stringToTerraform(this._nodeType),
-      preferred_node_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredNodeTypes),
+      preferred_node_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredNodeTypes),
     };
   }
 }

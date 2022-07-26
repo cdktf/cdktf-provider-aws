@@ -208,7 +208,10 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._detailType = config.detailType;
     this._eventTypeIds = config.eventTypeIds;
@@ -369,14 +372,14 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       detail_type: cdktf.stringToTerraform(this._detailType),
-      event_type_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eventTypeIds),
+      event_type_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventTypeIds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       resource: cdktf.stringToTerraform(this._resource),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform)(this._target.internalValue),
+      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform, true)(this._target.internalValue),
     };
   }
 }

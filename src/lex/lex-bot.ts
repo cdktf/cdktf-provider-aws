@@ -248,7 +248,7 @@ export function lexBotAbortStatementToTerraform(struct?: LexBotAbortStatementOut
   }
   return {
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexBotAbortStatementMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexBotAbortStatementMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -489,7 +489,7 @@ export function lexBotClarificationPromptToTerraform(struct?: LexBotClarificatio
   return {
     max_attempts: cdktf.numberToTerraform(struct!.maxAttempts),
     response_card: cdktf.stringToTerraform(struct!.responseCard),
-    message: cdktf.listMapper(lexBotClarificationPromptMessageToTerraform)(struct!.message),
+    message: cdktf.listMapper(lexBotClarificationPromptMessageToTerraform, true)(struct!.message),
   }
 }
 
@@ -859,7 +859,10 @@ export class LexBot extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._childDirected = config.childDirected;
     this._createVersion = config.createVersion;
@@ -1182,7 +1185,7 @@ export class LexBot extends cdktf.TerraformResource {
       voice_id: cdktf.stringToTerraform(this._voiceId),
       abort_statement: lexBotAbortStatementToTerraform(this._abortStatement.internalValue),
       clarification_prompt: lexBotClarificationPromptToTerraform(this._clarificationPrompt.internalValue),
-      intent: cdktf.listMapper(lexBotIntentToTerraform)(this._intent.internalValue),
+      intent: cdktf.listMapper(lexBotIntentToTerraform, true)(this._intent.internalValue),
       timeouts: lexBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

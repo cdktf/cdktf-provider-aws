@@ -211,7 +211,7 @@ export function appflowFlowDestinationFlowConfigDestinationConnectorPropertiesCu
   return {
     custom_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customProperties),
     entity_name: cdktf.stringToTerraform(struct!.entityName),
-    id_field_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.idFieldNames),
+    id_field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.idFieldNames),
     write_operation_type: cdktf.stringToTerraform(struct!.writeOperationType),
     error_handling_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigToTerraform(struct!.errorHandlingConfig),
   }
@@ -1912,7 +1912,7 @@ export function appflowFlowDestinationFlowConfigDestinationConnectorPropertiesSa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id_field_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.idFieldNames),
+    id_field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.idFieldNames),
     object: cdktf.stringToTerraform(struct!.object),
     write_operation_type: cdktf.stringToTerraform(struct!.writeOperationType),
     error_handling_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigToTerraform(struct!.errorHandlingConfig),
@@ -2274,7 +2274,7 @@ export function appflowFlowDestinationFlowConfigDestinationConnectorPropertiesSa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id_field_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.idFieldNames),
+    id_field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.idFieldNames),
     object_path: cdktf.stringToTerraform(struct!.objectPath),
     write_operation_type: cdktf.stringToTerraform(struct!.writeOperationType),
     error_handling_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigToTerraform(struct!.errorHandlingConfig),
@@ -3211,7 +3211,7 @@ export function appflowFlowDestinationFlowConfigDestinationConnectorPropertiesZe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id_field_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.idFieldNames),
+    id_field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.idFieldNames),
     object: cdktf.stringToTerraform(struct!.object),
     write_operation_type: cdktf.stringToTerraform(struct!.writeOperationType),
     error_handling_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigToTerraform(struct!.errorHandlingConfig),
@@ -6492,10 +6492,10 @@ export function appflowFlowTaskToTerraform(struct?: AppflowFlowTask | cdktf.IRes
   }
   return {
     destination_field: cdktf.stringToTerraform(struct!.destinationField),
-    source_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sourceFields),
+    source_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceFields),
     task_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.taskProperties),
     task_type: cdktf.stringToTerraform(struct!.taskType),
-    connector_operator: cdktf.listMapper(appflowFlowTaskConnectorOperatorToTerraform)(struct!.connectorOperator),
+    connector_operator: cdktf.listMapper(appflowFlowTaskConnectorOperatorToTerraform, true)(struct!.connectorOperator),
   }
 }
 
@@ -7076,7 +7076,10 @@ export class AppflowFlow extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -7256,9 +7259,9 @@ export class AppflowFlow extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      destination_flow_config: cdktf.listMapper(appflowFlowDestinationFlowConfigToTerraform)(this._destinationFlowConfig.internalValue),
+      destination_flow_config: cdktf.listMapper(appflowFlowDestinationFlowConfigToTerraform, true)(this._destinationFlowConfig.internalValue),
       source_flow_config: appflowFlowSourceFlowConfigToTerraform(this._sourceFlowConfig.internalValue),
-      task: cdktf.listMapper(appflowFlowTaskToTerraform)(this._task.internalValue),
+      task: cdktf.listMapper(appflowFlowTaskToTerraform, true)(this._task.internalValue),
       trigger_config: appflowFlowTriggerConfigToTerraform(this._triggerConfig.internalValue),
     };
   }

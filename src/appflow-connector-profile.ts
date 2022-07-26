@@ -4828,7 +4828,7 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   }
   return {
     auth_code_url: cdktf.stringToTerraform(struct!.authCodeUrl),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.oauthScopes),
+    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     token_url: cdktf.stringToTerraform(struct!.tokenUrl),
   }
 }
@@ -6358,7 +6358,10 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._connectionMode = config.connectionMode;
     this._connectorLabel = config.connectorLabel;

@@ -329,9 +329,9 @@ export function gluePartitionStorageDescriptorSkewedInfoToTerraform(struct?: Glu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    skewed_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnNames),
+    skewed_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skewedColumnNames),
     skewed_column_value_location_maps: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.skewedColumnValueLocationMaps),
-    skewed_column_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnValues),
+    skewed_column_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skewedColumnValues),
   }
 }
 
@@ -610,7 +610,7 @@ export function gluePartitionStorageDescriptorToTerraform(struct?: GluePartition
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_columns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.bucketColumns),
+    bucket_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bucketColumns),
     compressed: cdktf.booleanToTerraform(struct!.compressed),
     input_format: cdktf.stringToTerraform(struct!.inputFormat),
     location: cdktf.stringToTerraform(struct!.location),
@@ -618,10 +618,10 @@ export function gluePartitionStorageDescriptorToTerraform(struct?: GluePartition
     output_format: cdktf.stringToTerraform(struct!.outputFormat),
     parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
     stored_as_sub_directories: cdktf.booleanToTerraform(struct!.storedAsSubDirectories),
-    columns: cdktf.listMapper(gluePartitionStorageDescriptorColumnsToTerraform)(struct!.columns),
+    columns: cdktf.listMapper(gluePartitionStorageDescriptorColumnsToTerraform, true)(struct!.columns),
     ser_de_info: gluePartitionStorageDescriptorSerDeInfoToTerraform(struct!.serDeInfo),
     skewed_info: gluePartitionStorageDescriptorSkewedInfoToTerraform(struct!.skewedInfo),
-    sort_columns: cdktf.listMapper(gluePartitionStorageDescriptorSortColumnsToTerraform)(struct!.sortColumns),
+    sort_columns: cdktf.listMapper(gluePartitionStorageDescriptorSortColumnsToTerraform, true)(struct!.sortColumns),
   }
 }
 
@@ -948,7 +948,10 @@ export class GluePartition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._databaseName = config.databaseName;
@@ -1091,7 +1094,7 @@ export class GluePartition extends cdktf.TerraformResource {
       database_name: cdktf.stringToTerraform(this._databaseName),
       id: cdktf.stringToTerraform(this._id),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      partition_values: cdktf.listMapper(cdktf.stringToTerraform)(this._partitionValues),
+      partition_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._partitionValues),
       table_name: cdktf.stringToTerraform(this._tableName),
       storage_descriptor: gluePartitionStorageDescriptorToTerraform(this._storageDescriptor.internalValue),
     };

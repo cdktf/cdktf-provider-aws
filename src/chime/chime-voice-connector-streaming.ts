@@ -64,7 +64,10 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dataRetention = config.dataRetention;
     this._disabled = config.disabled;
@@ -160,7 +163,7 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
       data_retention: cdktf.numberToTerraform(this._dataRetention),
       disabled: cdktf.booleanToTerraform(this._disabled),
       id: cdktf.stringToTerraform(this._id),
-      streaming_notification_targets: cdktf.listMapper(cdktf.stringToTerraform)(this._streamingNotificationTargets),
+      streaming_notification_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._streamingNotificationTargets),
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
     };
   }

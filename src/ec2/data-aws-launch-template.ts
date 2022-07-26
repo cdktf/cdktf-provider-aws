@@ -2374,7 +2374,7 @@ export function dataAwsLaunchTemplateFilterToTerraform(struct?: DataAwsLaunchTem
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2507,7 +2507,10 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -2786,7 +2789,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsLaunchTemplateFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsLaunchTemplateFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

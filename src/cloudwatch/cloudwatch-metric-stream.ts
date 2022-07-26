@@ -392,8 +392,8 @@ export function cloudwatchMetricStreamStatisticsConfigurationToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_statistics: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalStatistics),
-    include_metric: cdktf.listMapper(cloudwatchMetricStreamStatisticsConfigurationIncludeMetricToTerraform)(struct!.includeMetric),
+    additional_statistics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalStatistics),
+    include_metric: cdktf.listMapper(cloudwatchMetricStreamStatisticsConfigurationIncludeMetricToTerraform, true)(struct!.includeMetric),
   }
 }
 
@@ -628,7 +628,10 @@ export class CloudwatchMetricStream extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._firehoseArn = config.firehoseArn;
     this._id = config.id;
@@ -865,9 +868,9 @@ export class CloudwatchMetricStream extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      exclude_filter: cdktf.listMapper(cloudwatchMetricStreamExcludeFilterToTerraform)(this._excludeFilter.internalValue),
-      include_filter: cdktf.listMapper(cloudwatchMetricStreamIncludeFilterToTerraform)(this._includeFilter.internalValue),
-      statistics_configuration: cdktf.listMapper(cloudwatchMetricStreamStatisticsConfigurationToTerraform)(this._statisticsConfiguration.internalValue),
+      exclude_filter: cdktf.listMapper(cloudwatchMetricStreamExcludeFilterToTerraform, true)(this._excludeFilter.internalValue),
+      include_filter: cdktf.listMapper(cloudwatchMetricStreamIncludeFilterToTerraform, true)(this._includeFilter.internalValue),
+      statistics_configuration: cdktf.listMapper(cloudwatchMetricStreamStatisticsConfigurationToTerraform, true)(this._statisticsConfiguration.internalValue),
       timeouts: cloudwatchMetricStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

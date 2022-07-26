@@ -590,7 +590,10 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiId = config.apiId;
     this._autoDeploy = config.autoDeploy;
@@ -846,7 +849,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_log_settings: apigatewayv2StageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
       default_route_settings: apigatewayv2StageDefaultRouteSettingsToTerraform(this._defaultRouteSettings.internalValue),
-      route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform)(this._routeSettings.internalValue),
+      route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform, true)(this._routeSettings.internalValue),
     };
   }
 }

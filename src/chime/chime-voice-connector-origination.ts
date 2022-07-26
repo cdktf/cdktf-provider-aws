@@ -255,7 +255,10 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._disabled = config.disabled;
     this._id = config.id;
@@ -334,7 +337,7 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
       disabled: cdktf.booleanToTerraform(this._disabled),
       id: cdktf.stringToTerraform(this._id),
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
-      route: cdktf.listMapper(chimeVoiceConnectorOriginationRouteToTerraform)(this._route.internalValue),
+      route: cdktf.listMapper(chimeVoiceConnectorOriginationRouteToTerraform, true)(this._route.internalValue),
     };
   }
 }

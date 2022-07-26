@@ -1472,11 +1472,11 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleToTerraform(struct?: Data
   return {
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
-    geo_proximity_location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform)(struct!.geoProximityLocation),
-    items: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform)(struct!.items),
-    location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform)(struct!.location),
+    geo_proximity_location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTerraform, true)(struct!.geoProximityLocation),
+    items: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform, true)(struct!.items),
+    location: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform, true)(struct!.location),
     primary: dataAwsRoute53TrafficPolicyDocumentRulePrimaryToTerraform(struct!.primary),
-    region: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform)(struct!.region),
+    region: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform, true)(struct!.region),
     secondary: dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToTerraform(struct!.secondary),
   }
 }
@@ -1745,7 +1745,10 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._recordType = config.recordType;
@@ -1888,8 +1891,8 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
       start_endpoint: cdktf.stringToTerraform(this._startEndpoint),
       start_rule: cdktf.stringToTerraform(this._startRule),
       version: cdktf.stringToTerraform(this._version),
-      endpoint: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform)(this._endpoint.internalValue),
-      rule: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleToTerraform)(this._rule.internalValue),
+      endpoint: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform, true)(this._endpoint.internalValue),
+      rule: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

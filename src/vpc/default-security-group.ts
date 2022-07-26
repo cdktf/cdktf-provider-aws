@@ -84,13 +84,13 @@ export function defaultSecurityGroupEgressToTerraform(struct?: DefaultSecurityGr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrBlocks),
     description: struct!.description === undefined ? null : cdktf.stringToTerraform(struct!.description),
     from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
-    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prefixListIds),
     protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
     self: struct!.selfAttribute === undefined ? null : cdktf.booleanToTerraform(struct!.selfAttribute),
     to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
   }
@@ -397,13 +397,13 @@ export function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityG
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    cidr_blocks: struct!.cidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrBlocks),
     description: struct!.description === undefined ? null : cdktf.stringToTerraform(struct!.description),
     from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
-    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
-    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    ipv6_cidr_blocks: struct!.ipv6CidrBlocks === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: struct!.prefixListIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prefixListIds),
     protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    security_groups: struct!.securityGroups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
     self: struct!.selfAttribute === undefined ? null : cdktf.booleanToTerraform(struct!.selfAttribute),
     to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
   }
@@ -698,7 +698,10 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._egress.internalValue = config.egress;
     this._id = config.id;
@@ -851,9 +854,9 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: cdktf.listMapper(defaultSecurityGroupEgressToTerraform)(this._egress.internalValue),
+      egress: cdktf.listMapper(defaultSecurityGroupEgressToTerraform, false)(this._egress.internalValue),
       id: cdktf.stringToTerraform(this._id),
-      ingress: cdktf.listMapper(defaultSecurityGroupIngressToTerraform)(this._ingress.internalValue),
+      ingress: cdktf.listMapper(defaultSecurityGroupIngressToTerraform, false)(this._ingress.internalValue),
       revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

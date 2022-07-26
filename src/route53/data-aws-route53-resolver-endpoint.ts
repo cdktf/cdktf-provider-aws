@@ -43,7 +43,7 @@ export function dataAwsRoute53ResolverEndpointFilterToTerraform(struct?: DataAws
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -176,7 +176,10 @@ export class DataAwsRoute53ResolverEndpoint extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._resolverEndpointId = config.resolverEndpointId;
@@ -273,7 +276,7 @@ export class DataAwsRoute53ResolverEndpoint extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
-      filter: cdktf.listMapper(dataAwsRoute53ResolverEndpointFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsRoute53ResolverEndpointFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

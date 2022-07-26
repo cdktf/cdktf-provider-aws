@@ -60,7 +60,10 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._directoryId = config.directoryId;
     this._dnsIps = config.dnsIps;
@@ -134,7 +137,7 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: cdktf.stringToTerraform(this._directoryId),
-      dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsIps),
+      dns_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsIps),
       id: cdktf.stringToTerraform(this._id),
       remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
     };

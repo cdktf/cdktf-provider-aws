@@ -195,7 +195,10 @@ export class RedshiftClusterIamRoles extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterIdentifier = config.clusterIdentifier;
     this._defaultIamRoleArn = config.defaultIamRoleArn;
@@ -293,7 +296,7 @@ export class RedshiftClusterIamRoles extends cdktf.TerraformResource {
     return {
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       default_iam_role_arn: cdktf.stringToTerraform(this._defaultIamRoleArn),
-      iam_role_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoleArns),
+      iam_role_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoleArns),
       id: cdktf.stringToTerraform(this._id),
       timeouts: redshiftClusterIamRolesTimeoutsToTerraform(this._timeouts.internalValue),
     };

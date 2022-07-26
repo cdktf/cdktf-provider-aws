@@ -56,7 +56,10 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._groups = config.groups;
     this._id = config.id;
@@ -115,7 +118,7 @@ export class IamUserGroupMembership extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       id: cdktf.stringToTerraform(this._id),
       user: cdktf.stringToTerraform(this._user),
     };

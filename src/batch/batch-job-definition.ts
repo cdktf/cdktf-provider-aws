@@ -254,7 +254,7 @@ export function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefi
   }
   return {
     attempts: cdktf.numberToTerraform(struct!.attempts),
-    evaluate_on_exit: cdktf.listMapper(batchJobDefinitionRetryStrategyEvaluateOnExitToTerraform)(struct!.evaluateOnExit),
+    evaluate_on_exit: cdktf.listMapper(batchJobDefinitionRetryStrategyEvaluateOnExitToTerraform, true)(struct!.evaluateOnExit),
   }
 }
 
@@ -426,7 +426,10 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._containerProperties = config.containerProperties;
     this._id = config.id;
@@ -635,7 +638,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      platform_capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._platformCapabilities),
+      platform_capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._platformCapabilities),
       propagate_tags: cdktf.booleanToTerraform(this._propagateTags),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

@@ -219,7 +219,10 @@ export class RedshiftEventSubscription extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._eventCategories = config.eventCategories;
@@ -430,12 +433,12 @@ export class RedshiftEventSubscription extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
-      event_categories: cdktf.listMapper(cdktf.stringToTerraform)(this._eventCategories),
+      event_categories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventCategories),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       severity: cdktf.stringToTerraform(this._severity),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
-      source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
+      source_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceIds),
       source_type: cdktf.stringToTerraform(this._sourceType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

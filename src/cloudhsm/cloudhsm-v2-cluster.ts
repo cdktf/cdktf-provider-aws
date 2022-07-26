@@ -287,7 +287,10 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._hsmType = config.hsmType;
     this._id = config.id;
@@ -443,7 +446,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
       hsm_type: cdktf.stringToTerraform(this._hsmType),
       id: cdktf.stringToTerraform(this._id),
       source_backup_identifier: cdktf.stringToTerraform(this._sourceBackupIdentifier),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: cloudhsmV2ClusterTimeoutsToTerraform(this._timeouts.internalValue),

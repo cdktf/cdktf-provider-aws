@@ -267,7 +267,10 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._fsxFilesystemArn = config.fsxFilesystemArn;
     this._id = config.id;
@@ -408,7 +411,7 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
     return {
       fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
       id: cdktf.stringToTerraform(this._id),
-      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupArns),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
