@@ -206,7 +206,10 @@ export class KmsGrant extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._grantCreationTokens = config.grantCreationTokens;
     this._granteePrincipal = config.granteePrincipal;
@@ -374,15 +377,15 @@ export class KmsGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_creation_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantCreationTokens),
+      grant_creation_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantCreationTokens),
       grantee_principal: cdktf.stringToTerraform(this._granteePrincipal),
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
       name: cdktf.stringToTerraform(this._name),
-      operations: cdktf.listMapper(cdktf.stringToTerraform)(this._operations),
+      operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
       retire_on_delete: cdktf.booleanToTerraform(this._retireOnDelete),
       retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
-      constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform)(this._constraints.internalValue),
+      constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform, true)(this._constraints.internalValue),
     };
   }
 }

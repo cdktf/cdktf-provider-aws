@@ -168,7 +168,10 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -311,7 +314,7 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform)(this._regularExpression.internalValue),
+      regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform, true)(this._regularExpression.internalValue),
     };
   }
 }

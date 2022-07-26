@@ -689,7 +689,10 @@ export class Route53Record extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowOverwrite = config.allowOverwrite;
     this._healthCheckId = config.healthCheckId;
@@ -959,16 +962,16 @@ export class Route53Record extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       multivalue_answer_routing_policy: cdktf.booleanToTerraform(this._multivalueAnswerRoutingPolicy),
       name: cdktf.stringToTerraform(this._name),
-      records: cdktf.listMapper(cdktf.stringToTerraform)(this._records),
+      records: cdktf.listMapper(cdktf.stringToTerraform, false)(this._records),
       set_identifier: cdktf.stringToTerraform(this._setIdentifier),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      alias: cdktf.listMapper(route53RecordAliasToTerraform)(this._alias.internalValue),
-      failover_routing_policy: cdktf.listMapper(route53RecordFailoverRoutingPolicyToTerraform)(this._failoverRoutingPolicy.internalValue),
-      geolocation_routing_policy: cdktf.listMapper(route53RecordGeolocationRoutingPolicyToTerraform)(this._geolocationRoutingPolicy.internalValue),
-      latency_routing_policy: cdktf.listMapper(route53RecordLatencyRoutingPolicyToTerraform)(this._latencyRoutingPolicy.internalValue),
-      weighted_routing_policy: cdktf.listMapper(route53RecordWeightedRoutingPolicyToTerraform)(this._weightedRoutingPolicy.internalValue),
+      alias: cdktf.listMapper(route53RecordAliasToTerraform, true)(this._alias.internalValue),
+      failover_routing_policy: cdktf.listMapper(route53RecordFailoverRoutingPolicyToTerraform, true)(this._failoverRoutingPolicy.internalValue),
+      geolocation_routing_policy: cdktf.listMapper(route53RecordGeolocationRoutingPolicyToTerraform, true)(this._geolocationRoutingPolicy.internalValue),
+      latency_routing_policy: cdktf.listMapper(route53RecordLatencyRoutingPolicyToTerraform, true)(this._latencyRoutingPolicy.internalValue),
+      weighted_routing_policy: cdktf.listMapper(route53RecordWeightedRoutingPolicyToTerraform, true)(this._weightedRoutingPolicy.internalValue),
     };
   }
 }

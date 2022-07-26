@@ -219,7 +219,10 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._family = config.family;
@@ -357,7 +360,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      parameter: cdktf.listMapper(neptuneParameterGroupParameterToTerraform)(this._parameter.internalValue),
+      parameter: cdktf.listMapper(neptuneParameterGroupParameterToTerraform, true)(this._parameter.internalValue),
     };
   }
 }

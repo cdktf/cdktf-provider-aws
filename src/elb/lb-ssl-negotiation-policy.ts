@@ -184,7 +184,10 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._lbPort = config.lbPort;
@@ -278,7 +281,7 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
       lb_port: cdktf.numberToTerraform(this._lbPort),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
       name: cdktf.stringToTerraform(this._name),
-      attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform)(this._attribute.internalValue),
+      attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform, true)(this._attribute.internalValue),
     };
   }
 }

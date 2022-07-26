@@ -190,7 +190,10 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._loadBalancerName = config.loadBalancerName;
@@ -284,7 +287,7 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
       load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
       policy_name: cdktf.stringToTerraform(this._policyName),
       policy_type_name: cdktf.stringToTerraform(this._policyTypeName),
-      policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform)(this._policyAttribute.internalValue),
+      policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform, true)(this._policyAttribute.internalValue),
     };
   }
 }

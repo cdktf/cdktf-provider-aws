@@ -272,7 +272,7 @@ export function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFil
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -405,7 +405,10 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._gatewayId = config.gatewayId;
     this._id = config.id;
@@ -566,7 +569,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      filter: cdktf.listMapper(dataAwsRouteTableFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsRouteTableFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

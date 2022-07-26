@@ -199,7 +199,10 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._destinations = config.destinations;
     this._id = config.id;
@@ -351,14 +354,14 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._destinations),
+      destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinations),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       notification_target: cdktf.stringToTerraform(this._notificationTarget),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
-      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform)(this._playerLatencyPolicy.internalValue),
+      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform, true)(this._playerLatencyPolicy.internalValue),
     };
   }
 }

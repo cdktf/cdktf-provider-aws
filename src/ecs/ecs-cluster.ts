@@ -709,7 +709,10 @@ export class EcsCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._capacityProviders = config.capacityProviders;
     this._id = config.id;
@@ -861,14 +864,14 @@ export class EcsCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
+      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capacityProviders),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: ecsClusterConfigurationToTerraform(this._configuration.internalValue),
-      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy.internalValue),
-      setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting.internalValue),
+      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform, true)(this._defaultCapacityProviderStrategy.internalValue),
+      setting: cdktf.listMapper(ecsClusterSettingToTerraform, true)(this._setting.internalValue),
     };
   }
 }

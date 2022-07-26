@@ -329,7 +329,7 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionToTerraform)(struct!.dimension),
+    dimension: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionToTerraform, true)(struct!.dimension),
   }
 }
 
@@ -725,13 +725,13 @@ export function networkfirewallFirewallPolicyFirewallPolicyToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stateful_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statefulDefaultActions),
-    stateless_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statelessDefaultActions),
-    stateless_fragment_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statelessFragmentDefaultActions),
+    stateful_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statefulDefaultActions),
+    stateless_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statelessDefaultActions),
+    stateless_fragment_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statelessFragmentDefaultActions),
     stateful_engine_options: networkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsToTerraform(struct!.statefulEngineOptions),
-    stateful_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceToTerraform)(struct!.statefulRuleGroupReference),
-    stateless_custom_action: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionToTerraform)(struct!.statelessCustomAction),
-    stateless_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceToTerraform)(struct!.statelessRuleGroupReference),
+    stateful_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceToTerraform, true)(struct!.statefulRuleGroupReference),
+    stateless_custom_action: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionToTerraform, true)(struct!.statelessCustomAction),
+    stateless_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceToTerraform, true)(struct!.statelessRuleGroupReference),
   }
 }
 
@@ -942,7 +942,10 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

@@ -97,7 +97,7 @@ export function fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform(struct
   }
   return {
     clients: cdktf.stringToTerraform(struct!.clients),
-    options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.options),
+    options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
   }
 }
 
@@ -212,7 +212,7 @@ export function fsxOpenzfsVolumeNfsExportsToTerraform(struct?: FsxOpenzfsVolumeN
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_configurations: cdktf.listMapper(fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform)(struct!.clientConfigurations),
+    client_configurations: cdktf.listMapper(fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform, true)(struct!.clientConfigurations),
   }
 }
 
@@ -654,7 +654,10 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._copyTagsToSnapshots = config.copyTagsToSnapshots;
     this._dataCompressionType = config.dataCompressionType;
@@ -936,7 +939,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       nfs_exports: fsxOpenzfsVolumeNfsExportsToTerraform(this._nfsExports.internalValue),
       origin_snapshot: fsxOpenzfsVolumeOriginSnapshotToTerraform(this._originSnapshot.internalValue),
       timeouts: fsxOpenzfsVolumeTimeoutsToTerraform(this._timeouts.internalValue),
-      user_and_group_quotas: cdktf.listMapper(fsxOpenzfsVolumeUserAndGroupQuotasToTerraform)(this._userAndGroupQuotas.internalValue),
+      user_and_group_quotas: cdktf.listMapper(fsxOpenzfsVolumeUserAndGroupQuotasToTerraform, true)(this._userAndGroupQuotas.internalValue),
     };
   }
 }

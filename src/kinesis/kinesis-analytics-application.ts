@@ -1028,7 +1028,7 @@ export function kinesisAnalyticsApplicationInputsSchemaToTerraform(struct?: Kine
   }
   return {
     record_encoding: cdktf.stringToTerraform(struct!.recordEncoding),
-    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform)(struct!.recordColumns),
+    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform, true)(struct!.recordColumns),
     record_format: kinesisAnalyticsApplicationInputsSchemaRecordFormatToTerraform(struct!.recordFormat),
   }
 }
@@ -1271,7 +1271,7 @@ export function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAna
     parallelism: kinesisAnalyticsApplicationInputsParallelismToTerraform(struct!.parallelism),
     processing_configuration: kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraform(struct!.processingConfiguration),
     schema: kinesisAnalyticsApplicationInputsSchemaToTerraform(struct!.schema),
-    starting_position_configuration: cdktf.listMapper(kinesisAnalyticsApplicationInputsStartingPositionConfigurationToTerraform)(struct!.startingPositionConfiguration),
+    starting_position_configuration: cdktf.listMapper(kinesisAnalyticsApplicationInputsStartingPositionConfigurationToTerraform, true)(struct!.startingPositionConfiguration),
   }
 }
 
@@ -2588,7 +2588,7 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaToTerraform
   }
   return {
     record_encoding: cdktf.stringToTerraform(struct!.recordEncoding),
-    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsToTerraform)(struct!.recordColumns),
+    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsToTerraform, true)(struct!.recordColumns),
     record_format: kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatToTerraform(struct!.recordFormat),
   }
 }
@@ -2831,7 +2831,10 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._code = config.code;
     this._description = config.description;
@@ -3063,7 +3066,7 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       cloudwatch_logging_options: kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform(this._cloudwatchLoggingOptions.internalValue),
       inputs: kinesisAnalyticsApplicationInputsToTerraform(this._inputs.internalValue),
-      outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform)(this._outputs.internalValue),
+      outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform, true)(this._outputs.internalValue),
       reference_data_sources: kinesisAnalyticsApplicationReferenceDataSourcesToTerraform(this._referenceDataSources.internalValue),
     };
   }

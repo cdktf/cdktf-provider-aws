@@ -208,7 +208,10 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminRoleValues = config.adminRoleValues;
     this._allowedOrganizations = config.allowedOrganizations;
@@ -476,9 +479,9 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_role_values: cdktf.listMapper(cdktf.stringToTerraform)(this._adminRoleValues),
-      allowed_organizations: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOrganizations),
-      editor_role_values: cdktf.listMapper(cdktf.stringToTerraform)(this._editorRoleValues),
+      admin_role_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminRoleValues),
+      allowed_organizations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrganizations),
+      editor_role_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._editorRoleValues),
       email_assertion: cdktf.stringToTerraform(this._emailAssertion),
       groups_assertion: cdktf.stringToTerraform(this._groupsAssertion),
       id: cdktf.stringToTerraform(this._id),

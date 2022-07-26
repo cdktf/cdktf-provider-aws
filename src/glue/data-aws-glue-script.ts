@@ -354,7 +354,7 @@ export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDa
     id: cdktf.stringToTerraform(struct!.id),
     line_number: cdktf.numberToTerraform(struct!.lineNumber),
     node_type: cdktf.stringToTerraform(struct!.nodeType),
-    args: cdktf.listMapper(dataAwsGlueScriptDagNodeArgsToTerraform)(struct!.args),
+    args: cdktf.listMapper(dataAwsGlueScriptDagNodeArgsToTerraform, true)(struct!.args),
   }
 }
 
@@ -528,7 +528,10 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._language = config.language;
@@ -616,8 +619,8 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       language: cdktf.stringToTerraform(this._language),
-      dag_edge: cdktf.listMapper(dataAwsGlueScriptDagEdgeToTerraform)(this._dagEdge.internalValue),
-      dag_node: cdktf.listMapper(dataAwsGlueScriptDagNodeToTerraform)(this._dagNode.internalValue),
+      dag_edge: cdktf.listMapper(dataAwsGlueScriptDagEdgeToTerraform, true)(this._dagEdge.internalValue),
+      dag_node: cdktf.listMapper(dataAwsGlueScriptDagNodeToTerraform, true)(this._dagNode.internalValue),
     };
   }
 }

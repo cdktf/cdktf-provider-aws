@@ -209,7 +209,10 @@ export class ConnectQueue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._hoursOfOperationId = config.hoursOfOperationId;
@@ -422,7 +425,7 @@ export class ConnectQueue extends cdktf.TerraformResource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       max_contacts: cdktf.numberToTerraform(this._maxContacts),
       name: cdktf.stringToTerraform(this._name),
-      quick_connect_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._quickConnectIds),
+      quick_connect_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._quickConnectIds),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

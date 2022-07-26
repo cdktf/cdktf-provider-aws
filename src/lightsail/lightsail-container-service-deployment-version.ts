@@ -66,7 +66,7 @@ export function lightsailContainerServiceDeploymentVersionContainerToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform)(struct!.command),
+    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
     container_name: cdktf.stringToTerraform(struct!.containerName),
     environment: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environment),
     image: cdktf.stringToTerraform(struct!.image),
@@ -656,7 +656,10 @@ export class LightsailContainerServiceDeploymentVersion extends cdktf.TerraformR
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._serviceName = config.serviceName;
@@ -766,7 +769,7 @@ export class LightsailContainerServiceDeploymentVersion extends cdktf.TerraformR
     return {
       id: cdktf.stringToTerraform(this._id),
       service_name: cdktf.stringToTerraform(this._serviceName),
-      container: cdktf.listMapper(lightsailContainerServiceDeploymentVersionContainerToTerraform)(this._container.internalValue),
+      container: cdktf.listMapper(lightsailContainerServiceDeploymentVersionContainerToTerraform, true)(this._container.internalValue),
       public_endpoint: lightsailContainerServiceDeploymentVersionPublicEndpointToTerraform(this._publicEndpoint.internalValue),
       timeouts: lightsailContainerServiceDeploymentVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };

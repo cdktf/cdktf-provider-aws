@@ -64,7 +64,10 @@ export class MskConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -169,7 +172,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      kafka_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._kafkaVersions),
+      kafka_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._kafkaVersions),
       name: cdktf.stringToTerraform(this._name),
       server_properties: cdktf.stringToTerraform(this._serverProperties),
     };

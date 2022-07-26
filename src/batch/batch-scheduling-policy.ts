@@ -179,7 +179,7 @@ export function batchSchedulingPolicyFairSharePolicyToTerraform(struct?: BatchSc
   return {
     compute_reservation: cdktf.numberToTerraform(struct!.computeReservation),
     share_decay_seconds: cdktf.numberToTerraform(struct!.shareDecaySeconds),
-    share_distribution: cdktf.listMapper(batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform)(struct!.shareDistribution),
+    share_distribution: cdktf.listMapper(batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform, true)(struct!.shareDistribution),
   }
 }
 
@@ -308,7 +308,10 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;

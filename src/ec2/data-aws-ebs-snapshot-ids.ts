@@ -47,7 +47,7 @@ export function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapsh
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._owners = config.owners;
@@ -268,9 +271,9 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
-      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
-      filter: cdktf.listMapper(dataAwsEbsSnapshotIdsFilterToTerraform)(this._filter.internalValue),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
+      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restorableByUserIds),
+      filter: cdktf.listMapper(dataAwsEbsSnapshotIdsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

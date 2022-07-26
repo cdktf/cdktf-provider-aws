@@ -237,7 +237,7 @@ export function lexBotAliasConversationLogsToTerraform(struct?: LexBotAliasConve
   }
   return {
     iam_role_arn: cdktf.stringToTerraform(struct!.iamRoleArn),
-    log_settings: cdktf.listMapper(lexBotAliasConversationLogsLogSettingsToTerraform)(struct!.logSettings),
+    log_settings: cdktf.listMapper(lexBotAliasConversationLogsLogSettingsToTerraform, true)(struct!.logSettings),
   }
 }
 
@@ -470,7 +470,10 @@ export class LexBotAlias extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._botName = config.botName;
     this._botVersion = config.botVersion;

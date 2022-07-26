@@ -59,7 +59,7 @@ export function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMainten
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -192,7 +192,10 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -322,7 +325,7 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
       owner_information: cdktf.stringToTerraform(this._ownerInformation),
       resource_type: cdktf.stringToTerraform(this._resourceType),
       window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform)(this._targets.internalValue),
+      targets: cdktf.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform, true)(this._targets.internalValue),
     };
   }
 }

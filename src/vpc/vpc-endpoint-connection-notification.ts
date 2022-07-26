@@ -64,7 +64,10 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._connectionEvents = config.connectionEvents;
     this._connectionNotificationArn = config.connectionNotificationArn;
@@ -167,7 +170,7 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_events: cdktf.listMapper(cdktf.stringToTerraform)(this._connectionEvents),
+      connection_events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._connectionEvents),
       connection_notification_arn: cdktf.stringToTerraform(this._connectionNotificationArn),
       id: cdktf.stringToTerraform(this._id),
       vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),

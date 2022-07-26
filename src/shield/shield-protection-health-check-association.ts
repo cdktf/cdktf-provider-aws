@@ -56,7 +56,10 @@ export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._healthCheckArn = config.healthCheckArn;
     this._id = config.id;

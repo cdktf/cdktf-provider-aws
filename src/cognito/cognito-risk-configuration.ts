@@ -1128,7 +1128,7 @@ export function cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_filter: cdktf.listMapper(cdktf.stringToTerraform)(struct!.eventFilter),
+    event_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventFilter),
     actions: cognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsToTerraform(struct!.actions),
   }
 }
@@ -1217,8 +1217,8 @@ export function cognitoRiskConfigurationRiskExceptionConfigurationToTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blocked_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.blockedIpRangeList),
-    skipped_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skippedIpRangeList),
+    blocked_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.blockedIpRangeList),
+    skipped_ip_range_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.skippedIpRangeList),
   }
 }
 
@@ -1325,7 +1325,10 @@ export class CognitoRiskConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clientId = config.clientId;
     this._id = config.id;

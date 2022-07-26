@@ -92,7 +92,10 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._compatibleArchitectures = config.compatibleArchitectures;
     this._compatibleRuntimes = config.compatibleRuntimes;
@@ -342,8 +345,8 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_architectures: cdktf.listMapper(cdktf.stringToTerraform)(this._compatibleArchitectures),
-      compatible_runtimes: cdktf.listMapper(cdktf.stringToTerraform)(this._compatibleRuntimes),
+      compatible_architectures: cdktf.listMapper(cdktf.stringToTerraform, false)(this._compatibleArchitectures),
+      compatible_runtimes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._compatibleRuntimes),
       description: cdktf.stringToTerraform(this._description),
       filename: cdktf.stringToTerraform(this._filename),
       id: cdktf.stringToTerraform(this._id),

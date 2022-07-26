@@ -334,7 +334,10 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._domainName = config.domainName;
     this._id = config.id;
@@ -517,7 +520,7 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       rule_type: cdktf.stringToTerraform(this._ruleType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform)(this._targetIp.internalValue),
+      target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform, true)(this._targetIp.internalValue),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

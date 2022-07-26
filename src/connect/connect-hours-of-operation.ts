@@ -396,7 +396,10 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -556,7 +559,7 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       time_zone: cdktf.stringToTerraform(this._timeZone),
-      config: cdktf.listMapper(connectHoursOfOperationConfigAToTerraform)(this._config.internalValue),
+      config: cdktf.listMapper(connectHoursOfOperationConfigAToTerraform, true)(this._config.internalValue),
     };
   }
 }

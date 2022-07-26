@@ -74,7 +74,7 @@ export function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apiga
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.listMapper(cdktf.stringToTerraform)(struct!.audience),
+    audience: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audience),
     issuer: cdktf.stringToTerraform(struct!.issuer),
   }
 }
@@ -182,7 +182,10 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiId = config.apiId;
     this._authorizerCredentialsArn = config.authorizerCredentialsArn;
@@ -382,7 +385,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
       authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
       enable_simple_responses: cdktf.booleanToTerraform(this._enableSimpleResponses),
       id: cdktf.stringToTerraform(this._id),
-      identity_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._identitySources),
+      identity_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identitySources),
       name: cdktf.stringToTerraform(this._name),
       jwt_configuration: apigatewayv2AuthorizerJwtConfigurationToTerraform(this._jwtConfiguration.internalValue),
     };

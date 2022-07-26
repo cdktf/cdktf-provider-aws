@@ -170,7 +170,7 @@ export function sagemakerWorkteamMemberDefinitionOidcMemberDefinitionToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groups),
+    groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
   }
 }
 
@@ -445,7 +445,10 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -599,7 +602,7 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       workforce_name: cdktf.stringToTerraform(this._workforceName),
       workteam_name: cdktf.stringToTerraform(this._workteamName),
-      member_definition: cdktf.listMapper(sagemakerWorkteamMemberDefinitionToTerraform)(this._memberDefinition.internalValue),
+      member_definition: cdktf.listMapper(sagemakerWorkteamMemberDefinitionToTerraform, true)(this._memberDefinition.internalValue),
       notification_configuration: sagemakerWorkteamNotificationConfigurationToTerraform(this._notificationConfiguration.internalValue),
     };
   }

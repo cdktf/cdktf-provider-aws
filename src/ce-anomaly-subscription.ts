@@ -200,7 +200,10 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._frequency = config.frequency;
@@ -360,12 +363,12 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       frequency: cdktf.stringToTerraform(this._frequency),
       id: cdktf.stringToTerraform(this._id),
-      monitor_arn_list: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorArnList),
+      monitor_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorArnList),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       threshold: cdktf.numberToTerraform(this._threshold),
-      subscriber: cdktf.listMapper(ceAnomalySubscriptionSubscriberToTerraform)(this._subscriber.internalValue),
+      subscriber: cdktf.listMapper(ceAnomalySubscriptionSubscriberToTerraform, true)(this._subscriber.internalValue),
     };
   }
 }

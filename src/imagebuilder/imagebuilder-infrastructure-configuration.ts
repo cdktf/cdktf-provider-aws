@@ -353,7 +353,10 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -634,11 +637,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       instance_profile_name: cdktf.stringToTerraform(this._instanceProfileName),
-      instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
+      instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceTypes),
       key_pair: cdktf.stringToTerraform(this._keyPair),
       name: cdktf.stringToTerraform(this._name),
       resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

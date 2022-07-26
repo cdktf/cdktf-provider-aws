@@ -460,9 +460,9 @@ export function lakeformationResourceLfTagsTableWithColumnsToTerraform(struct?: 
   }
   return {
     catalog_id: cdktf.stringToTerraform(struct!.catalogId),
-    column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.columnNames),
+    column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columnNames),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
-    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedColumnNames),
+    excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedColumnNames),
     name: cdktf.stringToTerraform(struct!.name),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
@@ -755,7 +755,10 @@ export class LakeformationResourceLfTags extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catalogId = config.catalogId;
     this._id = config.id;
@@ -888,7 +891,7 @@ export class LakeformationResourceLfTags extends cdktf.TerraformResource {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       id: cdktf.stringToTerraform(this._id),
       database: lakeformationResourceLfTagsDatabaseToTerraform(this._database.internalValue),
-      lf_tag: cdktf.listMapper(lakeformationResourceLfTagsLfTagToTerraform)(this._lfTag.internalValue),
+      lf_tag: cdktf.listMapper(lakeformationResourceLfTagsLfTagToTerraform, true)(this._lfTag.internalValue),
       table: lakeformationResourceLfTagsTableToTerraform(this._table.internalValue),
       table_with_columns: lakeformationResourceLfTagsTableWithColumnsToTerraform(this._tableWithColumns.internalValue),
       timeouts: lakeformationResourceLfTagsTimeoutsToTerraform(this._timeouts.internalValue),

@@ -191,7 +191,7 @@ export function transferAccessPosixProfileToTerraform(struct?: TransferAccessPos
   }
   return {
     gid: cdktf.numberToTerraform(struct!.gid),
-    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.secondaryGids),
+    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.secondaryGids),
     uid: cdktf.numberToTerraform(struct!.uid),
   }
 }
@@ -315,7 +315,10 @@ export class TransferAccess extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._externalId = config.externalId;
     this._homeDirectory = config.homeDirectory;
@@ -483,7 +486,7 @@ export class TransferAccess extends cdktf.TerraformResource {
       policy: cdktf.stringToTerraform(this._policy),
       role: cdktf.stringToTerraform(this._role),
       server_id: cdktf.stringToTerraform(this._serverId),
-      home_directory_mappings: cdktf.listMapper(transferAccessHomeDirectoryMappingsToTerraform)(this._homeDirectoryMappings.internalValue),
+      home_directory_mappings: cdktf.listMapper(transferAccessHomeDirectoryMappingsToTerraform, true)(this._homeDirectoryMappings.internalValue),
       posix_profile: transferAccessPosixProfileToTerraform(this._posixProfile.internalValue),
     };
   }

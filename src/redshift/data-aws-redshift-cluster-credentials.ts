@@ -72,7 +72,10 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoCreate = config.autoCreate;
     this._clusterIdentifier = config.clusterIdentifier;
@@ -211,7 +214,7 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
     return {
       auto_create: cdktf.booleanToTerraform(this._autoCreate),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      db_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._dbGroups),
+      db_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dbGroups),
       db_name: cdktf.stringToTerraform(this._dbName),
       db_user: cdktf.stringToTerraform(this._dbUser),
       duration_seconds: cdktf.numberToTerraform(this._durationSeconds),

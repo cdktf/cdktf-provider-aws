@@ -76,7 +76,10 @@ export class ShieldProtectionGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._aggregation = config.aggregation;
     this._id = config.id;
@@ -224,7 +227,7 @@ export class ShieldProtectionGroup extends cdktf.TerraformResource {
     return {
       aggregation: cdktf.stringToTerraform(this._aggregation),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       pattern: cdktf.stringToTerraform(this._pattern),
       protection_group_id: cdktf.stringToTerraform(this._protectionGroupId),
       resource_type: cdktf.stringToTerraform(this._resourceType),

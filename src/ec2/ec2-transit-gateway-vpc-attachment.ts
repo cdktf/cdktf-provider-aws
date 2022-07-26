@@ -88,7 +88,10 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applianceModeSupport = config.applianceModeSupport;
     this._dnsSupport = config.dnsSupport;
@@ -289,7 +292,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
       dns_support: cdktf.stringToTerraform(this._dnsSupport),
       id: cdktf.stringToTerraform(this._id),
       ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),

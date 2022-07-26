@@ -39,7 +39,7 @@ export function dataAwsImagebuilderInfrastructureConfigurationsFilterToTerraform
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -172,7 +172,10 @@ export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.Terra
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._filter.internalValue = config.filter;
@@ -231,7 +234,7 @@ export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.Terra
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      filter: cdktf.listMapper(dataAwsImagebuilderInfrastructureConfigurationsFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsImagebuilderInfrastructureConfigurationsFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

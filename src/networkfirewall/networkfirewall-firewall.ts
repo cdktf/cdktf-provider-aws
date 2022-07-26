@@ -388,7 +388,10 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deleteProtection = config.deleteProtection;
     this._description = config.description;
@@ -603,7 +606,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform)(this._subnetMapping.internalValue),
+      subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
     };
   }
 }

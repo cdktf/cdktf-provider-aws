@@ -62,10 +62,10 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    organization_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationArns),
-    organizational_unit_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationalUnitArns),
-    user_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userGroups),
-    user_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userIds),
+    organization_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationArns),
+    organizational_unit_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationalUnitArns),
+    user_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userGroups),
+    user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userIds),
   }
 }
 
@@ -222,7 +222,7 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
     description: cdktf.stringToTerraform(struct!.description),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     name: cdktf.stringToTerraform(struct!.name),
-    target_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.targetAccountIds),
+    target_account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetAccountIds),
     launch_permission: imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionToTerraform(struct!.launchPermission),
   }
 }
@@ -494,7 +494,7 @@ export function imagebuilderDistributionConfigurationDistributionContainerDistri
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.containerTags),
+    container_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.containerTags),
     description: cdktf.stringToTerraform(struct!.description),
     target_repository: imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryToTerraform(struct!.targetRepository),
   }
@@ -1165,12 +1165,12 @@ export function imagebuilderDistributionConfigurationDistributionToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    license_configuration_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.licenseConfigurationArns),
+    license_configuration_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.licenseConfigurationArns),
     region: cdktf.stringToTerraform(struct!.region),
     ami_distribution_configuration: imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToTerraform(struct!.amiDistributionConfiguration),
     container_distribution_configuration: imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationToTerraform(struct!.containerDistributionConfiguration),
-    fast_launch_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform)(struct!.fastLaunchConfiguration),
-    launch_template_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform)(struct!.launchTemplateConfiguration),
+    fast_launch_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionFastLaunchConfigurationToTerraform, true)(struct!.fastLaunchConfiguration),
+    launch_template_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform, true)(struct!.launchTemplateConfiguration),
   }
 }
 
@@ -1394,7 +1394,10 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -1524,7 +1527,7 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      distribution: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform)(this._distribution.internalValue),
+      distribution: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform, true)(this._distribution.internalValue),
     };
   }
 }

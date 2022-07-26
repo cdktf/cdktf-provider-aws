@@ -200,7 +200,10 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._addressFamily = config.addressFamily;
     this._amazonAddress = config.amazonAddress;
@@ -440,7 +443,7 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
       customer_address: cdktf.stringToTerraform(this._customerAddress),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      route_filter_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._routeFilterPrefixes),
+      route_filter_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeFilterPrefixes),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vlan: cdktf.numberToTerraform(this._vlan),

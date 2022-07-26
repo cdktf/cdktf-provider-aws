@@ -426,7 +426,10 @@ export class DataAwsDatapipelinePipelineDefinition extends cdktf.TerraformDataSo
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._pipelineId = config.pipelineId;
@@ -502,7 +505,7 @@ export class DataAwsDatapipelinePipelineDefinition extends cdktf.TerraformDataSo
     return {
       id: cdktf.stringToTerraform(this._id),
       pipeline_id: cdktf.stringToTerraform(this._pipelineId),
-      parameter_value: cdktf.listMapper(dataAwsDatapipelinePipelineDefinitionParameterValueToTerraform)(this._parameterValue.internalValue),
+      parameter_value: cdktf.listMapper(dataAwsDatapipelinePipelineDefinitionParameterValueToTerraform, true)(this._parameterValue.internalValue),
     };
   }
 }

@@ -54,7 +54,7 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCoo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
 }
 
@@ -210,7 +210,7 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHea
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
 }
 
@@ -369,7 +369,7 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQue
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
 }
 
@@ -715,7 +715,10 @@ export class CloudfrontCachePolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._defaultTtl = config.defaultTtl;

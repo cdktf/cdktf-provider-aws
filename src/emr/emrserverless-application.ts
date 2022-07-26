@@ -679,8 +679,8 @@ export function emrserverlessApplicationNetworkConfigurationToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
 }
 
@@ -787,7 +787,10 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -992,7 +995,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       auto_start_configuration: emrserverlessApplicationAutoStartConfigurationToTerraform(this._autoStartConfiguration.internalValue),
       auto_stop_configuration: emrserverlessApplicationAutoStopConfigurationToTerraform(this._autoStopConfiguration.internalValue),
-      initial_capacity: cdktf.listMapper(emrserverlessApplicationInitialCapacityToTerraform)(this._initialCapacity.internalValue),
+      initial_capacity: cdktf.listMapper(emrserverlessApplicationInitialCapacityToTerraform, true)(this._initialCapacity.internalValue),
       maximum_capacity: emrserverlessApplicationMaximumCapacityToTerraform(this._maximumCapacity.internalValue),
       network_configuration: emrserverlessApplicationNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
     };

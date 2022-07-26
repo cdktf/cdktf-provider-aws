@@ -2,7 +2,6 @@
 export * from './wafv2-ip-set';
 export * from './wafv2-regex-pattern-set';
 export * from './wafv2-rule-group';
-export * from './wafv2-rule-group-structs';
 export * from './wafv2-web-acl';
 export * from './wafv2-web-acl-structs';
 export * from './wafv2-web-acl-association';

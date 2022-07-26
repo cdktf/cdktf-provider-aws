@@ -567,7 +567,10 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._actionsEnabled = config.actionsEnabled;
     this._alarmActions = config.alarmActions;
@@ -986,7 +989,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
-      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._alarmActions),
+      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alarmActions),
       alarm_description: cdktf.stringToTerraform(this._alarmDescription),
       alarm_name: cdktf.stringToTerraform(this._alarmName),
       comparison_operator: cdktf.stringToTerraform(this._comparisonOperator),
@@ -996,10 +999,10 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
       extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
       id: cdktf.stringToTerraform(this._id),
-      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
+      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._insufficientDataActions),
       metric_name: cdktf.stringToTerraform(this._metricName),
       namespace: cdktf.stringToTerraform(this._namespace),
-      ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
+      ok_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._okActions),
       period: cdktf.numberToTerraform(this._period),
       statistic: cdktf.stringToTerraform(this._statistic),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -1008,7 +1011,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
       treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),
       unit: cdktf.stringToTerraform(this._unit),
-      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform)(this._metricQuery.internalValue),
+      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform, true)(this._metricQuery.internalValue),
     };
   }
 }

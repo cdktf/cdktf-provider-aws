@@ -520,7 +520,7 @@ export function backupPlanRuleToTerraform(struct?: BackupPlanRule | cdktf.IResol
     schedule: cdktf.stringToTerraform(struct!.schedule),
     start_window: cdktf.numberToTerraform(struct!.startWindow),
     target_vault_name: cdktf.stringToTerraform(struct!.targetVaultName),
-    copy_action: cdktf.listMapper(backupPlanRuleCopyActionToTerraform)(struct!.copyAction),
+    copy_action: cdktf.listMapper(backupPlanRuleCopyActionToTerraform, true)(struct!.copyAction),
     lifecycle: backupPlanRuleLifecycleToTerraform(struct!.lifecycle),
   }
 }
@@ -808,7 +808,10 @@ export class BackupPlan extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -932,8 +935,8 @@ export class BackupPlan extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      advanced_backup_setting: cdktf.listMapper(backupPlanAdvancedBackupSettingToTerraform)(this._advancedBackupSetting.internalValue),
-      rule: cdktf.listMapper(backupPlanRuleToTerraform)(this._rule.internalValue),
+      advanced_backup_setting: cdktf.listMapper(backupPlanAdvancedBackupSettingToTerraform, true)(this._advancedBackupSetting.internalValue),
+      rule: cdktf.listMapper(backupPlanRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

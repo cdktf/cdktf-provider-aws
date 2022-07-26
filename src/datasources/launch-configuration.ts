@@ -913,7 +913,10 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._associatePublicIpAddress = config.associatePublicIpAddress;
     this._ebsOptimized = config.ebsOptimized;
@@ -1294,14 +1297,14 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       placement_tenancy: cdktf.stringToTerraform(this._placementTenancy),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       spot_price: cdktf.stringToTerraform(this._spotPrice),
       user_data: cdktf.stringToTerraform(this._userData),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       vpc_classic_link_id: cdktf.stringToTerraform(this._vpcClassicLinkId),
-      vpc_classic_link_security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcClassicLinkSecurityGroups),
-      ebs_block_device: cdktf.listMapper(launchConfigurationEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
-      ephemeral_block_device: cdktf.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
+      vpc_classic_link_security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcClassicLinkSecurityGroups),
+      ebs_block_device: cdktf.listMapper(launchConfigurationEbsBlockDeviceToTerraform, true)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktf.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform, true)(this._ephemeralBlockDevice.internalValue),
       metadata_options: launchConfigurationMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       root_block_device: launchConfigurationRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),
     };

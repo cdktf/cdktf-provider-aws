@@ -47,7 +47,7 @@ export function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilte
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._mostRecent = config.mostRecent;
@@ -325,7 +328,7 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEbsVolumeFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsEbsVolumeFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

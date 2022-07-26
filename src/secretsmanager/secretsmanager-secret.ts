@@ -298,7 +298,10 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._forceOverwriteReplicaSecret = config.forceOverwriteReplicaSecret;
@@ -554,7 +557,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform)(this._replica.internalValue),
+      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform, true)(this._replica.internalValue),
       rotation_rules: secretsmanagerSecretRotationRulesToTerraform(this._rotationRules.internalValue),
     };
   }

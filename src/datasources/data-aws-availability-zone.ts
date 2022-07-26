@@ -55,7 +55,7 @@ export function dataAwsAvailabilityZoneFilterToTerraform(struct?: DataAwsAvailab
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -188,7 +188,10 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allAvailabilityZones = config.allAvailabilityZones;
     this._id = config.id;
@@ -349,7 +352,7 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       state: cdktf.stringToTerraform(this._state),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      filter: cdktf.listMapper(dataAwsAvailabilityZoneFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsAvailabilityZoneFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

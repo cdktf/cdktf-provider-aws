@@ -421,7 +421,7 @@ export function sagemakerFlowDefinitionHumanLoopConfigToTerraform(struct?: Sagem
     task_availability_lifetime_in_seconds: cdktf.numberToTerraform(struct!.taskAvailabilityLifetimeInSeconds),
     task_count: cdktf.numberToTerraform(struct!.taskCount),
     task_description: cdktf.stringToTerraform(struct!.taskDescription),
-    task_keywords: cdktf.listMapper(cdktf.stringToTerraform)(struct!.taskKeywords),
+    task_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.taskKeywords),
     task_time_limit_in_seconds: cdktf.numberToTerraform(struct!.taskTimeLimitInSeconds),
     task_title: cdktf.stringToTerraform(struct!.taskTitle),
     workteam_arn: cdktf.stringToTerraform(struct!.workteamArn),
@@ -822,7 +822,10 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._flowDefinitionName = config.flowDefinitionName;
     this._id = config.id;

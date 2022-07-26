@@ -848,7 +848,7 @@ export function transferWorkflowOnExceptionStepsTagStepDetailsToTerraform(struct
   return {
     name: cdktf.stringToTerraform(struct!.name),
     source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    tags: cdktf.listMapper(transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(transferWorkflowOnExceptionStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
   }
 }
 
@@ -1963,7 +1963,7 @@ export function transferWorkflowStepsTagStepDetailsToTerraform(struct?: Transfer
   return {
     name: cdktf.stringToTerraform(struct!.name),
     source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
-    tags: cdktf.listMapper(transferWorkflowStepsTagStepDetailsTagsToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(transferWorkflowStepsTagStepDetailsTagsToTerraform, true)(struct!.tags),
   }
 }
 
@@ -2302,7 +2302,10 @@ export class TransferWorkflow extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -2424,8 +2427,8 @@ export class TransferWorkflow extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      on_exception_steps: cdktf.listMapper(transferWorkflowOnExceptionStepsToTerraform)(this._onExceptionSteps.internalValue),
-      steps: cdktf.listMapper(transferWorkflowStepsToTerraform)(this._steps.internalValue),
+      on_exception_steps: cdktf.listMapper(transferWorkflowOnExceptionStepsToTerraform, true)(this._onExceptionSteps.internalValue),
+      steps: cdktf.listMapper(transferWorkflowStepsToTerraform, true)(this._steps.internalValue),
     };
   }
 }

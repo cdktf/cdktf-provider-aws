@@ -180,7 +180,10 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._groupId = config.groupId;
     this._id = config.id;
@@ -264,7 +267,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
-      filter: cdktf.listMapper(dataAwsIdentitystoreGroupFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsIdentitystoreGroupFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

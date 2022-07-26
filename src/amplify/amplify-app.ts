@@ -687,7 +687,10 @@ export class AmplifyApp extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessToken = config.accessToken;
     this._autoBranchCreationPatterns = config.autoBranchCreationPatterns;
@@ -1055,7 +1058,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_token: cdktf.stringToTerraform(this._accessToken),
-      auto_branch_creation_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._autoBranchCreationPatterns),
+      auto_branch_creation_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._autoBranchCreationPatterns),
       basic_auth_credentials: cdktf.stringToTerraform(this._basicAuthCredentials),
       build_spec: cdktf.stringToTerraform(this._buildSpec),
       description: cdktf.stringToTerraform(this._description),
@@ -1073,7 +1076,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       auto_branch_creation_config: amplifyAppAutoBranchCreationConfigToTerraform(this._autoBranchCreationConfig.internalValue),
-      custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform)(this._customRule.internalValue),
+      custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform, true)(this._customRule.internalValue),
     };
   }
 }

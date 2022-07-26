@@ -421,7 +421,7 @@ export function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     role_base: cdktf.stringToTerraform(struct!.roleBase),
     role_name: cdktf.stringToTerraform(struct!.roleName),
     role_search_matching: cdktf.stringToTerraform(struct!.roleSearchMatching),
@@ -931,7 +931,7 @@ export function mqBrokerUserToTerraform(struct?: MqBrokerUser | cdktf.IResolvabl
   }
   return {
     console_access: cdktf.booleanToTerraform(struct!.consoleAccess),
-    groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groups),
+    groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
@@ -1110,7 +1110,10 @@ export class MqBroker extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applyImmediately = config.applyImmediately;
     this._authenticationStrategy = config.authenticationStrategy;
@@ -1487,9 +1490,9 @@ export class MqBroker extends cdktf.TerraformResource {
       host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
       id: cdktf.stringToTerraform(this._id),
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       storage_type: cdktf.stringToTerraform(this._storageType),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: mqBrokerConfigurationToTerraform(this._configuration.internalValue),
@@ -1497,7 +1500,7 @@ export class MqBroker extends cdktf.TerraformResource {
       ldap_server_metadata: mqBrokerLdapServerMetadataToTerraform(this._ldapServerMetadata.internalValue),
       logs: mqBrokerLogsToTerraform(this._logs.internalValue),
       maintenance_window_start_time: mqBrokerMaintenanceWindowStartTimeToTerraform(this._maintenanceWindowStartTime.internalValue),
-      user: cdktf.listMapper(mqBrokerUserToTerraform)(this._user.internalValue),
+      user: cdktf.listMapper(mqBrokerUserToTerraform, true)(this._user.internalValue),
     };
   }
 }

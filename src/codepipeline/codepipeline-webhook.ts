@@ -294,7 +294,10 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authentication = config.authentication;
     this._id = config.id;
@@ -464,7 +467,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       target_action: cdktf.stringToTerraform(this._targetAction),
       target_pipeline: cdktf.stringToTerraform(this._targetPipeline),
       authentication_configuration: codepipelineWebhookAuthenticationConfigurationToTerraform(this._authenticationConfiguration.internalValue),
-      filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

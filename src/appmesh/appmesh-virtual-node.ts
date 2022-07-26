@@ -298,7 +298,7 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+    exact: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exact),
   }
 }
 
@@ -424,7 +424,7 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.certificateAuthorityArns),
+    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateAuthorityArns),
   }
 }
 
@@ -845,7 +845,7 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToTerr
   }
   return {
     enforce: cdktf.booleanToTerraform(struct!.enforce),
-    ports: cdktf.listMapper(cdktf.numberToTerraform)(struct!.ports),
+    ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
     certificate: appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToTerraform(struct!.certificate),
     validation: appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToTerraform(struct!.validation),
   }
@@ -1473,7 +1473,7 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+    exact: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exact),
   }
 }
 
@@ -1599,7 +1599,7 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.certificateAuthorityArns),
+    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateAuthorityArns),
   }
 }
 
@@ -2020,7 +2020,7 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTerraform(
   }
   return {
     enforce: cdktf.booleanToTerraform(struct!.enforce),
-    ports: cdktf.listMapper(cdktf.numberToTerraform)(struct!.ports),
+    ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
     certificate: appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToTerraform(struct!.certificate),
     validation: appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerraform(struct!.validation),
   }
@@ -4767,7 +4767,7 @@ export function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNam
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+    exact: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exact),
   }
 }
 
@@ -6025,7 +6025,7 @@ export function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend: cdktf.listMapper(appmeshVirtualNodeSpecBackendToTerraform)(struct!.backend),
+    backend: cdktf.listMapper(appmeshVirtualNodeSpecBackendToTerraform, true)(struct!.backend),
     backend_defaults: appmeshVirtualNodeSpecBackendDefaultsToTerraform(struct!.backendDefaults),
     listener: appmeshVirtualNodeSpecListenerToTerraform(struct!.listener),
     logging: appmeshVirtualNodeSpecLoggingToTerraform(struct!.logging),
@@ -6202,7 +6202,10 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._meshName = config.meshName;

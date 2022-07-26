@@ -208,12 +208,12 @@ export function dbOptionGroupOptionToTerraform(struct?: DbOptionGroupOption | cd
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    db_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dbSecurityGroupMemberships),
+    db_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dbSecurityGroupMemberships),
     option_name: cdktf.stringToTerraform(struct!.optionName),
     port: cdktf.numberToTerraform(struct!.port),
     version: cdktf.stringToTerraform(struct!.version),
-    vpc_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcSecurityGroupMemberships),
-    option_settings: cdktf.listMapper(dbOptionGroupOptionOptionSettingsToTerraform)(struct!.optionSettings),
+    vpc_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcSecurityGroupMemberships),
+    option_settings: cdktf.listMapper(dbOptionGroupOptionOptionSettingsToTerraform, true)(struct!.optionSettings),
   }
 }
 
@@ -512,7 +512,10 @@ export class DbOptionGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._engineName = config.engineName;
     this._id = config.id;
@@ -703,7 +706,7 @@ export class DbOptionGroup extends cdktf.TerraformResource {
       option_group_description: cdktf.stringToTerraform(this._optionGroupDescription),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      option: cdktf.listMapper(dbOptionGroupOptionToTerraform)(this._option.internalValue),
+      option: cdktf.listMapper(dbOptionGroupOptionToTerraform, true)(this._option.internalValue),
       timeouts: dbOptionGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

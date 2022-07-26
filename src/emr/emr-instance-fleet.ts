@@ -380,8 +380,8 @@ export function emrInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrInsta
     bid_price_as_percentage_of_on_demand_price: cdktf.numberToTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
-    configurations: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform)(struct!.configurations),
-    ebs_config: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform)(struct!.ebsConfig),
+    configurations: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform, true)(struct!.configurations),
+    ebs_config: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
 }
 
@@ -856,8 +856,8 @@ export function emrInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrInst
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_demand_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform)(struct!.onDemandSpecification),
-    spot_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform)(struct!.spotSpecification),
+    on_demand_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform, true)(struct!.onDemandSpecification),
+    spot_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform, true)(struct!.spotSpecification),
   }
 }
 
@@ -964,7 +964,10 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
@@ -1109,7 +1112,7 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       target_on_demand_capacity: cdktf.numberToTerraform(this._targetOnDemandCapacity),
       target_spot_capacity: cdktf.numberToTerraform(this._targetSpotCapacity),
-      instance_type_configs: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsToTerraform)(this._instanceTypeConfigs.internalValue),
+      instance_type_configs: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsToTerraform, true)(this._instanceTypeConfigs.internalValue),
       launch_specifications: emrInstanceFleetLaunchSpecificationsToTerraform(this._launchSpecifications.internalValue),
     };
   }

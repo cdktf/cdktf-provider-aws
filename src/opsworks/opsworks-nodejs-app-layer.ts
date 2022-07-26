@@ -496,7 +496,7 @@ export function opsworksNodejsAppLayerCloudwatchConfigurationToTerraform(struct?
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    log_streams: cdktf.listMapper(opsworksNodejsAppLayerCloudwatchConfigurationLogStreamsToTerraform)(struct!.logStreams),
+    log_streams: cdktf.listMapper(opsworksNodejsAppLayerCloudwatchConfigurationLogStreamsToTerraform, true)(struct!.logStreams),
   }
 }
 
@@ -853,7 +853,10 @@ export class OpsworksNodejsAppLayer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoAssignElasticIps = config.autoAssignElasticIps;
     this._autoAssignPublicIps = config.autoAssignPublicIps;
@@ -1297,14 +1300,14 @@ export class OpsworksNodejsAppLayer extends cdktf.TerraformResource {
       auto_assign_elastic_ips: cdktf.booleanToTerraform(this._autoAssignElasticIps),
       auto_assign_public_ips: cdktf.booleanToTerraform(this._autoAssignPublicIps),
       auto_healing: cdktf.booleanToTerraform(this._autoHealing),
-      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customConfigureRecipes),
-      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customDeployRecipes),
+      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customConfigureRecipes),
+      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customDeployRecipes),
       custom_instance_profile_arn: cdktf.stringToTerraform(this._customInstanceProfileArn),
       custom_json: cdktf.stringToTerraform(this._customJson),
-      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customSecurityGroupIds),
-      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customSetupRecipes),
-      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customShutdownRecipes),
-      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customUndeployRecipes),
+      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customSecurityGroupIds),
+      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customSetupRecipes),
+      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customShutdownRecipes),
+      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customUndeployRecipes),
       drain_elb_on_shutdown: cdktf.booleanToTerraform(this._drainElbOnShutdown),
       elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
       id: cdktf.stringToTerraform(this._id),
@@ -1313,12 +1316,12 @@ export class OpsworksNodejsAppLayer extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       nodejs_version: cdktf.stringToTerraform(this._nodejsVersion),
       stack_id: cdktf.stringToTerraform(this._stackId),
-      system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
+      system_packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._systemPackages),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       cloudwatch_configuration: opsworksNodejsAppLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
-      ebs_volume: cdktf.listMapper(opsworksNodejsAppLayerEbsVolumeToTerraform)(this._ebsVolume.internalValue),
+      ebs_volume: cdktf.listMapper(opsworksNodejsAppLayerEbsVolumeToTerraform, true)(this._ebsVolume.internalValue),
     };
   }
 }

@@ -496,7 +496,10 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._endpointGroupRegion = config.endpointGroupRegion;
     this._healthCheckIntervalSeconds = config.healthCheckIntervalSeconds;
@@ -725,8 +728,8 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
       listener_arn: cdktf.stringToTerraform(this._listenerArn),
       threshold_count: cdktf.numberToTerraform(this._thresholdCount),
       traffic_dial_percentage: cdktf.numberToTerraform(this._trafficDialPercentage),
-      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform)(this._endpointConfiguration.internalValue),
-      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform)(this._portOverride.internalValue),
+      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform, true)(this._endpointConfiguration.internalValue),
+      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform, true)(this._portOverride.internalValue),
       timeouts: globalacceleratorEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

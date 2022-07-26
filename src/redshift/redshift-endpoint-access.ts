@@ -222,7 +222,10 @@ export class RedshiftEndpointAccess extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterIdentifier = config.clusterIdentifier;
     this._endpointName = config.endpointName;
@@ -350,7 +353,7 @@ export class RedshiftEndpointAccess extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       resource_owner: cdktf.stringToTerraform(this._resourceOwner),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
     };
   }
 }

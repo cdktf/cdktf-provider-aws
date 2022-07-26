@@ -354,7 +354,10 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._application = config.application;
     this._cnamePrefix = config.cnamePrefix;
@@ -682,7 +685,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       tier: cdktf.stringToTerraform(this._tier),
       version_label: cdktf.stringToTerraform(this._versionLabel),
       wait_for_ready_timeout: cdktf.stringToTerraform(this._waitForReadyTimeout),
-      setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform)(this._setting.internalValue),
+      setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform, true)(this._setting.internalValue),
     };
   }
 }

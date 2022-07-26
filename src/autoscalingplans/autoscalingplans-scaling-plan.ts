@@ -49,7 +49,7 @@ export function autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -172,7 +172,7 @@ export function autoscalingplansScalingPlanApplicationSourceToTerraform(struct?:
   }
   return {
     cloudformation_stack_arn: cdktf.stringToTerraform(struct!.cloudformationStackArn),
-    tag_filter: cdktf.listMapper(autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform)(struct!.tagFilter),
+    tag_filter: cdktf.listMapper(autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform, true)(struct!.tagFilter),
   }
 }
 
@@ -1096,7 +1096,7 @@ export function autoscalingplansScalingPlanScalingInstructionToTerraform(struct?
     service_namespace: cdktf.stringToTerraform(struct!.serviceNamespace),
     customized_load_metric_specification: autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationToTerraform(struct!.customizedLoadMetricSpecification),
     predefined_load_metric_specification: autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationToTerraform(struct!.predefinedLoadMetricSpecification),
-    target_tracking_configuration: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToTerraform)(struct!.targetTrackingConfiguration),
+    target_tracking_configuration: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToTerraform, true)(struct!.targetTrackingConfiguration),
   }
 }
 
@@ -1481,7 +1481,10 @@ export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -1562,7 +1565,7 @@ export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       application_source: autoscalingplansScalingPlanApplicationSourceToTerraform(this._applicationSource.internalValue),
-      scaling_instruction: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionToTerraform)(this._scalingInstruction.internalValue),
+      scaling_instruction: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionToTerraform, true)(this._scalingInstruction.internalValue),
     };
   }
 }

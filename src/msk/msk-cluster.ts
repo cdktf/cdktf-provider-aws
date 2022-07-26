@@ -508,10 +508,10 @@ export function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrok
   }
   return {
     az_distribution: cdktf.stringToTerraform(struct!.azDistribution),
-    client_subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.clientSubnets),
+    client_subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientSubnets),
     ebs_volume_size: cdktf.numberToTerraform(struct!.ebsVolumeSize),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
     connectivity_info: mskClusterBrokerNodeGroupInfoConnectivityInfoToTerraform(struct!.connectivityInfo),
     storage_info: mskClusterBrokerNodeGroupInfoStorageInfoToTerraform(struct!.storageInfo),
   }
@@ -793,7 +793,7 @@ export function mskClusterClientAuthenticationTlsToTerraform(struct?: MskCluster
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.certificateAuthorityArns),
+    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateAuthorityArns),
   }
 }
 
@@ -2169,7 +2169,10 @@ export class MskCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterName = config.clusterName;
     this._enhancedMonitoring = config.enhancedMonitoring;

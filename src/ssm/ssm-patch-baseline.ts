@@ -91,7 +91,7 @@ export function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmP
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -226,7 +226,7 @@ export function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselin
     approve_until_date: cdktf.stringToTerraform(struct!.approveUntilDate),
     compliance_level: cdktf.stringToTerraform(struct!.complianceLevel),
     enable_non_security: cdktf.booleanToTerraform(struct!.enableNonSecurity),
-    patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform)(struct!.patchFilter),
+    patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform, true)(struct!.patchFilter),
   }
 }
 
@@ -413,7 +413,7 @@ export function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselin
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -536,7 +536,7 @@ export function ssmPatchBaselineSourceToTerraform(struct?: SsmPatchBaselineSourc
   return {
     configuration: cdktf.stringToTerraform(struct!.configuration),
     name: cdktf.stringToTerraform(struct!.name),
-    products: cdktf.listMapper(cdktf.stringToTerraform)(struct!.products),
+    products: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.products),
   }
 }
 
@@ -688,7 +688,10 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._approvedPatches = config.approvedPatches;
     this._approvedPatchesComplianceLevel = config.approvedPatchesComplianceLevel;
@@ -942,20 +945,20 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      approved_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._approvedPatches),
+      approved_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(this._approvedPatches),
       approved_patches_compliance_level: cdktf.stringToTerraform(this._approvedPatchesComplianceLevel),
       approved_patches_enable_non_security: cdktf.booleanToTerraform(this._approvedPatchesEnableNonSecurity),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       operating_system: cdktf.stringToTerraform(this._operatingSystem),
-      rejected_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._rejectedPatches),
+      rejected_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rejectedPatches),
       rejected_patches_action: cdktf.stringToTerraform(this._rejectedPatchesAction),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform)(this._approvalRule.internalValue),
-      global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform)(this._globalFilter.internalValue),
-      source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform)(this._source.internalValue),
+      approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform, true)(this._approvalRule.internalValue),
+      global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform, true)(this._globalFilter.internalValue),
+      source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform, true)(this._source.internalValue),
     };
   }
 }

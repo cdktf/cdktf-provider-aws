@@ -55,7 +55,7 @@ export function dataAwsRamResourceShareFilterToTerraform(struct?: DataAwsRamReso
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -188,7 +188,10 @@ export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -318,7 +321,7 @@ export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
       resource_owner: cdktf.stringToTerraform(this._resourceOwner),
       resource_share_status: cdktf.stringToTerraform(this._resourceShareStatus),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsRamResourceShareFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsRamResourceShareFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

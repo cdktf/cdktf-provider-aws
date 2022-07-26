@@ -211,7 +211,10 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationId = config.applicationId;
     this._capabilities = config.capabilities;
@@ -376,7 +379,7 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_id: cdktf.stringToTerraform(this._applicationId),
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),

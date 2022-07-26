@@ -491,7 +491,7 @@ export function route53RecoveryreadinessResourceSetResourcesToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    readiness_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.readinessScopes),
+    readiness_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.readinessScopes),
     resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
     dns_target_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToTerraform(struct!.dnsTargetResource),
   }
@@ -734,7 +734,10 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._resourceSetName = config.resourceSetName;
@@ -868,7 +871,7 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
       resource_set_type: cdktf.stringToTerraform(this._resourceSetType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform)(this._resources.internalValue),
+      resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform, true)(this._resources.internalValue),
       timeouts: route53RecoveryreadinessResourceSetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

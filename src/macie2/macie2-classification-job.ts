@@ -159,7 +159,7 @@ export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerrafo
   }
   return {
     account_id: cdktf.stringToTerraform(struct!.accountId),
-    buckets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.buckets),
+    buckets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.buckets),
   }
 }
 
@@ -282,7 +282,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleSc
   return {
     comparator: cdktf.stringToTerraform(struct!.comparator),
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -532,7 +532,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScope
     comparator: cdktf.stringToTerraform(struct!.comparator),
     key: cdktf.stringToTerraform(struct!.key),
     target: cdktf.stringToTerraform(struct!.target),
-    tag_values: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToTerraform)(struct!.tagValues),
+    tag_values: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToTerraform, true)(struct!.tagValues),
   }
 }
 
@@ -793,7 +793,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform)(struct!.and),
+    and: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform, true)(struct!.and),
   }
 }
 
@@ -868,7 +868,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleSc
   return {
     comparator: cdktf.stringToTerraform(struct!.comparator),
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1118,7 +1118,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
     comparator: cdktf.stringToTerraform(struct!.comparator),
     key: cdktf.stringToTerraform(struct!.key),
     target: cdktf.stringToTerraform(struct!.target),
-    tag_values: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToTerraform)(struct!.tagValues),
+    tag_values: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToTerraform, true)(struct!.tagValues),
   }
 }
 
@@ -1379,7 +1379,7 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    and: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform)(struct!.and),
+    and: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform, true)(struct!.and),
   }
 }
 
@@ -1548,7 +1548,7 @@ export function macie2ClassificationJobS3JobDefinitionToTerraform(struct?: Macie
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_definitions: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerraform)(struct!.bucketDefinitions),
+    bucket_definitions: cdktf.listMapper(macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerraform, true)(struct!.bucketDefinitions),
     scoping: macie2ClassificationJobS3JobDefinitionScopingToTerraform(struct!.scoping),
   }
 }
@@ -1775,7 +1775,10 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customDataIdentifierIds = config.customDataIdentifierIds;
     this._description = config.description;
@@ -2025,7 +2028,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_data_identifier_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customDataIdentifierIds),
+      custom_data_identifier_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customDataIdentifierIds),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       initial_run: cdktf.booleanToTerraform(this._initialRun),

@@ -88,13 +88,13 @@ export function rumAppMonitorAppMonitorConfigurationToTerraform(struct?: RumAppM
   return {
     allow_cookies: cdktf.booleanToTerraform(struct!.allowCookies),
     enable_xray: cdktf.booleanToTerraform(struct!.enableXray),
-    excluded_pages: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedPages),
-    favorite_pages: cdktf.listMapper(cdktf.stringToTerraform)(struct!.favoritePages),
+    excluded_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedPages),
+    favorite_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.favoritePages),
     guest_role_arn: cdktf.stringToTerraform(struct!.guestRoleArn),
     identity_pool_id: cdktf.stringToTerraform(struct!.identityPoolId),
-    included_pages: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedPages),
+    included_pages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPages),
     session_sample_rate: cdktf.numberToTerraform(struct!.sessionSampleRate),
-    telemetries: cdktf.listMapper(cdktf.stringToTerraform)(struct!.telemetries),
+    telemetries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.telemetries),
   }
 }
 
@@ -355,7 +355,10 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cwLogEnabled = config.cwLogEnabled;
     this._domain = config.domain;

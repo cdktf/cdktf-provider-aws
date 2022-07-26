@@ -47,7 +47,7 @@ export function dataAwsEc2SpotPriceFilterToTerraform(struct?: DataAwsEc2SpotPric
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsEc2SpotPrice extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._id = config.id;
@@ -275,7 +278,7 @@ export class DataAwsEc2SpotPrice extends cdktf.TerraformDataSource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       id: cdktf.stringToTerraform(this._id),
       instance_type: cdktf.stringToTerraform(this._instanceType),
-      filter: cdktf.listMapper(dataAwsEc2SpotPriceFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsEc2SpotPriceFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

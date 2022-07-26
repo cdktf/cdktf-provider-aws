@@ -72,7 +72,10 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._languageCode = config.languageCode;
@@ -215,7 +218,7 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vocabulary_filter_file_uri: cdktf.stringToTerraform(this._vocabularyFilterFileUri),
       vocabulary_filter_name: cdktf.stringToTerraform(this._vocabularyFilterName),
-      words: cdktf.listMapper(cdktf.stringToTerraform)(this._words),
+      words: cdktf.listMapper(cdktf.stringToTerraform, false)(this._words),
     };
   }
 }

@@ -301,8 +301,8 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationToTerrafo
   }
   return {
     thing_group_indexing_mode: cdktf.stringToTerraform(struct!.thingGroupIndexingMode),
-    custom_field: cdktf.listMapper(iotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldToTerraform)(struct!.customField),
-    managed_field: cdktf.listMapper(iotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldToTerraform)(struct!.managedField),
+    custom_field: cdktf.listMapper(iotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldToTerraform, true)(struct!.customField),
+    managed_field: cdktf.listMapper(iotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldToTerraform, true)(struct!.managedField),
   }
 }
 
@@ -684,8 +684,8 @@ export function iotIndexingConfigurationThingIndexingConfigurationToTerraform(st
     named_shadow_indexing_mode: cdktf.stringToTerraform(struct!.namedShadowIndexingMode),
     thing_connectivity_indexing_mode: cdktf.stringToTerraform(struct!.thingConnectivityIndexingMode),
     thing_indexing_mode: cdktf.stringToTerraform(struct!.thingIndexingMode),
-    custom_field: cdktf.listMapper(iotIndexingConfigurationThingIndexingConfigurationCustomFieldToTerraform)(struct!.customField),
-    managed_field: cdktf.listMapper(iotIndexingConfigurationThingIndexingConfigurationManagedFieldToTerraform)(struct!.managedField),
+    custom_field: cdktf.listMapper(iotIndexingConfigurationThingIndexingConfigurationCustomFieldToTerraform, true)(struct!.customField),
+    managed_field: cdktf.listMapper(iotIndexingConfigurationThingIndexingConfigurationManagedFieldToTerraform, true)(struct!.managedField),
   }
 }
 
@@ -877,7 +877,10 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._thingGroupIndexingConfiguration.internalValue = config.thingGroupIndexingConfiguration;

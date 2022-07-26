@@ -874,8 +874,8 @@ export function sagemakerModelVpcConfigToTerraform(struct?: SagemakerModelVpcCon
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
   }
 }
 
@@ -976,7 +976,10 @@ export class SagemakerModel extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enableNetworkIsolation = config.enableNetworkIsolation;
     this._executionRoleArn = config.executionRoleArn;
@@ -1168,7 +1171,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container.internalValue),
+      container: cdktf.listMapper(sagemakerModelContainerToTerraform, true)(this._container.internalValue),
       inference_execution_config: sagemakerModelInferenceExecutionConfigToTerraform(this._inferenceExecutionConfig.internalValue),
       primary_container: sagemakerModelPrimaryContainerToTerraform(this._primaryContainer.internalValue),
       vpc_config: sagemakerModelVpcConfigToTerraform(this._vpcConfig.internalValue),

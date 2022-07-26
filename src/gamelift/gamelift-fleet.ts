@@ -582,7 +582,7 @@ export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFl
   return {
     game_session_activation_timeout_seconds: cdktf.numberToTerraform(struct!.gameSessionActivationTimeoutSeconds),
     max_concurrent_game_session_activations: cdktf.numberToTerraform(struct!.maxConcurrentGameSessionActivations),
-    server_process: cdktf.listMapper(gameliftFleetRuntimeConfigurationServerProcessToTerraform)(struct!.serverProcess),
+    server_process: cdktf.listMapper(gameliftFleetRuntimeConfigurationServerProcessToTerraform, true)(struct!.serverProcess),
   }
 }
 
@@ -813,7 +813,10 @@ export class GameliftFleet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._buildId = config.buildId;
     this._description = config.description;
@@ -1141,14 +1144,14 @@ export class GameliftFleet extends cdktf.TerraformResource {
       fleet_type: cdktf.stringToTerraform(this._fleetType),
       id: cdktf.stringToTerraform(this._id),
       instance_role_arn: cdktf.stringToTerraform(this._instanceRoleArn),
-      metric_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._metricGroups),
+      metric_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._metricGroups),
       name: cdktf.stringToTerraform(this._name),
       new_game_session_protection_policy: cdktf.stringToTerraform(this._newGameSessionProtectionPolicy),
       script_id: cdktf.stringToTerraform(this._scriptId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       certificate_configuration: gameliftFleetCertificateConfigurationToTerraform(this._certificateConfiguration.internalValue),
-      ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform)(this._ec2InboundPermission.internalValue),
+      ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform, true)(this._ec2InboundPermission.internalValue),
       resource_creation_limit_policy: gameliftFleetResourceCreationLimitPolicyToTerraform(this._resourceCreationLimitPolicy.internalValue),
       runtime_configuration: gameliftFleetRuntimeConfigurationToTerraform(this._runtimeConfiguration.internalValue),
       timeouts: gameliftFleetTimeoutsToTerraform(this._timeouts.internalValue),

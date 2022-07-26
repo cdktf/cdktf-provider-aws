@@ -372,7 +372,10 @@ export class SesEventDestination extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._configurationSetName = config.configurationSetName;
     this._enabled = config.enabled;
@@ -521,9 +524,9 @@ export class SesEventDestination extends cdktf.TerraformResource {
       configuration_set_name: cdktf.stringToTerraform(this._configurationSetName),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
-      matching_types: cdktf.listMapper(cdktf.stringToTerraform)(this._matchingTypes),
+      matching_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._matchingTypes),
       name: cdktf.stringToTerraform(this._name),
-      cloudwatch_destination: cdktf.listMapper(sesEventDestinationCloudwatchDestinationToTerraform)(this._cloudwatchDestination.internalValue),
+      cloudwatch_destination: cdktf.listMapper(sesEventDestinationCloudwatchDestinationToTerraform, true)(this._cloudwatchDestination.internalValue),
       kinesis_destination: sesEventDestinationKinesisDestinationToTerraform(this._kinesisDestination.internalValue),
       sns_destination: sesEventDestinationSnsDestinationToTerraform(this._snsDestination.internalValue),
     };

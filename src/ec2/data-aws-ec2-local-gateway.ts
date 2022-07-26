@@ -47,7 +47,7 @@ export function dataAwsEc2LocalGatewayFilterToTerraform(struct?: DataAwsEc2Local
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -180,7 +180,10 @@ export class DataAwsEc2LocalGateway extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._state = config.state;
@@ -275,7 +278,7 @@ export class DataAwsEc2LocalGateway extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       state: cdktf.stringToTerraform(this._state),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEc2LocalGatewayFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataAwsEc2LocalGatewayFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }

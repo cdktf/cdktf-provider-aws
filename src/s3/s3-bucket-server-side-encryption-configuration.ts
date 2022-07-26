@@ -277,7 +277,10 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
@@ -356,7 +359,7 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
       id: cdktf.stringToTerraform(this._id),
-      rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleAToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleAToTerraform, true)(this._rule.internalValue),
     };
   }
 }
