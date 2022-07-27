@@ -3,6 +3,9 @@
     "build": {
       "name": "build",
       "description": "Full release build",
+      "env": {
+        "GH_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
+      },
       "steps": [
         {
           "spawn": "default"
