@@ -9,6 +9,7 @@ export * from './ssm-parameter';
 export * from './ssm-patch-baseline';
 export * from './ssm-patch-group';
 export * from './ssm-resource-data-sync';
+export * from './ssm-service-setting';
 export * from './data-aws-ssm-document';
 export * from './data-aws-ssm-instances';
 export * from './data-aws-ssm-maintenance-windows';

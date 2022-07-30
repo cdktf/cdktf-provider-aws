@@ -55,11 +55,90 @@ export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly toPort: number;
   /**
-  * Type of rule, ingress (inbound) or egress (outbound).
-  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule#type SecurityGroupRule#type}
   */
   readonly type: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule#timeouts SecurityGroupRule#timeouts}
+  */
+  readonly timeouts?: SecurityGroupRuleTimeouts;
+}
+export interface SecurityGroupRuleTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule#create SecurityGroupRule#create}
+  */
+  readonly create?: string;
+}
+
+export function securityGroupRuleTimeoutsToTerraform(struct?: SecurityGroupRuleTimeoutsOutputReference | SecurityGroupRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+export class SecurityGroupRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SecurityGroupRuleTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityGroupRuleTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
 }
 
 /**
@@ -88,7 +167,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_security_group_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -111,6 +190,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
     this._sourceSecurityGroupId = config.sourceSecurityGroupId;
     this._toPort = config.toPort;
     this._type = config.type;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -294,6 +374,22 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
     return this._type;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new SecurityGroupRuleTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: SecurityGroupRuleTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -312,6 +408,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
       source_security_group_id: cdktf.stringToTerraform(this._sourceSecurityGroupId),
       to_port: cdktf.numberToTerraform(this._toPort),
       type: cdktf.stringToTerraform(this._type),
+      timeouts: securityGroupRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

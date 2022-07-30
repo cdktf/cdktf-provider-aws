@@ -46,7 +46,7 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dx_location',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

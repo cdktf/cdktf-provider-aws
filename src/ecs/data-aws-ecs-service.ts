@@ -22,6 +22,10 @@ export interface DataAwsEcsServiceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service#service_name DataAwsEcsService#service_name}
   */
   readonly serviceName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service#tags DataAwsEcsService#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -50,7 +54,7 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -64,6 +68,7 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
     this._clusterArn = config.clusterArn;
     this._id = config.id;
     this._serviceName = config.serviceName;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -132,6 +137,22 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
     return this._serviceName;
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // task_definition - computed: true, optional: false, required: false
   public get taskDefinition() {
     return this.getStringAttribute('task_definition');
@@ -146,6 +167,7 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
       cluster_arn: cdktf.stringToTerraform(this._clusterArn),
       id: cdktf.stringToTerraform(this._id),
       service_name: cdktf.stringToTerraform(this._serviceName),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

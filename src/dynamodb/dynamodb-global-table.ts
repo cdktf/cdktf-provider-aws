@@ -281,7 +281,7 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_global_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
