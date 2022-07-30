@@ -692,7 +692,7 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_security_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -777,6 +777,11 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // name_prefix - computed: true, optional: false, required: false
+  public get namePrefix() {
+    return this.getStringAttribute('name_prefix');
   }
 
   // owner_id - computed: true, optional: false, required: false

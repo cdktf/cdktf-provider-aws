@@ -145,7 +145,7 @@ export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.Terraform
       terraformResourceType: 'aws_organizations_delegated_administrators',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3100,7 +3100,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_data_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
