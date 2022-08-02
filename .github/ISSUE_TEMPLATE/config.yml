@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: File an issue
+    url: "https://github.com/hashicorp/terraform-cdk/issues/new?labels=bug%2C+new%2C+pre-built+providers&template=bug-report-prebuilt-providers.md&title=`aws`+provider:+"
+    about: Please file issues with pre-built providers in our main repository.
