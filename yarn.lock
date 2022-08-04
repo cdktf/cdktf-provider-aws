@@ -99,9 +99,9 @@
     jsii-srcmak "^0.1.627"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.51"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.51.tgz#7d4609806c84acb2ac881ae7f3e452dbf155e71e"
-  integrity sha512-sGBOfvnvIPrJiNlpLIIfVdxMWH+xS2lqYcXie7dZTCB5X2beQnyFI0sxKKBeE3EiCs+V0z/FaduRMEUH+3zvWw==
+  version "0.2.52"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.52.tgz#bff45de01cc0ba3ad4842a04c405dfa0b146cc26"
+  integrity sha512-ny6z2mz+0oD5TjdGaR5aB2RQ5RTXZTDzGI83Ioy42orof2rOx/6C6RWVx3/3aJ+toYMyG1l/NCeidfoz6fetjQ==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -1072,9 +1072,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.65"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.65.tgz#383ca30b71e6f47d7f6c66ac1389498a93e16c72"
-  integrity sha512-GTb1xCN4CcUW4UxMvEGqVpmOZsEZYaE3kFN/KHAGTX2eCbMwrJaruEURyB7yttAdkOTwCkmPPDoWhRUMerKDfw==
+  version "10.1.66"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.66.tgz#95e0931dc2586e9b9749301240102937015c4234"
+  integrity sha512-7HVFV3mQumsQrKEFpRDPWsjlPjKZpkvYwIOWEX1tNAUP4bW6Q/AJak5SEgqVHnO4xhT/XekXZa2m9kXv00A7Ng==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2205,9 +2205,9 @@ jsii-rosetta@^1.62.0, jsii-rosetta@^1.63.2:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.627:
-  version "0.1.636"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.636.tgz#1cea43ca280e992dc65b781e6d7f52f16283cfb9"
-  integrity sha512-SLYM1eMdLOm0wW+K8bbouIHeEr9YV3973TgQ96WEq9QnRhkSaNzmjP1EuOW0x3YnFy8qc5mNjoFAfoayTh5yLw==
+  version "0.1.637"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.637.tgz#13653149755ccd627068d316d5fd1917d7729e89"
+  integrity sha512-KcCBjFEHu7MZQasQH81ULcLrUd9QsbdtOYRyotmY1Jx4xUsh1hB33kDJuqHnMDwdjR9KYr1mwg7CQaIqka29Sw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.63.2"
@@ -3122,10 +3122,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.60.12:
-  version "0.60.12"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.12.tgz#70eab729b0e65791257dc596a36dde0a89bddce2"
-  integrity sha512-y/zix/70I8ovfEJDMAY8+Y+ZuMATB3x/o8DzFVhvBxKBkx1770h3YXCux4vUJMx50FUi/UMNuN+vf5B4Jboaqw==
+projen@^0.60.14:
+  version "0.60.14"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.14.tgz#bc51ad43161745d928884b2ff68025c3ca3d1d9b"
+  integrity sha512-BrY9AgcUafK304wSinVUFr6mJ3cqGvRm2V/hZMUoFUka2bEgJXJNnY6VZEoLj5KRUarJZVvcoh8X6ckaFn44eA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4151,9 +4151,9 @@ yargs-parser@^20.2.2, yargs-parser@^20.2.3:
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
 yargs-parser@^21.0.0:
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
-  integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
+  version "21.1.0"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.0.tgz#a11d06a3bf57f064e951aa3ef55fcf3a5705f876"
+  integrity sha512-xzm2t63xTV/f7+bGMSRzLhUNk1ajv/tDoaD5OeGyC3cFo2fl7My9Z4hS3q2VdQ7JaLvTxErO8Jp5pRIFGMD/zg==
 
 yargs@^15.4.1:
   version "15.4.1"
