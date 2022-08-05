@@ -114,7 +114,7 @@ export class DataAwsLocationPlaceIndex extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_location_place_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
