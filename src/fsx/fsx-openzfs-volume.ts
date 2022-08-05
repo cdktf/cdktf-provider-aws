@@ -35,6 +35,10 @@ export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#record_size_kib FsxOpenzfsVolume#record_size_kib}
+  */
+  readonly recordSizeKib?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}
   */
   readonly storageCapacityQuotaGib?: number;
@@ -648,7 +652,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_openzfs_volume',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -665,6 +669,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
     this._name = config.name;
     this._parentVolumeId = config.parentVolumeId;
     this._readOnly = config.readOnly;
+    this._recordSizeKib = config.recordSizeKib;
     this._storageCapacityQuotaGib = config.storageCapacityQuotaGib;
     this._storageCapacityReservationGib = config.storageCapacityReservationGib;
     this._tags = config.tags;
@@ -773,6 +778,22 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get readOnlyInput() {
     return this._readOnly;
+  }
+
+  // record_size_kib - computed: false, optional: true, required: false
+  private _recordSizeKib?: number; 
+  public get recordSizeKib() {
+    return this.getNumberAttribute('record_size_kib');
+  }
+  public set recordSizeKib(value: number) {
+    this._recordSizeKib = value;
+  }
+  public resetRecordSizeKib() {
+    this._recordSizeKib = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordSizeKibInput() {
+    return this._recordSizeKib;
   }
 
   // storage_capacity_quota_gib - computed: true, optional: true, required: false
@@ -931,6 +952,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       parent_volume_id: cdktf.stringToTerraform(this._parentVolumeId),
       read_only: cdktf.booleanToTerraform(this._readOnly),
+      record_size_kib: cdktf.numberToTerraform(this._recordSizeKib),
       storage_capacity_quota_gib: cdktf.numberToTerraform(this._storageCapacityQuotaGib),
       storage_capacity_reservation_gib: cdktf.numberToTerraform(this._storageCapacityReservationGib),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

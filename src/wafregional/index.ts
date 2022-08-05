@@ -15,5 +15,6 @@ export * from './wafregional-xss-match-set';
 export * from './data-aws-wafregional-ipset';
 export * from './data-aws-wafregional-rate-based-rule';
 export * from './data-aws-wafregional-rule';
+export * from './data-aws-wafregional-subscribed-rule-group';
 export * from './data-aws-wafregional-web-acl';
 

@@ -67,6 +67,10 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   */
   readonly namePrefix?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#preserve_host_header Alb#preserve_host_header}
+  */
+  readonly preserveHostHeader?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#security_groups Alb#security_groups}
   */
   readonly securityGroups?: string[];
@@ -553,7 +557,7 @@ export class Alb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -578,6 +582,7 @@ export class Alb extends cdktf.TerraformResource {
     this._loadBalancerType = config.loadBalancerType;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
+    this._preserveHostHeader = config.preserveHostHeader;
     this._securityGroups = config.securityGroups;
     this._subnets = config.subnets;
     this._tags = config.tags;
@@ -830,6 +835,22 @@ export class Alb extends cdktf.TerraformResource {
     return this._namePrefix;
   }
 
+  // preserve_host_header - computed: false, optional: true, required: false
+  private _preserveHostHeader?: boolean | cdktf.IResolvable; 
+  public get preserveHostHeader() {
+    return this.getBooleanAttribute('preserve_host_header');
+  }
+  public set preserveHostHeader(value: boolean | cdktf.IResolvable) {
+    this._preserveHostHeader = value;
+  }
+  public resetPreserveHostHeader() {
+    this._preserveHostHeader = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveHostHeaderInput() {
+    return this._preserveHostHeader;
+  }
+
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
@@ -972,6 +993,7 @@ export class Alb extends cdktf.TerraformResource {
       load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      preserve_host_header: cdktf.booleanToTerraform(this._preserveHostHeader),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

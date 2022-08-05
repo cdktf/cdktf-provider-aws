@@ -50,7 +50,7 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_service_setting',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -526,6 +526,10 @@ export interface FsxOpenzfsFileSystemRootVolumeConfiguration {
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_file_system#record_size_kib FsxOpenzfsFileSystem#record_size_kib}
+  */
+  readonly recordSizeKib?: number;
+  /**
   * nfs_exports block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_file_system#nfs_exports FsxOpenzfsFileSystem#nfs_exports}
@@ -548,6 +552,7 @@ export function fsxOpenzfsFileSystemRootVolumeConfigurationToTerraform(struct?: 
     copy_tags_to_snapshots: cdktf.booleanToTerraform(struct!.copyTagsToSnapshots),
     data_compression_type: cdktf.stringToTerraform(struct!.dataCompressionType),
     read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    record_size_kib: cdktf.numberToTerraform(struct!.recordSizeKib),
     nfs_exports: fsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsToTerraform(struct!.nfsExports),
     user_and_group_quotas: cdktf.listMapper(fsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasToTerraform, true)(struct!.userAndGroupQuotas),
   }
@@ -579,6 +584,10 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
       hasAnyValues = true;
       internalValueResult.readOnly = this._readOnly;
     }
+    if (this._recordSizeKib !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordSizeKib = this._recordSizeKib;
+    }
     if (this._nfsExports?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nfsExports = this._nfsExports?.internalValue;
@@ -596,6 +605,7 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
       this._copyTagsToSnapshots = undefined;
       this._dataCompressionType = undefined;
       this._readOnly = undefined;
+      this._recordSizeKib = undefined;
       this._nfsExports.internalValue = undefined;
       this._userAndGroupQuotas.internalValue = undefined;
     }
@@ -604,6 +614,7 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
       this._copyTagsToSnapshots = value.copyTagsToSnapshots;
       this._dataCompressionType = value.dataCompressionType;
       this._readOnly = value.readOnly;
+      this._recordSizeKib = value.recordSizeKib;
       this._nfsExports.internalValue = value.nfsExports;
       this._userAndGroupQuotas.internalValue = value.userAndGroupQuotas;
     }
@@ -655,6 +666,22 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get readOnlyInput() {
     return this._readOnly;
+  }
+
+  // record_size_kib - computed: false, optional: true, required: false
+  private _recordSizeKib?: number; 
+  public get recordSizeKib() {
+    return this.getNumberAttribute('record_size_kib');
+  }
+  public set recordSizeKib(value: number) {
+    this._recordSizeKib = value;
+  }
+  public resetRecordSizeKib() {
+    this._recordSizeKib = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordSizeKibInput() {
+    return this._recordSizeKib;
   }
 
   // nfs_exports - computed: false, optional: true, required: false
@@ -845,7 +872,7 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_openzfs_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
