@@ -28,6 +28,12 @@ export interface DataAwsInternetGatewayConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway#filter DataAwsInternetGateway#filter}
   */
   readonly filter?: DataAwsInternetGatewayFilter[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway#timeouts DataAwsInternetGateway#timeouts}
+  */
+  readonly timeouts?: DataAwsInternetGatewayTimeouts;
 }
 export interface DataAwsInternetGatewayAttachments {
 }
@@ -216,6 +222,81 @@ export class DataAwsInternetGatewayFilterList extends cdktf.ComplexList {
     return new DataAwsInternetGatewayFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsInternetGatewayTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway#read DataAwsInternetGateway#read}
+  */
+  readonly read?: string;
+}
+
+export function dataAwsInternetGatewayTimeoutsToTerraform(struct?: DataAwsInternetGatewayTimeoutsOutputReference | DataAwsInternetGatewayTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+export class DataAwsInternetGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataAwsInternetGatewayTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsInternetGatewayTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._read = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway aws_internet_gateway}
@@ -243,7 +324,7 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_internet_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -258,6 +339,7 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
     this._internetGatewayId = config.internetGatewayId;
     this._tags = config.tags;
     this._filter.internalValue = config.filter;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -344,6 +426,22 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
     return this._filter.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataAwsInternetGatewayTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataAwsInternetGatewayTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -354,6 +452,7 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
       internet_gateway_id: cdktf.stringToTerraform(this._internetGatewayId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsInternetGatewayFilterToTerraform, true)(this._filter.internalValue),
+      timeouts: dataAwsInternetGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
