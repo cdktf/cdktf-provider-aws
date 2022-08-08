@@ -54,7 +54,7 @@ export class RouteTableAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route_table_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

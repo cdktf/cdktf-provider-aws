@@ -105,6 +105,12 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly serverSideEncryptionConfiguration?: S3BucketServerSideEncryptionConfiguration;
   /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#timeouts S3Bucket#timeouts}
+  */
+  readonly timeouts?: S3BucketTimeouts;
+  /**
   * versioning block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#versioning S3Bucket#versioning}
@@ -2946,6 +2952,162 @@ export class S3BucketServerSideEncryptionConfigurationOutputReference extends cd
     return this._rule.internalValue;
   }
 }
+export interface S3BucketTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#create S3Bucket#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#delete S3Bucket#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#read S3Bucket#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#update S3Bucket#update}
+  */
+  readonly update?: string;
+}
+
+export function s3BucketTimeoutsToTerraform(struct?: S3BucketTimeoutsOutputReference | S3BucketTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class S3BucketTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): S3BucketTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 export interface S3BucketVersioning {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#enabled S3Bucket#enabled}
@@ -3211,7 +3373,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3242,6 +3404,7 @@ export class S3Bucket extends cdktf.TerraformResource {
     this._objectLockConfiguration.internalValue = config.objectLockConfiguration;
     this._replicationConfiguration.internalValue = config.replicationConfiguration;
     this._serverSideEncryptionConfiguration.internalValue = config.serverSideEncryptionConfiguration;
+    this._timeouts.internalValue = config.timeouts;
     this._versioning.internalValue = config.versioning;
     this._website.internalValue = config.website;
   }
@@ -3595,6 +3758,22 @@ export class S3Bucket extends cdktf.TerraformResource {
     return this._serverSideEncryptionConfiguration.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new S3BucketTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: S3BucketTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // versioning - computed: false, optional: true, required: false
   private _versioning = new S3BucketVersioningOutputReference(this, "versioning");
   public get versioning() {
@@ -3653,6 +3832,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       object_lock_configuration: s3BucketObjectLockConfigurationToTerraform(this._objectLockConfiguration.internalValue),
       replication_configuration: s3BucketReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),
       server_side_encryption_configuration: s3BucketServerSideEncryptionConfigurationToTerraform(this._serverSideEncryptionConfiguration.internalValue),
+      timeouts: s3BucketTimeoutsToTerraform(this._timeouts.internalValue),
       versioning: s3BucketVersioningToTerraform(this._versioning.internalValue),
       website: s3BucketWebsiteToTerraform(this._website.internalValue),
     };
