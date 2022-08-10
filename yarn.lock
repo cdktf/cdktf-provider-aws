@@ -99,9 +99,9 @@
     jsii-srcmak "^0.1.627"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.52"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.52.tgz#bff45de01cc0ba3ad4842a04c405dfa0b146cc26"
-  integrity sha512-ny6z2mz+0oD5TjdGaR5aB2RQ5RTXZTDzGI83Ioy42orof2rOx/6C6RWVx3/3aJ+toYMyG1l/NCeidfoz6fetjQ==
+  version "0.2.56"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.56.tgz#515deb3cf87930bdead088751f3ea010d297c2b0"
+  integrity sha512-X+P8vas7NJji2+wirrCEW6G4SKLnAUOa5JRpoYtONutRXVE4C6Fo80uN4Zi9+qiPOp5FgRKyTxQ27nMUtZQ8dw==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -3122,10 +3122,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.60.14:
-  version "0.60.14"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.14.tgz#bc51ad43161745d928884b2ff68025c3ca3d1d9b"
-  integrity sha512-BrY9AgcUafK304wSinVUFr6mJ3cqGvRm2V/hZMUoFUka2bEgJXJNnY6VZEoLj5KRUarJZVvcoh8X6ckaFn44eA==
+projen@^0.61.7:
+  version "0.61.7"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.61.7.tgz#68ecad4aefbcbd0ec53a3a91124dd803afbd6679"
+  integrity sha512-x6OPYSusI6yO7U0HB1AxoJKZ3nyePvCvo/z+0LGzxjpKSMazHXcFm7JsJzwD+j3oFCdnFm2zzC0sFzAbYfq8nQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -3139,6 +3139,7 @@ projen@^0.60.14:
     xmlbuilder2 "^2.4.1"
     yaml "2.0.0"
     yargs "^16.2.0"
+    zlib "^1.0.5"
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -4218,6 +4219,11 @@ zip-stream@^4.1.0:
     archiver-utils "^2.1.0"
     compress-commons "^4.1.0"
     readable-stream "^3.6.0"
+
+zlib@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/zlib/-/zlib-1.0.5.tgz#6e7c972fc371c645a6afb03ab14769def114fcc0"
+  integrity sha512-40fpE2II+Cd3k8HWTWONfeKE2jL+P42iWJ1zzps5W51qcTsOUKM5Q5m2PFb0CLxlmFAaUuUdJGc3OfZy947v0w==
 
 zod@^1.11.17:
   version "1.11.17"

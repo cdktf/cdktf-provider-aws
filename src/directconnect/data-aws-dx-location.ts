@@ -46,7 +46,7 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dx_location',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -64,6 +64,11 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // available_macsec_port_speeds - computed: true, optional: false, required: false
+  public get availableMacsecPortSpeeds() {
+    return this.getListAttribute('available_macsec_port_speeds');
+  }
 
   // available_port_speeds - computed: true, optional: false, required: false
   public get availablePortSpeeds() {

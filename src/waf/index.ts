@@ -14,5 +14,6 @@ export * from './waf-xss-match-set';
 export * from './data-aws-waf-ipset';
 export * from './data-aws-waf-rate-based-rule';
 export * from './data-aws-waf-rule';
+export * from './data-aws-waf-subscribed-rule-group';
 export * from './data-aws-waf-web-acl';
 
