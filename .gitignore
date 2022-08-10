@@ -53,3 +53,4 @@ package-lock.json
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/automerge.yml
 !/.github/ISSUE_TEMPLATE/config.yml
+!/.github/workflows/next-cdktf-version-pr.yml

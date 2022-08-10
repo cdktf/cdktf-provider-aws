@@ -23,6 +23,14 @@ export interface EcrpublicRepositoryConfig extends cdktf.TerraformMetaArguments 
   */
   readonly repositoryName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecrpublic_repository#tags EcrpublicRepository#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * catalog_data block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
@@ -337,7 +345,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecrpublic_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -351,6 +359,8 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._repositoryName = config.repositoryName;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._catalogData.internalValue = config.catalogData;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -419,6 +429,38 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
     return this.getStringAttribute('repository_uri');
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // catalog_data - computed: false, optional: true, required: false
   private _catalogData = new EcrpublicRepositoryCatalogDataOutputReference(this, "catalog_data");
   public get catalogData() {
@@ -460,6 +502,8 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       id: cdktf.stringToTerraform(this._id),
       repository_name: cdktf.stringToTerraform(this._repositoryName),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       catalog_data: ecrpublicRepositoryCatalogDataToTerraform(this._catalogData.internalValue),
       timeouts: ecrpublicRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -26,6 +26,87 @@ export interface DataAwsVpcIpamPreviewNextCidrConfig extends cdktf.TerraformMeta
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_preview_next_cidr#netmask_length DataAwsVpcIpamPreviewNextCidr#netmask_length}
   */
   readonly netmaskLength?: number;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_preview_next_cidr#timeouts DataAwsVpcIpamPreviewNextCidr#timeouts}
+  */
+  readonly timeouts?: DataAwsVpcIpamPreviewNextCidrTimeouts;
+}
+export interface DataAwsVpcIpamPreviewNextCidrTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_preview_next_cidr#read DataAwsVpcIpamPreviewNextCidr#read}
+  */
+  readonly read?: string;
+}
+
+export function dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(struct?: DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference | DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+export class DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsVpcIpamPreviewNextCidrTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._read = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
@@ -54,7 +135,7 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_ipam_preview_next_cidr',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -69,6 +150,7 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._ipamPoolId = config.ipamPoolId;
     this._netmaskLength = config.netmaskLength;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -141,6 +223,22 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
     return this._netmaskLength;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataAwsVpcIpamPreviewNextCidrTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -151,6 +249,7 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
+      timeouts: dataAwsVpcIpamPreviewNextCidrTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
