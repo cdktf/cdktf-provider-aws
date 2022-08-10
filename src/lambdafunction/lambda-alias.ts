@@ -129,7 +129,7 @@ export class LambdaAlias extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

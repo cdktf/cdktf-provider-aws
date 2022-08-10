@@ -51,6 +51,10 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly policy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}
+  */
+  readonly putRestApiMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#tags ApiGatewayRestApi#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -181,7 +185,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_rest_api',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -202,6 +206,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     this._name = config.name;
     this._parameters = config.parameters;
     this._policy = config.policy;
+    this._putRestApiMode = config.putRestApiMode;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._endpointConfiguration.internalValue = config.endpointConfiguration;
@@ -383,6 +388,22 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this._policy;
   }
 
+  // put_rest_api_mode - computed: false, optional: true, required: false
+  private _putRestApiMode?: string; 
+  public get putRestApiMode() {
+    return this.getStringAttribute('put_rest_api_mode');
+  }
+  public set putRestApiMode(value: string) {
+    this._putRestApiMode = value;
+  }
+  public resetPutRestApiMode() {
+    this._putRestApiMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get putRestApiModeInput() {
+    return this._putRestApiMode;
+  }
+
   // root_resource_id - computed: true, optional: false, required: false
   public get rootResourceId() {
     return this.getStringAttribute('root_resource_id');
@@ -452,6 +473,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       policy: cdktf.stringToTerraform(this._policy),
+      put_rest_api_mode: cdktf.stringToTerraform(this._putRestApiMode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       endpoint_configuration: apiGatewayRestApiEndpointConfigurationToTerraform(this._endpointConfiguration.internalValue),

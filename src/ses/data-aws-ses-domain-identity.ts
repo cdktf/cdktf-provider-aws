@@ -46,7 +46,7 @@ export class DataAwsSesDomainIdentity extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ses_domain_identity',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
