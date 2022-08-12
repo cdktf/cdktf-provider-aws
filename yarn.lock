@@ -146,9 +146,9 @@
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
 
 "@jridgewell/trace-mapping@^0.3.9":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.14.tgz#b231a081d8f66796e475ad588a1ef473112701ed"
-  integrity sha512-bJWEfQ9lPTvm3SneWwRFVLzrh6nhjwqw7TUFFBEMzwvg7t7PCDenf2lDwqo4NQXzdpgBXyFgDWnQA+2vkruksQ==
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
+  integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
   dependencies:
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
@@ -1072,9 +1072,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.72"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.72.tgz#e598ac9eb23e88fbc977520b195640ad3388817c"
-  integrity sha512-vg0KEaNp8tiO4gdErY3O7G/J82WCLwLa7zjcR06qB6VdZxbrZ8SH5nUCGO6GpsX1Nvmolk+XlO75gHUnMeGk/Q==
+  version "10.1.73"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.73.tgz#a6d3c0bcea1ee44888ae534dc71aa952420dde28"
+  integrity sha512-1VA2J2hkmOxMNY7iN0HJaj3gDPkSlYi7BKYziIAb6n7XF+T4via/i46l46etlAv1um9+5UJsAXqRrjappDURmw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2205,9 +2205,9 @@ jsii-rosetta@^1.62.0, jsii-rosetta@^1.63.2:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.627:
-  version "0.1.644"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.644.tgz#7a870ab7d94f6c53332b17a7815b0d875d5246e1"
-  integrity sha512-bbs8Mo59KbyuLNIyGIpIVXtCBHjzAWAXPlIXOWer7gzJ3JO6wxNg8SDiksnHbVudKFM3F69L/wrJxkWns7lvBw==
+  version "0.1.645"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.645.tgz#7f64c190d635cc0ed50cae1a7438bcf190132aa6"
+  integrity sha512-dl1xZbdIW+lMcvZqvbzvA5HMi23xFsvHa3QFWno7bG8OdyNVbkiVctOD2M7mwmhmLs5BvEwo9P0JDu3yz5TTrQ==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.63.2"
