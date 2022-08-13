@@ -82,7 +82,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_external_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

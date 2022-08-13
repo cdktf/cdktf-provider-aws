@@ -32,6 +32,12 @@ export interface DirectoryServiceSharedDirectoryConfig extends cdktf.TerraformMe
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_shared_directory#target DirectoryServiceSharedDirectory#target}
   */
   readonly target: DirectoryServiceSharedDirectoryTarget;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_shared_directory#timeouts DirectoryServiceSharedDirectory#timeouts}
+  */
+  readonly timeouts?: DirectoryServiceSharedDirectoryTimeouts;
 }
 export interface DirectoryServiceSharedDirectoryTarget {
   /**
@@ -125,6 +131,81 @@ export class DirectoryServiceSharedDirectoryTargetOutputReference extends cdktf.
     return this._type;
   }
 }
+export interface DirectoryServiceSharedDirectoryTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_shared_directory#delete DirectoryServiceSharedDirectory#delete}
+  */
+  readonly delete?: string;
+}
+
+export function directoryServiceSharedDirectoryTimeoutsToTerraform(struct?: DirectoryServiceSharedDirectoryTimeoutsOutputReference | DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._delete = value.delete;
+    }
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_shared_directory aws_directory_service_shared_directory}
@@ -152,7 +233,7 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_shared_directory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -168,6 +249,7 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
     this._method = config.method;
     this._notes = config.notes;
     this._target.internalValue = config.target;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -253,6 +335,22 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
     return this._target.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DirectoryServiceSharedDirectoryTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DirectoryServiceSharedDirectoryTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -264,6 +362,7 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
       method: cdktf.stringToTerraform(this._method),
       notes: cdktf.stringToTerraform(this._notes),
       target: directoryServiceSharedDirectoryTargetToTerraform(this._target.internalValue),
+      timeouts: directoryServiceSharedDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

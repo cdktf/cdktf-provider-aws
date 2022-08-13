@@ -166,7 +166,7 @@ export class NetworkmanagerCustomerGatewayAssociation extends cdktf.TerraformRes
       terraformResourceType: 'aws_networkmanager_customer_gateway_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

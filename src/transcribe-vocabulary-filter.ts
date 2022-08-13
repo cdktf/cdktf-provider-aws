@@ -66,7 +66,7 @@ export class TranscribeVocabularyFilter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transcribe_vocabulary_filter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -684,6 +684,11 @@ export class DataAwsOpensearchDomainEbsOptionsOutputReference extends cdktf.Comp
     return this.getNumberAttribute('iops');
   }
 
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
   // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
@@ -1090,7 +1095,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

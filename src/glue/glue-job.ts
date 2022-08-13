@@ -20,6 +20,10 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#execution_class GlueJob#execution_class}
+  */
+  readonly executionClass?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#glue_version GlueJob#glue_version}
   */
   readonly glueVersion?: string;
@@ -366,7 +370,7 @@ export class GlueJob extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -380,6 +384,7 @@ export class GlueJob extends cdktf.TerraformResource {
     this._connections = config.connections;
     this._defaultArguments = config.defaultArguments;
     this._description = config.description;
+    this._executionClass = config.executionClass;
     this._glueVersion = config.glueVersion;
     this._id = config.id;
     this._maxCapacity = config.maxCapacity;
@@ -453,6 +458,22 @@ export class GlueJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // execution_class - computed: false, optional: true, required: false
+  private _executionClass?: string; 
+  public get executionClass() {
+    return this.getStringAttribute('execution_class');
+  }
+  public set executionClass(value: string) {
+    this._executionClass = value;
+  }
+  public resetExecutionClass() {
+    this._executionClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionClassInput() {
+    return this._executionClass;
   }
 
   // glue_version - computed: true, optional: true, required: false
@@ -711,6 +732,7 @@ export class GlueJob extends cdktf.TerraformResource {
       connections: cdktf.listMapper(cdktf.stringToTerraform, false)(this._connections),
       default_arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultArguments),
       description: cdktf.stringToTerraform(this._description),
+      execution_class: cdktf.stringToTerraform(this._executionClass),
       glue_version: cdktf.stringToTerraform(this._glueVersion),
       id: cdktf.stringToTerraform(this._id),
       max_capacity: cdktf.numberToTerraform(this._maxCapacity),

@@ -229,7 +229,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

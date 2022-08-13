@@ -2,4 +2,5 @@
 export * from './prometheus-alert-manager-definition';
 export * from './prometheus-rule-group-namespace';
 export * from './prometheus-workspace';
+export * from './data-aws-prometheus-workspace';
 

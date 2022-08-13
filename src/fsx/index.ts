@@ -9,4 +9,5 @@ export * from './fsx-openzfs-file-system';
 export * from './fsx-openzfs-snapshot';
 export * from './fsx-openzfs-volume';
 export * from './fsx-windows-file-system';
+export * from './data-aws-fsx-openzfs-snapshot';
 
