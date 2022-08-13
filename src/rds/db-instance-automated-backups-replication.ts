@@ -166,7 +166,7 @@ export class DbInstanceAutomatedBackupsReplication extends cdktf.TerraformResour
       terraformResourceType: 'aws_db_instance_automated_backups_replication',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

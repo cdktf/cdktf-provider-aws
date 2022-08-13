@@ -4,6 +4,7 @@ export * from './connect-contact-flow';
 export * from './connect-contact-flow-module';
 export * from './connect-hours-of-operation';
 export * from './connect-instance';
+export * from './connect-instance-storage-config';
 export * from './connect-lambda-function-association';
 export * from './connect-queue';
 export * from './connect-quick-connect';

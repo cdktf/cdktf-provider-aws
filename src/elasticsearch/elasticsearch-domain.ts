@@ -1485,6 +1485,10 @@ export interface ElasticsearchDomainEbsOptions {
   */
   readonly iops?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#throughput ElasticsearchDomain#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#volume_size ElasticsearchDomain#volume_size}
   */
   readonly volumeSize?: number;
@@ -1502,6 +1506,7 @@ export function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchD
   return {
     ebs_enabled: cdktf.booleanToTerraform(struct!.ebsEnabled),
     iops: cdktf.numberToTerraform(struct!.iops),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -1529,6 +1534,10 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.iops = this._iops;
     }
+    if (this._throughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.throughput = this._throughput;
+    }
     if (this._volumeSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeSize = this._volumeSize;
@@ -1545,6 +1554,7 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
       this.isEmptyObject = false;
       this._ebsEnabled = undefined;
       this._iops = undefined;
+      this._throughput = undefined;
       this._volumeSize = undefined;
       this._volumeType = undefined;
     }
@@ -1552,6 +1562,7 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
       this.isEmptyObject = Object.keys(value).length === 0;
       this._ebsEnabled = value.ebsEnabled;
       this._iops = value.iops;
+      this._throughput = value.throughput;
       this._volumeSize = value.volumeSize;
       this._volumeType = value.volumeType;
     }
@@ -1584,6 +1595,22 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get iopsInput() {
     return this._iops;
+  }
+
+  // throughput - computed: true, optional: true, required: false
+  private _throughput?: number; 
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+  public set throughput(value: number) {
+    this._throughput = value;
+  }
+  public resetThroughput() {
+    this._throughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throughputInput() {
+    return this._throughput;
   }
 
   // volume_size - computed: false, optional: true, required: false
@@ -2234,7 +2261,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticsearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

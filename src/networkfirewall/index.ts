@@ -4,5 +4,6 @@ export * from './networkfirewall-firewall-policy';
 export * from './networkfirewall-logging-configuration';
 export * from './networkfirewall-resource-policy';
 export * from './networkfirewall-rule-group';
+export * from './data-aws-networkfirewall-firewall';
 export * from './data-aws-networkfirewall-firewall-policy';
 

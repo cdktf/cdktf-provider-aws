@@ -16,6 +16,10 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}
+  */
+  readonly desiredNumberOfDomainControllers?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#edition DirectoryServiceDirectory#edition}
   */
   readonly edition?: string;
@@ -64,6 +68,12 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
   */
   readonly connectSettings?: DirectoryServiceDirectoryConnectSettings;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
+  */
+  readonly timeouts?: DirectoryServiceDirectoryTimeouts;
   /**
   * vpc_settings block
   * 
@@ -215,6 +225,135 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
     return this._vpcId;
   }
 }
+export interface DirectoryServiceDirectoryTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#create DirectoryServiceDirectory#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#delete DirectoryServiceDirectory#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#update DirectoryServiceDirectory#update}
+  */
+  readonly update?: string;
+}
+
+export function directoryServiceDirectoryTimeoutsToTerraform(struct?: DirectoryServiceDirectoryTimeoutsOutputReference | DirectoryServiceDirectoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DirectoryServiceDirectoryTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DirectoryServiceDirectoryTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 export interface DirectoryServiceDirectoryVpcSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}
@@ -333,7 +472,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_directory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -346,6 +485,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     });
     this._alias = config.alias;
     this._description = config.description;
+    this._desiredNumberOfDomainControllers = config.desiredNumberOfDomainControllers;
     this._edition = config.edition;
     this._enableSso = config.enableSso;
     this._id = config.id;
@@ -357,6 +497,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._connectSettings.internalValue = config.connectSettings;
+    this._timeouts.internalValue = config.timeouts;
     this._vpcSettings.internalValue = config.vpcSettings;
   }
 
@@ -399,6 +540,22 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // desired_number_of_domain_controllers - computed: true, optional: true, required: false
+  private _desiredNumberOfDomainControllers?: number; 
+  public get desiredNumberOfDomainControllers() {
+    return this.getNumberAttribute('desired_number_of_domain_controllers');
+  }
+  public set desiredNumberOfDomainControllers(value: number) {
+    this._desiredNumberOfDomainControllers = value;
+  }
+  public resetDesiredNumberOfDomainControllers() {
+    this._desiredNumberOfDomainControllers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredNumberOfDomainControllersInput() {
+    return this._desiredNumberOfDomainControllers;
   }
 
   // dns_ip_addresses - computed: true, optional: false, required: false
@@ -581,6 +738,22 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     return this._connectSettings.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DirectoryServiceDirectoryTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DirectoryServiceDirectoryTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // vpc_settings - computed: false, optional: true, required: false
   private _vpcSettings = new DirectoryServiceDirectoryVpcSettingsOutputReference(this, "vpc_settings");
   public get vpcSettings() {
@@ -605,6 +778,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     return {
       alias: cdktf.stringToTerraform(this._alias),
       description: cdktf.stringToTerraform(this._description),
+      desired_number_of_domain_controllers: cdktf.numberToTerraform(this._desiredNumberOfDomainControllers),
       edition: cdktf.stringToTerraform(this._edition),
       enable_sso: cdktf.booleanToTerraform(this._enableSso),
       id: cdktf.stringToTerraform(this._id),
@@ -616,6 +790,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       connect_settings: directoryServiceDirectoryConnectSettingsToTerraform(this._connectSettings.internalValue),
+      timeouts: directoryServiceDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_settings: directoryServiceDirectoryVpcSettingsToTerraform(this._vpcSettings.internalValue),
     };
   }
