@@ -148,7 +148,7 @@ export class S3BucketMetric extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_metric',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

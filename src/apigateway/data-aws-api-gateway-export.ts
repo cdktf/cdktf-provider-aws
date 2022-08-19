@@ -62,7 +62,7 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_api_gateway_export',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

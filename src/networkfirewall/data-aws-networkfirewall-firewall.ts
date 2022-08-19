@@ -96,6 +96,210 @@ export class DataAwsNetworkfirewallFirewallEncryptionConfigurationList extends c
     return new DataAwsNetworkfirewallFirewallEncryptionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences {
+}
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesToTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // resolved_cidr_count - computed: true, optional: false, required: false
+  public get resolvedCidrCount() {
+    return this.getNumberAttribute('resolved_cidr_count');
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference {
+    return new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs {
+}
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsToTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // available_cidr_count - computed: true, optional: false, required: false
+  public get availableCidrCount() {
+    return this.getNumberAttribute('available_cidr_count');
+  }
+
+  // ip_set_references - computed: true, optional: false, required: false
+  private _ipSetReferences = new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList(this, "ip_set_references", true);
+  public get ipSetReferences() {
+    return this._ipSetReferences;
+  }
+
+  // utilized_cidr_count - computed: true, optional: false, required: false
+  public get utilizedCidrCount() {
+    return this.getNumberAttribute('utilized_cidr_count');
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference {
+    return new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary {
+}
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryToTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cidrs - computed: true, optional: false, required: false
+  private _cidrs = new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList(this, "cidrs", true);
+  public get cidrs() {
+    return this._cidrs;
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference {
+    return new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment {
 }
 
@@ -139,6 +343,11 @@ export class DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOut
   // endpoint_id - computed: true, optional: false, required: false
   public get endpointId() {
     return this.getStringAttribute('endpoint_id');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // subnet_id - computed: true, optional: false, required: false
@@ -275,6 +484,22 @@ export class DataAwsNetworkfirewallFirewallFirewallStatusOutputReference extends
     }
   }
 
+  // capacity_usage_summary - computed: true, optional: false, required: false
+  private _capacityUsageSummary = new DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList(this, "capacity_usage_summary", true);
+  public get capacityUsageSummary() {
+    return this._capacityUsageSummary;
+  }
+
+  // configuration_sync_state_summary - computed: true, optional: false, required: false
+  public get configurationSyncStateSummary() {
+    return this.getStringAttribute('configuration_sync_state_summary');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
   // sync_states - computed: true, optional: false, required: false
   private _syncStates = new DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesList(this, "sync_states", true);
   public get syncStates() {
@@ -391,7 +616,7 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkfirewall_firewall',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

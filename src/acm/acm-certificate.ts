@@ -352,7 +352,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acm_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -470,6 +470,16 @@ export class AcmCertificate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // not_after - computed: true, optional: false, required: false
+  public get notAfter() {
+    return this.getStringAttribute('not_after');
+  }
+
+  // not_before - computed: true, optional: false, required: false
+  public get notBefore() {
+    return this.getStringAttribute('not_before');
   }
 
   // private_key - computed: false, optional: true, required: false

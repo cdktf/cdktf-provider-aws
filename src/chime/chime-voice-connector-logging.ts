@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface ChimeVoiceConnectorLoggingConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#enable_media_metric_logs ChimeVoiceConnectorLogging#enable_media_metric_logs}
+  */
+  readonly enableMediaMetricLogs?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#enable_sip_logs ChimeVoiceConnectorLogging#enable_sip_logs}
   */
   readonly enableSipLogs?: boolean | cdktf.IResolvable;
@@ -50,7 +54,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
       terraformResourceType: 'aws_chime_voice_connector_logging',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -61,6 +65,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._enableMediaMetricLogs = config.enableMediaMetricLogs;
     this._enableSipLogs = config.enableSipLogs;
     this._id = config.id;
     this._voiceConnectorId = config.voiceConnectorId;
@@ -69,6 +74,22 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_media_metric_logs - computed: false, optional: true, required: false
+  private _enableMediaMetricLogs?: boolean | cdktf.IResolvable; 
+  public get enableMediaMetricLogs() {
+    return this.getBooleanAttribute('enable_media_metric_logs');
+  }
+  public set enableMediaMetricLogs(value: boolean | cdktf.IResolvable) {
+    this._enableMediaMetricLogs = value;
+  }
+  public resetEnableMediaMetricLogs() {
+    this._enableMediaMetricLogs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMediaMetricLogsInput() {
+    return this._enableMediaMetricLogs;
+  }
 
   // enable_sip_logs - computed: false, optional: true, required: false
   private _enableSipLogs?: boolean | cdktf.IResolvable; 
@@ -121,6 +142,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_media_metric_logs: cdktf.booleanToTerraform(this._enableMediaMetricLogs),
       enable_sip_logs: cdktf.booleanToTerraform(this._enableSipLogs),
       id: cdktf.stringToTerraform(this._id),
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),

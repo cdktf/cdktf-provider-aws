@@ -107,7 +107,13 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#custom_cookbooks_source OpsworksStack#custom_cookbooks_source}
   */
-  readonly customCookbooksSource?: OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable;
+  readonly customCookbooksSource?: OpsworksStackCustomCookbooksSource;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#timeouts OpsworksStack#timeouts}
+  */
+  readonly timeouts?: OpsworksStackTimeouts;
 }
 export interface OpsworksStackCustomCookbooksSource {
   /**
@@ -136,7 +142,7 @@ export interface OpsworksStackCustomCookbooksSource {
   readonly username?: string;
 }
 
-export function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksStackCustomCookbooksSource | cdktf.IResolvable): any {
+export function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksStackCustomCookbooksSourceOutputReference | OpsworksStackCustomCookbooksSource): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -153,22 +159,16 @@ export function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksS
 
 export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): OpsworksStackCustomCookbooksSource | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): OpsworksStackCustomCookbooksSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._password !== undefined) {
@@ -198,10 +198,9 @@ export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OpsworksStackCustomCookbooksSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OpsworksStackCustomCookbooksSource | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._password = undefined;
       this._revision = undefined;
       this._sshKey = undefined;
@@ -209,13 +208,8 @@ export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.Com
       this._url = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._password = value.password;
       this._revision = value.revision;
       this._sshKey = value.sshKey;
@@ -315,24 +309,79 @@ export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.Com
     return this._username;
   }
 }
+export interface OpsworksStackTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#create OpsworksStack#create}
+  */
+  readonly create?: string;
+}
 
-export class OpsworksStackCustomCookbooksSourceList extends cdktf.ComplexList {
-  public internalValue? : OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable
+export function opsworksStackTimeoutsToTerraform(struct?: OpsworksStackTimeoutsOutputReference | OpsworksStackTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+export class OpsworksStackTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): OpsworksStackCustomCookbooksSourceOutputReference {
-    return new OpsworksStackCustomCookbooksSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get internalValue(): OpsworksStackTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksStackTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
   }
 }
 
@@ -362,7 +411,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -397,6 +446,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
     this._useOpsworksSecurityGroups = config.useOpsworksSecurityGroups;
     this._vpcId = config.vpcId;
     this._customCookbooksSource.internalValue = config.customCookbooksSource;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -770,11 +820,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // custom_cookbooks_source - computed: false, optional: true, required: false
-  private _customCookbooksSource = new OpsworksStackCustomCookbooksSourceList(this, "custom_cookbooks_source", false);
+  private _customCookbooksSource = new OpsworksStackCustomCookbooksSourceOutputReference(this, "custom_cookbooks_source");
   public get customCookbooksSource() {
     return this._customCookbooksSource;
   }
-  public putCustomCookbooksSource(value: OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable) {
+  public putCustomCookbooksSource(value: OpsworksStackCustomCookbooksSource) {
     this._customCookbooksSource.internalValue = value;
   }
   public resetCustomCookbooksSource() {
@@ -783,6 +833,22 @@ export class OpsworksStack extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customCookbooksSourceInput() {
     return this._customCookbooksSource.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new OpsworksStackTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: OpsworksStackTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -814,7 +880,8 @@ export class OpsworksStack extends cdktf.TerraformResource {
       use_custom_cookbooks: cdktf.booleanToTerraform(this._useCustomCookbooks),
       use_opsworks_security_groups: cdktf.booleanToTerraform(this._useOpsworksSecurityGroups),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform, true)(this._customCookbooksSource.internalValue),
+      custom_cookbooks_source: opsworksStackCustomCookbooksSourceToTerraform(this._customCookbooksSource.internalValue),
+      timeouts: opsworksStackTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

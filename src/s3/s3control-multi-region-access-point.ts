@@ -517,7 +517,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3control_multi_region_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

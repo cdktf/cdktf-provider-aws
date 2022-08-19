@@ -14556,7 +14556,7 @@ export class SecurityhubInsight extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_insight',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
