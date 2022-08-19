@@ -545,7 +545,7 @@ export class KendraExperience extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kendra_experience',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

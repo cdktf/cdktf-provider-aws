@@ -50,7 +50,7 @@ export class IamUserPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_user_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

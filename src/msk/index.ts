@@ -2,6 +2,7 @@
 export * from './msk-cluster';
 export * from './msk-configuration';
 export * from './msk-scram-secret-association';
+export * from './msk-serverless-cluster';
 export * from './mskconnect-connector';
 export * from './mskconnect-custom-plugin';
 export * from './mskconnect-worker-configuration';

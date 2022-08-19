@@ -23,6 +23,10 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#ip_address_type AlbTargetGroup#ip_address_type}
+  */
+  readonly ipAddressType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#lambda_multi_value_headers_enabled AlbTargetGroup#lambda_multi_value_headers_enabled}
   */
   readonly lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable;
@@ -542,7 +546,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb_target_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -556,6 +560,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
     this._connectionTermination = config.connectionTermination;
     this._deregistrationDelay = config.deregistrationDelay;
     this._id = config.id;
+    this._ipAddressType = config.ipAddressType;
     this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
     this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
     this._name = config.name;
@@ -634,6 +639,22 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ip_address_type - computed: true, optional: true, required: false
+  private _ipAddressType?: string; 
+  public get ipAddressType() {
+    return this.getStringAttribute('ip_address_type');
+  }
+  public set ipAddressType(value: string) {
+    this._ipAddressType = value;
+  }
+  public resetIpAddressType() {
+    this._ipAddressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressTypeInput() {
+    return this._ipAddressType;
   }
 
   // lambda_multi_value_headers_enabled - computed: false, optional: true, required: false
@@ -901,6 +922,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
       deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
       id: cdktf.stringToTerraform(this._id),
+      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
       load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
       name: cdktf.stringToTerraform(this._name),

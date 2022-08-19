@@ -54,7 +54,7 @@ export class Cloud9EnvironmentMembership extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloud9_environment_membership',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

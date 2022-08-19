@@ -54,7 +54,7 @@ export class RedshiftHsmClientCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_hsm_client_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
