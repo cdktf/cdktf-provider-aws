@@ -205,7 +205,7 @@ export class GameliftScript extends cdktf.TerraformResource {
       terraformResourceType: 'aws_gamelift_script',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
