@@ -49,6 +49,12 @@ export interface KendraIndexConfig extends cdktf.TerraformMetaArguments {
   */
   readonly capacityUnits?: KendraIndexCapacityUnits;
   /**
+  * document_metadata_configuration_updates block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
+  */
+  readonly documentMetadataConfigurationUpdates?: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable;
+  /**
   * server_side_encryption_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#server_side_encryption_configuration KendraIndex#server_side_encryption_configuration}
@@ -72,251 +78,6 @@ export interface KendraIndexConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#user_token_configurations KendraIndex#user_token_configurations}
   */
   readonly userTokenConfigurations?: KendraIndexUserTokenConfigurations;
-}
-export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
-}
-
-export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdatesRelevance | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdatesRelevance | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // duration - computed: true, optional: false, required: false
-  public get duration() {
-    return this.getStringAttribute('duration');
-  }
-
-  // freshness - computed: true, optional: false, required: false
-  public get freshness() {
-    return this.getBooleanAttribute('freshness');
-  }
-
-  // importance - computed: true, optional: false, required: false
-  public get importance() {
-    return this.getNumberAttribute('importance');
-  }
-
-  // rank_order - computed: true, optional: false, required: false
-  public get rankOrder() {
-    return this.getStringAttribute('rank_order');
-  }
-
-  // values_importance_map - computed: true, optional: false, required: false
-  private _valuesImportanceMap = new cdktf.NumberMap(this, "values_importance_map");
-  public get valuesImportanceMap() {
-    return this._valuesImportanceMap;
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference {
-    return new KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface KendraIndexDocumentMetadataConfigurationUpdatesSearch {
-}
-
-export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdatesSearch | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdatesSearch | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // displayable - computed: true, optional: false, required: false
-  public get displayable() {
-    return this.getBooleanAttribute('displayable');
-  }
-
-  // facetable - computed: true, optional: false, required: false
-  public get facetable() {
-    return this.getBooleanAttribute('facetable');
-  }
-
-  // searchable - computed: true, optional: false, required: false
-  public get searchable() {
-    return this.getBooleanAttribute('searchable');
-  }
-
-  // sortable - computed: true, optional: false, required: false
-  public get sortable() {
-    return this.getBooleanAttribute('sortable');
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesSearchList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference {
-    return new KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface KendraIndexDocumentMetadataConfigurationUpdates {
-}
-
-export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdates | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdates | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // relevance - computed: true, optional: false, required: false
-  private _relevance = new KendraIndexDocumentMetadataConfigurationUpdatesRelevanceList(this, "relevance", false);
-  public get relevance() {
-    return this._relevance;
-  }
-
-  // search - computed: true, optional: false, required: false
-  private _search = new KendraIndexDocumentMetadataConfigurationUpdatesSearchList(this, "search", false);
-  public get search() {
-    return this._search;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-}
-
-export class KendraIndexDocumentMetadataConfigurationUpdatesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): KendraIndexDocumentMetadataConfigurationUpdatesOutputReference {
-    return new KendraIndexDocumentMetadataConfigurationUpdatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface KendraIndexIndexStatisticsFaqStatistics {
 }
@@ -612,6 +373,501 @@ export class KendraIndexCapacityUnitsOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get storageCapacityUnitsInput() {
     return this._storageCapacityUnits;
+  }
+}
+export interface KendraIndexDocumentMetadataConfigurationUpdatesRelevance {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#duration KendraIndex#duration}
+  */
+  readonly duration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#freshness KendraIndex#freshness}
+  */
+  readonly freshness?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#importance KendraIndex#importance}
+  */
+  readonly importance?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#rank_order KendraIndex#rank_order}
+  */
+  readonly rankOrder?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#values_importance_map KendraIndex#values_importance_map}
+  */
+  readonly valuesImportanceMap?: { [key: string]: number };
+}
+
+export function kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesRelevance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    duration: cdktf.stringToTerraform(struct!.duration),
+    freshness: cdktf.booleanToTerraform(struct!.freshness),
+    importance: cdktf.numberToTerraform(struct!.importance),
+    rank_order: cdktf.stringToTerraform(struct!.rankOrder),
+    values_importance_map: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.valuesImportanceMap),
+  }
+}
+
+export class KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdatesRelevance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._duration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._freshness !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.freshness = this._freshness;
+    }
+    if (this._importance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.importance = this._importance;
+    }
+    if (this._rankOrder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rankOrder = this._rankOrder;
+    }
+    if (this._valuesImportanceMap !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valuesImportanceMap = this._valuesImportanceMap;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdatesRelevance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._duration = undefined;
+      this._freshness = undefined;
+      this._importance = undefined;
+      this._rankOrder = undefined;
+      this._valuesImportanceMap = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._duration = value.duration;
+      this._freshness = value.freshness;
+      this._importance = value.importance;
+      this._rankOrder = value.rankOrder;
+      this._valuesImportanceMap = value.valuesImportanceMap;
+    }
+  }
+
+  // duration - computed: true, optional: true, required: false
+  private _duration?: string; 
+  public get duration() {
+    return this.getStringAttribute('duration');
+  }
+  public set duration(value: string) {
+    this._duration = value;
+  }
+  public resetDuration() {
+    this._duration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration;
+  }
+
+  // freshness - computed: true, optional: true, required: false
+  private _freshness?: boolean | cdktf.IResolvable; 
+  public get freshness() {
+    return this.getBooleanAttribute('freshness');
+  }
+  public set freshness(value: boolean | cdktf.IResolvable) {
+    this._freshness = value;
+  }
+  public resetFreshness() {
+    this._freshness = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get freshnessInput() {
+    return this._freshness;
+  }
+
+  // importance - computed: true, optional: true, required: false
+  private _importance?: number; 
+  public get importance() {
+    return this.getNumberAttribute('importance');
+  }
+  public set importance(value: number) {
+    this._importance = value;
+  }
+  public resetImportance() {
+    this._importance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importanceInput() {
+    return this._importance;
+  }
+
+  // rank_order - computed: true, optional: true, required: false
+  private _rankOrder?: string; 
+  public get rankOrder() {
+    return this.getStringAttribute('rank_order');
+  }
+  public set rankOrder(value: string) {
+    this._rankOrder = value;
+  }
+  public resetRankOrder() {
+    this._rankOrder = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rankOrderInput() {
+    return this._rankOrder;
+  }
+
+  // values_importance_map - computed: true, optional: true, required: false
+  private _valuesImportanceMap?: { [key: string]: number }; 
+  public get valuesImportanceMap() {
+    return this.getNumberMapAttribute('values_importance_map');
+  }
+  public set valuesImportanceMap(value: { [key: string]: number }) {
+    this._valuesImportanceMap = value;
+  }
+  public resetValuesImportanceMap() {
+    this._valuesImportanceMap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesImportanceMapInput() {
+    return this._valuesImportanceMap;
+  }
+}
+export interface KendraIndexDocumentMetadataConfigurationUpdatesSearch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#displayable KendraIndex#displayable}
+  */
+  readonly displayable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#facetable KendraIndex#facetable}
+  */
+  readonly facetable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#searchable KendraIndex#searchable}
+  */
+  readonly searchable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#sortable KendraIndex#sortable}
+  */
+  readonly sortable?: boolean | cdktf.IResolvable;
+}
+
+export function kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference | KendraIndexDocumentMetadataConfigurationUpdatesSearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    displayable: cdktf.booleanToTerraform(struct!.displayable),
+    facetable: cdktf.booleanToTerraform(struct!.facetable),
+    searchable: cdktf.booleanToTerraform(struct!.searchable),
+    sortable: cdktf.booleanToTerraform(struct!.sortable),
+  }
+}
+
+export class KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdatesSearch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._displayable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayable = this._displayable;
+    }
+    if (this._facetable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facetable = this._facetable;
+    }
+    if (this._searchable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchable = this._searchable;
+    }
+    if (this._sortable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sortable = this._sortable;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdatesSearch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._displayable = undefined;
+      this._facetable = undefined;
+      this._searchable = undefined;
+      this._sortable = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._displayable = value.displayable;
+      this._facetable = value.facetable;
+      this._searchable = value.searchable;
+      this._sortable = value.sortable;
+    }
+  }
+
+  // displayable - computed: true, optional: true, required: false
+  private _displayable?: boolean | cdktf.IResolvable; 
+  public get displayable() {
+    return this.getBooleanAttribute('displayable');
+  }
+  public set displayable(value: boolean | cdktf.IResolvable) {
+    this._displayable = value;
+  }
+  public resetDisplayable() {
+    this._displayable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayableInput() {
+    return this._displayable;
+  }
+
+  // facetable - computed: true, optional: true, required: false
+  private _facetable?: boolean | cdktf.IResolvable; 
+  public get facetable() {
+    return this.getBooleanAttribute('facetable');
+  }
+  public set facetable(value: boolean | cdktf.IResolvable) {
+    this._facetable = value;
+  }
+  public resetFacetable() {
+    this._facetable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetableInput() {
+    return this._facetable;
+  }
+
+  // searchable - computed: true, optional: true, required: false
+  private _searchable?: boolean | cdktf.IResolvable; 
+  public get searchable() {
+    return this.getBooleanAttribute('searchable');
+  }
+  public set searchable(value: boolean | cdktf.IResolvable) {
+    this._searchable = value;
+  }
+  public resetSearchable() {
+    this._searchable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchableInput() {
+    return this._searchable;
+  }
+
+  // sortable - computed: true, optional: true, required: false
+  private _sortable?: boolean | cdktf.IResolvable; 
+  public get sortable() {
+    return this.getBooleanAttribute('sortable');
+  }
+  public set sortable(value: boolean | cdktf.IResolvable) {
+    this._sortable = value;
+  }
+  public resetSortable() {
+    this._sortable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortableInput() {
+    return this._sortable;
+  }
+}
+export interface KendraIndexDocumentMetadataConfigurationUpdates {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#name KendraIndex#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#type KendraIndex#type}
+  */
+  readonly type: string;
+  /**
+  * relevance block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#relevance KendraIndex#relevance}
+  */
+  readonly relevance?: KendraIndexDocumentMetadataConfigurationUpdatesRelevance;
+  /**
+  * search block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kendra_index#search KendraIndex#search}
+  */
+  readonly search?: KendraIndexDocumentMetadataConfigurationUpdatesSearch;
+}
+
+export function kendraIndexDocumentMetadataConfigurationUpdatesToTerraform(struct?: KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+    relevance: kendraIndexDocumentMetadataConfigurationUpdatesRelevanceToTerraform(struct!.relevance),
+    search: kendraIndexDocumentMetadataConfigurationUpdatesSearchToTerraform(struct!.search),
+  }
+}
+
+export class KendraIndexDocumentMetadataConfigurationUpdatesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._relevance?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.relevance = this._relevance?.internalValue;
+    }
+    if (this._search?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.search = this._search?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KendraIndexDocumentMetadataConfigurationUpdates | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+      this._relevance.internalValue = undefined;
+      this._search.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+      this._relevance.internalValue = value.relevance;
+      this._search.internalValue = value.search;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // relevance - computed: false, optional: true, required: false
+  private _relevance = new KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference(this, "relevance");
+  public get relevance() {
+    return this._relevance;
+  }
+  public putRelevance(value: KendraIndexDocumentMetadataConfigurationUpdatesRelevance) {
+    this._relevance.internalValue = value;
+  }
+  public resetRelevance() {
+    this._relevance.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get relevanceInput() {
+    return this._relevance.internalValue;
+  }
+
+  // search - computed: false, optional: true, required: false
+  private _search = new KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(this, "search");
+  public get search() {
+    return this._search;
+  }
+  public putSearch(value: KendraIndexDocumentMetadataConfigurationUpdatesSearch) {
+    this._search.internalValue = value;
+  }
+  public resetSearch() {
+    this._search.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search.internalValue;
+  }
+}
+
+export class KendraIndexDocumentMetadataConfigurationUpdatesList extends cdktf.ComplexList {
+  public internalValue? : KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KendraIndexDocumentMetadataConfigurationUpdatesOutputReference {
+    return new KendraIndexDocumentMetadataConfigurationUpdatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface KendraIndexServerSideEncryptionConfiguration {
@@ -1303,7 +1559,7 @@ export class KendraIndex extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kendra_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1323,6 +1579,7 @@ export class KendraIndex extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._userContextPolicy = config.userContextPolicy;
     this._capacityUnits.internalValue = config.capacityUnits;
+    this._documentMetadataConfigurationUpdates.internalValue = config.documentMetadataConfigurationUpdates;
     this._serverSideEncryptionConfiguration.internalValue = config.serverSideEncryptionConfiguration;
     this._timeouts.internalValue = config.timeouts;
     this._userGroupResolutionConfiguration.internalValue = config.userGroupResolutionConfiguration;
@@ -1357,12 +1614,6 @@ export class KendraIndex extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
-  }
-
-  // document_metadata_configuration_updates - computed: true, optional: false, required: false
-  private _documentMetadataConfigurationUpdates = new KendraIndexDocumentMetadataConfigurationUpdatesList(this, "document_metadata_configuration_updates", true);
-  public get documentMetadataConfigurationUpdates() {
-    return this._documentMetadataConfigurationUpdates;
   }
 
   // edition - computed: false, optional: true, required: false
@@ -1508,6 +1759,22 @@ export class KendraIndex extends cdktf.TerraformResource {
     return this._capacityUnits.internalValue;
   }
 
+  // document_metadata_configuration_updates - computed: false, optional: true, required: false
+  private _documentMetadataConfigurationUpdates = new KendraIndexDocumentMetadataConfigurationUpdatesList(this, "document_metadata_configuration_updates", true);
+  public get documentMetadataConfigurationUpdates() {
+    return this._documentMetadataConfigurationUpdates;
+  }
+  public putDocumentMetadataConfigurationUpdates(value: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable) {
+    this._documentMetadataConfigurationUpdates.internalValue = value;
+  }
+  public resetDocumentMetadataConfigurationUpdates() {
+    this._documentMetadataConfigurationUpdates.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get documentMetadataConfigurationUpdatesInput() {
+    return this._documentMetadataConfigurationUpdates.internalValue;
+  }
+
   // server_side_encryption_configuration - computed: false, optional: true, required: false
   private _serverSideEncryptionConfiguration = new KendraIndexServerSideEncryptionConfigurationOutputReference(this, "server_side_encryption_configuration");
   public get serverSideEncryptionConfiguration() {
@@ -1587,6 +1854,7 @@ export class KendraIndex extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_context_policy: cdktf.stringToTerraform(this._userContextPolicy),
       capacity_units: kendraIndexCapacityUnitsToTerraform(this._capacityUnits.internalValue),
+      document_metadata_configuration_updates: cdktf.listMapper(kendraIndexDocumentMetadataConfigurationUpdatesToTerraform, true)(this._documentMetadataConfigurationUpdates.internalValue),
       server_side_encryption_configuration: kendraIndexServerSideEncryptionConfigurationToTerraform(this._serverSideEncryptionConfiguration.internalValue),
       timeouts: kendraIndexTimeoutsToTerraform(this._timeouts.internalValue),
       user_group_resolution_configuration: kendraIndexUserGroupResolutionConfigurationToTerraform(this._userGroupResolutionConfiguration.internalValue),

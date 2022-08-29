@@ -217,7 +217,7 @@ export class DocdbClusterParameterGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_docdb_cluster_parameter_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -155,6 +155,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ncharCharacterSetName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#network_type DbInstance#network_type}
+  */
+  readonly networkType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#option_group_name DbInstance#option_group_name}
   */
   readonly optionGroupName?: string;
@@ -743,7 +747,7 @@ export class DbInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -790,6 +794,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._multiAz = config.multiAz;
     this._name = config.name;
     this._ncharCharacterSetName = config.ncharCharacterSetName;
+    this._networkType = config.networkType;
     this._optionGroupName = config.optionGroupName;
     this._parameterGroupName = config.parameterGroupName;
     this._password = config.password;
@@ -1422,6 +1427,22 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._ncharCharacterSetName;
   }
 
+  // network_type - computed: true, optional: true, required: false
+  private _networkType?: string; 
+  public get networkType() {
+    return this.getStringAttribute('network_type');
+  }
+  public set networkType(value: string) {
+    this._networkType = value;
+  }
+  public resetNetworkType() {
+    this._networkType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTypeInput() {
+    return this._networkType;
+  }
+
   // option_group_name - computed: true, optional: true, required: false
   private _optionGroupName?: string; 
   public get optionGroupName() {
@@ -1847,6 +1868,7 @@ export class DbInstance extends cdktf.TerraformResource {
       multi_az: cdktf.booleanToTerraform(this._multiAz),
       name: cdktf.stringToTerraform(this._name),
       nchar_character_set_name: cdktf.stringToTerraform(this._ncharCharacterSetName),
+      network_type: cdktf.stringToTerraform(this._networkType),
       option_group_name: cdktf.stringToTerraform(this._optionGroupName),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       password: cdktf.stringToTerraform(this._password),
