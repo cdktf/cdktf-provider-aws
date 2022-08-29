@@ -46,7 +46,7 @@ export class DataAwsEksClusterAuth extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_cluster_auth',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
