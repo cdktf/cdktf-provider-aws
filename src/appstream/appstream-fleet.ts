@@ -230,7 +230,7 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
     }
   }
 
-  // directory_name - computed: false, optional: true, required: false
+  // directory_name - computed: true, optional: true, required: false
   private _directoryName?: string; 
   public get directoryName() {
     return this.getStringAttribute('directory_name');
@@ -246,7 +246,7 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
     return this._directoryName;
   }
 
-  // organizational_unit_distinguished_name - computed: false, optional: true, required: false
+  // organizational_unit_distinguished_name - computed: true, optional: true, required: false
   private _organizationalUnitDistinguishedName?: string; 
   public get organizationalUnitDistinguishedName() {
     return this.getStringAttribute('organizational_unit_distinguished_name');
@@ -381,7 +381,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

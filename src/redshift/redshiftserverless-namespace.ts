@@ -82,7 +82,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftserverless_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -147,7 +147,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // db_name - computed: false, optional: true, required: false
+  // db_name - computed: true, optional: true, required: false
   private _dbName?: string; 
   public get dbName() {
     return this.getStringAttribute('db_name');
