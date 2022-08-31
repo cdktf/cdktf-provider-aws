@@ -6,7 +6,10 @@ on:
   workflow_dispatch: {}
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions:
       contents: write
     outputs:
@@ -53,7 +56,10 @@ jobs:
       image: hashicorp/jsii-terraform
   self-mutation:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions:
       contents: write
     if: always() && needs.build.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
@@ -82,7 +88,10 @@ jobs:
             git push origin HEAD:${{ github.event.pull_request.head.ref }}
   package-js:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions: {}
     if: "! needs.build.outputs.self_mutation_happened"
     steps:
@@ -104,7 +113,10 @@ jobs:
         run: mv .repo/dist dist
   package-java:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions: {}
     if: "! needs.build.outputs.self_mutation_happened"
     steps:
@@ -130,7 +142,10 @@ jobs:
         run: mv .repo/dist dist
   package-python:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions: {}
     if: "! needs.build.outputs.self_mutation_happened"
     steps:
@@ -155,7 +170,10 @@ jobs:
         run: mv .repo/dist dist
   package-dotnet:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions: {}
     if: "! needs.build.outputs.self_mutation_happened"
     steps:
@@ -180,7 +198,10 @@ jobs:
         run: mv .repo/dist dist
   package-go:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on:
+      - custom
+      - linux
+      - custom-linux-medium
     permissions: {}
     if: "! needs.build.outputs.self_mutation_happened"
     steps:
