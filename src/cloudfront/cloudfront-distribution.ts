@@ -3282,6 +3282,10 @@ export interface CloudfrontDistributionOrigin {
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution#origin_access_control_id CloudfrontDistribution#origin_access_control_id}
+  */
+  readonly originAccessControlId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
   */
   readonly originId: string;
@@ -3324,6 +3328,7 @@ export function cloudfrontDistributionOriginToTerraform(struct?: CloudfrontDistr
     connection_attempts: cdktf.numberToTerraform(struct!.connectionAttempts),
     connection_timeout: cdktf.numberToTerraform(struct!.connectionTimeout),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
+    origin_access_control_id: cdktf.stringToTerraform(struct!.originAccessControlId),
     origin_id: cdktf.stringToTerraform(struct!.originId),
     origin_path: cdktf.stringToTerraform(struct!.originPath),
     custom_header: cdktf.listMapper(cloudfrontDistributionOriginCustomHeaderToTerraform, true)(struct!.customHeader),
@@ -3365,6 +3370,10 @@ export class CloudfrontDistributionOriginOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.domainName = this._domainName;
     }
+    if (this._originAccessControlId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.originAccessControlId = this._originAccessControlId;
+    }
     if (this._originId !== undefined) {
       hasAnyValues = true;
       internalValueResult.originId = this._originId;
@@ -3399,6 +3408,7 @@ export class CloudfrontDistributionOriginOutputReference extends cdktf.ComplexOb
       this._connectionAttempts = undefined;
       this._connectionTimeout = undefined;
       this._domainName = undefined;
+      this._originAccessControlId = undefined;
       this._originId = undefined;
       this._originPath = undefined;
       this._customHeader.internalValue = undefined;
@@ -3416,6 +3426,7 @@ export class CloudfrontDistributionOriginOutputReference extends cdktf.ComplexOb
       this._connectionAttempts = value.connectionAttempts;
       this._connectionTimeout = value.connectionTimeout;
       this._domainName = value.domainName;
+      this._originAccessControlId = value.originAccessControlId;
       this._originId = value.originId;
       this._originPath = value.originPath;
       this._customHeader.internalValue = value.customHeader;
@@ -3468,6 +3479,22 @@ export class CloudfrontDistributionOriginOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get domainNameInput() {
     return this._domainName;
+  }
+
+  // origin_access_control_id - computed: false, optional: true, required: false
+  private _originAccessControlId?: string; 
+  public get originAccessControlId() {
+    return this.getStringAttribute('origin_access_control_id');
+  }
+  public set originAccessControlId(value: string) {
+    this._originAccessControlId = value;
+  }
+  public resetOriginAccessControlId() {
+    this._originAccessControlId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get originAccessControlIdInput() {
+    return this._originAccessControlId;
   }
 
   // origin_id - computed: false, optional: false, required: true
@@ -4238,7 +4265,7 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudfront_distribution',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

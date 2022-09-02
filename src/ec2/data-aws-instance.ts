@@ -911,7 +911,7 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1030,6 +1030,11 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // host_id - computed: true, optional: false, required: false
   public get hostId() {
     return this.getStringAttribute('host_id');
+  }
+
+  // host_resource_group_arn - computed: true, optional: false, required: false
+  public get hostResourceGroupArn() {
+    return this.getStringAttribute('host_resource_group_arn');
   }
 
   // iam_instance_profile - computed: true, optional: false, required: false

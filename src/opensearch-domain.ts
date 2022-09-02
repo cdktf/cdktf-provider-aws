@@ -232,6 +232,10 @@ export class OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRefer
 }
 export interface OpensearchDomainAdvancedSecurityOptions {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#anonymous_auth_enabled OpensearchDomain#anonymous_auth_enabled}
+  */
+  readonly anonymousAuthEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#enabled OpensearchDomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -253,6 +257,7 @@ export function opensearchDomainAdvancedSecurityOptionsToTerraform(struct?: Open
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    anonymous_auth_enabled: cdktf.booleanToTerraform(struct!.anonymousAuthEnabled),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     internal_user_database_enabled: cdktf.booleanToTerraform(struct!.internalUserDatabaseEnabled),
     master_user_options: opensearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform(struct!.masterUserOptions),
@@ -273,6 +278,10 @@ export class OpensearchDomainAdvancedSecurityOptionsOutputReference extends cdkt
   public get internalValue(): OpensearchDomainAdvancedSecurityOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._anonymousAuthEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anonymousAuthEnabled = this._anonymousAuthEnabled;
+    }
     if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
@@ -291,16 +300,34 @@ export class OpensearchDomainAdvancedSecurityOptionsOutputReference extends cdkt
   public set internalValue(value: OpensearchDomainAdvancedSecurityOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._anonymousAuthEnabled = undefined;
       this._enabled = undefined;
       this._internalUserDatabaseEnabled = undefined;
       this._masterUserOptions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._anonymousAuthEnabled = value.anonymousAuthEnabled;
       this._enabled = value.enabled;
       this._internalUserDatabaseEnabled = value.internalUserDatabaseEnabled;
       this._masterUserOptions.internalValue = value.masterUserOptions;
     }
+  }
+
+  // anonymous_auth_enabled - computed: true, optional: true, required: false
+  private _anonymousAuthEnabled?: boolean | cdktf.IResolvable; 
+  public get anonymousAuthEnabled() {
+    return this.getBooleanAttribute('anonymous_auth_enabled');
+  }
+  public set anonymousAuthEnabled(value: boolean | cdktf.IResolvable) {
+    this._anonymousAuthEnabled = value;
+  }
+  public resetAnonymousAuthEnabled() {
+    this._anonymousAuthEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anonymousAuthEnabledInput() {
+    return this._anonymousAuthEnabled;
   }
 
   // enabled - computed: false, optional: false, required: true
@@ -1581,7 +1608,7 @@ export class OpensearchDomainEbsOptionsOutputReference extends cdktf.ComplexObje
     return this._ebsEnabled;
   }
 
-  // iops - computed: false, optional: true, required: false
+  // iops - computed: true, optional: true, required: false
   private _iops?: number; 
   public get iops() {
     return this.getNumberAttribute('iops');
@@ -2261,7 +2288,7 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

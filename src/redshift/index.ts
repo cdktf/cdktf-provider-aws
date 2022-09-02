@@ -15,6 +15,7 @@ export * from './redshift-snapshot-schedule-association';
 export * from './redshift-subnet-group';
 export * from './redshift-usage-limit';
 export * from './redshiftdata-statement';
+export * from './redshiftserverless-endpoint-access';
 export * from './redshiftserverless-namespace';
 export * from './redshiftserverless-workgroup';
 export * from './data-aws-redshift-cluster';

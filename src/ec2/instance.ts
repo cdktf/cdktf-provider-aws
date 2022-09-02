@@ -52,6 +52,10 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#host_resource_group_arn Instance#host_resource_group_arn}
+  */
+  readonly hostResourceGroupArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#iam_instance_profile Instance#iam_instance_profile}
   */
   readonly iamInstanceProfile?: string;
@@ -2069,7 +2073,7 @@ export class Instance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2091,6 +2095,7 @@ export class Instance extends cdktf.TerraformResource {
     this._getPasswordData = config.fetchPasswordData;
     this._hibernation = config.hibernation;
     this._hostId = config.hostId;
+    this._hostResourceGroupArn = config.hostResourceGroupArn;
     this._iamInstanceProfile = config.iamInstanceProfile;
     this._id = config.id;
     this._instanceInitiatedShutdownBehavior = config.instanceInitiatedShutdownBehavior;
@@ -2311,6 +2316,22 @@ export class Instance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get hostIdInput() {
     return this._hostId;
+  }
+
+  // host_resource_group_arn - computed: true, optional: true, required: false
+  private _hostResourceGroupArn?: string; 
+  public get hostResourceGroupArn() {
+    return this.getStringAttribute('host_resource_group_arn');
+  }
+  public set hostResourceGroupArn(value: string) {
+    this._hostResourceGroupArn = value;
+  }
+  public resetHostResourceGroupArn() {
+    this._hostResourceGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostResourceGroupArnInput() {
+    return this._hostResourceGroupArn;
   }
 
   // iam_instance_profile - computed: false, optional: true, required: false
@@ -2925,6 +2946,7 @@ export class Instance extends cdktf.TerraformResource {
       get_password_data: cdktf.booleanToTerraform(this._getPasswordData),
       hibernation: cdktf.booleanToTerraform(this._hibernation),
       host_id: cdktf.stringToTerraform(this._hostId),
+      host_resource_group_arn: cdktf.stringToTerraform(this._hostResourceGroupArn),
       iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
       id: cdktf.stringToTerraform(this._id),
       instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),

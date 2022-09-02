@@ -54,7 +54,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_load_balancer_listener_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

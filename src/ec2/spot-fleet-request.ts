@@ -75,6 +75,10 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly targetCapacity: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#target_capacity_unit_type SpotFleetRequest#target_capacity_unit_type}
+  */
+  readonly targetCapacityUnitType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#target_group_arns SpotFleetRequest#target_group_arns}
   */
   readonly targetGroupArns?: string[];
@@ -3573,7 +3577,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_fleet_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3600,6 +3604,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._targetCapacity = config.targetCapacity;
+    this._targetCapacityUnitType = config.targetCapacityUnitType;
     this._targetGroupArns = config.targetGroupArns;
     this._terminateInstancesOnDelete = config.terminateInstancesOnDelete;
     this._terminateInstancesWithExpiration = config.terminateInstancesWithExpiration;
@@ -3876,6 +3881,22 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     return this._targetCapacity;
   }
 
+  // target_capacity_unit_type - computed: false, optional: true, required: false
+  private _targetCapacityUnitType?: string; 
+  public get targetCapacityUnitType() {
+    return this.getStringAttribute('target_capacity_unit_type');
+  }
+  public set targetCapacityUnitType(value: string) {
+    this._targetCapacityUnitType = value;
+  }
+  public resetTargetCapacityUnitType() {
+    this._targetCapacityUnitType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetCapacityUnitTypeInput() {
+    return this._targetCapacityUnitType;
+  }
+
   // target_group_arns - computed: true, optional: true, required: false
   private _targetGroupArns?: string[]; 
   public get targetGroupArns() {
@@ -4058,6 +4079,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_capacity: cdktf.numberToTerraform(this._targetCapacity),
+      target_capacity_unit_type: cdktf.stringToTerraform(this._targetCapacityUnitType),
       target_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupArns),
       terminate_instances_on_delete: cdktf.stringToTerraform(this._terminateInstancesOnDelete),
       terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),

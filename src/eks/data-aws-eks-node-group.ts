@@ -405,7 +405,7 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -434,6 +434,11 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // capacity_type - computed: true, optional: false, required: false
+  public get capacityType() {
+    return this.getStringAttribute('capacity_type');
   }
 
   // cluster_name - computed: false, optional: false, required: true

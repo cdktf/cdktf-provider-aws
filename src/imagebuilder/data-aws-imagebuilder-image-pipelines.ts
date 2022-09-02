@@ -166,7 +166,7 @@ export class DataAwsImagebuilderImagePipelines extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_imagebuilder_image_pipelines',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
