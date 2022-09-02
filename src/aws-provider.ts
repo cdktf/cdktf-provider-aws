@@ -254,6 +254,12 @@ export interface AwsProviderAssumeRole {
   */
   readonly sessionName?: string;
   /**
+  * Source identity specified by the principal assuming the role.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#source_identity AwsProvider#source_identity}
+  */
+  readonly sourceIdentity?: string;
+  /**
   * Assume role session tags.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#tags AwsProvider#tags}
@@ -280,6 +286,7 @@ export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole)
     policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policyArns),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     session_name: cdktf.stringToTerraform(struct!.sessionName),
+    source_identity: cdktf.stringToTerraform(struct!.sourceIdentity),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     transitive_tag_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.transitiveTagKeys),
   }
@@ -3002,7 +3009,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

@@ -2251,6 +2251,10 @@ export interface Ec2FleetTargetCapacitySpecification {
   */
   readonly spotTargetCapacity?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#target_capacity_unit_type Ec2Fleet#target_capacity_unit_type}
+  */
+  readonly targetCapacityUnitType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#total_target_capacity Ec2Fleet#total_target_capacity}
   */
   readonly totalTargetCapacity: number;
@@ -2265,6 +2269,7 @@ export function ec2FleetTargetCapacitySpecificationToTerraform(struct?: Ec2Fleet
     default_target_capacity_type: cdktf.stringToTerraform(struct!.defaultTargetCapacityType),
     on_demand_target_capacity: cdktf.numberToTerraform(struct!.onDemandTargetCapacity),
     spot_target_capacity: cdktf.numberToTerraform(struct!.spotTargetCapacity),
+    target_capacity_unit_type: cdktf.stringToTerraform(struct!.targetCapacityUnitType),
     total_target_capacity: cdktf.numberToTerraform(struct!.totalTargetCapacity),
   }
 }
@@ -2295,6 +2300,10 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.spotTargetCapacity = this._spotTargetCapacity;
     }
+    if (this._targetCapacityUnitType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetCapacityUnitType = this._targetCapacityUnitType;
+    }
     if (this._totalTargetCapacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.totalTargetCapacity = this._totalTargetCapacity;
@@ -2308,6 +2317,7 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
       this._defaultTargetCapacityType = undefined;
       this._onDemandTargetCapacity = undefined;
       this._spotTargetCapacity = undefined;
+      this._targetCapacityUnitType = undefined;
       this._totalTargetCapacity = undefined;
     }
     else {
@@ -2315,6 +2325,7 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
       this._defaultTargetCapacityType = value.defaultTargetCapacityType;
       this._onDemandTargetCapacity = value.onDemandTargetCapacity;
       this._spotTargetCapacity = value.spotTargetCapacity;
+      this._targetCapacityUnitType = value.targetCapacityUnitType;
       this._totalTargetCapacity = value.totalTargetCapacity;
     }
   }
@@ -2362,6 +2373,22 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get spotTargetCapacityInput() {
     return this._spotTargetCapacity;
+  }
+
+  // target_capacity_unit_type - computed: false, optional: true, required: false
+  private _targetCapacityUnitType?: string; 
+  public get targetCapacityUnitType() {
+    return this.getStringAttribute('target_capacity_unit_type');
+  }
+  public set targetCapacityUnitType(value: string) {
+    this._targetCapacityUnitType = value;
+  }
+  public resetTargetCapacityUnitType() {
+    this._targetCapacityUnitType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetCapacityUnitTypeInput() {
+    return this._targetCapacityUnitType;
   }
 
   // total_target_capacity - computed: false, optional: false, required: true
@@ -2533,7 +2560,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

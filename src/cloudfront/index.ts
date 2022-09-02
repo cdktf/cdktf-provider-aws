@@ -6,6 +6,7 @@ export * from './cloudfront-field-level-encryption-profile';
 export * from './cloudfront-function';
 export * from './cloudfront-key-group';
 export * from './cloudfront-monitoring-subscription';
+export * from './cloudfront-origin-access-control';
 export * from './cloudfront-origin-access-identity';
 export * from './cloudfront-origin-request-policy';
 export * from './cloudfront-public-key';

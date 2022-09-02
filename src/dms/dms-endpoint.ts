@@ -107,6 +107,12 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly mongodbSettings?: DmsEndpointMongodbSettings;
   /**
+  * redis_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
+  */
+  readonly redisSettings?: DmsEndpointRedisSettings;
+  /**
   * redshift_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
@@ -1265,6 +1271,224 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
   // Temporarily expose input value. Use with caution.
   public get nestingLevelInput() {
     return this._nestingLevel;
+  }
+}
+export interface DmsEndpointRedisSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#auth_password DmsEndpoint#auth_password}
+  */
+  readonly authPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#auth_type DmsEndpoint#auth_type}
+  */
+  readonly authType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}
+  */
+  readonly authUserName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#port DmsEndpoint#port}
+  */
+  readonly port: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#server_name DmsEndpoint#server_name}
+  */
+  readonly serverName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
+  */
+  readonly sslCaCertificateArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}
+  */
+  readonly sslSecurityProtocol?: string;
+}
+
+export function dmsEndpointRedisSettingsToTerraform(struct?: DmsEndpointRedisSettingsOutputReference | DmsEndpointRedisSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auth_password: cdktf.stringToTerraform(struct!.authPassword),
+    auth_type: cdktf.stringToTerraform(struct!.authType),
+    auth_user_name: cdktf.stringToTerraform(struct!.authUserName),
+    port: cdktf.numberToTerraform(struct!.port),
+    server_name: cdktf.stringToTerraform(struct!.serverName),
+    ssl_ca_certificate_arn: cdktf.stringToTerraform(struct!.sslCaCertificateArn),
+    ssl_security_protocol: cdktf.stringToTerraform(struct!.sslSecurityProtocol),
+  }
+}
+
+export class DmsEndpointRedisSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DmsEndpointRedisSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authPassword = this._authPassword;
+    }
+    if (this._authType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authType = this._authType;
+    }
+    if (this._authUserName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authUserName = this._authUserName;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._serverName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverName = this._serverName;
+    }
+    if (this._sslCaCertificateArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCaCertificateArn = this._sslCaCertificateArn;
+    }
+    if (this._sslSecurityProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslSecurityProtocol = this._sslSecurityProtocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DmsEndpointRedisSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authPassword = undefined;
+      this._authType = undefined;
+      this._authUserName = undefined;
+      this._port = undefined;
+      this._serverName = undefined;
+      this._sslCaCertificateArn = undefined;
+      this._sslSecurityProtocol = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authPassword = value.authPassword;
+      this._authType = value.authType;
+      this._authUserName = value.authUserName;
+      this._port = value.port;
+      this._serverName = value.serverName;
+      this._sslCaCertificateArn = value.sslCaCertificateArn;
+      this._sslSecurityProtocol = value.sslSecurityProtocol;
+    }
+  }
+
+  // auth_password - computed: false, optional: true, required: false
+  private _authPassword?: string; 
+  public get authPassword() {
+    return this.getStringAttribute('auth_password');
+  }
+  public set authPassword(value: string) {
+    this._authPassword = value;
+  }
+  public resetAuthPassword() {
+    this._authPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authPasswordInput() {
+    return this._authPassword;
+  }
+
+  // auth_type - computed: false, optional: false, required: true
+  private _authType?: string; 
+  public get authType() {
+    return this.getStringAttribute('auth_type');
+  }
+  public set authType(value: string) {
+    this._authType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTypeInput() {
+    return this._authType;
+  }
+
+  // auth_user_name - computed: false, optional: true, required: false
+  private _authUserName?: string; 
+  public get authUserName() {
+    return this.getStringAttribute('auth_user_name');
+  }
+  public set authUserName(value: string) {
+    this._authUserName = value;
+  }
+  public resetAuthUserName() {
+    this._authUserName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authUserNameInput() {
+    return this._authUserName;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // server_name - computed: false, optional: false, required: true
+  private _serverName?: string; 
+  public get serverName() {
+    return this.getStringAttribute('server_name');
+  }
+  public set serverName(value: string) {
+    this._serverName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverNameInput() {
+    return this._serverName;
+  }
+
+  // ssl_ca_certificate_arn - computed: false, optional: true, required: false
+  private _sslCaCertificateArn?: string; 
+  public get sslCaCertificateArn() {
+    return this.getStringAttribute('ssl_ca_certificate_arn');
+  }
+  public set sslCaCertificateArn(value: string) {
+    this._sslCaCertificateArn = value;
+  }
+  public resetSslCaCertificateArn() {
+    this._sslCaCertificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCaCertificateArnInput() {
+    return this._sslCaCertificateArn;
+  }
+
+  // ssl_security_protocol - computed: false, optional: true, required: false
+  private _sslSecurityProtocol?: string; 
+  public get sslSecurityProtocol() {
+    return this.getStringAttribute('ssl_security_protocol');
+  }
+  public set sslSecurityProtocol(value: string) {
+    this._sslSecurityProtocol = value;
+  }
+  public resetSslSecurityProtocol() {
+    this._sslSecurityProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslSecurityProtocolInput() {
+    return this._sslSecurityProtocol;
   }
 }
 export interface DmsEndpointRedshiftSettings {
@@ -2579,7 +2803,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2612,6 +2836,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     this._kafkaSettings.internalValue = config.kafkaSettings;
     this._kinesisSettings.internalValue = config.kinesisSettings;
     this._mongodbSettings.internalValue = config.mongodbSettings;
+    this._redisSettings.internalValue = config.redisSettings;
     this._redshiftSettings.internalValue = config.redshiftSettings;
     this._s3Settings.internalValue = config.s3Settings;
     this._timeouts.internalValue = config.timeouts;
@@ -2969,6 +3194,22 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     return this._mongodbSettings.internalValue;
   }
 
+  // redis_settings - computed: false, optional: true, required: false
+  private _redisSettings = new DmsEndpointRedisSettingsOutputReference(this, "redis_settings");
+  public get redisSettings() {
+    return this._redisSettings;
+  }
+  public putRedisSettings(value: DmsEndpointRedisSettings) {
+    this._redisSettings.internalValue = value;
+  }
+  public resetRedisSettings() {
+    this._redisSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redisSettingsInput() {
+    return this._redisSettings.internalValue;
+  }
+
   // redshift_settings - computed: false, optional: true, required: false
   private _redshiftSettings = new DmsEndpointRedshiftSettingsOutputReference(this, "redshift_settings");
   public get redshiftSettings() {
@@ -3045,6 +3286,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       kafka_settings: dmsEndpointKafkaSettingsToTerraform(this._kafkaSettings.internalValue),
       kinesis_settings: dmsEndpointKinesisSettingsToTerraform(this._kinesisSettings.internalValue),
       mongodb_settings: dmsEndpointMongodbSettingsToTerraform(this._mongodbSettings.internalValue),
+      redis_settings: dmsEndpointRedisSettingsToTerraform(this._redisSettings.internalValue),
       redshift_settings: dmsEndpointRedshiftSettingsToTerraform(this._redshiftSettings.internalValue),
       s3_settings: dmsEndpointS3SettingsToTerraform(this._s3Settings.internalValue),
       timeouts: dmsEndpointTimeoutsToTerraform(this._timeouts.internalValue),
