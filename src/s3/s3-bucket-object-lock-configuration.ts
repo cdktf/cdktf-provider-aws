@@ -35,7 +35,7 @@ export interface S3BucketObjectLockConfigurationAConfig extends cdktf.TerraformM
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfigurationA#rule}
   */
-  readonly rule: S3BucketObjectLockConfigurationRuleA;
+  readonly rule?: S3BucketObjectLockConfigurationRuleA;
 }
 export interface S3BucketObjectLockConfigurationRuleDefaultRetentionA {
   /**
@@ -247,7 +247,7 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_object_lock_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -347,13 +347,16 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
     return this._token;
   }
 
-  // rule - computed: false, optional: false, required: true
+  // rule - computed: false, optional: true, required: false
   private _rule = new S3BucketObjectLockConfigurationRuleAOutputReference(this, "rule");
   public get rule() {
     return this._rule;
   }
   public putRule(value: S3BucketObjectLockConfigurationRuleA) {
     this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {

@@ -17,6 +17,7 @@ export * from './redshift-usage-limit';
 export * from './redshiftdata-statement';
 export * from './redshiftserverless-endpoint-access';
 export * from './redshiftserverless-namespace';
+export * from './redshiftserverless-usage-limit';
 export * from './redshiftserverless-workgroup';
 export * from './data-aws-redshift-cluster';
 export * from './data-aws-redshift-cluster-credentials';

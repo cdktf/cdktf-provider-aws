@@ -50,7 +50,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_rds_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -192,6 +192,11 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
   // master_username - computed: true, optional: false, required: false
   public get masterUsername() {
     return this.getStringAttribute('master_username');
+  }
+
+  // network_type - computed: true, optional: false, required: false
+  public get networkType() {
+    return this.getStringAttribute('network_type');
   }
 
   // port - computed: true, optional: false, required: false

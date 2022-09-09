@@ -201,7 +201,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table_replica',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -135,6 +135,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly masterUsername?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#network_type RdsCluster#network_type}
+  */
+  readonly networkType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#port RdsCluster#port}
   */
   readonly port?: number;
@@ -932,7 +936,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -974,6 +978,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._kmsKeyId = config.kmsKeyId;
     this._masterPassword = config.masterPassword;
     this._masterUsername = config.masterUsername;
+    this._networkType = config.networkType;
     this._port = config.port;
     this._preferredBackupWindow = config.preferredBackupWindow;
     this._preferredMaintenanceWindow = config.preferredMaintenanceWindow;
@@ -1518,6 +1523,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._masterUsername;
   }
 
+  // network_type - computed: true, optional: true, required: false
+  private _networkType?: string; 
+  public get networkType() {
+    return this.getStringAttribute('network_type');
+  }
+  public set networkType(value: string) {
+    this._networkType = value;
+  }
+  public resetNetworkType() {
+    this._networkType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTypeInput() {
+    return this._networkType;
+  }
+
   // port - computed: true, optional: true, required: false
   private _port?: number; 
   public get port() {
@@ -1832,6 +1853,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       master_password: cdktf.stringToTerraform(this._masterPassword),
       master_username: cdktf.stringToTerraform(this._masterUsername),
+      network_type: cdktf.stringToTerraform(this._networkType),
       port: cdktf.numberToTerraform(this._port),
       preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
       preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),

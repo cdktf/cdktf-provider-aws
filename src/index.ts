@@ -39,6 +39,8 @@ export * from './location-tracker';
 export * from './location-tracker-association';
 export * from './medialive-input';
 export * from './medialive-input-security-group';
+export * from './medialive-multiplex';
+export * from './medialive-multiplex-program';
 export * from './memorydb-acl';
 export * from './memorydb-cluster';
 export * from './memorydb-parameter-group';
