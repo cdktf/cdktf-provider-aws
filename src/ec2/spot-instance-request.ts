@@ -1378,7 +1378,7 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
     return this._httpTokens;
   }
 
-  // instance_metadata_tags - computed: false, optional: true, required: false
+  // instance_metadata_tags - computed: true, optional: true, required: false
   private _instanceMetadataTags?: string; 
   public get instanceMetadataTags() {
     return this.getStringAttribute('instance_metadata_tags');
@@ -2078,7 +2078,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -278,7 +278,7 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_global_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -372,6 +372,11 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
     return this._engineVersion;
+  }
+
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
   }
 
   // force_destroy - computed: false, optional: true, required: false

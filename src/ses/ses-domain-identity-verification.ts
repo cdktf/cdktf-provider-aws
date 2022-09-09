@@ -127,7 +127,7 @@ export class SesDomainIdentityVerification extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_domain_identity_verification',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -773,7 +773,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_budgets_budget',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
