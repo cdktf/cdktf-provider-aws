@@ -48,6 +48,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}
+  */
+  readonly customIamInstanceProfile?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}
   */
   readonly customerOwnedIpEnabled?: boolean | cdktf.IResolvable;
@@ -747,7 +751,7 @@ export class DbInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -768,6 +772,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._caCertIdentifier = config.caCertIdentifier;
     this._characterSetName = config.characterSetName;
     this._copyTagsToSnapshot = config.copyTagsToSnapshot;
+    this._customIamInstanceProfile = config.customIamInstanceProfile;
     this._customerOwnedIpEnabled = config.customerOwnedIpEnabled;
     this._dbName = config.dbName;
     this._dbSubnetGroupName = config.dbSubnetGroupName;
@@ -992,6 +997,22 @@ export class DbInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get copyTagsToSnapshotInput() {
     return this._copyTagsToSnapshot;
+  }
+
+  // custom_iam_instance_profile - computed: false, optional: true, required: false
+  private _customIamInstanceProfile?: string; 
+  public get customIamInstanceProfile() {
+    return this.getStringAttribute('custom_iam_instance_profile');
+  }
+  public set customIamInstanceProfile(value: string) {
+    this._customIamInstanceProfile = value;
+  }
+  public resetCustomIamInstanceProfile() {
+    this._customIamInstanceProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customIamInstanceProfileInput() {
+    return this._customIamInstanceProfile;
   }
 
   // customer_owned_ip_enabled - computed: false, optional: true, required: false
@@ -1842,6 +1863,7 @@ export class DbInstance extends cdktf.TerraformResource {
       ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
       character_set_name: cdktf.stringToTerraform(this._characterSetName),
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
+      custom_iam_instance_profile: cdktf.stringToTerraform(this._customIamInstanceProfile),
       customer_owned_ip_enabled: cdktf.booleanToTerraform(this._customerOwnedIpEnabled),
       db_name: cdktf.stringToTerraform(this._dbName),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),

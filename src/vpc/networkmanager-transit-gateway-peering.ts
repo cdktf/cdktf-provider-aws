@@ -166,7 +166,7 @@ export class NetworkmanagerTransitGatewayPeering extends cdktf.TerraformResource
       terraformResourceType: 'aws_networkmanager_transit_gateway_peering',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

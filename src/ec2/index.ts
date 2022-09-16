@@ -84,6 +84,7 @@ export * from './data-aws-ec2-local-gateway-virtual-interface-group';
 export * from './data-aws-ec2-local-gateway-virtual-interface-groups';
 export * from './data-aws-ec2-local-gateways';
 export * from './data-aws-ec2-managed-prefix-list';
+export * from './data-aws-ec2-managed-prefix-lists';
 export * from './data-aws-ec2-network-insights-analysis';
 export * from './data-aws-ec2-network-insights-path';
 export * from './data-aws-ec2-serial-console-access';
