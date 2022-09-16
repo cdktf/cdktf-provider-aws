@@ -42,7 +42,7 @@ export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ses_active_receipt_rule_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

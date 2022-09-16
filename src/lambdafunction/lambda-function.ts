@@ -803,7 +803,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1074,6 +1074,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // qualified_arn - computed: true, optional: false, required: false
   public get qualifiedArn() {
     return this.getStringAttribute('qualified_arn');
+  }
+
+  // qualified_invoke_arn - computed: true, optional: false, required: false
+  public get qualifiedInvokeArn() {
+    return this.getStringAttribute('qualified_invoke_arn');
   }
 
   // reserved_concurrent_executions - computed: false, optional: true, required: false

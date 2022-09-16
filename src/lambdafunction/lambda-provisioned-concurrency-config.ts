@@ -162,7 +162,7 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
       terraformResourceType: 'aws_lambda_provisioned_concurrency_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

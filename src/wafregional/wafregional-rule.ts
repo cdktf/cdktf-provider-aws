@@ -206,7 +206,7 @@ export class WafregionalRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

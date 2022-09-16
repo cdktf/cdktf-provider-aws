@@ -50,7 +50,7 @@ export class DataAwsServiceDiscoveryHttpNamespace extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_service_discovery_http_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

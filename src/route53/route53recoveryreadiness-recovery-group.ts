@@ -139,7 +139,7 @@ export class Route53RecoveryreadinessRecoveryGroup extends cdktf.TerraformResour
       terraformResourceType: 'aws_route53recoveryreadiness_recovery_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
