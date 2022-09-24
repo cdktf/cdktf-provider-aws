@@ -145,7 +145,7 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
       terraformResourceType: 'aws_ssoadmin_customer_managed_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

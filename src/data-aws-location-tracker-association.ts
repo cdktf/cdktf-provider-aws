@@ -50,7 +50,7 @@ export class DataAwsLocationTrackerAssociation extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_location_tracker_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
