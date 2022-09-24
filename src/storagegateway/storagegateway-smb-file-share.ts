@@ -348,7 +348,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       terraformResourceType: 'aws_storagegateway_smb_file_share',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

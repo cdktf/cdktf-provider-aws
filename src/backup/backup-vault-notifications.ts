@@ -54,7 +54,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_vault_notifications',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

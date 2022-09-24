@@ -54,7 +54,7 @@ export class Ec2TransitGatewayMulticastGroupSource extends cdktf.TerraformResour
       terraformResourceType: 'aws_ec2_transit_gateway_multicast_group_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

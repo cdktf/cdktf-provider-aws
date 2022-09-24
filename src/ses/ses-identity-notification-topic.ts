@@ -58,7 +58,7 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_identity_notification_topic',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.31.0',
+        providerVersion: '4.32.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
