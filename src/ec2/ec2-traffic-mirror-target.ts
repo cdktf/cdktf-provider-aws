@@ -12,6 +12,10 @@ export interface Ec2TrafficMirrorTargetConfig extends cdktf.TerraformMetaArgumen
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target#gateway_load_balancer_endpoint_id Ec2TrafficMirrorTarget#gateway_load_balancer_endpoint_id}
+  */
+  readonly gatewayLoadBalancerEndpointId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target#id Ec2TrafficMirrorTarget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -62,7 +66,7 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_traffic_mirror_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -74,6 +78,7 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._gatewayLoadBalancerEndpointId = config.gatewayLoadBalancerEndpointId;
     this._id = config.id;
     this._networkInterfaceId = config.networkInterfaceId;
     this._networkLoadBalancerArn = config.networkLoadBalancerArn;
@@ -104,6 +109,22 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // gateway_load_balancer_endpoint_id - computed: false, optional: true, required: false
+  private _gatewayLoadBalancerEndpointId?: string; 
+  public get gatewayLoadBalancerEndpointId() {
+    return this.getStringAttribute('gateway_load_balancer_endpoint_id');
+  }
+  public set gatewayLoadBalancerEndpointId(value: string) {
+    this._gatewayLoadBalancerEndpointId = value;
+  }
+  public resetGatewayLoadBalancerEndpointId() {
+    this._gatewayLoadBalancerEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayLoadBalancerEndpointIdInput() {
+    return this._gatewayLoadBalancerEndpointId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -198,6 +219,7 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      gateway_load_balancer_endpoint_id: cdktf.stringToTerraform(this._gatewayLoadBalancerEndpointId),
       id: cdktf.stringToTerraform(this._id),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       network_load_balancer_arn: cdktf.stringToTerraform(this._networkLoadBalancerArn),

@@ -888,6 +888,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#controltower AwsProvider#controltower}
+  */
+  readonly controltower?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#costandusagereportservice AwsProvider#costandusagereportservice}
   */
   readonly costandusagereportservice?: string;
@@ -1359,6 +1365,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#inspector2 AwsProvider#inspector2}
   */
   readonly inspector2?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#inspectorv2 AwsProvider#inspectorv2}
+  */
+  readonly inspectorv2?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2671,6 +2683,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     connectcontactlens: cdktf.stringToTerraform(struct!.connectcontactlens),
     connectparticipant: cdktf.stringToTerraform(struct!.connectparticipant),
     connectwisdomservice: cdktf.stringToTerraform(struct!.connectwisdomservice),
+    controltower: cdktf.stringToTerraform(struct!.controltower),
     costandusagereportservice: cdktf.stringToTerraform(struct!.costandusagereportservice),
     costexplorer: cdktf.stringToTerraform(struct!.costexplorer),
     cur: cdktf.stringToTerraform(struct!.cur),
@@ -2750,6 +2763,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     imagebuilder: cdktf.stringToTerraform(struct!.imagebuilder),
     inspector: cdktf.stringToTerraform(struct!.inspector),
     inspector2: cdktf.stringToTerraform(struct!.inspector2),
+    inspectorv2: cdktf.stringToTerraform(struct!.inspectorv2),
     iot: cdktf.stringToTerraform(struct!.iot),
     iot1clickdevices: cdktf.stringToTerraform(struct!.iot1Clickdevices),
     iot1clickdevicesservice: cdktf.stringToTerraform(struct!.iot1Clickdevicesservice),
@@ -3009,7 +3023,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

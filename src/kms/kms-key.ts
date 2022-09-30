@@ -12,6 +12,10 @@ export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_key#custom_key_store_id KmsKey#custom_key_store_id}
+  */
+  readonly customKeyStoreId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_key#customer_master_key_spec KmsKey#customer_master_key_spec}
   */
   readonly customerMasterKeySpec?: string;
@@ -86,7 +90,7 @@ export class KmsKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -98,6 +102,7 @@ export class KmsKey extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._bypassPolicyLockoutSafetyCheck = config.bypassPolicyLockoutSafetyCheck;
+    this._customKeyStoreId = config.customKeyStoreId;
     this._customerMasterKeySpec = config.customerMasterKeySpec;
     this._deletionWindowInDays = config.deletionWindowInDays;
     this._description = config.description;
@@ -134,6 +139,22 @@ export class KmsKey extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bypassPolicyLockoutSafetyCheckInput() {
     return this._bypassPolicyLockoutSafetyCheck;
+  }
+
+  // custom_key_store_id - computed: false, optional: true, required: false
+  private _customKeyStoreId?: string; 
+  public get customKeyStoreId() {
+    return this.getStringAttribute('custom_key_store_id');
+  }
+  public set customKeyStoreId(value: string) {
+    this._customKeyStoreId = value;
+  }
+  public resetCustomKeyStoreId() {
+    this._customKeyStoreId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customKeyStoreIdInput() {
+    return this._customKeyStoreId;
   }
 
   // customer_master_key_spec - computed: false, optional: true, required: false
@@ -324,6 +345,7 @@ export class KmsKey extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bypass_policy_lockout_safety_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
+      custom_key_store_id: cdktf.stringToTerraform(this._customKeyStoreId),
       customer_master_key_spec: cdktf.stringToTerraform(this._customerMasterKeySpec),
       deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
       description: cdktf.stringToTerraform(this._description),

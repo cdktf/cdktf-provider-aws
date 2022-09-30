@@ -158,7 +158,7 @@ export class DynamodbContributorInsights extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_contributor_insights',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

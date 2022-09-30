@@ -139,7 +139,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

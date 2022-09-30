@@ -261,7 +261,7 @@ export class WafSqlInjectionMatchSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_sql_injection_match_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
