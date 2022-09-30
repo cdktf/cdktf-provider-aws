@@ -166,7 +166,7 @@ export class NetworkmanagerTransitGatewayRouteTableAttachment extends cdktf.Terr
       terraformResourceType: 'aws_networkmanager_transit_gateway_route_table_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

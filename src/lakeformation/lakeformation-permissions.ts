@@ -959,7 +959,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lakeformation_permissions',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -166,7 +166,7 @@ export class NetworkmanagerTransitGatewayConnectPeerAssociation extends cdktf.Te
       terraformResourceType: 'aws_networkmanager_transit_gateway_connect_peer_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

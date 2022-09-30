@@ -58,7 +58,7 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_target_group_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

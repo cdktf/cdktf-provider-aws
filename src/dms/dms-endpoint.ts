@@ -1809,6 +1809,10 @@ export interface DmsEndpointS3Settings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#use_csv_no_sup_value DmsEndpoint#use_csv_no_sup_value}
   */
   readonly useCsvNoSupValue?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#use_task_start_time_for_full_load_timestamp DmsEndpoint#use_task_start_time_for_full_load_timestamp}
+  */
+  readonly useTaskStartTimeForFullLoadTimestamp?: boolean | cdktf.IResolvable;
 }
 
 export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsOutputReference | DmsEndpointS3Settings): any {
@@ -1853,6 +1857,7 @@ export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsO
     service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
     timestamp_column_name: cdktf.stringToTerraform(struct!.timestampColumnName),
     use_csv_no_sup_value: cdktf.booleanToTerraform(struct!.useCsvNoSupValue),
+    use_task_start_time_for_full_load_timestamp: cdktf.booleanToTerraform(struct!.useTaskStartTimeForFullLoadTimestamp),
   }
 }
 
@@ -2014,6 +2019,10 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.useCsvNoSupValue = this._useCsvNoSupValue;
     }
+    if (this._useTaskStartTimeForFullLoadTimestamp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useTaskStartTimeForFullLoadTimestamp = this._useTaskStartTimeForFullLoadTimestamp;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2056,6 +2065,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       this._serviceAccessRoleArn = undefined;
       this._timestampColumnName = undefined;
       this._useCsvNoSupValue = undefined;
+      this._useTaskStartTimeForFullLoadTimestamp = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -2095,6 +2105,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       this._serviceAccessRoleArn = value.serviceAccessRoleArn;
       this._timestampColumnName = value.timestampColumnName;
       this._useCsvNoSupValue = value.useCsvNoSupValue;
+      this._useTaskStartTimeForFullLoadTimestamp = value.useTaskStartTimeForFullLoadTimestamp;
     }
   }
 
@@ -2673,6 +2684,22 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   public get useCsvNoSupValueInput() {
     return this._useCsvNoSupValue;
   }
+
+  // use_task_start_time_for_full_load_timestamp - computed: false, optional: true, required: false
+  private _useTaskStartTimeForFullLoadTimestamp?: boolean | cdktf.IResolvable; 
+  public get useTaskStartTimeForFullLoadTimestamp() {
+    return this.getBooleanAttribute('use_task_start_time_for_full_load_timestamp');
+  }
+  public set useTaskStartTimeForFullLoadTimestamp(value: boolean | cdktf.IResolvable) {
+    this._useTaskStartTimeForFullLoadTimestamp = value;
+  }
+  public resetUseTaskStartTimeForFullLoadTimestamp() {
+    this._useTaskStartTimeForFullLoadTimestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useTaskStartTimeForFullLoadTimestampInput() {
+    return this._useTaskStartTimeForFullLoadTimestamp;
+  }
 }
 export interface DmsEndpointTimeouts {
   /**
@@ -2803,7 +2830,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

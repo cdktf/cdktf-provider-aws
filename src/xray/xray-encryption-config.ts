@@ -50,7 +50,7 @@ export class XrayEncryptionConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_xray_encryption_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

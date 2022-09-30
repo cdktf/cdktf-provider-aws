@@ -971,7 +971,7 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appautoscaling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -995,6 +995,11 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // alarm_arns - computed: true, optional: false, required: false
+  public get alarmArns() {
+    return this.getListAttribute('alarm_arns');
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {

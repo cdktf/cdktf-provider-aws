@@ -618,7 +618,7 @@ export class DataAwsNetworkfirewallFirewallPolicy extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_networkfirewall_firewall_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.32.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
