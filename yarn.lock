@@ -60,16 +60,16 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cdktf/hcl2cdk@0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.12.3.tgz#f176174a2ab9ddd122f1bf6cb3212d66b511c72b"
-  integrity sha512-8LEFkMZPIN2MsGFtZsrGEAbNI6IeFpuYQr0ygr9k35mltJkVrNtPT7Rar0BL5BojFxVR59/2J0xPErUuci4w7Q==
+"@cdktf/hcl2cdk@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.13.0.tgz#6d7088652b3e2dba76a30ad79a74e34547dedecc"
+  integrity sha512-T2im8v+QquuNcY7WWEHIOiWxFTntXSapARcBFF/fE+HjxzWii67ARS9NAt3sqe22tnOZR+PY3tWi4xZsy7Rdxw==
   dependencies:
     "@babel/generator" "^7.19.0"
     "@babel/template" "^7.18.10"
     "@babel/types" "^7.19.0"
-    "@cdktf/hcl2json" "0.12.3"
-    "@cdktf/provider-generator" "0.12.3"
+    "@cdktf/hcl2json" "0.13.0"
+    "@cdktf/provider-generator" "0.13.0"
     camelcase "^6.3.0"
     glob "7.2.3"
     graphology "^0.25.0"
@@ -79,21 +79,21 @@
     reserved-words "^0.1.2"
     zod "^1.11.17"
 
-"@cdktf/hcl2json@0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.12.3.tgz#4ed8fa6403a41b00f8c79fecede5f55533b49bd1"
-  integrity sha512-qu9IRyw7Y5pVXgfso7T8fWci+/Nf23Oow2Na2pFYEUbSrDbXdaY+4yW7Qv+poKBbhd8YhyKBo4Y14Bu63PBcvg==
+"@cdktf/hcl2json@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.13.0.tgz#8e3d29d9561a36afe9cf12311ca990da115a303d"
+  integrity sha512-makPa7VVrhr43UExQonP/3QBre2CpIq8laZfu5BbKgnOWM0N4dl5yzwWbD14FCklxlHQYjRg/N0KBxltHqG6yA==
   dependencies:
     "@types/node-fetch" "^2.6.2"
     fs-extra "^8.1.0"
     node-fetch "^2.6.7"
 
-"@cdktf/provider-generator@0.12.3":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.12.3.tgz#62553101a219ae8a50d6d75426d4da54c394ae9e"
-  integrity sha512-ThzC83+IpRAqZ0cYabMbE/gQUaZctFvhrFBv+bAc80iDowUbVFiGNtDG/Vb1h9XttMXcFYrH6sj3yHBplTPW1A==
+"@cdktf/provider-generator@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.13.0.tgz#300e958972b97f88931beacb766eb8c00a1a0de3"
+  integrity sha512-jk7QPZFCxdlQtjaLjtYswlnDcWulszd61N3ayAmeFStgX3G8gJmDI+tJyL479t6lmyn6kPeYLiax4uI+ECd1IA==
   dependencies:
-    "@cdktf/hcl2json" "0.12.3"
+    "@cdktf/hcl2json" "0.13.0"
     codemaker "^1.68.0"
     deepmerge "^4.2.2"
     fs-extra "^8.1.0"
@@ -799,16 +799,16 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-"cdktf-cli@>=0.12.2 <0.14.0":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.12.3.tgz#b84f835e25ef7818e0671ddac9662a72dc9fa98a"
-  integrity sha512-3GCt6Xi0rSZ+WP0nuZu/VvWSLBOd3PLOXojVMnPey8qxmjcDqask+yCxmQRrcqqSp2qX0MwfedFvnZBF8MfngA==
+cdktf-cli@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.13.0.tgz#bb19af22960403160762f0d66180cacdbc2e1f3c"
+  integrity sha512-3RrPxVm9edQ+LgxRAhOpb22B+WmP33XWNs2Djv2cEg7bz/PkkWZOEb+uMeFoRrD24ZvPyfphlBFQb4TjHAB/ZQ==
   dependencies:
-    "@cdktf/hcl2cdk" "0.12.3"
-    "@cdktf/hcl2json" "0.12.3"
+    "@cdktf/hcl2cdk" "0.13.0"
+    "@cdktf/hcl2json" "0.13.0"
     "@sentry/node" "^6.19.7"
     "@types/yargs" "^17.0.13"
-    cdktf "0.12.3"
+    cdktf "0.13.0"
     codemaker "^1.68.0"
     constructs "^10.0.25"
     cross-spawn "^7.0.3"
@@ -824,10 +824,10 @@ case@^1.6.3:
     yargs "^17.5"
     yoga-layout-prebuilt "^1.10.0"
 
-cdktf@0.12.3, "cdktf@>=0.12.2 <0.14.0":
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.12.3.tgz#97107863d1ed76e2f77a22b66848dcf3aa185737"
-  integrity sha512-3roj6dWTaqNbLMh5S5DXfmjdtBRrKw+K0FIsJvF/av89NfIhL8lhBIN3fd+iOtr2axCe4AZd7SCpQuDBfmF92g==
+cdktf@0.13.0, cdktf@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.13.0.tgz#6b2ff2dc392e65291b7b1184ede2f79ce2512e9d"
+  integrity sha512-9eba2Gfvr2aqKJfGAQU0wmnFoNSduTVxy/W8bo4x1LjpeHPR/YK07Yb+zI2Ef76XFoGpRVC3wVMti+4BZE+4AQ==
   dependencies:
     archiver "5.3.1"
     json-stable-stringify "^1.0.1"
@@ -3140,10 +3140,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.63.3:
-  version "0.63.3"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.3.tgz#1fbf2de3960737325846be75b46e7581b406c463"
-  integrity sha512-/L7gz+U+SzaCfj2nNUmg/SPxQZBNOZivPc1ZZEtZThwoNIWj64YfauEgMlHPqS1R9mzbPB0MrrmAE8n24VYuBQ==
+projen@^0.63.4:
+  version "0.63.4"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.4.tgz#9ae5fcdbddac64bd4a492d4a36e74a79e5f323f7"
+  integrity sha512-vyXlKbpowTYwVh4Zcy4Ki8DblT3da3Eiv9yOuXb17GYpVtLI0K1UloS9gvKNlWWy06GoMNDH1qZWb/bpBqpQJw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
