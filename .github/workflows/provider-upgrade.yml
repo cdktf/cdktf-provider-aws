@@ -17,10 +17,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - run: yarn install
-      - run: yarn fetch
-        env:
+      - env:
           CHECKPOINT_DISABLE: "1"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn fetch
       - run: yarn compile
       - run: yarn docgen
       - name: Create Pull Request
