@@ -19,6 +19,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - name: Remove old PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |-
           PR_NUMBER_TO_CLOSE=$(gh pr list | grep "cdktf-next-pr" | awk '{ print $1 }')
           if [ -z "$PR_NUMBER_TO_CLOSE" ]; then
@@ -26,8 +28,6 @@ jobs:
           else
             gh pr close $PR_NUMBER_TO_CLOSE
           fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install
         run: yarn install
       - name: Upgrade CDKTF
