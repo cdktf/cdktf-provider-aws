@@ -3,7 +3,7 @@
   "description": "Prebuilt aws Provider for Terraform CDK (cdktf)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hashicorp/cdktf-provider-aws.git"
+    "url": "https://github.com/cdktf/cdktf-provider-aws.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -53,7 +53,7 @@
     "jsii-docgen": "^1.8.110",
     "jsii-pacmak": "^1.69.0",
     "npm-check-updates": "^15",
-    "projen": "^0.63.4",
+    "projen": "^0.63.5",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
@@ -98,7 +98,7 @@
         "packageId": "HashiCorp.Cdktf.Providers.Aws"
       },
       "go": {
-        "moduleName": "github.com/hashicorp/cdktf-provider-aws-go",
+        "moduleName": "github.com/cdktf/cdktf-provider-aws-go",
         "packageName": "aws"
       }
     },
