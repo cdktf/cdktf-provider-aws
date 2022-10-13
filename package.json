@@ -8,6 +8,7 @@
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
+    "check-if-new-provider-version": "npx projen check-if-new-provider-version",
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "jsii --silence-warnings=reserved-word",
@@ -52,8 +53,9 @@
     "jsii-diff": "^1.69.0",
     "jsii-docgen": "^1.8.110",
     "jsii-pacmak": "^1.69.0",
+    "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.63.16",
+    "projen": "^0.63.17",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
