@@ -21,5 +21,7 @@
 /LICENSE linguist-generated
 /package.json linguist-generated
 /README.md linguist-generated
+/scripts/check-for-upgrades.js linguist-generated
+/scripts/should-release.js linguist-generated
 /tsconfig.dev.json linguist-generated
 /yarn.lock linguist-generated

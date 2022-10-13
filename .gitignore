@@ -50,7 +50,9 @@ tsconfig.json
 package-lock.json
 !/cdktf.json
 !/README.md
+!/scripts/check-for-upgrades.js
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/automerge.yml
 !/.github/ISSUE_TEMPLATE/config.yml
 !/.github/workflows/next-cdktf-version-pr.yml
+!/scripts/should-release.js
