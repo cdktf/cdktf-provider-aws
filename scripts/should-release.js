@@ -21,7 +21,7 @@ const execSync = require("child_process").execSync;
   const stdout = execSync(listGitTags).toString();
   const tags = stdout.split("\n");
 
-  if (tags.length > 0) {
+  if (tags.length > 0 && tags[0].trim() !== "") {
     const latestTag = tags[0];
     console.log(`Found latest tag ${latestTag}`);
 
