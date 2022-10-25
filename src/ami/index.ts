@@ -39,6 +39,10 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly imageLocation?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#imds_support Ami#imds_support}
+  */
+  readonly imdsSupport?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#kernel_id Ami#kernel_id}
   */
   readonly kernelId?: string;
@@ -677,7 +681,7 @@ export class Ami extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -695,6 +699,7 @@ export class Ami extends cdktf.TerraformResource {
     this._enaSupport = config.enaSupport;
     this._id = config.id;
     this._imageLocation = config.imageLocation;
+    this._imdsSupport = config.imdsSupport;
     this._kernelId = config.kernelId;
     this._name = config.name;
     this._ramdiskId = config.ramdiskId;
@@ -843,6 +848,22 @@ export class Ami extends cdktf.TerraformResource {
   // image_type - computed: true, optional: false, required: false
   public get imageType() {
     return this.getStringAttribute('image_type');
+  }
+
+  // imds_support - computed: false, optional: true, required: false
+  private _imdsSupport?: string; 
+  public get imdsSupport() {
+    return this.getStringAttribute('imds_support');
+  }
+  public set imdsSupport(value: string) {
+    this._imdsSupport = value;
+  }
+  public resetImdsSupport() {
+    this._imdsSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imdsSupportInput() {
+    return this._imdsSupport;
   }
 
   // kernel_id - computed: false, optional: true, required: false
@@ -1082,6 +1103,7 @@ export class Ami extends cdktf.TerraformResource {
       ena_support: cdktf.booleanToTerraform(this._enaSupport),
       id: cdktf.stringToTerraform(this._id),
       image_location: cdktf.stringToTerraform(this._imageLocation),
+      imds_support: cdktf.stringToTerraform(this._imdsSupport),
       kernel_id: cdktf.stringToTerraform(this._kernelId),
       name: cdktf.stringToTerraform(this._name),
       ramdisk_id: cdktf.stringToTerraform(this._ramdiskId),

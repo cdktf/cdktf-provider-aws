@@ -8,6 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface SnsPlatformApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#apple_platform_bundle_id SnsPlatformApplication#apple_platform_bundle_id}
+  */
+  readonly applePlatformBundleId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#apple_platform_team_id SnsPlatformApplication#apple_platform_team_id}
+  */
+  readonly applePlatformTeamId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#event_delivery_failure_topic_arn SnsPlatformApplication#event_delivery_failure_topic_arn}
   */
   readonly eventDeliveryFailureTopicArn?: string;
@@ -86,7 +94,7 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sns_platform_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -97,6 +105,8 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._applePlatformBundleId = config.applePlatformBundleId;
+    this._applePlatformTeamId = config.applePlatformTeamId;
     this._eventDeliveryFailureTopicArn = config.eventDeliveryFailureTopicArn;
     this._eventEndpointCreatedTopicArn = config.eventEndpointCreatedTopicArn;
     this._eventEndpointDeletedTopicArn = config.eventEndpointDeletedTopicArn;
@@ -114,6 +124,38 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // apple_platform_bundle_id - computed: false, optional: true, required: false
+  private _applePlatformBundleId?: string; 
+  public get applePlatformBundleId() {
+    return this.getStringAttribute('apple_platform_bundle_id');
+  }
+  public set applePlatformBundleId(value: string) {
+    this._applePlatformBundleId = value;
+  }
+  public resetApplePlatformBundleId() {
+    this._applePlatformBundleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applePlatformBundleIdInput() {
+    return this._applePlatformBundleId;
+  }
+
+  // apple_platform_team_id - computed: false, optional: true, required: false
+  private _applePlatformTeamId?: string; 
+  public get applePlatformTeamId() {
+    return this.getStringAttribute('apple_platform_team_id');
+  }
+  public set applePlatformTeamId(value: string) {
+    this._applePlatformTeamId = value;
+  }
+  public resetApplePlatformTeamId() {
+    this._applePlatformTeamId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applePlatformTeamIdInput() {
+    return this._applePlatformTeamId;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -309,6 +351,8 @@ export class SnsPlatformApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      apple_platform_bundle_id: cdktf.stringToTerraform(this._applePlatformBundleId),
+      apple_platform_team_id: cdktf.stringToTerraform(this._applePlatformTeamId),
       event_delivery_failure_topic_arn: cdktf.stringToTerraform(this._eventDeliveryFailureTopicArn),
       event_endpoint_created_topic_arn: cdktf.stringToTerraform(this._eventEndpointCreatedTopicArn),
       event_endpoint_deleted_topic_arn: cdktf.stringToTerraform(this._eventEndpointDeletedTopicArn),

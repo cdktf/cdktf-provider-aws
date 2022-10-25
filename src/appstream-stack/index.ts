@@ -196,7 +196,7 @@ export interface AppstreamStackApplicationSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#enabled AppstreamStack#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#settings_group AppstreamStack#settings_group}
   */
@@ -252,16 +252,13 @@ export class AppstreamStackApplicationSettingsOutputReference extends cdktf.Comp
     }
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
@@ -577,7 +574,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

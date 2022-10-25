@@ -193,7 +193,7 @@ export class Route53Zone extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -303,6 +303,11 @@ export class Route53Zone extends cdktf.TerraformResource {
   // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
     return this.getListAttribute('name_servers');
+  }
+
+  // primary_name_server - computed: true, optional: false, required: false
+  public get primaryNameServer() {
+    return this.getStringAttribute('primary_name_server');
   }
 
   // tags - computed: false, optional: true, required: false

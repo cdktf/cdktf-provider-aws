@@ -190,7 +190,7 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_inspector_assessment_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

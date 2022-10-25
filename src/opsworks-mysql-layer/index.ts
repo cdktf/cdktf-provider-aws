@@ -118,6 +118,12 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#ebs_volume OpsworksMysqlLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksMysqlLayerEbsVolume[] | cdktf.IResolvable;
+  /**
+  * load_based_auto_scaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#load_based_auto_scaling OpsworksMysqlLayer#load_based_auto_scaling}
+  */
+  readonly loadBasedAutoScaling?: OpsworksMysqlLayerLoadBasedAutoScaling;
 }
 export interface OpsworksMysqlLayerCloudwatchConfigurationLogStreams {
   /**
@@ -824,6 +830,583 @@ export class OpsworksMysqlLayerEbsVolumeList extends cdktf.ComplexList {
     return new OpsworksMysqlLayerEbsVolumeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OpsworksMysqlLayerLoadBasedAutoScalingDownscaling {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}
+  */
+  readonly alarms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}
+  */
+  readonly cpuThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}
+  */
+  readonly ignoreMetricsTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}
+  */
+  readonly instanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}
+  */
+  readonly loadThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}
+  */
+  readonly memoryThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}
+  */
+  readonly thresholdsWaitTime?: number;
+}
+
+export function opsworksMysqlLayerLoadBasedAutoScalingDownscalingToTerraform(struct?: OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference | OpsworksMysqlLayerLoadBasedAutoScalingDownscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alarms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alarms),
+    cpu_threshold: cdktf.numberToTerraform(struct!.cpuThreshold),
+    ignore_metrics_time: cdktf.numberToTerraform(struct!.ignoreMetricsTime),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    load_threshold: cdktf.numberToTerraform(struct!.loadThreshold),
+    memory_threshold: cdktf.numberToTerraform(struct!.memoryThreshold),
+    thresholds_wait_time: cdktf.numberToTerraform(struct!.thresholdsWaitTime),
+  }
+}
+
+export class OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OpsworksMysqlLayerLoadBasedAutoScalingDownscaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarms !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarms = this._alarms;
+    }
+    if (this._cpuThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuThreshold = this._cpuThreshold;
+    }
+    if (this._ignoreMetricsTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreMetricsTime = this._ignoreMetricsTime;
+    }
+    if (this._instanceCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceCount = this._instanceCount;
+    }
+    if (this._loadThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadThreshold = this._loadThreshold;
+    }
+    if (this._memoryThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryThreshold = this._memoryThreshold;
+    }
+    if (this._thresholdsWaitTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdsWaitTime = this._thresholdsWaitTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksMysqlLayerLoadBasedAutoScalingDownscaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alarms = undefined;
+      this._cpuThreshold = undefined;
+      this._ignoreMetricsTime = undefined;
+      this._instanceCount = undefined;
+      this._loadThreshold = undefined;
+      this._memoryThreshold = undefined;
+      this._thresholdsWaitTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alarms = value.alarms;
+      this._cpuThreshold = value.cpuThreshold;
+      this._ignoreMetricsTime = value.ignoreMetricsTime;
+      this._instanceCount = value.instanceCount;
+      this._loadThreshold = value.loadThreshold;
+      this._memoryThreshold = value.memoryThreshold;
+      this._thresholdsWaitTime = value.thresholdsWaitTime;
+    }
+  }
+
+  // alarms - computed: false, optional: true, required: false
+  private _alarms?: string[]; 
+  public get alarms() {
+    return this.getListAttribute('alarms');
+  }
+  public set alarms(value: string[]) {
+    this._alarms = value;
+  }
+  public resetAlarms() {
+    this._alarms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmsInput() {
+    return this._alarms;
+  }
+
+  // cpu_threshold - computed: false, optional: true, required: false
+  private _cpuThreshold?: number; 
+  public get cpuThreshold() {
+    return this.getNumberAttribute('cpu_threshold');
+  }
+  public set cpuThreshold(value: number) {
+    this._cpuThreshold = value;
+  }
+  public resetCpuThreshold() {
+    this._cpuThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuThresholdInput() {
+    return this._cpuThreshold;
+  }
+
+  // ignore_metrics_time - computed: false, optional: true, required: false
+  private _ignoreMetricsTime?: number; 
+  public get ignoreMetricsTime() {
+    return this.getNumberAttribute('ignore_metrics_time');
+  }
+  public set ignoreMetricsTime(value: number) {
+    this._ignoreMetricsTime = value;
+  }
+  public resetIgnoreMetricsTime() {
+    this._ignoreMetricsTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreMetricsTimeInput() {
+    return this._ignoreMetricsTime;
+  }
+
+  // instance_count - computed: false, optional: true, required: false
+  private _instanceCount?: number; 
+  public get instanceCount() {
+    return this.getNumberAttribute('instance_count');
+  }
+  public set instanceCount(value: number) {
+    this._instanceCount = value;
+  }
+  public resetInstanceCount() {
+    this._instanceCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceCountInput() {
+    return this._instanceCount;
+  }
+
+  // load_threshold - computed: false, optional: true, required: false
+  private _loadThreshold?: number; 
+  public get loadThreshold() {
+    return this.getNumberAttribute('load_threshold');
+  }
+  public set loadThreshold(value: number) {
+    this._loadThreshold = value;
+  }
+  public resetLoadThreshold() {
+    this._loadThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadThresholdInput() {
+    return this._loadThreshold;
+  }
+
+  // memory_threshold - computed: false, optional: true, required: false
+  private _memoryThreshold?: number; 
+  public get memoryThreshold() {
+    return this.getNumberAttribute('memory_threshold');
+  }
+  public set memoryThreshold(value: number) {
+    this._memoryThreshold = value;
+  }
+  public resetMemoryThreshold() {
+    this._memoryThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryThresholdInput() {
+    return this._memoryThreshold;
+  }
+
+  // thresholds_wait_time - computed: false, optional: true, required: false
+  private _thresholdsWaitTime?: number; 
+  public get thresholdsWaitTime() {
+    return this.getNumberAttribute('thresholds_wait_time');
+  }
+  public set thresholdsWaitTime(value: number) {
+    this._thresholdsWaitTime = value;
+  }
+  public resetThresholdsWaitTime() {
+    this._thresholdsWaitTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdsWaitTimeInput() {
+    return this._thresholdsWaitTime;
+  }
+}
+export interface OpsworksMysqlLayerLoadBasedAutoScalingUpscaling {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}
+  */
+  readonly alarms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}
+  */
+  readonly cpuThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}
+  */
+  readonly ignoreMetricsTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}
+  */
+  readonly instanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}
+  */
+  readonly loadThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}
+  */
+  readonly memoryThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}
+  */
+  readonly thresholdsWaitTime?: number;
+}
+
+export function opsworksMysqlLayerLoadBasedAutoScalingUpscalingToTerraform(struct?: OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference | OpsworksMysqlLayerLoadBasedAutoScalingUpscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alarms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alarms),
+    cpu_threshold: cdktf.numberToTerraform(struct!.cpuThreshold),
+    ignore_metrics_time: cdktf.numberToTerraform(struct!.ignoreMetricsTime),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    load_threshold: cdktf.numberToTerraform(struct!.loadThreshold),
+    memory_threshold: cdktf.numberToTerraform(struct!.memoryThreshold),
+    thresholds_wait_time: cdktf.numberToTerraform(struct!.thresholdsWaitTime),
+  }
+}
+
+export class OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OpsworksMysqlLayerLoadBasedAutoScalingUpscaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarms !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarms = this._alarms;
+    }
+    if (this._cpuThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuThreshold = this._cpuThreshold;
+    }
+    if (this._ignoreMetricsTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreMetricsTime = this._ignoreMetricsTime;
+    }
+    if (this._instanceCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceCount = this._instanceCount;
+    }
+    if (this._loadThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadThreshold = this._loadThreshold;
+    }
+    if (this._memoryThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryThreshold = this._memoryThreshold;
+    }
+    if (this._thresholdsWaitTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdsWaitTime = this._thresholdsWaitTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksMysqlLayerLoadBasedAutoScalingUpscaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alarms = undefined;
+      this._cpuThreshold = undefined;
+      this._ignoreMetricsTime = undefined;
+      this._instanceCount = undefined;
+      this._loadThreshold = undefined;
+      this._memoryThreshold = undefined;
+      this._thresholdsWaitTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alarms = value.alarms;
+      this._cpuThreshold = value.cpuThreshold;
+      this._ignoreMetricsTime = value.ignoreMetricsTime;
+      this._instanceCount = value.instanceCount;
+      this._loadThreshold = value.loadThreshold;
+      this._memoryThreshold = value.memoryThreshold;
+      this._thresholdsWaitTime = value.thresholdsWaitTime;
+    }
+  }
+
+  // alarms - computed: false, optional: true, required: false
+  private _alarms?: string[]; 
+  public get alarms() {
+    return this.getListAttribute('alarms');
+  }
+  public set alarms(value: string[]) {
+    this._alarms = value;
+  }
+  public resetAlarms() {
+    this._alarms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmsInput() {
+    return this._alarms;
+  }
+
+  // cpu_threshold - computed: false, optional: true, required: false
+  private _cpuThreshold?: number; 
+  public get cpuThreshold() {
+    return this.getNumberAttribute('cpu_threshold');
+  }
+  public set cpuThreshold(value: number) {
+    this._cpuThreshold = value;
+  }
+  public resetCpuThreshold() {
+    this._cpuThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuThresholdInput() {
+    return this._cpuThreshold;
+  }
+
+  // ignore_metrics_time - computed: false, optional: true, required: false
+  private _ignoreMetricsTime?: number; 
+  public get ignoreMetricsTime() {
+    return this.getNumberAttribute('ignore_metrics_time');
+  }
+  public set ignoreMetricsTime(value: number) {
+    this._ignoreMetricsTime = value;
+  }
+  public resetIgnoreMetricsTime() {
+    this._ignoreMetricsTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreMetricsTimeInput() {
+    return this._ignoreMetricsTime;
+  }
+
+  // instance_count - computed: false, optional: true, required: false
+  private _instanceCount?: number; 
+  public get instanceCount() {
+    return this.getNumberAttribute('instance_count');
+  }
+  public set instanceCount(value: number) {
+    this._instanceCount = value;
+  }
+  public resetInstanceCount() {
+    this._instanceCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceCountInput() {
+    return this._instanceCount;
+  }
+
+  // load_threshold - computed: false, optional: true, required: false
+  private _loadThreshold?: number; 
+  public get loadThreshold() {
+    return this.getNumberAttribute('load_threshold');
+  }
+  public set loadThreshold(value: number) {
+    this._loadThreshold = value;
+  }
+  public resetLoadThreshold() {
+    this._loadThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadThresholdInput() {
+    return this._loadThreshold;
+  }
+
+  // memory_threshold - computed: false, optional: true, required: false
+  private _memoryThreshold?: number; 
+  public get memoryThreshold() {
+    return this.getNumberAttribute('memory_threshold');
+  }
+  public set memoryThreshold(value: number) {
+    this._memoryThreshold = value;
+  }
+  public resetMemoryThreshold() {
+    this._memoryThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryThresholdInput() {
+    return this._memoryThreshold;
+  }
+
+  // thresholds_wait_time - computed: false, optional: true, required: false
+  private _thresholdsWaitTime?: number; 
+  public get thresholdsWaitTime() {
+    return this.getNumberAttribute('thresholds_wait_time');
+  }
+  public set thresholdsWaitTime(value: number) {
+    this._thresholdsWaitTime = value;
+  }
+  public resetThresholdsWaitTime() {
+    this._thresholdsWaitTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdsWaitTimeInput() {
+    return this._thresholdsWaitTime;
+  }
+}
+export interface OpsworksMysqlLayerLoadBasedAutoScaling {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#enable OpsworksMysqlLayer#enable}
+  */
+  readonly enable?: boolean | cdktf.IResolvable;
+  /**
+  * downscaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#downscaling OpsworksMysqlLayer#downscaling}
+  */
+  readonly downscaling?: OpsworksMysqlLayerLoadBasedAutoScalingDownscaling;
+  /**
+  * upscaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer#upscaling OpsworksMysqlLayer#upscaling}
+  */
+  readonly upscaling?: OpsworksMysqlLayerLoadBasedAutoScalingUpscaling;
+}
+
+export function opsworksMysqlLayerLoadBasedAutoScalingToTerraform(struct?: OpsworksMysqlLayerLoadBasedAutoScalingOutputReference | OpsworksMysqlLayerLoadBasedAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    downscaling: opsworksMysqlLayerLoadBasedAutoScalingDownscalingToTerraform(struct!.downscaling),
+    upscaling: opsworksMysqlLayerLoadBasedAutoScalingUpscalingToTerraform(struct!.upscaling),
+  }
+}
+
+export class OpsworksMysqlLayerLoadBasedAutoScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OpsworksMysqlLayerLoadBasedAutoScaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enable = this._enable;
+    }
+    if (this._downscaling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.downscaling = this._downscaling?.internalValue;
+    }
+    if (this._upscaling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upscaling = this._upscaling?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksMysqlLayerLoadBasedAutoScaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enable = undefined;
+      this._downscaling.internalValue = undefined;
+      this._upscaling.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enable = value.enable;
+      this._downscaling.internalValue = value.downscaling;
+      this._upscaling.internalValue = value.upscaling;
+    }
+  }
+
+  // enable - computed: false, optional: true, required: false
+  private _enable?: boolean | cdktf.IResolvable; 
+  public get enable() {
+    return this.getBooleanAttribute('enable');
+  }
+  public set enable(value: boolean | cdktf.IResolvable) {
+    this._enable = value;
+  }
+  public resetEnable() {
+    this._enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable;
+  }
+
+  // downscaling - computed: false, optional: true, required: false
+  private _downscaling = new OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference(this, "downscaling");
+  public get downscaling() {
+    return this._downscaling;
+  }
+  public putDownscaling(value: OpsworksMysqlLayerLoadBasedAutoScalingDownscaling) {
+    this._downscaling.internalValue = value;
+  }
+  public resetDownscaling() {
+    this._downscaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get downscalingInput() {
+    return this._downscaling.internalValue;
+  }
+
+  // upscaling - computed: false, optional: true, required: false
+  private _upscaling = new OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference(this, "upscaling");
+  public get upscaling() {
+    return this._upscaling;
+  }
+  public putUpscaling(value: OpsworksMysqlLayerLoadBasedAutoScalingUpscaling) {
+    this._upscaling.internalValue = value;
+  }
+  public resetUpscaling() {
+    this._upscaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upscalingInput() {
+    return this._upscaling.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer aws_opsworks_mysql_layer}
@@ -851,7 +1434,7 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_mysql_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -888,6 +1471,7 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
     this._useEbsOptimizedInstances = config.useEbsOptimizedInstances;
     this._cloudwatchConfiguration.internalValue = config.cloudwatchConfiguration;
     this._ebsVolume.internalValue = config.ebsVolume;
+    this._loadBasedAutoScaling.internalValue = config.loadBasedAutoScaling;
   }
 
   // ==========
@@ -1312,6 +1896,22 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
     return this._ebsVolume.internalValue;
   }
 
+  // load_based_auto_scaling - computed: false, optional: true, required: false
+  private _loadBasedAutoScaling = new OpsworksMysqlLayerLoadBasedAutoScalingOutputReference(this, "load_based_auto_scaling");
+  public get loadBasedAutoScaling() {
+    return this._loadBasedAutoScaling;
+  }
+  public putLoadBasedAutoScaling(value: OpsworksMysqlLayerLoadBasedAutoScaling) {
+    this._loadBasedAutoScaling.internalValue = value;
+  }
+  public resetLoadBasedAutoScaling() {
+    this._loadBasedAutoScaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBasedAutoScalingInput() {
+    return this._loadBasedAutoScaling.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1344,6 +1944,7 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       cloudwatch_configuration: opsworksMysqlLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
       ebs_volume: cdktf.listMapper(opsworksMysqlLayerEbsVolumeToTerraform, true)(this._ebsVolume.internalValue),
+      load_based_auto_scaling: opsworksMysqlLayerLoadBasedAutoScalingToTerraform(this._loadBasedAutoScaling.internalValue),
     };
   }
 }

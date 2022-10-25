@@ -1,6 +1,11 @@
 {
   "dependencies": [
     {
+      "name": "@actions/core",
+      "version": "^1.1.0",
+      "type": "build"
+    },
+    {
       "name": "@cdktf/provider-project",
       "version": "^0.2.8",
       "type": "build"

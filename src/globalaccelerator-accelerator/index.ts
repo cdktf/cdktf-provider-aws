@@ -23,6 +23,10 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   */
   readonly ipAddressType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#ip_addresses GlobalacceleratorAccelerator#ip_addresses}
+  */
+  readonly ipAddresses?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#name GlobalacceleratorAccelerator#name}
   */
   readonly name: string;
@@ -364,7 +368,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -378,6 +382,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._id = config.id;
     this._ipAddressType = config.ipAddressType;
+    this._ipAddresses = config.ipAddresses;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -445,6 +450,22 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipAddressTypeInput() {
     return this._ipAddressType;
+  }
+
+  // ip_addresses - computed: false, optional: true, required: false
+  private _ipAddresses?: string[]; 
+  public get ipAddresses() {
+    return this.getListAttribute('ip_addresses');
+  }
+  public set ipAddresses(value: string[]) {
+    this._ipAddresses = value;
+  }
+  public resetIpAddresses() {
+    this._ipAddresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressesInput() {
+    return this._ipAddresses;
   }
 
   // ip_sets - computed: true, optional: false, required: false
@@ -539,6 +560,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
+      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipAddresses),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

@@ -285,7 +285,7 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_regex_match_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

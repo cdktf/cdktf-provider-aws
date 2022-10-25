@@ -99,6 +99,71 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOut
     return this._ruleOrder;
   }
 }
+export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#action NetworkfirewallFirewallPolicy#action}
+  */
+  readonly action?: string;
+}
+
+export function networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference | NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._action = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._action = value.action;
+    }
+  }
+
+  // action - computed: false, optional: true, required: false
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
@@ -108,6 +173,12 @@ export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupRef
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
   */
   readonly resourceArn: string;
+  /**
+  * override block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy#override NetworkfirewallFirewallPolicy#override}
+  */
+  readonly override?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride;
 }
 
 export function networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference | cdktf.IResolvable): any {
@@ -118,6 +189,7 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupRefe
   return {
     priority: cdktf.numberToTerraform(struct!.priority),
     resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    override: networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideToTerraform(struct!.override),
   }
 }
 
@@ -149,6 +221,10 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
+    if (this._override?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.override = this._override?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -158,6 +234,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
       this.resolvableValue = undefined;
       this._priority = undefined;
       this._resourceArn = undefined;
+      this._override.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -168,6 +245,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
       this.resolvableValue = undefined;
       this._priority = value.priority;
       this._resourceArn = value.resourceArn;
+      this._override.internalValue = value.override;
     }
   }
 
@@ -198,6 +276,22 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
   // Temporarily expose input value. Use with caution.
   public get resourceArnInput() {
     return this._resourceArn;
+  }
+
+  // override - computed: false, optional: true, required: false
+  private _override = new NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference(this, "override");
+  public get override() {
+    return this._override;
+  }
+  public putOverride(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride) {
+    this._override.internalValue = value;
+  }
+  public resetOverride() {
+    this._override.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overrideInput() {
+    return this._override.internalValue;
   }
 }
 
@@ -936,7 +1030,7 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkfirewall_firewall_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

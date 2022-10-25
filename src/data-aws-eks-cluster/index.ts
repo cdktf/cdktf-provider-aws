@@ -265,6 +265,11 @@ export class DataAwsEksClusterKubernetesNetworkConfigOutputReference extends cdk
   public get serviceIpv4Cidr() {
     return this.getStringAttribute('service_ipv4_cidr');
   }
+
+  // service_ipv6_cidr - computed: true, optional: false, required: false
+  public get serviceIpv6Cidr() {
+    return this.getStringAttribute('service_ipv6_cidr');
+  }
 }
 
 export class DataAwsEksClusterKubernetesNetworkConfigList extends cdktf.ComplexList {
@@ -475,7 +480,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

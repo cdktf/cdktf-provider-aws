@@ -933,7 +933,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   }
 
   // clustering_key - computed: false, optional: true, required: false
-  private _clusteringKey = new KeyspacesTableSchemaDefinitionClusteringKeyList(this, "clustering_key", true);
+  private _clusteringKey = new KeyspacesTableSchemaDefinitionClusteringKeyList(this, "clustering_key", false);
   public get clusteringKey() {
     return this._clusteringKey;
   }
@@ -962,7 +962,7 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   }
 
   // partition_key - computed: false, optional: false, required: true
-  private _partitionKey = new KeyspacesTableSchemaDefinitionPartitionKeyList(this, "partition_key", true);
+  private _partitionKey = new KeyspacesTableSchemaDefinitionPartitionKeyList(this, "partition_key", false);
   public get partitionKey() {
     return this._partitionKey;
   }
@@ -1208,7 +1208,7 @@ export class KeyspacesTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_keyspaces_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

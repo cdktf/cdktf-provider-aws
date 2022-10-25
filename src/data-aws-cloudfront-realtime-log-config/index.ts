@@ -185,7 +185,7 @@ export class DataAwsCloudfrontRealtimeLogConfig extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_cloudfront_realtime_log_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

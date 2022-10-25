@@ -26,6 +26,74 @@ export interface PrometheusWorkspaceConfig extends cdktf.TerraformMetaArguments 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_workspace#tags_all PrometheusWorkspace#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * logging_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_workspace#logging_configuration PrometheusWorkspace#logging_configuration}
+  */
+  readonly loggingConfiguration?: PrometheusWorkspaceLoggingConfiguration;
+}
+export interface PrometheusWorkspaceLoggingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_workspace#log_group_arn PrometheusWorkspace#log_group_arn}
+  */
+  readonly logGroupArn: string;
+}
+
+export function prometheusWorkspaceLoggingConfigurationToTerraform(struct?: PrometheusWorkspaceLoggingConfigurationOutputReference | PrometheusWorkspaceLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    log_group_arn: cdktf.stringToTerraform(struct!.logGroupArn),
+  }
+}
+
+export class PrometheusWorkspaceLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PrometheusWorkspaceLoggingConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._logGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logGroupArn = this._logGroupArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PrometheusWorkspaceLoggingConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._logGroupArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._logGroupArn = value.logGroupArn;
+    }
+  }
+
+  // log_group_arn - computed: false, optional: false, required: true
+  private _logGroupArn?: string; 
+  public get logGroupArn() {
+    return this.getStringAttribute('log_group_arn');
+  }
+  public set logGroupArn(value: string) {
+    this._logGroupArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupArnInput() {
+    return this._logGroupArn;
+  }
 }
 
 /**
@@ -54,7 +122,7 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_prometheus_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -69,6 +137,7 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
     this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._loggingConfiguration.internalValue = config.loggingConfiguration;
   }
 
   // ==========
@@ -149,6 +218,22 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // logging_configuration - computed: false, optional: true, required: false
+  private _loggingConfiguration = new PrometheusWorkspaceLoggingConfigurationOutputReference(this, "logging_configuration");
+  public get loggingConfiguration() {
+    return this._loggingConfiguration;
+  }
+  public putLoggingConfiguration(value: PrometheusWorkspaceLoggingConfiguration) {
+    this._loggingConfiguration.internalValue = value;
+  }
+  public resetLoggingConfiguration() {
+    this._loggingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingConfigurationInput() {
+    return this._loggingConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -159,6 +244,7 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      logging_configuration: prometheusWorkspaceLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
     };
   }
 }

@@ -420,7 +420,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -542,6 +542,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // image_type - computed: true, optional: false, required: false
   public get imageType() {
     return this.getStringAttribute('image_type');
+  }
+
+  // imds_support - computed: true, optional: false, required: false
+  public get imdsSupport() {
+    return this.getStringAttribute('imds_support');
   }
 
   // include_deprecated - computed: false, optional: true, required: false

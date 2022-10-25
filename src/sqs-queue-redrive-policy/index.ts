@@ -50,7 +50,7 @@ export class SqsQueueRedrivePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sqs_queue_redrive_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

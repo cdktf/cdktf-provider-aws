@@ -348,7 +348,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elastic_beanstalk_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

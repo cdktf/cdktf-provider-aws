@@ -349,7 +349,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rum_app_monitor',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -372,6 +372,11 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // app_monitor_id - computed: true, optional: false, required: false
+  public get appMonitorId() {
+    return this.getStringAttribute('app_monitor_id');
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {

@@ -68,7 +68,7 @@ export class IamUser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
