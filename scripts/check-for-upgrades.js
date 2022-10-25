@@ -1,6 +1,7 @@
 
 const fetch = require("node-fetch");
 const semver = require("semver");
+const actions = require("@actions/core");
 
 // Code is inlined below, as this import requires us to add all dev dependencies of cdktf-cli as we're not
 // using the bundle. A better alternative would be to refactor this method to move to its own package, that
@@ -25,7 +26,7 @@ const FQ_PROVIDER_NAME = "aws";
 })();
 
 function setGithubStepOutput(name, value) {
-  console.log(`::set-output name=${name}::"${value}"`)
+  actions.setOutput(name, value);
 }
 
 async function newerMatchingProviderVersionExists() {

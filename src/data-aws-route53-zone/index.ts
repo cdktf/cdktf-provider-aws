@@ -66,7 +66,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -150,6 +150,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
     return this.getListAttribute('name_servers');
+  }
+
+  // primary_name_server - computed: true, optional: false, required: false
+  public get primaryNameServer() {
+    return this.getStringAttribute('primary_name_server');
   }
 
   // private_zone - computed: false, optional: true, required: false

@@ -8,6 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface ElasticacheGlobalReplicationGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#automatic_failover_enabled ElasticacheGlobalReplicationGroup#automatic_failover_enabled}
+  */
+  readonly automaticFailoverEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#cache_node_type ElasticacheGlobalReplicationGroup#cache_node_type}
+  */
+  readonly cacheNodeType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#engine_version ElasticacheGlobalReplicationGroup#engine_version}
   */
   readonly engineVersion?: string;
@@ -62,7 +70,7 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_global_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -73,6 +81,8 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._automaticFailoverEnabled = config.automaticFailoverEnabled;
+    this._cacheNodeType = config.cacheNodeType;
     this._engineVersion = config.engineVersion;
     this._globalReplicationGroupDescription = config.globalReplicationGroupDescription;
     this._globalReplicationGroupIdSuffix = config.globalReplicationGroupIdSuffix;
@@ -100,9 +110,36 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
     return this.getBooleanAttribute('auth_token_enabled');
   }
 
-  // cache_node_type - computed: true, optional: false, required: false
+  // automatic_failover_enabled - computed: true, optional: true, required: false
+  private _automaticFailoverEnabled?: boolean | cdktf.IResolvable; 
+  public get automaticFailoverEnabled() {
+    return this.getBooleanAttribute('automatic_failover_enabled');
+  }
+  public set automaticFailoverEnabled(value: boolean | cdktf.IResolvable) {
+    this._automaticFailoverEnabled = value;
+  }
+  public resetAutomaticFailoverEnabled() {
+    this._automaticFailoverEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticFailoverEnabledInput() {
+    return this._automaticFailoverEnabled;
+  }
+
+  // cache_node_type - computed: true, optional: true, required: false
+  private _cacheNodeType?: string; 
   public get cacheNodeType() {
     return this.getStringAttribute('cache_node_type');
+  }
+  public set cacheNodeType(value: string) {
+    this._cacheNodeType = value;
+  }
+  public resetCacheNodeType() {
+    this._cacheNodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cacheNodeTypeInput() {
+    return this._cacheNodeType;
   }
 
   // cluster_enabled - computed: true, optional: false, required: false
@@ -226,6 +263,8 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
+      cache_node_type: cdktf.stringToTerraform(this._cacheNodeType),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       global_replication_group_description: cdktf.stringToTerraform(this._globalReplicationGroupDescription),
       global_replication_group_id_suffix: cdktf.stringToTerraform(this._globalReplicationGroupIdSuffix),

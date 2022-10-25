@@ -39,6 +39,12 @@ export interface LightsailContainerServiceConfig extends cdktf.TerraformMetaArgu
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * private_registry_access block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#private_registry_access LightsailContainerService#private_registry_access}
+  */
+  readonly privateRegistryAccess?: LightsailContainerServicePrivateRegistryAccess;
+  /**
   * public_domain_names block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#public_domain_names LightsailContainerService#public_domain_names}
@@ -50,6 +56,143 @@ export interface LightsailContainerServiceConfig extends cdktf.TerraformMetaArgu
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#timeouts LightsailContainerService#timeouts}
   */
   readonly timeouts?: LightsailContainerServiceTimeouts;
+}
+export interface LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#is_active LightsailContainerService#is_active}
+  */
+  readonly isActive?: boolean | cdktf.IResolvable;
+}
+
+export function lightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleToTerraform(struct?: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference | LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    is_active: cdktf.booleanToTerraform(struct!.isActive),
+  }
+}
+
+export class LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isActive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isActive = this._isActive;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isActive = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isActive = value.isActive;
+    }
+  }
+
+  // is_active - computed: false, optional: true, required: false
+  private _isActive?: boolean | cdktf.IResolvable; 
+  public get isActive() {
+    return this.getBooleanAttribute('is_active');
+  }
+  public set isActive(value: boolean | cdktf.IResolvable) {
+    this._isActive = value;
+  }
+  public resetIsActive() {
+    this._isActive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isActiveInput() {
+    return this._isActive;
+  }
+
+  // principal_arn - computed: true, optional: false, required: false
+  public get principalArn() {
+    return this.getStringAttribute('principal_arn');
+  }
+}
+export interface LightsailContainerServicePrivateRegistryAccess {
+  /**
+  * ecr_image_puller_role block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#ecr_image_puller_role LightsailContainerService#ecr_image_puller_role}
+  */
+  readonly ecrImagePullerRole?: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole;
+}
+
+export function lightsailContainerServicePrivateRegistryAccessToTerraform(struct?: LightsailContainerServicePrivateRegistryAccessOutputReference | LightsailContainerServicePrivateRegistryAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ecr_image_puller_role: lightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleToTerraform(struct!.ecrImagePullerRole),
+  }
+}
+
+export class LightsailContainerServicePrivateRegistryAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LightsailContainerServicePrivateRegistryAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ecrImagePullerRole?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ecrImagePullerRole = this._ecrImagePullerRole?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LightsailContainerServicePrivateRegistryAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ecrImagePullerRole.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ecrImagePullerRole.internalValue = value.ecrImagePullerRole;
+    }
+  }
+
+  // ecr_image_puller_role - computed: false, optional: true, required: false
+  private _ecrImagePullerRole = new LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference(this, "ecr_image_puller_role");
+  public get ecrImagePullerRole() {
+    return this._ecrImagePullerRole;
+  }
+  public putEcrImagePullerRole(value: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole) {
+    this._ecrImagePullerRole.internalValue = value;
+  }
+  public resetEcrImagePullerRole() {
+    this._ecrImagePullerRole.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecrImagePullerRoleInput() {
+    return this._ecrImagePullerRole.internalValue;
+  }
 }
 export interface LightsailContainerServicePublicDomainNamesCertificate {
   /**
@@ -389,7 +532,7 @@ export class LightsailContainerService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_container_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -407,6 +550,7 @@ export class LightsailContainerService extends cdktf.TerraformResource {
     this._scale = config.scale;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._privateRegistryAccess.internalValue = config.privateRegistryAccess;
     this._publicDomainNames.internalValue = config.publicDomainNames;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -563,6 +707,22 @@ export class LightsailContainerService extends cdktf.TerraformResource {
     return this.getStringAttribute('url');
   }
 
+  // private_registry_access - computed: false, optional: true, required: false
+  private _privateRegistryAccess = new LightsailContainerServicePrivateRegistryAccessOutputReference(this, "private_registry_access");
+  public get privateRegistryAccess() {
+    return this._privateRegistryAccess;
+  }
+  public putPrivateRegistryAccess(value: LightsailContainerServicePrivateRegistryAccess) {
+    this._privateRegistryAccess.internalValue = value;
+  }
+  public resetPrivateRegistryAccess() {
+    this._privateRegistryAccess.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateRegistryAccessInput() {
+    return this._privateRegistryAccess.internalValue;
+  }
+
   // public_domain_names - computed: false, optional: true, required: false
   private _publicDomainNames = new LightsailContainerServicePublicDomainNamesOutputReference(this, "public_domain_names");
   public get publicDomainNames() {
@@ -608,6 +768,7 @@ export class LightsailContainerService extends cdktf.TerraformResource {
       scale: cdktf.numberToTerraform(this._scale),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      private_registry_access: lightsailContainerServicePrivateRegistryAccessToTerraform(this._privateRegistryAccess.internalValue),
       public_domain_names: lightsailContainerServicePublicDomainNamesToTerraform(this._publicDomainNames.internalValue),
       timeouts: lightsailContainerServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };

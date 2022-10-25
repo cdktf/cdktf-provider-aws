@@ -121,7 +121,7 @@ export class IdentitystoreUserExternalIdsOutputReference extends cdktf.ComplexOb
 
   // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getBooleanAttribute('id');
+    return this.getStringAttribute('id');
   }
 
   // issuer - computed: true, optional: false, required: false
@@ -861,7 +861,7 @@ export class IdentitystoreUser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_identitystore_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

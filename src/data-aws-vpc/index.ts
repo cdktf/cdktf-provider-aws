@@ -341,7 +341,7 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -433,6 +433,11 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // enable_dns_support - computed: true, optional: false, required: false
   public get enableDnsSupport() {
     return this.getBooleanAttribute('enable_dns_support');
+  }
+
+  // enable_network_address_usage_metrics - computed: true, optional: false, required: false
+  public get enableNetworkAddressUsageMetrics() {
+    return this.getBooleanAttribute('enable_network_address_usage_metrics');
   }
 
   // id - computed: true, optional: true, required: false

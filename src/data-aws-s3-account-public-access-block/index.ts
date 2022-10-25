@@ -46,7 +46,7 @@ export class DataAwsS3AccountPublicAccessBlock extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_s3_account_public_access_block',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

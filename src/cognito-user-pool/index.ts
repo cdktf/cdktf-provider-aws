@@ -113,6 +113,12 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly softwareTokenMfaConfiguration?: CognitoUserPoolSoftwareTokenMfaConfiguration;
   /**
+  * user_attribute_update_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#user_attribute_update_settings CognitoUserPool#user_attribute_update_settings}
+  */
+  readonly userAttributeUpdateSettings?: CognitoUserPoolUserAttributeUpdateSettings;
+  /**
   * user_pool_add_ons block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#user_pool_add_ons CognitoUserPool#user_pool_add_ons}
@@ -2145,6 +2151,68 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
     return this._enabled;
   }
 }
+export interface CognitoUserPoolUserAttributeUpdateSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#attributes_require_verification_before_update CognitoUserPool#attributes_require_verification_before_update}
+  */
+  readonly attributesRequireVerificationBeforeUpdate: string[];
+}
+
+export function cognitoUserPoolUserAttributeUpdateSettingsToTerraform(struct?: CognitoUserPoolUserAttributeUpdateSettingsOutputReference | CognitoUserPoolUserAttributeUpdateSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attributes_require_verification_before_update: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attributesRequireVerificationBeforeUpdate),
+  }
+}
+
+export class CognitoUserPoolUserAttributeUpdateSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CognitoUserPoolUserAttributeUpdateSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributesRequireVerificationBeforeUpdate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributesRequireVerificationBeforeUpdate = this._attributesRequireVerificationBeforeUpdate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CognitoUserPoolUserAttributeUpdateSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attributesRequireVerificationBeforeUpdate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attributesRequireVerificationBeforeUpdate = value.attributesRequireVerificationBeforeUpdate;
+    }
+  }
+
+  // attributes_require_verification_before_update - computed: false, optional: false, required: true
+  private _attributesRequireVerificationBeforeUpdate?: string[]; 
+  public get attributesRequireVerificationBeforeUpdate() {
+    return cdktf.Fn.tolist(this.getListAttribute('attributes_require_verification_before_update'));
+  }
+  public set attributesRequireVerificationBeforeUpdate(value: string[]) {
+    this._attributesRequireVerificationBeforeUpdate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributesRequireVerificationBeforeUpdateInput() {
+    return this._attributesRequireVerificationBeforeUpdate;
+  }
+}
 export interface CognitoUserPoolUserPoolAddOns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#advanced_security_mode CognitoUserPool#advanced_security_mode}
@@ -2496,7 +2564,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2528,6 +2596,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     this._schema.internalValue = config.schema;
     this._smsConfiguration.internalValue = config.smsConfiguration;
     this._softwareTokenMfaConfiguration.internalValue = config.softwareTokenMfaConfiguration;
+    this._userAttributeUpdateSettings.internalValue = config.userAttributeUpdateSettings;
     this._userPoolAddOns.internalValue = config.userPoolAddOns;
     this._usernameConfiguration.internalValue = config.usernameConfiguration;
     this._verificationMessageTemplate.internalValue = config.verificationMessageTemplate;
@@ -2905,6 +2974,22 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     return this._softwareTokenMfaConfiguration.internalValue;
   }
 
+  // user_attribute_update_settings - computed: false, optional: true, required: false
+  private _userAttributeUpdateSettings = new CognitoUserPoolUserAttributeUpdateSettingsOutputReference(this, "user_attribute_update_settings");
+  public get userAttributeUpdateSettings() {
+    return this._userAttributeUpdateSettings;
+  }
+  public putUserAttributeUpdateSettings(value: CognitoUserPoolUserAttributeUpdateSettings) {
+    this._userAttributeUpdateSettings.internalValue = value;
+  }
+  public resetUserAttributeUpdateSettings() {
+    this._userAttributeUpdateSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAttributeUpdateSettingsInput() {
+    return this._userAttributeUpdateSettings.internalValue;
+  }
+
   // user_pool_add_ons - computed: false, optional: true, required: false
   private _userPoolAddOns = new CognitoUserPoolUserPoolAddOnsOutputReference(this, "user_pool_add_ons");
   public get userPoolAddOns() {
@@ -2980,6 +3065,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform, true)(this._schema.internalValue),
       sms_configuration: cognitoUserPoolSmsConfigurationToTerraform(this._smsConfiguration.internalValue),
       software_token_mfa_configuration: cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(this._softwareTokenMfaConfiguration.internalValue),
+      user_attribute_update_settings: cognitoUserPoolUserAttributeUpdateSettingsToTerraform(this._userAttributeUpdateSettings.internalValue),
       user_pool_add_ons: cognitoUserPoolUserPoolAddOnsToTerraform(this._userPoolAddOns.internalValue),
       username_configuration: cognitoUserPoolUsernameConfigurationToTerraform(this._usernameConfiguration.internalValue),
       verification_message_template: cognitoUserPoolVerificationMessageTemplateToTerraform(this._verificationMessageTemplate.internalValue),

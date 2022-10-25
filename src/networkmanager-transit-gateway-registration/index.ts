@@ -158,7 +158,7 @@ export class NetworkmanagerTransitGatewayRegistration extends cdktf.TerraformRes
       terraformResourceType: 'aws_networkmanager_transit_gateway_registration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

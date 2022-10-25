@@ -28,6 +28,10 @@ export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableDnsSupport?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}
+  */
+  readonly enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#force_destroy DefaultVpc#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
@@ -90,7 +94,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_vpc',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -106,6 +110,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
     this._enableClassiclinkDnsSupport = config.enableClassiclinkDnsSupport;
     this._enableDnsHostnames = config.enableDnsHostnames;
     this._enableDnsSupport = config.enableDnsSupport;
+    this._enableNetworkAddressUsageMetrics = config.enableNetworkAddressUsageMetrics;
     this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._ipv6CidrBlock = config.ipv6CidrBlock;
@@ -228,6 +233,22 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableDnsSupportInput() {
     return this._enableDnsSupport;
+  }
+
+  // enable_network_address_usage_metrics - computed: false, optional: true, required: false
+  private _enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable; 
+  public get enableNetworkAddressUsageMetrics() {
+    return this.getBooleanAttribute('enable_network_address_usage_metrics');
+  }
+  public set enableNetworkAddressUsageMetrics(value: boolean | cdktf.IResolvable) {
+    this._enableNetworkAddressUsageMetrics = value;
+  }
+  public resetEnableNetworkAddressUsageMetrics() {
+    this._enableNetworkAddressUsageMetrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableNetworkAddressUsageMetricsInput() {
+    return this._enableNetworkAddressUsageMetrics;
   }
 
   // existing_default_vpc - computed: true, optional: false, required: false
@@ -394,6 +415,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
       enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
       enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
       enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
+      enable_network_address_usage_metrics: cdktf.booleanToTerraform(this._enableNetworkAddressUsageMetrics),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       id: cdktf.stringToTerraform(this._id),
       ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),

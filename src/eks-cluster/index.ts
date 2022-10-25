@@ -503,6 +503,11 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
   public get serviceIpv4CidrInput() {
     return this._serviceIpv4Cidr;
   }
+
+  // service_ipv6_cidr - computed: true, optional: false, required: false
+  public get serviceIpv6Cidr() {
+    return this.getStringAttribute('service_ipv6_cidr');
+  }
 }
 export interface EksClusterOutpostConfig {
   /**
@@ -926,7 +931,7 @@ export class EksCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

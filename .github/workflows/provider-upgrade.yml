@@ -19,17 +19,17 @@ jobs:
       - run: yarn install
       - id: check_version
         run: yarn check-if-new-provider-version
-      - if: ${{ steps.check_version.new_version == 'available' }}
+      - if: ${{ steps.check_version.outputs.new_version == 'available' }}
         env:
           CHECKPOINT_DISABLE: "1"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn fetch
-      - if: ${{ steps.check_version.new_version == 'available' }}
+      - if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: yarn compile
-      - if: ${{ steps.check_version.new_version == 'available' }}
+      - if: ${{ steps.check_version.outputs.new_version == 'available' }}
         run: yarn docgen
       - name: Create Pull Request
-        if: ${{ steps.check_version.new_version == 'available' }}
+        if: ${{ steps.check_version.outputs.new_version == 'available' }}
         uses: peter-evans/create-pull-request@v3
         with:
           commit-message: "chore: upgrade provider"

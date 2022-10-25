@@ -308,6 +308,154 @@ export class CloudwatchEventTargetDeadLetterConfigOutputReference extends cdktf.
     return this._arn;
   }
 }
+export interface CloudwatchEventTargetEcsTargetCapacityProviderStrategy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#base CloudwatchEventTarget#base}
+  */
+  readonly base?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#capacity_provider CloudwatchEventTarget#capacity_provider}
+  */
+  readonly capacityProvider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#weight CloudwatchEventTarget#weight}
+  */
+  readonly weight?: number;
+}
+
+export function cloudwatchEventTargetEcsTargetCapacityProviderStrategyToTerraform(struct?: CloudwatchEventTargetEcsTargetCapacityProviderStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    base: cdktf.numberToTerraform(struct!.base),
+    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+export class CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventTargetEcsTargetCapacityProviderStrategy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._base !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.base = this._base;
+    }
+    if (this._capacityProvider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityProvider = this._capacityProvider;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventTargetEcsTargetCapacityProviderStrategy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._base = undefined;
+      this._capacityProvider = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._base = value.base;
+      this._capacityProvider = value.capacityProvider;
+      this._weight = value.weight;
+    }
+  }
+
+  // base - computed: false, optional: true, required: false
+  private _base?: number; 
+  public get base() {
+    return this.getNumberAttribute('base');
+  }
+  public set base(value: number) {
+    this._base = value;
+  }
+  public resetBase() {
+    this._base = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseInput() {
+    return this._base;
+  }
+
+  // capacity_provider - computed: false, optional: false, required: true
+  private _capacityProvider?: string; 
+  public get capacityProvider() {
+    return this.getStringAttribute('capacity_provider');
+  }
+  public set capacityProvider(value: string) {
+    this._capacityProvider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityProviderInput() {
+    return this._capacityProvider;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class CloudwatchEventTargetEcsTargetCapacityProviderStrategyList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventTargetEcsTargetCapacityProviderStrategy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference {
+    return new CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventTargetEcsTargetNetworkConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#assign_public_ip CloudwatchEventTarget#assign_public_ip}
@@ -583,6 +731,12 @@ export interface CloudwatchEventTargetEcsTarget {
   */
   readonly taskDefinitionArn: string;
   /**
+  * capacity_provider_strategy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#capacity_provider_strategy CloudwatchEventTarget#capacity_provider_strategy}
+  */
+  readonly capacityProviderStrategy?: CloudwatchEventTargetEcsTargetCapacityProviderStrategy[] | cdktf.IResolvable;
+  /**
   * network_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#network_configuration CloudwatchEventTarget#network_configuration}
@@ -611,6 +765,7 @@ export function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEve
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     task_count: cdktf.numberToTerraform(struct!.taskCount),
     task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
+    capacity_provider_strategy: cdktf.listMapper(cloudwatchEventTargetEcsTargetCapacityProviderStrategyToTerraform, true)(struct!.capacityProviderStrategy),
     network_configuration: cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(struct!.networkConfiguration),
     placement_constraint: cdktf.listMapper(cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform, true)(struct!.placementConstraint),
   }
@@ -666,6 +821,10 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.taskDefinitionArn = this._taskDefinitionArn;
     }
+    if (this._capacityProviderStrategy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityProviderStrategy = this._capacityProviderStrategy?.internalValue;
+    }
     if (this._networkConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkConfiguration = this._networkConfiguration?.internalValue;
@@ -689,6 +848,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       this._tags = undefined;
       this._taskCount = undefined;
       this._taskDefinitionArn = undefined;
+      this._capacityProviderStrategy.internalValue = undefined;
       this._networkConfiguration.internalValue = undefined;
       this._placementConstraint.internalValue = undefined;
     }
@@ -703,6 +863,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       this._tags = value.tags;
       this._taskCount = value.taskCount;
       this._taskDefinitionArn = value.taskDefinitionArn;
+      this._capacityProviderStrategy.internalValue = value.capacityProviderStrategy;
       this._networkConfiguration.internalValue = value.networkConfiguration;
       this._placementConstraint.internalValue = value.placementConstraint;
     }
@@ -847,6 +1008,22 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get taskDefinitionArnInput() {
     return this._taskDefinitionArn;
+  }
+
+  // capacity_provider_strategy - computed: false, optional: true, required: false
+  private _capacityProviderStrategy = new CloudwatchEventTargetEcsTargetCapacityProviderStrategyList(this, "capacity_provider_strategy", true);
+  public get capacityProviderStrategy() {
+    return this._capacityProviderStrategy;
+  }
+  public putCapacityProviderStrategy(value: CloudwatchEventTargetEcsTargetCapacityProviderStrategy[] | cdktf.IResolvable) {
+    this._capacityProviderStrategy.internalValue = value;
+  }
+  public resetCapacityProviderStrategy() {
+    this._capacityProviderStrategy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityProviderStrategyInput() {
+    return this._capacityProviderStrategy.internalValue;
   }
 
   // network_configuration - computed: false, optional: true, required: false
@@ -1653,7 +1830,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

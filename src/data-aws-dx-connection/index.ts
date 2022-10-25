@@ -50,7 +50,7 @@ export class DataAwsDxConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dx_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.33.0',
+        providerVersion: '4.36.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -143,6 +143,11 @@ export class DataAwsDxConnection extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // vlan_id - computed: true, optional: false, required: false
+  public get vlanId() {
+    return this.getStringAttribute('vlan_id');
   }
 
   // =========
