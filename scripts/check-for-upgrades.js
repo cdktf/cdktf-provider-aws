@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 4.0";
-const FQ_PROVIDER_NAME = "aws";
+const FQ_PROVIDER_NAME = "hashicorp/aws";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
