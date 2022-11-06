@@ -42,8 +42,8 @@ jobs:
         with:
           commit-message: "chore: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           branch: auto/provider-upgrade
-          title: "chore: upgrade provider"
-          body: This PR upgrades provider to the latest version
+          title: "chore: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
+          body: This PR upgrades provider to version ${{ steps.new_version.outputs.value }}
           labels: automerge
           token: ${{ secrets.GH_TOKEN }}
           delete-branch: true
