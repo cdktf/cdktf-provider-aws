@@ -3374,7 +3374,7 @@ export interface LaunchTemplateNetworkInterfaces {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: string;
+  readonly associatePublicIpAddress?: boolean;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}
   */
