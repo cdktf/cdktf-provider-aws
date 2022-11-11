@@ -1081,9 +1081,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.155"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.155.tgz#dcef1545f3fd6ec379702ee0d52aa27c9cffccaa"
-  integrity sha512-AM8HdZ1GQbOLBmnIU5ybyerNeNn9iEZSZZra+2BWuAhyaA+zJb9oxwxD3isM2uxZviB5NHGhZI83plmhOuh29A==
+  version "10.1.156"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.156.tgz#3ccd82b7f07e8921d015f1ae9317f851ff6b87d4"
+  integrity sha512-BTZ3Kyt++/YFlph/ioqbDhzSKVMqHRHvc99FxU4b705ZP6s2IkDxMLCMinC70USMTJWFbO1p02Egux7sk4q07A==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2218,9 +2218,9 @@ jsii-rosetta@^1.68.0, jsii-rosetta@^1.71.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.686:
-  version "0.1.729"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.729.tgz#2b883f9dadeae036cff1bf637c6e24d3f5baaeec"
-  integrity sha512-s/+RXNRChvMDIK1JyKcQAeyDHwFqWPD6fKcONso0O7q1lcEn/jB6NaZTOdgrz66lLuYXegBK/jg6i4TpIG6+Tg==
+  version "0.1.730"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.730.tgz#be2be519e27efb70915a7146154b687c8874b427"
+  integrity sha512-9t0DCYckukkW09USsFTTe/6OaSrG61b/CXbsbB4LMxGDBF7XqY0oPbCSlNaiaVr9gzFPrRGw53Vw2cEXYyKTHg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.71.0"
@@ -3139,10 +3139,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.18:
-  version "0.65.18"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.18.tgz#1e1f1dc52a4e3e446d2c41e2a66fc0633d94804c"
-  integrity sha512-tzoj7Exz8oOenb9Pab453HajGI3nVv3fT++QUKPT2WTbe5oJ11XFBcgN4i3hhArzncfpNnZmOZck3yBnJIvzsA==
+projen@^0.65.19:
+  version "0.65.19"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.19.tgz#b89dab211b21a01427ee7c4654f114eb51b8dd87"
+  integrity sha512-5pNvS2eeKjp/bqM+ArTb8b1dWlqSVnpYP031ZOByqrJ9BOhgTmthR+mzj8Ij6/UQUmgSJ60H28hxdASFLIgD/w==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
