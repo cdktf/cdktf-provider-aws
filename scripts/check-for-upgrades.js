@@ -76,7 +76,7 @@ async function cdktfVersionMajorChanged() {
 
 async function getCurrentProviderVersion() {
   const json = require("../src/version.json");
-  return json[`registry.terraform.io/${FQ_PROVIDER_NAME}`];
+  return json[`registry.terraform.io/${FQ_PROVIDER_NAME.toLowerCase()}`];
 }
 
 // SEE NOTICE AT THE TOP WHY THIS IS INLINED CURRENTLY
