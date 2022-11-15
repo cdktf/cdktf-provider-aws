@@ -412,7 +412,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_from_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -526,6 +526,11 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   // image_type - computed: true, optional: false, required: false
   public get imageType() {
     return this.getStringAttribute('image_type');
+  }
+
+  // imds_support - computed: true, optional: false, required: false
+  public get imdsSupport() {
+    return this.getStringAttribute('imds_support');
   }
 
   // kernel_id - computed: true, optional: false, required: false

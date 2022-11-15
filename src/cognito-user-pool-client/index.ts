@@ -24,6 +24,10 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   */
   readonly allowedOauthScopes?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client#auth_session_validity CognitoUserPoolClient#auth_session_validity}
+  */
+  readonly authSessionValidity?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client#callback_urls CognitoUserPoolClient#callback_urls}
   */
   readonly callbackUrls?: string[];
@@ -422,7 +426,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_client',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -437,6 +441,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
     this._allowedOauthFlows = config.allowedOauthFlows;
     this._allowedOauthFlowsUserPoolClient = config.allowedOauthFlowsUserPoolClient;
     this._allowedOauthScopes = config.allowedOauthScopes;
+    this._authSessionValidity = config.authSessionValidity;
     this._callbackUrls = config.callbackUrls;
     this._defaultRedirectUri = config.defaultRedirectUri;
     this._enablePropagateAdditionalUserContextData = config.enablePropagateAdditionalUserContextData;
@@ -523,6 +528,22 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedOauthScopesInput() {
     return this._allowedOauthScopes;
+  }
+
+  // auth_session_validity - computed: false, optional: true, required: false
+  private _authSessionValidity?: number; 
+  public get authSessionValidity() {
+    return this.getNumberAttribute('auth_session_validity');
+  }
+  public set authSessionValidity(value: number) {
+    this._authSessionValidity = value;
+  }
+  public resetAuthSessionValidity() {
+    this._authSessionValidity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authSessionValidityInput() {
+    return this._authSessionValidity;
   }
 
   // callback_urls - computed: true, optional: true, required: false
@@ -822,6 +843,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthFlows),
       allowed_oauth_flows_user_pool_client: cdktf.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
       allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOauthScopes),
+      auth_session_validity: cdktf.numberToTerraform(this._authSessionValidity),
       callback_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._callbackUrls),
       default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
       enable_propagate_additional_user_context_data: cdktf.booleanToTerraform(this._enablePropagateAdditionalUserContextData),

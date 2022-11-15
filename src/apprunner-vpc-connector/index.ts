@@ -27,6 +27,10 @@ export interface ApprunnerVpcConnectorConfig extends cdktf.TerraformMetaArgument
   */
   readonly tags?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_vpc_connector#vpc_connector_name ApprunnerVpcConnector#vpc_connector_name}
   */
   readonly vpcConnectorName: string;
@@ -58,7 +62,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_vpc_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -73,6 +77,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
     this._securityGroups = config.securityGroups;
     this._subnets = config.subnets;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcConnectorName = config.vpcConnectorName;
   }
 
@@ -148,6 +153,22 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
     return this._tags;
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // vpc_connector_name - computed: false, optional: false, required: true
   private _vpcConnectorName?: string; 
   public get vpcConnectorName() {
@@ -176,6 +197,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
       security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_connector_name: cdktf.stringToTerraform(this._vpcConnectorName),
     };
   }

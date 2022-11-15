@@ -35,6 +35,10 @@ export interface AcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArg
   */
   readonly type?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#usage_mode AcmpcaCertificateAuthority#usage_mode}
+  */
+  readonly usageMode?: string;
+  /**
   * certificate_authority_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#certificate_authority_configuration AcmpcaCertificateAuthority#certificate_authority_configuration}
@@ -1011,7 +1015,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1028,6 +1032,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._type = config.type;
+    this._usageMode = config.usageMode;
     this._certificateAuthorityConfiguration.internalValue = config.certificateAuthorityConfiguration;
     this._revocationConfiguration.internalValue = config.revocationConfiguration;
     this._timeouts.internalValue = config.timeouts;
@@ -1173,6 +1178,22 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
     return this._type;
   }
 
+  // usage_mode - computed: true, optional: true, required: false
+  private _usageMode?: string; 
+  public get usageMode() {
+    return this.getStringAttribute('usage_mode');
+  }
+  public set usageMode(value: string) {
+    this._usageMode = value;
+  }
+  public resetUsageMode() {
+    this._usageMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageModeInput() {
+    return this._usageMode;
+  }
+
   // certificate_authority_configuration - computed: false, optional: false, required: true
   private _certificateAuthorityConfiguration = new AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference(this, "certificate_authority_configuration");
   public get certificateAuthorityConfiguration() {
@@ -1230,6 +1251,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
+      usage_mode: cdktf.stringToTerraform(this._usageMode),
       certificate_authority_configuration: acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform(this._certificateAuthorityConfiguration.internalValue),
       revocation_configuration: acmpcaCertificateAuthorityRevocationConfigurationToTerraform(this._revocationConfiguration.internalValue),
       timeouts: acmpcaCertificateAuthorityTimeoutsToTerraform(this._timeouts.internalValue),

@@ -16,10 +16,6 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly acl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#arn S3Bucket#arn}
-  */
-  readonly arn?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#bucket S3Bucket#bucket}
   */
   readonly bucket?: string;
@@ -31,10 +27,6 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#force_destroy S3Bucket#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#hosted_zone_id S3Bucket#hosted_zone_id}
-  */
-  readonly hostedZoneId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#id S3Bucket#id}
   *
@@ -3373,7 +3365,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3386,11 +3378,9 @@ export class S3Bucket extends cdktf.TerraformResource {
     });
     this._accelerationStatus = config.accelerationStatus;
     this._acl = config.acl;
-    this._arn = config.arn;
     this._bucket = config.bucket;
     this._bucketPrefix = config.bucketPrefix;
     this._forceDestroy = config.forceDestroy;
-    this._hostedZoneId = config.hostedZoneId;
     this._id = config.id;
     this._objectLockEnabled = config.objectLockEnabled;
     this._policy = config.policy;
@@ -3445,20 +3435,9 @@ export class S3Bucket extends cdktf.TerraformResource {
     return this._acl;
   }
 
-  // arn - computed: true, optional: true, required: false
-  private _arn?: string; 
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
-  }
-  public set arn(value: string) {
-    this._arn = value;
-  }
-  public resetArn() {
-    this._arn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn;
   }
 
   // bucket - computed: true, optional: true, required: false
@@ -3519,20 +3498,9 @@ export class S3Bucket extends cdktf.TerraformResource {
     return this._forceDestroy;
   }
 
-  // hosted_zone_id - computed: true, optional: true, required: false
-  private _hostedZoneId?: string; 
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
-  }
-  public set hostedZoneId(value: string) {
-    this._hostedZoneId = value;
-  }
-  public resetHostedZoneId() {
-    this._hostedZoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hostedZoneIdInput() {
-    return this._hostedZoneId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -3814,11 +3782,9 @@ export class S3Bucket extends cdktf.TerraformResource {
     return {
       acceleration_status: cdktf.stringToTerraform(this._accelerationStatus),
       acl: cdktf.stringToTerraform(this._acl),
-      arn: cdktf.stringToTerraform(this._arn),
       bucket: cdktf.stringToTerraform(this._bucket),
       bucket_prefix: cdktf.stringToTerraform(this._bucketPrefix),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
       id: cdktf.stringToTerraform(this._id),
       object_lock_enabled: cdktf.booleanToTerraform(this._objectLockEnabled),
       policy: cdktf.stringToTerraform(this._policy),

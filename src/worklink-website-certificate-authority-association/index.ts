@@ -54,7 +54,7 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.Terraf
       terraformResourceType: 'aws_worklink_website_certificate_authority_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

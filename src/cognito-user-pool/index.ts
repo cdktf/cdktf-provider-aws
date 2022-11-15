@@ -16,6 +16,10 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly autoVerifiedAttributes?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#deletion_protection CognitoUserPool#deletion_protection}
+  */
+  readonly deletionProtection?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#email_verification_message CognitoUserPool#email_verification_message}
   */
   readonly emailVerificationMessage?: string;
@@ -2564,7 +2568,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2577,6 +2581,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     });
     this._aliasAttributes = config.aliasAttributes;
     this._autoVerifiedAttributes = config.autoVerifiedAttributes;
+    this._deletionProtection = config.deletionProtection;
     this._emailVerificationMessage = config.emailVerificationMessage;
     this._emailVerificationSubject = config.emailVerificationSubject;
     this._id = config.id;
@@ -2651,6 +2656,22 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // custom_domain - computed: true, optional: false, required: false
   public get customDomain() {
     return this.getStringAttribute('custom_domain');
+  }
+
+  // deletion_protection - computed: false, optional: true, required: false
+  private _deletionProtection?: string; 
+  public get deletionProtection() {
+    return this.getStringAttribute('deletion_protection');
+  }
+  public set deletionProtection(value: string) {
+    this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection;
   }
 
   // domain - computed: true, optional: false, required: false
@@ -3046,6 +3067,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     return {
       alias_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._aliasAttributes),
       auto_verified_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._autoVerifiedAttributes),
+      deletion_protection: cdktf.stringToTerraform(this._deletionProtection),
       email_verification_message: cdktf.stringToTerraform(this._emailVerificationMessage),
       email_verification_subject: cdktf.stringToTerraform(this._emailVerificationSubject),
       id: cdktf.stringToTerraform(this._id),

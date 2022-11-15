@@ -255,7 +255,7 @@ export class DataAwsNatGateways extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_nat_gateways',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
