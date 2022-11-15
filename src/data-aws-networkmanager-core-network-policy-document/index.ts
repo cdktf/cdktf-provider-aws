@@ -565,7 +565,7 @@ export interface DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfig
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_core_network_policy_document#asn DataAwsNetworkmanagerCoreNetworkPolicyDocument#asn}
   */
-  readonly asn?: number;
+  readonly asn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_core_network_policy_document#inside_cidr_blocks DataAwsNetworkmanagerCoreNetworkPolicyDocument#inside_cidr_blocks}
   */
@@ -582,7 +582,7 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asn: cdktf.numberToTerraform(struct!.asn),
+    asn: cdktf.stringToTerraform(struct!.asn),
     inside_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insideCidrBlocks),
     location: cdktf.stringToTerraform(struct!.location),
   }
@@ -645,11 +645,11 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurat
   }
 
   // asn - computed: false, optional: true, required: false
-  private _asn?: number; 
+  private _asn?: string; 
   public get asn() {
-    return this.getNumberAttribute('asn');
+    return this.getStringAttribute('asn');
   }
-  public set asn(value: number) {
+  public set asn(value: string) {
     this._asn = value;
   }
   public resetAsn() {
@@ -1446,7 +1446,7 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
       terraformResourceType: 'aws_networkmanager_core_network_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

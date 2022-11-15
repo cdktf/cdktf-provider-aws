@@ -66,7 +66,7 @@ export class SwfDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_swf_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -143,7 +143,7 @@ export class SwfDomain extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // name_prefix - computed: false, optional: true, required: false
+  // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string; 
   public get namePrefix() {
     return this.getStringAttribute('name_prefix');

@@ -46,8 +46,8 @@
     "@actions/core": "^1.1.0",
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^14",
-    "cdktf": "^0.13.0",
-    "cdktf-cli": "^0.13.0",
+    "cdktf": "^0.14.0",
+    "cdktf-cli": "^0.14.0",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.53.0",
@@ -56,12 +56,12 @@
     "jsii-pacmak": "^1.71.0",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.65.22",
+    "projen": "^0.65.23",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdktf": "^0.13.0",
+    "cdktf": "^0.14.0",
     "constructs": "^10.0.0"
   },
   "keywords": [
@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/aws",
-      "version": "4.36.1"
+      "version": "4.39.0"
     }
   },
   "resolutions": {

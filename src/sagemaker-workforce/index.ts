@@ -36,6 +36,12 @@ export interface SagemakerWorkforceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
   */
   readonly sourceIpConfig?: SagemakerWorkforceSourceIpConfig;
+  /**
+  * workforce_vpc_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
+  */
+  readonly workforceVpcConfig?: SagemakerWorkforceWorkforceVpcConfig;
 }
 export interface SagemakerWorkforceCognitoConfig {
   /**
@@ -415,6 +421,130 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
     return this._cidrs;
   }
 }
+export interface SagemakerWorkforceWorkforceVpcConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#security_group_ids SagemakerWorkforce#security_group_ids}
+  */
+  readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#subnets SagemakerWorkforce#subnets}
+  */
+  readonly subnets?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#vpc_id SagemakerWorkforce#vpc_id}
+  */
+  readonly vpcId?: string;
+}
+
+export function sagemakerWorkforceWorkforceVpcConfigToTerraform(struct?: SagemakerWorkforceWorkforceVpcConfigOutputReference | SagemakerWorkforceWorkforceVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+export class SagemakerWorkforceWorkforceVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerWorkforceWorkforceVpcConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._securityGroupIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupIds = this._securityGroupIds;
+    }
+    if (this._subnets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnets = this._subnets;
+    }
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerWorkforceWorkforceVpcConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._securityGroupIds = undefined;
+      this._subnets = undefined;
+      this._vpcId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._securityGroupIds = value.securityGroupIds;
+      this._subnets = value.subnets;
+      this._vpcId = value.vpcId;
+    }
+  }
+
+  // security_group_ids - computed: false, optional: true, required: false
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
+  // subnets - computed: false, optional: true, required: false
+  private _subnets?: string[]; 
+  public get subnets() {
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
+  }
+  public set subnets(value: string[]) {
+    this._subnets = value;
+  }
+  public resetSubnets() {
+    this._subnets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetsInput() {
+    return this._subnets;
+  }
+
+  // vpc_endpoint_id - computed: true, optional: false, required: false
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
+  }
+
+  // vpc_id - computed: false, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce aws_sagemaker_workforce}
@@ -442,7 +572,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_workforce',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -458,6 +588,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
     this._cognitoConfig.internalValue = config.cognitoConfig;
     this._oidcConfig.internalValue = config.oidcConfig;
     this._sourceIpConfig.internalValue = config.sourceIpConfig;
+    this._workforceVpcConfig.internalValue = config.workforceVpcConfig;
   }
 
   // ==========
@@ -551,6 +682,22 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
     return this._sourceIpConfig.internalValue;
   }
 
+  // workforce_vpc_config - computed: false, optional: true, required: false
+  private _workforceVpcConfig = new SagemakerWorkforceWorkforceVpcConfigOutputReference(this, "workforce_vpc_config");
+  public get workforceVpcConfig() {
+    return this._workforceVpcConfig;
+  }
+  public putWorkforceVpcConfig(value: SagemakerWorkforceWorkforceVpcConfig) {
+    this._workforceVpcConfig.internalValue = value;
+  }
+  public resetWorkforceVpcConfig() {
+    this._workforceVpcConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workforceVpcConfigInput() {
+    return this._workforceVpcConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -562,6 +709,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
       cognito_config: sagemakerWorkforceCognitoConfigToTerraform(this._cognitoConfig.internalValue),
       oidc_config: sagemakerWorkforceOidcConfigToTerraform(this._oidcConfig.internalValue),
       source_ip_config: sagemakerWorkforceSourceIpConfigToTerraform(this._sourceIpConfig.internalValue),
+      workforce_vpc_config: sagemakerWorkforceWorkforceVpcConfigToTerraform(this._workforceVpcConfig.internalValue),
     };
   }
 }

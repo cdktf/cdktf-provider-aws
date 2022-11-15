@@ -233,7 +233,7 @@ export class DxPrivateVirtualInterface extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dx_private_virtual_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

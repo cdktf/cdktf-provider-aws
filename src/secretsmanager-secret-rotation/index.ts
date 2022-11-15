@@ -23,10 +23,6 @@ export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaA
   */
   readonly secretId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation#tags SecretsmanagerSecretRotation#tags}
-  */
-  readonly tags?: { [key: string]: string };
-  /**
   * rotation_rules block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
@@ -122,7 +118,7 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -136,7 +132,6 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
     this._id = config.id;
     this._rotationLambdaArn = config.rotationLambdaArn;
     this._secretId = config.secretId;
-    this._tags = config.tags;
     this._rotationRules.internalValue = config.rotationRules;
   }
 
@@ -191,22 +186,6 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
     return this._secretId;
   }
 
-  // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string }; 
-  public get tags() {
-    return this.getStringMapAttribute('tags');
-  }
-  public set tags(value: { [key: string]: string }) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags;
-  }
-
   // rotation_rules - computed: false, optional: false, required: true
   private _rotationRules = new SecretsmanagerSecretRotationRotationRulesOutputReference(this, "rotation_rules");
   public get rotationRules() {
@@ -229,7 +208,6 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
       secret_id: cdktf.stringToTerraform(this._secretId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       rotation_rules: secretsmanagerSecretRotationRotationRulesToTerraform(this._rotationRules.internalValue),
     };
   }

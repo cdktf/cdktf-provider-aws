@@ -540,6 +540,71 @@ export class ApprunnerServiceNetworkConfigurationEgressConfigurationOutputRefere
     return this._vpcConnectorArn;
   }
 }
+export interface ApprunnerServiceNetworkConfigurationIngressConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#is_publicly_accessible ApprunnerService#is_publicly_accessible}
+  */
+  readonly isPubliclyAccessible?: boolean | cdktf.IResolvable;
+}
+
+export function apprunnerServiceNetworkConfigurationIngressConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationIngressConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    is_publicly_accessible: cdktf.booleanToTerraform(struct!.isPubliclyAccessible),
+  }
+}
+
+export class ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ApprunnerServiceNetworkConfigurationIngressConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isPubliclyAccessible !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isPubliclyAccessible = this._isPubliclyAccessible;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApprunnerServiceNetworkConfigurationIngressConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isPubliclyAccessible = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isPubliclyAccessible = value.isPubliclyAccessible;
+    }
+  }
+
+  // is_publicly_accessible - computed: false, optional: true, required: false
+  private _isPubliclyAccessible?: boolean | cdktf.IResolvable; 
+  public get isPubliclyAccessible() {
+    return this.getBooleanAttribute('is_publicly_accessible');
+  }
+  public set isPubliclyAccessible(value: boolean | cdktf.IResolvable) {
+    this._isPubliclyAccessible = value;
+  }
+  public resetIsPubliclyAccessible() {
+    this._isPubliclyAccessible = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isPubliclyAccessibleInput() {
+    return this._isPubliclyAccessible;
+  }
+}
 export interface ApprunnerServiceNetworkConfiguration {
   /**
   * egress_configuration block
@@ -547,6 +612,12 @@ export interface ApprunnerServiceNetworkConfiguration {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#egress_configuration ApprunnerService#egress_configuration}
   */
   readonly egressConfiguration?: ApprunnerServiceNetworkConfigurationEgressConfiguration;
+  /**
+  * ingress_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#ingress_configuration ApprunnerService#ingress_configuration}
+  */
+  readonly ingressConfiguration?: ApprunnerServiceNetworkConfigurationIngressConfiguration;
 }
 
 export function apprunnerServiceNetworkConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationOutputReference | ApprunnerServiceNetworkConfiguration): any {
@@ -556,6 +627,7 @@ export function apprunnerServiceNetworkConfigurationToTerraform(struct?: Apprunn
   }
   return {
     egress_configuration: apprunnerServiceNetworkConfigurationEgressConfigurationToTerraform(struct!.egressConfiguration),
+    ingress_configuration: apprunnerServiceNetworkConfigurationIngressConfigurationToTerraform(struct!.ingressConfiguration),
   }
 }
 
@@ -577,6 +649,10 @@ export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.egressConfiguration = this._egressConfiguration?.internalValue;
     }
+    if (this._ingressConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ingressConfiguration = this._ingressConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -584,10 +660,12 @@ export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this._egressConfiguration.internalValue = undefined;
+      this._ingressConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._egressConfiguration.internalValue = value.egressConfiguration;
+      this._ingressConfiguration.internalValue = value.ingressConfiguration;
     }
   }
 
@@ -605,6 +683,22 @@ export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get egressConfigurationInput() {
     return this._egressConfiguration.internalValue;
+  }
+
+  // ingress_configuration - computed: false, optional: true, required: false
+  private _ingressConfiguration = new ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference(this, "ingress_configuration");
+  public get ingressConfiguration() {
+    return this._ingressConfiguration;
+  }
+  public putIngressConfiguration(value: ApprunnerServiceNetworkConfigurationIngressConfiguration) {
+    this._ingressConfiguration.internalValue = value;
+  }
+  public resetIngressConfiguration() {
+    this._ingressConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingressConfigurationInput() {
+    return this._ingressConfiguration.internalValue;
   }
 }
 export interface ApprunnerServiceObservabilityConfiguration {
@@ -1662,7 +1756,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

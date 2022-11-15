@@ -55,6 +55,10 @@ export interface Ec2CapacityReservationConfig extends cdktf.TerraformMetaArgumen
   */
   readonly outpostArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation#placement_group_arn Ec2CapacityReservation#placement_group_arn}
+  */
+  readonly placementGroupArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation#tags Ec2CapacityReservation#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -94,7 +98,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_capacity_reservation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -116,6 +120,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     this._instancePlatform = config.instancePlatform;
     this._instanceType = config.instanceType;
     this._outpostArn = config.outpostArn;
+    this._placementGroupArn = config.placementGroupArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._tenancy = config.tenancy;
@@ -299,6 +304,22 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_id');
   }
 
+  // placement_group_arn - computed: false, optional: true, required: false
+  private _placementGroupArn?: string; 
+  public get placementGroupArn() {
+    return this.getStringAttribute('placement_group_arn');
+  }
+  public set placementGroupArn(value: string) {
+    this._placementGroupArn = value;
+  }
+  public resetPlacementGroupArn() {
+    this._placementGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementGroupArnInput() {
+    return this._placementGroupArn;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -364,6 +385,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
       instance_platform: cdktf.stringToTerraform(this._instancePlatform),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      placement_group_arn: cdktf.stringToTerraform(this._placementGroupArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tenancy: cdktf.stringToTerraform(this._tenancy),

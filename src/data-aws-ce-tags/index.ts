@@ -2357,7 +2357,7 @@ export class DataAwsCeTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ce_tags',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

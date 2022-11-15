@@ -27,6 +27,10 @@ export interface LightsailInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#ip_address_type LightsailInstance#ip_address_type}
+  */
+  readonly ipAddressType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#key_pair_name LightsailInstance#key_pair_name}
   */
   readonly keyPairName?: string;
@@ -74,7 +78,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -89,6 +93,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
     this._blueprintId = config.blueprintId;
     this._bundleId = config.bundleId;
     this._id = config.id;
+    this._ipAddressType = config.ipAddressType;
     this._keyPairName = config.keyPairName;
     this._name = config.name;
     this._tags = config.tags;
@@ -168,6 +173,22 @@ export class LightsailInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ip_address_type - computed: false, optional: true, required: false
+  private _ipAddressType?: string; 
+  public get ipAddressType() {
+    return this.getStringAttribute('ip_address_type');
+  }
+  public set ipAddressType(value: string) {
+    this._ipAddressType = value;
+  }
+  public resetIpAddressType() {
+    this._ipAddressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressTypeInput() {
+    return this._ipAddressType;
   }
 
   // ipv6_address - computed: true, optional: false, required: false
@@ -292,6 +313,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
       blueprint_id: cdktf.stringToTerraform(this._blueprintId),
       bundle_id: cdktf.stringToTerraform(this._bundleId),
       id: cdktf.stringToTerraform(this._id),
+      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       key_pair_name: cdktf.stringToTerraform(this._keyPairName),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

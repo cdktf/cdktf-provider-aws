@@ -48,6 +48,12 @@ export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArgume
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#compute_resources BatchComputeEnvironment#compute_resources}
   */
   readonly computeResources?: BatchComputeEnvironmentComputeResources;
+  /**
+  * eks_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#eks_configuration BatchComputeEnvironment#eks_configuration}
+  */
+  readonly eksConfiguration?: BatchComputeEnvironmentEksConfiguration;
 }
 export interface BatchComputeEnvironmentComputeResourcesEc2Configuration {
   /**
@@ -300,7 +306,7 @@ export interface BatchComputeEnvironmentComputeResources {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#security_group_ids BatchComputeEnvironment#security_group_ids}
   */
-  readonly securityGroupIds: string[];
+  readonly securityGroupIds?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#spot_iam_fleet_role BatchComputeEnvironment#spot_iam_fleet_role}
   */
@@ -619,13 +625,16 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
     return this._minVcpus;
   }
 
-  // security_group_ids - computed: false, optional: false, required: true
+  // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
     return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdsInput() {
@@ -722,6 +731,92 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
     return this._launchTemplate.internalValue;
   }
 }
+export interface BatchComputeEnvironmentEksConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#eks_cluster_arn BatchComputeEnvironment#eks_cluster_arn}
+  */
+  readonly eksClusterArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#kubernetes_namespace BatchComputeEnvironment#kubernetes_namespace}
+  */
+  readonly kubernetesNamespace: string;
+}
+
+export function batchComputeEnvironmentEksConfigurationToTerraform(struct?: BatchComputeEnvironmentEksConfigurationOutputReference | BatchComputeEnvironmentEksConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    eks_cluster_arn: cdktf.stringToTerraform(struct!.eksClusterArn),
+    kubernetes_namespace: cdktf.stringToTerraform(struct!.kubernetesNamespace),
+  }
+}
+
+export class BatchComputeEnvironmentEksConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BatchComputeEnvironmentEksConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eksClusterArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eksClusterArn = this._eksClusterArn;
+    }
+    if (this._kubernetesNamespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kubernetesNamespace = this._kubernetesNamespace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BatchComputeEnvironmentEksConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._eksClusterArn = undefined;
+      this._kubernetesNamespace = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._eksClusterArn = value.eksClusterArn;
+      this._kubernetesNamespace = value.kubernetesNamespace;
+    }
+  }
+
+  // eks_cluster_arn - computed: false, optional: false, required: true
+  private _eksClusterArn?: string; 
+  public get eksClusterArn() {
+    return this.getStringAttribute('eks_cluster_arn');
+  }
+  public set eksClusterArn(value: string) {
+    this._eksClusterArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eksClusterArnInput() {
+    return this._eksClusterArn;
+  }
+
+  // kubernetes_namespace - computed: false, optional: false, required: true
+  private _kubernetesNamespace?: string; 
+  public get kubernetesNamespace() {
+    return this.getStringAttribute('kubernetes_namespace');
+  }
+  public set kubernetesNamespace(value: string) {
+    this._kubernetesNamespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubernetesNamespaceInput() {
+    return this._kubernetesNamespace;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment aws_batch_compute_environment}
@@ -749,7 +844,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_batch_compute_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -769,6 +864,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._computeResources.internalValue = config.computeResources;
+    this._eksConfiguration.internalValue = config.eksConfiguration;
   }
 
   // ==========
@@ -936,6 +1032,22 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this._computeResources.internalValue;
   }
 
+  // eks_configuration - computed: false, optional: true, required: false
+  private _eksConfiguration = new BatchComputeEnvironmentEksConfigurationOutputReference(this, "eks_configuration");
+  public get eksConfiguration() {
+    return this._eksConfiguration;
+  }
+  public putEksConfiguration(value: BatchComputeEnvironmentEksConfiguration) {
+    this._eksConfiguration.internalValue = value;
+  }
+  public resetEksConfiguration() {
+    this._eksConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eksConfigurationInput() {
+    return this._eksConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -951,6 +1063,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       compute_resources: batchComputeEnvironmentComputeResourcesToTerraform(this._computeResources.internalValue),
+      eks_configuration: batchComputeEnvironmentEksConfigurationToTerraform(this._eksConfiguration.internalValue),
     };
   }
 }

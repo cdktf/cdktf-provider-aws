@@ -21,7 +21,11 @@ export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_state_machine#name SfnStateMachine#name}
   */
-  readonly name: string;
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_state_machine#name_prefix SfnStateMachine#name_prefix}
+  */
+  readonly namePrefix?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_state_machine#role_arn SfnStateMachine#role_arn}
   */
@@ -262,7 +266,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sfn_state_machine',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -276,6 +280,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
     this._definition = config.definition;
     this._id = config.id;
     this._name = config.name;
+    this._namePrefix = config.namePrefix;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -327,7 +332,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -335,9 +340,28 @@ export class SfnStateMachine extends cdktf.TerraformResource {
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // name_prefix - computed: true, optional: true, required: false
+  private _namePrefix?: string; 
+  public get namePrefix() {
+    return this.getStringAttribute('name_prefix');
+  }
+  public set namePrefix(value: string) {
+    this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix;
   }
 
   // role_arn - computed: false, optional: false, required: true
@@ -447,6 +471,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
       definition: cdktf.stringToTerraform(this._definition),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

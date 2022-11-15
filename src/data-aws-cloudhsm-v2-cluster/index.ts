@@ -134,7 +134,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

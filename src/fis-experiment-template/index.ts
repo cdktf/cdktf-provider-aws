@@ -1229,7 +1229,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fis_experiment_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
