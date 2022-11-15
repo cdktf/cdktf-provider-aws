@@ -75,16 +75,16 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cdktf/hcl2cdk@0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.13.3.tgz#482d0165f4af9df8895f9169e76ac616382526ce"
-  integrity sha512-pGCylbXGR0V5koS14VCRgfPTJmL7glFJz8ZYmkmm2kCqRMoHrbUb9pJLpIotJd8zULEvmF/LSxCBUK8nhhgo8w==
+"@cdktf/hcl2cdk@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.14.0.tgz#8ea19af169c05eef19442fe3e54196c379bb7c37"
+  integrity sha512-6KlblyPCpv8ffETH+YQE43zljjNjDkBkXhdY3jDHa/1uww+bR+WsV2jmRkOT9dhEWWtserCHsXTPx1DyxqPf0Q==
   dependencies:
     "@babel/generator" "^7.19.0"
     "@babel/template" "^7.18.10"
     "@babel/types" "^7.19.0"
-    "@cdktf/hcl2json" "0.13.3"
-    "@cdktf/provider-generator" "0.13.3"
+    "@cdktf/hcl2json" "0.14.0"
+    "@cdktf/provider-generator" "0.14.0"
     camelcase "^6.3.0"
     glob "7.2.3"
     graphology "^0.25.0"
@@ -94,21 +94,21 @@
     reserved-words "^0.1.2"
     zod "^1.11.17"
 
-"@cdktf/hcl2json@0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.13.3.tgz#b0bb84db12beec25b4d4ff4cda75062f9ed57e27"
-  integrity sha512-h6k4hNUhzADf+l9dyAzLQVAORedOadI66Lg4NnLejyXxLdomDeVcGxNWWkctqCZFQmWxzci85XZq8fjsL9N+sQ==
+"@cdktf/hcl2json@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.14.0.tgz#6a04da51317dfbbc2dd044916fd86e168b33b609"
+  integrity sha512-iNtRTmDkw13rrgMJGjJTZByZ7K0MV80fA08dcc+Gk9huFXCFueofSOZk+LoCylb5oiPdDv0ilQDSeFqHhZEDrw==
   dependencies:
     "@types/node-fetch" "^2.6.2"
     fs-extra "^8.1.0"
     node-fetch "^2.6.7"
 
-"@cdktf/provider-generator@0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.13.3.tgz#cf80f66a05c887e60937183c4b3fd619f59a304b"
-  integrity sha512-vTtJp0KmaBYVwypaINLJzSddtfzhWAJIVLfhUU0LVUG+fkWQmN7110reqTHVVewkAW3AR4ZAOpjGd15tlIbp7Q==
+"@cdktf/provider-generator@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.14.0.tgz#d987b84becb00460d2b99cb75927b60bb71c3fe9"
+  integrity sha512-raHzuUIQOwm3B46pwOg9DeJl+reP0ZQRa7vTBdBY6pA90IX6LTJV4rO3q4ENKRcuMi3XLzyX0J65eUCiCvIlDw==
   dependencies:
-    "@cdktf/hcl2json" "0.13.3"
+    "@cdktf/hcl2json" "0.14.0"
     codemaker "^1.68.0"
     deepmerge "^4.2.2"
     fs-extra "^8.1.0"
@@ -816,16 +816,16 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktf-cli@^0.13.0:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.13.3.tgz#f162a8efa63794614c5490e7fa412ac5819080d1"
-  integrity sha512-2gq6oltc1m+0R4Hv0VUqNWQ5Paimg5JytQ6VK1jptHEkEuLxrN2ZIJpTAs79fqDvHt1gCxxFvXfCn361BBNBTw==
+cdktf-cli@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.14.0.tgz#b1e0a9fd5fc8f56254fde77d08312535f6be673c"
+  integrity sha512-qEO1RgqhlD49tFbDDBLZCajFbAkk9Sj3Ni7LpdGjPCqoPa6KQ3/lQwsk4ERXxUbr1MEQ7yrg8TkCfFYOIaK7yw==
   dependencies:
-    "@cdktf/hcl2cdk" "0.13.3"
-    "@cdktf/hcl2json" "0.13.3"
+    "@cdktf/hcl2cdk" "0.14.0"
+    "@cdktf/hcl2json" "0.14.0"
     "@sentry/node" "^6.19.7"
     "@types/yargs" "^17.0.13"
-    cdktf "0.13.3"
+    cdktf "0.14.0"
     codemaker "^1.68.0"
     constructs "^10.0.25"
     cross-spawn "^7.0.3"
@@ -840,11 +840,12 @@ cdktf-cli@^0.13.0:
     xml-js "^1.6.11"
     yargs "^17.5"
     yoga-layout-prebuilt "^1.10.0"
+    zod "^1.11.17"
 
-cdktf@0.13.3, cdktf@^0.13.0:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.13.3.tgz#ee632dc211cb40af60f7fbb6c71bcd2cd74a90d8"
-  integrity sha512-uDNW+vKtJRZY+NaM3vsQX8lIVOkjC6AxMgx2HI3zvTCb60wI1DfEHr5ET/UCzZfrY1vQXY8ZYNhP4rxeCzW6AA==
+cdktf@0.14.0, cdktf@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.14.0.tgz#579b0e2406540bec747865a8369218da92ce5237"
+  integrity sha512-WlJ0DmUXz5qsv00pVa9m892BljhB/P0PKJyC6ez7R16f4Oo+IhvaKVgstrn6X9D7djjLp4BIs8MUS0aK4FTOaQ==
   dependencies:
     archiver "5.3.1"
     json-stable-stringify "^1.0.1"
