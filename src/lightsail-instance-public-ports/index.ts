@@ -35,6 +35,10 @@ export interface LightsailInstancePublicPortsPortInfo {
   */
   readonly fromPort: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}
+  */
+  readonly ipv6Cidrs?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#protocol LightsailInstancePublicPorts#protocol}
   */
   readonly protocol: string;
@@ -52,6 +56,7 @@ export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: Lightsa
   return {
     cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
     from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6Cidrs),
     protocol: cdktf.stringToTerraform(struct!.protocol),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
@@ -85,6 +90,10 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.fromPort = this._fromPort;
     }
+    if (this._ipv6Cidrs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Cidrs = this._ipv6Cidrs;
+    }
     if (this._protocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
@@ -102,6 +111,7 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
       this.resolvableValue = undefined;
       this._cidrs = undefined;
       this._fromPort = undefined;
+      this._ipv6Cidrs = undefined;
       this._protocol = undefined;
       this._toPort = undefined;
     }
@@ -114,6 +124,7 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
       this.resolvableValue = undefined;
       this._cidrs = value.cidrs;
       this._fromPort = value.fromPort;
+      this._ipv6Cidrs = value.ipv6Cidrs;
       this._protocol = value.protocol;
       this._toPort = value.toPort;
     }
@@ -146,6 +157,22 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get fromPortInput() {
     return this._fromPort;
+  }
+
+  // ipv6_cidrs - computed: true, optional: true, required: false
+  private _ipv6Cidrs?: string[]; 
+  public get ipv6Cidrs() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_cidrs'));
+  }
+  public set ipv6Cidrs(value: string[]) {
+    this._ipv6Cidrs = value;
+  }
+  public resetIpv6Cidrs() {
+    this._ipv6Cidrs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrsInput() {
+    return this._ipv6Cidrs;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -221,7 +248,7 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_instance_public_ports',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

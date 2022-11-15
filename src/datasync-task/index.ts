@@ -291,6 +291,10 @@ export interface DatasyncTaskOptions {
   */
   readonly preserveDevices?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_task#security_descriptor_copy_flags DatasyncTask#security_descriptor_copy_flags}
+  */
+  readonly securityDescriptorCopyFlags?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_task#task_queueing DatasyncTask#task_queueing}
   */
   readonly taskQueueing?: string;
@@ -323,6 +327,7 @@ export function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptionsOutpu
     posix_permissions: cdktf.stringToTerraform(struct!.posixPermissions),
     preserve_deleted_files: cdktf.stringToTerraform(struct!.preserveDeletedFiles),
     preserve_devices: cdktf.stringToTerraform(struct!.preserveDevices),
+    security_descriptor_copy_flags: cdktf.stringToTerraform(struct!.securityDescriptorCopyFlags),
     task_queueing: cdktf.stringToTerraform(struct!.taskQueueing),
     transfer_mode: cdktf.stringToTerraform(struct!.transferMode),
     uid: cdktf.stringToTerraform(struct!.uid),
@@ -380,6 +385,10 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.preserveDevices = this._preserveDevices;
     }
+    if (this._securityDescriptorCopyFlags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityDescriptorCopyFlags = this._securityDescriptorCopyFlags;
+    }
     if (this._taskQueueing !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskQueueing = this._taskQueueing;
@@ -411,6 +420,7 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
       this._posixPermissions = undefined;
       this._preserveDeletedFiles = undefined;
       this._preserveDevices = undefined;
+      this._securityDescriptorCopyFlags = undefined;
       this._taskQueueing = undefined;
       this._transferMode = undefined;
       this._uid = undefined;
@@ -427,6 +437,7 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
       this._posixPermissions = value.posixPermissions;
       this._preserveDeletedFiles = value.preserveDeletedFiles;
       this._preserveDevices = value.preserveDevices;
+      this._securityDescriptorCopyFlags = value.securityDescriptorCopyFlags;
       this._taskQueueing = value.taskQueueing;
       this._transferMode = value.transferMode;
       this._uid = value.uid;
@@ -576,6 +587,22 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get preserveDevicesInput() {
     return this._preserveDevices;
+  }
+
+  // security_descriptor_copy_flags - computed: true, optional: true, required: false
+  private _securityDescriptorCopyFlags?: string; 
+  public get securityDescriptorCopyFlags() {
+    return this.getStringAttribute('security_descriptor_copy_flags');
+  }
+  public set securityDescriptorCopyFlags(value: string) {
+    this._securityDescriptorCopyFlags = value;
+  }
+  public resetSecurityDescriptorCopyFlags() {
+    this._securityDescriptorCopyFlags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityDescriptorCopyFlagsInput() {
+    return this._securityDescriptorCopyFlags;
   }
 
   // task_queueing - computed: false, optional: true, required: false
@@ -806,7 +833,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_task',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

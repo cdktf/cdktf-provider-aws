@@ -179,7 +179,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsState
     }
   }
 
-  // maximum_bitrate - computed: false, optional: true, required: false
+  // maximum_bitrate - computed: true, optional: true, required: false
   private _maximumBitrate?: number; 
   public get maximumBitrate() {
     return this.getNumberAttribute('maximum_bitrate');
@@ -195,7 +195,7 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsState
     return this._maximumBitrate;
   }
 
-  // minimum_bitrate - computed: false, optional: true, required: false
+  // minimum_bitrate - computed: true, optional: true, required: false
   private _minimumBitrate?: number; 
   public get minimumBitrate() {
     return this.getNumberAttribute('minimum_bitrate');
@@ -211,7 +211,126 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsState
     return this._minimumBitrate;
   }
 
-  // priority - computed: false, optional: true, required: false
+  // priority - computed: true, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+}
+export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}
+  */
+  readonly maximumBitrate?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}
+  */
+  readonly minimumBitrate?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}
+  */
+  readonly priority?: number;
+}
+
+export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference | MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    maximum_bitrate: cdktf.numberToTerraform(struct!.maximumBitrate),
+    minimum_bitrate: cdktf.numberToTerraform(struct!.minimumBitrate),
+    priority: cdktf.numberToTerraform(struct!.priority),
+  }
+}
+
+export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumBitrate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumBitrate = this._maximumBitrate;
+    }
+    if (this._minimumBitrate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimumBitrate = this._minimumBitrate;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maximumBitrate = undefined;
+      this._minimumBitrate = undefined;
+      this._priority = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maximumBitrate = value.maximumBitrate;
+      this._minimumBitrate = value.minimumBitrate;
+      this._priority = value.priority;
+    }
+  }
+
+  // maximum_bitrate - computed: true, optional: true, required: false
+  private _maximumBitrate?: number; 
+  public get maximumBitrate() {
+    return this.getNumberAttribute('maximum_bitrate');
+  }
+  public set maximumBitrate(value: number) {
+    this._maximumBitrate = value;
+  }
+  public resetMaximumBitrate() {
+    this._maximumBitrate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumBitrateInput() {
+    return this._maximumBitrate;
+  }
+
+  // minimum_bitrate - computed: true, optional: true, required: false
+  private _minimumBitrate?: number; 
+  public get minimumBitrate() {
+    return this.getNumberAttribute('minimum_bitrate');
+  }
+  public set minimumBitrate(value: number) {
+    this._minimumBitrate = value;
+  }
+  public resetMinimumBitrate() {
+    this._minimumBitrate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumBitrateInput() {
+    return this._minimumBitrate;
+  }
+
+  // priority - computed: true, optional: true, required: false
   private _priority?: number; 
   public get priority() {
     return this.getNumberAttribute('priority');
@@ -238,6 +357,12 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#statemux_settings MedialiveMultiplexProgram#statemux_settings}
   */
   readonly statemuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings;
+  /**
+  * statmux_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
+  */
+  readonly statmuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings;
 }
 
 export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsToTerraform(struct?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference | MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings): any {
@@ -248,6 +373,7 @@ export function medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsTo
   return {
     constant_bitrate: cdktf.numberToTerraform(struct!.constantBitrate),
     statemux_settings: medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsToTerraform(struct!.statemuxSettings),
+    statmux_settings: medialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsToTerraform(struct!.statmuxSettings),
   }
 }
 
@@ -273,6 +399,10 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
       hasAnyValues = true;
       internalValueResult.statemuxSettings = this._statemuxSettings?.internalValue;
     }
+    if (this._statmuxSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statmuxSettings = this._statmuxSettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -281,15 +411,17 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
       this.isEmptyObject = false;
       this._constantBitrate = undefined;
       this._statemuxSettings.internalValue = undefined;
+      this._statmuxSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._constantBitrate = value.constantBitrate;
       this._statemuxSettings.internalValue = value.statemuxSettings;
+      this._statmuxSettings.internalValue = value.statmuxSettings;
     }
   }
 
-  // constant_bitrate - computed: false, optional: true, required: false
+  // constant_bitrate - computed: true, optional: true, required: false
   private _constantBitrate?: number; 
   public get constantBitrate() {
     return this.getNumberAttribute('constant_bitrate');
@@ -319,6 +451,22 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutpu
   // Temporarily expose input value. Use with caution.
   public get statemuxSettingsInput() {
     return this._statemuxSettings.internalValue;
+  }
+
+  // statmux_settings - computed: false, optional: true, required: false
+  private _statmuxSettings = new MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference(this, "statmux_settings");
+  public get statmuxSettings() {
+    return this._statmuxSettings;
+  }
+  public putStatmuxSettings(value: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings) {
+    this._statmuxSettings.internalValue = value;
+  }
+  public resetStatmuxSettings() {
+    this._statmuxSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statmuxSettingsInput() {
+    return this._statmuxSettings.internalValue;
   }
 }
 export interface MedialiveMultiplexProgramMultiplexProgramSettings {
@@ -492,7 +640,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_multiplex_program',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

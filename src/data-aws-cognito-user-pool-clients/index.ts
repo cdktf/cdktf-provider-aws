@@ -46,7 +46,7 @@ export class DataAwsCognitoUserPoolClients extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cognito_user_pool_clients',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -46,7 +46,7 @@ export class DetectiveInvitationAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_detective_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

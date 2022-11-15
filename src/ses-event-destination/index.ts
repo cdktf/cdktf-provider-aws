@@ -366,7 +366,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_event_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

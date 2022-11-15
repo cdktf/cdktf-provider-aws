@@ -1,4 +1,7 @@
 import * as cdktf from 'cdktf';
+import { Wafv2RuleGroupRuleStatementAndStatementStatement,
+wafv2RuleGroupRuleStatementAndStatementStatementToTerraform,
+Wafv2RuleGroupRuleStatementAndStatementStatementList } from './structs400'
 export interface Wafv2RuleGroupCustomResponseBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#content Wafv2RuleGroup#content}
@@ -1161,10 +1164,10 @@ export class Wafv2RuleGroupRuleRuleLabelList extends cdktf.ComplexList {
     return new Wafv2RuleGroupRuleRuleLabelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1173,7 +1176,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1184,13 +1187,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1199,10 +1202,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1211,7 +1214,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1222,13 +1225,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1237,10 +1240,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1249,7 +1252,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1260,13 +1263,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1275,7 +1278,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -1289,10 +1292,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1300,11 +1303,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -1318,7 +1321,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1339,7 +1342,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1393,11 +1396,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -1409,8 +1412,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1424,11 +1427,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -1442,10 +1445,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1453,11 +1456,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1468,7 +1471,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -1486,7 +1489,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -1528,11 +1531,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1540,10 +1543,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1552,7 +1555,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1563,13 +1566,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1578,7 +1581,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -1592,10 +1595,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1603,11 +1606,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1618,7 +1621,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -1636,7 +1639,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -1684,11 +1687,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -1699,7 +1702,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -1713,10 +1716,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1724,11 +1727,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -1742,7 +1745,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1763,7 +1766,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1811,11 +1814,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1824,8 +1827,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1839,14 +1842,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1855,7 +1858,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1866,13 +1869,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1881,7 +1884,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -1891,21 +1894,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1916,7 +1919,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -1930,7 +1933,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -1960,11 +1963,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -1975,7 +1978,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -1993,10 +1996,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2005,11 +2008,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2020,7 +2023,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -2042,7 +2045,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -2105,11 +2108,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2117,10 +2120,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2129,7 +2132,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2140,13 +2143,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -2155,10 +2158,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2167,7 +2170,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2178,13 +2181,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -2193,14 +2196,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2210,7 +2213,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2221,7 +2224,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -2231,7 +2234,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -2255,14 +2258,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2272,7 +2275,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2283,7 +2286,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -2293,7 +2296,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -2317,10 +2320,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2329,7 +2332,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2340,13 +2343,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -2355,89 +2358,89 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch {
   /**
   * all_query_arguments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all_query_arguments Wafv2RuleGroup#all_query_arguments}
   */
-  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments;
+  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
   */
-  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody;
+  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
   */
-  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies;
+  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
   */
-  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
+  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
   */
-  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody;
+  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}
   */
-  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod;
+  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#query_string Wafv2RuleGroup#query_string}
   */
-  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString;
+  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_header Wafv2RuleGroup#single_header}
   */
-  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader;
+  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_query_argument Wafv2RuleGroup#single_query_argument}
   */
-  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument;
+  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#uri_path Wafv2RuleGroup#uri_path}
   */
-  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath;
+  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
-    body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyToTerraform(struct!.body),
-    cookies: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
-    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
-    json_body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
-    method: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodToTerraform(struct!.method),
-    query_string: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
-    single_header: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
-    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
-    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
+    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
+    body: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyToTerraform(struct!.body),
+    cookies: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
+    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
+    json_body: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
+    method: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodToTerraform(struct!.method),
+    query_string: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
+    single_header: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
+    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
+    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2448,7 +2451,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allQueryArguments?.internalValue !== undefined) {
@@ -2494,7 +2497,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
@@ -2524,11 +2527,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all_query_arguments - computed: false, optional: true, required: false
-  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
   public get allQueryArguments() {
     return this._allQueryArguments;
   }
-  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments) {
+  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments) {
     this._allQueryArguments.internalValue = value;
   }
   public resetAllQueryArguments() {
@@ -2540,11 +2543,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // body - computed: false, optional: true, required: false
-  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference(this, "body");
+  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference(this, "body");
   public get body() {
     return this._body;
   }
-  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody) {
+  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -2556,11 +2559,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
+  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
-  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchCookies) {
+  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies) {
     this._cookies.internalValue = value;
   }
   public resetCookies() {
@@ -2572,11 +2575,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersList(this, "headers", false);
+  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersList(this, "headers", false);
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -2588,11 +2591,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // json_body - computed: false, optional: true, required: false
-  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
+  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
   public get jsonBody() {
     return this._jsonBody;
   }
-  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody) {
+  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody) {
     this._jsonBody.internalValue = value;
   }
   public resetJsonBody() {
@@ -2604,11 +2607,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // method - computed: false, optional: true, required: false
-  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference(this, "method");
+  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference(this, "method");
   public get method() {
     return this._method;
   }
-  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod) {
+  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod) {
     this._method.internalValue = value;
   }
   public resetMethod() {
@@ -2620,11 +2623,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
+  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString) {
+  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -2636,11 +2639,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_header - computed: false, optional: true, required: false
-  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
+  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
   public get singleHeader() {
     return this._singleHeader;
   }
-  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader) {
+  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader) {
     this._singleHeader.internalValue = value;
   }
   public resetSingleHeader() {
@@ -2652,11 +2655,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_query_argument - computed: false, optional: true, required: false
-  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
+  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
   public get singleQueryArgument() {
     return this._singleQueryArgument;
   }
-  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument) {
+  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument) {
     this._singleQueryArgument.internalValue = value;
   }
   public resetSingleQueryArgument() {
@@ -2668,11 +2671,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // uri_path - computed: false, optional: true, required: false
-  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
+  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
   public get uriPath() {
     return this._uriPath;
   }
-  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath) {
+  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath) {
     this._uriPath.internalValue = value;
   }
   public resetUriPath() {
@@ -2683,7 +2686,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._uriPath.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#priority Wafv2RuleGroup#priority}
   */
@@ -2694,7 +2697,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly type: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2705,7 +2708,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -2719,7 +2722,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2736,7 +2739,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2782,8 +2785,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2797,11 +2800,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#positional_constraint Wafv2RuleGroup#positional_constraint}
   */
@@ -2815,16 +2818,16 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#field_to_match Wafv2RuleGroup#field_to_match}
   */
-  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch;
+  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
   */
-  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable;
+  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2832,12 +2835,12 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     positional_constraint: cdktf.stringToTerraform(struct!.positionalConstraint),
     search_string: cdktf.stringToTerraform(struct!.searchString),
-    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
-    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2848,7 +2851,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint !== undefined) {
@@ -2870,7 +2873,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._positionalConstraint = undefined;
@@ -2914,11 +2917,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // field_to_match - computed: false, optional: true, required: false
-  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference(this, "field_to_match");
+  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference(this, "field_to_match");
   public get fieldToMatch() {
     return this._fieldToMatch;
   }
-  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementFieldToMatch) {
+  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch) {
     this._fieldToMatch.internalValue = value;
   }
   public resetFieldToMatch() {
@@ -2930,11 +2933,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // text_transformation - computed: false, optional: false, required: true
-  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformationList(this, "text_transformation", true);
+  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationList(this, "text_transformation", true);
   public get textTransformation() {
     return this._textTransformation;
   }
-  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable) {
+  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable) {
     this._textTransformation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2942,7 +2945,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._textTransformation.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#fallback_behavior Wafv2RuleGroup#fallback_behavior}
   */
@@ -2953,7 +2956,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly headerName: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2964,7 +2967,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2975,7 +2978,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior !== undefined) {
@@ -2989,7 +2992,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
@@ -3028,7 +3031,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._headerName;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#country_codes Wafv2RuleGroup#country_codes}
   */
@@ -3038,21 +3041,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#forwarded_ip_config Wafv2RuleGroup#forwarded_ip_config}
   */
-  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig;
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countryCodes),
-    forwarded_ip_config: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct!.forwardedIpConfig),
+    forwarded_ip_config: wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct!.forwardedIpConfig),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3063,7 +3066,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes !== undefined) {
@@ -3077,7 +3080,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._countryCodes = undefined;
@@ -3104,11 +3107,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // forwarded_ip_config - computed: false, optional: true, required: false
-  private _forwardedIpConfig = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference(this, "forwarded_ip_config");
+  private _forwardedIpConfig = new Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference(this, "forwarded_ip_config");
   public get forwardedIpConfig() {
     return this._forwardedIpConfig;
   }
-  public putForwardedIpConfig(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig) {
+  public putForwardedIpConfig(value: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig) {
     this._forwardedIpConfig.internalValue = value;
   }
   public resetForwardedIpConfig() {
@@ -3119,7 +3122,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._forwardedIpConfig.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#fallback_behavior Wafv2RuleGroup#fallback_behavior}
   */
@@ -3134,7 +3137,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly position: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3146,7 +3149,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3157,7 +3160,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior !== undefined) {
@@ -3175,7 +3178,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
@@ -3229,7 +3232,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._position;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#arn Wafv2RuleGroup#arn}
   */
@@ -3239,21 +3242,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#ip_set_forwarded_ip_config Wafv2RuleGroup#ip_set_forwarded_ip_config}
   */
-  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig;
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
-    ip_set_forwarded_ip_config: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct!.ipSetForwardedIpConfig),
+    ip_set_forwarded_ip_config: wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct!.ipSetForwardedIpConfig),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3264,7 +3267,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn !== undefined) {
@@ -3278,7 +3281,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._arn = undefined;
@@ -3305,11 +3308,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // ip_set_forwarded_ip_config - computed: false, optional: true, required: false
-  private _ipSetForwardedIpConfig = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference(this, "ip_set_forwarded_ip_config");
+  private _ipSetForwardedIpConfig = new Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference(this, "ip_set_forwarded_ip_config");
   public get ipSetForwardedIpConfig() {
     return this._ipSetForwardedIpConfig;
   }
-  public putIpSetForwardedIpConfig(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig) {
+  public putIpSetForwardedIpConfig(value: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig) {
     this._ipSetForwardedIpConfig.internalValue = value;
   }
   public resetIpSetForwardedIpConfig() {
@@ -3320,7 +3323,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._ipSetForwardedIpConfig.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#key Wafv2RuleGroup#key}
   */
@@ -3331,7 +3334,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly scope: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3342,7 +3345,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3353,7 +3356,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key !== undefined) {
@@ -3367,7 +3370,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementLabelMatchStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._key = undefined;
@@ -3406,19 +3409,26 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._scope;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementNotStatement {
+  /**
+  * statement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+  */
+  readonly statement: Wafv2RuleGroupRuleStatementAndStatementStatement[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementNotStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    statement: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementToTerraform, true)(struct!.statement),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3429,34 +3439,60 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementNotStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._statement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statement = this._statement?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._statement.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._statement.internalValue = value.statement;
     }
   }
+
+  // statement - computed: false, optional: false, required: true
+  private _statement = new Wafv2RuleGroupRuleStatementAndStatementStatementList(this, "statement", false);
+  public get statement() {
+    return this._statement;
+  }
+  public putStatement(value: Wafv2RuleGroupRuleStatementAndStatementStatement[] | cdktf.IResolvable) {
+    this._statement.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementInput() {
+    return this._statement.internalValue;
+  }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementOrStatement {
+  /**
+  * statement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+  */
+  readonly statement: Wafv2RuleGroupRuleStatementAndStatementStatement[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementOrStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    statement: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementToTerraform, true)(struct!.statement),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3467,25 +3503,44 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementOrStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._statement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statement = this._statement?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._statement.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._statement.internalValue = value.statement;
     }
   }
+
+  // statement - computed: false, optional: false, required: true
+  private _statement = new Wafv2RuleGroupRuleStatementAndStatementStatementList(this, "statement", false);
+  public get statement() {
+    return this._statement;
+  }
+  public putStatement(value: Wafv2RuleGroupRuleStatementAndStatementStatement[] | cdktf.IResolvable) {
+    this._statement.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementInput() {
+    return this._statement.internalValue;
+  }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3494,7 +3549,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3505,13 +3560,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -3520,7 +3575,83 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody {
+}
+
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
+}
+
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -3534,10 +3665,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3545,11 +3676,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -3563,7 +3694,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3584,7 +3715,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3638,11 +3769,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -3654,8 +3785,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3669,11 +3800,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -3687,10 +3818,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3698,11 +3829,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3713,7 +3844,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -3731,7 +3862,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -3773,11 +3904,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3785,10 +3916,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3797,7 +3928,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3808,13 +3939,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -3823,7 +3954,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -3837,10 +3968,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3848,11 +3979,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3863,7 +3994,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -3881,7 +4012,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -3929,11 +4060,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -3944,7 +4075,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -3958,10 +4089,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3969,11 +4100,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -3987,7 +4118,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4008,7 +4139,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4056,11 +4187,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4069,8 +4200,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -4084,14 +4215,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4100,7 +4231,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4111,13 +4242,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -4126,7 +4257,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -4136,21 +4267,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4161,7 +4292,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -4175,7 +4306,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -4205,11 +4336,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -4220,7 +4351,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -4238,10 +4369,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4250,11 +4381,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4265,7 +4396,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -4287,7 +4418,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -4350,11 +4481,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4362,10 +4493,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4374,7 +4505,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4385,13 +4516,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -4400,10 +4531,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4412,7 +4543,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4423,13 +4554,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -4438,14 +4569,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4455,7 +4586,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4466,7 +4597,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -4476,7 +4607,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -4500,14 +4631,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4517,7 +4648,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4528,7 +4659,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -4538,7 +4669,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -4562,10 +4693,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4574,7 +4705,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4585,13 +4716,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -4600,89 +4731,89 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch {
   /**
   * all_query_arguments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all_query_arguments Wafv2RuleGroup#all_query_arguments}
   */
-  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments;
+  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
   */
-  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody;
+  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
   */
-  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies;
+  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
   */
-  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
+  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
   */
-  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody;
+  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}
   */
-  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod;
+  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#query_string Wafv2RuleGroup#query_string}
   */
-  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString;
+  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_header Wafv2RuleGroup#single_header}
   */
-  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader;
+  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_query_argument Wafv2RuleGroup#single_query_argument}
   */
-  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument;
+  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#uri_path Wafv2RuleGroup#uri_path}
   */
-  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath;
+  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
-    body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyToTerraform(struct!.body),
-    cookies: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
-    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
-    json_body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
-    method: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodToTerraform(struct!.method),
-    query_string: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
-    single_header: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
-    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
-    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
+    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
+    body: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyToTerraform(struct!.body),
+    cookies: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
+    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
+    json_body: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
+    method: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodToTerraform(struct!.method),
+    query_string: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
+    single_header: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
+    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
+    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4693,7 +4824,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allQueryArguments?.internalValue !== undefined) {
@@ -4739,7 +4870,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
@@ -4769,11 +4900,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all_query_arguments - computed: false, optional: true, required: false
-  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
   public get allQueryArguments() {
     return this._allQueryArguments;
   }
-  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments) {
+  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments) {
     this._allQueryArguments.internalValue = value;
   }
   public resetAllQueryArguments() {
@@ -4785,11 +4916,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // body - computed: false, optional: true, required: false
-  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference(this, "body");
+  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference(this, "body");
   public get body() {
     return this._body;
   }
-  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchBody) {
+  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -4801,11 +4932,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
+  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
-  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies) {
+  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookies) {
     this._cookies.internalValue = value;
   }
   public resetCookies() {
@@ -4817,11 +4948,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersList(this, "headers", false);
+  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeadersList(this, "headers", false);
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -4833,11 +4964,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // json_body - computed: false, optional: true, required: false
-  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
+  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
   public get jsonBody() {
     return this._jsonBody;
   }
-  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody) {
+  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody) {
     this._jsonBody.internalValue = value;
   }
   public resetJsonBody() {
@@ -4849,11 +4980,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // method - computed: false, optional: true, required: false
-  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference(this, "method");
+  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethodOutputReference(this, "method");
   public get method() {
     return this._method;
   }
-  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod) {
+  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchMethod) {
     this._method.internalValue = value;
   }
   public resetMethod() {
@@ -4865,11 +4996,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
+  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString) {
+  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchQueryString) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -4881,11 +5012,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_header - computed: false, optional: true, required: false
-  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
+  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
   public get singleHeader() {
     return this._singleHeader;
   }
-  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader) {
+  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleHeader) {
     this._singleHeader.internalValue = value;
   }
   public resetSingleHeader() {
@@ -4897,11 +5028,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_query_argument - computed: false, optional: true, required: false
-  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
+  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
   public get singleQueryArgument() {
     return this._singleQueryArgument;
   }
-  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument) {
+  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument) {
     this._singleQueryArgument.internalValue = value;
   }
   public resetSingleQueryArgument() {
@@ -4913,11 +5044,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // uri_path - computed: false, optional: true, required: false
-  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
+  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
   public get uriPath() {
     return this._uriPath;
   }
-  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath) {
+  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchUriPath) {
     this._uriPath.internalValue = value;
   }
   public resetUriPath() {
@@ -4928,7 +5059,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._uriPath.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#priority Wafv2RuleGroup#priority}
   */
@@ -4939,7 +5070,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly type: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4950,7 +5081,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -4964,7 +5095,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4981,7 +5112,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5027,8 +5158,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -5042,11 +5173,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#regex_string Wafv2RuleGroup#regex_string}
   */
@@ -5056,28 +5187,28 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#field_to_match Wafv2RuleGroup#field_to_match}
   */
-  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch;
+  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
   */
-  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable;
+  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     regex_string: cdktf.stringToTerraform(struct!.regexString),
-    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
-    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5088,7 +5219,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._regexString !== undefined) {
@@ -5106,7 +5237,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._regexString = undefined;
@@ -5135,11 +5266,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // field_to_match - computed: false, optional: true, required: false
-  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference(this, "field_to_match");
+  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference(this, "field_to_match");
   public get fieldToMatch() {
     return this._fieldToMatch;
   }
-  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementFieldToMatch) {
+  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatch) {
     this._fieldToMatch.internalValue = value;
   }
   public resetFieldToMatch() {
@@ -5151,11 +5282,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // text_transformation - computed: false, optional: false, required: true
-  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformationList(this, "text_transformation", true);
+  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformationList(this, "text_transformation", true);
   public get textTransformation() {
     return this._textTransformation;
   }
-  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable) {
+  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable) {
     this._textTransformation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5163,10 +5294,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._textTransformation.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5175,7 +5306,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5186,13 +5317,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -5201,10 +5332,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5213,7 +5344,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5224,13 +5355,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -5239,10 +5370,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5251,7 +5382,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5262,13 +5393,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -5277,7 +5408,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -5291,10 +5422,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5302,11 +5433,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -5320,7 +5451,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5341,7 +5472,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5395,11 +5526,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -5411,8 +5542,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -5426,11 +5557,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -5444,10 +5575,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5455,11 +5586,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5470,7 +5601,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -5488,7 +5619,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -5530,11 +5661,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5542,10 +5673,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5554,7 +5685,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5565,13 +5696,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -5580,7 +5711,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -5594,10 +5725,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5605,11 +5736,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5620,7 +5751,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -5638,7 +5769,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -5686,11 +5817,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -5701,7 +5832,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -5715,10 +5846,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5726,11 +5857,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -5744,7 +5875,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5765,7 +5896,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5813,11 +5944,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5826,8 +5957,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -5841,14 +5972,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5857,7 +5988,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5868,13 +5999,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -5883,7 +6014,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -5893,21 +6024,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5918,7 +6049,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -5932,7 +6063,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -5962,11 +6093,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -5977,7 +6108,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -5995,10 +6126,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6007,11 +6138,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6022,7 +6153,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -6044,7 +6175,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -6107,11 +6238,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6119,10 +6250,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6131,7 +6262,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6142,13 +6273,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -6157,10 +6288,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6169,7 +6300,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6180,13 +6311,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -6195,14 +6326,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6212,7 +6343,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6223,7 +6354,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -6233,7 +6364,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -6257,14 +6388,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6274,7 +6405,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6285,7 +6416,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -6295,7 +6426,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -6319,10 +6450,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6331,7 +6462,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6342,13 +6473,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -6357,89 +6488,89 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch {
   /**
   * all_query_arguments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all_query_arguments Wafv2RuleGroup#all_query_arguments}
   */
-  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments;
+  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
   */
-  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody;
+  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody;
   /**
   * cookies block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
   */
-  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies;
+  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies;
   /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
   */
-  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable;
+  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
   */
-  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody;
+  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}
   */
-  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod;
+  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#query_string Wafv2RuleGroup#query_string}
   */
-  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString;
+  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_header Wafv2RuleGroup#single_header}
   */
-  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader;
+  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_query_argument Wafv2RuleGroup#single_query_argument}
   */
-  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument;
+  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#uri_path Wafv2RuleGroup#uri_path}
   */
-  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath;
+  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
-    body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform(struct!.body),
-    cookies: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToTerraform(struct!.cookies),
-    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
-    json_body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
-    method: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodToTerraform(struct!.method),
-    query_string: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
-    single_header: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
-    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
-    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
+    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
+    body: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform(struct!.body),
+    cookies: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesToTerraform(struct!.cookies),
+    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
+    json_body: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
+    method: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodToTerraform(struct!.method),
+    query_string: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
+    single_header: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
+    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
+    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6450,7 +6581,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allQueryArguments?.internalValue !== undefined) {
@@ -6496,7 +6627,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
@@ -6526,11 +6657,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all_query_arguments - computed: false, optional: true, required: false
-  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
   public get allQueryArguments() {
     return this._allQueryArguments;
   }
-  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments) {
+  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments) {
     this._allQueryArguments.internalValue = value;
   }
   public resetAllQueryArguments() {
@@ -6542,11 +6673,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // body - computed: false, optional: true, required: false
-  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference(this, "body");
+  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference(this, "body");
   public get body() {
     return this._body;
   }
-  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody) {
+  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -6558,11 +6689,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference(this, "cookies");
+  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
-  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies) {
+  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies) {
     this._cookies.internalValue = value;
   }
   public resetCookies() {
@@ -6574,11 +6705,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList(this, "headers", false);
+  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList(this, "headers", false);
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -6590,11 +6721,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // json_body - computed: false, optional: true, required: false
-  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
+  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
   public get jsonBody() {
     return this._jsonBody;
   }
-  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody) {
+  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody) {
     this._jsonBody.internalValue = value;
   }
   public resetJsonBody() {
@@ -6606,11 +6737,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // method - computed: false, optional: true, required: false
-  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference(this, "method");
+  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference(this, "method");
   public get method() {
     return this._method;
   }
-  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod) {
+  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod) {
     this._method.internalValue = value;
   }
   public resetMethod() {
@@ -6622,11 +6753,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference(this, "query_string");
+  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference(this, "query_string");
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString) {
+  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -6638,11 +6769,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_header - computed: false, optional: true, required: false
-  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
+  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
   public get singleHeader() {
     return this._singleHeader;
   }
-  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader) {
+  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader) {
     this._singleHeader.internalValue = value;
   }
   public resetSingleHeader() {
@@ -6654,11 +6785,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_query_argument - computed: false, optional: true, required: false
-  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
+  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
   public get singleQueryArgument() {
     return this._singleQueryArgument;
   }
-  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument) {
+  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument) {
     this._singleQueryArgument.internalValue = value;
   }
   public resetSingleQueryArgument() {
@@ -6670,11 +6801,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // uri_path - computed: false, optional: true, required: false
-  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference(this, "uri_path");
+  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference(this, "uri_path");
   public get uriPath() {
     return this._uriPath;
   }
-  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath) {
+  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath) {
     this._uriPath.internalValue = value;
   }
   public resetUriPath() {
@@ -6685,7 +6816,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._uriPath.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#priority Wafv2RuleGroup#priority}
   */
@@ -6696,7 +6827,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly type: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6707,7 +6838,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -6721,7 +6852,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6738,7 +6869,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6784,8 +6915,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -6799,11 +6930,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#arn Wafv2RuleGroup#arn}
   */
@@ -6813,28 +6944,28 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#field_to_match Wafv2RuleGroup#field_to_match}
   */
-  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch;
+  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch;
   /**
   * text_transformation block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
   */
-  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable;
+  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
-    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchToTerraform(struct!.fieldToMatch),
-    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6845,7 +6976,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn !== undefined) {
@@ -6863,7 +6994,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._arn = undefined;
@@ -6892,11 +7023,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // field_to_match - computed: false, optional: true, required: false
-  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference(this, "field_to_match");
+  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference(this, "field_to_match");
   public get fieldToMatch() {
     return this._fieldToMatch;
   }
-  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch) {
+  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch) {
     this._fieldToMatch.internalValue = value;
   }
   public resetFieldToMatch() {
@@ -6908,11 +7039,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // text_transformation - computed: false, optional: false, required: true
-  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationList(this, "text_transformation", true);
+  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformationList(this, "text_transformation", true);
   public get textTransformation() {
     return this._textTransformation;
   }
-  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable) {
+  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable) {
     this._textTransformation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6920,10 +7051,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._textTransformation.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6932,7 +7063,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6943,13 +7074,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -6958,10 +7089,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6970,7 +7101,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6981,13 +7112,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -6996,10 +7127,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7008,7 +7139,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7019,13 +7150,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -7034,7 +7165,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -7048,10 +7179,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7059,11 +7190,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -7077,7 +7208,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7098,7 +7229,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7152,11 +7283,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -7168,8 +7299,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -7183,11 +7314,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -7201,10 +7332,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7212,11 +7343,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7227,7 +7358,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -7245,7 +7376,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -7287,11 +7418,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7299,10 +7430,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7311,7 +7442,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7322,13 +7453,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -7337,7 +7468,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -7351,10 +7482,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7362,11 +7493,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7377,7 +7508,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -7395,7 +7526,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -7443,11 +7574,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -7458,7 +7589,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -7472,10 +7603,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7483,11 +7614,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -7501,7 +7632,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7522,7 +7653,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7570,11 +7701,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7583,8 +7714,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -7598,14 +7729,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7614,7 +7745,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7625,13 +7756,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -7640,7 +7771,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -7650,21 +7781,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7675,7 +7806,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -7689,7 +7820,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -7719,11 +7850,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -7734,7 +7865,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -7752,10 +7883,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7764,11 +7895,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7779,7 +7910,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -7801,7 +7932,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -7864,11 +7995,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7876,10 +8007,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7888,7 +8019,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7899,13 +8030,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -7914,10 +8045,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7926,7 +8057,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7937,13 +8068,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -7952,14 +8083,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7969,7 +8100,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -7980,7 +8111,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -7990,7 +8121,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -8014,14 +8145,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8031,7 +8162,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8042,7 +8173,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -8052,7 +8183,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -8076,10 +8207,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8088,7 +8219,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8099,13 +8230,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -8114,89 +8245,89 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch {
   /**
   * all_query_arguments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all_query_arguments Wafv2RuleGroup#all_query_arguments}
   */
-  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments;
+  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
   */
-  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody;
+  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody;
   /**
   * cookies block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
   */
-  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies;
+  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies;
   /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
   */
-  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable;
+  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
   */
-  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody;
+  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}
   */
-  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod;
+  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#query_string Wafv2RuleGroup#query_string}
   */
-  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString;
+  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_header Wafv2RuleGroup#single_header}
   */
-  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader;
+  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_query_argument Wafv2RuleGroup#single_query_argument}
   */
-  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument;
+  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#uri_path Wafv2RuleGroup#uri_path}
   */
-  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath;
+  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
-    body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyToTerraform(struct!.body),
-    cookies: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesToTerraform(struct!.cookies),
-    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
-    json_body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
-    method: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodToTerraform(struct!.method),
-    query_string: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
-    single_header: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
-    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
-    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
+    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
+    body: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyToTerraform(struct!.body),
+    cookies: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesToTerraform(struct!.cookies),
+    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
+    json_body: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
+    method: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodToTerraform(struct!.method),
+    query_string: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
+    single_header: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
+    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
+    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8207,7 +8338,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allQueryArguments?.internalValue !== undefined) {
@@ -8253,7 +8384,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
@@ -8283,11 +8414,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all_query_arguments - computed: false, optional: true, required: false
-  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
   public get allQueryArguments() {
     return this._allQueryArguments;
   }
-  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments) {
+  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments) {
     this._allQueryArguments.internalValue = value;
   }
   public resetAllQueryArguments() {
@@ -8299,11 +8430,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // body - computed: false, optional: true, required: false
-  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference(this, "body");
+  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference(this, "body");
   public get body() {
     return this._body;
   }
-  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody) {
+  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -8315,11 +8446,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference(this, "cookies");
+  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
-  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies) {
+  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookies) {
     this._cookies.internalValue = value;
   }
   public resetCookies() {
@@ -8331,11 +8462,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList(this, "headers", false);
+  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList(this, "headers", false);
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -8347,11 +8478,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // json_body - computed: false, optional: true, required: false
-  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
+  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
   public get jsonBody() {
     return this._jsonBody;
   }
-  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody) {
+  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchJsonBody) {
     this._jsonBody.internalValue = value;
   }
   public resetJsonBody() {
@@ -8363,11 +8494,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // method - computed: false, optional: true, required: false
-  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference(this, "method");
+  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference(this, "method");
   public get method() {
     return this._method;
   }
-  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod) {
+  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod) {
     this._method.internalValue = value;
   }
   public resetMethod() {
@@ -8379,11 +8510,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference(this, "query_string");
+  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference(this, "query_string");
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString) {
+  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -8395,11 +8526,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_header - computed: false, optional: true, required: false
-  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
+  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
   public get singleHeader() {
     return this._singleHeader;
   }
-  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader) {
+  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader) {
     this._singleHeader.internalValue = value;
   }
   public resetSingleHeader() {
@@ -8411,11 +8542,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_query_argument - computed: false, optional: true, required: false
-  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
+  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
   public get singleQueryArgument() {
     return this._singleQueryArgument;
   }
-  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument) {
+  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument) {
     this._singleQueryArgument.internalValue = value;
   }
   public resetSingleQueryArgument() {
@@ -8427,11 +8558,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // uri_path - computed: false, optional: true, required: false
-  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference(this, "uri_path");
+  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference(this, "uri_path");
   public get uriPath() {
     return this._uriPath;
   }
-  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath) {
+  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath) {
     this._uriPath.internalValue = value;
   }
   public resetUriPath() {
@@ -8442,7 +8573,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._uriPath.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#priority Wafv2RuleGroup#priority}
   */
@@ -8453,7 +8584,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly type: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8464,7 +8595,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -8478,7 +8609,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8495,7 +8626,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8541,8 +8672,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -8556,11 +8687,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#comparison_operator Wafv2RuleGroup#comparison_operator}
   */
@@ -8574,16 +8705,16 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#field_to_match Wafv2RuleGroup#field_to_match}
   */
-  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch;
+  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch;
   /**
   * text_transformation block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
   */
-  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable;
+  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8591,12 +8722,12 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
     size: cdktf.numberToTerraform(struct!.size),
-    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchToTerraform(struct!.fieldToMatch),
-    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8607,7 +8738,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator !== undefined) {
@@ -8629,7 +8760,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._comparisonOperator = undefined;
@@ -8673,11 +8804,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // field_to_match - computed: false, optional: true, required: false
-  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference(this, "field_to_match");
+  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference(this, "field_to_match");
   public get fieldToMatch() {
     return this._fieldToMatch;
   }
-  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch) {
+  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch) {
     this._fieldToMatch.internalValue = value;
   }
   public resetFieldToMatch() {
@@ -8689,11 +8820,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // text_transformation - computed: false, optional: false, required: true
-  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformationList(this, "text_transformation", true);
+  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationList(this, "text_transformation", true);
   public get textTransformation() {
     return this._textTransformation;
   }
-  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable) {
+  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable) {
     this._textTransformation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8701,10 +8832,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._textTransformation.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8713,7 +8844,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8724,13 +8855,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -8739,10 +8870,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8751,7 +8882,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8762,13 +8893,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -8777,10 +8908,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8789,7 +8920,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -8800,13 +8931,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -8815,7 +8946,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -8829,10 +8960,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8840,11 +8971,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -8858,7 +8989,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8879,7 +9010,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8933,11 +9064,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -8949,8 +9080,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -8964,11 +9095,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -8982,10 +9113,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8993,11 +9124,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9008,7 +9139,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -9026,7 +9157,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -9068,11 +9199,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9080,10 +9211,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9092,7 +9223,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9103,13 +9234,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -9118,7 +9249,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -9132,10 +9263,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9143,11 +9274,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9158,7 +9289,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -9176,7 +9307,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -9224,11 +9355,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -9239,7 +9370,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -9253,10 +9384,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9264,11 +9395,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -9282,7 +9413,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9303,7 +9434,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9351,11 +9482,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9364,8 +9495,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -9379,14 +9510,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9395,7 +9526,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9406,13 +9537,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -9421,7 +9552,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -9431,21 +9562,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9456,7 +9587,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -9470,7 +9601,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -9500,11 +9631,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -9515,7 +9646,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -9533,10 +9664,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9545,11 +9676,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9560,7 +9691,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -9582,7 +9713,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -9645,11 +9776,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9657,10 +9788,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9669,7 +9800,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9680,13 +9811,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -9695,10 +9826,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9707,7 +9838,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9718,13 +9849,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -9733,14 +9864,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9750,7 +9881,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9761,7 +9892,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -9771,7 +9902,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -9795,14 +9926,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
   */
   readonly name: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9812,7 +9943,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9823,7 +9954,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -9833,7 +9964,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
@@ -9857,10 +9988,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._name;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9869,7 +10000,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9880,13 +10011,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -9895,89 +10026,89 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch {
   /**
   * all_query_arguments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all_query_arguments Wafv2RuleGroup#all_query_arguments}
   */
-  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments;
+  readonly allQueryArguments?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
   */
-  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody;
+  readonly body?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
   */
-  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies;
+  readonly cookies?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
   */
-  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
+  readonly headers?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
   */
-  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody;
+  readonly jsonBody?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}
   */
-  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod;
+  readonly method?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#query_string Wafv2RuleGroup#query_string}
   */
-  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString;
+  readonly queryString?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_header Wafv2RuleGroup#single_header}
   */
-  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader;
+  readonly singleHeader?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#single_query_argument Wafv2RuleGroup#single_query_argument}
   */
-  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument;
+  readonly singleQueryArgument?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#uri_path Wafv2RuleGroup#uri_path}
   */
-  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath;
+  readonly uriPath?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
-    body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyToTerraform(struct!.body),
-    cookies: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
-    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
-    json_body: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
-    method: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodToTerraform(struct!.method),
-    query_string: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
-    single_header: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
-    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
-    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
+    all_query_arguments: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct!.allQueryArguments),
+    body: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyToTerraform(struct!.body),
+    cookies: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesToTerraform(struct!.cookies),
+    headers: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersToTerraform, true)(struct!.headers),
+    json_body: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyToTerraform(struct!.jsonBody),
+    method: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodToTerraform(struct!.method),
+    query_string: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringToTerraform(struct!.queryString),
+    single_header: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderToTerraform(struct!.singleHeader),
+    single_query_argument: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentToTerraform(struct!.singleQueryArgument),
+    uri_path: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathToTerraform(struct!.uriPath),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -9988,7 +10119,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allQueryArguments?.internalValue !== undefined) {
@@ -10034,7 +10165,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
@@ -10064,11 +10195,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all_query_arguments - computed: false, optional: true, required: false
-  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  private _allQueryArguments = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference(this, "all_query_arguments");
   public get allQueryArguments() {
     return this._allQueryArguments;
   }
-  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments) {
+  public putAllQueryArguments(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments) {
     this._allQueryArguments.internalValue = value;
   }
   public resetAllQueryArguments() {
@@ -10080,11 +10211,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // body - computed: false, optional: true, required: false
-  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference(this, "body");
+  private _body = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference(this, "body");
   public get body() {
     return this._body;
   }
-  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody) {
+  public putBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -10096,11 +10227,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
+  private _cookies = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
-  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies) {
+  public putCookies(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookies) {
     this._cookies.internalValue = value;
   }
   public resetCookies() {
@@ -10112,11 +10243,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersList(this, "headers", false);
+  private _headers = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeadersList(this, "headers", false);
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -10128,11 +10259,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // json_body - computed: false, optional: true, required: false
-  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
+  private _jsonBody = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference(this, "json_body");
   public get jsonBody() {
     return this._jsonBody;
   }
-  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody) {
+  public putJsonBody(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchJsonBody) {
     this._jsonBody.internalValue = value;
   }
   public resetJsonBody() {
@@ -10144,11 +10275,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // method - computed: false, optional: true, required: false
-  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference(this, "method");
+  private _method = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference(this, "method");
   public get method() {
     return this._method;
   }
-  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod) {
+  public putMethod(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod) {
     this._method.internalValue = value;
   }
   public resetMethod() {
@@ -10160,11 +10291,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // query_string - computed: false, optional: true, required: false
-  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
+  private _queryString = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference(this, "query_string");
   public get queryString() {
     return this._queryString;
   }
-  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString) {
+  public putQueryString(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString) {
     this._queryString.internalValue = value;
   }
   public resetQueryString() {
@@ -10176,11 +10307,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_header - computed: false, optional: true, required: false
-  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
+  private _singleHeader = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference(this, "single_header");
   public get singleHeader() {
     return this._singleHeader;
   }
-  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader) {
+  public putSingleHeader(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader) {
     this._singleHeader.internalValue = value;
   }
   public resetSingleHeader() {
@@ -10192,11 +10323,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // single_query_argument - computed: false, optional: true, required: false
-  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
+  private _singleQueryArgument = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference(this, "single_query_argument");
   public get singleQueryArgument() {
     return this._singleQueryArgument;
   }
-  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument) {
+  public putSingleQueryArgument(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument) {
     this._singleQueryArgument.internalValue = value;
   }
   public resetSingleQueryArgument() {
@@ -10208,11 +10339,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // uri_path - computed: false, optional: true, required: false
-  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
+  private _uriPath = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference(this, "uri_path");
   public get uriPath() {
     return this._uriPath;
   }
-  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath) {
+  public putUriPath(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath) {
     this._uriPath.internalValue = value;
   }
   public resetUriPath() {
@@ -10223,7 +10354,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._uriPath.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#priority Wafv2RuleGroup#priority}
   */
@@ -10234,7 +10365,7 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   readonly type: string;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10245,7 +10376,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -10259,7 +10390,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10276,7 +10407,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10322,8 +10453,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -10337,37 +10468,37 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatement {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatement {
   /**
   * field_to_match block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#field_to_match Wafv2RuleGroup#field_to_match}
   */
-  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch;
+  readonly fieldToMatch?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
   */
-  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable;
+  readonly textTransformation: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatement): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatement): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
-    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+    field_to_match: wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10378,7 +10509,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatement | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fieldToMatch?.internalValue !== undefined) {
@@ -10392,7 +10523,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatement | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
@@ -10406,11 +10537,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // field_to_match - computed: false, optional: true, required: false
-  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference(this, "field_to_match");
+  private _fieldToMatch = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference(this, "field_to_match");
   public get fieldToMatch() {
     return this._fieldToMatch;
   }
-  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch) {
+  public putFieldToMatch(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatch) {
     this._fieldToMatch.internalValue = value;
   }
   public resetFieldToMatch() {
@@ -10422,11 +10553,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // text_transformation - computed: false, optional: false, required: true
-  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformationList(this, "text_transformation", true);
+  private _textTransformation = new Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformationList(this, "text_transformation", true);
   public get textTransformation() {
     return this._textTransformation;
   }
-  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable) {
+  public putTextTransformation(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable) {
     this._textTransformation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10434,10 +10565,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._textTransformation.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10446,7 +10577,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10457,13 +10588,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -10472,10 +10603,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10484,7 +10615,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10495,13 +10626,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -10510,10 +10641,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10522,7 +10653,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10533,13 +10664,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -10548,7 +10679,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
   */
@@ -10562,10 +10693,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10573,11 +10704,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
     included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -10591,7 +10722,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10612,7 +10743,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10666,11 +10797,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -10682,8 +10813,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -10697,11 +10828,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookies {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -10715,10 +10846,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookies): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10726,11 +10857,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
+    match_pattern: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternToTerraform, true)(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10741,7 +10872,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookies | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._matchScope !== undefined) {
@@ -10759,7 +10890,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookies | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._matchScope = undefined;
@@ -10801,11 +10932,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternList(this, "match_pattern", false);
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10813,10 +10944,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10825,7 +10956,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10836,13 +10967,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -10851,7 +10982,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_headers Wafv2RuleGroup#excluded_headers}
   */
@@ -10865,10 +10996,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10876,11 +11007,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     excluded_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedHeaders),
     included_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaders),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -10891,7 +11022,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedHeaders !== undefined) {
@@ -10909,7 +11040,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._excludedHeaders = undefined;
@@ -10957,11 +11088,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -10972,7 +11103,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}
   */
@@ -10986,10 +11117,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -10997,11 +11128,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   return {
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -11015,7 +11146,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11036,7 +11167,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11084,11 +11215,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -11097,8 +11228,8 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
-  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -11112,14 +11243,14 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference {
-    return new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference {
+    return new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -11128,7 +11259,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -11139,13 +11270,13 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -11154,7 +11285,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     }
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_paths Wafv2RuleGroup#included_paths}
   */
@@ -11164,21 +11295,21 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
   */
-  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll;
+  readonly all?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     included_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPaths),
-    all: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
+    all: wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllToTerraform(struct!.all),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -11189,7 +11320,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includedPaths !== undefined) {
@@ -11203,7 +11334,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includedPaths = undefined;
@@ -11233,11 +11364,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // all - computed: false, optional: true, required: false
-  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
+  private _all = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference(this, "all");
   public get all() {
     return this._all;
   }
-  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
+  public putAll(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternAll) {
     this._all.internalValue = value;
   }
   public resetAll() {
@@ -11248,7 +11379,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._all.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#invalid_fallback_behavior Wafv2RuleGroup#invalid_fallback_behavior}
   */
@@ -11266,10 +11397,10 @@ export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementSta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_pattern Wafv2RuleGroup#match_pattern}
   */
-  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern;
+  readonly matchPattern: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -11278,11 +11409,11 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
     invalid_fallback_behavior: cdktf.stringToTerraform(struct!.invalidFallbackBehavior),
     match_scope: cdktf.stringToTerraform(struct!.matchScope),
     oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
-    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
+    match_pattern: wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternToTerraform(struct!.matchPattern),
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -11293,7 +11424,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._invalidFallbackBehavior !== undefined) {
@@ -11315,7 +11446,7 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._invalidFallbackBehavior = undefined;
@@ -11378,11 +11509,11 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
   }
 
   // match_pattern - computed: false, optional: false, required: true
-  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
+  private _matchPattern = new Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPatternOutputReference(this, "match_pattern");
   public get matchPattern() {
     return this._matchPattern;
   }
-  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern) {
+  public putMatchPattern(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern) {
     this._matchPattern.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -11390,10 +11521,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     return this._matchPattern.internalValue;
   }
 }
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod {
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethod {
 }
 
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod): any {
+export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethodToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethod): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -11402,7 +11533,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStat
   }
 }
 
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -11413,118 +11544,18 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStateme
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
+  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
+  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
-  }
-}
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString {
-}
-
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-}
-export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#name Wafv2RuleGroup#name}
-  */
-  readonly name: string;
-}
-
-export function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-  }
-}
-
-export class Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._name = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-    }
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
   }
 }

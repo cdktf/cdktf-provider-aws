@@ -351,7 +351,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_catalog_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

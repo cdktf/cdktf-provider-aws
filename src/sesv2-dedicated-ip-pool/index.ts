@@ -19,6 +19,10 @@ export interface Sesv2DedicatedIpPoolConfig extends cdktf.TerraformMetaArguments
   */
   readonly poolName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_dedicated_ip_pool#scaling_mode Sesv2DedicatedIpPool#scaling_mode}
+  */
+  readonly scalingMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_dedicated_ip_pool#tags Sesv2DedicatedIpPool#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -189,7 +193,7 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_dedicated_ip_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -202,6 +206,7 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._poolName = config.poolName;
+    this._scalingMode = config.scalingMode;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
@@ -243,6 +248,22 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get poolNameInput() {
     return this._poolName;
+  }
+
+  // scaling_mode - computed: true, optional: true, required: false
+  private _scalingMode?: string; 
+  public get scalingMode() {
+    return this.getStringAttribute('scaling_mode');
+  }
+  public set scalingMode(value: string) {
+    this._scalingMode = value;
+  }
+  public resetScalingMode() {
+    this._scalingMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingModeInput() {
+    return this._scalingMode;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -301,6 +322,7 @@ export class Sesv2DedicatedIpPool extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       pool_name: cdktf.stringToTerraform(this._poolName),
+      scaling_mode: cdktf.stringToTerraform(this._scalingMode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: sesv2DedicatedIpPoolTimeoutsToTerraform(this._timeouts.internalValue),

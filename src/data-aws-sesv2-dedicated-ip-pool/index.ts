@@ -124,7 +124,7 @@ export class DataAwsSesv2DedicatedIpPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_sesv2_dedicated_ip_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -182,6 +182,11 @@ export class DataAwsSesv2DedicatedIpPool extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get poolNameInput() {
     return this._poolName;
+  }
+
+  // scaling_mode - computed: true, optional: false, required: false
+  public get scalingMode() {
+    return this.getStringAttribute('scaling_mode');
   }
 
   // tags - computed: true, optional: true, required: false

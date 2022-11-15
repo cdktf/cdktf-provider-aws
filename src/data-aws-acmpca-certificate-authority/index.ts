@@ -359,7 +359,7 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.36.1',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -463,6 +463,11 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
+  }
+
+  // usage_mode - computed: true, optional: false, required: false
+  public get usageMode() {
+    return this.getStringAttribute('usage_mode');
   }
 
   // revocation_configuration - computed: false, optional: true, required: false
