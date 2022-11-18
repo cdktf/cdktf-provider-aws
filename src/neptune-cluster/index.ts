@@ -123,11 +123,109 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpcSecurityGroupIds?: string[];
   /**
+  * serverless_v2_scaling_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#serverless_v2_scaling_configuration NeptuneCluster#serverless_v2_scaling_configuration}
+  */
+  readonly serverlessV2ScalingConfiguration?: NeptuneClusterServerlessV2ScalingConfiguration;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#timeouts NeptuneCluster#timeouts}
   */
   readonly timeouts?: NeptuneClusterTimeouts;
+}
+export interface NeptuneClusterServerlessV2ScalingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#max_capacity NeptuneCluster#max_capacity}
+  */
+  readonly maxCapacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#min_capacity NeptuneCluster#min_capacity}
+  */
+  readonly minCapacity?: number;
+}
+
+export function neptuneClusterServerlessV2ScalingConfigurationToTerraform(struct?: NeptuneClusterServerlessV2ScalingConfigurationOutputReference | NeptuneClusterServerlessV2ScalingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+  }
+}
+
+export class NeptuneClusterServerlessV2ScalingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NeptuneClusterServerlessV2ScalingConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxCapacity = this._maxCapacity;
+    }
+    if (this._minCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCapacity = this._minCapacity;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NeptuneClusterServerlessV2ScalingConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxCapacity = undefined;
+      this._minCapacity = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxCapacity = value.maxCapacity;
+      this._minCapacity = value.minCapacity;
+    }
+  }
+
+  // max_capacity - computed: false, optional: true, required: false
+  private _maxCapacity?: number; 
+  public get maxCapacity() {
+    return this.getNumberAttribute('max_capacity');
+  }
+  public set maxCapacity(value: number) {
+    this._maxCapacity = value;
+  }
+  public resetMaxCapacity() {
+    this._maxCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxCapacityInput() {
+    return this._maxCapacity;
+  }
+
+  // min_capacity - computed: false, optional: true, required: false
+  private _minCapacity?: number; 
+  public get minCapacity() {
+    return this.getNumberAttribute('min_capacity');
+  }
+  public set minCapacity(value: number) {
+    this._minCapacity = value;
+  }
+  public resetMinCapacity() {
+    this._minCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minCapacityInput() {
+    return this._minCapacity;
+  }
 }
 export interface NeptuneClusterTimeouts {
   /**
@@ -285,7 +383,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -324,6 +422,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._serverlessV2ScalingConfiguration.internalValue = config.serverlessV2ScalingConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -809,6 +908,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     return this._vpcSecurityGroupIds;
   }
 
+  // serverless_v2_scaling_configuration - computed: false, optional: true, required: false
+  private _serverlessV2ScalingConfiguration = new NeptuneClusterServerlessV2ScalingConfigurationOutputReference(this, "serverless_v2_scaling_configuration");
+  public get serverlessV2ScalingConfiguration() {
+    return this._serverlessV2ScalingConfiguration;
+  }
+  public putServerlessV2ScalingConfiguration(value: NeptuneClusterServerlessV2ScalingConfiguration) {
+    this._serverlessV2ScalingConfiguration.internalValue = value;
+  }
+  public resetServerlessV2ScalingConfiguration() {
+    this._serverlessV2ScalingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessV2ScalingConfigurationInput() {
+    return this._serverlessV2ScalingConfiguration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new NeptuneClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -859,6 +974,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      serverless_v2_scaling_configuration: neptuneClusterServerlessV2ScalingConfigurationToTerraform(this._serverlessV2ScalingConfiguration.internalValue),
       timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

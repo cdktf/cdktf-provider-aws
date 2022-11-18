@@ -31,6 +31,10 @@ export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly retentionInDays?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#tags CloudwatchLogGroup#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -66,7 +70,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -82,6 +86,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._retentionInDays = config.retentionInDays;
+    this._skipDestroy = config.skipDestroy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -143,7 +148,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // name_prefix - computed: false, optional: true, required: false
+  // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string; 
   public get namePrefix() {
     return this.getStringAttribute('name_prefix');
@@ -173,6 +178,22 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get retentionInDaysInput() {
     return this._retentionInDays;
+  }
+
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -218,6 +239,7 @@ export class CloudwatchLogGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

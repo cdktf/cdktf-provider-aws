@@ -681,7 +681,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_website_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

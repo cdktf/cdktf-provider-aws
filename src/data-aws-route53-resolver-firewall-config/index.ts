@@ -46,7 +46,7 @@ export class DataAwsRoute53ResolverFirewallConfig extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_route53_resolver_firewall_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

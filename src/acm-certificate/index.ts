@@ -35,6 +35,10 @@ export interface AcmCertificateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#key_algorithm AcmCertificate#key_algorithm}
+  */
+  readonly keyAlgorithm?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#private_key AcmCertificate#private_key}
   */
   readonly privateKey?: string;
@@ -430,7 +434,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acm_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -447,6 +451,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
     this._domainName = config.domainName;
     this._earlyRenewalDuration = config.earlyRenewalDuration;
     this._id = config.id;
+    this._keyAlgorithm = config.keyAlgorithm;
     this._privateKey = config.privateKey;
     this._subjectAlternativeNames = config.subjectAlternativeNames;
     this._tags = config.tags;
@@ -565,6 +570,22 @@ export class AcmCertificate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // key_algorithm - computed: true, optional: true, required: false
+  private _keyAlgorithm?: string; 
+  public get keyAlgorithm() {
+    return this.getStringAttribute('key_algorithm');
+  }
+  public set keyAlgorithm(value: string) {
+    this._keyAlgorithm = value;
+  }
+  public resetKeyAlgorithm() {
+    this._keyAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyAlgorithmInput() {
+    return this._keyAlgorithm;
   }
 
   // not_after - computed: true, optional: false, required: false
@@ -732,6 +753,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       early_renewal_duration: cdktf.stringToTerraform(this._earlyRenewalDuration),
       id: cdktf.stringToTerraform(this._id),
+      key_algorithm: cdktf.stringToTerraform(this._keyAlgorithm),
       private_key: cdktf.stringToTerraform(this._privateKey),
       subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subjectAlternativeNames),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

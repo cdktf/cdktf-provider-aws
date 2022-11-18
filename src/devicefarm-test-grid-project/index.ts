@@ -174,7 +174,7 @@ export class DevicefarmTestGridProject extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devicefarm_test_grid_project',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

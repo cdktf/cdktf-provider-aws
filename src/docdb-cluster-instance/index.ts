@@ -28,6 +28,10 @@ export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments
   */
   readonly clusterIdentifier: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}
+  */
+  readonly enablePerformanceInsights?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance#engine DocdbClusterInstance#engine}
   */
   readonly engine?: string;
@@ -50,6 +54,10 @@ export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}
   */
   readonly instanceClass: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}
+  */
+  readonly performanceInsightsKmsKeyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}
   */
@@ -229,7 +237,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_docdb_cluster_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -245,11 +253,13 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._caCertIdentifier = config.caCertIdentifier;
     this._clusterIdentifier = config.clusterIdentifier;
+    this._enablePerformanceInsights = config.enablePerformanceInsights;
     this._engine = config.engine;
     this._id = config.id;
     this._identifier = config.identifier;
     this._identifierPrefix = config.identifierPrefix;
     this._instanceClass = config.instanceClass;
+    this._performanceInsightsKmsKeyId = config.performanceInsightsKmsKeyId;
     this._preferredMaintenanceWindow = config.preferredMaintenanceWindow;
     this._promotionTier = config.promotionTier;
     this._tags = config.tags;
@@ -353,6 +363,22 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('dbi_resource_id');
   }
 
+  // enable_performance_insights - computed: true, optional: true, required: false
+  private _enablePerformanceInsights?: boolean | cdktf.IResolvable; 
+  public get enablePerformanceInsights() {
+    return this.getBooleanAttribute('enable_performance_insights');
+  }
+  public set enablePerformanceInsights(value: boolean | cdktf.IResolvable) {
+    this._enablePerformanceInsights = value;
+  }
+  public resetEnablePerformanceInsights() {
+    this._enablePerformanceInsights = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePerformanceInsightsInput() {
+    return this._enablePerformanceInsights;
+  }
+
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
@@ -443,6 +469,22 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
+  }
+
+  // performance_insights_kms_key_id - computed: true, optional: true, required: false
+  private _performanceInsightsKmsKeyId?: string; 
+  public get performanceInsightsKmsKeyId() {
+    return this.getStringAttribute('performance_insights_kms_key_id');
+  }
+  public set performanceInsightsKmsKeyId(value: string) {
+    this._performanceInsightsKmsKeyId = value;
+  }
+  public resetPerformanceInsightsKmsKeyId() {
+    this._performanceInsightsKmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get performanceInsightsKmsKeyIdInput() {
+    return this._performanceInsightsKmsKeyId;
   }
 
   // port - computed: true, optional: false, required: false
@@ -561,11 +603,13 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      enable_performance_insights: cdktf.booleanToTerraform(this._enablePerformanceInsights),
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       identifier: cdktf.stringToTerraform(this._identifier),
       identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
+      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
       preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
       promotion_tier: cdktf.numberToTerraform(this._promotionTier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

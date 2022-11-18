@@ -62,7 +62,7 @@ export class DataAwsNetworkmanagerLinks extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkmanager_links',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -66,7 +66,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

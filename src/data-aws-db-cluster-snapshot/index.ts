@@ -70,7 +70,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_cluster_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

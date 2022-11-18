@@ -83,6 +83,10 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly taskDefinition?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#triggers EcsService#triggers}
+  */
+  readonly triggers?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}
   */
   readonly waitForSteadyState?: boolean | cdktf.IResolvable;
@@ -1269,7 +1273,7 @@ export class EcsService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1298,6 +1302,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._taskDefinition = config.taskDefinition;
+    this._triggers = config.triggers;
     this._waitForSteadyState = config.waitForSteadyState;
     this._capacityProviderStrategy.internalValue = config.capacityProviderStrategy;
     this._deploymentCircuitBreaker.internalValue = config.deploymentCircuitBreaker;
@@ -1599,6 +1604,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._taskDefinition;
   }
 
+  // triggers - computed: true, optional: true, required: false
+  private _triggers?: { [key: string]: string }; 
+  public get triggers() {
+    return this.getStringMapAttribute('triggers');
+  }
+  public set triggers(value: { [key: string]: string }) {
+    this._triggers = value;
+  }
+  public resetTriggers() {
+    this._triggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggersInput() {
+    return this._triggers;
+  }
+
   // wait_for_steady_state - computed: false, optional: true, required: false
   private _waitForSteadyState?: boolean | cdktf.IResolvable; 
   public get waitForSteadyState() {
@@ -1783,6 +1804,7 @@ export class EcsService extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
       wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
       deployment_circuit_breaker: ecsServiceDeploymentCircuitBreakerToTerraform(this._deploymentCircuitBreaker.internalValue),

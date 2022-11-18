@@ -1132,7 +1132,7 @@ export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataS
       terraformResourceType: 'aws_cloudfront_response_headers_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

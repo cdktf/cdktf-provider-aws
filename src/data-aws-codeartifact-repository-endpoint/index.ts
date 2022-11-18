@@ -58,7 +58,7 @@ export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_codeartifact_repository_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

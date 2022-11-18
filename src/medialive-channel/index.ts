@@ -1709,6 +1709,233 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Set
     return this._metadataControl;
   }
 }
+export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#bitrate MedialiveChannel#bitrate}
+  */
+  readonly bitrate?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  */
+  readonly codingMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#dialnorm MedialiveChannel#dialnorm}
+  */
+  readonly dialnorm?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#drc_line MedialiveChannel#drc_line}
+  */
+  readonly drcLine?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#drc_rf MedialiveChannel#drc_rf}
+  */
+  readonly drcRf?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#height_trim MedialiveChannel#height_trim}
+  */
+  readonly heightTrim?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#surround_trim MedialiveChannel#surround_trim}
+  */
+  readonly surroundTrim?: number;
+}
+
+export function medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference | MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bitrate: cdktf.numberToTerraform(struct!.bitrate),
+    coding_mode: cdktf.stringToTerraform(struct!.codingMode),
+    dialnorm: cdktf.numberToTerraform(struct!.dialnorm),
+    drc_line: cdktf.stringToTerraform(struct!.drcLine),
+    drc_rf: cdktf.stringToTerraform(struct!.drcRf),
+    height_trim: cdktf.numberToTerraform(struct!.heightTrim),
+    surround_trim: cdktf.numberToTerraform(struct!.surroundTrim),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bitrate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bitrate = this._bitrate;
+    }
+    if (this._codingMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codingMode = this._codingMode;
+    }
+    if (this._dialnorm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dialnorm = this._dialnorm;
+    }
+    if (this._drcLine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.drcLine = this._drcLine;
+    }
+    if (this._drcRf !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.drcRf = this._drcRf;
+    }
+    if (this._heightTrim !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.heightTrim = this._heightTrim;
+    }
+    if (this._surroundTrim !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.surroundTrim = this._surroundTrim;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bitrate = undefined;
+      this._codingMode = undefined;
+      this._dialnorm = undefined;
+      this._drcLine = undefined;
+      this._drcRf = undefined;
+      this._heightTrim = undefined;
+      this._surroundTrim = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bitrate = value.bitrate;
+      this._codingMode = value.codingMode;
+      this._dialnorm = value.dialnorm;
+      this._drcLine = value.drcLine;
+      this._drcRf = value.drcRf;
+      this._heightTrim = value.heightTrim;
+      this._surroundTrim = value.surroundTrim;
+    }
+  }
+
+  // bitrate - computed: true, optional: true, required: false
+  private _bitrate?: number; 
+  public get bitrate() {
+    return this.getNumberAttribute('bitrate');
+  }
+  public set bitrate(value: number) {
+    this._bitrate = value;
+  }
+  public resetBitrate() {
+    this._bitrate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bitrateInput() {
+    return this._bitrate;
+  }
+
+  // coding_mode - computed: true, optional: true, required: false
+  private _codingMode?: string; 
+  public get codingMode() {
+    return this.getStringAttribute('coding_mode');
+  }
+  public set codingMode(value: string) {
+    this._codingMode = value;
+  }
+  public resetCodingMode() {
+    this._codingMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codingModeInput() {
+    return this._codingMode;
+  }
+
+  // dialnorm - computed: true, optional: true, required: false
+  private _dialnorm?: number; 
+  public get dialnorm() {
+    return this.getNumberAttribute('dialnorm');
+  }
+  public set dialnorm(value: number) {
+    this._dialnorm = value;
+  }
+  public resetDialnorm() {
+    this._dialnorm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dialnormInput() {
+    return this._dialnorm;
+  }
+
+  // drc_line - computed: true, optional: true, required: false
+  private _drcLine?: string; 
+  public get drcLine() {
+    return this.getStringAttribute('drc_line');
+  }
+  public set drcLine(value: string) {
+    this._drcLine = value;
+  }
+  public resetDrcLine() {
+    this._drcLine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get drcLineInput() {
+    return this._drcLine;
+  }
+
+  // drc_rf - computed: true, optional: true, required: false
+  private _drcRf?: string; 
+  public get drcRf() {
+    return this.getStringAttribute('drc_rf');
+  }
+  public set drcRf(value: string) {
+    this._drcRf = value;
+  }
+  public resetDrcRf() {
+    this._drcRf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get drcRfInput() {
+    return this._drcRf;
+  }
+
+  // height_trim - computed: true, optional: true, required: false
+  private _heightTrim?: number; 
+  public get heightTrim() {
+    return this.getNumberAttribute('height_trim');
+  }
+  public set heightTrim(value: number) {
+    this._heightTrim = value;
+  }
+  public resetHeightTrim() {
+    this._heightTrim = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heightTrimInput() {
+    return this._heightTrim;
+  }
+
+  // surround_trim - computed: true, optional: true, required: false
+  private _surroundTrim?: number; 
+  public get surroundTrim() {
+    return this.getNumberAttribute('surround_trim');
+  }
+  public set surroundTrim(value: number) {
+    this._surroundTrim = value;
+  }
+  public resetSurroundTrim() {
+    this._surroundTrim = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get surroundTrimInput() {
+    return this._surroundTrim;
+  }
+}
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}
@@ -2406,6 +2633,44 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Set
     return this._sampleRate;
   }
 }
+export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings {
+}
+
+export function medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference | MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#bit_depth MedialiveChannel#bit_depth}
@@ -2539,6 +2804,12 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings {
   */
   readonly ac3Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings;
   /**
+  * eac3_atmos_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
+  */
+  readonly eac3AtmosSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings;
+  /**
   * eac3_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
@@ -2550,6 +2821,12 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
   */
   readonly mp2Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings;
+  /**
+  * pass_through_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
+  */
+  readonly passThroughSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings;
   /**
   * wav_settings block
   * 
@@ -2566,8 +2843,10 @@ export function medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsToT
   return {
     aac_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsToTerraform(struct!.aacSettings),
     ac3_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsToTerraform(struct!.ac3Settings),
+    eac3_atmos_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsToTerraform(struct!.eac3AtmosSettings),
     eac3_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsToTerraform(struct!.eac3Settings),
     mp2_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsToTerraform(struct!.mp2Settings),
+    pass_through_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsToTerraform(struct!.passThroughSettings),
     wav_settings: medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsToTerraform(struct!.wavSettings),
   }
 }
@@ -2594,6 +2873,10 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
       hasAnyValues = true;
       internalValueResult.ac3Settings = this._ac3Settings?.internalValue;
     }
+    if (this._eac3AtmosSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eac3AtmosSettings = this._eac3AtmosSettings?.internalValue;
+    }
     if (this._eac3Settings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.eac3Settings = this._eac3Settings?.internalValue;
@@ -2601,6 +2884,10 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
     if (this._mp2Settings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mp2Settings = this._mp2Settings?.internalValue;
+    }
+    if (this._passThroughSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passThroughSettings = this._passThroughSettings?.internalValue;
     }
     if (this._wavSettings?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2614,16 +2901,20 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
       this.isEmptyObject = false;
       this._aacSettings.internalValue = undefined;
       this._ac3Settings.internalValue = undefined;
+      this._eac3AtmosSettings.internalValue = undefined;
       this._eac3Settings.internalValue = undefined;
       this._mp2Settings.internalValue = undefined;
+      this._passThroughSettings.internalValue = undefined;
       this._wavSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._aacSettings.internalValue = value.aacSettings;
       this._ac3Settings.internalValue = value.ac3Settings;
+      this._eac3AtmosSettings.internalValue = value.eac3AtmosSettings;
       this._eac3Settings.internalValue = value.eac3Settings;
       this._mp2Settings.internalValue = value.mp2Settings;
+      this._passThroughSettings.internalValue = value.passThroughSettings;
       this._wavSettings.internalValue = value.wavSettings;
     }
   }
@@ -2660,6 +2951,22 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
     return this._ac3Settings.internalValue;
   }
 
+  // eac3_atmos_settings - computed: false, optional: true, required: false
+  private _eac3AtmosSettings = new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference(this, "eac3_atmos_settings");
+  public get eac3AtmosSettings() {
+    return this._eac3AtmosSettings;
+  }
+  public putEac3AtmosSettings(value: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings) {
+    this._eac3AtmosSettings.internalValue = value;
+  }
+  public resetEac3AtmosSettings() {
+    this._eac3AtmosSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eac3AtmosSettingsInput() {
+    return this._eac3AtmosSettings.internalValue;
+  }
+
   // eac3_settings - computed: false, optional: true, required: false
   private _eac3Settings = new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference(this, "eac3_settings");
   public get eac3Settings() {
@@ -2690,6 +2997,22 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
   // Temporarily expose input value. Use with caution.
   public get mp2SettingsInput() {
     return this._mp2Settings.internalValue;
+  }
+
+  // pass_through_settings - computed: false, optional: true, required: false
+  private _passThroughSettings = new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference(this, "pass_through_settings");
+  public get passThroughSettings() {
+    return this._passThroughSettings;
+  }
+  public putPassThroughSettings(value: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings) {
+    this._passThroughSettings.internalValue = value;
+  }
+  public resetPassThroughSettings() {
+    this._passThroughSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passThroughSettingsInput() {
+    return this._passThroughSettings.internalValue;
   }
 
   // wav_settings - computed: false, optional: true, required: false
@@ -3431,6 +3754,216 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsList extends cdktf.
   */
   public get(index: number): MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference {
     return new MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#password_param MedialiveChannel#password_param}
+  */
+  readonly passwordParam?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#uri MedialiveChannel#uri}
+  */
+  readonly uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#username MedialiveChannel#username}
+  */
+  readonly username?: string;
+}
+
+export function medialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageToTerraform(struct?: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference | MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_param: cdktf.stringToTerraform(struct!.passwordParam),
+    uri: cdktf.stringToTerraform(struct!.uri),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordParam = this._passwordParam;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwordParam = undefined;
+      this._uri = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwordParam = value.passwordParam;
+      this._uri = value.uri;
+      this._username = value.username;
+    }
+  }
+
+  // password_param - computed: true, optional: true, required: false
+  private _passwordParam?: string; 
+  public get passwordParam() {
+    return this.getStringAttribute('password_param');
+  }
+  public set passwordParam(value: string) {
+    this._passwordParam = value;
+  }
+  public resetPasswordParam() {
+    this._passwordParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordParamInput() {
+    return this._passwordParam;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface MedialiveChannelEncoderSettingsAvailBlanking {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#state MedialiveChannel#state}
+  */
+  readonly state?: string;
+  /**
+  * avail_blanking_image block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
+  */
+  readonly availBlankingImage?: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage;
+}
+
+export function medialiveChannelEncoderSettingsAvailBlankingToTerraform(struct?: MedialiveChannelEncoderSettingsAvailBlankingOutputReference | MedialiveChannelEncoderSettingsAvailBlanking): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    state: cdktf.stringToTerraform(struct!.state),
+    avail_blanking_image: medialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageToTerraform(struct!.availBlankingImage),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsAvailBlankingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsAvailBlanking | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._state !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.state = this._state;
+    }
+    if (this._availBlankingImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availBlankingImage = this._availBlankingImage?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsAvailBlanking | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._state = undefined;
+      this._availBlankingImage.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._state = value.state;
+      this._availBlankingImage.internalValue = value.availBlankingImage;
+    }
+  }
+
+  // state - computed: true, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+
+  // avail_blanking_image - computed: false, optional: true, required: false
+  private _availBlankingImage = new MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference(this, "avail_blanking_image");
+  public get availBlankingImage() {
+    return this._availBlankingImage;
+  }
+  public putAvailBlankingImage(value: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage) {
+    this._availBlankingImage.internalValue = value;
+  }
+  public resetAvailBlankingImage() {
+    this._availBlankingImage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availBlankingImageInput() {
+    return this._availBlankingImage.internalValue;
   }
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings {
@@ -5269,6 +5802,312 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
     return new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#password_param MedialiveChannel#password_param}
+  */
+  readonly passwordParam?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#uri MedialiveChannel#uri}
+  */
+  readonly uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#username MedialiveChannel#username}
+  */
+  readonly username?: string;
+}
+
+export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerToTerraform(struct?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference | MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_param: cdktf.stringToTerraform(struct!.passwordParam),
+    uri: cdktf.stringToTerraform(struct!.uri),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordParam = this._passwordParam;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwordParam = undefined;
+      this._uri = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwordParam = value.passwordParam;
+      this._uri = value.uri;
+      this._username = value.username;
+    }
+  }
+
+  // password_param - computed: true, optional: true, required: false
+  private _passwordParam?: string; 
+  public get passwordParam() {
+    return this.getStringAttribute('password_param');
+  }
+  public set passwordParam(value: string) {
+    this._passwordParam = value;
+  }
+  public resetPasswordParam() {
+    this._passwordParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordParamInput() {
+    return this._passwordParam;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#static_key_value MedialiveChannel#static_key_value}
+  */
+  readonly staticKeyValue: string;
+  /**
+  * key_provider_server block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
+  */
+  readonly keyProviderServer?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer;
+}
+
+export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsToTerraform(struct?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    static_key_value: cdktf.stringToTerraform(struct!.staticKeyValue),
+    key_provider_server: medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerToTerraform(struct!.keyProviderServer),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._staticKeyValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticKeyValue = this._staticKeyValue;
+    }
+    if (this._keyProviderServer?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyProviderServer = this._keyProviderServer?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._staticKeyValue = undefined;
+      this._keyProviderServer.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._staticKeyValue = value.staticKeyValue;
+      this._keyProviderServer.internalValue = value.keyProviderServer;
+    }
+  }
+
+  // static_key_value - computed: false, optional: false, required: true
+  private _staticKeyValue?: string; 
+  public get staticKeyValue() {
+    return this.getStringAttribute('static_key_value');
+  }
+  public set staticKeyValue(value: string) {
+    this._staticKeyValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticKeyValueInput() {
+    return this._staticKeyValue;
+  }
+
+  // key_provider_server - computed: false, optional: true, required: false
+  private _keyProviderServer = new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference(this, "key_provider_server");
+  public get keyProviderServer() {
+    return this._keyProviderServer;
+  }
+  public putKeyProviderServer(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer) {
+    this._keyProviderServer.internalValue = value;
+  }
+  public resetKeyProviderServer() {
+    this._keyProviderServer.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyProviderServerInput() {
+    return this._keyProviderServer.internalValue;
+  }
+}
+
+export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList extends cdktf.ComplexList {
+  public internalValue? : MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference {
+    return new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings {
+  /**
+  * static_key_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
+  */
+  readonly staticKeySettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings[] | cdktf.IResolvable;
+}
+
+export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference | MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    static_key_settings: cdktf.listMapper(medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsToTerraform, true)(struct!.staticKeySettings),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._staticKeySettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticKeySettings = this._staticKeySettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._staticKeySettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._staticKeySettings.internalValue = value.staticKeySettings;
+    }
+  }
+
+  // static_key_settings - computed: false, optional: true, required: false
+  private _staticKeySettings = new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList(this, "static_key_settings", false);
+  public get staticKeySettings() {
+    return this._staticKeySettings;
+  }
+  public putStaticKeySettings(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings[] | cdktf.IResolvable) {
+    this._staticKeySettings.internalValue = value;
+  }
+  public resetStaticKeySettings() {
+    this._staticKeySettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticKeySettingsInput() {
+    return this._staticKeySettings.internalValue;
+  }
+}
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#ad_markers MedialiveChannel#ad_markers}
@@ -5323,6 +6162,10 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   */
   readonly hlsId3SegmentTagging?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}
+  */
+  readonly iframeOnlyPlaylists?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}
   */
   readonly incompleteSegmentBehavior?: string;
@@ -5343,9 +6186,9 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   */
   readonly ivSource?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#keep_segment MedialiveChannel#keep_segment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#keep_segments MedialiveChannel#keep_segments}
   */
-  readonly keepSegment?: number;
+  readonly keepSegments?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_format MedialiveChannel#key_format}
   */
@@ -5370,6 +6213,10 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#mode MedialiveChannel#mode}
   */
   readonly mode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#output_selection MedialiveChannel#output_selection}
+  */
+  readonly outputSelection?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#program_date_time MedialiveChannel#program_date_time}
   */
@@ -5399,9 +6246,13 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   */
   readonly streamInfResolution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#time_metadata_id3_frame MedialiveChannel#time_metadata_id3_frame}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}
   */
-  readonly timeMetadataId3Frame?: string;
+  readonly timedMetadataId3Frame?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}
+  */
+  readonly timedMetadataId3Period?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}
   */
@@ -5428,6 +6279,12 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
   */
   readonly hlsCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings[] | cdktf.IResolvable;
+  /**
+  * key_provider_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
+  */
+  readonly keyProviderSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings;
 }
 
 export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference | MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings): any {
@@ -5449,18 +6306,20 @@ export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHl
     discontinuity_tags: cdktf.stringToTerraform(struct!.discontinuityTags),
     encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
     hls_id3_segment_tagging: cdktf.stringToTerraform(struct!.hlsId3SegmentTagging),
+    iframe_only_playlists: cdktf.stringToTerraform(struct!.iframeOnlyPlaylists),
     incomplete_segment_behavior: cdktf.stringToTerraform(struct!.incompleteSegmentBehavior),
     index_n_segments: cdktf.numberToTerraform(struct!.indexNSegments),
     input_loss_action: cdktf.stringToTerraform(struct!.inputLossAction),
     iv_in_manifest: cdktf.stringToTerraform(struct!.ivInManifest),
     iv_source: cdktf.stringToTerraform(struct!.ivSource),
-    keep_segment: cdktf.numberToTerraform(struct!.keepSegment),
+    keep_segments: cdktf.numberToTerraform(struct!.keepSegments),
     key_format: cdktf.stringToTerraform(struct!.keyFormat),
     key_format_versions: cdktf.stringToTerraform(struct!.keyFormatVersions),
     manifest_compression: cdktf.stringToTerraform(struct!.manifestCompression),
     manifest_duration_format: cdktf.stringToTerraform(struct!.manifestDurationFormat),
     min_segment_length: cdktf.numberToTerraform(struct!.minSegmentLength),
     mode: cdktf.stringToTerraform(struct!.mode),
+    output_selection: cdktf.stringToTerraform(struct!.outputSelection),
     program_date_time: cdktf.stringToTerraform(struct!.programDateTime),
     program_date_time_clock: cdktf.stringToTerraform(struct!.programDateTimeClock),
     program_date_time_period: cdktf.numberToTerraform(struct!.programDateTimePeriod),
@@ -5468,12 +6327,14 @@ export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHl
     segment_length: cdktf.numberToTerraform(struct!.segmentLength),
     segments_per_subdirectory: cdktf.numberToTerraform(struct!.segmentsPerSubdirectory),
     stream_inf_resolution: cdktf.stringToTerraform(struct!.streamInfResolution),
-    time_metadata_id3_frame: cdktf.stringToTerraform(struct!.timeMetadataId3Frame),
+    timed_metadata_id3_frame: cdktf.stringToTerraform(struct!.timedMetadataId3Frame),
+    timed_metadata_id3_period: cdktf.numberToTerraform(struct!.timedMetadataId3Period),
     timestamp_delta_milliseconds: cdktf.numberToTerraform(struct!.timestampDeltaMilliseconds),
     ts_file_mode: cdktf.stringToTerraform(struct!.tsFileMode),
     caption_language_mappings: cdktf.listMapper(medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsToTerraform, true)(struct!.captionLanguageMappings),
     destination: medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationToTerraform(struct!.destination),
     hls_cdn_settings: cdktf.listMapper(medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsToTerraform, true)(struct!.hlsCdnSettings),
+    key_provider_settings: medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsToTerraform(struct!.keyProviderSettings),
   }
 }
 
@@ -5543,6 +6404,10 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       hasAnyValues = true;
       internalValueResult.hlsId3SegmentTagging = this._hlsId3SegmentTagging;
     }
+    if (this._iframeOnlyPlaylists !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iframeOnlyPlaylists = this._iframeOnlyPlaylists;
+    }
     if (this._incompleteSegmentBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.incompleteSegmentBehavior = this._incompleteSegmentBehavior;
@@ -5563,9 +6428,9 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       hasAnyValues = true;
       internalValueResult.ivSource = this._ivSource;
     }
-    if (this._keepSegment !== undefined) {
+    if (this._keepSegments !== undefined) {
       hasAnyValues = true;
-      internalValueResult.keepSegment = this._keepSegment;
+      internalValueResult.keepSegments = this._keepSegments;
     }
     if (this._keyFormat !== undefined) {
       hasAnyValues = true;
@@ -5590,6 +6455,10 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
     if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
+    }
+    if (this._outputSelection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputSelection = this._outputSelection;
     }
     if (this._programDateTime !== undefined) {
       hasAnyValues = true;
@@ -5619,9 +6488,13 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       hasAnyValues = true;
       internalValueResult.streamInfResolution = this._streamInfResolution;
     }
-    if (this._timeMetadataId3Frame !== undefined) {
+    if (this._timedMetadataId3Frame !== undefined) {
       hasAnyValues = true;
-      internalValueResult.timeMetadataId3Frame = this._timeMetadataId3Frame;
+      internalValueResult.timedMetadataId3Frame = this._timedMetadataId3Frame;
+    }
+    if (this._timedMetadataId3Period !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timedMetadataId3Period = this._timedMetadataId3Period;
     }
     if (this._timestampDeltaMilliseconds !== undefined) {
       hasAnyValues = true;
@@ -5643,6 +6516,10 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       hasAnyValues = true;
       internalValueResult.hlsCdnSettings = this._hlsCdnSettings?.internalValue;
     }
+    if (this._keyProviderSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyProviderSettings = this._keyProviderSettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5662,18 +6539,20 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       this._discontinuityTags = undefined;
       this._encryptionType = undefined;
       this._hlsId3SegmentTagging = undefined;
+      this._iframeOnlyPlaylists = undefined;
       this._incompleteSegmentBehavior = undefined;
       this._indexNSegments = undefined;
       this._inputLossAction = undefined;
       this._ivInManifest = undefined;
       this._ivSource = undefined;
-      this._keepSegment = undefined;
+      this._keepSegments = undefined;
       this._keyFormat = undefined;
       this._keyFormatVersions = undefined;
       this._manifestCompression = undefined;
       this._manifestDurationFormat = undefined;
       this._minSegmentLength = undefined;
       this._mode = undefined;
+      this._outputSelection = undefined;
       this._programDateTime = undefined;
       this._programDateTimeClock = undefined;
       this._programDateTimePeriod = undefined;
@@ -5681,12 +6560,14 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       this._segmentLength = undefined;
       this._segmentsPerSubdirectory = undefined;
       this._streamInfResolution = undefined;
-      this._timeMetadataId3Frame = undefined;
+      this._timedMetadataId3Frame = undefined;
+      this._timedMetadataId3Period = undefined;
       this._timestampDeltaMilliseconds = undefined;
       this._tsFileMode = undefined;
       this._captionLanguageMappings.internalValue = undefined;
       this._destination.internalValue = undefined;
       this._hlsCdnSettings.internalValue = undefined;
+      this._keyProviderSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5703,18 +6584,20 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       this._discontinuityTags = value.discontinuityTags;
       this._encryptionType = value.encryptionType;
       this._hlsId3SegmentTagging = value.hlsId3SegmentTagging;
+      this._iframeOnlyPlaylists = value.iframeOnlyPlaylists;
       this._incompleteSegmentBehavior = value.incompleteSegmentBehavior;
       this._indexNSegments = value.indexNSegments;
       this._inputLossAction = value.inputLossAction;
       this._ivInManifest = value.ivInManifest;
       this._ivSource = value.ivSource;
-      this._keepSegment = value.keepSegment;
+      this._keepSegments = value.keepSegments;
       this._keyFormat = value.keyFormat;
       this._keyFormatVersions = value.keyFormatVersions;
       this._manifestCompression = value.manifestCompression;
       this._manifestDurationFormat = value.manifestDurationFormat;
       this._minSegmentLength = value.minSegmentLength;
       this._mode = value.mode;
+      this._outputSelection = value.outputSelection;
       this._programDateTime = value.programDateTime;
       this._programDateTimeClock = value.programDateTimeClock;
       this._programDateTimePeriod = value.programDateTimePeriod;
@@ -5722,12 +6605,14 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
       this._segmentLength = value.segmentLength;
       this._segmentsPerSubdirectory = value.segmentsPerSubdirectory;
       this._streamInfResolution = value.streamInfResolution;
-      this._timeMetadataId3Frame = value.timeMetadataId3Frame;
+      this._timedMetadataId3Frame = value.timedMetadataId3Frame;
+      this._timedMetadataId3Period = value.timedMetadataId3Period;
       this._timestampDeltaMilliseconds = value.timestampDeltaMilliseconds;
       this._tsFileMode = value.tsFileMode;
       this._captionLanguageMappings.internalValue = value.captionLanguageMappings;
       this._destination.internalValue = value.destination;
       this._hlsCdnSettings.internalValue = value.hlsCdnSettings;
+      this._keyProviderSettings.internalValue = value.keyProviderSettings;
     }
   }
 
@@ -5939,6 +6824,22 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
     return this._hlsId3SegmentTagging;
   }
 
+  // iframe_only_playlists - computed: true, optional: true, required: false
+  private _iframeOnlyPlaylists?: string; 
+  public get iframeOnlyPlaylists() {
+    return this.getStringAttribute('iframe_only_playlists');
+  }
+  public set iframeOnlyPlaylists(value: string) {
+    this._iframeOnlyPlaylists = value;
+  }
+  public resetIframeOnlyPlaylists() {
+    this._iframeOnlyPlaylists = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iframeOnlyPlaylistsInput() {
+    return this._iframeOnlyPlaylists;
+  }
+
   // incomplete_segment_behavior - computed: true, optional: true, required: false
   private _incompleteSegmentBehavior?: string; 
   public get incompleteSegmentBehavior() {
@@ -6019,20 +6920,20 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
     return this._ivSource;
   }
 
-  // keep_segment - computed: true, optional: true, required: false
-  private _keepSegment?: number; 
-  public get keepSegment() {
-    return this.getNumberAttribute('keep_segment');
+  // keep_segments - computed: true, optional: true, required: false
+  private _keepSegments?: number; 
+  public get keepSegments() {
+    return this.getNumberAttribute('keep_segments');
   }
-  public set keepSegment(value: number) {
-    this._keepSegment = value;
+  public set keepSegments(value: number) {
+    this._keepSegments = value;
   }
-  public resetKeepSegment() {
-    this._keepSegment = undefined;
+  public resetKeepSegments() {
+    this._keepSegments = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get keepSegmentInput() {
-    return this._keepSegment;
+  public get keepSegmentsInput() {
+    return this._keepSegments;
   }
 
   // key_format - computed: true, optional: true, required: false
@@ -6129,6 +7030,22 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
   // Temporarily expose input value. Use with caution.
   public get modeInput() {
     return this._mode;
+  }
+
+  // output_selection - computed: true, optional: true, required: false
+  private _outputSelection?: string; 
+  public get outputSelection() {
+    return this.getStringAttribute('output_selection');
+  }
+  public set outputSelection(value: string) {
+    this._outputSelection = value;
+  }
+  public resetOutputSelection() {
+    this._outputSelection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputSelectionInput() {
+    return this._outputSelection;
   }
 
   // program_date_time - computed: true, optional: true, required: false
@@ -6243,20 +7160,36 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
     return this._streamInfResolution;
   }
 
-  // time_metadata_id3_frame - computed: true, optional: true, required: false
-  private _timeMetadataId3Frame?: string; 
-  public get timeMetadataId3Frame() {
-    return this.getStringAttribute('time_metadata_id3_frame');
+  // timed_metadata_id3_frame - computed: true, optional: true, required: false
+  private _timedMetadataId3Frame?: string; 
+  public get timedMetadataId3Frame() {
+    return this.getStringAttribute('timed_metadata_id3_frame');
   }
-  public set timeMetadataId3Frame(value: string) {
-    this._timeMetadataId3Frame = value;
+  public set timedMetadataId3Frame(value: string) {
+    this._timedMetadataId3Frame = value;
   }
-  public resetTimeMetadataId3Frame() {
-    this._timeMetadataId3Frame = undefined;
+  public resetTimedMetadataId3Frame() {
+    this._timedMetadataId3Frame = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get timeMetadataId3FrameInput() {
-    return this._timeMetadataId3Frame;
+  public get timedMetadataId3FrameInput() {
+    return this._timedMetadataId3Frame;
+  }
+
+  // timed_metadata_id3_period - computed: true, optional: true, required: false
+  private _timedMetadataId3Period?: number; 
+  public get timedMetadataId3Period() {
+    return this.getNumberAttribute('timed_metadata_id3_period');
+  }
+  public set timedMetadataId3Period(value: number) {
+    this._timedMetadataId3Period = value;
+  }
+  public resetTimedMetadataId3Period() {
+    this._timedMetadataId3Period = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timedMetadataId3PeriodInput() {
+    return this._timedMetadataId3Period;
   }
 
   // timestamp_delta_milliseconds - computed: true, optional: true, required: false
@@ -6334,6 +7267,22 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
   // Temporarily expose input value. Use with caution.
   public get hlsCdnSettingsInput() {
     return this._hlsCdnSettings.internalValue;
+  }
+
+  // key_provider_settings - computed: false, optional: true, required: false
+  private _keyProviderSettings = new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference(this, "key_provider_settings");
+  public get keyProviderSettings() {
+    return this._keyProviderSettings;
+  }
+  public putKeyProviderSettings(value: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings) {
+    this._keyProviderSettings.internalValue = value;
+  }
+  public resetKeyProviderSettings() {
+    this._keyProviderSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyProviderSettingsInput() {
+    return this._keyProviderSettings.internalValue;
   }
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination {
@@ -14500,6 +15449,10 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   */
   readonly framerateDenominator?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}
+  */
+  readonly framerateNumerator?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}
   */
   readonly gopBReference?: string;
@@ -14629,6 +15582,7 @@ export function medialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH26
     force_field_pictures: cdktf.stringToTerraform(struct!.forceFieldPictures),
     framerate_control: cdktf.stringToTerraform(struct!.framerateControl),
     framerate_denominator: cdktf.numberToTerraform(struct!.framerateDenominator),
+    framerate_numerator: cdktf.numberToTerraform(struct!.framerateNumerator),
     gop_b_reference: cdktf.stringToTerraform(struct!.gopBReference),
     gop_closed_cadence: cdktf.numberToTerraform(struct!.gopClosedCadence),
     gop_num_b_frames: cdktf.numberToTerraform(struct!.gopNumBFrames),
@@ -14720,6 +15674,10 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
     if (this._framerateDenominator !== undefined) {
       hasAnyValues = true;
       internalValueResult.framerateDenominator = this._framerateDenominator;
+    }
+    if (this._framerateNumerator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.framerateNumerator = this._framerateNumerator;
     }
     if (this._gopBReference !== undefined) {
       hasAnyValues = true;
@@ -14847,6 +15805,7 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
       this._forceFieldPictures = undefined;
       this._framerateControl = undefined;
       this._framerateDenominator = undefined;
+      this._framerateNumerator = undefined;
       this._gopBReference = undefined;
       this._gopClosedCadence = undefined;
       this._gopNumBFrames = undefined;
@@ -14889,6 +15848,7 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
       this._forceFieldPictures = value.forceFieldPictures;
       this._framerateControl = value.framerateControl;
       this._framerateDenominator = value.framerateDenominator;
+      this._framerateNumerator = value.framerateNumerator;
       this._gopBReference = value.gopBReference;
       this._gopClosedCadence = value.gopClosedCadence;
       this._gopNumBFrames = value.gopNumBFrames;
@@ -15109,6 +16069,22 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
   // Temporarily expose input value. Use with caution.
   public get framerateDenominatorInput() {
     return this._framerateDenominator;
+  }
+
+  // framerate_numerator - computed: true, optional: true, required: false
+  private _framerateNumerator?: number; 
+  public get framerateNumerator() {
+    return this.getNumberAttribute('framerate_numerator');
+  }
+  public set framerateNumerator(value: number) {
+    this._framerateNumerator = value;
+  }
+  public resetFramerateNumerator() {
+    this._framerateNumerator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get framerateNumeratorInput() {
+    return this._framerateNumerator;
   }
 
   // gop_b_reference - computed: true, optional: true, required: false
@@ -15551,9 +16527,9 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings {
   */
   readonly frameCaptureSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings;
   /**
-  * h_264_settings block
+  * h264_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#h_264_settings MedialiveChannel#h_264_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#h264_settings MedialiveChannel#h264_settings}
   */
   readonly h264Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings;
 }
@@ -15565,7 +16541,7 @@ export function medialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsToT
   }
   return {
     frame_capture_settings: medialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsToTerraform(struct!.frameCaptureSettings),
-    h_264_settings: medialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsToTerraform(struct!.h264Settings),
+    h264_settings: medialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsToTerraform(struct!.h264Settings),
   }
 }
 
@@ -15623,8 +16599,8 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutput
     return this._frameCaptureSettings.internalValue;
   }
 
-  // h_264_settings - computed: false, optional: true, required: false
-  private _h264Settings = new MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference(this, "h_264_settings");
+  // h264_settings - computed: false, optional: true, required: false
+  private _h264Settings = new MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference(this, "h264_settings");
   public get h264Settings() {
     return this._h264Settings;
   }
@@ -15905,6 +16881,12 @@ export interface MedialiveChannelEncoderSettings {
   */
   readonly audioDescriptions?: MedialiveChannelEncoderSettingsAudioDescriptions[] | cdktf.IResolvable;
   /**
+  * avail_blanking block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
+  */
+  readonly availBlanking?: MedialiveChannelEncoderSettingsAvailBlanking;
+  /**
   * output_groups block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#output_groups MedialiveChannel#output_groups}
@@ -15931,6 +16913,7 @@ export function medialiveChannelEncoderSettingsToTerraform(struct?: MedialiveCha
   }
   return {
     audio_descriptions: cdktf.listMapper(medialiveChannelEncoderSettingsAudioDescriptionsToTerraform, true)(struct!.audioDescriptions),
+    avail_blanking: medialiveChannelEncoderSettingsAvailBlankingToTerraform(struct!.availBlanking),
     output_groups: cdktf.listMapper(medialiveChannelEncoderSettingsOutputGroupsToTerraform, true)(struct!.outputGroups),
     timecode_config: medialiveChannelEncoderSettingsTimecodeConfigToTerraform(struct!.timecodeConfig),
     video_descriptions: cdktf.listMapper(medialiveChannelEncoderSettingsVideoDescriptionsToTerraform, true)(struct!.videoDescriptions),
@@ -15955,6 +16938,10 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.audioDescriptions = this._audioDescriptions?.internalValue;
     }
+    if (this._availBlanking?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availBlanking = this._availBlanking?.internalValue;
+    }
     if (this._outputGroups?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputGroups = this._outputGroups?.internalValue;
@@ -15974,6 +16961,7 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._audioDescriptions.internalValue = undefined;
+      this._availBlanking.internalValue = undefined;
       this._outputGroups.internalValue = undefined;
       this._timecodeConfig.internalValue = undefined;
       this._videoDescriptions.internalValue = undefined;
@@ -15981,6 +16969,7 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._audioDescriptions.internalValue = value.audioDescriptions;
+      this._availBlanking.internalValue = value.availBlanking;
       this._outputGroups.internalValue = value.outputGroups;
       this._timecodeConfig.internalValue = value.timecodeConfig;
       this._videoDescriptions.internalValue = value.videoDescriptions;
@@ -16001,6 +16990,22 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get audioDescriptionsInput() {
     return this._audioDescriptions.internalValue;
+  }
+
+  // avail_blanking - computed: false, optional: true, required: false
+  private _availBlanking = new MedialiveChannelEncoderSettingsAvailBlankingOutputReference(this, "avail_blanking");
+  public get availBlanking() {
+    return this._availBlanking;
+  }
+  public putAvailBlanking(value: MedialiveChannelEncoderSettingsAvailBlanking) {
+    this._availBlanking.internalValue = value;
+  }
+  public resetAvailBlanking() {
+    this._availBlanking.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availBlankingInput() {
+    return this._availBlanking.internalValue;
   }
 
   // output_groups - computed: false, optional: false, required: true
@@ -17332,273 +18337,6 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList exte
     return new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#bandwidth MedialiveChannel#bandwidth}
-  */
-  readonly bandwidth?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}
-  */
-  readonly bufferSegments?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#retries MedialiveChannel#retries}
-  */
-  readonly retries?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#retry_interval MedialiveChannel#retry_interval}
-  */
-  readonly retryInterval?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_35_source MedialiveChannel#scte_35_source}
-  */
-  readonly scte35Source?: string;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    bandwidth: cdktf.numberToTerraform(struct!.bandwidth),
-    buffer_segments: cdktf.numberToTerraform(struct!.bufferSegments),
-    retries: cdktf.numberToTerraform(struct!.retries),
-    retry_interval: cdktf.numberToTerraform(struct!.retryInterval),
-    scte_35_source: cdktf.stringToTerraform(struct!.scte35Source),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._bandwidth !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bandwidth = this._bandwidth;
-    }
-    if (this._bufferSegments !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bufferSegments = this._bufferSegments;
-    }
-    if (this._retries !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retries = this._retries;
-    }
-    if (this._retryInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retryInterval = this._retryInterval;
-    }
-    if (this._scte35Source !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scte35Source = this._scte35Source;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._bandwidth = undefined;
-      this._bufferSegments = undefined;
-      this._retries = undefined;
-      this._retryInterval = undefined;
-      this._scte35Source = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._bandwidth = value.bandwidth;
-      this._bufferSegments = value.bufferSegments;
-      this._retries = value.retries;
-      this._retryInterval = value.retryInterval;
-      this._scte35Source = value.scte35Source;
-    }
-  }
-
-  // bandwidth - computed: false, optional: true, required: false
-  private _bandwidth?: number; 
-  public get bandwidth() {
-    return this.getNumberAttribute('bandwidth');
-  }
-  public set bandwidth(value: number) {
-    this._bandwidth = value;
-  }
-  public resetBandwidth() {
-    this._bandwidth = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bandwidthInput() {
-    return this._bandwidth;
-  }
-
-  // buffer_segments - computed: false, optional: true, required: false
-  private _bufferSegments?: number; 
-  public get bufferSegments() {
-    return this.getNumberAttribute('buffer_segments');
-  }
-  public set bufferSegments(value: number) {
-    this._bufferSegments = value;
-  }
-  public resetBufferSegments() {
-    this._bufferSegments = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bufferSegmentsInput() {
-    return this._bufferSegments;
-  }
-
-  // retries - computed: false, optional: true, required: false
-  private _retries?: number; 
-  public get retries() {
-    return this.getNumberAttribute('retries');
-  }
-  public set retries(value: number) {
-    this._retries = value;
-  }
-  public resetRetries() {
-    this._retries = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retriesInput() {
-    return this._retries;
-  }
-
-  // retry_interval - computed: false, optional: true, required: false
-  private _retryInterval?: number; 
-  public get retryInterval() {
-    return this.getNumberAttribute('retry_interval');
-  }
-  public set retryInterval(value: number) {
-    this._retryInterval = value;
-  }
-  public resetRetryInterval() {
-    this._retryInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retryIntervalInput() {
-    return this._retryInterval;
-  }
-
-  // scte_35_source - computed: false, optional: true, required: false
-  private _scte35Source?: string; 
-  public get scte35Source() {
-    return this.getStringAttribute('scte_35_source');
-  }
-  public set scte35Source(value: string) {
-    this._scte35Source = value;
-  }
-  public resetScte35Source() {
-    this._scte35Source = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scte35SourceInput() {
-    return this._scte35Source;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#server_validation MedialiveChannel#server_validation}
-  */
-  readonly serverValidation?: string;
-  /**
-  * hls_input_settings block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
-  */
-  readonly hlsInputSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    server_validation: cdktf.stringToTerraform(struct!.serverValidation),
-    hls_input_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsToTerraform(struct!.hlsInputSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._serverValidation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serverValidation = this._serverValidation;
-    }
-    if (this._hlsInputSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.hlsInputSettings = this._hlsInputSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._serverValidation = undefined;
-      this._hlsInputSettings.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._serverValidation = value.serverValidation;
-      this._hlsInputSettings.internalValue = value.hlsInputSettings;
-    }
-  }
-
-  // server_validation - computed: false, optional: true, required: false
-  private _serverValidation?: string; 
-  public get serverValidation() {
-    return this.getStringAttribute('server_validation');
-  }
-  public set serverValidation(value: string) {
-    this._serverValidation = value;
-  }
-  public resetServerValidation() {
-    this._serverValidation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverValidationInput() {
-    return this._serverValidation;
-  }
-
-  // hls_input_settings - computed: false, optional: true, required: false
-  private _hlsInputSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference(this, "hls_input_settings");
-  public get hlsInputSettings() {
-    return this._hlsInputSettings;
-  }
-  public putHlsInputSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings) {
-    this._hlsInputSettings.internalValue = value;
-  }
-  public resetHlsInputSettings() {
-    this._hlsInputSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hlsInputSettingsInput() {
-    return this._hlsInputSettings.internalValue;
-  }
-}
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}
@@ -17762,7 +18500,7 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSel
   */
   readonly convert608To708?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_20_detection MedialiveChannel#scte_20_detection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}
   */
   readonly scte20Detection?: string;
   /**
@@ -17782,7 +18520,7 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
   }
   return {
     convert_608_to_708: cdktf.stringToTerraform(struct!.convert608To708),
-    scte_20_detection: cdktf.stringToTerraform(struct!.scte20Detection),
+    scte20_detection: cdktf.stringToTerraform(struct!.scte20Detection),
     source_608_channel_number: cdktf.numberToTerraform(struct!.source608ChannelNumber),
     source_608_track_number: cdktf.numberToTerraform(struct!.source608TrackNumber),
   }
@@ -17854,10 +18592,10 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
     return this._convert608To708;
   }
 
-  // scte_20_detection - computed: false, optional: true, required: false
+  // scte20_detection - computed: false, optional: true, required: false
   private _scte20Detection?: string; 
   public get scte20Detection() {
-    return this.getStringAttribute('scte_20_detection');
+    return this.getStringAttribute('scte20_detection');
   }
   public set scte20Detection(value: string) {
     this._scte20Detection = value;
@@ -18334,15 +19072,15 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSel
   */
   readonly embeddedSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings;
   /**
-  * scte_20_source_settings block
+  * scte20_source_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_20_source_settings MedialiveChannel#scte_20_source_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
   */
   readonly scte20SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings;
   /**
-  * scte_27_source_settings block
+  * scte27_source_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_27_source_settings MedialiveChannel#scte_27_source_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
   */
   readonly scte27SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings;
   /**
@@ -18362,8 +19100,8 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSele
     ancillary_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsToTerraform(struct!.ancillarySourceSettings),
     dvb_tdt_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsToTerraform(struct!.dvbTdtSettings),
     embedded_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsToTerraform(struct!.embeddedSourceSettings),
-    scte_20_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToTerraform(struct!.scte20SourceSettings),
-    scte_27_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToTerraform(struct!.scte27SourceSettings),
+    scte20_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToTerraform(struct!.scte20SourceSettings),
+    scte27_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToTerraform(struct!.scte27SourceSettings),
     teletext_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToTerraform(struct!.teletextSourceSettings),
   }
 }
@@ -18478,8 +19216,8 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
     return this._embeddedSourceSettings.internalValue;
   }
 
-  // scte_20_source_settings - computed: false, optional: true, required: false
-  private _scte20SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference(this, "scte_20_source_settings");
+  // scte20_source_settings - computed: false, optional: true, required: false
+  private _scte20SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference(this, "scte20_source_settings");
   public get scte20SourceSettings() {
     return this._scte20SourceSettings;
   }
@@ -18494,8 +19232,8 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
     return this._scte20SourceSettings.internalValue;
   }
 
-  // scte_27_source_settings - computed: false, optional: true, required: false
-  private _scte27SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference(this, "scte_27_source_settings");
+  // scte27_source_settings - computed: false, optional: true, required: false
+  private _scte27SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference(this, "scte27_source_settings");
   public get scte27SourceSettings() {
     return this._scte27SourceSettings;
   }
@@ -18526,29 +19264,194 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
     return this._teletextSourceSettings.internalValue;
   }
 }
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector {
+export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#color_space MedialiveChannel#color_space}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#language_code MedialiveChannel#language_code}
   */
-  readonly colorSpace?: string;
+  readonly languageCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#name MedialiveChannel#name}
   */
-  readonly colorSpaceUsage?: string;
+  readonly name: string;
+  /**
+  * selector_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#selector_settings MedialiveChannel#selector_settings}
+  */
+  readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings;
 }
 
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelectorOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector): any {
+export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color_space: cdktf.stringToTerraform(struct!.colorSpace),
-    color_space_usage: cdktf.stringToTerraform(struct!.colorSpaceUsage),
+    language_code: cdktf.stringToTerraform(struct!.languageCode),
+    name: cdktf.stringToTerraform(struct!.name),
+    selector_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToTerraform(struct!.selectorSettings),
   }
 }
 
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelectorOutputReference extends cdktf.ComplexObject {
+export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._languageCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.languageCode = this._languageCode;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._selectorSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selectorSettings = this._selectorSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._languageCode = undefined;
+      this._name = undefined;
+      this._selectorSettings.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._languageCode = value.languageCode;
+      this._name = value.name;
+      this._selectorSettings.internalValue = value.selectorSettings;
+    }
+  }
+
+  // language_code - computed: false, optional: true, required: false
+  private _languageCode?: string; 
+  public get languageCode() {
+    return this.getStringAttribute('language_code');
+  }
+  public set languageCode(value: string) {
+    this._languageCode = value;
+  }
+  public resetLanguageCode() {
+    this._languageCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageCodeInput() {
+    return this._languageCode;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // selector_settings - computed: false, optional: true, required: false
+  private _selectorSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference(this, "selector_settings");
+  public get selectorSettings() {
+    return this._selectorSettings;
+  }
+  public putSelectorSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings) {
+    this._selectorSettings.internalValue = value;
+  }
+  public resetSelectorSettings() {
+    this._selectorSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectorSettingsInput() {
+    return this._selectorSettings.internalValue;
+  }
+}
+
+export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList extends cdktf.ComplexList {
+  public internalValue? : MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference {
+    return new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#bandwidth MedialiveChannel#bandwidth}
+  */
+  readonly bandwidth?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}
+  */
+  readonly bufferSegments?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#retries MedialiveChannel#retries}
+  */
+  readonly retries?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#retry_interval MedialiveChannel#retry_interval}
+  */
+  readonly retryInterval?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte35_source MedialiveChannel#scte35_source}
+  */
+  readonly scte35Source?: string;
+}
+
+export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bandwidth: cdktf.numberToTerraform(struct!.bandwidth),
+    buffer_segments: cdktf.numberToTerraform(struct!.bufferSegments),
+    retries: cdktf.numberToTerraform(struct!.retries),
+    retry_interval: cdktf.numberToTerraform(struct!.retryInterval),
+    scte35_source: cdktf.stringToTerraform(struct!.scte35Source),
+  }
+}
+
+export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -18559,7 +19462,259 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSe
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector | undefined {
+  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bandwidth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidth = this._bandwidth;
+    }
+    if (this._bufferSegments !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bufferSegments = this._bufferSegments;
+    }
+    if (this._retries !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retries = this._retries;
+    }
+    if (this._retryInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryInterval = this._retryInterval;
+    }
+    if (this._scte35Source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scte35Source = this._scte35Source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bandwidth = undefined;
+      this._bufferSegments = undefined;
+      this._retries = undefined;
+      this._retryInterval = undefined;
+      this._scte35Source = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bandwidth = value.bandwidth;
+      this._bufferSegments = value.bufferSegments;
+      this._retries = value.retries;
+      this._retryInterval = value.retryInterval;
+      this._scte35Source = value.scte35Source;
+    }
+  }
+
+  // bandwidth - computed: false, optional: true, required: false
+  private _bandwidth?: number; 
+  public get bandwidth() {
+    return this.getNumberAttribute('bandwidth');
+  }
+  public set bandwidth(value: number) {
+    this._bandwidth = value;
+  }
+  public resetBandwidth() {
+    this._bandwidth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthInput() {
+    return this._bandwidth;
+  }
+
+  // buffer_segments - computed: false, optional: true, required: false
+  private _bufferSegments?: number; 
+  public get bufferSegments() {
+    return this.getNumberAttribute('buffer_segments');
+  }
+  public set bufferSegments(value: number) {
+    this._bufferSegments = value;
+  }
+  public resetBufferSegments() {
+    this._bufferSegments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bufferSegmentsInput() {
+    return this._bufferSegments;
+  }
+
+  // retries - computed: false, optional: true, required: false
+  private _retries?: number; 
+  public get retries() {
+    return this.getNumberAttribute('retries');
+  }
+  public set retries(value: number) {
+    this._retries = value;
+  }
+  public resetRetries() {
+    this._retries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retriesInput() {
+    return this._retries;
+  }
+
+  // retry_interval - computed: false, optional: true, required: false
+  private _retryInterval?: number; 
+  public get retryInterval() {
+    return this.getNumberAttribute('retry_interval');
+  }
+  public set retryInterval(value: number) {
+    this._retryInterval = value;
+  }
+  public resetRetryInterval() {
+    this._retryInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryIntervalInput() {
+    return this._retryInterval;
+  }
+
+  // scte35_source - computed: false, optional: true, required: false
+  private _scte35Source?: string; 
+  public get scte35Source() {
+    return this.getStringAttribute('scte35_source');
+  }
+  public set scte35Source(value: string) {
+    this._scte35Source = value;
+  }
+  public resetScte35Source() {
+    this._scte35Source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scte35SourceInput() {
+    return this._scte35Source;
+  }
+}
+export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#server_validation MedialiveChannel#server_validation}
+  */
+  readonly serverValidation?: string;
+  /**
+  * hls_input_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
+  */
+  readonly hlsInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings;
+}
+
+export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    server_validation: cdktf.stringToTerraform(struct!.serverValidation),
+    hls_input_settings: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToTerraform(struct!.hlsInputSettings),
+  }
+}
+
+export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._serverValidation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverValidation = this._serverValidation;
+    }
+    if (this._hlsInputSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hlsInputSettings = this._hlsInputSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._serverValidation = undefined;
+      this._hlsInputSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._serverValidation = value.serverValidation;
+      this._hlsInputSettings.internalValue = value.hlsInputSettings;
+    }
+  }
+
+  // server_validation - computed: false, optional: true, required: false
+  private _serverValidation?: string; 
+  public get serverValidation() {
+    return this.getStringAttribute('server_validation');
+  }
+  public set serverValidation(value: string) {
+    this._serverValidation = value;
+  }
+  public resetServerValidation() {
+    this._serverValidation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverValidationInput() {
+    return this._serverValidation;
+  }
+
+  // hls_input_settings - computed: false, optional: true, required: false
+  private _hlsInputSettings = new MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference(this, "hls_input_settings");
+  public get hlsInputSettings() {
+    return this._hlsInputSettings;
+  }
+  public putHlsInputSettings(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings) {
+    this._hlsInputSettings.internalValue = value;
+  }
+  public resetHlsInputSettings() {
+    this._hlsInputSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hlsInputSettingsInput() {
+    return this._hlsInputSettings.internalValue;
+  }
+}
+export interface MedialiveChannelInputAttachmentsInputSettingsVideoSelector {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#color_space MedialiveChannel#color_space}
+  */
+  readonly colorSpace?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}
+  */
+  readonly colorSpaceUsage?: string;
+}
+
+export function medialiveChannelInputAttachmentsInputSettingsVideoSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference | MedialiveChannelInputAttachmentsInputSettingsVideoSelector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    color_space: cdktf.stringToTerraform(struct!.colorSpace),
+    color_space_usage: cdktf.stringToTerraform(struct!.colorSpaceUsage),
+  }
+}
+
+export class MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsVideoSelector | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._colorSpace !== undefined) {
@@ -18573,7 +19728,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector | undefined) {
+  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsVideoSelector | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._colorSpace = undefined;
@@ -18618,7 +19773,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSe
     return this._colorSpaceUsage;
   }
 }
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
+export interface MedialiveChannelInputAttachmentsInputSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}
   */
@@ -18636,19 +19791,11 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
   */
   readonly inputFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#language_code MedialiveChannel#language_code}
-  */
-  readonly languageCode?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#name MedialiveChannel#name}
-  */
-  readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_35_pid MedialiveChannel#scte_35_pid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
   */
   readonly scte35Pid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#smpte_2038_data_preference MedialiveChannel#smpte_2038_data_preference}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}
   */
   readonly smpte2038DataPreference?: string;
   /**
@@ -18656,26 +19803,32 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
   */
   readonly sourceEndBehavior?: string;
   /**
+  * audio_selector block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_selector MedialiveChannel#audio_selector}
+  */
+  readonly audioSelector?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector[] | cdktf.IResolvable;
+  /**
+  * caption_selector block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#caption_selector MedialiveChannel#caption_selector}
+  */
+  readonly captionSelector?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable;
+  /**
   * network_input_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
   */
-  readonly networkInputSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings;
-  /**
-  * selector_settings block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#selector_settings MedialiveChannel#selector_settings}
-  */
-  readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings;
+  readonly networkInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings;
   /**
   * video_selector block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#video_selector MedialiveChannel#video_selector}
   */
-  readonly videoSelector?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector;
+  readonly videoSelector?: MedialiveChannelInputAttachmentsInputSettingsVideoSelector;
 }
 
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable): any {
+export function medialiveChannelInputAttachmentsInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettings): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -18685,35 +19838,28 @@ export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTe
     denoise_filter: cdktf.stringToTerraform(struct!.denoiseFilter),
     filter_strength: cdktf.numberToTerraform(struct!.filterStrength),
     input_filter: cdktf.stringToTerraform(struct!.inputFilter),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    name: cdktf.stringToTerraform(struct!.name),
-    scte_35_pid: cdktf.numberToTerraform(struct!.scte35Pid),
-    smpte_2038_data_preference: cdktf.stringToTerraform(struct!.smpte2038DataPreference),
+    scte35_pid: cdktf.numberToTerraform(struct!.scte35Pid),
+    smpte2038_data_preference: cdktf.stringToTerraform(struct!.smpte2038DataPreference),
     source_end_behavior: cdktf.stringToTerraform(struct!.sourceEndBehavior),
-    network_input_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsToTerraform(struct!.networkInputSettings),
-    selector_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToTerraform(struct!.selectorSettings),
-    video_selector: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelectorToTerraform(struct!.videoSelector),
+    audio_selector: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsAudioSelectorToTerraform, true)(struct!.audioSelector),
+    caption_selector: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTerraform, true)(struct!.captionSelector),
+    network_input_settings: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToTerraform(struct!.networkInputSettings),
+    video_selector: medialiveChannelInputAttachmentsInputSettingsVideoSelectorToTerraform(struct!.videoSelector),
   }
 }
 
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference extends cdktf.ComplexObject {
+export class MedialiveChannelInputAttachmentsInputSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): MedialiveChannelInputAttachmentsInputSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deblockFilter !== undefined) {
@@ -18732,14 +19878,6 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
       hasAnyValues = true;
       internalValueResult.inputFilter = this._inputFilter;
     }
-    if (this._languageCode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.languageCode = this._languageCode;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
     if (this._scte35Pid !== undefined) {
       hasAnyValues = true;
       internalValueResult.scte35Pid = this._scte35Pid;
@@ -18752,13 +19890,17 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
       hasAnyValues = true;
       internalValueResult.sourceEndBehavior = this._sourceEndBehavior;
     }
+    if (this._audioSelector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.audioSelector = this._audioSelector?.internalValue;
+    }
+    if (this._captionSelector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.captionSelector = this._captionSelector?.internalValue;
+    }
     if (this._networkInputSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkInputSettings = this._networkInputSettings?.internalValue;
-    }
-    if (this._selectorSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.selectorSettings = this._selectorSettings?.internalValue;
     }
     if (this._videoSelector?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -18767,41 +19909,33 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._deblockFilter = undefined;
       this._denoiseFilter = undefined;
       this._filterStrength = undefined;
       this._inputFilter = undefined;
-      this._languageCode = undefined;
-      this._name = undefined;
       this._scte35Pid = undefined;
       this._smpte2038DataPreference = undefined;
       this._sourceEndBehavior = undefined;
+      this._audioSelector.internalValue = undefined;
+      this._captionSelector.internalValue = undefined;
       this._networkInputSettings.internalValue = undefined;
-      this._selectorSettings.internalValue = undefined;
       this._videoSelector.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._deblockFilter = value.deblockFilter;
       this._denoiseFilter = value.denoiseFilter;
       this._filterStrength = value.filterStrength;
       this._inputFilter = value.inputFilter;
-      this._languageCode = value.languageCode;
-      this._name = value.name;
       this._scte35Pid = value.scte35Pid;
       this._smpte2038DataPreference = value.smpte2038DataPreference;
       this._sourceEndBehavior = value.sourceEndBehavior;
+      this._audioSelector.internalValue = value.audioSelector;
+      this._captionSelector.internalValue = value.captionSelector;
       this._networkInputSettings.internalValue = value.networkInputSettings;
-      this._selectorSettings.internalValue = value.selectorSettings;
       this._videoSelector.internalValue = value.videoSelector;
     }
   }
@@ -18870,39 +20004,10 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
     return this._inputFilter;
   }
 
-  // language_code - computed: false, optional: true, required: false
-  private _languageCode?: string; 
-  public get languageCode() {
-    return this.getStringAttribute('language_code');
-  }
-  public set languageCode(value: string) {
-    this._languageCode = value;
-  }
-  public resetLanguageCode() {
-    this._languageCode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageCodeInput() {
-    return this._languageCode;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // scte_35_pid - computed: false, optional: true, required: false
+  // scte35_pid - computed: false, optional: true, required: false
   private _scte35Pid?: number; 
   public get scte35Pid() {
-    return this.getNumberAttribute('scte_35_pid');
+    return this.getNumberAttribute('scte35_pid');
   }
   public set scte35Pid(value: number) {
     this._scte35Pid = value;
@@ -18915,10 +20020,10 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
     return this._scte35Pid;
   }
 
-  // smpte_2038_data_preference - computed: false, optional: true, required: false
+  // smpte2038_data_preference - computed: false, optional: true, required: false
   private _smpte2038DataPreference?: string; 
   public get smpte2038DataPreference() {
-    return this.getStringAttribute('smpte_2038_data_preference');
+    return this.getStringAttribute('smpte2038_data_preference');
   }
   public set smpte2038DataPreference(value: string) {
     this._smpte2038DataPreference = value;
@@ -18945,138 +20050,6 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputR
   // Temporarily expose input value. Use with caution.
   public get sourceEndBehaviorInput() {
     return this._sourceEndBehavior;
-  }
-
-  // network_input_settings - computed: false, optional: true, required: false
-  private _networkInputSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsOutputReference(this, "network_input_settings");
-  public get networkInputSettings() {
-    return this._networkInputSettings;
-  }
-  public putNetworkInputSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings) {
-    this._networkInputSettings.internalValue = value;
-  }
-  public resetNetworkInputSettings() {
-    this._networkInputSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get networkInputSettingsInput() {
-    return this._networkInputSettings.internalValue;
-  }
-
-  // selector_settings - computed: false, optional: true, required: false
-  private _selectorSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference(this, "selector_settings");
-  public get selectorSettings() {
-    return this._selectorSettings;
-  }
-  public putSelectorSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings) {
-    this._selectorSettings.internalValue = value;
-  }
-  public resetSelectorSettings() {
-    this._selectorSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectorSettingsInput() {
-    return this._selectorSettings.internalValue;
-  }
-
-  // video_selector - computed: false, optional: true, required: false
-  private _videoSelector = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelectorOutputReference(this, "video_selector");
-  public get videoSelector() {
-    return this._videoSelector;
-  }
-  public putVideoSelector(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector) {
-    this._videoSelector.internalValue = value;
-  }
-  public resetVideoSelector() {
-    this._videoSelector.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoSelectorInput() {
-    return this._videoSelector.internalValue;
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList extends cdktf.ComplexList {
-  public internalValue? : MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference {
-    return new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettings {
-  /**
-  * audio_selector block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_selector MedialiveChannel#audio_selector}
-  */
-  readonly audioSelector?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector[] | cdktf.IResolvable;
-  /**
-  * caption_selector block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#caption_selector MedialiveChannel#caption_selector}
-  */
-  readonly captionSelector?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    audio_selector: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsAudioSelectorToTerraform, true)(struct!.audioSelector),
-    caption_selector: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTerraform, true)(struct!.captionSelector),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._audioSelector?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioSelector = this._audioSelector?.internalValue;
-    }
-    if (this._captionSelector?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.captionSelector = this._captionSelector?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._audioSelector.internalValue = undefined;
-      this._captionSelector.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._audioSelector.internalValue = value.audioSelector;
-      this._captionSelector.internalValue = value.captionSelector;
-    }
   }
 
   // audio_selector - computed: false, optional: true, required: false
@@ -19109,6 +20082,38 @@ export class MedialiveChannelInputAttachmentsInputSettingsOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get captionSelectorInput() {
     return this._captionSelector.internalValue;
+  }
+
+  // network_input_settings - computed: false, optional: true, required: false
+  private _networkInputSettings = new MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference(this, "network_input_settings");
+  public get networkInputSettings() {
+    return this._networkInputSettings;
+  }
+  public putNetworkInputSettings(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings) {
+    this._networkInputSettings.internalValue = value;
+  }
+  public resetNetworkInputSettings() {
+    this._networkInputSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInputSettingsInput() {
+    return this._networkInputSettings.internalValue;
+  }
+
+  // video_selector - computed: false, optional: true, required: false
+  private _videoSelector = new MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference(this, "video_selector");
+  public get videoSelector() {
+    return this._videoSelector;
+  }
+  public putVideoSelector(value: MedialiveChannelInputAttachmentsInputSettingsVideoSelector) {
+    this._videoSelector.internalValue = value;
+  }
+  public resetVideoSelector() {
+    this._videoSelector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get videoSelectorInput() {
+    return this._videoSelector.internalValue;
   }
 }
 export interface MedialiveChannelInputAttachments {
@@ -19757,7 +20762,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

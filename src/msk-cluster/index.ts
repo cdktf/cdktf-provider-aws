@@ -31,6 +31,10 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly numberOfBrokerNodes: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#storage_mode MskCluster#storage_mode}
+  */
+  readonly storageMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#tags MskCluster#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -2163,7 +2167,7 @@ export class MskCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2179,6 +2183,7 @@ export class MskCluster extends cdktf.TerraformResource {
     this._id = config.id;
     this._kafkaVersion = config.kafkaVersion;
     this._numberOfBrokerNodes = config.numberOfBrokerNodes;
+    this._storageMode = config.storageMode;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._brokerNodeGroupInfo.internalValue = config.brokerNodeGroupInfo;
@@ -2308,6 +2313,22 @@ export class MskCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get numberOfBrokerNodesInput() {
     return this._numberOfBrokerNodes;
+  }
+
+  // storage_mode - computed: true, optional: true, required: false
+  private _storageMode?: string; 
+  public get storageMode() {
+    return this.getStringAttribute('storage_mode');
+  }
+  public set storageMode(value: string) {
+    this._storageMode = value;
+  }
+  public resetStorageMode() {
+    this._storageMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageModeInput() {
+    return this._storageMode;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -2472,6 +2493,7 @@ export class MskCluster extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kafka_version: cdktf.stringToTerraform(this._kafkaVersion),
       number_of_broker_nodes: cdktf.numberToTerraform(this._numberOfBrokerNodes),
+      storage_mode: cdktf.stringToTerraform(this._storageMode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       broker_node_group_info: mskClusterBrokerNodeGroupInfoToTerraform(this._brokerNodeGroupInfo.internalValue),
