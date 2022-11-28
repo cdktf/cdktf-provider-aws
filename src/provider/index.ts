@@ -1488,6 +1488,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ivschat AwsProvider#ivschat}
+  */
+  readonly ivschat?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#kafka AwsProvider#kafka}
   */
   readonly kafka?: string;
@@ -2256,6 +2262,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#scheduler AwsProvider#scheduler}
+  */
+  readonly scheduler?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#schemas AwsProvider#schemas}
   */
   readonly schemas?: string;
@@ -2783,6 +2795,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     iottwinmaker: cdktf.stringToTerraform(struct!.iottwinmaker),
     iotwireless: cdktf.stringToTerraform(struct!.iotwireless),
     ivs: cdktf.stringToTerraform(struct!.ivs),
+    ivschat: cdktf.stringToTerraform(struct!.ivschat),
     kafka: cdktf.stringToTerraform(struct!.kafka),
     kafkaconnect: cdktf.stringToTerraform(struct!.kafkaconnect),
     kendra: cdktf.stringToTerraform(struct!.kendra),
@@ -2911,6 +2924,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     sagemakerfeaturestoreruntime: cdktf.stringToTerraform(struct!.sagemakerfeaturestoreruntime),
     sagemakerruntime: cdktf.stringToTerraform(struct!.sagemakerruntime),
     savingsplans: cdktf.stringToTerraform(struct!.savingsplans),
+    scheduler: cdktf.stringToTerraform(struct!.scheduler),
     schemas: cdktf.stringToTerraform(struct!.schemas),
     sdb: cdktf.stringToTerraform(struct!.sdb),
     secretsmanager: cdktf.stringToTerraform(struct!.secretsmanager),
@@ -3023,7 +3037,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

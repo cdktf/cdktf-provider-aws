@@ -46,7 +46,7 @@ export class DataAwsS3BucketPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_s3_bucket_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

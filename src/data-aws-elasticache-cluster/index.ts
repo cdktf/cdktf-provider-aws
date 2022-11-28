@@ -78,6 +78,11 @@ export class DataAwsElasticacheClusterCacheNodesOutputReference extends cdktf.Co
     return this.getStringAttribute('id');
   }
 
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
@@ -208,7 +213,7 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_elasticache_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -293,6 +298,11 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // ip_discovery - computed: true, optional: false, required: false
+  public get ipDiscovery() {
+    return this.getStringAttribute('ip_discovery');
+  }
+
   // log_delivery_configuration - computed: true, optional: false, required: false
   private _logDeliveryConfiguration = new DataAwsElasticacheClusterLogDeliveryConfigurationList(this, "log_delivery_configuration", true);
   public get logDeliveryConfiguration() {
@@ -302,6 +312,11 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // maintenance_window - computed: true, optional: false, required: false
   public get maintenanceWindow() {
     return this.getStringAttribute('maintenance_window');
+  }
+
+  // network_type - computed: true, optional: false, required: false
+  public get networkType() {
+    return this.getStringAttribute('network_type');
   }
 
   // node_type - computed: true, optional: false, required: false
@@ -327,6 +342,11 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
+  }
+
+  // preferred_outpost_arn - computed: true, optional: false, required: false
+  public get preferredOutpostArn() {
+    return this.getStringAttribute('preferred_outpost_arn');
   }
 
   // replication_group_id - computed: true, optional: false, required: false

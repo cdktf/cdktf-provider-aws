@@ -70,7 +70,7 @@ export class ShieldProtectionGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_shield_protection_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

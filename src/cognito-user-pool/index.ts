@@ -2016,6 +2016,10 @@ export interface CognitoUserPoolSmsConfiguration {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#sns_caller_arn CognitoUserPool#sns_caller_arn}
   */
   readonly snsCallerArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#sns_region CognitoUserPool#sns_region}
+  */
+  readonly snsRegion?: string;
 }
 
 export function cognitoUserPoolSmsConfigurationToTerraform(struct?: CognitoUserPoolSmsConfigurationOutputReference | CognitoUserPoolSmsConfiguration): any {
@@ -2026,6 +2030,7 @@ export function cognitoUserPoolSmsConfigurationToTerraform(struct?: CognitoUserP
   return {
     external_id: cdktf.stringToTerraform(struct!.externalId),
     sns_caller_arn: cdktf.stringToTerraform(struct!.snsCallerArn),
+    sns_region: cdktf.stringToTerraform(struct!.snsRegion),
   }
 }
 
@@ -2051,6 +2056,10 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.snsCallerArn = this._snsCallerArn;
     }
+    if (this._snsRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snsRegion = this._snsRegion;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2059,11 +2068,13 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this._externalId = undefined;
       this._snsCallerArn = undefined;
+      this._snsRegion = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._externalId = value.externalId;
       this._snsCallerArn = value.snsCallerArn;
+      this._snsRegion = value.snsRegion;
     }
   }
 
@@ -2091,6 +2102,22 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get snsCallerArnInput() {
     return this._snsCallerArn;
+  }
+
+  // sns_region - computed: true, optional: true, required: false
+  private _snsRegion?: string; 
+  public get snsRegion() {
+    return this.getStringAttribute('sns_region');
+  }
+  public set snsRegion(value: string) {
+    this._snsRegion = value;
+  }
+  public resetSnsRegion() {
+    this._snsRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snsRegionInput() {
+    return this._snsRegion;
   }
 }
 export interface CognitoUserPoolSoftwareTokenMfaConfiguration {
@@ -2568,7 +2595,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -14,10 +14,6 @@ export interface DataAwsDefaultTagsConfig extends cdktf.TerraformMetaArguments {
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/default_tags#tags DataAwsDefaultTags#tags}
-  */
-  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -46,7 +42,7 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_default_tags',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -58,7 +54,6 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._tags = config.tags;
   }
 
   // ==========
@@ -81,19 +76,9 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }; 
+  // tags - computed: true, optional: false, required: false
+  private _tags = new cdktf.StringMap(this, "tags");
   public get tags() {
-    return this.getStringMapAttribute('tags');
-  }
-  public set tags(value: { [key: string]: string }) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
     return this._tags;
   }
 
@@ -104,7 +89,6 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

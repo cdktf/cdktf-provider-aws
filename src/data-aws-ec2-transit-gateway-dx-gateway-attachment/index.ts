@@ -259,7 +259,7 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
       terraformResourceType: 'aws_ec2_transit_gateway_dx_gateway_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
