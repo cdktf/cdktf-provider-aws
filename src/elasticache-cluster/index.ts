@@ -47,9 +47,17 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#ip_discovery ElasticacheCluster#ip_discovery}
+  */
+  readonly ipDiscovery?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#maintenance_window ElasticacheCluster#maintenance_window}
   */
   readonly maintenanceWindow?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#network_type ElasticacheCluster#network_type}
+  */
+  readonly networkType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#node_type ElasticacheCluster#node_type}
   */
@@ -63,6 +71,10 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly numCacheNodes?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#outpost_mode ElasticacheCluster#outpost_mode}
+  */
+  readonly outpostMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#parameter_group_name ElasticacheCluster#parameter_group_name}
   */
   readonly parameterGroupName?: string;
@@ -74,6 +86,10 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#preferred_availability_zones ElasticacheCluster#preferred_availability_zones}
   */
   readonly preferredAvailabilityZones?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#preferred_outpost_arn ElasticacheCluster#preferred_outpost_arn}
+  */
+  readonly preferredOutpostArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#replication_group_id ElasticacheCluster#replication_group_id}
   */
@@ -174,6 +190,11 @@ export class ElasticacheClusterCacheNodesOutputReference extends cdktf.ComplexOb
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
   }
 
   // port - computed: true, optional: false, required: false
@@ -393,7 +414,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -413,13 +434,17 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     this._engineVersion = config.engineVersion;
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._id = config.id;
+    this._ipDiscovery = config.ipDiscovery;
     this._maintenanceWindow = config.maintenanceWindow;
+    this._networkType = config.networkType;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
     this._numCacheNodes = config.numCacheNodes;
+    this._outpostMode = config.outpostMode;
     this._parameterGroupName = config.parameterGroupName;
     this._port = config.port;
     this._preferredAvailabilityZones = config.preferredAvailabilityZones;
+    this._preferredOutpostArn = config.preferredOutpostArn;
     this._replicationGroupId = config.replicationGroupId;
     this._securityGroupIds = config.securityGroupIds;
     this._securityGroupNames = config.securityGroupNames;
@@ -604,6 +629,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // ip_discovery - computed: true, optional: true, required: false
+  private _ipDiscovery?: string; 
+  public get ipDiscovery() {
+    return this.getStringAttribute('ip_discovery');
+  }
+  public set ipDiscovery(value: string) {
+    this._ipDiscovery = value;
+  }
+  public resetIpDiscovery() {
+    this._ipDiscovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipDiscoveryInput() {
+    return this._ipDiscovery;
+  }
+
   // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow?: string; 
   public get maintenanceWindow() {
@@ -618,6 +659,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get maintenanceWindowInput() {
     return this._maintenanceWindow;
+  }
+
+  // network_type - computed: true, optional: true, required: false
+  private _networkType?: string; 
+  public get networkType() {
+    return this.getStringAttribute('network_type');
+  }
+  public set networkType(value: string) {
+    this._networkType = value;
+  }
+  public resetNetworkType() {
+    this._networkType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTypeInput() {
+    return this._networkType;
   }
 
   // node_type - computed: true, optional: true, required: false
@@ -668,6 +725,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     return this._numCacheNodes;
   }
 
+  // outpost_mode - computed: false, optional: true, required: false
+  private _outpostMode?: string; 
+  public get outpostMode() {
+    return this.getStringAttribute('outpost_mode');
+  }
+  public set outpostMode(value: string) {
+    this._outpostMode = value;
+  }
+  public resetOutpostMode() {
+    this._outpostMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostModeInput() {
+    return this._outpostMode;
+  }
+
   // parameter_group_name - computed: true, optional: true, required: false
   private _parameterGroupName?: string; 
   public get parameterGroupName() {
@@ -714,6 +787,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get preferredAvailabilityZonesInput() {
     return this._preferredAvailabilityZones;
+  }
+
+  // preferred_outpost_arn - computed: true, optional: true, required: false
+  private _preferredOutpostArn?: string; 
+  public get preferredOutpostArn() {
+    return this.getStringAttribute('preferred_outpost_arn');
+  }
+  public set preferredOutpostArn(value: string) {
+    this._preferredOutpostArn = value;
+  }
+  public resetPreferredOutpostArn() {
+    this._preferredOutpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredOutpostArnInput() {
+    return this._preferredOutpostArn;
   }
 
   // replication_group_id - computed: true, optional: true, required: false
@@ -907,13 +996,17 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      ip_discovery: cdktf.stringToTerraform(this._ipDiscovery),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      network_type: cdktf.stringToTerraform(this._networkType),
       node_type: cdktf.stringToTerraform(this._nodeType),
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
       num_cache_nodes: cdktf.numberToTerraform(this._numCacheNodes),
+      outpost_mode: cdktf.stringToTerraform(this._outpostMode),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       port: cdktf.numberToTerraform(this._port),
       preferred_availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredAvailabilityZones),
+      preferred_outpost_arn: cdktf.stringToTerraform(this._preferredOutpostArn),
       replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       security_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupNames),

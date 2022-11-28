@@ -23,6 +23,10 @@ export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway#private_ip NatGateway#private_ip}
+  */
+  readonly privateIp?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway#subnet_id NatGateway#subnet_id}
   */
   readonly subnetId: string;
@@ -62,7 +66,7 @@ export class NatGateway extends cdktf.TerraformResource {
       terraformResourceType: 'aws_nat_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -76,6 +80,7 @@ export class NatGateway extends cdktf.TerraformResource {
     this._allocationId = config.allocationId;
     this._connectivityType = config.connectivityType;
     this._id = config.id;
+    this._privateIp = config.privateIp;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -138,9 +143,20 @@ export class NatGateway extends cdktf.TerraformResource {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // private_ip - computed: true, optional: false, required: false
+  // private_ip - computed: true, optional: true, required: false
+  private _privateIp?: string; 
   public get privateIp() {
     return this.getStringAttribute('private_ip');
+  }
+  public set privateIp(value: string) {
+    this._privateIp = value;
+  }
+  public resetPrivateIp() {
+    this._privateIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpInput() {
+    return this._privateIp;
   }
 
   // public_ip - computed: true, optional: false, required: false
@@ -202,6 +218,7 @@ export class NatGateway extends cdktf.TerraformResource {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
       connectivity_type: cdktf.stringToTerraform(this._connectivityType),
       id: cdktf.stringToTerraform(this._id),
+      private_ip: cdktf.stringToTerraform(this._privateIp),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

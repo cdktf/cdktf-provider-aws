@@ -47,6 +47,10 @@ export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly instanceAlias?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#multi_party_conference_enabled ConnectInstance#multi_party_conference_enabled}
+  */
+  readonly multiPartyConferenceEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#outbound_calls_enabled ConnectInstance#outbound_calls_enabled}
   */
   readonly outboundCallsEnabled: boolean | cdktf.IResolvable;
@@ -186,7 +190,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -206,6 +210,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
     this._identityManagementType = config.identityManagementType;
     this._inboundCallsEnabled = config.inboundCallsEnabled;
     this._instanceAlias = config.instanceAlias;
+    this._multiPartyConferenceEnabled = config.multiPartyConferenceEnabled;
     this._outboundCallsEnabled = config.outboundCallsEnabled;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -362,6 +367,22 @@ export class ConnectInstance extends cdktf.TerraformResource {
     return this._instanceAlias;
   }
 
+  // multi_party_conference_enabled - computed: false, optional: true, required: false
+  private _multiPartyConferenceEnabled?: boolean | cdktf.IResolvable; 
+  public get multiPartyConferenceEnabled() {
+    return this.getBooleanAttribute('multi_party_conference_enabled');
+  }
+  public set multiPartyConferenceEnabled(value: boolean | cdktf.IResolvable) {
+    this._multiPartyConferenceEnabled = value;
+  }
+  public resetMultiPartyConferenceEnabled() {
+    this._multiPartyConferenceEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiPartyConferenceEnabledInput() {
+    return this._multiPartyConferenceEnabled;
+  }
+
   // outbound_calls_enabled - computed: false, optional: false, required: true
   private _outboundCallsEnabled?: boolean | cdktf.IResolvable; 
   public get outboundCallsEnabled() {
@@ -416,6 +437,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
       identity_management_type: cdktf.stringToTerraform(this._identityManagementType),
       inbound_calls_enabled: cdktf.booleanToTerraform(this._inboundCallsEnabled),
       instance_alias: cdktf.stringToTerraform(this._instanceAlias),
+      multi_party_conference_enabled: cdktf.booleanToTerraform(this._multiPartyConferenceEnabled),
       outbound_calls_enabled: cdktf.booleanToTerraform(this._outboundCallsEnabled),
       timeouts: connectInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };

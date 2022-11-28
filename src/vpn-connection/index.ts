@@ -793,7 +793,7 @@ export class VpnConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpn_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

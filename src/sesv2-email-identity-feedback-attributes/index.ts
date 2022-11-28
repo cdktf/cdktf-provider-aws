@@ -50,7 +50,7 @@ export class Sesv2EmailIdentityFeedbackAttributes extends cdktf.TerraformResourc
       terraformResourceType: 'aws_sesv2_email_identity_feedback_attributes',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
