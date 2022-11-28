@@ -177,7 +177,7 @@ export interface ResourcegroupsGroupConfiguration {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/resourcegroups_group#parameters ResourcegroupsGroup#parameters}
   */
-  readonly parameters: ResourcegroupsGroupConfigurationParameters[] | cdktf.IResolvable;
+  readonly parameters?: ResourcegroupsGroupConfigurationParameters[] | cdktf.IResolvable;
 }
 
 export function resourcegroupsGroupConfigurationToTerraform(struct?: ResourcegroupsGroupConfiguration | cdktf.IResolvable): any {
@@ -254,13 +254,16 @@ export class ResourcegroupsGroupConfigurationOutputReference extends cdktf.Compl
     return this._type;
   }
 
-  // parameters - computed: false, optional: false, required: true
+  // parameters - computed: false, optional: true, required: false
   private _parameters = new ResourcegroupsGroupConfigurationParametersList(this, "parameters", true);
   public get parameters() {
     return this._parameters;
   }
   public putParameters(value: ResourcegroupsGroupConfigurationParameters[] | cdktf.IResolvable) {
     this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
@@ -505,7 +508,7 @@ export class ResourcegroupsGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_resourcegroups_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

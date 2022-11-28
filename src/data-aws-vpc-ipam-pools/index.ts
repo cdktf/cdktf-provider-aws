@@ -322,7 +322,7 @@ export class DataAwsVpcIpamPools extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_ipam_pools',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

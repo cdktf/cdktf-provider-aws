@@ -50,7 +50,7 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ecs_container_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -167,7 +167,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_security_group_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -314,6 +314,11 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
     return this._securityGroupId;
+  }
+
+  // security_group_rule_id - computed: true, optional: false, required: false
+  public get securityGroupRuleId() {
+    return this.getStringAttribute('security_group_rule_id');
   }
 
   // self - computed: false, optional: true, required: false

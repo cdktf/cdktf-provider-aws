@@ -29,7 +29,7 @@ export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/customer_gateway#ip_address CustomerGateway#ip_address}
   */
-  readonly ipAddress: string;
+  readonly ipAddress?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/customer_gateway#tags CustomerGateway#tags}
   */
@@ -70,7 +70,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
       terraformResourceType: 'aws_customer_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -161,13 +161,16 @@ export class CustomerGateway extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // ip_address - computed: false, optional: false, required: true
+  // ip_address - computed: false, optional: true, required: false
   private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
   public set ipAddress(value: string) {
     this._ipAddress = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {

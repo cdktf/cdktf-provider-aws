@@ -22,10 +22,6 @@ export interface DataAwsGlobalacceleratorAcceleratorConfig extends cdktf.Terrafo
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}
   */
   readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#tags DataAwsGlobalacceleratorAccelerator#tags}
-  */
-  readonly tags?: { [key: string]: string };
 }
 export interface DataAwsGlobalacceleratorAcceleratorAttributes {
 }
@@ -197,7 +193,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.39.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -211,7 +207,6 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
     this._arn = config.arn;
     this._id = config.id;
     this._name = config.name;
-    this._tags = config.tags;
   }
 
   // ==========
@@ -298,19 +293,9 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
     return this._name;
   }
 
-  // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }; 
+  // tags - computed: true, optional: false, required: false
+  private _tags = new cdktf.StringMap(this, "tags");
   public get tags() {
-    return this.getStringMapAttribute('tags');
-  }
-  public set tags(value: { [key: string]: string }) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
     return this._tags;
   }
 
@@ -323,7 +308,6 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }
