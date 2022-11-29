@@ -16,6 +16,10 @@ export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_cluster#data_tiering MemorydbCluster#data_tiering}
+  */
+  readonly dataTiering?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_cluster#description MemorydbCluster#description}
   */
   readonly description?: string;
@@ -571,7 +575,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_memorydb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -584,6 +588,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
     });
     this._aclName = config.aclName;
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
+    this._dataTiering = config.dataTiering;
     this._description = config.description;
     this._engineVersion = config.engineVersion;
     this._finalSnapshotName = config.finalSnapshotName;
@@ -652,6 +657,22 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   private _clusterEndpoint = new MemorydbClusterClusterEndpointList(this, "cluster_endpoint", false);
   public get clusterEndpoint() {
     return this._clusterEndpoint;
+  }
+
+  // data_tiering - computed: false, optional: true, required: false
+  private _dataTiering?: boolean | cdktf.IResolvable; 
+  public get dataTiering() {
+    return this.getBooleanAttribute('data_tiering');
+  }
+  public set dataTiering(value: boolean | cdktf.IResolvable) {
+    this._dataTiering = value;
+  }
+  public resetDataTiering() {
+    this._dataTiering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTieringInput() {
+    return this._dataTiering;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1054,6 +1075,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
     return {
       acl_name: cdktf.stringToTerraform(this._aclName),
       auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      data_tiering: cdktf.booleanToTerraform(this._dataTiering),
       description: cdktf.stringToTerraform(this._description),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_name: cdktf.stringToTerraform(this._finalSnapshotName),

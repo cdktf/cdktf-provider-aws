@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#architecture EmrserverlessApplication#architecture}
+  */
+  readonly architecture?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#id EmrserverlessApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -633,7 +637,7 @@ export class EmrserverlessApplicationMaximumCapacityOutputReference extends cdkt
     return this._cpu;
   }
 
-  // disk - computed: false, optional: true, required: false
+  // disk - computed: true, optional: true, required: false
   private _disk?: string; 
   public get disk() {
     return this.getStringAttribute('disk');
@@ -781,7 +785,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emrserverless_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -792,6 +796,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._architecture = config.architecture;
     this._id = config.id;
     this._name = config.name;
     this._releaseLabel = config.releaseLabel;
@@ -808,6 +813,22 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // architecture - computed: false, optional: true, required: false
+  private _architecture?: string; 
+  public get architecture() {
+    return this.getStringAttribute('architecture');
+  }
+  public set architecture(value: string) {
+    this._architecture = value;
+  }
+  public resetArchitecture() {
+    this._architecture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get architectureInput() {
+    return this._architecture;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -987,6 +1008,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      architecture: cdktf.stringToTerraform(this._architecture),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       release_label: cdktf.stringToTerraform(this._releaseLabel),

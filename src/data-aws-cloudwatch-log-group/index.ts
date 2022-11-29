@@ -50,7 +50,7 @@ export class DataAwsCloudwatchLogGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cloudwatch_log_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

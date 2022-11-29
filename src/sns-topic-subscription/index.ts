@@ -28,6 +28,10 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   */
   readonly filterPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}
+  */
+  readonly filterPolicyScope?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#id SnsTopicSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -82,7 +86,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sns_topic_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -98,6 +102,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     this._endpoint = config.endpoint;
     this._endpointAutoConfirms = config.endpointAutoConfirms;
     this._filterPolicy = config.filterPolicy;
+    this._filterPolicyScope = config.filterPolicyScope;
     this._id = config.id;
     this._protocol = config.protocol;
     this._rawMessageDelivery = config.rawMessageDelivery;
@@ -195,6 +200,22 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get filterPolicyInput() {
     return this._filterPolicy;
+  }
+
+  // filter_policy_scope - computed: true, optional: true, required: false
+  private _filterPolicyScope?: string; 
+  public get filterPolicyScope() {
+    return this.getStringAttribute('filter_policy_scope');
+  }
+  public set filterPolicyScope(value: string) {
+    this._filterPolicyScope = value;
+  }
+  public resetFilterPolicyScope() {
+    this._filterPolicyScope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterPolicyScopeInput() {
+    return this._filterPolicyScope;
   }
 
   // id - computed: true, optional: true, required: false
@@ -308,6 +329,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       endpoint: cdktf.stringToTerraform(this._endpoint),
       endpoint_auto_confirms: cdktf.booleanToTerraform(this._endpointAutoConfirms),
       filter_policy: cdktf.stringToTerraform(this._filterPolicy),
+      filter_policy_scope: cdktf.stringToTerraform(this._filterPolicyScope),
       id: cdktf.stringToTerraform(this._id),
       protocol: cdktf.stringToTerraform(this._protocol),
       raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
