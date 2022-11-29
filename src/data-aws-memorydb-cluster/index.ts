@@ -348,7 +348,7 @@ export class DataAwsMemorydbCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_memorydb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -387,6 +387,11 @@ export class DataAwsMemorydbCluster extends cdktf.TerraformDataSource {
   private _clusterEndpoint = new DataAwsMemorydbClusterClusterEndpointList(this, "cluster_endpoint", false);
   public get clusterEndpoint() {
     return this._clusterEndpoint;
+  }
+
+  // data_tiering - computed: true, optional: false, required: false
+  public get dataTiering() {
+    return this.getBooleanAttribute('data_tiering');
   }
 
   // description - computed: true, optional: false, required: false

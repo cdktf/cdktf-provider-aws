@@ -194,7 +194,7 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_batch_scheduling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

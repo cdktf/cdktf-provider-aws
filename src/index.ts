@@ -180,6 +180,7 @@ export * as cloudwatchEventConnection from './cloudwatch-event-connection';
 export * as cloudwatchEventPermission from './cloudwatch-event-permission';
 export * as cloudwatchEventRule from './cloudwatch-event-rule';
 export * as cloudwatchEventTarget from './cloudwatch-event-target';
+export * as cloudwatchLogDataProtectionPolicy from './cloudwatch-log-data-protection-policy';
 export * as cloudwatchLogDestination from './cloudwatch-log-destination';
 export * as cloudwatchLogDestinationPolicy from './cloudwatch-log-destination-policy';
 export * as cloudwatchLogGroup from './cloudwatch-log-group';
@@ -1449,6 +1450,7 @@ export * as dataAwsRedshiftClusterCredentials from './data-aws-redshift-cluster-
 export * as dataAwsRedshiftOrderableCluster from './data-aws-redshift-orderable-cluster';
 export * as dataAwsRedshiftServiceAccount from './data-aws-redshift-service-account';
 export * as dataAwsRedshiftSubnetGroup from './data-aws-redshift-subnet-group';
+export * as dataAwsRedshiftserverlessCredentials from './data-aws-redshiftserverless-credentials';
 export * as dataAwsRegion from './data-aws-region';
 export * as dataAwsRegions from './data-aws-regions';
 export * as dataAwsResourcegroupstaggingapiResources from './data-aws-resourcegroupstaggingapi-resources';

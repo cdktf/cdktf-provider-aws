@@ -243,6 +243,12 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpcSecurityGroupIds?: string[];
   /**
+  * blue_green_update block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#blue_green_update DbInstance#blue_green_update}
+  */
+  readonly blueGreenUpdate?: DbInstanceBlueGreenUpdate;
+  /**
   * restore_to_point_in_time block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#restore_to_point_in_time DbInstance#restore_to_point_in_time}
@@ -260,6 +266,71 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#timeouts DbInstance#timeouts}
   */
   readonly timeouts?: DbInstanceTimeouts;
+}
+export interface DbInstanceBlueGreenUpdate {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#enabled DbInstance#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function dbInstanceBlueGreenUpdateToTerraform(struct?: DbInstanceBlueGreenUpdateOutputReference | DbInstanceBlueGreenUpdate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class DbInstanceBlueGreenUpdateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DbInstanceBlueGreenUpdate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DbInstanceBlueGreenUpdate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
 }
 export interface DbInstanceRestoreToPointInTime {
   /**
@@ -751,7 +822,7 @@ export class DbInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -820,6 +891,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._timezone = config.timezone;
     this._username = config.username;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._blueGreenUpdate.internalValue = config.blueGreenUpdate;
     this._restoreToPointInTime.internalValue = config.restoreToPointInTime;
     this._s3Import.internalValue = config.s3Import;
     this._timeouts.internalValue = config.timeouts;
@@ -1799,6 +1871,22 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._vpcSecurityGroupIds;
   }
 
+  // blue_green_update - computed: false, optional: true, required: false
+  private _blueGreenUpdate = new DbInstanceBlueGreenUpdateOutputReference(this, "blue_green_update");
+  public get blueGreenUpdate() {
+    return this._blueGreenUpdate;
+  }
+  public putBlueGreenUpdate(value: DbInstanceBlueGreenUpdate) {
+    this._blueGreenUpdate.internalValue = value;
+  }
+  public resetBlueGreenUpdate() {
+    this._blueGreenUpdate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blueGreenUpdateInput() {
+    return this._blueGreenUpdate.internalValue;
+  }
+
   // restore_to_point_in_time - computed: false, optional: true, required: false
   private _restoreToPointInTime = new DbInstanceRestoreToPointInTimeOutputReference(this, "restore_to_point_in_time");
   public get restoreToPointInTime() {
@@ -1911,6 +1999,7 @@ export class DbInstance extends cdktf.TerraformResource {
       timezone: cdktf.stringToTerraform(this._timezone),
       username: cdktf.stringToTerraform(this._username),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcSecurityGroupIds),
+      blue_green_update: dbInstanceBlueGreenUpdateToTerraform(this._blueGreenUpdate.internalValue),
       restore_to_point_in_time: dbInstanceRestoreToPointInTimeToTerraform(this._restoreToPointInTime.internalValue),
       s3_import: dbInstanceS3ImportToTerraform(this._s3Import.internalValue),
       timeouts: dbInstanceTimeoutsToTerraform(this._timeouts.internalValue),
