@@ -56,6 +56,10 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly finalSnapshotIdentifier?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#global_cluster_identifier NeptuneCluster#global_cluster_identifier}
+  */
+  readonly globalClusterIdentifier?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#iam_database_authentication_enabled NeptuneCluster#iam_database_authentication_enabled}
   */
   readonly iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
@@ -383,7 +387,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -406,6 +410,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
+    this._globalClusterIdentifier = config.globalClusterIdentifier;
     this._iamDatabaseAuthenticationEnabled = config.iamDatabaseAuthenticationEnabled;
     this._iamRoles = config.iamRoles;
     this._id = config.id;
@@ -640,6 +645,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get finalSnapshotIdentifierInput() {
     return this._finalSnapshotIdentifier;
+  }
+
+  // global_cluster_identifier - computed: false, optional: true, required: false
+  private _globalClusterIdentifier?: string; 
+  public get globalClusterIdentifier() {
+    return this.getStringAttribute('global_cluster_identifier');
+  }
+  public set globalClusterIdentifier(value: string) {
+    this._globalClusterIdentifier = value;
+  }
+  public resetGlobalClusterIdentifier() {
+    this._globalClusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier;
   }
 
   // hosted_zone_id - computed: true, optional: false, required: false
@@ -958,6 +979,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
       iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
       iam_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamRoles),
       id: cdktf.stringToTerraform(this._id),

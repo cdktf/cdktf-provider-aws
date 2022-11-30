@@ -119,7 +119,7 @@ export class DataAwsLexSlotType extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lex_slot_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

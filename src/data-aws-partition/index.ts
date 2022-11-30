@@ -42,7 +42,7 @@ export class DataAwsPartition extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_partition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

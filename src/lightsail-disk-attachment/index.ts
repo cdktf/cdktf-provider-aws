@@ -54,7 +54,7 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_disk_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

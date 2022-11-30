@@ -123,7 +123,7 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ebs_default_kms_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
