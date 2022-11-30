@@ -43,6 +43,12 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
+  * service_connect_defaults block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#service_connect_defaults EcsCluster#service_connect_defaults}
+  */
+  readonly serviceConnectDefaults?: EcsClusterServiceConnectDefaults;
+  /**
   * setting block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#setting EcsCluster#setting}
@@ -558,6 +564,68 @@ export class EcsClusterDefaultCapacityProviderStrategyList extends cdktf.Complex
     return new EcsClusterDefaultCapacityProviderStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface EcsClusterServiceConnectDefaults {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#namespace EcsCluster#namespace}
+  */
+  readonly namespace: string;
+}
+
+export function ecsClusterServiceConnectDefaultsToTerraform(struct?: EcsClusterServiceConnectDefaultsOutputReference | EcsClusterServiceConnectDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+  }
+}
+
+export class EcsClusterServiceConnectDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsClusterServiceConnectDefaults | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._namespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namespace = this._namespace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsClusterServiceConnectDefaults | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._namespace = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._namespace = value.namespace;
+    }
+  }
+
+  // namespace - computed: false, optional: false, required: true
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+}
 export interface EcsClusterSetting {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#name EcsCluster#name}
@@ -703,7 +771,7 @@ export class EcsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -721,6 +789,7 @@ export class EcsCluster extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._configuration.internalValue = config.configuration;
     this._defaultCapacityProviderStrategy.internalValue = config.defaultCapacityProviderStrategy;
+    this._serviceConnectDefaults.internalValue = config.serviceConnectDefaults;
     this._setting.internalValue = config.setting;
   }
 
@@ -842,6 +911,22 @@ export class EcsCluster extends cdktf.TerraformResource {
     return this._defaultCapacityProviderStrategy.internalValue;
   }
 
+  // service_connect_defaults - computed: false, optional: true, required: false
+  private _serviceConnectDefaults = new EcsClusterServiceConnectDefaultsOutputReference(this, "service_connect_defaults");
+  public get serviceConnectDefaults() {
+    return this._serviceConnectDefaults;
+  }
+  public putServiceConnectDefaults(value: EcsClusterServiceConnectDefaults) {
+    this._serviceConnectDefaults.internalValue = value;
+  }
+  public resetServiceConnectDefaults() {
+    this._serviceConnectDefaults.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceConnectDefaultsInput() {
+    return this._serviceConnectDefaults.internalValue;
+  }
+
   // setting - computed: false, optional: true, required: false
   private _setting = new EcsClusterSettingList(this, "setting", true);
   public get setting() {
@@ -871,6 +956,7 @@ export class EcsCluster extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: ecsClusterConfigurationToTerraform(this._configuration.internalValue),
       default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform, true)(this._defaultCapacityProviderStrategy.internalValue),
+      service_connect_defaults: ecsClusterServiceConnectDefaultsToTerraform(this._serviceConnectDefaults.internalValue),
       setting: cdktf.listMapper(ecsClusterSettingToTerraform, true)(this._setting.internalValue),
     };
   }

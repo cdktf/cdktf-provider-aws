@@ -54,7 +54,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssm_parameters_by_path',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -54,7 +54,7 @@ export class DataAwsCodeartifactAuthorizationToken extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_codeartifact_authorization_token',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

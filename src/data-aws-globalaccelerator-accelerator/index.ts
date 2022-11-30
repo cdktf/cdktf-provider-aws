@@ -193,7 +193,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

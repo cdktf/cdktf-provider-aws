@@ -50,7 +50,7 @@ export class RedshiftAuthenticationProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_authentication_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

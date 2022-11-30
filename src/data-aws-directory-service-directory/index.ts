@@ -307,7 +307,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_directory_service_directory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -189,7 +189,7 @@ export class NetworkmanagerGlobalNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_global_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

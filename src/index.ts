@@ -710,6 +710,7 @@ export * as neptuneClusterInstance from './neptune-cluster-instance';
 export * as neptuneClusterParameterGroup from './neptune-cluster-parameter-group';
 export * as neptuneClusterSnapshot from './neptune-cluster-snapshot';
 export * as neptuneEventSubscription from './neptune-event-subscription';
+export * as neptuneGlobalCluster from './neptune-global-cluster';
 export * as neptuneParameterGroup from './neptune-parameter-group';
 export * as neptuneSubnetGroup from './neptune-subnet-group';
 export * as networkAcl from './network-acl';

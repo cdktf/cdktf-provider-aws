@@ -2261,7 +2261,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticsearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -53,6 +53,14 @@ export interface GlueClassifierCsvClassifier {
   */
   readonly containsHeader?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}
+  */
+  readonly customDatatypeConfigured?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}
+  */
+  readonly customDatatypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#delimiter GlueClassifier#delimiter}
   */
   readonly delimiter?: string;
@@ -78,6 +86,8 @@ export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCs
   return {
     allow_single_column: cdktf.booleanToTerraform(struct!.allowSingleColumn),
     contains_header: cdktf.stringToTerraform(struct!.containsHeader),
+    custom_datatype_configured: cdktf.booleanToTerraform(struct!.customDatatypeConfigured),
+    custom_datatypes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customDatatypes),
     delimiter: cdktf.stringToTerraform(struct!.delimiter),
     disable_value_trimming: cdktf.booleanToTerraform(struct!.disableValueTrimming),
     header: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.header),
@@ -107,6 +117,14 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.containsHeader = this._containsHeader;
     }
+    if (this._customDatatypeConfigured !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customDatatypeConfigured = this._customDatatypeConfigured;
+    }
+    if (this._customDatatypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customDatatypes = this._customDatatypes;
+    }
     if (this._delimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.delimiter = this._delimiter;
@@ -131,6 +149,8 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
       this.isEmptyObject = false;
       this._allowSingleColumn = undefined;
       this._containsHeader = undefined;
+      this._customDatatypeConfigured = undefined;
+      this._customDatatypes = undefined;
       this._delimiter = undefined;
       this._disableValueTrimming = undefined;
       this._header = undefined;
@@ -140,6 +160,8 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowSingleColumn = value.allowSingleColumn;
       this._containsHeader = value.containsHeader;
+      this._customDatatypeConfigured = value.customDatatypeConfigured;
+      this._customDatatypes = value.customDatatypes;
       this._delimiter = value.delimiter;
       this._disableValueTrimming = value.disableValueTrimming;
       this._header = value.header;
@@ -177,6 +199,38 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get containsHeaderInput() {
     return this._containsHeader;
+  }
+
+  // custom_datatype_configured - computed: false, optional: true, required: false
+  private _customDatatypeConfigured?: boolean | cdktf.IResolvable; 
+  public get customDatatypeConfigured() {
+    return this.getBooleanAttribute('custom_datatype_configured');
+  }
+  public set customDatatypeConfigured(value: boolean | cdktf.IResolvable) {
+    this._customDatatypeConfigured = value;
+  }
+  public resetCustomDatatypeConfigured() {
+    this._customDatatypeConfigured = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customDatatypeConfiguredInput() {
+    return this._customDatatypeConfigured;
+  }
+
+  // custom_datatypes - computed: false, optional: true, required: false
+  private _customDatatypes?: string[]; 
+  public get customDatatypes() {
+    return this.getListAttribute('custom_datatypes');
+  }
+  public set customDatatypes(value: string[]) {
+    this._customDatatypes = value;
+  }
+  public resetCustomDatatypes() {
+    this._customDatatypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customDatatypesInput() {
+    return this._customDatatypes;
   }
 
   // delimiter - computed: false, optional: true, required: false
@@ -531,7 +585,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_classifier',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

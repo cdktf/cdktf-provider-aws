@@ -12,6 +12,10 @@ export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultValue?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#effective_start CeCostCategory#effective_start}
+  */
+  readonly effectiveStart?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#id CeCostCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -2722,7 +2726,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2734,6 +2738,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._defaultValue = config.defaultValue;
+    this._effectiveStart = config.effectiveStart;
     this._id = config.id;
     this._name = config.name;
     this._ruleVersion = config.ruleVersion;
@@ -2773,9 +2778,20 @@ export class CeCostCategory extends cdktf.TerraformResource {
     return this.getStringAttribute('effective_end');
   }
 
-  // effective_start - computed: true, optional: false, required: false
+  // effective_start - computed: true, optional: true, required: false
+  private _effectiveStart?: string; 
   public get effectiveStart() {
     return this.getStringAttribute('effective_start');
+  }
+  public set effectiveStart(value: string) {
+    this._effectiveStart = value;
+  }
+  public resetEffectiveStart() {
+    this._effectiveStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectiveStartInput() {
+    return this._effectiveStart;
   }
 
   // id - computed: true, optional: true, required: false
@@ -2888,6 +2904,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_value: cdktf.stringToTerraform(this._defaultValue),
+      effective_start: cdktf.stringToTerraform(this._effectiveStart),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       rule_version: cdktf.stringToTerraform(this._ruleVersion),

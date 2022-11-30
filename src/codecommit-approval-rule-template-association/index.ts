@@ -50,7 +50,7 @@ export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformRe
       terraformResourceType: 'aws_codecommit_approval_rule_template_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.42.0',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
