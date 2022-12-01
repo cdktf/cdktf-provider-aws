@@ -125,9 +125,9 @@
     jsii-srcmak "^0.1.686"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.79"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.79.tgz#40bfeb4db4013f5ee4c3462df6be832241cda9ee"
-  integrity sha512-LZhbeeSxy3E1WT0jG2QHvKLDISauYmvFLi+TF8tZ+x3B0cG73lxgIJfldupUv7vDnlSmDt0F1N3BTTNMWJm3BA==
+  version "0.2.80"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.80.tgz#da98a778ffe838926c0651798eb7dfefd196bb01"
+  integrity sha512-AtLUjlnG52w7HDzGb4WwOVorPxHBOufalNB9ElS0SFRMJsVEdAd2d+xxubKpUza6pzEvk/hAVO78koEf6ZcRMQ==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -451,7 +451,7 @@
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
   integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
 
-"@types/yargs@^17.0.13":
+"@types/yargs@17.0.13", "@types/yargs@^17.0.13":
   version "17.0.13"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-17.0.13.tgz#34cced675ca1b1d51fcf4d34c3c6f0fa142a5c76"
   integrity sha512-9sWaruZk2JGxIQU+IhI1fhPYRcQ0UuTNuKuCW9bR5fp7qi2Llf7WDzNa17Cy7TKnh3cdxDOiyTu6gaLS0eDatg==
@@ -3186,10 +3186,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.41:
-  version "0.65.41"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.41.tgz#2ca957790587e0baf069dc3cc2047eb8a1b14449"
-  integrity sha512-BcB8K6FWRbVbaCdkeio+tZxT3UVyh7bjLORBnsDMN7kn4Pcctg7wdNGv2yv+pHnv8Hv7oX4oC2X2GzziHX72HA==
+projen@^0.65.42:
+  version "0.65.42"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.42.tgz#e9f8d49f6c985b65d02e3167edbee588098cd89e"
+  integrity sha512-M5vjepFEKxsYblZ7VoqAS6jayielM5ZccQaJy6XQRW8oPU1jaVP8LSInjrLbTv80RUxCBkYrXaL6WooADkYmXg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
