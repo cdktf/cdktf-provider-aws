@@ -1426,7 +1426,7 @@ export class OpsworksPhpAppLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_php_app_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

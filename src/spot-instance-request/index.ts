@@ -2078,7 +2078,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2363,7 +2363,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._hostResourceGroupArn;
   }
 
-  // iam_instance_profile - computed: false, optional: true, required: false
+  // iam_instance_profile - computed: true, optional: true, required: false
   private _iamInstanceProfile?: string; 
   public get iamInstanceProfile() {
     return this.getStringAttribute('iam_instance_profile');

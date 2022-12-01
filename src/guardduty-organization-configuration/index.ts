@@ -559,7 +559,7 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
       terraformResourceType: 'aws_guardduty_organization_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

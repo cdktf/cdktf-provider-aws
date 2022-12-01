@@ -58,7 +58,7 @@ export class AlbTargetGroupAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb_target_group_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

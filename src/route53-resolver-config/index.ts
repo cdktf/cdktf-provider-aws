@@ -50,7 +50,7 @@ export class Route53ResolverConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_resolver_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

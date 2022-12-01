@@ -118,7 +118,7 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
