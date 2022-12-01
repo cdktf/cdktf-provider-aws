@@ -133,6 +133,12 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly imageConfig?: LambdaFunctionImageConfig;
   /**
+  * snap_start block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#snap_start LambdaFunction#snap_start}
+  */
+  readonly snapStart?: LambdaFunctionSnapStart;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#timeouts LambdaFunction#timeouts}
@@ -548,6 +554,73 @@ export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObjec
     return this._workingDirectory;
   }
 }
+export interface LambdaFunctionSnapStart {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#apply_on LambdaFunction#apply_on}
+  */
+  readonly applyOn: string;
+}
+
+export function lambdaFunctionSnapStartToTerraform(struct?: LambdaFunctionSnapStartOutputReference | LambdaFunctionSnapStart): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    apply_on: cdktf.stringToTerraform(struct!.applyOn),
+  }
+}
+
+export class LambdaFunctionSnapStartOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LambdaFunctionSnapStart | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._applyOn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyOn = this._applyOn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaFunctionSnapStart | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._applyOn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._applyOn = value.applyOn;
+    }
+  }
+
+  // apply_on - computed: false, optional: false, required: true
+  private _applyOn?: string; 
+  public get applyOn() {
+    return this.getStringAttribute('apply_on');
+  }
+  public set applyOn(value: string) {
+    this._applyOn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyOnInput() {
+    return this._applyOn;
+  }
+
+  // optimization_status - computed: true, optional: false, required: false
+  public get optimizationStatus() {
+    return this.getStringAttribute('optimization_status');
+  }
+}
 export interface LambdaFunctionTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#create LambdaFunction#create}
@@ -803,7 +876,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -842,6 +915,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._ephemeralStorage.internalValue = config.ephemeralStorage;
     this._fileSystemConfig.internalValue = config.fileSystemConfig;
     this._imageConfig.internalValue = config.imageConfig;
+    this._snapStart.internalValue = config.snapStart;
     this._timeouts.internalValue = config.timeouts;
     this._tracingConfig.internalValue = config.tracingConfig;
     this._vpcConfig.internalValue = config.vpcConfig;
@@ -1338,6 +1412,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._imageConfig.internalValue;
   }
 
+  // snap_start - computed: false, optional: true, required: false
+  private _snapStart = new LambdaFunctionSnapStartOutputReference(this, "snap_start");
+  public get snapStart() {
+    return this._snapStart;
+  }
+  public putSnapStart(value: LambdaFunctionSnapStart) {
+    this._snapStart.internalValue = value;
+  }
+  public resetSnapStart() {
+    this._snapStart.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapStartInput() {
+    return this._snapStart.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new LambdaFunctionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1420,6 +1510,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       ephemeral_storage: lambdaFunctionEphemeralStorageToTerraform(this._ephemeralStorage.internalValue),
       file_system_config: lambdaFunctionFileSystemConfigToTerraform(this._fileSystemConfig.internalValue),
       image_config: lambdaFunctionImageConfigToTerraform(this._imageConfig.internalValue),
+      snap_start: lambdaFunctionSnapStartToTerraform(this._snapStart.internalValue),
       timeouts: lambdaFunctionTimeoutsToTerraform(this._timeouts.internalValue),
       tracing_config: lambdaFunctionTracingConfigToTerraform(this._tracingConfig.internalValue),
       vpc_config: lambdaFunctionVpcConfigToTerraform(this._vpcConfig.internalValue),

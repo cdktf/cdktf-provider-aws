@@ -50,7 +50,7 @@ export class StoragegatewayCache extends cdktf.TerraformResource {
       terraformResourceType: 'aws_storagegateway_cache',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
