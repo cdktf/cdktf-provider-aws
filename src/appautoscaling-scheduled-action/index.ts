@@ -172,7 +172,7 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appautoscaling_scheduled_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

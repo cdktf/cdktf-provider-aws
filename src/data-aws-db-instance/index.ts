@@ -50,7 +50,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -272,6 +272,11 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
   // storage_encrypted - computed: true, optional: false, required: false
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
+  }
+
+  // storage_throughput - computed: true, optional: false, required: false
+  public get storageThroughput() {
+    return this.getNumberAttribute('storage_throughput');
   }
 
   // storage_type - computed: true, optional: false, required: false

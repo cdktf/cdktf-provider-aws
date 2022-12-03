@@ -166,7 +166,7 @@ export class IvsPlaybackKeyPair extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ivs_playback_key_pair',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

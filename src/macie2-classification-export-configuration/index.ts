@@ -161,7 +161,7 @@ export class Macie2ClassificationExportConfiguration extends cdktf.TerraformReso
       terraformResourceType: 'aws_macie2_classification_export_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
