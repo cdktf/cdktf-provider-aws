@@ -2124,6 +2124,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#resourceexplorer2 AwsProvider#resourceexplorer2}
+  */
+  readonly resourceexplorer2?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#resourcegroups AwsProvider#resourcegroups}
   */
   readonly resourcegroups?: string;
@@ -2901,6 +2907,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     redshiftserverless: cdktf.stringToTerraform(struct!.redshiftserverless),
     rekognition: cdktf.stringToTerraform(struct!.rekognition),
     resiliencehub: cdktf.stringToTerraform(struct!.resiliencehub),
+    resourceexplorer2: cdktf.stringToTerraform(struct!.resourceexplorer2),
     resourcegroups: cdktf.stringToTerraform(struct!.resourcegroups),
     resourcegroupstagging: cdktf.stringToTerraform(struct!.resourcegroupstagging),
     resourcegroupstaggingapi: cdktf.stringToTerraform(struct!.resourcegroupstaggingapi),
@@ -3037,7 +3044,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

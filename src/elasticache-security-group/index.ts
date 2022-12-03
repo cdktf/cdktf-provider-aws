@@ -54,7 +54,7 @@ export class ElasticacheSecurityGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_security_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

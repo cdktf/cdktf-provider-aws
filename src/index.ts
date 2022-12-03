@@ -319,6 +319,7 @@ export * as dmsEventSubscription from './dms-event-subscription';
 export * as dmsReplicationInstance from './dms-replication-instance';
 export * as dmsReplicationSubnetGroup from './dms-replication-subnet-group';
 export * as dmsReplicationTask from './dms-replication-task';
+export * as dmsS3Endpoint from './dms-s3-endpoint';
 export * as docdbCluster from './docdb-cluster';
 export * as docdbClusterInstance from './docdb-cluster-instance';
 export * as docdbClusterParameterGroup from './docdb-cluster-parameter-group';

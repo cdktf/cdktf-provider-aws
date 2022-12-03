@@ -480,7 +480,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -509,6 +509,11 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   private _certificateAuthority = new DataAwsEksClusterCertificateAuthorityList(this, "certificate_authority", false);
   public get certificateAuthority() {
     return this._certificateAuthority;
+  }
+
+  // cluster_id - computed: true, optional: false, required: false
+  public get clusterId() {
+    return this.getStringAttribute('cluster_id');
   }
 
   // created_at - computed: true, optional: false, required: false

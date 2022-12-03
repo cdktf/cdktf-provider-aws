@@ -219,6 +219,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly storageEncrypted?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#storage_throughput DbInstance#storage_throughput}
+  */
+  readonly storageThroughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#storage_type DbInstance#storage_type}
   */
   readonly storageType?: string;
@@ -822,7 +826,7 @@ export class DbInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -885,6 +889,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._skipFinalSnapshot = config.skipFinalSnapshot;
     this._snapshotIdentifier = config.snapshotIdentifier;
     this._storageEncrypted = config.storageEncrypted;
+    this._storageThroughput = config.storageThroughput;
     this._storageType = config.storageType;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -1355,7 +1360,7 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._instanceClass;
   }
 
-  // iops - computed: false, optional: true, required: false
+  // iops - computed: true, optional: true, required: false
   private _iops?: number; 
   public get iops() {
     return this.getNumberAttribute('iops');
@@ -1775,6 +1780,22 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._storageEncrypted;
   }
 
+  // storage_throughput - computed: true, optional: true, required: false
+  private _storageThroughput?: number; 
+  public get storageThroughput() {
+    return this.getNumberAttribute('storage_throughput');
+  }
+  public set storageThroughput(value: number) {
+    this._storageThroughput = value;
+  }
+  public resetStorageThroughput() {
+    this._storageThroughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageThroughputInput() {
+    return this._storageThroughput;
+  }
+
   // storage_type - computed: true, optional: true, required: false
   private _storageType?: string; 
   public get storageType() {
@@ -1993,6 +2014,7 @@ export class DbInstance extends cdktf.TerraformResource {
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      storage_throughput: cdktf.numberToTerraform(this._storageThroughput),
       storage_type: cdktf.stringToTerraform(this._storageType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

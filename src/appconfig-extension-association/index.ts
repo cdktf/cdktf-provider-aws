@@ -54,7 +54,7 @@ export class AppconfigExtensionAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appconfig_extension_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.44.0',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
