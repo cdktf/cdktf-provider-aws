@@ -83,6 +83,12 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly jdbcTarget?: GlueCrawlerJdbcTarget[] | cdktf.IResolvable;
   /**
+  * lake_formation_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
+  */
+  readonly lakeFormationConfiguration?: GlueCrawlerLakeFormationConfiguration;
+  /**
   * lineage_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
@@ -115,9 +121,21 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
 }
 export interface GlueCrawlerCatalogTarget {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}
+  */
+  readonly connectionName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#database_name GlueCrawler#database_name}
   */
   readonly databaseName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}
+  */
+  readonly dlqEventQueueArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}
+  */
+  readonly eventQueueArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#tables GlueCrawler#tables}
   */
@@ -130,7 +148,10 @@ export function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
+    dlq_event_queue_arn: cdktf.stringToTerraform(struct!.dlqEventQueueArn),
+    event_queue_arn: cdktf.stringToTerraform(struct!.eventQueueArn),
     tables: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tables),
   }
 }
@@ -155,9 +176,21 @@ export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
     if (this._databaseName !== undefined) {
       hasAnyValues = true;
       internalValueResult.databaseName = this._databaseName;
+    }
+    if (this._dlqEventQueueArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dlqEventQueueArn = this._dlqEventQueueArn;
+    }
+    if (this._eventQueueArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventQueueArn = this._eventQueueArn;
     }
     if (this._tables !== undefined) {
       hasAnyValues = true;
@@ -170,7 +203,10 @@ export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._connectionName = undefined;
       this._databaseName = undefined;
+      this._dlqEventQueueArn = undefined;
+      this._eventQueueArn = undefined;
       this._tables = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -180,9 +216,28 @@ export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._connectionName = value.connectionName;
       this._databaseName = value.databaseName;
+      this._dlqEventQueueArn = value.dlqEventQueueArn;
+      this._eventQueueArn = value.eventQueueArn;
       this._tables = value.tables;
     }
+  }
+
+  // connection_name - computed: false, optional: true, required: false
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  public resetConnectionName() {
+    this._connectionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
   }
 
   // database_name - computed: false, optional: false, required: true
@@ -196,6 +251,38 @@ export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // dlq_event_queue_arn - computed: false, optional: true, required: false
+  private _dlqEventQueueArn?: string; 
+  public get dlqEventQueueArn() {
+    return this.getStringAttribute('dlq_event_queue_arn');
+  }
+  public set dlqEventQueueArn(value: string) {
+    this._dlqEventQueueArn = value;
+  }
+  public resetDlqEventQueueArn() {
+    this._dlqEventQueueArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dlqEventQueueArnInput() {
+    return this._dlqEventQueueArn;
+  }
+
+  // event_queue_arn - computed: false, optional: true, required: false
+  private _eventQueueArn?: string; 
+  public get eventQueueArn() {
+    return this.getStringAttribute('event_queue_arn');
+  }
+  public set eventQueueArn(value: string) {
+    this._eventQueueArn = value;
+  }
+  public resetEventQueueArn() {
+    this._eventQueueArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventQueueArnInput() {
+    return this._eventQueueArn;
   }
 
   // tables - computed: false, optional: false, required: true
@@ -235,7 +322,7 @@ export interface GlueCrawlerDeltaTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}
   */
-  readonly connectionName: string;
+  readonly connectionName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delta_tables GlueCrawler#delta_tables}
   */
@@ -314,13 +401,16 @@ export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // connection_name - computed: false, optional: false, required: true
+  // connection_name - computed: false, optional: true, required: false
   private _connectionName?: string; 
   public get connectionName() {
     return this.getStringAttribute('connection_name');
   }
   public set connectionName(value: string) {
     this._connectionName = value;
+  }
+  public resetConnectionName() {
+    this._connectionName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get connectionNameInput() {
@@ -527,6 +617,10 @@ export interface GlueCrawlerJdbcTarget {
   */
   readonly connectionName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}
+  */
+  readonly enableAdditionalMetadata?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#exclusions GlueCrawler#exclusions}
   */
   readonly exclusions?: string[];
@@ -543,6 +637,7 @@ export function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget 
   }
   return {
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    enable_additional_metadata: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enableAdditionalMetadata),
     exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
     path: cdktf.stringToTerraform(struct!.path),
   }
@@ -572,6 +667,10 @@ export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.connectionName = this._connectionName;
     }
+    if (this._enableAdditionalMetadata !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableAdditionalMetadata = this._enableAdditionalMetadata;
+    }
     if (this._exclusions !== undefined) {
       hasAnyValues = true;
       internalValueResult.exclusions = this._exclusions;
@@ -588,6 +687,7 @@ export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._connectionName = undefined;
+      this._enableAdditionalMetadata = undefined;
       this._exclusions = undefined;
       this._path = undefined;
     }
@@ -599,6 +699,7 @@ export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._connectionName = value.connectionName;
+      this._enableAdditionalMetadata = value.enableAdditionalMetadata;
       this._exclusions = value.exclusions;
       this._path = value.path;
     }
@@ -615,6 +716,22 @@ export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get connectionNameInput() {
     return this._connectionName;
+  }
+
+  // enable_additional_metadata - computed: false, optional: true, required: false
+  private _enableAdditionalMetadata?: string[]; 
+  public get enableAdditionalMetadata() {
+    return this.getListAttribute('enable_additional_metadata');
+  }
+  public set enableAdditionalMetadata(value: string[]) {
+    this._enableAdditionalMetadata = value;
+  }
+  public resetEnableAdditionalMetadata() {
+    this._enableAdditionalMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAdditionalMetadataInput() {
+    return this._enableAdditionalMetadata;
   }
 
   // exclusions - computed: false, optional: true, required: false
@@ -664,6 +781,98 @@ export class GlueCrawlerJdbcTargetList extends cdktf.ComplexList {
   */
   public get(index: number): GlueCrawlerJdbcTargetOutputReference {
     return new GlueCrawlerJdbcTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GlueCrawlerLakeFormationConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#account_id GlueCrawler#account_id}
+  */
+  readonly accountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}
+  */
+  readonly useLakeFormationCredentials?: boolean | cdktf.IResolvable;
+}
+
+export function glueCrawlerLakeFormationConfigurationToTerraform(struct?: GlueCrawlerLakeFormationConfigurationOutputReference | GlueCrawlerLakeFormationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    account_id: cdktf.stringToTerraform(struct!.accountId),
+    use_lake_formation_credentials: cdktf.booleanToTerraform(struct!.useLakeFormationCredentials),
+  }
+}
+
+export class GlueCrawlerLakeFormationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCrawlerLakeFormationConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._useLakeFormationCredentials !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useLakeFormationCredentials = this._useLakeFormationCredentials;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerLakeFormationConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accountId = undefined;
+      this._useLakeFormationCredentials = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accountId = value.accountId;
+      this._useLakeFormationCredentials = value.useLakeFormationCredentials;
+    }
+  }
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // use_lake_formation_credentials - computed: false, optional: true, required: false
+  private _useLakeFormationCredentials?: boolean | cdktf.IResolvable; 
+  public get useLakeFormationCredentials() {
+    return this.getBooleanAttribute('use_lake_formation_credentials');
+  }
+  public set useLakeFormationCredentials(value: boolean | cdktf.IResolvable) {
+    this._useLakeFormationCredentials = value;
+  }
+  public resetUseLakeFormationCredentials() {
+    this._useLakeFormationCredentials = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useLakeFormationCredentialsInput() {
+    return this._useLakeFormationCredentials;
   }
 }
 export interface GlueCrawlerLineageConfiguration {
@@ -1289,7 +1498,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_crawler',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1316,6 +1525,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._deltaTarget.internalValue = config.deltaTarget;
     this._dynamodbTarget.internalValue = config.dynamodbTarget;
     this._jdbcTarget.internalValue = config.jdbcTarget;
+    this._lakeFormationConfiguration.internalValue = config.lakeFormationConfiguration;
     this._lineageConfiguration.internalValue = config.lineageConfiguration;
     this._mongodbTarget.internalValue = config.mongodbTarget;
     this._recrawlPolicy.internalValue = config.recrawlPolicy;
@@ -1579,6 +1789,22 @@ export class GlueCrawler extends cdktf.TerraformResource {
     return this._jdbcTarget.internalValue;
   }
 
+  // lake_formation_configuration - computed: false, optional: true, required: false
+  private _lakeFormationConfiguration = new GlueCrawlerLakeFormationConfigurationOutputReference(this, "lake_formation_configuration");
+  public get lakeFormationConfiguration() {
+    return this._lakeFormationConfiguration;
+  }
+  public putLakeFormationConfiguration(value: GlueCrawlerLakeFormationConfiguration) {
+    this._lakeFormationConfiguration.internalValue = value;
+  }
+  public resetLakeFormationConfiguration() {
+    this._lakeFormationConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lakeFormationConfigurationInput() {
+    return this._lakeFormationConfiguration.internalValue;
+  }
+
   // lineage_configuration - computed: false, optional: true, required: false
   private _lineageConfiguration = new GlueCrawlerLineageConfigurationOutputReference(this, "lineage_configuration");
   public get lineageConfiguration() {
@@ -1681,6 +1907,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform, true)(this._deltaTarget.internalValue),
       dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform, true)(this._dynamodbTarget.internalValue),
       jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform, true)(this._jdbcTarget.internalValue),
+      lake_formation_configuration: glueCrawlerLakeFormationConfigurationToTerraform(this._lakeFormationConfiguration.internalValue),
       lineage_configuration: glueCrawlerLineageConfigurationToTerraform(this._lineageConfiguration.internalValue),
       mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform, true)(this._mongodbTarget.internalValue),
       recrawl_policy: glueCrawlerRecrawlPolicyToTerraform(this._recrawlPolicy.internalValue),

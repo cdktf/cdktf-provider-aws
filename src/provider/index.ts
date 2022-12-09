@@ -2004,6 +2004,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#pipes AwsProvider#pipes}
+  */
+  readonly pipes?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#polly AwsProvider#polly}
   */
   readonly polly?: string;
@@ -2887,6 +2893,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     pinpoint: cdktf.stringToTerraform(struct!.pinpoint),
     pinpointemail: cdktf.stringToTerraform(struct!.pinpointemail),
     pinpointsmsvoice: cdktf.stringToTerraform(struct!.pinpointsmsvoice),
+    pipes: cdktf.stringToTerraform(struct!.pipes),
     polly: cdktf.stringToTerraform(struct!.polly),
     pricing: cdktf.stringToTerraform(struct!.pricing),
     prometheus: cdktf.stringToTerraform(struct!.prometheus),
@@ -3044,7 +3051,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

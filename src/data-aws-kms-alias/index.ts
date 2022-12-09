@@ -46,7 +46,7 @@ export class DataAwsKmsAlias extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kms_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
