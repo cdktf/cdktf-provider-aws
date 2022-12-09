@@ -361,7 +361,7 @@ export class SagemakerAppImageConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_app_image_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

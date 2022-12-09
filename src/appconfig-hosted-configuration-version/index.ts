@@ -62,7 +62,7 @@ export class AppconfigHostedConfigurationVersion extends cdktf.TerraformResource
       terraformResourceType: 'aws_appconfig_hosted_configuration_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
