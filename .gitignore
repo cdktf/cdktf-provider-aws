@@ -55,4 +55,5 @@ package-lock.json
 !/.github/workflows/provider-upgrade.yml
 !/.github/ISSUE_TEMPLATE/config.yml
 !/.github/workflows/next-cdktf-version-pr.yml
+!/.github/workflows/alert-open-prs.yml
 !/scripts/should-release.js
