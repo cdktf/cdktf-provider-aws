@@ -15,7 +15,7 @@ jobs:
       - name: Find old PRs
         id: old_prs
         run: |-
-          PR_LINKS=$(gh pr list --state open --search "created:<$(date -v-2H +%FT%TZ)" --json url --jq "map(.url)"
+          PR_LINKS=$(gh pr list --state open --search "created:<$(date -d '-2hours' +%FT%TZ)" --json url --jq "map(.url)" )
           if [ "$PR_LINKS" == "[]" ]; then
             echo "No PRs open for more than 2 hour(s)"
           else
@@ -27,5 +27,4 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.ALERT_PRS_SLACK_WEBHOOK_URL }}
         with:
-          payload:
-            pr_links: ${{ join(fromJSON(steps.old_prs.outputs.pr_links), ', ') }}
+          payload: "{\"pr_links\":\"${{ join(fromJSON(steps.old_prs.outputs.pr_links), ', ') }}\"}"
