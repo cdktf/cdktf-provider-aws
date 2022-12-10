@@ -160,9 +160,9 @@
     jsii-srcmak "^0.1.741"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.81"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.81.tgz#37652aa1f2742764b188d3d77e681bc9a1714ec2"
-  integrity sha512-hTVkP/lZnP82kaegXweeAbGEgwZUQKh8gR5v+h3mn43LucH7CeqB6rIyo0+UnbOy3bdBcxLWomDCaB45OHz83w==
+  version "0.2.82"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.82.tgz#dbb994cbc8b8c4f0ed4a87feb214c78d93989c51"
+  integrity sha512-M2zDGVQjI4UNykchFXzI378BYCABs2SBsDbyBkpORja47+yc4UIsYqi9CHH8Qlfq4W8byG7GoZ2vvHEcviCMXg==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -1155,9 +1155,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.184"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.184.tgz#192bf1e116f735c37aae6a6c9c9435355c127a86"
-  integrity sha512-OSXgY9yWYt+RPiZXlUUUV8bx0qBdpFGRk/FRQ/UpSZDHjLWN2pA7aYDTGdW4jutEwVLYTMSZHv9HTjEHow/l5A==
+  version "10.1.185"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.185.tgz#43ed2d6e2a50a98b301094191c50260997faddcf"
+  integrity sha512-aoymnmpcpyLGIeNdpjC1tcZCsrTB+kjmkeCHu38HjXtc+xZfmPZvO+dRCnLO/HtqAfrnpaO6jygEycr24enecQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2309,9 +2309,9 @@ jsii-rosetta@^1.71.0, jsii-rosetta@^1.72.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.741:
-  version "0.1.757"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.757.tgz#c947d15d08afb93775134b52d026491e5a4a0092"
-  integrity sha512-c9AkujXFzvMB8PE2wt0LRxhr7xmH9eyzV3Ektc1qeclXu7pz1Je3YXAPmhY7LQq/QX+Lzgkl0a/qTOcB3ux+ZQ==
+  version "0.1.758"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.758.tgz#19889403688683d09bf8bbf05fbbe84c98aa6d60"
+  integrity sha512-RuK747vmK7AeYsZ24sJPWMMBt7/wuC16HKWb/ZYvBdIwxeYQ9D8Kt7WPLcwB2ThjfJ8EtvoW6tDgzfi0bwskkA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.72.0"
@@ -2697,7 +2697,7 @@ minimatch@^3.0.4, minimatch@^3.1.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.0.1, minimatch@^5.1.0:
+minimatch@^5.0.1, minimatch@^5.1.0, minimatch@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.1.tgz#6c9dffcf9927ff2a31e74b5af11adf8b9604b022"
   integrity sha512-362NP+zlprccbEt/SkxKfRMHnNY85V74mVnpUpNyr3F35covl09Kec7/sEFLt3RA4oXmewtoaanoIf67SE5Y5g==
@@ -2924,9 +2924,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.5.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.5.1.tgz#f2c15c9c82a8b836745fc8d08d071af46dee3e32"
-  integrity sha512-LSDcPpnK41GnsIw1JO+sUe1QJPA8+pzLOW5Ahep2zOBaZk+Dkg/stow3FAT19scfYZRx3YyKoehrJQOSXN3t6g==
+  version "16.5.5"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.5.5.tgz#0e15e3b85cbc024c7a5fec72f99d72879438896a"
+  integrity sha512-MCP/4H1p6Pew+o4hieqO5UJxUzppT091CfBV1Loq6MWPRYSsPZAyJz1B6Io2macbOPzQDW8ectmD/Np9DwFYaw==
   dependencies:
     chalk "^5.1.2"
     cli-table "^0.3.11"
@@ -2941,7 +2941,7 @@ npm-check-updates@^16:
     json-parse-helpfulerror "^1.0.3"
     jsonlines "^0.1.1"
     lodash "^4.17.21"
-    minimatch "^5.1.0"
+    minimatch "^5.1.1"
     p-map "^4.0.0"
     pacote "15.0.6"
     parse-github-url "^1.0.2"
