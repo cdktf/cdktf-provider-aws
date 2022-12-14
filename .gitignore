@@ -5,6 +5,7 @@
 !/.projen/files.json
 !/.mergify.yml
 !/.github/workflows/pull-request-lint.yml
+!/.github/workflows/stale.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -54,6 +55,8 @@ package-lock.json
 !/scripts/check-for-upgrades.js
 !/.github/workflows/provider-upgrade.yml
 !/.github/ISSUE_TEMPLATE/config.yml
+!/.github/workflows/auto-close-community-issues.yml
+!/.github/workflows/lock.yml
 !/.github/workflows/next-cdktf-version-pr.yml
 !/.github/workflows/alert-open-prs.yml
 !/scripts/should-release.js

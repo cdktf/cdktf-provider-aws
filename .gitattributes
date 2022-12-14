@@ -4,11 +4,14 @@
 /.github/ISSUE_TEMPLATE/config.yml linguist-generated
 /.github/pull_request_template.md linguist-generated
 /.github/workflows/alert-open-prs.yml linguist-generated
+/.github/workflows/auto-close-community-issues.yml linguist-generated
 /.github/workflows/build.yml linguist-generated
+/.github/workflows/lock.yml linguist-generated
 /.github/workflows/next-cdktf-version-pr.yml linguist-generated
 /.github/workflows/provider-upgrade.yml linguist-generated
 /.github/workflows/pull-request-lint.yml linguist-generated
 /.github/workflows/release.yml linguist-generated
+/.github/workflows/stale.yml linguist-generated
 /.github/workflows/upgrade-main.yml linguist-generated
 /.gitignore linguist-generated
 /.mergify.yml linguist-generated
