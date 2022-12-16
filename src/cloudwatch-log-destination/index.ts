@@ -23,6 +23,14 @@ export interface CloudwatchLogDestinationConfig extends cdktf.TerraformMetaArgum
   */
   readonly roleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination#tags CloudwatchLogDestination#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination#tags_all CloudwatchLogDestination#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination#target_arn CloudwatchLogDestination#target_arn}
   */
   readonly targetArn: string;
@@ -54,7 +62,7 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -68,6 +76,8 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._roleArn = config.roleArn;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetArn = config.targetArn;
   }
 
@@ -122,6 +132,38 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
     return this._roleArn;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // target_arn - computed: false, optional: false, required: true
   private _targetArn?: string; 
   public get targetArn() {
@@ -144,6 +186,8 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_arn: cdktf.stringToTerraform(this._targetArn),
     };
   }

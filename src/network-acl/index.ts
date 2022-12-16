@@ -692,7 +692,7 @@ export class NetworkAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_network_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

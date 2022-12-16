@@ -48,6 +48,12 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#production_variants SagemakerEndpointConfiguration#production_variants}
   */
   readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable;
+  /**
+  * shadow_production_variants block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#shadow_production_variants SagemakerEndpointConfiguration#shadow_production_variants}
+  */
+  readonly shadowProductionVariants?: SagemakerEndpointConfigurationShadowProductionVariants[] | cdktf.IResolvable;
 }
 export interface SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig {
   /**
@@ -798,6 +804,95 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
     return this._captureOptions.internalValue;
   }
 }
+export interface SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#destination_s3_uri SagemakerEndpointConfiguration#destination_s3_uri}
+  */
+  readonly destinationS3Uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+}
+
+export function sagemakerEndpointConfigurationProductionVariantsCoreDumpConfigToTerraform(struct?: SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference | SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination_s3_uri: cdktf.stringToTerraform(struct!.destinationS3Uri),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+  }
+}
+
+export class SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinationS3Uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationS3Uri = this._destinationS3Uri;
+    }
+    if (this._kmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destinationS3Uri = undefined;
+      this._kmsKeyId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destinationS3Uri = value.destinationS3Uri;
+      this._kmsKeyId = value.kmsKeyId;
+    }
+  }
+
+  // destination_s3_uri - computed: false, optional: false, required: true
+  private _destinationS3Uri?: string; 
+  public get destinationS3Uri() {
+    return this.getStringAttribute('destination_s3_uri');
+  }
+  public set destinationS3Uri(value: string) {
+    this._destinationS3Uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationS3UriInput() {
+    return this._destinationS3Uri;
+  }
+
+  // kms_key_id - computed: false, optional: true, required: false
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+}
 export interface SagemakerEndpointConfigurationProductionVariantsServerlessConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#max_concurrency SagemakerEndpointConfiguration#max_concurrency}
@@ -890,6 +985,10 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   */
   readonly acceleratorType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#container_startup_health_check_timeout_in_seconds SagemakerEndpointConfiguration#container_startup_health_check_timeout_in_seconds}
+  */
+  readonly containerStartupHealthCheckTimeoutInSeconds?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
   */
   readonly initialInstanceCount?: number;
@@ -902,6 +1001,10 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   */
   readonly instanceType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_data_download_timeout_in_seconds SagemakerEndpointConfiguration#model_data_download_timeout_in_seconds}
+  */
+  readonly modelDataDownloadTimeoutInSeconds?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_name SagemakerEndpointConfiguration#model_name}
   */
   readonly modelName: string;
@@ -909,6 +1012,16 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#variant_name SagemakerEndpointConfiguration#variant_name}
   */
   readonly variantName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#volume_size_in_gb SagemakerEndpointConfiguration#volume_size_in_gb}
+  */
+  readonly volumeSizeInGb?: number;
+  /**
+  * core_dump_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#core_dump_config SagemakerEndpointConfiguration#core_dump_config}
+  */
+  readonly coreDumpConfig?: SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig;
   /**
   * serverless_config block
   * 
@@ -924,11 +1037,15 @@ export function sagemakerEndpointConfigurationProductionVariantsToTerraform(stru
   }
   return {
     accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
+    container_startup_health_check_timeout_in_seconds: cdktf.numberToTerraform(struct!.containerStartupHealthCheckTimeoutInSeconds),
     initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
     initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    model_data_download_timeout_in_seconds: cdktf.numberToTerraform(struct!.modelDataDownloadTimeoutInSeconds),
     model_name: cdktf.stringToTerraform(struct!.modelName),
     variant_name: cdktf.stringToTerraform(struct!.variantName),
+    volume_size_in_gb: cdktf.numberToTerraform(struct!.volumeSizeInGb),
+    core_dump_config: sagemakerEndpointConfigurationProductionVariantsCoreDumpConfigToTerraform(struct!.coreDumpConfig),
     serverless_config: sagemakerEndpointConfigurationProductionVariantsServerlessConfigToTerraform(struct!.serverlessConfig),
   }
 }
@@ -957,6 +1074,10 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       hasAnyValues = true;
       internalValueResult.acceleratorType = this._acceleratorType;
     }
+    if (this._containerStartupHealthCheckTimeoutInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerStartupHealthCheckTimeoutInSeconds = this._containerStartupHealthCheckTimeoutInSeconds;
+    }
     if (this._initialInstanceCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.initialInstanceCount = this._initialInstanceCount;
@@ -969,6 +1090,10 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
+    if (this._modelDataDownloadTimeoutInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelDataDownloadTimeoutInSeconds = this._modelDataDownloadTimeoutInSeconds;
+    }
     if (this._modelName !== undefined) {
       hasAnyValues = true;
       internalValueResult.modelName = this._modelName;
@@ -976,6 +1101,14 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
     if (this._variantName !== undefined) {
       hasAnyValues = true;
       internalValueResult.variantName = this._variantName;
+    }
+    if (this._volumeSizeInGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeSizeInGb = this._volumeSizeInGb;
+    }
+    if (this._coreDumpConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.coreDumpConfig = this._coreDumpConfig?.internalValue;
     }
     if (this._serverlessConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -989,11 +1122,15 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._acceleratorType = undefined;
+      this._containerStartupHealthCheckTimeoutInSeconds = undefined;
       this._initialInstanceCount = undefined;
       this._initialVariantWeight = undefined;
       this._instanceType = undefined;
+      this._modelDataDownloadTimeoutInSeconds = undefined;
       this._modelName = undefined;
       this._variantName = undefined;
+      this._volumeSizeInGb = undefined;
+      this._coreDumpConfig.internalValue = undefined;
       this._serverlessConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -1004,11 +1141,15 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._acceleratorType = value.acceleratorType;
+      this._containerStartupHealthCheckTimeoutInSeconds = value.containerStartupHealthCheckTimeoutInSeconds;
       this._initialInstanceCount = value.initialInstanceCount;
       this._initialVariantWeight = value.initialVariantWeight;
       this._instanceType = value.instanceType;
+      this._modelDataDownloadTimeoutInSeconds = value.modelDataDownloadTimeoutInSeconds;
       this._modelName = value.modelName;
       this._variantName = value.variantName;
+      this._volumeSizeInGb = value.volumeSizeInGb;
+      this._coreDumpConfig.internalValue = value.coreDumpConfig;
       this._serverlessConfig.internalValue = value.serverlessConfig;
     }
   }
@@ -1027,6 +1168,22 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get acceleratorTypeInput() {
     return this._acceleratorType;
+  }
+
+  // container_startup_health_check_timeout_in_seconds - computed: false, optional: true, required: false
+  private _containerStartupHealthCheckTimeoutInSeconds?: number; 
+  public get containerStartupHealthCheckTimeoutInSeconds() {
+    return this.getNumberAttribute('container_startup_health_check_timeout_in_seconds');
+  }
+  public set containerStartupHealthCheckTimeoutInSeconds(value: number) {
+    this._containerStartupHealthCheckTimeoutInSeconds = value;
+  }
+  public resetContainerStartupHealthCheckTimeoutInSeconds() {
+    this._containerStartupHealthCheckTimeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerStartupHealthCheckTimeoutInSecondsInput() {
+    return this._containerStartupHealthCheckTimeoutInSeconds;
   }
 
   // initial_instance_count - computed: false, optional: true, required: false
@@ -1077,6 +1234,22 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
     return this._instanceType;
   }
 
+  // model_data_download_timeout_in_seconds - computed: false, optional: true, required: false
+  private _modelDataDownloadTimeoutInSeconds?: number; 
+  public get modelDataDownloadTimeoutInSeconds() {
+    return this.getNumberAttribute('model_data_download_timeout_in_seconds');
+  }
+  public set modelDataDownloadTimeoutInSeconds(value: number) {
+    this._modelDataDownloadTimeoutInSeconds = value;
+  }
+  public resetModelDataDownloadTimeoutInSeconds() {
+    this._modelDataDownloadTimeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelDataDownloadTimeoutInSecondsInput() {
+    return this._modelDataDownloadTimeoutInSeconds;
+  }
+
   // model_name - computed: false, optional: false, required: true
   private _modelName?: string; 
   public get modelName() {
@@ -1104,6 +1277,38 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get variantNameInput() {
     return this._variantName;
+  }
+
+  // volume_size_in_gb - computed: true, optional: true, required: false
+  private _volumeSizeInGb?: number; 
+  public get volumeSizeInGb() {
+    return this.getNumberAttribute('volume_size_in_gb');
+  }
+  public set volumeSizeInGb(value: number) {
+    this._volumeSizeInGb = value;
+  }
+  public resetVolumeSizeInGb() {
+    this._volumeSizeInGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInGbInput() {
+    return this._volumeSizeInGb;
+  }
+
+  // core_dump_config - computed: false, optional: true, required: false
+  private _coreDumpConfig = new SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference(this, "core_dump_config");
+  public get coreDumpConfig() {
+    return this._coreDumpConfig;
+  }
+  public putCoreDumpConfig(value: SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig) {
+    this._coreDumpConfig.internalValue = value;
+  }
+  public resetCoreDumpConfig() {
+    this._coreDumpConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coreDumpConfigInput() {
+    return this._coreDumpConfig.internalValue;
   }
 
   // serverless_config - computed: false, optional: true, required: false
@@ -1142,6 +1347,546 @@ export class SagemakerEndpointConfigurationProductionVariantsList extends cdktf.
     return new SagemakerEndpointConfigurationProductionVariantsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#destination_s3_uri SagemakerEndpointConfiguration#destination_s3_uri}
+  */
+  readonly destinationS3Uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
+  */
+  readonly kmsKeyId: string;
+}
+
+export function sagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigToTerraform(struct?: SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference | SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination_s3_uri: cdktf.stringToTerraform(struct!.destinationS3Uri),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+  }
+}
+
+export class SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinationS3Uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationS3Uri = this._destinationS3Uri;
+    }
+    if (this._kmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destinationS3Uri = undefined;
+      this._kmsKeyId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destinationS3Uri = value.destinationS3Uri;
+      this._kmsKeyId = value.kmsKeyId;
+    }
+  }
+
+  // destination_s3_uri - computed: false, optional: false, required: true
+  private _destinationS3Uri?: string; 
+  public get destinationS3Uri() {
+    return this.getStringAttribute('destination_s3_uri');
+  }
+  public set destinationS3Uri(value: string) {
+    this._destinationS3Uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationS3UriInput() {
+    return this._destinationS3Uri;
+  }
+
+  // kms_key_id - computed: false, optional: false, required: true
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+}
+export interface SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#max_concurrency SagemakerEndpointConfiguration#max_concurrency}
+  */
+  readonly maxConcurrency: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#memory_size_in_mb SagemakerEndpointConfiguration#memory_size_in_mb}
+  */
+  readonly memorySizeInMb: number;
+}
+
+export function sagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigToTerraform(struct?: SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference | SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_concurrency: cdktf.numberToTerraform(struct!.maxConcurrency),
+    memory_size_in_mb: cdktf.numberToTerraform(struct!.memorySizeInMb),
+  }
+}
+
+export class SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConcurrency = this._maxConcurrency;
+    }
+    if (this._memorySizeInMb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memorySizeInMb = this._memorySizeInMb;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxConcurrency = undefined;
+      this._memorySizeInMb = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxConcurrency = value.maxConcurrency;
+      this._memorySizeInMb = value.memorySizeInMb;
+    }
+  }
+
+  // max_concurrency - computed: false, optional: false, required: true
+  private _maxConcurrency?: number; 
+  public get maxConcurrency() {
+    return this.getNumberAttribute('max_concurrency');
+  }
+  public set maxConcurrency(value: number) {
+    this._maxConcurrency = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrencyInput() {
+    return this._maxConcurrency;
+  }
+
+  // memory_size_in_mb - computed: false, optional: false, required: true
+  private _memorySizeInMb?: number; 
+  public get memorySizeInMb() {
+    return this.getNumberAttribute('memory_size_in_mb');
+  }
+  public set memorySizeInMb(value: number) {
+    this._memorySizeInMb = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memorySizeInMbInput() {
+    return this._memorySizeInMb;
+  }
+}
+export interface SagemakerEndpointConfigurationShadowProductionVariants {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#accelerator_type SagemakerEndpointConfiguration#accelerator_type}
+  */
+  readonly acceleratorType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#container_startup_health_check_timeout_in_seconds SagemakerEndpointConfiguration#container_startup_health_check_timeout_in_seconds}
+  */
+  readonly containerStartupHealthCheckTimeoutInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
+  */
+  readonly initialInstanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_variant_weight SagemakerEndpointConfiguration#initial_variant_weight}
+  */
+  readonly initialVariantWeight?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#instance_type SagemakerEndpointConfiguration#instance_type}
+  */
+  readonly instanceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_data_download_timeout_in_seconds SagemakerEndpointConfiguration#model_data_download_timeout_in_seconds}
+  */
+  readonly modelDataDownloadTimeoutInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_name SagemakerEndpointConfiguration#model_name}
+  */
+  readonly modelName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#variant_name SagemakerEndpointConfiguration#variant_name}
+  */
+  readonly variantName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#volume_size_in_gb SagemakerEndpointConfiguration#volume_size_in_gb}
+  */
+  readonly volumeSizeInGb?: number;
+  /**
+  * core_dump_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#core_dump_config SagemakerEndpointConfiguration#core_dump_config}
+  */
+  readonly coreDumpConfig?: SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig;
+  /**
+  * serverless_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#serverless_config SagemakerEndpointConfiguration#serverless_config}
+  */
+  readonly serverlessConfig?: SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig;
+}
+
+export function sagemakerEndpointConfigurationShadowProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationShadowProductionVariants | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
+    container_startup_health_check_timeout_in_seconds: cdktf.numberToTerraform(struct!.containerStartupHealthCheckTimeoutInSeconds),
+    initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
+    initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    model_data_download_timeout_in_seconds: cdktf.numberToTerraform(struct!.modelDataDownloadTimeoutInSeconds),
+    model_name: cdktf.stringToTerraform(struct!.modelName),
+    variant_name: cdktf.stringToTerraform(struct!.variantName),
+    volume_size_in_gb: cdktf.numberToTerraform(struct!.volumeSizeInGb),
+    core_dump_config: sagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigToTerraform(struct!.coreDumpConfig),
+    serverless_config: sagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigToTerraform(struct!.serverlessConfig),
+  }
+}
+
+export class SagemakerEndpointConfigurationShadowProductionVariantsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationShadowProductionVariants | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    if (this._containerStartupHealthCheckTimeoutInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerStartupHealthCheckTimeoutInSeconds = this._containerStartupHealthCheckTimeoutInSeconds;
+    }
+    if (this._initialInstanceCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialInstanceCount = this._initialInstanceCount;
+    }
+    if (this._initialVariantWeight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialVariantWeight = this._initialVariantWeight;
+    }
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._modelDataDownloadTimeoutInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelDataDownloadTimeoutInSeconds = this._modelDataDownloadTimeoutInSeconds;
+    }
+    if (this._modelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelName = this._modelName;
+    }
+    if (this._variantName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.variantName = this._variantName;
+    }
+    if (this._volumeSizeInGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeSizeInGb = this._volumeSizeInGb;
+    }
+    if (this._coreDumpConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.coreDumpConfig = this._coreDumpConfig?.internalValue;
+    }
+    if (this._serverlessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverlessConfig = this._serverlessConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationShadowProductionVariants | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorType = undefined;
+      this._containerStartupHealthCheckTimeoutInSeconds = undefined;
+      this._initialInstanceCount = undefined;
+      this._initialVariantWeight = undefined;
+      this._instanceType = undefined;
+      this._modelDataDownloadTimeoutInSeconds = undefined;
+      this._modelName = undefined;
+      this._variantName = undefined;
+      this._volumeSizeInGb = undefined;
+      this._coreDumpConfig.internalValue = undefined;
+      this._serverlessConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorType = value.acceleratorType;
+      this._containerStartupHealthCheckTimeoutInSeconds = value.containerStartupHealthCheckTimeoutInSeconds;
+      this._initialInstanceCount = value.initialInstanceCount;
+      this._initialVariantWeight = value.initialVariantWeight;
+      this._instanceType = value.instanceType;
+      this._modelDataDownloadTimeoutInSeconds = value.modelDataDownloadTimeoutInSeconds;
+      this._modelName = value.modelName;
+      this._variantName = value.variantName;
+      this._volumeSizeInGb = value.volumeSizeInGb;
+      this._coreDumpConfig.internalValue = value.coreDumpConfig;
+      this._serverlessConfig.internalValue = value.serverlessConfig;
+    }
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+
+  // container_startup_health_check_timeout_in_seconds - computed: false, optional: true, required: false
+  private _containerStartupHealthCheckTimeoutInSeconds?: number; 
+  public get containerStartupHealthCheckTimeoutInSeconds() {
+    return this.getNumberAttribute('container_startup_health_check_timeout_in_seconds');
+  }
+  public set containerStartupHealthCheckTimeoutInSeconds(value: number) {
+    this._containerStartupHealthCheckTimeoutInSeconds = value;
+  }
+  public resetContainerStartupHealthCheckTimeoutInSeconds() {
+    this._containerStartupHealthCheckTimeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerStartupHealthCheckTimeoutInSecondsInput() {
+    return this._containerStartupHealthCheckTimeoutInSeconds;
+  }
+
+  // initial_instance_count - computed: false, optional: true, required: false
+  private _initialInstanceCount?: number; 
+  public get initialInstanceCount() {
+    return this.getNumberAttribute('initial_instance_count');
+  }
+  public set initialInstanceCount(value: number) {
+    this._initialInstanceCount = value;
+  }
+  public resetInitialInstanceCount() {
+    this._initialInstanceCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialInstanceCountInput() {
+    return this._initialInstanceCount;
+  }
+
+  // initial_variant_weight - computed: false, optional: true, required: false
+  private _initialVariantWeight?: number; 
+  public get initialVariantWeight() {
+    return this.getNumberAttribute('initial_variant_weight');
+  }
+  public set initialVariantWeight(value: number) {
+    this._initialVariantWeight = value;
+  }
+  public resetInitialVariantWeight() {
+    this._initialVariantWeight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialVariantWeightInput() {
+    return this._initialVariantWeight;
+  }
+
+  // instance_type - computed: false, optional: true, required: false
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // model_data_download_timeout_in_seconds - computed: false, optional: true, required: false
+  private _modelDataDownloadTimeoutInSeconds?: number; 
+  public get modelDataDownloadTimeoutInSeconds() {
+    return this.getNumberAttribute('model_data_download_timeout_in_seconds');
+  }
+  public set modelDataDownloadTimeoutInSeconds(value: number) {
+    this._modelDataDownloadTimeoutInSeconds = value;
+  }
+  public resetModelDataDownloadTimeoutInSeconds() {
+    this._modelDataDownloadTimeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelDataDownloadTimeoutInSecondsInput() {
+    return this._modelDataDownloadTimeoutInSeconds;
+  }
+
+  // model_name - computed: false, optional: false, required: true
+  private _modelName?: string; 
+  public get modelName() {
+    return this.getStringAttribute('model_name');
+  }
+  public set modelName(value: string) {
+    this._modelName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelNameInput() {
+    return this._modelName;
+  }
+
+  // variant_name - computed: true, optional: true, required: false
+  private _variantName?: string; 
+  public get variantName() {
+    return this.getStringAttribute('variant_name');
+  }
+  public set variantName(value: string) {
+    this._variantName = value;
+  }
+  public resetVariantName() {
+    this._variantName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variantNameInput() {
+    return this._variantName;
+  }
+
+  // volume_size_in_gb - computed: false, optional: true, required: false
+  private _volumeSizeInGb?: number; 
+  public get volumeSizeInGb() {
+    return this.getNumberAttribute('volume_size_in_gb');
+  }
+  public set volumeSizeInGb(value: number) {
+    this._volumeSizeInGb = value;
+  }
+  public resetVolumeSizeInGb() {
+    this._volumeSizeInGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInGbInput() {
+    return this._volumeSizeInGb;
+  }
+
+  // core_dump_config - computed: false, optional: true, required: false
+  private _coreDumpConfig = new SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference(this, "core_dump_config");
+  public get coreDumpConfig() {
+    return this._coreDumpConfig;
+  }
+  public putCoreDumpConfig(value: SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig) {
+    this._coreDumpConfig.internalValue = value;
+  }
+  public resetCoreDumpConfig() {
+    this._coreDumpConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coreDumpConfigInput() {
+    return this._coreDumpConfig.internalValue;
+  }
+
+  // serverless_config - computed: false, optional: true, required: false
+  private _serverlessConfig = new SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference(this, "serverless_config");
+  public get serverlessConfig() {
+    return this._serverlessConfig;
+  }
+  public putServerlessConfig(value: SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig) {
+    this._serverlessConfig.internalValue = value;
+  }
+  public resetServerlessConfig() {
+    this._serverlessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessConfigInput() {
+    return this._serverlessConfig.internalValue;
+  }
+}
+
+export class SagemakerEndpointConfigurationShadowProductionVariantsList extends cdktf.ComplexList {
+  public internalValue? : SagemakerEndpointConfigurationShadowProductionVariants[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerEndpointConfigurationShadowProductionVariantsOutputReference {
+    return new SagemakerEndpointConfigurationShadowProductionVariantsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration}
@@ -1169,7 +1914,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_endpoint_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1188,6 +1933,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     this._asyncInferenceConfig.internalValue = config.asyncInferenceConfig;
     this._dataCaptureConfig.internalValue = config.dataCaptureConfig;
     this._productionVariants.internalValue = config.productionVariants;
+    this._shadowProductionVariants.internalValue = config.shadowProductionVariants;
   }
 
   // ==========
@@ -1324,6 +2070,22 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     return this._productionVariants.internalValue;
   }
 
+  // shadow_production_variants - computed: false, optional: true, required: false
+  private _shadowProductionVariants = new SagemakerEndpointConfigurationShadowProductionVariantsList(this, "shadow_production_variants", false);
+  public get shadowProductionVariants() {
+    return this._shadowProductionVariants;
+  }
+  public putShadowProductionVariants(value: SagemakerEndpointConfigurationShadowProductionVariants[] | cdktf.IResolvable) {
+    this._shadowProductionVariants.internalValue = value;
+  }
+  public resetShadowProductionVariants() {
+    this._shadowProductionVariants.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowProductionVariantsInput() {
+    return this._shadowProductionVariants.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1338,6 +2100,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       async_inference_config: sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(this._asyncInferenceConfig.internalValue),
       data_capture_config: sagemakerEndpointConfigurationDataCaptureConfigToTerraform(this._dataCaptureConfig.internalValue),
       production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform, true)(this._productionVariants.internalValue),
+      shadow_production_variants: cdktf.listMapper(sagemakerEndpointConfigurationShadowProductionVariantsToTerraform, true)(this._shadowProductionVariants.internalValue),
     };
   }
 }

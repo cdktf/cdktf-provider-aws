@@ -502,6 +502,10 @@ export interface CloudwatchMetricStreamTimeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream#delete CloudwatchMetricStream#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream#update CloudwatchMetricStream#update}
+  */
+  readonly update?: string;
 }
 
 export function cloudwatchMetricStreamTimeoutsToTerraform(struct?: CloudwatchMetricStreamTimeoutsOutputReference | CloudwatchMetricStreamTimeouts | cdktf.IResolvable): any {
@@ -512,6 +516,7 @@ export function cloudwatchMetricStreamTimeoutsToTerraform(struct?: CloudwatchMet
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -541,6 +546,10 @@ export class CloudwatchMetricStreamTimeoutsOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -550,6 +559,7 @@ export class CloudwatchMetricStreamTimeoutsOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -560,6 +570,7 @@ export class CloudwatchMetricStreamTimeoutsOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -594,6 +605,22 @@ export class CloudwatchMetricStreamTimeoutsOutputReference extends cdktf.Complex
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
@@ -622,7 +649,7 @@ export class CloudwatchMetricStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_metric_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

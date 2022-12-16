@@ -141,7 +141,7 @@ export class StoragegatewayFileSystemAssociation extends cdktf.TerraformResource
       terraformResourceType: 'aws_storagegateway_file_system_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

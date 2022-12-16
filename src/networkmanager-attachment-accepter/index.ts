@@ -131,7 +131,7 @@ export class NetworkmanagerAttachmentAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_attachment_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
