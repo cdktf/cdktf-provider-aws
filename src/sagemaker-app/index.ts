@@ -27,6 +27,10 @@ export interface SagemakerAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app#space_name SagemakerApp#space_name}
+  */
+  readonly spaceName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app#tags SagemakerApp#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -37,7 +41,7 @@ export interface SagemakerAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app#user_profile_name SagemakerApp#user_profile_name}
   */
-  readonly userProfileName: string;
+  readonly userProfileName?: string;
   /**
   * resource_spec block
   * 
@@ -218,7 +222,7 @@ export class SagemakerApp extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_app',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -233,6 +237,7 @@ export class SagemakerApp extends cdktf.TerraformResource {
     this._appType = config.appType;
     this._domainId = config.domainId;
     this._id = config.id;
+    this._spaceName = config.spaceName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._userProfileName = config.userProfileName;
@@ -303,6 +308,22 @@ export class SagemakerApp extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // space_name - computed: false, optional: true, required: false
+  private _spaceName?: string; 
+  public get spaceName() {
+    return this.getStringAttribute('space_name');
+  }
+  public set spaceName(value: string) {
+    this._spaceName = value;
+  }
+  public resetSpaceName() {
+    this._spaceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spaceNameInput() {
+    return this._spaceName;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -335,13 +356,16 @@ export class SagemakerApp extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // user_profile_name - computed: false, optional: false, required: true
+  // user_profile_name - computed: false, optional: true, required: false
   private _userProfileName?: string; 
   public get userProfileName() {
     return this.getStringAttribute('user_profile_name');
   }
   public set userProfileName(value: string) {
     this._userProfileName = value;
+  }
+  public resetUserProfileName() {
+    this._userProfileName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userProfileNameInput() {
@@ -374,6 +398,7 @@ export class SagemakerApp extends cdktf.TerraformResource {
       app_type: cdktf.stringToTerraform(this._appType),
       domain_id: cdktf.stringToTerraform(this._domainId),
       id: cdktf.stringToTerraform(this._id),
+      space_name: cdktf.stringToTerraform(this._spaceName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_profile_name: cdktf.stringToTerraform(this._userProfileName),

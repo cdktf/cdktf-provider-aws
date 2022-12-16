@@ -281,7 +281,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

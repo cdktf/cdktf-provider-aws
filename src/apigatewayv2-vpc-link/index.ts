@@ -62,7 +62,7 @@ export class Apigatewayv2VpcLink extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_vpc_link',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

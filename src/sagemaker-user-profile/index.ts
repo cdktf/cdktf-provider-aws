@@ -204,6 +204,100 @@ export class SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference ex
     return this._timeSeriesForecastingSettings.internalValue;
   }
 }
+export interface SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}
+  */
+  readonly repositoryUrl: string;
+}
+
+export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryToTerraform(struct?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
+  }
+}
+
+export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repositoryUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryUrl = this._repositoryUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._repositoryUrl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._repositoryUrl = value.repositoryUrl;
+    }
+  }
+
+  // repository_url - computed: false, optional: false, required: true
+  private _repositoryUrl?: string; 
+  public get repositoryUrl() {
+    return this.getStringAttribute('repository_url');
+  }
+  public set repositoryUrl(value: string) {
+    this._repositoryUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryUrlInput() {
+    return this._repositoryUrl;
+  }
+}
+
+export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList extends cdktf.ComplexList {
+  public internalValue? : SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference {
+    return new SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}
@@ -356,6 +450,12 @@ export interface SagemakerUserProfileUserSettingsJupyterServerAppSettings {
   */
   readonly lifecycleConfigArns?: string[];
   /**
+  * code_repository block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#code_repository SagemakerUserProfile#code_repository}
+  */
+  readonly codeRepository?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
+  /**
   * default_resource_spec block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
@@ -370,6 +470,7 @@ export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsToTerraf
   }
   return {
     lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
+    code_repository: cdktf.listMapper(sagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
     default_resource_spec: sagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
 }
@@ -392,6 +493,10 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
+    if (this._codeRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeRepository = this._codeRepository?.internalValue;
+    }
     if (this._defaultResourceSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
@@ -403,11 +508,13 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
     if (value === undefined) {
       this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
+      this._codeRepository.internalValue = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
+      this._codeRepository.internalValue = value.codeRepository;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
   }
@@ -426,6 +533,22 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
   // Temporarily expose input value. Use with caution.
   public get lifecycleConfigArnsInput() {
     return this._lifecycleConfigArns;
+  }
+
+  // code_repository - computed: false, optional: true, required: false
+  private _codeRepository = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList(this, "code_repository", true);
+  public get codeRepository() {
+    return this._codeRepository;
+  }
+  public putCodeRepository(value: SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable) {
+    this._codeRepository.internalValue = value;
+  }
+  public resetCodeRepository() {
+    this._codeRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryInput() {
+    return this._codeRepository.internalValue;
   }
 
   // default_resource_spec - computed: false, optional: false, required: true
@@ -1858,7 +1981,7 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_user_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

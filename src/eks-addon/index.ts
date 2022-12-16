@@ -20,6 +20,10 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#configuration_values EksAddon#configuration_values}
+  */
+  readonly configurationValues?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#id EksAddon#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -209,7 +213,7 @@ export class EksAddon extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_addon',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -223,6 +227,7 @@ export class EksAddon extends cdktf.TerraformResource {
     this._addonName = config.addonName;
     this._addonVersion = config.addonVersion;
     this._clusterName = config.clusterName;
+    this._configurationValues = config.configurationValues;
     this._id = config.id;
     this._preserve = config.preserve;
     this._resolveConflicts = config.resolveConflicts;
@@ -281,6 +286,22 @@ export class EksAddon extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterNameInput() {
     return this._clusterName;
+  }
+
+  // configuration_values - computed: true, optional: true, required: false
+  private _configurationValues?: string; 
+  public get configurationValues() {
+    return this.getStringAttribute('configuration_values');
+  }
+  public set configurationValues(value: string) {
+    this._configurationValues = value;
+  }
+  public resetConfigurationValues() {
+    this._configurationValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationValuesInput() {
+    return this._configurationValues;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -414,6 +435,7 @@ export class EksAddon extends cdktf.TerraformResource {
       addon_name: cdktf.stringToTerraform(this._addonName),
       addon_version: cdktf.stringToTerraform(this._addonVersion),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
+      configuration_values: cdktf.stringToTerraform(this._configurationValues),
       id: cdktf.stringToTerraform(this._id),
       preserve: cdktf.booleanToTerraform(this._preserve),
       resolve_conflicts: cdktf.stringToTerraform(this._resolveConflicts),

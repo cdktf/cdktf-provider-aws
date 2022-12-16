@@ -72,6 +72,12 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#timeouts GrafanaWorkspace#timeouts}
   */
   readonly timeouts?: GrafanaWorkspaceTimeouts;
+  /**
+  * vpc_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#vpc_configuration GrafanaWorkspace#vpc_configuration}
+  */
+  readonly vpcConfiguration?: GrafanaWorkspaceVpcConfiguration;
 }
 export interface GrafanaWorkspaceTimeouts {
   /**
@@ -175,6 +181,92 @@ export class GrafanaWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
     return this._update;
   }
 }
+export interface GrafanaWorkspaceVpcConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#security_group_ids GrafanaWorkspace#security_group_ids}
+  */
+  readonly securityGroupIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#subnet_ids GrafanaWorkspace#subnet_ids}
+  */
+  readonly subnetIds: string[];
+}
+
+export function grafanaWorkspaceVpcConfigurationToTerraform(struct?: GrafanaWorkspaceVpcConfigurationOutputReference | GrafanaWorkspaceVpcConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+  }
+}
+
+export class GrafanaWorkspaceVpcConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GrafanaWorkspaceVpcConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._securityGroupIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupIds = this._securityGroupIds;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GrafanaWorkspaceVpcConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._securityGroupIds = undefined;
+      this._subnetIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._securityGroupIds = value.securityGroupIds;
+      this._subnetIds = value.subnetIds;
+    }
+  }
+
+  // security_group_ids - computed: false, optional: false, required: true
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
+  // subnet_ids - computed: false, optional: false, required: true
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace aws_grafana_workspace}
@@ -202,7 +294,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -228,6 +320,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
+    this._vpcConfiguration.internalValue = config.vpcConfiguration;
   }
 
   // ==========
@@ -485,6 +578,22 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // vpc_configuration - computed: false, optional: true, required: false
+  private _vpcConfiguration = new GrafanaWorkspaceVpcConfigurationOutputReference(this, "vpc_configuration");
+  public get vpcConfiguration() {
+    return this._vpcConfiguration;
+  }
+  public putVpcConfiguration(value: GrafanaWorkspaceVpcConfiguration) {
+    this._vpcConfiguration.internalValue = value;
+  }
+  public resetVpcConfiguration() {
+    this._vpcConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcConfigurationInput() {
+    return this._vpcConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -506,6 +615,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: grafanaWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
+      vpc_configuration: grafanaWorkspaceVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };
   }
 }
