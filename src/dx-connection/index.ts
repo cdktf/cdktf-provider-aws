@@ -12,6 +12,10 @@ export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bandwidth: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#encryption_mode DxConnection#encryption_mode}
+  */
+  readonly encryptionMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#id DxConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -30,6 +34,14 @@ export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#provider_name DxConnection#provider_name}
   */
   readonly providerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#request_macsec DxConnection#request_macsec}
+  */
+  readonly requestMacsec?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#skip_destroy DxConnection#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection#tags DxConnection#tags}
   */
@@ -66,7 +78,7 @@ export class DxConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dx_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -78,10 +90,13 @@ export class DxConnection extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._bandwidth = config.bandwidth;
+    this._encryptionMode = config.encryptionMode;
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
     this._providerName = config.providerName;
+    this._requestMacsec = config.requestMacsec;
+    this._skipDestroy = config.skipDestroy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -111,6 +126,22 @@ export class DxConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
     return this._bandwidth;
+  }
+
+  // encryption_mode - computed: true, optional: true, required: false
+  private _encryptionMode?: string; 
+  public get encryptionMode() {
+    return this.getStringAttribute('encryption_mode');
+  }
+  public set encryptionMode(value: string) {
+    this._encryptionMode = value;
+  }
+  public resetEncryptionMode() {
+    this._encryptionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionModeInput() {
+    return this._encryptionMode;
   }
 
   // has_logical_redundancy - computed: true, optional: false, required: false
@@ -152,6 +183,11 @@ export class DxConnection extends cdktf.TerraformResource {
     return this._location;
   }
 
+  // macsec_capable - computed: true, optional: false, required: false
+  public get macsecCapable() {
+    return this.getBooleanAttribute('macsec_capable');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -170,6 +206,11 @@ export class DxConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_account_id');
   }
 
+  // port_encryption_status - computed: true, optional: false, required: false
+  public get portEncryptionStatus() {
+    return this.getStringAttribute('port_encryption_status');
+  }
+
   // provider_name - computed: true, optional: true, required: false
   private _providerName?: string; 
   public get providerName() {
@@ -184,6 +225,38 @@ export class DxConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get providerNameInput() {
     return this._providerName;
+  }
+
+  // request_macsec - computed: false, optional: true, required: false
+  private _requestMacsec?: boolean | cdktf.IResolvable; 
+  public get requestMacsec() {
+    return this.getBooleanAttribute('request_macsec');
+  }
+  public set requestMacsec(value: boolean | cdktf.IResolvable) {
+    this._requestMacsec = value;
+  }
+  public resetRequestMacsec() {
+    this._requestMacsec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestMacsecInput() {
+    return this._requestMacsec;
+  }
+
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -230,10 +303,13 @@ export class DxConnection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bandwidth: cdktf.stringToTerraform(this._bandwidth),
+      encryption_mode: cdktf.stringToTerraform(this._encryptionMode),
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       provider_name: cdktf.stringToTerraform(this._providerName),
+      request_macsec: cdktf.booleanToTerraform(this._requestMacsec),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };

@@ -66,7 +66,7 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_redshift_cluster_credentials',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
