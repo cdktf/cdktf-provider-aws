@@ -4,7 +4,7 @@ name: alert-open-prs
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "* */1 * * 1-5"
+    - cron: "* */12 * * 1-5"
 jobs:
   check-open-prs:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |-
-          PR_LINKS=$(gh pr list --state open --search "created:<$(date -d '-2hours' +%FT%TZ)" --json url --jq "map(.url)" )
+          PR_LINKS=$(gh pr list --state open --repo="cdktf/cdktf-provider-aws" --search "created:<$(date -d '-2hours' +%FT%TZ)" --json url --jq "map(.url)" )
           if [ "$PR_LINKS" == "[]" ]; then
             echo "No PRs open for more than 2 hour(s)"
           else
