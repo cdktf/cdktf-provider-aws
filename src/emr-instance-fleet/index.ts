@@ -958,7 +958,7 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emr_instance_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

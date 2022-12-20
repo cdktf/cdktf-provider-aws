@@ -557,7 +557,7 @@ export class Lb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

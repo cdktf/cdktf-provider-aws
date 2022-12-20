@@ -49,9 +49,13 @@ export interface NetworkmanagerVpcAttachmentConfig extends cdktf.TerraformMetaAr
 }
 export interface NetworkmanagerVpcAttachmentOptions {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#appliance_mode_support NetworkmanagerVpcAttachment#appliance_mode_support}
+  */
+  readonly applianceModeSupport?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#ipv6_support NetworkmanagerVpcAttachment#ipv6_support}
   */
-  readonly ipv6Support: boolean | cdktf.IResolvable;
+  readonly ipv6Support?: boolean | cdktf.IResolvable;
 }
 
 export function networkmanagerVpcAttachmentOptionsToTerraform(struct?: NetworkmanagerVpcAttachmentOptionsOutputReference | NetworkmanagerVpcAttachmentOptions): any {
@@ -60,6 +64,7 @@ export function networkmanagerVpcAttachmentOptionsToTerraform(struct?: Networkma
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    appliance_mode_support: cdktf.booleanToTerraform(struct!.applianceModeSupport),
     ipv6_support: cdktf.booleanToTerraform(struct!.ipv6Support),
   }
 }
@@ -78,6 +83,10 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   public get internalValue(): NetworkmanagerVpcAttachmentOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._applianceModeSupport !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applianceModeSupport = this._applianceModeSupport;
+    }
     if (this._ipv6Support !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipv6Support = this._ipv6Support;
@@ -88,21 +97,42 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   public set internalValue(value: NetworkmanagerVpcAttachmentOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._applianceModeSupport = undefined;
       this._ipv6Support = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._applianceModeSupport = value.applianceModeSupport;
       this._ipv6Support = value.ipv6Support;
     }
   }
 
-  // ipv6_support - computed: false, optional: false, required: true
+  // appliance_mode_support - computed: false, optional: true, required: false
+  private _applianceModeSupport?: boolean | cdktf.IResolvable; 
+  public get applianceModeSupport() {
+    return this.getBooleanAttribute('appliance_mode_support');
+  }
+  public set applianceModeSupport(value: boolean | cdktf.IResolvable) {
+    this._applianceModeSupport = value;
+  }
+  public resetApplianceModeSupport() {
+    this._applianceModeSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applianceModeSupportInput() {
+    return this._applianceModeSupport;
+  }
+
+  // ipv6_support - computed: false, optional: true, required: false
   private _ipv6Support?: boolean | cdktf.IResolvable; 
   public get ipv6Support() {
     return this.getBooleanAttribute('ipv6_support');
   }
   public set ipv6Support(value: boolean | cdktf.IResolvable) {
     this._ipv6Support = value;
+  }
+  public resetIpv6Support() {
+    this._ipv6Support = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipv6SupportInput() {
@@ -265,7 +295,7 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_vpc_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

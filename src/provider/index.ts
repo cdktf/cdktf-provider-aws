@@ -1926,6 +1926,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearchserverless AwsProvider#opensearchserverless}
+  */
+  readonly opensearchserverless?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearchservice AwsProvider#opensearchservice}
   */
   readonly opensearchservice?: string;
@@ -2880,6 +2886,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     nimble: cdktf.stringToTerraform(struct!.nimble),
     nimblestudio: cdktf.stringToTerraform(struct!.nimblestudio),
     opensearch: cdktf.stringToTerraform(struct!.opensearch),
+    opensearchserverless: cdktf.stringToTerraform(struct!.opensearchserverless),
     opensearchservice: cdktf.stringToTerraform(struct!.opensearchservice),
     opsworks: cdktf.stringToTerraform(struct!.opsworks),
     opsworkscm: cdktf.stringToTerraform(struct!.opsworkscm),
@@ -3051,7 +3058,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

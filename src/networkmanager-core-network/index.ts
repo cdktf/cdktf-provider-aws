@@ -345,7 +345,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_core_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

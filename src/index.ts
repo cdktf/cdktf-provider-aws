@@ -345,6 +345,7 @@ export * as dxHostedPublicVirtualInterfaceAccepter from './dx-hosted-public-virt
 export * as dxHostedTransitVirtualInterface from './dx-hosted-transit-virtual-interface';
 export * as dxHostedTransitVirtualInterfaceAccepter from './dx-hosted-transit-virtual-interface-accepter';
 export * as dxLag from './dx-lag';
+export * as dxMacsecKeyAssociation from './dx-macsec-key-association';
 export * as dxPrivateVirtualInterface from './dx-private-virtual-interface';
 export * as dxPublicVirtualInterface from './dx-public-virtual-interface';
 export * as dxTransitVirtualInterface from './dx-transit-virtual-interface';

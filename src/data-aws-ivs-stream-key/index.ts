@@ -50,7 +50,7 @@ export class DataAwsIvsStreamKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ivs_stream_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
