@@ -1762,6 +1762,12 @@ export interface DmsEndpointS3Settings {
   */
   readonly externalTableDefinition?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#ignore_header_rows DmsEndpoint#ignore_header_rows}
+  */
+  readonly ignoreHeaderRows?: number;
+  /**
+  * This setting has no effect, is deprecated, and will be removed in a future version
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#ignore_headers_row DmsEndpoint#ignore_headers_row}
   */
   readonly ignoreHeadersRow?: number;
@@ -1845,6 +1851,7 @@ export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsO
     encoding_type: cdktf.stringToTerraform(struct!.encodingType),
     encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
     external_table_definition: cdktf.stringToTerraform(struct!.externalTableDefinition),
+    ignore_header_rows: cdktf.numberToTerraform(struct!.ignoreHeaderRows),
     ignore_headers_row: cdktf.numberToTerraform(struct!.ignoreHeadersRow),
     include_op_for_full_load: cdktf.booleanToTerraform(struct!.includeOpForFullLoad),
     max_file_size: cdktf.numberToTerraform(struct!.maxFileSize),
@@ -1971,6 +1978,10 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.externalTableDefinition = this._externalTableDefinition;
     }
+    if (this._ignoreHeaderRows !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreHeaderRows = this._ignoreHeaderRows;
+    }
     if (this._ignoreHeadersRow !== undefined) {
       hasAnyValues = true;
       internalValueResult.ignoreHeadersRow = this._ignoreHeadersRow;
@@ -2053,6 +2064,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       this._encodingType = undefined;
       this._encryptionMode = undefined;
       this._externalTableDefinition = undefined;
+      this._ignoreHeaderRows = undefined;
       this._ignoreHeadersRow = undefined;
       this._includeOpForFullLoad = undefined;
       this._maxFileSize = undefined;
@@ -2093,6 +2105,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       this._encodingType = value.encodingType;
       this._encryptionMode = value.encryptionMode;
       this._externalTableDefinition = value.externalTableDefinition;
+      this._ignoreHeaderRows = value.ignoreHeaderRows;
       this._ignoreHeadersRow = value.ignoreHeadersRow;
       this._includeOpForFullLoad = value.includeOpForFullLoad;
       this._maxFileSize = value.maxFileSize;
@@ -2493,6 +2506,22 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._externalTableDefinition;
   }
 
+  // ignore_header_rows - computed: false, optional: true, required: false
+  private _ignoreHeaderRows?: number; 
+  public get ignoreHeaderRows() {
+    return this.getNumberAttribute('ignore_header_rows');
+  }
+  public set ignoreHeaderRows(value: number) {
+    this._ignoreHeaderRows = value;
+  }
+  public resetIgnoreHeaderRows() {
+    this._ignoreHeaderRows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreHeaderRowsInput() {
+    return this._ignoreHeaderRows;
+  }
+
   // ignore_headers_row - computed: false, optional: true, required: false
   private _ignoreHeadersRow?: number; 
   public get ignoreHeadersRow() {
@@ -2830,7 +2859,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

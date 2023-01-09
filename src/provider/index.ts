@@ -184,19 +184,19 @@ using temporary security credentials.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#assume_role AwsProvider#assume_role}
   */
-  readonly assumeRole?: AwsProviderAssumeRole;
+  readonly assumeRole?: AwsProviderAssumeRole[] | cdktf.IResolvable;
   /**
   * assume_role_with_web_identity block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
   */
-  readonly assumeRoleWithWebIdentity?: AwsProviderAssumeRoleWithWebIdentity;
+  readonly assumeRoleWithWebIdentity?: AwsProviderAssumeRoleWithWebIdentity[] | cdktf.IResolvable;
   /**
   * default_tags block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#default_tags AwsProvider#default_tags}
   */
-  readonly defaultTags?: AwsProviderDefaultTags;
+  readonly defaultTags?: AwsProviderDefaultTags[] | cdktf.IResolvable;
   /**
   * endpoints block
   * 
@@ -208,7 +208,7 @@ using temporary security credentials.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ignore_tags AwsProvider#ignore_tags}
   */
-  readonly ignoreTags?: AwsProviderIgnoreTags;
+  readonly ignoreTags?: AwsProviderIgnoreTags[] | cdktf.IResolvable;
 }
 export interface AwsProviderAssumeRole {
   /**
@@ -273,7 +273,7 @@ export interface AwsProviderAssumeRole {
   readonly transitiveTagKeys?: string[];
 }
 
-export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole): any {
+export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -333,7 +333,7 @@ export interface AwsProviderAssumeRoleWithWebIdentity {
   readonly webIdentityTokenFile?: string;
 }
 
-export function awsProviderAssumeRoleWithWebIdentityToTerraform(struct?: AwsProviderAssumeRoleWithWebIdentity): any {
+export function awsProviderAssumeRoleWithWebIdentityToTerraform(struct?: AwsProviderAssumeRoleWithWebIdentity | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -358,7 +358,7 @@ export interface AwsProviderDefaultTags {
   readonly tags?: { [key: string]: string };
 }
 
-export function awsProviderDefaultTagsToTerraform(struct?: AwsProviderDefaultTags): any {
+export function awsProviderDefaultTagsToTerraform(struct?: AwsProviderDefaultTags | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3020,7 +3020,7 @@ export interface AwsProviderIgnoreTags {
   readonly keys?: string[];
 }
 
-export function awsProviderIgnoreTagsToTerraform(struct?: AwsProviderIgnoreTags): any {
+export function awsProviderIgnoreTagsToTerraform(struct?: AwsProviderIgnoreTags | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3058,7 +3058,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'
@@ -3534,11 +3534,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
   }
 
   // assume_role - computed: false, optional: true, required: false
-  private _assumeRole?: AwsProviderAssumeRole; 
+  private _assumeRole?: AwsProviderAssumeRole[] | cdktf.IResolvable; 
   public get assumeRole() {
     return this._assumeRole;
   }
-  public set assumeRole(value: AwsProviderAssumeRole | undefined) {
+  public set assumeRole(value: AwsProviderAssumeRole[] | cdktf.IResolvable | undefined) {
     this._assumeRole = value;
   }
   public resetAssumeRole() {
@@ -3550,11 +3550,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
   }
 
   // assume_role_with_web_identity - computed: false, optional: true, required: false
-  private _assumeRoleWithWebIdentity?: AwsProviderAssumeRoleWithWebIdentity; 
+  private _assumeRoleWithWebIdentity?: AwsProviderAssumeRoleWithWebIdentity[] | cdktf.IResolvable; 
   public get assumeRoleWithWebIdentity() {
     return this._assumeRoleWithWebIdentity;
   }
-  public set assumeRoleWithWebIdentity(value: AwsProviderAssumeRoleWithWebIdentity | undefined) {
+  public set assumeRoleWithWebIdentity(value: AwsProviderAssumeRoleWithWebIdentity[] | cdktf.IResolvable | undefined) {
     this._assumeRoleWithWebIdentity = value;
   }
   public resetAssumeRoleWithWebIdentity() {
@@ -3566,11 +3566,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
   }
 
   // default_tags - computed: false, optional: true, required: false
-  private _defaultTags?: AwsProviderDefaultTags; 
+  private _defaultTags?: AwsProviderDefaultTags[] | cdktf.IResolvable; 
   public get defaultTags() {
     return this._defaultTags;
   }
-  public set defaultTags(value: AwsProviderDefaultTags | undefined) {
+  public set defaultTags(value: AwsProviderDefaultTags[] | cdktf.IResolvable | undefined) {
     this._defaultTags = value;
   }
   public resetDefaultTags() {
@@ -3598,11 +3598,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
   }
 
   // ignore_tags - computed: false, optional: true, required: false
-  private _ignoreTags?: AwsProviderIgnoreTags; 
+  private _ignoreTags?: AwsProviderIgnoreTags[] | cdktf.IResolvable; 
   public get ignoreTags() {
     return this._ignoreTags;
   }
-  public set ignoreTags(value: AwsProviderIgnoreTags | undefined) {
+  public set ignoreTags(value: AwsProviderIgnoreTags[] | cdktf.IResolvable | undefined) {
     this._ignoreTags = value;
   }
   public resetIgnoreTags() {
@@ -3646,11 +3646,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
       use_dualstack_endpoint: cdktf.booleanToTerraform(this._useDualstackEndpoint),
       use_fips_endpoint: cdktf.booleanToTerraform(this._useFipsEndpoint),
       alias: cdktf.stringToTerraform(this._alias),
-      assume_role: awsProviderAssumeRoleToTerraform(this._assumeRole),
-      assume_role_with_web_identity: awsProviderAssumeRoleWithWebIdentityToTerraform(this._assumeRoleWithWebIdentity),
-      default_tags: awsProviderDefaultTagsToTerraform(this._defaultTags),
+      assume_role: cdktf.listMapper(awsProviderAssumeRoleToTerraform, true)(this._assumeRole),
+      assume_role_with_web_identity: cdktf.listMapper(awsProviderAssumeRoleWithWebIdentityToTerraform, true)(this._assumeRoleWithWebIdentity),
+      default_tags: cdktf.listMapper(awsProviderDefaultTagsToTerraform, true)(this._defaultTags),
       endpoints: cdktf.listMapper(awsProviderEndpointsToTerraform, true)(this._endpoints),
-      ignore_tags: awsProviderIgnoreTagsToTerraform(this._ignoreTags),
+      ignore_tags: cdktf.listMapper(awsProviderIgnoreTagsToTerraform, true)(this._ignoreTags),
     };
   }
 }

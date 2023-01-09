@@ -27,9 +27,17 @@ export interface DataAwsKmsSecretsSecret {
   */
   readonly context?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secrets#encryption_algorithm DataAwsKmsSecrets#encryption_algorithm}
+  */
+  readonly encryptionAlgorithm?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secrets#grant_tokens DataAwsKmsSecrets#grant_tokens}
   */
   readonly grantTokens?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secrets#key_id DataAwsKmsSecrets#key_id}
+  */
+  readonly keyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secrets#name DataAwsKmsSecrets#name}
   */
@@ -47,7 +55,9 @@ export function dataAwsKmsSecretsSecretToTerraform(struct?: DataAwsKmsSecretsSec
   }
   return {
     context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.context),
+    encryption_algorithm: cdktf.stringToTerraform(struct!.encryptionAlgorithm),
     grant_tokens: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.grantTokens),
+    key_id: cdktf.stringToTerraform(struct!.keyId),
     name: cdktf.stringToTerraform(struct!.name),
     payload: cdktf.stringToTerraform(struct!.payload),
   }
@@ -77,9 +87,17 @@ export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.context = this._context;
     }
+    if (this._encryptionAlgorithm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionAlgorithm = this._encryptionAlgorithm;
+    }
     if (this._grantTokens !== undefined) {
       hasAnyValues = true;
       internalValueResult.grantTokens = this._grantTokens;
+    }
+    if (this._keyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyId = this._keyId;
     }
     if (this._name !== undefined) {
       hasAnyValues = true;
@@ -97,7 +115,9 @@ export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._context = undefined;
+      this._encryptionAlgorithm = undefined;
       this._grantTokens = undefined;
+      this._keyId = undefined;
       this._name = undefined;
       this._payload = undefined;
     }
@@ -109,7 +129,9 @@ export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._context = value.context;
+      this._encryptionAlgorithm = value.encryptionAlgorithm;
       this._grantTokens = value.grantTokens;
+      this._keyId = value.keyId;
       this._name = value.name;
       this._payload = value.payload;
     }
@@ -131,6 +153,22 @@ export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject 
     return this._context;
   }
 
+  // encryption_algorithm - computed: false, optional: true, required: false
+  private _encryptionAlgorithm?: string; 
+  public get encryptionAlgorithm() {
+    return this.getStringAttribute('encryption_algorithm');
+  }
+  public set encryptionAlgorithm(value: string) {
+    this._encryptionAlgorithm = value;
+  }
+  public resetEncryptionAlgorithm() {
+    this._encryptionAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionAlgorithmInput() {
+    return this._encryptionAlgorithm;
+  }
+
   // grant_tokens - computed: false, optional: true, required: false
   private _grantTokens?: string[]; 
   public get grantTokens() {
@@ -145,6 +183,22 @@ export class DataAwsKmsSecretsSecretOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get grantTokensInput() {
     return this._grantTokens;
+  }
+
+  // key_id - computed: false, optional: true, required: false
+  private _keyId?: string; 
+  public get keyId() {
+    return this.getStringAttribute('key_id');
+  }
+  public set keyId(value: string) {
+    this._keyId = value;
+  }
+  public resetKeyId() {
+    this._keyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId;
   }
 
   // name - computed: false, optional: false, required: true
@@ -220,7 +274,7 @@ export class DataAwsKmsSecrets extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kms_secrets',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
