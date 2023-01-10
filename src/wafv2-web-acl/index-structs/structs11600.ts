@@ -1,4 +1,22 @@
 import * as cdktf from 'cdktf';
+import { Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch,
+wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchToTerraform,
+Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference,
+Wafv2WebAclRuleStatementRateBasedStatement,
+wafv2WebAclRuleStatementRateBasedStatementToTerraform,
+Wafv2WebAclRuleStatementRateBasedStatementOutputReference,
+Wafv2WebAclRuleStatementRegexMatchStatement,
+wafv2WebAclRuleStatementRegexMatchStatementToTerraform,
+Wafv2WebAclRuleStatementRegexMatchStatementOutputReference,
+Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement,
+wafv2WebAclRuleStatementRegexPatternSetReferenceStatementToTerraform,
+Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementOutputReference,
+Wafv2WebAclRuleStatementRuleGroupReferenceStatement,
+wafv2WebAclRuleStatementRuleGroupReferenceStatementToTerraform,
+Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference,
+Wafv2WebAclRuleStatementSizeConstraintStatement,
+wafv2WebAclRuleStatementSizeConstraintStatementToTerraform,
+Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference } from './structs11200'
 import { Wafv2WebAclRuleStatementAndStatement,
 wafv2WebAclRuleStatementAndStatementToTerraform,
 Wafv2WebAclRuleStatementAndStatementOutputReference,
@@ -23,24 +41,6 @@ Wafv2WebAclRuleStatementNotStatementOutputReference } from './structs5600'
 import { Wafv2WebAclRuleStatementOrStatement,
 wafv2WebAclRuleStatementOrStatementToTerraform,
 Wafv2WebAclRuleStatementOrStatementOutputReference } from './structs6000'
-import { Wafv2WebAclRuleStatementRateBasedStatement,
-wafv2WebAclRuleStatementRateBasedStatementToTerraform,
-Wafv2WebAclRuleStatementRateBasedStatementOutputReference,
-Wafv2WebAclRuleStatementRegexMatchStatement,
-wafv2WebAclRuleStatementRegexMatchStatementToTerraform,
-Wafv2WebAclRuleStatementRegexMatchStatementOutputReference,
-Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement,
-wafv2WebAclRuleStatementRegexPatternSetReferenceStatementToTerraform,
-Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementOutputReference,
-Wafv2WebAclRuleStatementRuleGroupReferenceStatement,
-wafv2WebAclRuleStatementRuleGroupReferenceStatementToTerraform,
-Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference,
-Wafv2WebAclRuleStatementSizeConstraintStatement,
-wafv2WebAclRuleStatementSizeConstraintStatementToTerraform,
-Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference,
-Wafv2WebAclRuleStatementSqliMatchStatement,
-wafv2WebAclRuleStatementSqliMatchStatementToTerraform,
-Wafv2WebAclRuleStatementSqliMatchStatementOutputReference } from './structs11200'
 import { Wafv2WebAclRuleAction,
 wafv2WebAclRuleActionToTerraform,
 Wafv2WebAclRuleActionOutputReference,
@@ -50,6 +50,217 @@ Wafv2WebAclRuleOverrideActionOutputReference,
 Wafv2WebAclRuleRuleLabel,
 wafv2WebAclRuleRuleLabelToTerraform,
 Wafv2WebAclRuleRuleLabelList } from './structs0'
+export interface Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  */
+  readonly priority: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#type Wafv2WebAcl#type}
+  */
+  readonly type: string;
+}
+
+export function wafv2WebAclRuleStatementSqliMatchStatementTextTransformationToTerraform(struct?: Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    priority: cdktf.numberToTerraform(struct!.priority),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._priority = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._priority = value.priority;
+      this._type = value.type;
+    }
+  }
+
+  // priority - computed: false, optional: false, required: true
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationList extends cdktf.ComplexList {
+  public internalValue? : Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference {
+    return new Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Wafv2WebAclRuleStatementSqliMatchStatement {
+  /**
+  * field_to_match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  */
+  readonly fieldToMatch?: Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch;
+  /**
+  * text_transformation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  */
+  readonly textTransformation: Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable;
+}
+
+export function wafv2WebAclRuleStatementSqliMatchStatementToTerraform(struct?: Wafv2WebAclRuleStatementSqliMatchStatementOutputReference | Wafv2WebAclRuleStatementSqliMatchStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    field_to_match: wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchToTerraform(struct!.fieldToMatch),
+    text_transformation: cdktf.listMapper(wafv2WebAclRuleStatementSqliMatchStatementTextTransformationToTerraform, true)(struct!.textTransformation),
+  }
+}
+
+export class Wafv2WebAclRuleStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Wafv2WebAclRuleStatementSqliMatchStatement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fieldToMatch?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
+    }
+    if (this._textTransformation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.textTransformation = this._textTransformation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclRuleStatementSqliMatchStatement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fieldToMatch.internalValue = undefined;
+      this._textTransformation.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fieldToMatch.internalValue = value.fieldToMatch;
+      this._textTransformation.internalValue = value.textTransformation;
+    }
+  }
+
+  // field_to_match - computed: false, optional: true, required: false
+  private _fieldToMatch = new Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference(this, "field_to_match");
+  public get fieldToMatch() {
+    return this._fieldToMatch;
+  }
+  public putFieldToMatch(value: Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch) {
+    this._fieldToMatch.internalValue = value;
+  }
+  public resetFieldToMatch() {
+    this._fieldToMatch.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldToMatchInput() {
+    return this._fieldToMatch.internalValue;
+  }
+
+  // text_transformation - computed: false, optional: false, required: true
+  private _textTransformation = new Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationList(this, "text_transformation", true);
+  public get textTransformation() {
+    return this._textTransformation;
+  }
+  public putTextTransformation(value: Wafv2WebAclRuleStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable) {
+    this._textTransformation.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textTransformationInput() {
+    return this._textTransformation.internalValue;
+  }
+}
 export interface Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchAllQueryArguments {
 }
 

@@ -50,6 +50,122 @@ export interface LightsailInstanceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#user_data LightsailInstance#user_data}
   */
   readonly userData?: string;
+  /**
+  * add_on block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#add_on LightsailInstance#add_on}
+  */
+  readonly addOn?: LightsailInstanceAddOn;
+}
+export interface LightsailInstanceAddOn {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#snapshot_time LightsailInstance#snapshot_time}
+  */
+  readonly snapshotTime: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#status LightsailInstance#status}
+  */
+  readonly status: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#type LightsailInstance#type}
+  */
+  readonly type: string;
+}
+
+export function lightsailInstanceAddOnToTerraform(struct?: LightsailInstanceAddOnOutputReference | LightsailInstanceAddOn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    snapshot_time: cdktf.stringToTerraform(struct!.snapshotTime),
+    status: cdktf.stringToTerraform(struct!.status),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class LightsailInstanceAddOnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LightsailInstanceAddOn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._snapshotTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotTime = this._snapshotTime;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LightsailInstanceAddOn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._snapshotTime = undefined;
+      this._status = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._snapshotTime = value.snapshotTime;
+      this._status = value.status;
+      this._type = value.type;
+    }
+  }
+
+  // snapshot_time - computed: false, optional: false, required: true
+  private _snapshotTime?: string; 
+  public get snapshotTime() {
+    return this.getStringAttribute('snapshot_time');
+  }
+  public set snapshotTime(value: string) {
+    this._snapshotTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotTimeInput() {
+    return this._snapshotTime;
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
 }
 
 /**
@@ -78,7 +194,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -99,6 +215,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._userData = config.userData;
+    this._addOn.internalValue = config.addOn;
   }
 
   // ==========
@@ -303,6 +420,22 @@ export class LightsailInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('username');
   }
 
+  // add_on - computed: false, optional: true, required: false
+  private _addOn = new LightsailInstanceAddOnOutputReference(this, "add_on");
+  public get addOn() {
+    return this._addOn;
+  }
+  public putAddOn(value: LightsailInstanceAddOn) {
+    this._addOn.internalValue = value;
+  }
+  public resetAddOn() {
+    this._addOn.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addOnInput() {
+    return this._addOn.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -319,6 +452,7 @@ export class LightsailInstance extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_data: cdktf.stringToTerraform(this._userData),
+      add_on: lightsailInstanceAddOnToTerraform(this._addOn.internalValue),
     };
   }
 }

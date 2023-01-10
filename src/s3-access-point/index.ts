@@ -16,6 +16,10 @@ export interface S3AccessPointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bucket: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}
+  */
+  readonly bucketAccountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#id S3AccessPoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -278,7 +282,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -291,6 +295,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._bucket = config.bucket;
+    this._bucketAccountId = config.bucketAccountId;
     this._id = config.id;
     this._name = config.name;
     this._policy = config.policy;
@@ -339,6 +344,22 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket;
+  }
+
+  // bucket_account_id - computed: true, optional: true, required: false
+  private _bucketAccountId?: string; 
+  public get bucketAccountId() {
+    return this.getStringAttribute('bucket_account_id');
+  }
+  public set bucketAccountId(value: string) {
+    this._bucketAccountId = value;
+  }
+  public resetBucketAccountId() {
+    this._bucketAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketAccountIdInput() {
+    return this._bucketAccountId;
   }
 
   // domain_name - computed: true, optional: false, required: false
@@ -447,6 +468,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       bucket: cdktf.stringToTerraform(this._bucket),
+      bucket_account_id: cdktf.stringToTerraform(this._bucketAccountId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       policy: cdktf.stringToTerraform(this._policy),

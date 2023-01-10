@@ -14,7 +14,7 @@ export interface LightsailDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_database#availability_zone LightsailDatabase#availability_zone}
   */
-  readonly availabilityZone: string;
+  readonly availabilityZone?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_database#backup_retention_enabled LightsailDatabase#backup_retention_enabled}
   */
@@ -106,7 +106,7 @@ export class LightsailDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -161,13 +161,16 @@ export class LightsailDatabase extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zone - computed: false, optional: false, required: true
+  // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
   public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {

@@ -27,6 +27,10 @@ export interface LightsailInstancePublicPortsConfig extends cdktf.TerraformMetaA
 }
 export interface LightsailInstancePublicPortsPortInfo {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#cidr_list_aliases LightsailInstancePublicPorts#cidr_list_aliases}
+  */
+  readonly cidrListAliases?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}
   */
   readonly cidrs?: string[];
@@ -54,6 +58,7 @@ export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: Lightsa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    cidr_list_aliases: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrListAliases),
     cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     ipv6_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6Cidrs),
@@ -82,6 +87,10 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._cidrListAliases !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidrListAliases = this._cidrListAliases;
+    }
     if (this._cidrs !== undefined) {
       hasAnyValues = true;
       internalValueResult.cidrs = this._cidrs;
@@ -109,6 +118,7 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._cidrListAliases = undefined;
       this._cidrs = undefined;
       this._fromPort = undefined;
       this._ipv6Cidrs = undefined;
@@ -122,12 +132,29 @@ export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._cidrListAliases = value.cidrListAliases;
       this._cidrs = value.cidrs;
       this._fromPort = value.fromPort;
       this._ipv6Cidrs = value.ipv6Cidrs;
       this._protocol = value.protocol;
       this._toPort = value.toPort;
     }
+  }
+
+  // cidr_list_aliases - computed: true, optional: true, required: false
+  private _cidrListAliases?: string[]; 
+  public get cidrListAliases() {
+    return cdktf.Fn.tolist(this.getListAttribute('cidr_list_aliases'));
+  }
+  public set cidrListAliases(value: string[]) {
+    this._cidrListAliases = value;
+  }
+  public resetCidrListAliases() {
+    this._cidrListAliases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrListAliasesInput() {
+    return this._cidrListAliases;
   }
 
   // cidrs - computed: true, optional: true, required: false
@@ -248,7 +275,7 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_instance_public_ports',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,7 +1,7 @@
 import * as cdktf from 'cdktf';
-import { Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern,
-wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform,
-Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList,
+import { Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll,
+wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform,
+Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference,
 Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArguments,
 wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsToTerraform,
 Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference,
@@ -44,6 +44,159 @@ Wafv2RuleGroupRuleActionOutputReference,
 Wafv2RuleGroupRuleRuleLabel,
 wafv2RuleGroupRuleRuleLabelToTerraform,
 Wafv2RuleGroupRuleRuleLabelList } from './structs0'
+export interface Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#excluded_cookies Wafv2RuleGroup#excluded_cookies}
+  */
+  readonly excludedCookies?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#included_cookies Wafv2RuleGroup#included_cookies}
+  */
+  readonly includedCookies?: string[];
+  /**
+  * all block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#all Wafv2RuleGroup#all}
+  */
+  readonly all?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll;
+}
+
+export function wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternToTerraform(struct?: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    excluded_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedCookies),
+    included_cookies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookies),
+    all: wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllToTerraform(struct!.all),
+  }
+}
+
+export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._excludedCookies !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludedCookies = this._excludedCookies;
+    }
+    if (this._includedCookies !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includedCookies = this._includedCookies;
+    }
+    if (this._all?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.all = this._all?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._excludedCookies = undefined;
+      this._includedCookies = undefined;
+      this._all.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._excludedCookies = value.excludedCookies;
+      this._includedCookies = value.includedCookies;
+      this._all.internalValue = value.all;
+    }
+  }
+
+  // excluded_cookies - computed: false, optional: true, required: false
+  private _excludedCookies?: string[]; 
+  public get excludedCookies() {
+    return this.getListAttribute('excluded_cookies');
+  }
+  public set excludedCookies(value: string[]) {
+    this._excludedCookies = value;
+  }
+  public resetExcludedCookies() {
+    this._excludedCookies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedCookiesInput() {
+    return this._excludedCookies;
+  }
+
+  // included_cookies - computed: false, optional: true, required: false
+  private _includedCookies?: string[]; 
+  public get includedCookies() {
+    return this.getListAttribute('included_cookies');
+  }
+  public set includedCookies(value: string[]) {
+    this._includedCookies = value;
+  }
+  public resetIncludedCookies() {
+    this._includedCookies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedCookiesInput() {
+    return this._includedCookies;
+  }
+
+  // all - computed: false, optional: true, required: false
+  private _all = new Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference(this, "all");
+  public get all() {
+    return this._all;
+  }
+  public putAll(value: Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll) {
+    this._all.internalValue = value;
+  }
+  public resetAll() {
+    this._all.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allInput() {
+    return this._all.internalValue;
+  }
+}
+
+export class Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList extends cdktf.ComplexList {
+  public internalValue? : Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference {
+    return new Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookies {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#match_scope Wafv2RuleGroup#match_scope}

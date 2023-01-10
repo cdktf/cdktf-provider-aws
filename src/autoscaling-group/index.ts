@@ -32,6 +32,10 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly desiredCapacity?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#desired_capacity_type AutoscalingGroup#desired_capacity_type}
+  */
+  readonly desiredCapacityType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#enabled_metrics AutoscalingGroup#enabled_metrics}
   */
   readonly enabledMetrics?: string[];
@@ -3490,7 +3494,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3507,6 +3511,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._defaultCooldown = config.defaultCooldown;
     this._defaultInstanceWarmup = config.defaultInstanceWarmup;
     this._desiredCapacity = config.desiredCapacity;
+    this._desiredCapacityType = config.desiredCapacityType;
     this._enabledMetrics = config.enabledMetrics;
     this._forceDelete = config.forceDelete;
     this._forceDeleteWarmPool = config.forceDeleteWarmPool;
@@ -3644,6 +3649,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get desiredCapacityInput() {
     return this._desiredCapacity;
+  }
+
+  // desired_capacity_type - computed: false, optional: true, required: false
+  private _desiredCapacityType?: string; 
+  public get desiredCapacityType() {
+    return this.getStringAttribute('desired_capacity_type');
+  }
+  public set desiredCapacityType(value: string) {
+    this._desiredCapacityType = value;
+  }
+  public resetDesiredCapacityType() {
+    this._desiredCapacityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredCapacityTypeInput() {
+    return this._desiredCapacityType;
   }
 
   // enabled_metrics - computed: false, optional: true, required: false
@@ -4164,6 +4185,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       default_cooldown: cdktf.numberToTerraform(this._defaultCooldown),
       default_instance_warmup: cdktf.numberToTerraform(this._defaultInstanceWarmup),
       desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
+      desired_capacity_type: cdktf.stringToTerraform(this._desiredCapacityType),
       enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledMetrics),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
       force_delete_warm_pool: cdktf.booleanToTerraform(this._forceDeleteWarmPool),

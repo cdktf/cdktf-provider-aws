@@ -4584,6 +4584,18 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
   */
   readonly bucketPrefix?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#cluster_identifier AppflowConnectorProfile#cluster_identifier}
+  */
+  readonly clusterIdentifier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#data_api_role_arn AppflowConnectorProfile#data_api_role_arn}
+  */
+  readonly dataApiRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#database_name AppflowConnectorProfile#database_name}
+  */
+  readonly databaseName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile#database_url AppflowConnectorProfile#database_url}
   */
   readonly databaseUrl?: string;
@@ -4601,6 +4613,9 @@ export function appflowConnectorProfileConnectorProfileConfigConnectorProfilePro
   return {
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
+    cluster_identifier: cdktf.stringToTerraform(struct!.clusterIdentifier),
+    data_api_role_arn: cdktf.stringToTerraform(struct!.dataApiRoleArn),
+    database_name: cdktf.stringToTerraform(struct!.databaseName),
     database_url: cdktf.stringToTerraform(struct!.databaseUrl),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
@@ -4628,6 +4643,18 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
       hasAnyValues = true;
       internalValueResult.bucketPrefix = this._bucketPrefix;
     }
+    if (this._clusterIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterIdentifier = this._clusterIdentifier;
+    }
+    if (this._dataApiRoleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataApiRoleArn = this._dataApiRoleArn;
+    }
+    if (this._databaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseName = this._databaseName;
+    }
     if (this._databaseUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.databaseUrl = this._databaseUrl;
@@ -4644,6 +4671,9 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
       this.isEmptyObject = false;
       this._bucketName = undefined;
       this._bucketPrefix = undefined;
+      this._clusterIdentifier = undefined;
+      this._dataApiRoleArn = undefined;
+      this._databaseName = undefined;
       this._databaseUrl = undefined;
       this._roleArn = undefined;
     }
@@ -4651,6 +4681,9 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._bucketPrefix = value.bucketPrefix;
+      this._clusterIdentifier = value.clusterIdentifier;
+      this._dataApiRoleArn = value.dataApiRoleArn;
+      this._databaseName = value.databaseName;
       this._databaseUrl = value.databaseUrl;
       this._roleArn = value.roleArn;
     }
@@ -4683,6 +4716,54 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
   // Temporarily expose input value. Use with caution.
   public get bucketPrefixInput() {
     return this._bucketPrefix;
+  }
+
+  // cluster_identifier - computed: false, optional: true, required: false
+  private _clusterIdentifier?: string; 
+  public get clusterIdentifier() {
+    return this.getStringAttribute('cluster_identifier');
+  }
+  public set clusterIdentifier(value: string) {
+    this._clusterIdentifier = value;
+  }
+  public resetClusterIdentifier() {
+    this._clusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierInput() {
+    return this._clusterIdentifier;
+  }
+
+  // data_api_role_arn - computed: false, optional: true, required: false
+  private _dataApiRoleArn?: string; 
+  public get dataApiRoleArn() {
+    return this.getStringAttribute('data_api_role_arn');
+  }
+  public set dataApiRoleArn(value: string) {
+    this._dataApiRoleArn = value;
+  }
+  public resetDataApiRoleArn() {
+    this._dataApiRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataApiRoleArnInput() {
+    return this._dataApiRoleArn;
+  }
+
+  // database_name - computed: false, optional: true, required: false
+  private _databaseName?: string; 
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+  public set databaseName(value: string) {
+    this._databaseName = value;
+  }
+  public resetDatabaseName() {
+    this._databaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName;
   }
 
   // database_url - computed: false, optional: true, required: false
@@ -6352,7 +6433,7 @@ export class AppflowConnectorProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appflow_connector_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

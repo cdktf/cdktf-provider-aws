@@ -12,6 +12,10 @@ export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
   */
   readonly apiId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#code AppsyncResolver#code}
+  */
+  readonly code?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#data_source AppsyncResolver#data_source}
   */
   readonly dataSource?: string;
@@ -58,6 +62,12 @@ export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#pipeline_config AppsyncResolver#pipeline_config}
   */
   readonly pipelineConfig?: AppsyncResolverPipelineConfig;
+  /**
+  * runtime block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#runtime AppsyncResolver#runtime}
+  */
+  readonly runtime?: AppsyncResolverRuntime;
   /**
   * sync_config block
   * 
@@ -220,6 +230,92 @@ export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get functionsInput() {
     return this._functions;
+  }
+}
+export interface AppsyncResolverRuntime {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#name AppsyncResolver#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#runtime_version AppsyncResolver#runtime_version}
+  */
+  readonly runtimeVersion: string;
+}
+
+export function appsyncResolverRuntimeToTerraform(struct?: AppsyncResolverRuntimeOutputReference | AppsyncResolverRuntime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+  }
+}
+
+export class AppsyncResolverRuntimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppsyncResolverRuntime | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._runtimeVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeVersion = this._runtimeVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsyncResolverRuntime | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._runtimeVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._runtimeVersion = value.runtimeVersion;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // runtime_version - computed: false, optional: false, required: true
+  private _runtimeVersion?: string; 
+  public get runtimeVersion() {
+    return this.getStringAttribute('runtime_version');
+  }
+  public set runtimeVersion(value: string) {
+    this._runtimeVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeVersionInput() {
+    return this._runtimeVersion;
   }
 }
 export interface AppsyncResolverSyncConfigLambdaConflictHandlerConfig {
@@ -435,7 +531,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appsync_resolver',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -447,6 +543,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._apiId = config.apiId;
+    this._code = config.code;
     this._dataSource = config.dataSource;
     this._field = config.field;
     this._id = config.id;
@@ -457,6 +554,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
     this._type = config.type;
     this._cachingConfig.internalValue = config.cachingConfig;
     this._pipelineConfig.internalValue = config.pipelineConfig;
+    this._runtime.internalValue = config.runtime;
     this._syncConfig.internalValue = config.syncConfig;
   }
 
@@ -480,6 +578,22 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // code - computed: false, optional: true, required: false
+  private _code?: string; 
+  public get code() {
+    return this.getStringAttribute('code');
+  }
+  public set code(value: string) {
+    this._code = value;
+  }
+  public resetCode() {
+    this._code = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeInput() {
+    return this._code;
   }
 
   // data_source - computed: false, optional: true, required: false
@@ -636,6 +750,22 @@ export class AppsyncResolver extends cdktf.TerraformResource {
     return this._pipelineConfig.internalValue;
   }
 
+  // runtime - computed: false, optional: true, required: false
+  private _runtime = new AppsyncResolverRuntimeOutputReference(this, "runtime");
+  public get runtime() {
+    return this._runtime;
+  }
+  public putRuntime(value: AppsyncResolverRuntime) {
+    this._runtime.internalValue = value;
+  }
+  public resetRuntime() {
+    this._runtime.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeInput() {
+    return this._runtime.internalValue;
+  }
+
   // sync_config - computed: false, optional: true, required: false
   private _syncConfig = new AppsyncResolverSyncConfigOutputReference(this, "sync_config");
   public get syncConfig() {
@@ -659,6 +789,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
+      code: cdktf.stringToTerraform(this._code),
       data_source: cdktf.stringToTerraform(this._dataSource),
       field: cdktf.stringToTerraform(this._field),
       id: cdktf.stringToTerraform(this._id),
@@ -669,6 +800,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       caching_config: appsyncResolverCachingConfigToTerraform(this._cachingConfig.internalValue),
       pipeline_config: appsyncResolverPipelineConfigToTerraform(this._pipelineConfig.internalValue),
+      runtime: appsyncResolverRuntimeToTerraform(this._runtime.internalValue),
       sync_config: appsyncResolverSyncConfigToTerraform(this._syncConfig.internalValue),
     };
   }

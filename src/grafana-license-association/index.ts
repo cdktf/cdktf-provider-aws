@@ -158,7 +158,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_license_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
