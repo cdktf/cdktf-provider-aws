@@ -91,6 +91,12 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly waitForSteadyState?: boolean | cdktf.IResolvable;
   /**
+  * alarms block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#alarms EcsService#alarms}
+  */
+  readonly alarms?: EcsServiceAlarms;
+  /**
   * capacity_provider_strategy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
@@ -150,6 +156,116 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#timeouts EcsService#timeouts}
   */
   readonly timeouts?: EcsServiceTimeouts;
+}
+export interface EcsServiceAlarms {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#alarm_names EcsService#alarm_names}
+  */
+  readonly alarmNames: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#enable EcsService#enable}
+  */
+  readonly enable: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#rollback EcsService#rollback}
+  */
+  readonly rollback: boolean | cdktf.IResolvable;
+}
+
+export function ecsServiceAlarmsToTerraform(struct?: EcsServiceAlarmsOutputReference | EcsServiceAlarms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alarm_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alarmNames),
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    rollback: cdktf.booleanToTerraform(struct!.rollback),
+  }
+}
+
+export class EcsServiceAlarmsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsServiceAlarms | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarmNames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarmNames = this._alarmNames;
+    }
+    if (this._enable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enable = this._enable;
+    }
+    if (this._rollback !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rollback = this._rollback;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceAlarms | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alarmNames = undefined;
+      this._enable = undefined;
+      this._rollback = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alarmNames = value.alarmNames;
+      this._enable = value.enable;
+      this._rollback = value.rollback;
+    }
+  }
+
+  // alarm_names - computed: false, optional: false, required: true
+  private _alarmNames?: string[]; 
+  public get alarmNames() {
+    return cdktf.Fn.tolist(this.getListAttribute('alarm_names'));
+  }
+  public set alarmNames(value: string[]) {
+    this._alarmNames = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmNamesInput() {
+    return this._alarmNames;
+  }
+
+  // enable - computed: false, optional: false, required: true
+  private _enable?: boolean | cdktf.IResolvable; 
+  public get enable() {
+    return this.getBooleanAttribute('enable');
+  }
+  public set enable(value: boolean | cdktf.IResolvable) {
+    this._enable = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable;
+  }
+
+  // rollback - computed: false, optional: false, required: true
+  private _rollback?: boolean | cdktf.IResolvable; 
+  public get rollback() {
+    return this.getBooleanAttribute('rollback');
+  }
+  public set rollback(value: boolean | cdktf.IResolvable) {
+    this._rollback = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rollbackInput() {
+    return this._rollback;
+  }
 }
 export interface EcsServiceCapacityProviderStrategy {
   /**
@@ -1928,7 +2044,7 @@ export class EcsService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1959,6 +2075,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._taskDefinition = config.taskDefinition;
     this._triggers = config.triggers;
     this._waitForSteadyState = config.waitForSteadyState;
+    this._alarms.internalValue = config.alarms;
     this._capacityProviderStrategy.internalValue = config.capacityProviderStrategy;
     this._deploymentCircuitBreaker.internalValue = config.deploymentCircuitBreaker;
     this._deploymentController.internalValue = config.deploymentController;
@@ -2292,6 +2409,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._waitForSteadyState;
   }
 
+  // alarms - computed: false, optional: true, required: false
+  private _alarms = new EcsServiceAlarmsOutputReference(this, "alarms");
+  public get alarms() {
+    return this._alarms;
+  }
+  public putAlarms(value: EcsServiceAlarms) {
+    this._alarms.internalValue = value;
+  }
+  public resetAlarms() {
+    this._alarms.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmsInput() {
+    return this._alarms.internalValue;
+  }
+
   // capacity_provider_strategy - computed: false, optional: true, required: false
   private _capacityProviderStrategy = new EcsServiceCapacityProviderStrategyList(this, "capacity_provider_strategy", true);
   public get capacityProviderStrategy() {
@@ -2478,6 +2611,7 @@ export class EcsService extends cdktf.TerraformResource {
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
       wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
+      alarms: ecsServiceAlarmsToTerraform(this._alarms.internalValue),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
       deployment_circuit_breaker: ecsServiceDeploymentCircuitBreakerToTerraform(this._deploymentCircuitBreaker.internalValue),
       deployment_controller: ecsServiceDeploymentControllerToTerraform(this._deploymentController.internalValue),

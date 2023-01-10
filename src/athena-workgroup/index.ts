@@ -429,6 +429,10 @@ export interface AthenaWorkgroupConfiguration {
   */
   readonly enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#execution_role AthenaWorkgroup#execution_role}
+  */
+  readonly executionRole?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
   */
   readonly publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable;
@@ -458,6 +462,7 @@ export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroup
   return {
     bytes_scanned_cutoff_per_query: cdktf.numberToTerraform(struct!.bytesScannedCutoffPerQuery),
     enforce_workgroup_configuration: cdktf.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
+    execution_role: cdktf.stringToTerraform(struct!.executionRole),
     publish_cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
     requester_pays_enabled: cdktf.booleanToTerraform(struct!.requesterPaysEnabled),
     engine_version: athenaWorkgroupConfigurationEngineVersionToTerraform(struct!.engineVersion),
@@ -487,6 +492,10 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.enforceWorkgroupConfiguration = this._enforceWorkgroupConfiguration;
     }
+    if (this._executionRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionRole = this._executionRole;
+    }
     if (this._publishCloudwatchMetricsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.publishCloudwatchMetricsEnabled = this._publishCloudwatchMetricsEnabled;
@@ -511,6 +520,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
       this.isEmptyObject = false;
       this._bytesScannedCutoffPerQuery = undefined;
       this._enforceWorkgroupConfiguration = undefined;
+      this._executionRole = undefined;
       this._publishCloudwatchMetricsEnabled = undefined;
       this._requesterPaysEnabled = undefined;
       this._engineVersion.internalValue = undefined;
@@ -520,6 +530,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bytesScannedCutoffPerQuery = value.bytesScannedCutoffPerQuery;
       this._enforceWorkgroupConfiguration = value.enforceWorkgroupConfiguration;
+      this._executionRole = value.executionRole;
       this._publishCloudwatchMetricsEnabled = value.publishCloudwatchMetricsEnabled;
       this._requesterPaysEnabled = value.requesterPaysEnabled;
       this._engineVersion.internalValue = value.engineVersion;
@@ -557,6 +568,22 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get enforceWorkgroupConfigurationInput() {
     return this._enforceWorkgroupConfiguration;
+  }
+
+  // execution_role - computed: false, optional: true, required: false
+  private _executionRole?: string; 
+  public get executionRole() {
+    return this.getStringAttribute('execution_role');
+  }
+  public set executionRole(value: string) {
+    this._executionRole = value;
+  }
+  public resetExecutionRole() {
+    this._executionRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionRoleInput() {
+    return this._executionRole;
   }
 
   // publish_cloudwatch_metrics_enabled - computed: false, optional: true, required: false
@@ -650,7 +677,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_workgroup',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
