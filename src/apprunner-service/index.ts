@@ -705,7 +705,7 @@ export interface ApprunnerServiceObservabilityConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#observability_configuration_arn ApprunnerService#observability_configuration_arn}
   */
-  readonly observabilityConfigurationArn: string;
+  readonly observabilityConfigurationArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#observability_enabled ApprunnerService#observability_enabled}
   */
@@ -761,13 +761,16 @@ export class ApprunnerServiceObservabilityConfigurationOutputReference extends c
     }
   }
 
-  // observability_configuration_arn - computed: false, optional: false, required: true
+  // observability_configuration_arn - computed: false, optional: true, required: false
   private _observabilityConfigurationArn?: string; 
   public get observabilityConfigurationArn() {
     return this.getStringAttribute('observability_configuration_arn');
   }
   public set observabilityConfigurationArn(value: string) {
     this._observabilityConfigurationArn = value;
+  }
+  public resetObservabilityConfigurationArn() {
+    this._observabilityConfigurationArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get observabilityConfigurationArnInput() {
@@ -1756,7 +1759,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

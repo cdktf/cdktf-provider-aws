@@ -62,7 +62,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_vpc_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -137,7 +137,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
     return this._subnets;
   }
 
-  // tags - computed: true, optional: true, required: false
+  // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
     return this.getStringMapAttribute('tags');

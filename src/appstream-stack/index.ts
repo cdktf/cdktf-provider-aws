@@ -574,7 +574,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -614,7 +614,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
     return this.getStringAttribute('created_time');
   }
 
-  // description - computed: true, optional: true, required: false
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -630,7 +630,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // display_name - computed: true, optional: true, required: false
+  // display_name - computed: false, optional: true, required: false
   private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');

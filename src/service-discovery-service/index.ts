@@ -39,6 +39,10 @@ export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArgume
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service#type ServiceDiscoveryService#type}
+  */
+  readonly type?: string;
+  /**
   * dns_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service#dns_config ServiceDiscoveryService#dns_config}
@@ -501,7 +505,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_service_discovery_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -519,6 +523,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     this._namespaceId = config.namespaceId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._type = config.type;
     this._dnsConfig.internalValue = config.dnsConfig;
     this._healthCheckConfig.internalValue = config.healthCheckConfig;
     this._healthCheckCustomConfig.internalValue = config.healthCheckCustomConfig;
@@ -642,6 +647,22 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
   // dns_config - computed: false, optional: true, required: false
   private _dnsConfig = new ServiceDiscoveryServiceDnsConfigOutputReference(this, "dns_config");
   public get dnsConfig() {
@@ -703,6 +724,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       namespace_id: cdktf.stringToTerraform(this._namespaceId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      type: cdktf.stringToTerraform(this._type),
       dns_config: serviceDiscoveryServiceDnsConfigToTerraform(this._dnsConfig.internalValue),
       health_check_config: serviceDiscoveryServiceHealthCheckConfigToTerraform(this._healthCheckConfig.internalValue),
       health_check_custom_config: serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(this._healthCheckCustomConfig.internalValue),

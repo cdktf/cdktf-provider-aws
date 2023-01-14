@@ -10,7 +10,7 @@ export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement#cluster_identifier RedshiftdataStatement#cluster_identifier}
   */
-  readonly clusterIdentifier: string;
+  readonly clusterIdentifier?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement#database RedshiftdataStatement#database}
   */
@@ -42,6 +42,10 @@ export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement#with_event RedshiftdataStatement#with_event}
   */
   readonly withEvent?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement#workgroup_name RedshiftdataStatement#workgroup_name}
+  */
+  readonly workgroupName?: string;
   /**
   * parameters block
   * 
@@ -275,7 +279,7 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftdata_statement',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -294,6 +298,7 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
     this._sql = config.sql;
     this._statementName = config.statementName;
     this._withEvent = config.withEvent;
+    this._workgroupName = config.workgroupName;
     this._parameters.internalValue = config.parameters;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -302,13 +307,16 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cluster_identifier - computed: false, optional: false, required: true
+  // cluster_identifier - computed: false, optional: true, required: false
   private _clusterIdentifier?: string; 
   public get clusterIdentifier() {
     return this.getStringAttribute('cluster_identifier');
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
+  }
+  public resetClusterIdentifier() {
+    this._clusterIdentifier = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clusterIdentifierInput() {
@@ -421,6 +429,22 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
     return this._withEvent;
   }
 
+  // workgroup_name - computed: false, optional: true, required: false
+  private _workgroupName?: string; 
+  public get workgroupName() {
+    return this.getStringAttribute('workgroup_name');
+  }
+  public set workgroupName(value: string) {
+    this._workgroupName = value;
+  }
+  public resetWorkgroupName() {
+    this._workgroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workgroupNameInput() {
+    return this._workgroupName;
+  }
+
   // parameters - computed: false, optional: true, required: false
   private _parameters = new RedshiftdataStatementParametersList(this, "parameters", false);
   public get parameters() {
@@ -467,6 +491,7 @@ export class RedshiftdataStatement extends cdktf.TerraformResource {
       sql: cdktf.stringToTerraform(this._sql),
       statement_name: cdktf.stringToTerraform(this._statementName),
       with_event: cdktf.booleanToTerraform(this._withEvent),
+      workgroup_name: cdktf.stringToTerraform(this._workgroupName),
       parameters: cdktf.listMapper(redshiftdataStatementParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: redshiftdataStatementTimeoutsToTerraform(this._timeouts.internalValue),
     };

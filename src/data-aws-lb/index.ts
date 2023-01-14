@@ -293,7 +293,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -360,6 +360,11 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   // drop_invalid_header_fields - computed: true, optional: false, required: false
   public get dropInvalidHeaderFields() {
     return this.getBooleanAttribute('drop_invalid_header_fields');
+  }
+
+  // enable_cross_zone_load_balancing - computed: true, optional: false, required: false
+  public get enableCrossZoneLoadBalancing() {
+    return this.getBooleanAttribute('enable_cross_zone_load_balancing');
   }
 
   // enable_deletion_protection - computed: true, optional: false, required: false

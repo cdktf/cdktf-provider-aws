@@ -22,17 +22,11 @@ export interface DataAwsAcmpcaCertificateAuthorityConfig extends cdktf.Terraform
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority#tags DataAwsAcmpcaCertificateAuthority#tags}
   */
   readonly tags?: { [key: string]: string };
-  /**
-  * revocation_configuration block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority#revocation_configuration DataAwsAcmpcaCertificateAuthority#revocation_configuration}
-  */
-  readonly revocationConfiguration?: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration[] | cdktf.IResolvable;
 }
 export interface DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
 }
 
-export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | cdktf.IResolvable): any {
+export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -43,7 +37,6 @@ export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfi
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -55,27 +48,18 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigur
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -106,7 +90,6 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigur
 }
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -127,7 +110,7 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigur
 export interface DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration {
 }
 
-export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | cdktf.IResolvable): any {
+export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -138,7 +121,6 @@ export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConf
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -150,27 +132,18 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigu
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -186,7 +159,6 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigu
 }
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -205,34 +177,19 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigu
   }
 }
 export interface DataAwsAcmpcaCertificateAuthorityRevocationConfiguration {
-  /**
-  * crl_configuration block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority#crl_configuration DataAwsAcmpcaCertificateAuthority#crl_configuration}
-  */
-  readonly crlConfiguration?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration[] | cdktf.IResolvable;
-  /**
-  * ocsp_configuration block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority#ocsp_configuration DataAwsAcmpcaCertificateAuthority#ocsp_configuration}
-  */
-  readonly ocspConfiguration?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration[] | cdktf.IResolvable;
 }
 
-export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration | cdktf.IResolvable): any {
+export function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    crl_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform, true)(struct!.crlConfiguration),
-    ocsp_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationToTerraform, true)(struct!.ocspConfiguration),
   }
 }
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -244,77 +201,35 @@ export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputRefer
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfiguration | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAcmpcaCertificateAuthorityRevocationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._crlConfiguration?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.crlConfiguration = this._crlConfiguration?.internalValue;
-    }
-    if (this._ocspConfiguration?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ocspConfiguration = this._ocspConfiguration?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._crlConfiguration.internalValue = undefined;
-      this._ocspConfiguration.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._crlConfiguration.internalValue = value.crlConfiguration;
-      this._ocspConfiguration.internalValue = value.ocspConfiguration;
     }
   }
 
-  // crl_configuration - computed: false, optional: true, required: false
+  // crl_configuration - computed: true, optional: false, required: false
   private _crlConfiguration = new DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList(this, "crl_configuration", false);
   public get crlConfiguration() {
     return this._crlConfiguration;
   }
-  public putCrlConfiguration(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration[] | cdktf.IResolvable) {
-    this._crlConfiguration.internalValue = value;
-  }
-  public resetCrlConfiguration() {
-    this._crlConfiguration.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get crlConfigurationInput() {
-    return this._crlConfiguration.internalValue;
-  }
 
-  // ocsp_configuration - computed: false, optional: true, required: false
+  // ocsp_configuration - computed: true, optional: false, required: false
   private _ocspConfiguration = new DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList(this, "ocsp_configuration", false);
   public get ocspConfiguration() {
     return this._ocspConfiguration;
   }
-  public putOcspConfiguration(value: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration[] | cdktf.IResolvable) {
-    this._ocspConfiguration.internalValue = value;
-  }
-  public resetOcspConfiguration() {
-    this._ocspConfiguration.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ocspConfigurationInput() {
-    return this._ocspConfiguration.internalValue;
-  }
 }
 
 export class DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAcmpcaCertificateAuthorityRevocationConfiguration[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -359,7 +274,7 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -373,7 +288,6 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
     this._arn = config.arn;
     this._id = config.id;
     this._tags = config.tags;
-    this._revocationConfiguration.internalValue = config.revocationConfiguration;
   }
 
   // ==========
@@ -434,6 +348,12 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
     return this.getStringAttribute('not_before');
   }
 
+  // revocation_configuration - computed: true, optional: false, required: false
+  private _revocationConfiguration = new DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList(this, "revocation_configuration", false);
+  public get revocationConfiguration() {
+    return this._revocationConfiguration;
+  }
+
   // serial - computed: true, optional: false, required: false
   public get serial() {
     return this.getStringAttribute('serial');
@@ -470,22 +390,6 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
     return this.getStringAttribute('usage_mode');
   }
 
-  // revocation_configuration - computed: false, optional: true, required: false
-  private _revocationConfiguration = new DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList(this, "revocation_configuration", false);
-  public get revocationConfiguration() {
-    return this._revocationConfiguration;
-  }
-  public putRevocationConfiguration(value: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration[] | cdktf.IResolvable) {
-    this._revocationConfiguration.internalValue = value;
-  }
-  public resetRevocationConfiguration() {
-    this._revocationConfiguration.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get revocationConfigurationInput() {
-    return this._revocationConfiguration.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -495,7 +399,6 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      revocation_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform, true)(this._revocationConfiguration.internalValue),
     };
   }
 }
