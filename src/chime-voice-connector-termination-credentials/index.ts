@@ -170,7 +170,7 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
       terraformResourceType: 'aws_chime_voice_connector_termination_credentials',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
