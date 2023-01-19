@@ -29,7 +29,7 @@ pull_request_rules:
     conditions:
       - author=team-tf-cdk
       - -draft
-      - created-at>=1 day ago
+      - created-at<1 day ago
   - name: Automatic merge on approval and successful build
     actions:
       delete_head_branch: {}
