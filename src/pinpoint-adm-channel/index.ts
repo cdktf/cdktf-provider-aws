@@ -58,7 +58,7 @@ export class PinpointAdmChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_adm_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

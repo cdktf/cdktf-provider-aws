@@ -237,6 +237,10 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
 }
 export interface AppmeshGatewayRouteSpecGrpcRouteMatch {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#port AppmeshGatewayRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#service_name AppmeshGatewayRoute#service_name}
   */
   readonly serviceName: string;
@@ -248,6 +252,7 @@ export function appmeshGatewayRouteSpecGrpcRouteMatchToTerraform(struct?: Appmes
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
   }
 }
@@ -266,6 +271,10 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._serviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
@@ -276,12 +285,30 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRouteMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._port = undefined;
       this._serviceName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
       this._serviceName = value.serviceName;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // service_name - computed: false, optional: false, required: true
@@ -950,6 +977,10 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference exten
 }
 export interface AppmeshGatewayRouteSpecHttp2RouteMatch {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#port AppmeshGatewayRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
   readonly prefix?: string;
@@ -967,6 +998,7 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchToTerraform(struct?: Appme
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     hostname: appmeshGatewayRouteSpecHttp2RouteMatchHostnameToTerraform(struct!.hostname),
   }
@@ -986,6 +1018,10 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -1000,14 +1036,32 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._port = undefined;
       this._prefix = undefined;
       this._hostname.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
       this._prefix = value.prefix;
       this._hostname.internalValue = value.hostname;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // prefix - computed: false, optional: true, required: false
@@ -1695,6 +1749,10 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference extend
 }
 export interface AppmeshGatewayRouteSpecHttpRouteMatch {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#port AppmeshGatewayRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
   readonly prefix?: string;
@@ -1712,6 +1770,7 @@ export function appmeshGatewayRouteSpecHttpRouteMatchToTerraform(struct?: Appmes
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     hostname: appmeshGatewayRouteSpecHttpRouteMatchHostnameToTerraform(struct!.hostname),
   }
@@ -1731,6 +1790,10 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -1745,14 +1808,32 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteMatch | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._port = undefined;
       this._prefix = undefined;
       this._hostname.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
       this._prefix = value.prefix;
       this._hostname.internalValue = value.hostname;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // prefix - computed: false, optional: true, required: false
@@ -2029,7 +2110,7 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_gateway_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -40,6 +40,12 @@ export interface RumAppMonitorConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
   */
   readonly appMonitorConfiguration?: RumAppMonitorAppMonitorConfiguration;
+  /**
+  * custom_events block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#custom_events RumAppMonitor#custom_events}
+  */
+  readonly customEvents?: RumAppMonitorCustomEvents;
 }
 export interface RumAppMonitorAppMonitorConfiguration {
   /**
@@ -322,6 +328,71 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
     return this._telemetries;
   }
 }
+export interface RumAppMonitorCustomEvents {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#status RumAppMonitor#status}
+  */
+  readonly status?: string;
+}
+
+export function rumAppMonitorCustomEventsToTerraform(struct?: RumAppMonitorCustomEventsOutputReference | RumAppMonitorCustomEvents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status: cdktf.stringToTerraform(struct!.status),
+  }
+}
+
+export class RumAppMonitorCustomEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RumAppMonitorCustomEvents | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RumAppMonitorCustomEvents | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._status = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._status = value.status;
+    }
+  }
+
+  // status - computed: false, optional: true, required: false
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor aws_rum_app_monitor}
@@ -349,7 +420,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rum_app_monitor',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -367,6 +438,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._appMonitorConfiguration.internalValue = config.appMonitorConfiguration;
+    this._customEvents.internalValue = config.customEvents;
   }
 
   // ==========
@@ -494,6 +566,22 @@ export class RumAppMonitor extends cdktf.TerraformResource {
     return this._appMonitorConfiguration.internalValue;
   }
 
+  // custom_events - computed: false, optional: true, required: false
+  private _customEvents = new RumAppMonitorCustomEventsOutputReference(this, "custom_events");
+  public get customEvents() {
+    return this._customEvents;
+  }
+  public putCustomEvents(value: RumAppMonitorCustomEvents) {
+    this._customEvents.internalValue = value;
+  }
+  public resetCustomEvents() {
+    this._customEvents.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customEventsInput() {
+    return this._customEvents.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -507,6 +595,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       app_monitor_configuration: rumAppMonitorAppMonitorConfigurationToTerraform(this._appMonitorConfiguration.internalValue),
+      custom_events: rumAppMonitorCustomEventsToTerraform(this._customEvents.internalValue),
     };
   }
 }

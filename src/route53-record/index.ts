@@ -55,31 +55,31 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#alias Route53Record#alias}
   */
-  readonly alias?: Route53RecordAlias[] | cdktf.IResolvable;
+  readonly alias?: Route53RecordAlias;
   /**
   * failover_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
   */
-  readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable;
+  readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy;
   /**
   * geolocation_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#geolocation_routing_policy Route53Record#geolocation_routing_policy}
   */
-  readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable;
+  readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy;
   /**
   * latency_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#latency_routing_policy Route53Record#latency_routing_policy}
   */
-  readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable;
+  readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy;
   /**
   * weighted_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#weighted_routing_policy Route53Record#weighted_routing_policy}
   */
-  readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable;
+  readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy;
 }
 export interface Route53RecordAlias {
   /**
@@ -96,7 +96,7 @@ export interface Route53RecordAlias {
   readonly zoneId: string;
 }
 
-export function route53RecordAliasToTerraform(struct?: Route53RecordAlias | cdktf.IResolvable): any {
+export function route53RecordAliasToTerraform(struct?: Route53RecordAliasOutputReference | Route53RecordAlias): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -110,22 +110,16 @@ export function route53RecordAliasToTerraform(struct?: Route53RecordAlias | cdkt
 
 export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecordAlias | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Route53RecordAlias | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._evaluateTargetHealth !== undefined) {
@@ -143,21 +137,15 @@ export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordAlias | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordAlias | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._evaluateTargetHealth = undefined;
       this._name = undefined;
       this._zoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._evaluateTargetHealth = value.evaluateTargetHealth;
       this._name = value.name;
       this._zoneId = value.zoneId;
@@ -203,26 +191,6 @@ export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
     return this._zoneId;
   }
 }
-
-export class Route53RecordAliasList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordAlias[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Route53RecordAliasOutputReference {
-    return new Route53RecordAliasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Route53RecordFailoverRoutingPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#type Route53Record#type}
@@ -230,7 +198,7 @@ export interface Route53RecordFailoverRoutingPolicy {
   readonly type: string;
 }
 
-export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicy | cdktf.IResolvable): any {
+export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicyOutputReference | Route53RecordFailoverRoutingPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -242,22 +210,16 @@ export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53Re
 
 export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecordFailoverRoutingPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Route53RecordFailoverRoutingPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type !== undefined) {
@@ -267,19 +229,13 @@ export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordFailoverRoutingPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordFailoverRoutingPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._type = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._type = value.type;
     }
   }
@@ -297,26 +253,6 @@ export class Route53RecordFailoverRoutingPolicyOutputReference extends cdktf.Com
     return this._type;
   }
 }
-
-export class Route53RecordFailoverRoutingPolicyList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Route53RecordFailoverRoutingPolicyOutputReference {
-    return new Route53RecordFailoverRoutingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Route53RecordGeolocationRoutingPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#continent Route53Record#continent}
@@ -332,7 +268,7 @@ export interface Route53RecordGeolocationRoutingPolicy {
   readonly subdivision?: string;
 }
 
-export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicy | cdktf.IResolvable): any {
+export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicyOutputReference | Route53RecordGeolocationRoutingPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -346,22 +282,16 @@ export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route5
 
 export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecordGeolocationRoutingPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Route53RecordGeolocationRoutingPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._continent !== undefined) {
@@ -379,21 +309,15 @@ export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordGeolocationRoutingPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordGeolocationRoutingPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._continent = undefined;
       this._country = undefined;
       this._subdivision = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._continent = value.continent;
       this._country = value.country;
       this._subdivision = value.subdivision;
@@ -448,26 +372,6 @@ export class Route53RecordGeolocationRoutingPolicyOutputReference extends cdktf.
     return this._subdivision;
   }
 }
-
-export class Route53RecordGeolocationRoutingPolicyList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Route53RecordGeolocationRoutingPolicyOutputReference {
-    return new Route53RecordGeolocationRoutingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Route53RecordLatencyRoutingPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#region Route53Record#region}
@@ -475,7 +379,7 @@ export interface Route53RecordLatencyRoutingPolicy {
   readonly region: string;
 }
 
-export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicy | cdktf.IResolvable): any {
+export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicyOutputReference | Route53RecordLatencyRoutingPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -487,22 +391,16 @@ export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53Rec
 
 export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecordLatencyRoutingPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Route53RecordLatencyRoutingPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._region !== undefined) {
@@ -512,19 +410,13 @@ export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordLatencyRoutingPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordLatencyRoutingPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._region = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._region = value.region;
     }
   }
@@ -542,26 +434,6 @@ export class Route53RecordLatencyRoutingPolicyOutputReference extends cdktf.Comp
     return this._region;
   }
 }
-
-export class Route53RecordLatencyRoutingPolicyList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Route53RecordLatencyRoutingPolicyOutputReference {
-    return new Route53RecordLatencyRoutingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Route53RecordWeightedRoutingPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#weight Route53Record#weight}
@@ -569,7 +441,7 @@ export interface Route53RecordWeightedRoutingPolicy {
   readonly weight: number;
 }
 
-export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicy | cdktf.IResolvable): any {
+export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicyOutputReference | Route53RecordWeightedRoutingPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -581,22 +453,16 @@ export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53Re
 
 export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecordWeightedRoutingPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Route53RecordWeightedRoutingPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._weight !== undefined) {
@@ -606,19 +472,13 @@ export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecordWeightedRoutingPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Route53RecordWeightedRoutingPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._weight = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._weight = value.weight;
     }
   }
@@ -634,26 +494,6 @@ export class Route53RecordWeightedRoutingPolicyOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get weightInput() {
     return this._weight;
-  }
-}
-
-export class Route53RecordWeightedRoutingPolicyList extends cdktf.ComplexList {
-  public internalValue? : Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Route53RecordWeightedRoutingPolicyOutputReference {
-    return new Route53RecordWeightedRoutingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -683,7 +523,7 @@ export class Route53Record extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_record',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -872,11 +712,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias = new Route53RecordAliasList(this, "alias", true);
+  private _alias = new Route53RecordAliasOutputReference(this, "alias");
   public get alias() {
     return this._alias;
   }
-  public putAlias(value: Route53RecordAlias[] | cdktf.IResolvable) {
+  public putAlias(value: Route53RecordAlias) {
     this._alias.internalValue = value;
   }
   public resetAlias() {
@@ -888,11 +728,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // failover_routing_policy - computed: false, optional: true, required: false
-  private _failoverRoutingPolicy = new Route53RecordFailoverRoutingPolicyList(this, "failover_routing_policy", false);
+  private _failoverRoutingPolicy = new Route53RecordFailoverRoutingPolicyOutputReference(this, "failover_routing_policy");
   public get failoverRoutingPolicy() {
     return this._failoverRoutingPolicy;
   }
-  public putFailoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable) {
+  public putFailoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy) {
     this._failoverRoutingPolicy.internalValue = value;
   }
   public resetFailoverRoutingPolicy() {
@@ -904,11 +744,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // geolocation_routing_policy - computed: false, optional: true, required: false
-  private _geolocationRoutingPolicy = new Route53RecordGeolocationRoutingPolicyList(this, "geolocation_routing_policy", false);
+  private _geolocationRoutingPolicy = new Route53RecordGeolocationRoutingPolicyOutputReference(this, "geolocation_routing_policy");
   public get geolocationRoutingPolicy() {
     return this._geolocationRoutingPolicy;
   }
-  public putGeolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable) {
+  public putGeolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy) {
     this._geolocationRoutingPolicy.internalValue = value;
   }
   public resetGeolocationRoutingPolicy() {
@@ -920,11 +760,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // latency_routing_policy - computed: false, optional: true, required: false
-  private _latencyRoutingPolicy = new Route53RecordLatencyRoutingPolicyList(this, "latency_routing_policy", false);
+  private _latencyRoutingPolicy = new Route53RecordLatencyRoutingPolicyOutputReference(this, "latency_routing_policy");
   public get latencyRoutingPolicy() {
     return this._latencyRoutingPolicy;
   }
-  public putLatencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable) {
+  public putLatencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy) {
     this._latencyRoutingPolicy.internalValue = value;
   }
   public resetLatencyRoutingPolicy() {
@@ -936,11 +776,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // weighted_routing_policy - computed: false, optional: true, required: false
-  private _weightedRoutingPolicy = new Route53RecordWeightedRoutingPolicyList(this, "weighted_routing_policy", false);
+  private _weightedRoutingPolicy = new Route53RecordWeightedRoutingPolicyOutputReference(this, "weighted_routing_policy");
   public get weightedRoutingPolicy() {
     return this._weightedRoutingPolicy;
   }
-  public putWeightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable) {
+  public putWeightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy) {
     this._weightedRoutingPolicy.internalValue = value;
   }
   public resetWeightedRoutingPolicy() {
@@ -967,11 +807,11 @@ export class Route53Record extends cdktf.TerraformResource {
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      alias: cdktf.listMapper(route53RecordAliasToTerraform, true)(this._alias.internalValue),
-      failover_routing_policy: cdktf.listMapper(route53RecordFailoverRoutingPolicyToTerraform, true)(this._failoverRoutingPolicy.internalValue),
-      geolocation_routing_policy: cdktf.listMapper(route53RecordGeolocationRoutingPolicyToTerraform, true)(this._geolocationRoutingPolicy.internalValue),
-      latency_routing_policy: cdktf.listMapper(route53RecordLatencyRoutingPolicyToTerraform, true)(this._latencyRoutingPolicy.internalValue),
-      weighted_routing_policy: cdktf.listMapper(route53RecordWeightedRoutingPolicyToTerraform, true)(this._weightedRoutingPolicy.internalValue),
+      alias: route53RecordAliasToTerraform(this._alias.internalValue),
+      failover_routing_policy: route53RecordFailoverRoutingPolicyToTerraform(this._failoverRoutingPolicy.internalValue),
+      geolocation_routing_policy: route53RecordGeolocationRoutingPolicyToTerraform(this._geolocationRoutingPolicy.internalValue),
+      latency_routing_policy: route53RecordLatencyRoutingPolicyToTerraform(this._latencyRoutingPolicy.internalValue),
+      weighted_routing_policy: route53RecordWeightedRoutingPolicyToTerraform(this._weightedRoutingPolicy.internalValue),
     };
   }
 }

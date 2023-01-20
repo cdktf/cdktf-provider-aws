@@ -27,6 +27,10 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   */
   readonly principalId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share#share_principals ServicecatalogPortfolioShare#share_principals}
+  */
+  readonly sharePrincipals?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share#share_tag_options ServicecatalogPortfolioShare#share_tag_options}
   */
   readonly shareTagOptions?: boolean | cdktf.IResolvable;
@@ -228,7 +232,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
       terraformResourceType: 'aws_servicecatalog_portfolio_share',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -243,6 +247,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
     this._id = config.id;
     this._portfolioId = config.portfolioId;
     this._principalId = config.principalId;
+    this._sharePrincipals = config.sharePrincipals;
     this._shareTagOptions = config.shareTagOptions;
     this._type = config.type;
     this._waitForAcceptance = config.waitForAcceptance;
@@ -316,6 +321,22 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
     return this._principalId;
   }
 
+  // share_principals - computed: false, optional: true, required: false
+  private _sharePrincipals?: boolean | cdktf.IResolvable; 
+  public get sharePrincipals() {
+    return this.getBooleanAttribute('share_principals');
+  }
+  public set sharePrincipals(value: boolean | cdktf.IResolvable) {
+    this._sharePrincipals = value;
+  }
+  public resetSharePrincipals() {
+    this._sharePrincipals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharePrincipalsInput() {
+    return this._sharePrincipals;
+  }
+
   // share_tag_options - computed: false, optional: true, required: false
   private _shareTagOptions?: boolean | cdktf.IResolvable; 
   public get shareTagOptions() {
@@ -387,6 +408,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       portfolio_id: cdktf.stringToTerraform(this._portfolioId),
       principal_id: cdktf.stringToTerraform(this._principalId),
+      share_principals: cdktf.booleanToTerraform(this._sharePrincipals),
       share_tag_options: cdktf.booleanToTerraform(this._shareTagOptions),
       type: cdktf.stringToTerraform(this._type),
       wait_for_acceptance: cdktf.booleanToTerraform(this._waitForAcceptance),

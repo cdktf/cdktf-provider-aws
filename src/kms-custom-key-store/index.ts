@@ -193,7 +193,7 @@ export class KmsCustomKeyStore extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_custom_key_store',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
