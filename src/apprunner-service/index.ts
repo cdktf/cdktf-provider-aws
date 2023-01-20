@@ -896,6 +896,10 @@ export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurat
   */
   readonly runtime: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_secrets ApprunnerService#runtime_environment_secrets}
+  */
+  readonly runtimeEnvironmentSecrets?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_variables ApprunnerService#runtime_environment_variables}
   */
   readonly runtimeEnvironmentVariables?: { [key: string]: string };
@@ -914,6 +918,7 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurati
     build_command: cdktf.stringToTerraform(struct!.buildCommand),
     port: cdktf.stringToTerraform(struct!.port),
     runtime: cdktf.stringToTerraform(struct!.runtime),
+    runtime_environment_secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
     runtime_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentVariables),
     start_command: cdktf.stringToTerraform(struct!.startCommand),
   }
@@ -945,6 +950,10 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
       hasAnyValues = true;
       internalValueResult.runtime = this._runtime;
     }
+    if (this._runtimeEnvironmentSecrets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEnvironmentSecrets = this._runtimeEnvironmentSecrets;
+    }
     if (this._runtimeEnvironmentVariables !== undefined) {
       hasAnyValues = true;
       internalValueResult.runtimeEnvironmentVariables = this._runtimeEnvironmentVariables;
@@ -962,6 +971,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
       this._buildCommand = undefined;
       this._port = undefined;
       this._runtime = undefined;
+      this._runtimeEnvironmentSecrets = undefined;
       this._runtimeEnvironmentVariables = undefined;
       this._startCommand = undefined;
     }
@@ -970,6 +980,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
       this._buildCommand = value.buildCommand;
       this._port = value.port;
       this._runtime = value.runtime;
+      this._runtimeEnvironmentSecrets = value.runtimeEnvironmentSecrets;
       this._runtimeEnvironmentVariables = value.runtimeEnvironmentVariables;
       this._startCommand = value.startCommand;
     }
@@ -1018,6 +1029,22 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
   // Temporarily expose input value. Use with caution.
   public get runtimeInput() {
     return this._runtime;
+  }
+
+  // runtime_environment_secrets - computed: false, optional: true, required: false
+  private _runtimeEnvironmentSecrets?: { [key: string]: string }; 
+  public get runtimeEnvironmentSecrets() {
+    return this.getStringMapAttribute('runtime_environment_secrets');
+  }
+  public set runtimeEnvironmentSecrets(value: { [key: string]: string }) {
+    this._runtimeEnvironmentSecrets = value;
+  }
+  public resetRuntimeEnvironmentSecrets() {
+    this._runtimeEnvironmentSecrets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEnvironmentSecretsInput() {
+    return this._runtimeEnvironmentSecrets;
   }
 
   // runtime_environment_variables - computed: false, optional: true, required: false
@@ -1352,6 +1379,10 @@ export interface ApprunnerServiceSourceConfigurationImageRepositoryImageConfigur
   */
   readonly port?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_secrets ApprunnerService#runtime_environment_secrets}
+  */
+  readonly runtimeEnvironmentSecrets?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_variables ApprunnerService#runtime_environment_variables}
   */
   readonly runtimeEnvironmentVariables?: { [key: string]: string };
@@ -1368,6 +1399,7 @@ export function apprunnerServiceSourceConfigurationImageRepositoryImageConfigura
   }
   return {
     port: cdktf.stringToTerraform(struct!.port),
+    runtime_environment_secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentSecrets),
     runtime_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.runtimeEnvironmentVariables),
     start_command: cdktf.stringToTerraform(struct!.startCommand),
   }
@@ -1391,6 +1423,10 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
+    if (this._runtimeEnvironmentSecrets !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeEnvironmentSecrets = this._runtimeEnvironmentSecrets;
+    }
     if (this._runtimeEnvironmentVariables !== undefined) {
       hasAnyValues = true;
       internalValueResult.runtimeEnvironmentVariables = this._runtimeEnvironmentVariables;
@@ -1406,12 +1442,14 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
     if (value === undefined) {
       this.isEmptyObject = false;
       this._port = undefined;
+      this._runtimeEnvironmentSecrets = undefined;
       this._runtimeEnvironmentVariables = undefined;
       this._startCommand = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._port = value.port;
+      this._runtimeEnvironmentSecrets = value.runtimeEnvironmentSecrets;
       this._runtimeEnvironmentVariables = value.runtimeEnvironmentVariables;
       this._startCommand = value.startCommand;
     }
@@ -1431,6 +1469,22 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port;
+  }
+
+  // runtime_environment_secrets - computed: false, optional: true, required: false
+  private _runtimeEnvironmentSecrets?: { [key: string]: string }; 
+  public get runtimeEnvironmentSecrets() {
+    return this.getStringMapAttribute('runtime_environment_secrets');
+  }
+  public set runtimeEnvironmentSecrets(value: { [key: string]: string }) {
+    this._runtimeEnvironmentSecrets = value;
+  }
+  public resetRuntimeEnvironmentSecrets() {
+    this._runtimeEnvironmentSecrets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeEnvironmentSecretsInput() {
+    return this._runtimeEnvironmentSecrets;
   }
 
   // runtime_environment_variables - computed: false, optional: true, required: false
@@ -1759,7 +1813,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

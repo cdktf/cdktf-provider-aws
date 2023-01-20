@@ -2344,7 +2344,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
   readonly maxPendingRequests?: number;
 }
 
-export function appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolHttp): any {
+export function appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2357,16 +2357,22 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(stru
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp | undefined {
+  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConnections !== undefined) {
@@ -2380,14 +2386,20 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp | undefined) {
+  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._maxConnections = undefined;
       this._maxPendingRequests = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._maxConnections = value.maxConnections;
       this._maxPendingRequests = value.maxPendingRequests;
     }
@@ -2422,6 +2434,26 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
     return this._maxPendingRequests;
   }
 }
+
+export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualNodeSpecListenerConnectionPoolHttp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference {
+    return new AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}
@@ -2429,7 +2461,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
   readonly maxRequests: number;
 }
 
-export function appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolHttp2): any {
+export function appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2441,16 +2473,22 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(str
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | undefined {
+  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRequests !== undefined) {
@@ -2460,13 +2498,19 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | undefined) {
+  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._maxRequests = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._maxRequests = value.maxRequests;
     }
   }
@@ -2484,6 +2528,26 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
     return this._maxRequests;
   }
 }
+
+export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualNodeSpecListenerConnectionPoolHttp2[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference {
+    return new AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}
@@ -2491,7 +2555,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
   readonly maxConnections: number;
 }
 
-export function appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolTcp): any {
+export function appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolTcp | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2503,16 +2567,22 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struc
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolTcp | undefined {
+  public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolTcp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConnections !== undefined) {
@@ -2522,13 +2592,19 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolTcp | undefined) {
+  public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolTcp | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._maxConnections = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._maxConnections = value.maxConnections;
     }
   }
@@ -2546,6 +2622,26 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
     return this._maxConnections;
   }
 }
+
+export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualNodeSpecListenerConnectionPoolTcp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference {
+    return new AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshVirtualNodeSpecListenerConnectionPool {
   /**
   * grpc block
@@ -2558,19 +2654,19 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPool {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http AppmeshVirtualNode#http}
   */
-  readonly http?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp;
+  readonly http?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp[] | cdktf.IResolvable;
   /**
   * http2 block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
   */
-  readonly http2?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2;
+  readonly http2?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2[] | cdktf.IResolvable;
   /**
   * tcp block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
   */
-  readonly tcp?: AppmeshVirtualNodeSpecListenerConnectionPoolTcp;
+  readonly tcp?: AppmeshVirtualNodeSpecListenerConnectionPoolTcp[] | cdktf.IResolvable;
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference | AppmeshVirtualNodeSpecListenerConnectionPool): any {
@@ -2580,9 +2676,9 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolToTerraform(struct?:
   }
   return {
     grpc: appmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerraform(struct!.grpc),
-    http: appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(struct!.http),
-    http2: appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(struct!.http2),
-    tcp: appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struct!.tcp),
+    http: cdktf.listMapper(appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform, true)(struct!.http),
+    http2: cdktf.listMapper(appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform, true)(struct!.http2),
+    tcp: cdktf.listMapper(appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform, true)(struct!.tcp),
   }
 }
 
@@ -2653,11 +2749,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // http - computed: false, optional: true, required: false
-  private _http = new AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(this, "http");
+  private _http = new AppmeshVirtualNodeSpecListenerConnectionPoolHttpList(this, "http", false);
   public get http() {
     return this._http;
   }
-  public putHttp(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp) {
+  public putHttp(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp[] | cdktf.IResolvable) {
     this._http.internalValue = value;
   }
   public resetHttp() {
@@ -2669,11 +2765,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // http2 - computed: false, optional: true, required: false
-  private _http2 = new AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(this, "http2");
+  private _http2 = new AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List(this, "http2", false);
   public get http2() {
     return this._http2;
   }
-  public putHttp2(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2) {
+  public putHttp2(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2[] | cdktf.IResolvable) {
     this._http2.internalValue = value;
   }
   public resetHttp2() {
@@ -2685,11 +2781,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // tcp - computed: false, optional: true, required: false
-  private _tcp = new AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(this, "tcp");
+  private _tcp = new AppmeshVirtualNodeSpecListenerConnectionPoolTcpList(this, "tcp", false);
   public get tcp() {
     return this._tcp;
   }
-  public putTcp(value: AppmeshVirtualNodeSpecListenerConnectionPoolTcp) {
+  public putTcp(value: AppmeshVirtualNodeSpecListenerConnectionPoolTcp[] | cdktf.IResolvable) {
     this._tcp.internalValue = value;
   }
   public resetTcp() {
@@ -5349,7 +5445,7 @@ export interface AppmeshVirtualNodeSpecListener {
   readonly tls?: AppmeshVirtualNodeSpecListenerTls;
 }
 
-export function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtualNodeSpecListenerOutputReference | AppmeshVirtualNodeSpecListener): any {
+export function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtualNodeSpecListener | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5366,16 +5462,22 @@ export function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtua
 
 export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualNodeSpecListener | undefined {
+  public get internalValue(): AppmeshVirtualNodeSpecListener | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._connectionPool?.internalValue !== undefined) {
@@ -5405,9 +5507,10 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualNodeSpecListener | undefined) {
+  public set internalValue(value: AppmeshVirtualNodeSpecListener | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._connectionPool.internalValue = undefined;
       this._healthCheck.internalValue = undefined;
       this._outlierDetection.internalValue = undefined;
@@ -5415,8 +5518,13 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
       this._timeout.internalValue = undefined;
       this._tls.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._connectionPool.internalValue = value.connectionPool;
       this._healthCheck.internalValue = value.healthCheck;
       this._outlierDetection.internalValue = value.outlierDetection;
@@ -5517,6 +5625,26 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get tlsInput() {
     return this._tls.internalValue;
+  }
+}
+
+export class AppmeshVirtualNodeSpecListenerList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualNodeSpecListener[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualNodeSpecListenerOutputReference {
+    return new AppmeshVirtualNodeSpecListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
@@ -6004,7 +6132,7 @@ export interface AppmeshVirtualNodeSpec {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
   */
-  readonly listener?: AppmeshVirtualNodeSpecListener;
+  readonly listener?: AppmeshVirtualNodeSpecListener[] | cdktf.IResolvable;
   /**
   * logging block
   * 
@@ -6027,7 +6155,7 @@ export function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpe
   return {
     backend: cdktf.listMapper(appmeshVirtualNodeSpecBackendToTerraform, true)(struct!.backend),
     backend_defaults: appmeshVirtualNodeSpecBackendDefaultsToTerraform(struct!.backendDefaults),
-    listener: appmeshVirtualNodeSpecListenerToTerraform(struct!.listener),
+    listener: cdktf.listMapper(appmeshVirtualNodeSpecListenerToTerraform, true)(struct!.listener),
     logging: appmeshVirtualNodeSpecLoggingToTerraform(struct!.logging),
     service_discovery: appmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct!.serviceDiscovery),
   }
@@ -6122,11 +6250,11 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // listener - computed: false, optional: true, required: false
-  private _listener = new AppmeshVirtualNodeSpecListenerOutputReference(this, "listener");
+  private _listener = new AppmeshVirtualNodeSpecListenerList(this, "listener", false);
   public get listener() {
     return this._listener;
   }
-  public putListener(value: AppmeshVirtualNodeSpecListener) {
+  public putListener(value: AppmeshVirtualNodeSpecListener[] | cdktf.IResolvable) {
     this._listener.internalValue = value;
   }
   public resetListener() {
@@ -6196,7 +6324,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_node',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -2650,7 +2650,7 @@ export interface AppmeshVirtualGatewaySpecListener {
   readonly tls?: AppmeshVirtualGatewaySpecListenerTls;
 }
 
-export function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVirtualGatewaySpecListenerOutputReference | AppmeshVirtualGatewaySpecListener): any {
+export function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVirtualGatewaySpecListener | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2665,16 +2665,22 @@ export function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVir
 
 export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualGatewaySpecListener | undefined {
+  public get internalValue(): AppmeshVirtualGatewaySpecListener | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._connectionPool?.internalValue !== undefined) {
@@ -2696,16 +2702,22 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualGatewaySpecListener | undefined) {
+  public set internalValue(value: AppmeshVirtualGatewaySpecListener | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._connectionPool.internalValue = undefined;
       this._healthCheck.internalValue = undefined;
       this._portMapping.internalValue = undefined;
       this._tls.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._connectionPool.internalValue = value.connectionPool;
       this._healthCheck.internalValue = value.healthCheck;
       this._portMapping.internalValue = value.portMapping;
@@ -2772,6 +2784,26 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get tlsInput() {
     return this._tls.internalValue;
+  }
+}
+
+export class AppmeshVirtualGatewaySpecListenerList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualGatewaySpecListener[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualGatewaySpecListenerOutputReference {
+    return new AppmeshVirtualGatewaySpecListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface AppmeshVirtualGatewaySpecLoggingAccessLogFile {
@@ -2982,7 +3014,7 @@ export interface AppmeshVirtualGatewaySpec {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#listener AppmeshVirtualGateway#listener}
   */
-  readonly listener: AppmeshVirtualGatewaySpecListener;
+  readonly listener: AppmeshVirtualGatewaySpecListener[] | cdktf.IResolvable;
   /**
   * logging block
   * 
@@ -2998,7 +3030,7 @@ export function appmeshVirtualGatewaySpecToTerraform(struct?: AppmeshVirtualGate
   }
   return {
     backend_defaults: appmeshVirtualGatewaySpecBackendDefaultsToTerraform(struct!.backendDefaults),
-    listener: appmeshVirtualGatewaySpecListenerToTerraform(struct!.listener),
+    listener: cdktf.listMapper(appmeshVirtualGatewaySpecListenerToTerraform, true)(struct!.listener),
     logging: appmeshVirtualGatewaySpecLoggingToTerraform(struct!.logging),
   }
 }
@@ -3064,11 +3096,11 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener = new AppmeshVirtualGatewaySpecListenerOutputReference(this, "listener");
+  private _listener = new AppmeshVirtualGatewaySpecListenerList(this, "listener", false);
   public get listener() {
     return this._listener;
   }
-  public putListener(value: AppmeshVirtualGatewaySpecListener) {
+  public putListener(value: AppmeshVirtualGatewaySpecListener[] | cdktf.IResolvable) {
     this._listener.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3119,7 +3151,7 @@ export class AppmeshVirtualGateway extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

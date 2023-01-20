@@ -136,7 +136,7 @@ export interface AppmeshVirtualRouterSpecListener {
   readonly portMapping: AppmeshVirtualRouterSpecListenerPortMapping;
 }
 
-export function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirtualRouterSpecListenerOutputReference | AppmeshVirtualRouterSpecListener): any {
+export function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirtualRouterSpecListener | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -148,16 +148,22 @@ export function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirt
 
 export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppmeshVirtualRouterSpecListener | undefined {
+  public get internalValue(): AppmeshVirtualRouterSpecListener | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._portMapping?.internalValue !== undefined) {
@@ -167,13 +173,19 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppmeshVirtualRouterSpecListener | undefined) {
+  public set internalValue(value: AppmeshVirtualRouterSpecListener | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._portMapping.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._portMapping.internalValue = value.portMapping;
     }
   }
@@ -191,13 +203,33 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
     return this._portMapping.internalValue;
   }
 }
+
+export class AppmeshVirtualRouterSpecListenerList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualRouterSpecListenerOutputReference {
+    return new AppmeshVirtualRouterSpecListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshVirtualRouterSpec {
   /**
   * listener block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router#listener AppmeshVirtualRouter#listener}
   */
-  readonly listener: AppmeshVirtualRouterSpecListener;
+  readonly listener: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable;
 }
 
 export function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRouterSpecOutputReference | AppmeshVirtualRouterSpec): any {
@@ -206,7 +238,7 @@ export function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRoute
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    listener: appmeshVirtualRouterSpecListenerToTerraform(struct!.listener),
+    listener: cdktf.listMapper(appmeshVirtualRouterSpecListenerToTerraform, true)(struct!.listener),
   }
 }
 
@@ -243,11 +275,11 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener = new AppmeshVirtualRouterSpecListenerOutputReference(this, "listener");
+  private _listener = new AppmeshVirtualRouterSpecListenerList(this, "listener", false);
   public get listener() {
     return this._listener;
   }
-  public putListener(value: AppmeshVirtualRouterSpecListener) {
+  public putListener(value: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable) {
     this._listener.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -282,7 +314,7 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_router',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

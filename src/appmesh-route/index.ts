@@ -47,6 +47,10 @@ export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AppmeshRouteSpecGrpcRouteActionWeightedTarget {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
@@ -62,6 +66,7 @@ export function appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
@@ -87,6 +92,10 @@ export class AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extend
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._virtualNode !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode;
@@ -102,6 +111,7 @@ export class AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extend
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._port = undefined;
       this._virtualNode = undefined;
       this._weight = undefined;
     }
@@ -112,9 +122,26 @@ export class AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extend
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._port = value.port;
       this._virtualNode = value.virtualNode;
       this._weight = value.weight;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // virtual_node - computed: false, optional: false, required: true
@@ -644,6 +671,10 @@ export interface AppmeshRouteSpecGrpcRouteMatch {
   */
   readonly methodName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
@@ -666,6 +697,7 @@ export function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteS
   }
   return {
     method_name: cdktf.stringToTerraform(struct!.methodName),
+    port: cdktf.numberToTerraform(struct!.port),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     metadata: cdktf.listMapper(appmeshRouteSpecGrpcRouteMatchMetadataToTerraform, true)(struct!.metadata),
@@ -690,6 +722,10 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.methodName = this._methodName;
     }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -709,6 +745,7 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._methodName = undefined;
+      this._port = undefined;
       this._prefix = undefined;
       this._serviceName = undefined;
       this._metadata.internalValue = undefined;
@@ -716,6 +753,7 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._methodName = value.methodName;
+      this._port = value.port;
       this._prefix = value.prefix;
       this._serviceName = value.serviceName;
       this._metadata.internalValue = value.metadata;
@@ -736,6 +774,22 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get methodNameInput() {
     return this._methodName;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // prefix - computed: false, optional: true, required: false
@@ -1462,6 +1516,10 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
 }
 export interface AppmeshRouteSpecHttp2RouteActionWeightedTarget {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
@@ -1477,6 +1535,7 @@ export function appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
@@ -1502,6 +1561,10 @@ export class AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference exten
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._virtualNode !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode;
@@ -1517,6 +1580,7 @@ export class AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference exten
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._port = undefined;
       this._virtualNode = undefined;
       this._weight = undefined;
     }
@@ -1527,9 +1591,26 @@ export class AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference exten
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._port = value.port;
       this._virtualNode = value.virtualNode;
       this._weight = value.weight;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // virtual_node - computed: false, optional: false, required: true
@@ -2059,6 +2140,10 @@ export interface AppmeshRouteSpecHttp2RouteMatch {
   */
   readonly method?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix: string;
@@ -2081,6 +2166,7 @@ export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRoute
   }
   return {
     method: cdktf.stringToTerraform(struct!.method),
+    port: cdktf.numberToTerraform(struct!.port),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
     header: cdktf.listMapper(appmeshRouteSpecHttp2RouteMatchHeaderToTerraform, true)(struct!.header),
@@ -2105,6 +2191,10 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -2124,6 +2214,7 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._method = undefined;
+      this._port = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
       this._header.internalValue = undefined;
@@ -2131,6 +2222,7 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
+      this._port = value.port;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
       this._header.internalValue = value.header;
@@ -2151,6 +2243,22 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get methodInput() {
     return this._method;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // prefix - computed: false, optional: false, required: true
@@ -2844,6 +2952,10 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
 }
 export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
@@ -2859,6 +2971,7 @@ export function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
@@ -2884,6 +2997,10 @@ export class AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extend
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._virtualNode !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode;
@@ -2899,6 +3016,7 @@ export class AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extend
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._port = undefined;
       this._virtualNode = undefined;
       this._weight = undefined;
     }
@@ -2909,9 +3027,26 @@ export class AppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extend
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._port = value.port;
       this._virtualNode = value.virtualNode;
       this._weight = value.weight;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // virtual_node - computed: false, optional: false, required: true
@@ -3441,6 +3576,10 @@ export interface AppmeshRouteSpecHttpRouteMatch {
   */
   readonly method?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix: string;
@@ -3463,6 +3602,7 @@ export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteS
   }
   return {
     method: cdktf.stringToTerraform(struct!.method),
+    port: cdktf.numberToTerraform(struct!.port),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
     header: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderToTerraform, true)(struct!.header),
@@ -3487,6 +3627,10 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -3506,6 +3650,7 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._method = undefined;
+      this._port = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
       this._header.internalValue = undefined;
@@ -3513,6 +3658,7 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
+      this._port = value.port;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
       this._header.internalValue = value.header;
@@ -3533,6 +3679,22 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get methodInput() {
     return this._method;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // prefix - computed: false, optional: false, required: true
@@ -4226,6 +4388,10 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
 }
 export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
@@ -4241,6 +4407,7 @@ export function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    port: cdktf.numberToTerraform(struct!.port),
     virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
@@ -4266,6 +4433,10 @@ export class AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
     if (this._virtualNode !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode;
@@ -4281,6 +4452,7 @@ export class AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._port = undefined;
       this._virtualNode = undefined;
       this._weight = undefined;
     }
@@ -4291,9 +4463,26 @@ export class AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._port = value.port;
       this._virtualNode = value.virtualNode;
       this._weight = value.weight;
     }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // virtual_node - computed: false, optional: false, required: true
@@ -4404,6 +4593,71 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get weightedTargetInput() {
     return this._weightedTarget.internalValue;
+  }
+}
+export interface AppmeshRouteSpecTcpRouteMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#port AppmeshRoute#port}
+  */
+  readonly port?: number;
+}
+
+export function appmeshRouteSpecTcpRouteMatchToTerraform(struct?: AppmeshRouteSpecTcpRouteMatchOutputReference | AppmeshRouteSpecTcpRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+  }
+}
+
+export class AppmeshRouteSpecTcpRouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshRouteSpecTcpRouteMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecTcpRouteMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 }
 export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
@@ -4567,6 +4821,12 @@ export interface AppmeshRouteSpecTcpRoute {
   */
   readonly action: AppmeshRouteSpecTcpRouteAction;
   /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
+  */
+  readonly match?: AppmeshRouteSpecTcpRouteMatch;
+  /**
   * timeout block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#timeout AppmeshRoute#timeout}
@@ -4581,6 +4841,7 @@ export function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcp
   }
   return {
     action: appmeshRouteSpecTcpRouteActionToTerraform(struct!.action),
+    match: appmeshRouteSpecTcpRouteMatchToTerraform(struct!.match),
     timeout: appmeshRouteSpecTcpRouteTimeoutToTerraform(struct!.timeout),
   }
 }
@@ -4603,6 +4864,10 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
     if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
@@ -4614,11 +4879,13 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this._action.internalValue = undefined;
+      this._match.internalValue = undefined;
       this._timeout.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
+      this._match.internalValue = value.match;
       this._timeout.internalValue = value.timeout;
     }
   }
@@ -4634,6 +4901,22 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
     return this._action.internalValue;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecTcpRouteMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecTcpRouteMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
   }
 
   // timeout - computed: false, optional: true, required: false
@@ -4860,7 +5143,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

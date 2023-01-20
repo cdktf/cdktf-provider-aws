@@ -93,6 +93,12 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   */
   readonly filterCriteria?: LambdaEventSourceMappingFilterCriteria;
   /**
+  * scaling_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
+  */
+  readonly scalingConfig?: LambdaEventSourceMappingScalingConfig;
+  /**
   * self_managed_event_source block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
@@ -469,6 +475,71 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
     return this._filter.internalValue;
   }
 }
+export interface LambdaEventSourceMappingScalingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}
+  */
+  readonly maximumConcurrency?: number;
+}
+
+export function lambdaEventSourceMappingScalingConfigToTerraform(struct?: LambdaEventSourceMappingScalingConfigOutputReference | LambdaEventSourceMappingScalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    maximum_concurrency: cdktf.numberToTerraform(struct!.maximumConcurrency),
+  }
+}
+
+export class LambdaEventSourceMappingScalingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LambdaEventSourceMappingScalingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumConcurrency = this._maximumConcurrency;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaEventSourceMappingScalingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maximumConcurrency = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maximumConcurrency = value.maximumConcurrency;
+    }
+  }
+
+  // maximum_concurrency - computed: false, optional: true, required: false
+  private _maximumConcurrency?: number; 
+  public get maximumConcurrency() {
+    return this.getNumberAttribute('maximum_concurrency');
+  }
+  public set maximumConcurrency(value: number) {
+    this._maximumConcurrency = value;
+  }
+  public resetMaximumConcurrency() {
+    this._maximumConcurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumConcurrencyInput() {
+    return this._maximumConcurrency;
+  }
+}
 export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
@@ -741,7 +812,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_event_source_mapping',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -771,6 +842,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     this._amazonManagedKafkaEventSourceConfig.internalValue = config.amazonManagedKafkaEventSourceConfig;
     this._destinationConfig.internalValue = config.destinationConfig;
     this._filterCriteria.internalValue = config.filterCriteria;
+    this._scalingConfig.internalValue = config.scalingConfig;
     this._selfManagedEventSource.internalValue = config.selfManagedEventSource;
     this._selfManagedKafkaEventSourceConfig.internalValue = config.selfManagedKafkaEventSourceConfig;
     this._sourceAccessConfiguration.internalValue = config.sourceAccessConfiguration;
@@ -1111,6 +1183,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._filterCriteria.internalValue;
   }
 
+  // scaling_config - computed: false, optional: true, required: false
+  private _scalingConfig = new LambdaEventSourceMappingScalingConfigOutputReference(this, "scaling_config");
+  public get scalingConfig() {
+    return this._scalingConfig;
+  }
+  public putScalingConfig(value: LambdaEventSourceMappingScalingConfig) {
+    this._scalingConfig.internalValue = value;
+  }
+  public resetScalingConfig() {
+    this._scalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingConfigInput() {
+    return this._scalingConfig.internalValue;
+  }
+
   // self_managed_event_source - computed: false, optional: true, required: false
   private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this, "self_managed_event_source");
   public get selfManagedEventSource() {
@@ -1184,6 +1272,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       amazon_managed_kafka_event_source_config: lambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigToTerraform(this._amazonManagedKafkaEventSourceConfig.internalValue),
       destination_config: lambdaEventSourceMappingDestinationConfigToTerraform(this._destinationConfig.internalValue),
       filter_criteria: lambdaEventSourceMappingFilterCriteriaToTerraform(this._filterCriteria.internalValue),
+      scaling_config: lambdaEventSourceMappingScalingConfigToTerraform(this._scalingConfig.internalValue),
       self_managed_event_source: lambdaEventSourceMappingSelfManagedEventSourceToTerraform(this._selfManagedEventSource.internalValue),
       self_managed_kafka_event_source_config: lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToTerraform(this._selfManagedKafkaEventSourceConfig.internalValue),
       source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform, true)(this._sourceAccessConfiguration.internalValue),

@@ -298,7 +298,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_memorydb_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

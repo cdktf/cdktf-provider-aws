@@ -428,7 +428,7 @@ export class DbProxy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_proxy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

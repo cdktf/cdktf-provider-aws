@@ -54,7 +54,7 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_codestarconnections_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

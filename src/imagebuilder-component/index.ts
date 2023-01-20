@@ -39,6 +39,10 @@ export interface ImagebuilderComponentConfig extends cdktf.TerraformMetaArgument
   */
   readonly platform: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}
   */
   readonly supportedOsVersions?: string[];
@@ -86,7 +90,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_component',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -104,6 +108,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._platform = config.platform;
+    this._skipDestroy = config.skipDestroy;
     this._supportedOsVersions = config.supportedOsVersions;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -241,6 +246,22 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
     return this._platform;
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // supported_os_versions - computed: false, optional: true, required: false
   private _supportedOsVersions?: string[]; 
   public get supportedOsVersions() {
@@ -336,6 +357,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       platform: cdktf.stringToTerraform(this._platform),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       supported_os_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedOsVersions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

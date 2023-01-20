@@ -16,6 +16,10 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly authenticationProviders: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#configuration GrafanaWorkspace#configuration}
+  */
+  readonly configuration?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#data_sources GrafanaWorkspace#data_sources}
   */
   readonly dataSources?: string[];
@@ -294,7 +298,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.50.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -307,6 +311,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     });
     this._accountAccessType = config.accountAccessType;
     this._authenticationProviders = config.authenticationProviders;
+    this._configuration = config.configuration;
     this._dataSources = config.dataSources;
     this._description = config.description;
     this._id = config.id;
@@ -356,6 +361,22 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get authenticationProvidersInput() {
     return this._authenticationProviders;
+  }
+
+  // configuration - computed: true, optional: true, required: false
+  private _configuration?: string; 
+  public get configuration() {
+    return this.getStringAttribute('configuration');
+  }
+  public set configuration(value: string) {
+    this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration;
   }
 
   // data_sources - computed: false, optional: true, required: false
@@ -602,6 +623,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     return {
       account_access_type: cdktf.stringToTerraform(this._accountAccessType),
       authentication_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authenticationProviders),
+      configuration: cdktf.stringToTerraform(this._configuration),
       data_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dataSources),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
