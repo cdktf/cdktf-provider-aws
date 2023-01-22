@@ -53,9 +53,9 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.20.7":
-  version "7.20.7"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.7.tgz#66fe23b3c8569220817d5feb8b9dcdc95bb4f71b"
-  integrity sha512-T3Z9oHybU+0vZlY9CiDSJQTD5ZapcW18ZctFMi0MOAl/4BjFF4ul7NVSARLdbGO5vDqy9eQiGTV0LtKfvCYvcg==
+  version "7.20.13"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.13.tgz#ddf1eb5a813588d2fb1692b70c6fce75b945c088"
+  integrity sha512-gFDLKMfpiXCsjt4za2JA9oTMn70CeseCehb11kRZgvd7+F67Hih3OHOK24cRrWECJ/ljfPGac6ygXAs/C8kIvw==
 
 "@babel/template@^7.18.10":
   version "7.20.7"
@@ -1171,9 +1171,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.226"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.226.tgz#dbb4714a6346e7f84e0e1fae3035766f8b084fe7"
-  integrity sha512-pGm81tjyg6Z8PmFTMojnDZxTpxkr/bEv8G1Hu9zExcww03ixAnajFvEX/y8u+T3B513UlIgm/8ks1YNYKNdsRg==
+  version "10.1.227"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.227.tgz#0d7ae43ec48b57bc3a672caf9f999f908909ad95"
+  integrity sha512-pkLVeo+64NKWFStb1FAEs7FMUdrDh+PySxa7NfT4Ol/gI732cmD8lQTtOW0gLSN4+OIMGHVg3+bTKA3i/4TtPw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2354,9 +2354,9 @@ jsii-rosetta@^1.73.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.790:
-  version "0.1.800"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.800.tgz#d354c31cefaf9d3077188c0101ff0a5d9db902c3"
-  integrity sha512-vctI2ErVEqAm6MifU4Vaayi2xFK/rDPC8NvaJsty+8asuQ4JUVq3qmVN0ntdodU9gQGYDTieCeY0ahbjW01eqQ==
+  version "0.1.801"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.801.tgz#b49f59f55e40f662df8a249fee672a03246f6cc9"
+  integrity sha512-ng05I0w9MA0hoe0Q+7iUOiOOb9iCREkoxZjmxZFXEck3cgg25rdMXfQRuU9jHvO4nDa8OmyHz8RPrzi9CzyV3Q==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.73.0"
@@ -3357,10 +3357,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.67.8:
-  version "0.67.8"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.8.tgz#0523ede4ff1abf1e0bcf5791a01c681d8a04592c"
-  integrity sha512-/8NENMiUjGq2i3JKThFIlyUY4eKfPX5XK5aEn/HpPomCexie9jwGQfxMGkoIxJv+UOob6314xngGsLrac606Vg==
+projen@^0.67.9:
+  version "0.67.9"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.9.tgz#d66236bcda1b05fbd862713fcac34e7a93987a55"
+  integrity sha512-mKSnbKSTCtGWWkdQbdjGtYGwhHRZPDOS+v1psjTSyaNV6T+Ctv7RnxMe/gCFJq3NbJO6TE4CO+lfeYHLMXdniQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
