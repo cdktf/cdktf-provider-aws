@@ -95,7 +95,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

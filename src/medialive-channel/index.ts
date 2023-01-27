@@ -1250,6 +1250,10 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAa
   */
   readonly profile?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
+  */
+  readonly rateControlMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#raw_format MedialiveChannel#raw_format}
   */
   readonly rawFormat?: string;
@@ -1277,6 +1281,7 @@ export function medialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAac
     coding_mode: cdktf.stringToTerraform(struct!.codingMode),
     input_type: cdktf.stringToTerraform(struct!.inputType),
     profile: cdktf.stringToTerraform(struct!.profile),
+    rate_control_mode: cdktf.stringToTerraform(struct!.rateControlMode),
     raw_format: cdktf.stringToTerraform(struct!.rawFormat),
     sample_rate: cdktf.numberToTerraform(struct!.sampleRate),
     spec: cdktf.stringToTerraform(struct!.spec),
@@ -1314,6 +1319,10 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSet
       hasAnyValues = true;
       internalValueResult.profile = this._profile;
     }
+    if (this._rateControlMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rateControlMode = this._rateControlMode;
+    }
     if (this._rawFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.rawFormat = this._rawFormat;
@@ -1340,6 +1349,7 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSet
       this._codingMode = undefined;
       this._inputType = undefined;
       this._profile = undefined;
+      this._rateControlMode = undefined;
       this._rawFormat = undefined;
       this._sampleRate = undefined;
       this._spec = undefined;
@@ -1351,6 +1361,7 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSet
       this._codingMode = value.codingMode;
       this._inputType = value.inputType;
       this._profile = value.profile;
+      this._rateControlMode = value.rateControlMode;
       this._rawFormat = value.rawFormat;
       this._sampleRate = value.sampleRate;
       this._spec = value.spec;
@@ -1420,6 +1431,22 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSet
   // Temporarily expose input value. Use with caution.
   public get profileInput() {
     return this._profile;
+  }
+
+  // rate_control_mode - computed: true, optional: true, required: false
+  private _rateControlMode?: string; 
+  public get rateControlMode() {
+    return this.getStringAttribute('rate_control_mode');
+  }
+  public set rateControlMode(value: string) {
+    this._rateControlMode = value;
+  }
+  public resetRateControlMode() {
+    this._rateControlMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rateControlModeInput() {
+    return this._rateControlMode;
   }
 
   // raw_format - computed: true, optional: true, required: false
@@ -20766,7 +20793,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

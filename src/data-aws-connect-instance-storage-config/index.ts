@@ -558,7 +558,7 @@ export class DataAwsConnectInstanceStorageConfig extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_connect_instance_storage_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
