@@ -1481,6 +1481,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementF
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody): any {
@@ -1489,6 +1493,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStateme
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -1506,16 +1511,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementF
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll {
@@ -3854,6 +3881,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody): any {
@@ -3862,6 +3893,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatem
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -3879,16 +3911,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatement
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll {
@@ -5611,6 +5665,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetRefe
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody): any {
@@ -5619,6 +5677,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -5636,16 +5695,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetRefe
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll {
@@ -7368,6 +7449,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintState
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody): any {
@@ -7376,6 +7461,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintSt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -7393,16 +7479,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintState
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll {
@@ -9149,6 +9257,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementF
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody): any {
@@ -9157,6 +9269,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStateme
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -9174,16 +9287,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementF
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll {
@@ -10882,6 +11017,10 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFi
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#oversize_handling Wafv2RuleGroup#oversize_handling}
+  */
+  readonly oversizeHandling?: string;
 }
 
 export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBodyToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference | Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody): any {
@@ -10890,6 +11029,7 @@ export function wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatemen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    oversize_handling: cdktf.stringToTerraform(struct!.oversizeHandling),
   }
 }
 
@@ -10907,16 +11047,38 @@ export class Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFi
   public get internalValue(): Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._oversizeHandling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oversizeHandling = this._oversizeHandling;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._oversizeHandling = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._oversizeHandling = value.oversizeHandling;
     }
+  }
+
+  // oversize_handling - computed: false, optional: true, required: false
+  private _oversizeHandling?: string; 
+  public get oversizeHandling() {
+    return this.getStringAttribute('oversize_handling');
+  }
+  public set oversizeHandling(value: string) {
+    this._oversizeHandling = value;
+  }
+  public resetOversizeHandling() {
+    this._oversizeHandling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oversizeHandlingInput() {
+    return this._oversizeHandling;
   }
 }
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementXssMatchStatementFieldToMatchCookiesMatchPatternAll {

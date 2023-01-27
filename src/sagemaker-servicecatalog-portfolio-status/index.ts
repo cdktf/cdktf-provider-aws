@@ -46,7 +46,7 @@ export class SagemakerServicecatalogPortfolioStatus extends cdktf.TerraformResou
       terraformResourceType: 'aws_sagemaker_servicecatalog_portfolio_status',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

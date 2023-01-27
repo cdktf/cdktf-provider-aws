@@ -152,7 +152,7 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie_s3_bucket_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

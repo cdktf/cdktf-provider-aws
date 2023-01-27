@@ -50,7 +50,7 @@ export class DataAwsNetworkmanagerGlobalNetwork extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_networkmanager_global_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.51.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
