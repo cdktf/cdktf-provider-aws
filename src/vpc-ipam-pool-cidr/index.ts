@@ -23,6 +23,10 @@ export interface VpcIpamPoolCidrConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ipamPoolId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#netmask_length VpcIpamPoolCidr#netmask_length}
+  */
+  readonly netmaskLength?: number;
+  /**
   * cidr_authorization_context block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
@@ -256,7 +260,7 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_pool_cidr',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -270,6 +274,7 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
     this._cidr = config.cidr;
     this._id = config.id;
     this._ipamPoolId = config.ipamPoolId;
+    this._netmaskLength = config.netmaskLength;
     this._cidrAuthorizationContext.internalValue = config.cidrAuthorizationContext;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -310,6 +315,11 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // ipam_pool_cidr_id - computed: true, optional: false, required: false
+  public get ipamPoolCidrId() {
+    return this.getStringAttribute('ipam_pool_cidr_id');
+  }
+
   // ipam_pool_id - computed: false, optional: false, required: true
   private _ipamPoolId?: string; 
   public get ipamPoolId() {
@@ -321,6 +331,22 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipamPoolIdInput() {
     return this._ipamPoolId;
+  }
+
+  // netmask_length - computed: false, optional: true, required: false
+  private _netmaskLength?: number; 
+  public get netmaskLength() {
+    return this.getNumberAttribute('netmask_length');
+  }
+  public set netmaskLength(value: number) {
+    this._netmaskLength = value;
+  }
+  public resetNetmaskLength() {
+    this._netmaskLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netmaskLengthInput() {
+    return this._netmaskLength;
   }
 
   // cidr_authorization_context - computed: false, optional: true, required: false
@@ -364,6 +390,7 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
       cidr: cdktf.stringToTerraform(this._cidr),
       id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
+      netmask_length: cdktf.numberToTerraform(this._netmaskLength),
       cidr_authorization_context: vpcIpamPoolCidrCidrAuthorizationContextToTerraform(this._cidrAuthorizationContext.internalValue),
       timeouts: vpcIpamPoolCidrTimeoutsToTerraform(this._timeouts.internalValue),
     };

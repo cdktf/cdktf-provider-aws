@@ -262,7 +262,7 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transcribe_language_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
