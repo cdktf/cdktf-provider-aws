@@ -56,7 +56,7 @@
     "jsii-pacmak": "^1.74.0",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.67.29",
+    "projen": "^0.67.36",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/aws",
-      "version": "4.52.0"
+      "version": "4.53.0"
     }
   },
   "resolutions": {

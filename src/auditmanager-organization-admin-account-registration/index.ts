@@ -39,7 +39,7 @@ export class AuditmanagerOrganizationAdminAccountRegistration extends cdktf.Terr
       terraformResourceType: 'aws_auditmanager_organization_admin_account_registration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

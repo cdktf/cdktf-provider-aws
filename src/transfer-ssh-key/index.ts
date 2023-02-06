@@ -54,7 +54,7 @@ export class TransferSshKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
