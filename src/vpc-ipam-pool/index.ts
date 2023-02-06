@@ -55,6 +55,10 @@ export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly locale?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}
+  */
+  readonly publicIpSource?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}
   */
   readonly publiclyAdvertisable?: boolean | cdktf.IResolvable;
@@ -233,7 +237,7 @@ export class VpcIpamPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -255,6 +259,7 @@ export class VpcIpamPool extends cdktf.TerraformResource {
     this._id = config.id;
     this._ipamScopeId = config.ipamScopeId;
     this._locale = config.locale;
+    this._publicIpSource = config.publicIpSource;
     this._publiclyAdvertisable = config.publiclyAdvertisable;
     this._sourceIpamPoolId = config.sourceIpamPoolId;
     this._tags = config.tags;
@@ -451,6 +456,22 @@ export class VpcIpamPool extends cdktf.TerraformResource {
     return this.getNumberAttribute('pool_depth');
   }
 
+  // public_ip_source - computed: false, optional: true, required: false
+  private _publicIpSource?: string; 
+  public get publicIpSource() {
+    return this.getStringAttribute('public_ip_source');
+  }
+  public set publicIpSource(value: string) {
+    this._publicIpSource = value;
+  }
+  public resetPublicIpSource() {
+    this._publicIpSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicIpSourceInput() {
+    return this._publicIpSource;
+  }
+
   // publicly_advertisable - computed: false, optional: true, required: false
   private _publiclyAdvertisable?: boolean | cdktf.IResolvable; 
   public get publiclyAdvertisable() {
@@ -553,6 +574,7 @@ export class VpcIpamPool extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ipam_scope_id: cdktf.stringToTerraform(this._ipamScopeId),
       locale: cdktf.stringToTerraform(this._locale),
+      public_ip_source: cdktf.stringToTerraform(this._publicIpSource),
       publicly_advertisable: cdktf.booleanToTerraform(this._publiclyAdvertisable),
       source_ipam_pool_id: cdktf.stringToTerraform(this._sourceIpamPoolId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

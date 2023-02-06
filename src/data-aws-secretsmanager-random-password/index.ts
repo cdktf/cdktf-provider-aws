@@ -78,7 +78,7 @@ export class DataAwsSecretsmanagerRandomPassword extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_secretsmanager_random_password',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.52.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,7 @@
 {
   "files": [
     ".gitattributes",
+    ".github/CODEOWNERS",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/pull_request_template.md",
     ".github/workflows/alert-open-prs.yml",

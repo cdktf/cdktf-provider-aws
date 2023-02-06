@@ -59,4 +59,5 @@ package-lock.json
 !/.github/workflows/lock.yml
 !/.github/workflows/next-cdktf-version-pr.yml
 !/.github/workflows/alert-open-prs.yml
+!/.github/CODEOWNERS
 !/scripts/should-release.js
