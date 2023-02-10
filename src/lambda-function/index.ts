@@ -63,6 +63,14 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly publish?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}
+  */
+  readonly replaceSecurityGroupsOnDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}
+  */
+  readonly replacementSecurityGroupIds?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}
   */
   readonly reservedConcurrentExecutions?: number;
@@ -903,7 +911,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -927,6 +935,8 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._memorySize = config.memorySize;
     this._packageType = config.packageType;
     this._publish = config.publish;
+    this._replaceSecurityGroupsOnDestroy = config.replaceSecurityGroupsOnDestroy;
+    this._replacementSecurityGroupIds = config.replacementSecurityGroupIds;
     this._reservedConcurrentExecutions = config.reservedConcurrentExecutions;
     this._role = config.role;
     this._runtime = config.runtime;
@@ -1180,6 +1190,38 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // qualified_invoke_arn - computed: true, optional: false, required: false
   public get qualifiedInvokeArn() {
     return this.getStringAttribute('qualified_invoke_arn');
+  }
+
+  // replace_security_groups_on_destroy - computed: false, optional: true, required: false
+  private _replaceSecurityGroupsOnDestroy?: boolean | cdktf.IResolvable; 
+  public get replaceSecurityGroupsOnDestroy() {
+    return this.getBooleanAttribute('replace_security_groups_on_destroy');
+  }
+  public set replaceSecurityGroupsOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._replaceSecurityGroupsOnDestroy = value;
+  }
+  public resetReplaceSecurityGroupsOnDestroy() {
+    this._replaceSecurityGroupsOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceSecurityGroupsOnDestroyInput() {
+    return this._replaceSecurityGroupsOnDestroy;
+  }
+
+  // replacement_security_group_ids - computed: false, optional: true, required: false
+  private _replacementSecurityGroupIds?: string[]; 
+  public get replacementSecurityGroupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('replacement_security_group_ids'));
+  }
+  public set replacementSecurityGroupIds(value: string[]) {
+    this._replacementSecurityGroupIds = value;
+  }
+  public resetReplacementSecurityGroupIds() {
+    this._replacementSecurityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replacementSecurityGroupIdsInput() {
+    return this._replacementSecurityGroupIds;
   }
 
   // reserved_concurrent_executions - computed: false, optional: true, required: false
@@ -1522,6 +1564,8 @@ export class LambdaFunction extends cdktf.TerraformResource {
       memory_size: cdktf.numberToTerraform(this._memorySize),
       package_type: cdktf.stringToTerraform(this._packageType),
       publish: cdktf.booleanToTerraform(this._publish),
+      replace_security_groups_on_destroy: cdktf.booleanToTerraform(this._replaceSecurityGroupsOnDestroy),
+      replacement_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._replacementSecurityGroupIds),
       reserved_concurrent_executions: cdktf.numberToTerraform(this._reservedConcurrentExecutions),
       role: cdktf.stringToTerraform(this._role),
       runtime: cdktf.stringToTerraform(this._runtime),

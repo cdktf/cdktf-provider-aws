@@ -289,7 +289,7 @@ export class DirectoryServiceRegion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_region',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

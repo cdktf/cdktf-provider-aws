@@ -505,7 +505,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_service_discovery_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
