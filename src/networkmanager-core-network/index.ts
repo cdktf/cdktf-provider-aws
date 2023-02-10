@@ -8,6 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerCoreNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#base_policy_region NetworkmanagerCoreNetwork#base_policy_region}
+  */
+  readonly basePolicyRegion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#create_base_policy NetworkmanagerCoreNetwork#create_base_policy}
+  */
+  readonly createBasePolicy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#description NetworkmanagerCoreNetwork#description}
   */
   readonly description?: string;
@@ -345,7 +353,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_core_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -356,6 +364,8 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._basePolicyRegion = config.basePolicyRegion;
+    this._createBasePolicy = config.createBasePolicy;
     this._description = config.description;
     this._globalNetworkId = config.globalNetworkId;
     this._id = config.id;
@@ -372,6 +382,38 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // base_policy_region - computed: false, optional: true, required: false
+  private _basePolicyRegion?: string; 
+  public get basePolicyRegion() {
+    return this.getStringAttribute('base_policy_region');
+  }
+  public set basePolicyRegion(value: string) {
+    this._basePolicyRegion = value;
+  }
+  public resetBasePolicyRegion() {
+    this._basePolicyRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get basePolicyRegionInput() {
+    return this._basePolicyRegion;
+  }
+
+  // create_base_policy - computed: false, optional: true, required: false
+  private _createBasePolicy?: boolean | cdktf.IResolvable; 
+  public get createBasePolicy() {
+    return this.getBooleanAttribute('create_base_policy');
+  }
+  public set createBasePolicy(value: boolean | cdktf.IResolvable) {
+    this._createBasePolicy = value;
+  }
+  public resetCreateBasePolicy() {
+    this._createBasePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createBasePolicyInput() {
+    return this._createBasePolicy;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -430,7 +472,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // policy_document - computed: false, optional: true, required: false
+  // policy_document - computed: true, optional: true, required: false
   private _policyDocument?: string; 
   public get policyDocument() {
     return this.getStringAttribute('policy_document');
@@ -511,6 +553,8 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      base_policy_region: cdktf.stringToTerraform(this._basePolicyRegion),
+      create_base_policy: cdktf.booleanToTerraform(this._createBasePolicy),
       description: cdktf.stringToTerraform(this._description),
       global_network_id: cdktf.stringToTerraform(this._globalNetworkId),
       id: cdktf.stringToTerraform(this._id),

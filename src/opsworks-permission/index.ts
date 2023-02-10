@@ -29,7 +29,7 @@ export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission#stack_id OpsworksPermission#stack_id}
   */
-  readonly stackId?: string;
+  readonly stackId: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission#user_arn OpsworksPermission#user_arn}
   */
@@ -62,7 +62,7 @@ export class OpsworksPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -149,16 +149,13 @@ export class OpsworksPermission extends cdktf.TerraformResource {
     return this._level;
   }
 
-  // stack_id - computed: true, optional: true, required: false
+  // stack_id - computed: false, optional: false, required: true
   private _stackId?: string; 
   public get stackId() {
     return this.getStringAttribute('stack_id');
   }
   public set stackId(value: string) {
     this._stackId = value;
-  }
-  public resetStackId() {
-    this._stackId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get stackIdInput() {

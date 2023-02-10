@@ -620,7 +620,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_client_vpn_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -889,7 +889,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // authentication_options - computed: false, optional: false, required: true
-  private _authenticationOptions = new Ec2ClientVpnEndpointAuthenticationOptionsList(this, "authentication_options", false);
+  private _authenticationOptions = new Ec2ClientVpnEndpointAuthenticationOptionsList(this, "authentication_options", true);
   public get authenticationOptions() {
     return this._authenticationOptions;
   }

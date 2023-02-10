@@ -812,6 +812,11 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
     }
   }
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // kms_key_arn - computed: true, optional: true, required: false
   private _kmsKeyArn?: string; 
   public get kmsKeyArn() {
@@ -871,6 +876,16 @@ export class DynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get regionNameInput() {
     return this._regionName;
+  }
+
+  // stream_arn - computed: true, optional: false, required: false
+  public get streamArn() {
+    return this.getStringAttribute('stream_arn');
+  }
+
+  // stream_label - computed: true, optional: false, required: false
+  public get streamLabel() {
+    return this.getStringAttribute('stream_label');
   }
 }
 
@@ -1227,7 +1242,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

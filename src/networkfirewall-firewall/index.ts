@@ -358,6 +358,10 @@ export class NetworkfirewallFirewallEncryptionConfigurationOutputReference exten
 }
 export interface NetworkfirewallFirewallSubnetMapping {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}
+  */
+  readonly ipAddressType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}
   */
   readonly subnetId: string;
@@ -369,6 +373,7 @@ export function networkfirewallFirewallSubnetMappingToTerraform(struct?: Network
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }
 }
@@ -393,6 +398,10 @@ export class NetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.C
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._ipAddressType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddressType = this._ipAddressType;
+    }
     if (this._subnetId !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetId = this._subnetId;
@@ -404,6 +413,7 @@ export class NetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._ipAddressType = undefined;
       this._subnetId = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -413,8 +423,25 @@ export class NetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._ipAddressType = value.ipAddressType;
       this._subnetId = value.subnetId;
     }
+  }
+
+  // ip_address_type - computed: true, optional: true, required: false
+  private _ipAddressType?: string; 
+  public get ipAddressType() {
+    return this.getStringAttribute('ip_address_type');
+  }
+  public set ipAddressType(value: string) {
+    this._ipAddressType = value;
+  }
+  public resetIpAddressType() {
+    this._ipAddressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressTypeInput() {
+    return this._ipAddressType;
   }
 
   // subnet_id - computed: false, optional: false, required: true
@@ -477,7 +504,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkfirewall_firewall',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.53.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
