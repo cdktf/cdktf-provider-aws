@@ -1156,9 +1156,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.246"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.246.tgz#fe354fcb51c30f44c270b1f47d8be724cd2988df"
-  integrity sha512-2U2hnAuA4tCGGjHk/TulZfSlPobTyokEh+Azuch9nivv2yGI7/5nXDHC14i2MU/K7HFnnkQOHRSrwKSmOZkT/w==
+  version "10.1.247"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.247.tgz#fd637f63312e17f1deb64cee7c3c4253f0d4b60f"
+  integrity sha512-lYl90bhPCYDSXOAArMd3ErQG0x4pCGG7U08Ax3V53ncjB2BK5aoROgHXUUhBo2M434bP9dHifaeI5yKOapOOzA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2325,9 +2325,9 @@ jsii-rosetta@^1.73.0, jsii-rosetta@^1.74.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.790:
-  version "0.1.820"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.820.tgz#e44674e34f6971b5cf5726a3253b088e8042f4cb"
-  integrity sha512-8hMzaDDXHvhkJD0aUwIjZrIxHElSU5Ixdn4TzJC1G/GnI1MDYnxTH442znH6AnGdJH4SsiLoKYnEJy8j9b9uvw==
+  version "0.1.821"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.821.tgz#eb5da718b566395c0303bdfa9575ef9c94814eb7"
+  integrity sha512-NJSYepHA0KiVPFCYUhY9ZskTJpBnIIU2csDxTZ9ClhHBJrGp+YzuebSJPOfZcV8qiE5LGAawEQfGW4XKbXVbXw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.74.0"
@@ -2865,9 +2865,9 @@ no-case@^3.0.4:
     tslib "^2.0.3"
 
 node-abi@^3.3.0:
-  version "3.32.0"
-  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-3.32.0.tgz#a22e038efab01d9a35c6b19808b430616ed80539"
-  integrity sha512-HkwdiLzE/LeuOMIQq/dJq70oNyRc88+wt5CH/RXYseE00LkA/c4PkS6Ti1vE4OHYUiKjkwuxjWq9pItgrz8UJw==
+  version "3.33.0"
+  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-3.33.0.tgz#8b23a0cec84e1c5f5411836de6a9b84bccf26e7f"
+  integrity sha512-7GGVawqyHF4pfd0YFybhv/eM9JwTtPqx0mAanQ146O3FlSh3pA24zf9IRQTOsfTSqXTNzPSP5iagAJ94jjuVog==
   dependencies:
     semver "^7.3.5"
 
@@ -2961,9 +2961,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.7.2"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.7.2.tgz#03109ae48f2c98c64a0fddad4bcf570d688070b6"
-  integrity sha512-GA+e5mQUDCSoF0IV6giQ0s9aLTwkcYn2wAfLlGP5H4P/ahJvUghWa7LUF7jtyYeRqFenBmLDRjoqAl0zNB6bNA==
+  version "16.7.4"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.7.4.tgz#0775c103d425da7c031ab41deffaf50d72bb0607"
+  integrity sha512-joYzlwYN4I3QDOOcAoaFS4qo/Vq1fZN86b14pjyiJw82NxerY+Zk1MzMHKAsKypKlSANjFO4CibdkDVlKQ7IKg==
   dependencies:
     chalk "^5.2.0"
     cli-table "^0.3.11"
@@ -2991,6 +2991,7 @@ npm-check-updates@^16:
     semver-utils "^1.1.4"
     source-map-support "^0.5.21"
     spawn-please "^2.0.1"
+    strip-json-comments "^5.0.0"
     untildify "^4.0.0"
     update-notifier "^6.0.2"
     yaml "^2.2.1"
@@ -3320,10 +3321,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.67.45:
-  version "0.67.45"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.45.tgz#6717b35f59d8a8dd81b9ac2429aa524870b5c1d4"
-  integrity sha512-vi14c86nPRg4hlq+f8kDXD/uzNqt9YjzvEVBcNQiBYAdQbzbAMjaOnEUIWW3Mf1ljda69hAvGsjkOpOaT+C0jw==
+projen@^0.67.48:
+  version "0.67.48"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.48.tgz#81038ed665ef571cf45f00a6678b0db55615daee"
+  integrity sha512-+3jlOg7EuEPqFFCQlxT4B4ZkZLyBy0/lwlwpC5Sxe5+XiDrSxbZOIKXAgnPUY4c+YamX6y9m7ZBr21SWGmg2bw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -3971,6 +3972,11 @@ strip-indent@^3.0.0:
   integrity sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==
   dependencies:
     min-indent "^1.0.0"
+
+strip-json-comments@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-5.0.0.tgz#ec101b766476a703031bc607e3c712569de2aa06"
+  integrity sha512-V1LGY4UUo0jgwC+ELQ2BNWfPa17TIuwBLg+j1AA/9RPzKINl1lhxVEu2r+ZTTO8aetIsUzE5Qj6LMSBkoGYKKw==
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
