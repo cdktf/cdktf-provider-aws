@@ -460,7 +460,7 @@ export interface SagemakerUserProfileUserSettingsJupyterServerAppSettings {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
   */
-  readonly defaultResourceSpec: SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec;
+  readonly defaultResourceSpec?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec;
 }
 
 export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference | SagemakerUserProfileUserSettingsJupyterServerAppSettings): any {
@@ -551,13 +551,16 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
     return this._codeRepository.internalValue;
   }
 
-  // default_resource_spec - computed: false, optional: false, required: true
+  // default_resource_spec - computed: false, optional: true, required: false
   private _defaultResourceSpec = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
   public putDefaultResourceSpec(value: SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec) {
     this._defaultResourceSpec.internalValue = value;
+  }
+  public resetDefaultResourceSpec() {
+    this._defaultResourceSpec.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get defaultResourceSpecInput() {
@@ -871,7 +874,7 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
   */
-  readonly defaultResourceSpec: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec;
+  readonly defaultResourceSpec?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec;
 }
 
 export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference | SagemakerUserProfileUserSettingsKernelGatewayAppSettings): any {
@@ -962,13 +965,16 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
     return this._customImage.internalValue;
   }
 
-  // default_resource_spec - computed: false, optional: false, required: true
+  // default_resource_spec - computed: false, optional: true, required: false
   private _defaultResourceSpec = new SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
   public putDefaultResourceSpec(value: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec) {
     this._defaultResourceSpec.internalValue = value;
+  }
+  public resetDefaultResourceSpec() {
+    this._defaultResourceSpec.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get defaultResourceSpecInput() {
@@ -1981,7 +1987,7 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_user_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

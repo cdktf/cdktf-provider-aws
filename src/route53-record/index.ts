@@ -57,6 +57,12 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   */
   readonly alias?: Route53RecordAlias;
   /**
+  * cidr_routing_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#cidr_routing_policy Route53Record#cidr_routing_policy}
+  */
+  readonly cidrRoutingPolicy?: Route53RecordCidrRoutingPolicy;
+  /**
   * failover_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
@@ -189,6 +195,92 @@ export class Route53RecordAliasOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
     return this._zoneId;
+  }
+}
+export interface Route53RecordCidrRoutingPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#collection_id Route53Record#collection_id}
+  */
+  readonly collectionId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#location_name Route53Record#location_name}
+  */
+  readonly locationName: string;
+}
+
+export function route53RecordCidrRoutingPolicyToTerraform(struct?: Route53RecordCidrRoutingPolicyOutputReference | Route53RecordCidrRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    collection_id: cdktf.stringToTerraform(struct!.collectionId),
+    location_name: cdktf.stringToTerraform(struct!.locationName),
+  }
+}
+
+export class Route53RecordCidrRoutingPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Route53RecordCidrRoutingPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._collectionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.collectionId = this._collectionId;
+    }
+    if (this._locationName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locationName = this._locationName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Route53RecordCidrRoutingPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._collectionId = undefined;
+      this._locationName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._collectionId = value.collectionId;
+      this._locationName = value.locationName;
+    }
+  }
+
+  // collection_id - computed: false, optional: false, required: true
+  private _collectionId?: string; 
+  public get collectionId() {
+    return this.getStringAttribute('collection_id');
+  }
+  public set collectionId(value: string) {
+    this._collectionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get collectionIdInput() {
+    return this._collectionId;
+  }
+
+  // location_name - computed: false, optional: false, required: true
+  private _locationName?: string; 
+  public get locationName() {
+    return this.getStringAttribute('location_name');
+  }
+  public set locationName(value: string) {
+    this._locationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationNameInput() {
+    return this._locationName;
   }
 }
 export interface Route53RecordFailoverRoutingPolicy {
@@ -523,7 +615,7 @@ export class Route53Record extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_record',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -545,6 +637,7 @@ export class Route53Record extends cdktf.TerraformResource {
     this._type = config.type;
     this._zoneId = config.zoneId;
     this._alias.internalValue = config.alias;
+    this._cidrRoutingPolicy.internalValue = config.cidrRoutingPolicy;
     this._failoverRoutingPolicy.internalValue = config.failoverRoutingPolicy;
     this._geolocationRoutingPolicy.internalValue = config.geolocationRoutingPolicy;
     this._latencyRoutingPolicy.internalValue = config.latencyRoutingPolicy;
@@ -727,6 +820,22 @@ export class Route53Record extends cdktf.TerraformResource {
     return this._alias.internalValue;
   }
 
+  // cidr_routing_policy - computed: false, optional: true, required: false
+  private _cidrRoutingPolicy = new Route53RecordCidrRoutingPolicyOutputReference(this, "cidr_routing_policy");
+  public get cidrRoutingPolicy() {
+    return this._cidrRoutingPolicy;
+  }
+  public putCidrRoutingPolicy(value: Route53RecordCidrRoutingPolicy) {
+    this._cidrRoutingPolicy.internalValue = value;
+  }
+  public resetCidrRoutingPolicy() {
+    this._cidrRoutingPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrRoutingPolicyInput() {
+    return this._cidrRoutingPolicy.internalValue;
+  }
+
   // failover_routing_policy - computed: false, optional: true, required: false
   private _failoverRoutingPolicy = new Route53RecordFailoverRoutingPolicyOutputReference(this, "failover_routing_policy");
   public get failoverRoutingPolicy() {
@@ -808,6 +917,7 @@ export class Route53Record extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       alias: route53RecordAliasToTerraform(this._alias.internalValue),
+      cidr_routing_policy: route53RecordCidrRoutingPolicyToTerraform(this._cidrRoutingPolicy.internalValue),
       failover_routing_policy: route53RecordFailoverRoutingPolicyToTerraform(this._failoverRoutingPolicy.internalValue),
       geolocation_routing_policy: route53RecordGeolocationRoutingPolicyToTerraform(this._geolocationRoutingPolicy.internalValue),
       latency_routing_policy: route53RecordLatencyRoutingPolicyToTerraform(this._latencyRoutingPolicy.internalValue),

@@ -4745,9 +4745,9 @@ export class AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutpu
 }
 export interface AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#object AppflowFlow#object}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#object_path AppflowFlow#object_path}
   */
-  readonly object: string;
+  readonly objectPath: string;
 }
 
 export function appflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataToTerraform(struct?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference | AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData): any {
@@ -4756,7 +4756,7 @@ export function appflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataToTe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object: cdktf.stringToTerraform(struct!.object),
+    object_path: cdktf.stringToTerraform(struct!.objectPath),
   }
 }
 
@@ -4774,9 +4774,9 @@ export class AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputR
   public get internalValue(): AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._object !== undefined) {
+    if (this._objectPath !== undefined) {
       hasAnyValues = true;
-      internalValueResult.object = this._object;
+      internalValueResult.objectPath = this._objectPath;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -4784,25 +4784,25 @@ export class AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputR
   public set internalValue(value: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._object = undefined;
+      this._objectPath = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._object = value.object;
+      this._objectPath = value.objectPath;
     }
   }
 
-  // object - computed: false, optional: false, required: true
-  private _object?: string; 
-  public get object() {
-    return this.getStringAttribute('object');
+  // object_path - computed: false, optional: false, required: true
+  private _objectPath?: string; 
+  public get objectPath() {
+    return this.getStringAttribute('object_path');
   }
-  public set object(value: string) {
-    this._object = value;
+  public set objectPath(value: string) {
+    this._objectPath = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get objectInput() {
-    return this._object;
+  public get objectPathInput() {
+    return this._objectPath;
   }
 }
 export interface AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow {
@@ -7070,7 +7070,7 @@ export class AppflowFlow extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appflow_flow',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
