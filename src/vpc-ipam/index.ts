@@ -293,7 +293,7 @@ export class VpcIpam extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -336,6 +336,16 @@ export class VpcIpam extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cascadeInput() {
     return this._cascade;
+  }
+
+  // default_resource_discovery_association_id - computed: true, optional: false, required: false
+  public get defaultResourceDiscoveryAssociationId() {
+    return this.getStringAttribute('default_resource_discovery_association_id');
+  }
+
+  // default_resource_discovery_id - computed: true, optional: false, required: false
+  public get defaultResourceDiscoveryId() {
+    return this.getStringAttribute('default_resource_discovery_id');
   }
 
   // description - computed: false, optional: true, required: false

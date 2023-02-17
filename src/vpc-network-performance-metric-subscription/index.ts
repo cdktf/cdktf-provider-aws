@@ -58,7 +58,7 @@ export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformReso
       terraformResourceType: 'aws_vpc_network_performance_metric_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

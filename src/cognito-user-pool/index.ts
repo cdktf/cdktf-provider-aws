@@ -2595,7 +2595,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

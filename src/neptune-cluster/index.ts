@@ -83,6 +83,10 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly neptuneClusterParameterGroupName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#neptune_instance_parameter_group_name NeptuneCluster#neptune_instance_parameter_group_name}
+  */
+  readonly neptuneInstanceParameterGroupName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#neptune_subnet_group_name NeptuneCluster#neptune_subnet_group_name}
   */
   readonly neptuneSubnetGroupName?: string;
@@ -387,7 +391,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -416,6 +420,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
     this._neptuneClusterParameterGroupName = config.neptuneClusterParameterGroupName;
+    this._neptuneInstanceParameterGroupName = config.neptuneInstanceParameterGroupName;
     this._neptuneSubnetGroupName = config.neptuneSubnetGroupName;
     this._port = config.port;
     this._preferredBackupWindow = config.preferredBackupWindow;
@@ -748,6 +753,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     return this._neptuneClusterParameterGroupName;
   }
 
+  // neptune_instance_parameter_group_name - computed: false, optional: true, required: false
+  private _neptuneInstanceParameterGroupName?: string; 
+  public get neptuneInstanceParameterGroupName() {
+    return this.getStringAttribute('neptune_instance_parameter_group_name');
+  }
+  public set neptuneInstanceParameterGroupName(value: string) {
+    this._neptuneInstanceParameterGroupName = value;
+  }
+  public resetNeptuneInstanceParameterGroupName() {
+    this._neptuneInstanceParameterGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get neptuneInstanceParameterGroupNameInput() {
+    return this._neptuneInstanceParameterGroupName;
+  }
+
   // neptune_subnet_group_name - computed: true, optional: true, required: false
   private _neptuneSubnetGroupName?: string; 
   public get neptuneSubnetGroupName() {
@@ -985,6 +1006,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
+      neptune_instance_parameter_group_name: cdktf.stringToTerraform(this._neptuneInstanceParameterGroupName),
       neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),
       port: cdktf.numberToTerraform(this._port),
       preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),

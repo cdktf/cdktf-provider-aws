@@ -73,6 +73,10 @@ export interface DbProxyAuth {
   */
   readonly authScheme?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}
+  */
+  readonly clientPasswordAuthType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#description DbProxy#description}
   */
   readonly description?: string;
@@ -97,6 +101,7 @@ export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable)
   }
   return {
     auth_scheme: cdktf.stringToTerraform(struct!.authScheme),
+    client_password_auth_type: cdktf.stringToTerraform(struct!.clientPasswordAuthType),
     description: cdktf.stringToTerraform(struct!.description),
     iam_auth: cdktf.stringToTerraform(struct!.iamAuth),
     secret_arn: cdktf.stringToTerraform(struct!.secretArn),
@@ -128,6 +133,10 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.authScheme = this._authScheme;
     }
+    if (this._clientPasswordAuthType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientPasswordAuthType = this._clientPasswordAuthType;
+    }
     if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
@@ -152,6 +161,7 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authScheme = undefined;
+      this._clientPasswordAuthType = undefined;
       this._description = undefined;
       this._iamAuth = undefined;
       this._secretArn = undefined;
@@ -165,6 +175,7 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._authScheme = value.authScheme;
+      this._clientPasswordAuthType = value.clientPasswordAuthType;
       this._description = value.description;
       this._iamAuth = value.iamAuth;
       this._secretArn = value.secretArn;
@@ -186,6 +197,22 @@ export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get authSchemeInput() {
     return this._authScheme;
+  }
+
+  // client_password_auth_type - computed: true, optional: true, required: false
+  private _clientPasswordAuthType?: string; 
+  public get clientPasswordAuthType() {
+    return this.getStringAttribute('client_password_auth_type');
+  }
+  public set clientPasswordAuthType(value: string) {
+    this._clientPasswordAuthType = value;
+  }
+  public resetClientPasswordAuthType() {
+    this._clientPasswordAuthType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientPasswordAuthTypeInput() {
+    return this._clientPasswordAuthType;
   }
 
   // description - computed: false, optional: true, required: false
@@ -428,7 +455,7 @@ export class DbProxy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_proxy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -633,7 +660,7 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // auth - computed: false, optional: false, required: true
-  private _auth = new DbProxyAuthList(this, "auth", true);
+  private _auth = new DbProxyAuthList(this, "auth", false);
   public get auth() {
     return this._auth;
   }

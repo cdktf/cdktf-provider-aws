@@ -1938,7 +1938,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
-  readonly resourceLabel: string;
+  readonly resourceLabel?: string;
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification): any {
@@ -2003,13 +2003,16 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
     return this._predefinedMetricType;
   }
 
-  // resource_label - computed: false, optional: false, required: true
+  // resource_label - computed: false, optional: true, required: false
   private _resourceLabel?: string; 
   public get resourceLabel() {
     return this.getStringAttribute('resource_label');
   }
   public set resourceLabel(value: string) {
     this._resourceLabel = value;
+  }
+  public resetResourceLabel() {
+    this._resourceLabel = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceLabelInput() {
@@ -2024,7 +2027,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
-  readonly resourceLabel: string;
+  readonly resourceLabel?: string;
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification): any {
@@ -2089,13 +2092,16 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
     return this._predefinedMetricType;
   }
 
-  // resource_label - computed: false, optional: false, required: true
+  // resource_label - computed: false, optional: true, required: false
   private _resourceLabel?: string; 
   public get resourceLabel() {
     return this.getStringAttribute('resource_label');
   }
   public set resourceLabel(value: string) {
     this._resourceLabel = value;
+  }
+  public resetResourceLabel() {
+    this._resourceLabel = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceLabelInput() {
@@ -2110,7 +2116,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
-  readonly resourceLabel: string;
+  readonly resourceLabel?: string;
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification): any {
@@ -2175,13 +2181,16 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
     return this._predefinedMetricType;
   }
 
-  // resource_label - computed: false, optional: false, required: true
+  // resource_label - computed: false, optional: true, required: false
   private _resourceLabel?: string; 
   public get resourceLabel() {
     return this.getStringAttribute('resource_label');
   }
   public set resourceLabel(value: string) {
     this._resourceLabel = value;
+  }
+  public resetResourceLabel() {
+    this._resourceLabel = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceLabelInput() {
@@ -3291,7 +3300,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

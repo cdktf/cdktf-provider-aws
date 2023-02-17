@@ -50,7 +50,7 @@ export class DataAwsDatapipelinePipeline extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_datapipeline_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

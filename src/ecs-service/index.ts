@@ -1218,7 +1218,7 @@ export interface EcsServiceServiceConnectConfigurationLogConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#log_driver EcsService#log_driver}
   */
-  readonly logDriver?: string;
+  readonly logDriver: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#options EcsService#options}
   */
@@ -1287,16 +1287,13 @@ export class EcsServiceServiceConnectConfigurationLogConfigurationOutputReferenc
     }
   }
 
-  // log_driver - computed: false, optional: true, required: false
+  // log_driver - computed: false, optional: false, required: true
   private _logDriver?: string; 
   public get logDriver() {
     return this.getStringAttribute('log_driver');
   }
   public set logDriver(value: string) {
     this._logDriver = value;
-  }
-  public resetLogDriver() {
-    this._logDriver = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get logDriverInput() {
@@ -1346,7 +1343,7 @@ export interface EcsServiceServiceConnectConfigurationServiceClientAlias {
   readonly port: number;
 }
 
-export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAlias | cdktf.IResolvable): any {
+export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference | EcsServiceServiceConnectConfigurationServiceClientAlias): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1359,22 +1356,16 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerrafo
 
 export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): EcsServiceServiceConnectConfigurationServiceClientAlias | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): EcsServiceServiceConnectConfigurationServiceClientAlias | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dnsName !== undefined) {
@@ -1388,20 +1379,14 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcsServiceServiceConnectConfigurationServiceClientAlias | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EcsServiceServiceConnectConfigurationServiceClientAlias | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._dnsName = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._dnsName = value.dnsName;
       this._port = value.port;
     }
@@ -1436,26 +1421,6 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
     return this._port;
   }
 }
-
-export class EcsServiceServiceConnectConfigurationServiceClientAliasList extends cdktf.ComplexList {
-  public internalValue? : EcsServiceServiceConnectConfigurationServiceClientAlias[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference {
-    return new EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface EcsServiceServiceConnectConfigurationService {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#discovery_name EcsService#discovery_name}
@@ -1474,10 +1439,10 @@ export interface EcsServiceServiceConnectConfigurationService {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#client_alias EcsService#client_alias}
   */
-  readonly clientAlias: EcsServiceServiceConnectConfigurationServiceClientAlias[] | cdktf.IResolvable;
+  readonly clientAlias?: EcsServiceServiceConnectConfigurationServiceClientAlias;
 }
 
-export function ecsServiceServiceConnectConfigurationServiceToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceOutputReference | EcsServiceServiceConnectConfigurationService): any {
+export function ecsServiceServiceConnectConfigurationServiceToTerraform(struct?: EcsServiceServiceConnectConfigurationService | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1486,22 +1451,28 @@ export function ecsServiceServiceConnectConfigurationServiceToTerraform(struct?:
     discovery_name: cdktf.stringToTerraform(struct!.discoveryName),
     ingress_port_override: cdktf.numberToTerraform(struct!.ingressPortOverride),
     port_name: cdktf.stringToTerraform(struct!.portName),
-    client_alias: cdktf.listMapper(ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform, true)(struct!.clientAlias),
+    client_alias: ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform(struct!.clientAlias),
   }
 }
 
 export class EcsServiceServiceConnectConfigurationServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EcsServiceServiceConnectConfigurationService | undefined {
+  public get internalValue(): EcsServiceServiceConnectConfigurationService | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._discoveryName !== undefined) {
@@ -1523,16 +1494,22 @@ export class EcsServiceServiceConnectConfigurationServiceOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcsServiceServiceConnectConfigurationService | undefined) {
+  public set internalValue(value: EcsServiceServiceConnectConfigurationService | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._discoveryName = undefined;
       this._ingressPortOverride = undefined;
       this._portName = undefined;
       this._clientAlias.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._discoveryName = value.discoveryName;
       this._ingressPortOverride = value.ingressPortOverride;
       this._portName = value.portName;
@@ -1585,17 +1562,40 @@ export class EcsServiceServiceConnectConfigurationServiceOutputReference extends
     return this._portName;
   }
 
-  // client_alias - computed: false, optional: false, required: true
-  private _clientAlias = new EcsServiceServiceConnectConfigurationServiceClientAliasList(this, "client_alias", false);
+  // client_alias - computed: false, optional: true, required: false
+  private _clientAlias = new EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference(this, "client_alias");
   public get clientAlias() {
     return this._clientAlias;
   }
-  public putClientAlias(value: EcsServiceServiceConnectConfigurationServiceClientAlias[] | cdktf.IResolvable) {
+  public putClientAlias(value: EcsServiceServiceConnectConfigurationServiceClientAlias) {
     this._clientAlias.internalValue = value;
+  }
+  public resetClientAlias() {
+    this._clientAlias.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clientAliasInput() {
     return this._clientAlias.internalValue;
+  }
+}
+
+export class EcsServiceServiceConnectConfigurationServiceList extends cdktf.ComplexList {
+  public internalValue? : EcsServiceServiceConnectConfigurationService[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsServiceServiceConnectConfigurationServiceOutputReference {
+    return new EcsServiceServiceConnectConfigurationServiceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface EcsServiceServiceConnectConfiguration {
@@ -1618,7 +1618,7 @@ export interface EcsServiceServiceConnectConfiguration {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#service EcsService#service}
   */
-  readonly service?: EcsServiceServiceConnectConfigurationService;
+  readonly service?: EcsServiceServiceConnectConfigurationService[] | cdktf.IResolvable;
 }
 
 export function ecsServiceServiceConnectConfigurationToTerraform(struct?: EcsServiceServiceConnectConfigurationOutputReference | EcsServiceServiceConnectConfiguration): any {
@@ -1630,7 +1630,7 @@ export function ecsServiceServiceConnectConfigurationToTerraform(struct?: EcsSer
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     log_configuration: ecsServiceServiceConnectConfigurationLogConfigurationToTerraform(struct!.logConfiguration),
-    service: ecsServiceServiceConnectConfigurationServiceToTerraform(struct!.service),
+    service: cdktf.listMapper(ecsServiceServiceConnectConfigurationServiceToTerraform, true)(struct!.service),
   }
 }
 
@@ -1730,11 +1730,11 @@ export class EcsServiceServiceConnectConfigurationOutputReference extends cdktf.
   }
 
   // service - computed: false, optional: true, required: false
-  private _service = new EcsServiceServiceConnectConfigurationServiceOutputReference(this, "service");
+  private _service = new EcsServiceServiceConnectConfigurationServiceList(this, "service", false);
   public get service() {
     return this._service;
   }
-  public putService(value: EcsServiceServiceConnectConfigurationService) {
+  public putService(value: EcsServiceServiceConnectConfigurationService[] | cdktf.IResolvable) {
     this._service.internalValue = value;
   }
   public resetService() {
@@ -2044,7 +2044,7 @@ export class EcsService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.54.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
