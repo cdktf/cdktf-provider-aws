@@ -41,6 +41,7 @@
     },
     {
       "name": "jsii-docgen",
+      "version": ">=7.1.2",
       "type": "build"
     },
     {
