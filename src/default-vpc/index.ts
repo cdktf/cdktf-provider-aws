@@ -94,7 +94,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_vpc',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -235,7 +235,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
     return this._enableDnsSupport;
   }
 
-  // enable_network_address_usage_metrics - computed: false, optional: true, required: false
+  // enable_network_address_usage_metrics - computed: true, optional: true, required: false
   private _enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable; 
   public get enableNetworkAddressUsageMetrics() {
     return this.getBooleanAttribute('enable_network_address_usage_metrics');

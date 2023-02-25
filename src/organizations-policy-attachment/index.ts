@@ -19,6 +19,10 @@ export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMeta
   */
   readonly policyId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy_attachment#skip_destroy OrganizationsPolicyAttachment#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy_attachment#target_id OrganizationsPolicyAttachment#target_id}
   */
   readonly targetId: string;
@@ -50,7 +54,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -63,6 +67,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._policyId = config.policyId;
+    this._skipDestroy = config.skipDestroy;
     this._targetId = config.targetId;
   }
 
@@ -99,6 +104,22 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
     return this._policyId;
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // target_id - computed: false, optional: false, required: true
   private _targetId?: string; 
   public get targetId() {
@@ -120,6 +141,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       target_id: cdktf.stringToTerraform(this._targetId),
     };
   }

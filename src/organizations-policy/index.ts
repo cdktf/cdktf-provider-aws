@@ -27,6 +27,10 @@ export interface OrganizationsPolicyConfig extends cdktf.TerraformMetaArguments 
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#skip_destroy OrganizationsPolicy#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#tags OrganizationsPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -66,7 +70,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -81,6 +85,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
+    this._skipDestroy = config.skipDestroy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._type = config.type;
@@ -153,6 +158,22 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -211,6 +232,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),

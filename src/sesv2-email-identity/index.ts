@@ -208,7 +208,7 @@ export class Sesv2EmailIdentity extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_email_identity',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

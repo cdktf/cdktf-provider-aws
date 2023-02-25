@@ -50,7 +50,7 @@ export class SagemakerModelPackageGroupPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_model_package_group_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

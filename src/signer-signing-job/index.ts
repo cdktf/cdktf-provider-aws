@@ -597,7 +597,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
       terraformResourceType: 'aws_signer_signing_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

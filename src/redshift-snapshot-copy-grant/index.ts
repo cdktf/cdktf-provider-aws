@@ -58,7 +58,7 @@ export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_snapshot_copy_grant',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -201,7 +201,7 @@ export class TranscribeVocabulary extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transcribe_vocabulary',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -26,6 +26,10 @@ export interface LoadBalancerListenerPolicyConfig extends cdktf.TerraformMetaArg
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#policy_names LoadBalancerListenerPolicy#policy_names}
   */
   readonly policyNames?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#triggers LoadBalancerListenerPolicy#triggers}
+  */
+  readonly triggers?: { [key: string]: string };
 }
 
 /**
@@ -54,7 +58,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_load_balancer_listener_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -69,6 +73,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
     this._loadBalancerName = config.loadBalancerName;
     this._loadBalancerPort = config.loadBalancerPort;
     this._policyNames = config.policyNames;
+    this._triggers = config.triggers;
   }
 
   // ==========
@@ -133,6 +138,22 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
     return this._policyNames;
   }
 
+  // triggers - computed: false, optional: true, required: false
+  private _triggers?: { [key: string]: string }; 
+  public get triggers() {
+    return this.getStringMapAttribute('triggers');
+  }
+  public set triggers(value: { [key: string]: string }) {
+    this._triggers = value;
+  }
+  public resetTriggers() {
+    this._triggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggersInput() {
+    return this._triggers;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -143,6 +164,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
       load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
       load_balancer_port: cdktf.numberToTerraform(this._loadBalancerPort),
       policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
+      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
   }
 }
