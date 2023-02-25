@@ -113,7 +113,7 @@
       "description": "Generate API.md from .jsii manifest",
       "steps": [
         {
-          "exec": "jsii-docgen -o API.md"
+          "exec": "rm -rf docs && mkdir docs && jsii-docgen --split-by-submodule -l typescript -l python -l java -l csharp -l go && mv *.*.md docs"
         }
       ]
     },
@@ -292,19 +292,19 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
           "exec": "yarn install --check-files"

@@ -30,3 +30,5 @@
 /scripts/should-release.js linguist-generated
 /tsconfig.dev.json linguist-generated
 /yarn.lock linguist-generated
+docs/wafv2RuleGroup.*.md filter=lfs diff=lfs merge=lfs -text
+docs/wafv2WebAcl.*.md filter=lfs diff=lfs merge=lfs -text
