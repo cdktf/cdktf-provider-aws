@@ -23,6 +23,10 @@ export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly imageTag?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_image#most_recent DataAwsEcrImage#most_recent}
+  */
+  readonly mostRecent?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_image#registry_id DataAwsEcrImage#registry_id}
   */
   readonly registryId?: string;
@@ -58,7 +62,7 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ecr_image',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -72,6 +76,7 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._imageDigest = config.imageDigest;
     this._imageTag = config.imageTag;
+    this._mostRecent = config.mostRecent;
     this._registryId = config.registryId;
     this._repositoryName = config.repositoryName;
   }
@@ -143,6 +148,22 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
     return this.getListAttribute('image_tags');
   }
 
+  // most_recent - computed: false, optional: true, required: false
+  private _mostRecent?: boolean | cdktf.IResolvable; 
+  public get mostRecent() {
+    return this.getBooleanAttribute('most_recent');
+  }
+  public set mostRecent(value: boolean | cdktf.IResolvable) {
+    this._mostRecent = value;
+  }
+  public resetMostRecent() {
+    this._mostRecent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostRecentInput() {
+    return this._mostRecent;
+  }
+
   // registry_id - computed: true, optional: true, required: false
   private _registryId?: string; 
   public get registryId() {
@@ -181,6 +202,7 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       image_digest: cdktf.stringToTerraform(this._imageDigest),
       image_tag: cdktf.stringToTerraform(this._imageTag),
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
       registry_id: cdktf.stringToTerraform(this._registryId),
       repository_name: cdktf.stringToTerraform(this._repositoryName),
     };

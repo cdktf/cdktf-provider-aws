@@ -570,7 +570,7 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurati
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#expiration_in_days AcmpcaCertificateAuthority#expiration_in_days}
   */
-  readonly expirationInDays: number;
+  readonly expirationInDays?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#s3_bucket_name AcmpcaCertificateAuthority#s3_bucket_name}
   */
@@ -683,13 +683,16 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
     return this._enabled;
   }
 
-  // expiration_in_days - computed: false, optional: false, required: true
+  // expiration_in_days - computed: false, optional: true, required: false
   private _expirationInDays?: number; 
   public get expirationInDays() {
     return this.getNumberAttribute('expiration_in_days');
   }
   public set expirationInDays(value: number) {
     this._expirationInDays = value;
+  }
+  public resetExpirationInDays() {
+    this._expirationInDays = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get expirationInDaysInput() {
@@ -1015,7 +1018,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

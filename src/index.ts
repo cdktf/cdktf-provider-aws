@@ -742,6 +742,7 @@ export * as networkfirewallResourcePolicy from './networkfirewall-resource-polic
 export * as networkfirewallRuleGroup from './networkfirewall-rule-group';
 export * as networkmanagerAttachmentAccepter from './networkmanager-attachment-accepter';
 export * as networkmanagerConnectAttachment from './networkmanager-connect-attachment';
+export * as networkmanagerConnectPeer from './networkmanager-connect-peer';
 export * as networkmanagerConnection from './networkmanager-connection';
 export * as networkmanagerCoreNetwork from './networkmanager-core-network';
 export * as networkmanagerCoreNetworkPolicyAttachment from './networkmanager-core-network-policy-attachment';
@@ -1106,6 +1107,8 @@ export * as vpcNetworkPerformanceMetricSubscription from './vpc-network-performa
 export * as vpcPeeringConnection from './vpc-peering-connection';
 export * as vpcPeeringConnectionAccepter from './vpc-peering-connection-accepter';
 export * as vpcPeeringConnectionOptions from './vpc-peering-connection-options';
+export * as vpcSecurityGroupEgressRule from './vpc-security-group-egress-rule';
+export * as vpcSecurityGroupIngressRule from './vpc-security-group-ingress-rule';
 export * as vpnConnection from './vpn-connection';
 export * as vpnConnectionRoute from './vpn-connection-route';
 export * as vpnGateway from './vpn-gateway';
@@ -1571,6 +1574,8 @@ export * as dataAwsVpcIpamPools from './data-aws-vpc-ipam-pools';
 export * as dataAwsVpcIpamPreviewNextCidr from './data-aws-vpc-ipam-preview-next-cidr';
 export * as dataAwsVpcPeeringConnection from './data-aws-vpc-peering-connection';
 export * as dataAwsVpcPeeringConnections from './data-aws-vpc-peering-connections';
+export * as dataAwsVpcSecurityGroupRule from './data-aws-vpc-security-group-rule';
+export * as dataAwsVpcSecurityGroupRules from './data-aws-vpc-security-group-rules';
 export * as dataAwsVpcs from './data-aws-vpcs';
 export * as dataAwsVpnGateway from './data-aws-vpn-gateway';
 export * as dataAwsWafIpset from './data-aws-waf-ipset';

@@ -816,7 +816,7 @@ export class ComprehendDocumentClassifier extends cdktf.TerraformResource {
       terraformResourceType: 'aws_comprehend_document_classifier',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

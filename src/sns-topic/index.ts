@@ -95,6 +95,10 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   */
   readonly policy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#signature_version SnsTopic#signature_version}
+  */
+  readonly signatureVersion?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}
   */
   readonly sqsFailureFeedbackRoleArn?: string;
@@ -114,6 +118,10 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#tags_all SnsTopic#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#tracing_config SnsTopic#tracing_config}
+  */
+  readonly tracingConfig?: string;
 }
 
 /**
@@ -142,7 +150,7 @@ export class SnsTopic extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sns_topic',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -174,11 +182,13 @@ export class SnsTopic extends cdktf.TerraformResource {
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._policy = config.policy;
+    this._signatureVersion = config.signatureVersion;
     this._sqsFailureFeedbackRoleArn = config.sqsFailureFeedbackRoleArn;
     this._sqsSuccessFeedbackRoleArn = config.sqsSuccessFeedbackRoleArn;
     this._sqsSuccessFeedbackSampleRate = config.sqsSuccessFeedbackSampleRate;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._tracingConfig = config.tracingConfig;
   }
 
   // ==========
@@ -531,6 +541,22 @@ export class SnsTopic extends cdktf.TerraformResource {
     return this._policy;
   }
 
+  // signature_version - computed: true, optional: true, required: false
+  private _signatureVersion?: number; 
+  public get signatureVersion() {
+    return this.getNumberAttribute('signature_version');
+  }
+  public set signatureVersion(value: number) {
+    this._signatureVersion = value;
+  }
+  public resetSignatureVersion() {
+    this._signatureVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signatureVersionInput() {
+    return this._signatureVersion;
+  }
+
   // sqs_failure_feedback_role_arn - computed: false, optional: true, required: false
   private _sqsFailureFeedbackRoleArn?: string; 
   public get sqsFailureFeedbackRoleArn() {
@@ -611,6 +637,22 @@ export class SnsTopic extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // tracing_config - computed: true, optional: true, required: false
+  private _tracingConfig?: string; 
+  public get tracingConfig() {
+    return this.getStringAttribute('tracing_config');
+  }
+  public set tracingConfig(value: string) {
+    this._tracingConfig = value;
+  }
+  public resetTracingConfig() {
+    this._tracingConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tracingConfigInput() {
+    return this._tracingConfig;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -638,11 +680,13 @@ export class SnsTopic extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       policy: cdktf.stringToTerraform(this._policy),
+      signature_version: cdktf.numberToTerraform(this._signatureVersion),
       sqs_failure_feedback_role_arn: cdktf.stringToTerraform(this._sqsFailureFeedbackRoleArn),
       sqs_success_feedback_role_arn: cdktf.stringToTerraform(this._sqsSuccessFeedbackRoleArn),
       sqs_success_feedback_sample_rate: cdktf.numberToTerraform(this._sqsSuccessFeedbackSampleRate),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      tracing_config: cdktf.stringToTerraform(this._tracingConfig),
     };
   }
 }

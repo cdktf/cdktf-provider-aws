@@ -50,7 +50,7 @@ export class Ec2TransitGatewayPolicyTableAssociation extends cdktf.TerraformReso
       terraformResourceType: 'aws_ec2_transit_gateway_policy_table_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

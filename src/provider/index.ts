@@ -744,6 +744,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
+  */
+  readonly cloudwatchobservabilityaccessmanager?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchrum AwsProvider#cloudwatchrum}
   */
   readonly cloudwatchrum?: string;
@@ -1920,6 +1926,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#oam AwsProvider#oam}
+  */
+  readonly oam?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearch AwsProvider#opensearch}
   */
   readonly opensearch?: string;
@@ -2689,6 +2701,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     cloudwatchevidently: cdktf.stringToTerraform(struct!.cloudwatchevidently),
     cloudwatchlog: cdktf.stringToTerraform(struct!.cloudwatchlog),
     cloudwatchlogs: cdktf.stringToTerraform(struct!.cloudwatchlogs),
+    cloudwatchobservabilityaccessmanager: cdktf.stringToTerraform(struct!.cloudwatchobservabilityaccessmanager),
     cloudwatchrum: cdktf.stringToTerraform(struct!.cloudwatchrum),
     codeartifact: cdktf.stringToTerraform(struct!.codeartifact),
     codebuild: cdktf.stringToTerraform(struct!.codebuild),
@@ -2885,6 +2898,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     networkmanager: cdktf.stringToTerraform(struct!.networkmanager),
     nimble: cdktf.stringToTerraform(struct!.nimble),
     nimblestudio: cdktf.stringToTerraform(struct!.nimblestudio),
+    oam: cdktf.stringToTerraform(struct!.oam),
     opensearch: cdktf.stringToTerraform(struct!.opensearch),
     opensearchserverless: cdktf.stringToTerraform(struct!.opensearchserverless),
     opensearchservice: cdktf.stringToTerraform(struct!.opensearchservice),
@@ -3058,7 +3072,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

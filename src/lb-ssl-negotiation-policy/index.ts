@@ -27,6 +27,10 @@ export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArgumen
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_ssl_negotiation_policy#triggers LbSslNegotiationPolicy#triggers}
+  */
+  readonly triggers?: { [key: string]: string };
+  /**
   * attribute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_ssl_negotiation_policy#attribute LbSslNegotiationPolicy#attribute}
@@ -178,7 +182,7 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_ssl_negotiation_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -193,6 +197,7 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
     this._lbPort = config.lbPort;
     this._loadBalancer = config.loadBalancer;
     this._name = config.name;
+    this._triggers = config.triggers;
     this._attribute.internalValue = config.attribute;
   }
 
@@ -255,6 +260,22 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // triggers - computed: false, optional: true, required: false
+  private _triggers?: { [key: string]: string }; 
+  public get triggers() {
+    return this.getStringMapAttribute('triggers');
+  }
+  public set triggers(value: { [key: string]: string }) {
+    this._triggers = value;
+  }
+  public resetTriggers() {
+    this._triggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggersInput() {
+    return this._triggers;
+  }
+
   // attribute - computed: false, optional: true, required: false
   private _attribute = new LbSslNegotiationPolicyAttributeList(this, "attribute", true);
   public get attribute() {
@@ -281,6 +302,7 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
       lb_port: cdktf.numberToTerraform(this._lbPort),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
       name: cdktf.stringToTerraform(this._name),
+      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
       attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform, true)(this._attribute.internalValue),
     };
   }
