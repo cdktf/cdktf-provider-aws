@@ -61,3 +61,4 @@ package-lock.json
 !/.github/workflows/alert-open-prs.yml
 !/.github/CODEOWNERS
 !/scripts/should-release.js
+API.md
