@@ -22,6 +22,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
+          lfs: true
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
