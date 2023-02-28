@@ -6,6 +6,11 @@
       "type": "build"
     },
     {
+      "name": "@cdktf/provider-project",
+      "version": "^0.2.95",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "version": "^14",
       "type": "build"
