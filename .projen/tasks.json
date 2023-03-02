@@ -96,6 +96,9 @@
       "steps": [
         {
           "exec": "jsii --silence-warnings=reserved-word"
+        },
+        {
+          "exec": "git checkout package.json"
         }
       ]
     },
@@ -113,7 +116,7 @@
       "description": "Generate API.md from .jsii manifest",
       "steps": [
         {
-          "exec": "jsii-docgen -o API.md"
+          "exec": "rm -rf docs && mkdir docs && jsii-docgen --split-by-submodule -l typescript -l python -l java -l csharp -l go && mv *.*.md docs && cd docs && ls ./ | xargs sed -i '150000,$ d' $1"
         }
       ]
     },
@@ -233,7 +236,12 @@
     },
     "pre-compile": {
       "name": "pre-compile",
-      "description": "Prepare the project for compilation"
+      "description": "Prepare the project for compilation",
+      "steps": [
+        {
+          "spawn": "unconditional-bump"
+        }
+      ]
     },
     "release": {
       "name": "release",
@@ -281,6 +289,22 @@
         }
       ]
     },
+    "unconditional-bump": {
+      "name": "unconditional-bump",
+      "description": "Set the version in package.json to the current version",
+      "env": {
+        "OUTFILE": "package.json",
+        "CHANGELOG": "dist/changelog.md",
+        "BUMPFILE": "dist/version.txt",
+        "RELEASETAG": "dist/releasetag.txt",
+        "RELEASE_TAG_PREFIX": ""
+      },
+      "steps": [
+        {
+          "builtin": "release/bump-version"
+        }
+      ]
+    },
     "upgrade": {
       "name": "upgrade",
       "description": "upgrade dependencies",
@@ -292,19 +316,19 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='node-fetch'"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='jsii-docgen,node-fetch'"
         },
         {
           "exec": "yarn install --check-files"
