@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_serve
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferServer.TransferServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.NewTransferServer(scope Construct, id *string, config TransferServerConfig) TransferServer
 ```
@@ -432,7 +432,7 @@ func ResetWorkflowDetails()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferServer.TransferServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.TransferServer_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferServer.TransferServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.TransferServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ transferserver.TransferServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferServer.TransferServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.TransferServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1150,7 +1150,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferServer.TransferServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 &transferserver.TransferServerConfig {
 	Connection: interface{},
@@ -1163,7 +1163,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
 	Certificate: *string,
 	DirectoryId: *string,
 	Domain: *string,
-	EndpointDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferServer.TransferServerEndpointDetails,
+	EndpointDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v12.transferServer.TransferServerEndpointDetails,
 	EndpointType: *string,
 	ForceDestroy: interface{},
 	Function: *string,
@@ -1179,7 +1179,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Url: *string,
-	WorkflowDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferServer.TransferServerWorkflowDetails,
+	WorkflowDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v12.transferServer.TransferServerWorkflowDetails,
 }
 ```
 
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 &transferserver.TransferServerEndpointDetails {
 	AddressAllocationIds: *[]*string,
@@ -1627,10 +1627,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferServer.TransferServerWorkflowDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 &transferserver.TransferServerWorkflowDetails {
-	OnUpload: github.com/cdktf/cdktf-provider-aws-go/aws.transferServer.TransferServerWorkflowDetailsOnUpload,
+	OnUpload: github.com/cdktf/cdktf-provider-aws-go/aws/v12.transferServer.TransferServerWorkflowDetailsOnUpload,
 }
 ```
 
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 &transferserver.TransferServerWorkflowDetailsOnUpload {
 	ExecutionRole: *string,
@@ -1709,7 +1709,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.NewTransferServerEndpointDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerEndpointDetailsOutputReference
 ```
@@ -2103,7 +2103,7 @@ func InternalValue() TransferServerEndpointDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUploadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.NewTransferServerWorkflowDetailsOnUploadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerWorkflowDetailsOnUploadOutputReference
 ```
@@ -2396,7 +2396,7 @@ func InternalValue() TransferServerWorkflowDetailsOnUpload
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transferserver"
 
 transferserver.NewTransferServerWorkflowDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferServerWorkflowDetailsOutputReference
 ```
