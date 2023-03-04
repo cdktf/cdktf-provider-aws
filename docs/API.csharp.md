@@ -1100,6 +1100,7 @@ The following submodules are available:
 - [licensemanagerLicenseConfiguration](./licensemanagerLicenseConfiguration.csharp.md)
 - [lightsailBucket](./lightsailBucket.csharp.md)
 - [lightsailBucketAccessKey](./lightsailBucketAccessKey.csharp.md)
+- [lightsailBucketResourceAccess](./lightsailBucketResourceAccess.csharp.md)
 - [lightsailCertificate](./lightsailCertificate.csharp.md)
 - [lightsailContainerService](./lightsailContainerService.csharp.md)
 - [lightsailContainerServiceDeploymentVersion](./lightsailContainerServiceDeploymentVersion.csharp.md)

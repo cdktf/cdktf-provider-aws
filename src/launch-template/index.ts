@@ -2081,6 +2081,98 @@ export class LaunchTemplateInstanceRequirementsMemoryMibOutputReference extends 
     return this._min;
   }
 }
+export interface LaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct?: LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference | LaunchTemplateInstanceRequirementsNetworkBandwidthGbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsNetworkBandwidthGbps | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsNetworkBandwidthGbps | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
 export interface LaunchTemplateInstanceRequirementsNetworkInterfaceCount {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
@@ -2368,6 +2460,10 @@ export interface LaunchTemplateInstanceRequirements {
   */
   readonly acceleratorTypes?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#allowed_instance_types LaunchTemplate#allowed_instance_types}
+  */
+  readonly allowedInstanceTypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#bare_metal LaunchTemplate#bare_metal}
   */
   readonly bareMetal?: string;
@@ -2438,6 +2534,12 @@ export interface LaunchTemplateInstanceRequirements {
   */
   readonly memoryMib: LaunchTemplateInstanceRequirementsMemoryMib;
   /**
+  * network_bandwidth_gbps block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_bandwidth_gbps LaunchTemplate#network_bandwidth_gbps}
+  */
+  readonly networkBandwidthGbps?: LaunchTemplateInstanceRequirementsNetworkBandwidthGbps;
+  /**
   * network_interface_count block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_interface_count LaunchTemplate#network_interface_count}
@@ -2466,6 +2568,7 @@ export function launchTemplateInstanceRequirementsToTerraform(struct?: LaunchTem
     accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
     accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
     accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
+    allowed_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedInstanceTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
     cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
@@ -2481,6 +2584,7 @@ export function launchTemplateInstanceRequirementsToTerraform(struct?: LaunchTem
     baseline_ebs_bandwidth_mbps: launchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsToTerraform(struct!.baselineEbsBandwidthMbps),
     memory_gib_per_vcpu: launchTemplateInstanceRequirementsMemoryGibPerVcpuToTerraform(struct!.memoryGibPerVcpu),
     memory_mib: launchTemplateInstanceRequirementsMemoryMibToTerraform(struct!.memoryMib),
+    network_bandwidth_gbps: launchTemplateInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct!.networkBandwidthGbps),
     network_interface_count: launchTemplateInstanceRequirementsNetworkInterfaceCountToTerraform(struct!.networkInterfaceCount),
     total_local_storage_gb: launchTemplateInstanceRequirementsTotalLocalStorageGbToTerraform(struct!.totalLocalStorageGb),
     vcpu_count: launchTemplateInstanceRequirementsVcpuCountToTerraform(struct!.vcpuCount),
@@ -2512,6 +2616,10 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
     if (this._acceleratorTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.acceleratorTypes = this._acceleratorTypes;
+    }
+    if (this._allowedInstanceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedInstanceTypes = this._allowedInstanceTypes;
     }
     if (this._bareMetal !== undefined) {
       hasAnyValues = true;
@@ -2573,6 +2681,10 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.memoryMib = this._memoryMib?.internalValue;
     }
+    if (this._networkBandwidthGbps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkBandwidthGbps = this._networkBandwidthGbps?.internalValue;
+    }
     if (this._networkInterfaceCount?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkInterfaceCount = this._networkInterfaceCount?.internalValue;
@@ -2594,6 +2706,7 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
       this._acceleratorManufacturers = undefined;
       this._acceleratorNames = undefined;
       this._acceleratorTypes = undefined;
+      this._allowedInstanceTypes = undefined;
       this._bareMetal = undefined;
       this._burstablePerformance = undefined;
       this._cpuManufacturers = undefined;
@@ -2609,6 +2722,7 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
       this._baselineEbsBandwidthMbps.internalValue = undefined;
       this._memoryGibPerVcpu.internalValue = undefined;
       this._memoryMib.internalValue = undefined;
+      this._networkBandwidthGbps.internalValue = undefined;
       this._networkInterfaceCount.internalValue = undefined;
       this._totalLocalStorageGb.internalValue = undefined;
       this._vcpuCount.internalValue = undefined;
@@ -2618,6 +2732,7 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
       this._acceleratorManufacturers = value.acceleratorManufacturers;
       this._acceleratorNames = value.acceleratorNames;
       this._acceleratorTypes = value.acceleratorTypes;
+      this._allowedInstanceTypes = value.allowedInstanceTypes;
       this._bareMetal = value.bareMetal;
       this._burstablePerformance = value.burstablePerformance;
       this._cpuManufacturers = value.cpuManufacturers;
@@ -2633,6 +2748,7 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
       this._baselineEbsBandwidthMbps.internalValue = value.baselineEbsBandwidthMbps;
       this._memoryGibPerVcpu.internalValue = value.memoryGibPerVcpu;
       this._memoryMib.internalValue = value.memoryMib;
+      this._networkBandwidthGbps.internalValue = value.networkBandwidthGbps;
       this._networkInterfaceCount.internalValue = value.networkInterfaceCount;
       this._totalLocalStorageGb.internalValue = value.totalLocalStorageGb;
       this._vcpuCount.internalValue = value.vcpuCount;
@@ -2685,6 +2801,22 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get acceleratorTypesInput() {
     return this._acceleratorTypes;
+  }
+
+  // allowed_instance_types - computed: false, optional: true, required: false
+  private _allowedInstanceTypes?: string[]; 
+  public get allowedInstanceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_instance_types'));
+  }
+  public set allowedInstanceTypes(value: string[]) {
+    this._allowedInstanceTypes = value;
+  }
+  public resetAllowedInstanceTypes() {
+    this._allowedInstanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedInstanceTypesInput() {
+    return this._allowedInstanceTypes;
   }
 
   // bare_metal - computed: false, optional: true, required: false
@@ -2922,6 +3054,22 @@ export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get memoryMibInput() {
     return this._memoryMib.internalValue;
+  }
+
+  // network_bandwidth_gbps - computed: false, optional: true, required: false
+  private _networkBandwidthGbps = new LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(this, "network_bandwidth_gbps");
+  public get networkBandwidthGbps() {
+    return this._networkBandwidthGbps;
+  }
+  public putNetworkBandwidthGbps(value: LaunchTemplateInstanceRequirementsNetworkBandwidthGbps) {
+    this._networkBandwidthGbps.internalValue = value;
+  }
+  public resetNetworkBandwidthGbps() {
+    this._networkBandwidthGbps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkBandwidthGbpsInput() {
+    return this._networkBandwidthGbps.internalValue;
   }
 
   // network_interface_count - computed: false, optional: true, required: false
@@ -4473,7 +4621,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

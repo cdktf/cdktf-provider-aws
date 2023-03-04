@@ -96,6 +96,10 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly datePartitionTimezone?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}
+  */
+  readonly detachTargetOnLobLookupFailureParquet?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#dict_page_size_limit DmsS3Endpoint#dict_page_size_limit}
   */
   readonly dictPageSizeLimit?: number;
@@ -338,7 +342,7 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_s3_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -371,6 +375,7 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
     this._datePartitionEnabled = config.datePartitionEnabled;
     this._datePartitionSequence = config.datePartitionSequence;
     this._datePartitionTimezone = config.datePartitionTimezone;
+    this._detachTargetOnLobLookupFailureParquet = config.detachTargetOnLobLookupFailureParquet;
     this._dictPageSizeLimit = config.dictPageSizeLimit;
     this._enableStatistics = config.enableStatistics;
     this._encodingType = config.encodingType;
@@ -751,6 +756,22 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get datePartitionTimezoneInput() {
     return this._datePartitionTimezone;
+  }
+
+  // detach_target_on_lob_lookup_failure_parquet - computed: false, optional: true, required: false
+  private _detachTargetOnLobLookupFailureParquet?: boolean | cdktf.IResolvable; 
+  public get detachTargetOnLobLookupFailureParquet() {
+    return this.getBooleanAttribute('detach_target_on_lob_lookup_failure_parquet');
+  }
+  public set detachTargetOnLobLookupFailureParquet(value: boolean | cdktf.IResolvable) {
+    this._detachTargetOnLobLookupFailureParquet = value;
+  }
+  public resetDetachTargetOnLobLookupFailureParquet() {
+    this._detachTargetOnLobLookupFailureParquet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get detachTargetOnLobLookupFailureParquetInput() {
+    return this._detachTargetOnLobLookupFailureParquet;
   }
 
   // dict_page_size_limit - computed: false, optional: true, required: false
@@ -1224,6 +1245,7 @@ export class DmsS3Endpoint extends cdktf.TerraformResource {
       date_partition_enabled: cdktf.booleanToTerraform(this._datePartitionEnabled),
       date_partition_sequence: cdktf.stringToTerraform(this._datePartitionSequence),
       date_partition_timezone: cdktf.stringToTerraform(this._datePartitionTimezone),
+      detach_target_on_lob_lookup_failure_parquet: cdktf.booleanToTerraform(this._detachTargetOnLobLookupFailureParquet),
       dict_page_size_limit: cdktf.numberToTerraform(this._dictPageSizeLimit),
       enable_statistics: cdktf.booleanToTerraform(this._enableStatistics),
       encoding_type: cdktf.stringToTerraform(this._encodingType),

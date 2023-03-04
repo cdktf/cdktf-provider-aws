@@ -1100,6 +1100,7 @@ The following submodules are available:
 - [licensemanagerLicenseConfiguration](./licensemanagerLicenseConfiguration.python.md)
 - [lightsailBucket](./lightsailBucket.python.md)
 - [lightsailBucketAccessKey](./lightsailBucketAccessKey.python.md)
+- [lightsailBucketResourceAccess](./lightsailBucketResourceAccess.python.md)
 - [lightsailCertificate](./lightsailCertificate.python.md)
 - [lightsailContainerService](./lightsailContainerService.python.md)
 - [lightsailContainerServiceDeploymentVersion](./lightsailContainerServiceDeploymentVersion.python.md)

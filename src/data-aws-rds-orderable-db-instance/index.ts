@@ -110,7 +110,7 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_rds_orderable_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -15,6 +15,10 @@ export interface CloudtrailEventDataStoreConfig extends cdktf.TerraformMetaArgum
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#kms_key_id CloudtrailEventDataStore#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#multi_region_enabled CloudtrailEventDataStore#multi_region_enabled}
   */
   readonly multiRegionEnabled?: boolean | cdktf.IResolvable;
@@ -596,7 +600,7 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudtrail_event_data_store',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -608,6 +612,7 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._kmsKeyId = config.kmsKeyId;
     this._multiRegionEnabled = config.multiRegionEnabled;
     this._name = config.name;
     this._organizationEnabled = config.organizationEnabled;
@@ -642,6 +647,22 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // kms_key_id - computed: false, optional: true, required: false
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
   }
 
   // multi_region_enabled - computed: false, optional: true, required: false
@@ -792,6 +813,7 @@ export class CloudtrailEventDataStore extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       multi_region_enabled: cdktf.booleanToTerraform(this._multiRegionEnabled),
       name: cdktf.stringToTerraform(this._name),
       organization_enabled: cdktf.booleanToTerraform(this._organizationEnabled),

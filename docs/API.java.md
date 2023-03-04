@@ -1100,6 +1100,7 @@ The following submodules are available:
 - [licensemanagerLicenseConfiguration](./licensemanagerLicenseConfiguration.java.md)
 - [lightsailBucket](./lightsailBucket.java.md)
 - [lightsailBucketAccessKey](./lightsailBucketAccessKey.java.md)
+- [lightsailBucketResourceAccess](./lightsailBucketResourceAccess.java.md)
 - [lightsailCertificate](./lightsailCertificate.java.md)
 - [lightsailContainerService](./lightsailContainerService.java.md)
 - [lightsailContainerServiceDeploymentVersion](./lightsailContainerServiceDeploymentVersion.java.md)

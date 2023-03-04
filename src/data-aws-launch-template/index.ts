@@ -1310,6 +1310,75 @@ export class DataAwsLaunchTemplateInstanceRequirementsMemoryMibList extends cdkt
     return new DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
+}
+
+export function dataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct?: DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max - computed: true, optional: false, required: false
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+
+  // min - computed: true, optional: false, required: false
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+}
+
+export class DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference {
+    return new DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCount {
 }
 
@@ -1584,6 +1653,11 @@ export class DataAwsLaunchTemplateInstanceRequirementsOutputReference extends cd
     return cdktf.Fn.tolist(this.getListAttribute('accelerator_types'));
   }
 
+  // allowed_instance_types - computed: true, optional: false, required: false
+  public get allowedInstanceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_instance_types'));
+  }
+
   // bare_metal - computed: true, optional: false, required: false
   public get bareMetal() {
     return this.getStringAttribute('bare_metal');
@@ -1635,6 +1709,12 @@ export class DataAwsLaunchTemplateInstanceRequirementsOutputReference extends cd
   private _memoryMib = new DataAwsLaunchTemplateInstanceRequirementsMemoryMibList(this, "memory_mib", false);
   public get memoryMib() {
     return this._memoryMib;
+  }
+
+  // network_bandwidth_gbps - computed: true, optional: false, required: false
+  private _networkBandwidthGbps = new DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList(this, "network_bandwidth_gbps", false);
+  public get networkBandwidthGbps() {
+    return this._networkBandwidthGbps;
   }
 
   // network_interface_count - computed: true, optional: false, required: false
@@ -2582,7 +2662,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

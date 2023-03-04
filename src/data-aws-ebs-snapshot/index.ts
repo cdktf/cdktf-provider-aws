@@ -267,7 +267,7 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ebs_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -95,6 +95,10 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly s3ObjectVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#skip_destroy LambdaFunction#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#source_code_hash LambdaFunction#source_code_hash}
   */
   readonly sourceCodeHash?: string;
@@ -635,6 +639,10 @@ export interface LambdaFunctionTimeouts {
   */
   readonly create?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#delete LambdaFunction#delete}
+  */
+  readonly delete?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#update LambdaFunction#update}
   */
   readonly update?: string;
@@ -647,6 +655,7 @@ export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeout
   }
   return {
     create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
 }
@@ -673,6 +682,10 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
     if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
@@ -685,6 +698,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
+      this._delete = undefined;
       this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -695,6 +709,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._create = value.create;
+      this._delete = value.delete;
       this._update = value.update;
     }
   }
@@ -713,6 +728,22 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get createInput() {
     return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
@@ -911,7 +942,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -943,6 +974,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._s3Bucket = config.s3Bucket;
     this._s3Key = config.s3Key;
     this._s3ObjectVersion = config.s3ObjectVersion;
+    this._skipDestroy = config.skipDestroy;
     this._sourceCodeHash = config.sourceCodeHash;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -1327,6 +1359,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this.getStringAttribute('signing_profile_version_arn');
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // source_code_hash - computed: true, optional: true, required: false
   private _sourceCodeHash?: string; 
   public get sourceCodeHash() {
@@ -1572,6 +1620,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
       s3_key: cdktf.stringToTerraform(this._s3Key),
       s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
