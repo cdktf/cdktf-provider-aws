@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_dataso
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasource(scope Construct, id *string, config AppsyncDatasourceConfig) AppsyncDatasource
 ```
@@ -387,7 +387,7 @@ func ResetServiceRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ appsyncdatasource.AppsyncDatasource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsTerraformResource(x interface{}) *bool
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceConfig {
 	Connection: interface{},
@@ -899,12 +899,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 	Name: *string,
 	Type: *string,
 	Description: *string,
-	DynamodbConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig,
-	ElasticsearchConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig,
-	HttpConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfig,
+	DynamodbConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceDynamodbConfig,
+	ElasticsearchConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceElasticsearchConfig,
+	HttpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceHttpConfig,
 	Id: *string,
-	LambdaConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceLambdaConfig,
-	RelationalDatabaseConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig,
+	LambdaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceLambdaConfig,
+	RelationalDatabaseConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig,
 	ServiceRoleArn: *string,
 }
 ```
@@ -1154,11 +1154,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceDynamodbConfig {
 	TableName: *string,
-	DeltaSyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig,
+	DeltaSyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig,
 	Region: *string,
 	UseCallerCredentials: interface{},
 	Versioned: interface{},
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig {
 	DeltaSyncTableName: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceElasticsearchConfig {
 	Endpoint: *string,
@@ -1350,11 +1350,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfig {
 	Endpoint: *string,
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig,
 }
 ```
 
@@ -1398,11 +1398,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfigAuthorizationConfig {
 	AuthorizationType: *string,
-	AwsIamConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig,
+	AwsIamConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig,
 }
 ```
 
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig {
 	SigningRegion: *string,
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceLambdaConfig {
 	FunctionArn: *string,
@@ -1524,10 +1524,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceRelationalDatabaseConfig {
-	HttpEndpointConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig,
+	HttpEndpointConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig,
 	SourceType: *string,
 }
 ```
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig {
 	AwsSecretStoreArn: *string,
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() AppsyncDatasourceDynamodbConfigDeltaSyncConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceDynamodbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceDynamodbConfigOutputReference
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() AppsyncDatasourceDynamodbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceElasticsearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceElasticsearchConfigOutputReference
 ```
@@ -2691,7 +2691,7 @@ func InternalValue() AppsyncDatasourceElasticsearchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference
 ```
@@ -2998,7 +2998,7 @@ func InternalValue() AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference
 ```
@@ -3318,7 +3318,7 @@ func InternalValue() AppsyncDatasourceHttpConfigAuthorizationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigOutputReference
 ```
@@ -3631,7 +3631,7 @@ func InternalValue() AppsyncDatasourceHttpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceLambdaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceLambdaConfigOutputReference
 ```
@@ -3902,7 +3902,7 @@ func InternalValue() AppsyncDatasourceLambdaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference
 ```
@@ -4282,7 +4282,7 @@ func InternalValue() AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceRelationalDatabaseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceRelationalDatabaseConfigOutputReference
 ```
