@@ -158,7 +158,7 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_dedicated_ip_assignment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

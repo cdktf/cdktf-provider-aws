@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.NewDataAwsServicecatalogProduct(scope Construct, id *string, config DataAwsServicecatalogProductConfig) DataAwsServicecatalogProduct
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 &dataawsservicecatalogproduct.DataAwsServicecatalogProductConfig {
 	Connection: interface{},
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogprod
 	Id: *string,
 	AcceptLanguage: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts,
 }
 ```
 
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 &dataawsservicecatalogproduct.DataAwsServicecatalogProductTimeouts {
 	Read: *string,
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.NewDataAwsServicecatalogProductTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogProductTimeoutsOutputReference
 ```

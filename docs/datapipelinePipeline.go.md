@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/datapipeline_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipeline"
 
 datapipelinepipeline.NewDatapipelinePipeline(scope Construct, id *string, config DatapipelinePipelineConfig) DatapipelinePipeline
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datapipelinepipeline.DatapipelinePipeline_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipeline"
 
 &datapipelinepipeline.DatapipelinePipelineConfig {
 	Connection: interface{},

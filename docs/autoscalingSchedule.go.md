@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_sc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalingschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingschedule"
 
 autoscalingschedule.NewAutoscalingSchedule(scope Construct, id *string, config AutoscalingScheduleConfig) AutoscalingSchedule
 ```
@@ -322,7 +322,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalingschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingschedule"
 
 autoscalingschedule.AutoscalingSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalingschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingschedule"
 
 autoscalingschedule.AutoscalingSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ autoscalingschedule.AutoscalingSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalingschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingschedule"
 
 autoscalingschedule.AutoscalingSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingSchedule.AutoscalingScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalingschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingschedule"
 
 &autoscalingschedule.AutoscalingScheduleConfig {
 	Connection: interface{},

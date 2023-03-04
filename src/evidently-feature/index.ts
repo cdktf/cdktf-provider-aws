@@ -550,7 +550,7 @@ export class EvidentlyFeature extends cdktf.TerraformResource {
       terraformResourceType: 'aws_evidently_feature',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -58,6 +58,12 @@ export interface TransferUserConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user#posix_profile TransferUser#posix_profile}
   */
   readonly posixProfile?: TransferUserPosixProfile;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user#timeouts TransferUser#timeouts}
+  */
+  readonly timeouts?: TransferUserTimeouts;
 }
 export interface TransferUserHomeDirectoryMappings {
   /**
@@ -290,6 +296,81 @@ export class TransferUserPosixProfileOutputReference extends cdktf.ComplexObject
     return this._uid;
   }
 }
+export interface TransferUserTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user#delete TransferUser#delete}
+  */
+  readonly delete?: string;
+}
+
+export function transferUserTimeoutsToTerraform(struct?: TransferUserTimeoutsOutputReference | TransferUserTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+export class TransferUserTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferUserTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferUserTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._delete = value.delete;
+    }
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_user aws_transfer_user}
@@ -317,7 +398,7 @@ export class TransferUser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -339,6 +420,7 @@ export class TransferUser extends cdktf.TerraformResource {
     this._userName = config.userName;
     this._homeDirectoryMappings.internalValue = config.homeDirectoryMappings;
     this._posixProfile.internalValue = config.posixProfile;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -517,6 +599,22 @@ export class TransferUser extends cdktf.TerraformResource {
     return this._posixProfile.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new TransferUserTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: TransferUserTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -534,6 +632,7 @@ export class TransferUser extends cdktf.TerraformResource {
       user_name: cdktf.stringToTerraform(this._userName),
       home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform, true)(this._homeDirectoryMappings.internalValue),
       posix_profile: transferUserPosixProfileToTerraform(this._posixProfile.internalValue),
+      timeouts: transferUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

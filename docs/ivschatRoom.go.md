@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivschat_room a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivschatRoom.IvschatRoom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.NewIvschatRoom(scope Construct, id *string, config IvschatRoomConfig) IvschatRoom
 ```
@@ -355,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ivschatRoom.IvschatRoom.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.IvschatRoom_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ivschatRoom.IvschatRoom.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.IvschatRoom_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ ivschatroom.IvschatRoom_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ivschatRoom.IvschatRoom.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.IvschatRoom_IsTerraformResource(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivschatRoom.IvschatRoomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 &ivschatroom.IvschatRoomConfig {
 	Connection: interface{},
@@ -823,11 +823,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
 	LoggingConfigurationIdentifiers: *[]*string,
 	MaximumMessageLength: *f64,
 	MaximumMessageRatePerSecond: *f64,
-	MessageReviewHandler: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivschatRoom.IvschatRoomMessageReviewHandler,
+	MessageReviewHandler: github.com/cdktf/cdktf-provider-aws-go/aws.ivschatRoom.IvschatRoomMessageReviewHandler,
 	Name: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivschatRoom.IvschatRoomTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ivschatRoom.IvschatRoomTimeouts,
 }
 ```
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 &ivschatroom.IvschatRoomMessageReviewHandler {
 	FallbackResult: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 &ivschatroom.IvschatRoomTimeouts {
 	Create: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.NewIvschatRoomMessageReviewHandlerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvschatRoomMessageReviewHandlerOutputReference
 ```
@@ -1459,7 +1459,7 @@ func InternalValue() IvschatRoomMessageReviewHandler
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschatroom"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschatroom"
 
 ivschatroom.NewIvschatRoomTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvschatRoomTimeoutsOutputReference
 ```

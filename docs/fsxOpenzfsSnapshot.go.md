@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_sn
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 fsxopenzfssnapshot.NewFsxOpenzfsSnapshot(scope Construct, id *string, config FsxOpenzfsSnapshotConfig) FsxOpenzfsSnapshot
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 fsxopenzfssnapshot.FsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 fsxopenzfssnapshot.FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ fsxopenzfssnapshot.FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 fsxopenzfssnapshot.FsxOpenzfsSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 &fsxopenzfssnapshot.FsxOpenzfsSnapshotConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeouts,
 }
 ```
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 &fsxopenzfssnapshot.FsxOpenzfsSnapshotTimeouts {
 	Create: *string,
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfssnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfssnapshot"
 
 fsxopenzfssnapshot.NewFsxOpenzfsSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsSnapshotTimeoutsOutputReference
 ```

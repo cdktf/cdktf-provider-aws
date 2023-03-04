@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisStream.KinesisStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.NewKinesisStream(scope Construct, id *string, config KinesisStreamConfig) KinesisStream
 ```
@@ -376,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kinesisStream.KinesisStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.KinesisStream_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kinesisStream.KinesisStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.KinesisStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ kinesisstream.KinesisStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kinesisStream.KinesisStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.KinesisStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisStream.KinesisStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 &kinesisstream.KinesisStreamConfig {
 	Connection: interface{},
@@ -926,10 +926,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
 	RetentionPeriod: *f64,
 	ShardCount: *f64,
 	ShardLevelMetrics: *[]*string,
-	StreamModeDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v12.kinesisStream.KinesisStreamStreamModeDetails,
+	StreamModeDetails: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisStream.KinesisStreamStreamModeDetails,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.kinesisStream.KinesisStreamTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisStream.KinesisStreamTimeouts,
 }
 ```
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 &kinesisstream.KinesisStreamStreamModeDetails {
 	StreamMode: *string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisStream.KinesisStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 &kinesisstream.KinesisStreamTimeouts {
 	Create: *string,
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.NewKinesisStreamStreamModeDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisStreamStreamModeDetailsOutputReference
 ```
@@ -1563,7 +1563,7 @@ func InternalValue() KinesisStreamStreamModeDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisStream.KinesisStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisstream"
 
 kinesisstream.NewKinesisStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisStreamTimeoutsOutputReference
 ```

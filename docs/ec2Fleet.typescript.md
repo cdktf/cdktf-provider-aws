@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putFleetInstanceSet">putFleetInstanceSet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putLaunchTemplateConfig">putLaunchTemplateConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putOnDemandOptions">putOnDemandOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putSpotOptions">putSpotOptions</a></code> | *No description.* |
@@ -73,6 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetContext">resetContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetExcessCapacityTerminationPolicy">resetExcessCapacityTerminationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFleetInstanceSet">resetFleetInstanceSet</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFleetState">resetFleetState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFulfilledCapacity">resetFulfilledCapacity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFulfilledOnDemandCapacity">resetFulfilledOnDemandCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetOnDemandOptions">resetOnDemandOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetReplaceUnhealthyInstances">resetReplaceUnhealthyInstances</a></code> | *No description.* |
@@ -83,6 +88,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetTerminateInstancesWithExpiration">resetTerminateInstancesWithExpiration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetValidFrom">resetValidFrom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetValidUntil">resetValidUntil</a></code> | *No description.* |
 
 ---
 
@@ -270,15 +277,27 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `putFleetInstanceSet` <a name="putFleetInstanceSet" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putFleetInstanceSet"></a>
+
+```typescript
+public putFleetInstanceSet(value: IResolvable | Ec2FleetFleetInstanceSet[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putFleetInstanceSet.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]
+
+---
+
 ##### `putLaunchTemplateConfig` <a name="putLaunchTemplateConfig" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putLaunchTemplateConfig"></a>
 
 ```typescript
-public putLaunchTemplateConfig(value: Ec2FleetLaunchTemplateConfig): void
+public putLaunchTemplateConfig(value: IResolvable | Ec2FleetLaunchTemplateConfig[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.putLaunchTemplateConfig.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]
 
 ---
 
@@ -342,6 +361,30 @@ public resetContext(): void
 public resetExcessCapacityTerminationPolicy(): void
 ```
 
+##### `resetFleetInstanceSet` <a name="resetFleetInstanceSet" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFleetInstanceSet"></a>
+
+```typescript
+public resetFleetInstanceSet(): void
+```
+
+##### `resetFleetState` <a name="resetFleetState" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFleetState"></a>
+
+```typescript
+public resetFleetState(): void
+```
+
+##### `resetFulfilledCapacity` <a name="resetFulfilledCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFulfilledCapacity"></a>
+
+```typescript
+public resetFulfilledCapacity(): void
+```
+
+##### `resetFulfilledOnDemandCapacity` <a name="resetFulfilledOnDemandCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetFulfilledOnDemandCapacity"></a>
+
+```typescript
+public resetFulfilledOnDemandCapacity(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetId"></a>
 
 ```typescript
@@ -400,6 +443,18 @@ public resetTimeouts(): void
 
 ```typescript
 public resetType(): void
+```
+
+##### `resetValidFrom` <a name="resetValidFrom" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetValidFrom"></a>
+
+```typescript
+public resetValidFrom(): void
+```
+
+##### `resetValidUntil` <a name="resetValidUntil" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.resetValidUntil"></a>
+
+```typescript
+public resetValidUntil(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -491,15 +546,20 @@ ec2Fleet.Ec2Fleet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfig">launchTemplateConfig</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference">Ec2FleetLaunchTemplateConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetInstanceSet">fleetInstanceSet</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList">Ec2FleetFleetInstanceSetList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfig">launchTemplateConfig</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList">Ec2FleetLaunchTemplateConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.onDemandOptions">onDemandOptions</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference">Ec2FleetOnDemandOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.spotOptions">spotOptions</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference">Ec2FleetSpotOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.targetCapacitySpecification">targetCapacitySpecification</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference">Ec2FleetTargetCapacitySpecificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeoutsOutputReference">Ec2FleetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.contextInput">contextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.excessCapacityTerminationPolicyInput">excessCapacityTerminationPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetInstanceSetInput">fleetInstanceSetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetStateInput">fleetStateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledCapacityInput">fulfilledCapacityInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledOnDemandCapacityInput">fulfilledOnDemandCapacityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfigInput">launchTemplateConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfigInput">launchTemplateConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.onDemandOptionsInput">onDemandOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions">Ec2FleetOnDemandOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.replaceUnhealthyInstancesInput">replaceUnhealthyInstancesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.spotOptionsInput">spotOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptions">Ec2FleetSpotOptions</a></code> | *No description.* |
@@ -510,8 +570,13 @@ ec2Fleet.Ec2Fleet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.terminateInstancesWithExpirationInput">terminateInstancesWithExpirationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeouts">Ec2FleetTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validFromInput">validFromInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validUntilInput">validUntilInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.context">context</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.excessCapacityTerminationPolicy">excessCapacityTerminationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetState">fleetState</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledCapacity">fulfilledCapacity</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledOnDemandCapacity">fulfilledOnDemandCapacity</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.replaceUnhealthyInstances">replaceUnhealthyInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -519,6 +584,8 @@ ec2Fleet.Ec2Fleet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.terminateInstances">terminateInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.terminateInstancesWithExpiration">terminateInstancesWithExpiration</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validFrom">validFrom</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validUntil">validUntil</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -674,13 +741,23 @@ public readonly arn: string;
 
 ---
 
+##### `fleetInstanceSet`<sup>Required</sup> <a name="fleetInstanceSet" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetInstanceSet"></a>
+
+```typescript
+public readonly fleetInstanceSet: Ec2FleetFleetInstanceSetList;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList">Ec2FleetFleetInstanceSetList</a>
+
+---
+
 ##### `launchTemplateConfig`<sup>Required</sup> <a name="launchTemplateConfig" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfig"></a>
 
 ```typescript
-public readonly launchTemplateConfig: Ec2FleetLaunchTemplateConfigOutputReference;
+public readonly launchTemplateConfig: Ec2FleetLaunchTemplateConfigList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference">Ec2FleetLaunchTemplateConfigOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList">Ec2FleetLaunchTemplateConfigList</a>
 
 ---
 
@@ -744,6 +821,46 @@ public readonly excessCapacityTerminationPolicyInput: string;
 
 ---
 
+##### `fleetInstanceSetInput`<sup>Optional</sup> <a name="fleetInstanceSetInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetInstanceSetInput"></a>
+
+```typescript
+public readonly fleetInstanceSetInput: IResolvable | Ec2FleetFleetInstanceSet[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]
+
+---
+
+##### `fleetStateInput`<sup>Optional</sup> <a name="fleetStateInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetStateInput"></a>
+
+```typescript
+public readonly fleetStateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fulfilledCapacityInput`<sup>Optional</sup> <a name="fulfilledCapacityInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledCapacityInput"></a>
+
+```typescript
+public readonly fulfilledCapacityInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `fulfilledOnDemandCapacityInput`<sup>Optional</sup> <a name="fulfilledOnDemandCapacityInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledOnDemandCapacityInput"></a>
+
+```typescript
+public readonly fulfilledOnDemandCapacityInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.idInput"></a>
 
 ```typescript
@@ -757,10 +874,10 @@ public readonly idInput: string;
 ##### `launchTemplateConfigInput`<sup>Optional</sup> <a name="launchTemplateConfigInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.launchTemplateConfigInput"></a>
 
 ```typescript
-public readonly launchTemplateConfigInput: Ec2FleetLaunchTemplateConfig;
+public readonly launchTemplateConfigInput: IResolvable | Ec2FleetLaunchTemplateConfig[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]
 
 ---
 
@@ -864,6 +981,26 @@ public readonly typeInput: string;
 
 ---
 
+##### `validFromInput`<sup>Optional</sup> <a name="validFromInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validFromInput"></a>
+
+```typescript
+public readonly validFromInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `validUntilInput`<sup>Optional</sup> <a name="validUntilInput" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validUntilInput"></a>
+
+```typescript
+public readonly validUntilInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `context`<sup>Required</sup> <a name="context" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.context"></a>
 
 ```typescript
@@ -881,6 +1018,36 @@ public readonly excessCapacityTerminationPolicy: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `fleetState`<sup>Required</sup> <a name="fleetState" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fleetState"></a>
+
+```typescript
+public readonly fleetState: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fulfilledCapacity`<sup>Required</sup> <a name="fulfilledCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledCapacity"></a>
+
+```typescript
+public readonly fulfilledCapacity: number;
+```
+
+- *Type:* number
+
+---
+
+##### `fulfilledOnDemandCapacity`<sup>Required</sup> <a name="fulfilledOnDemandCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.fulfilledOnDemandCapacity"></a>
+
+```typescript
+public readonly fulfilledOnDemandCapacity: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -954,6 +1121,26 @@ public readonly type: string;
 
 ---
 
+##### `validFrom`<sup>Required</sup> <a name="validFrom" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validFrom"></a>
+
+```typescript
+public readonly validFrom: string;
+```
+
+- *Type:* string
+
+---
+
+##### `validUntil`<sup>Required</sup> <a name="validUntil" id="@cdktf/provider-aws.ec2Fleet.Ec2Fleet.property.validUntil"></a>
+
+```typescript
+public readonly validUntil: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -995,10 +1182,14 @@ const ec2FleetConfig: ec2Fleet.Ec2FleetConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.launchTemplateConfig">launchTemplateConfig</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a></code> | launch_template_config block. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.launchTemplateConfig">launchTemplateConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]</code> | launch_template_config block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.targetCapacitySpecification">targetCapacitySpecification</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecification">Ec2FleetTargetCapacitySpecification</a></code> | target_capacity_specification block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.context">context</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#context Ec2Fleet#context}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.excessCapacityTerminationPolicy">excessCapacityTerminationPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fleetInstanceSet">fleetInstanceSet</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]</code> | fleet_instance_set block. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fleetState">fleetState</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fleet_state Ec2Fleet#fleet_state}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fulfilledCapacity">fulfilledCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_capacity Ec2Fleet#fulfilled_capacity}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fulfilledOnDemandCapacity">fulfilledOnDemandCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_on_demand_capacity Ec2Fleet#fulfilled_on_demand_capacity}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#id Ec2Fleet#id}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.onDemandOptions">onDemandOptions</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions">Ec2FleetOnDemandOptions</a></code> | on_demand_options block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.replaceUnhealthyInstances">replaceUnhealthyInstances</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replace_unhealthy_instances Ec2Fleet#replace_unhealthy_instances}. |
@@ -1009,6 +1200,8 @@ const ec2FleetConfig: ec2Fleet.Ec2FleetConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.terminateInstancesWithExpiration">terminateInstancesWithExpiration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#terminate_instances_with_expiration Ec2Fleet#terminate_instances_with_expiration}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeouts">Ec2FleetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#type Ec2Fleet#type}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.validFrom">validFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_from Ec2Fleet#valid_from}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.validUntil">validUntil</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_until Ec2Fleet#valid_until}. |
 
 ---
 
@@ -1085,10 +1278,10 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ##### `launchTemplateConfig`<sup>Required</sup> <a name="launchTemplateConfig" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.launchTemplateConfig"></a>
 
 ```typescript
-public readonly launchTemplateConfig: Ec2FleetLaunchTemplateConfig;
+public readonly launchTemplateConfig: IResolvable | Ec2FleetLaunchTemplateConfig[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]
 
 launch_template_config block.
 
@@ -1131,6 +1324,56 @@ public readonly excessCapacityTerminationPolicy: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}.
+
+---
+
+##### `fleetInstanceSet`<sup>Optional</sup> <a name="fleetInstanceSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fleetInstanceSet"></a>
+
+```typescript
+public readonly fleetInstanceSet: IResolvable | Ec2FleetFleetInstanceSet[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]
+
+fleet_instance_set block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fleet_instance_set Ec2Fleet#fleet_instance_set}
+
+---
+
+##### `fleetState`<sup>Optional</sup> <a name="fleetState" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fleetState"></a>
+
+```typescript
+public readonly fleetState: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fleet_state Ec2Fleet#fleet_state}.
+
+---
+
+##### `fulfilledCapacity`<sup>Optional</sup> <a name="fulfilledCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fulfilledCapacity"></a>
+
+```typescript
+public readonly fulfilledCapacity: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_capacity Ec2Fleet#fulfilled_capacity}.
+
+---
+
+##### `fulfilledOnDemandCapacity`<sup>Optional</sup> <a name="fulfilledOnDemandCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.fulfilledOnDemandCapacity"></a>
+
+```typescript
+public readonly fulfilledOnDemandCapacity: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_on_demand_capacity Ec2Fleet#fulfilled_on_demand_capacity}.
 
 ---
 
@@ -1263,6 +1506,99 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `validFrom`<sup>Optional</sup> <a name="validFrom" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.validFrom"></a>
+
+```typescript
+public readonly validFrom: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_from Ec2Fleet#valid_from}.
+
+---
+
+##### `validUntil`<sup>Optional</sup> <a name="validUntil" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig.property.validUntil"></a>
+
+```typescript
+public readonly validUntil: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_until Ec2Fleet#valid_until}.
+
+---
+
+### Ec2FleetFleetInstanceSet <a name="Ec2FleetFleetInstanceSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+const ec2FleetFleetInstanceSet: ec2Fleet.Ec2FleetFleetInstanceSet = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.instanceIds">instanceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_ids Ec2Fleet#instance_ids}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.instanceType">instanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_type Ec2Fleet#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.lifecycle">lifecycle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#lifecycle Ec2Fleet#lifecycle}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.platform">platform</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#platform Ec2Fleet#platform}. |
+
+---
+
+##### `instanceIds`<sup>Optional</sup> <a name="instanceIds" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.instanceIds"></a>
+
+```typescript
+public readonly instanceIds: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_ids Ec2Fleet#instance_ids}.
+
+---
+
+##### `instanceType`<sup>Optional</sup> <a name="instanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.instanceType"></a>
+
+```typescript
+public readonly instanceType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_type Ec2Fleet#instance_type}.
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#lifecycle Ec2Fleet#lifecycle}.
+
+---
+
+##### `platform`<sup>Optional</sup> <a name="platform" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet.property.platform"></a>
+
+```typescript
+public readonly platform: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#platform Ec2Fleet#platform}.
+
+---
+
 ### Ec2FleetLaunchTemplateConfig <a name="Ec2FleetLaunchTemplateConfig" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig.Initializer"></a>
@@ -1282,7 +1618,7 @@ const ec2FleetLaunchTemplateConfig: ec2Fleet.Ec2FleetLaunchTemplateConfig = { ..
 
 ---
 
-##### `launchTemplateSpecification`<sup>Required</sup> <a name="launchTemplateSpecification" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig.property.launchTemplateSpecification"></a>
+##### `launchTemplateSpecification`<sup>Optional</sup> <a name="launchTemplateSpecification" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig.property.launchTemplateSpecification"></a>
 
 ```typescript
 public readonly launchTemplateSpecification: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification;
@@ -1497,6 +1833,7 @@ const ec2FleetLaunchTemplateConfigOverrideInstanceRequirements: ec2Fleet.Ec2Flee
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.acceleratorNames">acceleratorNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#accelerator_names Ec2Fleet#accelerator_names}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.acceleratorTotalMemoryMib">acceleratorTotalMemoryMib</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib</a></code> | accelerator_total_memory_mib block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.acceleratorTypes">acceleratorTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#accelerator_types Ec2Fleet#accelerator_types}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.allowedInstanceTypes">allowedInstanceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allowed_instance_types Ec2Fleet#allowed_instance_types}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.bareMetal">bareMetal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#bare_metal Ec2Fleet#bare_metal}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.baselineEbsBandwidthMbps">baselineEbsBandwidthMbps</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps</a></code> | baseline_ebs_bandwidth_mbps block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.burstablePerformance">burstablePerformance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#burstable_performance Ec2Fleet#burstable_performance}. |
@@ -1506,6 +1843,7 @@ const ec2FleetLaunchTemplateConfigOverrideInstanceRequirements: ec2Fleet.Ec2Flee
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.localStorage">localStorage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#local_storage Ec2Fleet#local_storage}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.localStorageTypes">localStorageTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#local_storage_types Ec2Fleet#local_storage_types}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.memoryGibPerVcpu">memoryGibPerVcpu</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu</a></code> | memory_gib_per_vcpu block. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.networkBandwidthGbps">networkBandwidthGbps</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a></code> | network_bandwidth_gbps block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.networkInterfaceCount">networkInterfaceCount</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount</a></code> | network_interface_count block. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.onDemandMaxPricePercentageOverLowestPrice">onDemandMaxPricePercentageOverLowestPrice</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#on_demand_max_price_percentage_over_lowest_price Ec2Fleet#on_demand_max_price_percentage_over_lowest_price}. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.requireHibernateSupport">requireHibernateSupport</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#require_hibernate_support Ec2Fleet#require_hibernate_support}. |
@@ -1603,6 +1941,18 @@ public readonly acceleratorTypes: string[];
 - *Type:* string[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#accelerator_types Ec2Fleet#accelerator_types}.
+
+---
+
+##### `allowedInstanceTypes`<sup>Optional</sup> <a name="allowedInstanceTypes" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.allowedInstanceTypes"></a>
+
+```typescript
+public readonly allowedInstanceTypes: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allowed_instance_types Ec2Fleet#allowed_instance_types}.
 
 ---
 
@@ -1715,6 +2065,20 @@ public readonly memoryGibPerVcpu: Ec2FleetLaunchTemplateConfigOverrideInstanceRe
 memory_gib_per_vcpu block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#memory_gib_per_vcpu Ec2Fleet#memory_gib_per_vcpu}
+
+---
+
+##### `networkBandwidthGbps`<sup>Optional</sup> <a name="networkBandwidthGbps" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements.property.networkBandwidthGbps"></a>
+
+```typescript
+public readonly networkBandwidthGbps: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a>
+
+network_bandwidth_gbps block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#network_bandwidth_gbps Ec2Fleet#network_bandwidth_gbps}
 
 ---
 
@@ -1997,6 +2361,49 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+### Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps <a name="Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+const ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps: ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.property.max">max</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#max Ec2Fleet#max}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.property.min">min</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#min Ec2Fleet#min}. |
+
+---
+
+##### `max`<sup>Optional</sup> <a name="max" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.property.max"></a>
+
+```typescript
+public readonly max: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#max Ec2Fleet#max}.
+
+---
+
+##### `min`<sup>Optional</sup> <a name="min" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps.property.min"></a>
+
+```typescript
+public readonly min: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#min Ec2Fleet#min}.
+
+---
+
 ### Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount <a name="Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
@@ -2141,6 +2548,10 @@ const ec2FleetOnDemandOptions: ec2Fleet.Ec2FleetOnDemandOptions = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allocation_strategy Ec2Fleet#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.maxTotalPrice">maxTotalPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#max_total_price Ec2Fleet#max_total_price}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.minTargetCapacity">minTargetCapacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#min_target_capacity Ec2Fleet#min_target_capacity}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.singleAvailabilityZone">singleAvailabilityZone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#single_availability_zone Ec2Fleet#single_availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.singleInstanceType">singleInstanceType</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#single_instance_type Ec2Fleet#single_instance_type}. |
 
 ---
 
@@ -2153,6 +2564,54 @@ public readonly allocationStrategy: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allocation_strategy Ec2Fleet#allocation_strategy}.
+
+---
+
+##### `maxTotalPrice`<sup>Optional</sup> <a name="maxTotalPrice" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.maxTotalPrice"></a>
+
+```typescript
+public readonly maxTotalPrice: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#max_total_price Ec2Fleet#max_total_price}.
+
+---
+
+##### `minTargetCapacity`<sup>Optional</sup> <a name="minTargetCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.minTargetCapacity"></a>
+
+```typescript
+public readonly minTargetCapacity: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#min_target_capacity Ec2Fleet#min_target_capacity}.
+
+---
+
+##### `singleAvailabilityZone`<sup>Optional</sup> <a name="singleAvailabilityZone" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.singleAvailabilityZone"></a>
+
+```typescript
+public readonly singleAvailabilityZone: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#single_availability_zone Ec2Fleet#single_availability_zone}.
+
+---
+
+##### `singleInstanceType`<sup>Optional</sup> <a name="singleInstanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions.property.singleInstanceType"></a>
+
+```typescript
+public readonly singleInstanceType: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#single_instance_type Ec2Fleet#single_instance_type}.
 
 ---
 
@@ -2274,6 +2733,7 @@ const ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance: ec2Fleet.Ec2Fle
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance.property.replacementStrategy">replacementStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replacement_strategy Ec2Fleet#replacement_strategy}. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance.property.terminationDelay">terminationDelay</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#termination_delay Ec2Fleet#termination_delay}. |
 
 ---
 
@@ -2286,6 +2746,18 @@ public readonly replacementStrategy: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replacement_strategy Ec2Fleet#replacement_strategy}.
+
+---
+
+##### `terminationDelay`<sup>Optional</sup> <a name="terminationDelay" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance.property.terminationDelay"></a>
+
+```typescript
+public readonly terminationDelay: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#termination_delay Ec2Fleet#termination_delay}.
 
 ---
 
@@ -2428,6 +2900,532 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### Ec2FleetFleetInstanceSetList <a name="Ec2FleetFleetInstanceSetList" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+new ec2Fleet.Ec2FleetFleetInstanceSetList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.get"></a>
+
+```typescript
+public get(index: number): Ec2FleetFleetInstanceSetOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Ec2FleetFleetInstanceSet[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a>[]
+
+---
+
+
+### Ec2FleetFleetInstanceSetOutputReference <a name="Ec2FleetFleetInstanceSetOutputReference" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+new ec2Fleet.Ec2FleetFleetInstanceSetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetInstanceIds">resetInstanceIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetInstanceType">resetInstanceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetLifecycle">resetLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetPlatform">resetPlatform</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetInstanceIds` <a name="resetInstanceIds" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetInstanceIds"></a>
+
+```typescript
+public resetInstanceIds(): void
+```
+
+##### `resetInstanceType` <a name="resetInstanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetInstanceType"></a>
+
+```typescript
+public resetInstanceType(): void
+```
+
+##### `resetLifecycle` <a name="resetLifecycle" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetLifecycle"></a>
+
+```typescript
+public resetLifecycle(): void
+```
+
+##### `resetPlatform` <a name="resetPlatform" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.resetPlatform"></a>
+
+```typescript
+public resetPlatform(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceIdsInput">instanceIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceTypeInput">instanceTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.lifecycleInput">lifecycleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.platformInput">platformInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceIds">instanceIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceType">instanceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.lifecycle">lifecycle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.platform">platform</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceIdsInput`<sup>Optional</sup> <a name="instanceIdsInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceIdsInput"></a>
+
+```typescript
+public readonly instanceIdsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `instanceTypeInput`<sup>Optional</sup> <a name="instanceTypeInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceTypeInput"></a>
+
+```typescript
+public readonly instanceTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lifecycleInput`<sup>Optional</sup> <a name="lifecycleInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.lifecycleInput"></a>
+
+```typescript
+public readonly lifecycleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `platformInput`<sup>Optional</sup> <a name="platformInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.platformInput"></a>
+
+```typescript
+public readonly platformInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceIds`<sup>Required</sup> <a name="instanceIds" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceIds"></a>
+
+```typescript
+public readonly instanceIds: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `instanceType`<sup>Required</sup> <a name="instanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.instanceType"></a>
+
+```typescript
+public readonly instanceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lifecycle`<sup>Required</sup> <a name="lifecycle" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `platform`<sup>Required</sup> <a name="platform" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.platform"></a>
+
+```typescript
+public readonly platform: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Ec2FleetFleetInstanceSet | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet">Ec2FleetFleetInstanceSet</a> | cdktf.IResolvable
+
+---
+
 
 ### Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference <a name="Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference"></a>
 
@@ -2758,6 +3756,149 @@ public readonly internalValue: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecifi
 ---
 
 
+### Ec2FleetLaunchTemplateConfigList <a name="Ec2FleetLaunchTemplateConfigList" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+new ec2Fleet.Ec2FleetLaunchTemplateConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.get"></a>
+
+```typescript
+public get(index: number): Ec2FleetLaunchTemplateConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | Ec2FleetLaunchTemplateConfig[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>[]
+
+---
+
+
 ### Ec2FleetLaunchTemplateConfigOutputReference <a name="Ec2FleetLaunchTemplateConfigOutputReference" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer"></a>
@@ -2765,13 +3906,15 @@ public readonly internalValue: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecifi
 ```typescript
 import { ec2Fleet } from '@cdktf/provider-aws'
 
-new ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2788,6 +3931,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2810,6 +3969,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.putLaunchTemplateSpecification">putLaunchTemplateSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.putOverride">putOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.resetLaunchTemplateSpecification">resetLaunchTemplateSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.resetOverride">resetOverride</a></code> | *No description.* |
 
 ---
@@ -2988,6 +4148,12 @@ public putOverride(value: IResolvable | Ec2FleetLaunchTemplateConfigOverride[]):
 
 ---
 
+##### `resetLaunchTemplateSpecification` <a name="resetLaunchTemplateSpecification" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.resetLaunchTemplateSpecification"></a>
+
+```typescript
+public resetLaunchTemplateSpecification(): void
+```
+
 ##### `resetOverride` <a name="resetOverride" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.resetOverride"></a>
 
 ```typescript
@@ -3005,7 +4171,7 @@ public resetOverride(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.override">override</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList">Ec2FleetLaunchTemplateConfigOverrideList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.launchTemplateSpecificationInput">launchTemplateSpecificationInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification">Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.overrideInput">overrideInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverride">Ec2FleetLaunchTemplateConfigOverride</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a> \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -3076,10 +4242,10 @@ public readonly overrideInput: IResolvable | Ec2FleetLaunchTemplateConfigOverrid
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: Ec2FleetLaunchTemplateConfig;
+public readonly internalValue: Ec2FleetLaunchTemplateConfig | IResolvable;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a>
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig">Ec2FleetLaunchTemplateConfig</a> | cdktf.IResolvable
 
 ---
 
@@ -4612,6 +5778,313 @@ public readonly internalValue: Ec2FleetLaunchTemplateConfigOverrideInstanceRequi
 ---
 
 
+### Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference <a name="Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
+
+```typescript
+import { ec2Fleet } from '@cdktf/provider-aws'
+
+new ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resetMax">resetMax</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resetMin">resetMin</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMax` <a name="resetMax" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resetMax"></a>
+
+```typescript
+public resetMax(): void
+```
+
+##### `resetMin` <a name="resetMin" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.resetMin"></a>
+
+```typescript
+public resetMin(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.maxInput">maxInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.minInput">minInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.max">max</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.min">min</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxInput`<sup>Optional</sup> <a name="maxInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.maxInput"></a>
+
+```typescript
+public readonly maxInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `minInput`<sup>Optional</sup> <a name="minInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.minInput"></a>
+
+```typescript
+public readonly minInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `max`<sup>Required</sup> <a name="max" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.max"></a>
+
+```typescript
+public readonly max: number;
+```
+
+- *Type:* number
+
+---
+
+##### `min`<sup>Required</sup> <a name="min" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.min"></a>
+
+```typescript
+public readonly min: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a>
+
+---
+
+
 ### Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference <a name="Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
@@ -4974,6 +6447,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putBaselineEbsBandwidthMbps">putBaselineEbsBandwidthMbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putMemoryGibPerVcpu">putMemoryGibPerVcpu</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putMemoryMib">putMemoryMib</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putNetworkBandwidthGbps">putNetworkBandwidthGbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putNetworkInterfaceCount">putNetworkInterfaceCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putTotalLocalStorageGb">putTotalLocalStorageGb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putVcpuCount">putVcpuCount</a></code> | *No description.* |
@@ -4982,6 +6456,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetAcceleratorNames">resetAcceleratorNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetAcceleratorTotalMemoryMib">resetAcceleratorTotalMemoryMib</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetAcceleratorTypes">resetAcceleratorTypes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetAllowedInstanceTypes">resetAllowedInstanceTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetBareMetal">resetBareMetal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetBaselineEbsBandwidthMbps">resetBaselineEbsBandwidthMbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetBurstablePerformance">resetBurstablePerformance</a></code> | *No description.* |
@@ -4991,6 +6466,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetLocalStorage">resetLocalStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetLocalStorageTypes">resetLocalStorageTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetMemoryGibPerVcpu">resetMemoryGibPerVcpu</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetNetworkBandwidthGbps">resetNetworkBandwidthGbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetNetworkInterfaceCount">resetNetworkInterfaceCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetOnDemandMaxPricePercentageOverLowestPrice">resetOnDemandMaxPricePercentageOverLowestPrice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetRequireHibernateSupport">resetRequireHibernateSupport</a></code> | *No description.* |
@@ -5209,6 +6685,18 @@ public putMemoryMib(value: Ec2FleetLaunchTemplateConfigOverrideInstanceRequireme
 
 ---
 
+##### `putNetworkBandwidthGbps` <a name="putNetworkBandwidthGbps" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putNetworkBandwidthGbps"></a>
+
+```typescript
+public putNetworkBandwidthGbps(value: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putNetworkBandwidthGbps.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a>
+
+---
+
 ##### `putNetworkInterfaceCount` <a name="putNetworkInterfaceCount" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.putNetworkInterfaceCount"></a>
 
 ```typescript
@@ -5275,6 +6763,12 @@ public resetAcceleratorTotalMemoryMib(): void
 public resetAcceleratorTypes(): void
 ```
 
+##### `resetAllowedInstanceTypes` <a name="resetAllowedInstanceTypes" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetAllowedInstanceTypes"></a>
+
+```typescript
+public resetAllowedInstanceTypes(): void
+```
+
 ##### `resetBareMetal` <a name="resetBareMetal" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetBareMetal"></a>
 
 ```typescript
@@ -5329,6 +6823,12 @@ public resetLocalStorageTypes(): void
 public resetMemoryGibPerVcpu(): void
 ```
 
+##### `resetNetworkBandwidthGbps` <a name="resetNetworkBandwidthGbps" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetNetworkBandwidthGbps"></a>
+
+```typescript
+public resetNetworkBandwidthGbps(): void
+```
+
 ##### `resetNetworkInterfaceCount` <a name="resetNetworkInterfaceCount" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.resetNetworkInterfaceCount"></a>
 
 ```typescript
@@ -5371,6 +6871,7 @@ public resetTotalLocalStorageGb(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.baselineEbsBandwidthMbps">baselineEbsBandwidthMbps</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.memoryGibPerVcpu">memoryGibPerVcpu</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.memoryMib">memoryMib</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkBandwidthGbps">networkBandwidthGbps</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkInterfaceCount">networkInterfaceCount</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.totalLocalStorageGb">totalLocalStorageGb</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGbOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.vcpuCount">vcpuCount</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference</a></code> | *No description.* |
@@ -5379,6 +6880,7 @@ public resetTotalLocalStorageGb(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorNamesInput">acceleratorNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorTotalMemoryMibInput">acceleratorTotalMemoryMibInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorTypesInput">acceleratorTypesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.allowedInstanceTypesInput">allowedInstanceTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.bareMetalInput">bareMetalInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.baselineEbsBandwidthMbpsInput">baselineEbsBandwidthMbpsInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.burstablePerformanceInput">burstablePerformanceInput</a></code> | <code>string</code> | *No description.* |
@@ -5389,6 +6891,7 @@ public resetTotalLocalStorageGb(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.localStorageTypesInput">localStorageTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.memoryGibPerVcpuInput">memoryGibPerVcpuInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.memoryMibInput">memoryMibInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkBandwidthGbpsInput">networkBandwidthGbpsInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkInterfaceCountInput">networkInterfaceCountInput</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.onDemandMaxPricePercentageOverLowestPriceInput">onDemandMaxPricePercentageOverLowestPriceInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.requireHibernateSupportInput">requireHibernateSupportInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -5398,6 +6901,7 @@ public resetTotalLocalStorageGb(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorManufacturers">acceleratorManufacturers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorNames">acceleratorNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.acceleratorTypes">acceleratorTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.allowedInstanceTypes">allowedInstanceTypes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.bareMetal">bareMetal</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.burstablePerformance">burstablePerformance</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.cpuManufacturers">cpuManufacturers</a></code> | <code>string[]</code> | *No description.* |
@@ -5486,6 +6990,16 @@ public readonly memoryMib: Ec2FleetLaunchTemplateConfigOverrideInstanceRequireme
 
 ---
 
+##### `networkBandwidthGbps`<sup>Required</sup> <a name="networkBandwidthGbps" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkBandwidthGbps"></a>
+
+```typescript
+public readonly networkBandwidthGbps: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference</a>
+
+---
+
 ##### `networkInterfaceCount`<sup>Required</sup> <a name="networkInterfaceCount" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkInterfaceCount"></a>
 
 ```typescript
@@ -5560,6 +7074,16 @@ public readonly acceleratorTotalMemoryMibInput: Ec2FleetLaunchTemplateConfigOver
 
 ```typescript
 public readonly acceleratorTypesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedInstanceTypesInput`<sup>Optional</sup> <a name="allowedInstanceTypesInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.allowedInstanceTypesInput"></a>
+
+```typescript
+public readonly allowedInstanceTypesInput: string[];
 ```
 
 - *Type:* string[]
@@ -5666,6 +7190,16 @@ public readonly memoryMibInput: Ec2FleetLaunchTemplateConfigOverrideInstanceRequ
 
 ---
 
+##### `networkBandwidthGbpsInput`<sup>Optional</sup> <a name="networkBandwidthGbpsInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkBandwidthGbpsInput"></a>
+
+```typescript
+public readonly networkBandwidthGbpsInput: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps">Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps</a>
+
+---
+
 ##### `networkInterfaceCountInput`<sup>Optional</sup> <a name="networkInterfaceCountInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.networkInterfaceCountInput"></a>
 
 ```typescript
@@ -5750,6 +7284,16 @@ public readonly acceleratorNames: string[];
 
 ```typescript
 public readonly acceleratorTypes: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedInstanceTypes`<sup>Required</sup> <a name="allowedInstanceTypes" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference.property.allowedInstanceTypes"></a>
+
+```typescript
+public readonly allowedInstanceTypes: string[];
 ```
 
 - *Type:* string[]
@@ -7151,6 +8695,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetAllocationStrategy">resetAllocationStrategy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetMaxTotalPrice">resetMaxTotalPrice</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetMinTargetCapacity">resetMinTargetCapacity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetSingleAvailabilityZone">resetSingleAvailabilityZone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetSingleInstanceType">resetSingleInstanceType</a></code> | *No description.* |
 
 ---
 
@@ -7310,6 +8858,30 @@ Returns a reversible string representation.
 public resetAllocationStrategy(): void
 ```
 
+##### `resetMaxTotalPrice` <a name="resetMaxTotalPrice" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetMaxTotalPrice"></a>
+
+```typescript
+public resetMaxTotalPrice(): void
+```
+
+##### `resetMinTargetCapacity` <a name="resetMinTargetCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetMinTargetCapacity"></a>
+
+```typescript
+public resetMinTargetCapacity(): void
+```
+
+##### `resetSingleAvailabilityZone` <a name="resetSingleAvailabilityZone" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetSingleAvailabilityZone"></a>
+
+```typescript
+public resetSingleAvailabilityZone(): void
+```
+
+##### `resetSingleInstanceType` <a name="resetSingleInstanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.resetSingleInstanceType"></a>
+
+```typescript
+public resetSingleInstanceType(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7318,7 +8890,15 @@ public resetAllocationStrategy(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.allocationStrategyInput">allocationStrategyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.maxTotalPriceInput">maxTotalPriceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.minTargetCapacityInput">minTargetCapacityInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleAvailabilityZoneInput">singleAvailabilityZoneInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleInstanceTypeInput">singleInstanceTypeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.maxTotalPrice">maxTotalPrice</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.minTargetCapacity">minTargetCapacity</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleAvailabilityZone">singleAvailabilityZone</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleInstanceType">singleInstanceType</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions">Ec2FleetOnDemandOptions</a></code> | *No description.* |
 
 ---
@@ -7357,6 +8937,46 @@ public readonly allocationStrategyInput: string;
 
 ---
 
+##### `maxTotalPriceInput`<sup>Optional</sup> <a name="maxTotalPriceInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.maxTotalPriceInput"></a>
+
+```typescript
+public readonly maxTotalPriceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minTargetCapacityInput`<sup>Optional</sup> <a name="minTargetCapacityInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.minTargetCapacityInput"></a>
+
+```typescript
+public readonly minTargetCapacityInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `singleAvailabilityZoneInput`<sup>Optional</sup> <a name="singleAvailabilityZoneInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleAvailabilityZoneInput"></a>
+
+```typescript
+public readonly singleAvailabilityZoneInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `singleInstanceTypeInput`<sup>Optional</sup> <a name="singleInstanceTypeInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleInstanceTypeInput"></a>
+
+```typescript
+public readonly singleInstanceTypeInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `allocationStrategy`<sup>Required</sup> <a name="allocationStrategy" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.allocationStrategy"></a>
 
 ```typescript
@@ -7364,6 +8984,46 @@ public readonly allocationStrategy: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `maxTotalPrice`<sup>Required</sup> <a name="maxTotalPrice" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.maxTotalPrice"></a>
+
+```typescript
+public readonly maxTotalPrice: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minTargetCapacity`<sup>Required</sup> <a name="minTargetCapacity" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.minTargetCapacity"></a>
+
+```typescript
+public readonly minTargetCapacity: number;
+```
+
+- *Type:* number
+
+---
+
+##### `singleAvailabilityZone`<sup>Required</sup> <a name="singleAvailabilityZone" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleAvailabilityZone"></a>
+
+```typescript
+public readonly singleAvailabilityZone: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `singleInstanceType`<sup>Required</sup> <a name="singleInstanceType" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference.property.singleInstanceType"></a>
+
+```typescript
+public readonly singleInstanceType: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -7429,6 +9089,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.resetReplacementStrategy">resetReplacementStrategy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.resetTerminationDelay">resetTerminationDelay</a></code> | *No description.* |
 
 ---
 
@@ -7588,6 +9249,12 @@ Returns a reversible string representation.
 public resetReplacementStrategy(): void
 ```
 
+##### `resetTerminationDelay` <a name="resetTerminationDelay" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.resetTerminationDelay"></a>
+
+```typescript
+public resetTerminationDelay(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7596,7 +9263,9 @@ public resetReplacementStrategy(): void
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.replacementStrategyInput">replacementStrategyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.terminationDelayInput">terminationDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.replacementStrategy">replacementStrategy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.terminationDelay">terminationDelay</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance">Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance</a></code> | *No description.* |
 
 ---
@@ -7635,6 +9304,16 @@ public readonly replacementStrategyInput: string;
 
 ---
 
+##### `terminationDelayInput`<sup>Optional</sup> <a name="terminationDelayInput" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.terminationDelayInput"></a>
+
+```typescript
+public readonly terminationDelayInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `replacementStrategy`<sup>Required</sup> <a name="replacementStrategy" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.replacementStrategy"></a>
 
 ```typescript
@@ -7642,6 +9321,16 @@ public readonly replacementStrategy: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `terminationDelay`<sup>Required</sup> <a name="terminationDelay" id="@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference.property.terminationDelay"></a>
+
+```typescript
+public readonly terminationDelay: number;
+```
+
+- *Type:* number
 
 ---
 

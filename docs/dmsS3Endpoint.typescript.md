@@ -88,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionEnabled">resetDatePartitionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionSequence">resetDatePartitionSequence</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionTimezone">resetDatePartitionTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDetachTargetOnLobLookupFailureParquet">resetDetachTargetOnLobLookupFailureParquet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDictPageSizeLimit">resetDictPageSizeLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetEnableStatistics">resetEnableStatistics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetEncodingType">resetEncodingType</a></code> | *No description.* |
@@ -437,6 +438,12 @@ public resetDatePartitionSequence(): void
 public resetDatePartitionTimezone(): void
 ```
 
+##### `resetDetachTargetOnLobLookupFailureParquet` <a name="resetDetachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDetachTargetOnLobLookupFailureParquet"></a>
+
+```typescript
+public resetDetachTargetOnLobLookupFailureParquet(): void
+```
+
 ##### `resetDictPageSizeLimit` <a name="resetDictPageSizeLimit" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDictPageSizeLimit"></a>
 
 ```typescript
@@ -696,6 +703,7 @@ dmsS3Endpoint.DmsS3Endpoint.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionEnabledInput">datePartitionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionSequenceInput">datePartitionSequenceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionTimezoneInput">datePartitionTimezoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquetInput">detachTargetOnLobLookupFailureParquetInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimitInput">dictPageSizeLimitInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.enableStatisticsInput">enableStatisticsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.encodingTypeInput">encodingTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -745,6 +753,7 @@ dmsS3Endpoint.DmsS3Endpoint.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionEnabled">datePartitionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionSequence">datePartitionSequence</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionTimezone">datePartitionTimezone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquet">detachTargetOnLobLookupFailureParquet</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimit">dictPageSizeLimit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.enableStatistics">enableStatistics</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.encodingType">encodingType</a></code> | <code>string</code> | *No description.* |
@@ -1183,6 +1192,16 @@ public readonly datePartitionTimezoneInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `detachTargetOnLobLookupFailureParquetInput`<sup>Optional</sup> <a name="detachTargetOnLobLookupFailureParquetInput" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquetInput"></a>
+
+```typescript
+public readonly detachTargetOnLobLookupFailureParquetInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1676,6 +1695,16 @@ public readonly datePartitionTimezone: string;
 
 ---
 
+##### `detachTargetOnLobLookupFailureParquet`<sup>Required</sup> <a name="detachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquet"></a>
+
+```typescript
+public readonly detachTargetOnLobLookupFailureParquet: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `dictPageSizeLimit`<sup>Required</sup> <a name="dictPageSizeLimit" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimit"></a>
 
 ```typescript
@@ -2002,6 +2031,7 @@ const dmsS3EndpointConfig: dmsS3Endpoint.DmsS3EndpointConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionEnabled">datePartitionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_enabled DmsS3Endpoint#date_partition_enabled}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionSequence">datePartitionSequence</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_sequence DmsS3Endpoint#date_partition_sequence}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionTimezone">datePartitionTimezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_timezone DmsS3Endpoint#date_partition_timezone}. |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.detachTargetOnLobLookupFailureParquet">detachTargetOnLobLookupFailureParquet</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.dictPageSizeLimit">dictPageSizeLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#dict_page_size_limit DmsS3Endpoint#dict_page_size_limit}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.enableStatistics">enableStatistics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#enable_statistics DmsS3Endpoint#enable_statistics}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.encodingType">encodingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#encoding_type DmsS3Endpoint#encoding_type}. |
@@ -2396,6 +2426,18 @@ public readonly datePartitionTimezone: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_timezone DmsS3Endpoint#date_partition_timezone}.
+
+---
+
+##### `detachTargetOnLobLookupFailureParquet`<sup>Optional</sup> <a name="detachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.detachTargetOnLobLookupFailureParquet"></a>
+
+```typescript
+public readonly detachTargetOnLobLookupFailureParquet: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}.
 
 ---
 

@@ -1100,6 +1100,7 @@ The following submodules are available:
 - [licensemanagerLicenseConfiguration](./licensemanagerLicenseConfiguration.go.md)
 - [lightsailBucket](./lightsailBucket.go.md)
 - [lightsailBucketAccessKey](./lightsailBucketAccessKey.go.md)
+- [lightsailBucketResourceAccess](./lightsailBucketResourceAccess.go.md)
 - [lightsailCertificate](./lightsailCertificate.go.md)
 - [lightsailContainerService](./lightsailContainerService.go.md)
 - [lightsailContainerServiceDeploymentVersion](./lightsailContainerServiceDeploymentVersion.go.md)

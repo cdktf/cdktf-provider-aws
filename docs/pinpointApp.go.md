@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_app a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApp.PinpointApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.NewPinpointApp(scope Construct, id *string, config PinpointAppConfig) PinpointApp
 ```
@@ -361,7 +361,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pinpointApp.PinpointApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.PinpointApp_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pinpointApp.PinpointApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.PinpointApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ pinpointapp.PinpointApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pinpointApp.PinpointApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.PinpointApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 &pinpointapp.PinpointAppCampaignHook {
 	LambdaFunctionName: *string,
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointApp.PinpointAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 &pinpointapp.PinpointAppConfig {
 	Connection: interface{},
@@ -874,12 +874,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CampaignHook: github.com/cdktf/cdktf-provider-aws-go/aws/v12.pinpointApp.PinpointAppCampaignHook,
+	CampaignHook: github.com/cdktf/cdktf-provider-aws-go/aws.pinpointApp.PinpointAppCampaignHook,
 	Id: *string,
-	Limits: github.com/cdktf/cdktf-provider-aws-go/aws/v12.pinpointApp.PinpointAppLimits,
+	Limits: github.com/cdktf/cdktf-provider-aws-go/aws.pinpointApp.PinpointAppLimits,
 	Name: *string,
 	NamePrefix: *string,
-	QuietTime: github.com/cdktf/cdktf-provider-aws-go/aws/v12.pinpointApp.PinpointAppQuietTime,
+	QuietTime: github.com/cdktf/cdktf-provider-aws-go/aws.pinpointApp.PinpointAppQuietTime,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointApp.PinpointAppLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 &pinpointapp.PinpointAppLimits {
 	Daily: *f64,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 &pinpointapp.PinpointAppQuietTime {
 	End: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.NewPinpointAppCampaignHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppCampaignHookOutputReference
 ```
@@ -1545,7 +1545,7 @@ func InternalValue() PinpointAppCampaignHook
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.NewPinpointAppLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppLimitsOutputReference
 ```
@@ -1910,7 +1910,7 @@ func InternalValue() PinpointAppLimits
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/pinpointapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointapp"
 
 pinpointapp.NewPinpointAppQuietTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppQuietTimeOutputReference
 ```

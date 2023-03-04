@@ -50,6 +50,8 @@ LambdaFunction.Builder.create(Construct scope, java.lang.String id)
 //  .s3Bucket(java.lang.String)
 //  .s3Key(java.lang.String)
 //  .s3ObjectVersion(java.lang.String)
+//  .skipDestroy(java.lang.Boolean)
+//  .skipDestroy(IResolvable)
 //  .snapStart(LambdaFunctionSnapStart)
 //  .sourceCodeHash(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -98,6 +100,7 @@ LambdaFunction.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.s3Bucket">s3Bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_bucket LambdaFunction#s3_bucket}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.s3Key">s3Key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_key LambdaFunction#s3_key}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.s3ObjectVersion">s3ObjectVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_object_version LambdaFunction#s3_object_version}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#skip_destroy LambdaFunction#skip_destroy}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.snapStart">snapStart</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart">LambdaFunctionSnapStart</a></code> | snap_start block. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.sourceCodeHash">sourceCodeHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#source_code_hash LambdaFunction#source_code_hash}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#tags LambdaFunction#tags}. |
@@ -390,6 +393,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `skipDestroy`<sup>Optional</sup> <a name="skipDestroy" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.skipDestroy"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#skip_destroy LambdaFunction#skip_destroy}.
+
+---
+
 ##### `snapStart`<sup>Optional</sup> <a name="snapStart" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer.parameter.snapStart"></a>
 
 - *Type:* <a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart">LambdaFunctionSnapStart</a>
@@ -515,6 +526,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetS3Bucket">resetS3Bucket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetS3Key">resetS3Key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetS3ObjectVersion">resetS3ObjectVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetSkipDestroy">resetSkipDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetSnapStart">resetSnapStart</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetSourceCodeHash">resetSourceCodeHash</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetTags">resetTags</a></code> | *No description.* |
@@ -962,6 +974,12 @@ public void resetS3Key()
 public void resetS3ObjectVersion()
 ```
 
+##### `resetSkipDestroy` <a name="resetSkipDestroy" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetSkipDestroy"></a>
+
+```java
+public void resetSkipDestroy()
+```
+
 ##### `resetSnapStart` <a name="resetSnapStart" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetSnapStart"></a>
 
 ```java
@@ -1142,6 +1160,7 @@ LambdaFunction.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3BucketInput">s3BucketInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3KeyInput">s3KeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3ObjectVersionInput">s3ObjectVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.skipDestroyInput">skipDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.snapStartInput">snapStartInput</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart">LambdaFunctionSnapStart</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.sourceCodeHashInput">sourceCodeHashInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1171,6 +1190,7 @@ LambdaFunction.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3Bucket">s3Bucket</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3Key">s3Key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.s3ObjectVersion">s3ObjectVersion</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.sourceCodeHash">sourceCodeHash</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1760,6 +1780,16 @@ public java.lang.String getS3ObjectVersionInput();
 
 ---
 
+##### `skipDestroyInput`<sup>Optional</sup> <a name="skipDestroyInput" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.skipDestroyInput"></a>
+
+```java
+public java.lang.Object getSkipDestroyInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `snapStartInput`<sup>Optional</sup> <a name="snapStartInput" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.snapStartInput"></a>
 
 ```java
@@ -2050,6 +2080,16 @@ public java.lang.String getS3ObjectVersion();
 
 ---
 
+##### `skipDestroy`<sup>Required</sup> <a name="skipDestroy" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.skipDestroy"></a>
+
+```java
+public java.lang.Object getSkipDestroy();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `sourceCodeHash`<sup>Required</sup> <a name="sourceCodeHash" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.property.sourceCodeHash"></a>
 
 ```java
@@ -2156,6 +2196,8 @@ LambdaFunctionConfig.builder()
 //  .s3Bucket(java.lang.String)
 //  .s3Key(java.lang.String)
 //  .s3ObjectVersion(java.lang.String)
+//  .skipDestroy(java.lang.Boolean)
+//  .skipDestroy(IResolvable)
 //  .snapStart(LambdaFunctionSnapStart)
 //  .sourceCodeHash(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
@@ -2204,6 +2246,7 @@ LambdaFunctionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Bucket">s3Bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_bucket LambdaFunction#s3_bucket}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3Key">s3Key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_key LambdaFunction#s3_key}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.s3ObjectVersion">s3ObjectVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#s3_object_version LambdaFunction#s3_object_version}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.skipDestroy">skipDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#skip_destroy LambdaFunction#skip_destroy}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.snapStart">snapStart</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart">LambdaFunctionSnapStart</a></code> | snap_start block. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.sourceCodeHash">sourceCodeHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#source_code_hash LambdaFunction#source_code_hash}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#tags LambdaFunction#tags}. |
@@ -2610,6 +2653,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `skipDestroy`<sup>Optional</sup> <a name="skipDestroy" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.skipDestroy"></a>
+
+```java
+public java.lang.Object getSkipDestroy();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#skip_destroy LambdaFunction#skip_destroy}.
+
+---
+
 ##### `snapStart`<sup>Optional</sup> <a name="snapStart" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.property.snapStart"></a>
 
 ```java
@@ -2957,6 +3012,7 @@ import com.hashicorp.cdktf.providers.aws.lambda_function.LambdaFunctionTimeouts;
 
 LambdaFunctionTimeouts.builder()
 //  .create(java.lang.String)
+//  .delete(java.lang.String)
 //  .update(java.lang.String)
     .build();
 ```
@@ -2966,6 +3022,7 @@ LambdaFunctionTimeouts.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#create LambdaFunction#create}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#delete LambdaFunction#delete}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#update LambdaFunction#update}. |
 
 ---
@@ -2979,6 +3036,18 @@ public java.lang.String getCreate();
 - *Type:* java.lang.String
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#create LambdaFunction#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#delete LambdaFunction#delete}.
 
 ---
 
@@ -4863,6 +4932,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
@@ -5023,6 +5093,12 @@ Returns a reversible string representation.
 public void resetCreate()
 ```
 
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
 ##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.resetUpdate"></a>
 
 ```java
@@ -5037,8 +5113,10 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts">LambdaFunctionTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
@@ -5078,6 +5156,16 @@ public java.lang.String getCreateInput();
 
 ---
 
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.updateInput"></a>
 
 ```java
@@ -5092,6 +5180,16 @@ public java.lang.String getUpdateInput();
 
 ```java
 public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
 ```
 
 - *Type:* java.lang.String

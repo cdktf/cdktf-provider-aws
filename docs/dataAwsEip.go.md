@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/eip aws_eip}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEip.DataAwsEip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.NewDataAwsEip(scope Construct, id *string, config DataAwsEipConfig) DataAwsEip
 ```
@@ -327,7 +327,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEip.DataAwsEip.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.DataAwsEip_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEip.DataAwsEip.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.DataAwsEip_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ dataawseip.DataAwsEip_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEip.DataAwsEip.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.DataAwsEip_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 &dataawseip.DataAwsEipConfig {
 	Connection: interface{},
@@ -806,7 +806,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
 	Id: *string,
 	PublicIp: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsEip.DataAwsEipTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEip.DataAwsEipTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 &dataawseip.DataAwsEipFilter {
 	Name: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 &dataawseip.DataAwsEipTimeouts {
 	Read: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.NewDataAwsEipFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEipFilterList
 ```
@@ -1194,7 +1194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.NewDataAwsEipFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEipFilterOutputReference
 ```
@@ -1505,7 +1505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEip.DataAwsEipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseip"
 
 dataawseip.NewDataAwsEipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEipTimeoutsOutputReference
 ```

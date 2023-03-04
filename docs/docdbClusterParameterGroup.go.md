@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.NewDocdbClusterParameterGroup(scope Construct, id *string, config DocdbClusterParameterGroupConfig) DocdbClusterParameterGroup
 ```
@@ -328,7 +328,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.DocdbClusterParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.DocdbClusterParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ docdbclusterparametergroup.DocdbClusterParameterGroup_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.DocdbClusterParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 &docdbclusterparametergroup.DocdbClusterParameterGroupConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 &docdbclusterparametergroup.DocdbClusterParameterGroupParameter {
 	Name: *string,
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.NewDocdbClusterParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DocdbClusterParameterGroupParameterList
 ```
@@ -1184,7 +1184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbclusterparametergroup"
 
 docdbclusterparametergroup.NewDocdbClusterParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DocdbClusterParameterGroupParameterOutputReference
 ```

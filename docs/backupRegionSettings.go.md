@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_region_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/backupregionsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupregionsettings"
 
 backupregionsettings.NewBackupRegionSettings(scope Construct, id *string, config BackupRegionSettingsConfig) BackupRegionSettings
 ```
@@ -280,7 +280,7 @@ func ResetResourceTypeManagementPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/backupregionsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/backupregionsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ backupregionsettings.BackupRegionSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/backupregionsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupregionsettings"
 
 backupregionsettings.BackupRegionSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupRegionSettings.BackupRegionSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/backupregionsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupregionsettings"
 
 &backupregionsettings.BackupRegionSettingsConfig {
 	Connection: interface{},

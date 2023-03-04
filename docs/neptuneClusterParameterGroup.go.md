@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluste
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroup(scope Construct, id *string, config NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup
 ```
@@ -328,7 +328,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NeptuneClusterParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 &neptuneclusterparametergroup.NeptuneClusterParameterGroupConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 &neptuneclusterparametergroup.NeptuneClusterParameterGroupParameter {
 	Name: *string,
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NeptuneClusterParameterGroupParameterList
 ```
@@ -1184,7 +1184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclusterparametergroup"
 
 neptuneclusterparametergroup.NewNeptuneClusterParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NeptuneClusterParameterGroupParameterOutputReference
 ```

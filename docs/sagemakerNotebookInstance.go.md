@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_note
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 sagemakernotebookinstance.NewSagemakerNotebookInstance(scope Construct, id *string, config SagemakerNotebookInstanceConfig) SagemakerNotebookInstance
 ```
@@ -384,7 +384,7 @@ func ResetVolumeSize()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsConstruct(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 sagemakernotebookinstance.SagemakerNotebookInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -1058,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 &sagemakernotebookinstance.SagemakerNotebookInstanceConfig {
 	Connection: interface{},
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance
 	DefaultCodeRepository: *string,
 	DirectInternetAccess: *string,
 	Id: *string,
-	InstanceMetadataServiceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration,
+	InstanceMetadataServiceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration,
 	KmsKeyId: *string,
 	LifecycleConfigName: *string,
 	PlatformIdentifier: *string,
@@ -1417,7 +1417,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 &sagemakernotebookinstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration {
 	MinimumInstanceMetadataServiceVersion: *string,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstance"
 
 sagemakernotebookinstance.NewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference
 ```

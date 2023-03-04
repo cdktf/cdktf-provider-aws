@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2ipset"
 
 dataawswafv2ipset.NewDataAwsWafv2IpSet(scope Construct, id *string, config DataAwsWafv2IpSetConfig) DataAwsWafv2IpSet
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2ipset"
 
 dataawswafv2ipset.DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafv2ipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2ipset"
 
 &dataawswafv2ipset.DataAwsWafv2IpSetConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.NewDataAwsImagebuilderImagePipeline(scope Construct, id *string, config DataAwsImagebuilderImagePipelineConfig) DataAwsImagebuilderImagePipeline
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipeline_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipeline_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -734,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 &dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipelineConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 &dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipelineImageTestsConfiguration {
 
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagep
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 &dataawsimagebuilderimagepipeline.DataAwsImagebuilderImagePipelineSchedule {
 
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagep
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.NewDataAwsImagebuilderImagePipelineImageTestsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImagePipelineImageTestsConfigurationList
 ```
@@ -1041,7 +1041,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.NewDataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference
 ```
@@ -1330,7 +1330,7 @@ func InternalValue() DataAwsImagebuilderImagePipelineImageTestsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.NewDataAwsImagebuilderImagePipelineScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImagePipelineScheduleList
 ```
@@ -1462,7 +1462,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsimagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimagepipeline"
 
 dataawsimagebuilderimagepipeline.NewDataAwsImagebuilderImagePipelineScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImagePipelineScheduleOutputReference
 ```

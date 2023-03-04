@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_ce
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistenercertificate"
 
 lblistenercertificate.NewLbListenerCertificate(scope Construct, id *string, config LbListenerCertificateConfig) LbListenerCertificate
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistenercertificate"
 
 lblistenercertificate.LbListenerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistenercertificate"
 
 lblistenercertificate.LbListenerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ lblistenercertificate.LbListenerCertificate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistenercertificate"
 
 lblistenercertificate.LbListenerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistenercertificate"
 
 &lblistenercertificate.LbListenerCertificateConfig {
 	Connection: interface{},

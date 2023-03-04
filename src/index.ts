@@ -655,6 +655,7 @@ export * as licensemanagerAssociation from './licensemanager-association';
 export * as licensemanagerLicenseConfiguration from './licensemanager-license-configuration';
 export * as lightsailBucket from './lightsail-bucket';
 export * as lightsailBucketAccessKey from './lightsail-bucket-access-key';
+export * as lightsailBucketResourceAccess from './lightsail-bucket-resource-access';
 export * as lightsailCertificate from './lightsail-certificate';
 export * as lightsailContainerService from './lightsail-container-service';
 export * as lightsailContainerServiceDeploymentVersion from './lightsail-container-service-deployment-version';

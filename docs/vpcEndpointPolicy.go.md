@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 vpcendpointpolicy.NewVpcEndpointPolicy(scope Construct, id *string, config VpcEndpointPolicyConfig) VpcEndpointPolicy
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ vpcendpointpolicy.VpcEndpointPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 &vpcendpointpolicy.VpcEndpointPolicyConfig {
 	Connection: interface{},
@@ -646,7 +646,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
 	VpcEndpointId: *string,
 	Id: *string,
 	Policy: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcEndpointPolicy.VpcEndpointPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts,
 }
 ```
 
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 &vpcendpointpolicy.VpcEndpointPolicyTimeouts {
 	Create: *string,
@@ -844,7 +844,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointpolicy"
 
 vpcendpointpolicy.NewVpcEndpointPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEndpointPolicyTimeoutsOutputReference
 ```

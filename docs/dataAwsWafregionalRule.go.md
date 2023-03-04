@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafregional_ru
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.NewDataAwsWafregionalRule(scope Construct, id *string, config DataAwsWafregionalRuleConfig) DataAwsWafregionalRule
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 &dataawswafregionalrule.DataAwsWafregionalRuleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_mon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.NewCloudfrontMonitoringSubscription(scope Construct, id *string, config CloudfrontMonitoringSubscriptionConfig) CloudfrontMonitoringSubscription
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscription_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 &cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscriptionConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubsc
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DistributionId: *string,
-	MonitoringSubscription: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscription,
+	MonitoringSubscription: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscription,
 	Id: *string,
 }
 ```
@@ -746,10 +746,10 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 &cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscriptionMonitoringSubscription {
-	RealtimeMetricsSubscriptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig,
+	RealtimeMetricsSubscriptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig,
 }
 ```
 
@@ -780,7 +780,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 &cloudfrontmonitoringsubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig {
 	RealtimeMetricsSubscriptionStatus: *string,
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference
 ```
@@ -1098,7 +1098,7 @@ func InternalValue() CloudfrontMonitoringSubscriptionMonitoringSubscription
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontmonitoringsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontmonitoringsubscription"
 
 cloudfrontmonitoringsubscription.NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference
 ```

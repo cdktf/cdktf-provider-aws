@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3Endpoint(scope Construct, id *string, config DmsS3EndpointConfig) DmsS3Endpoint
 ```
@@ -88,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionEnabled">ResetDatePartitionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionSequence">ResetDatePartitionSequence</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDatePartitionTimezone">ResetDatePartitionTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDetachTargetOnLobLookupFailureParquet">ResetDetachTargetOnLobLookupFailureParquet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDictPageSizeLimit">ResetDictPageSizeLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetEnableStatistics">ResetEnableStatistics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetEncodingType">ResetEncodingType</a></code> | *No description.* |
@@ -437,6 +438,12 @@ func ResetDatePartitionSequence()
 func ResetDatePartitionTimezone()
 ```
 
+##### `ResetDetachTargetOnLobLookupFailureParquet` <a name="ResetDetachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDetachTargetOnLobLookupFailureParquet"></a>
+
+```go
+func ResetDetachTargetOnLobLookupFailureParquet()
+```
+
 ##### `ResetDictPageSizeLimit` <a name="ResetDictPageSizeLimit" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.resetDictPageSizeLimit"></a>
 
 ```go
@@ -594,7 +601,7 @@ func ResetUseTaskStartTimeForFullLoadTimestamp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsConstruct(x interface{}) *bool
 ```
@@ -626,7 +633,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -640,7 +647,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -696,6 +703,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionEnabledInput">DatePartitionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionSequenceInput">DatePartitionSequenceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionTimezoneInput">DatePartitionTimezoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquetInput">DetachTargetOnLobLookupFailureParquetInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimitInput">DictPageSizeLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.enableStatisticsInput">EnableStatisticsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.encodingTypeInput">EncodingTypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -745,6 +753,7 @@ dmss3endpoint.DmsS3Endpoint_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionEnabled">DatePartitionEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionSequence">DatePartitionSequence</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.datePartitionTimezone">DatePartitionTimezone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquet">DetachTargetOnLobLookupFailureParquet</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimit">DictPageSizeLimit</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.enableStatistics">EnableStatistics</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.encodingType">EncodingType</a></code> | <code>*string</code> | *No description.* |
@@ -1183,6 +1192,16 @@ func DatePartitionTimezoneInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DetachTargetOnLobLookupFailureParquetInput`<sup>Optional</sup> <a name="DetachTargetOnLobLookupFailureParquetInput" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquetInput"></a>
+
+```go
+func DetachTargetOnLobLookupFailureParquetInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1676,6 +1695,16 @@ func DatePartitionTimezone() *string
 
 ---
 
+##### `DetachTargetOnLobLookupFailureParquet`<sup>Required</sup> <a name="DetachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.detachTargetOnLobLookupFailureParquet"></a>
+
+```go
+func DetachTargetOnLobLookupFailureParquet() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DictPageSizeLimit`<sup>Required</sup> <a name="DictPageSizeLimit" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint.property.dictPageSizeLimit"></a>
 
 ```go
@@ -1961,7 +1990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointConfig {
 	Connection: interface{},
@@ -1996,6 +2025,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
 	DatePartitionEnabled: interface{},
 	DatePartitionSequence: *string,
 	DatePartitionTimezone: *string,
+	DetachTargetOnLobLookupFailureParquet: interface{},
 	DictPageSizeLimit: *f64,
 	EnableStatistics: interface{},
 	EncodingType: *string,
@@ -2016,7 +2046,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
 	SslMode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dmsS3Endpoint.DmsS3EndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dmsS3Endpoint.DmsS3EndpointTimeouts,
 	TimestampColumnName: *string,
 	UseCsvNoSupValue: interface{},
 	UseTaskStartTimeForFullLoadTimestamp: interface{},
@@ -2059,6 +2089,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionEnabled">DatePartitionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_enabled DmsS3Endpoint#date_partition_enabled}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionSequence">DatePartitionSequence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_sequence DmsS3Endpoint#date_partition_sequence}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.datePartitionTimezone">DatePartitionTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#date_partition_timezone DmsS3Endpoint#date_partition_timezone}. |
+| <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.detachTargetOnLobLookupFailureParquet">DetachTargetOnLobLookupFailureParquet</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.dictPageSizeLimit">DictPageSizeLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#dict_page_size_limit DmsS3Endpoint#dict_page_size_limit}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.enableStatistics">EnableStatistics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#enable_statistics DmsS3Endpoint#enable_statistics}. |
 | <code><a href="#@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.encodingType">EncodingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#encoding_type DmsS3Endpoint#encoding_type}. |
@@ -2456,6 +2487,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `DetachTargetOnLobLookupFailureParquet`<sup>Optional</sup> <a name="DetachTargetOnLobLookupFailureParquet" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.detachTargetOnLobLookupFailureParquet"></a>
+
+```go
+DetachTargetOnLobLookupFailureParquet interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_s3_endpoint#detach_target_on_lob_lookup_failure_parquet DmsS3Endpoint#detach_target_on_lob_lookup_failure_parquet}.
+
+---
+
 ##### `DictPageSizeLimit`<sup>Optional</sup> <a name="DictPageSizeLimit" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig.property.dictPageSizeLimit"></a>
 
 ```go
@@ -2754,7 +2797,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 &dmss3endpoint.DmsS3EndpointTimeouts {
 	Create: *string,
@@ -2802,7 +2845,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dmss3endpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmss3endpoint"
 
 dmss3endpoint.NewDmsS3EndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsS3EndpointTimeoutsOutputReference
 ```

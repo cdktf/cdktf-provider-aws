@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_gangl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayer(scope Construct, id *string, config OpsworksGangliaLayerConfig) OpsworksGangliaLayer
 ```
@@ -487,7 +487,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.OpsworksGangliaLayer_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.OpsworksGangliaLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ opsworksganglialayer.OpsworksGangliaLayer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.OpsworksGangliaLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1359,7 +1359,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerConfig {
 	Connection: interface{},
@@ -1594,7 +1594,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1609,7 +1609,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v12.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -2082,7 +2082,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerEbsVolume {
 	MountPoint: *string,
@@ -2198,12 +2198,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v12.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v12.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 &opsworksganglialayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2496,7 +2496,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2639,7 +2639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksGangliaLayerCloudwatchConfigurationOutputReference
 ```
@@ -3531,7 +3531,7 @@ func InternalValue() OpsworksGangliaLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksGangliaLayerEbsVolumeList
 ```
@@ -3674,7 +3674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksGangliaLayerEbsVolumeOutputReference
 ```
@@ -4123,7 +4123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4575,7 +4575,7 @@ func InternalValue() OpsworksGangliaLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksGangliaLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4937,7 +4937,7 @@ func InternalValue() OpsworksGangliaLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/opsworksganglialayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksganglialayer"
 
 opsworksganglialayer.NewOpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

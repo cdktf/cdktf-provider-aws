@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/sfn_state_mach
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachine"
 
 dataawssfnstatemachine.NewDataAwsSfnStateMachine(scope Construct, id *string, config DataAwsSfnStateMachineConfig) DataAwsSfnStateMachine
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachine"
 
 dataawssfnstatemachine.DataAwsSfnStateMachine_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachine"
 
 dataawssfnstatemachine.DataAwsSfnStateMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawssfnstatemachine.DataAwsSfnStateMachine_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachine"
 
 dataawssfnstatemachine.DataAwsSfnStateMachine_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachine"
 
 &dataawssfnstatemachine.DataAwsSfnStateMachineConfig {
 	Connection: interface{},

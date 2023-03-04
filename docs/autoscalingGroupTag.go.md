@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_gr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 autoscalinggrouptag.NewAutoscalingGroupTagA(scope Construct, id *string, config AutoscalingGroupTagAConfig) AutoscalingGroupTagA
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 &autoscalinggrouptag.AutoscalingGroupTagAConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AutoscalingGroupName: *string,
-	Tag: github.com/cdktf/cdktf-provider-aws-go/aws/v12.autoscalingGroupTag.AutoscalingGroupTagTag,
+	Tag: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingGroupTag.AutoscalingGroupTagTag,
 	Id: *string,
 }
 ```
@@ -746,7 +746,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 &autoscalinggrouptag.AutoscalingGroupTagTag {
 	Key: *string,
@@ -808,7 +808,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/autoscalinggrouptag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinggrouptag"
 
 autoscalinggrouptag.NewAutoscalingGroupTagTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingGroupTagTagOutputReference
 ```

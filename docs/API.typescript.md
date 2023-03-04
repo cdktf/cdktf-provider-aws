@@ -1100,6 +1100,7 @@ The following submodules are available:
 - [licensemanagerLicenseConfiguration](./licensemanagerLicenseConfiguration.typescript.md)
 - [lightsailBucket](./lightsailBucket.typescript.md)
 - [lightsailBucketAccessKey](./lightsailBucketAccessKey.typescript.md)
+- [lightsailBucketResourceAccess](./lightsailBucketResourceAccess.typescript.md)
 - [lightsailCertificate](./lightsailCertificate.typescript.md)
 - [lightsailContainerService](./lightsailContainerService.typescript.md)
 - [lightsailContainerServiceDeploymentVersion](./lightsailContainerServiceDeploymentVersion.typescript.md)

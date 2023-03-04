@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_eve
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStore(scope Construct, id *string, config CloudtrailEventDataStoreConfig) CloudtrailEventDataStore
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetAdvancedEventSelector">ResetAdvancedEventSelector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetMultiRegionEnabled">ResetMultiRegionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetOrganizationEnabled">ResetOrganizationEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetRetentionPeriod">ResetRetentionPeriod</a></code> | *No description.* |
@@ -300,6 +301,12 @@ func ResetAdvancedEventSelector()
 func ResetId()
 ```
 
+##### `ResetKmsKeyId` <a name="ResetKmsKeyId" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetKmsKeyId"></a>
+
+```go
+func ResetKmsKeyId()
+```
+
 ##### `ResetMultiRegionEnabled` <a name="ResetMultiRegionEnabled" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.resetMultiRegionEnabled"></a>
 
 ```go
@@ -355,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +408,7 @@ cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -435,6 +442,7 @@ cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformResource(x interfac
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference">CloudtrailEventDataStoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.advancedEventSelectorInput">AdvancedEventSelectorInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.multiRegionEnabledInput">MultiRegionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.organizationEnabledInput">OrganizationEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -444,6 +452,7 @@ cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformResource(x interfac
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.terminationProtectionEnabledInput">TerminationProtectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.multiRegionEnabled">MultiRegionEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.organizationEnabled">OrganizationEnabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -646,6 +655,16 @@ func IdInput() *string
 
 ---
 
+##### `KmsKeyIdInput`<sup>Optional</sup> <a name="KmsKeyIdInput" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.kmsKeyIdInput"></a>
+
+```go
+func KmsKeyIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MultiRegionEnabledInput`<sup>Optional</sup> <a name="MultiRegionEnabledInput" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.multiRegionEnabledInput"></a>
 
 ```go
@@ -730,6 +749,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.property.kmsKeyId"></a>
+
+```go
+func KmsKeyId() *string
 ```
 
 - *Type:* *string
@@ -831,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreAdvancedEventSelector {
 	FieldSelector: interface{},
@@ -879,7 +908,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector {
 	EndsWith: *[]*string,
@@ -995,7 +1024,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreConfig {
 	Connection: interface{},
@@ -1008,13 +1037,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
 	Name: *string,
 	AdvancedEventSelector: interface{},
 	Id: *string,
+	KmsKeyId: *string,
 	MultiRegionEnabled: interface{},
 	OrganizationEnabled: interface{},
 	RetentionPeriod: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts,
 }
 ```
 
@@ -1032,6 +1062,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#name CloudtrailEventDataStore#name}. |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.advancedEventSelector">AdvancedEventSelector</a></code> | <code>interface{}</code> | advanced_event_selector block. |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#id CloudtrailEventDataStore#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#kms_key_id CloudtrailEventDataStore#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.multiRegionEnabled">MultiRegionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#multi_region_enabled CloudtrailEventDataStore#multi_region_enabled}. |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.organizationEnabled">OrganizationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#organization_enabled CloudtrailEventDataStore#organization_enabled}. |
 | <code><a href="#@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#retention_period CloudtrailEventDataStore#retention_period}. |
@@ -1153,6 +1184,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `KmsKeyId`<sup>Optional</sup> <a name="KmsKeyId" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.kmsKeyId"></a>
+
+```go
+KmsKeyId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store#kms_key_id CloudtrailEventDataStore#kms_key_id}.
+
+---
+
 ##### `MultiRegionEnabled`<sup>Optional</sup> <a name="MultiRegionEnabled" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.property.multiRegionEnabled"></a>
 
 ```go
@@ -1244,7 +1287,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreTimeouts {
 	Create: *string,
@@ -1306,7 +1349,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList
 ```
@@ -1449,7 +1492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference
 ```
@@ -1919,7 +1962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorList
 ```
@@ -2062,7 +2105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorOutputReference
 ```
@@ -2400,7 +2443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudtraileventdatastore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudtrailEventDataStoreTimeoutsOutputReference
 ```

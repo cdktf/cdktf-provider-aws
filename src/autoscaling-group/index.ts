@@ -436,6 +436,10 @@ export class AutoscalingGroupInitialLifecycleHookList extends cdktf.ComplexList 
 }
 export interface AutoscalingGroupInstanceRefreshPreferences {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#auto_rollback AutoscalingGroup#auto_rollback}
+  */
+  readonly autoRollback?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}
   */
   readonly checkpointDelay?: string;
@@ -463,6 +467,7 @@ export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: A
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    auto_rollback: cdktf.booleanToTerraform(struct!.autoRollback),
     checkpoint_delay: cdktf.stringToTerraform(struct!.checkpointDelay),
     checkpoint_percentages: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.checkpointPercentages),
     instance_warmup: cdktf.stringToTerraform(struct!.instanceWarmup),
@@ -485,6 +490,10 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   public get internalValue(): AutoscalingGroupInstanceRefreshPreferences | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._autoRollback !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoRollback = this._autoRollback;
+    }
     if (this._checkpointDelay !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkpointDelay = this._checkpointDelay;
@@ -511,6 +520,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   public set internalValue(value: AutoscalingGroupInstanceRefreshPreferences | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._autoRollback = undefined;
       this._checkpointDelay = undefined;
       this._checkpointPercentages = undefined;
       this._instanceWarmup = undefined;
@@ -519,12 +529,29 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoRollback = value.autoRollback;
       this._checkpointDelay = value.checkpointDelay;
       this._checkpointPercentages = value.checkpointPercentages;
       this._instanceWarmup = value.instanceWarmup;
       this._minHealthyPercentage = value.minHealthyPercentage;
       this._skipMatching = value.skipMatching;
     }
+  }
+
+  // auto_rollback - computed: false, optional: true, required: false
+  private _autoRollback?: boolean | cdktf.IResolvable; 
+  public get autoRollback() {
+    return this.getBooleanAttribute('auto_rollback');
+  }
+  public set autoRollback(value: boolean | cdktf.IResolvable) {
+    this._autoRollback = value;
+  }
+  public resetAutoRollback() {
+    this._autoRollback = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoRollbackInput() {
+    return this._autoRollback;
   }
 
   // checkpoint_delay - computed: false, optional: true, required: false
@@ -1626,6 +1653,98 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
     return this._min;
   }
 }
+export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#max AutoscalingGroup#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#min AutoscalingGroup#min}
+  */
+  readonly min?: number;
+}
+
+export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference | AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#max AutoscalingGroup#max}
@@ -1916,6 +2035,10 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInsta
   */
   readonly acceleratorTypes?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#allowed_instance_types AutoscalingGroup#allowed_instance_types}
+  */
+  readonly allowedInstanceTypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#bare_metal AutoscalingGroup#bare_metal}
   */
   readonly bareMetal?: string;
@@ -1986,6 +2109,12 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInsta
   */
   readonly memoryMib?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib;
   /**
+  * network_bandwidth_gbps block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#network_bandwidth_gbps AutoscalingGroup#network_bandwidth_gbps}
+  */
+  readonly networkBandwidthGbps?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps;
+  /**
   * network_interface_count block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#network_interface_count AutoscalingGroup#network_interface_count}
@@ -2014,6 +2143,7 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstan
     accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
     accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
     accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
+    allowed_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedInstanceTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
     cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
@@ -2029,6 +2159,7 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstan
     baseline_ebs_bandwidth_mbps: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsToTerraform(struct!.baselineEbsBandwidthMbps),
     memory_gib_per_vcpu: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuToTerraform(struct!.memoryGibPerVcpu),
     memory_mib: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibToTerraform(struct!.memoryMib),
+    network_bandwidth_gbps: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct!.networkBandwidthGbps),
     network_interface_count: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountToTerraform(struct!.networkInterfaceCount),
     total_local_storage_gb: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbToTerraform(struct!.totalLocalStorageGb),
     vcpu_count: autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountToTerraform(struct!.vcpuCount),
@@ -2060,6 +2191,10 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
     if (this._acceleratorTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.acceleratorTypes = this._acceleratorTypes;
+    }
+    if (this._allowedInstanceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedInstanceTypes = this._allowedInstanceTypes;
     }
     if (this._bareMetal !== undefined) {
       hasAnyValues = true;
@@ -2121,6 +2256,10 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
       hasAnyValues = true;
       internalValueResult.memoryMib = this._memoryMib?.internalValue;
     }
+    if (this._networkBandwidthGbps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkBandwidthGbps = this._networkBandwidthGbps?.internalValue;
+    }
     if (this._networkInterfaceCount?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkInterfaceCount = this._networkInterfaceCount?.internalValue;
@@ -2142,6 +2281,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
       this._acceleratorManufacturers = undefined;
       this._acceleratorNames = undefined;
       this._acceleratorTypes = undefined;
+      this._allowedInstanceTypes = undefined;
       this._bareMetal = undefined;
       this._burstablePerformance = undefined;
       this._cpuManufacturers = undefined;
@@ -2157,6 +2297,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
       this._baselineEbsBandwidthMbps.internalValue = undefined;
       this._memoryGibPerVcpu.internalValue = undefined;
       this._memoryMib.internalValue = undefined;
+      this._networkBandwidthGbps.internalValue = undefined;
       this._networkInterfaceCount.internalValue = undefined;
       this._totalLocalStorageGb.internalValue = undefined;
       this._vcpuCount.internalValue = undefined;
@@ -2166,6 +2307,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
       this._acceleratorManufacturers = value.acceleratorManufacturers;
       this._acceleratorNames = value.acceleratorNames;
       this._acceleratorTypes = value.acceleratorTypes;
+      this._allowedInstanceTypes = value.allowedInstanceTypes;
       this._bareMetal = value.bareMetal;
       this._burstablePerformance = value.burstablePerformance;
       this._cpuManufacturers = value.cpuManufacturers;
@@ -2181,6 +2323,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
       this._baselineEbsBandwidthMbps.internalValue = value.baselineEbsBandwidthMbps;
       this._memoryGibPerVcpu.internalValue = value.memoryGibPerVcpu;
       this._memoryMib.internalValue = value.memoryMib;
+      this._networkBandwidthGbps.internalValue = value.networkBandwidthGbps;
       this._networkInterfaceCount.internalValue = value.networkInterfaceCount;
       this._totalLocalStorageGb.internalValue = value.totalLocalStorageGb;
       this._vcpuCount.internalValue = value.vcpuCount;
@@ -2233,6 +2376,22 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
   // Temporarily expose input value. Use with caution.
   public get acceleratorTypesInput() {
     return this._acceleratorTypes;
+  }
+
+  // allowed_instance_types - computed: false, optional: true, required: false
+  private _allowedInstanceTypes?: string[]; 
+  public get allowedInstanceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_instance_types'));
+  }
+  public set allowedInstanceTypes(value: string[]) {
+    this._allowedInstanceTypes = value;
+  }
+  public resetAllowedInstanceTypes() {
+    this._allowedInstanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedInstanceTypesInput() {
+    return this._allowedInstanceTypes;
   }
 
   // bare_metal - computed: false, optional: true, required: false
@@ -2473,6 +2632,22 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
   // Temporarily expose input value. Use with caution.
   public get memoryMibInput() {
     return this._memoryMib.internalValue;
+  }
+
+  // network_bandwidth_gbps - computed: false, optional: true, required: false
+  private _networkBandwidthGbps = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference(this, "network_bandwidth_gbps");
+  public get networkBandwidthGbps() {
+    return this._networkBandwidthGbps;
+  }
+  public putNetworkBandwidthGbps(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps) {
+    this._networkBandwidthGbps.internalValue = value;
+  }
+  public resetNetworkBandwidthGbps() {
+    this._networkBandwidthGbps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkBandwidthGbpsInput() {
+    return this._networkBandwidthGbps.internalValue;
   }
 
   // network_interface_count - computed: false, optional: true, required: false
@@ -3494,7 +3669,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_user aws_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUser.IamUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.NewIamUser(scope Construct, id *string, config IamUserConfig) IamUser
 ```
@@ -308,7 +308,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUser.IamUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUser.IamUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ iamuser.IamUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUser.IamUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 iamuser.IamUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUser.IamUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuser"
 
 &iamuser.IamUserConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudhsm_v2_hs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 cloudhsmv2hsm.NewCloudhsmV2Hsm(scope Construct, id *string, config CloudhsmV2HsmConfig) CloudhsmV2Hsm
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 cloudhsmv2hsm.CloudhsmV2Hsm_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 cloudhsmv2hsm.CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ cloudhsmv2hsm.CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 cloudhsmv2hsm.CloudhsmV2Hsm_IsTerraformResource(x interface{}) *bool
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 &cloudhsmv2hsm.CloudhsmV2HsmConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
 	Id: *string,
 	IpAddress: *string,
 	SubnetId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts,
 }
 ```
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 &cloudhsmv2hsm.CloudhsmV2HsmTimeouts {
 	Create: *string,
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudhsmv2hsm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2hsm"
 
 cloudhsmv2hsm.NewCloudhsmV2HsmTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudhsmV2HsmTimeoutsOutputReference
 ```

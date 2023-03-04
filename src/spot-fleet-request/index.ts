@@ -2006,6 +2006,98 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMe
     return this._min;
   }
 }
+export interface SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#max SpotFleetRequest#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#min SpotFleetRequest#min}
+  */
+  readonly min?: number;
+}
+
+export function spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference | SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
 export interface SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#max SpotFleetRequest#max}
@@ -2296,6 +2388,10 @@ export interface SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequiremen
   */
   readonly acceleratorTypes?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#allowed_instance_types SpotFleetRequest#allowed_instance_types}
+  */
+  readonly allowedInstanceTypes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#bare_metal SpotFleetRequest#bare_metal}
   */
   readonly bareMetal?: string;
@@ -2366,6 +2462,12 @@ export interface SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequiremen
   */
   readonly memoryMib?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib;
   /**
+  * network_bandwidth_gbps block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#network_bandwidth_gbps SpotFleetRequest#network_bandwidth_gbps}
+  */
+  readonly networkBandwidthGbps?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps;
+  /**
   * network_interface_count block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#network_interface_count SpotFleetRequest#network_interface_count}
@@ -2394,6 +2496,7 @@ export function spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirement
     accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorManufacturers),
     accelerator_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorNames),
     accelerator_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.acceleratorTypes),
+    allowed_instance_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedInstanceTypes),
     bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
     burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
     cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cpuManufacturers),
@@ -2409,6 +2512,7 @@ export function spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirement
     baseline_ebs_bandwidth_mbps: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsToTerraform(struct!.baselineEbsBandwidthMbps),
     memory_gib_per_vcpu: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpuToTerraform(struct!.memoryGibPerVcpu),
     memory_mib: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibToTerraform(struct!.memoryMib),
+    network_bandwidth_gbps: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsToTerraform(struct!.networkBandwidthGbps),
     network_interface_count: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountToTerraform(struct!.networkInterfaceCount),
     total_local_storage_gb: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGbToTerraform(struct!.totalLocalStorageGb),
     vcpu_count: spotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountToTerraform(struct!.vcpuCount),
@@ -2440,6 +2544,10 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
     if (this._acceleratorTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.acceleratorTypes = this._acceleratorTypes;
+    }
+    if (this._allowedInstanceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedInstanceTypes = this._allowedInstanceTypes;
     }
     if (this._bareMetal !== undefined) {
       hasAnyValues = true;
@@ -2501,6 +2609,10 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
       hasAnyValues = true;
       internalValueResult.memoryMib = this._memoryMib?.internalValue;
     }
+    if (this._networkBandwidthGbps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkBandwidthGbps = this._networkBandwidthGbps?.internalValue;
+    }
     if (this._networkInterfaceCount?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkInterfaceCount = this._networkInterfaceCount?.internalValue;
@@ -2522,6 +2634,7 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
       this._acceleratorManufacturers = undefined;
       this._acceleratorNames = undefined;
       this._acceleratorTypes = undefined;
+      this._allowedInstanceTypes = undefined;
       this._bareMetal = undefined;
       this._burstablePerformance = undefined;
       this._cpuManufacturers = undefined;
@@ -2537,6 +2650,7 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
       this._baselineEbsBandwidthMbps.internalValue = undefined;
       this._memoryGibPerVcpu.internalValue = undefined;
       this._memoryMib.internalValue = undefined;
+      this._networkBandwidthGbps.internalValue = undefined;
       this._networkInterfaceCount.internalValue = undefined;
       this._totalLocalStorageGb.internalValue = undefined;
       this._vcpuCount.internalValue = undefined;
@@ -2546,6 +2660,7 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
       this._acceleratorManufacturers = value.acceleratorManufacturers;
       this._acceleratorNames = value.acceleratorNames;
       this._acceleratorTypes = value.acceleratorTypes;
+      this._allowedInstanceTypes = value.allowedInstanceTypes;
       this._bareMetal = value.bareMetal;
       this._burstablePerformance = value.burstablePerformance;
       this._cpuManufacturers = value.cpuManufacturers;
@@ -2561,6 +2676,7 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
       this._baselineEbsBandwidthMbps.internalValue = value.baselineEbsBandwidthMbps;
       this._memoryGibPerVcpu.internalValue = value.memoryGibPerVcpu;
       this._memoryMib.internalValue = value.memoryMib;
+      this._networkBandwidthGbps.internalValue = value.networkBandwidthGbps;
       this._networkInterfaceCount.internalValue = value.networkInterfaceCount;
       this._totalLocalStorageGb.internalValue = value.totalLocalStorageGb;
       this._vcpuCount.internalValue = value.vcpuCount;
@@ -2613,6 +2729,22 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
   // Temporarily expose input value. Use with caution.
   public get acceleratorTypesInput() {
     return this._acceleratorTypes;
+  }
+
+  // allowed_instance_types - computed: false, optional: true, required: false
+  private _allowedInstanceTypes?: string[]; 
+  public get allowedInstanceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_instance_types'));
+  }
+  public set allowedInstanceTypes(value: string[]) {
+    this._allowedInstanceTypes = value;
+  }
+  public resetAllowedInstanceTypes() {
+    this._allowedInstanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedInstanceTypesInput() {
+    return this._allowedInstanceTypes;
   }
 
   // bare_metal - computed: false, optional: true, required: false
@@ -2853,6 +2985,22 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOu
   // Temporarily expose input value. Use with caution.
   public get memoryMibInput() {
     return this._memoryMib.internalValue;
+  }
+
+  // network_bandwidth_gbps - computed: false, optional: true, required: false
+  private _networkBandwidthGbps = new SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference(this, "network_bandwidth_gbps");
+  public get networkBandwidthGbps() {
+    return this._networkBandwidthGbps;
+  }
+  public putNetworkBandwidthGbps(value: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps) {
+    this._networkBandwidthGbps.internalValue = value;
+  }
+  public resetNetworkBandwidthGbps() {
+    this._networkBandwidthGbps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkBandwidthGbpsInput() {
+    return this._networkBandwidthGbps.internalValue;
   }
 
   // network_interface_count - computed: false, optional: true, required: false
@@ -3577,7 +3725,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_fleet_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
