@@ -490,9 +490,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "18.14.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.14.4.tgz#0e64ec0b35a772e1e3d849f9a0ff61782d0cb647"
-  integrity sha512-VhCw7I7qO2X49+jaKcAUwi3rR+hbxT5VcYF493+Z5kMLI0DL568b7JI4IDJaxWFH0D/xwmGJNoXisyX+w7GH/g==
+  version "18.14.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.14.6.tgz#ae1973dd2b1eeb1825695bb11ebfb746d27e3e93"
+  integrity sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==
 
 "@types/node@14.18.33":
   version "14.18.33"
@@ -733,9 +733,9 @@ bl@^4.0.3:
     readable-stream "^3.4.0"
 
 boxen@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/boxen/-/boxen-7.0.1.tgz#cd84db4364a8bae65f1f016ce94a21ec2c832c16"
-  integrity sha512-8k2eH6SRAK00NDl1iX5q17RJ8rfl53TajdYxE3ssMLehbg487dEVgsad4pIsZb/QqBgYWIl6JOauMTLGX2Kpkw==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/boxen/-/boxen-7.0.2.tgz#465dd03e846c11f2d4c7eb0d1b3a39d66bd7057e"
+  integrity sha512-1Z4UJabXUP1/R9rLpoU3O2lEMnG3pPLAs/ZD2lF3t2q7qD5lM8rqbtnvtvm4N0wEyNlE+9yZVTVAGmd1V5jabg==
   dependencies:
     ansi-align "^3.0.1"
     camelcase "^7.0.0"
@@ -841,7 +841,7 @@ cacheable-lookup@^7.0.0:
   resolved "https://registry.yarnpkg.com/cacheable-lookup/-/cacheable-lookup-7.0.0.tgz#3476a8215d046e5a3202a9209dd13fec1f933a27"
   integrity sha512-+qJyx4xiKra8mZrcwhjMRMUhD5NR1R8esPkzIYxX96JiecFoxAXFuz/GpR3+ev4PE1WamHip78wV0vcmPQtp8w==
 
-cacheable-request@^10.2.1:
+cacheable-request@^10.2.8:
   version "10.2.8"
   resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-10.2.8.tgz#899ae6c0c8c7127f263b2005ecaac07c95124079"
   integrity sha512-IDVO5MJ4LItE6HKFQTqT2ocAQsisOoCTUDu1ddCmnhyiwFQjXNPp4081Xj23N4tO+AFEFNzGuNEf/c8Gwwt15A==
@@ -1177,9 +1177,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.266"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.266.tgz#b7a84a6c2d5b2c53d6fb120b05dcdec98e76de98"
-  integrity sha512-6rNXyszNbalWuyJBvMuyaaCFNLNr77mYNzq7dB0MFh2Qa909XkTA+5mPXFAho+IzP5wY1SVYUDrB/QFSnfMtMQ==
+  version "10.1.267"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.267.tgz#42cef18360e7f8ec070849fe314376fadeca4452"
+  integrity sha512-trA5DrdmXaLXeYzGcmAA1IAyYRB80CdzM1Yn6oXmBVQl4SOX3BSeFdD7sBfpszVW/VuFNB7Y5OnQBcJ62fTeaw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1902,14 +1902,14 @@ globby@^11.0.4:
     slash "^3.0.0"
 
 got@^12.1.0:
-  version "12.5.3"
-  resolved "https://registry.yarnpkg.com/got/-/got-12.5.3.tgz#82bdca2dd61258a02e24d668ea6e7abb70ac3598"
-  integrity sha512-8wKnb9MGU8IPGRIo+/ukTy9XLJBwDiCpIf5TVzQ9Cpol50eMTpBq2GAuDsuDIz7hTYmZgMgC1e9ydr6kSDWs3w==
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/got/-/got-12.6.0.tgz#8d382ee5de4432c086e83c133efdd474484f6ac7"
+  integrity sha512-WTcaQ963xV97MN3x0/CbAriXFZcXCfgxVp91I+Ze6pawQOa7SgzwSx2zIJJsX+kTajMnVs0xcFD1TxZKFqhdnQ==
   dependencies:
     "@sindresorhus/is" "^5.2.0"
     "@szmarczak/http-timer" "^5.0.1"
     cacheable-lookup "^7.0.0"
-    cacheable-request "^10.2.1"
+    cacheable-request "^10.2.8"
     decompress-response "^6.0.0"
     form-data-encoder "^2.1.2"
     get-stream "^6.0.1"
@@ -2305,9 +2305,9 @@ jsii-diff@^1.76.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "7.1.13"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.13.tgz#c43b877835ef72d50a15de5482cb68e849e0cb32"
-  integrity sha512-z7tMi+zvWdKyFh0jwgMf08YbESQvjmQghc1vLVm1wGiJk3A5b+4SvtEIM6XC89l9b1wJQt5Cne3qmtIqneo1CQ==
+  version "7.1.14"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.14.tgz#71c225cc41f224b30eb9bcaea1fc1acb25deecdc"
+  integrity sha512-Ji1Dji9VxdFMj/VE2ZPL4O+T/qK2vb0s3IdvWLRejNTEbVJBS2id2IRf33X3cpMB4u2DMnS82ft2aR6/U6K//Q==
   dependencies:
     "@jsii/spec" "^1.76.0"
     case "^1.6.3"
@@ -2368,9 +2368,9 @@ jsii-rosetta@^1.75.0, jsii-rosetta@^1.76.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.826:
-  version "0.1.841"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.841.tgz#d7cc797db4f58df865e7174301889aec81fe0082"
-  integrity sha512-w1RlhTtnE0nruuBJFsmjX/DT02Fj4Sh7XL7ThQOO7Mq2Hh6k0m4Tk0bepoaEwqxfXfqjp4c5bYvygLpEAJp+9Q==
+  version "0.1.842"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.842.tgz#29fb2148e50bb75fd0ee3a8b8b280855f2cca168"
+  integrity sha512-XpRgOMG5S1t8MXDhGRUh/vhoEwgowUXrQY+RPXHZw3F2Rtp69sNnHvUJxM3E0qk4JbYblgcUFRwvpRgPrKpGFA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.76.0"
@@ -3380,10 +3380,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.67.70:
-  version "0.67.70"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.70.tgz#e12361c8610db95e27205df31c0c1395b3526a2b"
-  integrity sha512-ruQZAQK2ROXS4UEXhM6j4uLvbvPkmI2EpQBMl2rcJcPkrCr4rmOzcdS8HgNVK8HblKfhzNZuJBuWN6DET8wyBg==
+projen@^0.67.71:
+  version "0.67.71"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.71.tgz#15be099962991f866b50f68754f8ced5821c682e"
+  integrity sha512-gqNxWAl33kAorX9mLWzfhs+UfqzDUDCxXuu0lDuQlZvzPMzO8dlEOjlhvjmZRJYFaW+YLVgm37HsVvirdRtFJA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4162,9 +4162,9 @@ tslib@^2.0.3:
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
 
 tuf-js@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tuf-js/-/tuf-js-1.1.0.tgz#25dd680bce9e3819e1fe4640d85186f862efb827"
-  integrity sha512-Tsqlm419OAlrkCE6rsf1WuPvww44vfK1ZHz+Uq9Mpq5JiV5qnJ9LLItvsbM9OipIIeSG3rydVBS4BmD40ts2uA==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/tuf-js/-/tuf-js-1.1.1.tgz#54d3aef2b57a19100789cb72e6295b0fbe583935"
+  integrity sha512-WTp382/PR96k0dI4GD5RdiRhgOU0rAC7+lnoih/5pZg3cyb3aNMqDozleEEWwyfT3+FOg7Qz9JU3n6A44tLSHw==
   dependencies:
     "@tufjs/models" "1.0.0"
     make-fetch-happen "^11.0.1"
