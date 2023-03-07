@@ -96,9 +96,6 @@
       "steps": [
         {
           "exec": "jsii --silence-warnings=reserved-word"
-        },
-        {
-          "exec": "git checkout package.json"
         }
       ]
     },
