@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_defin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinition(scope Construct, id *string, config EcsTaskDefinitionConfig) EcsTaskDefinition
 ```
@@ -470,7 +470,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -1177,7 +1177,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionConfig {
 	Connection: interface{},
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 	ContainerDefinitions: *string,
 	Family: *string,
 	Cpu: *string,
-	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
+	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
 	ExecutionRoleArn: *string,
 	Id: *string,
 	InferenceAccelerator: interface{},
@@ -1199,9 +1199,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 	NetworkMode: *string,
 	PidMode: *string,
 	PlacementConstraints: interface{},
-	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
+	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
 	RequiresCompatibilities: *[]*string,
-	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
+	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
 	SkipDestroy: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionEphemeralStorage {
 	SizeInGib: *f64,
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionInferenceAccelerator {
 	DeviceName: *string,
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionPlacementConstraints {
 	Type: *string,
@@ -1698,7 +1698,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionProxyConfiguration {
 	ContainerName: *string,
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionRuntimePlatform {
 	CpuArchitecture: *string,
@@ -1804,13 +1804,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolume {
 	Name: *string,
-	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
-	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
-	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
+	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
+	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
+	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
 	HostPath: *string,
 }
 ```
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration {
 	Autoprovision: interface{},
@@ -1986,11 +1986,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration {
 	FileSystemId: *string,
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
 	RootDirectory: *string,
 	TransitEncryption: *string,
 	TransitEncryptionPort: *f64,
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
 	AccessPointId: *string,
@@ -2122,10 +2122,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
 	FileSystemId: *string,
 	RootDirectory: *string,
 }
@@ -2184,7 +2184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
 	CredentialsParameter: *string,
@@ -2232,7 +2232,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionEphemeralStorageOutputReference
 ```
@@ -2503,7 +2503,7 @@ func InternalValue() EcsTaskDefinitionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionInferenceAcceleratorList
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionInferenceAcceleratorOutputReference
 ```
@@ -2957,7 +2957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionPlacementConstraintsList
 ```
@@ -3100,7 +3100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionPlacementConstraintsOutputReference
 ```
@@ -3418,7 +3418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionProxyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionProxyConfigurationOutputReference
 ```
@@ -3747,7 +3747,7 @@ func InternalValue() EcsTaskDefinitionProxyConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionRuntimePlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionRuntimePlatformOutputReference
 ```
@@ -4054,7 +4054,7 @@ func InternalValue() EcsTaskDefinitionRuntimePlatform
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference
 ```
@@ -4448,7 +4448,7 @@ func InternalValue() EcsTaskDefinitionVolumeDockerVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -4755,7 +4755,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference
 ```
@@ -5155,7 +5155,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -5448,7 +5448,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference
 ```
@@ -5776,7 +5776,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionVolumeList
 ```
@@ -5919,7 +5919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionVolumeOutputReference
 ```

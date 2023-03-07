@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSnapshot.DbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 dbsnapshot.NewDbSnapshot(scope Construct, id *string, config DbSnapshotConfig) DbSnapshot
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbSnapshot.DbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 dbsnapshot.DbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbSnapshot.DbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 dbsnapshot.DbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dbsnapshot.DbSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbSnapshot.DbSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 dbsnapshot.DbSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSnapshot.DbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 &dbsnapshot.DbSnapshotConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbSnapshot.DbSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dbSnapshot.DbSnapshotTimeouts,
 }
 ```
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 &dbsnapshot.DbSnapshotTimeouts {
 	Read: *string,
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsnapshot"
 
 dbsnapshot.NewDbSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbSnapshotTimeoutsOutputReference
 ```
