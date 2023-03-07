@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/alb_target_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroup(scope Construct, id *string, config DataAwsAlbTargetGroupConfig) DataAwsAlbTargetGroup
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupConfig {
 	Connection: interface{},
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
 	Id: *string,
 	Name: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts,
 }
 ```
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupHealthCheck {
 
@@ -1002,7 +1002,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupStickiness {
 
@@ -1015,7 +1015,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupTimeouts {
 	Read: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupHealthCheckList
 ```
@@ -1181,7 +1181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupHealthCheckOutputReference
 ```
@@ -1547,7 +1547,7 @@ func InternalValue() DataAwsAlbTargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupStickinessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupStickinessList
 ```
@@ -1679,7 +1679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupStickinessOutputReference
 ```
@@ -1990,7 +1990,7 @@ func InternalValue() DataAwsAlbTargetGroupStickiness
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalbtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAlbTargetGroupTimeoutsOutputReference
 ```

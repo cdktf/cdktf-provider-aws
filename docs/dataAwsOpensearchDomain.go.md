@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/opensearch_dom
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomain(scope Construct, id *string, config DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.DataAwsOpensearchDomain_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.DataAwsOpensearchDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsopensearchdomain.DataAwsOpensearchDomain_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.DataAwsOpensearchDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainAdvancedSecurityOptions {
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainAutoTuneOptions {
 
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule {
 
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainClusterConfig {
 
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainClusterConfigColdStorageOptions {
 
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainCognitoOptions {
 
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainConfig {
 	Connection: interface{},
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainEbsOptions {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainEncryptionAtRest {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainLogPublishingOptions {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainNodeToNodeEncryption {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainSnapshotOptions {
 
@@ -1105,7 +1105,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 &dataawsopensearchdomain.DataAwsOpensearchDomainVpcOptions {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAdvancedSecurityOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainAdvancedSecurityOptionsList
 ```
@@ -1252,7 +1252,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() DataAwsOpensearchDomainAdvancedSecurityOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainAutoTuneOptionsList
 ```
@@ -1673,7 +1673,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList
 ```
@@ -1805,7 +1805,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList
 ```
@@ -2226,7 +2226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference
 ```
@@ -2526,7 +2526,7 @@ func InternalValue() DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainAutoTuneOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainAutoTuneOptionsOutputReference
 ```
@@ -2826,7 +2826,7 @@ func InternalValue() DataAwsOpensearchDomainAutoTuneOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigColdStorageOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainClusterConfigColdStorageOptionsList
 ```
@@ -2958,7 +2958,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference
 ```
@@ -3236,7 +3236,7 @@ func InternalValue() DataAwsOpensearchDomainClusterConfigColdStorageOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainClusterConfigList
 ```
@@ -3368,7 +3368,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainClusterConfigOutputReference
 ```
@@ -3756,7 +3756,7 @@ func InternalValue() DataAwsOpensearchDomainClusterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList
 ```
@@ -3888,7 +3888,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference
 ```
@@ -4166,7 +4166,7 @@ func InternalValue() DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainCognitoOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainCognitoOptionsList
 ```
@@ -4298,7 +4298,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainCognitoOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainCognitoOptionsOutputReference
 ```
@@ -4609,7 +4609,7 @@ func InternalValue() DataAwsOpensearchDomainCognitoOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainEbsOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainEbsOptionsList
 ```
@@ -4741,7 +4741,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainEbsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainEbsOptionsOutputReference
 ```
@@ -5063,7 +5063,7 @@ func InternalValue() DataAwsOpensearchDomainEbsOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainEncryptionAtRestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainEncryptionAtRestList
 ```
@@ -5195,7 +5195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainEncryptionAtRestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainEncryptionAtRestOutputReference
 ```
@@ -5484,7 +5484,7 @@ func InternalValue() DataAwsOpensearchDomainEncryptionAtRest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainLogPublishingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainLogPublishingOptionsList
 ```
@@ -5616,7 +5616,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainLogPublishingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainLogPublishingOptionsOutputReference
 ```
@@ -5916,7 +5916,7 @@ func InternalValue() DataAwsOpensearchDomainLogPublishingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainNodeToNodeEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainNodeToNodeEncryptionList
 ```
@@ -6048,7 +6048,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainNodeToNodeEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference
 ```
@@ -6326,7 +6326,7 @@ func InternalValue() DataAwsOpensearchDomainNodeToNodeEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainSnapshotOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainSnapshotOptionsList
 ```
@@ -6458,7 +6458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainSnapshotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainSnapshotOptionsOutputReference
 ```
@@ -6736,7 +6736,7 @@ func InternalValue() DataAwsOpensearchDomainSnapshotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainVpcOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOpensearchDomainVpcOptionsList
 ```
@@ -6868,7 +6868,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsopensearchdomain"
 
 dataawsopensearchdomain.NewDataAwsOpensearchDomainVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainVpcOptionsOutputReference
 ```
