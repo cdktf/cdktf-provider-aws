@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inte
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.NewS3BucketIntelligentTieringConfiguration(scope Construct, id *string, config S3BucketIntelligentTieringConfigurationConfig) S3BucketIntelligentTieringConfiguration
 ```
@@ -313,7 +313,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfiguration_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 &s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfigurationConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttierin
 	Bucket: *string,
 	Name: *string,
 	Tiering: interface{},
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v12.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilter,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilter,
 	Id: *string,
 	Status: *string,
 }
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 &s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfigurationFilter {
 	Prefix: *string,
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTiering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 &s3bucketintelligenttieringconfiguration.S3BucketIntelligentTieringConfigurationTiering {
 	AccessTier: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.NewS3BucketIntelligentTieringConfigurationFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketIntelligentTieringConfigurationFilterOutputReference
 ```
@@ -1284,7 +1284,7 @@ func InternalValue() S3BucketIntelligentTieringConfigurationFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.NewS3BucketIntelligentTieringConfigurationTieringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketIntelligentTieringConfigurationTieringList
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3bucketintelligenttieringconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketintelligenttieringconfiguration"
 
 s3bucketintelligenttieringconfiguration.NewS3BucketIntelligentTieringConfigurationTieringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketIntelligentTieringConfigurationTieringOutputReference
 ```

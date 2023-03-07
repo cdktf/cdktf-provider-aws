@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 ec2transitgatewayconnect.NewEc2TransitGatewayConnect(scope Construct, id *string, config Ec2TransitGatewayConnectConfig) Ec2TransitGatewayConnect
 ```
@@ -328,7 +328,7 @@ func ResetTransitGatewayDefaultRouteTablePropagation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 ec2transitgatewayconnect.Ec2TransitGatewayConnect_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 ec2transitgatewayconnect.Ec2TransitGatewayConnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ ec2transitgatewayconnect.Ec2TransitGatewayConnect_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 ec2transitgatewayconnect.Ec2TransitGatewayConnect_IsTerraformResource(x interface{}) *bool
 ```
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 &ec2transitgatewayconnect.Ec2TransitGatewayConnectConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
 	Protocol: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeouts,
 	TransitGatewayDefaultRouteTableAssociation: interface{},
 	TransitGatewayDefaultRouteTablePropagation: interface{},
 }
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 &ec2transitgatewayconnect.Ec2TransitGatewayConnectTimeouts {
 	Create: *string,
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2transitgatewayconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayconnect"
 
 ec2transitgatewayconnect.NewEc2TransitGatewayConnectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayConnectTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_req
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequest(scope Construct, id *string, config SpotFleetRequestConfig) SpotFleetRequest
 ```
@@ -493,7 +493,7 @@ func ResetWaitForFulfillment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.SpotFleetRequest_IsConstruct(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.SpotFleetRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ spotfleetrequest.SpotFleetRequest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.SpotFleetRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -1354,7 +1354,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestConfig {
 	Connection: interface{},
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
 	OnDemandMaxTotalPrice: *string,
 	OnDemandTargetCapacity: *f64,
 	ReplaceUnhealthyInstances: interface{},
-	SpotMaintenanceStrategies: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategies,
+	SpotMaintenanceStrategies: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategies,
 	SpotPrice: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1387,7 +1387,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
 	TargetGroupArns: *[]*string,
 	TerminateInstancesOnDelete: *string,
 	TerminateInstancesWithExpiration: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestTimeouts,
 	ValidFrom: *string,
 	ValidUntil: *string,
 	WaitForFulfillment: interface{},
@@ -1845,7 +1845,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchSpecification {
 	Ami: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchSpecificationEbsBlockDevice {
 	DeviceName: *string,
@@ -2293,7 +2293,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDevice {
 	DeviceName: *string,
@@ -2339,7 +2339,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchSpecificationRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -2455,10 +2455,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfig {
-	LaunchTemplateSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification,
+	LaunchTemplateSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification,
 	Overrides: interface{},
 }
 ```
@@ -2505,7 +2505,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification {
 	Id: *string,
@@ -2568,11 +2568,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverrides {
 	AvailabilityZone: *string,
-	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements,
+	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements,
 	InstanceType: *string,
 	Priority: *f64,
 	SpotPrice: *string,
@@ -2686,32 +2686,32 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements {
-	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount,
+	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount,
 	AcceleratorManufacturers: *[]*string,
 	AcceleratorNames: *[]*string,
-	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib,
+	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib,
 	AcceleratorTypes: *[]*string,
 	AllowedInstanceTypes: *[]*string,
 	BareMetal: *string,
-	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps,
+	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps,
 	BurstablePerformance: *string,
 	CpuManufacturers: *[]*string,
 	ExcludedInstanceTypes: *[]*string,
 	InstanceGenerations: *[]*string,
 	LocalStorage: *string,
 	LocalStorageTypes: *[]*string,
-	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu,
-	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib,
-	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps,
-	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount,
+	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu,
+	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib,
+	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps,
+	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount,
 	OnDemandMaxPricePercentageOverLowestPrice: *f64,
 	RequireHibernateSupport: interface{},
 	SpotMaxPricePercentageOverLowestPrice: *f64,
-	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb,
-	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount,
+	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb,
+	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount,
 }
 ```
 
@@ -3044,7 +3044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount {
 	Max: *f64,
@@ -3090,7 +3090,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib {
 	Max: *f64,
@@ -3136,7 +3136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps {
 	Max: *f64,
@@ -3182,7 +3182,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu {
 	Max: *f64,
@@ -3228,7 +3228,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib {
 	Max: *f64,
@@ -3274,7 +3274,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps {
 	Max: *f64,
@@ -3320,7 +3320,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount {
 	Max: *f64,
@@ -3366,7 +3366,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb {
 	Max: *f64,
@@ -3412,7 +3412,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount {
 	Max: *f64,
@@ -3458,10 +3458,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestSpotMaintenanceStrategies {
-	CapacityRebalance: github.com/cdktf/cdktf-provider-aws-go/aws/v12.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance,
+	CapacityRebalance: github.com/cdktf/cdktf-provider-aws-go/aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance,
 }
 ```
 
@@ -3492,7 +3492,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance {
 	ReplacementStrategy: *string,
@@ -3524,7 +3524,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 &spotfleetrequest.SpotFleetRequestTimeouts {
 	Create: *string,
@@ -3586,7 +3586,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchSpecificationEbsBlockDeviceList
 ```
@@ -3729,7 +3729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference
 ```
@@ -4250,7 +4250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList
 ```
@@ -4393,7 +4393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference
 ```
@@ -4704,7 +4704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchSpecificationList
 ```
@@ -4847,7 +4847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationOutputReference
 ```
@@ -5719,7 +5719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationRootBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchSpecificationRootBlockDeviceList
 ```
@@ -5862,7 +5862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference
 ```
@@ -6332,7 +6332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference
 ```
@@ -6668,7 +6668,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecifica
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchTemplateConfigList
 ```
@@ -6811,7 +6811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchTemplateConfigOutputReference
 ```
@@ -7155,7 +7155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -7462,7 +7462,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -7769,7 +7769,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -8076,7 +8076,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -8383,7 +8383,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference
 ```
@@ -8690,7 +8690,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -8997,7 +8997,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -9304,7 +9304,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference
 ```
@@ -10337,7 +10337,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -10644,7 +10644,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference
 ```
@@ -10951,7 +10951,7 @@ func InternalValue() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotFleetRequestLaunchTemplateConfigOverridesList
 ```
@@ -11094,7 +11094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestLaunchTemplateConfigOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchTemplateConfigOverridesOutputReference
 ```
@@ -11577,7 +11577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference
 ```
@@ -11855,7 +11855,7 @@ func InternalValue() SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestSpotMaintenanceStrategiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestSpotMaintenanceStrategiesOutputReference
 ```
@@ -12146,7 +12146,7 @@ func InternalValue() SpotFleetRequestSpotMaintenanceStrategies
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/spotfleetrequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/spotfleetrequest"
 
 spotfleetrequest.NewSpotFleetRequestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotFleetRequestTimeoutsOutputReference
 ```

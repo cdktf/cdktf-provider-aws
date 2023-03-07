@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_classifie
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.NewGlueClassifier(scope Construct, id *string, config GlueClassifierConfig) GlueClassifier
 ```
@@ -353,7 +353,7 @@ func ResetXmlClassifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.GlueClassifier_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.GlueClassifier_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ glueclassifier.GlueClassifier_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.GlueClassifier_IsTerraformResource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 &glueclassifier.GlueClassifierConfig {
 	Connection: interface{},
@@ -741,11 +741,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CsvClassifier: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueClassifier.GlueClassifierCsvClassifier,
-	GrokClassifier: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueClassifier.GlueClassifierGrokClassifier,
+	CsvClassifier: github.com/cdktf/cdktf-provider-aws-go/aws.glueClassifier.GlueClassifierCsvClassifier,
+	GrokClassifier: github.com/cdktf/cdktf-provider-aws-go/aws.glueClassifier.GlueClassifierGrokClassifier,
 	Id: *string,
-	JsonClassifier: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueClassifier.GlueClassifierJsonClassifier,
-	XmlClassifier: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueClassifier.GlueClassifierXmlClassifier,
+	JsonClassifier: github.com/cdktf/cdktf-provider-aws-go/aws.glueClassifier.GlueClassifierJsonClassifier,
+	XmlClassifier: github.com/cdktf/cdktf-provider-aws-go/aws.glueClassifier.GlueClassifierXmlClassifier,
 }
 ```
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 &glueclassifier.GlueClassifierCsvClassifier {
 	AllowSingleColumn: interface{},
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 &glueclassifier.GlueClassifierGrokClassifier {
 	Classification: *string,
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 &glueclassifier.GlueClassifierJsonClassifier {
 	JsonPath: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 &glueclassifier.GlueClassifierXmlClassifier {
 	Classification: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.NewGlueClassifierCsvClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierCsvClassifierOutputReference
 ```
@@ -1678,7 +1678,7 @@ func InternalValue() GlueClassifierCsvClassifier
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.NewGlueClassifierGrokClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierGrokClassifierOutputReference
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() GlueClassifierGrokClassifier
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.NewGlueClassifierJsonClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierJsonClassifierOutputReference
 ```
@@ -2271,7 +2271,7 @@ func InternalValue() GlueClassifierJsonClassifier
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueclassifier"
 
 glueclassifier.NewGlueClassifierXmlClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierXmlClassifierOutputReference
 ```

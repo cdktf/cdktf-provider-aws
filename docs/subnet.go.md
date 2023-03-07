@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/subnet aws_sub
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.Subnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.NewSubnet(scope Construct, id *string, config SubnetConfig) Subnet
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.subnet.Subnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.subnet.Subnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.subnet.Subnet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsTerraformResource(x interface{}) *bool
 ```
@@ -1101,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 &subnet.SubnetConfig {
 	Connection: interface{},
@@ -1129,7 +1129,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
 	PrivateDnsHostnameTypeOnLaunch: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.subnet.SubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.subnet.SubnetTimeouts,
 }
 ```
 
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 &subnet.SubnetTimeouts {
 	Create: *string,
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.NewSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetTimeoutsOutputReference
 ```

@@ -574,7 +574,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.0',
+        providerVersion: '4.57.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

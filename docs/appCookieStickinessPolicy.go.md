@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_sti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appcookiestickinesspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appcookiestickinesspolicy"
 
 appcookiestickinesspolicy.NewAppCookieStickinessPolicy(scope Construct, id *string, config AppCookieStickinessPolicyConfig) AppCookieStickinessPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appcookiestickinesspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appcookiestickinesspolicy"
 
 appcookiestickinesspolicy.AppCookieStickinessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appcookiestickinesspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appcookiestickinesspolicy"
 
 appcookiestickinesspolicy.AppCookieStickinessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ appcookiestickinesspolicy.AppCookieStickinessPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appcookiestickinesspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appcookiestickinesspolicy"
 
 appcookiestickinesspolicy.AppCookieStickinessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appcookiestickinesspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appcookiestickinesspolicy"
 
 &appcookiestickinesspolicy.AppCookieStickinessPolicyConfig {
 	Connection: interface{},

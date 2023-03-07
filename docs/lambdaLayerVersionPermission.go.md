@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_v
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdalayerversionpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversionpermission"
 
 lambdalayerversionpermission.NewLambdaLayerVersionPermission(scope Construct, id *string, config LambdaLayerVersionPermissionConfig) LambdaLayerVersionPermission
 ```
@@ -280,7 +280,7 @@ func ResetOrganizationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdalayerversionpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversionpermission"
 
 lambdalayerversionpermission.LambdaLayerVersionPermission_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdalayerversionpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversionpermission"
 
 lambdalayerversionpermission.LambdaLayerVersionPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ lambdalayerversionpermission.LambdaLayerVersionPermission_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdalayerversionpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversionpermission"
 
 lambdalayerversionpermission.LambdaLayerVersionPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdalayerversionpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversionpermission"
 
 &lambdalayerversionpermission.LambdaLayerVersionPermissionConfig {
 	Connection: interface{},

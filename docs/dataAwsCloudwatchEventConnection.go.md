@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_eve
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventconnection"
 
 dataawscloudwatcheventconnection.NewDataAwsCloudwatchEventConnection(scope Construct, id *string, config DataAwsCloudwatchEventConnectionConfig) DataAwsCloudwatchEventConnection
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventconnection"
 
 dataawscloudwatcheventconnection.DataAwsCloudwatchEventConnection_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventconnection"
 
 dataawscloudwatcheventconnection.DataAwsCloudwatchEventConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawscloudwatcheventconnection.DataAwsCloudwatchEventConnection_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventconnection"
 
 dataawscloudwatcheventconnection.DataAwsCloudwatchEventConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventconnection"
 
 &dataawscloudwatcheventconnection.DataAwsCloudwatchEventConnectionConfig {
 	Connection: interface{},

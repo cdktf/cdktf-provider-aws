@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/neptune_ordera
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneorderabledbinstance"
 
 dataawsneptuneorderabledbinstance.NewDataAwsNeptuneOrderableDbInstance(scope Construct, id *string, config DataAwsNeptuneOrderableDbInstanceConfig) DataAwsNeptuneOrderableDbInstance
 ```
@@ -315,7 +315,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneorderabledbinstance"
 
 dataawsneptuneorderabledbinstance.DataAwsNeptuneOrderableDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneorderabledbinstance"
 
 dataawsneptuneorderabledbinstance.DataAwsNeptuneOrderableDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ dataawsneptuneorderabledbinstance.DataAwsNeptuneOrderableDbInstance_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneorderabledbinstance"
 
 dataawsneptuneorderabledbinstance.DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneorderabledbinstance"
 
 &dataawsneptuneorderabledbinstance.DataAwsNeptuneOrderableDbInstanceConfig {
 	Connection: interface{},

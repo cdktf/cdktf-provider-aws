@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_connectio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueConnection.GlueConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 glueconnection.NewGlueConnection(scope Construct, id *string, config GlueConnectionConfig) GlueConnection
 ```
@@ -342,7 +342,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueConnection.GlueConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 glueconnection.GlueConnection_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueConnection.GlueConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueConnection.GlueConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueConnection.GlueConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 &glueconnection.GlueConnectionConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
 	Description: *string,
 	Id: *string,
 	MatchCriteria: *[]*string,
-	PhysicalConnectionRequirements: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueConnection.GlueConnectionPhysicalConnectionRequirements,
+	PhysicalConnectionRequirements: github.com/cdktf/cdktf-provider-aws-go/aws.glueConnection.GlueConnectionPhysicalConnectionRequirements,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 &glueconnection.GlueConnectionPhysicalConnectionRequirements {
 	AvailabilityZone: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueconnection"
 
 glueconnection.NewGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionPhysicalConnectionRequirementsOutputReference
 ```

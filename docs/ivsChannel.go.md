@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivs_channel aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsChannel.IvsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.NewIvsChannel(scope Construct, id *string, config IvsChannelConfig) IvsChannel
 ```
@@ -342,7 +342,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsChannel.IvsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 &ivschannel.IvsChannelConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
 	RecordingConfigurationArn: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivsChannel.IvsChannelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ivsChannel.IvsChannelTimeouts,
 	Type: *string,
 }
 ```
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 &ivschannel.IvsChannelTimeouts {
 	Create: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.NewIvsChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsChannelTimeoutsOutputReference
 ```

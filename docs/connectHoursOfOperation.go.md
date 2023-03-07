@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.NewConnectHoursOfOperation(scope Construct, id *string, config ConnectHoursOfOperationConfig) ConnectHoursOfOperation
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.ConnectHoursOfOperation_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.ConnectHoursOfOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ connecthoursofoperation.ConnectHoursOfOperation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.ConnectHoursOfOperation_IsTerraformResource(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 &connecthoursofoperation.ConnectHoursOfOperationConfig {
 	Connection: interface{},
@@ -980,12 +980,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 &connecthoursofoperation.ConnectHoursOfOperationConfigA {
 	Day: *string,
-	EndTime: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime,
-	StartTime: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime,
+	EndTime: github.com/cdktf/cdktf-provider-aws-go/aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime,
+	StartTime: github.com/cdktf/cdktf-provider-aws-go/aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime,
 }
 ```
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 &connecthoursofoperation.ConnectHoursOfOperationConfigEndTime {
 	Hours: *f64,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 &connecthoursofoperation.ConnectHoursOfOperationConfigStartTime {
 	Hours: *f64,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.NewConnectHoursOfOperationConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectHoursOfOperationConfigAList
 ```
@@ -1281,7 +1281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.NewConnectHoursOfOperationConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectHoursOfOperationConfigAOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.NewConnectHoursOfOperationConfigEndTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectHoursOfOperationConfigEndTimeOutputReference
 ```
@@ -1933,7 +1933,7 @@ func InternalValue() ConnectHoursOfOperationConfigEndTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connecthoursofoperation"
 
 connecthoursofoperation.NewConnectHoursOfOperationConfigStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectHoursOfOperationConfigStartTimeOutputReference
 ```

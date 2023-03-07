@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.NewDataAwsAcmpcaCertificate(scope Construct, id *string, config DataAwsAcmpcaCertificateConfig) DataAwsAcmpcaCertificate
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
 
 &dataawsacmpcacertificate.DataAwsAcmpcaCertificateConfig {
 	Connection: interface{},

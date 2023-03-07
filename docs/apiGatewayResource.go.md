@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_re
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.NewApiGatewayResource(scope Construct, id *string, config ApiGatewayResourceConfig) ApiGatewayResource
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ apigatewayresource.ApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 &apigatewayresource.ApiGatewayResourceConfig {
 	Connection: interface{},

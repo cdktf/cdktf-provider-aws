@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_geofe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 locationgeofencecollection.NewLocationGeofenceCollection(scope Construct, id *string, config LocationGeofenceCollectionConfig) LocationGeofenceCollection
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 locationgeofencecollection.LocationGeofenceCollection_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 locationgeofencecollection.LocationGeofenceCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ locationgeofencecollection.LocationGeofenceCollection_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 locationgeofencecollection.LocationGeofenceCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 &locationgeofencecollection.LocationGeofenceCollectionConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollectio
 	KmsKeyId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.locationGeofenceCollection.LocationGeofenceCollectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.locationGeofenceCollection.LocationGeofenceCollectionTimeouts,
 }
 ```
 
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 &locationgeofencecollection.LocationGeofenceCollectionTimeouts {
 	Create: *string,
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationgeofencecollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationgeofencecollection"
 
 locationgeofencecollection.NewLocationGeofenceCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationGeofenceCollectionTimeoutsOutputReference
 ```

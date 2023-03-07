@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/fms_admin_acco
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fmsadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsadminaccount"
 
 fmsadminaccount.NewFmsAdminAccount(scope Construct, id *string, config FmsAdminAccountConfig) FmsAdminAccount
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fmsadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fmsadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ fmsadminaccount.FmsAdminAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fmsadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fmsadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsadminaccount"
 
 &fmsadminaccount.FmsAdminAccountConfig {
 	Connection: interface{},

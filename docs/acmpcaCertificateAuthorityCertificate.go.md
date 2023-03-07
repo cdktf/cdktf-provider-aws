@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificateauthoritycertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificateauthoritycertificate"
 
 acmpcacertificateauthoritycertificate.NewAcmpcaCertificateAuthorityCertificate(scope Construct, id *string, config AcmpcaCertificateAuthorityCertificateConfig) AcmpcaCertificateAuthorityCertificate
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificateauthoritycertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificateauthoritycertificate"
 
 acmpcacertificateauthoritycertificate.AcmpcaCertificateAuthorityCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificateauthoritycertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificateauthoritycertificate"
 
 acmpcacertificateauthoritycertificate.AcmpcaCertificateAuthorityCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ acmpcacertificateauthoritycertificate.AcmpcaCertificateAuthorityCertificate_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificateauthoritycertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificateauthoritycertificate"
 
 acmpcacertificateauthoritycertificate.AcmpcaCertificateAuthorityCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificateauthoritycertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificateauthoritycertificate"
 
 &acmpcacertificateauthoritycertificate.AcmpcaCertificateAuthorityCertificateConfig {
 	Connection: interface{},

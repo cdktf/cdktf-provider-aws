@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector_reso
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.NewInspectorResourceGroup(scope Construct, id *string, config InspectorResourceGroupConfig) InspectorResourceGroup
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 &inspectorresourcegroup.InspectorResourceGroupConfig {
 	Connection: interface{},

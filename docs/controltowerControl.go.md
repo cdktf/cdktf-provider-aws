@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/controltower_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.controltowerControl.ControltowerControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 controltowercontrol.NewControltowerControl(scope Construct, id *string, config ControltowerControlConfig) ControltowerControl
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.controltowerControl.ControltowerControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 controltowercontrol.ControltowerControl_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.controltowerControl.ControltowerControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 controltowercontrol.ControltowerControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ controltowercontrol.ControltowerControl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.controltowerControl.ControltowerControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 controltowercontrol.ControltowerControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.controltowerControl.ControltowerControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 &controltowercontrol.ControltowerControlConfig {
 	Connection: interface{},
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
 	ControlIdentifier: *string,
 	TargetIdentifier: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.controltowerControl.ControltowerControlTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.controltowerControl.ControltowerControlTimeouts,
 }
 ```
 
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.controltowerControl.ControltowerControlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 &controltowercontrol.ControltowerControlTimeouts {
 	Create: *string,
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.controltowerControl.ControltowerControlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/controltowercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/controltowercontrol"
 
 controltowercontrol.NewControltowerControlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ControltowerControlTimeoutsOutputReference
 ```

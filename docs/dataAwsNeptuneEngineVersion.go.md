@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/neptune_engine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.NewDataAwsNeptuneEngineVersion(scope Construct, id *string, config DataAwsNeptuneEngineVersionConfig) DataAwsNeptuneEngineVersion
 ```
@@ -301,7 +301,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsneptuneengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsneptuneengineversion"
 
 &dataawsneptuneengineversion.DataAwsNeptuneEngineVersionConfig {
 	Connection: interface{},

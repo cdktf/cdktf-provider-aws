@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/shield_protect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.NewShieldProtectionGroup(scope Construct, id *string, config ShieldProtectionGroupConfig) ShieldProtectionGroup
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ shieldprotectiongroup.ShieldProtectionGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 shieldprotectiongroup.ShieldProtectionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/shieldprotectiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldprotectiongroup"
 
 &shieldprotectiongroup.ShieldProtectionGroupConfig {
 	Connection: interface{},

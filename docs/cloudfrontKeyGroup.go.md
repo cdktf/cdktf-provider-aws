@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_key
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.NewCloudfrontKeyGroup(scope Construct, id *string, config CloudfrontKeyGroupConfig) CloudfrontKeyGroup
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 &cloudfrontkeygroup.CloudfrontKeyGroupConfig {
 	Connection: interface{},

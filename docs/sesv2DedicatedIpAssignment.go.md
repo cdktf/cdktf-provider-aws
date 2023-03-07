@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sesv2_dedicate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 sesv2dedicatedipassignment.NewSesv2DedicatedIpAssignment(scope Construct, id *string, config Sesv2DedicatedIpAssignmentConfig) Sesv2DedicatedIpAssignment
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 sesv2dedicatedipassignment.Sesv2DedicatedIpAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 sesv2dedicatedipassignment.Sesv2DedicatedIpAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ sesv2dedicatedipassignment.Sesv2DedicatedIpAssignment_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 sesv2dedicatedipassignment.Sesv2DedicatedIpAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 &sesv2dedicatedipassignment.Sesv2DedicatedIpAssignmentConfig {
 	Connection: interface{},
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignmen
 	DestinationPoolName: *string,
 	Ip: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeouts,
 }
 ```
 
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 &sesv2dedicatedipassignment.Sesv2DedicatedIpAssignmentTimeouts {
 	Create: *string,
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesv2dedicatedipassignment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2dedicatedipassignment"
 
 sesv2dedicatedipassignment.NewSesv2DedicatedIpAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2DedicatedIpAssignmentTimeoutsOutputReference
 ```

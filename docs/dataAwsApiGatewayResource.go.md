@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_re
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.NewDataAwsApiGatewayResource(scope Construct, id *string, config DataAwsApiGatewayResourceConfig) DataAwsApiGatewayResource
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 &dataawsapigatewayresource.DataAwsApiGatewayResourceConfig {
 	Connection: interface{},

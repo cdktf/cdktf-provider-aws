@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/lex_bot aws_le
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexBot.DataAwsLexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexbot"
 
 dataawslexbot.NewDataAwsLexBot(scope Construct, id *string, config DataAwsLexBotConfig) DataAwsLexBot
 ```
@@ -280,7 +280,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLexBot.DataAwsLexBot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLexBot.DataAwsLexBot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawslexbot.DataAwsLexBot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLexBot.DataAwsLexBot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexbot"
 
 &dataawslexbot.DataAwsLexBotConfig {
 	Connection: interface{},

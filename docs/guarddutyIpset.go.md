@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_ipse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyipset"
 
 guarddutyipset.NewGuarddutyIpset(scope Construct, id *string, config GuarddutyIpsetConfig) GuarddutyIpset
 ```
@@ -287,7 +287,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyipset"
 
 guarddutyipset.GuarddutyIpset_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyipset"
 
 guarddutyipset.GuarddutyIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ guarddutyipset.GuarddutyIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyipset"
 
 guarddutyipset.GuarddutyIpset_IsTerraformResource(x interface{}) *bool
 ```
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyipset"
 
 &guarddutyipset.GuarddutyIpsetConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/grafana_worksp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/grafanaworkspaceapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.NewGrafanaWorkspaceApiKey(scope Construct, id *string, config GrafanaWorkspaceApiKeyConfig) GrafanaWorkspaceApiKey
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/grafanaworkspaceapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/grafanaworkspaceapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/grafanaworkspaceapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/grafanaworkspaceapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/grafanaworkspaceapikey"
 
 &grafanaworkspaceapikey.GrafanaWorkspaceApiKeyConfig {
 	Connection: interface{},

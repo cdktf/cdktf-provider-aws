@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_si
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.NewWafregionalSizeConstraintSet(scope Construct, id *string, config WafregionalSizeConstraintSetConfig) WafregionalSizeConstraintSet
 ```
@@ -293,7 +293,7 @@ func ResetSizeConstraints()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.WafregionalSizeConstraintSet_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.WafregionalSizeConstraintSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ wafregionalsizeconstraintset.WafregionalSizeConstraintSet_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.WafregionalSizeConstraintSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 &wafregionalsizeconstraintset.WafregionalSizeConstraintSetConfig {
 	Connection: interface{},
@@ -764,11 +764,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 &wafregionalsizeconstraintset.WafregionalSizeConstraintSetSizeConstraints {
 	ComparisonOperator: *string,
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v12.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch,
 	Size: *f64,
 	TextTransformation: *string,
 }
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 &wafregionalsizeconstraintset.WafregionalSizeConstraintSetSizeConstraintsFieldToMatch {
 	Type: *string,
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.NewWafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference
 ```
@@ -1188,7 +1188,7 @@ func InternalValue() WafregionalSizeConstraintSetSizeConstraintsFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.NewWafregionalSizeConstraintSetSizeConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalSizeConstraintSetSizeConstraintsList
 ```
@@ -1331,7 +1331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafregionalsizeconstraintset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalsizeconstraintset"
 
 wafregionalsizeconstraintset.NewWafregionalSizeConstraintSetSizeConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalSizeConstraintSetSizeConstraintsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_eve
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventbus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventbus"
 
 cloudwatcheventbus.NewCloudwatchEventBus(scope Construct, id *string, config CloudwatchEventBusConfig) CloudwatchEventBus
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventbus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventbus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ cloudwatcheventbus.CloudwatchEventBus_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventbus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventbus"
 
 cloudwatcheventbus.CloudwatchEventBus_IsTerraformResource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventbus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventbus"
 
 &cloudwatcheventbus.CloudwatchEventBusConfig {
 	Connection: interface{},

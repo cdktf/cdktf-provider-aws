@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2webaclassociation"
 
 wafv2webaclassociation.NewWafv2WebAclAssociation(scope Construct, id *string, config Wafv2WebAclAssociationConfig) Wafv2WebAclAssociation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2webaclassociation"
 
 wafv2webaclassociation.Wafv2WebAclAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2webaclassociation"
 
 wafv2webaclassociation.Wafv2WebAclAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ wafv2webaclassociation.Wafv2WebAclAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2webaclassociation"
 
 wafv2webaclassociation.Wafv2WebAclAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webaclassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2webaclassociation"
 
 &wafv2webaclassociation.Wafv2WebAclAssociationConfig {
 	Connection: interface{},

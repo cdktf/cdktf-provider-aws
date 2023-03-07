@@ -170,7 +170,7 @@ export class DataAwsImagebuilderContainerRecipes extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_imagebuilder_container_recipes',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.0',
+        providerVersion: '4.57.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

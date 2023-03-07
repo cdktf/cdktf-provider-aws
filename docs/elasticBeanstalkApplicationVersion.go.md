@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanst
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplicationversion"
 
 elasticbeanstalkapplicationversion.NewElasticBeanstalkApplicationVersion(scope Construct, id *string, config ElasticBeanstalkApplicationVersionConfig) ElasticBeanstalkApplicationVersion
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplicationversion"
 
 elasticbeanstalkapplicationversion.ElasticBeanstalkApplicationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplicationversion"
 
 elasticbeanstalkapplicationversion.ElasticBeanstalkApplicationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ elasticbeanstalkapplicationversion.ElasticBeanstalkApplicationVersion_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplicationversion"
 
 elasticbeanstalkapplicationversion.ElasticBeanstalkApplicationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplicationversion"
 
 &elasticbeanstalkapplicationversion.ElasticBeanstalkApplicationVersionConfig {
 	Connection: interface{},

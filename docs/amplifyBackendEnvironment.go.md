@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_backen
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifybackendenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybackendenvironment"
 
 amplifybackendenvironment.NewAmplifyBackendEnvironment(scope Construct, id *string, config AmplifyBackendEnvironmentConfig) AmplifyBackendEnvironment
 ```
@@ -287,7 +287,7 @@ func ResetStackName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifybackendenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybackendenvironment"
 
 amplifybackendenvironment.AmplifyBackendEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifybackendenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybackendenvironment"
 
 amplifybackendenvironment.AmplifyBackendEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ amplifybackendenvironment.AmplifyBackendEnvironment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifybackendenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybackendenvironment"
 
 amplifybackendenvironment.AmplifyBackendEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifybackendenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifybackendenvironment"
 
 &amplifybackendenvironment.AmplifyBackendEnvironmentConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutposts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.NewDataAwsOutpostsOutposts(scope Construct, id *string, config DataAwsOutpostsOutpostsConfig) DataAwsOutpostsOutposts
 ```
@@ -301,7 +301,7 @@ func ResetSiteId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutposts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutposts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutposts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutposts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutposts"
 
 &dataawsoutpostsoutposts.DataAwsOutpostsOutpostsConfig {
 	Connection: interface{},
