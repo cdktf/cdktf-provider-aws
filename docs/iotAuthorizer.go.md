@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_authorizer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotAuthorizer.IotAuthorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iotauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotauthorizer"
 
 iotauthorizer.NewIotAuthorizer(scope Construct, id *string, config IotAuthorizerConfig) IotAuthorizer
 ```
@@ -308,7 +308,7 @@ func ResetTokenSigningPublicKeys()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotAuthorizer.IotAuthorizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iotauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotauthorizer"
 
 iotauthorizer.IotAuthorizer_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotAuthorizer.IotAuthorizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iotauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotauthorizer"
 
 iotauthorizer.IotAuthorizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ iotauthorizer.IotAuthorizer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotAuthorizer.IotAuthorizer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iotauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotauthorizer"
 
 iotauthorizer.IotAuthorizer_IsTerraformResource(x interface{}) *bool
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotAuthorizer.IotAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iotauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotauthorizer"
 
 &iotauthorizer.IotAuthorizerConfig {
 	Connection: interface{},

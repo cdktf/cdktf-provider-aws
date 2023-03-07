@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_policy_att
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamPolicyAttachment.IamPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicyattachment"
 
 iampolicyattachment.NewIamPolicyAttachment(scope Construct, id *string, config IamPolicyAttachmentConfig) IamPolicyAttachment
 ```
@@ -294,7 +294,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamPolicyAttachment.IamPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicyattachment"
 
 iampolicyattachment.IamPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamPolicyAttachment.IamPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicyattachment"
 
 iampolicyattachment.IamPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ iampolicyattachment.IamPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamPolicyAttachment.IamPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicyattachment"
 
 iampolicyattachment.IamPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamPolicyAttachment.IamPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicyattachment"
 
 &iampolicyattachment.IamPolicyAttachmentConfig {
 	Connection: interface{},

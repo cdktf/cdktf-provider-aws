@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.NewWorklinkFleet(scope Construct, id *string, config WorklinkFleetConfig) WorklinkFleet
 ```
@@ -341,7 +341,7 @@ func ResetOptimizeForEndUserLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.WorklinkFleet_IsConstruct(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.WorklinkFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ worklinkfleet.WorklinkFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.WorklinkFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 &worklinkfleet.WorklinkFleetConfig {
 	Connection: interface{},
@@ -821,8 +821,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
 	DeviceCaCertificate: *string,
 	DisplayName: *string,
 	Id: *string,
-	IdentityProvider: github.com/cdktf/cdktf-provider-aws-go/aws/v12.worklinkFleet.WorklinkFleetIdentityProvider,
-	Network: github.com/cdktf/cdktf-provider-aws-go/aws/v12.worklinkFleet.WorklinkFleetNetwork,
+	IdentityProvider: github.com/cdktf/cdktf-provider-aws-go/aws.worklinkFleet.WorklinkFleetIdentityProvider,
+	Network: github.com/cdktf/cdktf-provider-aws-go/aws.worklinkFleet.WorklinkFleetNetwork,
 	OptimizeForEndUserLocation: interface{},
 }
 ```
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 &worklinkfleet.WorklinkFleetIdentityProvider {
 	SamlMetadata: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 &worklinkfleet.WorklinkFleetNetwork {
 	SecurityGroupIds: *[]*string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.NewWorklinkFleetIdentityProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorklinkFleetIdentityProviderOutputReference
 ```
@@ -1428,7 +1428,7 @@ func InternalValue() WorklinkFleetIdentityProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/worklinkfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/worklinkfleet"
 
 worklinkfleet.NewWorklinkFleetNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorklinkFleetNetworkOutputReference
 ```

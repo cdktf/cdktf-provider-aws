@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/gamelift_build
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftBuild.GameliftBuild.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 gameliftbuild.NewGameliftBuild(scope Construct, id *string, config GameliftBuildConfig) GameliftBuild
 ```
@@ -307,7 +307,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gameliftBuild.GameliftBuild.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 gameliftbuild.GameliftBuild_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gameliftBuild.GameliftBuild.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 gameliftbuild.GameliftBuild_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ gameliftbuild.GameliftBuild_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gameliftBuild.GameliftBuild.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 gameliftbuild.GameliftBuild_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftBuild.GameliftBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 &gameliftbuild.GameliftBuildConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
 	Provisioners: *[]interface{},
 	Name: *string,
 	OperatingSystem: *string,
-	StorageLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.gameliftBuild.GameliftBuildStorageLocation,
+	StorageLocation: github.com/cdktf/cdktf-provider-aws-go/aws.gameliftBuild.GameliftBuildStorageLocation,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 &gameliftbuild.GameliftBuildStorageLocation {
 	Bucket: *string,
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gameliftbuild"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftbuild"
 
 gameliftbuild.NewGameliftBuildStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftBuildStorageLocationOutputReference
 ```

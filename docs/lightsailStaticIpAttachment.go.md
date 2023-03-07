@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_stat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticipattachment"
 
 lightsailstaticipattachment.NewLightsailStaticIpAttachment(scope Construct, id *string, config LightsailStaticIpAttachmentConfig) LightsailStaticIpAttachment
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailstaticipattachment"
 
 &lightsailstaticipattachment.LightsailStaticIpAttachmentConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_eve
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.NewCloudwatchEventArchive(scope Construct, id *string, config CloudwatchEventArchiveConfig) CloudwatchEventArchive
 ```
@@ -294,7 +294,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 &cloudwatcheventarchive.CloudwatchEventArchiveConfig {
 	Connection: interface{},

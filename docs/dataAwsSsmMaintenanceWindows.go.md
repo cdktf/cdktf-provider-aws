@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_maintenanc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.NewDataAwsSsmMaintenanceWindows(scope Construct, id *string, config DataAwsSsmMaintenanceWindowsConfig) DataAwsSsmMaintenanceWindows
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindows_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindows_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindows_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindows_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 &dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindowsConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 &dataawsssmmaintenancewindows.DataAwsSsmMaintenanceWindowsFilter {
 	Name: *string,
@@ -754,7 +754,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.NewDataAwsSsmMaintenanceWindowsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmMaintenanceWindowsFilterList
 ```
@@ -897,7 +897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmmaintenancewindows"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmmaintenancewindows"
 
 dataawsssmmaintenancewindows.NewDataAwsSsmMaintenanceWindowsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmMaintenanceWindowsFilterOutputReference
 ```

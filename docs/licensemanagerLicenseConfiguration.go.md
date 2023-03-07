@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/licensemanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/licensemanagerlicenseconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerlicenseconfiguration"
 
 licensemanagerlicenseconfiguration.NewLicensemanagerLicenseConfiguration(scope Construct, id *string, config LicensemanagerLicenseConfigurationConfig) LicensemanagerLicenseConfiguration
 ```
@@ -315,7 +315,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/licensemanagerlicenseconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerlicenseconfiguration"
 
 licensemanagerlicenseconfiguration.LicensemanagerLicenseConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/licensemanagerlicenseconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerlicenseconfiguration"
 
 licensemanagerlicenseconfiguration.LicensemanagerLicenseConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ licensemanagerlicenseconfiguration.LicensemanagerLicenseConfiguration_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/licensemanagerlicenseconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerlicenseconfiguration"
 
 licensemanagerlicenseconfiguration.LicensemanagerLicenseConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/licensemanagerlicenseconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerlicenseconfiguration"
 
 &licensemanagerlicenseconfiguration.LicensemanagerLicenseConfigurationConfig {
 	Connection: interface{},

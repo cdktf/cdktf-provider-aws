@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_email_iden
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesemailidentity"
 
 sesemailidentity.NewSesEmailIdentity(scope Construct, id *string, config SesEmailIdentityConfig) SesEmailIdentity
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesemailidentity"
 
 sesemailidentity.SesEmailIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesemailidentity"
 
 sesemailidentity.SesEmailIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ sesemailidentity.SesEmailIdentity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesemailidentity"
 
 sesemailidentity.SesEmailIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesemailidentity"
 
 &sesemailidentity.SesEmailIdentityConfig {
 	Connection: interface{},

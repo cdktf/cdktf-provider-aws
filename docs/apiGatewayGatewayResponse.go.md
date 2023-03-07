@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaygatewayresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaygatewayresponse"
 
 apigatewaygatewayresponse.NewApiGatewayGatewayResponse(scope Construct, id *string, config ApiGatewayGatewayResponseConfig) ApiGatewayGatewayResponse
 ```
@@ -294,7 +294,7 @@ func ResetStatusCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaygatewayresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaygatewayresponse"
 
 apigatewaygatewayresponse.ApiGatewayGatewayResponse_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaygatewayresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaygatewayresponse"
 
 apigatewaygatewayresponse.ApiGatewayGatewayResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ apigatewaygatewayresponse.ApiGatewayGatewayResponse_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaygatewayresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaygatewayresponse"
 
 apigatewaygatewayresponse.ApiGatewayGatewayResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaygatewayresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaygatewayresponse"
 
 &apigatewaygatewayresponse.ApiGatewayGatewayResponseConfig {
 	Connection: interface{},

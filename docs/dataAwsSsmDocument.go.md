@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_document a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.NewDataAwsSsmDocument(scope Construct, id *string, config DataAwsSsmDocumentConfig) DataAwsSsmDocument
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsssmdocument.DataAwsSsmDocument_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 dataawsssmdocument.DataAwsSsmDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmdocument"
 
 &dataawsssmdocument.DataAwsSsmDocumentConfig {
 	Connection: interface{},

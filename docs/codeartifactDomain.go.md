@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.NewCodeartifactDomain(scope Construct, id *string, config CodeartifactDomainConfig) CodeartifactDomain
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ codeartifactdomain.CodeartifactDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 &codeartifactdomain.CodeartifactDomainConfig {
 	Connection: interface{},

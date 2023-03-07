@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_alloca
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cecostallocationtag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostallocationtag"
 
 cecostallocationtag.NewCeCostAllocationTag(scope Construct, id *string, config CeCostAllocationTagConfig) CeCostAllocationTag
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cecostallocationtag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostallocationtag"
 
 cecostallocationtag.CeCostAllocationTag_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cecostallocationtag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostallocationtag"
 
 cecostallocationtag.CeCostAllocationTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ cecostallocationtag.CeCostAllocationTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cecostallocationtag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostallocationtag"
 
 cecostallocationtag.CeCostAllocationTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cecostallocationtag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostallocationtag"
 
 &cecostallocationtag.CeCostAllocationTagConfig {
 	Connection: interface{},

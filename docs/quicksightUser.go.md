@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_use
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightUser.QuicksightUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightuser"
 
 quicksightuser.NewQuicksightUser(scope Construct, id *string, config QuicksightUserConfig) QuicksightUser
 ```
@@ -308,7 +308,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightUser.QuicksightUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightuser"
 
 quicksightuser.QuicksightUser_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightUser.QuicksightUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightuser"
 
 quicksightuser.QuicksightUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ quicksightuser.QuicksightUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightUser.QuicksightUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightuser"
 
 quicksightuser.QuicksightUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightUser.QuicksightUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightuser"
 
 &quicksightuser.QuicksightUserConfig {
 	Connection: interface{},

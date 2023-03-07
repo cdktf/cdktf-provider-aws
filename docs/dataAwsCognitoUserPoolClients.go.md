@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpoolclients"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolclients"
 
 dataawscognitouserpoolclients.NewDataAwsCognitoUserPoolClients(scope Construct, id *string, config DataAwsCognitoUserPoolClientsConfig) DataAwsCognitoUserPoolClients
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpoolclients"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolclients"
 
 dataawscognitouserpoolclients.DataAwsCognitoUserPoolClients_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpoolclients"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolclients"
 
 dataawscognitouserpoolclients.DataAwsCognitoUserPoolClients_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawscognitouserpoolclients.DataAwsCognitoUserPoolClients_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpoolclients"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolclients"
 
 dataawscognitouserpoolclients.DataAwsCognitoUserPoolClients_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClientsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpoolclients"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpoolclients"
 
 &dataawscognitouserpoolclients.DataAwsCognitoUserPoolClientsConfig {
 	Connection: interface{},

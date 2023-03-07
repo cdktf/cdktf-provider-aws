@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_re
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.NewApiGatewayRestApi(scope Construct, id *string, config ApiGatewayRestApiConfig) ApiGatewayRestApi
 ```
@@ -370,7 +370,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ apigatewayrestapi.ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -967,7 +967,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 &apigatewayrestapi.ApiGatewayRestApiConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
 	Body: *string,
 	Description: *string,
 	DisableExecuteApiEndpoint: interface{},
-	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration,
+	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration,
 	Id: *string,
 	MinimumCompressionSize: *f64,
 	Parameters: *map[string]*string,
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 &apigatewayrestapi.ApiGatewayRestApiEndpointConfiguration {
 	Types: *[]*string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapi"
 
 apigatewayrestapi.NewApiGatewayRestApiEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayRestApiEndpointConfigurationOutputReference
 ```

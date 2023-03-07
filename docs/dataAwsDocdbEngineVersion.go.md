@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/docdb_engine_v
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.NewDataAwsDocdbEngineVersion(scope Construct, id *string, config DataAwsDocdbEngineVersionConfig) DataAwsDocdbEngineVersion
 ```
@@ -301,7 +301,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
 
 &dataawsdocdbengineversion.DataAwsDocdbEngineVersionConfig {
 	Connection: interface{},

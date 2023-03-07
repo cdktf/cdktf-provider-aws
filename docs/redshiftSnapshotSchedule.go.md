@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_snaps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.NewRedshiftSnapshotSchedule(scope Construct, id *string, config RedshiftSnapshotScheduleConfig) RedshiftSnapshotSchedule
 ```
@@ -315,7 +315,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
 
 redshiftsnapshotschedule.RedshiftSnapshotSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsnapshotschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsnapshotschedule"
 
 &redshiftsnapshotschedule.RedshiftSnapshotScheduleConfig {
 	Connection: interface{},

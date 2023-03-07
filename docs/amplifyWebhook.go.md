@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_webhoo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifywebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifywebhook"
 
 amplifywebhook.NewAmplifyWebhook(scope Construct, id *string, config AmplifyWebhookConfig) AmplifyWebhook
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifywebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifywebhook"
 
 amplifywebhook.AmplifyWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifywebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifywebhook"
 
 amplifywebhook.AmplifyWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ amplifywebhook.AmplifyWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifywebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifywebhook"
 
 amplifywebhook.AmplifyWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/amplifywebhook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/amplifywebhook"
 
 &amplifywebhook.AmplifyWebhookConfig {
 	Connection: interface{},

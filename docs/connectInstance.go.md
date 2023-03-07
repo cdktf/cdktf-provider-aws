@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_instan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectInstance.ConnectInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 connectinstance.NewConnectInstance(scope Construct, id *string, config ConnectInstanceConfig) ConnectInstance
 ```
@@ -342,7 +342,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectInstance.ConnectInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 connectinstance.ConnectInstance_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectInstance.ConnectInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 connectinstance.ConnectInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ connectinstance.ConnectInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectInstance.ConnectInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 connectinstance.ConnectInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectInstance.ConnectInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 &connectinstance.ConnectInstanceConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
 	Id: *string,
 	InstanceAlias: *string,
 	MultiPartyConferenceEnabled: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectInstance.ConnectInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.connectInstance.ConnectInstanceTimeouts,
 }
 ```
 
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectInstance.ConnectInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 &connectinstance.ConnectInstanceTimeouts {
 	Create: *string,
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectInstance.ConnectInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectinstance"
 
 connectinstance.NewConnectInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectInstanceTimeoutsOutputReference
 ```

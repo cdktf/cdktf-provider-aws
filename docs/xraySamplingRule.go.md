@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.xraySamplingRule.XraySamplingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/xraysamplingrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xraysamplingrule"
 
 xraysamplingrule.NewXraySamplingRule(scope Construct, id *string, config XraySamplingRuleConfig) XraySamplingRule
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.xraySamplingRule.XraySamplingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/xraysamplingrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.xraySamplingRule.XraySamplingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/xraysamplingrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ xraysamplingrule.XraySamplingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.xraySamplingRule.XraySamplingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/xraysamplingrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xraysamplingrule"
 
 xraysamplingrule.XraySamplingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.xraySamplingRule.XraySamplingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/xraysamplingrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/xraysamplingrule"
 
 &xraysamplingrule.XraySamplingRuleConfig {
 	Connection: interface{},

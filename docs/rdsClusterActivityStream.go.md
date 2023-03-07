@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_ac
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.NewRdsClusterActivityStream(scope Construct, id *string, config RdsClusterActivityStreamConfig) RdsClusterActivityStream
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusteractivitystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusteractivitystream"
 
 &rdsclusteractivitystream.RdsClusterActivityStreamConfig {
 	Connection: interface{},

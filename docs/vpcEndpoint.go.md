@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.NewVpcEndpoint(scope Construct, id *string, config VpcEndpointConfig) VpcEndpoint
 ```
@@ -383,7 +383,7 @@ func ResetVpcEndpointType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.VpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.VpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ vpcendpoint.VpcEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.VpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -1046,7 +1046,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 &vpcendpoint.VpcEndpointConfig {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
 	ServiceName: *string,
 	VpcId: *string,
 	AutoAccept: interface{},
-	DnsOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcEndpoint.VpcEndpointDnsOptions,
+	DnsOptions: github.com/cdktf/cdktf-provider-aws-go/aws.vpcEndpoint.VpcEndpointDnsOptions,
 	Id: *string,
 	IpAddressType: *string,
 	Policy: *string,
@@ -1069,7 +1069,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcEndpoint.VpcEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcEndpoint.VpcEndpointTimeouts,
 	VpcEndpointType: *string,
 }
 ```
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 &vpcendpoint.VpcEndpointDnsEntry {
 
@@ -1378,7 +1378,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 &vpcendpoint.VpcEndpointDnsOptions {
 	DnsRecordIpType: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 &vpcendpoint.VpcEndpointTimeouts {
 	Create: *string,
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.NewVpcEndpointDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcEndpointDnsEntryList
 ```
@@ -1604,7 +1604,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.NewVpcEndpointDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcEndpointDnsEntryOutputReference
 ```
@@ -1893,7 +1893,7 @@ func InternalValue() VpcEndpointDnsEntry
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.NewVpcEndpointDnsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEndpointDnsOptionsOutputReference
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() VpcEndpointDnsOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpoint"
 
 vpcendpoint.NewVpcEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEndpointTimeoutsOutputReference
 ```

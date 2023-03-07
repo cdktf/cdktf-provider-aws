@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_lb_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbattachment"
 
 lightsaillbattachment.NewLightsailLbAttachment(scope Construct, id *string, config LightsailLbAttachmentConfig) LightsailLbAttachment
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ lightsaillbattachment.LightsailLbAttachment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbattachment"
 
 lightsaillbattachment.LightsailLbAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbattachment"
 
 &lightsaillbattachment.LightsailLbAttachmentConfig {
 	Connection: interface{},

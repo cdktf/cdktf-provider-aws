@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_instances a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.NewDataAwsDbInstances(scope Construct, id *string, config DataAwsDbInstancesConfig) DataAwsDbInstances
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.DataAwsDbInstances_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.DataAwsDbInstances_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataawsdbinstances.DataAwsDbInstances_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.DataAwsDbInstances_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 &dataawsdbinstances.DataAwsDbInstancesConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 &dataawsdbinstances.DataAwsDbInstancesFilter {
 	Name: *string,
@@ -765,7 +765,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.NewDataAwsDbInstancesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDbInstancesFilterList
 ```
@@ -908,7 +908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbinstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbinstances"
 
 dataawsdbinstances.NewDataAwsDbInstancesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDbInstancesFilterOutputReference
 ```

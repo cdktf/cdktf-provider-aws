@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanst
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.NewDataAwsElasticBeanstalkHostedZone(scope Construct, id *string, config DataAwsElasticBeanstalkHostedZoneConfig) DataAwsElasticBeanstalkHostedZone
 ```
@@ -280,7 +280,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 &dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZoneConfig {
 	Connection: interface{},
