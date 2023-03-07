@@ -55,7 +55,7 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_auditmanager_assessment_delegation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.0',
+        providerVersion: '4.57.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

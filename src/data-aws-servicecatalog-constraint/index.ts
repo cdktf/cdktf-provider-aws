@@ -131,7 +131,7 @@ export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_servicecatalog_constraint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.0',
+        providerVersion: '4.57.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
