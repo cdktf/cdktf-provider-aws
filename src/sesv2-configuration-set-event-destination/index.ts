@@ -677,7 +677,7 @@ export class Sesv2ConfigurationSetEventDestination extends cdktf.TerraformResour
       terraformResourceType: 'aws_sesv2_configuration_set_event_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

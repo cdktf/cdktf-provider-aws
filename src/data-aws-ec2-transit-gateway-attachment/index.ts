@@ -174,7 +174,7 @@ export class DataAwsEc2TransitGatewayAttachment extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_ec2_transit_gateway_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -198,6 +198,16 @@ export class DataAwsEc2TransitGatewayAttachment extends cdktf.TerraformDataSourc
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // association_state - computed: true, optional: false, required: false
+  public get associationState() {
+    return this.getStringAttribute('association_state');
+  }
+
+  // association_transit_gateway_route_table_id - computed: true, optional: false, required: false
+  public get associationTransitGatewayRouteTableId() {
+    return this.getStringAttribute('association_transit_gateway_route_table_id');
   }
 
   // id - computed: true, optional: true, required: false

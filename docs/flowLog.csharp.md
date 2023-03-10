@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.putDestinationOptions">PutDestinationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole">ResetDeliverCrossAccountRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetDestinationOptions">ResetDestinationOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetEniId">ResetEniId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetIamRoleArn">ResetIamRoleArn</a></code> | *No description.* |
@@ -282,6 +283,12 @@ private void PutDestinationOptions(FlowLogDestinationOptions Value)
 
 ---
 
+##### `ResetDeliverCrossAccountRole` <a name="ResetDeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole"></a>
+
+```csharp
+private void ResetDeliverCrossAccountRole()
+```
+
 ##### `ResetDestinationOptions` <a name="ResetDestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLog.resetDestinationOptions"></a>
 
 ```csharp
@@ -468,6 +475,7 @@ FlowLog.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput">DeliverCrossAccountRoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptionsInput">DestinationOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.eniIdInput">EniIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArnInput">IamRoleArnInput</a></code> | <code>string</code> | *No description.* |
@@ -484,6 +492,7 @@ FlowLog.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentIdInput">TransitGatewayAttachmentIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.vpcIdInput">VpcIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.eniId">EniId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArn">IamRoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -664,6 +673,16 @@ public FlowLogDestinationOptionsOutputReference DestinationOptions { get; }
 
 ---
 
+##### `DeliverCrossAccountRoleInput`<sup>Optional</sup> <a name="DeliverCrossAccountRoleInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput"></a>
+
+```csharp
+public string DeliverCrossAccountRoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DestinationOptionsInput`<sup>Optional</sup> <a name="DestinationOptionsInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptionsInput"></a>
 
 ```csharp
@@ -818,6 +837,16 @@ public string TransitGatewayIdInput { get; }
 
 ```csharp
 public string VpcIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeliverCrossAccountRole`<sup>Required</sup> <a name="DeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole"></a>
+
+```csharp
+public string DeliverCrossAccountRole { get; }
 ```
 
 - *Type:* string
@@ -1009,6 +1038,7 @@ new FlowLogConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
+    string DeliverCrossAccountRole = null,
     FlowLogDestinationOptions DestinationOptions = null,
     string EniId = null,
     string IamRoleArn = null,
@@ -1039,6 +1069,7 @@ new FlowLogConfig {
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | destination_options block. |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.eniId">EniId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#eni_id FlowLog#eni_id}. |
 | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
@@ -1125,6 +1156,18 @@ public object[] Provisioners { get; set; }
 ```
 
 - *Type:* object[]
+
+---
+
+##### `DeliverCrossAccountRole`<sup>Optional</sup> <a name="DeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole"></a>
+
+```csharp
+public string DeliverCrossAccountRole { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
 
 ---
 

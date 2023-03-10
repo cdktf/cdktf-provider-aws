@@ -248,7 +248,7 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emr_managed_scaling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

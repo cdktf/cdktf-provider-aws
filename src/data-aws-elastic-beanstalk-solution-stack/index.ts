@@ -50,7 +50,7 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_elastic_beanstalk_solution_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

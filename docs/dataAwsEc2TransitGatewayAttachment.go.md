@@ -381,6 +381,8 @@ dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsTerrafor
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationState">AssociationState</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationTransitGatewayRouteTableId">AssociationTransitGatewayRouteTableId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentFilterList">DataAwsEc2TransitGatewayAttachmentFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.resourceId">ResourceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.resourceOwnerId">ResourceOwnerId</a></code> | <code>*string</code> | *No description.* |
@@ -524,6 +526,26 @@ func Provider() TerraformProvider
 
 ```go
 func Arn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AssociationState`<sup>Required</sup> <a name="AssociationState" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationState"></a>
+
+```go
+func AssociationState() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AssociationTransitGatewayRouteTableId`<sup>Required</sup> <a name="AssociationTransitGatewayRouteTableId" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationTransitGatewayRouteTableId"></a>
+
+```go
+func AssociationTransitGatewayRouteTableId() *string
 ```
 
 - *Type:* *string

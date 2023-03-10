@@ -50,7 +50,7 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_iam_role',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

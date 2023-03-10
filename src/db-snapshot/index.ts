@@ -23,6 +23,10 @@ export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot#shared_accounts DbSnapshot#shared_accounts}
+  */
+  readonly sharedAccounts?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot#tags DbSnapshot#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -39,9 +43,9 @@ export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DbSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot#read DbSnapshot#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot#create DbSnapshot#create}
   */
-  readonly read?: string;
+  readonly create?: string;
 }
 
 export function dbSnapshotTimeoutsToTerraform(struct?: DbSnapshotTimeoutsOutputReference | DbSnapshotTimeouts | cdktf.IResolvable): any {
@@ -50,7 +54,7 @@ export function dbSnapshotTimeoutsToTerraform(struct?: DbSnapshotTimeoutsOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktf.stringToTerraform(struct!.create),
   }
 }
 
@@ -72,9 +76,9 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._read !== undefined) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
-      internalValueResult.read = this._read;
+      internalValueResult.create = this._create;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -83,7 +87,7 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._read = undefined;
+      this._create = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -92,24 +96,24 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._read = value.read;
+      this._create = value.create;
     }
   }
 
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
   }
-  public set read(value: string) {
-    this._read = value;
+  public set create(value: string) {
+    this._create = value;
   }
-  public resetRead() {
-    this._read = undefined;
+  public resetCreate() {
+    this._create = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
+  public get createInput() {
+    return this._create;
   }
 }
 
@@ -139,7 +143,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -153,6 +157,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
     this._dbInstanceIdentifier = config.dbInstanceIdentifier;
     this._dbSnapshotIdentifier = config.dbSnapshotIdentifier;
     this._id = config.id;
+    this._sharedAccounts = config.sharedAccounts;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
@@ -259,6 +264,22 @@ export class DbSnapshot extends cdktf.TerraformResource {
     return this.getNumberAttribute('port');
   }
 
+  // shared_accounts - computed: false, optional: true, required: false
+  private _sharedAccounts?: string[]; 
+  public get sharedAccounts() {
+    return cdktf.Fn.tolist(this.getListAttribute('shared_accounts'));
+  }
+  public set sharedAccounts(value: string[]) {
+    this._sharedAccounts = value;
+  }
+  public resetSharedAccounts() {
+    this._sharedAccounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedAccountsInput() {
+    return this._sharedAccounts;
+  }
+
   // snapshot_type - computed: true, optional: false, required: false
   public get snapshotType() {
     return this.getStringAttribute('snapshot_type');
@@ -346,6 +367,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
       db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
       db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      shared_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sharedAccounts),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: dbSnapshotTimeoutsToTerraform(this._timeouts.internalValue),

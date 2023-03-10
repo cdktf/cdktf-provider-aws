@@ -56,6 +56,12 @@ export interface Sesv2ConfigurationSetConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#tracking_options Sesv2ConfigurationSet#tracking_options}
   */
   readonly trackingOptions?: Sesv2ConfigurationSetTrackingOptions;
+  /**
+  * vdm_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#vdm_options Sesv2ConfigurationSet#vdm_options}
+  */
+  readonly vdmOptions?: Sesv2ConfigurationSetVdmOptions;
 }
 export interface Sesv2ConfigurationSetDeliveryOptions {
   /**
@@ -411,6 +417,232 @@ export class Sesv2ConfigurationSetTrackingOptionsOutputReference extends cdktf.C
     return this._customRedirectDomain;
   }
 }
+export interface Sesv2ConfigurationSetVdmOptionsDashboardOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}
+  */
+  readonly engagementMetrics?: string;
+}
+
+export function sesv2ConfigurationSetVdmOptionsDashboardOptionsToTerraform(struct?: Sesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference | Sesv2ConfigurationSetVdmOptionsDashboardOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    engagement_metrics: cdktf.stringToTerraform(struct!.engagementMetrics),
+  }
+}
+
+export class Sesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Sesv2ConfigurationSetVdmOptionsDashboardOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._engagementMetrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.engagementMetrics = this._engagementMetrics;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Sesv2ConfigurationSetVdmOptionsDashboardOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._engagementMetrics = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._engagementMetrics = value.engagementMetrics;
+    }
+  }
+
+  // engagement_metrics - computed: false, optional: true, required: false
+  private _engagementMetrics?: string; 
+  public get engagementMetrics() {
+    return this.getStringAttribute('engagement_metrics');
+  }
+  public set engagementMetrics(value: string) {
+    this._engagementMetrics = value;
+  }
+  public resetEngagementMetrics() {
+    this._engagementMetrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engagementMetricsInput() {
+    return this._engagementMetrics;
+  }
+}
+export interface Sesv2ConfigurationSetVdmOptionsGuardianOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#optimized_shared_delivery Sesv2ConfigurationSet#optimized_shared_delivery}
+  */
+  readonly optimizedSharedDelivery?: string;
+}
+
+export function sesv2ConfigurationSetVdmOptionsGuardianOptionsToTerraform(struct?: Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference | Sesv2ConfigurationSetVdmOptionsGuardianOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    optimized_shared_delivery: cdktf.stringToTerraform(struct!.optimizedSharedDelivery),
+  }
+}
+
+export class Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Sesv2ConfigurationSetVdmOptionsGuardianOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._optimizedSharedDelivery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.optimizedSharedDelivery = this._optimizedSharedDelivery;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Sesv2ConfigurationSetVdmOptionsGuardianOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._optimizedSharedDelivery = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._optimizedSharedDelivery = value.optimizedSharedDelivery;
+    }
+  }
+
+  // optimized_shared_delivery - computed: false, optional: true, required: false
+  private _optimizedSharedDelivery?: string; 
+  public get optimizedSharedDelivery() {
+    return this.getStringAttribute('optimized_shared_delivery');
+  }
+  public set optimizedSharedDelivery(value: string) {
+    this._optimizedSharedDelivery = value;
+  }
+  public resetOptimizedSharedDelivery() {
+    this._optimizedSharedDelivery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optimizedSharedDeliveryInput() {
+    return this._optimizedSharedDelivery;
+  }
+}
+export interface Sesv2ConfigurationSetVdmOptions {
+  /**
+  * dashboard_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#dashboard_options Sesv2ConfigurationSet#dashboard_options}
+  */
+  readonly dashboardOptions?: Sesv2ConfigurationSetVdmOptionsDashboardOptions;
+  /**
+  * guardian_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#guardian_options Sesv2ConfigurationSet#guardian_options}
+  */
+  readonly guardianOptions?: Sesv2ConfigurationSetVdmOptionsGuardianOptions;
+}
+
+export function sesv2ConfigurationSetVdmOptionsToTerraform(struct?: Sesv2ConfigurationSetVdmOptionsOutputReference | Sesv2ConfigurationSetVdmOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dashboard_options: sesv2ConfigurationSetVdmOptionsDashboardOptionsToTerraform(struct!.dashboardOptions),
+    guardian_options: sesv2ConfigurationSetVdmOptionsGuardianOptionsToTerraform(struct!.guardianOptions),
+  }
+}
+
+export class Sesv2ConfigurationSetVdmOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Sesv2ConfigurationSetVdmOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dashboardOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dashboardOptions = this._dashboardOptions?.internalValue;
+    }
+    if (this._guardianOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.guardianOptions = this._guardianOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Sesv2ConfigurationSetVdmOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dashboardOptions.internalValue = undefined;
+      this._guardianOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dashboardOptions.internalValue = value.dashboardOptions;
+      this._guardianOptions.internalValue = value.guardianOptions;
+    }
+  }
+
+  // dashboard_options - computed: false, optional: true, required: false
+  private _dashboardOptions = new Sesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference(this, "dashboard_options");
+  public get dashboardOptions() {
+    return this._dashboardOptions;
+  }
+  public putDashboardOptions(value: Sesv2ConfigurationSetVdmOptionsDashboardOptions) {
+    this._dashboardOptions.internalValue = value;
+  }
+  public resetDashboardOptions() {
+    this._dashboardOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dashboardOptionsInput() {
+    return this._dashboardOptions.internalValue;
+  }
+
+  // guardian_options - computed: false, optional: true, required: false
+  private _guardianOptions = new Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference(this, "guardian_options");
+  public get guardianOptions() {
+    return this._guardianOptions;
+  }
+  public putGuardianOptions(value: Sesv2ConfigurationSetVdmOptionsGuardianOptions) {
+    this._guardianOptions.internalValue = value;
+  }
+  public resetGuardianOptions() {
+    this._guardianOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guardianOptionsInput() {
+    return this._guardianOptions.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set aws_sesv2_configuration_set}
@@ -438,7 +670,7 @@ export class Sesv2ConfigurationSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_configuration_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -458,6 +690,7 @@ export class Sesv2ConfigurationSet extends cdktf.TerraformResource {
     this._sendingOptions.internalValue = config.sendingOptions;
     this._suppressionOptions.internalValue = config.suppressionOptions;
     this._trackingOptions.internalValue = config.trackingOptions;
+    this._vdmOptions.internalValue = config.vdmOptions;
   }
 
   // ==========
@@ -610,6 +843,22 @@ export class Sesv2ConfigurationSet extends cdktf.TerraformResource {
     return this._trackingOptions.internalValue;
   }
 
+  // vdm_options - computed: false, optional: true, required: false
+  private _vdmOptions = new Sesv2ConfigurationSetVdmOptionsOutputReference(this, "vdm_options");
+  public get vdmOptions() {
+    return this._vdmOptions;
+  }
+  public putVdmOptions(value: Sesv2ConfigurationSetVdmOptions) {
+    this._vdmOptions.internalValue = value;
+  }
+  public resetVdmOptions() {
+    this._vdmOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vdmOptionsInput() {
+    return this._vdmOptions.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -625,6 +874,7 @@ export class Sesv2ConfigurationSet extends cdktf.TerraformResource {
       sending_options: sesv2ConfigurationSetSendingOptionsToTerraform(this._sendingOptions.internalValue),
       suppression_options: sesv2ConfigurationSetSuppressionOptionsToTerraform(this._suppressionOptions.internalValue),
       tracking_options: sesv2ConfigurationSetTrackingOptionsToTerraform(this._trackingOptions.internalValue),
+      vdm_options: sesv2ConfigurationSetVdmOptionsToTerraform(this._vdmOptions.internalValue),
     };
   }
 }

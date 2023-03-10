@@ -114,7 +114,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kinesis_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
