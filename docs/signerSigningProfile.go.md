@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/signer_signing
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.NewSignerSigningProfile(scope Construct, id *string, config SignerSigningProfileConfig) SignerSigningProfile
 ```
@@ -321,7 +321,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.SignerSigningProfile_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.SignerSigningProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ signersigningprofile.SignerSigningProfile_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.SignerSigningProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 &signersigningprofile.SignerSigningProfileConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
 	Id: *string,
 	Name: *string,
 	NamePrefix: *string,
-	SignatureValidityPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v12.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod,
+	SignatureValidityPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 &signersigningprofile.SignerSigningProfileRevocationRecord {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 &signersigningprofile.SignerSigningProfileSignatureValidityPeriod {
 	Type: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.NewSignerSigningProfileRevocationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignerSigningProfileRevocationRecordList
 ```
@@ -1184,7 +1184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.NewSignerSigningProfileRevocationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignerSigningProfileRevocationRecordOutputReference
 ```
@@ -1484,7 +1484,7 @@ func InternalValue() SignerSigningProfileRevocationRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/signersigningprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/signersigningprofile"
 
 signersigningprofile.NewSignerSigningProfileSignatureValidityPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignerSigningProfileSignatureValidityPeriodOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/redshiftserver
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsredshiftserverlesscredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.NewDataAwsRedshiftserverlessCredentials(scope Construct, id *string, config DataAwsRedshiftserverlessCredentialsConfig) DataAwsRedshiftserverlessCredentials
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsredshiftserverlesscredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsredshiftserverlesscredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsredshiftserverlesscredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlesscredentials"
 
 dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsredshiftserverlesscredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftserverlesscredentials"
 
 &dataawsredshiftserverlesscredentials.DataAwsRedshiftserverlessCredentialsConfig {
 	Connection: interface{},

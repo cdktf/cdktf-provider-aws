@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchlogresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.NewCloudwatchLogResourcePolicy(scope Construct, id *string, config CloudwatchLogResourcePolicyConfig) CloudwatchLogResourcePolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchlogresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchlogresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchlogresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogresourcepolicy"
 
 cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchlogresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogresourcepolicy"
 
 &cloudwatchlogresourcepolicy.CloudwatchLogResourcePolicyConfig {
 	Connection: interface{},

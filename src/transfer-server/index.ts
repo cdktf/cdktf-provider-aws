@@ -89,6 +89,12 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly endpointDetails?: TransferServerEndpointDetails;
   /**
+  * protocol_details block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#protocol_details TransferServer#protocol_details}
+  */
+  readonly protocolDetails?: TransferServerProtocolDetails;
+  /**
   * workflow_details block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#workflow_details TransferServer#workflow_details}
@@ -266,6 +272,152 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
     return this._vpcId;
+  }
+}
+export interface TransferServerProtocolDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#as2_transports TransferServer#as2_transports}
+  */
+  readonly as2Transports?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#passive_ip TransferServer#passive_ip}
+  */
+  readonly passiveIp?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#set_stat_option TransferServer#set_stat_option}
+  */
+  readonly setStatOption?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#tls_session_resumption_mode TransferServer#tls_session_resumption_mode}
+  */
+  readonly tlsSessionResumptionMode?: string;
+}
+
+export function transferServerProtocolDetailsToTerraform(struct?: TransferServerProtocolDetailsOutputReference | TransferServerProtocolDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    as2_transports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.as2Transports),
+    passive_ip: cdktf.stringToTerraform(struct!.passiveIp),
+    set_stat_option: cdktf.stringToTerraform(struct!.setStatOption),
+    tls_session_resumption_mode: cdktf.stringToTerraform(struct!.tlsSessionResumptionMode),
+  }
+}
+
+export class TransferServerProtocolDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferServerProtocolDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._as2Transports !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.as2Transports = this._as2Transports;
+    }
+    if (this._passiveIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passiveIp = this._passiveIp;
+    }
+    if (this._setStatOption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.setStatOption = this._setStatOption;
+    }
+    if (this._tlsSessionResumptionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsSessionResumptionMode = this._tlsSessionResumptionMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferServerProtocolDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._as2Transports = undefined;
+      this._passiveIp = undefined;
+      this._setStatOption = undefined;
+      this._tlsSessionResumptionMode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._as2Transports = value.as2Transports;
+      this._passiveIp = value.passiveIp;
+      this._setStatOption = value.setStatOption;
+      this._tlsSessionResumptionMode = value.tlsSessionResumptionMode;
+    }
+  }
+
+  // as2_transports - computed: true, optional: true, required: false
+  private _as2Transports?: string[]; 
+  public get as2Transports() {
+    return cdktf.Fn.tolist(this.getListAttribute('as2_transports'));
+  }
+  public set as2Transports(value: string[]) {
+    this._as2Transports = value;
+  }
+  public resetAs2Transports() {
+    this._as2Transports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get as2TransportsInput() {
+    return this._as2Transports;
+  }
+
+  // passive_ip - computed: true, optional: true, required: false
+  private _passiveIp?: string; 
+  public get passiveIp() {
+    return this.getStringAttribute('passive_ip');
+  }
+  public set passiveIp(value: string) {
+    this._passiveIp = value;
+  }
+  public resetPassiveIp() {
+    this._passiveIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passiveIpInput() {
+    return this._passiveIp;
+  }
+
+  // set_stat_option - computed: true, optional: true, required: false
+  private _setStatOption?: string; 
+  public get setStatOption() {
+    return this.getStringAttribute('set_stat_option');
+  }
+  public set setStatOption(value: string) {
+    this._setStatOption = value;
+  }
+  public resetSetStatOption() {
+    this._setStatOption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get setStatOptionInput() {
+    return this._setStatOption;
+  }
+
+  // tls_session_resumption_mode - computed: true, optional: true, required: false
+  private _tlsSessionResumptionMode?: string; 
+  public get tlsSessionResumptionMode() {
+    return this.getStringAttribute('tls_session_resumption_mode');
+  }
+  public set tlsSessionResumptionMode(value: string) {
+    this._tlsSessionResumptionMode = value;
+  }
+  public resetTlsSessionResumptionMode() {
+    this._tlsSessionResumptionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsSessionResumptionModeInput() {
+    return this._tlsSessionResumptionMode;
   }
 }
 export interface TransferServerWorkflowDetailsOnPartialUpload {
@@ -563,7 +715,7 @@ export class TransferServer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_server',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -593,6 +745,7 @@ export class TransferServer extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._url = config.url;
     this._endpointDetails.internalValue = config.endpointDetails;
+    this._protocolDetails.internalValue = config.protocolDetails;
     this._workflowDetails.internalValue = config.workflowDetails;
   }
 
@@ -919,6 +1072,22 @@ export class TransferServer extends cdktf.TerraformResource {
     return this._endpointDetails.internalValue;
   }
 
+  // protocol_details - computed: false, optional: true, required: false
+  private _protocolDetails = new TransferServerProtocolDetailsOutputReference(this, "protocol_details");
+  public get protocolDetails() {
+    return this._protocolDetails;
+  }
+  public putProtocolDetails(value: TransferServerProtocolDetails) {
+    this._protocolDetails.internalValue = value;
+  }
+  public resetProtocolDetails() {
+    this._protocolDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolDetailsInput() {
+    return this._protocolDetails.internalValue;
+  }
+
   // workflow_details - computed: false, optional: true, required: false
   private _workflowDetails = new TransferServerWorkflowDetailsOutputReference(this, "workflow_details");
   public get workflowDetails() {
@@ -960,6 +1129,7 @@ export class TransferServer extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       endpoint_details: transferServerEndpointDetailsToTerraform(this._endpointDetails.internalValue),
+      protocol_details: transferServerProtocolDetailsToTerraform(this._protocolDetails.internalValue),
       workflow_details: transferServerWorkflowDetailsToTerraform(this._workflowDetails.internalValue),
     };
   }

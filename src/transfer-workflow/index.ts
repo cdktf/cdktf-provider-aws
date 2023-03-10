@@ -613,6 +613,458 @@ export class TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference ex
     return this._timeoutSeconds;
   }
 }
+export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#file_system_id TransferWorkflow#file_system_id}
+  */
+  readonly fileSystemId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#path TransferWorkflow#path}
+  */
+  readonly path?: string;
+}
+
+export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileSystemId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSystemId = this._fileSystemId;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileSystemId = undefined;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileSystemId = value.fileSystemId;
+      this._path = value.path;
+    }
+  }
+
+  // file_system_id - computed: false, optional: true, required: false
+  private _fileSystemId?: string; 
+  public get fileSystemId() {
+    return this.getStringAttribute('file_system_id');
+  }
+  public set fileSystemId(value: string) {
+    this._fileSystemId = value;
+  }
+  public resetFileSystemId() {
+    this._fileSystemId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#bucket TransferWorkflow#bucket}
+  */
+  readonly bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#key TransferWorkflow#key}
+  */
+  readonly key?: string;
+}
+
+export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucket = undefined;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucket = value.bucket;
+      this._key = value.key;
+    }
+  }
+
+  // bucket - computed: false, optional: true, required: false
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  public resetBucket() {
+    this._bucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation {
+  /**
+  * efs_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
+  */
+  readonly efsFileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation;
+  /**
+  * s3_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
+  */
+  readonly s3FileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation;
+}
+
+export function transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    efs_file_location: transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct!.efsFileLocation),
+    s3_file_location: transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct!.s3FileLocation),
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._efsFileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.efsFileLocation = this._efsFileLocation?.internalValue;
+    }
+    if (this._s3FileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3FileLocation = this._s3FileLocation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._efsFileLocation.internalValue = undefined;
+      this._s3FileLocation.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._efsFileLocation.internalValue = value.efsFileLocation;
+      this._s3FileLocation.internalValue = value.s3FileLocation;
+    }
+  }
+
+  // efs_file_location - computed: false, optional: true, required: false
+  private _efsFileLocation = new TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference(this, "efs_file_location");
+  public get efsFileLocation() {
+    return this._efsFileLocation;
+  }
+  public putEfsFileLocation(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation) {
+    this._efsFileLocation.internalValue = value;
+  }
+  public resetEfsFileLocation() {
+    this._efsFileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get efsFileLocationInput() {
+    return this._efsFileLocation.internalValue;
+  }
+
+  // s3_file_location - computed: false, optional: true, required: false
+  private _s3FileLocation = new TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference(this, "s3_file_location");
+  public get s3FileLocation() {
+    return this._s3FileLocation;
+  }
+  public putS3FileLocation(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation) {
+    this._s3FileLocation.internalValue = value;
+  }
+  public resetS3FileLocation() {
+    this._s3FileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3FileLocationInput() {
+    return this._s3FileLocation.internalValue;
+  }
+}
+export interface TransferWorkflowOnExceptionStepsDecryptStepDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#overwrite_existing TransferWorkflow#overwrite_existing}
+  */
+  readonly overwriteExisting?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#source_file_location TransferWorkflow#source_file_location}
+  */
+  readonly sourceFileLocation?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#type TransferWorkflow#type}
+  */
+  readonly type: string;
+  /**
+  * destination_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
+  */
+  readonly destinationFileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation;
+}
+
+export function transferWorkflowOnExceptionStepsDecryptStepDetailsToTerraform(struct?: TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference | TransferWorkflowOnExceptionStepsDecryptStepDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    type: cdktf.stringToTerraform(struct!.type),
+    destination_file_location: transferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
+  }
+}
+
+export class TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowOnExceptionStepsDecryptStepDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._overwriteExisting !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overwriteExisting = this._overwriteExisting;
+    }
+    if (this._sourceFileLocation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceFileLocation = this._sourceFileLocation;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._destinationFileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationFileLocation = this._destinationFileLocation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowOnExceptionStepsDecryptStepDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._overwriteExisting = undefined;
+      this._sourceFileLocation = undefined;
+      this._type = undefined;
+      this._destinationFileLocation.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._overwriteExisting = value.overwriteExisting;
+      this._sourceFileLocation = value.sourceFileLocation;
+      this._type = value.type;
+      this._destinationFileLocation.internalValue = value.destinationFileLocation;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // overwrite_existing - computed: false, optional: true, required: false
+  private _overwriteExisting?: string; 
+  public get overwriteExisting() {
+    return this.getStringAttribute('overwrite_existing');
+  }
+  public set overwriteExisting(value: string) {
+    this._overwriteExisting = value;
+  }
+  public resetOverwriteExisting() {
+    this._overwriteExisting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overwriteExistingInput() {
+    return this._overwriteExisting;
+  }
+
+  // source_file_location - computed: false, optional: true, required: false
+  private _sourceFileLocation?: string; 
+  public get sourceFileLocation() {
+    return this.getStringAttribute('source_file_location');
+  }
+  public set sourceFileLocation(value: string) {
+    this._sourceFileLocation = value;
+  }
+  public resetSourceFileLocation() {
+    this._sourceFileLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceFileLocationInput() {
+    return this._sourceFileLocation;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // destination_file_location - computed: false, optional: true, required: false
+  private _destinationFileLocation = new TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference(this, "destination_file_location");
+  public get destinationFileLocation() {
+    return this._destinationFileLocation;
+  }
+  public putDestinationFileLocation(value: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation) {
+    this._destinationFileLocation.internalValue = value;
+  }
+  public resetDestinationFileLocation() {
+    this._destinationFileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationFileLocationInput() {
+    return this._destinationFileLocation.internalValue;
+  }
+}
 export interface TransferWorkflowOnExceptionStepsDeleteStepDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
@@ -962,6 +1414,12 @@ export interface TransferWorkflowOnExceptionSteps {
   */
   readonly customStepDetails?: TransferWorkflowOnExceptionStepsCustomStepDetails;
   /**
+  * decrypt_step_details block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#decrypt_step_details TransferWorkflow#decrypt_step_details}
+  */
+  readonly decryptStepDetails?: TransferWorkflowOnExceptionStepsDecryptStepDetails;
+  /**
   * delete_step_details block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#delete_step_details TransferWorkflow#delete_step_details}
@@ -984,6 +1442,7 @@ export function transferWorkflowOnExceptionStepsToTerraform(struct?: TransferWor
     type: cdktf.stringToTerraform(struct!.type),
     copy_step_details: transferWorkflowOnExceptionStepsCopyStepDetailsToTerraform(struct!.copyStepDetails),
     custom_step_details: transferWorkflowOnExceptionStepsCustomStepDetailsToTerraform(struct!.customStepDetails),
+    decrypt_step_details: transferWorkflowOnExceptionStepsDecryptStepDetailsToTerraform(struct!.decryptStepDetails),
     delete_step_details: transferWorkflowOnExceptionStepsDeleteStepDetailsToTerraform(struct!.deleteStepDetails),
     tag_step_details: transferWorkflowOnExceptionStepsTagStepDetailsToTerraform(struct!.tagStepDetails),
   }
@@ -1021,6 +1480,10 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.customStepDetails = this._customStepDetails?.internalValue;
     }
+    if (this._decryptStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.decryptStepDetails = this._decryptStepDetails?.internalValue;
+    }
     if (this._deleteStepDetails?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.deleteStepDetails = this._deleteStepDetails?.internalValue;
@@ -1039,6 +1502,7 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
       this._type = undefined;
       this._copyStepDetails.internalValue = undefined;
       this._customStepDetails.internalValue = undefined;
+      this._decryptStepDetails.internalValue = undefined;
       this._deleteStepDetails.internalValue = undefined;
       this._tagStepDetails.internalValue = undefined;
     }
@@ -1052,6 +1516,7 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
       this._type = value.type;
       this._copyStepDetails.internalValue = value.copyStepDetails;
       this._customStepDetails.internalValue = value.customStepDetails;
+      this._decryptStepDetails.internalValue = value.decryptStepDetails;
       this._deleteStepDetails.internalValue = value.deleteStepDetails;
       this._tagStepDetails.internalValue = value.tagStepDetails;
     }
@@ -1100,6 +1565,22 @@ export class TransferWorkflowOnExceptionStepsOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get customStepDetailsInput() {
     return this._customStepDetails.internalValue;
+  }
+
+  // decrypt_step_details - computed: false, optional: true, required: false
+  private _decryptStepDetails = new TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference(this, "decrypt_step_details");
+  public get decryptStepDetails() {
+    return this._decryptStepDetails;
+  }
+  public putDecryptStepDetails(value: TransferWorkflowOnExceptionStepsDecryptStepDetails) {
+    this._decryptStepDetails.internalValue = value;
+  }
+  public resetDecryptStepDetails() {
+    this._decryptStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decryptStepDetailsInput() {
+    return this._decryptStepDetails.internalValue;
   }
 
   // delete_step_details - computed: false, optional: true, required: false
@@ -1728,6 +2209,458 @@ export class TransferWorkflowStepsCustomStepDetailsOutputReference extends cdktf
     return this._timeoutSeconds;
   }
 }
+export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#file_system_id TransferWorkflow#file_system_id}
+  */
+  readonly fileSystemId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#path TransferWorkflow#path}
+  */
+  readonly path?: string;
+}
+
+export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileSystemId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSystemId = this._fileSystemId;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileSystemId = undefined;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileSystemId = value.fileSystemId;
+      this._path = value.path;
+    }
+  }
+
+  // file_system_id - computed: false, optional: true, required: false
+  private _fileSystemId?: string; 
+  public get fileSystemId() {
+    return this.getStringAttribute('file_system_id');
+  }
+  public set fileSystemId(value: string) {
+    this._fileSystemId = value;
+  }
+  public resetFileSystemId() {
+    this._fileSystemId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#bucket TransferWorkflow#bucket}
+  */
+  readonly bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#key TransferWorkflow#key}
+  */
+  readonly key?: string;
+}
+
+export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucket = undefined;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucket = value.bucket;
+      this._key = value.key;
+    }
+  }
+
+  // bucket - computed: false, optional: true, required: false
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  public resetBucket() {
+    this._bucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation {
+  /**
+  * efs_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
+  */
+  readonly efsFileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation;
+  /**
+  * s3_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
+  */
+  readonly s3FileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation;
+}
+
+export function transferWorkflowStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference | TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    efs_file_location: transferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationToTerraform(struct!.efsFileLocation),
+    s3_file_location: transferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationToTerraform(struct!.s3FileLocation),
+  }
+}
+
+export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._efsFileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.efsFileLocation = this._efsFileLocation?.internalValue;
+    }
+    if (this._s3FileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3FileLocation = this._s3FileLocation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._efsFileLocation.internalValue = undefined;
+      this._s3FileLocation.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._efsFileLocation.internalValue = value.efsFileLocation;
+      this._s3FileLocation.internalValue = value.s3FileLocation;
+    }
+  }
+
+  // efs_file_location - computed: false, optional: true, required: false
+  private _efsFileLocation = new TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference(this, "efs_file_location");
+  public get efsFileLocation() {
+    return this._efsFileLocation;
+  }
+  public putEfsFileLocation(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation) {
+    this._efsFileLocation.internalValue = value;
+  }
+  public resetEfsFileLocation() {
+    this._efsFileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get efsFileLocationInput() {
+    return this._efsFileLocation.internalValue;
+  }
+
+  // s3_file_location - computed: false, optional: true, required: false
+  private _s3FileLocation = new TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference(this, "s3_file_location");
+  public get s3FileLocation() {
+    return this._s3FileLocation;
+  }
+  public putS3FileLocation(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation) {
+    this._s3FileLocation.internalValue = value;
+  }
+  public resetS3FileLocation() {
+    this._s3FileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3FileLocationInput() {
+    return this._s3FileLocation.internalValue;
+  }
+}
+export interface TransferWorkflowStepsDecryptStepDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#overwrite_existing TransferWorkflow#overwrite_existing}
+  */
+  readonly overwriteExisting?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#source_file_location TransferWorkflow#source_file_location}
+  */
+  readonly sourceFileLocation?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#type TransferWorkflow#type}
+  */
+  readonly type: string;
+  /**
+  * destination_file_location block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
+  */
+  readonly destinationFileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation;
+}
+
+export function transferWorkflowStepsDecryptStepDetailsToTerraform(struct?: TransferWorkflowStepsDecryptStepDetailsOutputReference | TransferWorkflowStepsDecryptStepDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    overwrite_existing: cdktf.stringToTerraform(struct!.overwriteExisting),
+    source_file_location: cdktf.stringToTerraform(struct!.sourceFileLocation),
+    type: cdktf.stringToTerraform(struct!.type),
+    destination_file_location: transferWorkflowStepsDecryptStepDetailsDestinationFileLocationToTerraform(struct!.destinationFileLocation),
+  }
+}
+
+export class TransferWorkflowStepsDecryptStepDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferWorkflowStepsDecryptStepDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._overwriteExisting !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overwriteExisting = this._overwriteExisting;
+    }
+    if (this._sourceFileLocation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceFileLocation = this._sourceFileLocation;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._destinationFileLocation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationFileLocation = this._destinationFileLocation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWorkflowStepsDecryptStepDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._overwriteExisting = undefined;
+      this._sourceFileLocation = undefined;
+      this._type = undefined;
+      this._destinationFileLocation.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._overwriteExisting = value.overwriteExisting;
+      this._sourceFileLocation = value.sourceFileLocation;
+      this._type = value.type;
+      this._destinationFileLocation.internalValue = value.destinationFileLocation;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // overwrite_existing - computed: false, optional: true, required: false
+  private _overwriteExisting?: string; 
+  public get overwriteExisting() {
+    return this.getStringAttribute('overwrite_existing');
+  }
+  public set overwriteExisting(value: string) {
+    this._overwriteExisting = value;
+  }
+  public resetOverwriteExisting() {
+    this._overwriteExisting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overwriteExistingInput() {
+    return this._overwriteExisting;
+  }
+
+  // source_file_location - computed: false, optional: true, required: false
+  private _sourceFileLocation?: string; 
+  public get sourceFileLocation() {
+    return this.getStringAttribute('source_file_location');
+  }
+  public set sourceFileLocation(value: string) {
+    this._sourceFileLocation = value;
+  }
+  public resetSourceFileLocation() {
+    this._sourceFileLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceFileLocationInput() {
+    return this._sourceFileLocation;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // destination_file_location - computed: false, optional: true, required: false
+  private _destinationFileLocation = new TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference(this, "destination_file_location");
+  public get destinationFileLocation() {
+    return this._destinationFileLocation;
+  }
+  public putDestinationFileLocation(value: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation) {
+    this._destinationFileLocation.internalValue = value;
+  }
+  public resetDestinationFileLocation() {
+    this._destinationFileLocation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationFileLocationInput() {
+    return this._destinationFileLocation.internalValue;
+  }
+}
 export interface TransferWorkflowStepsDeleteStepDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#name TransferWorkflow#name}
@@ -2077,6 +3010,12 @@ export interface TransferWorkflowSteps {
   */
   readonly customStepDetails?: TransferWorkflowStepsCustomStepDetails;
   /**
+  * decrypt_step_details block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#decrypt_step_details TransferWorkflow#decrypt_step_details}
+  */
+  readonly decryptStepDetails?: TransferWorkflowStepsDecryptStepDetails;
+  /**
   * delete_step_details block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#delete_step_details TransferWorkflow#delete_step_details}
@@ -2099,6 +3038,7 @@ export function transferWorkflowStepsToTerraform(struct?: TransferWorkflowSteps 
     type: cdktf.stringToTerraform(struct!.type),
     copy_step_details: transferWorkflowStepsCopyStepDetailsToTerraform(struct!.copyStepDetails),
     custom_step_details: transferWorkflowStepsCustomStepDetailsToTerraform(struct!.customStepDetails),
+    decrypt_step_details: transferWorkflowStepsDecryptStepDetailsToTerraform(struct!.decryptStepDetails),
     delete_step_details: transferWorkflowStepsDeleteStepDetailsToTerraform(struct!.deleteStepDetails),
     tag_step_details: transferWorkflowStepsTagStepDetailsToTerraform(struct!.tagStepDetails),
   }
@@ -2136,6 +3076,10 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.customStepDetails = this._customStepDetails?.internalValue;
     }
+    if (this._decryptStepDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.decryptStepDetails = this._decryptStepDetails?.internalValue;
+    }
     if (this._deleteStepDetails?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.deleteStepDetails = this._deleteStepDetails?.internalValue;
@@ -2154,6 +3098,7 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._copyStepDetails.internalValue = undefined;
       this._customStepDetails.internalValue = undefined;
+      this._decryptStepDetails.internalValue = undefined;
       this._deleteStepDetails.internalValue = undefined;
       this._tagStepDetails.internalValue = undefined;
     }
@@ -2167,6 +3112,7 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
       this._type = value.type;
       this._copyStepDetails.internalValue = value.copyStepDetails;
       this._customStepDetails.internalValue = value.customStepDetails;
+      this._decryptStepDetails.internalValue = value.decryptStepDetails;
       this._deleteStepDetails.internalValue = value.deleteStepDetails;
       this._tagStepDetails.internalValue = value.tagStepDetails;
     }
@@ -2215,6 +3161,22 @@ export class TransferWorkflowStepsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get customStepDetailsInput() {
     return this._customStepDetails.internalValue;
+  }
+
+  // decrypt_step_details - computed: false, optional: true, required: false
+  private _decryptStepDetails = new TransferWorkflowStepsDecryptStepDetailsOutputReference(this, "decrypt_step_details");
+  public get decryptStepDetails() {
+    return this._decryptStepDetails;
+  }
+  public putDecryptStepDetails(value: TransferWorkflowStepsDecryptStepDetails) {
+    this._decryptStepDetails.internalValue = value;
+  }
+  public resetDecryptStepDetails() {
+    this._decryptStepDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decryptStepDetailsInput() {
+    return this._decryptStepDetails.internalValue;
   }
 
   // delete_step_details - computed: false, optional: true, required: false
@@ -2296,7 +3258,7 @@ export class TransferWorkflow extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_workflow',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

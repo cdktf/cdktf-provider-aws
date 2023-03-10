@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationlftag"
 
 lakeformationlftag.NewLakeformationLfTag(scope Construct, id *string, config LakeformationLfTagConfig) LakeformationLfTag
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ lakeformationlftag.LakeformationLfTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationlftag"
 
 &lakeformationlftag.LakeformationLfTagConfig {
 	Connection: interface{},

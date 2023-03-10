@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_si
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfig(scope Construct, id *string, config LambdaCodeSigningConfigConfig) LambdaCodeSigningConfig
 ```
@@ -313,7 +313,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.LambdaCodeSigningConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigAllowedPublishers {
 	SigningProfileVersionArns: *[]*string,
@@ -711,7 +711,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigConfig {
 	Connection: interface{},
@@ -721,10 +721,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AllowedPublishers: github.com/cdktf/cdktf-provider-aws-go/aws/v12.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers,
+	AllowedPublishers: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers,
 	Description: *string,
 	Id: *string,
-	Policies: github.com/cdktf/cdktf-provider-aws-go/aws/v12.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies,
+	Policies: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 &lambdacodesigningconfig.LambdaCodeSigningConfigPolicies {
 	UntrustedArtifactOnDeployment: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfigAllowedPublishersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaCodeSigningConfigAllowedPublishersOutputReference
 ```
@@ -1181,7 +1181,7 @@ func InternalValue() LambdaCodeSigningConfigAllowedPublishers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdacodesigningconfig"
 
 lambdacodesigningconfig.NewLambdaCodeSigningConfigPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaCodeSigningConfigPoliciesOutputReference
 ```

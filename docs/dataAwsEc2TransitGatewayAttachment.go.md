@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.NewDataAwsEc2TransitGatewayAttachment(scope Construct, id *string, config DataAwsEc2TransitGatewayAttachmentConfig) DataAwsEc2TransitGatewayAttachment
 ```
@@ -307,7 +307,7 @@ func ResetTransitGatewayAttachmentId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -381,6 +381,8 @@ dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachment_IsTerrafor
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationState">AssociationState</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationTransitGatewayRouteTableId">AssociationTransitGatewayRouteTableId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentFilterList">DataAwsEc2TransitGatewayAttachmentFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.resourceId">ResourceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.resourceOwnerId">ResourceOwnerId</a></code> | <code>*string</code> | *No description.* |
@@ -524,6 +526,26 @@ func Provider() TerraformProvider
 
 ```go
 func Arn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AssociationState`<sup>Required</sup> <a name="AssociationState" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationState"></a>
+
+```go
+func AssociationState() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AssociationTransitGatewayRouteTableId`<sup>Required</sup> <a name="AssociationTransitGatewayRouteTableId" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment.property.associationTransitGatewayRouteTableId"></a>
+
+```go
+func AssociationTransitGatewayRouteTableId() *string
 ```
 
 - *Type:* *string
@@ -695,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 &dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachmentConfig {
 	Connection: interface{},
@@ -858,7 +880,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 &dataawsec2transitgatewayattachment.DataAwsEc2TransitGatewayAttachmentFilter {
 	Name: *string,
@@ -906,7 +928,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.NewDataAwsEc2TransitGatewayAttachmentFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayAttachmentFilterList
 ```
@@ -1049,7 +1071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachmentFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayattachment"
 
 dataawsec2transitgatewayattachment.NewDataAwsEc2TransitGatewayAttachmentFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayAttachmentFilterOutputReference
 ```

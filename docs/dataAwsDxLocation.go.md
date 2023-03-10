@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/dx_location aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.NewDataAwsDxLocation(scope Construct, id *string, config DataAwsDxLocationConfig) DataAwsDxLocation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 &dataawsdxlocation.DataAwsDxLocationConfig {
 	Connection: interface{},

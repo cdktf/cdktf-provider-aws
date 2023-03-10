@@ -255,7 +255,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_instances',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -328,6 +328,11 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get instanceTagsInput() {
     return this._instanceTags;
+  }
+
+  // ipv6_addresses - computed: true, optional: false, required: false
+  public get ipv6Addresses() {
+    return this.getListAttribute('ipv6_addresses');
   }
 
   // private_ips - computed: true, optional: false, required: false

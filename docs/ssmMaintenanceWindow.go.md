@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenanc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmmaintenancewindow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindow"
 
 ssmmaintenancewindow.NewSsmMaintenanceWindow(scope Construct, id *string, config SsmMaintenanceWindowConfig) SsmMaintenanceWindow
 ```
@@ -336,7 +336,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmmaintenancewindow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsConstruct(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmmaintenancewindow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmmaintenancewindow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmmaintenancewindow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindow"
 
 &ssmmaintenancewindow.SsmMaintenanceWindowConfig {
 	Connection: interface{},

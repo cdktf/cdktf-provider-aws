@@ -150,7 +150,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/aws",
-      "version": "4.57.1"
+      "version": "4.58.0"
     }
   },
   "resolutions": {

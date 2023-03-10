@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/networkmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.NewDataAwsNetworkmanagerGlobalNetworks(scope Construct, id *string, config DataAwsNetworkmanagerGlobalNetworksConfig) DataAwsNetworkmanagerGlobalNetworks
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagerglobalnetworks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerglobalnetworks"
 
 &dataawsnetworkmanagerglobalnetworks.DataAwsNetworkmanagerGlobalNetworksConfig {
 	Connection: interface{},

@@ -110,7 +110,7 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

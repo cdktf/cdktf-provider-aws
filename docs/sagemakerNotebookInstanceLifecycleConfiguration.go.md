@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_note
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstancelifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstancelifecycleconfiguration"
 
 sagemakernotebookinstancelifecycleconfiguration.NewSagemakerNotebookInstanceLifecycleConfiguration(scope Construct, id *string, config SagemakerNotebookInstanceLifecycleConfigurationConfig) SagemakerNotebookInstanceLifecycleConfiguration
 ```
@@ -294,7 +294,7 @@ func ResetOnStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstancelifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstancelifecycleconfiguration"
 
 sagemakernotebookinstancelifecycleconfiguration.SagemakerNotebookInstanceLifecycleConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstancelifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstancelifecycleconfiguration"
 
 sagemakernotebookinstancelifecycleconfiguration.SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ sagemakernotebookinstancelifecycleconfiguration.SagemakerNotebookInstanceLifecyc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstancelifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstancelifecycleconfiguration"
 
 sagemakernotebookinstancelifecycleconfiguration.SagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerNotebookInstanceLifecycleConfiguration.SagemakerNotebookInstanceLifecycleConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakernotebookinstancelifecycleconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakernotebookinstancelifecycleconfiguration"
 
 &sagemakernotebookinstancelifecycleconfiguration.SagemakerNotebookInstanceLifecycleConfigurationConfig {
 	Connection: interface{},

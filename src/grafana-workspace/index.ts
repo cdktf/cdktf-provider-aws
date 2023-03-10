@@ -71,6 +71,12 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * network_access_control block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#network_access_control GrafanaWorkspace#network_access_control}
+  */
+  readonly networkAccessControl?: GrafanaWorkspaceNetworkAccessControl;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#timeouts GrafanaWorkspace#timeouts}
@@ -82,6 +88,92 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#vpc_configuration GrafanaWorkspace#vpc_configuration}
   */
   readonly vpcConfiguration?: GrafanaWorkspaceVpcConfiguration;
+}
+export interface GrafanaWorkspaceNetworkAccessControl {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#prefix_list_ids GrafanaWorkspace#prefix_list_ids}
+  */
+  readonly prefixListIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#vpce_ids GrafanaWorkspace#vpce_ids}
+  */
+  readonly vpceIds: string[];
+}
+
+export function grafanaWorkspaceNetworkAccessControlToTerraform(struct?: GrafanaWorkspaceNetworkAccessControlOutputReference | GrafanaWorkspaceNetworkAccessControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prefixListIds),
+    vpce_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpceIds),
+  }
+}
+
+export class GrafanaWorkspaceNetworkAccessControlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GrafanaWorkspaceNetworkAccessControl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._prefixListIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefixListIds = this._prefixListIds;
+    }
+    if (this._vpceIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpceIds = this._vpceIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GrafanaWorkspaceNetworkAccessControl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._prefixListIds = undefined;
+      this._vpceIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._prefixListIds = value.prefixListIds;
+      this._vpceIds = value.vpceIds;
+    }
+  }
+
+  // prefix_list_ids - computed: false, optional: false, required: true
+  private _prefixListIds?: string[]; 
+  public get prefixListIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('prefix_list_ids'));
+  }
+  public set prefixListIds(value: string[]) {
+    this._prefixListIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixListIdsInput() {
+    return this._prefixListIds;
+  }
+
+  // vpce_ids - computed: false, optional: false, required: true
+  private _vpceIds?: string[]; 
+  public get vpceIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('vpce_ids'));
+  }
+  public set vpceIds(value: string[]) {
+    this._vpceIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpceIdsInput() {
+    return this._vpceIds;
+  }
 }
 export interface GrafanaWorkspaceTimeouts {
   /**
@@ -298,7 +390,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -324,6 +416,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     this._stackSetName = config.stackSetName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._networkAccessControl.internalValue = config.networkAccessControl;
     this._timeouts.internalValue = config.timeouts;
     this._vpcConfiguration.internalValue = config.vpcConfiguration;
   }
@@ -583,6 +676,22 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // network_access_control - computed: false, optional: true, required: false
+  private _networkAccessControl = new GrafanaWorkspaceNetworkAccessControlOutputReference(this, "network_access_control");
+  public get networkAccessControl() {
+    return this._networkAccessControl;
+  }
+  public putNetworkAccessControl(value: GrafanaWorkspaceNetworkAccessControl) {
+    this._networkAccessControl.internalValue = value;
+  }
+  public resetNetworkAccessControl() {
+    this._networkAccessControl.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkAccessControlInput() {
+    return this._networkAccessControl.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GrafanaWorkspaceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -636,6 +745,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       stack_set_name: cdktf.stringToTerraform(this._stackSetName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      network_access_control: grafanaWorkspaceNetworkAccessControlToTerraform(this._networkAccessControl.internalValue),
       timeouts: grafanaWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_configuration: grafanaWorkspaceVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };

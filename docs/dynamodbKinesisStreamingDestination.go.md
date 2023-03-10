@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_kines
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dynamodbkinesisstreamingdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbkinesisstreamingdestination"
 
 dynamodbkinesisstreamingdestination.NewDynamodbKinesisStreamingDestination(scope Construct, id *string, config DynamodbKinesisStreamingDestinationConfig) DynamodbKinesisStreamingDestination
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dynamodbkinesisstreamingdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbkinesisstreamingdestination"
 
 dynamodbkinesisstreamingdestination.DynamodbKinesisStreamingDestination_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dynamodbkinesisstreamingdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbkinesisstreamingdestination"
 
 dynamodbkinesisstreamingdestination.DynamodbKinesisStreamingDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dynamodbkinesisstreamingdestination.DynamodbKinesisStreamingDestination_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dynamodbkinesisstreamingdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbkinesisstreamingdestination"
 
 dynamodbkinesisstreamingdestination.DynamodbKinesisStreamingDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dynamodbkinesisstreamingdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbkinesisstreamingdestination"
 
 &dynamodbkinesisstreamingdestination.DynamodbKinesisStreamingDestinationConfig {
 	Connection: interface{},

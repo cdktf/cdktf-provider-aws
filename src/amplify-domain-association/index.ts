@@ -16,6 +16,10 @@ export interface AmplifyDomainAssociationConfig extends cdktf.TerraformMetaArgum
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_domain_association#enable_auto_sub_domain AmplifyDomainAssociation#enable_auto_sub_domain}
+  */
+  readonly enableAutoSubDomain?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_domain_association#id AmplifyDomainAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -188,7 +192,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_amplify_domain_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -201,6 +205,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
     });
     this._appId = config.appId;
     this._domainName = config.domainName;
+    this._enableAutoSubDomain = config.enableAutoSubDomain;
     this._id = config.id;
     this._waitForVerification = config.waitForVerification;
     this._subDomain.internalValue = config.subDomain;
@@ -244,6 +249,22 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get domainNameInput() {
     return this._domainName;
+  }
+
+  // enable_auto_sub_domain - computed: false, optional: true, required: false
+  private _enableAutoSubDomain?: boolean | cdktf.IResolvable; 
+  public get enableAutoSubDomain() {
+    return this.getBooleanAttribute('enable_auto_sub_domain');
+  }
+  public set enableAutoSubDomain(value: boolean | cdktf.IResolvable) {
+    this._enableAutoSubDomain = value;
+  }
+  public resetEnableAutoSubDomain() {
+    this._enableAutoSubDomain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAutoSubDomainInput() {
+    return this._enableAutoSubDomain;
   }
 
   // id - computed: true, optional: true, required: false
@@ -299,6 +320,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      enable_auto_sub_domain: cdktf.booleanToTerraform(this._enableAutoSubDomain),
       id: cdktf.stringToTerraform(this._id),
       wait_for_verification: cdktf.booleanToTerraform(this._waitForVerification),
       sub_domain: cdktf.listMapper(amplifyDomainAssociationSubDomainToTerraform, true)(this._subDomain.internalValue),

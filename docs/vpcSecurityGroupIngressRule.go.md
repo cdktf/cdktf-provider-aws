@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_security_g
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcSecurityGroupIngressRule.VpcSecurityGroupIngressRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcsecuritygroupingressrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcsecuritygroupingressrule"
 
 vpcsecuritygroupingressrule.NewVpcSecurityGroupIngressRule(scope Construct, id *string, config VpcSecurityGroupIngressRuleConfig) VpcSecurityGroupIngressRule
 ```
@@ -329,7 +329,7 @@ func ResetToPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcSecurityGroupIngressRule.VpcSecurityGroupIngressRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcsecuritygroupingressrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcsecuritygroupingressrule"
 
 vpcsecuritygroupingressrule.VpcSecurityGroupIngressRule_IsConstruct(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcSecurityGroupIngressRule.VpcSecurityGroupIngressRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcsecuritygroupingressrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcsecuritygroupingressrule"
 
 vpcsecuritygroupingressrule.VpcSecurityGroupIngressRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ vpcsecuritygroupingressrule.VpcSecurityGroupIngressRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcSecurityGroupIngressRule.VpcSecurityGroupIngressRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcsecuritygroupingressrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcsecuritygroupingressrule"
 
 vpcsecuritygroupingressrule.VpcSecurityGroupIngressRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcSecurityGroupIngressRule.VpcSecurityGroupIngressRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcsecuritygroupingressrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcsecuritygroupingressrule"
 
 &vpcsecuritygroupingressrule.VpcSecurityGroupIngressRuleConfig {
 	Connection: interface{},

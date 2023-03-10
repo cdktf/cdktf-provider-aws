@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_partition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartition(scope Construct, id *string, config GluePartitionConfig) GluePartition
 ```
@@ -307,7 +307,7 @@ func ResetStorageDescriptor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gluePartition.GluePartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.GluePartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionConfig {
 	Connection: interface{},
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
 	CatalogId: *string,
 	Id: *string,
 	Parameters: *map[string]*string,
-	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws/v12.gluePartition.GluePartitionStorageDescriptor,
+	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptor,
 }
 ```
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptor {
 	BucketColumns: *[]*string,
@@ -955,8 +955,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
 	NumberOfBuckets: *f64,
 	OutputFormat: *string,
 	Parameters: *map[string]*string,
-	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v12.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
-	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v12.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
+	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
+	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
 	SortColumns: interface{},
 	StoredAsSubDirectories: interface{},
 }
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorColumns {
 	Name: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSerDeInfo {
 	Name: *string,
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSkewedInfo {
 	SkewedColumnNames: *[]*string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSortColumns {
 	Column: *string,
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorColumnsList
 ```
@@ -1509,7 +1509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorColumnsOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() GluePartitionStorageDescriptor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSerDeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSerDeInfoOutputReference
 ```
@@ -2841,7 +2841,7 @@ func InternalValue() GluePartitionStorageDescriptorSerDeInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSkewedInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSkewedInfoOutputReference
 ```
@@ -3177,7 +3177,7 @@ func InternalValue() GluePartitionStorageDescriptorSkewedInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorSortColumnsList
 ```
@@ -3320,7 +3320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorSortColumnsOutputReference
 ```

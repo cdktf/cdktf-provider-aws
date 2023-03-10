@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}
+  */
+  readonly deliverCrossAccountRole?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#eni_id FlowLog#eni_id}
   */
   readonly eniId?: string;
@@ -223,7 +227,7 @@ export class FlowLog extends cdktf.TerraformResource {
       terraformResourceType: 'aws_flow_log',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.57.1',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -234,6 +238,7 @@ export class FlowLog extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deliverCrossAccountRole = config.deliverCrossAccountRole;
     this._eniId = config.eniId;
     this._iamRoleArn = config.iamRoleArn;
     this._id = config.id;
@@ -259,6 +264,22 @@ export class FlowLog extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // deliver_cross_account_role - computed: false, optional: true, required: false
+  private _deliverCrossAccountRole?: string; 
+  public get deliverCrossAccountRole() {
+    return this.getStringAttribute('deliver_cross_account_role');
+  }
+  public set deliverCrossAccountRole(value: string) {
+    this._deliverCrossAccountRole = value;
+  }
+  public resetDeliverCrossAccountRole() {
+    this._deliverCrossAccountRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deliverCrossAccountRoleInput() {
+    return this._deliverCrossAccountRole;
   }
 
   // eni_id - computed: false, optional: true, required: false
@@ -523,6 +544,7 @@ export class FlowLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deliver_cross_account_role: cdktf.stringToTerraform(this._deliverCrossAccountRole),
       eni_id: cdktf.stringToTerraform(this._eniId),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       id: cdktf.stringToTerraform(this._id),

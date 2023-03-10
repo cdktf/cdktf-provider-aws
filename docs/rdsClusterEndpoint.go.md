@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_en
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterendpoint"
 
 rdsclusterendpoint.NewRdsClusterEndpoint(scope Construct, id *string, config RdsClusterEndpointConfig) RdsClusterEndpoint
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ rdsclusterendpoint.RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterendpoint"
 
 rdsclusterendpoint.RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterendpoint"
 
 &rdsclusterendpoint.RdsClusterEndpointConfig {
 	Connection: interface{},

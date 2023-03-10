@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_m
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.NewApigatewayv2Model(scope Construct, id *string, config Apigatewayv2ModelConfig) Apigatewayv2Model
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ apigatewayv2model.Apigatewayv2Model_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 &apigatewayv2model.Apigatewayv2ModelConfig {
 	Connection: interface{},

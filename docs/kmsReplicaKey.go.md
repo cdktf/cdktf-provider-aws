@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_replica_ke
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsreplicakey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsreplicakey"
 
 kmsreplicakey.NewKmsReplicaKey(scope Construct, id *string, config KmsReplicaKeyConfig) KmsReplicaKey
 ```
@@ -322,7 +322,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsreplicakey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsreplicakey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ kmsreplicakey.KmsReplicaKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsreplicakey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsreplicakey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsreplicakey"
 
 &kmsreplicakey.KmsReplicaKeyConfig {
 	Connection: interface{},
