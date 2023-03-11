@@ -1183,9 +1183,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.273"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.273.tgz#b460d89e473f7f33f08ea82396dde27c3282284a"
-  integrity sha512-JRaydmKm58aQm7crUcai3qGXtqhsh9e/dXyjQoZV6RiiEamf1V9A3yLLJIjit66Kl0Sub9quXgPmtqRfPYYlIg==
+  version "10.1.274"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.274.tgz#cd93144dea1e0657b5797a8d60a1a08aa3b0b101"
+  integrity sha512-ptJ8wwhf957pRj8rJ3dRx28arZRhxZEqBSA2Q3MbAcO9y6kEdntgSmtoosoaK16qxWSoXqOXLDMAg6/r3auMww==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2311,9 +2311,9 @@ jsii-diff@^1.77.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "7.1.20"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.20.tgz#d3ea5eac1c6d32e7696615e3004e1a053a824415"
-  integrity sha512-YQB6pnS7mOQIvG1xds2EFGevYkqjI2IKwd+lrf5t8TSGbgoaovtxkQQRo5rDRBNLSD5sMhBi6io1Sk40QzoApw==
+  version "7.1.21"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.21.tgz#5632365d9715edd0e7bebd34879d1c9d94279cfd"
+  integrity sha512-ENmLNcGTGBgLOCMkh3LYneRRMJ2N5kQOO9r4lVY94Zz0jd9a5uTEBd6Quf7/mBoElBpQEOMhYceyNaI18VSnqw==
   dependencies:
     "@jsii/spec" "^1.77.0"
     case "^1.6.3"
@@ -2374,9 +2374,9 @@ jsii-rosetta@^1.75.0, jsii-rosetta@^1.77.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.826:
-  version "0.1.848"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.848.tgz#705756c4faef945d065a8962aec792013ab1ffcc"
-  integrity sha512-2m23kUVFSXozAcMseRvDCNxjZ8xAtK34JBrtJPUAsOK/025O8uzKS2iOyDL0BLWqBLSuKxGRKPBZGXYm5iHLxA==
+  version "0.1.849"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.849.tgz#edf129ab6de86754b33e5d8e4a1c1532bd38fadd"
+  integrity sha512-2HMeyozaAttlnRhYUXQyLg2TR1OHFP4hC3wghrATzz31fcPEzRSOjH1nzLiXFHG0nui/6bdZPPyn32alhF9Kag==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.77.0"
@@ -3386,10 +3386,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.67.79:
-  version "0.67.79"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.79.tgz#b446dd0b3524cfc2b47da3f6cfb364663f3ef990"
-  integrity sha512-kpLWBj2p5tFgjNxX8330223Dova9cCk2+tsMWBowyX2byqpjw61EvkqVHdtIB0CHfw9EG3RexcHmC9aJCpMXRw==
+projen@^0.67.80:
+  version "0.67.80"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.67.80.tgz#a112c9b283a0852e613bf2ac16083d26d9a80a00"
+  integrity sha512-7J2p3KbTKvkCk5NO9mH0pgx4M8SM1kbyRBloZbdZheBrKd/uhgC5meX/KDgS8WsmJwcvKrdPu5vLUo83nSxU1Q==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -3548,9 +3548,9 @@ read-pkg@^5.2.0:
     type-fest "^0.6.0"
 
 readable-stream@3, readable-stream@^3.0.0, readable-stream@^3.0.2, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.1.tgz#f9f9b5f536920253b3d26e7660e7da4ccff9bb62"
-  integrity sha512-+rQmrWMYGA90yenhTYsLWAsLsqVC8osOw6PKE1HDYiO0gdPeKe/xDHNzIAIn4C91YQ6oenEhfYqqc1883qHbjQ==
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
+  integrity sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
   dependencies:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
@@ -3909,9 +3909,9 @@ spdx-expression-parse@^3.0.0:
     spdx-license-ids "^3.0.0"
 
 spdx-license-ids@^3.0.0:
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.12.tgz#69077835abe2710b65f03969898b6637b505a779"
-  integrity sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.13.tgz#7189a474c46f8d47c7b0da4b987bb45e908bd2d5"
+  integrity sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==
 
 spdx-license-list@^6.6.0:
   version "6.6.0"
