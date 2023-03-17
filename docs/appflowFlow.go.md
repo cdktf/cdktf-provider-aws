@@ -2121,6 +2121,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appflowflow"
 	AggregationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig,
 	FileType: *string,
 	PrefixConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig,
+	PreserveSourceDataTyping: interface{},
 }
 ```
 
@@ -2131,6 +2132,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appflowflow"
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.aggregationConfig">AggregationConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | aggregation_config block. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.fileType">FileType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#file_type AppflowFlow#file_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.prefixConfig">PrefixConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | prefix_config block. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}. |
 
 ---
 
@@ -2171,6 +2173,18 @@ PrefixConfig AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3O
 prefix_config block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#prefix_config AppflowFlow#prefix_config}
+
+---
+
+##### `PreserveSourceDataTyping`<sup>Optional</sup> <a name="PreserveSourceDataTyping" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.property.preserveSourceDataTyping"></a>
+
+```go
+PreserveSourceDataTyping interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}.
 
 ---
 
@@ -10066,6 +10080,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.resetAggregationConfig">ResetAggregationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.resetFileType">ResetFileType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.resetPrefixConfig">ResetPrefixConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.resetPreserveSourceDataTyping">ResetPreserveSourceDataTyping</a></code> | *No description.* |
 
 ---
 
@@ -10261,6 +10276,12 @@ func ResetFileType()
 func ResetPrefixConfig()
 ```
 
+##### `ResetPreserveSourceDataTyping` <a name="ResetPreserveSourceDataTyping" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.resetPreserveSourceDataTyping"></a>
+
+```go
+func ResetPreserveSourceDataTyping()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -10273,7 +10294,9 @@ func ResetPrefixConfig()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.aggregationConfigInput">AggregationConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileTypeInput">FileTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.prefixConfigInput">PrefixConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput">PreserveSourceDataTypingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileType">FileType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping">PreserveSourceDataTyping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig">AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig</a></code> | *No description.* |
 
 ---
@@ -10352,6 +10375,16 @@ func PrefixConfigInput() AppflowFlowDestinationFlowConfigDestinationConnectorPro
 
 ---
 
+##### `PreserveSourceDataTypingInput`<sup>Optional</sup> <a name="PreserveSourceDataTypingInput" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTypingInput"></a>
+
+```go
+func PreserveSourceDataTypingInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `FileType`<sup>Required</sup> <a name="FileType" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.fileType"></a>
 
 ```go
@@ -10359,6 +10392,16 @@ func FileType() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PreserveSourceDataTyping`<sup>Required</sup> <a name="PreserveSourceDataTyping" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.property.preserveSourceDataTyping"></a>
+
+```go
+func PreserveSourceDataTyping() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 

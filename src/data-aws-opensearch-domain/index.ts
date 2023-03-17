@@ -63,6 +63,11 @@ export class DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference exten
     }
   }
 
+  // anonymous_auth_enabled - computed: true, optional: false, required: false
+  public get anonymousAuthEnabled() {
+    return this.getBooleanAttribute('anonymous_auth_enabled');
+  }
+
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -1095,7 +1100,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1158,6 +1163,11 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   // created - computed: true, optional: false, required: false
   public get created() {
     return this.getBooleanAttribute('created');
+  }
+
+  // dashboard_endpoint - computed: true, optional: false, required: false
+  public get dashboardEndpoint() {
+    return this.getStringAttribute('dashboard_endpoint');
   }
 
   // deleted - computed: true, optional: false, required: false

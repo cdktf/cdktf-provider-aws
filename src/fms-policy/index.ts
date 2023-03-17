@@ -16,6 +16,10 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deleteUnusedFmManagedResources?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#description FmsPolicy#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#exclude_resource_tags FmsPolicy#exclude_resource_tags}
   */
   readonly excludeResourceTags: boolean | cdktf.IResolvable;
@@ -373,7 +377,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fms_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -386,6 +390,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
     });
     this._deleteAllPolicyResources = config.deleteAllPolicyResources;
     this._deleteUnusedFmManagedResources = config.deleteUnusedFmManagedResources;
+    this._description = config.description;
     this._excludeResourceTags = config.excludeResourceTags;
     this._id = config.id;
     this._name = config.name;
@@ -439,6 +444,22 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deleteUnusedFmManagedResourcesInput() {
     return this._deleteUnusedFmManagedResources;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // exclude_resource_tags - computed: false, optional: false, required: true
@@ -637,6 +658,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
     return {
       delete_all_policy_resources: cdktf.booleanToTerraform(this._deleteAllPolicyResources),
       delete_unused_fm_managed_resources: cdktf.booleanToTerraform(this._deleteUnusedFmManagedResources),
+      description: cdktf.stringToTerraform(this._description),
       exclude_resource_tags: cdktf.booleanToTerraform(this._excludeResourceTags),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

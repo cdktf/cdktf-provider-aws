@@ -76,7 +76,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableCrossZoneLoadBalancing">ResetEnableCrossZoneLoadBalancing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableDeletionProtection">ResetEnableDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableHttp2">ResetEnableHttp2</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableTlsVersionAndCipherSuiteHeaders">ResetEnableTlsVersionAndCipherSuiteHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableWafFailOpen">ResetEnableWafFailOpen</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.resetEnableXffClientPort">ResetEnableXffClientPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetIdleTimeout">ResetIdleTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetInternal">ResetInternal</a></code> | *No description.* |
@@ -91,6 +93,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.resetXffHeaderProcessingMode">ResetXffHeaderProcessingMode</a></code> | *No description.* |
 
 ---
 
@@ -356,10 +359,22 @@ func ResetEnableDeletionProtection()
 func ResetEnableHttp2()
 ```
 
+##### `ResetEnableTlsVersionAndCipherSuiteHeaders` <a name="ResetEnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.alb.Alb.resetEnableTlsVersionAndCipherSuiteHeaders"></a>
+
+```go
+func ResetEnableTlsVersionAndCipherSuiteHeaders()
+```
+
 ##### `ResetEnableWafFailOpen` <a name="ResetEnableWafFailOpen" id="@cdktf/provider-aws.alb.Alb.resetEnableWafFailOpen"></a>
 
 ```go
 func ResetEnableWafFailOpen()
+```
+
+##### `ResetEnableXffClientPort` <a name="ResetEnableXffClientPort" id="@cdktf/provider-aws.alb.Alb.resetEnableXffClientPort"></a>
+
+```go
+func ResetEnableXffClientPort()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.alb.Alb.resetId"></a>
@@ -444,6 +459,12 @@ func ResetTagsAll()
 
 ```go
 func ResetTimeouts()
+```
+
+##### `ResetXffHeaderProcessingMode` <a name="ResetXffHeaderProcessingMode" id="@cdktf/provider-aws.alb.Alb.resetXffHeaderProcessingMode"></a>
+
+```go
+func ResetXffHeaderProcessingMode()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -549,7 +570,9 @@ alb.Alb_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancingInput">EnableCrossZoneLoadBalancingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtectionInput">EnableDeletionProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2Input">EnableHttp2Input</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeadersInput">EnableTlsVersionAndCipherSuiteHeadersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpenInput">EnableWafFailOpenInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPortInput">EnableXffClientPortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idleTimeoutInput">IdleTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.internalInput">InternalInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -564,13 +587,16 @@ alb.Alb_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingModeInput">XffHeaderProcessingModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.dropInvalidHeaderFields">DropInvalidHeaderFields</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableHttp2">EnableHttp2</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.internal">Internal</a></code> | <code>interface{}</code> | *No description.* |
@@ -583,6 +609,7 @@ alb.Alb_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.subnets">Subnets</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingMode">XffHeaderProcessingMode</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -878,10 +905,30 @@ func EnableHttp2Input() interface{}
 
 ---
 
+##### `EnableTlsVersionAndCipherSuiteHeadersInput`<sup>Optional</sup> <a name="EnableTlsVersionAndCipherSuiteHeadersInput" id="@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeadersInput"></a>
+
+```go
+func EnableTlsVersionAndCipherSuiteHeadersInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EnableWafFailOpenInput`<sup>Optional</sup> <a name="EnableWafFailOpenInput" id="@cdktf/provider-aws.alb.Alb.property.enableWafFailOpenInput"></a>
 
 ```go
 func EnableWafFailOpenInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `EnableXffClientPortInput`<sup>Optional</sup> <a name="EnableXffClientPortInput" id="@cdktf/provider-aws.alb.Alb.property.enableXffClientPortInput"></a>
+
+```go
+func EnableXffClientPortInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -1028,6 +1075,16 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `XffHeaderProcessingModeInput`<sup>Optional</sup> <a name="XffHeaderProcessingModeInput" id="@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingModeInput"></a>
+
+```go
+func XffHeaderProcessingModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `CustomerOwnedIpv4Pool`<sup>Required</sup> <a name="CustomerOwnedIpv4Pool" id="@cdktf/provider-aws.alb.Alb.property.customerOwnedIpv4Pool"></a>
 
 ```go
@@ -1088,10 +1145,30 @@ func EnableHttp2() interface{}
 
 ---
 
+##### `EnableTlsVersionAndCipherSuiteHeaders`<sup>Required</sup> <a name="EnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.alb.Alb.property.enableTlsVersionAndCipherSuiteHeaders"></a>
+
+```go
+func EnableTlsVersionAndCipherSuiteHeaders() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EnableWafFailOpen`<sup>Required</sup> <a name="EnableWafFailOpen" id="@cdktf/provider-aws.alb.Alb.property.enableWafFailOpen"></a>
 
 ```go
 func EnableWafFailOpen() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `EnableXffClientPort`<sup>Required</sup> <a name="EnableXffClientPort" id="@cdktf/provider-aws.alb.Alb.property.enableXffClientPort"></a>
+
+```go
+func EnableXffClientPort() interface{}
 ```
 
 - *Type:* interface{}
@@ -1218,6 +1295,16 @@ func TagsAll() *map[string]*string
 
 ---
 
+##### `XffHeaderProcessingMode`<sup>Required</sup> <a name="XffHeaderProcessingMode" id="@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingMode"></a>
+
+```go
+func XffHeaderProcessingMode() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1320,7 +1407,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/alb"
 	EnableCrossZoneLoadBalancing: interface{},
 	EnableDeletionProtection: interface{},
 	EnableHttp2: interface{},
+	EnableTlsVersionAndCipherSuiteHeaders: interface{},
 	EnableWafFailOpen: interface{},
+	EnableXffClientPort: interface{},
 	Id: *string,
 	IdleTimeout: *f64,
 	Internal: interface{},
@@ -1335,6 +1424,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/alb"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.alb.AlbTimeouts,
+	XffHeaderProcessingMode: *string,
 }
 ```
 
@@ -1356,7 +1446,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/alb"
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_deletion_protection Alb#enable_deletion_protection}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableHttp2">EnableHttp2</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_http2 Alb#enable_http2}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_waf_fail_open Alb#enable_waf_fail_open}. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_xff_client_port Alb#enable_xff_client_port}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#id Alb#id}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#idle_timeout Alb#idle_timeout}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.internal">Internal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#internal Alb#internal}. |
@@ -1371,6 +1463,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/alb"
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#tags Alb#tags}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#tags_all Alb#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-aws.alb.AlbConfig.property.xffHeaderProcessingMode">XffHeaderProcessingMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#xff_header_processing_mode Alb#xff_header_processing_mode}. |
 
 ---
 
@@ -1530,6 +1623,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `EnableTlsVersionAndCipherSuiteHeaders`<sup>Optional</sup> <a name="EnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.alb.AlbConfig.property.enableTlsVersionAndCipherSuiteHeaders"></a>
+
+```go
+EnableTlsVersionAndCipherSuiteHeaders interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}.
+
+---
+
 ##### `EnableWafFailOpen`<sup>Optional</sup> <a name="EnableWafFailOpen" id="@cdktf/provider-aws.alb.AlbConfig.property.enableWafFailOpen"></a>
 
 ```go
@@ -1539,6 +1644,18 @@ EnableWafFailOpen interface{}
 - *Type:* interface{}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_waf_fail_open Alb#enable_waf_fail_open}.
+
+---
+
+##### `EnableXffClientPort`<sup>Optional</sup> <a name="EnableXffClientPort" id="@cdktf/provider-aws.alb.AlbConfig.property.enableXffClientPort"></a>
+
+```go
+EnableXffClientPort interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_xff_client_port Alb#enable_xff_client_port}.
 
 ---
 
@@ -1714,6 +1831,18 @@ Timeouts AlbTimeouts
 timeouts block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#timeouts Alb#timeouts}
+
+---
+
+##### `XffHeaderProcessingMode`<sup>Optional</sup> <a name="XffHeaderProcessingMode" id="@cdktf/provider-aws.alb.AlbConfig.property.xffHeaderProcessingMode"></a>
+
+```go
+XffHeaderProcessingMode *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#xff_header_processing_mode Alb#xff_header_processing_mode}.
 
 ---
 

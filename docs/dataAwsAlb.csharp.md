@@ -396,7 +396,9 @@ DataAwsAlb.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableCrossZoneLoadBalancing">EnableCrossZoneLoadBalancing</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableDeletionProtection">EnableDeletionProtection</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableHttp2">EnableHttp2</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableTlsVersionAndCipherSuiteHeaders">EnableTlsVersionAndCipherSuiteHeaders</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableWafFailOpen">EnableWafFailOpen</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableXffClientPort">EnableXffClientPort</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.idleTimeout">IdleTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.internal">Internal</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | *No description.* |
@@ -407,6 +409,7 @@ DataAwsAlb.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.subnets">Subnets</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlbTimeoutsOutputReference">DataAwsAlbTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.vpcId">VpcId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.xffHeaderProcessingMode">XffHeaderProcessingMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.arnInput">ArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -632,10 +635,30 @@ public IResolvable EnableHttp2 { get; }
 
 ---
 
+##### `EnableTlsVersionAndCipherSuiteHeaders`<sup>Required</sup> <a name="EnableTlsVersionAndCipherSuiteHeaders" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableTlsVersionAndCipherSuiteHeaders"></a>
+
+```csharp
+public IResolvable EnableTlsVersionAndCipherSuiteHeaders { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
 ##### `EnableWafFailOpen`<sup>Required</sup> <a name="EnableWafFailOpen" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableWafFailOpen"></a>
 
 ```csharp
 public IResolvable EnableWafFailOpen { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `EnableXffClientPort`<sup>Required</sup> <a name="EnableXffClientPort" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.enableXffClientPort"></a>
+
+```csharp
+public IResolvable EnableXffClientPort { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.IResolvable
@@ -736,6 +759,16 @@ public DataAwsAlbTimeoutsOutputReference Timeouts { get; }
 
 ```csharp
 public string VpcId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `XffHeaderProcessingMode`<sup>Required</sup> <a name="XffHeaderProcessingMode" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.property.xffHeaderProcessingMode"></a>
+
+```csharp
+public string XffHeaderProcessingMode { get; }
 ```
 
 - *Type:* string

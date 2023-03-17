@@ -7510,9 +7510,9 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsM
   */
   readonly acquisitionPointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecodec_control MedialiveChannel#audio_only_timecodec_control}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}
   */
-  readonly audioOnlyTimecodecControl?: string;
+  readonly audioOnlyTimecodeControl?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
   */
@@ -7524,7 +7524,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id MedialiveChannel#event_id}
   */
-  readonly eventId?: number;
+  readonly eventId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}
   */
@@ -7592,10 +7592,10 @@ export function medialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMs
   }
   return {
     acquisition_point_id: cdktf.stringToTerraform(struct!.acquisitionPointId),
-    audio_only_timecodec_control: cdktf.stringToTerraform(struct!.audioOnlyTimecodecControl),
+    audio_only_timecode_control: cdktf.stringToTerraform(struct!.audioOnlyTimecodeControl),
     certificate_mode: cdktf.stringToTerraform(struct!.certificateMode),
     connection_retry_interval: cdktf.numberToTerraform(struct!.connectionRetryInterval),
-    event_id: cdktf.numberToTerraform(struct!.eventId),
+    event_id: cdktf.stringToTerraform(struct!.eventId),
     event_id_mode: cdktf.stringToTerraform(struct!.eventIdMode),
     event_stop_behavior: cdktf.stringToTerraform(struct!.eventStopBehavior),
     filecache_duration: cdktf.numberToTerraform(struct!.filecacheDuration),
@@ -7631,9 +7631,9 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
       hasAnyValues = true;
       internalValueResult.acquisitionPointId = this._acquisitionPointId;
     }
-    if (this._audioOnlyTimecodecControl !== undefined) {
+    if (this._audioOnlyTimecodeControl !== undefined) {
       hasAnyValues = true;
-      internalValueResult.audioOnlyTimecodecControl = this._audioOnlyTimecodecControl;
+      internalValueResult.audioOnlyTimecodeControl = this._audioOnlyTimecodeControl;
     }
     if (this._certificateMode !== undefined) {
       hasAnyValues = true;
@@ -7710,7 +7710,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
     if (value === undefined) {
       this.isEmptyObject = false;
       this._acquisitionPointId = undefined;
-      this._audioOnlyTimecodecControl = undefined;
+      this._audioOnlyTimecodeControl = undefined;
       this._certificateMode = undefined;
       this._connectionRetryInterval = undefined;
       this._eventId = undefined;
@@ -7732,7 +7732,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._acquisitionPointId = value.acquisitionPointId;
-      this._audioOnlyTimecodecControl = value.audioOnlyTimecodecControl;
+      this._audioOnlyTimecodeControl = value.audioOnlyTimecodeControl;
       this._certificateMode = value.certificateMode;
       this._connectionRetryInterval = value.connectionRetryInterval;
       this._eventId = value.eventId;
@@ -7769,20 +7769,20 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
     return this._acquisitionPointId;
   }
 
-  // audio_only_timecodec_control - computed: true, optional: true, required: false
-  private _audioOnlyTimecodecControl?: string; 
-  public get audioOnlyTimecodecControl() {
-    return this.getStringAttribute('audio_only_timecodec_control');
+  // audio_only_timecode_control - computed: true, optional: true, required: false
+  private _audioOnlyTimecodeControl?: string; 
+  public get audioOnlyTimecodeControl() {
+    return this.getStringAttribute('audio_only_timecode_control');
   }
-  public set audioOnlyTimecodecControl(value: string) {
-    this._audioOnlyTimecodecControl = value;
+  public set audioOnlyTimecodeControl(value: string) {
+    this._audioOnlyTimecodeControl = value;
   }
-  public resetAudioOnlyTimecodecControl() {
-    this._audioOnlyTimecodecControl = undefined;
+  public resetAudioOnlyTimecodeControl() {
+    this._audioOnlyTimecodeControl = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get audioOnlyTimecodecControlInput() {
-    return this._audioOnlyTimecodecControl;
+  public get audioOnlyTimecodeControlInput() {
+    return this._audioOnlyTimecodeControl;
   }
 
   // certificate_mode - computed: true, optional: true, required: false
@@ -7818,11 +7818,11 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
   }
 
   // event_id - computed: true, optional: true, required: false
-  private _eventId?: number; 
+  private _eventId?: string; 
   public get eventId() {
-    return this.getNumberAttribute('event_id');
+    return this.getStringAttribute('event_id');
   }
-  public set eventId(value: number) {
+  public set eventId(value: string) {
     this._eventId = value;
   }
   public resetEventId() {
@@ -20793,7 +20793,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

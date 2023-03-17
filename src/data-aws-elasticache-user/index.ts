@@ -38,6 +38,136 @@ export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#user_name DataAwsElasticacheUser#user_name}
   */
   readonly userName?: string;
+  /**
+  * authentication_mode block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
+  */
+  readonly authenticationMode?: DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable;
+}
+export interface DataAwsElasticacheUserAuthenticationMode {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#password_count DataAwsElasticacheUser#password_count}
+  */
+  readonly passwordCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#type DataAwsElasticacheUser#type}
+  */
+  readonly type?: string;
+}
+
+export function dataAwsElasticacheUserAuthenticationModeToTerraform(struct?: DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_count: cdktf.numberToTerraform(struct!.passwordCount),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class DataAwsElasticacheUserAuthenticationModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordCount = this._passwordCount;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsElasticacheUserAuthenticationMode | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._passwordCount = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._passwordCount = value.passwordCount;
+      this._type = value.type;
+    }
+  }
+
+  // password_count - computed: false, optional: true, required: false
+  private _passwordCount?: number; 
+  public get passwordCount() {
+    return this.getNumberAttribute('password_count');
+  }
+  public set passwordCount(value: number) {
+    this._passwordCount = value;
+  }
+  public resetPasswordCount() {
+    this._passwordCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordCountInput() {
+    return this._passwordCount;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class DataAwsElasticacheUserAuthenticationModeList extends cdktf.ComplexList {
+  public internalValue? : DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsElasticacheUserAuthenticationModeOutputReference {
+    return new DataAwsElasticacheUserAuthenticationModeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
@@ -66,7 +196,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_elasticache_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -84,6 +214,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
     this._passwords = config.passwords;
     this._userId = config.userId;
     this._userName = config.userName;
+    this._authenticationMode.internalValue = config.authenticationMode;
   }
 
   // ==========
@@ -199,6 +330,22 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
     return this._userName;
   }
 
+  // authentication_mode - computed: false, optional: true, required: false
+  private _authenticationMode = new DataAwsElasticacheUserAuthenticationModeList(this, "authentication_mode", false);
+  public get authenticationMode() {
+    return this._authenticationMode;
+  }
+  public putAuthenticationMode(value: DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable) {
+    this._authenticationMode.internalValue = value;
+  }
+  public resetAuthenticationMode() {
+    this._authenticationMode.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationModeInput() {
+    return this._authenticationMode.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -212,6 +359,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
       passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwords),
       user_id: cdktf.stringToTerraform(this._userId),
       user_name: cdktf.stringToTerraform(this._userName),
+      authentication_mode: cdktf.listMapper(dataAwsElasticacheUserAuthenticationModeToTerraform, true)(this._authenticationMode.internalValue),
     };
   }
 }

@@ -5349,10 +5349,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings {
 	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination,
 	AcquisitionPointId: *string,
-	AudioOnlyTimecodecControl: *string,
+	AudioOnlyTimecodeControl: *string,
 	CertificateMode: *string,
 	ConnectionRetryInterval: *f64,
-	EventId: *f64,
+	EventId: *string,
 	EventIdMode: *string,
 	EventStopBehavior: *string,
 	FilecacheDuration: *f64,
@@ -5375,10 +5375,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination</a></code> | destination block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.acquisitionPointId">AcquisitionPointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodecControl">AudioOnlyTimecodecControl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecodec_control MedialiveChannel#audio_only_timecodec_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodeControl">AudioOnlyTimecodeControl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.certificateMode">CertificateMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventId">EventId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id MedialiveChannel#event_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventId">EventId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id MedialiveChannel#event_id}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventIdMode">EventIdMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventStopBehavior">EventStopBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
@@ -5421,15 +5421,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `AudioOnlyTimecodecControl`<sup>Optional</sup> <a name="AudioOnlyTimecodecControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodecControl"></a>
+##### `AudioOnlyTimecodeControl`<sup>Optional</sup> <a name="AudioOnlyTimecodeControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodeControl"></a>
 
 ```go
-AudioOnlyTimecodecControl *string
+AudioOnlyTimecodeControl *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecodec_control MedialiveChannel#audio_only_timecodec_control}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}.
 
 ---
 
@@ -5460,10 +5460,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 ##### `EventId`<sup>Optional</sup> <a name="EventId" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventId"></a>
 
 ```go
-EventId *f64
+EventId *string
 ```
 
-- *Type:* *f64
+- *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id MedialiveChannel#event_id}.
 
@@ -31418,7 +31418,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.putDestination">PutDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetAcquisitionPointId">ResetAcquisitionPointId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetAudioOnlyTimecodecControl">ResetAudioOnlyTimecodecControl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetAudioOnlyTimecodeControl">ResetAudioOnlyTimecodeControl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetCertificateMode">ResetCertificateMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetConnectionRetryInterval">ResetConnectionRetryInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetEventId">ResetEventId</a></code> | *No description.* |
@@ -31606,10 +31606,10 @@ func PutDestination(value MedialiveChannelEncoderSettingsOutputGroupsOutputGroup
 func ResetAcquisitionPointId()
 ```
 
-##### `ResetAudioOnlyTimecodecControl` <a name="ResetAudioOnlyTimecodecControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetAudioOnlyTimecodecControl"></a>
+##### `ResetAudioOnlyTimecodeControl` <a name="ResetAudioOnlyTimecodeControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetAudioOnlyTimecodeControl"></a>
 
 ```go
-func ResetAudioOnlyTimecodecControl()
+func ResetAudioOnlyTimecodeControl()
 ```
 
 ##### `ResetCertificateMode` <a name="ResetCertificateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.resetCertificateMode"></a>
@@ -31717,11 +31717,11 @@ func ResetTimestampOffsetMode()
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.acquisitionPointIdInput">AcquisitionPointIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodecControlInput">AudioOnlyTimecodecControlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodeControlInput">AudioOnlyTimecodeControlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.certificateModeInput">CertificateModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.connectionRetryIntervalInput">ConnectionRetryIntervalInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.destinationInput">DestinationInput</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventIdInput">EventIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventIdInput">EventIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventIdModeInput">EventIdModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventStopBehaviorInput">EventStopBehaviorInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.filecacheDurationInput">FilecacheDurationInput</a></code> | <code>*f64</code> | *No description.* |
@@ -31736,10 +31736,10 @@ func ResetTimestampOffsetMode()
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.timestampOffsetInput">TimestampOffsetInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.timestampOffsetModeInput">TimestampOffsetModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.acquisitionPointId">AcquisitionPointId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodecControl">AudioOnlyTimecodecControl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodeControl">AudioOnlyTimecodeControl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.certificateMode">CertificateMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventId">EventId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventId">EventId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventIdMode">EventIdMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventStopBehavior">EventStopBehavior</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.filecacheDuration">FilecacheDuration</a></code> | <code>*f64</code> | *No description.* |
@@ -31801,10 +31801,10 @@ func AcquisitionPointIdInput() *string
 
 ---
 
-##### `AudioOnlyTimecodecControlInput`<sup>Optional</sup> <a name="AudioOnlyTimecodecControlInput" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodecControlInput"></a>
+##### `AudioOnlyTimecodeControlInput`<sup>Optional</sup> <a name="AudioOnlyTimecodeControlInput" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodeControlInput"></a>
 
 ```go
-func AudioOnlyTimecodecControlInput() *string
+func AudioOnlyTimecodeControlInput() *string
 ```
 
 - *Type:* *string
@@ -31844,10 +31844,10 @@ func DestinationInput() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSe
 ##### `EventIdInput`<sup>Optional</sup> <a name="EventIdInput" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventIdInput"></a>
 
 ```go
-func EventIdInput() *f64
+func EventIdInput() *string
 ```
 
-- *Type:* *f64
+- *Type:* *string
 
 ---
 
@@ -31991,10 +31991,10 @@ func AcquisitionPointId() *string
 
 ---
 
-##### `AudioOnlyTimecodecControl`<sup>Required</sup> <a name="AudioOnlyTimecodecControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodecControl"></a>
+##### `AudioOnlyTimecodeControl`<sup>Required</sup> <a name="AudioOnlyTimecodeControl" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.audioOnlyTimecodeControl"></a>
 
 ```go
-func AudioOnlyTimecodecControl() *string
+func AudioOnlyTimecodeControl() *string
 ```
 
 - *Type:* *string
@@ -32024,10 +32024,10 @@ func ConnectionRetryInterval() *f64
 ##### `EventId`<sup>Required</sup> <a name="EventId" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.property.eventId"></a>
 
 ```go
-func EventId() *f64
+func EventId() *string
 ```
 
-- *Type:* *f64
+- *Type:* *string
 
 ---
 

@@ -538,7 +538,9 @@ dataAwsLb.DataAwsLb.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableCrossZoneLoadBalancing">enable_cross_zone_load_balancing</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableDeletionProtection">enable_deletion_protection</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableHttp2">enable_http2</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableTlsVersionAndCipherSuiteHeaders">enable_tls_version_and_cipher_suite_headers</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableWafFailOpen">enable_waf_fail_open</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableXffClientPort">enable_xff_client_port</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.idleTimeout">idle_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.internal">internal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.ipAddressType">ip_address_type</a></code> | <code>str</code> | *No description.* |
@@ -549,6 +551,7 @@ dataAwsLb.DataAwsLb.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.subnets">subnets</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLbTimeoutsOutputReference">DataAwsLbTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.xffHeaderProcessingMode">xff_header_processing_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.arnInput">arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -774,10 +777,30 @@ enable_http2: IResolvable
 
 ---
 
+##### `enable_tls_version_and_cipher_suite_headers`<sup>Required</sup> <a name="enable_tls_version_and_cipher_suite_headers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableTlsVersionAndCipherSuiteHeaders"></a>
+
+```python
+enable_tls_version_and_cipher_suite_headers: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `enable_waf_fail_open`<sup>Required</sup> <a name="enable_waf_fail_open" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableWafFailOpen"></a>
 
 ```python
 enable_waf_fail_open: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `enable_xff_client_port`<sup>Required</sup> <a name="enable_xff_client_port" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.enableXffClientPort"></a>
+
+```python
+enable_xff_client_port: IResolvable
 ```
 
 - *Type:* cdktf.IResolvable
@@ -878,6 +901,16 @@ timeouts: DataAwsLbTimeoutsOutputReference
 
 ```python
 vpc_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `xff_header_processing_mode`<sup>Required</sup> <a name="xff_header_processing_mode" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.property.xffHeaderProcessingMode"></a>
+
+```python
+xff_header_processing_mode: str
 ```
 
 - *Type:* str

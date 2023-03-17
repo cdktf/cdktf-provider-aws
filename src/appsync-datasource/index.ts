@@ -47,6 +47,12 @@ export interface AppsyncDatasourceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly elasticsearchConfig?: AppsyncDatasourceElasticsearchConfig;
   /**
+  * event_bridge_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#event_bridge_config AppsyncDatasource#event_bridge_config}
+  */
+  readonly eventBridgeConfig?: AppsyncDatasourceEventBridgeConfig;
+  /**
   * http_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#http_config AppsyncDatasource#http_config}
@@ -440,6 +446,68 @@ export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+}
+export interface AppsyncDatasourceEventBridgeConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#event_bus_arn AppsyncDatasource#event_bus_arn}
+  */
+  readonly eventBusArn: string;
+}
+
+export function appsyncDatasourceEventBridgeConfigToTerraform(struct?: AppsyncDatasourceEventBridgeConfigOutputReference | AppsyncDatasourceEventBridgeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    event_bus_arn: cdktf.stringToTerraform(struct!.eventBusArn),
+  }
+}
+
+export class AppsyncDatasourceEventBridgeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppsyncDatasourceEventBridgeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eventBusArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventBusArn = this._eventBusArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsyncDatasourceEventBridgeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._eventBusArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._eventBusArn = value.eventBusArn;
+    }
+  }
+
+  // event_bus_arn - computed: false, optional: false, required: true
+  private _eventBusArn?: string; 
+  public get eventBusArn() {
+    return this.getStringAttribute('event_bus_arn');
+  }
+  public set eventBusArn(value: string) {
+    this._eventBusArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBusArnInput() {
+    return this._eventBusArn;
   }
 }
 export interface AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig {
@@ -1069,7 +1137,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appsync_datasource',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1088,6 +1156,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
     this._type = config.type;
     this._dynamodbConfig.internalValue = config.dynamodbConfig;
     this._elasticsearchConfig.internalValue = config.elasticsearchConfig;
+    this._eventBridgeConfig.internalValue = config.eventBridgeConfig;
     this._httpConfig.internalValue = config.httpConfig;
     this._lambdaConfig.internalValue = config.lambdaConfig;
     this._relationalDatabaseConfig.internalValue = config.relationalDatabaseConfig;
@@ -1221,6 +1290,22 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
     return this._elasticsearchConfig.internalValue;
   }
 
+  // event_bridge_config - computed: false, optional: true, required: false
+  private _eventBridgeConfig = new AppsyncDatasourceEventBridgeConfigOutputReference(this, "event_bridge_config");
+  public get eventBridgeConfig() {
+    return this._eventBridgeConfig;
+  }
+  public putEventBridgeConfig(value: AppsyncDatasourceEventBridgeConfig) {
+    this._eventBridgeConfig.internalValue = value;
+  }
+  public resetEventBridgeConfig() {
+    this._eventBridgeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBridgeConfigInput() {
+    return this._eventBridgeConfig.internalValue;
+  }
+
   // http_config - computed: false, optional: true, required: false
   private _httpConfig = new AppsyncDatasourceHttpConfigOutputReference(this, "http_config");
   public get httpConfig() {
@@ -1283,6 +1368,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       dynamodb_config: appsyncDatasourceDynamodbConfigToTerraform(this._dynamodbConfig.internalValue),
       elasticsearch_config: appsyncDatasourceElasticsearchConfigToTerraform(this._elasticsearchConfig.internalValue),
+      event_bridge_config: appsyncDatasourceEventBridgeConfigToTerraform(this._eventBridgeConfig.internalValue),
       http_config: appsyncDatasourceHttpConfigToTerraform(this._httpConfig.internalValue),
       lambda_config: appsyncDatasourceLambdaConfigToTerraform(this._lambdaConfig.internalValue),
       relational_database_config: appsyncDatasourceRelationalDatabaseConfigToTerraform(this._relationalDatabaseConfig.internalValue),

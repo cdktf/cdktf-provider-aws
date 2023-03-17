@@ -36,6 +36,10 @@ export interface Inspector2OrganizationConfigurationAutoEnable {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#ecr Inspector2OrganizationConfiguration#ecr}
   */
   readonly ecr: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}
+  */
+  readonly lambda?: boolean | cdktf.IResolvable;
 }
 
 export function inspector2OrganizationConfigurationAutoEnableToTerraform(struct?: Inspector2OrganizationConfigurationAutoEnableOutputReference | Inspector2OrganizationConfigurationAutoEnable): any {
@@ -46,6 +50,7 @@ export function inspector2OrganizationConfigurationAutoEnableToTerraform(struct?
   return {
     ec2: cdktf.booleanToTerraform(struct!.ec2),
     ecr: cdktf.booleanToTerraform(struct!.ecr),
+    lambda: cdktf.booleanToTerraform(struct!.lambda),
   }
 }
 
@@ -71,6 +76,10 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
       hasAnyValues = true;
       internalValueResult.ecr = this._ecr;
     }
+    if (this._lambda !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lambda = this._lambda;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -79,11 +88,13 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
       this.isEmptyObject = false;
       this._ec2 = undefined;
       this._ecr = undefined;
+      this._lambda = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._ec2 = value.ec2;
       this._ecr = value.ecr;
+      this._lambda = value.lambda;
     }
   }
 
@@ -111,6 +122,22 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get ecrInput() {
     return this._ecr;
+  }
+
+  // lambda - computed: false, optional: true, required: false
+  private _lambda?: boolean | cdktf.IResolvable; 
+  public get lambda() {
+    return this.getBooleanAttribute('lambda');
+  }
+  public set lambda(value: boolean | cdktf.IResolvable) {
+    this._lambda = value;
+  }
+  public resetLambda() {
+    this._lambda = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaInput() {
+    return this._lambda;
   }
 }
 export interface Inspector2OrganizationConfigurationTimeouts {
@@ -269,7 +296,7 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
       terraformResourceType: 'aws_inspector2_organization_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

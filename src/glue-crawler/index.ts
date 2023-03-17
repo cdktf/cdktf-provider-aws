@@ -324,6 +324,10 @@ export interface GlueCrawlerDeltaTarget {
   */
   readonly connectionName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}
+  */
+  readonly createNativeDeltaTable?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delta_tables GlueCrawler#delta_tables}
   */
   readonly deltaTables: string[];
@@ -340,6 +344,7 @@ export function glueCrawlerDeltaTargetToTerraform(struct?: GlueCrawlerDeltaTarge
   }
   return {
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    create_native_delta_table: cdktf.booleanToTerraform(struct!.createNativeDeltaTable),
     delta_tables: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deltaTables),
     write_manifest: cdktf.booleanToTerraform(struct!.writeManifest),
   }
@@ -369,6 +374,10 @@ export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.connectionName = this._connectionName;
     }
+    if (this._createNativeDeltaTable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.createNativeDeltaTable = this._createNativeDeltaTable;
+    }
     if (this._deltaTables !== undefined) {
       hasAnyValues = true;
       internalValueResult.deltaTables = this._deltaTables;
@@ -385,6 +394,7 @@ export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._connectionName = undefined;
+      this._createNativeDeltaTable = undefined;
       this._deltaTables = undefined;
       this._writeManifest = undefined;
     }
@@ -396,6 +406,7 @@ export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._connectionName = value.connectionName;
+      this._createNativeDeltaTable = value.createNativeDeltaTable;
       this._deltaTables = value.deltaTables;
       this._writeManifest = value.writeManifest;
     }
@@ -415,6 +426,22 @@ export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get connectionNameInput() {
     return this._connectionName;
+  }
+
+  // create_native_delta_table - computed: false, optional: true, required: false
+  private _createNativeDeltaTable?: boolean | cdktf.IResolvable; 
+  public get createNativeDeltaTable() {
+    return this.getBooleanAttribute('create_native_delta_table');
+  }
+  public set createNativeDeltaTable(value: boolean | cdktf.IResolvable) {
+    this._createNativeDeltaTable = value;
+  }
+  public resetCreateNativeDeltaTable() {
+    this._createNativeDeltaTable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createNativeDeltaTableInput() {
+    return this._createNativeDeltaTable;
   }
 
   // delta_tables - computed: false, optional: false, required: true
@@ -1498,7 +1525,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_crawler',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -12,6 +12,10 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly billingMode?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}
+  */
+  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#hash_key DynamodbTable#hash_key}
   */
   readonly hashKey?: string;
@@ -1242,7 +1246,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1254,6 +1258,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._billingMode = config.billingMode;
+    this._deletionProtectionEnabled = config.deletionProtectionEnabled;
     this._hashKey = config.hashKey;
     this._id = config.id;
     this._name = config.name;
@@ -1301,6 +1306,22 @@ export class DynamodbTable extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get billingModeInput() {
     return this._billingMode;
+  }
+
+  // deletion_protection_enabled - computed: false, optional: true, required: false
+  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  public get deletionProtectionEnabled() {
+    return this.getBooleanAttribute('deletion_protection_enabled');
+  }
+  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+    this._deletionProtectionEnabled = value;
+  }
+  public resetDeletionProtectionEnabled() {
+    this._deletionProtectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionEnabledInput() {
+    return this._deletionProtectionEnabled;
   }
 
   // hash_key - computed: true, optional: true, required: false
@@ -1669,6 +1690,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       billing_mode: cdktf.stringToTerraform(this._billingMode),
+      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
       hash_key: cdktf.stringToTerraform(this._hashKey),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

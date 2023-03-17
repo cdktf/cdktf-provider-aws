@@ -1426,7 +1426,7 @@ export class OpsworksStaticWebLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_static_web_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

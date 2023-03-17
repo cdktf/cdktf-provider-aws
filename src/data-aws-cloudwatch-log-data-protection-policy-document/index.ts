@@ -780,7 +780,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocument extends cdktf.Terr
       terraformResourceType: 'aws_cloudwatch_log_data_protection_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

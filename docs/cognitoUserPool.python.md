@@ -661,11 +661,11 @@ def interpolation_for_attribute(
 
 ```python
 def put_account_recovery_setting(
-  recovery_mechanism: typing.Union[IResolvable, typing.List[CognitoUserPoolAccountRecoverySettingRecoveryMechanism]]
+  recovery_mechanism: typing.Union[IResolvable, typing.List[CognitoUserPoolAccountRecoverySettingRecoveryMechanism]] = None
 ) -> None
 ```
 
-###### `recovery_mechanism`<sup>Required</sup> <a name="recovery_mechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPool.putAccountRecoverySetting.parameter.recoveryMechanism"></a>
+###### `recovery_mechanism`<sup>Optional</sup> <a name="recovery_mechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPool.putAccountRecoverySetting.parameter.recoveryMechanism"></a>
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>]]
 
@@ -2207,7 +2207,7 @@ tfResourceType: str
 from cdktf_cdktf_provider_aws import cognito_user_pool
 
 cognitoUserPool.CognitoUserPoolAccountRecoverySetting(
-  recovery_mechanism: typing.Union[IResolvable, typing.List[CognitoUserPoolAccountRecoverySettingRecoveryMechanism]]
+  recovery_mechanism: typing.Union[IResolvable, typing.List[CognitoUserPoolAccountRecoverySettingRecoveryMechanism]] = None
 )
 ```
 
@@ -2219,7 +2219,7 @@ cognitoUserPool.CognitoUserPoolAccountRecoverySetting(
 
 ---
 
-##### `recovery_mechanism`<sup>Required</sup> <a name="recovery_mechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
+##### `recovery_mechanism`<sup>Optional</sup> <a name="recovery_mechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
 
 ```python
 recovery_mechanism: typing.Union[IResolvable, typing.List[CognitoUserPoolAccountRecoverySettingRecoveryMechanism]]
@@ -3972,6 +3972,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.putRecoveryMechanism">put_recovery_mechanism</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism">reset_recovery_mechanism</a></code> | *No description.* |
 
 ---
 
@@ -4160,6 +4161,12 @@ def put_recovery_mechanism(
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>]]
 
 ---
+
+##### `reset_recovery_mechanism` <a name="reset_recovery_mechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism"></a>
+
+```python
+def reset_recovery_mechanism() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

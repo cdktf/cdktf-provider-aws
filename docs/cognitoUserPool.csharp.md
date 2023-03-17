@@ -1507,7 +1507,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Aws;
 
 new CognitoUserPoolAccountRecoverySetting {
-    object RecoveryMechanism
+    object RecoveryMechanism = null
 };
 ```
 
@@ -1519,7 +1519,7 @@ new CognitoUserPoolAccountRecoverySetting {
 
 ---
 
-##### `RecoveryMechanism`<sup>Required</sup> <a name="RecoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
+##### `RecoveryMechanism`<sup>Optional</sup> <a name="RecoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
 
 ```csharp
 public object RecoveryMechanism { get; set; }
@@ -3269,6 +3269,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.putRecoveryMechanism">PutRecoveryMechanism</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism">ResetRecoveryMechanism</a></code> | *No description.* |
 
 ---
 
@@ -3433,6 +3434,12 @@ private void PutRecoveryMechanism(object Value)
 - *Type:* object
 
 ---
+
+##### `ResetRecoveryMechanism` <a name="ResetRecoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism"></a>
+
+```csharp
+private void ResetRecoveryMechanism()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

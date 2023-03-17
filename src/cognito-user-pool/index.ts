@@ -265,7 +265,7 @@ export interface CognitoUserPoolAccountRecoverySetting {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#recovery_mechanism CognitoUserPool#recovery_mechanism}
   */
-  readonly recoveryMechanism: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable;
+  readonly recoveryMechanism?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable;
 }
 
 export function cognitoUserPoolAccountRecoverySettingToTerraform(struct?: CognitoUserPoolAccountRecoverySettingOutputReference | CognitoUserPoolAccountRecoverySetting): any {
@@ -310,13 +310,16 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
     }
   }
 
-  // recovery_mechanism - computed: false, optional: false, required: true
+  // recovery_mechanism - computed: false, optional: true, required: false
   private _recoveryMechanism = new CognitoUserPoolAccountRecoverySettingRecoveryMechanismList(this, "recovery_mechanism", true);
   public get recoveryMechanism() {
     return this._recoveryMechanism;
   }
   public putRecoveryMechanism(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable) {
     this._recoveryMechanism.internalValue = value;
+  }
+  public resetRecoveryMechanism() {
+    this._recoveryMechanism.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get recoveryMechanismInput() {
@@ -2595,7 +2598,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

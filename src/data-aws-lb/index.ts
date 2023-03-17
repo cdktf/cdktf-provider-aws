@@ -293,7 +293,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -377,9 +377,19 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('enable_http2');
   }
 
+  // enable_tls_version_and_cipher_suite_headers - computed: true, optional: false, required: false
+  public get enableTlsVersionAndCipherSuiteHeaders() {
+    return this.getBooleanAttribute('enable_tls_version_and_cipher_suite_headers');
+  }
+
   // enable_waf_fail_open - computed: true, optional: false, required: false
   public get enableWafFailOpen() {
     return this.getBooleanAttribute('enable_waf_fail_open');
+  }
+
+  // enable_xff_client_port - computed: true, optional: false, required: false
+  public get enableXffClientPort() {
+    return this.getBooleanAttribute('enable_xff_client_port');
   }
 
   // id - computed: true, optional: true, required: false
@@ -474,6 +484,11 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
+  }
+
+  // xff_header_processing_mode - computed: true, optional: false, required: false
+  public get xffHeaderProcessingMode() {
+    return this.getStringAttribute('xff_header_processing_mode');
   }
 
   // zone_id - computed: true, optional: false, required: false
