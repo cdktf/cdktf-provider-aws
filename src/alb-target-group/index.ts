@@ -35,6 +35,10 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly loadBalancingAlgorithmType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#load_balancing_cross_zone_enabled AlbTargetGroup#load_balancing_cross_zone_enabled}
+  */
+  readonly loadBalancingCrossZoneEnabled?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#name AlbTargetGroup#name}
   */
   readonly name?: string;
@@ -670,7 +674,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb_target_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -687,6 +691,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
     this._ipAddressType = config.ipAddressType;
     this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
     this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
+    this._loadBalancingCrossZoneEnabled = config.loadBalancingCrossZoneEnabled;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._port = config.port;
@@ -812,6 +817,22 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get loadBalancingAlgorithmTypeInput() {
     return this._loadBalancingAlgorithmType;
+  }
+
+  // load_balancing_cross_zone_enabled - computed: true, optional: true, required: false
+  private _loadBalancingCrossZoneEnabled?: string; 
+  public get loadBalancingCrossZoneEnabled() {
+    return this.getStringAttribute('load_balancing_cross_zone_enabled');
+  }
+  public set loadBalancingCrossZoneEnabled(value: string) {
+    this._loadBalancingCrossZoneEnabled = value;
+  }
+  public resetLoadBalancingCrossZoneEnabled() {
+    this._loadBalancingCrossZoneEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancingCrossZoneEnabledInput() {
+    return this._loadBalancingCrossZoneEnabled;
   }
 
   // name - computed: true, optional: true, required: false
@@ -1066,6 +1087,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
       load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
+      load_balancing_cross_zone_enabled: cdktf.stringToTerraform(this._loadBalancingCrossZoneEnabled),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       port: cdktf.numberToTerraform(this._port),

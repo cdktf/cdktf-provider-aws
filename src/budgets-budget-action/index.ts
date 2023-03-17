@@ -56,6 +56,12 @@ export interface BudgetsBudgetActionConfig extends cdktf.TerraformMetaArguments 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
   */
   readonly subscriber: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
+  */
+  readonly timeouts?: BudgetsBudgetActionTimeouts;
 }
 export interface BudgetsBudgetActionActionThreshold {
   /**
@@ -725,6 +731,108 @@ export class BudgetsBudgetActionSubscriberList extends cdktf.ComplexList {
     return new BudgetsBudgetActionSubscriberOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BudgetsBudgetActionTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#create BudgetsBudgetAction#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#update BudgetsBudgetAction#update}
+  */
+  readonly update?: string;
+}
+
+export function budgetsBudgetActionTimeoutsToTerraform(struct?: BudgetsBudgetActionTimeoutsOutputReference | BudgetsBudgetActionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class BudgetsBudgetActionTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetActionTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetActionTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action aws_budgets_budget_action}
@@ -752,7 +860,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_budgets_budget_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -773,6 +881,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
     this._actionThreshold.internalValue = config.actionThreshold;
     this._definition.internalValue = config.definition;
     this._subscriber.internalValue = config.subscriber;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -930,6 +1039,22 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
     return this._subscriber.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new BudgetsBudgetActionTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: BudgetsBudgetActionTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -946,6 +1071,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       action_threshold: budgetsBudgetActionActionThresholdToTerraform(this._actionThreshold.internalValue),
       definition: budgetsBudgetActionDefinitionToTerraform(this._definition.internalValue),
       subscriber: cdktf.listMapper(budgetsBudgetActionSubscriberToTerraform, true)(this._subscriber.internalValue),
+      timeouts: budgetsBudgetActionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/transcribe_voc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.NewTranscribeVocabularyFilter(scope Construct, id *string, config TranscribeVocabularyFilterConfig) TranscribeVocabularyFilter
 ```
@@ -301,7 +301,7 @@ func ResetWords()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 transcribevocabularyfilter.TranscribeVocabularyFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transcribevocabularyfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transcribevocabularyfilter"
 
 &transcribevocabularyfilter.TranscribeVocabularyFilterConfig {
 	Connection: interface{},

@@ -54,7 +54,7 @@ export class SesIdentityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_identity_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

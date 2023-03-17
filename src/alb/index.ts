@@ -32,9 +32,17 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableHttp2?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_tls_version_and_cipher_suite_headers Alb#enable_tls_version_and_cipher_suite_headers}
+  */
+  readonly enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_waf_fail_open Alb#enable_waf_fail_open}
   */
   readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enable_xff_client_port Alb#enable_xff_client_port}
+  */
+  readonly enableXffClientPort?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#id Alb#id}
   *
@@ -86,6 +94,10 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#tags_all Alb#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#xff_header_processing_mode Alb#xff_header_processing_mode}
+  */
+  readonly xffHeaderProcessingMode?: string;
   /**
   * access_logs block
   * 
@@ -557,7 +569,7 @@ export class Alb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_alb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -574,7 +586,9 @@ export class Alb extends cdktf.TerraformResource {
     this._enableCrossZoneLoadBalancing = config.enableCrossZoneLoadBalancing;
     this._enableDeletionProtection = config.enableDeletionProtection;
     this._enableHttp2 = config.enableHttp2;
+    this._enableTlsVersionAndCipherSuiteHeaders = config.enableTlsVersionAndCipherSuiteHeaders;
     this._enableWafFailOpen = config.enableWafFailOpen;
+    this._enableXffClientPort = config.enableXffClientPort;
     this._id = config.id;
     this._idleTimeout = config.idleTimeout;
     this._internal = config.internal;
@@ -587,6 +601,7 @@ export class Alb extends cdktf.TerraformResource {
     this._subnets = config.subnets;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._xffHeaderProcessingMode = config.xffHeaderProcessingMode;
     this._accessLogs.internalValue = config.accessLogs;
     this._subnetMapping.internalValue = config.subnetMapping;
     this._timeouts.internalValue = config.timeouts;
@@ -707,6 +722,22 @@ export class Alb extends cdktf.TerraformResource {
     return this._enableHttp2;
   }
 
+  // enable_tls_version_and_cipher_suite_headers - computed: false, optional: true, required: false
+  private _enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable; 
+  public get enableTlsVersionAndCipherSuiteHeaders() {
+    return this.getBooleanAttribute('enable_tls_version_and_cipher_suite_headers');
+  }
+  public set enableTlsVersionAndCipherSuiteHeaders(value: boolean | cdktf.IResolvable) {
+    this._enableTlsVersionAndCipherSuiteHeaders = value;
+  }
+  public resetEnableTlsVersionAndCipherSuiteHeaders() {
+    this._enableTlsVersionAndCipherSuiteHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableTlsVersionAndCipherSuiteHeadersInput() {
+    return this._enableTlsVersionAndCipherSuiteHeaders;
+  }
+
   // enable_waf_fail_open - computed: false, optional: true, required: false
   private _enableWafFailOpen?: boolean | cdktf.IResolvable; 
   public get enableWafFailOpen() {
@@ -721,6 +752,22 @@ export class Alb extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableWafFailOpenInput() {
     return this._enableWafFailOpen;
+  }
+
+  // enable_xff_client_port - computed: false, optional: true, required: false
+  private _enableXffClientPort?: boolean | cdktf.IResolvable; 
+  public get enableXffClientPort() {
+    return this.getBooleanAttribute('enable_xff_client_port');
+  }
+  public set enableXffClientPort(value: boolean | cdktf.IResolvable) {
+    this._enableXffClientPort = value;
+  }
+  public resetEnableXffClientPort() {
+    this._enableXffClientPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableXffClientPortInput() {
+    return this._enableXffClientPort;
   }
 
   // id - computed: true, optional: true, required: false
@@ -920,6 +967,22 @@ export class Alb extends cdktf.TerraformResource {
     return this.getStringAttribute('vpc_id');
   }
 
+  // xff_header_processing_mode - computed: false, optional: true, required: false
+  private _xffHeaderProcessingMode?: string; 
+  public get xffHeaderProcessingMode() {
+    return this.getStringAttribute('xff_header_processing_mode');
+  }
+  public set xffHeaderProcessingMode(value: string) {
+    this._xffHeaderProcessingMode = value;
+  }
+  public resetXffHeaderProcessingMode() {
+    this._xffHeaderProcessingMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xffHeaderProcessingModeInput() {
+    return this._xffHeaderProcessingMode;
+  }
+
   // zone_id - computed: true, optional: false, required: false
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -985,7 +1048,9 @@ export class Alb extends cdktf.TerraformResource {
       enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
       enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
       enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
+      enable_tls_version_and_cipher_suite_headers: cdktf.booleanToTerraform(this._enableTlsVersionAndCipherSuiteHeaders),
       enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
+      enable_xff_client_port: cdktf.booleanToTerraform(this._enableXffClientPort),
       id: cdktf.stringToTerraform(this._id),
       idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
       internal: cdktf.booleanToTerraform(this._internal),
@@ -998,6 +1063,7 @@ export class Alb extends cdktf.TerraformResource {
       subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnets),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      xff_header_processing_mode: cdktf.stringToTerraform(this._xffHeaderProcessingMode),
       access_logs: albAccessLogsToTerraform(this._accessLogs.internalValue),
       subnet_mapping: cdktf.listMapper(albSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: albTimeoutsToTerraform(this._timeouts.internalValue),

@@ -66,7 +66,7 @@ export interface BatchComputeEnvironmentComputeResourcesEc2Configuration {
   readonly imageType?: string;
 }
 
-export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference | BatchComputeEnvironmentComputeResourcesEc2Configuration): any {
+export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -79,16 +79,22 @@ export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerrafo
 
 export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined {
+  public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._imageIdOverride !== undefined) {
@@ -102,14 +108,20 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined) {
+  public set internalValue(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._imageIdOverride = undefined;
       this._imageType = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._imageIdOverride = value.imageIdOverride;
       this._imageType = value.imageType;
     }
@@ -145,6 +157,26 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
   // Temporarily expose input value. Use with caution.
   public get imageTypeInput() {
     return this._imageType;
+  }
+}
+
+export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference {
+    return new BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface BatchComputeEnvironmentComputeResourcesLaunchTemplate {
@@ -328,7 +360,7 @@ export interface BatchComputeEnvironmentComputeResources {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment#ec2_configuration BatchComputeEnvironment#ec2_configuration}
   */
-  readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration;
+  readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable;
   /**
   * launch_template block
   * 
@@ -357,7 +389,7 @@ export function batchComputeEnvironmentComputeResourcesToTerraform(struct?: Batc
     subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     type: cdktf.stringToTerraform(struct!.type),
-    ec2_configuration: batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct!.ec2Configuration),
+    ec2_configuration: cdktf.listMapper(batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform, true)(struct!.ec2Configuration),
     launch_template: batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct!.launchTemplate),
   }
 }
@@ -700,11 +732,11 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   }
 
   // ec2_configuration - computed: false, optional: true, required: false
-  private _ec2Configuration = new BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(this, "ec2_configuration");
+  private _ec2Configuration = new BatchComputeEnvironmentComputeResourcesEc2ConfigurationList(this, "ec2_configuration", false);
   public get ec2Configuration() {
     return this._ec2Configuration;
   }
-  public putEc2Configuration(value: BatchComputeEnvironmentComputeResourcesEc2Configuration) {
+  public putEc2Configuration(value: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable) {
     this._ec2Configuration.internalValue = value;
   }
   public resetEc2Configuration() {
@@ -844,7 +876,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_batch_compute_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sfn_state_mach
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.NewSfnStateMachine(scope Construct, id *string, config SfnStateMachineConfig) SfnStateMachine
 ```
@@ -348,7 +348,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.SfnStateMachine_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.SfnStateMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ sfnstatemachine.SfnStateMachine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.SfnStateMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 &sfnstatemachine.SfnStateMachineConfig {
 	Connection: interface{},
@@ -859,12 +859,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
 	Definition: *string,
 	RoleArn: *string,
 	Id: *string,
-	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sfnStateMachine.SfnStateMachineLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.sfnStateMachine.SfnStateMachineLoggingConfiguration,
 	Name: *string,
 	NamePrefix: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TracingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sfnStateMachine.SfnStateMachineTracingConfiguration,
+	TracingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.sfnStateMachine.SfnStateMachineTracingConfiguration,
 	Type: *string,
 }
 ```
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 &sfnstatemachine.SfnStateMachineLoggingConfiguration {
 	IncludeExecutionData: interface{},
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 &sfnstatemachine.SfnStateMachineTracingConfiguration {
 	Enabled: interface{},
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.NewSfnStateMachineLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SfnStateMachineLoggingConfigurationOutputReference
 ```
@@ -1525,7 +1525,7 @@ func InternalValue() SfnStateMachineLoggingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sfnstatemachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sfnstatemachine"
 
 sfnstatemachine.NewSfnStateMachineTracingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SfnStateMachineTracingConfigurationOutputReference
 ```

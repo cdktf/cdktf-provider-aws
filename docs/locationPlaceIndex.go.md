@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_place
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndex(scope Construct, id *string, config LocationPlaceIndexConfig) LocationPlaceIndex
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ locationplaceindex.LocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 locationplaceindex.LocationPlaceIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
 	Provisioners: *[]interface{},
 	DataSource: *string,
 	IndexName: *string,
-	DataSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
+	DataSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration,
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 &locationplaceindex.LocationPlaceIndexDataSourceConfiguration {
 	IntendedUse: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationplaceindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationplaceindex"
 
 locationplaceindex.NewLocationPlaceIndexDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationPlaceIndexDataSourceConfigurationOutputReference
 ```

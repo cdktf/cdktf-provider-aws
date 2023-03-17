@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_vo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolume(scope Construct, id *string, config FsxOpenzfsVolumeConfig) FsxOpenzfsVolume
 ```
@@ -416,7 +416,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.FsxOpenzfsVolume_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.FsxOpenzfsVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ fsxopenzfsvolume.FsxOpenzfsVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.FsxOpenzfsVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeConfig {
 	Connection: interface{},
@@ -1039,15 +1039,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
 	CopyTagsToSnapshots: interface{},
 	DataCompressionType: *string,
 	Id: *string,
-	NfsExports: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExports,
-	OriginSnapshot: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshot,
+	NfsExports: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExports,
+	OriginSnapshot: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshot,
 	ReadOnly: interface{},
 	RecordSizeKib: *f64,
 	StorageCapacityQuotaGib: *f64,
 	StorageCapacityReservationGib: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeouts,
 	UserAndGroupQuotas: interface{},
 	VolumeType: *string,
 }
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExports.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeNfsExports {
 	ClientConfigurations: interface{},
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeNfsExportsClientConfigurations {
 	Clients: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeOriginSnapshot {
 	CopyStrategy: *string,
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeTimeouts {
 	Create: *string,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 &fsxopenzfsvolume.FsxOpenzfsVolumeUserAndGroupQuotas {
 	Id: *f64,
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeNfsExportsClientConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOpenzfsVolumeNfsExportsClientConfigurationsList
 ```
@@ -1755,7 +1755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference
 ```
@@ -2066,7 +2066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeNfsExportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsVolumeNfsExportsOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() FsxOpenzfsVolumeNfsExports
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeOriginSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsVolumeOriginSnapshotOutputReference
 ```
@@ -2643,7 +2643,7 @@ func InternalValue() FsxOpenzfsVolumeOriginSnapshot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsVolumeTimeoutsOutputReference
 ```
@@ -2979,7 +2979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeUserAndGroupQuotasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOpenzfsVolumeUserAndGroupQuotasList
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxopenzfsvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxopenzfsvolume"
 
 fsxopenzfsvolume.NewFsxOpenzfsVolumeUserAndGroupQuotasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOpenzfsVolumeUserAndGroupQuotasOutputReference
 ```

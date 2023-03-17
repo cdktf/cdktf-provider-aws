@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_vault a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsbackupvault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupvault"
 
 dataawsbackupvault.NewDataAwsBackupVault(scope Construct, id *string, config DataAwsBackupVaultConfig) DataAwsBackupVault
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsbackupvault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupvault"
 
 dataawsbackupvault.DataAwsBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsbackupvault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupvault"
 
 dataawsbackupvault.DataAwsBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsbackupvault.DataAwsBackupVault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsbackupvault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupvault"
 
 dataawsbackupvault.DataAwsBackupVault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsbackupvault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupvault"
 
 &dataawsbackupvault.DataAwsBackupVaultConfig {
 	Connection: interface{},

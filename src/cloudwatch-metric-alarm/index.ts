@@ -321,6 +321,10 @@ export interface CloudwatchMetricAlarmMetricQuery {
   */
   readonly label?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}
+  */
+  readonly period?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}
   */
   readonly returnData?: boolean | cdktf.IResolvable;
@@ -342,6 +346,7 @@ export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchM
     expression: cdktf.stringToTerraform(struct!.expression),
     id: cdktf.stringToTerraform(struct!.id),
     label: cdktf.stringToTerraform(struct!.label),
+    period: cdktf.numberToTerraform(struct!.period),
     return_data: cdktf.booleanToTerraform(struct!.returnData),
     metric: cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct!.metric),
   }
@@ -383,6 +388,10 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
+    if (this._period !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
     if (this._returnData !== undefined) {
       hasAnyValues = true;
       internalValueResult.returnData = this._returnData;
@@ -402,6 +411,7 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
       this._expression = undefined;
       this._id = undefined;
       this._label = undefined;
+      this._period = undefined;
       this._returnData = undefined;
       this._metric.internalValue = undefined;
     }
@@ -416,6 +426,7 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
       this._expression = value.expression;
       this._id = value.id;
       this._label = value.label;
+      this._period = value.period;
       this._returnData = value.returnData;
       this._metric.internalValue = value.metric;
     }
@@ -480,6 +491,22 @@ export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get labelInput() {
     return this._label;
+  }
+
+  // period - computed: false, optional: true, required: false
+  private _period?: number; 
+  public get period() {
+    return this.getNumberAttribute('period');
+  }
+  public set period(value: number) {
+    this._period = value;
+  }
+  public resetPeriod() {
+    this._period = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodInput() {
+    return this._period;
   }
 
   // return_data - computed: false, optional: true, required: false
@@ -561,7 +588,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_metric_alarm',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

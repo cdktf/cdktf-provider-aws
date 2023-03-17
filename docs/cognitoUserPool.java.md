@@ -1850,8 +1850,8 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.aws.cognito_user_pool.CognitoUserPoolAccountRecoverySetting;
 
 CognitoUserPoolAccountRecoverySetting.builder()
-    .recoveryMechanism(IResolvable)
-    .recoveryMechanism(java.util.List<CognitoUserPoolAccountRecoverySettingRecoveryMechanism>)
+//  .recoveryMechanism(IResolvable)
+//  .recoveryMechanism(java.util.List<CognitoUserPoolAccountRecoverySettingRecoveryMechanism>)
     .build();
 ```
 
@@ -1863,7 +1863,7 @@ CognitoUserPoolAccountRecoverySetting.builder()
 
 ---
 
-##### `recoveryMechanism`<sup>Required</sup> <a name="recoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
+##### `recoveryMechanism`<sup>Optional</sup> <a name="recoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
 
 ```java
 public java.lang.Object getRecoveryMechanism();
@@ -3629,6 +3629,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.putRecoveryMechanism">putRecoveryMechanism</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism">resetRecoveryMechanism</a></code> | *No description.* |
 
 ---
 
@@ -3793,6 +3794,12 @@ public void putRecoveryMechanism(IResolvable OR java.util.List<CognitoUserPoolAc
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>>
 
 ---
+
+##### `resetRecoveryMechanism` <a name="resetRecoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism"></a>
+
+```java
+public void resetRecoveryMechanism()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

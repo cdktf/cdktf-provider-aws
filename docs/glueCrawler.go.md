@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawler(scope Construct, id *string, config GlueCrawlerConfig) GlueCrawler
 ```
@@ -529,7 +529,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.GlueCrawler_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.GlueCrawler_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ gluecrawler.GlueCrawler_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.GlueCrawler_IsTerraformResource(x interface{}) *bool
 ```
@@ -1269,7 +1269,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerCatalogTarget {
 	DatabaseName: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerConfig {
 	Connection: interface{},
@@ -1378,13 +1378,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
 	DynamodbTarget: interface{},
 	Id: *string,
 	JdbcTarget: interface{},
-	LakeFormationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueCrawler.GlueCrawlerLakeFormationConfiguration,
-	LineageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueCrawler.GlueCrawlerLineageConfiguration,
+	LakeFormationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.glueCrawler.GlueCrawlerLakeFormationConfiguration,
+	LineageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.glueCrawler.GlueCrawlerLineageConfiguration,
 	MongodbTarget: interface{},
-	RecrawlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueCrawler.GlueCrawlerRecrawlPolicy,
+	RecrawlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.glueCrawler.GlueCrawlerRecrawlPolicy,
 	S3Target: interface{},
 	Schedule: *string,
-	SchemaChangePolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.glueCrawler.GlueCrawlerSchemaChangePolicy,
+	SchemaChangePolicy: github.com/cdktf/cdktf-provider-aws-go/aws.glueCrawler.GlueCrawlerSchemaChangePolicy,
 	SecurityConfiguration: *string,
 	TablePrefix: *string,
 	Tags: *map[string]*string,
@@ -1790,12 +1790,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerDeltaTarget {
 	DeltaTables: *[]*string,
 	WriteManifest: interface{},
 	ConnectionName: *string,
+	CreateNativeDeltaTable: interface{},
 }
 ```
 
@@ -1806,6 +1807,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.deltaTables">DeltaTables</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delta_tables GlueCrawler#delta_tables}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.writeManifest">WriteManifest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#write_manifest GlueCrawler#write_manifest}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.connectionName">ConnectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable">CreateNativeDeltaTable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}. |
 
 ---
 
@@ -1845,12 +1847,24 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `CreateNativeDeltaTable`<sup>Optional</sup> <a name="CreateNativeDeltaTable" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable"></a>
+
+```go
+CreateNativeDeltaTable interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
+
+---
+
 ### GlueCrawlerDynamodbTarget <a name="GlueCrawlerDynamodbTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerDynamodbTarget {
 	Path: *string,
@@ -1910,7 +1924,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerJdbcTarget {
 	ConnectionName: *string,
@@ -1984,7 +1998,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerLakeFormationConfiguration {
 	AccountId: *string,
@@ -2030,7 +2044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerLineageConfiguration {
 	CrawlerLineageSettings: *string,
@@ -2062,7 +2076,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerMongodbTarget {
 	ConnectionName: *string,
@@ -2122,7 +2136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerRecrawlPolicy {
 	RecrawlBehavior: *string,
@@ -2154,7 +2168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerS3Target {
 	Path: *string,
@@ -2256,7 +2270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 &gluecrawler.GlueCrawlerSchemaChangePolicy {
 	DeleteBehavior: *string,
@@ -2304,7 +2318,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerCatalogTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerCatalogTargetList
 ```
@@ -2447,7 +2461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerCatalogTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerCatalogTargetOutputReference
 ```
@@ -2845,7 +2859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerDeltaTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerDeltaTargetList
 ```
@@ -2988,7 +3002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerDeltaTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerDeltaTargetOutputReference
 ```
@@ -3052,6 +3066,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.resetConnectionName">ResetConnectionName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.resetCreateNativeDeltaTable">ResetCreateNativeDeltaTable</a></code> | *No description.* |
 
 ---
 
@@ -3211,6 +3226,12 @@ Returns a reversible string representation.
 func ResetConnectionName()
 ```
 
+##### `ResetCreateNativeDeltaTable` <a name="ResetCreateNativeDeltaTable" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.resetCreateNativeDeltaTable"></a>
+
+```go
+func ResetCreateNativeDeltaTable()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3219,9 +3240,11 @@ func ResetConnectionName()
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.connectionNameInput">ConnectionNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.createNativeDeltaTableInput">CreateNativeDeltaTableInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.deltaTablesInput">DeltaTablesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.writeManifestInput">WriteManifestInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.connectionName">ConnectionName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.createNativeDeltaTable">CreateNativeDeltaTable</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.deltaTables">DeltaTables</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.writeManifest">WriteManifest</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -3262,6 +3285,16 @@ func ConnectionNameInput() *string
 
 ---
 
+##### `CreateNativeDeltaTableInput`<sup>Optional</sup> <a name="CreateNativeDeltaTableInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.createNativeDeltaTableInput"></a>
+
+```go
+func CreateNativeDeltaTableInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DeltaTablesInput`<sup>Optional</sup> <a name="DeltaTablesInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.deltaTablesInput"></a>
 
 ```go
@@ -3289,6 +3322,16 @@ func ConnectionName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CreateNativeDeltaTable`<sup>Required</sup> <a name="CreateNativeDeltaTable" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference.property.createNativeDeltaTable"></a>
+
+```go
+func CreateNativeDeltaTable() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -3328,7 +3371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerDynamodbTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerDynamodbTargetList
 ```
@@ -3471,7 +3514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerDynamodbTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerDynamodbTargetOutputReference
 ```
@@ -3818,7 +3861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerJdbcTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerJdbcTargetList
 ```
@@ -3961,7 +4004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerJdbcTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerJdbcTargetOutputReference
 ```
@@ -4330,7 +4373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerLakeFormationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCrawlerLakeFormationConfigurationOutputReference
 ```
@@ -4637,7 +4680,7 @@ func InternalValue() GlueCrawlerLakeFormationConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerLineageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCrawlerLineageConfigurationOutputReference
 ```
@@ -4915,7 +4958,7 @@ func InternalValue() GlueCrawlerLineageConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerMongodbTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerMongodbTargetList
 ```
@@ -5058,7 +5101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerMongodbTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerMongodbTargetOutputReference
 ```
@@ -5398,7 +5441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerRecrawlPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCrawlerRecrawlPolicyOutputReference
 ```
@@ -5676,7 +5719,7 @@ func InternalValue() GlueCrawlerRecrawlPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerS3TargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerS3TargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCrawlerS3TargetList
 ```
@@ -5819,7 +5862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerS3TargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerS3TargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCrawlerS3TargetOutputReference
 ```
@@ -6253,7 +6296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/gluecrawler"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecrawler"
 
 gluecrawler.NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCrawlerSchemaChangePolicyOutputReference
 ```

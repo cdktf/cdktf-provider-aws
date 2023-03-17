@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_custom_key
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmscustomkeystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.NewDataAwsKmsCustomKeyStore(scope Construct, id *string, config DataAwsKmsCustomKeyStoreConfig) DataAwsKmsCustomKeyStore
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmscustomkeystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmscustomkeystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmscustomkeystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmscustomkeystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmscustomkeystore"
 
 &dataawskmscustomkeystore.DataAwsKmsCustomKeyStoreConfig {
 	Connection: interface{},

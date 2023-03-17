@@ -12,6 +12,10 @@ export interface SecurityhubOrganizationConfigurationConfig extends cdktf.Terraf
   */
   readonly autoEnable: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration#auto_enable_standards SecurityhubOrganizationConfiguration#auto_enable_standards}
+  */
+  readonly autoEnableStandards?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration#id SecurityhubOrganizationConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -46,7 +50,7 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
       terraformResourceType: 'aws_securityhub_organization_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -58,6 +62,7 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
       forEach: config.forEach
     });
     this._autoEnable = config.autoEnable;
+    this._autoEnableStandards = config.autoEnableStandards;
     this._id = config.id;
   }
 
@@ -76,6 +81,22 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // Temporarily expose input value. Use with caution.
   public get autoEnableInput() {
     return this._autoEnable;
+  }
+
+  // auto_enable_standards - computed: true, optional: true, required: false
+  private _autoEnableStandards?: string; 
+  public get autoEnableStandards() {
+    return this.getStringAttribute('auto_enable_standards');
+  }
+  public set autoEnableStandards(value: string) {
+    this._autoEnableStandards = value;
+  }
+  public resetAutoEnableStandards() {
+    this._autoEnableStandards = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoEnableStandardsInput() {
+    return this._autoEnableStandards;
   }
 
   // id - computed: true, optional: true, required: false
@@ -101,6 +122,7 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_enable: cdktf.booleanToTerraform(this._autoEnable),
+      auto_enable_standards: cdktf.stringToTerraform(this._autoEnableStandards),
       id: cdktf.stringToTerraform(this._id),
     };
   }

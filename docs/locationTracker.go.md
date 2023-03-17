@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_track
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationTracker.LocationTracker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationtracker"
 
 locationtracker.NewLocationTracker(scope Construct, id *string, config LocationTrackerConfig) LocationTracker
 ```
@@ -308,7 +308,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.locationTracker.LocationTracker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationtracker"
 
 locationtracker.LocationTracker_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.locationTracker.LocationTracker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationtracker"
 
 locationtracker.LocationTracker_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ locationtracker.LocationTracker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.locationTracker.LocationTracker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationtracker"
 
 locationtracker.LocationTracker_IsTerraformResource(x interface{}) *bool
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationTracker.LocationTrackerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/locationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationtracker"
 
 &locationtracker.LocationTrackerConfig {
 	Connection: interface{},

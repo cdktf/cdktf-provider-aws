@@ -54,7 +54,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -96,9 +96,19 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
     return this._certificateArn;
   }
 
+  // cloudfront_distribution - computed: true, optional: false, required: false
+  public get cloudfrontDistribution() {
+    return this.getStringAttribute('cloudfront_distribution');
+  }
+
   // cloudfront_distribution_arn - computed: true, optional: false, required: false
   public get cloudfrontDistributionArn() {
     return this.getStringAttribute('cloudfront_distribution_arn');
+  }
+
+  // cloudfront_distribution_zone_id - computed: true, optional: false, required: false
+  public get cloudfrontDistributionZoneId() {
+    return this.getStringAttribute('cloudfront_distribution_zone_id');
   }
 
   // domain - computed: false, optional: false, required: true

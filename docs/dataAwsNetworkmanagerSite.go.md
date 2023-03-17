@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/networkmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSite(scope Construct, id *string, config DataAwsNetworkmanagerSiteConfig) DataAwsNetworkmanagerSite
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 &dataawsnetworkmanagersite.DataAwsNetworkmanagerSiteConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 &dataawsnetworkmanagersite.DataAwsNetworkmanagerSiteLocation {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSiteLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerSiteLocationList
 ```
@@ -932,7 +932,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSiteLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerSiteLocationOutputReference
 ```

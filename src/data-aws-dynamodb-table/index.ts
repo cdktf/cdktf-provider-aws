@@ -548,7 +548,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -583,6 +583,11 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // billing_mode - computed: true, optional: false, required: false
   public get billingMode() {
     return this.getStringAttribute('billing_mode');
+  }
+
+  // deletion_protection_enabled - computed: true, optional: false, required: false
+  public get deletionProtectionEnabled() {
+    return this.getBooleanAttribute('deletion_protection_enabled');
   }
 
   // global_secondary_index - computed: true, optional: false, required: false

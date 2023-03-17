@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_tag a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferTag.TransferTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transfertag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transfertag"
 
 transfertag.NewTransferTag(scope Construct, id *string, config TransferTagConfig) TransferTag
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferTag.TransferTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transfertag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transfertag"
 
 transfertag.TransferTag_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferTag.TransferTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transfertag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transfertag"
 
 transfertag.TransferTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ transfertag.TransferTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferTag.TransferTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transfertag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transfertag"
 
 transfertag.TransferTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferTag.TransferTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/transfertag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transfertag"
 
 &transfertag.TransferTagConfig {
 	Connection: interface{},

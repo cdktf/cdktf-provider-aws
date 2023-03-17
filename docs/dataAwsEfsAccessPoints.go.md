@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_access_poi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.NewDataAwsEfsAccessPoints(scope Construct, id *string, config DataAwsEfsAccessPointsConfig) DataAwsEfsAccessPoints
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 &dataawsefsaccesspoints.DataAwsEfsAccessPointsConfig {
 	Connection: interface{},

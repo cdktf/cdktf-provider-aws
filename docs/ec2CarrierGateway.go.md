@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.NewEc2CarrierGateway(scope Construct, id *string, config Ec2CarrierGatewayConfig) Ec2CarrierGateway
 ```
@@ -287,7 +287,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ ec2carriergateway.Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 ec2carriergateway.Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2carriergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2carriergateway"
 
 &ec2carriergateway.Ec2CarrierGatewayConfig {
 	Connection: interface{},

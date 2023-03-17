@@ -1531,6 +1531,10 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   */
   readonly fileType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#preserve_source_data_typing AppflowFlow#preserve_source_data_typing}
+  */
+  readonly preserveSourceDataTyping?: boolean | cdktf.IResolvable;
+  /**
   * aggregation_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
@@ -1551,6 +1555,7 @@ export function appflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3
   }
   return {
     file_type: cdktf.stringToTerraform(struct!.fileType),
+    preserve_source_data_typing: cdktf.booleanToTerraform(struct!.preserveSourceDataTyping),
     aggregation_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigToTerraform(struct!.aggregationConfig),
     prefix_config: appflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigToTerraform(struct!.prefixConfig),
   }
@@ -1574,6 +1579,10 @@ export class AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3O
       hasAnyValues = true;
       internalValueResult.fileType = this._fileType;
     }
+    if (this._preserveSourceDataTyping !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preserveSourceDataTyping = this._preserveSourceDataTyping;
+    }
     if (this._aggregationConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregationConfig = this._aggregationConfig?.internalValue;
@@ -1589,12 +1598,14 @@ export class AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3O
     if (value === undefined) {
       this.isEmptyObject = false;
       this._fileType = undefined;
+      this._preserveSourceDataTyping = undefined;
       this._aggregationConfig.internalValue = undefined;
       this._prefixConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._fileType = value.fileType;
+      this._preserveSourceDataTyping = value.preserveSourceDataTyping;
       this._aggregationConfig.internalValue = value.aggregationConfig;
       this._prefixConfig.internalValue = value.prefixConfig;
     }
@@ -1614,6 +1625,22 @@ export class AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3O
   // Temporarily expose input value. Use with caution.
   public get fileTypeInput() {
     return this._fileType;
+  }
+
+  // preserve_source_data_typing - computed: false, optional: true, required: false
+  private _preserveSourceDataTyping?: boolean | cdktf.IResolvable; 
+  public get preserveSourceDataTyping() {
+    return this.getBooleanAttribute('preserve_source_data_typing');
+  }
+  public set preserveSourceDataTyping(value: boolean | cdktf.IResolvable) {
+    this._preserveSourceDataTyping = value;
+  }
+  public resetPreserveSourceDataTyping() {
+    this._preserveSourceDataTyping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveSourceDataTypingInput() {
+    return this._preserveSourceDataTyping;
   }
 
   // aggregation_config - computed: false, optional: true, required: false
@@ -7070,7 +7097,7 @@ export class AppflowFlow extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appflow_flow',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

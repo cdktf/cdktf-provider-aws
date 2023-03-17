@@ -46,7 +46,7 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ecs_task_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -68,6 +68,11 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // arn_without_revision - computed: true, optional: false, required: false
+  public get arnWithoutRevision() {
+    return this.getStringAttribute('arn_without_revision');
   }
 
   // family - computed: true, optional: false, required: false

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_param
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroup(scope Construct, id *string, config RedshiftParameterGroupConfig) RedshiftParameterGroup
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ redshiftparametergroup.RedshiftParameterGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.RedshiftParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 &redshiftparametergroup.RedshiftParameterGroupConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 &redshiftparametergroup.RedshiftParameterGroupParameter {
 	Name: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftParameterGroupParameterList
 ```
@@ -1120,7 +1120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftparametergroup"
 
 redshiftparametergroup.NewRedshiftParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftParameterGroupParameterOutputReference
 ```

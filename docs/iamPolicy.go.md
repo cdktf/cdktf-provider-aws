@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_policy aws
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamPolicy.IamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicy"
 
 iampolicy.NewIamPolicy(scope Construct, id *string, config IamPolicyConfig) IamPolicy
 ```
@@ -315,7 +315,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamPolicy.IamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicy"
 
 iampolicy.IamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamPolicy.IamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicy"
 
 iampolicy.IamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ iampolicy.IamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamPolicy.IamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicy"
 
 iampolicy.IamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamPolicy.IamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iampolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iampolicy"
 
 &iampolicy.IamPolicyConfig {
 	Connection: interface{},

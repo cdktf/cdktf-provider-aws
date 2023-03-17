@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_user a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUser.ConnectUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.NewConnectUser(scope Construct, id *string, config ConnectUserConfig) ConnectUser
 ```
@@ -341,7 +341,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectUser.ConnectUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.ConnectUser_IsConstruct(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectUser.ConnectUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.ConnectUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ connectuser.ConnectUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectUser.ConnectUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.ConnectUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUser.ConnectUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 &connectuser.ConnectUserConfig {
 	Connection: interface{},
@@ -884,13 +884,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
 	Provisioners: *[]interface{},
 	InstanceId: *string,
 	Name: *string,
-	PhoneConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectUser.ConnectUserPhoneConfig,
+	PhoneConfig: github.com/cdktf/cdktf-provider-aws-go/aws.connectUser.ConnectUserPhoneConfig,
 	RoutingProfileId: *string,
 	SecurityProfileIds: *[]*string,
 	DirectoryUserId: *string,
 	HierarchyGroupId: *string,
 	Id: *string,
-	IdentityInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectUser.ConnectUserIdentityInfo,
+	IdentityInfo: github.com/cdktf/cdktf-provider-aws-go/aws.connectUser.ConnectUserIdentityInfo,
 	Password: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 &connectuser.ConnectUserIdentityInfo {
 	Email: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 &connectuser.ConnectUserPhoneConfig {
 	PhoneType: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUser.ConnectUserIdentityInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.NewConnectUserIdentityInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserIdentityInfoOutputReference
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() ConnectUserIdentityInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUser.ConnectUserPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuser"
 
 connectuser.NewConnectUserPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserPhoneConfigOutputReference
 ```

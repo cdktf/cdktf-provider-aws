@@ -1517,7 +1517,7 @@ const cognitoUserPoolAccountRecoverySetting: cognitoUserPool.CognitoUserPoolAcco
 
 ---
 
-##### `recoveryMechanism`<sup>Required</sup> <a name="recoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
+##### `recoveryMechanism`<sup>Optional</sup> <a name="recoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting.property.recoveryMechanism"></a>
 
 ```typescript
 public readonly recoveryMechanism: IResolvable | CognitoUserPoolAccountRecoverySettingRecoveryMechanism[];
@@ -3154,6 +3154,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.putRecoveryMechanism">putRecoveryMechanism</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism">resetRecoveryMechanism</a></code> | *No description.* |
 
 ---
 
@@ -3318,6 +3319,12 @@ public putRecoveryMechanism(value: IResolvable | CognitoUserPoolAccountRecoveryS
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>[]
 
 ---
+
+##### `resetRecoveryMechanism` <a name="resetRecoveryMechanism" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference.resetRecoveryMechanism"></a>
+
+```typescript
+public resetRecoveryMechanism(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

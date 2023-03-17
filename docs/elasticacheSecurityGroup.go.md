@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_se
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.NewElasticacheSecurityGroup(scope Construct, id *string, config ElasticacheSecurityGroupConfig) ElasticacheSecurityGroup
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 &elasticachesecuritygroup.ElasticacheSecurityGroupConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachment(scope Construct, id *string, config NetworkmanagerConnectAttachmentConfig) NetworkmanagerConnectAttachment
 ```
@@ -320,7 +320,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NetworkmanagerConnectAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentConfig {
 	Connection: interface{},
@@ -852,12 +852,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectatta
 	Provisioners: *[]interface{},
 	CoreNetworkId: *string,
 	EdgeLocation: *string,
-	Options: github.com/cdktf/cdktf-provider-aws-go/aws/v12.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions,
+	Options: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions,
 	TransportAttachmentId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts,
 }
 ```
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentOptions {
 	Protocol: *string,
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 &networkmanagerconnectattachment.NetworkmanagerConnectAttachmentTimeouts {
 	Create: *string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachmentOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectAttachmentOptionsOutputReference
 ```
@@ -1419,7 +1419,7 @@ func InternalValue() NetworkmanagerConnectAttachmentOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkmanagerconnectattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagerconnectattachment"
 
 networkmanagerconnectattachment.NewNetworkmanagerConnectAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerConnectAttachmentTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueresourcepolicy"
 
 glueresourcepolicy.NewGlueResourcePolicy(scope Construct, id *string, config GlueResourcePolicyConfig) GlueResourcePolicy
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueresourcepolicy"
 
 glueresourcepolicy.GlueResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueresourcepolicy"
 
 glueresourcepolicy.GlueResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ glueresourcepolicy.GlueResourcePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueresourcepolicy"
 
 glueresourcepolicy.GlueResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueresourcepolicy"
 
 &glueresourcepolicy.GlueResourcePolicyConfig {
 	Connection: interface{},

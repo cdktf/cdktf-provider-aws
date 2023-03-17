@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/auditmanager_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControl(scope Construct, id *string, config DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl
 ```
@@ -286,7 +286,7 @@ func ResetControlMappingSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlControlMappingSources {
 	SourceKeyword: interface{},
@@ -832,7 +832,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword {
 
@@ -847,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerControlControlMappingSourcesList
 ```
@@ -990,7 +990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerControlControlMappingSourcesOutputReference
 ```
@@ -1376,7 +1376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList
 ```
@@ -1519,7 +1519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference
 ```

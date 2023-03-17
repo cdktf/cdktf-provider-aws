@@ -2288,7 +2288,7 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2359,6 +2359,11 @@ export class OpensearchDomain extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // dashboard_endpoint - computed: true, optional: false, required: false
+  public get dashboardEndpoint() {
+    return this.getStringAttribute('dashboard_endpoint');
   }
 
   // domain_id - computed: true, optional: false, required: false

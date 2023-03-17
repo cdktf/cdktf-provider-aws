@@ -54,7 +54,7 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_destination_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

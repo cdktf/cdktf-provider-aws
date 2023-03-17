@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_subnet_grou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
 
 dbsubnetgroup.NewDbSubnetGroup(scope Construct, id *string, config DbSubnetGroupConfig) DbSubnetGroup
 ```
@@ -308,7 +308,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dbsubnetgroup.DbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
 
 dbsubnetgroup.DbSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsubnetgroup"
 
 &dbsubnetgroup.DbSubnetGroupConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector2_org
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfiguration(scope Construct, id *string, config Inspector2OrganizationConfigurationConfig) Inspector2OrganizationConfiguration
 ```
@@ -306,7 +306,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,11 +628,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationAutoEnable {
 	Ec2: interface{},
 	Ecr: interface{},
+	Lambda: interface{},
 }
 ```
 
@@ -642,6 +643,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationcon
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.property.ec2">Ec2</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#ec2 Inspector2OrganizationConfiguration#ec2}. |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.property.ecr">Ecr</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#ecr Inspector2OrganizationConfiguration#ecr}. |
+| <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.property.lambda">Lambda</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}. |
 
 ---
 
@@ -669,12 +671,24 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `Lambda`<sup>Optional</sup> <a name="Lambda" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.property.lambda"></a>
+
+```go
+Lambda interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}.
+
+---
+
 ### Inspector2OrganizationConfigurationConfig <a name="Inspector2OrganizationConfigurationConfig" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationConfig {
 	Connection: interface{},
@@ -684,9 +698,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationcon
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AutoEnable: github.com/cdktf/cdktf-provider-aws-go/aws/v12.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
+	AutoEnable: github.com/cdktf/cdktf-provider-aws-go/aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
 }
 ```
 
@@ -825,7 +839,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationTimeouts {
 	Create: *string,
@@ -887,7 +901,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationAutoEnableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationAutoEnableOutputReference
 ```
@@ -932,6 +946,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.resetLambda">ResetLambda</a></code> | *No description.* |
 
 ---
 
@@ -1085,6 +1100,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetLambda` <a name="ResetLambda" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.resetLambda"></a>
+
+```go
+func ResetLambda()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1094,8 +1115,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.ec2Input">Ec2Input</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.ecrInput">EcrInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.lambdaInput">LambdaInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.ec2">Ec2</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.ecr">Ecr</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.lambda">Lambda</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable">Inspector2OrganizationConfigurationAutoEnable</a></code> | *No description.* |
 
 ---
@@ -1144,6 +1167,16 @@ func EcrInput() interface{}
 
 ---
 
+##### `LambdaInput`<sup>Optional</sup> <a name="LambdaInput" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.lambdaInput"></a>
+
+```go
+func LambdaInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Ec2`<sup>Required</sup> <a name="Ec2" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.ec2"></a>
 
 ```go
@@ -1158,6 +1191,16 @@ func Ec2() interface{}
 
 ```go
 func Ecr() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Lambda`<sup>Required</sup> <a name="Lambda" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.property.lambda"></a>
+
+```go
+func Lambda() interface{}
 ```
 
 - *Type:* interface{}
@@ -1180,7 +1223,7 @@ func InternalValue() Inspector2OrganizationConfigurationAutoEnable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.NewImagebuilderImagePipeline(scope Construct, id *string, config ImagebuilderImagePipelineConfig) ImagebuilderImagePipeline
 ```
@@ -369,7 +369,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.ImagebuilderImagePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.ImagebuilderImagePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ imagebuilderimagepipeline.ImagebuilderImagePipeline_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.ImagebuilderImagePipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 &imagebuilderimagepipeline.ImagebuilderImagePipelineConfig {
 	Connection: interface{},
@@ -984,8 +984,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline
 	EnhancedImageMetadataEnabled: interface{},
 	Id: *string,
 	ImageRecipeArn: *string,
-	ImageTestsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfiguration,
-	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v12.imagebuilderImagePipeline.ImagebuilderImagePipelineSchedule,
+	ImageTestsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfiguration,
+	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws.imagebuilderImagePipeline.ImagebuilderImagePipelineSchedule,
 	Status: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 &imagebuilderimagepipeline.ImagebuilderImagePipelineImageTestsConfiguration {
 	ImageTestsEnabled: interface{},
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 &imagebuilderimagepipeline.ImagebuilderImagePipelineSchedule {
 	ScheduleExpression: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.NewImagebuilderImagePipelineImageTestsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImagePipelineImageTestsConfigurationOutputReference
 ```
@@ -1672,7 +1672,7 @@ func InternalValue() ImagebuilderImagePipelineImageTestsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/imagebuilderimagepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderimagepipeline"
 
 imagebuilderimagepipeline.NewImagebuilderImagePipelineScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImagePipelineScheduleOutputReference
 ```

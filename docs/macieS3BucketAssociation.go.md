@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie_s3_bucke
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.NewMacieS3BucketAssociation(scope Construct, id *string, config MacieS3BucketAssociationConfig) MacieS3BucketAssociation
 ```
@@ -307,7 +307,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ macies3bucketassociation.MacieS3BucketAssociation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 &macies3bucketassociation.MacieS3BucketAssociationClassificationType {
 	Continuous: *string,
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 &macies3bucketassociation.MacieS3BucketAssociationConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BucketName: *string,
-	ClassificationType: github.com/cdktf/cdktf-provider-aws-go/aws/v12.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType,
+	ClassificationType: github.com/cdktf/cdktf-provider-aws-go/aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType,
 	Id: *string,
 	MemberAccountId: *string,
 	Prefix: *string,
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.NewMacieS3BucketAssociationClassificationTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MacieS3BucketAssociationClassificationTypeOutputReference
 ```

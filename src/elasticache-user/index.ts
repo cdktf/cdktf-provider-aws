@@ -12,10 +12,6 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accessString: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#arn ElasticacheUser#arn}
-  */
-  readonly arn?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#engine ElasticacheUser#engine}
   */
   readonly engine: string;
@@ -50,6 +46,106 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#user_name ElasticacheUser#user_name}
   */
   readonly userName: string;
+  /**
+  * authentication_mode block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+  */
+  readonly authenticationMode?: ElasticacheUserAuthenticationMode;
+}
+export interface ElasticacheUserAuthenticationMode {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#passwords ElasticacheUser#passwords}
+  */
+  readonly passwords?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#type ElasticacheUser#type}
+  */
+  readonly type: string;
+}
+
+export function elasticacheUserAuthenticationModeToTerraform(struct?: ElasticacheUserAuthenticationModeOutputReference | ElasticacheUserAuthenticationMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    passwords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passwords),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class ElasticacheUserAuthenticationModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ElasticacheUserAuthenticationMode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwords !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwords = this._passwords;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticacheUserAuthenticationMode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwords = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwords = value.passwords;
+      this._type = value.type;
+    }
+  }
+
+  // password_count - computed: true, optional: false, required: false
+  public get passwordCount() {
+    return this.getNumberAttribute('password_count');
+  }
+
+  // passwords - computed: false, optional: true, required: false
+  private _passwords?: string[]; 
+  public get passwords() {
+    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
+  }
+  public set passwords(value: string[]) {
+    this._passwords = value;
+  }
+  public resetPasswords() {
+    this._passwords = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordsInput() {
+    return this._passwords;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
 }
 
 /**
@@ -78,7 +174,7 @@ export class ElasticacheUser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -90,7 +186,6 @@ export class ElasticacheUser extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accessString = config.accessString;
-    this._arn = config.arn;
     this._engine = config.engine;
     this._id = config.id;
     this._noPasswordRequired = config.noPasswordRequired;
@@ -99,6 +194,7 @@ export class ElasticacheUser extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._userId = config.userId;
     this._userName = config.userName;
+    this._authenticationMode.internalValue = config.authenticationMode;
   }
 
   // ==========
@@ -118,20 +214,9 @@ export class ElasticacheUser extends cdktf.TerraformResource {
     return this._accessString;
   }
 
-  // arn - computed: true, optional: true, required: false
-  private _arn?: string; 
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
-  }
-  public set arn(value: string) {
-    this._arn = value;
-  }
-  public resetArn() {
-    this._arn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -253,6 +338,22 @@ export class ElasticacheUser extends cdktf.TerraformResource {
     return this._userName;
   }
 
+  // authentication_mode - computed: false, optional: true, required: false
+  private _authenticationMode = new ElasticacheUserAuthenticationModeOutputReference(this, "authentication_mode");
+  public get authenticationMode() {
+    return this._authenticationMode;
+  }
+  public putAuthenticationMode(value: ElasticacheUserAuthenticationMode) {
+    this._authenticationMode.internalValue = value;
+  }
+  public resetAuthenticationMode() {
+    this._authenticationMode.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationModeInput() {
+    return this._authenticationMode.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -260,7 +361,6 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_string: cdktf.stringToTerraform(this._accessString),
-      arn: cdktf.stringToTerraform(this._arn),
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       no_password_required: cdktf.booleanToTerraform(this._noPasswordRequired),
@@ -269,6 +369,7 @@ export class ElasticacheUser extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_id: cdktf.stringToTerraform(this._userId),
       user_name: cdktf.stringToTerraform(this._userName),
+      authentication_mode: elasticacheUserAuthenticationModeToTerraform(this._authenticationMode.internalValue),
     };
   }
 }

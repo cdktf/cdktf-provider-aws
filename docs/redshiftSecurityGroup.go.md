@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_secur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.NewRedshiftSecurityGroup(scope Construct, id *string, config RedshiftSecurityGroupConfig) RedshiftSecurityGroup
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.RedshiftSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.RedshiftSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ redshiftsecuritygroup.RedshiftSecurityGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.RedshiftSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 &redshiftsecuritygroup.RedshiftSecurityGroupConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 &redshiftsecuritygroup.RedshiftSecurityGroupIngress {
 	Cidr: *string,
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.NewRedshiftSecurityGroupIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftSecurityGroupIngressList
 ```
@@ -994,7 +994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsecuritygroup"
 
 redshiftsecuritygroup.NewRedshiftSecurityGroupIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftSecurityGroupIngressOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouserpooldomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouserpooldomain"
 
 cognitouserpooldomain.NewCognitoUserPoolDomain(scope Construct, id *string, config CognitoUserPoolDomainConfig) CognitoUserPoolDomain
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouserpooldomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouserpooldomain"
 
 cognitouserpooldomain.CognitoUserPoolDomain_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouserpooldomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouserpooldomain"
 
 cognitouserpooldomain.CognitoUserPoolDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ cognitouserpooldomain.CognitoUserPoolDomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouserpooldomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouserpooldomain"
 
 cognitouserpooldomain.CognitoUserPoolDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -356,7 +356,9 @@ cognitouserpooldomain.CognitoUserPoolDomain_IsTerraformResource(x interface{}) *
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistribution">CloudfrontDistribution</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistributionArn">CloudfrontDistributionArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistributionZoneId">CloudfrontDistributionZoneId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.version">Version</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.certificateArnInput">CertificateArnInput</a></code> | <code>*string</code> | *No description.* |
@@ -522,10 +524,30 @@ func AwsAccountId() *string
 
 ---
 
+##### `CloudfrontDistribution`<sup>Required</sup> <a name="CloudfrontDistribution" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistribution"></a>
+
+```go
+func CloudfrontDistribution() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `CloudfrontDistributionArn`<sup>Required</sup> <a name="CloudfrontDistributionArn" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistributionArn"></a>
 
 ```go
 func CloudfrontDistributionArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudfrontDistributionZoneId`<sup>Required</sup> <a name="CloudfrontDistributionZoneId" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain.property.cloudfrontDistributionZoneId"></a>
+
+```go
+func CloudfrontDistributionZoneId() *string
 ```
 
 - *Type:* *string
@@ -657,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouserpooldomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouserpooldomain"
 
 &cognitouserpooldomain.CognitoUserPoolDomainConfig {
 	Connection: interface{},
