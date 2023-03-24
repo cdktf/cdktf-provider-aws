@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanst
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 elasticbeanstalkapplication.NewElasticBeanstalkApplication(scope Construct, id *string, config ElasticBeanstalkApplicationConfig) ElasticBeanstalkApplication
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 elasticbeanstalkapplication.ElasticBeanstalkApplication_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 elasticbeanstalkapplication.ElasticBeanstalkApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ elasticbeanstalkapplication.ElasticBeanstalkApplication_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 elasticbeanstalkapplication.ElasticBeanstalkApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 &elasticbeanstalkapplication.ElasticBeanstalkApplicationAppversionLifecycle {
 	ServiceRole: *string,
@@ -776,7 +776,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 &elasticbeanstalkapplication.ElasticBeanstalkApplicationConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplicati
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AppversionLifecycle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycle,
+	AppversionLifecycle: github.com/cdktf/cdktf-provider-aws-go/aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycle,
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticbeanstalkapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticbeanstalkapplication"
 
 elasticbeanstalkapplication.NewElasticBeanstalkApplicationAppversionLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticBeanstalkApplicationAppversionLifecycleOutputReference
 ```

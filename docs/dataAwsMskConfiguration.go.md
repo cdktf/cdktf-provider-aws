@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/msk_configurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconfiguration"
 
 dataawsmskconfiguration.NewDataAwsMskConfiguration(scope Construct, id *string, config DataAwsMskConfigurationConfig) DataAwsMskConfiguration
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconfiguration"
 
 &dataawsmskconfiguration.DataAwsMskConfigurationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.NewDataAwsApigatewayv2Api(scope Construct, id *string, config DataAwsApigatewayv2ApiConfig) DataAwsApigatewayv2Api
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.DataAwsApigatewayv2Api_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.DataAwsApigatewayv2Api_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsapigatewayv2api.DataAwsApigatewayv2Api_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.DataAwsApigatewayv2Api_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 &dataawsapigatewayv2api.DataAwsApigatewayv2ApiConfig {
 	Connection: interface{},
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 &dataawsapigatewayv2api.DataAwsApigatewayv2ApiCorsConfiguration {
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.NewDataAwsApigatewayv2ApiCorsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsApigatewayv2ApiCorsConfigurationList
 ```
@@ -984,7 +984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2api"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2api"
 
 dataawsapigatewayv2api.NewDataAwsApigatewayv2ApiCorsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsApigatewayv2ApiCorsConfigurationOutputReference
 ```

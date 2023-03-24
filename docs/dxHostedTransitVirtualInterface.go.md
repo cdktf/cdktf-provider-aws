@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_tran
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.NewDxHostedTransitVirtualInterface(scope Construct, id *string, config DxHostedTransitVirtualInterfaceConfig) DxHostedTransitVirtualInterface
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 &dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterfaceConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualint
 	CustomerAddress: *string,
 	Id: *string,
 	Mtu: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts,
 }
 ```
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 &dxhostedtransitvirtualinterface.DxHostedTransitVirtualInterfaceTimeouts {
 	Create: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxhostedtransitvirtualinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxhostedtransitvirtualinterface"
 
 dxhostedtransitvirtualinterface.NewDxHostedTransitVirtualInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxHostedTransitVirtualInterfaceTimeoutsOutputReference
 ```

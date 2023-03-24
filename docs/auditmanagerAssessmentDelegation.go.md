@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/auditmanagerassessmentdelegation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentdelegation"
 
 auditmanagerassessmentdelegation.NewAuditmanagerAssessmentDelegation(scope Construct, id *string, config AuditmanagerAssessmentDelegationConfig) AuditmanagerAssessmentDelegation
 ```
@@ -273,7 +273,7 @@ func ResetComment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/auditmanagerassessmentdelegation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentdelegation"
 
 auditmanagerassessmentdelegation.AuditmanagerAssessmentDelegation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/auditmanagerassessmentdelegation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentdelegation"
 
 auditmanagerassessmentdelegation.AuditmanagerAssessmentDelegation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ auditmanagerassessmentdelegation.AuditmanagerAssessmentDelegation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/auditmanagerassessmentdelegation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentdelegation"
 
 auditmanagerassessmentdelegation.AuditmanagerAssessmentDelegation_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/auditmanagerassessmentdelegation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentdelegation"
 
 &auditmanagerassessmentdelegation.AuditmanagerAssessmentDelegationConfig {
 	Connection: interface{},

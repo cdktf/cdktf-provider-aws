@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/workspaces_ima
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.NewDataAwsWorkspacesImage(scope Construct, id *string, config DataAwsWorkspacesImageConfig) DataAwsWorkspacesImage
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 &dataawsworkspacesimage.DataAwsWorkspacesImageConfig {
 	Connection: interface{},

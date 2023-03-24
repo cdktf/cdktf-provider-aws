@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_role aws_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.NewIamRole(scope Construct, id *string, config IamRoleConfig) IamRole
 ```
@@ -363,7 +363,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamRole.IamRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.IamRole_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.IamRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ iamrole.IamRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.IamRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -927,7 +927,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRole.IamRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 &iamrole.IamRoleConfig {
 	Connection: interface{},
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 &iamrole.IamRoleInlinePolicy {
 	Name: *string,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.NewIamRoleInlinePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamRoleInlinePolicyList
 ```
@@ -1407,7 +1407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrole"
 
 iamrole.NewIamRoleInlinePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IamRoleInlinePolicyOutputReference
 ```

@@ -197,7 +197,7 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_media_package_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

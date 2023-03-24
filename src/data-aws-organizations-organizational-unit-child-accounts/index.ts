@@ -130,7 +130,7 @@ export class DataAwsOrganizationsOrganizationalUnitChildAccounts extends cdktf.T
       terraformResourceType: 'aws_organizations_organizational_unit_child_accounts',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.NewDataAwsApigatewayv2Apis(scope Construct, id *string, config DataAwsApigatewayv2ApisConfig) DataAwsApigatewayv2Apis
 ```
@@ -294,7 +294,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 &dataawsapigatewayv2apis.DataAwsApigatewayv2ApisConfig {
 	Connection: interface{},

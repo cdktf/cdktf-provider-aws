@@ -58,7 +58,7 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rum_metrics_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

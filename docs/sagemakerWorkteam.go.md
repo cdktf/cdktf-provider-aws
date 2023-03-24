@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_work
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteam(scope Construct, id *string, config SagemakerWorkteamConfig) SagemakerWorkteam
 ```
@@ -320,7 +320,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ sagemakerworkteam.SagemakerWorkteam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsTerraformResource(x interface{}) *bool
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
 	WorkforceName: *string,
 	WorkteamName: *string,
 	Id: *string,
-	NotificationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration,
+	NotificationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -984,11 +984,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinition {
-	CognitoMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition,
-	OidcMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition,
+	CognitoMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition,
+	OidcMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition,
 }
 ```
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition {
 	ClientId: *string,
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition {
 	Groups: *[]*string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamNotificationConfiguration {
 	NotificationTopicArn: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference
 ```
@@ -1475,7 +1475,7 @@ func InternalValue() SagemakerWorkteamMemberDefinitionCognitoMemberDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerWorkteamMemberDefinitionList
 ```
@@ -1618,7 +1618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference
 ```
@@ -1889,7 +1889,7 @@ func InternalValue() SagemakerWorkteamMemberDefinitionOidcMemberDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerWorkteamMemberDefinitionOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamNotificationConfigurationOutputReference
 ```

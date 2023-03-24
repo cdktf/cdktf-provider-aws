@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_session_co
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.NewDataAwsIamSessionContext(scope Construct, id *string, config DataAwsIamSessionContextConfig) DataAwsIamSessionContext
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 &dataawsiamsessioncontext.DataAwsIamSessionContextConfig {
 	Connection: interface{},

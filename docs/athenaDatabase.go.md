@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_databas
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.NewAthenaDatabase(scope Construct, id *string, config AthenaDatabaseConfig) AthenaDatabase
 ```
@@ -348,7 +348,7 @@ func ResetProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ athenadatabase.AthenaDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 &athenadatabase.AthenaDatabaseAclConfiguration {
 	S3AclOption: *string,
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 &athenadatabase.AthenaDatabaseConfig {
 	Connection: interface{},
@@ -834,10 +834,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaDatabase.AthenaDatabaseAclConfiguration,
+	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaDatabase.AthenaDatabaseAclConfiguration,
 	Bucket: *string,
 	Comment: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaDatabase.AthenaDatabaseEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration,
 	ExpectedBucketOwner: *string,
 	ForceDestroy: interface{},
 	Id: *string,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 &athenadatabase.AthenaDatabaseEncryptionConfiguration {
 	EncryptionOption: *string,
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.NewAthenaDatabaseAclConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaDatabaseAclConfigurationOutputReference
 ```
@@ -1377,7 +1377,7 @@ func InternalValue() AthenaDatabaseAclConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatabase"
 
 athenadatabase.NewAthenaDatabaseEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaDatabaseEncryptionConfigurationOutputReference
 ```

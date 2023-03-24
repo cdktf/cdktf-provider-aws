@@ -54,7 +54,7 @@ export class DataAwsNetworkmanagerDevices extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkmanager_devices',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

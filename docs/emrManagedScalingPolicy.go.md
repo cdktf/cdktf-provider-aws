@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_sc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicy(scope Construct, id *string, config EmrManagedScalingPolicyConfig) EmrManagedScalingPolicy
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.EmrManagedScalingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 &emrmanagedscalingpolicy.EmrManagedScalingPolicyComputeLimits {
 	MaximumCapacityUnits: *f64,
@@ -685,7 +685,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 &emrmanagedscalingpolicy.EmrManagedScalingPolicyConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicyComputeLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrManagedScalingPolicyComputeLimitsList
 ```
@@ -979,7 +979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/emrmanagedscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrmanagedscalingpolicy"
 
 emrmanagedscalingpolicy.NewEmrManagedScalingPolicyComputeLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrManagedScalingPolicyComputeLimitsOutputReference
 ```

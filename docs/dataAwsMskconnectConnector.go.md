@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_con
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.NewDataAwsMskconnectConnector(scope Construct, id *string, config DataAwsMskconnectConnectorConfig) DataAwsMskconnectConnector
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectconnector"
 
 &dataawsmskconnectconnector.DataAwsMskconnectConnectorConfig {
 	Connection: interface{},

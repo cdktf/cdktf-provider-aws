@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_grap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveGraph.DetectiveGraph.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/detectivegraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectivegraph"
 
 detectivegraph.NewDetectiveGraph(scope Construct, id *string, config DetectiveGraphConfig) DetectiveGraph
 ```
@@ -287,7 +287,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.detectiveGraph.DetectiveGraph.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/detectivegraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectivegraph"
 
 detectivegraph.DetectiveGraph_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.detectiveGraph.DetectiveGraph.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/detectivegraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectivegraph"
 
 detectivegraph.DetectiveGraph_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ detectivegraph.DetectiveGraph_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.detectiveGraph.DetectiveGraph.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/detectivegraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectivegraph"
 
 detectivegraph.DetectiveGraph_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.detectiveGraph.DetectiveGraphConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/detectivegraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/detectivegraph"
 
 &detectivegraph.DetectiveGraphConfig {
 	Connection: interface{},

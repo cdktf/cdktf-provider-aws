@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_user aws_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.NewDataAwsIamUser(scope Construct, id *string, config DataAwsIamUserConfig) DataAwsIamUser
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 &dataawsiamuser.DataAwsIamUserConfig {
 	Connection: interface{},

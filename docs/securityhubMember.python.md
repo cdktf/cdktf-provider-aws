@@ -22,7 +22,7 @@ securityhubMember.SecurityhubMember(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
-  email: str,
+  email: str = None,
   id: str = None,
   invite: typing.Union[bool, IResolvable] = None
 )
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.Initializer.parameter.email"></a>
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.Initializer.parameter.email"></a>
 
 - *Type:* str
 
@@ -161,6 +161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail">reset_email</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetInvite">reset_invite</a></code> | *No description.* |
 
@@ -374,6 +375,12 @@ def interpolation_for_attribute(
 - *Type:* str
 
 ---
+
+##### `reset_email` <a name="reset_email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail"></a>
+
+```python
+def reset_email() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId"></a>
 
@@ -772,7 +779,7 @@ securityhubMember.SecurityhubMemberConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
-  email: str,
+  email: str = None,
   id: str = None,
   invite: typing.Union[bool, IResolvable] = None
 )
@@ -878,7 +885,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
 
 ```python
 email: str

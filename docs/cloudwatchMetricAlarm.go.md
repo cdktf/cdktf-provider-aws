@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_met
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.NewCloudwatchMetricAlarm(scope Construct, id *string, config CloudwatchMetricAlarmConfig) CloudwatchMetricAlarm
 ```
@@ -426,7 +426,7 @@ func ResetUnit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.CloudwatchMetricAlarm_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.CloudwatchMetricAlarm_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ cloudwatchmetricalarm.CloudwatchMetricAlarm_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.CloudwatchMetricAlarm_IsTerraformResource(x interface{}) *bool
 ```
@@ -1210,7 +1210,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 &cloudwatchmetricalarm.CloudwatchMetricAlarmConfig {
 	Connection: interface{},
@@ -1653,14 +1653,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 &cloudwatchmetricalarm.CloudwatchMetricAlarmMetricQuery {
 	Id: *string,
 	AccountId: *string,
 	Expression: *string,
 	Label: *string,
-	Metric: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric,
+	Metric: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric,
 	Period: *f64,
 	ReturnData: interface{},
 }
@@ -1774,7 +1774,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 &cloudwatchmetricalarm.CloudwatchMetricAlarmMetricQueryMetric {
 	MetricName: *string,
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.NewCloudwatchMetricAlarmMetricQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricAlarmMetricQueryList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.NewCloudwatchMetricAlarmMetricQueryMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchMetricAlarmMetricQueryMetricOutputReference
 ```
@@ -2423,7 +2423,7 @@ func InternalValue() CloudwatchMetricAlarmMetricQueryMetric
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudwatchmetricalarm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricalarm"
 
 cloudwatchmetricalarm.NewCloudwatchMetricAlarmMetricQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricAlarmMetricQueryOutputReference
 ```

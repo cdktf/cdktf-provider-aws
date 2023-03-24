@@ -66,7 +66,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_placement_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -145,7 +145,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('placement_group_id');
   }
 
-  // spread_level - computed: false, optional: true, required: false
+  // spread_level - computed: true, optional: true, required: false
   private _spreadLevel?: string; 
   public get spreadLevel() {
     return this.getStringAttribute('spread_level');

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_au
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusterauth"
 
 dataawseksclusterauth.NewDataAwsEksClusterAuth(scope Construct, id *string, config DataAwsEksClusterAuthConfig) DataAwsEksClusterAuth
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusterauth"
 
 &dataawseksclusterauth.DataAwsEksClusterAuthConfig {
 	Connection: interface{},

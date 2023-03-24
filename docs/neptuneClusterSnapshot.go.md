@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluste
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 neptuneclustersnapshot.NewNeptuneClusterSnapshot(scope Construct, id *string, config NeptuneClusterSnapshotConfig) NeptuneClusterSnapshot
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 neptuneclustersnapshot.NeptuneClusterSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 neptuneclustersnapshot.NeptuneClusterSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ neptuneclustersnapshot.NeptuneClusterSnapshot_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 neptuneclustersnapshot.NeptuneClusterSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 &neptuneclustersnapshot.NeptuneClusterSnapshotConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
 	DbClusterIdentifier: *string,
 	DbClusterSnapshotIdentifier: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts,
 }
 ```
 
@@ -932,7 +932,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 &neptuneclustersnapshot.NeptuneClusterSnapshotTimeouts {
 	Create: *string,
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneclustersnapshot"
 
 neptuneclustersnapshot.NewNeptuneClusterSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NeptuneClusterSnapshotTimeoutsOutputReference
 ```

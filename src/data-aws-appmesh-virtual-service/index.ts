@@ -322,7 +322,7 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appmesh_virtual_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -428,7 +428,7 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
     return this._spec;
   }
 
-  // tags - computed: false, optional: true, required: false
+  // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
     return this.getStringMapAttribute('tags');

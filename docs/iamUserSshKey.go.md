@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_user_ssh_k
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
 
 iamusersshkey.NewIamUserSshKey(scope Construct, id *string, config IamUserSshKeyConfig) IamUserSshKey
 ```
@@ -280,7 +280,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ iamusersshkey.IamUserSshKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
 
 iamusersshkey.IamUserSshKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUserSshKey.IamUserSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/iamusersshkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamusersshkey"
 
 &iamusersshkey.IamUserSshKeyConfig {
 	Connection: interface{},

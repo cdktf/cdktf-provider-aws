@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_account_al
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.NewDataAwsIamAccountAlias(scope Construct, id *string, config DataAwsIamAccountAliasConfig) DataAwsIamAccountAlias
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 dataawsiamaccountalias.DataAwsIamAccountAlias_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccountalias"
 
 &dataawsiamaccountalias.DataAwsIamAccountAliasConfig {
 	Connection: interface{},

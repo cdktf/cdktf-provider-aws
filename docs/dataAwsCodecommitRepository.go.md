@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/codecommit_rep
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscodecommitrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitrepository"
 
 dataawscodecommitrepository.NewDataAwsCodecommitRepository(scope Construct, id *string, config DataAwsCodecommitRepositoryConfig) DataAwsCodecommitRepository
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscodecommitrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitrepository"
 
 dataawscodecommitrepository.DataAwsCodecommitRepository_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscodecommitrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitrepository"
 
 dataawscodecommitrepository.DataAwsCodecommitRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawscodecommitrepository.DataAwsCodecommitRepository_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscodecommitrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitrepository"
 
 dataawscodecommitrepository.DataAwsCodecommitRepository_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscodecommitrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitrepository"
 
 &dataawscodecommitrepository.DataAwsCodecommitRepositoryConfig {
 	Connection: interface{},
