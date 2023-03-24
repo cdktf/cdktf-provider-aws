@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtua
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNode(scope Construct, id *string, config AppmeshVirtualNodeConfig) AppmeshVirtualNode
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ appmeshvirtualnode.AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Tags: *map[string]*string,
@@ -955,14 +955,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpec {
 	Backend: interface{},
-	BackendDefaults: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults,
+	BackendDefaults: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults,
 	Listener: interface{},
-	Logging: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging,
-	ServiceDiscovery: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery,
+	Logging: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging,
+	ServiceDiscovery: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery,
 }
 ```
 
@@ -1053,10 +1053,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackend {
-	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService,
+	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService,
 }
 ```
 
@@ -1087,10 +1087,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaults {
-	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy,
+	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy,
 }
 ```
 
@@ -1121,10 +1121,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
-	Tls: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls,
+	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls,
 }
 ```
 
@@ -1155,11 +1155,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
-	Validation: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
-	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate,
+	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation,
+	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate,
 	Enforce: interface{},
 	Ports: *[]*f64,
 }
@@ -1233,11 +1233,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds,
 }
 ```
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile {
 	CertificateChain: *string,
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds {
 	SecretName: *string,
@@ -1361,11 +1361,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation {
-	Trust: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -1411,10 +1411,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -1477,12 +1477,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust {
-	Acm: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds,
+	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds,
 }
 ```
 
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
 	CertificateAuthorityArns: *[]*string,
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds {
 	SecretName: *string,
@@ -1639,11 +1639,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualService {
 	VirtualServiceName: *string,
-	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy,
+	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy,
 }
 ```
 
@@ -1687,10 +1687,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy {
-	Tls: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls,
+	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls,
 }
 ```
 
@@ -1721,11 +1721,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
-	Validation: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
-	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate,
+	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation,
+	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate,
 	Enforce: interface{},
 	Ports: *[]*f64,
 }
@@ -1799,11 +1799,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds,
 }
 ```
 
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile {
 	CertificateChain: *string,
@@ -1895,7 +1895,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds {
 	SecretName: *string,
@@ -1927,11 +1927,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
-	Trust: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -1977,10 +1977,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -2011,7 +2011,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -2043,12 +2043,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust {
-	Acm: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm,
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds,
+	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds,
 }
 ```
 
@@ -2109,7 +2109,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
 	CertificateAuthorityArns: *[]*string,
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds {
 	SecretName: *string,
@@ -2205,15 +2205,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListener {
-	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping,
-	ConnectionPool: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck,
-	OutlierDetection: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout,
-	Tls: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls,
+	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping,
+	ConnectionPool: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck,
+	OutlierDetection: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout,
+	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls,
 }
 ```
 
@@ -2319,10 +2319,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPool {
-	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc,
+	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc,
 	Http: interface{},
 	Http2: interface{},
 	Tcp: interface{},
@@ -2401,7 +2401,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
 	MaxRequests: *f64,
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
 	MaxConnections: *f64,
@@ -2479,7 +2479,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
 	MaxRequests: *f64,
@@ -2511,7 +2511,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
 	MaxConnections: *f64,
@@ -2543,7 +2543,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerHealthCheck {
 	HealthyThreshold: *f64,
@@ -2659,11 +2659,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetection {
-	BaseEjectionDuration: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration,
-	Interval: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval,
+	BaseEjectionDuration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration,
+	Interval: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval,
 	MaxEjectionPercent: *f64,
 	MaxServerErrors: *f64,
 }
@@ -2737,7 +2737,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration {
 	Unit: *string,
@@ -2783,7 +2783,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
 	Unit: *string,
@@ -2829,7 +2829,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerPortMapping {
 	Port: *f64,
@@ -2875,13 +2875,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeout {
-	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc,
-	Http: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp,
-	Http2: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2,
-	Tcp: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp,
+	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc,
+	Http: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp,
+	Http2: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2,
+	Tcp: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp,
 }
 ```
 
@@ -2957,11 +2957,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpc {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest,
 }
 ```
 
@@ -3007,7 +3007,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
 	Unit: *string,
@@ -3053,7 +3053,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
 	Unit: *string,
@@ -3099,11 +3099,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest,
 }
 ```
 
@@ -3149,11 +3149,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2 {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle,
-	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle,
+	PerRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest,
 }
 ```
 
@@ -3199,7 +3199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
 	Unit: *string,
@@ -3245,7 +3245,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
 	Unit: *string,
@@ -3291,7 +3291,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
 	Unit: *string,
@@ -3337,7 +3337,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
 	Unit: *string,
@@ -3383,10 +3383,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutTcp {
-	Idle: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle,
+	Idle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle,
 }
 ```
 
@@ -3417,7 +3417,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
 	Unit: *string,
@@ -3463,12 +3463,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTls {
-	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate,
+	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate,
 	Mode: *string,
-	Validation: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation,
+	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation,
 }
 ```
 
@@ -3527,12 +3527,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificate {
-	Acm: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm,
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds,
+	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds,
 }
 ```
 
@@ -3593,7 +3593,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm {
 	CertificateArn: *string,
@@ -3625,7 +3625,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateFile {
 	CertificateChain: *string,
@@ -3671,7 +3671,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsCertificateSds {
 	SecretName: *string,
@@ -3703,11 +3703,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidation {
-	Trust: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -3753,10 +3753,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -3787,7 +3787,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -3819,11 +3819,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrust {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds,
 }
 ```
 
@@ -3869,7 +3869,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -3901,7 +3901,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
 	SecretName: *string,
@@ -3933,10 +3933,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLogging {
-	AccessLog: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog,
+	AccessLog: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog,
 }
 ```
 
@@ -3967,10 +3967,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLog {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile,
 }
 ```
 
@@ -4001,11 +4001,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFile {
 	Path: *string,
-	Format: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat,
+	Format: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat,
 }
 ```
 
@@ -4049,7 +4049,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat {
 	Json: interface{},
@@ -4097,7 +4097,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson {
 	Key: *string,
@@ -4143,11 +4143,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscovery {
-	AwsCloudMap: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap,
-	Dns: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns,
+	AwsCloudMap: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap,
+	Dns: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns,
 }
 ```
 
@@ -4193,7 +4193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
 	NamespaceName: *string,
@@ -4253,7 +4253,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 &appmeshvirtualnode.AppmeshVirtualNodeSpecServiceDiscoveryDns {
 	Hostname: *string,
@@ -4287,7 +4287,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference
 ```
@@ -4578,7 +4578,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference
 ```
@@ -4871,7 +4871,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference
 ```
@@ -5204,7 +5204,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -5475,7 +5475,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
 ```
@@ -5859,7 +5859,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference
 ```
@@ -6185,7 +6185,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -6456,7 +6456,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -6740,7 +6740,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -7011,7 +7011,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -7282,7 +7282,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference
 ```
@@ -7657,7 +7657,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -7928,7 +7928,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendDefaultsOutputReference
 ```
@@ -8219,7 +8219,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecBackendList
 ```
@@ -8362,7 +8362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecBackendOutputReference
 ```
@@ -8664,7 +8664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference
 ```
@@ -8955,7 +8955,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference
 ```
@@ -9248,7 +9248,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference
 ```
@@ -9581,7 +9581,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -9852,7 +9852,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference
 ```
@@ -10236,7 +10236,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference
 ```
@@ -10562,7 +10562,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -10833,7 +10833,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -11117,7 +11117,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -11388,7 +11388,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -11659,7 +11659,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference
 ```
@@ -12034,7 +12034,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -12305,7 +12305,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsV
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecBackendVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference
 ```
@@ -12618,7 +12618,7 @@ func InternalValue() AppmeshVirtualNodeSpecBackendVirtualService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference
 ```
@@ -12889,7 +12889,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerConnectionPoolGrpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List
 ```
@@ -13032,7 +13032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
 ```
@@ -13321,7 +13321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttpList
 ```
@@ -13464,7 +13464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference
 ```
@@ -13782,7 +13782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference
 ```
@@ -14199,7 +14199,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerConnectionPool
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolTcpList
 ```
@@ -14342,7 +14342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference
 ```
@@ -14631,7 +14631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerHealthCheckOutputReference
 ```
@@ -15048,7 +15048,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerList
 ```
@@ -15191,7 +15191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference
 ```
@@ -15484,7 +15484,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionD
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference
 ```
@@ -15777,7 +15777,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetectionInterval
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference
 ```
@@ -16140,7 +16140,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerOutlierDetection
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerOutputReference
 ```
@@ -16652,7 +16652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerPortMappingOutputReference
 ```
@@ -16945,7 +16945,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference
 ```
@@ -17238,7 +17238,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference
 ```
@@ -17571,7 +17571,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference
 ```
@@ -17864,7 +17864,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference
 ```
@@ -18157,7 +18157,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference
 ```
@@ -18490,7 +18490,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
 ```
@@ -18783,7 +18783,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference
 ```
@@ -19076,7 +19076,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttpIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference
 ```
@@ -19409,7 +19409,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference
 ```
@@ -19702,7 +19702,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutOutputReference
 ```
@@ -20119,7 +20119,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference
 ```
@@ -20412,7 +20412,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutTcpIdle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference
 ```
@@ -20703,7 +20703,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTimeoutTcp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference
 ```
@@ -20974,7 +20974,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateAcm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference
 ```
@@ -21267,7 +21267,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference
 ```
@@ -21642,7 +21642,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference
 ```
@@ -21913,7 +21913,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsCertificateSds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsOutputReference
 ```
@@ -22261,7 +22261,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationOutputReference
 ```
@@ -22587,7 +22587,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -22858,7 +22858,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -23142,7 +23142,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
 ```
@@ -23413,7 +23413,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrustFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference
 ```
@@ -23746,7 +23746,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrust
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference
 ```
@@ -24017,7 +24017,7 @@ func InternalValue() AppmeshVirtualNodeSpecListenerTlsValidationTrustSds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList
 ```
@@ -24160,7 +24160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference
 ```
@@ -24471,7 +24471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference
 ```
@@ -24791,7 +24791,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLogFileFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference
 ```
@@ -25104,7 +25104,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLogFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingAccessLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingAccessLogOutputReference
 ```
@@ -25395,7 +25395,7 @@ func InternalValue() AppmeshVirtualNodeSpecLoggingAccessLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecLoggingOutputReference
 ```
@@ -25686,7 +25686,7 @@ func InternalValue() AppmeshVirtualNodeSpecLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecOutputReference
 ```
@@ -26145,7 +26145,7 @@ func InternalValue() AppmeshVirtualNodeSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference
 ```
@@ -26467,7 +26467,7 @@ func InternalValue() AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference
 ```
@@ -26738,7 +26738,7 @@ func InternalValue() AppmeshVirtualNodeSpecServiceDiscoveryDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualnode"
 
 appmeshvirtualnode.NewAppmeshVirtualNodeSpecServiceDiscoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryOutputReference
 ```
