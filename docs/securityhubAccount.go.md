@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards">ResetEnableDefaultStandards</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -254,6 +255,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetEnableDefaultStandards` <a name="ResetEnableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards"></a>
+
+```go
+func ResetEnableDefaultStandards()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId"></a>
 
 ```go
@@ -348,7 +355,9 @@ securityhubaccount.SecurityhubAccount_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput">EnableDefaultStandardsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards">EnableDefaultStandards</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -495,6 +504,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `EnableDefaultStandardsInput`<sup>Optional</sup> <a name="EnableDefaultStandardsInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput"></a>
+
+```go
+func EnableDefaultStandardsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput"></a>
 
 ```go
@@ -502,6 +521,16 @@ func IdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `EnableDefaultStandards`<sup>Required</sup> <a name="EnableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards"></a>
+
+```go
+func EnableDefaultStandards() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -550,6 +579,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/securityhubaccount"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	EnableDefaultStandards: interface{},
 	Id: *string,
 }
 ```
@@ -565,6 +595,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/securityhubaccount"
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards">EnableDefaultStandards</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
@@ -636,6 +667,18 @@ Provisioners *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `EnableDefaultStandards`<sup>Optional</sup> <a name="EnableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards"></a>
+
+```go
+EnableDefaultStandards interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
 
 ---
 

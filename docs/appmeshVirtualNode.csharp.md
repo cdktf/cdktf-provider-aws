@@ -4004,7 +4004,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AppmeshVirtualNodeSpecLoggingAccessLogFile {
-    string Path
+    string Path,
+    AppmeshVirtualNodeSpecLoggingAccessLogFileFormat Format = null
 };
 ```
 
@@ -4013,6 +4014,7 @@ new AppmeshVirtualNodeSpecLoggingAccessLogFile {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#path AppmeshVirtualNode#path}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.format">Format</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a></code> | format block. |
 
 ---
 
@@ -4025,6 +4027,114 @@ public string Path { get; set; }
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#path AppmeshVirtualNode#path}.
+
+---
+
+##### `Format`<sup>Optional</sup> <a name="Format" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile.property.format"></a>
+
+```csharp
+public AppmeshVirtualNodeSpecLoggingAccessLogFileFormat Format { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a>
+
+format block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#format AppmeshVirtualNode#format}
+
+---
+
+### AppmeshVirtualNodeSpecLoggingAccessLogFileFormat <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileFormat" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new AppmeshVirtualNodeSpecLoggingAccessLogFileFormat {
+    object Json = null,
+    string Text = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json">Json</a></code> | <code>object</code> | json block. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#text AppmeshVirtualNode#text}. |
+
+---
+
+##### `Json`<sup>Optional</sup> <a name="Json" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.json"></a>
+
+```csharp
+public object Json { get; set; }
+```
+
+- *Type:* object
+
+json block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#json AppmeshVirtualNode#json}
+
+---
+
+##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat.property.text"></a>
+
+```csharp
+public string Text { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#text AppmeshVirtualNode#text}.
+
+---
+
+### AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson {
+    string Key,
+    string Value
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#key AppmeshVirtualNode#key}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}. |
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#key AppmeshVirtualNode#key}.
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson.property.value"></a>
+
+```csharp
+public string Value { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 
 ---
 
@@ -23902,6 +24012,780 @@ public AppmeshVirtualNodeSpecListenerTlsValidationTrustSds InternalValue { get; 
 ---
 
 
+### AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.get"></a>
+
+```csharp
+private AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.valueInput"></a>
+
+```csharp
+public string ValueInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.putJson">PutJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resetJson">ResetJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resetText">ResetText</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutJson` <a name="PutJson" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.putJson"></a>
+
+```csharp
+private void PutJson(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.putJson.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetJson` <a name="ResetJson" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resetJson"></a>
+
+```csharp
+private void ResetJson()
+```
+
+##### `ResetText` <a name="ResetText" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.resetText"></a>
+
+```csharp
+private void ResetText()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.json">Json</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.jsonInput">JsonInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.textInput">TextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.text">Text</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Json`<sup>Required</sup> <a name="Json" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.json"></a>
+
+```csharp
+public AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList Json { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList</a>
+
+---
+
+##### `JsonInput`<sup>Optional</sup> <a name="JsonInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.jsonInput"></a>
+
+```csharp
+public object JsonInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.textInput"></a>
+
+```csharp
+public string TextInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Text`<sup>Required</sup> <a name="Text" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.text"></a>
+
+```csharp
+public string Text { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference.property.internalValue"></a>
+
+```csharp
+public AppmeshVirtualNodeSpecLoggingAccessLogFileFormat InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a>
+
+---
+
+
 ### AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference <a name="AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.Initializer"></a>
@@ -23952,6 +24836,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.putFormat">PutFormat</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.resetFormat">ResetFormat</a></code> | *No description.* |
 
 ---
 
@@ -24105,6 +24991,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutFormat` <a name="PutFormat" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.putFormat"></a>
+
+```csharp
+private void PutFormat(AppmeshVirtualNodeSpecLoggingAccessLogFileFormat Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.putFormat.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a>
+
+---
+
+##### `ResetFormat` <a name="ResetFormat" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.resetFormat"></a>
+
+```csharp
+private void ResetFormat()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -24112,6 +25016,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.format">Format</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.formatInput">FormatInput</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile">AppmeshVirtualNodeSpecLoggingAccessLogFile</a></code> | *No description.* |
@@ -24139,6 +25045,26 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Format`<sup>Required</sup> <a name="Format" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.format"></a>
+
+```csharp
+public AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference Format { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference</a>
+
+---
+
+##### `FormatInput`<sup>Optional</sup> <a name="FormatInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference.property.formatInput"></a>
+
+```csharp
+public AppmeshVirtualNodeSpecLoggingAccessLogFileFormat FormatInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormat">AppmeshVirtualNodeSpecLoggingAccessLogFileFormat</a>
 
 ---
 

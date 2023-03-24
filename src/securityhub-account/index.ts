@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}
+  */
+  readonly enableDefaultStandards?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -42,7 +46,7 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -53,12 +57,29 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._enableDefaultStandards = config.enableDefaultStandards;
     this._id = config.id;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_default_standards - computed: false, optional: true, required: false
+  private _enableDefaultStandards?: boolean | cdktf.IResolvable; 
+  public get enableDefaultStandards() {
+    return this.getBooleanAttribute('enable_default_standards');
+  }
+  public set enableDefaultStandards(value: boolean | cdktf.IResolvable) {
+    this._enableDefaultStandards = value;
+  }
+  public resetEnableDefaultStandards() {
+    this._enableDefaultStandards = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableDefaultStandardsInput() {
+    return this._enableDefaultStandards;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -82,6 +103,7 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_default_standards: cdktf.booleanToTerraform(this._enableDefaultStandards),
       id: cdktf.stringToTerraform(this._id),
     };
   }

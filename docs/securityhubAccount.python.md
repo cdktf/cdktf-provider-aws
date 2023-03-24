@@ -21,6 +21,7 @@ securityhubAccount.SecurityhubAccount(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  enable_default_standards: typing.Union[bool, IResolvable] = None,
   id: str = None
 )
 ```
@@ -36,6 +37,7 @@ securityhubAccount.SecurityhubAccount(
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.enableDefaultStandards">enable_default_standards</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
@@ -100,6 +102,14 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `enable_default_standards`<sup>Optional</sup> <a name="enable_default_standards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.enableDefaultStandards"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.id"></a>
 
 - *Type:* str
@@ -131,6 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards">reset_enable_default_standards</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId">reset_id</a></code> | *No description.* |
 
 ---
@@ -344,6 +355,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_enable_default_standards` <a name="reset_enable_default_standards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards"></a>
+
+```python
+def reset_enable_default_standards() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId"></a>
 
 ```python
@@ -444,7 +461,9 @@ securityhubAccount.SecurityhubAccount.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput">enable_default_standards_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards">enable_default_standards</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -591,6 +610,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `enable_default_standards_input`<sup>Optional</sup> <a name="enable_default_standards_input" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput"></a>
+
+```python
+enable_default_standards_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput"></a>
 
 ```python
@@ -598,6 +627,16 @@ id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `enable_default_standards`<sup>Required</sup> <a name="enable_default_standards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards"></a>
+
+```python
+enable_default_standards: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -646,6 +685,7 @@ securityhubAccount.SecurityhubAccountConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  enable_default_standards: typing.Union[bool, IResolvable] = None,
   id: str = None
 )
 ```
@@ -661,6 +701,7 @@ securityhubAccount.SecurityhubAccountConfig(
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards">enable_default_standards</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
@@ -732,6 +773,18 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 ```
 
 - *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `enable_default_standards`<sup>Optional</sup> <a name="enable_default_standards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards"></a>
+
+```python
+enable_default_standards: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
 
 ---
 

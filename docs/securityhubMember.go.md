@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetInvite">ResetInvite</a></code> | *No description.* |
 
@@ -254,6 +255,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 - *Type:* *string
 
 ---
+
+##### `ResetEmail` <a name="ResetEmail" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail"></a>
+
+```go
+func ResetEmail()
+```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId"></a>
 
@@ -752,7 +759,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
+##### `Email`<sup>Optional</sup> <a name="Email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
 
 ```go
 Email *string

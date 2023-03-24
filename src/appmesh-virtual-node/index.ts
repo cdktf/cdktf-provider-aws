@@ -5647,11 +5647,229 @@ export class AppmeshVirtualNodeSpecListenerList extends cdktf.ComplexList {
     return new AppmeshVirtualNodeSpecListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#key AppmeshVirtualNode#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
+  */
+  readonly value: string;
+}
+
+export function appmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList extends cdktf.ComplexList {
+  public internalValue? : AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference {
+    return new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppmeshVirtualNodeSpecLoggingAccessLogFileFormat {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#text AppmeshVirtualNode#text}
+  */
+  readonly text?: string;
+  /**
+  * json block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#json AppmeshVirtualNode#json}
+  */
+  readonly json?: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson[] | cdktf.IResolvable;
+}
+
+export function appmeshVirtualNodeSpecLoggingAccessLogFileFormatToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference | AppmeshVirtualNodeSpecLoggingAccessLogFileFormat): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    text: cdktf.stringToTerraform(struct!.text),
+    json: cdktf.listMapper(appmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToTerraform, true)(struct!.json),
+  }
+}
+
+export class AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLogFileFormat | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._text !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.text = this._text;
+    }
+    if (this._json?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.json = this._json?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshVirtualNodeSpecLoggingAccessLogFileFormat | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._text = undefined;
+      this._json.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._text = value.text;
+      this._json.internalValue = value.json;
+    }
+  }
+
+  // text - computed: false, optional: true, required: false
+  private _text?: string; 
+  public get text() {
+    return this.getStringAttribute('text');
+  }
+  public set text(value: string) {
+    this._text = value;
+  }
+  public resetText() {
+    this._text = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text;
+  }
+
+  // json - computed: false, optional: true, required: false
+  private _json = new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonList(this, "json", false);
+  public get json() {
+    return this._json;
+  }
+  public putJson(value: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson[] | cdktf.IResolvable) {
+    this._json.internalValue = value;
+  }
+  public resetJson() {
+    this._json.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonInput() {
+    return this._json.internalValue;
+  }
+}
 export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#path AppmeshVirtualNode#path}
   */
   readonly path: string;
+  /**
+  * format block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#format AppmeshVirtualNode#format}
+  */
+  readonly format?: AppmeshVirtualNodeSpecLoggingAccessLogFileFormat;
 }
 
 export function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference | AppmeshVirtualNodeSpecLoggingAccessLogFile): any {
@@ -5661,6 +5879,7 @@ export function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: A
   }
   return {
     path: cdktf.stringToTerraform(struct!.path),
+    format: appmeshVirtualNodeSpecLoggingAccessLogFileFormatToTerraform(struct!.format),
   }
 }
 
@@ -5682,6 +5901,10 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
+    if (this._format?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.format = this._format?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5689,10 +5912,12 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
     if (value === undefined) {
       this.isEmptyObject = false;
       this._path = undefined;
+      this._format.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._path = value.path;
+      this._format.internalValue = value.format;
     }
   }
 
@@ -5707,6 +5932,22 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
     return this._path;
+  }
+
+  // format - computed: false, optional: true, required: false
+  private _format = new AppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference(this, "format");
+  public get format() {
+    return this._format;
+  }
+  public putFormat(value: AppmeshVirtualNodeSpecLoggingAccessLogFileFormat) {
+    this._format.internalValue = value;
+  }
+  public resetFormat() {
+    this._format.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format.internalValue;
   }
 }
 export interface AppmeshVirtualNodeSpecLoggingAccessLog {
@@ -6324,7 +6565,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_node',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -22,6 +22,8 @@ SecurityhubAccount.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .enableDefaultStandards(java.lang.Boolean)
+//  .enableDefaultStandards(IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -37,6 +39,7 @@ SecurityhubAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.enableDefaultStandards">enableDefaultStandards</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
@@ -101,6 +104,14 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `enableDefaultStandards`<sup>Optional</sup> <a name="enableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.enableDefaultStandards"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
@@ -132,6 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards">resetEnableDefaultStandards</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -320,6 +332,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetEnableDefaultStandards` <a name="resetEnableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards"></a>
+
+```java
+public void resetEnableDefaultStandards()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId"></a>
 
 ```java
@@ -414,7 +432,9 @@ SecurityhubAccount.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput">enableDefaultStandardsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards">enableDefaultStandards</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -561,6 +581,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `enableDefaultStandardsInput`<sup>Optional</sup> <a name="enableDefaultStandardsInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput"></a>
+
+```java
+public java.lang.Object getEnableDefaultStandardsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput"></a>
 
 ```java
@@ -568,6 +598,16 @@ public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `enableDefaultStandards`<sup>Required</sup> <a name="enableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards"></a>
+
+```java
+public java.lang.Object getEnableDefaultStandards();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -619,6 +659,8 @@ SecurityhubAccountConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .enableDefaultStandards(java.lang.Boolean)
+//  .enableDefaultStandards(IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -634,6 +676,7 @@ SecurityhubAccountConfig.builder()
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards">enableDefaultStandards</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
@@ -705,6 +748,18 @@ public java.lang.Object getProvisioners();
 ```
 
 - *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `enableDefaultStandards`<sup>Optional</sup> <a name="enableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards"></a>
+
+```java
+public java.lang.Object getEnableDefaultStandards();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
 
 ---
 

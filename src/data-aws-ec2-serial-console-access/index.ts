@@ -123,7 +123,7 @@ export class DataAwsEc2SerialConsoleAccess extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_serial_console_access',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

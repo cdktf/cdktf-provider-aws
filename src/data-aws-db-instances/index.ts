@@ -166,7 +166,7 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_instances',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

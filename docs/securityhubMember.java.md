@@ -23,7 +23,7 @@ SecurityhubMember.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
-    .email(java.lang.String)
+//  .email(java.lang.String)
 //  .id(java.lang.String)
 //  .invite(java.lang.Boolean)
 //  .invite(IResolvable)
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.Initializer.parameter.email"></a>
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.Initializer.parameter.email"></a>
 
 - *Type:* java.lang.String
 
@@ -163,6 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail">resetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetInvite">resetInvite</a></code> | *No description.* |
 
@@ -351,6 +352,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 - *Type:* java.lang.String
 
 ---
+
+##### `resetEmail` <a name="resetEmail" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetEmail"></a>
+
+```java
+public void resetEmail()
+```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.resetId"></a>
 
@@ -746,7 +753,7 @@ SecurityhubMemberConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accountId(java.lang.String)
-    .email(java.lang.String)
+//  .email(java.lang.String)
 //  .id(java.lang.String)
 //  .invite(java.lang.Boolean)
 //  .invite(IResolvable)
@@ -853,7 +860,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email"></a>
 
 ```java
 public java.lang.String getEmail();

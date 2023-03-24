@@ -14,7 +14,7 @@ export interface SecurityhubMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member#email SecurityhubMember#email}
   */
-  readonly email: string;
+  readonly email?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member#id SecurityhubMember#id}
   *
@@ -54,7 +54,7 @@ export class SecurityhubMember extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_member',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -88,13 +88,16 @@ export class SecurityhubMember extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // email - computed: false, optional: false, required: true
+  // email - computed: false, optional: true, required: false
   private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
   public set email(value: string) {
     this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
