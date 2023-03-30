@@ -1189,9 +1189,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.294"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.294.tgz#8d5f9283bb745b7782913341baa46050252cd052"
-  integrity sha512-4BIy00CSlZ/BUntbS5OBXMq35CvhNikGXuji5cGhrL7xzHTbfo13GnHGJa8uTU9tkBEDh2UX/dTprRUlh2mx0g==
+  version "10.1.296"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.296.tgz#11d8d6e2b4425e849ccebef1ce5cc1b6267b046f"
+  integrity sha512-0LflyPhVfxhGAUjn/tJ03itnmW8zkfPhflURs9pzD+p9+oxc3Wyke58E3epCB0wsFBOw9PV0XV1ABpIYi8grEg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2322,9 +2322,9 @@ jsii-diff@^1.79.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "7.1.39"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.39.tgz#f04d71ff303e8331525be3c3ac57b43266df76b0"
-  integrity sha512-IskY7a63zUm9hOBK2D+12jQC64LxqR6KEgRMYdJk863EdWamIFxR1ubZNNMGT9/9pTyRlHBwFZ2ZEIdnuKJTmw==
+  version "7.1.40"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.1.40.tgz#c5b249802ad14016b36449ebffe6a35c562cb086"
+  integrity sha512-KYsL4tCyHW3Bo0a9ba3t/5J/agwypthavaeQ5zdmjVJB4ViyZ+YEa3nV5Fdh4xJ4cMJip/EqkgyOYj58xXL79A==
   dependencies:
     "@jsii/spec" "^1.79.0"
     case "^1.6.3"
@@ -2385,9 +2385,9 @@ jsii-rosetta@^1.75.0, jsii-rosetta@^1.79.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.826:
-  version "0.1.867"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.867.tgz#c352840de9a92e324c74c678f4db60980b97ceef"
-  integrity sha512-PC+oHRZqzPZU3ZFLd7ZwM9gqQXJ+8CM/vLLFitK+xVAVuPXTZ2zfCNNFw9+J9dwWitRIB//yxTEYbTa4wD5Xkg==
+  version "0.1.868"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.868.tgz#8b8af067e8b33df375c2695eeb2119c56cbeee54"
+  integrity sha512-kwDLDzhpP9Jc3SBVwxtT8N7aN8fSupm1MkMjDN9+ZHgeab7dETm1m3fcyf2MxIowTRpcFXc41+jyO2lI5s0zvw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.79.0"
@@ -3021,9 +3021,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.8.2"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.8.2.tgz#1dfc6e766bf9f0d6738ff720ad890bf7aabafd05"
-  integrity sha512-6eOHZdS+u8ZLc1qCDfU04uedWjVOgBbvGKWodc9j4QjT2GbVW9mGYcSUvFYLu/jaXSb1YxfwC6HfFr7h8txWmg==
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.9.0.tgz#eead7405cc272ca11ae18408f6007afe4d75479d"
+  integrity sha512-AOAAre4AAPzB5p41E8vbkisx7FypdNCy4mkiF4mMUl6ptOUVkaMGlWVx1eqgmaoraeAnvhyByIGS+4LN7U+XHg==
   dependencies:
     chalk "^5.2.0"
     cli-table3 "^0.6.3"
@@ -3390,10 +3390,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.69.15:
-  version "0.69.15"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.69.15.tgz#c392389e457947e77975e7a88988bbe88687de8d"
-  integrity sha512-OvJQzrjifB5bpc0QpE5dqetPiyUj0+ImJnukYv205V0Yf13heq/CUQppXPYQGZc2/SO/uKfJLCpNO25e4+DRxQ==
+projen@^0.70.0:
+  version "0.70.0"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.70.0.tgz#29711cc46d50d0f641b9f57b105c7661636cb1c5"
+  integrity sha512-ioDJz5CE5vUp3R/VKdWcP9eh6n0x8O3SiB+IuRr1qqE5CdYvHQhE67jIisYPxreZ/HlnjYaPypsvNrN3KWQRfA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
