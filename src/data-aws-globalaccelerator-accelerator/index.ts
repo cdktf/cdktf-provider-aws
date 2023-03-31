@@ -193,7 +193,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -238,6 +238,11 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
+  }
+
+  // dual_stack_dns_name - computed: true, optional: false, required: false
+  public get dualStackDnsName() {
+    return this.getStringAttribute('dual_stack_dns_name');
   }
 
   // enabled - computed: true, optional: false, required: false

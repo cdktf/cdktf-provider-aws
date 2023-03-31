@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/location_track
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslocationtrackerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtrackerassociation"
 
 dataawslocationtrackerassociation.NewDataAwsLocationTrackerAssociation(scope Construct, id *string, config DataAwsLocationTrackerAssociationConfig) DataAwsLocationTrackerAssociation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslocationtrackerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtrackerassociation"
 
 dataawslocationtrackerassociation.DataAwsLocationTrackerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslocationtrackerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtrackerassociation"
 
 dataawslocationtrackerassociation.DataAwsLocationTrackerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawslocationtrackerassociation.DataAwsLocationTrackerAssociation_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslocationtrackerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtrackerassociation"
 
 dataawslocationtrackerassociation.DataAwsLocationTrackerAssociation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslocationtrackerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtrackerassociation"
 
 &dataawslocationtrackerassociation.DataAwsLocationTrackerAssociationConfig {
 	Connection: interface{},

@@ -166,7 +166,7 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_rds_clusters',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

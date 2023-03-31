@@ -953,7 +953,7 @@ const appmeshVirtualRouterSpec: appmeshVirtualRouter.AppmeshVirtualRouterSpec = 
 
 ---
 
-##### `listener`<sup>Required</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
+##### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
 
 ```typescript
 public readonly listener: IResolvable | AppmeshVirtualRouterSpecListener[];
@@ -1833,6 +1833,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.putListener">putListener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener">resetListener</a></code> | *No description.* |
 
 ---
 
@@ -1997,6 +1998,12 @@ public putListener(value: IResolvable | AppmeshVirtualRouterSpecListener[]): voi
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener">AppmeshVirtualRouterSpecListener</a>[]
 
 ---
+
+##### `resetListener` <a name="resetListener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener"></a>
+
+```typescript
+public resetListener(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

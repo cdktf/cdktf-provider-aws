@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_configurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconfiguration"
 
 mskconfiguration.NewMskConfiguration(scope Construct, id *string, config MskConfigurationConfig) MskConfiguration
 ```
@@ -287,7 +287,7 @@ func ResetKafkaVersions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconfiguration"
 
 &mskconfiguration.MskConfigurationConfig {
 	Connection: interface{},

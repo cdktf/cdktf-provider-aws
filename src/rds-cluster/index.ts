@@ -127,9 +127,17 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kmsKeyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}
+  */
+  readonly manageMasterUserPassword?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_password RdsCluster#master_password}
   */
   readonly masterPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}
+  */
+  readonly masterUserSecretKmsKeyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}
   */
@@ -216,6 +224,80 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#timeouts RdsCluster#timeouts}
   */
   readonly timeouts?: RdsClusterTimeouts;
+}
+export interface RdsClusterMasterUserSecret {
+}
+
+export function rdsClusterMasterUserSecretToTerraform(struct?: RdsClusterMasterUserSecret): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class RdsClusterMasterUserSecretOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RdsClusterMasterUserSecret | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsClusterMasterUserSecret | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // kms_key_id - computed: true, optional: false, required: false
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+
+  // secret_arn - computed: true, optional: false, required: false
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+
+  // secret_status - computed: true, optional: false, required: false
+  public get secretStatus() {
+    return this.getStringAttribute('secret_status');
+  }
+}
+
+export class RdsClusterMasterUserSecretList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RdsClusterMasterUserSecretOutputReference {
+    return new RdsClusterMasterUserSecretOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface RdsClusterRestoreToPointInTime {
   /**
@@ -936,7 +1018,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -976,7 +1058,9 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._id = config.id;
     this._iops = config.iops;
     this._kmsKeyId = config.kmsKeyId;
+    this._manageMasterUserPassword = config.manageMasterUserPassword;
     this._masterPassword = config.masterPassword;
+    this._masterUserSecretKmsKeyId = config.masterUserSecretKmsKeyId;
     this._masterUsername = config.masterUsername;
     this._networkType = config.networkType;
     this._port = config.port;
@@ -1491,6 +1575,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._kmsKeyId;
   }
 
+  // manage_master_user_password - computed: false, optional: true, required: false
+  private _manageMasterUserPassword?: boolean | cdktf.IResolvable; 
+  public get manageMasterUserPassword() {
+    return this.getBooleanAttribute('manage_master_user_password');
+  }
+  public set manageMasterUserPassword(value: boolean | cdktf.IResolvable) {
+    this._manageMasterUserPassword = value;
+  }
+  public resetManageMasterUserPassword() {
+    this._manageMasterUserPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageMasterUserPasswordInput() {
+    return this._manageMasterUserPassword;
+  }
+
   // master_password - computed: false, optional: true, required: false
   private _masterPassword?: string; 
   public get masterPassword() {
@@ -1505,6 +1605,28 @@ export class RdsCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get masterPasswordInput() {
     return this._masterPassword;
+  }
+
+  // master_user_secret - computed: true, optional: false, required: false
+  private _masterUserSecret = new RdsClusterMasterUserSecretList(this, "master_user_secret", false);
+  public get masterUserSecret() {
+    return this._masterUserSecret;
+  }
+
+  // master_user_secret_kms_key_id - computed: true, optional: true, required: false
+  private _masterUserSecretKmsKeyId?: string; 
+  public get masterUserSecretKmsKeyId() {
+    return this.getStringAttribute('master_user_secret_kms_key_id');
+  }
+  public set masterUserSecretKmsKeyId(value: string) {
+    this._masterUserSecretKmsKeyId = value;
+  }
+  public resetMasterUserSecretKmsKeyId() {
+    this._masterUserSecretKmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterUserSecretKmsKeyIdInput() {
+    return this._masterUserSecretKmsKeyId;
   }
 
   // master_username - computed: true, optional: true, required: false
@@ -1851,7 +1973,9 @@ export class RdsCluster extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       iops: cdktf.numberToTerraform(this._iops),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      manage_master_user_password: cdktf.booleanToTerraform(this._manageMasterUserPassword),
       master_password: cdktf.stringToTerraform(this._masterPassword),
+      master_user_secret_kms_key_id: cdktf.stringToTerraform(this._masterUserSecretKmsKeyId),
       master_username: cdktf.stringToTerraform(this._masterUsername),
       network_type: cdktf.stringToTerraform(this._networkType),
       port: cdktf.numberToTerraform(this._port),

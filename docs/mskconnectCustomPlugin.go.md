@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_cus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.NewMskconnectCustomPlugin(scope Construct, id *string, config MskconnectCustomPluginConfig) MskconnectCustomPlugin
 ```
@@ -313,7 +313,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.MskconnectCustomPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.MskconnectCustomPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ mskconnectcustomplugin.MskconnectCustomPlugin_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.MskconnectCustomPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 &mskconnectcustomplugin.MskconnectCustomPluginConfig {
 	Connection: interface{},
@@ -734,11 +734,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ContentType: *string,
-	Location: github.com/cdktf/cdktf-provider-aws-go/aws/v12.mskconnectCustomPlugin.MskconnectCustomPluginLocation,
+	Location: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation,
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts,
 }
 ```
 
@@ -916,10 +916,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 &mskconnectcustomplugin.MskconnectCustomPluginLocation {
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v12.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3,
 }
 ```
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 &mskconnectcustomplugin.MskconnectCustomPluginLocationS3 {
 	BucketArn: *string,
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 &mskconnectcustomplugin.MskconnectCustomPluginTimeouts {
 	Create: *string,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.NewMskconnectCustomPluginLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectCustomPluginLocationOutputReference
 ```
@@ -1342,7 +1342,7 @@ func InternalValue() MskconnectCustomPluginLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.NewMskconnectCustomPluginLocationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectCustomPluginLocationS3OutputReference
 ```
@@ -1664,7 +1664,7 @@ func InternalValue() MskconnectCustomPluginLocationS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/mskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskconnectcustomplugin"
 
 mskconnectcustomplugin.NewMskconnectCustomPluginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskconnectCustomPluginTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.NewDataAwsSecretsmanagerSecret(scope Construct, id *string, config DataAwsSecretsmanagerSecretConfig) DataAwsSecretsmanagerSecret
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.DataAwsSecretsmanagerSecret_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.DataAwsSecretsmanagerSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawssecretsmanagersecret.DataAwsSecretsmanagerSecret_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.DataAwsSecretsmanagerSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 &dataawssecretsmanagersecret.DataAwsSecretsmanagerSecretConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 &dataawssecretsmanagersecret.DataAwsSecretsmanagerSecretRotationRules {
 
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.NewDataAwsSecretsmanagerSecretRotationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretRotationRulesList
 ```
@@ -947,7 +947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecret"
 
 dataawssecretsmanagersecret.NewDataAwsSecretsmanagerSecretRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecretsmanagerSecretRotationRulesOutputReference
 ```

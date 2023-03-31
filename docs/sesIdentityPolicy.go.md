@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_identity_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesidentitypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesidentitypolicy"
 
 sesidentitypolicy.NewSesIdentityPolicy(scope Construct, id *string, config SesIdentityPolicyConfig) SesIdentityPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesidentitypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesidentitypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ sesidentitypolicy.SesIdentityPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesidentitypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesidentitypolicy"
 
 sesidentitypolicy.SesIdentityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sesidentitypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesidentitypolicy"
 
 &sesidentitypolicy.SesIdentityPolicyConfig {
 	Connection: interface{},

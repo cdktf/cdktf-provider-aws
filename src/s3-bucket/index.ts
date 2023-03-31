@@ -3365,7 +3365,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3461,7 +3461,7 @@ export class S3Bucket extends cdktf.TerraformResource {
     return this.getStringAttribute('bucket_domain_name');
   }
 
-  // bucket_prefix - computed: false, optional: true, required: false
+  // bucket_prefix - computed: true, optional: true, required: false
   private _bucketPrefix?: string; 
   public get bucketPrefix() {
     return this.getStringAttribute('bucket_prefix');

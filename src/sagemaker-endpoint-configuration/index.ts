@@ -989,6 +989,10 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   */
   readonly containerStartupHealthCheckTimeoutInSeconds?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#enable_ssm_access SagemakerEndpointConfiguration#enable_ssm_access}
+  */
+  readonly enableSsmAccess?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
   */
   readonly initialInstanceCount?: number;
@@ -1038,6 +1042,7 @@ export function sagemakerEndpointConfigurationProductionVariantsToTerraform(stru
   return {
     accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
     container_startup_health_check_timeout_in_seconds: cdktf.numberToTerraform(struct!.containerStartupHealthCheckTimeoutInSeconds),
+    enable_ssm_access: cdktf.booleanToTerraform(struct!.enableSsmAccess),
     initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
     initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
@@ -1077,6 +1082,10 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
     if (this._containerStartupHealthCheckTimeoutInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerStartupHealthCheckTimeoutInSeconds = this._containerStartupHealthCheckTimeoutInSeconds;
+    }
+    if (this._enableSsmAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableSsmAccess = this._enableSsmAccess;
     }
     if (this._initialInstanceCount !== undefined) {
       hasAnyValues = true;
@@ -1123,6 +1132,7 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this.resolvableValue = undefined;
       this._acceleratorType = undefined;
       this._containerStartupHealthCheckTimeoutInSeconds = undefined;
+      this._enableSsmAccess = undefined;
       this._initialInstanceCount = undefined;
       this._initialVariantWeight = undefined;
       this._instanceType = undefined;
@@ -1142,6 +1152,7 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
       this.resolvableValue = undefined;
       this._acceleratorType = value.acceleratorType;
       this._containerStartupHealthCheckTimeoutInSeconds = value.containerStartupHealthCheckTimeoutInSeconds;
+      this._enableSsmAccess = value.enableSsmAccess;
       this._initialInstanceCount = value.initialInstanceCount;
       this._initialVariantWeight = value.initialVariantWeight;
       this._instanceType = value.instanceType;
@@ -1184,6 +1195,22 @@ export class SagemakerEndpointConfigurationProductionVariantsOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get containerStartupHealthCheckTimeoutInSecondsInput() {
     return this._containerStartupHealthCheckTimeoutInSeconds;
+  }
+
+  // enable_ssm_access - computed: false, optional: true, required: false
+  private _enableSsmAccess?: boolean | cdktf.IResolvable; 
+  public get enableSsmAccess() {
+    return this.getBooleanAttribute('enable_ssm_access');
+  }
+  public set enableSsmAccess(value: boolean | cdktf.IResolvable) {
+    this._enableSsmAccess = value;
+  }
+  public resetEnableSsmAccess() {
+    this._enableSsmAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableSsmAccessInput() {
+    return this._enableSsmAccess;
   }
 
   // initial_instance_count - computed: false, optional: true, required: false
@@ -1529,6 +1556,10 @@ export interface SagemakerEndpointConfigurationShadowProductionVariants {
   */
   readonly containerStartupHealthCheckTimeoutInSeconds?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#enable_ssm_access SagemakerEndpointConfiguration#enable_ssm_access}
+  */
+  readonly enableSsmAccess?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
   */
   readonly initialInstanceCount?: number;
@@ -1578,6 +1609,7 @@ export function sagemakerEndpointConfigurationShadowProductionVariantsToTerrafor
   return {
     accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
     container_startup_health_check_timeout_in_seconds: cdktf.numberToTerraform(struct!.containerStartupHealthCheckTimeoutInSeconds),
+    enable_ssm_access: cdktf.booleanToTerraform(struct!.enableSsmAccess),
     initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
     initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
@@ -1617,6 +1649,10 @@ export class SagemakerEndpointConfigurationShadowProductionVariantsOutputReferen
     if (this._containerStartupHealthCheckTimeoutInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerStartupHealthCheckTimeoutInSeconds = this._containerStartupHealthCheckTimeoutInSeconds;
+    }
+    if (this._enableSsmAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableSsmAccess = this._enableSsmAccess;
     }
     if (this._initialInstanceCount !== undefined) {
       hasAnyValues = true;
@@ -1663,6 +1699,7 @@ export class SagemakerEndpointConfigurationShadowProductionVariantsOutputReferen
       this.resolvableValue = undefined;
       this._acceleratorType = undefined;
       this._containerStartupHealthCheckTimeoutInSeconds = undefined;
+      this._enableSsmAccess = undefined;
       this._initialInstanceCount = undefined;
       this._initialVariantWeight = undefined;
       this._instanceType = undefined;
@@ -1682,6 +1719,7 @@ export class SagemakerEndpointConfigurationShadowProductionVariantsOutputReferen
       this.resolvableValue = undefined;
       this._acceleratorType = value.acceleratorType;
       this._containerStartupHealthCheckTimeoutInSeconds = value.containerStartupHealthCheckTimeoutInSeconds;
+      this._enableSsmAccess = value.enableSsmAccess;
       this._initialInstanceCount = value.initialInstanceCount;
       this._initialVariantWeight = value.initialVariantWeight;
       this._instanceType = value.instanceType;
@@ -1724,6 +1762,22 @@ export class SagemakerEndpointConfigurationShadowProductionVariantsOutputReferen
   // Temporarily expose input value. Use with caution.
   public get containerStartupHealthCheckTimeoutInSecondsInput() {
     return this._containerStartupHealthCheckTimeoutInSeconds;
+  }
+
+  // enable_ssm_access - computed: false, optional: true, required: false
+  private _enableSsmAccess?: boolean | cdktf.IResolvable; 
+  public get enableSsmAccess() {
+    return this.getBooleanAttribute('enable_ssm_access');
+  }
+  public set enableSsmAccess(value: boolean | cdktf.IResolvable) {
+    this._enableSsmAccess = value;
+  }
+  public resetEnableSsmAccess() {
+    this._enableSsmAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableSsmAccessInput() {
+    return this._enableSsmAccess;
   }
 
   // initial_instance_count - computed: false, optional: true, required: false
@@ -1914,7 +1968,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_endpoint_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

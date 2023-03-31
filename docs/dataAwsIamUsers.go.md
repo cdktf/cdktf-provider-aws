@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_users aws_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.NewDataAwsIamUsers(scope Construct, id *string, config DataAwsIamUsersConfig) DataAwsIamUsers
 ```
@@ -287,7 +287,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsiamusers.DataAwsIamUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 &dataawsiamusers.DataAwsIamUsersConfig {
 	Connection: interface{},

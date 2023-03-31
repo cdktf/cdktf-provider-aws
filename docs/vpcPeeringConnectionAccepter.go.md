@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_co
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.NewVpcPeeringConnectionAccepterA(scope Construct, id *string, config VpcPeeringConnectionAccepterAConfig) VpcPeeringConnectionAccepterA
 ```
@@ -354,7 +354,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterA_IsTerraformElement(x 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterA_IsTerraformResource(x interface{}) *bool
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 &vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterAccepter {
 	AllowClassicLinkToRemoteVpc: interface{},
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 &vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterAConfig {
 	Connection: interface{},
@@ -901,13 +901,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccep
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	VpcPeeringConnectionId: *string,
-	Accepter: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterAccepter,
+	Accepter: github.com/cdktf/cdktf-provider-aws-go/aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterAccepter,
 	AutoAccept: interface{},
 	Id: *string,
-	Requester: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequester,
+	Requester: github.com/cdktf/cdktf-provider-aws-go/aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequester,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterTimeouts,
 }
 ```
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequester.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 &vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterRequester {
 	AllowClassicLinkToRemoteVpc: interface{},
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 &vpcpeeringconnectionaccepter.VpcPeeringConnectionAccepterTimeouts {
 	Create: *string,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterAccepterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.NewVpcPeeringConnectionAccepterAccepterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionAccepterAccepterOutputReference
 ```
@@ -1557,7 +1557,7 @@ func InternalValue() VpcPeeringConnectionAccepterAccepter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterRequesterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.NewVpcPeeringConnectionAccepterRequesterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionAccepterRequesterOutputReference
 ```
@@ -1893,7 +1893,7 @@ func InternalValue() VpcPeeringConnectionAccepterRequester
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcpeeringconnectionaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcpeeringconnectionaccepter"
 
 vpcpeeringconnectionaccepter.NewVpcPeeringConnectionAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionAccepterTimeoutsOutputReference
 ```

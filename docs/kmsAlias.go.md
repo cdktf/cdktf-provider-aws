@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_alias aws_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kmsAlias.KmsAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsalias"
 
 kmsalias.NewKmsAlias(scope Construct, id *string, config KmsAliasConfig) KmsAlias
 ```
@@ -287,7 +287,7 @@ func ResetNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kmsAlias.KmsAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsalias"
 
 kmsalias.KmsAlias_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kmsAlias.KmsAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsalias"
 
 kmsalias.KmsAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ kmsalias.KmsAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kmsAlias.KmsAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsalias"
 
 kmsalias.KmsAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kmsAlias.KmsAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/kmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kmsalias"
 
 &kmsalias.KmsAliasConfig {
 	Connection: interface{},

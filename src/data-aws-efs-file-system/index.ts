@@ -123,7 +123,7 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_efs_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/arn aws_arn}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsArn.DataAwsArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsarn"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsarn"
 
 dataawsarn.NewDataAwsArn(scope Construct, id *string, config DataAwsArnConfig) DataAwsArn
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsArn.DataAwsArn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsarn"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsarn"
 
 dataawsarn.DataAwsArn_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsArn.DataAwsArn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsarn"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsarn"
 
 dataawsarn.DataAwsArn_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsarn.DataAwsArn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsArn.DataAwsArn.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsarn"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsarn"
 
 dataawsarn.DataAwsArn_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsArn.DataAwsArnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsarn"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsarn"
 
 &dataawsarn.DataAwsArnConfig {
 	Connection: interface{},

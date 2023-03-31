@@ -6202,6 +6202,14 @@ export interface AppmeshVirtualNodeSpecServiceDiscoveryDns {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}
   */
   readonly hostname: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}
+  */
+  readonly ipPreference?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}
+  */
+  readonly responseType?: string;
 }
 
 export function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference | AppmeshVirtualNodeSpecServiceDiscoveryDns): any {
@@ -6211,6 +6219,8 @@ export function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: Ap
   }
   return {
     hostname: cdktf.stringToTerraform(struct!.hostname),
+    ip_preference: cdktf.stringToTerraform(struct!.ipPreference),
+    response_type: cdktf.stringToTerraform(struct!.responseType),
   }
 }
 
@@ -6232,6 +6242,14 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.hostname = this._hostname;
     }
+    if (this._ipPreference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipPreference = this._ipPreference;
+    }
+    if (this._responseType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseType = this._responseType;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6239,10 +6257,14 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
     if (value === undefined) {
       this.isEmptyObject = false;
       this._hostname = undefined;
+      this._ipPreference = undefined;
+      this._responseType = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._hostname = value.hostname;
+      this._ipPreference = value.ipPreference;
+      this._responseType = value.responseType;
     }
   }
 
@@ -6257,6 +6279,38 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
   // Temporarily expose input value. Use with caution.
   public get hostnameInput() {
     return this._hostname;
+  }
+
+  // ip_preference - computed: false, optional: true, required: false
+  private _ipPreference?: string; 
+  public get ipPreference() {
+    return this.getStringAttribute('ip_preference');
+  }
+  public set ipPreference(value: string) {
+    this._ipPreference = value;
+  }
+  public resetIpPreference() {
+    this._ipPreference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipPreferenceInput() {
+    return this._ipPreference;
+  }
+
+  // response_type - computed: false, optional: true, required: false
+  private _responseType?: string; 
+  public get responseType() {
+    return this.getStringAttribute('response_type');
+  }
+  public set responseType(value: string) {
+    this._responseType = value;
+  }
+  public resetResponseType() {
+    this._responseType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseTypeInput() {
+    return this._responseType;
   }
 }
 export interface AppmeshVirtualNodeSpecServiceDiscovery {
@@ -6565,7 +6619,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_node',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

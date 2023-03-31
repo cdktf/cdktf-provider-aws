@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/identitystore_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
 
 identitystoregroupmembership.NewIdentitystoreGroupMembership(scope Construct, id *string, config IdentitystoreGroupMembershipConfig) IdentitystoreGroupMembership
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
 
 &identitystoregroupmembership.IdentitystoreGroupMembershipConfig {
 	Connection: interface{},

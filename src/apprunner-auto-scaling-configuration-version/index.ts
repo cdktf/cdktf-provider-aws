@@ -66,7 +66,7 @@ export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformRes
       terraformResourceType: 'aws_apprunner_auto_scaling_configuration_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

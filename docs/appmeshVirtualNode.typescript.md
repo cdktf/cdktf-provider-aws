@@ -4042,6 +4042,8 @@ const appmeshVirtualNodeSpecServiceDiscoveryDns: appmeshVirtualNode.AppmeshVirtu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.hostname">hostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.ipPreference">ipPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.responseType">responseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}. |
 
 ---
 
@@ -4054,6 +4056,30 @@ public readonly hostname: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}.
+
+---
+
+##### `ipPreference`<sup>Optional</sup> <a name="ipPreference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.ipPreference"></a>
+
+```typescript
+public readonly ipPreference: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ip_preference AppmeshVirtualNode#ip_preference}.
+
+---
+
+##### `responseType`<sup>Optional</sup> <a name="responseType" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns.property.responseType"></a>
+
+```typescript
+public readonly responseType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#response_type AppmeshVirtualNode#response_type}.
 
 ---
 
@@ -26289,6 +26315,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.resetIpPreference">resetIpPreference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.resetResponseType">resetResponseType</a></code> | *No description.* |
 
 ---
 
@@ -26442,6 +26470,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetIpPreference` <a name="resetIpPreference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.resetIpPreference"></a>
+
+```typescript
+public resetIpPreference(): void
+```
+
+##### `resetResponseType` <a name="resetResponseType" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.resetResponseType"></a>
+
+```typescript
+public resetResponseType(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -26450,7 +26490,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.hostnameInput">hostnameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.ipPreferenceInput">ipPreferenceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.responseTypeInput">responseTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.hostname">hostname</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.ipPreference">ipPreference</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.responseType">responseType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns">AppmeshVirtualNodeSpecServiceDiscoveryDns</a></code> | *No description.* |
 
 ---
@@ -26489,10 +26533,50 @@ public readonly hostnameInput: string;
 
 ---
 
+##### `ipPreferenceInput`<sup>Optional</sup> <a name="ipPreferenceInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.ipPreferenceInput"></a>
+
+```typescript
+public readonly ipPreferenceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `responseTypeInput`<sup>Optional</sup> <a name="responseTypeInput" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.responseTypeInput"></a>
+
+```typescript
+public readonly responseTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.hostname"></a>
 
 ```typescript
 public readonly hostname: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipPreference`<sup>Required</sup> <a name="ipPreference" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.ipPreference"></a>
+
+```typescript
+public readonly ipPreference: string;
+```
+
+- *Type:* string
+
+---
+
+##### `responseType`<sup>Required</sup> <a name="responseType" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference.property.responseType"></a>
+
+```typescript
+public readonly responseType: string;
 ```
 
 - *Type:* string

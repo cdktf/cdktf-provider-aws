@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_target_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.NewAlbTargetGroup(scope Construct, id *string, config AlbTargetGroupConfig) AlbTargetGroup
 ```
@@ -459,7 +459,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.AlbTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.AlbTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ albtargetgroup.AlbTargetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.AlbTargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -1210,7 +1210,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 &albtargetgroup.AlbTargetGroupConfig {
 	Connection: interface{},
@@ -1222,7 +1222,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
 	Provisioners: *[]interface{},
 	ConnectionTermination: interface{},
 	DeregistrationDelay: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v12.albTargetGroup.AlbTargetGroupHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.albTargetGroup.AlbTargetGroupHealthCheck,
 	Id: *string,
 	IpAddressType: *string,
 	LambdaMultiValueHeadersEnabled: interface{},
@@ -1236,7 +1236,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
 	ProtocolVersion: *string,
 	ProxyProtocolV2: interface{},
 	SlowStart: *f64,
-	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws/v12.albTargetGroup.AlbTargetGroupStickiness,
+	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws.albTargetGroup.AlbTargetGroupStickiness,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TargetFailover: interface{},
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 &albtargetgroup.AlbTargetGroupHealthCheck {
 	Enabled: interface{},
@@ -1773,7 +1773,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 &albtargetgroup.AlbTargetGroupStickiness {
 	Type: *string,
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 &albtargetgroup.AlbTargetGroupTargetFailover {
 	OnDeregistration: *string,
@@ -1895,7 +1895,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.NewAlbTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbTargetGroupHealthCheckOutputReference
 ```
@@ -2405,7 +2405,7 @@ func InternalValue() AlbTargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.NewAlbTargetGroupStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbTargetGroupStickinessOutputReference
 ```
@@ -2763,7 +2763,7 @@ func InternalValue() AlbTargetGroupStickiness
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.NewAlbTargetGroupTargetFailoverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbTargetGroupTargetFailoverList
 ```
@@ -2906,7 +2906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/albtargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/albtargetgroup"
 
 albtargetgroup.NewAlbTargetGroupTargetFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbTargetGroupTargetFailoverOutputReference
 ```

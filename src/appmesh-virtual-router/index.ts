@@ -229,7 +229,7 @@ export interface AppmeshVirtualRouterSpec {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router#listener AppmeshVirtualRouter#listener}
   */
-  readonly listener: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable;
+  readonly listener?: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable;
 }
 
 export function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRouterSpecOutputReference | AppmeshVirtualRouterSpec): any {
@@ -274,13 +274,16 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
     }
   }
 
-  // listener - computed: false, optional: false, required: true
+  // listener - computed: false, optional: true, required: false
   private _listener = new AppmeshVirtualRouterSpecListenerList(this, "listener", false);
   public get listener() {
     return this._listener;
   }
   public putListener(value: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable) {
     this._listener.internalValue = value;
+  }
+  public resetListener() {
+    this._listener.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get listenerInput() {
@@ -314,7 +317,7 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_router',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

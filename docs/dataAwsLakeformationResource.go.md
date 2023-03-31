@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslakeformationresource"
 
 dataawslakeformationresource.NewDataAwsLakeformationResource(scope Construct, id *string, config DataAwsLakeformationResourceConfig) DataAwsLakeformationResource
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslakeformationresource"
 
 dataawslakeformationresource.DataAwsLakeformationResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslakeformationresource"
 
 &dataawslakeformationresource.DataAwsLakeformationResourceConfig {
 	Connection: interface{},

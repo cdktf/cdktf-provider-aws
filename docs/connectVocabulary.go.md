@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_vocabu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabulary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 connectvocabulary.NewConnectVocabulary(scope Construct, id *string, config ConnectVocabularyConfig) ConnectVocabulary
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabulary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 connectvocabulary.ConnectVocabulary_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabulary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 connectvocabulary.ConnectVocabulary_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ connectvocabulary.ConnectVocabulary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabulary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 connectvocabulary.ConnectVocabulary_IsTerraformResource(x interface{}) *bool
 ```
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabularyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 &connectvocabulary.ConnectVocabularyConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.connectVocabulary.ConnectVocabularyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.connectVocabulary.ConnectVocabularyTimeouts,
 }
 ```
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabularyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 &connectvocabulary.ConnectVocabularyTimeouts {
 	Create: *string,
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectVocabulary.ConnectVocabularyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectvocabulary"
 
 connectvocabulary.NewConnectVocabularyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectVocabularyTimeoutsOutputReference
 ```

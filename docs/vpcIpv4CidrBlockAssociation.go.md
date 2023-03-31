@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.NewVpcIpv4CidrBlockAssociation(scope Construct, id *string, config VpcIpv4CidrBlockAssociationConfig) VpcIpv4CidrBlockAssociation
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 &vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociationConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociati
 	Id: *string,
 	Ipv4IpamPoolId: *string,
 	Ipv4NetmaskLength: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts,
 }
 ```
 
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 &vpcipv4cidrblockassociation.VpcIpv4CidrBlockAssociationTimeouts {
 	Create: *string,
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcipv4cidrblockassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipv4cidrblockassociation"
 
 vpcipv4cidrblockassociation.NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpv4CidrBlockAssociationTimeoutsOutputReference
 ```

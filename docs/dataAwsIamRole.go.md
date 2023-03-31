@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_role aws_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamrole"
 
 dataawsiamrole.NewDataAwsIamRole(scope Construct, id *string, config DataAwsIamRoleConfig) DataAwsIamRole
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamrole"
 
 dataawsiamrole.DataAwsIamRole_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamrole"
 
 dataawsiamrole.DataAwsIamRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsiamrole.DataAwsIamRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamrole"
 
 dataawsiamrole.DataAwsIamRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamrole"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamrole"
 
 &dataawsiamrole.DataAwsIamRoleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_hsm_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshifthsmclientcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmclientcertificate"
 
 redshifthsmclientcertificate.NewRedshiftHsmClientCertificate(scope Construct, id *string, config RedshiftHsmClientCertificateConfig) RedshiftHsmClientCertificate
 ```
@@ -287,7 +287,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshifthsmclientcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmclientcertificate"
 
 redshifthsmclientcertificate.RedshiftHsmClientCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshifthsmclientcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmclientcertificate"
 
 redshifthsmclientcertificate.RedshiftHsmClientCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ redshifthsmclientcertificate.RedshiftHsmClientCertificate_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshifthsmclientcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmclientcertificate"
 
 redshifthsmclientcertificate.RedshiftHsmClientCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshifthsmclientcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshifthsmclientcertificate"
 
 &redshifthsmclientcertificate.RedshiftHsmClientCertificateConfig {
 	Connection: interface{},

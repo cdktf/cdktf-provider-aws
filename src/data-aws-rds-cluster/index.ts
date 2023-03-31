@@ -23,6 +23,80 @@ export interface DataAwsRdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: { [key: string]: string };
 }
+export interface DataAwsRdsClusterMasterUserSecret {
+}
+
+export function dataAwsRdsClusterMasterUserSecretToTerraform(struct?: DataAwsRdsClusterMasterUserSecret): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsRdsClusterMasterUserSecretOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsRdsClusterMasterUserSecret | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsRdsClusterMasterUserSecret | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // kms_key_id - computed: true, optional: false, required: false
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+
+  // secret_arn - computed: true, optional: false, required: false
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+
+  // secret_status - computed: true, optional: false, required: false
+  public get secretStatus() {
+    return this.getStringAttribute('secret_status');
+  }
+}
+
+export class DataAwsRdsClusterMasterUserSecretList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsRdsClusterMasterUserSecretOutputReference {
+    return new DataAwsRdsClusterMasterUserSecretOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_cluster aws_rds_cluster}
@@ -50,7 +124,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_rds_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -192,6 +266,12 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
+  }
+
+  // master_user_secret - computed: true, optional: false, required: false
+  private _masterUserSecret = new DataAwsRdsClusterMasterUserSecretList(this, "master_user_secret", false);
+  public get masterUserSecret() {
+    return this._masterUserSecret;
   }
 
   // master_username - computed: true, optional: false, required: false
