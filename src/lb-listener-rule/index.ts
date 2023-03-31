@@ -2240,7 +2240,7 @@ export class LbListenerRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

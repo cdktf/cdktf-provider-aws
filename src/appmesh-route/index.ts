@@ -2134,6 +2134,286 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktf.ComplexList
     return new AppmeshRouteSpecHttp2RouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppmeshRouteSpecHttp2RouteMatchPath {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#regex AppmeshRoute#regex}
+  */
+  readonly regex?: string;
+}
+
+export function appmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchPathOutputReference | AppmeshRouteSpecHttp2RouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    regex: cdktf.stringToTerraform(struct!.regex),
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttp2RouteMatchPath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchPath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._regex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._regex = value.regex;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+}
+export interface AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
+  */
+  readonly exact?: string;
+}
+
+export function appmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+export interface AppmeshRouteSpecHttp2RouteMatchQueryParameter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
+  */
+  readonly name: string;
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
+  */
+  readonly match?: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch;
+}
+
+export function appmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchQueryParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    match: appmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct!.match),
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttp2RouteMatchQueryParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchQueryParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._match.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._match.internalValue = value.match;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecHttp2RouteMatchQueryParameterMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+}
+
+export class AppmeshRouteSpecHttp2RouteMatchQueryParameterList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttp2RouteMatchQueryParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference {
+    return new AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttp2RouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
@@ -2146,7 +2426,7 @@ export interface AppmeshRouteSpecHttp2RouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
-  readonly prefix: string;
+  readonly prefix?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#scheme AppmeshRoute#scheme}
   */
@@ -2157,6 +2437,18 @@ export interface AppmeshRouteSpecHttp2RouteMatch {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttp2RouteMatchHeader[] | cdktf.IResolvable;
+  /**
+  * path block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#path AppmeshRoute#path}
+  */
+  readonly path?: AppmeshRouteSpecHttp2RouteMatchPath;
+  /**
+  * query_parameter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+  */
+  readonly queryParameter?: AppmeshRouteSpecHttp2RouteMatchQueryParameter[] | cdktf.IResolvable;
 }
 
 export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRouteSpecHttp2RouteMatchOutputReference | AppmeshRouteSpecHttp2RouteMatch): any {
@@ -2170,6 +2462,8 @@ export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRoute
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
     header: cdktf.listMapper(appmeshRouteSpecHttp2RouteMatchHeaderToTerraform, true)(struct!.header),
+    path: appmeshRouteSpecHttp2RouteMatchPathToTerraform(struct!.path),
+    query_parameter: cdktf.listMapper(appmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform, true)(struct!.queryParameter),
   }
 }
 
@@ -2207,6 +2501,14 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.header = this._header?.internalValue;
     }
+    if (this._path?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path?.internalValue;
+    }
+    if (this._queryParameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryParameter = this._queryParameter?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2218,6 +2520,8 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       this._prefix = undefined;
       this._scheme = undefined;
       this._header.internalValue = undefined;
+      this._path.internalValue = undefined;
+      this._queryParameter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -2226,6 +2530,8 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
       this._prefix = value.prefix;
       this._scheme = value.scheme;
       this._header.internalValue = value.header;
+      this._path.internalValue = value.path;
+      this._queryParameter.internalValue = value.queryParameter;
     }
   }
 
@@ -2261,13 +2567,16 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
     return this._port;
   }
 
-  // prefix - computed: false, optional: false, required: true
+  // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
   }
   public set prefix(value: string) {
     this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
@@ -2304,6 +2613,38 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
     return this._header.internalValue;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path = new AppmeshRouteSpecHttp2RouteMatchPathOutputReference(this, "path");
+  public get path() {
+    return this._path;
+  }
+  public putPath(value: AppmeshRouteSpecHttp2RouteMatchPath) {
+    this._path.internalValue = value;
+  }
+  public resetPath() {
+    this._path.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path.internalValue;
+  }
+
+  // query_parameter - computed: false, optional: true, required: false
+  private _queryParameter = new AppmeshRouteSpecHttp2RouteMatchQueryParameterList(this, "query_parameter", true);
+  public get queryParameter() {
+    return this._queryParameter;
+  }
+  public putQueryParameter(value: AppmeshRouteSpecHttp2RouteMatchQueryParameter[] | cdktf.IResolvable) {
+    this._queryParameter.internalValue = value;
+  }
+  public resetQueryParameter() {
+    this._queryParameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryParameterInput() {
+    return this._queryParameter.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
@@ -3570,6 +3911,286 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderList extends cdktf.ComplexList 
     return new AppmeshRouteSpecHttpRouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppmeshRouteSpecHttpRouteMatchPath {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
+  */
+  readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#regex AppmeshRoute#regex}
+  */
+  readonly regex?: string;
+}
+
+export function appmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchPathOutputReference | AppmeshRouteSpecHttpRouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    regex: cdktf.stringToTerraform(struct!.regex),
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttpRouteMatchPath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttpRouteMatchPath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+      this._regex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+      this._regex = value.regex;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+}
+export interface AppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
+  */
+  readonly exact?: string;
+}
+
+export function appmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference | AppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttpRouteMatchQueryParameterMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttpRouteMatchQueryParameterMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+export interface AppmeshRouteSpecHttpRouteMatchQueryParameter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
+  */
+  readonly name: string;
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
+  */
+  readonly match?: AppmeshRouteSpecHttpRouteMatchQueryParameterMatch;
+}
+
+export function appmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchQueryParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    match: appmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct!.match),
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppmeshRouteSpecHttpRouteMatchQueryParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._match?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.match = this._match?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshRouteSpecHttpRouteMatchQueryParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._match.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._match.internalValue = value.match;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // match - computed: false, optional: true, required: false
+  private _match = new AppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference(this, "match");
+  public get match() {
+    return this._match;
+  }
+  public putMatch(value: AppmeshRouteSpecHttpRouteMatchQueryParameterMatch) {
+    this._match.internalValue = value;
+  }
+  public resetMatch() {
+    this._match.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchInput() {
+    return this._match.internalValue;
+  }
+}
+
+export class AppmeshRouteSpecHttpRouteMatchQueryParameterList extends cdktf.ComplexList {
+  public internalValue? : AppmeshRouteSpecHttpRouteMatchQueryParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference {
+    return new AppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppmeshRouteSpecHttpRouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
@@ -3582,7 +4203,7 @@ export interface AppmeshRouteSpecHttpRouteMatch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
-  readonly prefix: string;
+  readonly prefix?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#scheme AppmeshRoute#scheme}
   */
@@ -3593,6 +4214,18 @@ export interface AppmeshRouteSpecHttpRouteMatch {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttpRouteMatchHeader[] | cdktf.IResolvable;
+  /**
+  * path block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#path AppmeshRoute#path}
+  */
+  readonly path?: AppmeshRouteSpecHttpRouteMatchPath;
+  /**
+  * query_parameter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#query_parameter AppmeshRoute#query_parameter}
+  */
+  readonly queryParameter?: AppmeshRouteSpecHttpRouteMatchQueryParameter[] | cdktf.IResolvable;
 }
 
 export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchOutputReference | AppmeshRouteSpecHttpRouteMatch): any {
@@ -3606,6 +4239,8 @@ export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteS
     prefix: cdktf.stringToTerraform(struct!.prefix),
     scheme: cdktf.stringToTerraform(struct!.scheme),
     header: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderToTerraform, true)(struct!.header),
+    path: appmeshRouteSpecHttpRouteMatchPathToTerraform(struct!.path),
+    query_parameter: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchQueryParameterToTerraform, true)(struct!.queryParameter),
   }
 }
 
@@ -3643,6 +4278,14 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.header = this._header?.internalValue;
     }
+    if (this._path?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path?.internalValue;
+    }
+    if (this._queryParameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryParameter = this._queryParameter?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3654,6 +4297,8 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       this._prefix = undefined;
       this._scheme = undefined;
       this._header.internalValue = undefined;
+      this._path.internalValue = undefined;
+      this._queryParameter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -3662,6 +4307,8 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
       this._prefix = value.prefix;
       this._scheme = value.scheme;
       this._header.internalValue = value.header;
+      this._path.internalValue = value.path;
+      this._queryParameter.internalValue = value.queryParameter;
     }
   }
 
@@ -3697,13 +4344,16 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
     return this._port;
   }
 
-  // prefix - computed: false, optional: false, required: true
+  // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
   }
   public set prefix(value: string) {
     this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
@@ -3740,6 +4390,38 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
     return this._header.internalValue;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path = new AppmeshRouteSpecHttpRouteMatchPathOutputReference(this, "path");
+  public get path() {
+    return this._path;
+  }
+  public putPath(value: AppmeshRouteSpecHttpRouteMatchPath) {
+    this._path.internalValue = value;
+  }
+  public resetPath() {
+    this._path.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path.internalValue;
+  }
+
+  // query_parameter - computed: false, optional: true, required: false
+  private _queryParameter = new AppmeshRouteSpecHttpRouteMatchQueryParameterList(this, "query_parameter", true);
+  public get queryParameter() {
+    return this._queryParameter;
+  }
+  public putQueryParameter(value: AppmeshRouteSpecHttpRouteMatchQueryParameter[] | cdktf.IResolvable) {
+    this._queryParameter.internalValue = value;
+  }
+  public resetQueryParameter() {
+    this._queryParameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryParameterInput() {
+    return this._queryParameter.internalValue;
   }
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
@@ -5143,7 +5825,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

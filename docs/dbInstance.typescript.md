@@ -101,6 +101,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetLicenseModel">resetLicenseModel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword">resetManageMasterUserPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId">resetMasterUserSecretKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage">resetMaxAllocatedStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringInterval">resetMonitoringInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringRoleArn">resetMonitoringRoleArn</a></code> | *No description.* |
@@ -553,6 +555,18 @@ public resetLicenseModel(): void
 public resetMaintenanceWindow(): void
 ```
 
+##### `resetManageMasterUserPassword` <a name="resetManageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword"></a>
+
+```typescript
+public resetManageMasterUserPassword(): void
+```
+
+##### `resetMasterUserSecretKmsKeyId` <a name="resetMasterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId"></a>
+
+```typescript
+public resetMasterUserSecretKmsKeyId(): void
+```
+
 ##### `resetMaxAllocatedStorage` <a name="resetMaxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage"></a>
 
 ```typescript
@@ -835,6 +849,7 @@ dbInstance.DbInstance.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.latestRestorableTime">latestRestorableTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.listenerEndpoint">listenerEndpoint</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecret">masterUserSecret</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicas">replicas</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.resourceId">resourceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.restoreToPointInTime">restoreToPointInTime</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference">DbInstanceRestoreToPointInTimeOutputReference</a></code> | *No description.* |
@@ -873,6 +888,8 @@ dbInstance.DbInstance.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModelInput">licenseModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput">manageMasterUserPasswordInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput">masterUserSecretKmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorageInput">maxAllocatedStorageInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringIntervalInput">monitoringIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArnInput">monitoringRoleArnInput</a></code> | <code>string</code> | *No description.* |
@@ -935,6 +952,8 @@ dbInstance.DbInstance.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModel">licenseModel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindow">maintenanceWindow</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage">maxAllocatedStorage</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | *No description.* |
@@ -1185,6 +1204,16 @@ public readonly listenerEndpoint: DbInstanceListenerEndpointList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a>
+
+---
+
+##### `masterUserSecret`<sup>Required</sup> <a name="masterUserSecret" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecret"></a>
+
+```typescript
+public readonly masterUserSecret: DbInstanceMasterUserSecretList;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a>
 
 ---
 
@@ -1562,6 +1591,26 @@ public readonly licenseModelInput: string;
 
 ```typescript
 public readonly maintenanceWindowInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `manageMasterUserPasswordInput`<sup>Optional</sup> <a name="manageMasterUserPasswordInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput"></a>
+
+```typescript
+public readonly manageMasterUserPasswordInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `masterUserSecretKmsKeyIdInput`<sup>Optional</sup> <a name="masterUserSecretKmsKeyIdInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput"></a>
+
+```typescript
+public readonly masterUserSecretKmsKeyIdInput: string;
 ```
 
 - *Type:* string
@@ -2188,6 +2237,26 @@ public readonly maintenanceWindow: string;
 
 ---
 
+##### `manageMasterUserPassword`<sup>Required</sup> <a name="manageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword"></a>
+
+```typescript
+public readonly manageMasterUserPassword: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `masterUserSecretKmsKeyId`<sup>Required</sup> <a name="masterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId"></a>
+
+```typescript
+public readonly masterUserSecretKmsKeyId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `maxAllocatedStorage`<sup>Required</sup> <a name="maxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage"></a>
 
 ```typescript
@@ -2571,6 +2640,8 @@ const dbInstanceConfig: dbInstance.DbInstanceConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#kms_key_id DbInstance#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel">licenseModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#license_model DbInstance#license_model}. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#maintenance_window DbInstance#maintenance_window}. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword">manageMasterUserPassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#manage_master_user_password DbInstance#manage_master_user_password}. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId">masterUserSecretKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage">maxAllocatedStorage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#max_allocated_storage DbInstance#max_allocated_storage}. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval">monitoringInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#monitoring_interval DbInstance#monitoring_interval}. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn">monitoringRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}. |
@@ -3064,6 +3135,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `manageMasterUserPassword`<sup>Optional</sup> <a name="manageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword"></a>
+
+```typescript
+public readonly manageMasterUserPassword: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
+
+---
+
+##### `masterUserSecretKmsKeyId`<sup>Optional</sup> <a name="masterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId"></a>
+
+```typescript
+public readonly masterUserSecretKmsKeyId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
+
+---
+
 ##### `maxAllocatedStorage`<sup>Optional</sup> <a name="maxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage"></a>
 
 ```typescript
@@ -3450,6 +3545,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 import { dbInstance } from '@cdktf/provider-aws'
 
 const dbInstanceListenerEndpoint: dbInstance.DbInstanceListenerEndpoint = { ... }
+```
+
+
+### DbInstanceMasterUserSecret <a name="DbInstanceMasterUserSecret" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret.Initializer"></a>
+
+```typescript
+import { dbInstance } from '@cdktf/provider-aws'
+
+const dbInstanceMasterUserSecret: dbInstance.DbInstanceMasterUserSecret = { ... }
 ```
 
 
@@ -4381,6 +4487,438 @@ public readonly internalValue: DbInstanceListenerEndpoint;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint">DbInstanceListenerEndpoint</a>
+
+---
+
+
+### DbInstanceMasterUserSecretList <a name="DbInstanceMasterUserSecretList" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer"></a>
+
+```typescript
+import { dbInstance } from '@cdktf/provider-aws'
+
+new dbInstance.DbInstanceMasterUserSecretList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get"></a>
+
+```typescript
+public get(index: number): DbInstanceMasterUserSecretOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DbInstanceMasterUserSecretOutputReference <a name="DbInstanceMasterUserSecretOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer"></a>
+
+```typescript
+import { dbInstance } from '@cdktf/provider-aws'
+
+new dbInstance.DbInstanceMasterUserSecretOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn">secretArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus">secretStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kmsKeyId`<sup>Required</sup> <a name="kmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId"></a>
+
+```typescript
+public readonly kmsKeyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretArn`<sup>Required</sup> <a name="secretArn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn"></a>
+
+```typescript
+public readonly secretArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretStatus`<sup>Required</sup> <a name="secretStatus" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus"></a>
+
+```typescript
+public readonly secretStatus: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DbInstanceMasterUserSecret;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a>
 
 ---
 

@@ -50,8 +50,10 @@ rdsCluster.RdsCluster(
   id: str = None,
   iops: typing.Union[int, float] = None,
   kms_key_id: str = None,
+  manage_master_user_password: typing.Union[bool, IResolvable] = None,
   master_password: str = None,
   master_username: str = None,
+  master_user_secret_kms_key_id: str = None,
   network_type: str = None,
   port: typing.Union[int, float] = None,
   preferred_backup_window: str = None,
@@ -113,8 +115,10 @@ rdsCluster.RdsCluster(
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#id RdsCluster#id}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.iops">iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#iops RdsCluster#iops}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#kms_key_id RdsCluster#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.manageMasterUserPassword">manage_master_user_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.masterPassword">master_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_password RdsCluster#master_password}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.masterUsername">master_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.masterUserSecretKmsKeyId">master_user_secret_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.networkType">network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#network_type RdsCluster#network_type}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#port RdsCluster#port}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.preferredBackupWindow">preferred_backup_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}. |
@@ -431,6 +435,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `manage_master_user_password`<sup>Optional</sup> <a name="manage_master_user_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.manageMasterUserPassword"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}.
+
+---
+
 ##### `master_password`<sup>Optional</sup> <a name="master_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.masterPassword"></a>
 
 - *Type:* str
@@ -444,6 +456,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}.
+
+---
+
+##### `master_user_secret_kms_key_id`<sup>Optional</sup> <a name="master_user_secret_kms_key_id" id="@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer.parameter.masterUserSecretKmsKeyId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}.
 
 ---
 
@@ -655,8 +675,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetIops">reset_iops</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetKmsKeyId">reset_kms_key_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetManageMasterUserPassword">reset_manage_master_user_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetMasterPassword">reset_master_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetMasterUsername">reset_master_username</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetMasterUserSecretKmsKeyId">reset_master_user_secret_kms_key_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetNetworkType">reset_network_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetPort">reset_port</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.resetPreferredBackupWindow">reset_preferred_backup_window</a></code> | *No description.* |
@@ -1267,6 +1289,12 @@ def reset_iops() -> None
 def reset_kms_key_id() -> None
 ```
 
+##### `reset_manage_master_user_password` <a name="reset_manage_master_user_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.resetManageMasterUserPassword"></a>
+
+```python
+def reset_manage_master_user_password() -> None
+```
+
 ##### `reset_master_password` <a name="reset_master_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.resetMasterPassword"></a>
 
 ```python
@@ -1277,6 +1305,12 @@ def reset_master_password() -> None
 
 ```python
 def reset_master_username() -> None
+```
+
+##### `reset_master_user_secret_kms_key_id` <a name="reset_master_user_secret_kms_key_id" id="@cdktf/provider-aws.rdsCluster.RdsCluster.resetMasterUserSecretKmsKeyId"></a>
+
+```python
+def reset_master_user_secret_kms_key_id() -> None
 ```
 
 ##### `reset_network_type` <a name="reset_network_type" id="@cdktf/provider-aws.rdsCluster.RdsCluster.resetNetworkType"></a>
@@ -1486,6 +1520,7 @@ rdsCluster.RdsCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.engineVersionActual">engine_version_actual</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.hostedZoneId">hosted_zone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecret">master_user_secret</a></code> | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList">RdsClusterMasterUserSecretList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.readerEndpoint">reader_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.restoreToPointInTime">restore_to_point_in_time</a></code> | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference">RdsClusterRestoreToPointInTimeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.s3Import">s3_import</a></code> | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference">RdsClusterS3ImportOutputReference</a></code> | *No description.* |
@@ -1521,8 +1556,10 @@ rdsCluster.RdsCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.iopsInput">iops_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.kmsKeyIdInput">kms_key_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.manageMasterUserPasswordInput">manage_master_user_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterPasswordInput">master_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUsernameInput">master_username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecretKmsKeyIdInput">master_user_secret_kms_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.networkTypeInput">network_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.preferredBackupWindowInput">preferred_backup_window_input</a></code> | <code>str</code> | *No description.* |
@@ -1570,8 +1607,10 @@ rdsCluster.RdsCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.manageMasterUserPassword">manage_master_user_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterPassword">master_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUsername">master_username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecretKmsKeyId">master_user_secret_kms_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.networkType">network_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsCluster.property.preferredBackupWindow">preferred_backup_window</a></code> | <code>str</code> | *No description.* |
@@ -1777,6 +1816,16 @@ hosted_zone_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `master_user_secret`<sup>Required</sup> <a name="master_user_secret" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecret"></a>
+
+```python
+master_user_secret: RdsClusterMasterUserSecretList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList">RdsClusterMasterUserSecretList</a>
 
 ---
 
@@ -2130,6 +2179,16 @@ kms_key_id_input: str
 
 ---
 
+##### `manage_master_user_password_input`<sup>Optional</sup> <a name="manage_master_user_password_input" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.manageMasterUserPasswordInput"></a>
+
+```python
+manage_master_user_password_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `master_password_input`<sup>Optional</sup> <a name="master_password_input" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterPasswordInput"></a>
 
 ```python
@@ -2144,6 +2203,16 @@ master_password_input: str
 
 ```python
 master_username_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `master_user_secret_kms_key_id_input`<sup>Optional</sup> <a name="master_user_secret_kms_key_id_input" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecretKmsKeyIdInput"></a>
+
+```python
+master_user_secret_kms_key_id_input: str
 ```
 
 - *Type:* str
@@ -2620,6 +2689,16 @@ kms_key_id: str
 
 ---
 
+##### `manage_master_user_password`<sup>Required</sup> <a name="manage_master_user_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.manageMasterUserPassword"></a>
+
+```python
+manage_master_user_password: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `master_password`<sup>Required</sup> <a name="master_password" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterPassword"></a>
 
 ```python
@@ -2634,6 +2713,16 @@ master_password: str
 
 ```python
 master_username: str
+```
+
+- *Type:* str
+
+---
+
+##### `master_user_secret_kms_key_id`<sup>Required</sup> <a name="master_user_secret_kms_key_id" id="@cdktf/provider-aws.rdsCluster.RdsCluster.property.masterUserSecretKmsKeyId"></a>
+
+```python
+master_user_secret_kms_key_id: str
 ```
 
 - *Type:* str
@@ -2834,8 +2923,10 @@ rdsCluster.RdsClusterConfig(
   id: str = None,
   iops: typing.Union[int, float] = None,
   kms_key_id: str = None,
+  manage_master_user_password: typing.Union[bool, IResolvable] = None,
   master_password: str = None,
   master_username: str = None,
+  master_user_secret_kms_key_id: str = None,
   network_type: str = None,
   port: typing.Union[int, float] = None,
   preferred_backup_window: str = None,
@@ -2897,8 +2988,10 @@ rdsCluster.RdsClusterConfig(
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#id RdsCluster#id}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#iops RdsCluster#iops}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#kms_key_id RdsCluster#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.manageMasterUserPassword">manage_master_user_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.masterPassword">master_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_password RdsCluster#master_password}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.masterUsername">master_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.masterUserSecretKmsKeyId">master_user_secret_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.networkType">network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#network_type RdsCluster#network_type}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#port RdsCluster#port}. |
 | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.preferredBackupWindow">preferred_backup_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}. |
@@ -3341,6 +3434,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `manage_master_user_password`<sup>Optional</sup> <a name="manage_master_user_password" id="@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.manageMasterUserPassword"></a>
+
+```python
+manage_master_user_password: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#manage_master_user_password RdsCluster#manage_master_user_password}.
+
+---
+
 ##### `master_password`<sup>Optional</sup> <a name="master_password" id="@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.masterPassword"></a>
 
 ```python
@@ -3362,6 +3467,18 @@ master_username: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}.
+
+---
+
+##### `master_user_secret_kms_key_id`<sup>Optional</sup> <a name="master_user_secret_kms_key_id" id="@cdktf/provider-aws.rdsCluster.RdsClusterConfig.property.masterUserSecretKmsKeyId"></a>
+
+```python
+master_user_secret_kms_key_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_user_secret_kms_key_id RdsCluster#master_user_secret_kms_key_id}.
 
 ---
 
@@ -3590,6 +3707,17 @@ vpc_security_group_ids: typing.List[str]
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}.
 
 ---
+
+### RdsClusterMasterUserSecret <a name="RdsClusterMasterUserSecret" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecret"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecret.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import rds_cluster
+
+rdsCluster.RdsClusterMasterUserSecret()
+```
+
 
 ### RdsClusterRestoreToPointInTime <a name="RdsClusterRestoreToPointInTime" id="@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime"></a>
 
@@ -3948,6 +4076,473 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RdsClusterMasterUserSecretList <a name="RdsClusterMasterUserSecretList" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import rds_cluster
+
+rdsCluster.RdsClusterMasterUserSecretList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.get">get</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> RdsClusterMasterUserSecretOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### RdsClusterMasterUserSecretOutputReference <a name="RdsClusterMasterUserSecretOutputReference" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import rds_cluster
+
+rdsCluster.RdsClusterMasterUserSecretOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.secretArn">secret_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.secretStatus">secret_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecret">RdsClusterMasterUserSecret</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `kms_key_id`<sup>Required</sup> <a name="kms_key_id" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.kmsKeyId"></a>
+
+```python
+kms_key_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_arn`<sup>Required</sup> <a name="secret_arn" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.secretArn"></a>
+
+```python
+secret_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_status`<sup>Required</sup> <a name="secret_status" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.secretStatus"></a>
+
+```python
+secret_status: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.property.internalValue"></a>
+
+```python
+internal_value: RdsClusterMasterUserSecret
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecret">RdsClusterMasterUserSecret</a>
+
+---
+
 
 ### RdsClusterRestoreToPointInTimeOutputReference <a name="RdsClusterRestoreToPointInTimeOutputReference" id="@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference"></a>
 

@@ -970,7 +970,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualrouter"
 
 ---
 
-##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
+##### `Listener`<sup>Optional</sup> <a name="Listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
 
 ```go
 Listener interface{}
@@ -1855,6 +1855,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.putListener">PutListener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener">ResetListener</a></code> | *No description.* |
 
 ---
 
@@ -2019,6 +2020,12 @@ func PutListener(value interface{})
 - *Type:* interface{}
 
 ---
+
+##### `ResetListener` <a name="ResetListener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener"></a>
+
+```go
+func ResetListener()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

@@ -1089,8 +1089,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 import com.hashicorp.cdktf.providers.aws.appmesh_virtual_router.AppmeshVirtualRouterSpec;
 
 AppmeshVirtualRouterSpec.builder()
-    .listener(IResolvable)
-    .listener(java.util.List<AppmeshVirtualRouterSpecListener>)
+//  .listener(IResolvable)
+//  .listener(java.util.List<AppmeshVirtualRouterSpecListener>)
     .build();
 ```
 
@@ -1102,7 +1102,7 @@ AppmeshVirtualRouterSpec.builder()
 
 ---
 
-##### `listener`<sup>Required</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
+##### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
 
 ```java
 public java.lang.Object getListener();
@@ -1987,6 +1987,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.putListener">putListener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener">resetListener</a></code> | *No description.* |
 
 ---
 
@@ -2151,6 +2152,12 @@ public void putListener(IResolvable OR java.util.List<AppmeshVirtualRouterSpecLi
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener">AppmeshVirtualRouterSpecListener</a>>
 
 ---
+
+##### `resetListener` <a name="resetListener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener"></a>
+
+```java
+public void resetListener()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

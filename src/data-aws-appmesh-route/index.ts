@@ -1302,6 +1302,209 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList extends cdktf.Comp
     return new DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAppmeshRouteSpecHttp2RouteMatchPath {
+}
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttp2RouteMatchPath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttp2RouteMatchPath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+
+  // regex - computed: true, optional: false, required: false
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference {
+    return new DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch {
+}
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference {
+    return new DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter {
+}
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // match - computed: true, optional: false, required: false
+  private _match = new DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchList(this, "match", false);
+  public get match() {
+    return this._match;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference {
+    return new DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAppmeshRouteSpecHttp2RouteMatch {
 }
 
@@ -1353,6 +1556,12 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf
     return this.getStringAttribute('method');
   }
 
+  // path - computed: true, optional: false, required: false
+  private _path = new DataAwsAppmeshRouteSpecHttp2RouteMatchPathList(this, "path", false);
+  public get path() {
+    return this._path;
+  }
+
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
@@ -1361,6 +1570,12 @@ export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf
   // prefix - computed: true, optional: false, required: false
   public get prefix() {
     return this.getStringAttribute('prefix');
+  }
+
+  // query_parameter - computed: true, optional: false, required: false
+  private _queryParameter = new DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList(this, "query_parameter", true);
+  public get queryParameter() {
+    return this._queryParameter;
   }
 
   // scheme - computed: true, optional: false, required: false
@@ -2196,6 +2411,209 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderList extends cdktf.Compl
     return new DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAppmeshRouteSpecHttpRouteMatchPath {
+}
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttpRouteMatchPath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttpRouteMatchPath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+
+  // regex - computed: true, optional: false, required: false
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchPathList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference {
+    return new DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch {
+}
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference {
+    return new DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter {
+}
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // match - computed: true, optional: false, required: false
+  private _match = new DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchList(this, "match", false);
+  public get match() {
+    return this._match;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference {
+    return new DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAppmeshRouteSpecHttpRouteMatch {
 }
 
@@ -2247,6 +2665,12 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.
     return this.getStringAttribute('method');
   }
 
+  // path - computed: true, optional: false, required: false
+  private _path = new DataAwsAppmeshRouteSpecHttpRouteMatchPathList(this, "path", false);
+  public get path() {
+    return this._path;
+  }
+
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
@@ -2255,6 +2679,12 @@ export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.
   // prefix - computed: true, optional: false, required: false
   public get prefix() {
     return this.getStringAttribute('prefix');
+  }
+
+  // query_parameter - computed: true, optional: false, required: false
+  private _queryParameter = new DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList(this, "query_parameter", true);
+  public get queryParameter() {
+    return this._queryParameter;
   }
 
   // scheme - computed: true, optional: false, required: false
@@ -3251,7 +3681,7 @@ export class DataAwsAppmeshRoute extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appmesh_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

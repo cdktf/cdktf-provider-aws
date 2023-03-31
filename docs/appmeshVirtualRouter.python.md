@@ -414,11 +414,11 @@ def interpolation_for_attribute(
 
 ```python
 def put_spec(
-  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualRouterSpecListener]]
+  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualRouterSpecListener]] = None
 ) -> None
 ```
 
-###### `listener`<sup>Required</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.putSpec.parameter.listener"></a>
+###### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter.putSpec.parameter.listener"></a>
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener">AppmeshVirtualRouterSpecListener</a>]]
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 from cdktf_cdktf_provider_aws import appmesh_virtual_router
 
 appmeshVirtualRouter.AppmeshVirtualRouterSpec(
-  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualRouterSpecListener]]
+  listener: typing.Union[IResolvable, typing.List[AppmeshVirtualRouterSpecListener]] = None
 )
 ```
 
@@ -1134,7 +1134,7 @@ appmeshVirtualRouter.AppmeshVirtualRouterSpec(
 
 ---
 
-##### `listener`<sup>Required</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
+##### `listener`<sup>Optional</sup> <a name="listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
 
 ```python
 listener: typing.Union[IResolvable, typing.List[AppmeshVirtualRouterSpecListener]]
@@ -2095,6 +2095,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.putListener">put_listener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener">reset_listener</a></code> | *No description.* |
 
 ---
 
@@ -2283,6 +2284,12 @@ def put_listener(
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener">AppmeshVirtualRouterSpecListener</a>]]
 
 ---
+
+##### `reset_listener` <a name="reset_listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener"></a>
+
+```python
+def reset_listener() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

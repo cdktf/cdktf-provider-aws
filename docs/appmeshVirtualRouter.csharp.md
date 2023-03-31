@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 using HashiCorp.Cdktf.Providers.Aws;
 
 new AppmeshVirtualRouterSpec {
-    object Listener
+    object Listener = null
 };
 ```
 
@@ -970,7 +970,7 @@ new AppmeshVirtualRouterSpec {
 
 ---
 
-##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
+##### `Listener`<sup>Optional</sup> <a name="Listener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec.property.listener"></a>
 
 ```csharp
 public object Listener { get; set; }
@@ -1855,6 +1855,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.putListener">PutListener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener">ResetListener</a></code> | *No description.* |
 
 ---
 
@@ -2019,6 +2020,12 @@ private void PutListener(object Value)
 - *Type:* object
 
 ---
+
+##### `ResetListener` <a name="ResetListener" id="@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference.resetListener"></a>
+
+```csharp
+private void ResetListener()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

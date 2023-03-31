@@ -50,7 +50,7 @@ export class DataAwsOrganizationsResourceTags extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_organizations_resource_tags',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.60.0',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
