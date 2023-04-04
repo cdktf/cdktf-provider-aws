@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_ins
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarminstanceprofile"
 
 devicefarminstanceprofile.NewDevicefarmInstanceProfile(scope Construct, id *string, config DevicefarmInstanceProfileConfig) DevicefarmInstanceProfile
 ```
@@ -315,7 +315,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarminstanceprofile"
 
 devicefarminstanceprofile.DevicefarmInstanceProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmInstanceProfile.DevicefarmInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarminstanceprofile"
 
 &devicefarminstanceprofile.DevicefarmInstanceProfileConfig {
 	Connection: interface{},

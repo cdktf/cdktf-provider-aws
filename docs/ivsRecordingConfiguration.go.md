@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivs_recording_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfiguration(scope Construct, id *string, config IvsRecordingConfigurationConfig) IvsRecordingConfiguration
 ```
@@ -354,7 +354,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.IvsRecordingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationConfig {
 	Connection: interface{},
@@ -807,14 +807,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DestinationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration,
+	DestinationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration,
 	Id: *string,
 	Name: *string,
 	RecordingReconnectWindowSeconds: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ThumbnailConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts,
+	ThumbnailConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts,
 }
 ```
 
@@ -1020,10 +1020,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationDestinationConfiguration {
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3,
 }
 ```
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationDestinationConfigurationS3 {
 	BucketName: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationThumbnailConfiguration {
 	RecordingMode: *string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 &ivsrecordingconfiguration.IvsRecordingConfigurationTimeouts {
 	Create: *string,
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationDestinationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationDestinationConfigurationOutputReference
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() IvsRecordingConfigurationDestinationConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationDestinationConfigurationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationDestinationConfigurationS3OutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() IvsRecordingConfigurationDestinationConfigurationS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationThumbnailConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationThumbnailConfigurationOutputReference
 ```
@@ -2042,7 +2042,7 @@ func InternalValue() IvsRecordingConfigurationThumbnailConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ivsrecordingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivsrecordingconfiguration"
 
 ivsrecordingconfiguration.NewIvsRecordingConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsRecordingConfigurationTimeoutsOutputReference
 ```

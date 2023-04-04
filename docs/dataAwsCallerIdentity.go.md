@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/caller_identit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.NewDataAwsCallerIdentity(scope Construct, id *string, config DataAwsCallerIdentityConfig) DataAwsCallerIdentity
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 &dataawscalleridentity.DataAwsCallerIdentityConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrorfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.NewEc2TrafficMirrorFilter(scope Construct, id *string, config Ec2TrafficMirrorFilterConfig) Ec2TrafficMirrorFilter
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrorfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrorfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrorfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrorfilter"
 
 ec2trafficmirrorfilter.Ec2TrafficMirrorFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrorfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrorfilter"
 
 &ec2trafficmirrorfilter.Ec2TrafficMirrorFilterConfig {
 	Connection: interface{},

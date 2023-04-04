@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/service_discov
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/servicediscoveryinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryinstance"
 
 servicediscoveryinstance.NewServiceDiscoveryInstance(scope Construct, id *string, config ServiceDiscoveryInstanceConfig) ServiceDiscoveryInstance
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/servicediscoveryinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryinstance"
 
 servicediscoveryinstance.ServiceDiscoveryInstance_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/servicediscoveryinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryinstance"
 
 servicediscoveryinstance.ServiceDiscoveryInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ servicediscoveryinstance.ServiceDiscoveryInstance_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/servicediscoveryinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryinstance"
 
 servicediscoveryinstance.ServiceDiscoveryInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/servicediscoveryinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicediscoveryinstance"
 
 &servicediscoveryinstance.ServiceDiscoveryInstanceConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/acm_certificat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.NewAcmCertificateValidation(scope Construct, id *string, config AcmCertificateValidationConfig) AcmCertificateValidation
 ```
@@ -300,7 +300,7 @@ func ResetValidationRecordFqdns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ acmcertificatevalidation.AcmCertificateValidation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 &acmcertificatevalidation.AcmCertificateValidationConfig {
 	Connection: interface{},
@@ -645,7 +645,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
 	Provisioners: *[]interface{},
 	CertificateArn: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.acmCertificateValidation.AcmCertificateValidationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.acmCertificateValidation.AcmCertificateValidationTimeouts,
 	ValidationRecordFqdns: *[]*string,
 }
 ```
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 &acmcertificatevalidation.AcmCertificateValidationTimeouts {
 	Create: *string,
@@ -830,7 +830,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.NewAcmCertificateValidationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmCertificateValidationTimeoutsOutputReference
 ```

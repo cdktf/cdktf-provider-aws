@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_me
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 apigatewaymethodsettings.NewApiGatewayMethodSettings(scope Construct, id *string, config ApiGatewayMethodSettingsConfig) ApiGatewayMethodSettings
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 apigatewaymethodsettings.ApiGatewayMethodSettings_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 apigatewaymethodsettings.ApiGatewayMethodSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ apigatewaymethodsettings.ApiGatewayMethodSettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 apigatewaymethodsettings.ApiGatewayMethodSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 &apigatewaymethodsettings.ApiGatewayMethodSettingsConfig {
 	Connection: interface{},
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
 	Provisioners: *[]interface{},
 	MethodPath: *string,
 	RestApiId: *string,
-	Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings,
+	Settings: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings,
 	StageName: *string,
 	Id: *string,
 }
@@ -818,7 +818,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 &apigatewaymethodsettings.ApiGatewayMethodSettingsSettings {
 	CacheDataEncrypted: interface{},
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewaymethodsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymethodsettings"
 
 apigatewaymethodsettings.NewApiGatewayMethodSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayMethodSettingsSettingsOutputReference
 ```

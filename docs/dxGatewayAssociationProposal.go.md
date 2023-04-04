@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_ass
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxgatewayassociationproposal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociationproposal"
 
 dxgatewayassociationproposal.NewDxGatewayAssociationProposal(scope Construct, id *string, config DxGatewayAssociationProposalConfig) DxGatewayAssociationProposal
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxgatewayassociationproposal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociationproposal"
 
 dxgatewayassociationproposal.DxGatewayAssociationProposal_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxgatewayassociationproposal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociationproposal"
 
 dxgatewayassociationproposal.DxGatewayAssociationProposal_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dxgatewayassociationproposal.DxGatewayAssociationProposal_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxgatewayassociationproposal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociationproposal"
 
 dxgatewayassociationproposal.DxGatewayAssociationProposal_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxgatewayassociationproposal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxgatewayassociationproposal"
 
 &dxgatewayassociationproposal.DxGatewayAssociationProposalConfig {
 	Connection: interface{},

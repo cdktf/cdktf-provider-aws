@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutpostinstancetype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutpostinstancetype"
 
 dataawsoutpostsoutpostinstancetype.NewDataAwsOutpostsOutpostInstanceType(scope Construct, id *string, config DataAwsOutpostsOutpostInstanceTypeConfig) DataAwsOutpostsOutpostInstanceType
 ```
@@ -287,7 +287,7 @@ func ResetPreferredInstanceTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutpostinstancetype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutpostinstancetype"
 
 dataawsoutpostsoutpostinstancetype.DataAwsOutpostsOutpostInstanceType_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutpostinstancetype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutpostinstancetype"
 
 dataawsoutpostsoutpostinstancetype.DataAwsOutpostsOutpostInstanceType_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsoutpostsoutpostinstancetype.DataAwsOutpostsOutpostInstanceType_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutpostinstancetype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutpostinstancetype"
 
 dataawsoutpostsoutpostinstancetype.DataAwsOutpostsOutpostInstanceType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoutpostsoutpostinstancetype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoutpostsoutpostinstancetype"
 
 &dataawsoutpostsoutpostinstancetype.DataAwsOutpostsOutpostInstanceTypeConfig {
 	Connection: interface{},

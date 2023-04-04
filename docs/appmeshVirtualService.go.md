@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtua
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualService(scope Construct, id *string, config AppmeshVirtualServiceConfig) AppmeshVirtualService
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ appmeshvirtualservice.AppmeshVirtualService_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.AppmeshVirtualService_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualService.AppmeshVirtualServiceSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualService.AppmeshVirtualServiceSpec,
 	Id: *string,
 	MeshOwner: *string,
 	Tags: *map[string]*string,
@@ -955,10 +955,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpec {
-	Provider: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualService.AppmeshVirtualServiceSpecProvider,
+	Provider: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualService.AppmeshVirtualServiceSpecProvider,
 }
 ```
 
@@ -989,11 +989,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProvider {
-	VirtualNode: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode,
-	VirtualRouter: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter,
+	VirtualNode: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode,
+	VirtualRouter: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProviderVirtualNode {
 	VirtualNodeName: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 &appmeshvirtualservice.AppmeshVirtualServiceSpecProviderVirtualRouter {
 	VirtualRouterName: *string,
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecOutputReference
 ```
@@ -1396,7 +1396,7 @@ func InternalValue() AppmeshVirtualServiceSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderOutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() AppmeshVirtualServiceSpecProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() AppmeshVirtualServiceSpecProviderVirtualNode
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshvirtualservice"
 
 appmeshvirtualservice.NewAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssmincidents_r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.NewSsmincidentsReplicationSet(scope Construct, id *string, config SsmincidentsReplicationSetConfig) SsmincidentsReplicationSet
 ```
@@ -320,7 +320,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.SsmincidentsReplicationSet_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.SsmincidentsReplicationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ ssmincidentsreplicationset.SsmincidentsReplicationSet_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.SsmincidentsReplicationSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 &ssmincidentsreplicationset.SsmincidentsReplicationSetConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationse
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 &ssmincidentsreplicationset.SsmincidentsReplicationSetRegion {
 	Name: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 &ssmincidentsreplicationset.SsmincidentsReplicationSetTimeouts {
 	Create: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.NewSsmincidentsReplicationSetRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmincidentsReplicationSetRegionList
 ```
@@ -1160,7 +1160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.NewSsmincidentsReplicationSetRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmincidentsReplicationSetRegionOutputReference
 ```
@@ -1500,7 +1500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmincidentsReplicationSet.SsmincidentsReplicationSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmincidentsreplicationset"
 
 ssmincidentsreplicationset.NewSsmincidentsReplicationSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmincidentsReplicationSetTimeoutsOutputReference
 ```

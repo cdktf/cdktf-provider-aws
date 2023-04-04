@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_serv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/directoryserviceconditionalforwarder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryserviceconditionalforwarder"
 
 directoryserviceconditionalforwarder.NewDirectoryServiceConditionalForwarder(scope Construct, id *string, config DirectoryServiceConditionalForwarderConfig) DirectoryServiceConditionalForwarder
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/directoryserviceconditionalforwarder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryserviceconditionalforwarder"
 
 directoryserviceconditionalforwarder.DirectoryServiceConditionalForwarder_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/directoryserviceconditionalforwarder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryserviceconditionalforwarder"
 
 directoryserviceconditionalforwarder.DirectoryServiceConditionalForwarder_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ directoryserviceconditionalforwarder.DirectoryServiceConditionalForwarder_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/directoryserviceconditionalforwarder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryserviceconditionalforwarder"
 
 directoryserviceconditionalforwarder.DirectoryServiceConditionalForwarder_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/directoryserviceconditionalforwarder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryserviceconditionalforwarder"
 
 &directoryserviceconditionalforwarder.DirectoryServiceConditionalForwarderConfig {
 	Connection: interface{},

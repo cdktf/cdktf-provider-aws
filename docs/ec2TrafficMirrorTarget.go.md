@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TrafficMirrorTarget.Ec2TrafficMirrorTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrortarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrortarget"
 
 ec2trafficmirrortarget.NewEc2TrafficMirrorTarget(scope Construct, id *string, config Ec2TrafficMirrorTargetConfig) Ec2TrafficMirrorTarget
 ```
@@ -315,7 +315,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TrafficMirrorTarget.Ec2TrafficMirrorTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrortarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrortarget"
 
 ec2trafficmirrortarget.Ec2TrafficMirrorTarget_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TrafficMirrorTarget.Ec2TrafficMirrorTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrortarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrortarget"
 
 ec2trafficmirrortarget.Ec2TrafficMirrorTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ ec2trafficmirrortarget.Ec2TrafficMirrorTarget_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TrafficMirrorTarget.Ec2TrafficMirrorTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrortarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrortarget"
 
 ec2trafficmirrortarget.Ec2TrafficMirrorTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TrafficMirrorTarget.Ec2TrafficMirrorTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2trafficmirrortarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2trafficmirrortarget"
 
 &ec2trafficmirrortarget.Ec2TrafficMirrorTargetConfig {
 	Connection: interface{},

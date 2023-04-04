@@ -39,8 +39,6 @@ jobs:
         with:
           name: .repo.patch
           path: .repo.patch
-    container:
-      image: hashicorp/jsii-terraform
   pr:
     name: Create Pull Request
     needs: upgrade

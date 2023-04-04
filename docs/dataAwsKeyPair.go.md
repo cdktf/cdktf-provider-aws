@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/key_pair aws_k
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.NewDataAwsKeyPair(scope Construct, id *string, config DataAwsKeyPairConfig) DataAwsKeyPair
 ```
@@ -341,7 +341,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.DataAwsKeyPair_IsConstruct(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.DataAwsKeyPair_IsTerraformElement(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ dataawskeypair.DataAwsKeyPair_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.DataAwsKeyPair_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 &dataawskeypair.DataAwsKeyPairConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
 	KeyName: *string,
 	KeyPairId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsKeyPair.DataAwsKeyPairTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsKeyPair.DataAwsKeyPairTimeouts,
 }
 ```
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 &dataawskeypair.DataAwsKeyPairFilter {
 	Name: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 &dataawskeypair.DataAwsKeyPairTimeouts {
 	Read: *string,
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.NewDataAwsKeyPairFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKeyPairFilterList
 ```
@@ -1203,7 +1203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.NewDataAwsKeyPairFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKeyPairFilterOutputReference
 ```
@@ -1514,7 +1514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskeypair"
 
 dataawskeypair.NewDataAwsKeyPairTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsKeyPairTimeoutsOutputReference
 ```

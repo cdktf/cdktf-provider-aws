@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_job_defi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinition(scope Construct, id *string, config BatchJobDefinitionConfig) BatchJobDefinition
 ```
@@ -355,7 +355,7 @@ func ResetTimeout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ batchjobdefinition.BatchJobDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionConfig {
 	Connection: interface{},
@@ -881,10 +881,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
 	Parameters: *map[string]*string,
 	PlatformCapabilities: *[]*string,
 	PropagateTags: interface{},
-	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.batchJobDefinition.BatchJobDefinitionRetryStrategy,
+	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionRetryStrategy,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v12.batchJobDefinition.BatchJobDefinitionTimeout,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionTimeout,
 }
 ```
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionRetryStrategy {
 	Attempts: *f64,
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit {
 	Action: *string,
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionTimeout {
 	AttemptDurationSeconds: *f64,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyEvaluateOnExitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobDefinitionRetryStrategyEvaluateOnExitList
 ```
@@ -1426,7 +1426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference
 ```
@@ -1802,7 +1802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionRetryStrategyOutputReference
 ```
@@ -2122,7 +2122,7 @@ func InternalValue() BatchJobDefinitionRetryStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionTimeoutOutputReference
 ```
