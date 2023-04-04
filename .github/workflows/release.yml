@@ -98,6 +98,8 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to GitHub Releases failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
   release_npm:
     name: Publish to npm
     needs: release
@@ -148,6 +150,8 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to npm failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
   release_maven:
     name: Publish to Maven Central
     needs: release
@@ -205,6 +209,8 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to Maven Central failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
   release_pypi:
     name: Publish to PyPI
     needs: release
@@ -257,6 +263,8 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to PyPI failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
   release_nuget:
     name: Publish to NuGet Gallery
     needs: release
@@ -308,6 +316,8 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to NuGet Gallery failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
   release_golang:
     name: Publish to GitHub Go Module Repository
     needs: release
@@ -361,3 +371,5 @@ jobs:
           labels: failed-release
           title: Publishing v${{ steps.extract-version.outputs.VERSION }} to GitHub Go Module Repository failed
           body: See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    container:
+      image: hashicorp/jsii-terraform
