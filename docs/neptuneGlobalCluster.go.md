@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_global
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NewNeptuneGlobalCluster(scope Construct, id *string, config NeptuneGlobalClusterConfig) NeptuneGlobalCluster
 ```
@@ -328,7 +328,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NeptuneGlobalCluster_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NeptuneGlobalCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ neptuneglobalcluster.NeptuneGlobalCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NeptuneGlobalCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 &neptuneglobalcluster.NeptuneGlobalClusterConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
 	Id: *string,
 	SourceDbClusterIdentifier: *string,
 	StorageEncrypted: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.neptuneGlobalCluster.NeptuneGlobalClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeouts,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 &neptuneglobalcluster.NeptuneGlobalClusterGlobalClusterMembers {
 
@@ -1025,7 +1025,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 &neptuneglobalcluster.NeptuneGlobalClusterTimeouts {
 	Create: *string,
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NewNeptuneGlobalClusterGlobalClusterMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NeptuneGlobalClusterGlobalClusterMembersList
 ```
@@ -1219,7 +1219,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NewNeptuneGlobalClusterGlobalClusterMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NeptuneGlobalClusterGlobalClusterMembersOutputReference
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() NeptuneGlobalClusterGlobalClusterMembers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptuneglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptuneglobalcluster"
 
 neptuneglobalcluster.NewNeptuneGlobalClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NeptuneGlobalClusterTimeoutsOutputReference
 ```

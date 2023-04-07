@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudcontrolap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 cloudcontrolapiresource.NewCloudcontrolapiResource(scope Construct, id *string, config CloudcontrolapiResourceConfig) CloudcontrolapiResource
 ```
@@ -314,7 +314,7 @@ func ResetTypeVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 cloudcontrolapiresource.CloudcontrolapiResource_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 cloudcontrolapiresource.CloudcontrolapiResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ cloudcontrolapiresource.CloudcontrolapiResource_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 cloudcontrolapiresource.CloudcontrolapiResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 &cloudcontrolapiresource.CloudcontrolapiResourceConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
 	Id: *string,
 	RoleArn: *string,
 	Schema: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudcontrolapiResource.CloudcontrolapiResourceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeouts,
 	TypeVersionId: *string,
 }
 ```
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 &cloudcontrolapiresource.CloudcontrolapiResourceTimeouts {
 	Create: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudcontrolapiresource"
 
 cloudcontrolapiresource.NewCloudcontrolapiResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudcontrolapiResourceTimeoutsOutputReference
 ```

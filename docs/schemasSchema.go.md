@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasSchema.SchemasSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/schemasschema"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasschema"
 
 schemasschema.NewSchemasSchema(scope Construct, id *string, config SchemasSchemaConfig) SchemasSchema
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.schemasSchema.SchemasSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/schemasschema"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasschema"
 
 schemasschema.SchemasSchema_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.schemasSchema.SchemasSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/schemasschema"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasschema"
 
 schemasschema.SchemasSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ schemasschema.SchemasSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.schemasSchema.SchemasSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/schemasschema"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasschema"
 
 schemasschema.SchemasSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/schemasschema"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasschema"
 
 &schemasschema.SchemasSchemaConfig {
 	Connection: interface{},

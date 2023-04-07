@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_locat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.NewDatasyncLocationFsxOpenzfsFileSystem(scope Construct, id *string, config DatasyncLocationFsxOpenzfsFileSystemConfig) DatasyncLocationFsxOpenzfsFileSystem
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystem_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 &datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystemConfig {
 	Connection: interface{},
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzf
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	FsxFilesystemArn: *string,
-	Protocol: github.com/cdktf/cdktf-provider-aws-go/aws/v12.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocol,
+	Protocol: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocol,
 	SecurityGroupArns: *[]*string,
 	Id: *string,
 	Subdirectory: *string,
@@ -944,10 +944,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 &datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystemProtocol {
-	Nfs: github.com/cdktf/cdktf-provider-aws-go/aws/v12.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfs,
+	Nfs: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfs,
 }
 ```
 
@@ -978,10 +978,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 &datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfs {
-	MountOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v12.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions,
+	MountOptions: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 &datasynclocationfsxopenzfsfilesystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions {
 	Version: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.NewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference
 ```
@@ -1324,7 +1324,7 @@ func InternalValue() DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.NewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference
 ```
@@ -1608,7 +1608,7 @@ func InternalValue() DatasyncLocationFsxOpenzfsFileSystemProtocolNfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationfsxopenzfsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxopenzfsfilesystem"
 
 datasynclocationfsxopenzfsfilesystem.NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference
 ```

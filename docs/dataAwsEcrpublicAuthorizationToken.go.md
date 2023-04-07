@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecrpublic_auth
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.NewDataAwsEcrpublicAuthorizationToken(scope Construct, id *string, config DataAwsEcrpublicAuthorizationTokenConfig) DataAwsEcrpublicAuthorizationToken
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 &dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationTokenConfig {
 	Connection: interface{},

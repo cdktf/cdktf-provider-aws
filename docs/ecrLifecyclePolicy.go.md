@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_lifecycle_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.NewEcrLifecyclePolicy(scope Construct, id *string, config EcrLifecyclePolicyConfig) EcrLifecyclePolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 ecrlifecyclepolicy.EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecrlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrlifecyclepolicy"
 
 &ecrlifecyclepolicy.EcrLifecyclePolicyConfig {
 	Connection: interface{},

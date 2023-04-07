@@ -1391,7 +1391,7 @@ const schedulerScheduleTargetDeadLetterConfig: schedulerSchedule.SchedulerSchedu
 
 ---
 
-##### `arn`<sup>Optional</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -2381,7 +2381,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn">resetArn</a></code> | *No description.* |
 
 ---
 
@@ -2534,12 +2533,6 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `resetArn` <a name="resetArn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn"></a>
-
-```typescript
-public resetArn(): void
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

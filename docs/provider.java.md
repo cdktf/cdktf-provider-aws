@@ -2578,6 +2578,7 @@ AwsProviderEndpoints.builder()
 //  .ce(java.lang.String)
 //  .chime(java.lang.String)
 //  .chimesdkidentity(java.lang.String)
+//  .chimesdkmediapipelines(java.lang.String)
 //  .chimesdkmeetings(java.lang.String)
 //  .chimesdkmessaging(java.lang.String)
 //  .cloud9(java.lang.String)
@@ -2859,6 +2860,7 @@ AwsProviderEndpoints.builder()
 //  .sdb(java.lang.String)
 //  .secretsmanager(java.lang.String)
 //  .securityhub(java.lang.String)
+//  .securitylake(java.lang.String)
 //  .serverlessapplicationrepository(java.lang.String)
 //  .serverlessapprepo(java.lang.String)
 //  .serverlessrepo(java.lang.String)
@@ -2899,6 +2901,7 @@ AwsProviderEndpoints.builder()
 //  .transfer(java.lang.String)
 //  .translate(java.lang.String)
 //  .voiceid(java.lang.String)
+//  .vpclattice(java.lang.String)
 //  .waf(java.lang.String)
 //  .wafregional(java.lang.String)
 //  .wafv2(java.lang.String)
@@ -2962,6 +2965,7 @@ AwsProviderEndpoints.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ce">ce</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chime">chime</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkidentity">chimesdkidentity</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">chimesdkmediapipelines</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmeetings">chimesdkmeetings</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmessaging">chimesdkmessaging</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">cloud9</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
@@ -3243,6 +3247,7 @@ AwsProviderEndpoints.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sdb">sdb</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager">secretsmanager</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securityhub">securityhub</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake">securitylake</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository">serverlessapplicationrepository</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo">serverlessapprepo</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo">serverlessrepo</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
@@ -3283,6 +3288,7 @@ AwsProviderEndpoints.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transfer">transfer</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.translate">translate</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.voiceid">voiceid</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice">vpclattice</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.waf">waf</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafregional">wafregional</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafv2">wafv2</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
@@ -3911,6 +3917,20 @@ public java.lang.String getChimesdkidentity();
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkidentity AwsProvider#chimesdkidentity}
+
+---
+
+##### `chimesdkmediapipelines`<sup>Optional</sup> <a name="chimesdkmediapipelines" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines"></a>
+
+```java
+public java.lang.String getChimesdkmediapipelines();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
 
 ---
 
@@ -7848,6 +7868,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#s
 
 ---
 
+##### `securitylake`<sup>Optional</sup> <a name="securitylake" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake"></a>
+
+```java
+public java.lang.String getSecuritylake();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#securitylake AwsProvider#securitylake}
+
+---
+
 ##### `serverlessapplicationrepository`<sup>Optional</sup> <a name="serverlessapplicationrepository" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository"></a>
 
 ```java
@@ -8405,6 +8439,20 @@ public java.lang.String getVoiceid();
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#voiceid AwsProvider#voiceid}
+
+---
+
+##### `vpclattice`<sup>Optional</sup> <a name="vpclattice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice"></a>
+
+```java
+public java.lang.String getVpclattice();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#vpclattice AwsProvider#vpclattice}
 
 ---
 

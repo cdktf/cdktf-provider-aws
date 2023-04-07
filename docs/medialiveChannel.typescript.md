@@ -7437,7 +7437,7 @@ const medialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutput
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.destination">destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certficateMode">certficateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certficate_mode MedialiveChannel#certficate_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certificateMode">certificateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.connectionRetryInterval">connectionRetryInterval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.numRetries">numRetries</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#num_retries MedialiveChannel#num_retries}. |
 
@@ -7457,15 +7457,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
-##### `certficateMode`<sup>Optional</sup> <a name="certficateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certficateMode"></a>
+##### `certificateMode`<sup>Optional</sup> <a name="certificateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certificateMode"></a>
 
 ```typescript
-public readonly certficateMode: string;
+public readonly certificateMode: string;
 ```
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certficate_mode MedialiveChannel#certficate_mode}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
 
 ---
 
@@ -42978,7 +42978,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.putDestination">putDestination</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetCertficateMode">resetCertficateMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetCertificateMode">resetCertificateMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetConnectionRetryInterval">resetConnectionRetryInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetNumRetries">resetNumRetries</a></code> | *No description.* |
 
@@ -43146,10 +43146,10 @@ public putDestination(value: MedialiveChannelEncoderSettingsOutputGroupsOutputsO
 
 ---
 
-##### `resetCertficateMode` <a name="resetCertficateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetCertficateMode"></a>
+##### `resetCertificateMode` <a name="resetCertificateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetCertificateMode"></a>
 
 ```typescript
-public resetCertficateMode(): void
+public resetCertificateMode(): void
 ```
 
 ##### `resetConnectionRetryInterval` <a name="resetConnectionRetryInterval" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.resetConnectionRetryInterval"></a>
@@ -43172,11 +43172,11 @@ public resetNumRetries(): void
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.destination">destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certficateModeInput">certficateModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certificateModeInput">certificateModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.connectionRetryIntervalInput">connectionRetryIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.destinationInput">destinationInput</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.numRetriesInput">numRetriesInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certficateMode">certficateMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certificateMode">certificateMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.connectionRetryInterval">connectionRetryInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.numRetries">numRetries</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings</a></code> | *No description.* |
@@ -43217,10 +43217,10 @@ public readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsO
 
 ---
 
-##### `certficateModeInput`<sup>Optional</sup> <a name="certficateModeInput" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certficateModeInput"></a>
+##### `certificateModeInput`<sup>Optional</sup> <a name="certificateModeInput" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certificateModeInput"></a>
 
 ```typescript
-public readonly certficateModeInput: string;
+public readonly certificateModeInput: string;
 ```
 
 - *Type:* string
@@ -43257,10 +43257,10 @@ public readonly numRetriesInput: number;
 
 ---
 
-##### `certficateMode`<sup>Required</sup> <a name="certficateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certficateMode"></a>
+##### `certificateMode`<sup>Required</sup> <a name="certificateMode" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.property.certificateMode"></a>
 
 ```typescript
-public readonly certficateMode: string;
+public readonly certificateMode: string;
 ```
 
 - *Type:* string

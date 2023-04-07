@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_layer_v
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdalayerversion"
 
 dataawslambdalayerversion.NewDataAwsLambdaLayerVersion(scope Construct, id *string, config DataAwsLambdaLayerVersionConfig) DataAwsLambdaLayerVersion
 ```
@@ -294,7 +294,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdalayerversion"
 
 dataawslambdalayerversion.DataAwsLambdaLayerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdalayerversion"
 
 dataawslambdalayerversion.DataAwsLambdaLayerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataawslambdalayerversion.DataAwsLambdaLayerVersion_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdalayerversion"
 
 dataawslambdalayerversion.DataAwsLambdaLayerVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdalayerversion"
 
 &dataawslambdalayerversion.DataAwsLambdaLayerVersionConfig {
 	Connection: interface{},

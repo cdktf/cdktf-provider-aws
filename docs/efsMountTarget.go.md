@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_mount_targ
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsMountTarget.EfsMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 efsmounttarget.NewEfsMountTarget(scope Construct, id *string, config EfsMountTargetConfig) EfsMountTarget
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.efsMountTarget.EfsMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.efsMountTarget.EfsMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ efsmounttarget.EfsMountTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.efsMountTarget.EfsMountTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsMountTarget.EfsMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 &efsmounttarget.EfsMountTargetConfig {
 	Connection: interface{},
@@ -776,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
 	Id: *string,
 	IpAddress: *string,
 	SecurityGroups: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.efsMountTarget.EfsMountTargetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.efsMountTarget.EfsMountTargetTimeouts,
 }
 ```
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 &efsmounttarget.EfsMountTargetTimeouts {
 	Create: *string,
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/efsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/efsmounttarget"
 
 efsmounttarget.NewEfsMountTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsMountTargetTimeoutsOutputReference
 ```

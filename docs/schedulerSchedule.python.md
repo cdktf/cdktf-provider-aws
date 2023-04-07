@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 from cdktf_cdktf_provider_aws import scheduler_schedule
 
 schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig(
-  arn: str = None
+  arn: str
 )
 ```
 
@@ -1760,7 +1760,7 @@ schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig(
 
 ---
 
-##### `arn`<sup>Optional</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
 
 ```python
 arn: str
@@ -2822,7 +2822,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn">reset_arn</a></code> | *No description.* |
 
 ---
 
@@ -2997,12 +2996,6 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `reset_arn` <a name="reset_arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn"></a>
-
-```python
-def reset_arn() -> None
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6557,11 +6550,11 @@ Returns a reversible string representation.
 
 ```python
 def put_dead_letter_config(
-  arn: str = None
+  arn: str
 ) -> None
 ```
 
-###### `arn`<sup>Optional</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference.putDeadLetterConfig.parameter.arn"></a>
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference.putDeadLetterConfig.parameter.arn"></a>
 
 - *Type:* str
 

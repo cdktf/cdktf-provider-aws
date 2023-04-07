@@ -399,6 +399,10 @@ export interface SagemakerFeatureGroupOfflineStoreConfig {
   */
   readonly disableGlueTableCreation?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#table_format SagemakerFeatureGroup#table_format}
+  */
+  readonly tableFormat?: string;
+  /**
   * data_catalog_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#data_catalog_config SagemakerFeatureGroup#data_catalog_config}
@@ -419,6 +423,7 @@ export function sagemakerFeatureGroupOfflineStoreConfigToTerraform(struct?: Sage
   }
   return {
     disable_glue_table_creation: cdktf.booleanToTerraform(struct!.disableGlueTableCreation),
+    table_format: cdktf.stringToTerraform(struct!.tableFormat),
     data_catalog_config: sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToTerraform(struct!.dataCatalogConfig),
     s3_storage_config: sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToTerraform(struct!.s3StorageConfig),
   }
@@ -442,6 +447,10 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.disableGlueTableCreation = this._disableGlueTableCreation;
     }
+    if (this._tableFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableFormat = this._tableFormat;
+    }
     if (this._dataCatalogConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataCatalogConfig = this._dataCatalogConfig?.internalValue;
@@ -457,12 +466,14 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this._disableGlueTableCreation = undefined;
+      this._tableFormat = undefined;
       this._dataCatalogConfig.internalValue = undefined;
       this._s3StorageConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._disableGlueTableCreation = value.disableGlueTableCreation;
+      this._tableFormat = value.tableFormat;
       this._dataCatalogConfig.internalValue = value.dataCatalogConfig;
       this._s3StorageConfig.internalValue = value.s3StorageConfig;
     }
@@ -482,6 +493,22 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   // Temporarily expose input value. Use with caution.
   public get disableGlueTableCreationInput() {
     return this._disableGlueTableCreation;
+  }
+
+  // table_format - computed: false, optional: true, required: false
+  private _tableFormat?: string; 
+  public get tableFormat() {
+    return this.getStringAttribute('table_format');
+  }
+  public set tableFormat(value: string) {
+    this._tableFormat = value;
+  }
+  public resetTableFormat() {
+    this._tableFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableFormatInput() {
+    return this._tableFormat;
   }
 
   // data_catalog_config - computed: false, optional: true, required: false
@@ -699,7 +726,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_feature_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

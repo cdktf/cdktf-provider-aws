@@ -23,6 +23,10 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   */
   readonly name?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#name_prefix SagemakerEndpointConfiguration#name_prefix}
+  */
+  readonly namePrefix?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#tags SagemakerEndpointConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -1968,7 +1972,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_endpoint_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1982,6 +1986,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
     this._name = config.name;
+    this._namePrefix = config.namePrefix;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._asyncInferenceConfig.internalValue = config.asyncInferenceConfig;
@@ -2045,6 +2050,22 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // name_prefix - computed: true, optional: true, required: false
+  private _namePrefix?: string; 
+  public get namePrefix() {
+    return this.getStringAttribute('name_prefix');
+  }
+  public set namePrefix(value: string) {
+    this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -2149,6 +2170,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       async_inference_config: sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(this._asyncInferenceConfig.internalValue),

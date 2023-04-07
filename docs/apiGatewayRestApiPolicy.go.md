@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_re
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.NewApiGatewayRestApiPolicy(scope Construct, id *string, config ApiGatewayRestApiPolicyConfig) ApiGatewayRestApiPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 &apigatewayrestapipolicy.ApiGatewayRestApiPolicyConfig {
 	Connection: interface{},

@@ -166,7 +166,7 @@ export class GrafanaRoleAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_role_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -33,7 +33,15 @@ export interface SecretsmanagerSecretRotationRotationRules {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}
   */
-  readonly automaticallyAfterDays: number;
+  readonly automaticallyAfterDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}
+  */
+  readonly duration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}
+  */
+  readonly scheduleExpression?: string;
 }
 
 export function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRotationRulesOutputReference | SecretsmanagerSecretRotationRotationRules): any {
@@ -43,6 +51,8 @@ export function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: Se
   }
   return {
     automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
+    duration: cdktf.stringToTerraform(struct!.duration),
+    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
@@ -64,6 +74,14 @@ export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.automaticallyAfterDays = this._automaticallyAfterDays;
     }
+    if (this._duration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._scheduleExpression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduleExpression = this._scheduleExpression;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -71,14 +89,18 @@ export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cd
     if (value === undefined) {
       this.isEmptyObject = false;
       this._automaticallyAfterDays = undefined;
+      this._duration = undefined;
+      this._scheduleExpression = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._automaticallyAfterDays = value.automaticallyAfterDays;
+      this._duration = value.duration;
+      this._scheduleExpression = value.scheduleExpression;
     }
   }
 
-  // automatically_after_days - computed: false, optional: false, required: true
+  // automatically_after_days - computed: false, optional: true, required: false
   private _automaticallyAfterDays?: number; 
   public get automaticallyAfterDays() {
     return this.getNumberAttribute('automatically_after_days');
@@ -86,9 +108,44 @@ export class SecretsmanagerSecretRotationRotationRulesOutputReference extends cd
   public set automaticallyAfterDays(value: number) {
     this._automaticallyAfterDays = value;
   }
+  public resetAutomaticallyAfterDays() {
+    this._automaticallyAfterDays = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get automaticallyAfterDaysInput() {
     return this._automaticallyAfterDays;
+  }
+
+  // duration - computed: false, optional: true, required: false
+  private _duration?: string; 
+  public get duration() {
+    return this.getStringAttribute('duration');
+  }
+  public set duration(value: string) {
+    this._duration = value;
+  }
+  public resetDuration() {
+    this._duration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration;
+  }
+
+  // schedule_expression - computed: false, optional: true, required: false
+  private _scheduleExpression?: string; 
+  public get scheduleExpression() {
+    return this.getStringAttribute('schedule_expression');
+  }
+  public set scheduleExpression(value: string) {
+    this._scheduleExpression = value;
+  }
+  public resetScheduleExpression() {
+    this._scheduleExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleExpressionInput() {
+    return this._scheduleExpression;
   }
 }
 
@@ -118,7 +175,7 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

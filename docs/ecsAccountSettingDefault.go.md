@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_se
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecsaccountsettingdefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.NewEcsAccountSettingDefault(scope Construct, id *string, config EcsAccountSettingDefaultConfig) EcsAccountSettingDefault
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecsaccountsettingdefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecsaccountsettingdefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecsaccountsettingdefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecsaccountsettingdefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsaccountsettingdefault"
 
 &ecsaccountsettingdefault.EcsAccountSettingDefaultConfig {
 	Connection: interface{},

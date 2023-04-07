@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicsubscription"
 
 snstopicsubscription.NewSnsTopicSubscription(scope Construct, id *string, config SnsTopicSubscriptionConfig) SnsTopicSubscription
 ```
@@ -329,7 +329,7 @@ func ResetSubscriptionRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ snstopicsubscription.SnsTopicSubscription_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicsubscription"
 
 &snstopicsubscription.SnsTopicSubscriptionConfig {
 	Connection: interface{},

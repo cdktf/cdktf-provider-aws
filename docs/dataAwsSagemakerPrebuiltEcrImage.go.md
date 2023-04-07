@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/sagemaker_preb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssagemakerprebuiltecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssagemakerprebuiltecrimage"
 
 dataawssagemakerprebuiltecrimage.NewDataAwsSagemakerPrebuiltEcrImage(scope Construct, id *string, config DataAwsSagemakerPrebuiltEcrImageConfig) DataAwsSagemakerPrebuiltEcrImage
 ```
@@ -294,7 +294,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssagemakerprebuiltecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssagemakerprebuiltecrimage"
 
 dataawssagemakerprebuiltecrimage.DataAwsSagemakerPrebuiltEcrImage_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssagemakerprebuiltecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssagemakerprebuiltecrimage"
 
 dataawssagemakerprebuiltecrimage.DataAwsSagemakerPrebuiltEcrImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataawssagemakerprebuiltecrimage.DataAwsSagemakerPrebuiltEcrImage_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssagemakerprebuiltecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssagemakerprebuiltecrimage"
 
 dataawssagemakerprebuiltecrimage.DataAwsSagemakerPrebuiltEcrImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssagemakerprebuiltecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssagemakerprebuiltecrimage"
 
 &dataawssagemakerprebuiltecrimage.DataAwsSagemakerPrebuiltEcrImageConfig {
 	Connection: interface{},

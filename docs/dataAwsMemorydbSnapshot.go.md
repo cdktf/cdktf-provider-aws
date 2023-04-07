@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/memorydb_snaps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshot(scope Construct, id *string, config DataAwsMemorydbSnapshotConfig) DataAwsMemorydbSnapshot
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.DataAwsMemorydbSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotClusterConfiguration {
 
@@ -637,7 +637,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 &dataawsmemorydbsnapshot.DataAwsMemorydbSnapshotConfig {
 	Connection: interface{},
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbSnapshotClusterConfigurationList
 ```
@@ -918,7 +918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsnapshot"
 
 dataawsmemorydbsnapshot.NewDataAwsMemorydbSnapshotClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbSnapshotClusterConfigurationOutputReference
 ```

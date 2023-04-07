@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_ide
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssesdomainidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesdomainidentity"
 
 dataawssesdomainidentity.NewDataAwsSesDomainIdentity(scope Construct, id *string, config DataAwsSesDomainIdentityConfig) DataAwsSesDomainIdentity
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssesdomainidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesdomainidentity"
 
 dataawssesdomainidentity.DataAwsSesDomainIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssesdomainidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesdomainidentity"
 
 dataawssesdomainidentity.DataAwsSesDomainIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawssesdomainidentity.DataAwsSesDomainIdentity_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssesdomainidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesdomainidentity"
 
 dataawssesdomainidentity.DataAwsSesDomainIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssesdomainidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesdomainidentity"
 
 &dataawssesdomainidentity.DataAwsSesDomainIdentityConfig {
 	Connection: interface{},

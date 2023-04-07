@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/memorydb_param
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroup(scope Construct, id *string, config DataAwsMemorydbParameterGroupConfig) DataAwsMemorydbParameterGroup
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 &dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroupConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 &dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroupParameter {
 
@@ -775,7 +775,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparameterg
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbParameterGroupParameterList
 ```
@@ -907,7 +907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbParameterGroupParameterOutputReference
 ```

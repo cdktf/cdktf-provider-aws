@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_security_gr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.NewDbSecurityGroup(scope Construct, id *string, config DbSecurityGroupConfig) DbSecurityGroup
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.DbSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.DbSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dbsecuritygroup.DbSecurityGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.DbSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 &dbsecuritygroup.DbSecurityGroupConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 &dbsecuritygroup.DbSecurityGroupIngress {
 	Cidr: *string,
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.NewDbSecurityGroupIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbSecurityGroupIngressList
 ```
@@ -1105,7 +1105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbsecuritygroup"
 
 dbsecuritygroup.NewDbSecurityGroupIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbSecurityGroupIngressOutputReference
 ```

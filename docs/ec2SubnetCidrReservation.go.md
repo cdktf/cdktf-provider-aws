@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_subnet_cid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2subnetcidrreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2subnetcidrreservation"
 
 ec2subnetcidrreservation.NewEc2SubnetCidrReservation(scope Construct, id *string, config Ec2SubnetCidrReservationConfig) Ec2SubnetCidrReservation
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2subnetcidrreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2subnetcidrreservation"
 
 ec2subnetcidrreservation.Ec2SubnetCidrReservation_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2subnetcidrreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2subnetcidrreservation"
 
 ec2subnetcidrreservation.Ec2SubnetCidrReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ ec2subnetcidrreservation.Ec2SubnetCidrReservation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2subnetcidrreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2subnetcidrreservation"
 
 ec2subnetcidrreservation.Ec2SubnetCidrReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ec2subnetcidrreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2subnetcidrreservation"
 
 &ec2subnetcidrreservation.Ec2SubnetCidrReservationConfig {
 	Connection: interface{},

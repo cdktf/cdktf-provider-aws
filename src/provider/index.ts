@@ -636,6 +636,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
+  */
+  readonly chimesdkmediapipelines?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmeetings AwsProvider#chimesdkmeetings}
   */
   readonly chimesdkmeetings?: string;
@@ -2322,6 +2328,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#securitylake AwsProvider#securitylake}
+  */
+  readonly securitylake?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
   */
   readonly serverlessapplicationrepository?: string;
@@ -2562,6 +2574,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#vpclattice AwsProvider#vpclattice}
+  */
+  readonly vpclattice?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#waf AwsProvider#waf}
   */
   readonly waf?: string;
@@ -2683,6 +2701,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     ce: cdktf.stringToTerraform(struct!.ce),
     chime: cdktf.stringToTerraform(struct!.chime),
     chimesdkidentity: cdktf.stringToTerraform(struct!.chimesdkidentity),
+    chimesdkmediapipelines: cdktf.stringToTerraform(struct!.chimesdkmediapipelines),
     chimesdkmeetings: cdktf.stringToTerraform(struct!.chimesdkmeetings),
     chimesdkmessaging: cdktf.stringToTerraform(struct!.chimesdkmessaging),
     cloud9: cdktf.stringToTerraform(struct!.cloud9),
@@ -2964,6 +2983,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     sdb: cdktf.stringToTerraform(struct!.sdb),
     secretsmanager: cdktf.stringToTerraform(struct!.secretsmanager),
     securityhub: cdktf.stringToTerraform(struct!.securityhub),
+    securitylake: cdktf.stringToTerraform(struct!.securitylake),
     serverlessapplicationrepository: cdktf.stringToTerraform(struct!.serverlessapplicationrepository),
     serverlessapprepo: cdktf.stringToTerraform(struct!.serverlessapprepo),
     serverlessrepo: cdktf.stringToTerraform(struct!.serverlessrepo),
@@ -3004,6 +3024,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     transfer: cdktf.stringToTerraform(struct!.transfer),
     translate: cdktf.stringToTerraform(struct!.translate),
     voiceid: cdktf.stringToTerraform(struct!.voiceid),
+    vpclattice: cdktf.stringToTerraform(struct!.vpclattice),
     waf: cdktf.stringToTerraform(struct!.waf),
     wafregional: cdktf.stringToTerraform(struct!.wafregional),
     wafv2: cdktf.stringToTerraform(struct!.wafv2),
@@ -3072,7 +3093,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

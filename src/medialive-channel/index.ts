@@ -12293,9 +12293,9 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtm
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certficate_mode MedialiveChannel#certficate_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
   */
-  readonly certficateMode?: string;
+  readonly certificateMode?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
@@ -12318,7 +12318,7 @@ export function medialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certficate_mode: cdktf.stringToTerraform(struct!.certficateMode),
+    certificate_mode: cdktf.stringToTerraform(struct!.certificateMode),
     connection_retry_interval: cdktf.numberToTerraform(struct!.connectionRetryInterval),
     num_retries: cdktf.numberToTerraform(struct!.numRetries),
     destination: medialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationToTerraform(struct!.destination),
@@ -12339,9 +12339,9 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtm
   public get internalValue(): MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certficateMode !== undefined) {
+    if (this._certificateMode !== undefined) {
       hasAnyValues = true;
-      internalValueResult.certficateMode = this._certficateMode;
+      internalValueResult.certificateMode = this._certificateMode;
     }
     if (this._connectionRetryInterval !== undefined) {
       hasAnyValues = true;
@@ -12361,34 +12361,34 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtm
   public set internalValue(value: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._certficateMode = undefined;
+      this._certificateMode = undefined;
       this._connectionRetryInterval = undefined;
       this._numRetries = undefined;
       this._destination.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._certficateMode = value.certficateMode;
+      this._certificateMode = value.certificateMode;
       this._connectionRetryInterval = value.connectionRetryInterval;
       this._numRetries = value.numRetries;
       this._destination.internalValue = value.destination;
     }
   }
 
-  // certficate_mode - computed: true, optional: true, required: false
-  private _certficateMode?: string; 
-  public get certficateMode() {
-    return this.getStringAttribute('certficate_mode');
+  // certificate_mode - computed: true, optional: true, required: false
+  private _certificateMode?: string; 
+  public get certificateMode() {
+    return this.getStringAttribute('certificate_mode');
   }
-  public set certficateMode(value: string) {
-    this._certficateMode = value;
+  public set certificateMode(value: string) {
+    this._certificateMode = value;
   }
-  public resetCertficateMode() {
-    this._certficateMode = undefined;
+  public resetCertificateMode() {
+    this._certificateMode = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get certficateModeInput() {
-    return this._certficateMode;
+  public get certificateModeInput() {
+    return this._certificateMode;
   }
 
   // connection_retry_interval - computed: true, optional: true, required: false
@@ -20793,7 +20793,7 @@ export class MedialiveChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

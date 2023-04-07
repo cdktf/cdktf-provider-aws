@@ -64,6 +64,11 @@ export class DataAwsDbProxyAuthOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('auth_scheme');
   }
 
+  // client_password_auth_type - computed: true, optional: false, required: false
+  public get clientPasswordAuthType() {
+    return this.getStringAttribute('client_password_auth_type');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
@@ -130,7 +135,7 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_proxy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

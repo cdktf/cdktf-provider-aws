@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_gl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.NewElasticacheGlobalReplicationGroup(scope Construct, id *string, config ElasticacheGlobalReplicationGroupConfig) ElasticacheGlobalReplicationGroup
 ```
@@ -335,7 +335,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroup_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroup_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 &elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroupConfig {
 	Connection: interface{},
@@ -918,7 +918,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicat
 	Id: *string,
 	NumNodeGroups: *f64,
 	ParameterGroupName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeouts,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 &elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroupGlobalNodeGroups {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicat
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 &elasticacheglobalreplicationgroup.ElasticacheGlobalReplicationGroupTimeouts {
 	Create: *string,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheGlobalReplicationGroupGlobalNodeGroupsList
 ```
@@ -1353,7 +1353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.NewElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference
 ```
@@ -1642,7 +1642,7 @@ func InternalValue() ElasticacheGlobalReplicationGroupGlobalNodeGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheglobalreplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticacheglobalreplicationgroup"
 
 elasticacheglobalreplicationgroup.NewElasticacheGlobalReplicationGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheGlobalReplicationGroupTimeoutsOutputReference
 ```

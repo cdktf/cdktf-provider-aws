@@ -160,7 +160,7 @@ export interface SchedulerScheduleTargetDeadLetterConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/scheduler_schedule#arn SchedulerSchedule#arn}
   */
-  readonly arn?: string;
+  readonly arn: string;
 }
 
 export function schedulerScheduleTargetDeadLetterConfigToTerraform(struct?: SchedulerScheduleTargetDeadLetterConfigOutputReference | SchedulerScheduleTargetDeadLetterConfig): any {
@@ -205,16 +205,13 @@ export class SchedulerScheduleTargetDeadLetterConfigOutputReference extends cdkt
     }
   }
 
-  // arn - computed: false, optional: true, required: false
+  // arn - computed: false, optional: false, required: true
   private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
-  }
-  public resetArn() {
-    this._arn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
@@ -1981,7 +1978,7 @@ export class SchedulerSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_scheduler_schedule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

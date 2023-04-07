@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_reserved_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstance(scope Construct, id *string, config RdsReservedInstanceConfig) RdsReservedInstance
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ rdsreservedinstance.RdsReservedInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
 	ReservationId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsReservedInstance.RdsReservedInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rdsReservedInstance.RdsReservedInstanceTimeouts,
 }
 ```
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringCharges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceRecurringCharges {
 
@@ -1081,7 +1081,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceTimeouts {
 	Create: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceRecurringChargesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsReservedInstanceRecurringChargesList
 ```
@@ -1275,7 +1275,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceRecurringChargesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RdsReservedInstanceRecurringChargesOutputReference
 ```
@@ -1564,7 +1564,7 @@ func InternalValue() RdsReservedInstanceRecurringCharges
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsreservedinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsReservedInstanceTimeoutsOutputReference
 ```

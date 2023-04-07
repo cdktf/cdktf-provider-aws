@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotation(scope Construct, id *string, config DataAwsSecretsmanagerSecretRotationConfig) DataAwsSecretsmanagerSecretRotation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 &dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotationConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 &dataawssecretsmanagersecretrotation.DataAwsSecretsmanagerSecretRotationRotationRules {
 
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationRotationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretRotationRotationRulesList
 ```
@@ -853,7 +853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssecretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecretrotation"
 
 dataawssecretsmanagersecretrotation.NewDataAwsSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference
 ```
@@ -1077,6 +1077,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.automaticallyAfterDays">AutomaticallyAfterDays</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.duration">Duration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRules">DataAwsSecretsmanagerSecretRotationRotationRules</a></code> | *No description.* |
 
 ---
@@ -1112,6 +1114,26 @@ func AutomaticallyAfterDays() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `Duration`<sup>Required</sup> <a name="Duration" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.duration"></a>
+
+```go
+func Duration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScheduleExpression`<sup>Required</sup> <a name="ScheduleExpression" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference.property.scheduleExpression"></a>
+
+```go
+func ScheduleExpression() *string
+```
+
+- *Type:* *string
 
 ---
 

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameter 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmparameter"
 
 dataawsssmparameter.NewDataAwsSsmParameter(scope Construct, id *string, config DataAwsSsmParameterConfig) DataAwsSsmParameter
 ```
@@ -280,7 +280,7 @@ func ResetWithDecryption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmparameter"
 
 dataawsssmparameter.DataAwsSsmParameter_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmparameter"
 
 dataawsssmparameter.DataAwsSsmParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsssmparameter.DataAwsSsmParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmparameter"
 
 dataawsssmparameter.DataAwsSsmParameter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmparameter"
 
 &dataawsssmparameter.DataAwsSsmParameterConfig {
 	Connection: interface{},

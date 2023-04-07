@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroup(scope Construct, id *string, config SagemakerFeatureGroupConfig) SagemakerFeatureGroup
 ```
@@ -347,7 +347,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.SagemakerFeatureGroup_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.SagemakerFeatureGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ sagemakerfeaturegroup.SagemakerFeatureGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.SagemakerFeatureGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupConfig {
 	Connection: interface{},
@@ -862,8 +862,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
 	RoleArn: *string,
 	Description: *string,
 	Id: *string,
-	OfflineStoreConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig,
-	OnlineStoreConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig,
+	OfflineStoreConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig,
+	OnlineStoreConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupFeatureDefinition {
 	FeatureName: *string,
@@ -1156,12 +1156,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupOfflineStoreConfig {
-	S3StorageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig,
-	DataCatalogConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig,
+	S3StorageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig,
+	DataCatalogConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig,
 	DisableGlueTableCreation: interface{},
+	TableFormat: *string,
 }
 ```
 
@@ -1172,6 +1173,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.property.s3StorageConfig">S3StorageConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig">SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig</a></code> | s3_storage_config block. |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.property.dataCatalogConfig">DataCatalogConfig</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig">SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig</a></code> | data_catalog_config block. |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.property.disableGlueTableCreation">DisableGlueTableCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.property.tableFormat">TableFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#table_format SagemakerFeatureGroup#table_format}. |
 
 ---
 
@@ -1215,12 +1217,24 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `TableFormat`<sup>Optional</sup> <a name="TableFormat" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig.property.tableFormat"></a>
+
+```go
+TableFormat *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#table_format SagemakerFeatureGroup#table_format}.
+
+---
+
 ### SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig <a name="SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig {
 	Catalog: *string,
@@ -1280,7 +1294,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig {
 	S3Uri: *string,
@@ -1326,11 +1340,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupOnlineStoreConfig {
 	EnableOnlineStore: interface{},
-	SecurityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig,
+	SecurityConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig,
 }
 ```
 
@@ -1374,7 +1388,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 &sagemakerfeaturegroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig {
 	KmsKeyId: *string,
@@ -1408,7 +1422,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupFeatureDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerFeatureGroupFeatureDefinitionList
 ```
@@ -1551,7 +1565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupFeatureDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerFeatureGroupFeatureDefinitionOutputReference
 ```
@@ -1876,7 +1890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference
 ```
@@ -2212,7 +2226,7 @@ func InternalValue() SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupOfflineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFeatureGroupOfflineStoreConfigOutputReference
 ```
@@ -2261,6 +2275,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.putS3StorageConfig">PutS3StorageConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.resetDataCatalogConfig">ResetDataCatalogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.resetDisableGlueTableCreation">ResetDisableGlueTableCreation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.resetTableFormat">ResetTableFormat</a></code> | *No description.* |
 
 ---
 
@@ -2450,6 +2465,12 @@ func ResetDataCatalogConfig()
 func ResetDisableGlueTableCreation()
 ```
 
+##### `ResetTableFormat` <a name="ResetTableFormat" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.resetTableFormat"></a>
+
+```go
+func ResetTableFormat()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2462,7 +2483,9 @@ func ResetDisableGlueTableCreation()
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.dataCatalogConfigInput">DataCatalogConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig">SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.disableGlueTableCreationInput">DisableGlueTableCreationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.s3StorageConfigInput">S3StorageConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig">SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.tableFormatInput">TableFormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.disableGlueTableCreation">DisableGlueTableCreation</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.tableFormat">TableFormat</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig">SagemakerFeatureGroupOfflineStoreConfig</a></code> | *No description.* |
 
 ---
@@ -2541,6 +2564,16 @@ func S3StorageConfigInput() SagemakerFeatureGroupOfflineStoreConfigS3StorageConf
 
 ---
 
+##### `TableFormatInput`<sup>Optional</sup> <a name="TableFormatInput" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.tableFormatInput"></a>
+
+```go
+func TableFormatInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisableGlueTableCreation`<sup>Required</sup> <a name="DisableGlueTableCreation" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.disableGlueTableCreation"></a>
 
 ```go
@@ -2548,6 +2581,16 @@ func DisableGlueTableCreation() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `TableFormat`<sup>Required</sup> <a name="TableFormat" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference.property.tableFormat"></a>
+
+```go
+func TableFormat() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -2567,7 +2610,7 @@ func InternalValue() SagemakerFeatureGroupOfflineStoreConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference
 ```
@@ -2867,7 +2910,7 @@ func InternalValue() SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupOnlineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFeatureGroupOnlineStoreConfigOutputReference
 ```
@@ -3187,7 +3230,7 @@ func InternalValue() SagemakerFeatureGroupOnlineStoreConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/sagemakerfeaturegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerfeaturegroup"
 
 sagemakerfeaturegroup.NewSagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
 ```
