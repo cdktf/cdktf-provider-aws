@@ -43,6 +43,10 @@ export interface ImagebuilderContainerRecipeConfig extends cdktf.TerraformMetaAr
   */
   readonly parentImage: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#platform_override ImagebuilderContainerRecipe#platform_override}
+  */
+  readonly platformOverride?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#tags ImagebuilderContainerRecipe#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -959,7 +963,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_container_recipe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -978,6 +982,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._parentImage = config.parentImage;
+    this._platformOverride = config.platformOverride;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._version = config.version;
@@ -1135,6 +1140,22 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
     return this.getStringAttribute('platform');
   }
 
+  // platform_override - computed: false, optional: true, required: false
+  private _platformOverride?: string; 
+  public get platformOverride() {
+    return this.getStringAttribute('platform_override');
+  }
+  public set platformOverride(value: string) {
+    this._platformOverride = value;
+  }
+  public resetPlatformOverride() {
+    this._platformOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformOverrideInput() {
+    return this._platformOverride;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -1252,6 +1273,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       parent_image: cdktf.stringToTerraform(this._parentImage),
+      platform_override: cdktf.stringToTerraform(this._platformOverride),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),

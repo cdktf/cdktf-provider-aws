@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 using HashiCorp.Cdktf.Providers.Aws;
 
 new SchedulerScheduleTargetDeadLetterConfig {
-    string Arn = null
+    string Arn
 };
 ```
 
@@ -1428,7 +1428,7 @@ new SchedulerScheduleTargetDeadLetterConfig {
 
 ---
 
-##### `Arn`<sup>Optional</sup> <a name="Arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn"></a>
 
 ```csharp
 public string Arn { get; set; }
@@ -2462,7 +2462,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn">ResetArn</a></code> | *No description.* |
 
 ---
 
@@ -2615,12 +2614,6 @@ private string ToString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `ResetArn` <a name="ResetArn" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.resetArn"></a>
-
-```csharp
-private void ResetArn()
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

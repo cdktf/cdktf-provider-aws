@@ -2167,6 +2167,7 @@ new AwsProviderEndpoints {
     string Ce = null,
     string Chime = null,
     string Chimesdkidentity = null,
+    string Chimesdkmediapipelines = null,
     string Chimesdkmeetings = null,
     string Chimesdkmessaging = null,
     string Cloud9 = null,
@@ -2448,6 +2449,7 @@ new AwsProviderEndpoints {
     string Sdb = null,
     string Secretsmanager = null,
     string Securityhub = null,
+    string Securitylake = null,
     string Serverlessapplicationrepository = null,
     string Serverlessapprepo = null,
     string Serverlessrepo = null,
@@ -2488,6 +2490,7 @@ new AwsProviderEndpoints {
     string Transfer = null,
     string Translate = null,
     string Voiceid = null,
+    string Vpclattice = null,
     string Waf = null,
     string Wafregional = null,
     string Wafv2 = null,
@@ -2551,6 +2554,7 @@ new AwsProviderEndpoints {
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ce">Ce</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chime">Chime</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkidentity">Chimesdkidentity</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">Chimesdkmediapipelines</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmeetings">Chimesdkmeetings</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmessaging">Chimesdkmessaging</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">Cloud9</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
@@ -2832,6 +2836,7 @@ new AwsProviderEndpoints {
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sdb">Sdb</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager">Secretsmanager</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securityhub">Securityhub</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake">Securitylake</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository">Serverlessapplicationrepository</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo">Serverlessapprepo</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo">Serverlessrepo</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
@@ -2872,6 +2877,7 @@ new AwsProviderEndpoints {
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transfer">Transfer</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.translate">Translate</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.voiceid">Voiceid</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice">Vpclattice</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.waf">Waf</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafregional">Wafregional</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafv2">Wafv2</a></code> | <code>string</code> | Use this to override the default service endpoint URL. |
@@ -3500,6 +3506,20 @@ public string Chimesdkidentity { get; set; }
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkidentity AwsProvider#chimesdkidentity}
+
+---
+
+##### `Chimesdkmediapipelines`<sup>Optional</sup> <a name="Chimesdkmediapipelines" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines"></a>
+
+```csharp
+public string Chimesdkmediapipelines { get; set; }
+```
+
+- *Type:* string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
 
 ---
 
@@ -7437,6 +7457,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#s
 
 ---
 
+##### `Securitylake`<sup>Optional</sup> <a name="Securitylake" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake"></a>
+
+```csharp
+public string Securitylake { get; set; }
+```
+
+- *Type:* string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#securitylake AwsProvider#securitylake}
+
+---
+
 ##### `Serverlessapplicationrepository`<sup>Optional</sup> <a name="Serverlessapplicationrepository" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository"></a>
 
 ```csharp
@@ -7994,6 +8028,20 @@ public string Voiceid { get; set; }
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#voiceid AwsProvider#voiceid}
+
+---
+
+##### `Vpclattice`<sup>Optional</sup> <a name="Vpclattice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice"></a>
+
+```csharp
+public string Vpclattice { get; set; }
+```
+
+- *Type:* string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#vpclattice AwsProvider#vpclattice}
 
 ---
 

@@ -54,7 +54,7 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.Terra
       terraformResourceType: 'aws_sagemaker_notebook_instance_lifecycle_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -483,7 +483,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_managed_user_pool_client',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -671,7 +671,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
     return this._enableTokenRevocation;
   }
 
-  // explicit_auth_flows - computed: false, optional: true, required: false
+  // explicit_auth_flows - computed: true, optional: true, required: false
   private _explicitAuthFlows?: string[]; 
   public get explicitAuthFlows() {
     return cdktf.Fn.tolist(this.getListAttribute('explicit_auth_flows'));
@@ -777,7 +777,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
     return this._preventUserExistenceErrors;
   }
 
-  // read_attributes - computed: false, optional: true, required: false
+  // read_attributes - computed: true, optional: true, required: false
   private _readAttributes?: string[]; 
   public get readAttributes() {
     return cdktf.Fn.tolist(this.getListAttribute('read_attributes'));
@@ -838,7 +838,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
     return this._userPoolId;
   }
 
-  // write_attributes - computed: false, optional: true, required: false
+  // write_attributes - computed: true, optional: true, required: false
   private _writeAttributes?: string[]; 
   public get writeAttributes() {
     return cdktf.Fn.tolist(this.getListAttribute('write_attributes'));

@@ -63,6 +63,16 @@ export class DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference ext
   public get automaticallyAfterDays() {
     return this.getNumberAttribute('automatically_after_days');
   }
+
+  // duration - computed: true, optional: false, required: false
+  public get duration() {
+    return this.getStringAttribute('duration');
+  }
+
+  // schedule_expression - computed: true, optional: false, required: false
+  public get scheduleExpression() {
+    return this.getStringAttribute('schedule_expression');
+  }
 }
 
 export class DataAwsSecretsmanagerSecretRotationRotationRulesList extends cdktf.ComplexList {
@@ -110,7 +120,7 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_secretsmanager_secret_rotation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

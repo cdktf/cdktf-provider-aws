@@ -51,6 +51,12 @@ export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArgum
   */
   readonly autoStopConfiguration?: EmrserverlessApplicationAutoStopConfiguration;
   /**
+  * image_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
+  */
+  readonly imageConfiguration?: EmrserverlessApplicationImageConfiguration;
+  /**
   * initial_capacity block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
@@ -224,6 +230,68 @@ export class EmrserverlessApplicationAutoStopConfigurationOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get idleTimeoutMinutesInput() {
     return this._idleTimeoutMinutes;
+  }
+}
+export interface EmrserverlessApplicationImageConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#image_uri EmrserverlessApplication#image_uri}
+  */
+  readonly imageUri: string;
+}
+
+export function emrserverlessApplicationImageConfigurationToTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    image_uri: cdktf.stringToTerraform(struct!.imageUri),
+  }
+}
+
+export class EmrserverlessApplicationImageConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EmrserverlessApplicationImageConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imageUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageUri = this._imageUri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmrserverlessApplicationImageConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._imageUri = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._imageUri = value.imageUri;
+    }
+  }
+
+  // image_uri - computed: false, optional: false, required: true
+  private _imageUri?: string; 
+  public get imageUri() {
+    return this.getStringAttribute('image_uri');
+  }
+  public set imageUri(value: string) {
+    this._imageUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageUriInput() {
+    return this._imageUri;
   }
 }
 export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration {
@@ -785,7 +853,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emrserverless_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -805,6 +873,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
     this._type = config.type;
     this._autoStartConfiguration.internalValue = config.autoStartConfiguration;
     this._autoStopConfiguration.internalValue = config.autoStopConfiguration;
+    this._imageConfiguration.internalValue = config.imageConfiguration;
     this._initialCapacity.internalValue = config.initialCapacity;
     this._maximumCapacity.internalValue = config.maximumCapacity;
     this._networkConfiguration.internalValue = config.networkConfiguration;
@@ -954,6 +1023,22 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
     return this._autoStopConfiguration.internalValue;
   }
 
+  // image_configuration - computed: false, optional: true, required: false
+  private _imageConfiguration = new EmrserverlessApplicationImageConfigurationOutputReference(this, "image_configuration");
+  public get imageConfiguration() {
+    return this._imageConfiguration;
+  }
+  public putImageConfiguration(value: EmrserverlessApplicationImageConfiguration) {
+    this._imageConfiguration.internalValue = value;
+  }
+  public resetImageConfiguration() {
+    this._imageConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageConfigurationInput() {
+    return this._imageConfiguration.internalValue;
+  }
+
   // initial_capacity - computed: false, optional: true, required: false
   private _initialCapacity = new EmrserverlessApplicationInitialCapacityList(this, "initial_capacity", true);
   public get initialCapacity() {
@@ -1017,6 +1102,7 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       auto_start_configuration: emrserverlessApplicationAutoStartConfigurationToTerraform(this._autoStartConfiguration.internalValue),
       auto_stop_configuration: emrserverlessApplicationAutoStopConfigurationToTerraform(this._autoStopConfiguration.internalValue),
+      image_configuration: emrserverlessApplicationImageConfigurationToTerraform(this._imageConfiguration.internalValue),
       initial_capacity: cdktf.listMapper(emrserverlessApplicationInitialCapacityToTerraform, true)(this._initialCapacity.internalValue),
       maximum_capacity: emrserverlessApplicationMaximumCapacityToTerraform(this._maximumCapacity.internalValue),
       network_configuration: emrserverlessApplicationNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
