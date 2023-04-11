@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_instance_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.NewDataAwsIamInstanceProfile(scope Construct, id *string, config DataAwsIamInstanceProfileConfig) DataAwsIamInstanceProfile
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 &dataawsiaminstanceprofile.DataAwsIamInstanceProfileConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_pub
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.NewCloudfrontPublicKey(scope Construct, id *string, config CloudfrontPublicKeyConfig) CloudfrontPublicKey
 ```
@@ -294,7 +294,7 @@ func ResetNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ cloudfrontpublickey.CloudfrontPublicKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 &cloudfrontpublickey.CloudfrontPublicKeyConfig {
 	Connection: interface{},

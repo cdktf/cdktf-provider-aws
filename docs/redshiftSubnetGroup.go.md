@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_subne
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsubnetgroup"
 
 redshiftsubnetgroup.NewRedshiftSubnetGroup(scope Construct, id *string, config RedshiftSubnetGroupConfig) RedshiftSubnetGroup
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsubnetgroup"
 
 redshiftsubnetgroup.RedshiftSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsubnetgroup"
 
 redshiftsubnetgroup.RedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ redshiftsubnetgroup.RedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsubnetgroup"
 
 redshiftsubnetgroup.RedshiftSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/redshiftsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftsubnetgroup"
 
 &redshiftsubnetgroup.RedshiftSubnetGroupConfig {
 	Connection: interface{},

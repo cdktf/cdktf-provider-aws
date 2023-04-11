@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_locat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 datasynclocations3.NewDatasyncLocationS3(scope Construct, id *string, config DatasyncLocationS3Config) DatasyncLocationS3
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 datasynclocations3.DatasyncLocationS3_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 datasynclocations3.DatasyncLocationS3_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ datasynclocations3.DatasyncLocationS3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 datasynclocations3.DatasyncLocationS3_IsTerraformResource(x interface{}) *bool
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 &datasynclocations3.DatasyncLocationS3Config {
 	Connection: interface{},
@@ -768,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	S3BucketArn: *string,
-	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws/v12.datasyncLocationS3.DatasyncLocationS3S3Config,
+	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationS3.DatasyncLocationS3S3Config,
 	Subdirectory: *string,
 	AgentArns: *[]*string,
 	Id: *string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 &datasynclocations3.DatasyncLocationS3S3Config {
 	BucketAccessRoleArn: *string,
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocations3"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocations3"
 
 datasynclocations3.NewDatasyncLocationS3S3ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationS3S3ConfigOutputReference
 ```

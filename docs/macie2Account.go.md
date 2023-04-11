@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_account
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2Account.Macie2Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2account"
 
 macie2account.NewMacie2Account(scope Construct, id *string, config Macie2AccountConfig) Macie2Account
 ```
@@ -287,7 +287,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2Account.Macie2Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2account"
 
 macie2account.Macie2Account_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2Account.Macie2Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2account"
 
 macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2Account.Macie2Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2account"
 
 macie2account.Macie2Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2Account.Macie2AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2account"
 
 &macie2account.Macie2AccountConfig {
 	Connection: interface{},

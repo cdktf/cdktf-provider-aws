@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudformation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationType.CloudformationType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 cloudformationtype.NewCloudformationType(scope Construct, id *string, config CloudformationTypeConfig) CloudformationType
 ```
@@ -307,7 +307,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudformationType.CloudformationType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 cloudformationtype.CloudformationType_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudformationType.CloudformationType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 cloudformationtype.CloudformationType_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ cloudformationtype.CloudformationType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudformationType.CloudformationType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 cloudformationtype.CloudformationType_IsTerraformResource(x interface{}) *bool
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationType.CloudformationTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 &cloudformationtype.CloudformationTypeConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
 	TypeName: *string,
 	ExecutionRoleArn: *string,
 	Id: *string,
-	LoggingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudformationType.CloudformationTypeLoggingConfig,
+	LoggingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudformationType.CloudformationTypeLoggingConfig,
 	Type: *string,
 }
 ```
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 &cloudformationtype.CloudformationTypeLoggingConfig {
 	LogGroupName: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudformationtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationtype"
 
 cloudformationtype.NewCloudformationTypeLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationTypeLoggingConfigOutputReference
 ```

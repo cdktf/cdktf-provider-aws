@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_fol
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolder(scope Construct, id *string, config QuicksightFolderConfig) QuicksightFolder
 ```
@@ -355,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ quicksightfolder.QuicksightFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsTerraformResource(x interface{}) *bool
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
 	Permissions: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.quicksightFolder.QuicksightFolderTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightFolder.QuicksightFolderTimeouts,
 }
 ```
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderPermissions {
 	Actions: *[]*string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderTimeouts {
 	Create: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightFolderPermissionsList
 ```
@@ -1378,7 +1378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightFolderPermissionsOutputReference
 ```
@@ -1689,7 +1689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightFolderTimeoutsOutputReference
 ```

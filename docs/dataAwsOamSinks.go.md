@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/oam_sinks aws_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.NewDataAwsOamSinks(scope Construct, id *string, config DataAwsOamSinksConfig) DataAwsOamSinks
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsoamsinks.DataAwsOamSinks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 dataawsoamsinks.DataAwsOamSinks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsinks"
 
 &dataawsoamsinks.DataAwsOamSinksConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_subnet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptunesubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunesubnetgroup"
 
 neptunesubnetgroup.NewNeptuneSubnetGroup(scope Construct, id *string, config NeptuneSubnetGroupConfig) NeptuneSubnetGroup
 ```
@@ -308,7 +308,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptunesubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunesubnetgroup"
 
 neptunesubnetgroup.NeptuneSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptunesubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunesubnetgroup"
 
 neptunesubnetgroup.NeptuneSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ neptunesubnetgroup.NeptuneSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptunesubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunesubnetgroup"
 
 neptunesubnetgroup.NeptuneSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/neptunesubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunesubnetgroup"
 
 &neptunesubnetgroup.NeptuneSubnetGroupConfig {
 	Connection: interface{},

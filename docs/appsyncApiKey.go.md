@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_api_ke
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncapikey"
 
 appsyncapikey.NewAppsyncApiKey(scope Construct, id *string, config AppsyncApiKeyConfig) AppsyncApiKey
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncapikey"
 
 appsyncapikey.AppsyncApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncapikey"
 
 appsyncapikey.AppsyncApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ appsyncapikey.AppsyncApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncapikey"
 
 appsyncapikey.AppsyncApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appsyncapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncapikey"
 
 &appsyncapikey.AppsyncApiKeyConfig {
 	Connection: interface{},

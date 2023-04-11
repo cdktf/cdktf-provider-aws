@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxCluster.DaxCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.NewDaxCluster(scope Construct, id *string, config DaxClusterConfig) DaxCluster
 ```
@@ -383,7 +383,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.daxCluster.DaxCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.DaxCluster_IsConstruct(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.daxCluster.DaxCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.DaxCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ daxcluster.DaxCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.daxCluster.DaxCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.DaxCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1057,7 +1057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxCluster.DaxClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 &daxcluster.DaxClusterConfig {
 	Connection: interface{},
@@ -1079,11 +1079,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
 	NotificationTopicArn: *string,
 	ParameterGroupName: *string,
 	SecurityGroupIds: *[]*string,
-	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v12.daxCluster.DaxClusterServerSideEncryption,
+	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.daxCluster.DaxClusterServerSideEncryption,
 	SubnetGroupName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.daxCluster.DaxClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.daxCluster.DaxClusterTimeouts,
 }
 ```
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxCluster.DaxClusterNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 &daxcluster.DaxClusterNodes {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 &daxcluster.DaxClusterServerSideEncryption {
 	Enabled: interface{},
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxCluster.DaxClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 &daxcluster.DaxClusterTimeouts {
 	Create: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxCluster.DaxClusterNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.NewDaxClusterNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaxClusterNodesList
 ```
@@ -1643,7 +1643,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxCluster.DaxClusterNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.NewDaxClusterNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaxClusterNodesOutputReference
 ```
@@ -1954,7 +1954,7 @@ func InternalValue() DaxClusterNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.NewDaxClusterServerSideEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaxClusterServerSideEncryptionOutputReference
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() DaxClusterServerSideEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxCluster.DaxClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/daxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/daxcluster"
 
 daxcluster.NewDaxClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaxClusterTimeoutsOutputReference
 ```

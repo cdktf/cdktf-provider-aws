@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/medialive_chan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannel(scope Construct, id *string, config MedialiveChannelConfig) MedialiveChannel
 ```
@@ -440,7 +440,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.MedialiveChannel_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.MedialiveChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ medialivechannel.MedialiveChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.MedialiveChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelCdiInputSpecification {
 	Resolution: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelConfig {
 	Connection: interface{},
@@ -1103,20 +1103,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	Provisioners: *[]interface{},
 	ChannelClass: *string,
 	Destinations: interface{},
-	EncoderSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettings,
+	EncoderSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettings,
 	InputAttachments: interface{},
-	InputSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputSpecification,
+	InputSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputSpecification,
 	Name: *string,
-	CdiInputSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelCdiInputSpecification,
+	CdiInputSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelCdiInputSpecification,
 	Id: *string,
 	LogLevel: *string,
-	Maintenance: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelMaintenance,
+	Maintenance: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelMaintenance,
 	RoleArn: *string,
 	StartChannel: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelTimeouts,
-	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelVpc,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelTimeouts,
+	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelVpc,
 }
 ```
 
@@ -1436,12 +1436,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelDestinations {
 	Id: *string,
 	MediaPackageSettings: interface{},
-	MultiplexSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings,
+	MultiplexSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings,
 	Settings: interface{},
 }
 ```
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelDestinationsMediaPackageSettings {
 	ChannelId: *string,
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelDestinationsMultiplexSettings {
 	MultiplexId: *string,
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelDestinationsSettings {
 	PasswordParam: *string,
@@ -1671,13 +1671,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettings {
 	OutputGroups: interface{},
-	TimecodeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig,
+	TimecodeConfig: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig,
 	AudioDescriptions: interface{},
-	AvailBlanking: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking,
+	AvailBlanking: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking,
 	VideoDescriptions: interface{},
 }
 ```
@@ -1769,19 +1769,19 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptions {
 	AudioSelectorName: *string,
 	Name: *string,
-	AudioNormalizationSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings,
+	AudioNormalizationSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings,
 	AudioType: *string,
 	AudioTypeControl: *string,
-	AudioWatermarkSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings,
-	CodecSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings,
+	AudioWatermarkSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings,
+	CodecSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings,
 	LanguageCode: *string,
 	LanguageCodeControl: *string,
-	RemixSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings,
+	RemixSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings,
 	StreamName: *string,
 }
 ```
@@ -1949,7 +1949,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings {
 	Algorithm: *string,
@@ -2009,10 +2009,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings {
-	NielsenWatermarksSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings,
+	NielsenWatermarksSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings,
 }
 ```
 
@@ -2043,10 +2043,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings {
-	NielsenCbetSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings,
+	NielsenCbetSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings,
 	NielsenDistributionType: *string,
 	NielsenNaesIiNwSettings: interface{},
 }
@@ -2107,7 +2107,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings {
 	CbetCheckDigitString: *string,
@@ -2167,7 +2167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings {
 	CheckDigitString: *string,
@@ -2213,16 +2213,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings {
-	AacSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings,
-	Ac3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings,
-	Eac3AtmosSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings,
-	Eac3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings,
-	Mp2Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings,
-	PassThroughSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings,
-	WavSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings,
+	AacSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings,
+	Ac3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings,
+	Eac3AtmosSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings,
+	Eac3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings,
+	Mp2Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings,
+	PassThroughSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings,
+	WavSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings,
 }
 ```
 
@@ -2343,7 +2343,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings {
 	Bitrate: *f64,
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings {
 	Bitrate: *f64,
@@ -2603,7 +2603,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings {
 	Bitrate: *f64,
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings {
 	AttenuationControl: *string,
@@ -3017,7 +3017,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings {
 	Bitrate: *f64,
@@ -3077,7 +3077,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings {
 
@@ -3090,7 +3090,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings {
 	BitDepth: *f64,
@@ -3150,7 +3150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings {
 	ChannelMappings: interface{},
@@ -3212,7 +3212,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings {
 	InputChannelLevels: interface{},
@@ -3260,7 +3260,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels {
 	Gain: *f64,
@@ -3306,10 +3306,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAvailBlanking {
-	AvailBlankingImage: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage,
+	AvailBlankingImage: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage,
 	State: *string,
 }
 ```
@@ -3354,7 +3354,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage {
 	Uri: *string,
@@ -3414,10 +3414,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroups {
-	OutputGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings,
+	OutputGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings,
 	Outputs: interface{},
 	Name: *string,
 }
@@ -3478,17 +3478,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings {
 	ArchiveGroupSettings: interface{},
-	FrameCaptureGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings,
-	HlsGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings,
-	MediaPackageGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings,
-	MsSmoothGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings,
-	MultiplexGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings,
-	RtmpGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings,
-	UdpGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings,
+	FrameCaptureGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings,
+	HlsGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings,
+	MediaPackageGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings,
+	MsSmoothGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings,
+	MultiplexGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings,
+	RtmpGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings,
+	UdpGroupSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings,
 }
 ```
 
@@ -3624,11 +3624,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination,
-	ArchiveCdnSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination,
+	ArchiveCdnSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings,
 	RolloverInterval: *f64,
 }
 ```
@@ -3688,10 +3688,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings {
-	ArchiveS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings,
+	ArchiveS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings,
 }
 ```
 
@@ -3722,7 +3722,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings {
 	CannedAcl: *string,
@@ -3754,7 +3754,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination {
 	DestinationRefId: *string,
@@ -3786,11 +3786,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination,
-	FrameCaptureCdnSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination,
+	FrameCaptureCdnSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings,
 }
 ```
 
@@ -3836,7 +3836,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination {
 	DestinationRefId: *string,
@@ -3868,10 +3868,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings {
-	FrameCaptureS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings,
+	FrameCaptureS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings,
 }
 ```
 
@@ -3902,7 +3902,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings {
 	CannedAcl: *string,
@@ -3934,10 +3934,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination,
 	AdMarkers: *[]*string,
 	BaseUrlContent: *string,
 	BaseUrlContent1: *string,
@@ -3962,7 +3962,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	KeepSegments: *f64,
 	KeyFormat: *string,
 	KeyFormatVersions: *string,
-	KeyProviderSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings,
+	KeyProviderSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings,
 	ManifestCompression: *string,
 	ManifestDurationFormat: *string,
 	MinSegmentLength: *f64,
@@ -4548,7 +4548,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings {
 	CaptionChannel: *f64,
@@ -4608,7 +4608,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination {
 	DestinationRefId: *string,
@@ -4640,14 +4640,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings {
-	HlsAkamaiSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings,
-	HlsBasicPutSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings,
-	HlsMediaStoreSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings,
-	HlsS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings,
-	HlsWebdavSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings,
+	HlsAkamaiSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings,
+	HlsBasicPutSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings,
+	HlsMediaStoreSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings,
+	HlsS3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings,
+	HlsWebdavSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings,
 }
 ```
 
@@ -4738,7 +4738,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings {
 	ConnectionRetryInterval: *f64,
@@ -4854,7 +4854,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings {
 	ConnectionRetryInterval: *f64,
@@ -4928,7 +4928,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings {
 	ConnectionRetryInterval: *f64,
@@ -5016,7 +5016,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings {
 	CannedAcl: *string,
@@ -5048,7 +5048,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings {
 	ConnectionRetryInterval: *f64,
@@ -5136,7 +5136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings {
 	StaticKeySettings: interface{},
@@ -5170,11 +5170,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings {
 	StaticKeyValue: *string,
-	KeyProviderServer: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer,
+	KeyProviderServer: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer,
 }
 ```
 
@@ -5218,7 +5218,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer {
 	Uri: *string,
@@ -5278,10 +5278,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination,
 }
 ```
 
@@ -5312,7 +5312,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination {
 	DestinationRefId: *string,
@@ -5344,10 +5344,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination,
 	AcquisitionPointId: *string,
 	AudioOnlyTimecodeControl: *string,
 	CertificateMode: *string,
@@ -5630,7 +5630,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination {
 	DestinationRefId: *string,
@@ -5662,7 +5662,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings {
 
@@ -5675,7 +5675,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings {
 	AdMarkers: *[]*string,
@@ -5791,7 +5791,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings {
 	InputLossAction: *string,
@@ -5851,10 +5851,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs {
-	OutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings,
+	OutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings,
 	AudioDescriptionNames: *[]*string,
 	CaptionDescriptionNames: *[]*string,
 	OutputName: *string,
@@ -5941,17 +5941,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings {
-	ArchiveOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings,
-	FrameCaptureOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings,
-	HlsOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings,
-	MediaPackageOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings,
-	MsSmoothOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings,
-	MultiplexOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings,
-	RtmpOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings,
-	UdpOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings,
+	ArchiveOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings,
+	FrameCaptureOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings,
+	HlsOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings,
+	MediaPackageOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings,
+	MsSmoothOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings,
+	MultiplexOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings,
+	RtmpOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings,
+	UdpOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings,
 }
 ```
 
@@ -6087,10 +6087,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings {
-	ContainerSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings,
+	ContainerSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings,
 	Extension: *string,
 	NameModifier: *string,
 }
@@ -6149,11 +6149,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings {
-	M2TsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings,
-	RawSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings,
+	M2TsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings,
+	RawSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings,
 }
 ```
 
@@ -6199,7 +6199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings {
 	AbsentInputAudioBehavior: *string,
@@ -6213,10 +6213,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	Bitrate: *f64,
 	BufferModel: *string,
 	CcDescriptor: *string,
-	DvbNitSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings,
-	DvbSdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings,
+	DvbNitSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings,
+	DvbSdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings,
 	DvbSubPids: *string,
-	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings,
+	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings,
 	DvbTeletextPid: *string,
 	Ebif: *string,
 	EbpAudioInterval: *string,
@@ -6881,7 +6881,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings {
 	NetworkId: *f64,
@@ -6941,7 +6941,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings {
 	OutputSdt: *string,
@@ -7015,7 +7015,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings {
 	RepInterval: *f64,
@@ -7047,7 +7047,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings {
 
@@ -7060,7 +7060,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings {
 	NameModifier: *string,
@@ -7092,10 +7092,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings {
-	HlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings,
+	HlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings,
 	H265PackagingType: *string,
 	NameModifier: *string,
 	SegmentModifier: *string,
@@ -7168,13 +7168,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings {
-	AudioOnlyHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings,
-	Fmp4HlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings,
-	FrameCaptureHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings,
-	StandardHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings,
+	AudioOnlyHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings,
+	Fmp4HlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings,
+	FrameCaptureHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings,
+	StandardHlsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings,
 }
 ```
 
@@ -7250,11 +7250,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings {
 	AudioGroupId: *string,
-	AudioOnlyImage: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage,
+	AudioOnlyImage: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage,
 	AudioTrackType: *string,
 	SegmentType: *string,
 }
@@ -7326,7 +7326,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage {
 	Uri: *string,
@@ -7386,7 +7386,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings {
 	AudioRenditionSets: *string,
@@ -7446,7 +7446,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings {
 
@@ -7459,10 +7459,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings {
-	M3U8Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings,
+	M3U8Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings,
 	AudioRenditionSets: *string,
 }
 ```
@@ -7507,7 +7507,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings {
 	AudioFramesPerPes: *f64,
@@ -7763,7 +7763,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings {
 
@@ -7776,7 +7776,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings {
 	H265PackagingType: *string,
@@ -7822,10 +7822,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination,
 }
 ```
 
@@ -7856,7 +7856,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination {
 	DestinationRefId: *string,
@@ -7888,10 +7888,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination,
 	CertificateMode: *string,
 	ConnectionRetryInterval: *f64,
 	NumRetries: *f64,
@@ -7964,7 +7964,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination {
 	DestinationRefId: *string,
@@ -7996,13 +7996,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings {
-	ContainerSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings,
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination,
+	ContainerSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination,
 	BufferMsec: *f64,
-	FecOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings,
+	FecOutputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings,
 }
 ```
 
@@ -8076,10 +8076,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings {
-	M2TsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings,
+	M2TsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings,
 }
 ```
 
@@ -8110,7 +8110,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings {
 	AbsentInputAudioBehavior: *string,
@@ -8124,10 +8124,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	Bitrate: *f64,
 	BufferModel: *string,
 	CcDescriptor: *string,
-	DvbNitSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings,
-	DvbSdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings,
+	DvbNitSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings,
+	DvbSdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings,
 	DvbSubPids: *string,
-	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings,
+	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings,
 	DvbTeletextPid: *string,
 	Ebif: *string,
 	EbpAudioInterval: *string,
@@ -8792,7 +8792,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings {
 	NetworkId: *f64,
@@ -8852,7 +8852,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings {
 	OutputSdt: *string,
@@ -8926,7 +8926,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings {
 	RepInterval: *f64,
@@ -8958,7 +8958,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination {
 	DestinationRefId: *string,
@@ -8990,7 +8990,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings {
 	ColumnDepth: *f64,
@@ -9050,7 +9050,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsTimecodeConfig {
 	Source: *string,
@@ -9096,11 +9096,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptions {
 	Name: *string,
-	CodecSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings,
+	CodecSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings,
 	Height: *f64,
 	RespondToAfd: *string,
 	ScalingBehavior: *string,
@@ -9214,11 +9214,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings {
-	FrameCaptureSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings,
-	H264Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings,
+	FrameCaptureSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings,
+	H264Settings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings,
 }
 ```
 
@@ -9264,7 +9264,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings {
 	CaptureInterval: *f64,
@@ -9310,7 +9310,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings {
 	AdaptiveQuantization: *string,
@@ -9320,7 +9320,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	BufSize: *f64,
 	ColorMetadata: *string,
 	EntropyEncoding: *string,
-	FilterSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings,
+	FilterSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings,
 	FixedAfd: *string,
 	FlickerAq: *string,
 	ForceFieldPictures: *string,
@@ -9890,10 +9890,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings {
-	TemporalFilterSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings,
+	TemporalFilterSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings,
 }
 ```
 
@@ -9924,7 +9924,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings {
 	PostFilterSharpening: *string,
@@ -9970,13 +9970,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachments {
 	InputAttachmentName: *string,
 	InputId: *string,
-	AutomaticInputFailoverSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings,
-	InputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings,
+	AutomaticInputFailoverSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings,
+	InputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings,
 }
 ```
 
@@ -10048,7 +10048,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings {
 	SecondaryInputId: *string,
@@ -10124,10 +10124,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition {
-	FailoverConditionSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings,
+	FailoverConditionSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings,
 }
 ```
 
@@ -10158,12 +10158,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings {
-	AudioSilenceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings,
-	InputLossSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings,
-	VideoBlackSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings,
+	AudioSilenceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings,
+	InputLossSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings,
+	VideoBlackSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings,
 }
 ```
 
@@ -10224,7 +10224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings {
 	AudioSelectorName: *string,
@@ -10270,7 +10270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings {
 	InputLossThresholdMsec: *f64,
@@ -10302,7 +10302,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings {
 	BlackDetectThreshold: *f64,
@@ -10348,7 +10348,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettings {
 	AudioSelector: interface{},
@@ -10357,11 +10357,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
 	DenoiseFilter: *string,
 	FilterStrength: *f64,
 	InputFilter: *string,
-	NetworkInputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings,
+	NetworkInputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings,
 	Scte35Pid: *f64,
 	Smpte2038DataPreference: *string,
 	SourceEndBehavior: *string,
-	VideoSelector: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector,
+	VideoSelector: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector,
 }
 ```
 
@@ -10528,11 +10528,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector {
 	Name: *string,
-	SelectorSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings,
+	SelectorSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings,
 }
 ```
 
@@ -10576,13 +10576,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings {
-	AudioHlsRenditionSelection: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection,
-	AudioLanguageSelection: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection,
-	AudioPidSelection: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection,
-	AudioTrackSelection: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection,
+	AudioHlsRenditionSelection: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection,
+	AudioLanguageSelection: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection,
+	AudioPidSelection: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection,
+	AudioTrackSelection: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection,
 }
 ```
 
@@ -10658,7 +10658,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection {
 	GroupId: *string,
@@ -10704,7 +10704,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection {
 	LanguageCode: *string,
@@ -10750,7 +10750,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection {
 	Pid: *f64,
@@ -10782,7 +10782,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection {
 	Track: interface{},
@@ -10816,7 +10816,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack {
 	Track: *f64,
@@ -10848,12 +10848,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
 	Name: *string,
 	LanguageCode: *string,
-	SelectorSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings,
+	SelectorSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings,
 }
 ```
 
@@ -10910,15 +10910,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings {
-	AncillarySourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings,
-	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings,
-	EmbeddedSourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings,
-	Scte20SourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings,
-	Scte27SourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings,
-	TeletextSourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings,
+	AncillarySourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings,
+	DvbTdtSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings,
+	EmbeddedSourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings,
+	Scte20SourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings,
+	Scte27SourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings,
+	TeletextSourceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings,
 }
 ```
 
@@ -11024,7 +11024,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings {
 	SourceAncillaryChannelNumber: *f64,
@@ -11056,7 +11056,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings {
 	OcrLanguage: *string,
@@ -11102,7 +11102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings {
 	Convert608To708: *string,
@@ -11176,7 +11176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings {
 	Convert608To708: *string,
@@ -11222,7 +11222,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings {
 	OcrLanguage: *string,
@@ -11268,10 +11268,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings {
-	OutputRectangle: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle,
+	OutputRectangle: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle,
 	PageNumber: *string,
 }
 ```
@@ -11316,7 +11316,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle {
 	Height: *f64,
@@ -11390,10 +11390,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
-	HlsInputSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v12.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings,
+	HlsInputSettings: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings,
 	ServerValidation: *string,
 }
 ```
@@ -11438,7 +11438,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings {
 	Bandwidth: *f64,
@@ -11526,7 +11526,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector {
 	ColorSpace: *string,
@@ -11572,7 +11572,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelInputSpecification {
 	Codec: *string,
@@ -11632,7 +11632,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelMaintenance {
 	MaintenanceDay: *string,
@@ -11678,7 +11678,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelTimeouts {
 	Create: *string,
@@ -11738,7 +11738,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 &medialivechannel.MedialiveChannelVpc {
 	PublicAddressAllocationIds: *[]*string,
@@ -11800,7 +11800,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelCdiInputSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelCdiInputSpecificationOutputReference
 ```
@@ -12071,7 +12071,7 @@ func InternalValue() MedialiveChannelCdiInputSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelDestinationsList
 ```
@@ -12214,7 +12214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsMediaPackageSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelDestinationsMediaPackageSettingsList
 ```
@@ -12357,7 +12357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsMediaPackageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelDestinationsMediaPackageSettingsOutputReference
 ```
@@ -12646,7 +12646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsMultiplexSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelDestinationsMultiplexSettingsOutputReference
 ```
@@ -12939,7 +12939,7 @@ func InternalValue() MedialiveChannelDestinationsMultiplexSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelDestinationsOutputReference
 ```
@@ -13354,7 +13354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelDestinationsSettingsList
 ```
@@ -13497,7 +13497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelDestinationsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelDestinationsSettingsOutputReference
 ```
@@ -13880,7 +13880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference
 ```
@@ -14216,7 +14216,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormal
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference
 ```
@@ -14531,7 +14531,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsAudioWaterm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList
 ```
@@ -14674,7 +14674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference
 ```
@@ -14985,7 +14985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference
 ```
@@ -15347,7 +15347,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsAudioWaterm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference
 ```
@@ -15638,7 +15638,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsAudioWaterm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference
 ```
@@ -16148,7 +16148,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference
 ```
@@ -16600,7 +16600,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference
 ```
@@ -17052,7 +17052,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference
 ```
@@ -17881,7 +17881,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference
 ```
@@ -18217,7 +18217,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference
 ```
@@ -18760,7 +18760,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference
 ```
@@ -19009,7 +19009,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference
 ```
@@ -19345,7 +19345,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsList
 ```
@@ -19488,7 +19488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference
 ```
@@ -20112,7 +20112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList
 ```
@@ -20255,7 +20255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference
 ```
@@ -20566,7 +20566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList
 ```
@@ -20709,7 +20709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference
 ```
@@ -21033,7 +21033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference
 ```
@@ -21375,7 +21375,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference
 ```
@@ -21704,7 +21704,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingIm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsAvailBlankingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsAvailBlankingOutputReference
 ```
@@ -22024,7 +22024,7 @@ func InternalValue() MedialiveChannelEncoderSettingsAvailBlanking
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsList
 ```
@@ -22167,7 +22167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference
 ```
@@ -22445,7 +22445,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference
 ```
@@ -22736,7 +22736,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference
 ```
@@ -23007,7 +23007,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList
 ```
@@ -23150,7 +23150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference
 ```
@@ -23523,7 +23523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference
 ```
@@ -23794,7 +23794,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference
 ```
@@ -24072,7 +24072,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference
 ```
@@ -24363,7 +24363,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference
 ```
@@ -24689,7 +24689,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList
 ```
@@ -24832,7 +24832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference
 ```
@@ -25165,7 +25165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference
 ```
@@ -25436,7 +25436,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference
 ```
@@ -25888,7 +25888,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference
 ```
@@ -26253,7 +26253,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference
 ```
@@ -26647,7 +26647,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference
 ```
@@ -26925,7 +26925,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference
 ```
@@ -27319,7 +27319,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList
 ```
@@ -27462,7 +27462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference
 ```
@@ -27939,7 +27939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference
 ```
@@ -28230,7 +28230,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference
 ```
@@ -28559,7 +28559,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList
 ```
@@ -28702,7 +28702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference
 ```
@@ -29033,7 +29033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference
 ```
@@ -30545,7 +30545,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference
 ```
@@ -30816,7 +30816,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference
 ```
@@ -31100,7 +31100,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference
 ```
@@ -31371,7 +31371,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference
 ```
@@ -32177,7 +32177,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference
 ```
@@ -32426,7 +32426,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference
 ```
@@ -33011,7 +33011,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference
 ```
@@ -33463,7 +33463,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference
 ```
@@ -33799,7 +33799,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputReference
 ```
@@ -34165,7 +34165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputsList
 ```
@@ -34308,7 +34308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference
 ```
@@ -34726,7 +34726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference
 ```
@@ -35048,7 +35048,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference
 ```
@@ -35413,7 +35413,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference
 ```
@@ -35691,7 +35691,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference
 ```
@@ -37342,7 +37342,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference
 ```
@@ -37675,7 +37675,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference
 ```
@@ -37924,7 +37924,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference
 ```
@@ -38273,7 +38273,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference
 ```
@@ -38551,7 +38551,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference
 ```
@@ -38880,7 +38880,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference
 ```
@@ -39258,7 +39258,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference
 ```
@@ -39594,7 +39594,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference
 ```
@@ -39843,7 +39843,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference
 ```
@@ -40260,7 +40260,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference
 ```
@@ -41002,7 +41002,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference
 ```
@@ -41315,7 +41315,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference
 ```
@@ -41686,7 +41686,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference
 ```
@@ -41935,7 +41935,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference
 ```
@@ -42242,7 +42242,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference
 ```
@@ -42513,7 +42513,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference
 ```
@@ -42797,7 +42797,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference
 ```
@@ -43382,7 +43382,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference
 ```
@@ -43653,7 +43653,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference
 ```
@@ -44024,7 +44024,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference
 ```
@@ -44346,7 +44346,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference
 ```
@@ -44711,7 +44711,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference
 ```
@@ -44989,7 +44989,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference
 ```
@@ -46640,7 +46640,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference
 ```
@@ -46931,7 +46931,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference
 ```
@@ -47202,7 +47202,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference
 ```
@@ -47538,7 +47538,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference
 ```
@@ -47928,7 +47928,7 @@ func InternalValue() MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsOutputReference
 ```
@@ -48373,7 +48373,7 @@ func InternalValue() MedialiveChannelEncoderSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsTimecodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsTimecodeConfigOutputReference
 ```
@@ -48673,7 +48673,7 @@ func InternalValue() MedialiveChannelEncoderSettingsTimecodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference
 ```
@@ -48980,7 +48980,7 @@ func InternalValue() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference
 ```
@@ -49271,7 +49271,7 @@ func InternalValue() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference
 ```
@@ -49578,7 +49578,7 @@ func InternalValue() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference
 ```
@@ -51000,7 +51000,7 @@ func InternalValue() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference
 ```
@@ -51333,7 +51333,7 @@ func InternalValue() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelEncoderSettingsVideoDescriptionsList
 ```
@@ -51476,7 +51476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelEncoderSettingsVideoDescriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference
 ```
@@ -51952,7 +51952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference
 ```
@@ -52252,7 +52252,7 @@ func InternalValue() MedialiveChannelInputAttachmentsAutomaticInputFailoverSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference
 ```
@@ -52530,7 +52530,7 @@ func InternalValue() MedialiveChannelInputAttachmentsAutomaticInputFailoverSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference
 ```
@@ -52905,7 +52905,7 @@ func InternalValue() MedialiveChannelInputAttachmentsAutomaticInputFailoverSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference
 ```
@@ -53212,7 +53212,7 @@ func InternalValue() MedialiveChannelInputAttachmentsAutomaticInputFailoverSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList
 ```
@@ -53355,7 +53355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference
 ```
@@ -53664,7 +53664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference
 ```
@@ -54035,7 +54035,7 @@ func InternalValue() MedialiveChannelInputAttachmentsAutomaticInputFailoverSetti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList
 ```
@@ -54178,7 +54178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference
 ```
@@ -54509,7 +54509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference
 ```
@@ -54802,7 +54802,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsAudioSelectorS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference
 ```
@@ -55102,7 +55102,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsAudioSelectorS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference
 ```
@@ -55373,7 +55373,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsAudioSelectorS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference
 ```
@@ -55657,7 +55657,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsAudioSelectorS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList
 ```
@@ -55800,7 +55800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference
 ```
@@ -56089,7 +56089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference
 ```
@@ -56506,7 +56506,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsAudioSelectorS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList
 ```
@@ -56649,7 +56649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference
 ```
@@ -57009,7 +57009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference
 ```
@@ -57287,7 +57287,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference
 ```
@@ -57594,7 +57594,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference
 ```
@@ -57959,7 +57959,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference
 ```
@@ -58460,7 +58460,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference
 ```
@@ -58767,7 +58767,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference
 ```
@@ -59074,7 +59074,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference
 ```
@@ -59411,7 +59411,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference
 ```
@@ -59731,7 +59731,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsCaptionSelecto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference
 ```
@@ -60125,7 +60125,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsNetworkInputSe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference
 ```
@@ -60445,7 +60445,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsNetworkInputSe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsOutputReference
 ```
@@ -61065,7 +61065,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference
 ```
@@ -61372,7 +61372,7 @@ func InternalValue() MedialiveChannelInputAttachmentsInputSettingsVideoSelector
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveChannelInputAttachmentsList
 ```
@@ -61515,7 +61515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsOutputReference
 ```
@@ -61910,7 +61910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelInputSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelInputSpecificationOutputReference
 ```
@@ -62225,7 +62225,7 @@ func InternalValue() MedialiveChannelInputSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelMaintenanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelMaintenanceOutputReference
 ```
@@ -62518,7 +62518,7 @@ func InternalValue() MedialiveChannelMaintenance
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelTimeoutsOutputReference
 ```
@@ -62854,7 +62854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/medialivechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivechannel"
 
 medialivechannel.NewMedialiveChannelVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveChannelVpcOutputReference
 ```

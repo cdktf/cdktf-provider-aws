@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.NewCodestarnotificationsNotificationRule(scope Construct, id *string, config CodestarnotificationsNotificationRuleConfig) CodestarnotificationsNotificationRule
 ```
@@ -314,7 +314,7 @@ func ResetTarget()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.CodestarnotificationsNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.CodestarnotificationsNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ codestarnotificationsnotificationrule.CodestarnotificationsNotificationRule_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.CodestarnotificationsNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 &codestarnotificationsnotificationrule.CodestarnotificationsNotificationRuleConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 &codestarnotificationsnotificationrule.CodestarnotificationsNotificationRuleTarget {
 	Address: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.NewCodestarnotificationsNotificationRuleTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodestarnotificationsNotificationRuleTargetList
 ```
@@ -1192,7 +1192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/codestarnotificationsnotificationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codestarnotificationsnotificationrule"
 
 codestarnotificationsnotificationrule.NewCodestarnotificationsNotificationRuleTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodestarnotificationsNotificationRuleTargetOutputReference
 ```

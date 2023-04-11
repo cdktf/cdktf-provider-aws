@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_orga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationadminaccount"
 
 guarddutyorganizationadminaccount.NewGuarddutyOrganizationAdminAccount(scope Construct, id *string, config GuarddutyOrganizationAdminAccountConfig) GuarddutyOrganizationAdminAccount
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationadminaccount"
 
 guarddutyorganizationadminaccount.GuarddutyOrganizationAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationadminaccount"
 
 guarddutyorganizationadminaccount.GuarddutyOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ guarddutyorganizationadminaccount.GuarddutyOrganizationAdminAccount_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationadminaccount"
 
 guarddutyorganizationadminaccount.GuarddutyOrganizationAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/guarddutyorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationadminaccount"
 
 &guarddutyorganizationadminaccount.GuarddutyOrganizationAdminAccountConfig {
 	Connection: interface{},

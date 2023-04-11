@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/eks_fargate_pr
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.NewEksFargateProfile(scope Construct, id *string, config EksFargateProfileConfig) EksFargateProfile
 ```
@@ -327,7 +327,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.EksFargateProfile_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.EksFargateProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ eksfargateprofile.EksFargateProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.EksFargateProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 &eksfargateprofile.EksFargateProfileConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.eksFargateProfile.EksFargateProfileTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.eksFargateProfile.EksFargateProfileTimeouts,
 }
 ```
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 &eksfargateprofile.EksFargateProfileSelector {
 	Namespace: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 &eksfargateprofile.EksFargateProfileTimeouts {
 	Create: *string,
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.NewEksFargateProfileSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksFargateProfileSelectorList
 ```
@@ -1264,7 +1264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.NewEksFargateProfileSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksFargateProfileSelectorOutputReference
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/eksfargateprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eksfargateprofile"
 
 eksfargateprofile.NewEksFargateProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksFargateProfileTimeoutsOutputReference
 ```

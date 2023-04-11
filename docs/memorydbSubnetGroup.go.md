@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/memorydb_subne
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/memorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsubnetgroup"
 
 memorydbsubnetgroup.NewMemorydbSubnetGroup(scope Construct, id *string, config MemorydbSubnetGroupConfig) MemorydbSubnetGroup
 ```
@@ -308,7 +308,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/memorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsubnetgroup"
 
 memorydbsubnetgroup.MemorydbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/memorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsubnetgroup"
 
 memorydbsubnetgroup.MemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ memorydbsubnetgroup.MemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/memorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsubnetgroup"
 
 memorydbsubnetgroup.MemorydbSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/memorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsubnetgroup"
 
 &memorydbsubnetgroup.MemorydbSubnetGroupConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/key_pair aws_k
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyPair.KeyPair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
 
 keypair.NewKeyPair(scope Construct, id *string, config KeyPairConfig) KeyPair
 ```
@@ -301,7 +301,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.keyPair.KeyPair.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
 
 keypair.KeyPair_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.keyPair.KeyPair.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
 
 keypair.KeyPair_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ keypair.KeyPair_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.keyPair.KeyPair.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
 
 keypair.KeyPair_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyPair.KeyPairConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
 
 &keypair.KeyPairConfig {
 	Connection: interface{},

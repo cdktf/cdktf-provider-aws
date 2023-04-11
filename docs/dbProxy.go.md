@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy aws_d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxy(scope Construct, id *string, config DbProxyConfig) DbProxy
 ```
@@ -348,7 +348,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbProxy.DbProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ dbproxy.DbProxy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.DbProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -901,7 +901,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyAuth {
 	AuthScheme: *string,
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
 	RequireTls: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dbProxy.DbProxyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbProxy.DbProxyTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 &dbproxy.DbProxyTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbProxyAuthList
 ```
@@ -1499,7 +1499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbProxyAuthOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxy"
 
 dbproxy.NewDbProxyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbProxyTimeoutsOutputReference
 ```

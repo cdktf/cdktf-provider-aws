@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_user_defi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.NewGlueUserDefinedFunction(scope Construct, id *string, config GlueUserDefinedFunctionConfig) GlueUserDefinedFunction
 ```
@@ -300,7 +300,7 @@ func ResetResourceUris()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.GlueUserDefinedFunction_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.GlueUserDefinedFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ glueuserdefinedfunction.GlueUserDefinedFunction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.GlueUserDefinedFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 &glueuserdefinedfunction.GlueUserDefinedFunctionConfig {
 	Connection: interface{},
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUris.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 &glueuserdefinedfunction.GlueUserDefinedFunctionResourceUris {
 	ResourceType: *string,
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.NewGlueUserDefinedFunctionResourceUrisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueUserDefinedFunctionResourceUrisList
 ```
@@ -1153,7 +1153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/glueuserdefinedfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueuserdefinedfunction"
 
 glueuserdefinedfunction.NewGlueUserDefinedFunctionResourceUrisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueUserDefinedFunctionResourceUrisOutputReference
 ```

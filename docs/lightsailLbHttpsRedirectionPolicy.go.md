@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_lb_h
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbhttpsredirectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbhttpsredirectionpolicy"
 
 lightsaillbhttpsredirectionpolicy.NewLightsailLbHttpsRedirectionPolicy(scope Construct, id *string, config LightsailLbHttpsRedirectionPolicyConfig) LightsailLbHttpsRedirectionPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbhttpsredirectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbhttpsredirectionpolicy"
 
 lightsaillbhttpsredirectionpolicy.LightsailLbHttpsRedirectionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbhttpsredirectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbhttpsredirectionpolicy"
 
 lightsaillbhttpsredirectionpolicy.LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ lightsaillbhttpsredirectionpolicy.LightsailLbHttpsRedirectionPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbhttpsredirectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbhttpsredirectionpolicy"
 
 lightsaillbhttpsredirectionpolicy.LightsailLbHttpsRedirectionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/lightsaillbhttpsredirectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaillbhttpsredirectionpolicy"
 
 &lightsaillbhttpsredirectionpolicy.LightsailLbHttpsRedirectionPolicyConfig {
 	Connection: interface{},

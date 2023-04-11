@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws aws}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.provider.AwsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.NewAwsProvider(scope Construct, id *string, config AwsProviderConfig) AwsProvider
 ```
@@ -360,7 +360,7 @@ func ResetUseFipsEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.provider.AwsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1243,7 +1243,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderAssumeRole {
 	Duration: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderAssumeRoleWithWebIdentity {
 	Duration: *string,
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#w
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderConfig {
 	AccessKey: *string,
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#u
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderDefaultTags {
 	Tags: *map[string]*string,
@@ -2120,7 +2120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderEndpoints {
 	Accessanalyzer: *string,
@@ -8218,7 +8218,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#x
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderIgnoreTags {
 	KeyPrefixes: *[]*string,

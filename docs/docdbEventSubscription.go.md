@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/docdb_event_su
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.NewDocdbEventSubscription(scope Construct, id *string, config DocdbEventSubscriptionConfig) DocdbEventSubscription
 ```
@@ -349,7 +349,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ docdbeventsubscription.DocdbEventSubscription_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.DocdbEventSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -858,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 &docdbeventsubscription.DocdbEventSubscriptionConfig {
 	Connection: interface{},
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
 	SourceType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.docdbEventSubscription.DocdbEventSubscriptionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts,
 }
 ```
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 &docdbeventsubscription.DocdbEventSubscriptionTimeouts {
 	Create: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/docdbeventsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/docdbeventsubscription"
 
 docdbeventsubscription.NewDocdbEventSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocdbEventSubscriptionTimeoutsOutputReference
 ```

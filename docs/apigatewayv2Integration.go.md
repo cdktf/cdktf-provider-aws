@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2Integration(scope Construct, id *string, config Apigatewayv2IntegrationConfig) Apigatewayv2Integration
 ```
@@ -411,7 +411,7 @@ func ResetTlsConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ apigatewayv2integration.Apigatewayv2Integration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsTerraformResource(x interface{}) *bool
 ```
@@ -1085,7 +1085,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationConfig {
 	Connection: interface{},
@@ -1113,7 +1113,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
 	ResponseParameters: interface{},
 	TemplateSelectionExpression: *string,
 	TimeoutMilliseconds: *f64,
-	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig,
+	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig,
 }
 ```
 
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationResponseParameters {
 	Mappings: *map[string]*string,
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationTlsConfig {
 	ServerNameToVerify: *string,
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationResponseParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2IntegrationResponseParametersList
 ```
@@ -1683,7 +1683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationResponseParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2IntegrationResponseParametersOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Apigatewayv2IntegrationTlsConfigOutputReference
 ```

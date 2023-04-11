@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_data
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsTopicDataProtectionPolicy.SnsTopicDataProtectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicdataprotectionpolicy"
 
 snstopicdataprotectionpolicy.NewSnsTopicDataProtectionPolicy(scope Construct, id *string, config SnsTopicDataProtectionPolicyConfig) SnsTopicDataProtectionPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.snsTopicDataProtectionPolicy.SnsTopicDataProtectionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicdataprotectionpolicy"
 
 snstopicdataprotectionpolicy.SnsTopicDataProtectionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.snsTopicDataProtectionPolicy.SnsTopicDataProtectionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicdataprotectionpolicy"
 
 snstopicdataprotectionpolicy.SnsTopicDataProtectionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ snstopicdataprotectionpolicy.SnsTopicDataProtectionPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.snsTopicDataProtectionPolicy.SnsTopicDataProtectionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicdataprotectionpolicy"
 
 snstopicdataprotectionpolicy.SnsTopicDataProtectionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsTopicDataProtectionPolicy.SnsTopicDataProtectionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/snstopicdataprotectionpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/snstopicdataprotectionpolicy"
 
 &snstopicdataprotectionpolicy.SnsTopicDataProtectionPolicyConfig {
 	Connection: interface{},
