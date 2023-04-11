@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_fi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.NewFsxWindowsFileSystem(scope Construct, id *string, config FsxWindowsFileSystemConfig) FsxWindowsFileSystem
 ```
@@ -445,7 +445,7 @@ func ResetWeeklyMaintenanceStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.FsxWindowsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.FsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ fsxwindowsfilesystem.FsxWindowsFileSystem_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.FsxWindowsFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -1251,7 +1251,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 &fsxwindowsfilesystem.FsxWindowsFileSystemAuditLogConfiguration {
 	AuditLogDestination: *string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 &fsxwindowsfilesystem.FsxWindowsFileSystemConfig {
 	Connection: interface{},
@@ -1325,7 +1325,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
 	ThroughputCapacity: *f64,
 	ActiveDirectoryId: *string,
 	Aliases: *[]*string,
-	AuditLogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration,
+	AuditLogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration,
 	AutomaticBackupRetentionDays: *f64,
 	BackupId: *string,
 	CopyTagsToBackups: interface{},
@@ -1335,13 +1335,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
 	KmsKeyId: *string,
 	PreferredSubnetId: *string,
 	SecurityGroupIds: *[]*string,
-	SelfManagedActiveDirectory: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory,
+	SelfManagedActiveDirectory: github.com/cdktf/cdktf-provider-aws-go/aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory,
 	SkipFinalBackup: interface{},
 	StorageCapacity: *f64,
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts,
 	WeeklyMaintenanceStartTime: *string,
 }
 ```
@@ -1730,7 +1730,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 &fsxwindowsfilesystem.FsxWindowsFileSystemSelfManagedActiveDirectory {
 	DnsIps: *[]*string,
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 &fsxwindowsfilesystem.FsxWindowsFileSystemTimeouts {
 	Create: *string,
@@ -1894,7 +1894,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.NewFsxWindowsFileSystemAuditLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxWindowsFileSystemAuditLogConfigurationOutputReference
 ```
@@ -2230,7 +2230,7 @@ func InternalValue() FsxWindowsFileSystemAuditLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.NewFsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference
 ```
@@ -2625,7 +2625,7 @@ func InternalValue() FsxWindowsFileSystemSelfManagedActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/fsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxwindowsfilesystem"
 
 fsxwindowsfilesystem.NewFsxWindowsFileSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxWindowsFileSystemTimeoutsOutputReference
 ```

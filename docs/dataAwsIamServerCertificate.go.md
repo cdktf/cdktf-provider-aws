@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_server_cer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.NewDataAwsIamServerCertificate(scope Construct, id *string, config DataAwsIamServerCertificateConfig) DataAwsIamServerCertificate
 ```
@@ -301,7 +301,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 dataawsiamservercertificate.DataAwsIamServerCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsiamservercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamservercertificate"
 
 &dataawsiamservercertificate.DataAwsIamServerCertificateConfig {
 	Connection: interface{},

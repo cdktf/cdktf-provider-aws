@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue aws_
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssqsqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueue"
 
 dataawssqsqueue.NewDataAwsSqsQueue(scope Construct, id *string, config DataAwsSqsQueueConfig) DataAwsSqsQueue
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssqsqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssqsqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawssqsqueue.DataAwsSqsQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssqsqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueue"
 
 dataawssqsqueue.DataAwsSqsQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawssqsqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueue"
 
 &dataawssqsqueue.DataAwsSqsQueueConfig {
 	Connection: interface{},

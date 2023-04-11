@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appconfig_exte
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtension(scope Construct, id *string, config AppconfigExtensionConfig) AppconfigExtension
 ```
@@ -327,7 +327,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ appconfigextension.AppconfigExtension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionActionPoint {
 	Action: interface{},
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionActionPointAction {
 	Name: *string,
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionParameter {
 	Name: *string,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionActionPointActionList
 ```
@@ -1282,7 +1282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointActionOutputReference
 ```
@@ -1644,7 +1644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionActionPointList
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointOutputReference
 ```
@@ -2111,7 +2111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionParameterList
 ```
@@ -2254,7 +2254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionParameterOutputReference
 ```

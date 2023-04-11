@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.NewDataAwsEc2TransitGatewayConnectPeer(scope Construct, id *string, config DataAwsEc2TransitGatewayConnectPeerConfig) DataAwsEc2TransitGatewayConnectPeer
 ```
@@ -327,7 +327,7 @@ func ResetTransitGatewayConnectPeerId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeer_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeer_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 &dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeerConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayc
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerTimeouts,
 	TransitGatewayConnectPeerId: *string,
 }
 ```
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 &dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeerFilter {
 	Name: *string,
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 &dataawsec2transitgatewayconnectpeer.DataAwsEc2TransitGatewayConnectPeerTimeouts {
 	Read: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.NewDataAwsEc2TransitGatewayConnectPeerFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayConnectPeerFilterList
 ```
@@ -1128,7 +1128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.NewDataAwsEc2TransitGatewayConnectPeerFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayConnectPeerFilterOutputReference
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayConnectPeer.DataAwsEc2TransitGatewayConnectPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayconnectpeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayconnectpeer"
 
 dataawsec2transitgatewayconnectpeer.NewDataAwsEc2TransitGatewayConnectPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayConnectPeerTimeoutsOutputReference
 ```

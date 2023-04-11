@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_mount_targ
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsmounttarget"
 
 dataawsefsmounttarget.NewDataAwsEfsMountTarget(scope Construct, id *string, config DataAwsEfsMountTargetConfig) DataAwsEfsMountTarget
 ```
@@ -294,7 +294,7 @@ func ResetMountTargetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsefsmounttarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsmounttarget"
 
 &dataawsefsmounttarget.DataAwsEfsMountTargetConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appautoscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicy(scope Construct, id *string, config AppautoscalingPolicyConfig) AppautoscalingPolicy
 ```
@@ -320,7 +320,7 @@ func ResetTargetTrackingScalingPolicyConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.AppautoscalingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.AppautoscalingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ appautoscalingpolicy.AppautoscalingPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.AppautoscalingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyConfig {
 	Connection: interface{},
@@ -779,8 +779,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
 	ServiceNamespace: *string,
 	Id: *string,
 	PolicyType: *string,
-	StepScalingPolicyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfiguration,
-	TargetTrackingScalingPolicyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration,
+	StepScalingPolicyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfiguration,
+	TargetTrackingScalingPolicyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration,
 }
 ```
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyStepScalingPolicyConfiguration {
 	AdjustmentType: *string,
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment {
 	ScalingAdjustment: *f64,
@@ -1134,13 +1134,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration {
 	TargetValue: *f64,
-	CustomizedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification,
+	CustomizedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification,
 	DisableScaleIn: interface{},
-	PredefinedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification,
+	PredefinedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification,
 	ScaleInCooldown: *f64,
 	ScaleOutCooldown: *f64,
 }
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {
 	MetricName: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions {
 	Name: *string,
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 &appautoscalingpolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification {
 	PredefinedMetricType: *string,
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyStepScalingPolicyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference
 ```
@@ -1831,7 +1831,7 @@ func InternalValue() AppautoscalingPolicyStepScalingPolicyConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentOutputReference
 ```
@@ -2321,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList
 ```
@@ -2464,7 +2464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsOutputReference
 ```
@@ -2775,7 +2775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference
 ```
@@ -3161,7 +3161,7 @@ func InternalValue() AppautoscalingPolicyTargetTrackingScalingPolicyConfiguratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference
 ```
@@ -3603,7 +3603,7 @@ func InternalValue() AppautoscalingPolicyTargetTrackingScalingPolicyConfiguratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appautoscalingpolicy"
 
 appautoscalingpolicy.NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference
 ```

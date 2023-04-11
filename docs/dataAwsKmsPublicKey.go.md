@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_public_key
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmspublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmspublickey"
 
 dataawskmspublickey.NewDataAwsKmsPublicKey(scope Construct, id *string, config DataAwsKmsPublicKeyConfig) DataAwsKmsPublicKey
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmspublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmspublickey"
 
 dataawskmspublickey.DataAwsKmsPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmspublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmspublickey"
 
 dataawskmspublickey.DataAwsKmsPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawskmspublickey.DataAwsKmsPublicKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmspublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmspublickey"
 
 dataawskmspublickey.DataAwsKmsPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawskmspublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmspublickey"
 
 &dataawskmspublickey.DataAwsKmsPublicKeyConfig {
 	Connection: interface{},

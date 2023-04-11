@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_cidr_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.NewRoute53CidrCollection(scope Construct, id *string, config Route53CidrCollectionConfig) Route53CidrCollection
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ route53cidrcollection.Route53CidrCollection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 &route53cidrcollection.Route53CidrCollectionConfig {
 	Connection: interface{},

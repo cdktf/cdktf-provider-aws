@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_in
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 rdsclusterinstance.NewRdsClusterInstance(scope Construct, id *string, config RdsClusterInstanceConfig) RdsClusterInstance
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ rdsclusterinstance.RdsClusterInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -1363,7 +1363,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 &rdsclusterinstance.RdsClusterInstanceConfig {
 	Connection: interface{},
@@ -1398,7 +1398,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
 	PubliclyAccessible: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsClusterInstance.RdsClusterInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rdsClusterInstance.RdsClusterInstanceTimeouts,
 }
 ```
 
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 &rdsclusterinstance.RdsClusterInstanceTimeouts {
 	Create: *string,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 
 rdsclusterinstance.NewRdsClusterInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterInstanceTimeoutsOutputReference
 ```

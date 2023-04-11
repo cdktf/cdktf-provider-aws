@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user a
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouser"
 
 cognitouser.NewCognitoUser(scope Construct, id *string, config CognitoUserConfig) CognitoUser
 ```
@@ -336,7 +336,7 @@ func ResetValidationData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouser"
 
 cognitouser.CognitoUser_IsConstruct(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouser"
 
 cognitouser.CognitoUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ cognitouser.CognitoUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouser"
 
 cognitouser.CognitoUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cognitouser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitouser"
 
 &cognitouser.CognitoUserConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appconfig_envi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.NewAppconfigEnvironment(scope Construct, id *string, config AppconfigEnvironmentConfig) AppconfigEnvironment
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.AppconfigEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.AppconfigEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ appconfigenvironment.AppconfigEnvironment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.AppconfigEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 &appconfigenvironment.AppconfigEnvironmentConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 &appconfigenvironment.AppconfigEnvironmentMonitor {
 	AlarmArn: *string,
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.NewAppconfigEnvironmentMonitorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigEnvironmentMonitorList
 ```
@@ -1142,7 +1142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigenvironment"
 
 appconfigenvironment.NewAppconfigEnvironmentMonitorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigEnvironmentMonitorOutputReference
 ```

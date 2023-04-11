@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_bgp_peer aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 dxbgppeer.NewDxBgpPeer(scope Construct, id *string, config DxBgpPeerConfig) DxBgpPeer
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 dxbgppeer.DxBgpPeer_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 dxbgppeer.DxBgpPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ dxbgppeer.DxBgpPeer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 dxbgppeer.DxBgpPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 &dxbgppeer.DxBgpPeerConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
 	BgpAuthKey: *string,
 	CustomerAddress: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dxBgpPeer.DxBgpPeerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dxBgpPeer.DxBgpPeerTimeouts,
 }
 ```
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 &dxbgppeer.DxBgpPeerTimeouts {
 	Create: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxbgppeer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxbgppeer"
 
 dxbgppeer.NewDxBgpPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxBgpPeerTimeoutsOutputReference
 ```

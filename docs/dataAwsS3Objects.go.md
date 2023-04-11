@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/s3_objects aws
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawss3objects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3objects"
 
 dataawss3objects.NewDataAwsS3Objects(scope Construct, id *string, config DataAwsS3ObjectsConfig) DataAwsS3Objects
 ```
@@ -315,7 +315,7 @@ func ResetStartAfter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawss3objects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3objects"
 
 dataawss3objects.DataAwsS3Objects_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawss3objects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3objects"
 
 dataawss3objects.DataAwsS3Objects_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ dataawss3objects.DataAwsS3Objects_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawss3objects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3objects"
 
 dataawss3objects.DataAwsS3Objects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawss3objects"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3objects"
 
 &dataawss3objects.DataAwsS3ObjectsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_workgro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroup(scope Construct, id *string, config AthenaWorkgroupConfig) AthenaWorkgroup
 ```
@@ -328,7 +328,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ athenaworkgroup.AthenaWorkgroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaWorkgroup.AthenaWorkgroupConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfiguration,
 	Description: *string,
 	ForceDestroy: interface{},
 	Id: *string,
@@ -979,16 +979,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfiguration {
 	BytesScannedCutoffPerQuery: *f64,
 	EnforceWorkgroupConfiguration: interface{},
-	EngineVersion: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion,
+	EngineVersion: github.com/cdktf/cdktf-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion,
 	ExecutionRole: *string,
 	PublishCloudwatchMetricsEnabled: interface{},
 	RequesterPaysEnabled: interface{},
-	ResultConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration,
+	ResultConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration,
 }
 ```
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationEngineVersion {
 	SelectedEngineVersion: *string,
@@ -1131,11 +1131,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfiguration {
-	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration,
+	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration,
 	ExpectedBucketOwner: *string,
 	OutputLocation: *string,
 }
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration {
 	S3AclOption: *string,
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
 	EncryptionOption: *string,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationEngineVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationEngineVersionOutputReference
 ```
@@ -1578,7 +1578,7 @@ func InternalValue() AthenaWorkgroupConfigurationEngineVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() AthenaWorkgroupConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference
 ```
@@ -2327,7 +2327,7 @@ func InternalValue() AthenaWorkgroupConfigurationResultConfigurationAclConfigura
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference
 ```
@@ -2634,7 +2634,7 @@ func InternalValue() AthenaWorkgroupConfigurationResultConfigurationEncryptionCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/athenaworkgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationOutputReference
 ```

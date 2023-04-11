@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.NewDataAwsCognitoUserPools(scope Construct, id *string, config DataAwsCognitoUserPoolsConfig) DataAwsCognitoUserPools
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 &dataawscognitouserpools.DataAwsCognitoUserPoolsConfig {
 	Connection: interface{},

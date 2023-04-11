@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_sd
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewaysdk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewaysdk"
 
 dataawsapigatewaysdk.NewDataAwsApiGatewaySdk(scope Construct, id *string, config DataAwsApiGatewaySdkConfig) DataAwsApiGatewaySdk
 ```
@@ -280,7 +280,7 @@ func ResetParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewaysdk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewaysdk"
 
 dataawsapigatewaysdk.DataAwsApiGatewaySdk_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewaysdk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewaysdk"
 
 dataawsapigatewaysdk.DataAwsApiGatewaySdk_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsapigatewaysdk.DataAwsApiGatewaySdk_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewaysdk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewaysdk"
 
 dataawsapigatewaysdk.DataAwsApiGatewaySdk_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsapigatewaysdk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewaysdk"
 
 &dataawsapigatewaysdk.DataAwsApiGatewaySdkConfig {
 	Connection: interface{},

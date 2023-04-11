@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/oam_sink aws_o
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsink"
 
 dataawsoamsink.NewDataAwsOamSink(scope Construct, id *string, config DataAwsOamSinkConfig) DataAwsOamSink
 ```
@@ -280,7 +280,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawsoamsink.DataAwsOamSink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsoamsink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamsink"
 
 &dataawsoamsink.DataAwsOamSinkConfig {
 	Connection: interface{},

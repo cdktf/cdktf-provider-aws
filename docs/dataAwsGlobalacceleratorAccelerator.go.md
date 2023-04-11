@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/globalaccelera
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAccelerator(scope Construct, id *string, config DataAwsGlobalacceleratorAcceleratorConfig) DataAwsGlobalacceleratorAccelerator
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAccelerator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorAttributes {
 
@@ -677,7 +677,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratora
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 &dataawsglobalacceleratoraccelerator.DataAwsGlobalacceleratorAcceleratorIpSets {
 
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratora
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorAcceleratorAttributesList
 ```
@@ -971,7 +971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorAcceleratorAttributesOutputReference
 ```
@@ -1271,7 +1271,7 @@ func InternalValue() DataAwsGlobalacceleratorAcceleratorAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorIpSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlobalacceleratorAcceleratorIpSetsList
 ```
@@ -1403,7 +1403,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsglobalacceleratoraccelerator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglobalacceleratoraccelerator"
 
 dataawsglobalacceleratoraccelerator.NewDataAwsGlobalacceleratorAcceleratorIpSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_targe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.NewDbProxyTarget(scope Construct, id *string, config DbProxyTargetConfig) DbProxyTarget
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dbproxytarget.DbProxyTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 dbproxytarget.DbProxyTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxyTarget.DbProxyTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dbproxytarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbproxytarget"
 
 &dbproxytarget.DbProxyTargetConfig {
 	Connection: interface{},

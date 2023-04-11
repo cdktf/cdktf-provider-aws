@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsCluster(scope Construct, id *string, config RdsClusterConfig) RdsCluster
 ```
@@ -688,7 +688,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsCluster.RdsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.RdsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -720,7 +720,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsCluster.RdsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.RdsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -734,7 +734,7 @@ rdscluster.RdsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsCluster.RdsCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.RdsCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -2132,7 +2132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterConfig {
 	Connection: interface{},
@@ -2180,10 +2180,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
 	PreferredBackupWindow: *string,
 	PreferredMaintenanceWindow: *string,
 	ReplicationSourceIdentifier: *string,
-	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsCluster.RdsClusterRestoreToPointInTime,
-	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsCluster.RdsClusterS3Import,
-	ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsCluster.RdsClusterScalingConfiguration,
-	Serverlessv2ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsCluster.RdsClusterServerlessv2ScalingConfiguration,
+	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws.rdsCluster.RdsClusterRestoreToPointInTime,
+	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws.rdsCluster.RdsClusterS3Import,
+	ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.rdsCluster.RdsClusterScalingConfiguration,
+	Serverlessv2ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	SourceRegion: *string,
@@ -2191,7 +2191,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.rdsCluster.RdsClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rdsCluster.RdsClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -2961,7 +2961,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterMasterUserSecret {
 
@@ -2974,7 +2974,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterRestoreToPointInTime {
 	SourceClusterIdentifier: *string,
@@ -3048,7 +3048,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterS3Import.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterS3Import {
 	BucketName: *string,
@@ -3136,7 +3136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterScalingConfiguration {
 	AutoPause: interface{},
@@ -3224,7 +3224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterServerlessv2ScalingConfiguration {
 	MaxCapacity: *f64,
@@ -3270,7 +3270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCluster.RdsClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 &rdscluster.RdsClusterTimeouts {
 	Create: *string,
@@ -3332,7 +3332,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsClusterMasterUserSecretList
 ```
@@ -3464,7 +3464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RdsClusterMasterUserSecretOutputReference
 ```
@@ -3764,7 +3764,7 @@ func InternalValue() RdsClusterMasterUserSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterRestoreToPointInTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterRestoreToPointInTimeOutputReference
 ```
@@ -4122,7 +4122,7 @@ func InternalValue() RdsClusterRestoreToPointInTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterS3ImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterS3ImportOutputReference
 ```
@@ -4488,7 +4488,7 @@ func InternalValue() RdsClusterS3Import
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterScalingConfigurationOutputReference
 ```
@@ -4882,7 +4882,7 @@ func InternalValue() RdsClusterScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterServerlessv2ScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterServerlessv2ScalingConfigurationOutputReference
 ```
@@ -5175,7 +5175,7 @@ func InternalValue() RdsClusterServerlessv2ScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCluster.RdsClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/rdscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscluster"
 
 rdscluster.NewRdsClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterTimeoutsOutputReference
 ```

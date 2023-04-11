@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointconnectionnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointconnectionnotification"
 
 vpcendpointconnectionnotification.NewVpcEndpointConnectionNotification(scope Construct, id *string, config VpcEndpointConnectionNotificationConfig) VpcEndpointConnectionNotification
 ```
@@ -287,7 +287,7 @@ func ResetVpcEndpointServiceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointconnectionnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointconnectionnotification"
 
 vpcendpointconnectionnotification.VpcEndpointConnectionNotification_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointconnectionnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointconnectionnotification"
 
 vpcendpointconnectionnotification.VpcEndpointConnectionNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ vpcendpointconnectionnotification.VpcEndpointConnectionNotification_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointconnectionnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointconnectionnotification"
 
 vpcendpointconnectionnotification.VpcEndpointConnectionNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/vpcendpointconnectionnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcendpointconnectionnotification"
 
 &vpcendpointconnectionnotification.VpcEndpointConnectionNotificationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotation(scope Construct, id *string, config SecretsmanagerSecretRotationConfig) SecretsmanagerSecretRotation
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationConfig {
 	Connection: interface{},
@@ -641,7 +641,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	RotationLambdaArn: *string,
-	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws/v12.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
+	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
 	SecretId: *string,
 	Id: *string,
 }
@@ -793,7 +793,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationRotationRules {
 	AutomaticallyAfterDays: *f64,
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretsmanagerSecretRotationRotationRulesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_fie
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfig(scope Construct, id *string, config CloudfrontFieldLevelEncryptionConfigConfig) CloudfrontFieldLevelEncryptionConfig
 ```
@@ -306,7 +306,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfig_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfig_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigConfig {
 	Connection: interface{},
@@ -671,8 +671,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencry
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ContentTypeProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig,
-	QueryArgProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig,
+	ContentTypeProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig,
+	QueryArgProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig,
 	Comment: *string,
 	Id: *string,
 }
@@ -826,10 +826,10 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig {
-	ContentTypeProfiles: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles,
+	ContentTypeProfiles: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles,
 	ForwardWhenContentTypeIsUnknown: interface{},
 }
 ```
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles {
 	Items: interface{},
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems {
 	ContentType: *string,
@@ -968,11 +968,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig {
 	ForwardWhenQueryArgProfileIsUnknown: interface{},
-	QueryArgProfiles: github.com/cdktf/cdktf-provider-aws-go/aws/v12.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles,
+	QueryArgProfiles: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles,
 }
 ```
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles {
 	Items: interface{},
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 &cloudfrontfieldlevelencryptionconfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems {
 	ProfileId: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsList
 ```
@@ -1241,7 +1241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsOutputReference
 ```
@@ -1581,7 +1581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference
 ```
@@ -1865,7 +1865,7 @@ func InternalValue() CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList
 ```
@@ -2627,7 +2627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsOutputReference
 ```
@@ -2938,7 +2938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/cloudfrontfieldlevelencryptionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontfieldlevelencryptionconfig"
 
 cloudfrontfieldlevelencryptionconfig.NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_locat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 datasynclocationsmb.NewDatasyncLocationSmb(scope Construct, id *string, config DatasyncLocationSmbConfig) DatasyncLocationSmb
 ```
@@ -314,7 +314,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ datasynclocationsmb.DatasyncLocationSmb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsTerraformResource(x interface{}) *bool
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 &datasynclocationsmb.DatasyncLocationSmbConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
 	User: *string,
 	Domain: *string,
 	Id: *string,
-	MountOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v12.datasyncLocationSmb.DatasyncLocationSmbMountOptions,
+	MountOptions: github.com/cdktf/cdktf-provider-aws-go/aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 &datasynclocationsmb.DatasyncLocationSmbMountOptions {
 	Version: *string,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/datasynclocationsmb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationsmb"
 
 datasynclocationsmb.NewDatasyncLocationSmbMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationSmbMountOptionsOutputReference
 ```

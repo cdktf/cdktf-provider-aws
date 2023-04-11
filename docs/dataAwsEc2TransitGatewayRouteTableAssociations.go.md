@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_ga
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.NewDataAwsEc2TransitGatewayRouteTableAssociations(scope Construct, id *string, config DataAwsEc2TransitGatewayRouteTableAssociationsConfig) DataAwsEc2TransitGatewayRouteTableAssociations
 ```
@@ -313,7 +313,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTabl
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 &dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociationsConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayr
 	TransitGatewayRouteTableId: *string,
 	Filter: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsTimeouts,
 }
 ```
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 &dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociationsFilter {
 	Name: *string,
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 &dataawsec2transitgatewayroutetableassociations.DataAwsEc2TransitGatewayRouteTableAssociationsTimeouts {
 	Read: *string,
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.NewDataAwsEc2TransitGatewayRouteTableAssociationsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayRouteTableAssociationsFilterList
 ```
@@ -1023,7 +1023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.NewDataAwsEc2TransitGatewayRouteTableAssociationsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayRouteTableAssociationsFilterOutputReference
 ```
@@ -1334,7 +1334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTableAssociations.DataAwsEc2TransitGatewayRouteTableAssociationsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsec2transitgatewayroutetableassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2transitgatewayroutetableassociations"
 
 dataawsec2transitgatewayroutetableassociations.NewDataAwsEc2TransitGatewayRouteTableAssociationsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayRouteTableAssociationsTimeoutsOutputReference
 ```

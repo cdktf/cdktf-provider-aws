@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector2_mem
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 inspector2memberassociation.NewInspector2MemberAssociation(scope Construct, id *string, config Inspector2MemberAssociationConfig) Inspector2MemberAssociation
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 inspector2memberassociation.Inspector2MemberAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 inspector2memberassociation.Inspector2MemberAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ inspector2memberassociation.Inspector2MemberAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 inspector2memberassociation.Inspector2MemberAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -604,7 +604,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 &inspector2memberassociation.Inspector2MemberAssociationConfig {
 	Connection: interface{},
@@ -616,7 +616,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociati
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v12.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts,
 }
 ```
 
@@ -753,7 +753,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 &inspector2memberassociation.Inspector2MemberAssociationTimeouts {
 	Create: *string,
@@ -801,7 +801,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/inspector2memberassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2memberassociation"
 
 inspector2memberassociation.NewInspector2MemberAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2MemberAssociationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_d
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxy(scope Construct, id *string, config DataAwsDbProxyConfig) DataAwsDbProxy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataawsdbproxy.DataAwsDbProxy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 &dataawsdbproxy.DataAwsDbProxyAuth {
 
@@ -674,7 +674,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 &dataawsdbproxy.DataAwsDbProxyConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxyAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDbProxyAuthList
 ```
@@ -941,7 +941,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxyAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDbProxyAuthOutputReference
 ```

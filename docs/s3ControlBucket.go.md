@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_buck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucket.S3ControlBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3controlbucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucket"
 
 s3controlbucket.NewS3ControlBucket(scope Construct, id *string, config S3ControlBucketConfig) S3ControlBucket
 ```
@@ -287,7 +287,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlBucket.S3ControlBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3controlbucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlBucket.S3ControlBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3controlbucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ s3controlbucket.S3ControlBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlBucket.S3ControlBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3controlbucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlBucket.S3ControlBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/s3controlbucket"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlbucket"
 
 &s3controlbucket.S3ControlBucketConfig {
 	Connection: interface{},

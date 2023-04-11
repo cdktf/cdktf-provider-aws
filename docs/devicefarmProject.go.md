@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_pro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmProject.DevicefarmProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarmproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmproject"
 
 devicefarmproject.NewDevicefarmProject(scope Construct, id *string, config DevicefarmProjectConfig) DevicefarmProject
 ```
@@ -294,7 +294,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.devicefarmProject.DevicefarmProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarmproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmproject"
 
 devicefarmproject.DevicefarmProject_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.devicefarmProject.DevicefarmProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarmproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmproject"
 
 devicefarmproject.DevicefarmProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ devicefarmproject.DevicefarmProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.devicefarmProject.DevicefarmProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarmproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmproject"
 
 devicefarmproject.DevicefarmProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmProject.DevicefarmProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/devicefarmproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/devicefarmproject"
 
 &devicefarmproject.DevicefarmProjectConfig {
 	Connection: interface{},

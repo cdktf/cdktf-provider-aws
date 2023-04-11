@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsCluster(scope Construct, id *string, config EcsClusterConfig) EcsCluster
 ```
@@ -374,7 +374,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsCluster.EcsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.EcsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsCluster.EcsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.EcsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ ecscluster.EcsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsCluster.EcsCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.EcsCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterConfig {
 	Connection: interface{},
@@ -840,10 +840,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
 	Provisioners: *[]interface{},
 	Name: *string,
 	CapacityProviders: *[]*string,
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsCluster.EcsClusterConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCluster.EcsClusterConfiguration,
 	DefaultCapacityProviderStrategy: interface{},
 	Id: *string,
-	ServiceConnectDefaults: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsCluster.EcsClusterServiceConnectDefaults,
+	ServiceConnectDefaults: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCluster.EcsClusterServiceConnectDefaults,
 	Setting: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1067,10 +1067,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterConfiguration {
-	ExecuteCommandConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsCluster.EcsClusterConfigurationExecuteCommandConfiguration,
+	ExecuteCommandConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfiguration,
 }
 ```
 
@@ -1101,11 +1101,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterConfigurationExecuteCommandConfiguration {
 	KmsKeyId: *string,
-	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v12.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration,
+	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration,
 	Logging: *string,
 }
 ```
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration {
 	CloudWatchEncryptionEnabled: interface{},
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterDefaultCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterServiceConnectDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterServiceConnectDefaults {
 	Namespace: *string,
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCluster.EcsClusterSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 &ecscluster.EcsClusterSetting {
 	Name: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference
 ```
@@ -1785,7 +1785,7 @@ func InternalValue() EcsClusterConfigurationExecuteCommandConfigurationLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterConfigurationExecuteCommandConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsClusterConfigurationExecuteCommandConfigurationOutputReference
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() EcsClusterConfigurationExecuteCommandConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsClusterConfigurationOutputReference
 ```
@@ -2425,7 +2425,7 @@ func InternalValue() EcsClusterConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterDefaultCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsClusterDefaultCapacityProviderStrategyList
 ```
@@ -2568,7 +2568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterDefaultCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsClusterDefaultCapacityProviderStrategyOutputReference
 ```
@@ -2915,7 +2915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterServiceConnectDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterServiceConnectDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsClusterServiceConnectDefaultsOutputReference
 ```
@@ -3186,7 +3186,7 @@ func InternalValue() EcsClusterServiceConnectDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsClusterSettingList
 ```
@@ -3329,7 +3329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCluster.EcsClusterSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/ecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscluster"
 
 ecscluster.NewEcsClusterSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsClusterSettingOutputReference
 ```

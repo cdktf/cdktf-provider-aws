@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_acl aw
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NewNetworkAcl(scope Construct, id *string, config NetworkAclConfig) NetworkAcl
 ```
@@ -334,7 +334,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NetworkAcl_IsConstruct(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NetworkAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ networkacl.NetworkAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NetworkAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 &networkacl.NetworkAclConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 &networkacl.NetworkAclEgress {
 	Action: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 &networkacl.NetworkAclIngress {
 	Action: *string,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NewNetworkAclEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkAclEgressList
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NewNetworkAclEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkAclEgressOutputReference
 ```
@@ -1919,7 +1919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NewNetworkAclIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkAclIngressList
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkacl"
 
 networkacl.NewNetworkAclIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkAclIngressOutputReference
 ```
