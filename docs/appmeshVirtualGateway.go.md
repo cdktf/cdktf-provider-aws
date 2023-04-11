@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtua
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGateway(scope Construct, id *string, config AppmeshVirtualGatewayConfig) AppmeshVirtualGateway
 ```
@@ -307,7 +307,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.AppmeshVirtualGateway_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.AppmeshVirtualGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ appmeshvirtualgateway.AppmeshVirtualGateway_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.AppmeshVirtualGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewayConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpec,
 	Id: *string,
 	MeshOwner: *string,
 	Tags: *map[string]*string,
@@ -955,12 +955,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpec {
 	Listener: interface{},
-	BackendDefaults: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaults,
-	Logging: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLogging,
+	BackendDefaults: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaults,
+	Logging: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLogging,
 }
 ```
 
@@ -1021,10 +1021,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaults {
-	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy,
+	ClientPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy,
 }
 ```
 
@@ -1055,10 +1055,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy {
-	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls,
+	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls,
 }
 ```
 
@@ -1089,11 +1089,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls {
-	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation,
-	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate,
+	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation,
+	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate,
 	Enforce: interface{},
 	Ports: *[]*f64,
 }
@@ -1167,11 +1167,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds,
 }
 ```
 
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile {
 	CertificateChain: *string,
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds {
 	SecretName: *string,
@@ -1295,11 +1295,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation {
-	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -1345,10 +1345,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -1411,12 +1411,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust {
-	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
-	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds,
+	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds,
 }
 ```
 
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
 	CertificateAuthorityArns: *[]*string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds {
 	SecretName: *string,
@@ -1573,13 +1573,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListener {
-	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMapping,
-	ConnectionPool: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPool,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheck,
-	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTls,
+	PortMapping: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMapping,
+	ConnectionPool: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPool,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheck,
+	Tls: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTls,
 }
 ```
 
@@ -1655,12 +1655,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerConnectionPool {
-	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc,
-	Http: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp,
-	Http2: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2,
+	Grpc: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc,
+	Http: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp,
+	Http2: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2,
 }
 ```
 
@@ -1721,7 +1721,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc {
 	MaxRequests: *f64,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp {
 	MaxConnections: *f64,
@@ -1799,7 +1799,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 {
 	MaxRequests: *f64,
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerHealthCheck {
 	HealthyThreshold: *f64,
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerPortMapping {
 	Port: *f64,
@@ -1993,12 +1993,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTls {
-	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificate,
+	Certificate: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificate,
 	Mode: *string,
-	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidation,
+	Validation: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidation,
 }
 ```
 
@@ -2057,12 +2057,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsCertificate {
-	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm,
-	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds,
+	Acm: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds,
 }
 ```
 
@@ -2123,7 +2123,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm {
 	CertificateArn: *string,
@@ -2155,7 +2155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile {
 	CertificateChain: *string,
@@ -2201,7 +2201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds {
 	SecretName: *string,
@@ -2233,11 +2233,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidation {
-	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust,
-	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames,
+	Trust: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust,
+	SubjectAlternativeNames: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames,
 }
 ```
 
@@ -2283,10 +2283,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch,
 }
 ```
 
@@ -2317,7 +2317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch {
 	Exact: *[]*string,
@@ -2349,11 +2349,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile,
-	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile,
+	Sds: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds,
 }
 ```
 
@@ -2399,7 +2399,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile {
 	CertificateChain: *string,
@@ -2431,7 +2431,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds {
 	SecretName: *string,
@@ -2463,10 +2463,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecLogging {
-	AccessLog: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLog,
+	AccessLog: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLog,
 }
 ```
 
@@ -2497,10 +2497,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecLoggingAccessLog {
-	File: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile,
+	File: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile,
 }
 ```
 
@@ -2531,11 +2531,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile {
 	Path: *string,
-	Format: github.com/cdktf/cdktf-provider-aws-go/aws/v12.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat,
+	Format: github.com/cdktf/cdktf-provider-aws-go/aws/v13.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat,
 }
 ```
 
@@ -2579,7 +2579,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat {
 	Json: interface{},
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 &appmeshvirtualgateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJson {
 	Key: *string,
@@ -2675,7 +2675,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
 ```
@@ -2966,7 +2966,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference
 ```
@@ -3259,7 +3259,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference
 ```
@@ -3592,7 +3592,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -3863,7 +3863,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference
 ```
@@ -4247,7 +4247,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference
 ```
@@ -4573,7 +4573,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -4844,7 +4844,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -5128,7 +5128,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -5399,7 +5399,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -5670,7 +5670,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference
 ```
@@ -6045,7 +6045,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -6316,7 +6316,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsVali
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecBackendDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecBackendDefaultsOutputReference
 ```
@@ -6607,7 +6607,7 @@ func InternalValue() AppmeshVirtualGatewaySpecBackendDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference
 ```
@@ -6878,7 +6878,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference
 ```
@@ -7149,7 +7149,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference
 ```
@@ -7449,7 +7449,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerConnectionPoolHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference
 ```
@@ -7824,7 +7824,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerConnectionPool
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference
 ```
@@ -8241,7 +8241,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualGatewaySpecListenerList
 ```
@@ -8384,7 +8384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualGatewaySpecListenerOutputReference
 ```
@@ -8812,7 +8812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerPortMappingOutputReference
 ```
@@ -9105,7 +9105,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference
 ```
@@ -9376,7 +9376,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsCertificateAcm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference
 ```
@@ -9669,7 +9669,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsCertificateFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference
 ```
@@ -10044,7 +10044,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference
 ```
@@ -10315,7 +10315,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsCertificateSds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsOutputReference
 ```
@@ -10663,7 +10663,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTls
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference
 ```
@@ -10989,7 +10989,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -11260,7 +11260,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAltern
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -11544,7 +11544,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAltern
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference
 ```
@@ -11815,7 +11815,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference
 ```
@@ -12148,7 +12148,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidationTrust
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference
 ```
@@ -12419,7 +12419,7 @@ func InternalValue() AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList
 ```
@@ -12562,7 +12562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference
 ```
@@ -12873,7 +12873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference
 ```
@@ -13193,7 +13193,7 @@ func InternalValue() AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference
 ```
@@ -13506,7 +13506,7 @@ func InternalValue() AppmeshVirtualGatewaySpecLoggingAccessLogFile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingAccessLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference
 ```
@@ -13797,7 +13797,7 @@ func InternalValue() AppmeshVirtualGatewaySpecLoggingAccessLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecLoggingOutputReference
 ```
@@ -14088,7 +14088,7 @@ func InternalValue() AppmeshVirtualGatewaySpecLogging
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v12/appmeshvirtualgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/appmeshvirtualgateway"
 
 appmeshvirtualgateway.NewAppmeshVirtualGatewaySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecOutputReference
 ```
