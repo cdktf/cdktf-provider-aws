@@ -1450,7 +1450,7 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ecs_task_execution',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

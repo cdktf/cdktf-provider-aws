@@ -383,6 +383,7 @@ natgateway.NatGateway_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.associationId">AssociationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.publicIp">PublicIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.allocationIdInput">AllocationIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -541,6 +542,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `AssociationId`<sup>Required</sup> <a name="AssociationId" id="@cdktf/provider-aws.natGateway.NatGateway.property.associationId"></a>
+
+```go
+func AssociationId() *string
+```
+
+- *Type:* *string
 
 ---
 

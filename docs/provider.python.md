@@ -2566,6 +2566,8 @@ provider.AwsProviderEndpoints(
   chimesdkmediapipelines: str = None,
   chimesdkmeetings: str = None,
   chimesdkmessaging: str = None,
+  chimesdkvoice: str = None,
+  cleanrooms: str = None,
   cloud9: str = None,
   cloudcontrol: str = None,
   cloudcontrolapi: str = None,
@@ -2629,6 +2631,7 @@ provider.AwsProviderEndpoints(
   dlm: str = None,
   dms: str = None,
   docdb: str = None,
+  docdbelastic: str = None,
   drs: str = None,
   ds: str = None,
   dynamodb: str = None,
@@ -2953,6 +2956,8 @@ provider.AwsProviderEndpoints(
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">chimesdkmediapipelines</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmeetings">chimesdkmeetings</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmessaging">chimesdkmessaging</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice">chimesdkvoice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms">cleanrooms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">cloud9</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol">cloudcontrol</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi">cloudcontrolapi</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
@@ -3016,6 +3021,7 @@ provider.AwsProviderEndpoints(
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dlm">dlm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dms">dms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdb">docdb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic">docdbelastic</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.drs">drs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ds">ds</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dynamodb">dynamodb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
@@ -3947,6 +3953,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#c
 
 ---
 
+##### `chimesdkvoice`<sup>Optional</sup> <a name="chimesdkvoice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice"></a>
+
+```python
+chimesdkvoice: str
+```
+
+- *Type:* str
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkvoice AwsProvider#chimesdkvoice}
+
+---
+
+##### `cleanrooms`<sup>Optional</sup> <a name="cleanrooms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms"></a>
+
+```python
+cleanrooms: str
+```
+
+- *Type:* str
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cleanrooms AwsProvider#cleanrooms}
+
+---
+
 ##### `cloud9`<sup>Optional</sup> <a name="cloud9" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9"></a>
 
 ```python
@@ -4826,6 +4860,20 @@ docdb: str
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdb AwsProvider#docdb}
+
+---
+
+##### `docdbelastic`<sup>Optional</sup> <a name="docdbelastic" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic"></a>
+
+```python
+docdbelastic: str
+```
+
+- *Type:* str
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdbelastic AwsProvider#docdbelastic}
 
 ---
 

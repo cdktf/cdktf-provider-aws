@@ -58,7 +58,7 @@ export class IamUserSshKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_user_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

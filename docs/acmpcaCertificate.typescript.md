@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.putValidity">putValidity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.resetApiPassthrough">resetApiPassthrough</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.resetTemplateArn">resetTemplateArn</a></code> | *No description.* |
 
@@ -268,6 +269,12 @@ public putValidity(value: AcmpcaCertificateValidity): void
 
 ---
 
+##### `resetApiPassthrough` <a name="resetApiPassthrough" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.resetApiPassthrough"></a>
+
+```typescript
+public resetApiPassthrough(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.resetId"></a>
 
 ```typescript
@@ -372,12 +379,14 @@ acmpcaCertificate.AcmpcaCertificate.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificate">certificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateChain">certificateChain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.validity">validity</a></code> | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference">AcmpcaCertificateValidityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.apiPassthroughInput">apiPassthroughInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateAuthorityArnInput">certificateAuthorityArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateSigningRequestInput">certificateSigningRequestInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.signingAlgorithmInput">signingAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.templateArnInput">templateArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.validityInput">validityInput</a></code> | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity">AcmpcaCertificateValidity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.apiPassthrough">apiPassthrough</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateAuthorityArn">certificateAuthorityArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateSigningRequest">certificateSigningRequest</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -568,6 +577,16 @@ public readonly validity: AcmpcaCertificateValidityOutputReference;
 
 ---
 
+##### `apiPassthroughInput`<sup>Optional</sup> <a name="apiPassthroughInput" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.apiPassthroughInput"></a>
+
+```typescript
+public readonly apiPassthroughInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `certificateAuthorityArnInput`<sup>Optional</sup> <a name="certificateAuthorityArnInput" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.certificateAuthorityArnInput"></a>
 
 ```typescript
@@ -625,6 +644,16 @@ public readonly validityInput: AcmpcaCertificateValidity;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity">AcmpcaCertificateValidity</a>
+
+---
+
+##### `apiPassthrough`<sup>Required</sup> <a name="apiPassthrough" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.property.apiPassthrough"></a>
+
+```typescript
+public readonly apiPassthrough: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -723,6 +752,7 @@ const acmpcaCertificateConfig: acmpcaCertificate.AcmpcaCertificateConfig = { ...
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.certificateSigningRequest">certificateSigningRequest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#certificate_signing_request AcmpcaCertificate#certificate_signing_request}. |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.signingAlgorithm">signingAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#signing_algorithm AcmpcaCertificate#signing_algorithm}. |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.validity">validity</a></code> | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity">AcmpcaCertificateValidity</a></code> | validity block. |
+| <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.apiPassthrough">apiPassthrough</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#api_passthrough AcmpcaCertificate#api_passthrough}. |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#id AcmpcaCertificate#id}. |
 | <code><a href="#@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.templateArn">templateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#template_arn AcmpcaCertificate#template_arn}. |
 
@@ -845,6 +875,18 @@ public readonly validity: AcmpcaCertificateValidity;
 validity block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#validity AcmpcaCertificate#validity}
+
+---
+
+##### `apiPassthrough`<sup>Optional</sup> <a name="apiPassthrough" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.property.apiPassthrough"></a>
+
+```typescript
+public readonly apiPassthrough: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#api_passthrough AcmpcaCertificate#api_passthrough}.
 
 ---
 

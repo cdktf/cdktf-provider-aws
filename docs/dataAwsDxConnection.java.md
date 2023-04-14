@@ -444,6 +444,7 @@ DataAwsDxConnection.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.bandwidth">bandwidth</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName">partnerName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName">providerName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.vlanId">vlanId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -621,6 +622,16 @@ public java.lang.String getLocation();
 
 ```java
 public java.lang.String getOwnerAccountId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `partnerName`<sup>Required</sup> <a name="partnerName" id="@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName"></a>
+
+```java
+public java.lang.String getPartnerName();
 ```
 
 - *Type:* java.lang.String

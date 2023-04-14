@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface AcmpcaCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#api_passthrough AcmpcaCertificate#api_passthrough}
+  */
+  readonly apiPassthrough?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#certificate_authority_arn AcmpcaCertificate#certificate_authority_arn}
   */
   readonly certificateAuthorityArn: string;
@@ -150,7 +154,7 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acmpca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -161,6 +165,7 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._apiPassthrough = config.apiPassthrough;
     this._certificateAuthorityArn = config.certificateAuthorityArn;
     this._certificateSigningRequest = config.certificateSigningRequest;
     this._id = config.id;
@@ -172,6 +177,22 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api_passthrough - computed: false, optional: true, required: false
+  private _apiPassthrough?: string; 
+  public get apiPassthrough() {
+    return this.getStringAttribute('api_passthrough');
+  }
+  public set apiPassthrough(value: string) {
+    this._apiPassthrough = value;
+  }
+  public resetApiPassthrough() {
+    this._apiPassthrough = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiPassthroughInput() {
+    return this._apiPassthrough;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -278,6 +299,7 @@ export class AcmpcaCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      api_passthrough: cdktf.stringToTerraform(this._apiPassthrough),
       certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
       certificate_signing_request: cdktf.stringToTerraform(this._certificateSigningRequest),
       id: cdktf.stringToTerraform(this._id),

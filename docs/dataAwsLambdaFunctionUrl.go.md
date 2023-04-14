@@ -358,6 +358,7 @@ dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interf
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.creationTime">CreationTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionArn">FunctionArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionUrl">FunctionUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.invokeMode">InvokeMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.lastModifiedTime">LastModifiedTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.urlId">UrlId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionNameInput">FunctionNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -535,6 +536,16 @@ func FunctionArn() *string
 
 ```go
 func FunctionUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InvokeMode`<sup>Required</sup> <a name="InvokeMode" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.invokeMode"></a>
+
+```go
+func InvokeMode() *string
 ```
 
 - *Type:* *string

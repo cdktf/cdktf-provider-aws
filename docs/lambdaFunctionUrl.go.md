@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetCors">ResetCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetInvokeMode">ResetInvokeMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetQualifier">ResetQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -295,6 +296,12 @@ func ResetCors()
 func ResetId()
 ```
 
+##### `ResetInvokeMode` <a name="ResetInvokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetInvokeMode"></a>
+
+```go
+func ResetInvokeMode()
+```
+
 ##### `ResetQualifier` <a name="ResetQualifier" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetQualifier"></a>
 
 ```go
@@ -404,11 +411,13 @@ lambdafunctionurl.LambdaFunctionUrl_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.corsInput">CorsInput</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.functionNameInput">FunctionNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeModeInput">InvokeModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifierInput">QualifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.authorizationType">AuthorizationType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.functionName">FunctionName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeMode">InvokeMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifier">Qualifier</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -645,6 +654,16 @@ func IdInput() *string
 
 ---
 
+##### `InvokeModeInput`<sup>Optional</sup> <a name="InvokeModeInput" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeModeInput"></a>
+
+```go
+func InvokeModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `QualifierInput`<sup>Optional</sup> <a name="QualifierInput" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifierInput"></a>
 
 ```go
@@ -689,6 +708,16 @@ func FunctionName() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InvokeMode`<sup>Required</sup> <a name="InvokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeMode"></a>
+
+```go
+func InvokeMode() *string
 ```
 
 - *Type:* *string
@@ -744,6 +773,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 	FunctionName: *string,
 	Cors: github.com/cdktf/cdktf-provider-aws-go/aws/v13.lambdaFunctionUrl.LambdaFunctionUrlCors,
 	Id: *string,
+	InvokeMode: *string,
 	Qualifier: *string,
 	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v13.lambdaFunctionUrl.LambdaFunctionUrlTimeouts,
 }
@@ -764,6 +794,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#function_name LambdaFunctionUrl#function_name}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.cors">Cors</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#id LambdaFunctionUrl#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode">InvokeMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.qualifier">Qualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts">LambdaFunctionUrlTimeouts</a></code> | timeouts block. |
 
@@ -889,6 +920,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `InvokeMode`<sup>Optional</sup> <a name="InvokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode"></a>
+
+```go
+InvokeMode *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
 
 ---
 

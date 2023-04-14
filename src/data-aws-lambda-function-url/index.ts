@@ -139,7 +139,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lambda_function_url',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -212,6 +212,11 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // invoke_mode - computed: true, optional: false, required: false
+  public get invokeMode() {
+    return this.getStringAttribute('invoke_mode');
   }
 
   // last_modified_time - computed: true, optional: false, required: false

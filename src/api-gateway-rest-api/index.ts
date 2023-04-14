@@ -28,6 +28,10 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}
+  */
+  readonly failOnWarnings?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#id ApiGatewayRestApi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -185,7 +189,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_rest_api',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -201,6 +205,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     this._body = config.body;
     this._description = config.description;
     this._disableExecuteApiEndpoint = config.disableExecuteApiEndpoint;
+    this._failOnWarnings = config.failOnWarnings;
     this._id = config.id;
     this._minimumCompressionSize = config.minimumCompressionSize;
     this._name = config.name;
@@ -309,6 +314,22 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
+  }
+
+  // fail_on_warnings - computed: false, optional: true, required: false
+  private _failOnWarnings?: boolean | cdktf.IResolvable; 
+  public get failOnWarnings() {
+    return this.getBooleanAttribute('fail_on_warnings');
+  }
+  public set failOnWarnings(value: boolean | cdktf.IResolvable) {
+    this._failOnWarnings = value;
+  }
+  public resetFailOnWarnings() {
+    this._failOnWarnings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOnWarningsInput() {
+    return this._failOnWarnings;
   }
 
   // id - computed: true, optional: true, required: false
@@ -468,6 +489,7 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       body: cdktf.stringToTerraform(this._body),
       description: cdktf.stringToTerraform(this._description),
       disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
+      fail_on_warnings: cdktf.booleanToTerraform(this._failOnWarnings),
       id: cdktf.stringToTerraform(this._id),
       minimum_compression_size: cdktf.numberToTerraform(this._minimumCompressionSize),
       name: cdktf.stringToTerraform(this._name),

@@ -26,6 +26,7 @@ LambdaFunctionUrl.Builder.create(Construct scope, java.lang.String id)
     .functionName(java.lang.String)
 //  .cors(LambdaFunctionUrlCors)
 //  .id(java.lang.String)
+//  .invokeMode(java.lang.String)
 //  .qualifier(java.lang.String)
 //  .timeouts(LambdaFunctionUrlTimeouts)
     .build();
@@ -46,6 +47,7 @@ LambdaFunctionUrl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#function_name LambdaFunctionUrl#function_name}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.cors">cors</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#id LambdaFunctionUrl#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.invokeMode">invokeMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.qualifier">qualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts">LambdaFunctionUrlTimeouts</a></code> | timeouts block. |
 
@@ -148,6 +150,14 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `invokeMode`<sup>Optional</sup> <a name="invokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.invokeMode"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
+
+---
+
 ##### `qualifier`<sup>Optional</sup> <a name="qualifier" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer.parameter.qualifier"></a>
 
 - *Type:* java.lang.String
@@ -190,6 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetCors">resetCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetInvokeMode">resetInvokeMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetQualifier">resetQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -415,6 +426,12 @@ public void resetCors()
 public void resetId()
 ```
 
+##### `resetInvokeMode` <a name="resetInvokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetInvokeMode"></a>
+
+```java
+public void resetInvokeMode()
+```
+
 ##### `resetQualifier` <a name="resetQualifier" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.resetQualifier"></a>
 
 ```java
@@ -524,11 +541,13 @@ LambdaFunctionUrl.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.corsInput">corsInput</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.functionNameInput">functionNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeModeInput">invokeModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifierInput">qualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts">LambdaFunctionUrlTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.authorizationType">authorizationType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.functionName">functionName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeMode">invokeMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifier">qualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -765,6 +784,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `invokeModeInput`<sup>Optional</sup> <a name="invokeModeInput" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeModeInput"></a>
+
+```java
+public java.lang.String getInvokeModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `qualifierInput`<sup>Optional</sup> <a name="qualifierInput" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.qualifierInput"></a>
 
 ```java
@@ -809,6 +838,16 @@ public java.lang.String getFunctionName();
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `invokeMode`<sup>Required</sup> <a name="invokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.property.invokeMode"></a>
+
+```java
+public java.lang.String getInvokeMode();
 ```
 
 - *Type:* java.lang.String
@@ -867,6 +906,7 @@ LambdaFunctionUrlConfig.builder()
     .functionName(java.lang.String)
 //  .cors(LambdaFunctionUrlCors)
 //  .id(java.lang.String)
+//  .invokeMode(java.lang.String)
 //  .qualifier(java.lang.String)
 //  .timeouts(LambdaFunctionUrlTimeouts)
     .build();
@@ -887,6 +927,7 @@ LambdaFunctionUrlConfig.builder()
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.functionName">functionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#function_name LambdaFunctionUrl#function_name}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors">LambdaFunctionUrlCors</a></code> | cors block. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#id LambdaFunctionUrl#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode">invokeMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.qualifier">qualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts">LambdaFunctionUrlTimeouts</a></code> | timeouts block. |
 
@@ -1012,6 +1053,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `invokeMode`<sup>Optional</sup> <a name="invokeMode" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.property.invokeMode"></a>
+
+```java
+public java.lang.String getInvokeMode();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
 
 ---
 

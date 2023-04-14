@@ -409,7 +409,7 @@ export class MskServerlessClusterVpcConfigOutputReference extends cdktf.ComplexO
     }
   }
 
-  // security_group_ids - computed: false, optional: true, required: false
+  // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
     return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
@@ -485,7 +485,7 @@ export class MskServerlessCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_serverless_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

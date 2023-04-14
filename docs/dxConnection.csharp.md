@@ -396,6 +396,7 @@ DxConnection.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.jumboFrameCapable">JumboFrameCapable</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.macsecCapable">MacsecCapable</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.ownerAccountId">OwnerAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName">PartnerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.portEncryptionStatus">PortEncryptionStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.vlanId">VlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.bandwidthInput">BandwidthInput</a></code> | <code>string</code> | *No description.* |
@@ -617,6 +618,16 @@ public IResolvable MacsecCapable { get; }
 
 ```csharp
 public string OwnerAccountId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PartnerName`<sup>Required</sup> <a name="PartnerName" id="@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName"></a>
+
+```csharp
+public string PartnerName { get; }
 ```
 
 - *Type:* string

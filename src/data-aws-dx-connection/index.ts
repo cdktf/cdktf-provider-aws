@@ -50,7 +50,7 @@ export class DataAwsDxConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dx_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -122,6 +122,11 @@ export class DataAwsDxConnection extends cdktf.TerraformDataSource {
   // owner_account_id - computed: true, optional: false, required: false
   public get ownerAccountId() {
     return this.getStringAttribute('owner_account_id');
+  }
+
+  // partner_name - computed: true, optional: false, required: false
+  public get partnerName() {
+    return this.getStringAttribute('partner_name');
   }
 
   // provider_name - computed: true, optional: false, required: false

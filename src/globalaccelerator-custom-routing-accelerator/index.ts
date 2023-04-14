@@ -368,7 +368,7 @@ export class GlobalacceleratorCustomRoutingAccelerator extends cdktf.TerraformRe
       terraformResourceType: 'aws_globalaccelerator_custom_routing_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

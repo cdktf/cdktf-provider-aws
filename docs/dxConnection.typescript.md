@@ -396,6 +396,7 @@ dxConnection.DxConnection.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.jumboFrameCapable">jumboFrameCapable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.macsecCapable">macsecCapable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.ownerAccountId">ownerAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName">partnerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.portEncryptionStatus">portEncryptionStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.vlanId">vlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.bandwidthInput">bandwidthInput</a></code> | <code>string</code> | *No description.* |
@@ -617,6 +618,16 @@ public readonly macsecCapable: IResolvable;
 
 ```typescript
 public readonly ownerAccountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `partnerName`<sup>Required</sup> <a name="partnerName" id="@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName"></a>
+
+```typescript
+public readonly partnerName: string;
 ```
 
 - *Type:* string

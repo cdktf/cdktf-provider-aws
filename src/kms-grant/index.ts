@@ -200,7 +200,7 @@ export class KmsGrant extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kms_grant',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

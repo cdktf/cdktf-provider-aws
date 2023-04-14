@@ -359,7 +359,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_lustre_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

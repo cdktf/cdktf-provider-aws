@@ -358,6 +358,7 @@ dataawsdxconnection.DataAwsDxConnection_IsTerraformDataSource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.bandwidth">Bandwidth</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.ownerAccountId">OwnerAccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName">PartnerName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName">ProviderName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.vlanId">VlanId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -535,6 +536,16 @@ func Location() *string
 
 ```go
 func OwnerAccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PartnerName`<sup>Required</sup> <a name="PartnerName" id="@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName"></a>
+
+```go
+func PartnerName() *string
 ```
 
 - *Type:* *string

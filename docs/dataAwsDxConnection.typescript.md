@@ -358,6 +358,7 @@ dataAwsDxConnection.DataAwsDxConnection.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.bandwidth">bandwidth</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.ownerAccountId">ownerAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName">partnerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.providerName">providerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.vlanId">vlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -535,6 +536,16 @@ public readonly location: string;
 
 ```typescript
 public readonly ownerAccountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `partnerName`<sup>Required</sup> <a name="partnerName" id="@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.property.partnerName"></a>
+
+```typescript
+public readonly partnerName: string;
 ```
 
 - *Type:* string

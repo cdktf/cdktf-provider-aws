@@ -237,7 +237,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_docdb_cluster_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

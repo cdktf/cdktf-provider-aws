@@ -1434,7 +1434,7 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_mysql_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -23,6 +23,10 @@ export interface LambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}
+  */
+  readonly invokeMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}
   */
   readonly qualifier?: string;
@@ -341,7 +345,7 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_function_url',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -355,6 +359,7 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
     this._authorizationType = config.authorizationType;
     this._functionName = config.functionName;
     this._id = config.id;
+    this._invokeMode = config.invokeMode;
     this._qualifier = config.qualifier;
     this._cors.internalValue = config.cors;
     this._timeouts.internalValue = config.timeouts;
@@ -414,6 +419,22 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // invoke_mode - computed: false, optional: true, required: false
+  private _invokeMode?: string; 
+  public get invokeMode() {
+    return this.getStringAttribute('invoke_mode');
+  }
+  public set invokeMode(value: string) {
+    this._invokeMode = value;
+  }
+  public resetInvokeMode() {
+    this._invokeMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invokeModeInput() {
+    return this._invokeMode;
   }
 
   // qualifier - computed: false, optional: true, required: false
@@ -478,6 +499,7 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
       authorization_type: cdktf.stringToTerraform(this._authorizationType),
       function_name: cdktf.stringToTerraform(this._functionName),
       id: cdktf.stringToTerraform(this._id),
+      invoke_mode: cdktf.stringToTerraform(this._invokeMode),
       qualifier: cdktf.stringToTerraform(this._qualifier),
       cors: lambdaFunctionUrlCorsToTerraform(this._cors.internalValue),
       timeouts: lambdaFunctionUrlTimeoutsToTerraform(this._timeouts.internalValue),

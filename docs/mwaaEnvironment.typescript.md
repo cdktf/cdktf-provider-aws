@@ -82,6 +82,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetRequirementsS3ObjectVersion">resetRequirementsS3ObjectVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetRequirementsS3Path">resetRequirementsS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetSchedulers">resetSchedulers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3ObjectVersion">resetStartupScriptS3ObjectVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3Path">resetStartupScriptS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -388,6 +390,18 @@ public resetRequirementsS3Path(): void
 public resetSchedulers(): void
 ```
 
+##### `resetStartupScriptS3ObjectVersion` <a name="resetStartupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3ObjectVersion"></a>
+
+```typescript
+public resetStartupScriptS3ObjectVersion(): void
+```
+
+##### `resetStartupScriptS3Path` <a name="resetStartupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3Path"></a>
+
+```typescript
+public resetStartupScriptS3Path(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTags"></a>
 
 ```typescript
@@ -533,6 +547,8 @@ mwaaEnvironment.MwaaEnvironment.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.requirementsS3PathInput">requirementsS3PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.schedulersInput">schedulersInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.sourceBucketArnInput">sourceBucketArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersionInput">startupScriptS3ObjectVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3PathInput">startupScriptS3PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts">MwaaEnvironmentTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
@@ -554,6 +570,8 @@ mwaaEnvironment.MwaaEnvironment.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.requirementsS3Path">requirementsS3Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.schedulers">schedulers</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.sourceBucketArn">sourceBucketArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersion">startupScriptS3ObjectVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3Path">startupScriptS3Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.webserverAccessMode">webserverAccessMode</a></code> | <code>string</code> | *No description.* |
@@ -973,6 +991,26 @@ public readonly sourceBucketArnInput: string;
 
 ---
 
+##### `startupScriptS3ObjectVersionInput`<sup>Optional</sup> <a name="startupScriptS3ObjectVersionInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersionInput"></a>
+
+```typescript
+public readonly startupScriptS3ObjectVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startupScriptS3PathInput`<sup>Optional</sup> <a name="startupScriptS3PathInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3PathInput"></a>
+
+```typescript
+public readonly startupScriptS3PathInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAllInput"></a>
 
 ```typescript
@@ -1183,6 +1221,26 @@ public readonly sourceBucketArn: string;
 
 ---
 
+##### `startupScriptS3ObjectVersion`<sup>Required</sup> <a name="startupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersion"></a>
+
+```typescript
+public readonly startupScriptS3ObjectVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startupScriptS3Path`<sup>Required</sup> <a name="startupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3Path"></a>
+
+```typescript
+public readonly startupScriptS3Path: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tags"></a>
 
 ```typescript
@@ -1282,6 +1340,8 @@ const mwaaEnvironmentConfig: mwaaEnvironment.MwaaEnvironmentConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.requirementsS3ObjectVersion">requirementsS3ObjectVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#requirements_s3_object_version MwaaEnvironment#requirements_s3_object_version}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.requirementsS3Path">requirementsS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#requirements_s3_path MwaaEnvironment#requirements_s3_path}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.schedulers">schedulers</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#schedulers MwaaEnvironment#schedulers}. |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3ObjectVersion">startupScriptS3ObjectVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_object_version MwaaEnvironment#startup_script_s3_object_version}. |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3Path">startupScriptS3Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_path MwaaEnvironment#startup_script_s3_path}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#tags MwaaEnvironment#tags}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#tags_all MwaaEnvironment#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts">MwaaEnvironmentTimeouts</a></code> | timeouts block. |
@@ -1580,6 +1640,30 @@ public readonly schedulers: number;
 - *Type:* number
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#schedulers MwaaEnvironment#schedulers}.
+
+---
+
+##### `startupScriptS3ObjectVersion`<sup>Optional</sup> <a name="startupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3ObjectVersion"></a>
+
+```typescript
+public readonly startupScriptS3ObjectVersion: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_object_version MwaaEnvironment#startup_script_s3_object_version}.
+
+---
+
+##### `startupScriptS3Path`<sup>Optional</sup> <a name="startupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3Path"></a>
+
+```typescript
+public readonly startupScriptS3Path: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_path MwaaEnvironment#startup_script_s3_path}.
 
 ---
 
