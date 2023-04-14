@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 acmpcacertificate.NewAcmpcaCertificate(scope Construct, id *string, config AcmpcaCertificateConfig) AcmpcaCertificate
 ```
@@ -300,7 +300,7 @@ func ResetTemplateArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ acmpcacertificate.AcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 &acmpcacertificate.AcmpcaCertificateConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
 	CertificateAuthorityArn: *string,
 	CertificateSigningRequest: *string,
 	SigningAlgorithm: *string,
-	Validity: github.com/cdktf/cdktf-provider-aws-go/aws.acmpcaCertificate.AcmpcaCertificateValidity,
+	Validity: github.com/cdktf/cdktf-provider-aws-go/aws/v13.acmpcaCertificate.AcmpcaCertificateValidity,
 	ApiPassthrough: *string,
 	Id: *string,
 	TemplateArn: *string,
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 &acmpcacertificate.AcmpcaCertificateValidity {
 	Type: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate"
 
 acmpcacertificate.NewAcmpcaCertificateValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateValidityOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/quicksight_use
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsquicksightuser"
 
 dataawsquicksightuser.NewDataAwsQuicksightUser(scope Construct, id *string, config DataAwsQuicksightUserConfig) DataAwsQuicksightUser
 ```
@@ -287,7 +287,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsquicksightuser"
 
 &dataawsquicksightuser.DataAwsQuicksightUserConfig {
 	Connection: interface{},

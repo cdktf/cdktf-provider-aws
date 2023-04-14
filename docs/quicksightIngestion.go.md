@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_ing
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightingestion"
 
 quicksightingestion.NewQuicksightIngestion(scope Construct, id *string, config QuicksightIngestionConfig) QuicksightIngestion
 ```
@@ -273,7 +273,7 @@ func ResetAwsAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ quicksightingestion.QuicksightIngestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightingestion"
 
 &quicksightingestion.QuicksightIngestionConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_functio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.NewLambdaFunctionUrl(scope Construct, id *string, config LambdaFunctionUrlConfig) LambdaFunctionUrl
 ```
@@ -327,7 +327,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.LambdaFunctionUrl_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ lambdafunctionurl.LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.LambdaFunctionUrl_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 &lambdafunctionurl.LambdaFunctionUrlConfig {
 	Connection: interface{},
@@ -771,11 +771,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
 	Provisioners: *[]interface{},
 	AuthorizationType: *string,
 	FunctionName: *string,
-	Cors: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunctionUrl.LambdaFunctionUrlCors,
+	Cors: github.com/cdktf/cdktf-provider-aws-go/aws/v13.lambdaFunctionUrl.LambdaFunctionUrlCors,
 	Id: *string,
 	InvokeMode: *string,
 	Qualifier: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v13.lambdaFunctionUrl.LambdaFunctionUrlTimeouts,
 }
 ```
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 &lambdafunctionurl.LambdaFunctionUrlCors {
 	AllowCredentials: interface{},
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 &lambdafunctionurl.LambdaFunctionUrlTimeouts {
 	Create: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.NewLambdaFunctionUrlCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionUrlCorsOutputReference
 ```
@@ -1525,7 +1525,7 @@ func InternalValue() LambdaFunctionUrlCors
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl"
 
 lambdafunctionurl.NewLambdaFunctionUrlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionUrlTimeoutsOutputReference
 ```
