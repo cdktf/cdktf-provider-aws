@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_functio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrl(scope Construct, id *string, config DataAwsLambdaFunctionUrlConfig) DataAwsLambdaFunctionUrl
 ```
@@ -280,7 +280,7 @@ func ResetQualifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,6 +358,7 @@ dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interf
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.creationTime">CreationTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionArn">FunctionArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionUrl">FunctionUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.invokeMode">InvokeMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.lastModifiedTime">LastModifiedTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.urlId">UrlId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.functionNameInput">FunctionNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -541,6 +542,16 @@ func FunctionUrl() *string
 
 ---
 
+##### `InvokeMode`<sup>Required</sup> <a name="InvokeMode" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.invokeMode"></a>
+
+```go
+func InvokeMode() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LastModifiedTime`<sup>Required</sup> <a name="LastModifiedTime" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.property.lastModifiedTime"></a>
 
 ```go
@@ -646,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 &dataawslambdafunctionurl.DataAwsLambdaFunctionUrlConfig {
 	Connection: interface{},
@@ -793,7 +804,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 &dataawslambdafunctionurl.DataAwsLambdaFunctionUrlCors {
 
@@ -808,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrlCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionUrlCorsList
 ```
@@ -940,7 +951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionUrlCorsOutputReference
 ```

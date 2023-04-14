@@ -75,6 +75,14 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sourceBucketArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_object_version MwaaEnvironment#startup_script_s3_object_version}
+  */
+  readonly startupScriptS3ObjectVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_path MwaaEnvironment#startup_script_s3_path}
+  */
+  readonly startupScriptS3Path?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#tags MwaaEnvironment#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -1163,7 +1171,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_mwaa_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1190,6 +1198,8 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     this._requirementsS3Path = config.requirementsS3Path;
     this._schedulers = config.schedulers;
     this._sourceBucketArn = config.sourceBucketArn;
+    this._startupScriptS3ObjectVersion = config.startupScriptS3ObjectVersion;
+    this._startupScriptS3Path = config.startupScriptS3Path;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._webserverAccessMode = config.webserverAccessMode;
@@ -1468,6 +1478,38 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     return this._sourceBucketArn;
   }
 
+  // startup_script_s3_object_version - computed: true, optional: true, required: false
+  private _startupScriptS3ObjectVersion?: string; 
+  public get startupScriptS3ObjectVersion() {
+    return this.getStringAttribute('startup_script_s3_object_version');
+  }
+  public set startupScriptS3ObjectVersion(value: string) {
+    this._startupScriptS3ObjectVersion = value;
+  }
+  public resetStartupScriptS3ObjectVersion() {
+    this._startupScriptS3ObjectVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startupScriptS3ObjectVersionInput() {
+    return this._startupScriptS3ObjectVersion;
+  }
+
+  // startup_script_s3_path - computed: false, optional: true, required: false
+  private _startupScriptS3Path?: string; 
+  public get startupScriptS3Path() {
+    return this.getStringAttribute('startup_script_s3_path');
+  }
+  public set startupScriptS3Path(value: string) {
+    this._startupScriptS3Path = value;
+  }
+  public resetStartupScriptS3Path() {
+    this._startupScriptS3Path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startupScriptS3PathInput() {
+    return this._startupScriptS3Path;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -1609,6 +1651,8 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       requirements_s3_path: cdktf.stringToTerraform(this._requirementsS3Path),
       schedulers: cdktf.numberToTerraform(this._schedulers),
       source_bucket_arn: cdktf.stringToTerraform(this._sourceBucketArn),
+      startup_script_s3_object_version: cdktf.stringToTerraform(this._startupScriptS3ObjectVersion),
+      startup_script_s3_path: cdktf.stringToTerraform(this._startupScriptS3Path),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       webserver_access_mode: cdktf.stringToTerraform(this._webserverAccessMode),

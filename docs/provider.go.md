@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws aws}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.provider.AwsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.NewAwsProvider(scope Construct, id *string, config AwsProviderConfig) AwsProvider
 ```
@@ -360,7 +360,7 @@ func ResetUseFipsEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.provider.AwsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 provider.AwsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1243,7 +1243,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderAssumeRole {
 	Duration: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderAssumeRoleWithWebIdentity {
 	Duration: *string,
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#w
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderConfig {
 	AccessKey: *string,
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#u
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderDefaultTags {
 	Tags: *map[string]*string,
@@ -2120,7 +2120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderEndpoints {
 	Accessanalyzer: *string,
@@ -2170,6 +2170,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
 	Chimesdkmediapipelines: *string,
 	Chimesdkmeetings: *string,
 	Chimesdkmessaging: *string,
+	Chimesdkvoice: *string,
+	Cleanrooms: *string,
 	Cloud9: *string,
 	Cloudcontrol: *string,
 	Cloudcontrolapi: *string,
@@ -2233,6 +2235,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
 	Dlm: *string,
 	Dms: *string,
 	Docdb: *string,
+	Docdbelastic: *string,
 	Drs: *string,
 	Ds: *string,
 	Dynamodb: *string,
@@ -2557,6 +2560,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">Chimesdkmediapipelines</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmeetings">Chimesdkmeetings</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmessaging">Chimesdkmessaging</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice">Chimesdkvoice</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms">Cleanrooms</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">Cloud9</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol">Cloudcontrol</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi">Cloudcontrolapi</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
@@ -2620,6 +2625,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dlm">Dlm</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dms">Dms</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdb">Docdb</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic">Docdbelastic</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.drs">Drs</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ds">Ds</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dynamodb">Dynamodb</a></code> | <code>*string</code> | Use this to override the default service endpoint URL. |
@@ -3551,6 +3557,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#c
 
 ---
 
+##### `Chimesdkvoice`<sup>Optional</sup> <a name="Chimesdkvoice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice"></a>
+
+```go
+Chimesdkvoice *string
+```
+
+- *Type:* *string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkvoice AwsProvider#chimesdkvoice}
+
+---
+
+##### `Cleanrooms`<sup>Optional</sup> <a name="Cleanrooms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms"></a>
+
+```go
+Cleanrooms *string
+```
+
+- *Type:* *string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cleanrooms AwsProvider#cleanrooms}
+
+---
+
 ##### `Cloud9`<sup>Optional</sup> <a name="Cloud9" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9"></a>
 
 ```go
@@ -4430,6 +4464,20 @@ Docdb *string
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdb AwsProvider#docdb}
+
+---
+
+##### `Docdbelastic`<sup>Optional</sup> <a name="Docdbelastic" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic"></a>
+
+```go
+Docdbelastic *string
+```
+
+- *Type:* *string
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdbelastic AwsProvider#docdbelastic}
 
 ---
 
@@ -8218,7 +8266,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#x
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/provider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/provider"
 
 &provider.AwsProviderIgnoreTags {
 	KeyPrefixes: *[]*string,

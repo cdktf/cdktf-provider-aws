@@ -554,6 +554,7 @@ DxConnection.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.jumboFrameCapable">jumboFrameCapable</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.macsecCapable">macsecCapable</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName">partnerName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.portEncryptionStatus">portEncryptionStatus</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.vlanId">vlanId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.bandwidthInput">bandwidthInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -775,6 +776,16 @@ public IResolvable getMacsecCapable();
 
 ```java
 public java.lang.String getOwnerAccountId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `partnerName`<sup>Required</sup> <a name="partnerName" id="@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName"></a>
+
+```java
+public java.lang.String getPartnerName();
 ```
 
 - *Type:* java.lang.String

@@ -166,7 +166,7 @@ export class FsxBackup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_backup',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -236,7 +236,7 @@ export class FsxBackup extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_id');
   }
 
-  // tags - computed: true, optional: true, required: false
+  // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
     return this.getStringMapAttribute('tags');

@@ -582,6 +582,7 @@ dxConnection.DxConnection.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.jumboFrameCapable">jumbo_frame_capable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.macsecCapable">macsec_capable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.ownerAccountId">owner_account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName">partner_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.portEncryptionStatus">port_encryption_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.vlanId">vlan_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnection.DxConnection.property.bandwidthInput">bandwidth_input</a></code> | <code>str</code> | *No description.* |
@@ -803,6 +804,16 @@ macsec_capable: IResolvable
 
 ```python
 owner_account_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `partner_name`<sup>Required</sup> <a name="partner_name" id="@cdktf/provider-aws.dxConnection.DxConnection.property.partnerName"></a>
+
+```python
+partner_name: str
 ```
 
 - *Type:* str

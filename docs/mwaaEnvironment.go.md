@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environme
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironment(scope Construct, id *string, config MwaaEnvironmentConfig) MwaaEnvironment
 ```
@@ -82,6 +82,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetRequirementsS3ObjectVersion">ResetRequirementsS3ObjectVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetRequirementsS3Path">ResetRequirementsS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetSchedulers">ResetSchedulers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3ObjectVersion">ResetStartupScriptS3ObjectVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3Path">ResetStartupScriptS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -388,6 +390,18 @@ func ResetRequirementsS3Path()
 func ResetSchedulers()
 ```
 
+##### `ResetStartupScriptS3ObjectVersion` <a name="ResetStartupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3ObjectVersion"></a>
+
+```go
+func ResetStartupScriptS3ObjectVersion()
+```
+
+##### `ResetStartupScriptS3Path` <a name="ResetStartupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetStartupScriptS3Path"></a>
+
+```go
+func ResetStartupScriptS3Path()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.resetTags"></a>
 
 ```go
@@ -431,7 +445,7 @@ func ResetWeeklyMaintenanceWindowStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.MwaaEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.MwaaEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +491,7 @@ mwaaenvironment.MwaaEnvironment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.MwaaEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,6 +547,8 @@ mwaaenvironment.MwaaEnvironment_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.requirementsS3PathInput">RequirementsS3PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.schedulersInput">SchedulersInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.sourceBucketArnInput">SourceBucketArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersionInput">StartupScriptS3ObjectVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3PathInput">StartupScriptS3PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -554,6 +570,8 @@ mwaaenvironment.MwaaEnvironment_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.requirementsS3Path">RequirementsS3Path</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.schedulers">Schedulers</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.sourceBucketArn">SourceBucketArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersion">StartupScriptS3ObjectVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3Path">StartupScriptS3Path</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.webserverAccessMode">WebserverAccessMode</a></code> | <code>*string</code> | *No description.* |
@@ -973,6 +991,26 @@ func SourceBucketArnInput() *string
 
 ---
 
+##### `StartupScriptS3ObjectVersionInput`<sup>Optional</sup> <a name="StartupScriptS3ObjectVersionInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersionInput"></a>
+
+```go
+func StartupScriptS3ObjectVersionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartupScriptS3PathInput`<sup>Optional</sup> <a name="StartupScriptS3PathInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3PathInput"></a>
+
+```go
+func StartupScriptS3PathInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tagsAllInput"></a>
 
 ```go
@@ -1183,6 +1221,26 @@ func SourceBucketArn() *string
 
 ---
 
+##### `StartupScriptS3ObjectVersion`<sup>Required</sup> <a name="StartupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3ObjectVersion"></a>
+
+```go
+func StartupScriptS3ObjectVersion() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartupScriptS3Path`<sup>Required</sup> <a name="StartupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.startupScriptS3Path"></a>
+
+```go
+func StartupScriptS3Path() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment.property.tags"></a>
 
 ```go
@@ -1248,7 +1306,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentConfig {
 	Connection: interface{},
@@ -1261,14 +1319,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
 	DagS3Path: *string,
 	ExecutionRoleArn: *string,
 	Name: *string,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration,
 	SourceBucketArn: *string,
 	AirflowConfigurationOptions: *map[string]*string,
 	AirflowVersion: *string,
 	EnvironmentClass: *string,
 	Id: *string,
 	KmsKey: *string,
-	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration,
 	MaxWorkers: *f64,
 	MinWorkers: *f64,
 	PluginsS3ObjectVersion: *string,
@@ -1276,9 +1334,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
 	RequirementsS3ObjectVersion: *string,
 	RequirementsS3Path: *string,
 	Schedulers: *f64,
+	StartupScriptS3ObjectVersion: *string,
+	StartupScriptS3Path: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentTimeouts,
 	WebserverAccessMode: *string,
 	WeeklyMaintenanceWindowStart: *string,
 }
@@ -1313,6 +1373,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.requirementsS3ObjectVersion">RequirementsS3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#requirements_s3_object_version MwaaEnvironment#requirements_s3_object_version}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.requirementsS3Path">RequirementsS3Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#requirements_s3_path MwaaEnvironment#requirements_s3_path}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.schedulers">Schedulers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#schedulers MwaaEnvironment#schedulers}. |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3ObjectVersion">StartupScriptS3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_object_version MwaaEnvironment#startup_script_s3_object_version}. |
+| <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3Path">StartupScriptS3Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_path MwaaEnvironment#startup_script_s3_path}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#tags MwaaEnvironment#tags}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#tags_all MwaaEnvironment#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts">MwaaEnvironmentTimeouts</a></code> | timeouts block. |
@@ -1614,6 +1676,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 
 ---
 
+##### `StartupScriptS3ObjectVersion`<sup>Optional</sup> <a name="StartupScriptS3ObjectVersion" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3ObjectVersion"></a>
+
+```go
+StartupScriptS3ObjectVersion *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_object_version MwaaEnvironment#startup_script_s3_object_version}.
+
+---
+
+##### `StartupScriptS3Path`<sup>Optional</sup> <a name="StartupScriptS3Path" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.startupScriptS3Path"></a>
+
+```go
+StartupScriptS3Path *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#startup_script_s3_path MwaaEnvironment#startup_script_s3_path}.
+
+---
+
 ##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig.property.tags"></a>
 
 ```go
@@ -1681,7 +1767,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdated.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLastUpdated {
 
@@ -1694,7 +1780,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLastUpdatedError {
 
@@ -1707,14 +1793,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfiguration {
-	DagProcessingLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs,
-	SchedulerLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs,
-	TaskLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs,
-	WebserverLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs,
-	WorkerLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v13.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs,
+	DagProcessingLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs,
+	SchedulerLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs,
+	TaskLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs,
+	WebserverLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs,
+	WorkerLogs: github.com/cdktf/cdktf-provider-aws-go/aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs,
 }
 ```
 
@@ -1805,7 +1891,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs {
 	Enabled: interface{},
@@ -1851,7 +1937,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs {
 	Enabled: interface{},
@@ -1897,7 +1983,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfigurationTaskLogs {
 	Enabled: interface{},
@@ -1943,7 +2029,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs {
 	Enabled: interface{},
@@ -1989,7 +2075,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs {
 	Enabled: interface{},
@@ -2035,7 +2121,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentNetworkConfiguration {
 	SecurityGroupIds: *[]*string,
@@ -2081,7 +2167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 &mwaaenvironment.MwaaEnvironmentTimeouts {
 	Create: *string,
@@ -2143,7 +2229,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLastUpdatedErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwaaEnvironmentLastUpdatedErrorList
 ```
@@ -2275,7 +2361,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLastUpdatedErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MwaaEnvironmentLastUpdatedErrorOutputReference
 ```
@@ -2564,7 +2650,7 @@ func InternalValue() MwaaEnvironmentLastUpdatedError
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLastUpdatedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwaaEnvironmentLastUpdatedList
 ```
@@ -2696,7 +2782,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLastUpdatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MwaaEnvironmentLastUpdatedOutputReference
 ```
@@ -2996,7 +3082,7 @@ func InternalValue() MwaaEnvironmentLastUpdated
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference
 ```
@@ -3314,7 +3400,7 @@ func InternalValue() MwaaEnvironmentLoggingConfigurationDagProcessingLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationOutputReference
 ```
@@ -3773,7 +3859,7 @@ func InternalValue() MwaaEnvironmentLoggingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference
 ```
@@ -4091,7 +4177,7 @@ func InternalValue() MwaaEnvironmentLoggingConfigurationSchedulerLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationTaskLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference
 ```
@@ -4409,7 +4495,7 @@ func InternalValue() MwaaEnvironmentLoggingConfigurationTaskLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference
 ```
@@ -4727,7 +4813,7 @@ func InternalValue() MwaaEnvironmentLoggingConfigurationWebserverLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference
 ```
@@ -5045,7 +5131,7 @@ func InternalValue() MwaaEnvironmentLoggingConfigurationWorkerLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentNetworkConfigurationOutputReference
 ```
@@ -5338,7 +5424,7 @@ func InternalValue() MwaaEnvironmentNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mwaaenvironment"
 
 mwaaenvironment.NewMwaaEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwaaEnvironmentTimeoutsOutputReference
 ```

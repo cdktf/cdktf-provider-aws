@@ -285,7 +285,7 @@ export class S3BucketCorsConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_cors_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

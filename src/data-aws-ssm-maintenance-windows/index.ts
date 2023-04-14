@@ -166,7 +166,7 @@ export class DataAwsSsmMaintenanceWindows extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssm_maintenance_windows',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

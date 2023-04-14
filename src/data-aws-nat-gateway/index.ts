@@ -263,7 +263,7 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_nat_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -290,6 +290,11 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
   // allocation_id - computed: true, optional: false, required: false
   public get allocationId() {
     return this.getStringAttribute('allocation_id');
+  }
+
+  // association_id - computed: true, optional: false, required: false
+  public get associationId() {
+    return this.getStringAttribute('association_id');
   }
 
   // connectivity_type - computed: true, optional: false, required: false

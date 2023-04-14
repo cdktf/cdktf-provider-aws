@@ -50,7 +50,7 @@ export class CloudwatchLogDataProtectionPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_data_protection_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

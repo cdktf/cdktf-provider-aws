@@ -2581,6 +2581,8 @@ AwsProviderEndpoints.builder()
 //  .chimesdkmediapipelines(java.lang.String)
 //  .chimesdkmeetings(java.lang.String)
 //  .chimesdkmessaging(java.lang.String)
+//  .chimesdkvoice(java.lang.String)
+//  .cleanrooms(java.lang.String)
 //  .cloud9(java.lang.String)
 //  .cloudcontrol(java.lang.String)
 //  .cloudcontrolapi(java.lang.String)
@@ -2644,6 +2646,7 @@ AwsProviderEndpoints.builder()
 //  .dlm(java.lang.String)
 //  .dms(java.lang.String)
 //  .docdb(java.lang.String)
+//  .docdbelastic(java.lang.String)
 //  .drs(java.lang.String)
 //  .ds(java.lang.String)
 //  .dynamodb(java.lang.String)
@@ -2968,6 +2971,8 @@ AwsProviderEndpoints.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">chimesdkmediapipelines</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmeetings">chimesdkmeetings</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmessaging">chimesdkmessaging</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice">chimesdkvoice</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms">cleanrooms</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">cloud9</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol">cloudcontrol</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi">cloudcontrolapi</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
@@ -3031,6 +3036,7 @@ AwsProviderEndpoints.builder()
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dlm">dlm</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dms">dms</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdb">docdb</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic">docdbelastic</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.drs">drs</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ds">ds</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dynamodb">dynamodb</a></code> | <code>java.lang.String</code> | Use this to override the default service endpoint URL. |
@@ -3962,6 +3968,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#c
 
 ---
 
+##### `chimesdkvoice`<sup>Optional</sup> <a name="chimesdkvoice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice"></a>
+
+```java
+public java.lang.String getChimesdkvoice();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkvoice AwsProvider#chimesdkvoice}
+
+---
+
+##### `cleanrooms`<sup>Optional</sup> <a name="cleanrooms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms"></a>
+
+```java
+public java.lang.String getCleanrooms();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cleanrooms AwsProvider#cleanrooms}
+
+---
+
 ##### `cloud9`<sup>Optional</sup> <a name="cloud9" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9"></a>
 
 ```java
@@ -4841,6 +4875,20 @@ public java.lang.String getDocdb();
 Use this to override the default service endpoint URL.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdb AwsProvider#docdb}
+
+---
+
+##### `docdbelastic`<sup>Optional</sup> <a name="docdbelastic" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic"></a>
+
+```java
+public java.lang.String getDocdbelastic();
+```
+
+- *Type:* java.lang.String
+
+Use this to override the default service endpoint URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdbelastic AwsProvider#docdbelastic}
 
 ---
 

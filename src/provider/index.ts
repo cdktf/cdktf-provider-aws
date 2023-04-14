@@ -654,6 +654,18 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkvoice AwsProvider#chimesdkvoice}
+  */
+  readonly chimesdkvoice?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cleanrooms AwsProvider#cleanrooms}
+  */
+  readonly cleanrooms?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloud9 AwsProvider#cloud9}
   */
   readonly cloud9?: string;
@@ -1029,6 +1041,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdb AwsProvider#docdb}
   */
   readonly docdb?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdbelastic AwsProvider#docdbelastic}
+  */
+  readonly docdbelastic?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2704,6 +2722,8 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     chimesdkmediapipelines: cdktf.stringToTerraform(struct!.chimesdkmediapipelines),
     chimesdkmeetings: cdktf.stringToTerraform(struct!.chimesdkmeetings),
     chimesdkmessaging: cdktf.stringToTerraform(struct!.chimesdkmessaging),
+    chimesdkvoice: cdktf.stringToTerraform(struct!.chimesdkvoice),
+    cleanrooms: cdktf.stringToTerraform(struct!.cleanrooms),
     cloud9: cdktf.stringToTerraform(struct!.cloud9),
     cloudcontrol: cdktf.stringToTerraform(struct!.cloudcontrol),
     cloudcontrolapi: cdktf.stringToTerraform(struct!.cloudcontrolapi),
@@ -2767,6 +2787,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     dlm: cdktf.stringToTerraform(struct!.dlm),
     dms: cdktf.stringToTerraform(struct!.dms),
     docdb: cdktf.stringToTerraform(struct!.docdb),
+    docdbelastic: cdktf.stringToTerraform(struct!.docdbelastic),
     drs: cdktf.stringToTerraform(struct!.drs),
     ds: cdktf.stringToTerraform(struct!.ds),
     dynamodb: cdktf.stringToTerraform(struct!.dynamodb),
@@ -3093,7 +3114,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.62.0',
+        providerVersion: '4.63.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'
