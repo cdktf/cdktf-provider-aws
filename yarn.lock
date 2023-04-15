@@ -1200,9 +1200,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.310"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.310.tgz#e4b88d2f8719356e9b60398170a293ba773b8577"
-  integrity sha512-hfw9zaXmdPItWbDyeL9MaCxjB77W0FSfPvN5N9uKXtXRLHJHk5EJx2NtGPNNf4po1YanrZTCpp6rxpkP3nQkGw==
+  version "10.1.311"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.311.tgz#5d89ac088028cc20ddfe6f77949c711c17f976a9"
+  integrity sha512-/54vqCTAtbSAqi8WDWzj8CJqxxLo1UIprQb24reCH1c8Qe9eAjROJIEjBf/H2ul0NqYczNZvYwiRUFY+2/ZcNw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2194,7 +2194,7 @@ is-ci@^3.0.1:
   dependencies:
     ci-info "^3.2.0"
 
-is-core-module@^2.11.0, is-core-module@^2.5.0, is-core-module@^2.8.1:
+is-core-module@^2.12.0, is-core-module@^2.5.0, is-core-module@^2.8.1:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.12.0.tgz#36ad62f6f73c8253fd6472517a12483cf03e7ec4"
   integrity sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==
@@ -2397,9 +2397,9 @@ jsii-rosetta@^1.75.0, jsii-rosetta@^1.79.0, jsii-rosetta@^1.80.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.826:
-  version "0.1.882"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.882.tgz#fe1753215163f08b85fa703e7ee3749aa3b27523"
-  integrity sha512-UxWZUPdKZIVwlKEjFNE/GsDtd0xLE8avahvf0+Gaf9G35vHZcXpu1XCzbsGpgp6nukOo1bChgexKTIoA02CQuw==
+  version "0.1.883"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.883.tgz#2c4f56f24488722b166f905b56e88fb39608cdba"
+  integrity sha512-tODPQoV+U70xuAIGo7wVwMyXwy2QzHrZ7UUVhHAZeNYvOqzVd0CJCOIfLclEHSxbNA4UtA+/wFiwKnMnOEHMlw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.80.0"
@@ -2658,9 +2658,9 @@ lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
   integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
 
 lru-cache@^9.0.0:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.0.2.tgz#97f13c6b20532fba9bae821c39cd7d471f65119d"
-  integrity sha512-7zYMKApzQ9qQE13xQUzbXVY3p2C5lh+9V+bs8M9fRf1TF59id+8jkljRWtIPfBfNP4yQAol5cqh/e8clxatdXw==
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.0.3.tgz#8a04f282df5320227bb7215c55df2660d3e4e25b"
+  integrity sha512-cyjNRew29d4kbgnz1sjDqxg7qg8NW4s+HQzCGjeon7DV5T2yDije16W9HaUFV1dhVEMh+SjrOcK0TomBmf3Egg==
 
 lru_map@^0.3.3:
   version "0.3.3"
@@ -3347,9 +3347,9 @@ path-parse@^1.0.7:
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-scurry@^1.6.1:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.6.4.tgz#020a9449e5382a4acb684f9c7e1283bc5695de66"
-  integrity sha512-Qp/9IHkdNiXJ3/Kon++At2nVpnhRiPq/aSvQN+H3U1WZbvNRK0RIQK/o4HMqPoXjpuGJUEWpHSs6Mnjxqh3TQg==
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.7.0.tgz#99c741a2cfbce782294a39994d63748b5a24f6db"
+  integrity sha512-UkZUeDjczjYRE495+9thsgcVgsaCPkaw80slmfVFgllxY+IO8ubTsOpFVjDPROBqJdHfVPUFRHPBV/WciOVfWg==
   dependencies:
     lru-cache "^9.0.0"
     minipass "^5.0.0"
@@ -3673,11 +3673,11 @@ resolve-alpn@^1.2.0:
   integrity sha512-0a1F4l73/ZFZOakJnQ3FvkJ2+gSTQWz/r2KE5OdDY0TxPm5h4GkqkWWfM47T7HsbnOtcJVEF4epCVy6u7Q3K+g==
 
 resolve@^1.1.6, resolve@^1.10.0:
-  version "1.22.2"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.2.tgz#0ed0943d4e301867955766c9f3e1ae6d01c6845f"
-  integrity sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==
+  version "1.22.3"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.3.tgz#4b4055349ffb962600972da1fdc33c46a4eb3283"
+  integrity sha512-P8ur/gp/AmbEzjr729bZnLjXK5Z+4P0zhIJgBgzqRih7hL7BOukHGtSTA3ACMY467GRFz3duQsi0bDZdR7DKdw==
   dependencies:
-    is-core-module "^2.11.0"
+    is-core-module "^2.12.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
