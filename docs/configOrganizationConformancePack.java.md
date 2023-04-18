@@ -1,3 +1,7 @@
+# `aws_config_organization_conformance_pack`
+
+Refer to the Terraform Registory for docs: [`aws_config_organization_conformance_pack`](https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack).
+
 # `configOrganizationConformancePack` Submodule <a name="`configOrganizationConformancePack` Submodule" id="@cdktf/provider-aws.configOrganizationConformancePack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

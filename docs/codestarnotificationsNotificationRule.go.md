@@ -1,3 +1,7 @@
+# `aws_codestarnotifications_notification_rule`
+
+Refer to the Terraform Registory for docs: [`aws_codestarnotifications_notification_rule`](https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule).
+
 # `codestarnotificationsNotificationRule` Submodule <a name="`codestarnotificationsNotificationRule` Submodule" id="@cdktf/provider-aws.codestarnotificationsNotificationRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

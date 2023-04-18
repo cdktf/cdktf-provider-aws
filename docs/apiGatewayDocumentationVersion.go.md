@@ -1,3 +1,7 @@
+# `aws_api_gateway_documentation_version`
+
+Refer to the Terraform Registory for docs: [`aws_api_gateway_documentation_version`](https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version).
+
 # `apiGatewayDocumentationVersion` Submodule <a name="`apiGatewayDocumentationVersion` Submodule" id="@cdktf/provider-aws.apiGatewayDocumentationVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

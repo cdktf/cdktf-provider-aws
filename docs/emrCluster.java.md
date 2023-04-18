@@ -1,3 +1,7 @@
+# `aws_emr_cluster`
+
+Refer to the Terraform Registory for docs: [`aws_emr_cluster`](https://www.terraform.io/docs/providers/aws/r/emr_cluster).
+
 # `emrCluster` Submodule <a name="`emrCluster` Submodule" id="@cdktf/provider-aws.emrCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

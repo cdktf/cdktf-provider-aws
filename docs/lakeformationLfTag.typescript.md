@@ -1,3 +1,7 @@
+# `aws_lakeformation_lf_tag`
+
+Refer to the Terraform Registory for docs: [`aws_lakeformation_lf_tag`](https://www.terraform.io/docs/providers/aws/r/lakeformation_lf_tag).
+
 # `lakeformationLfTag` Submodule <a name="`lakeformationLfTag` Submodule" id="@cdktf/provider-aws.lakeformationLfTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

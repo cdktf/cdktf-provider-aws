@@ -1,3 +1,7 @@
+# `aws_ec2_transit_gateway_policy_table`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_policy_table`](https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_policy_table).
+
 # `ec2TransitGatewayPolicyTable` Submodule <a name="`ec2TransitGatewayPolicyTable` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

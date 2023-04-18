@@ -1,3 +1,7 @@
+# `aws_codecommit_approval_rule_template`
+
+Refer to the Terraform Registory for docs: [`aws_codecommit_approval_rule_template`](https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template).
+
 # `codecommitApprovalRuleTemplate` Submodule <a name="`codecommitApprovalRuleTemplate` Submodule" id="@cdktf/provider-aws.codecommitApprovalRuleTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_organizations_organizational_units`
+
+Refer to the Terraform Registory for docs: [`data_aws_organizations_organizational_units`](https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units).
+
 # `dataAwsOrganizationsOrganizationalUnits` Submodule <a name="`dataAwsOrganizationsOrganizationalUnits` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

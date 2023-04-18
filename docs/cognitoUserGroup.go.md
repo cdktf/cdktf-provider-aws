@@ -1,3 +1,7 @@
+# `aws_cognito_user_group`
+
+Refer to the Terraform Registory for docs: [`aws_cognito_user_group`](https://www.terraform.io/docs/providers/aws/r/cognito_user_group).
+
 # `cognitoUserGroup` Submodule <a name="`cognitoUserGroup` Submodule" id="@cdktf/provider-aws.cognitoUserGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

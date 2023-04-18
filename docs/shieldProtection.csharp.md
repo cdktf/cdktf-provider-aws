@@ -1,3 +1,7 @@
+# `aws_shield_protection`
+
+Refer to the Terraform Registory for docs: [`aws_shield_protection`](https://www.terraform.io/docs/providers/aws/r/shield_protection).
+
 # `shieldProtection` Submodule <a name="`shieldProtection` Submodule" id="@cdktf/provider-aws.shieldProtection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_ssoadmin_permissions_boundary_attachment`
+
+Refer to the Terraform Registory for docs: [`aws_ssoadmin_permissions_boundary_attachment`](https://www.terraform.io/docs/providers/aws/r/ssoadmin_permissions_boundary_attachment).
+
 # `ssoadminPermissionsBoundaryAttachment` Submodule <a name="`ssoadminPermissionsBoundaryAttachment` Submodule" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

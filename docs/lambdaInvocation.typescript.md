@@ -1,3 +1,7 @@
+# `aws_lambda_invocation`
+
+Refer to the Terraform Registory for docs: [`aws_lambda_invocation`](https://www.terraform.io/docs/providers/aws/r/lambda_invocation).
+
 # `lambdaInvocation` Submodule <a name="`lambdaInvocation` Submodule" id="@cdktf/provider-aws.lambdaInvocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

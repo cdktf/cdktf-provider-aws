@@ -1,3 +1,7 @@
+# `aws_ecr_repository`
+
+Refer to the Terraform Registory for docs: [`aws_ecr_repository`](https://www.terraform.io/docs/providers/aws/r/ecr_repository).
+
 # `ecrRepository` Submodule <a name="`ecrRepository` Submodule" id="@cdktf/provider-aws.ecrRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_elb`
+
+Refer to the Terraform Registory for docs: [`aws_elb`](https://www.terraform.io/docs/providers/aws/r/elb).
+
 # `elb` Submodule <a name="`elb` Submodule" id="@cdktf/provider-aws.elb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_ebs_snapshot_ids`
+
+Refer to the Terraform Registory for docs: [`data_aws_ebs_snapshot_ids`](https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids).
+
 # `dataAwsEbsSnapshotIds` Submodule <a name="`dataAwsEbsSnapshotIds` Submodule" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

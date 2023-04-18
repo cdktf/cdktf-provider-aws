@@ -1,3 +1,7 @@
+# `aws_cloudwatch_dashboard`
+
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_dashboard`](https://www.terraform.io/docs/providers/aws/r/cloudwatch_dashboard).
+
 # `cloudwatchDashboard` Submodule <a name="`cloudwatchDashboard` Submodule" id="@cdktf/provider-aws.cloudwatchDashboard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_inspector2_member_association`
+
+Refer to the Terraform Registory for docs: [`aws_inspector2_member_association`](https://www.terraform.io/docs/providers/aws/r/inspector2_member_association).
+
 # `inspector2MemberAssociation` Submodule <a name="`inspector2MemberAssociation` Submodule" id="@cdktf/provider-aws.inspector2MemberAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

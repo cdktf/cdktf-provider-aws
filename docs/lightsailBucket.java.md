@@ -1,3 +1,7 @@
+# `aws_lightsail_bucket`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_bucket`](https://www.terraform.io/docs/providers/aws/r/lightsail_bucket).
+
 # `lightsailBucket` Submodule <a name="`lightsailBucket` Submodule" id="@cdktf/provider-aws.lightsailBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

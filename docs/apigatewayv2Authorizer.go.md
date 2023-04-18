@@ -1,3 +1,7 @@
+# `aws_apigatewayv2_authorizer`
+
+Refer to the Terraform Registory for docs: [`aws_apigatewayv2_authorizer`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer).
+
 # `apigatewayv2Authorizer` Submodule <a name="`apigatewayv2Authorizer` Submodule" id="@cdktf/provider-aws.apigatewayv2Authorizer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

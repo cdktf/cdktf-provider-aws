@@ -1,3 +1,7 @@
+# `data_aws_key_pair`
+
+Refer to the Terraform Registory for docs: [`data_aws_key_pair`](https://www.terraform.io/docs/providers/aws/d/key_pair).
+
 # `dataAwsKeyPair` Submodule <a name="`dataAwsKeyPair` Submodule" id="@cdktf/provider-aws.dataAwsKeyPair"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

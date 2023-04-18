@@ -1,3 +1,7 @@
+# `data_aws_db_snapshot`
+
+Refer to the Terraform Registory for docs: [`data_aws_db_snapshot`](https://www.terraform.io/docs/providers/aws/d/db_snapshot).
+
 # `dataAwsDbSnapshot` Submodule <a name="`dataAwsDbSnapshot` Submodule" id="@cdktf/provider-aws.dataAwsDbSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

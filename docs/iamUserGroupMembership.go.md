@@ -1,3 +1,7 @@
+# `aws_iam_user_group_membership`
+
+Refer to the Terraform Registory for docs: [`aws_iam_user_group_membership`](https://www.terraform.io/docs/providers/aws/r/iam_user_group_membership).
+
 # `iamUserGroupMembership` Submodule <a name="`iamUserGroupMembership` Submodule" id="@cdktf/provider-aws.iamUserGroupMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

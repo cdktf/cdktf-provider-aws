@@ -1,3 +1,7 @@
+# `data_aws_msk_kafka_version`
+
+Refer to the Terraform Registory for docs: [`data_aws_msk_kafka_version`](https://www.terraform.io/docs/providers/aws/d/msk_kafka_version).
+
 # `dataAwsMskKafkaVersion` Submodule <a name="`dataAwsMskKafkaVersion` Submodule" id="@cdktf/provider-aws.dataAwsMskKafkaVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

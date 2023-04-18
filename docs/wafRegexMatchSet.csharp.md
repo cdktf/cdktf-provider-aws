@@ -1,3 +1,7 @@
+# `aws_waf_regex_match_set`
+
+Refer to the Terraform Registory for docs: [`aws_waf_regex_match_set`](https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set).
+
 # `wafRegexMatchSet` Submodule <a name="`wafRegexMatchSet` Submodule" id="@cdktf/provider-aws.wafRegexMatchSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

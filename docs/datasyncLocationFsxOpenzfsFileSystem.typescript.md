@@ -1,3 +1,7 @@
+# `aws_datasync_location_fsx_openzfs_file_system`
+
+Refer to the Terraform Registory for docs: [`aws_datasync_location_fsx_openzfs_file_system`](https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_openzfs_file_system).
+
 # `datasyncLocationFsxOpenzfsFileSystem` Submodule <a name="`datasyncLocationFsxOpenzfsFileSystem` Submodule" id="@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

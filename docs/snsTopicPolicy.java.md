@@ -1,3 +1,7 @@
+# `aws_sns_topic_policy`
+
+Refer to the Terraform Registory for docs: [`aws_sns_topic_policy`](https://www.terraform.io/docs/providers/aws/r/sns_topic_policy).
+
 # `snsTopicPolicy` Submodule <a name="`snsTopicPolicy` Submodule" id="@cdktf/provider-aws.snsTopicPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_dms_certificate`
+
+Refer to the Terraform Registory for docs: [`data_aws_dms_certificate`](https://www.terraform.io/docs/providers/aws/d/dms_certificate).
+
 # `dataAwsDmsCertificate` Submodule <a name="`dataAwsDmsCertificate` Submodule" id="@cdktf/provider-aws.dataAwsDmsCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

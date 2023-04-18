@@ -1,3 +1,7 @@
+# `data_aws_lex_intent`
+
+Refer to the Terraform Registory for docs: [`data_aws_lex_intent`](https://www.terraform.io/docs/providers/aws/d/lex_intent).
+
 # `dataAwsLexIntent` Submodule <a name="`dataAwsLexIntent` Submodule" id="@cdktf/provider-aws.dataAwsLexIntent"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

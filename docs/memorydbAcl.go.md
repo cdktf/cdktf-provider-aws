@@ -1,3 +1,7 @@
+# `aws_memorydb_acl`
+
+Refer to the Terraform Registory for docs: [`aws_memorydb_acl`](https://www.terraform.io/docs/providers/aws/r/memorydb_acl).
+
 # `memorydbAcl` Submodule <a name="`memorydbAcl` Submodule" id="@cdktf/provider-aws.memorydbAcl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

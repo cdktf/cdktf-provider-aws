@@ -1,3 +1,7 @@
+# `aws_sagemaker_workforce`
+
+Refer to the Terraform Registory for docs: [`aws_sagemaker_workforce`](https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce).
+
 # `sagemakerWorkforce` Submodule <a name="`sagemakerWorkforce` Submodule" id="@cdktf/provider-aws.sagemakerWorkforce"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

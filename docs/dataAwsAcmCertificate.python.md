@@ -1,3 +1,7 @@
+# `data_aws_acm_certificate`
+
+Refer to the Terraform Registory for docs: [`data_aws_acm_certificate`](https://www.terraform.io/docs/providers/aws/d/acm_certificate).
+
 # `dataAwsAcmCertificate` Submodule <a name="`dataAwsAcmCertificate` Submodule" id="@cdktf/provider-aws.dataAwsAcmCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_subnet`
+
+Refer to the Terraform Registory for docs: [`data_aws_subnet`](https://www.terraform.io/docs/providers/aws/d/subnet).
+
 # `dataAwsSubnet` Submodule <a name="`dataAwsSubnet` Submodule" id="@cdktf/provider-aws.dataAwsSubnet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

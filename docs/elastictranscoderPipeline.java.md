@@ -1,3 +1,7 @@
+# `aws_elastictranscoder_pipeline`
+
+Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](https://www.terraform.io/docs/providers/aws/r/elastictranscoder_pipeline).
+
 # `elastictranscoderPipeline` Submodule <a name="`elastictranscoderPipeline` Submodule" id="@cdktf/provider-aws.elastictranscoderPipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_pinpoint_baidu_channel`
+
+Refer to the Terraform Registory for docs: [`aws_pinpoint_baidu_channel`](https://www.terraform.io/docs/providers/aws/r/pinpoint_baidu_channel).
+
 # `pinpointBaiduChannel` Submodule <a name="`pinpointBaiduChannel` Submodule" id="@cdktf/provider-aws.pinpointBaiduChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

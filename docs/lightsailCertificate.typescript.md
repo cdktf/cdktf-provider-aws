@@ -1,3 +1,7 @@
+# `aws_lightsail_certificate`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_certificate`](https://www.terraform.io/docs/providers/aws/r/lightsail_certificate).
+
 # `lightsailCertificate` Submodule <a name="`lightsailCertificate` Submodule" id="@cdktf/provider-aws.lightsailCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

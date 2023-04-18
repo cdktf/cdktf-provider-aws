@@ -1,3 +1,7 @@
+# `aws_redshift_partner`
+
+Refer to the Terraform Registory for docs: [`aws_redshift_partner`](https://www.terraform.io/docs/providers/aws/r/redshift_partner).
+
 # `redshiftPartner` Submodule <a name="`redshiftPartner` Submodule" id="@cdktf/provider-aws.redshiftPartner"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

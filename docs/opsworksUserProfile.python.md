@@ -1,3 +1,7 @@
+# `aws_opsworks_user_profile`
+
+Refer to the Terraform Registory for docs: [`aws_opsworks_user_profile`](https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile).
+
 # `opsworksUserProfile` Submodule <a name="`opsworksUserProfile` Submodule" id="@cdktf/provider-aws.opsworksUserProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

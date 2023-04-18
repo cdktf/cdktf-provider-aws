@@ -1,3 +1,7 @@
+# `aws_appsync_datasource`
+
+Refer to the Terraform Registory for docs: [`aws_appsync_datasource`](https://www.terraform.io/docs/providers/aws/r/appsync_datasource).
+
 # `appsyncDatasource` Submodule <a name="`appsyncDatasource` Submodule" id="@cdktf/provider-aws.appsyncDatasource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

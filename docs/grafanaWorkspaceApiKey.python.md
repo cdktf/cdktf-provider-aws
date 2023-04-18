@@ -1,3 +1,7 @@
+# `aws_grafana_workspace_api_key`
+
+Refer to the Terraform Registory for docs: [`aws_grafana_workspace_api_key`](https://www.terraform.io/docs/providers/aws/r/grafana_workspace_api_key).
+
 # `grafanaWorkspaceApiKey` Submodule <a name="`grafanaWorkspaceApiKey` Submodule" id="@cdktf/provider-aws.grafanaWorkspaceApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

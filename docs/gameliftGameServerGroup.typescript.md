@@ -1,3 +1,7 @@
+# `aws_gamelift_game_server_group`
+
+Refer to the Terraform Registory for docs: [`aws_gamelift_game_server_group`](https://www.terraform.io/docs/providers/aws/r/gamelift_game_server_group).
+
 # `gameliftGameServerGroup` Submodule <a name="`gameliftGameServerGroup` Submodule" id="@cdktf/provider-aws.gameliftGameServerGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_swf_domain`
+
+Refer to the Terraform Registory for docs: [`aws_swf_domain`](https://www.terraform.io/docs/providers/aws/r/swf_domain).
+
 # `swfDomain` Submodule <a name="`swfDomain` Submodule" id="@cdktf/provider-aws.swfDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

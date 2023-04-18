@@ -1,3 +1,7 @@
+# `data_aws_ssm_instances`
+
+Refer to the Terraform Registory for docs: [`data_aws_ssm_instances`](https://www.terraform.io/docs/providers/aws/d/ssm_instances).
+
 # `dataAwsSsmInstances` Submodule <a name="`dataAwsSsmInstances` Submodule" id="@cdktf/provider-aws.dataAwsSsmInstances"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

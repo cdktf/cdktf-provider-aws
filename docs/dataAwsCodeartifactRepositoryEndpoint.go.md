@@ -1,3 +1,7 @@
+# `data_aws_codeartifact_repository_endpoint`
+
+Refer to the Terraform Registory for docs: [`data_aws_codeartifact_repository_endpoint`](https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint).
+
 # `dataAwsCodeartifactRepositoryEndpoint` Submodule <a name="`dataAwsCodeartifactRepositoryEndpoint` Submodule" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_lb`
+
+Refer to the Terraform Registory for docs: [`aws_lb`](https://www.terraform.io/docs/providers/aws/r/lb).
+
 # `lb` Submodule <a name="`lb` Submodule" id="@cdktf/provider-aws.lb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

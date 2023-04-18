@@ -1,3 +1,7 @@
+# `data_aws_glue_catalog_table`
+
+Refer to the Terraform Registory for docs: [`data_aws_glue_catalog_table`](https://www.terraform.io/docs/providers/aws/d/glue_catalog_table).
+
 # `dataAwsGlueCatalogTable` Submodule <a name="`dataAwsGlueCatalogTable` Submodule" id="@cdktf/provider-aws.dataAwsGlueCatalogTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_default_route_table`
+
+Refer to the Terraform Registory for docs: [`aws_default_route_table`](https://www.terraform.io/docs/providers/aws/r/default_route_table).
+
 # `defaultRouteTable` Submodule <a name="`defaultRouteTable` Submodule" id="@cdktf/provider-aws.defaultRouteTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

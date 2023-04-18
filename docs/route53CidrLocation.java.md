@@ -1,3 +1,7 @@
+# `aws_route53_cidr_location`
+
+Refer to the Terraform Registory for docs: [`aws_route53_cidr_location`](https://www.terraform.io/docs/providers/aws/r/route53_cidr_location).
+
 # `route53CidrLocation` Submodule <a name="`route53CidrLocation` Submodule" id="@cdktf/provider-aws.route53CidrLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_route53_query_log`
+
+Refer to the Terraform Registory for docs: [`aws_route53_query_log`](https://www.terraform.io/docs/providers/aws/r/route53_query_log).
+
 # `route53QueryLog` Submodule <a name="`route53QueryLog` Submodule" id="@cdktf/provider-aws.route53QueryLog"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

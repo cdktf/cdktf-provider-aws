@@ -1,3 +1,7 @@
+# `aws_cloudfront_function`
+
+Refer to the Terraform Registory for docs: [`aws_cloudfront_function`](https://www.terraform.io/docs/providers/aws/r/cloudfront_function).
+
 # `cloudfrontFunction` Submodule <a name="`cloudfrontFunction` Submodule" id="@cdktf/provider-aws.cloudfrontFunction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

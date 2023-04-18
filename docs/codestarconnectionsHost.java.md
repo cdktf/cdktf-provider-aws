@@ -1,3 +1,7 @@
+# `aws_codestarconnections_host`
+
+Refer to the Terraform Registory for docs: [`aws_codestarconnections_host`](https://www.terraform.io/docs/providers/aws/r/codestarconnections_host).
+
 # `codestarconnectionsHost` Submodule <a name="`codestarconnectionsHost` Submodule" id="@cdktf/provider-aws.codestarconnectionsHost"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

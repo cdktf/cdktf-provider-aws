@@ -1,3 +1,7 @@
+# `aws_service_discovery_private_dns_namespace`
+
+Refer to the Terraform Registory for docs: [`aws_service_discovery_private_dns_namespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_private_dns_namespace).
+
 # `serviceDiscoveryPrivateDnsNamespace` Submodule <a name="`serviceDiscoveryPrivateDnsNamespace` Submodule" id="@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

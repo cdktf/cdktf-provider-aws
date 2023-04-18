@@ -1,3 +1,7 @@
+# `aws_route_table`
+
+Refer to the Terraform Registory for docs: [`aws_route_table`](https://www.terraform.io/docs/providers/aws/r/route_table).
+
 # `routeTable` Submodule <a name="`routeTable` Submodule" id="@cdktf/provider-aws.routeTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_ec2_host`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_host`](https://www.terraform.io/docs/providers/aws/r/ec2_host).
+
 # `ec2Host` Submodule <a name="`ec2Host` Submodule" id="@cdktf/provider-aws.ec2Host"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

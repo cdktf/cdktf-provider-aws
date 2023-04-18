@@ -1,3 +1,7 @@
+# `aws_iam_user_ssh_key`
+
+Refer to the Terraform Registory for docs: [`aws_iam_user_ssh_key`](https://www.terraform.io/docs/providers/aws/r/iam_user_ssh_key).
+
 # `iamUserSshKey` Submodule <a name="`iamUserSshKey` Submodule" id="@cdktf/provider-aws.iamUserSshKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

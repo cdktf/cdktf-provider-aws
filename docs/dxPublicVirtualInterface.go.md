@@ -1,3 +1,7 @@
+# `aws_dx_public_virtual_interface`
+
+Refer to the Terraform Registory for docs: [`aws_dx_public_virtual_interface`](https://www.terraform.io/docs/providers/aws/r/dx_public_virtual_interface).
+
 # `dxPublicVirtualInterface` Submodule <a name="`dxPublicVirtualInterface` Submodule" id="@cdktf/provider-aws.dxPublicVirtualInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

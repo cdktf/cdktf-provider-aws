@@ -1,3 +1,7 @@
+# `aws_lb_listener_rule`
+
+Refer to the Terraform Registory for docs: [`aws_lb_listener_rule`](https://www.terraform.io/docs/providers/aws/r/lb_listener_rule).
+
 # `lbListenerRule` Submodule <a name="`lbListenerRule` Submodule" id="@cdktf/provider-aws.lbListenerRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

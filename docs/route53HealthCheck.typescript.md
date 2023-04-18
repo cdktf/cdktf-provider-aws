@@ -1,3 +1,7 @@
+# `aws_route53_health_check`
+
+Refer to the Terraform Registory for docs: [`aws_route53_health_check`](https://www.terraform.io/docs/providers/aws/r/route53_health_check).
+
 # `route53HealthCheck` Submodule <a name="`route53HealthCheck` Submodule" id="@cdktf/provider-aws.route53HealthCheck"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

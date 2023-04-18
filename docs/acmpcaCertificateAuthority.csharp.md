@@ -1,3 +1,7 @@
+# `aws_acmpca_certificate_authority`
+
+Refer to the Terraform Registory for docs: [`aws_acmpca_certificate_authority`](https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority).
+
 # `acmpcaCertificateAuthority` Submodule <a name="`acmpcaCertificateAuthority` Submodule" id="@cdktf/provider-aws.acmpcaCertificateAuthority"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

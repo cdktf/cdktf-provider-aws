@@ -1,3 +1,7 @@
+# `aws_codedeploy_deployment_group`
+
+Refer to the Terraform Registory for docs: [`aws_codedeploy_deployment_group`](https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group).
+
 # `codedeployDeploymentGroup` Submodule <a name="`codedeployDeploymentGroup` Submodule" id="@cdktf/provider-aws.codedeployDeploymentGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

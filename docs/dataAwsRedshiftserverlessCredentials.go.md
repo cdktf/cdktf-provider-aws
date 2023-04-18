@@ -1,3 +1,7 @@
+# `data_aws_redshiftserverless_credentials`
+
+Refer to the Terraform Registory for docs: [`data_aws_redshiftserverless_credentials`](https://www.terraform.io/docs/providers/aws/d/redshiftserverless_credentials).
+
 # `dataAwsRedshiftserverlessCredentials` Submodule <a name="`dataAwsRedshiftserverlessCredentials` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

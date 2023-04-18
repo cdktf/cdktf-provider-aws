@@ -1,3 +1,7 @@
+# `data_aws_lex_slot_type`
+
+Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://www.terraform.io/docs/providers/aws/d/lex_slot_type).
+
 # `dataAwsLexSlotType` Submodule <a name="`dataAwsLexSlotType` Submodule" id="@cdktf/provider-aws.dataAwsLexSlotType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_instance`
+
+Refer to the Terraform Registory for docs: [`aws_instance`](https://www.terraform.io/docs/providers/aws/r/instance).
+
 # `instance` Submodule <a name="`instance` Submodule" id="@cdktf/provider-aws.instance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

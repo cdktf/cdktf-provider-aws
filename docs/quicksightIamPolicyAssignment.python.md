@@ -1,3 +1,7 @@
+# `aws_quicksight_iam_policy_assignment`
+
+Refer to the Terraform Registory for docs: [`aws_quicksight_iam_policy_assignment`](https://www.terraform.io/docs/providers/aws/r/quicksight_iam_policy_assignment).
+
 # `quicksightIamPolicyAssignment` Submodule <a name="`quicksightIamPolicyAssignment` Submodule" id="@cdktf/provider-aws.quicksightIamPolicyAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_cloudwatch_log_subscription_filter`
+
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_subscription_filter`](https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_subscription_filter).
+
 # `cloudwatchLogSubscriptionFilter` Submodule <a name="`cloudwatchLogSubscriptionFilter` Submodule" id="@cdktf/provider-aws.cloudwatchLogSubscriptionFilter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

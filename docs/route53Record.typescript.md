@@ -1,3 +1,7 @@
+# `aws_route53_record`
+
+Refer to the Terraform Registory for docs: [`aws_route53_record`](https://www.terraform.io/docs/providers/aws/r/route53_record).
+
 # `route53Record` Submodule <a name="`route53Record` Submodule" id="@cdktf/provider-aws.route53Record"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

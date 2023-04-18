@@ -1,3 +1,7 @@
+# `data_aws_auditmanager_control`
+
+Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](https://www.terraform.io/docs/providers/aws/d/auditmanager_control).
+
 # `dataAwsAuditmanagerControl` Submodule <a name="`dataAwsAuditmanagerControl` Submodule" id="@cdktf/provider-aws.dataAwsAuditmanagerControl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_fsx_openzfs_volume`
+
+Refer to the Terraform Registory for docs: [`aws_fsx_openzfs_volume`](https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume).
+
 # `fsxOpenzfsVolume` Submodule <a name="`fsxOpenzfsVolume` Submodule" id="@cdktf/provider-aws.fsxOpenzfsVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

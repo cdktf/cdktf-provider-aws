@@ -1,3 +1,7 @@
+# `aws_iam_service_linked_role`
+
+Refer to the Terraform Registory for docs: [`aws_iam_service_linked_role`](https://www.terraform.io/docs/providers/aws/r/iam_service_linked_role).
+
 # `iamServiceLinkedRole` Submodule <a name="`iamServiceLinkedRole` Submodule" id="@cdktf/provider-aws.iamServiceLinkedRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_connect_lambda_function_association`
+
+Refer to the Terraform Registory for docs: [`aws_connect_lambda_function_association`](https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association).
+
 # `connectLambdaFunctionAssociation` Submodule <a name="`connectLambdaFunctionAssociation` Submodule" id="@cdktf/provider-aws.connectLambdaFunctionAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

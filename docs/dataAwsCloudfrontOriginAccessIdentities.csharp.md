@@ -1,3 +1,7 @@
+# `data_aws_cloudfront_origin_access_identities`
+
+Refer to the Terraform Registory for docs: [`data_aws_cloudfront_origin_access_identities`](https://www.terraform.io/docs/providers/aws/d/cloudfront_origin_access_identities).
+
 # `dataAwsCloudfrontOriginAccessIdentities` Submodule <a name="`dataAwsCloudfrontOriginAccessIdentities` Submodule" id="@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentities"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

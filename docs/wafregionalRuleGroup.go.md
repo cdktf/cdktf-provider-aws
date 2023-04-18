@@ -1,3 +1,7 @@
+# `aws_wafregional_rule_group`
+
+Refer to the Terraform Registory for docs: [`aws_wafregional_rule_group`](https://www.terraform.io/docs/providers/aws/r/wafregional_rule_group).
+
 # `wafregionalRuleGroup` Submodule <a name="`wafregionalRuleGroup` Submodule" id="@cdktf/provider-aws.wafregionalRuleGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

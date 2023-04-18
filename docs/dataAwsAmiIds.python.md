@@ -1,3 +1,7 @@
+# `data_aws_ami_ids`
+
+Refer to the Terraform Registory for docs: [`data_aws_ami_ids`](https://www.terraform.io/docs/providers/aws/d/ami_ids).
+
 # `dataAwsAmiIds` Submodule <a name="`dataAwsAmiIds` Submodule" id="@cdktf/provider-aws.dataAwsAmiIds"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

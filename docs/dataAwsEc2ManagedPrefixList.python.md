@@ -1,3 +1,7 @@
+# `data_aws_ec2_managed_prefix_list`
+
+Refer to the Terraform Registory for docs: [`data_aws_ec2_managed_prefix_list`](https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list).
+
 # `dataAwsEc2ManagedPrefixList` Submodule <a name="`dataAwsEc2ManagedPrefixList` Submodule" id="@cdktf/provider-aws.dataAwsEc2ManagedPrefixList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

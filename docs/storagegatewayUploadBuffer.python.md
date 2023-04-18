@@ -1,3 +1,7 @@
+# `aws_storagegateway_upload_buffer`
+
+Refer to the Terraform Registory for docs: [`aws_storagegateway_upload_buffer`](https://www.terraform.io/docs/providers/aws/r/storagegateway_upload_buffer).
+
 # `storagegatewayUploadBuffer` Submodule <a name="`storagegatewayUploadBuffer` Submodule" id="@cdktf/provider-aws.storagegatewayUploadBuffer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

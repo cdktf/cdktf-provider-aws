@@ -1,3 +1,7 @@
+# `aws_waf_sql_injection_match_set`
+
+Refer to the Terraform Registory for docs: [`aws_waf_sql_injection_match_set`](https://www.terraform.io/docs/providers/aws/r/waf_sql_injection_match_set).
+
 # `wafSqlInjectionMatchSet` Submodule <a name="`wafSqlInjectionMatchSet` Submodule" id="@cdktf/provider-aws.wafSqlInjectionMatchSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

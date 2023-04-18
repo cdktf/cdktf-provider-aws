@@ -1,3 +1,7 @@
+# `aws_db_proxy_target`
+
+Refer to the Terraform Registory for docs: [`aws_db_proxy_target`](https://www.terraform.io/docs/providers/aws/r/db_proxy_target).
+
 # `dbProxyTarget` Submodule <a name="`dbProxyTarget` Submodule" id="@cdktf/provider-aws.dbProxyTarget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

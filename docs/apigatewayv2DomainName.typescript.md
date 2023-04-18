@@ -1,3 +1,7 @@
+# `aws_apigatewayv2_domain_name`
+
+Refer to the Terraform Registory for docs: [`aws_apigatewayv2_domain_name`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name).
+
 # `apigatewayv2DomainName` Submodule <a name="`apigatewayv2DomainName` Submodule" id="@cdktf/provider-aws.apigatewayv2DomainName"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

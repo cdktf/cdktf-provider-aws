@@ -1,3 +1,7 @@
+# `aws_redshiftserverless_snapshot`
+
+Refer to the Terraform Registory for docs: [`aws_redshiftserverless_snapshot`](https://www.terraform.io/docs/providers/aws/r/redshiftserverless_snapshot).
+
 # `redshiftserverlessSnapshot` Submodule <a name="`redshiftserverlessSnapshot` Submodule" id="@cdktf/provider-aws.redshiftserverlessSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

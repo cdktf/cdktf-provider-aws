@@ -1,3 +1,7 @@
+# `data_aws_iot_endpoint`
+
+Refer to the Terraform Registory for docs: [`data_aws_iot_endpoint`](https://www.terraform.io/docs/providers/aws/d/iot_endpoint).
+
 # `dataAwsIotEndpoint` Submodule <a name="`dataAwsIotEndpoint` Submodule" id="@cdktf/provider-aws.dataAwsIotEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

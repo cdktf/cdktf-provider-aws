@@ -1,3 +1,7 @@
+# `aws_lightsail_bucket_resource_access`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_bucket_resource_access`](https://www.terraform.io/docs/providers/aws/r/lightsail_bucket_resource_access).
+
 # `lightsailBucketResourceAccess` Submodule <a name="`lightsailBucketResourceAccess` Submodule" id="@cdktf/provider-aws.lightsailBucketResourceAccess"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

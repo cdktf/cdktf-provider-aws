@@ -1,3 +1,7 @@
+# `aws_glue_connection`
+
+Refer to the Terraform Registory for docs: [`aws_glue_connection`](https://www.terraform.io/docs/providers/aws/r/glue_connection).
+
 # `glueConnection` Submodule <a name="`glueConnection` Submodule" id="@cdktf/provider-aws.glueConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

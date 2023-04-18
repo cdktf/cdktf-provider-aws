@@ -1,3 +1,7 @@
+# `aws_oam_sink_policy`
+
+Refer to the Terraform Registory for docs: [`aws_oam_sink_policy`](https://www.terraform.io/docs/providers/aws/r/oam_sink_policy).
+
 # `oamSinkPolicy` Submodule <a name="`oamSinkPolicy` Submodule" id="@cdktf/provider-aws.oamSinkPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

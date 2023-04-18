@@ -1,3 +1,7 @@
+# `data_aws_oam_sinks`
+
+Refer to the Terraform Registory for docs: [`data_aws_oam_sinks`](https://www.terraform.io/docs/providers/aws/d/oam_sinks).
+
 # `dataAwsOamSinks` Submodule <a name="`dataAwsOamSinks` Submodule" id="@cdktf/provider-aws.dataAwsOamSinks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

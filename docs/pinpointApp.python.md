@@ -1,3 +1,7 @@
+# `aws_pinpoint_app`
+
+Refer to the Terraform Registory for docs: [`aws_pinpoint_app`](https://www.terraform.io/docs/providers/aws/r/pinpoint_app).
+
 # `pinpointApp` Submodule <a name="`pinpointApp` Submodule" id="@cdktf/provider-aws.pinpointApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

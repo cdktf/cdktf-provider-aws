@@ -1,3 +1,7 @@
+# `data_aws_service_discovery_service`
+
+Refer to the Terraform Registory for docs: [`data_aws_service_discovery_service`](https://www.terraform.io/docs/providers/aws/d/service_discovery_service).
+
 # `dataAwsServiceDiscoveryService` Submodule <a name="`dataAwsServiceDiscoveryService` Submodule" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

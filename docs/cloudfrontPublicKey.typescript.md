@@ -1,3 +1,7 @@
+# `aws_cloudfront_public_key`
+
+Refer to the Terraform Registory for docs: [`aws_cloudfront_public_key`](https://www.terraform.io/docs/providers/aws/r/cloudfront_public_key).
+
 # `cloudfrontPublicKey` Submodule <a name="`cloudfrontPublicKey` Submodule" id="@cdktf/provider-aws.cloudfrontPublicKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

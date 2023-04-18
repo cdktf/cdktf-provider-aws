@@ -1,3 +1,7 @@
+# `data_aws_ssoadmin_instances`
+
+Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_instances`](https://www.terraform.io/docs/providers/aws/d/ssoadmin_instances).
+
 # `dataAwsSsoadminInstances` Submodule <a name="`dataAwsSsoadminInstances` Submodule" id="@cdktf/provider-aws.dataAwsSsoadminInstances"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

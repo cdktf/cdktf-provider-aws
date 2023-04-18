@@ -1,3 +1,7 @@
+# `data_aws_networkmanager_core_network_policy_document`
+
+Refer to the Terraform Registory for docs: [`data_aws_networkmanager_core_network_policy_document`](https://www.terraform.io/docs/providers/aws/d/networkmanager_core_network_policy_document).
+
 # `dataAwsNetworkmanagerCoreNetworkPolicyDocument` Submodule <a name="`dataAwsNetworkmanagerCoreNetworkPolicyDocument` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

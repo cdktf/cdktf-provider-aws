@@ -1,3 +1,7 @@
+# `aws_elasticache_parameter_group`
+
+Refer to the Terraform Registory for docs: [`aws_elasticache_parameter_group`](https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group).
+
 # `elasticacheParameterGroup` Submodule <a name="`elasticacheParameterGroup` Submodule" id="@cdktf/provider-aws.elasticacheParameterGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

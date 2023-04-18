@@ -1,3 +1,7 @@
+# `aws_backup_framework`
+
+Refer to the Terraform Registory for docs: [`aws_backup_framework`](https://www.terraform.io/docs/providers/aws/r/backup_framework).
+
 # `backupFramework` Submodule <a name="`backupFramework` Submodule" id="@cdktf/provider-aws.backupFramework"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

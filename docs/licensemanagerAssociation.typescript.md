@@ -1,3 +1,7 @@
+# `aws_licensemanager_association`
+
+Refer to the Terraform Registory for docs: [`aws_licensemanager_association`](https://www.terraform.io/docs/providers/aws/r/licensemanager_association).
+
 # `licensemanagerAssociation` Submodule <a name="`licensemanagerAssociation` Submodule" id="@cdktf/provider-aws.licensemanagerAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

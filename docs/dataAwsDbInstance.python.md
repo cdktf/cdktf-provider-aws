@@ -1,3 +1,7 @@
+# `data_aws_db_instance`
+
+Refer to the Terraform Registory for docs: [`data_aws_db_instance`](https://www.terraform.io/docs/providers/aws/d/db_instance).
+
 # `dataAwsDbInstance` Submodule <a name="`dataAwsDbInstance` Submodule" id="@cdktf/provider-aws.dataAwsDbInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

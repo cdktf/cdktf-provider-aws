@@ -1,3 +1,7 @@
+# `aws_s3_bucket_inventory`
+
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_inventory`](https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory).
+
 # `s3BucketInventory` Submodule <a name="`s3BucketInventory` Submodule" id="@cdktf/provider-aws.s3BucketInventory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

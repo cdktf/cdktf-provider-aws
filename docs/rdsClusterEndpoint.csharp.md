@@ -1,3 +1,7 @@
+# `aws_rds_cluster_endpoint`
+
+Refer to the Terraform Registory for docs: [`aws_rds_cluster_endpoint`](https://www.terraform.io/docs/providers/aws/r/rds_cluster_endpoint).
+
 # `rdsClusterEndpoint` Submodule <a name="`rdsClusterEndpoint` Submodule" id="@cdktf/provider-aws.rdsClusterEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

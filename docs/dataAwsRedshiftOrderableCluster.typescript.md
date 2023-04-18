@@ -1,3 +1,7 @@
+# `data_aws_redshift_orderable_cluster`
+
+Refer to the Terraform Registory for docs: [`data_aws_redshift_orderable_cluster`](https://www.terraform.io/docs/providers/aws/d/redshift_orderable_cluster).
+
 # `dataAwsRedshiftOrderableCluster` Submodule <a name="`dataAwsRedshiftOrderableCluster` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftOrderableCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

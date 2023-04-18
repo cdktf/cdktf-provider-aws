@@ -1,3 +1,7 @@
+# `data_aws_memorydb_snapshot`
+
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_snapshot`](https://www.terraform.io/docs/providers/aws/d/memorydb_snapshot).
+
 # `dataAwsMemorydbSnapshot` Submodule <a name="`dataAwsMemorydbSnapshot` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

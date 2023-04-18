@@ -1,3 +1,7 @@
+# `aws_route53recoverycontrolconfig_routing_control`
+
+Refer to the Terraform Registory for docs: [`aws_route53recoverycontrolconfig_routing_control`](https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_routing_control).
+
 # `route53RecoverycontrolconfigRoutingControl` Submodule <a name="`route53RecoverycontrolconfigRoutingControl` Submodule" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

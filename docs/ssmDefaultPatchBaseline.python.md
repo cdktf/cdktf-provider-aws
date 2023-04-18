@@ -1,3 +1,7 @@
+# `aws_ssm_default_patch_baseline`
+
+Refer to the Terraform Registory for docs: [`aws_ssm_default_patch_baseline`](https://www.terraform.io/docs/providers/aws/r/ssm_default_patch_baseline).
+
 # `ssmDefaultPatchBaseline` Submodule <a name="`ssmDefaultPatchBaseline` Submodule" id="@cdktf/provider-aws.ssmDefaultPatchBaseline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

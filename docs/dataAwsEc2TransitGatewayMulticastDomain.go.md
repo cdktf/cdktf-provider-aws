@@ -1,3 +1,7 @@
+# `data_aws_ec2_transit_gateway_multicast_domain`
+
+Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_multicast_domain`](https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_multicast_domain).
+
 # `dataAwsEc2TransitGatewayMulticastDomain` Submodule <a name="`dataAwsEc2TransitGatewayMulticastDomain` Submodule" id="@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

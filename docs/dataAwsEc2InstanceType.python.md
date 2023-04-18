@@ -1,3 +1,7 @@
+# `data_aws_ec2_instance_type`
+
+Refer to the Terraform Registory for docs: [`data_aws_ec2_instance_type`](https://www.terraform.io/docs/providers/aws/d/ec2_instance_type).
+
 # `dataAwsEc2InstanceType` Submodule <a name="`dataAwsEc2InstanceType` Submodule" id="@cdktf/provider-aws.dataAwsEc2InstanceType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

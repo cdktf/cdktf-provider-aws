@@ -1,3 +1,7 @@
+# `aws_ce_anomaly_subscription`
+
+Refer to the Terraform Registory for docs: [`aws_ce_anomaly_subscription`](https://www.terraform.io/docs/providers/aws/r/ce_anomaly_subscription).
+
 # `ceAnomalySubscription` Submodule <a name="`ceAnomalySubscription` Submodule" id="@cdktf/provider-aws.ceAnomalySubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

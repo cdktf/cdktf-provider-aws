@@ -1,3 +1,7 @@
+# `data_aws_alb_listener`
+
+Refer to the Terraform Registory for docs: [`data_aws_alb_listener`](https://www.terraform.io/docs/providers/aws/d/alb_listener).
+
 # `dataAwsAlbListener` Submodule <a name="`dataAwsAlbListener` Submodule" id="@cdktf/provider-aws.dataAwsAlbListener"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

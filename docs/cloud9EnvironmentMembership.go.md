@@ -1,3 +1,7 @@
+# `aws_cloud9_environment_membership`
+
+Refer to the Terraform Registory for docs: [`aws_cloud9_environment_membership`](https://www.terraform.io/docs/providers/aws/r/cloud9_environment_membership).
+
 # `cloud9EnvironmentMembership` Submodule <a name="`cloud9EnvironmentMembership` Submodule" id="@cdktf/provider-aws.cloud9EnvironmentMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

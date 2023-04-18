@@ -1,3 +1,7 @@
+# `aws_organizations_policy`
+
+Refer to the Terraform Registory for docs: [`aws_organizations_policy`](https://www.terraform.io/docs/providers/aws/r/organizations_policy).
+
 # `organizationsPolicy` Submodule <a name="`organizationsPolicy` Submodule" id="@cdktf/provider-aws.organizationsPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

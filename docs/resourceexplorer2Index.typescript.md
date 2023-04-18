@@ -1,3 +1,7 @@
+# `aws_resourceexplorer2_index`
+
+Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_index`](https://www.terraform.io/docs/providers/aws/r/resourceexplorer2_index).
+
 # `resourceexplorer2Index` Submodule <a name="`resourceexplorer2Index` Submodule" id="@cdktf/provider-aws.resourceexplorer2Index"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

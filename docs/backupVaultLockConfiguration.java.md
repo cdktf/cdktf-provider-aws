@@ -1,3 +1,7 @@
+# `aws_backup_vault_lock_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_backup_vault_lock_configuration`](https://www.terraform.io/docs/providers/aws/r/backup_vault_lock_configuration).
+
 # `backupVaultLockConfiguration` Submodule <a name="`backupVaultLockConfiguration` Submodule" id="@cdktf/provider-aws.backupVaultLockConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

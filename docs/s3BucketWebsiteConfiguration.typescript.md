@@ -1,3 +1,7 @@
+# `aws_s3_bucket_website_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_website_configuration`](https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration).
+
 # `s3BucketWebsiteConfiguration` Submodule <a name="`s3BucketWebsiteConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

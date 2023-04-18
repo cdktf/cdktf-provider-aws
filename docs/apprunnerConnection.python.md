@@ -1,3 +1,7 @@
+# `aws_apprunner_connection`
+
+Refer to the Terraform Registory for docs: [`aws_apprunner_connection`](https://www.terraform.io/docs/providers/aws/r/apprunner_connection).
+
 # `apprunnerConnection` Submodule <a name="`apprunnerConnection` Submodule" id="@cdktf/provider-aws.apprunnerConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

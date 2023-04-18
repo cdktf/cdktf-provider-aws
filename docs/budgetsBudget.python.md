@@ -1,3 +1,7 @@
+# `aws_budgets_budget`
+
+Refer to the Terraform Registory for docs: [`aws_budgets_budget`](https://www.terraform.io/docs/providers/aws/r/budgets_budget).
+
 # `budgetsBudget` Submodule <a name="`budgetsBudget` Submodule" id="@cdktf/provider-aws.budgetsBudget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

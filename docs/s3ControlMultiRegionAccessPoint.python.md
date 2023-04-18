@@ -1,3 +1,7 @@
+# `aws_s3control_multi_region_access_point`
+
+Refer to the Terraform Registory for docs: [`aws_s3control_multi_region_access_point`](https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point).
+
 # `s3ControlMultiRegionAccessPoint` Submodule <a name="`s3ControlMultiRegionAccessPoint` Submodule" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

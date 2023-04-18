@@ -1,3 +1,7 @@
+# `aws_iot_certificate`
+
+Refer to the Terraform Registory for docs: [`aws_iot_certificate`](https://www.terraform.io/docs/providers/aws/r/iot_certificate).
+
 # `iotCertificate` Submodule <a name="`iotCertificate` Submodule" id="@cdktf/provider-aws.iotCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

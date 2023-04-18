@@ -1,3 +1,7 @@
+# `data_aws_lambda_function_url`
+
+Refer to the Terraform Registory for docs: [`data_aws_lambda_function_url`](https://www.terraform.io/docs/providers/aws/d/lambda_function_url).
+
 # `dataAwsLambdaFunctionUrl` Submodule <a name="`dataAwsLambdaFunctionUrl` Submodule" id="@cdktf/provider-aws.dataAwsLambdaFunctionUrl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

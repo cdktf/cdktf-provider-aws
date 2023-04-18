@@ -1,3 +1,7 @@
+# `aws_internet_gateway`
+
+Refer to the Terraform Registory for docs: [`aws_internet_gateway`](https://www.terraform.io/docs/providers/aws/r/internet_gateway).
+
 # `internetGateway` Submodule <a name="`internetGateway` Submodule" id="@cdktf/provider-aws.internetGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

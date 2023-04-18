@@ -1,3 +1,7 @@
+# `aws_msk_serverless_cluster`
+
+Refer to the Terraform Registory for docs: [`aws_msk_serverless_cluster`](https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster).
+
 # `mskServerlessCluster` Submodule <a name="`mskServerlessCluster` Submodule" id="@cdktf/provider-aws.mskServerlessCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

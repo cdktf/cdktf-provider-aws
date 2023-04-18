@@ -1,3 +1,7 @@
+# `aws_lambda_event_source_mapping`
+
+Refer to the Terraform Registory for docs: [`aws_lambda_event_source_mapping`](https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping).
+
 # `lambdaEventSourceMapping` Submodule <a name="`lambdaEventSourceMapping` Submodule" id="@cdktf/provider-aws.lambdaEventSourceMapping"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

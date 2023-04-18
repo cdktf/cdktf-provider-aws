@@ -1,3 +1,7 @@
+# `aws_kms_alias`
+
+Refer to the Terraform Registory for docs: [`aws_kms_alias`](https://www.terraform.io/docs/providers/aws/r/kms_alias).
+
 # `kmsAlias` Submodule <a name="`kmsAlias` Submodule" id="@cdktf/provider-aws.kmsAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

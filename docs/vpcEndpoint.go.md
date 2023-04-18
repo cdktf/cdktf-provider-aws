@@ -1,3 +1,7 @@
+# `aws_vpc_endpoint`
+
+Refer to the Terraform Registory for docs: [`aws_vpc_endpoint`](https://www.terraform.io/docs/providers/aws/r/vpc_endpoint).
+
 # `vpcEndpoint` Submodule <a name="`vpcEndpoint` Submodule" id="@cdktf/provider-aws.vpcEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

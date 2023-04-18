@@ -1,3 +1,7 @@
+# `aws_pinpoint_apns_voip_channel`
+
+Refer to the Terraform Registory for docs: [`aws_pinpoint_apns_voip_channel`](https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_voip_channel).
+
 # `pinpointApnsVoipChannel` Submodule <a name="`pinpointApnsVoipChannel` Submodule" id="@cdktf/provider-aws.pinpointApnsVoipChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

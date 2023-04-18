@@ -1,3 +1,7 @@
+# `aws_iam_account_password_policy`
+
+Refer to the Terraform Registory for docs: [`aws_iam_account_password_policy`](https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy).
+
 # `iamAccountPasswordPolicy` Submodule <a name="`iamAccountPasswordPolicy` Submodule" id="@cdktf/provider-aws.iamAccountPasswordPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

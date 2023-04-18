@@ -1,3 +1,7 @@
+# `aws_opsworks_custom_layer`
+
+Refer to the Terraform Registory for docs: [`aws_opsworks_custom_layer`](https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer).
+
 # `opsworksCustomLayer` Submodule <a name="`opsworksCustomLayer` Submodule" id="@cdktf/provider-aws.opsworksCustomLayer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

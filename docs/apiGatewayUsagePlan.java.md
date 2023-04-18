@@ -1,3 +1,7 @@
+# `aws_api_gateway_usage_plan`
+
+Refer to the Terraform Registory for docs: [`aws_api_gateway_usage_plan`](https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan).
+
 # `apiGatewayUsagePlan` Submodule <a name="`apiGatewayUsagePlan` Submodule" id="@cdktf/provider-aws.apiGatewayUsagePlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

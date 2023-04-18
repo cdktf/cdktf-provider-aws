@@ -1,3 +1,7 @@
+# `aws_cloudtrail_event_data_store`
+
+Refer to the Terraform Registory for docs: [`aws_cloudtrail_event_data_store`](https://www.terraform.io/docs/providers/aws/r/cloudtrail_event_data_store).
+
 # `cloudtrailEventDataStore` Submodule <a name="`cloudtrailEventDataStore` Submodule" id="@cdktf/provider-aws.cloudtrailEventDataStore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

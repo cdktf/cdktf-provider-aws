@@ -1,3 +1,7 @@
+# `aws_macie2_account`
+
+Refer to the Terraform Registory for docs: [`aws_macie2_account`](https://www.terraform.io/docs/providers/aws/r/macie2_account).
+
 # `macie2Account` Submodule <a name="`macie2Account` Submodule" id="@cdktf/provider-aws.macie2Account"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

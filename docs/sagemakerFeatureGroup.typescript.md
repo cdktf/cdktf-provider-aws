@@ -1,3 +1,7 @@
+# `aws_sagemaker_feature_group`
+
+Refer to the Terraform Registory for docs: [`aws_sagemaker_feature_group`](https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group).
+
 # `sagemakerFeatureGroup` Submodule <a name="`sagemakerFeatureGroup` Submodule" id="@cdktf/provider-aws.sagemakerFeatureGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

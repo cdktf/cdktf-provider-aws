@@ -1,3 +1,7 @@
+# `aws_schemas_schema`
+
+Refer to the Terraform Registory for docs: [`aws_schemas_schema`](https://www.terraform.io/docs/providers/aws/r/schemas_schema).
+
 # `schemasSchema` Submodule <a name="`schemasSchema` Submodule" id="@cdktf/provider-aws.schemasSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

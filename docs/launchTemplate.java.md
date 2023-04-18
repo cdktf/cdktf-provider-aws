@@ -1,3 +1,7 @@
+# `aws_launch_template`
+
+Refer to the Terraform Registory for docs: [`aws_launch_template`](https://www.terraform.io/docs/providers/aws/r/launch_template).
+
 # `launchTemplate` Submodule <a name="`launchTemplate` Submodule" id="@cdktf/provider-aws.launchTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

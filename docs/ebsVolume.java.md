@@ -1,3 +1,7 @@
+# `aws_ebs_volume`
+
+Refer to the Terraform Registory for docs: [`aws_ebs_volume`](https://www.terraform.io/docs/providers/aws/r/ebs_volume).
+
 # `ebsVolume` Submodule <a name="`ebsVolume` Submodule" id="@cdktf/provider-aws.ebsVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

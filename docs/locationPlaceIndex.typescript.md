@@ -1,3 +1,7 @@
+# `aws_location_place_index`
+
+Refer to the Terraform Registory for docs: [`aws_location_place_index`](https://www.terraform.io/docs/providers/aws/r/location_place_index).
+
 # `locationPlaceIndex` Submodule <a name="`locationPlaceIndex` Submodule" id="@cdktf/provider-aws.locationPlaceIndex"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

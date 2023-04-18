@@ -1,3 +1,7 @@
+# `data_aws_launch_configuration`
+
+Refer to the Terraform Registory for docs: [`data_aws_launch_configuration`](https://www.terraform.io/docs/providers/aws/d/launch_configuration).
+
 # `dataAwsLaunchConfiguration` Submodule <a name="`dataAwsLaunchConfiguration` Submodule" id="@cdktf/provider-aws.dataAwsLaunchConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

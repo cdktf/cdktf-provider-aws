@@ -1,3 +1,7 @@
+# `aws_guardduty_detector`
+
+Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://www.terraform.io/docs/providers/aws/r/guardduty_detector).
+
 # `guarddutyDetector` Submodule <a name="`guarddutyDetector` Submodule" id="@cdktf/provider-aws.guarddutyDetector"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

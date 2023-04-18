@@ -1,3 +1,7 @@
+# `aws_elastic_beanstalk_application`
+
+Refer to the Terraform Registory for docs: [`aws_elastic_beanstalk_application`](https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application).
+
 # `elasticBeanstalkApplication` Submodule <a name="`elasticBeanstalkApplication` Submodule" id="@cdktf/provider-aws.elasticBeanstalkApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

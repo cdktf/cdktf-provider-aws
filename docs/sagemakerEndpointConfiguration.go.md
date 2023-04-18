@@ -1,3 +1,7 @@
+# `aws_sagemaker_endpoint_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_sagemaker_endpoint_configuration`](https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration).
+
 # `sagemakerEndpointConfiguration` Submodule <a name="`sagemakerEndpointConfiguration` Submodule" id="@cdktf/provider-aws.sagemakerEndpointConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_connect_instance`
+
+Refer to the Terraform Registory for docs: [`data_aws_connect_instance`](https://www.terraform.io/docs/providers/aws/d/connect_instance).
+
 # `dataAwsConnectInstance` Submodule <a name="`dataAwsConnectInstance` Submodule" id="@cdktf/provider-aws.dataAwsConnectInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

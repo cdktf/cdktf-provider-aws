@@ -1,3 +1,7 @@
+# `aws_iot_thing_group`
+
+Refer to the Terraform Registory for docs: [`aws_iot_thing_group`](https://www.terraform.io/docs/providers/aws/r/iot_thing_group).
+
 # `iotThingGroup` Submodule <a name="`iotThingGroup` Submodule" id="@cdktf/provider-aws.iotThingGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

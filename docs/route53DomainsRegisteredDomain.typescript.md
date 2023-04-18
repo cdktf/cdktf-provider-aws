@@ -1,3 +1,7 @@
+# `aws_route53domains_registered_domain`
+
+Refer to the Terraform Registory for docs: [`aws_route53domains_registered_domain`](https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain).
+
 # `route53DomainsRegisteredDomain` Submodule <a name="`route53DomainsRegisteredDomain` Submodule" id="@cdktf/provider-aws.route53DomainsRegisteredDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
