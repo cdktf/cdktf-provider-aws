@@ -1,3 +1,3 @@
 # `aws_ec2_traffic_mirror_target`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_traffic_mirror_target`](https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target).
+Refer to the Terraform Registory for docs: [`aws_ec2_traffic_mirror_target`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_traffic_mirror_target).

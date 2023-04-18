@@ -1,6 +1,6 @@
 # `aws_detective_invitation_accepter`
 
-Refer to the Terraform Registory for docs: [`aws_detective_invitation_accepter`](https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter).
+Refer to the Terraform Registory for docs: [`aws_detective_invitation_accepter`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter).
 
 # `detectiveInvitationAccepter` Submodule <a name="`detectiveInvitationAccepter` Submodule" id="@cdktf/provider-aws.detectiveInvitationAccepter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_detective_invitation_accepter`]
 
 ### DetectiveInvitationAccepter <a name="DetectiveInvitationAccepter" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter aws_detective_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer"></a>
 
@@ -346,7 +346,7 @@ detectiveInvitationAccepter.DetectiveInvitationAccepter.isTerraformResource(x: a
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -576,14 +576,14 @@ const detectiveInvitationAccepterConfig: detectiveInvitationAccepter.DetectiveIn
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">graphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">graphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
 
 ---
 
@@ -600,10 +600,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -665,7 +665,7 @@ public readonly graphArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
 
 ---
 
@@ -677,7 +677,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

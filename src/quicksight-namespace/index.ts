@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/quicksight_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
   */
   readonly identityStore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#namespace QuicksightNamespace#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#tags QuicksightNamespace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
   */
   readonly timeouts?: QuicksightNamespaceTimeouts;
 }
 export interface QuicksightNamespaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#create QuicksightNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace#delete QuicksightNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
   */
   readonly delete?: string;
 }
 
-export function quicksightNamespaceTimeoutsToTerraform(struct?: QuicksightNamespaceTimeoutsOutputReference | QuicksightNamespaceTimeouts | cdktf.IResolvable): any {
+export function quicksightNamespaceTimeoutsToTerraform(struct?: QuicksightNamespaceTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -61,7 +61,7 @@ export class QuicksightNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): QuicksightNamespaceTimeouts | cdktf.IResolvable | undefined {
@@ -134,7 +134,7 @@ export class QuicksightNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace aws_quicksight_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace aws_quicksight_namespace}
 */
 export class QuicksightNamespace extends cdktf.TerraformResource {
 
@@ -148,7 +148,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_namespace aws_quicksight_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

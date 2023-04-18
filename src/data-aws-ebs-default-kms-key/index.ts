@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key#id DataAwsEbsDefaultKmsKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key#id DataAwsEbsDefaultKmsKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,18 +17,18 @@ export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArgume
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key#timeouts DataAwsEbsDefaultKmsKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key#timeouts DataAwsEbsDefaultKmsKey#timeouts}
   */
   readonly timeouts?: DataAwsEbsDefaultKmsKeyTimeouts;
 }
 export interface DataAwsEbsDefaultKmsKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key#read DataAwsEbsDefaultKmsKey#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key#read DataAwsEbsDefaultKmsKey#read}
   */
   readonly read?: string;
 }
 
-export function dataAwsEbsDefaultKmsKeyTimeoutsToTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeoutsOutputReference | DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable): any {
+export function dataAwsEbsDefaultKmsKeyTimeoutsToTerraform(struct?: DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -47,7 +47,7 @@ export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAwsEbsDefaultKmsKeyTimeouts | cdktf.IResolvable | undefined {
@@ -98,7 +98,7 @@ export class DataAwsEbsDefaultKmsKeyTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key aws_ebs_default_kms_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}
 */
 export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
 
@@ -112,7 +112,7 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key aws_ebs_default_kms_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

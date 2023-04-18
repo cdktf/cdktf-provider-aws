@@ -1,6 +1,6 @@
 # `data_aws_backup_framework`
 
-Refer to the Terraform Registory for docs: [`data_aws_backup_framework`](https://www.terraform.io/docs/providers/aws/d/backup_framework).
+Refer to the Terraform Registory for docs: [`data_aws_backup_framework`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework).
 
 # `dataAwsBackupFramework` Submodule <a name="`dataAwsBackupFramework` Submodule" id="@cdktf/provider-aws.dataAwsBackupFramework"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_backup_framework`](https:/
 
 ### DataAwsBackupFramework <a name="DataAwsBackupFramework" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_framework aws_backup_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework aws_backup_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFramework(scope Construct, id *string, config DataAwsBackupFrameworkConfig) DataAwsBackupFramework
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -447,10 +447,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -639,11 +639,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -660,15 +660,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#name DataAwsBackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#id DataAwsBackupFramework#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#tags DataAwsBackupFramework#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}. |
 
 ---
 
@@ -685,10 +685,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -750,7 +750,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#name DataAwsBackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}.
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#id DataAwsBackupFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -777,7 +777,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_framework#tags DataAwsBackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}.
 
 ---
 
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControl {
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlInputParameter {
 
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlScope {
 
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlInputParameterList
 ```
@@ -959,7 +959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
@@ -1248,7 +1248,7 @@ func InternalValue() DataAwsBackupFrameworkControlInputParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlList
 ```
@@ -1380,7 +1380,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlOutputReference
 ```
@@ -1680,7 +1680,7 @@ func InternalValue() DataAwsBackupFrameworkControl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlScopeList
 ```
@@ -1812,7 +1812,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlScopeOutputReference
 ```

@@ -1,3 +1,3 @@
 # `data_aws_networkfirewall_firewall`
 
-Refer to the Terraform Registory for docs: [`data_aws_networkfirewall_firewall`](https://www.terraform.io/docs/providers/aws/d/networkfirewall_firewall).
+Refer to the Terraform Registory for docs: [`data_aws_networkfirewall_firewall`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkfirewall_firewall).

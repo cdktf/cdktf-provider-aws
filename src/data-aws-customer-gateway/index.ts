@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/d/customer_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#id DataAwsCustomerGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#tags DataAwsCustomerGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#filter DataAwsCustomerGateway#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
   */
   readonly filter?: DataAwsCustomerGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
   */
   readonly timeouts?: DataAwsCustomerGatewayTimeouts;
 }
 export interface DataAwsCustomerGatewayFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#name DataAwsCustomerGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#values DataAwsCustomerGateway#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}
   */
   readonly values: string[];
 }
@@ -151,12 +151,12 @@ export class DataAwsCustomerGatewayFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsCustomerGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway#read DataAwsCustomerGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}
   */
   readonly read?: string;
 }
 
-export function dataAwsCustomerGatewayTimeoutsToTerraform(struct?: DataAwsCustomerGatewayTimeoutsOutputReference | DataAwsCustomerGatewayTimeouts | cdktf.IResolvable): any {
+export function dataAwsCustomerGatewayTimeoutsToTerraform(struct?: DataAwsCustomerGatewayTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -175,7 +175,7 @@ export class DataAwsCustomerGatewayTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAwsCustomerGatewayTimeouts | cdktf.IResolvable | undefined {
@@ -226,7 +226,7 @@ export class DataAwsCustomerGatewayTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway aws_customer_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway aws_customer_gateway}
 */
 export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
 
@@ -240,7 +240,7 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/customer_gateway aws_customer_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

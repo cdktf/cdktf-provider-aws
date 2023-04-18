@@ -1,3 +1,3 @@
 # `data_aws_directory_service_directory`
 
-Refer to the Terraform Registory for docs: [`data_aws_directory_service_directory`](https://www.terraform.io/docs/providers/aws/d/directory_service_directory).
+Refer to the Terraform Registory for docs: [`data_aws_directory_service_directory`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/directory_service_directory).

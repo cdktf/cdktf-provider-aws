@@ -1,3 +1,3 @@
 # `aws_default_vpc`
 
-Refer to the Terraform Registory for docs: [`aws_default_vpc`](https://www.terraform.io/docs/providers/aws/r/default_vpc).
+Refer to the Terraform Registory for docs: [`aws_default_vpc`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_vpc).

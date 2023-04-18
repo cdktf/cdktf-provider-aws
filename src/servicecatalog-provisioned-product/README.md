@@ -1,3 +1,3 @@
 # `aws_servicecatalog_provisioned_product`
 
-Refer to the Terraform Registory for docs: [`aws_servicecatalog_provisioned_product`](https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product).
+Refer to the Terraform Registory for docs: [`aws_servicecatalog_provisioned_product`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_provisioned_product).

@@ -1,3 +1,3 @@
 # `aws_iam_group`
 
-Refer to the Terraform Registory for docs: [`aws_iam_group`](https://www.terraform.io/docs/providers/aws/r/iam_group).
+Refer to the Terraform Registory for docs: [`aws_iam_group`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_group).

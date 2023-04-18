@@ -1,6 +1,6 @@
 # `data_aws_dms_certificate`
 
-Refer to the Terraform Registory for docs: [`data_aws_dms_certificate`](https://www.terraform.io/docs/providers/aws/d/dms_certificate).
+Refer to the Terraform Registory for docs: [`data_aws_dms_certificate`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate).
 
 # `dataAwsDmsCertificate` Submodule <a name="`dataAwsDmsCertificate` Submodule" id="@cdktf/provider-aws.dataAwsDmsCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_dms_certificate`](https://
 
 ### DataAwsDmsCertificate <a name="DataAwsDmsCertificate" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate aws_dms_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate aws_dms_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.Initializer"></a>
 
@@ -352,7 +352,7 @@ dataAwsDmsCertificate.DataAwsDmsCertificate.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -682,15 +682,15 @@ const dataAwsDmsCertificateConfig: dataAwsDmsCertificate.DataAwsDmsCertificateCo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#id DataAwsDmsCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#tags DataAwsDmsCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.certificateId">certificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}. |
 
 ---
 
@@ -707,10 +707,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -772,7 +772,7 @@ public readonly certificateId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}.
 
 ---
 
@@ -784,7 +784,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#id DataAwsDmsCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dms_certificate#tags DataAwsDmsCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}.
 
 ---
 
