@@ -1,6 +1,6 @@
 # `data_aws_launch_configuration`
 
-Refer to the Terraform Registory for docs: [`data_aws_launch_configuration`](https://www.terraform.io/docs/providers/aws/d/launch_configuration).
+Refer to the Terraform Registory for docs: [`data_aws_launch_configuration`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration).
 
 # `dataAwsLaunchConfiguration` Submodule <a name="`dataAwsLaunchConfiguration` Submodule" id="@cdktf/provider-aws.dataAwsLaunchConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_launch_configuration`](htt
 
 ### DataAwsLaunchConfiguration <a name="DataAwsLaunchConfiguration" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration aws_launch_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration aws_launch_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfiguration(scope Construct, id *string, config DataAwsLaunchConfigurationConfig) DataAwsLaunchConfiguration
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.DataAwsLaunchConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.DataAwsLaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawslaunchconfiguration.DataAwsLaunchConfiguration_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.DataAwsLaunchConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawslaunchconfiguration.DataAwsLaunchConfiguration_IsTerraformDataSource(x in
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -742,11 +742,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 &dataawslaunchconfiguration.DataAwsLaunchConfigurationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -762,14 +762,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguratio
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration#name DataAwsLaunchConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration#id DataAwsLaunchConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration#name DataAwsLaunchConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration#id DataAwsLaunchConfiguration#id}. |
 
 ---
 
@@ -786,10 +786,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -851,7 +851,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration#name DataAwsLaunchConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration#name DataAwsLaunchConfiguration#name}.
 
 ---
 
@@ -863,7 +863,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration#id DataAwsLaunchConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_configuration#id DataAwsLaunchConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -875,7 +875,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 &dataawslaunchconfiguration.DataAwsLaunchConfigurationEbsBlockDevice {
 
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 &dataawslaunchconfiguration.DataAwsLaunchConfigurationEphemeralBlockDevice {
 
@@ -901,7 +901,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 &dataawslaunchconfiguration.DataAwsLaunchConfigurationMetadataOptions {
 
@@ -914,7 +914,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 &dataawslaunchconfiguration.DataAwsLaunchConfigurationRootBlockDevice {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchConfigurationEbsBlockDeviceList
 ```
@@ -1061,7 +1061,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchConfigurationEbsBlockDeviceOutputReference
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() DataAwsLaunchConfigurationEbsBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchConfigurationEphemeralBlockDeviceList
 ```
@@ -1559,7 +1559,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() DataAwsLaunchConfigurationEphemeralBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationMetadataOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchConfigurationMetadataOptionsList
 ```
@@ -1980,7 +1980,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchConfigurationMetadataOptionsOutputReference
 ```
@@ -2280,7 +2280,7 @@ func InternalValue() DataAwsLaunchConfigurationMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationRootBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchConfigurationRootBlockDeviceList
 ```
@@ -2412,7 +2412,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchconfiguration"
 
 dataawslaunchconfiguration.NewDataAwsLaunchConfigurationRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchConfigurationRootBlockDeviceOutputReference
 ```

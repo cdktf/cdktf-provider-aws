@@ -1,6 +1,6 @@
 # `aws_sqs_queue_policy`
 
-Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy).
+Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy).
 
 # `sqsQueuePolicy` Submodule <a name="`sqsQueuePolicy` Submodule" id="@cdktf/provider-aws.sqsQueuePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://www.
 
 ### SqsQueuePolicy <a name="SqsQueuePolicy" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy aws_sqs_queue_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy aws_sqs_queue_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.Initializer"></a>
 
@@ -346,7 +346,7 @@ sqsQueuePolicy.SqsQueuePolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,15 +598,15 @@ const sqsQueuePolicyConfig: sqsQueuePolicy.SqsQueuePolicyConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#policy SqsQueuePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}. |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#id SqsQueuePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#policy SqsQueuePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly queueUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy#id SqsQueuePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

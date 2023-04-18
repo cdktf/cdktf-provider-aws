@@ -1,6 +1,6 @@
 # `data_aws_wafregional_web_acl`
 
-Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl).
+Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl).
 
 # `dataAwsWafregionalWebAcl` Submodule <a name="`dataAwsWafregionalWebAcl` Submodule" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](http
 
 ### DataAwsWafregionalWebAcl <a name="DataAwsWafregionalWebAcl" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl aws_wafregional_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl aws_wafregional_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataAwsWafregionalWebAcl.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -548,7 +548,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new DataAwsWafregionalWebAclConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -564,14 +564,14 @@ new DataAwsWafregionalWebAclConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
 
 ---
 
@@ -588,10 +588,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -653,7 +653,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
 
 ---
 
@@ -665,7 +665,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

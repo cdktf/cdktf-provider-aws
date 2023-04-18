@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/signer_signing_job
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface SignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#id SignerSigningJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#id SignerSigningJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}
   */
   readonly ignoreSigningJobFailure?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#profile_name SignerSigningJob#profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#profile_name SignerSigningJob#profile_name}
   */
   readonly profileName: string;
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#destination SignerSigningJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#destination SignerSigningJob#destination}
   */
   readonly destination: SignerSigningJobDestination;
   /**
   * source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#source SignerSigningJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#source SignerSigningJob#source}
   */
   readonly source: SignerSigningJobSource;
 }
@@ -245,11 +245,11 @@ export class SignerSigningJobSignedObjectList extends cdktf.ComplexList {
 }
 export interface SignerSigningJobDestinationS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#bucket SignerSigningJob#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#prefix SignerSigningJob#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#prefix SignerSigningJob#prefix}
   */
   readonly prefix?: string;
 }
@@ -336,7 +336,7 @@ export interface SignerSigningJobDestination {
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#s3 SignerSigningJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
   */
   readonly s3: SignerSigningJobDestinationS3;
 }
@@ -398,15 +398,15 @@ export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObj
 }
 export interface SignerSigningJobSourceS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#bucket SignerSigningJob#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#key SignerSigningJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#key SignerSigningJob#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#version SignerSigningJob#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#version SignerSigningJob#version}
   */
   readonly version: string;
 }
@@ -510,7 +510,7 @@ export interface SignerSigningJobSource {
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#s3 SignerSigningJob#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
   */
   readonly s3: SignerSigningJobSourceS3;
 }
@@ -572,7 +572,7 @@ export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job aws_signer_signing_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job aws_signer_signing_job}
 */
 export class SignerSigningJob extends cdktf.TerraformResource {
 
@@ -586,7 +586,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job aws_signer_signing_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/signer_signing_job aws_signer_signing_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

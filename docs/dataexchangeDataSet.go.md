@@ -1,6 +1,6 @@
 # `aws_dataexchange_data_set`
 
-Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set).
+Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set).
 
 # `dataexchangeDataSet` Submodule <a name="`dataexchangeDataSet` Submodule" id="@cdktf/provider-aws.dataexchangeDataSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https:/
 
 ### DataexchangeDataSet <a name="DataexchangeDataSet" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set aws_dataexchange_data_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangedataset"
 
 dataexchangedataset.NewDataexchangeDataSet(scope Construct, id *string, config DataexchangeDataSetConfig) DataexchangeDataSet
 ```
@@ -291,7 +291,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangedataset"
 
 dataexchangedataset.DataexchangeDataSet_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangedataset"
 
 dataexchangedataset.DataexchangeDataSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataexchangedataset.DataexchangeDataSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangedataset"
 
 dataexchangedataset.DataexchangeDataSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ dataexchangedataset.DataexchangeDataSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -467,10 +467,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -679,11 +679,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangedataset"
 
 &dataexchangedataset.DataexchangeDataSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -703,18 +703,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataexchangedataset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">AssetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#description DataexchangeDataSet#description}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#name DataexchangeDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#id DataexchangeDataSet#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">AssetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
 
 ---
 
@@ -731,10 +731,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -796,7 +796,7 @@ AssetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
 
 ---
 
@@ -808,7 +808,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#description DataexchangeDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
 
 ---
 
@@ -820,7 +820,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#name DataexchangeDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
 
 ---
 
@@ -832,7 +832,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#id DataexchangeDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#tags DataexchangeDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
 
 ---
 
@@ -859,7 +859,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
 
 ---
 

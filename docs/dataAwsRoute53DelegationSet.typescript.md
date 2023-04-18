@@ -1,6 +1,6 @@
 # `data_aws_route53_delegation_set`
 
-Refer to the Terraform Registory for docs: [`data_aws_route53_delegation_set`](https://www.terraform.io/docs/providers/aws/d/route53_delegation_set).
+Refer to the Terraform Registory for docs: [`data_aws_route53_delegation_set`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_delegation_set).
 
 # `dataAwsRoute53DelegationSet` Submodule <a name="`dataAwsRoute53DelegationSet` Submodule" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_route53_delegation_set`](h
 
 ### DataAwsRoute53DelegationSet <a name="DataAwsRoute53DelegationSet" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set aws_route53_delegation_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_delegation_set aws_route53_delegation_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.Initializer"></a>
 
@@ -338,7 +338,7 @@ dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformDataSource(x:
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -426,10 +426,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -558,13 +558,13 @@ const dataAwsRoute53DelegationSetConfig: dataAwsRoute53DelegationSet.DataAwsRout
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set#id DataAwsRoute53DelegationSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_delegation_set#id DataAwsRoute53DelegationSet#id}. |
 
 ---
 
@@ -581,10 +581,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -646,7 +646,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set#id DataAwsRoute53DelegationSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_delegation_set#id DataAwsRoute53DelegationSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

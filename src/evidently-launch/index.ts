@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/evidently_launch
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface EvidentlyLaunchConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#description EvidentlyLaunch#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#id EvidentlyLaunch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#id EvidentlyLaunch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#name EvidentlyLaunch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#project EvidentlyLaunch#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}
   */
   readonly project: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}
   */
   readonly randomizationSalt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#tags EvidentlyLaunch#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#tags EvidentlyLaunch#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#tags_all EvidentlyLaunch#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#tags_all EvidentlyLaunch#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * groups block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#groups EvidentlyLaunch#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
   */
   readonly groups: EvidentlyLaunchGroups[] | cdktf.IResolvable;
   /**
   * metric_monitors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
   */
   readonly metricMonitors?: EvidentlyLaunchMetricMonitors[] | cdktf.IResolvable;
   /**
   * scheduled_splits_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#scheduled_splits_config EvidentlyLaunch#scheduled_splits_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#scheduled_splits_config EvidentlyLaunch#scheduled_splits_config}
   */
   readonly scheduledSplitsConfig?: EvidentlyLaunchScheduledSplitsConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#timeouts EvidentlyLaunch#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#timeouts EvidentlyLaunch#timeouts}
   */
   readonly timeouts?: EvidentlyLaunchTimeouts;
 }
@@ -134,19 +134,19 @@ export class EvidentlyLaunchExecutionList extends cdktf.ComplexList {
 }
 export interface EvidentlyLaunchGroups {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#description EvidentlyLaunch#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#feature EvidentlyLaunch#feature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#feature EvidentlyLaunch#feature}
   */
   readonly feature: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#name EvidentlyLaunch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#variation EvidentlyLaunch#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#variation EvidentlyLaunch#variation}
   */
   readonly variation: string;
 }
@@ -303,23 +303,23 @@ export class EvidentlyLaunchGroupsList extends cdktf.ComplexList {
 }
 export interface EvidentlyLaunchMetricMonitorsMetricDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}
   */
   readonly entityIdKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}
   */
   readonly eventPattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#name EvidentlyLaunch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#unit_label EvidentlyLaunch#unit_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#unit_label EvidentlyLaunch#unit_label}
   */
   readonly unitLabel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#value_key EvidentlyLaunch#value_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#value_key EvidentlyLaunch#value_key}
   */
   readonly valueKey: string;
 }
@@ -469,7 +469,7 @@ export interface EvidentlyLaunchMetricMonitors {
   /**
   * metric_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#metric_definition EvidentlyLaunch#metric_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#metric_definition EvidentlyLaunch#metric_definition}
   */
   readonly metricDefinition: EvidentlyLaunchMetricMonitorsMetricDefinition;
 }
@@ -563,15 +563,15 @@ export class EvidentlyLaunchMetricMonitorsList extends cdktf.ComplexList {
 }
 export interface EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}
   */
   readonly evaluationOrder: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#segment EvidentlyLaunch#segment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#segment EvidentlyLaunch#segment}
   */
   readonly segment: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#weights EvidentlyLaunch#weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#weights EvidentlyLaunch#weights}
   */
   readonly weights: { [key: string]: number };
 }
@@ -705,17 +705,17 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList exten
 }
 export interface EvidentlyLaunchScheduledSplitsConfigSteps {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#group_weights EvidentlyLaunch#group_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}
   */
   readonly groupWeights: { [key: string]: number };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#start_time EvidentlyLaunch#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#start_time EvidentlyLaunch#start_time}
   */
   readonly startTime: string;
   /**
   * segment_overrides block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
   */
   readonly segmentOverrides?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktf.IResolvable;
 }
@@ -854,7 +854,7 @@ export interface EvidentlyLaunchScheduledSplitsConfig {
   /**
   * steps block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#steps EvidentlyLaunch#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
   */
   readonly steps: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktf.IResolvable;
 }
@@ -916,20 +916,20 @@ export class EvidentlyLaunchScheduledSplitsConfigOutputReference extends cdktf.C
 }
 export interface EvidentlyLaunchTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#create EvidentlyLaunch#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#delete EvidentlyLaunch#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch#update EvidentlyLaunch#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}
   */
   readonly update?: string;
 }
 
-export function evidentlyLaunchTimeoutsToTerraform(struct?: EvidentlyLaunchTimeoutsOutputReference | EvidentlyLaunchTimeouts | cdktf.IResolvable): any {
+export function evidentlyLaunchTimeoutsToTerraform(struct?: EvidentlyLaunchTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -950,7 +950,7 @@ export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): EvidentlyLaunchTimeouts | cdktf.IResolvable | undefined {
@@ -1045,7 +1045,7 @@ export class EvidentlyLaunchTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch aws_evidently_launch}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch aws_evidently_launch}
 */
 export class EvidentlyLaunch extends cdktf.TerraformResource {
 
@@ -1059,7 +1059,7 @@ export class EvidentlyLaunch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/evidently_launch aws_evidently_launch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_launch aws_evidently_launch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

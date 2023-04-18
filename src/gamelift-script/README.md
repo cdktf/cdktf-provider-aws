@@ -1,3 +1,3 @@
 # `aws_gamelift_script`
 
-Refer to the Terraform Registory for docs: [`aws_gamelift_script`](https://www.terraform.io/docs/providers/aws/r/gamelift_script).
+Refer to the Terraform Registory for docs: [`aws_gamelift_script`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_script).

@@ -1,6 +1,6 @@
 # `aws_macie_member_account_association`
 
-Refer to the Terraform Registory for docs: [`aws_macie_member_account_association`](https://www.terraform.io/docs/providers/aws/r/macie_member_account_association).
+Refer to the Terraform Registory for docs: [`aws_macie_member_account_association`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association).
 
 # `macieMemberAccountAssociation` Submodule <a name="`macieMemberAccountAssociation` Submodule" id="@cdktf/provider-aws.macieMemberAccountAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_macie_member_account_associatio
 
 ### MacieMemberAccountAssociation <a name="MacieMemberAccountAssociation" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association aws_macie_member_account_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.Initializer"></a>
 
@@ -346,7 +346,7 @@ MacieMemberAccountAssociation.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Aws;
 
 new MacieMemberAccountAssociationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -586,14 +586,14 @@ new MacieMemberAccountAssociationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}. |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association#id MacieMemberAccountAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}. |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -675,7 +675,7 @@ public string MemberAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}.
 
 ---
 
@@ -687,7 +687,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association#id MacieMemberAccountAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

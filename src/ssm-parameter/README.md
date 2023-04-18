@@ -1,3 +1,3 @@
 # `aws_ssm_parameter`
 
-Refer to the Terraform Registory for docs: [`aws_ssm_parameter`](https://www.terraform.io/docs/providers/aws/r/ssm_parameter).
+Refer to the Terraform Registory for docs: [`aws_ssm_parameter`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_parameter).

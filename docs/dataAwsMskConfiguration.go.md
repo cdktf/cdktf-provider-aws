@@ -1,6 +1,6 @@
 # `data_aws_msk_configuration`
 
-Refer to the Terraform Registory for docs: [`data_aws_msk_configuration`](https://www.terraform.io/docs/providers/aws/d/msk_configuration).
+Refer to the Terraform Registory for docs: [`data_aws_msk_configuration`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration).
 
 # `dataAwsMskConfiguration` Submodule <a name="`dataAwsMskConfiguration` Submodule" id="@cdktf/provider-aws.dataAwsMskConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_msk_configuration`](https:
 
 ### DataAwsMskConfiguration <a name="DataAwsMskConfiguration" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/msk_configuration aws_msk_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration aws_msk_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconfiguration"
 
 dataawsmskconfiguration.NewDataAwsMskConfiguration(scope Construct, id *string, config DataAwsMskConfigurationConfig) DataAwsMskConfiguration
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconfiguration"
 
 dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsmskconfiguration.DataAwsMskConfiguration_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -437,10 +437,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -599,11 +599,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconfiguration"
 
 &dataawsmskconfiguration.DataAwsMskConfigurationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -619,14 +619,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmskconfiguration"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_configuration#name DataAwsMskConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_configuration#id DataAwsMskConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration#name DataAwsMskConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration#id DataAwsMskConfiguration#id}. |
 
 ---
 
@@ -643,10 +643,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfigurationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -708,7 +708,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_configuration#name DataAwsMskConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration#name DataAwsMskConfiguration#name}.
 
 ---
 
@@ -720,7 +720,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_configuration#id DataAwsMskConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/msk_configuration#id DataAwsMskConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

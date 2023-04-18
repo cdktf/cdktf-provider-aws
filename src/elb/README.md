@@ -1,3 +1,3 @@
 # `aws_elb`
 
-Refer to the Terraform Registory for docs: [`aws_elb`](https://www.terraform.io/docs/providers/aws/r/elb).
+Refer to the Terraform Registory for docs: [`aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elb).

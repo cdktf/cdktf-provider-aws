@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/rbin_rule
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface RbinRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#description RbinRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#description RbinRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#resource_type RbinRule#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#tags RbinRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#tags RbinRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#tags_all RbinRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * lock_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#lock_configuration RbinRule#lock_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
   */
   readonly lockConfiguration?: RbinRuleLockConfiguration;
   /**
   * resource_tags block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#resource_tags RbinRule#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
   */
   readonly resourceTags?: RbinRuleResourceTags[] | cdktf.IResolvable;
   /**
   * retention_period block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#retention_period RbinRule#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
   */
   readonly retentionPeriod: RbinRuleRetentionPeriod;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#timeouts RbinRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
   */
   readonly timeouts?: RbinRuleTimeouts;
 }
 export interface RbinRuleLockConfigurationUnlockDelay {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}
   */
   readonly unlockDelayUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}
   */
   readonly unlockDelayValue: number;
 }
@@ -138,7 +138,7 @@ export interface RbinRuleLockConfiguration {
   /**
   * unlock_delay block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#unlock_delay RbinRule#unlock_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
   */
   readonly unlockDelay: RbinRuleLockConfigurationUnlockDelay;
 }
@@ -200,11 +200,11 @@ export class RbinRuleLockConfigurationOutputReference extends cdktf.ComplexObjec
 }
 export interface RbinRuleResourceTags {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#resource_tag_key RbinRule#resource_tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}
   */
   readonly resourceTagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#resource_tag_value RbinRule#resource_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}
   */
   readonly resourceTagValue?: string;
 }
@@ -321,11 +321,11 @@ export class RbinRuleResourceTagsList extends cdktf.ComplexList {
 }
 export interface RbinRuleRetentionPeriod {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#retention_period_unit RbinRule#retention_period_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}
   */
   readonly retentionPeriodUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#retention_period_value RbinRule#retention_period_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}
   */
   readonly retentionPeriodValue: number;
 }
@@ -407,20 +407,20 @@ export class RbinRuleRetentionPeriodOutputReference extends cdktf.ComplexObject 
 }
 export interface RbinRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#create RbinRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#create RbinRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#delete RbinRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#delete RbinRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule#update RbinRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule#update RbinRule#update}
   */
   readonly update?: string;
 }
 
-export function rbinRuleTimeoutsToTerraform(struct?: RbinRuleTimeoutsOutputReference | RbinRuleTimeouts | cdktf.IResolvable): any {
+export function rbinRuleTimeoutsToTerraform(struct?: RbinRuleTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -441,7 +441,7 @@ export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): RbinRuleTimeouts | cdktf.IResolvable | undefined {
@@ -536,7 +536,7 @@ export class RbinRuleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule aws_rbin_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule aws_rbin_rule}
 */
 export class RbinRule extends cdktf.TerraformResource {
 
@@ -550,7 +550,7 @@ export class RbinRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/rbin_rule aws_rbin_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rbin_rule aws_rbin_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

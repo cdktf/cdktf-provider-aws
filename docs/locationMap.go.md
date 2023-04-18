@@ -1,6 +1,6 @@
 # `aws_location_map`
 
-Refer to the Terraform Registory for docs: [`aws_location_map`](https://www.terraform.io/docs/providers/aws/r/location_map).
+Refer to the Terraform Registory for docs: [`aws_location_map`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map).
 
 # `locationMap` Submodule <a name="`locationMap` Submodule" id="@cdktf/provider-aws.locationMap"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_location_map`](https://www.terr
 
 ### LocationMap <a name="LocationMap" id="@cdktf/provider-aws.locationMap.LocationMap"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_map aws_location_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map aws_location_map}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationMap.LocationMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 locationmap.NewLocationMap(scope Construct, id *string, config LocationMapConfig) LocationMap
 ```
@@ -311,7 +311,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.locationMap.LocationMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 locationmap.LocationMap_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.locationMap.LocationMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 locationmap.LocationMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ locationmap.LocationMap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.locationMap.LocationMap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 locationmap.LocationMap_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ locationmap.LocationMap_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMap.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -489,10 +489,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.locationMap.LocationMap.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -721,17 +721,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationMap.LocationMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 &locationmap.LocationMapConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v13.locationMap.LocationMapConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v14.locationMap.LocationMapConfiguration,
 	MapName: *string,
 	Description: *string,
 	Id: *string,
@@ -745,18 +745,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration">LocationMapConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.mapName">MapName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#map_name LocationMap#map_name}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#description LocationMap#description}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#id LocationMap#id}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#tags LocationMap#tags}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#tags_all LocationMap#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.mapName">MapName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#map_name LocationMap#map_name}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#description LocationMap#description}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#id LocationMap#id}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags LocationMap#tags}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags_all LocationMap#tags_all}. |
 
 ---
 
@@ -773,10 +773,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.locationMap.LocationMapConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -840,7 +840,7 @@ Configuration LocationMapConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#configuration LocationMap#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#configuration LocationMap#configuration}
 
 ---
 
@@ -852,7 +852,7 @@ MapName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#map_name LocationMap#map_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#map_name LocationMap#map_name}.
 
 ---
 
@@ -864,7 +864,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#description LocationMap#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#description LocationMap#description}.
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#id LocationMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#id LocationMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#tags LocationMap#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags LocationMap#tags}.
 
 ---
 
@@ -903,7 +903,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#tags_all LocationMap#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags_all LocationMap#tags_all}.
 
 ---
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationMap.LocationMapConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 &locationmap.LocationMapConfiguration {
 	Style: *string,
@@ -923,7 +923,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration.property.style">Style</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#style LocationMap#style}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration.property.style">Style</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#style LocationMap#style}. |
 
 ---
 
@@ -935,7 +935,7 @@ Style *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/location_map#style LocationMap#style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#style LocationMap#style}.
 
 ---
 
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationMap.LocationMapConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationmap"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationmap"
 
 locationmap.NewLocationMapConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationMapConfigurationOutputReference
 ```

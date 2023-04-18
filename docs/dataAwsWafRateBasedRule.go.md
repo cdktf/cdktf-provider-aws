@@ -1,6 +1,6 @@
 # `data_aws_waf_rate_based_rule`
 
-Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule).
+Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule).
 
 # `dataAwsWafRateBasedRule` Submodule <a name="`dataAwsWafRateBasedRule` Submodule" id="@cdktf/provider-aws.dataAwsWafRateBasedRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](http
 
 ### DataAwsWafRateBasedRule <a name="DataAwsWafRateBasedRule" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule aws_waf_rate_based_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafratebasedrule"
 
 dataawswafratebasedrule.NewDataAwsWafRateBasedRule(scope Construct, id *string, config DataAwsWafRateBasedRuleConfig) DataAwsWafRateBasedRule
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -544,11 +544,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafratebasedrule"
 
 &dataawswafratebasedrule.DataAwsWafRateBasedRuleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -564,14 +564,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafratebasedrule"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}. |
 
 ---
 
@@ -588,10 +588,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,7 +653,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}.
 
 ---
 
@@ -665,7 +665,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

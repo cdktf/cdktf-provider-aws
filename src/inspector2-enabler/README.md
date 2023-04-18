@@ -1,3 +1,3 @@
 # `aws_inspector2_enabler`
 
-Refer to the Terraform Registory for docs: [`aws_inspector2_enabler`](https://www.terraform.io/docs/providers/aws/r/inspector2_enabler).
+Refer to the Terraform Registory for docs: [`aws_inspector2_enabler`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_enabler).

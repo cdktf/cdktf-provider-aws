@@ -1,3 +1,3 @@
 # `data_aws_network_interfaces`
 
-Refer to the Terraform Registory for docs: [`data_aws_network_interfaces`](https://www.terraform.io/docs/providers/aws/d/network_interfaces).
+Refer to the Terraform Registory for docs: [`data_aws_network_interfaces`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/network_interfaces).

@@ -1,6 +1,6 @@
 # `data_aws_ivs_stream_key`
 
-Refer to the Terraform Registory for docs: [`data_aws_ivs_stream_key`](https://www.terraform.io/docs/providers/aws/d/ivs_stream_key).
+Refer to the Terraform Registory for docs: [`data_aws_ivs_stream_key`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key).
 
 # `dataAwsIvsStreamKey` Submodule <a name="`dataAwsIvsStreamKey` Submodule" id="@cdktf/provider-aws.dataAwsIvsStreamKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_ivs_stream_key`](https://w
 
 ### DataAwsIvsStreamKey <a name="DataAwsIvsStreamKey" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key aws_ivs_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataAwsIvsStreamKey.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,15 +38,15 @@ DataAwsIvsStreamKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.channelArn">channelArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.channelArn">channelArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
 
 ---
 
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -113,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
 
 ---
 
@@ -121,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#id DataAwsIvsStreamKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -132,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
 
 ---
 
@@ -438,7 +439,7 @@ DataAwsIvsStreamKey.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -529,10 +530,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -687,6 +688,7 @@ DataAwsIvsStreamKeyConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -705,15 +707,15 @@ DataAwsIvsStreamKeyConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">channelArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">channelArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
 
 ---
 
@@ -730,10 +732,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -795,7 +797,7 @@ public java.lang.String getChannelArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
 
 ---
 
@@ -807,7 +809,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#id DataAwsIvsStreamKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +824,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
 
 ---
 

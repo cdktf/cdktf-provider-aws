@@ -1,3 +1,3 @@
 # `aws_auditmanager_framework_share`
 
-Refer to the Terraform Registory for docs: [`aws_auditmanager_framework_share`](https://www.terraform.io/docs/providers/aws/r/auditmanager_framework_share).
+Refer to the Terraform Registory for docs: [`aws_auditmanager_framework_share`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_framework_share).

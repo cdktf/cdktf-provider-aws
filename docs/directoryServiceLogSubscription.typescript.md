@@ -1,6 +1,6 @@
 # `aws_directory_service_log_subscription`
 
-Refer to the Terraform Registory for docs: [`aws_directory_service_log_subscription`](https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription).
+Refer to the Terraform Registory for docs: [`aws_directory_service_log_subscription`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription).
 
 # `directoryServiceLogSubscription` Submodule <a name="`directoryServiceLogSubscription` Submodule" id="@cdktf/provider-aws.directoryServiceLogSubscription"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_directory_service_log_subscript
 
 ### DirectoryServiceLogSubscription <a name="DirectoryServiceLogSubscription" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription aws_directory_service_log_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.Initializer"></a>
 
@@ -346,7 +346,7 @@ directoryServiceLogSubscription.DirectoryServiceLogSubscription.isTerraformResou
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,15 +598,15 @@ const directoryServiceLogSubscriptionConfig: directoryServiceLogSubscription.Dir
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.directoryId">directoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.directoryId">directoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}. |
+| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly directoryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#directory_id DirectoryServiceLogSubscription#directory_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly logGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#log_group_name DirectoryServiceLogSubscription#log_group_name}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_log_subscription#id DirectoryServiceLogSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

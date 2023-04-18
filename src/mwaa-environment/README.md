@@ -1,3 +1,3 @@
 # `aws_mwaa_environment`
 
-Refer to the Terraform Registory for docs: [`aws_mwaa_environment`](https://www.terraform.io/docs/providers/aws/r/mwaa_environment).
+Refer to the Terraform Registory for docs: [`aws_mwaa_environment`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mwaa_environment).

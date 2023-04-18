@@ -1,6 +1,6 @@
 # `data_aws_memorydb_acl`
 
-Refer to the Terraform Registory for docs: [`data_aws_memorydb_acl`](https://www.terraform.io/docs/providers/aws/d/memorydb_acl).
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_acl`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl).
 
 # `dataAwsMemorydbAcl` Submodule <a name="`dataAwsMemorydbAcl` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbAcl"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_memorydb_acl`](https://www
 
 ### DataAwsMemorydbAcl <a name="DataAwsMemorydbAcl" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl aws_memorydb_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl aws_memorydb_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbacl"
 
 dataawsmemorydbacl.NewDataAwsMemorydbAcl(scope Construct, id *string, config DataAwsMemorydbAclConfig) DataAwsMemorydbAcl
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbacl"
 
 dataawsmemorydbacl.DataAwsMemorydbAcl_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbacl"
 
 dataawsmemorydbacl.DataAwsMemorydbAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsmemorydbacl.DataAwsMemorydbAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbacl"
 
 dataawsmemorydbacl.DataAwsMemorydbAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawsmemorydbacl.DataAwsMemorydbAcl_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -606,11 +606,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbacl"
 
 &dataawsmemorydbacl.DataAwsMemorydbAclConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -627,15 +627,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmemorydbacl"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#name DataAwsMemorydbAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#id DataAwsMemorydbAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
 
 ---
 
@@ -652,10 +652,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -717,7 +717,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#name DataAwsMemorydbAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}.
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#id DataAwsMemorydbAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
 
 ---
 

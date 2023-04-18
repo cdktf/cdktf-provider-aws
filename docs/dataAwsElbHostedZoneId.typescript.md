@@ -1,6 +1,6 @@
 # `data_aws_elb_hosted_zone_id`
 
-Refer to the Terraform Registory for docs: [`data_aws_elb_hosted_zone_id`](https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id).
+Refer to the Terraform Registory for docs: [`data_aws_elb_hosted_zone_id`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id).
 
 # `dataAwsElbHostedZoneId` Submodule <a name="`dataAwsElbHostedZoneId` Submodule" id="@cdktf/provider-aws.dataAwsElbHostedZoneId"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_elb_hosted_zone_id`](https
 
 ### DataAwsElbHostedZoneId <a name="DataAwsElbHostedZoneId" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id aws_elb_hosted_zone_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.Initializer"></a>
 
@@ -352,7 +352,7 @@ dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -439,10 +439,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -561,14 +561,14 @@ const dataAwsElbHostedZoneIdConfig: dataAwsElbHostedZoneId.DataAwsElbHostedZoneI
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id#id DataAwsElbHostedZoneId#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id#region DataAwsElbHostedZoneId#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id#id DataAwsElbHostedZoneId#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id#region DataAwsElbHostedZoneId#region}. |
 
 ---
 
@@ -585,10 +585,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -650,7 +650,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id#id DataAwsElbHostedZoneId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id#id DataAwsElbHostedZoneId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -665,7 +665,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_hosted_zone_id#region DataAwsElbHostedZoneId#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_hosted_zone_id#region DataAwsElbHostedZoneId#region}.
 
 ---
 

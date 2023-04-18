@@ -1,6 +1,6 @@
 # `data_aws_eks_cluster_auth`
 
-Refer to the Terraform Registory for docs: [`data_aws_eks_cluster_auth`](https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth).
+Refer to the Terraform Registory for docs: [`data_aws_eks_cluster_auth`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth).
 
 # `dataAwsEksClusterAuth` Submodule <a name="`dataAwsEksClusterAuth` Submodule" id="@cdktf/provider-aws.dataAwsEksClusterAuth"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_eks_cluster_auth`](https:/
 
 ### DataAwsEksClusterAuth <a name="DataAwsEksClusterAuth" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth aws_eks_cluster_auth}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth aws_eks_cluster_auth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusterauth"
 
 dataawseksclusterauth.NewDataAwsEksClusterAuth(scope Construct, id *string, config DataAwsEksClusterAuthConfig) DataAwsEksClusterAuth
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformDataSource(x interface{})
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -555,11 +555,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusterauth"
 
 &dataawseksclusterauth.DataAwsEksClusterAuthConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -575,14 +575,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksclusterauth"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -664,7 +664,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth#name DataAwsEksClusterAuth#name}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_cluster_auth#id DataAwsEksClusterAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

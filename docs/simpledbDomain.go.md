@@ -1,6 +1,6 @@
 # `aws_simpledb_domain`
 
-Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://www.terraform.io/docs/providers/aws/r/simpledb_domain).
+Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/simpledb_domain).
 
 # `simpledbDomain` Submodule <a name="`simpledbDomain` Submodule" id="@cdktf/provider-aws.simpledbDomain"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://www.t
 
 ### SimpledbDomain <a name="SimpledbDomain" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain aws_simpledb_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/simpledb_domain aws_simpledb_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/simpledbdomain"
 
 simpledbdomain.NewSimpledbDomain(scope Construct, id *string, config SimpledbDomainConfig) SimpledbDomain
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -436,10 +436,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -548,11 +548,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/simpledbdomain"
 
 &simpledbdomain.SimpledbDomainConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -567,13 +567,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v13/simpledbdomain"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain#name SimpledbDomain#name}. |
+| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/simpledb_domain#name SimpledbDomain#name}. |
 
 ---
 
@@ -590,10 +590,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -655,7 +655,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain#name SimpledbDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/simpledb_domain#name SimpledbDomain#name}.
 
 ---
 

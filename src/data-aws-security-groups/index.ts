@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/d/security_groups
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSecurityGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#id DataAwsSecurityGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#id DataAwsSecurityGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#tags DataAwsSecurityGroups#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#tags DataAwsSecurityGroups#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#filter DataAwsSecurityGroups#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#filter DataAwsSecurityGroups#filter}
   */
   readonly filter?: DataAwsSecurityGroupsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#timeouts DataAwsSecurityGroups#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#timeouts DataAwsSecurityGroups#timeouts}
   */
   readonly timeouts?: DataAwsSecurityGroupsTimeouts;
 }
 export interface DataAwsSecurityGroupsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#name DataAwsSecurityGroups#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#name DataAwsSecurityGroups#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#values DataAwsSecurityGroups#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#values DataAwsSecurityGroups#values}
   */
   readonly values: string[];
 }
@@ -151,12 +151,12 @@ export class DataAwsSecurityGroupsFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsSecurityGroupsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#read DataAwsSecurityGroups#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups#read DataAwsSecurityGroups#read}
   */
   readonly read?: string;
 }
 
-export function dataAwsSecurityGroupsTimeoutsToTerraform(struct?: DataAwsSecurityGroupsTimeoutsOutputReference | DataAwsSecurityGroupsTimeouts | cdktf.IResolvable): any {
+export function dataAwsSecurityGroupsTimeoutsToTerraform(struct?: DataAwsSecurityGroupsTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -175,7 +175,7 @@ export class DataAwsSecurityGroupsTimeoutsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAwsSecurityGroupsTimeouts | cdktf.IResolvable | undefined {
@@ -226,7 +226,7 @@ export class DataAwsSecurityGroupsTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups aws_security_groups}
 */
 export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
 
@@ -240,7 +240,7 @@ export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups aws_security_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/inspector2_member_association
+// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface Inspector2MemberAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association#account_id Inspector2MemberAssociation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association#account_id Inspector2MemberAssociation#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association#id Inspector2MemberAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association#id Inspector2MemberAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,22 +21,22 @@ export interface Inspector2MemberAssociationConfig extends cdktf.TerraformMetaAr
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association#timeouts Inspector2MemberAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association#timeouts Inspector2MemberAssociation#timeouts}
   */
   readonly timeouts?: Inspector2MemberAssociationTimeouts;
 }
 export interface Inspector2MemberAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association#create Inspector2MemberAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association#create Inspector2MemberAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association#delete Inspector2MemberAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association#delete Inspector2MemberAssociation#delete}
   */
   readonly delete?: string;
 }
 
-export function inspector2MemberAssociationTimeoutsToTerraform(struct?: Inspector2MemberAssociationTimeoutsOutputReference | Inspector2MemberAssociationTimeouts | cdktf.IResolvable): any {
+export function inspector2MemberAssociationTimeoutsToTerraform(struct?: Inspector2MemberAssociationTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -56,7 +56,7 @@ export class Inspector2MemberAssociationTimeoutsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): Inspector2MemberAssociationTimeouts | cdktf.IResolvable | undefined {
@@ -129,7 +129,7 @@ export class Inspector2MemberAssociationTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association aws_inspector2_member_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association aws_inspector2_member_association}
 */
 export class Inspector2MemberAssociation extends cdktf.TerraformResource {
 
@@ -143,7 +143,7 @@ export class Inspector2MemberAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector2_member_association aws_inspector2_member_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
