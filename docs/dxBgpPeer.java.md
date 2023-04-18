@@ -1,3 +1,7 @@
+# `aws_dx_bgp_peer`
+
+Refer to the Terraform Registory for docs: [`aws_dx_bgp_peer`](https://www.terraform.io/docs/providers/aws/r/dx_bgp_peer).
+
 # `dxBgpPeer` Submodule <a name="`dxBgpPeer` Submodule" id="@cdktf/provider-aws.dxBgpPeer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

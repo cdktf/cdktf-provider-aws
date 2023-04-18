@@ -1,3 +1,7 @@
+# `aws_ec2_transit_gateway_multicast_group_member`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_multicast_group_member`](https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_multicast_group_member).
+
 # `ec2TransitGatewayMulticastGroupMember` Submodule <a name="`ec2TransitGatewayMulticastGroupMember` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

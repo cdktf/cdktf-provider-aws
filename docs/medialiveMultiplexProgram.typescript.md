@@ -1,3 +1,7 @@
+# `aws_medialive_multiplex_program`
+
+Refer to the Terraform Registory for docs: [`aws_medialive_multiplex_program`](https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program).
+
 # `medialiveMultiplexProgram` Submodule <a name="`medialiveMultiplexProgram` Submodule" id="@cdktf/provider-aws.medialiveMultiplexProgram"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_network_interface_attachment`
+
+Refer to the Terraform Registory for docs: [`aws_network_interface_attachment`](https://www.terraform.io/docs/providers/aws/r/network_interface_attachment).
+
 # `networkInterfaceAttachment` Submodule <a name="`networkInterfaceAttachment` Submodule" id="@cdktf/provider-aws.networkInterfaceAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

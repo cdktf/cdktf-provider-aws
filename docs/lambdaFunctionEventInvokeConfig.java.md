@@ -1,3 +1,7 @@
+# `aws_lambda_function_event_invoke_config`
+
+Refer to the Terraform Registory for docs: [`aws_lambda_function_event_invoke_config`](https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config).
+
 # `lambdaFunctionEventInvokeConfig` Submodule <a name="`lambdaFunctionEventInvokeConfig` Submodule" id="@cdktf/provider-aws.lambdaFunctionEventInvokeConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

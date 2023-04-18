@@ -1,3 +1,7 @@
+# `aws_backup_vault_notifications`
+
+Refer to the Terraform Registory for docs: [`aws_backup_vault_notifications`](https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications).
+
 # `backupVaultNotifications` Submodule <a name="`backupVaultNotifications` Submodule" id="@cdktf/provider-aws.backupVaultNotifications"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_elastic_beanstalk_environment`
+
+Refer to the Terraform Registory for docs: [`aws_elastic_beanstalk_environment`](https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment).
+
 # `elasticBeanstalkEnvironment` Submodule <a name="`elasticBeanstalkEnvironment` Submodule" id="@cdktf/provider-aws.elasticBeanstalkEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

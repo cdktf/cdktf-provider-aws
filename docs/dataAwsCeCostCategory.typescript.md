@@ -1,3 +1,7 @@
+# `data_aws_ce_cost_category`
+
+Refer to the Terraform Registory for docs: [`data_aws_ce_cost_category`](https://www.terraform.io/docs/providers/aws/d/ce_cost_category).
+
 # `dataAwsCeCostCategory` Submodule <a name="`dataAwsCeCostCategory` Submodule" id="@cdktf/provider-aws.dataAwsCeCostCategory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

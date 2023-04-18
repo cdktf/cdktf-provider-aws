@@ -1,3 +1,7 @@
+# `data_aws_elb_service_account`
+
+Refer to the Terraform Registory for docs: [`data_aws_elb_service_account`](https://www.terraform.io/docs/providers/aws/d/elb_service_account).
+
 # `dataAwsElbServiceAccount` Submodule <a name="`dataAwsElbServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsElbServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

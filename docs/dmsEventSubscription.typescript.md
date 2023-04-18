@@ -1,3 +1,7 @@
+# `aws_dms_event_subscription`
+
+Refer to the Terraform Registory for docs: [`aws_dms_event_subscription`](https://www.terraform.io/docs/providers/aws/r/dms_event_subscription).
+
 # `dmsEventSubscription` Submodule <a name="`dmsEventSubscription` Submodule" id="@cdktf/provider-aws.dmsEventSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

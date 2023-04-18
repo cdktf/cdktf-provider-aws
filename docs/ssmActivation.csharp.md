@@ -1,3 +1,7 @@
+# `aws_ssm_activation`
+
+Refer to the Terraform Registory for docs: [`aws_ssm_activation`](https://www.terraform.io/docs/providers/aws/r/ssm_activation).
+
 # `ssmActivation` Submodule <a name="`ssmActivation` Submodule" id="@cdktf/provider-aws.ssmActivation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

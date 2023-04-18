@@ -1,3 +1,7 @@
+# `aws_sagemaker_notebook_instance`
+
+Refer to the Terraform Registory for docs: [`aws_sagemaker_notebook_instance`](https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance).
+
 # `sagemakerNotebookInstance` Submodule <a name="`sagemakerNotebookInstance` Submodule" id="@cdktf/provider-aws.sagemakerNotebookInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

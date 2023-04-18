@@ -1,3 +1,7 @@
+# `data_aws_networkmanager_global_networks`
+
+Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_networks`](https://www.terraform.io/docs/providers/aws/d/networkmanager_global_networks).
+
 # `dataAwsNetworkmanagerGlobalNetworks` Submodule <a name="`dataAwsNetworkmanagerGlobalNetworks` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

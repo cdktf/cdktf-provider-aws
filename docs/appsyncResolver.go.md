@@ -1,3 +1,7 @@
+# `aws_appsync_resolver`
+
+Refer to the Terraform Registory for docs: [`aws_appsync_resolver`](https://www.terraform.io/docs/providers/aws/r/appsync_resolver).
+
 # `appsyncResolver` Submodule <a name="`appsyncResolver` Submodule" id="@cdktf/provider-aws.appsyncResolver"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

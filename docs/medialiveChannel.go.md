@@ -1,3 +1,7 @@
+# `aws_medialive_channel`
+
+Refer to the Terraform Registory for docs: [`aws_medialive_channel`](https://www.terraform.io/docs/providers/aws/r/medialive_channel).
+
 # `medialiveChannel` Submodule <a name="`medialiveChannel` Submodule" id="@cdktf/provider-aws.medialiveChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

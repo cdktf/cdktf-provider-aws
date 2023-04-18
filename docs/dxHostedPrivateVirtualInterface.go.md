@@ -1,3 +1,7 @@
+# `aws_dx_hosted_private_virtual_interface`
+
+Refer to the Terraform Registory for docs: [`aws_dx_hosted_private_virtual_interface`](https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface).
+
 # `dxHostedPrivateVirtualInterface` Submodule <a name="`dxHostedPrivateVirtualInterface` Submodule" id="@cdktf/provider-aws.dxHostedPrivateVirtualInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_vpn_gateway`
+
+Refer to the Terraform Registory for docs: [`aws_vpn_gateway`](https://www.terraform.io/docs/providers/aws/r/vpn_gateway).
+
 # `vpnGateway` Submodule <a name="`vpnGateway` Submodule" id="@cdktf/provider-aws.vpnGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_appmesh_gateway_route`
+
+Refer to the Terraform Registory for docs: [`data_aws_appmesh_gateway_route`](https://www.terraform.io/docs/providers/aws/d/appmesh_gateway_route).
+
 # `dataAwsAppmeshGatewayRoute` Submodule <a name="`dataAwsAppmeshGatewayRoute` Submodule" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

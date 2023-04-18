@@ -1,3 +1,7 @@
+# `aws_ecs_cluster`
+
+Refer to the Terraform Registory for docs: [`aws_ecs_cluster`](https://www.terraform.io/docs/providers/aws/r/ecs_cluster).
+
 # `ecsCluster` Submodule <a name="`ecsCluster` Submodule" id="@cdktf/provider-aws.ecsCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

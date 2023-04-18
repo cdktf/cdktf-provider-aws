@@ -1,3 +1,7 @@
+# `data_aws_lakeformation_resource`
+
+Refer to the Terraform Registory for docs: [`data_aws_lakeformation_resource`](https://www.terraform.io/docs/providers/aws/d/lakeformation_resource).
+
 # `dataAwsLakeformationResource` Submodule <a name="`dataAwsLakeformationResource` Submodule" id="@cdktf/provider-aws.dataAwsLakeformationResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

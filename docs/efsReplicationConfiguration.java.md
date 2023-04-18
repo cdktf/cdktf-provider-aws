@@ -1,3 +1,7 @@
+# `aws_efs_replication_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_efs_replication_configuration`](https://www.terraform.io/docs/providers/aws/r/efs_replication_configuration).
+
 # `efsReplicationConfiguration` Submodule <a name="`efsReplicationConfiguration` Submodule" id="@cdktf/provider-aws.efsReplicationConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

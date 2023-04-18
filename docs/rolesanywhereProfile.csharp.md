@@ -1,3 +1,7 @@
+# `aws_rolesanywhere_profile`
+
+Refer to the Terraform Registory for docs: [`aws_rolesanywhere_profile`](https://www.terraform.io/docs/providers/aws/r/rolesanywhere_profile).
+
 # `rolesanywhereProfile` Submodule <a name="`rolesanywhereProfile` Submodule" id="@cdktf/provider-aws.rolesanywhereProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

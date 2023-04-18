@@ -1,3 +1,7 @@
+# `aws_batch_scheduling_policy`
+
+Refer to the Terraform Registory for docs: [`aws_batch_scheduling_policy`](https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy).
+
 # `batchSchedulingPolicy` Submodule <a name="`batchSchedulingPolicy` Submodule" id="@cdktf/provider-aws.batchSchedulingPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

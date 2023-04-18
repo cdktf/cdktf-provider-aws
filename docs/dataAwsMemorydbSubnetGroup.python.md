@@ -1,3 +1,7 @@
+# `data_aws_memorydb_subnet_group`
+
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_subnet_group`](https://www.terraform.io/docs/providers/aws/d/memorydb_subnet_group).
+
 # `dataAwsMemorydbSubnetGroup` Submodule <a name="`dataAwsMemorydbSubnetGroup` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

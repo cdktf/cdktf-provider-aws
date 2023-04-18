@@ -1,3 +1,7 @@
+# `data_aws_api_gateway_resource`
+
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_resource`](https://www.terraform.io/docs/providers/aws/d/api_gateway_resource).
+
 # `dataAwsApiGatewayResource` Submodule <a name="`dataAwsApiGatewayResource` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

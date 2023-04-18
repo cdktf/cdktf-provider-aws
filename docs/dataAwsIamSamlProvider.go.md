@@ -1,3 +1,7 @@
+# `data_aws_iam_saml_provider`
+
+Refer to the Terraform Registory for docs: [`data_aws_iam_saml_provider`](https://www.terraform.io/docs/providers/aws/d/iam_saml_provider).
+
 # `dataAwsIamSamlProvider` Submodule <a name="`dataAwsIamSamlProvider` Submodule" id="@cdktf/provider-aws.dataAwsIamSamlProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

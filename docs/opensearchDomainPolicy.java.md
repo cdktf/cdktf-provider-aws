@@ -1,3 +1,7 @@
+# `aws_opensearch_domain_policy`
+
+Refer to the Terraform Registory for docs: [`aws_opensearch_domain_policy`](https://www.terraform.io/docs/providers/aws/r/opensearch_domain_policy).
+
 # `opensearchDomainPolicy` Submodule <a name="`opensearchDomainPolicy` Submodule" id="@cdktf/provider-aws.opensearchDomainPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

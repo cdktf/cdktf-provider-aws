@@ -1,3 +1,7 @@
+# `data_aws_secretsmanager_random_password`
+
+Refer to the Terraform Registory for docs: [`data_aws_secretsmanager_random_password`](https://www.terraform.io/docs/providers/aws/d/secretsmanager_random_password).
+
 # `dataAwsSecretsmanagerRandomPassword` Submodule <a name="`dataAwsSecretsmanagerRandomPassword` Submodule" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

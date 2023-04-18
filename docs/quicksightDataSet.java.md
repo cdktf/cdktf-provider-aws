@@ -1,3 +1,7 @@
+# `aws_quicksight_data_set`
+
+Refer to the Terraform Registory for docs: [`aws_quicksight_data_set`](https://www.terraform.io/docs/providers/aws/r/quicksight_data_set).
+
 # `quicksightDataSet` Submodule <a name="`quicksightDataSet` Submodule" id="@cdktf/provider-aws.quicksightDataSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

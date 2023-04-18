@@ -1,3 +1,7 @@
+# `aws_keyspaces_table`
+
+Refer to the Terraform Registory for docs: [`aws_keyspaces_table`](https://www.terraform.io/docs/providers/aws/r/keyspaces_table).
+
 # `keyspacesTable` Submodule <a name="`keyspacesTable` Submodule" id="@cdktf/provider-aws.keyspacesTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

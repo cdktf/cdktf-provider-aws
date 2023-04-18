@@ -1,3 +1,7 @@
+# `aws_dx_hosted_transit_virtual_interface`
+
+Refer to the Terraform Registory for docs: [`aws_dx_hosted_transit_virtual_interface`](https://www.terraform.io/docs/providers/aws/r/dx_hosted_transit_virtual_interface).
+
 # `dxHostedTransitVirtualInterface` Submodule <a name="`dxHostedTransitVirtualInterface` Submodule" id="@cdktf/provider-aws.dxHostedTransitVirtualInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

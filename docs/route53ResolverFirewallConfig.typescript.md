@@ -1,3 +1,7 @@
+# `aws_route53_resolver_firewall_config`
+
+Refer to the Terraform Registory for docs: [`aws_route53_resolver_firewall_config`](https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config).
+
 # `route53ResolverFirewallConfig` Submodule <a name="`route53ResolverFirewallConfig` Submodule" id="@cdktf/provider-aws.route53ResolverFirewallConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

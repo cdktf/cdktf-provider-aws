@@ -1,3 +1,7 @@
+# `data_aws_kendra_faq`
+
+Refer to the Terraform Registory for docs: [`data_aws_kendra_faq`](https://www.terraform.io/docs/providers/aws/d/kendra_faq).
+
 # `dataAwsKendraFaq` Submodule <a name="`dataAwsKendraFaq` Submodule" id="@cdktf/provider-aws.dataAwsKendraFaq"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

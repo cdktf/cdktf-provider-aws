@@ -1,3 +1,7 @@
+# `data_aws_billing_service_account`
+
+Refer to the Terraform Registory for docs: [`data_aws_billing_service_account`](https://www.terraform.io/docs/providers/aws/d/billing_service_account).
+
 # `dataAwsBillingServiceAccount` Submodule <a name="`dataAwsBillingServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsBillingServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

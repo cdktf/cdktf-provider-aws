@@ -1,3 +1,7 @@
+# `aws_egress_only_internet_gateway`
+
+Refer to the Terraform Registory for docs: [`aws_egress_only_internet_gateway`](https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway).
+
 # `egressOnlyInternetGateway` Submodule <a name="`egressOnlyInternetGateway` Submodule" id="@cdktf/provider-aws.egressOnlyInternetGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

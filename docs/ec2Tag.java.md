@@ -1,3 +1,7 @@
+# `aws_ec2_tag`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_tag`](https://www.terraform.io/docs/providers/aws/r/ec2_tag).
+
 # `ec2Tag` Submodule <a name="`ec2Tag` Submodule" id="@cdktf/provider-aws.ec2Tag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

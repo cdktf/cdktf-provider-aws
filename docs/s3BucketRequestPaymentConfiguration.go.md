@@ -1,3 +1,7 @@
+# `aws_s3_bucket_request_payment_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_request_payment_configuration`](https://www.terraform.io/docs/providers/aws/r/s3_bucket_request_payment_configuration).
+
 # `s3BucketRequestPaymentConfiguration` Submodule <a name="`s3BucketRequestPaymentConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

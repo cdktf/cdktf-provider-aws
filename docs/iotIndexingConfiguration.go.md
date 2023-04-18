@@ -1,3 +1,7 @@
+# `aws_iot_indexing_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_iot_indexing_configuration`](https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration).
+
 # `iotIndexingConfiguration` Submodule <a name="`iotIndexingConfiguration` Submodule" id="@cdktf/provider-aws.iotIndexingConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

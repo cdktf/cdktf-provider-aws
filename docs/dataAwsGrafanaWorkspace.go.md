@@ -1,3 +1,7 @@
+# `data_aws_grafana_workspace`
+
+Refer to the Terraform Registory for docs: [`data_aws_grafana_workspace`](https://www.terraform.io/docs/providers/aws/d/grafana_workspace).
+
 # `dataAwsGrafanaWorkspace` Submodule <a name="`dataAwsGrafanaWorkspace` Submodule" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_iam_policy`
+
+Refer to the Terraform Registory for docs: [`data_aws_iam_policy`](https://www.terraform.io/docs/providers/aws/d/iam_policy).
+
 # `dataAwsIamPolicy` Submodule <a name="`dataAwsIamPolicy` Submodule" id="@cdktf/provider-aws.dataAwsIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_glue_partition`
+
+Refer to the Terraform Registory for docs: [`aws_glue_partition`](https://www.terraform.io/docs/providers/aws/r/glue_partition).
+
 # `gluePartition` Submodule <a name="`gluePartition` Submodule" id="@cdktf/provider-aws.gluePartition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

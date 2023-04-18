@@ -1,3 +1,7 @@
+# `data_aws_service`
+
+Refer to the Terraform Registory for docs: [`data_aws_service`](https://www.terraform.io/docs/providers/aws/d/service).
+
 # `dataAwsService` Submodule <a name="`dataAwsService` Submodule" id="@cdktf/provider-aws.dataAwsService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

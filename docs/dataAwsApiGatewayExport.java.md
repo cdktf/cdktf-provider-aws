@@ -1,3 +1,7 @@
+# `data_aws_api_gateway_export`
+
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_export`](https://www.terraform.io/docs/providers/aws/d/api_gateway_export).
+
 # `dataAwsApiGatewayExport` Submodule <a name="`dataAwsApiGatewayExport` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayExport"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

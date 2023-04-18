@@ -1,3 +1,7 @@
+# `data_aws_dynamodb_table`
+
+Refer to the Terraform Registory for docs: [`data_aws_dynamodb_table`](https://www.terraform.io/docs/providers/aws/d/dynamodb_table).
+
 # `dataAwsDynamodbTable` Submodule <a name="`dataAwsDynamodbTable` Submodule" id="@cdktf/provider-aws.dataAwsDynamodbTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

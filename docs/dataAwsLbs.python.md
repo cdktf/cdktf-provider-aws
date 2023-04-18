@@ -1,3 +1,7 @@
+# `data_aws_lbs`
+
+Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://www.terraform.io/docs/providers/aws/d/lbs).
+
 # `dataAwsLbs` Submodule <a name="`dataAwsLbs` Submodule" id="@cdktf/provider-aws.dataAwsLbs"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_macie2_invitation_accepter`
+
+Refer to the Terraform Registory for docs: [`aws_macie2_invitation_accepter`](https://www.terraform.io/docs/providers/aws/r/macie2_invitation_accepter).
+
 # `macie2InvitationAccepter` Submodule <a name="`macie2InvitationAccepter` Submodule" id="@cdktf/provider-aws.macie2InvitationAccepter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

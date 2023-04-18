@@ -1,3 +1,7 @@
+# `data_aws_eks_node_group`
+
+Refer to the Terraform Registory for docs: [`data_aws_eks_node_group`](https://www.terraform.io/docs/providers/aws/d/eks_node_group).
+
 # `dataAwsEksNodeGroup` Submodule <a name="`dataAwsEksNodeGroup` Submodule" id="@cdktf/provider-aws.dataAwsEksNodeGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

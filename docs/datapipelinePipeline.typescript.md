@@ -1,3 +1,7 @@
+# `aws_datapipeline_pipeline`
+
+Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline`](https://www.terraform.io/docs/providers/aws/r/datapipeline_pipeline).
+
 # `datapipelinePipeline` Submodule <a name="`datapipelinePipeline` Submodule" id="@cdktf/provider-aws.datapipelinePipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

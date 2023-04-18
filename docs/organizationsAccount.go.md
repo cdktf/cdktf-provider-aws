@@ -1,3 +1,7 @@
+# `aws_organizations_account`
+
+Refer to the Terraform Registory for docs: [`aws_organizations_account`](https://www.terraform.io/docs/providers/aws/r/organizations_account).
+
 # `organizationsAccount` Submodule <a name="`organizationsAccount` Submodule" id="@cdktf/provider-aws.organizationsAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

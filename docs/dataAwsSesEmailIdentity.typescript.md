@@ -1,3 +1,7 @@
+# `data_aws_ses_email_identity`
+
+Refer to the Terraform Registory for docs: [`data_aws_ses_email_identity`](https://www.terraform.io/docs/providers/aws/d/ses_email_identity).
+
 # `dataAwsSesEmailIdentity` Submodule <a name="`dataAwsSesEmailIdentity` Submodule" id="@cdktf/provider-aws.dataAwsSesEmailIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

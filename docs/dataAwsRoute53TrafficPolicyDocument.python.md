@@ -1,3 +1,7 @@
+# `data_aws_route53_traffic_policy_document`
+
+Refer to the Terraform Registory for docs: [`data_aws_route53_traffic_policy_document`](https://www.terraform.io/docs/providers/aws/d/route53_traffic_policy_document).
+
 # `dataAwsRoute53TrafficPolicyDocument` Submodule <a name="`dataAwsRoute53TrafficPolicyDocument` Submodule" id="@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

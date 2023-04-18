@@ -1,3 +1,7 @@
+# `data_aws_cloudformation_type`
+
+Refer to the Terraform Registory for docs: [`data_aws_cloudformation_type`](https://www.terraform.io/docs/providers/aws/d/cloudformation_type).
+
 # `dataAwsCloudformationType` Submodule <a name="`dataAwsCloudformationType` Submodule" id="@cdktf/provider-aws.dataAwsCloudformationType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

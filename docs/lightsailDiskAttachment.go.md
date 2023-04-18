@@ -1,3 +1,7 @@
+# `aws_lightsail_disk_attachment`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_disk_attachment`](https://www.terraform.io/docs/providers/aws/r/lightsail_disk_attachment).
+
 # `lightsailDiskAttachment` Submodule <a name="`lightsailDiskAttachment` Submodule" id="@cdktf/provider-aws.lightsailDiskAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

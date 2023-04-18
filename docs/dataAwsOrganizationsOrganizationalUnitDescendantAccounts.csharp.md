@@ -1,3 +1,7 @@
+# `data_aws_organizations_organizational_unit_descendant_accounts`
+
+Refer to the Terraform Registory for docs: [`data_aws_organizations_organizational_unit_descendant_accounts`](https://www.terraform.io/docs/providers/aws/d/organizations_organizational_unit_descendant_accounts).
+
 # `dataAwsOrganizationsOrganizationalUnitDescendantAccounts` Submodule <a name="`dataAwsOrganizationsOrganizationalUnitDescendantAccounts` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantAccounts"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

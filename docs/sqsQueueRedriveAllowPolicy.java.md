@@ -1,3 +1,7 @@
+# `aws_sqs_queue_redrive_allow_policy`
+
+Refer to the Terraform Registory for docs: [`aws_sqs_queue_redrive_allow_policy`](https://www.terraform.io/docs/providers/aws/r/sqs_queue_redrive_allow_policy).
+
 # `sqsQueueRedriveAllowPolicy` Submodule <a name="`sqsQueueRedriveAllowPolicy` Submodule" id="@cdktf/provider-aws.sqsQueueRedriveAllowPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

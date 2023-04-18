@@ -1,3 +1,7 @@
+# `aws_config_configuration_aggregator`
+
+Refer to the Terraform Registory for docs: [`aws_config_configuration_aggregator`](https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator).
+
 # `configConfigurationAggregator` Submodule <a name="`configConfigurationAggregator` Submodule" id="@cdktf/provider-aws.configConfigurationAggregator"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

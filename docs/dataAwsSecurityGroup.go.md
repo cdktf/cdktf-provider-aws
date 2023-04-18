@@ -1,3 +1,7 @@
+# `data_aws_security_group`
+
+Refer to the Terraform Registory for docs: [`data_aws_security_group`](https://www.terraform.io/docs/providers/aws/d/security_group).
+
 # `dataAwsSecurityGroup` Submodule <a name="`dataAwsSecurityGroup` Submodule" id="@cdktf/provider-aws.dataAwsSecurityGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

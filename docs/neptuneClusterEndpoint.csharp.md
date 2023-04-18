@@ -1,3 +1,7 @@
+# `aws_neptune_cluster_endpoint`
+
+Refer to the Terraform Registory for docs: [`aws_neptune_cluster_endpoint`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster_endpoint).
+
 # `neptuneClusterEndpoint` Submodule <a name="`neptuneClusterEndpoint` Submodule" id="@cdktf/provider-aws.neptuneClusterEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

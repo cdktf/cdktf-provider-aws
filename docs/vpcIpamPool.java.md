@@ -1,3 +1,7 @@
+# `aws_vpc_ipam_pool`
+
+Refer to the Terraform Registory for docs: [`aws_vpc_ipam_pool`](https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool).
+
 # `vpcIpamPool` Submodule <a name="`vpcIpamPool` Submodule" id="@cdktf/provider-aws.vpcIpamPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

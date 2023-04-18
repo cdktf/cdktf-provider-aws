@@ -1,3 +1,7 @@
+# `aws_fsx_openzfs_snapshot`
+
+Refer to the Terraform Registory for docs: [`aws_fsx_openzfs_snapshot`](https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_snapshot).
+
 # `fsxOpenzfsSnapshot` Submodule <a name="`fsxOpenzfsSnapshot` Submodule" id="@cdktf/provider-aws.fsxOpenzfsSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

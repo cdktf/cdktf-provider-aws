@@ -1,3 +1,7 @@
+# `aws_db_proxy_endpoint`
+
+Refer to the Terraform Registory for docs: [`aws_db_proxy_endpoint`](https://www.terraform.io/docs/providers/aws/r/db_proxy_endpoint).
+
 # `dbProxyEndpoint` Submodule <a name="`dbProxyEndpoint` Submodule" id="@cdktf/provider-aws.dbProxyEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

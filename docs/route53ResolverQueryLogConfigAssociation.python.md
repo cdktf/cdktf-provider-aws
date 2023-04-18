@@ -1,3 +1,7 @@
+# `aws_route53_resolver_query_log_config_association`
+
+Refer to the Terraform Registory for docs: [`aws_route53_resolver_query_log_config_association`](https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config_association).
+
 # `route53ResolverQueryLogConfigAssociation` Submodule <a name="`route53ResolverQueryLogConfigAssociation` Submodule" id="@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

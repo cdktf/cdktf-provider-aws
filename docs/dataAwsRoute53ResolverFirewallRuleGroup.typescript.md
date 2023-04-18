@@ -1,3 +1,7 @@
+# `data_aws_route53_resolver_firewall_rule_group`
+
+Refer to the Terraform Registory for docs: [`data_aws_route53_resolver_firewall_rule_group`](https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_rule_group).
+
 # `dataAwsRoute53ResolverFirewallRuleGroup` Submodule <a name="`dataAwsRoute53ResolverFirewallRuleGroup` Submodule" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

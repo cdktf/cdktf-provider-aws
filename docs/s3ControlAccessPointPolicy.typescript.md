@@ -1,3 +1,7 @@
+# `aws_s3control_access_point_policy`
+
+Refer to the Terraform Registory for docs: [`aws_s3control_access_point_policy`](https://www.terraform.io/docs/providers/aws/r/s3control_access_point_policy).
+
 # `s3ControlAccessPointPolicy` Submodule <a name="`s3ControlAccessPointPolicy` Submodule" id="@cdktf/provider-aws.s3ControlAccessPointPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

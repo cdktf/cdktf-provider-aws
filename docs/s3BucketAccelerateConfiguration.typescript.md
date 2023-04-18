@@ -1,3 +1,7 @@
+# `aws_s3_bucket_accelerate_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_accelerate_configuration`](https://www.terraform.io/docs/providers/aws/r/s3_bucket_accelerate_configuration).
+
 # `s3BucketAccelerateConfiguration` Submodule <a name="`s3BucketAccelerateConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketAccelerateConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

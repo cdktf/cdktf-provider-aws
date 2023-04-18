@@ -1,3 +1,7 @@
+# `aws_cloudwatch_composite_alarm`
+
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_composite_alarm`](https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm).
+
 # `cloudwatchCompositeAlarm` Submodule <a name="`cloudwatchCompositeAlarm` Submodule" id="@cdktf/provider-aws.cloudwatchCompositeAlarm"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

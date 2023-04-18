@@ -1,3 +1,7 @@
+# `data_aws_secretsmanager_secret`
+
+Refer to the Terraform Registory for docs: [`data_aws_secretsmanager_secret`](https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret).
+
 # `dataAwsSecretsmanagerSecret` Submodule <a name="`dataAwsSecretsmanagerSecret` Submodule" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

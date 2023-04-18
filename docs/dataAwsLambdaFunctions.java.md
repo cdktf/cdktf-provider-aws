@@ -1,3 +1,7 @@
+# `data_aws_lambda_functions`
+
+Refer to the Terraform Registory for docs: [`data_aws_lambda_functions`](https://www.terraform.io/docs/providers/aws/d/lambda_functions).
+
 # `dataAwsLambdaFunctions` Submodule <a name="`dataAwsLambdaFunctions` Submodule" id="@cdktf/provider-aws.dataAwsLambdaFunctions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

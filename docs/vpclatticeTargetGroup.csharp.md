@@ -1,3 +1,7 @@
+# `aws_vpclattice_target_group`
+
+Refer to the Terraform Registory for docs: [`aws_vpclattice_target_group`](https://www.terraform.io/docs/providers/aws/r/vpclattice_target_group).
+
 # `vpclatticeTargetGroup` Submodule <a name="`vpclatticeTargetGroup` Submodule" id="@cdktf/provider-aws.vpclatticeTargetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

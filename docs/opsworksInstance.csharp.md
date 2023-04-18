@@ -1,3 +1,7 @@
+# `aws_opsworks_instance`
+
+Refer to the Terraform Registory for docs: [`aws_opsworks_instance`](https://www.terraform.io/docs/providers/aws/r/opsworks_instance).
+
 # `opsworksInstance` Submodule <a name="`opsworksInstance` Submodule" id="@cdktf/provider-aws.opsworksInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

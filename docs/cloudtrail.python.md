@@ -1,3 +1,7 @@
+# `aws_cloudtrail`
+
+Refer to the Terraform Registory for docs: [`aws_cloudtrail`](https://www.terraform.io/docs/providers/aws/r/cloudtrail).
+
 # `cloudtrail` Submodule <a name="`cloudtrail` Submodule" id="@cdktf/provider-aws.cloudtrail"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

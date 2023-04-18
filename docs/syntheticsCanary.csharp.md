@@ -1,3 +1,7 @@
+# `aws_synthetics_canary`
+
+Refer to the Terraform Registory for docs: [`aws_synthetics_canary`](https://www.terraform.io/docs/providers/aws/r/synthetics_canary).
+
 # `syntheticsCanary` Submodule <a name="`syntheticsCanary` Submodule" id="@cdktf/provider-aws.syntheticsCanary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

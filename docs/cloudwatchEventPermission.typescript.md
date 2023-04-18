@@ -1,3 +1,7 @@
+# `aws_cloudwatch_event_permission`
+
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_permission`](https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_permission).
+
 # `cloudwatchEventPermission` Submodule <a name="`cloudwatchEventPermission` Submodule" id="@cdktf/provider-aws.cloudwatchEventPermission"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

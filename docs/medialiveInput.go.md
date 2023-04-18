@@ -1,3 +1,7 @@
+# `aws_medialive_input`
+
+Refer to the Terraform Registory for docs: [`aws_medialive_input`](https://www.terraform.io/docs/providers/aws/r/medialive_input).
+
 # `medialiveInput` Submodule <a name="`medialiveInput` Submodule" id="@cdktf/provider-aws.medialiveInput"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

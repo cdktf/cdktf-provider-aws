@@ -1,3 +1,7 @@
+# `aws_ssm_service_setting`
+
+Refer to the Terraform Registory for docs: [`aws_ssm_service_setting`](https://www.terraform.io/docs/providers/aws/r/ssm_service_setting).
+
 # `ssmServiceSetting` Submodule <a name="`ssmServiceSetting` Submodule" id="@cdktf/provider-aws.ssmServiceSetting"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

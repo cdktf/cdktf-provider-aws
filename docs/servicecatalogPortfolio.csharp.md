@@ -1,3 +1,7 @@
+# `aws_servicecatalog_portfolio`
+
+Refer to the Terraform Registory for docs: [`aws_servicecatalog_portfolio`](https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio).
+
 # `servicecatalogPortfolio` Submodule <a name="`servicecatalogPortfolio` Submodule" id="@cdktf/provider-aws.servicecatalogPortfolio"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

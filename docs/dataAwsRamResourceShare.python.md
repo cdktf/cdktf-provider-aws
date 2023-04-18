@@ -1,3 +1,7 @@
+# `data_aws_ram_resource_share`
+
+Refer to the Terraform Registory for docs: [`data_aws_ram_resource_share`](https://www.terraform.io/docs/providers/aws/d/ram_resource_share).
+
 # `dataAwsRamResourceShare` Submodule <a name="`dataAwsRamResourceShare` Submodule" id="@cdktf/provider-aws.dataAwsRamResourceShare"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

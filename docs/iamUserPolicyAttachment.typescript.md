@@ -1,3 +1,7 @@
+# `aws_iam_user_policy_attachment`
+
+Refer to the Terraform Registory for docs: [`aws_iam_user_policy_attachment`](https://www.terraform.io/docs/providers/aws/r/iam_user_policy_attachment).
+
 # `iamUserPolicyAttachment` Submodule <a name="`iamUserPolicyAttachment` Submodule" id="@cdktf/provider-aws.iamUserPolicyAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

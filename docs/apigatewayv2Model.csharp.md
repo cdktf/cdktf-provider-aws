@@ -1,3 +1,7 @@
+# `aws_apigatewayv2_model`
+
+Refer to the Terraform Registory for docs: [`aws_apigatewayv2_model`](https://www.terraform.io/docs/providers/aws/r/apigatewayv2_model).
+
 # `apigatewayv2Model` Submodule <a name="`apigatewayv2Model` Submodule" id="@cdktf/provider-aws.apigatewayv2Model"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

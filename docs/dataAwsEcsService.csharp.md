@@ -1,3 +1,7 @@
+# `data_aws_ecs_service`
+
+Refer to the Terraform Registory for docs: [`data_aws_ecs_service`](https://www.terraform.io/docs/providers/aws/d/ecs_service).
+
 # `dataAwsEcsService` Submodule <a name="`dataAwsEcsService` Submodule" id="@cdktf/provider-aws.dataAwsEcsService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

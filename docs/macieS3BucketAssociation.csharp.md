@@ -1,3 +1,7 @@
+# `aws_macie_s3_bucket_association`
+
+Refer to the Terraform Registory for docs: [`aws_macie_s3_bucket_association`](https://www.terraform.io/docs/providers/aws/r/macie_s3_bucket_association).
+
 # `macieS3BucketAssociation` Submodule <a name="`macieS3BucketAssociation` Submodule" id="@cdktf/provider-aws.macieS3BucketAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_ses_receipt_rule`
+
+Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule`](https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule).
+
 # `sesReceiptRule` Submodule <a name="`sesReceiptRule` Submodule" id="@cdktf/provider-aws.sesReceiptRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

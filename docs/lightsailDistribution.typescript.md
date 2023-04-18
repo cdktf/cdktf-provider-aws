@@ -1,3 +1,7 @@
+# `aws_lightsail_distribution`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_distribution`](https://www.terraform.io/docs/providers/aws/r/lightsail_distribution).
+
 # `lightsailDistribution` Submodule <a name="`lightsailDistribution` Submodule" id="@cdktf/provider-aws.lightsailDistribution"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

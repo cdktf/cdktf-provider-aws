@@ -1,3 +1,7 @@
+# `data_aws_kms_key`
+
+Refer to the Terraform Registory for docs: [`data_aws_kms_key`](https://www.terraform.io/docs/providers/aws/d/kms_key).
+
 # `dataAwsKmsKey` Submodule <a name="`dataAwsKmsKey` Submodule" id="@cdktf/provider-aws.dataAwsKmsKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_route53recoveryreadiness_resource_set`
+
+Refer to the Terraform Registory for docs: [`aws_route53recoveryreadiness_resource_set`](https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_resource_set).
+
 # `route53RecoveryreadinessResourceSet` Submodule <a name="`route53RecoveryreadinessResourceSet` Submodule" id="@cdktf/provider-aws.route53RecoveryreadinessResourceSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_emr_release_labels`
+
+Refer to the Terraform Registory for docs: [`data_aws_emr_release_labels`](https://www.terraform.io/docs/providers/aws/d/emr_release_labels).
+
 # `dataAwsEmrReleaseLabels` Submodule <a name="`dataAwsEmrReleaseLabels` Submodule" id="@cdktf/provider-aws.dataAwsEmrReleaseLabels"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

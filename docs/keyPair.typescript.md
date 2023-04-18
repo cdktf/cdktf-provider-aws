@@ -1,3 +1,7 @@
+# `aws_key_pair`
+
+Refer to the Terraform Registory for docs: [`aws_key_pair`](https://www.terraform.io/docs/providers/aws/r/key_pair).
+
 # `keyPair` Submodule <a name="`keyPair` Submodule" id="@cdktf/provider-aws.keyPair"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

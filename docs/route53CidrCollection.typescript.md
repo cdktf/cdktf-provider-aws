@@ -1,3 +1,7 @@
+# `aws_route53_cidr_collection`
+
+Refer to the Terraform Registory for docs: [`aws_route53_cidr_collection`](https://www.terraform.io/docs/providers/aws/r/route53_cidr_collection).
+
 # `route53CidrCollection` Submodule <a name="`route53CidrCollection` Submodule" id="@cdktf/provider-aws.route53CidrCollection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

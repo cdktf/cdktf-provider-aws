@@ -1,3 +1,7 @@
+# `aws_appconfig_application`
+
+Refer to the Terraform Registory for docs: [`aws_appconfig_application`](https://www.terraform.io/docs/providers/aws/r/appconfig_application).
+
 # `appconfigApplication` Submodule <a name="`appconfigApplication` Submodule" id="@cdktf/provider-aws.appconfigApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

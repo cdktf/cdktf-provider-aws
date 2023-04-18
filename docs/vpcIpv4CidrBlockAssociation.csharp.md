@@ -1,3 +1,7 @@
+# `aws_vpc_ipv4_cidr_block_association`
+
+Refer to the Terraform Registory for docs: [`aws_vpc_ipv4_cidr_block_association`](https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association).
+
 # `vpcIpv4CidrBlockAssociation` Submodule <a name="`vpcIpv4CidrBlockAssociation` Submodule" id="@cdktf/provider-aws.vpcIpv4CidrBlockAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

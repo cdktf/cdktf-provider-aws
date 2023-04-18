@@ -1,3 +1,7 @@
+# `aws_sesv2_configuration_set`
+
+Refer to the Terraform Registory for docs: [`aws_sesv2_configuration_set`](https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set).
+
 # `sesv2ConfigurationSet` Submodule <a name="`sesv2ConfigurationSet` Submodule" id="@cdktf/provider-aws.sesv2ConfigurationSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

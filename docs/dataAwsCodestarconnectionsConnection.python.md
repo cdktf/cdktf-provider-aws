@@ -1,3 +1,7 @@
+# `data_aws_codestarconnections_connection`
+
+Refer to the Terraform Registory for docs: [`data_aws_codestarconnections_connection`](https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection).
+
 # `dataAwsCodestarconnectionsConnection` Submodule <a name="`dataAwsCodestarconnectionsConnection` Submodule" id="@cdktf/provider-aws.dataAwsCodestarconnectionsConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

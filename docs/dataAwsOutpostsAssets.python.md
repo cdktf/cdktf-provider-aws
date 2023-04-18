@@ -1,3 +1,7 @@
+# `data_aws_outposts_assets`
+
+Refer to the Terraform Registory for docs: [`data_aws_outposts_assets`](https://www.terraform.io/docs/providers/aws/d/outposts_assets).
+
 # `dataAwsOutpostsAssets` Submodule <a name="`dataAwsOutpostsAssets` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsAssets"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

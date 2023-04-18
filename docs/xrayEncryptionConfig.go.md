@@ -1,3 +1,7 @@
+# `aws_xray_encryption_config`
+
+Refer to the Terraform Registory for docs: [`aws_xray_encryption_config`](https://www.terraform.io/docs/providers/aws/r/xray_encryption_config).
+
 # `xrayEncryptionConfig` Submodule <a name="`xrayEncryptionConfig` Submodule" id="@cdktf/provider-aws.xrayEncryptionConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

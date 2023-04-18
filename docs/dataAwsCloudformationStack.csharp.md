@@ -1,3 +1,7 @@
+# `data_aws_cloudformation_stack`
+
+Refer to the Terraform Registory for docs: [`data_aws_cloudformation_stack`](https://www.terraform.io/docs/providers/aws/d/cloudformation_stack).
+
 # `dataAwsCloudformationStack` Submodule <a name="`dataAwsCloudformationStack` Submodule" id="@cdktf/provider-aws.dataAwsCloudformationStack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

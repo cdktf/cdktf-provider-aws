@@ -1,3 +1,7 @@
+# `aws_scheduler_schedule`
+
+Refer to the Terraform Registory for docs: [`aws_scheduler_schedule`](https://www.terraform.io/docs/providers/aws/r/scheduler_schedule).
+
 # `schedulerSchedule` Submodule <a name="`schedulerSchedule` Submodule" id="@cdktf/provider-aws.schedulerSchedule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

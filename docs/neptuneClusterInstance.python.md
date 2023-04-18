@@ -1,3 +1,7 @@
+# `aws_neptune_cluster_instance`
+
+Refer to the Terraform Registory for docs: [`aws_neptune_cluster_instance`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster_instance).
+
 # `neptuneClusterInstance` Submodule <a name="`neptuneClusterInstance` Submodule" id="@cdktf/provider-aws.neptuneClusterInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

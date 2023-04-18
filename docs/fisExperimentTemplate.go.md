@@ -1,3 +1,7 @@
+# `aws_fis_experiment_template`
+
+Refer to the Terraform Registory for docs: [`aws_fis_experiment_template`](https://www.terraform.io/docs/providers/aws/r/fis_experiment_template).
+
 # `fisExperimentTemplate` Submodule <a name="`fisExperimentTemplate` Submodule" id="@cdktf/provider-aws.fisExperimentTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_fsx_ontap_storage_virtual_machine`
+
+Refer to the Terraform Registory for docs: [`aws_fsx_ontap_storage_virtual_machine`](https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine).
+
 # `fsxOntapStorageVirtualMachine` Submodule <a name="`fsxOntapStorageVirtualMachine` Submodule" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

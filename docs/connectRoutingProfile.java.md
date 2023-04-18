@@ -1,3 +1,7 @@
+# `aws_connect_routing_profile`
+
+Refer to the Terraform Registory for docs: [`aws_connect_routing_profile`](https://www.terraform.io/docs/providers/aws/r/connect_routing_profile).
+
 # `connectRoutingProfile` Submodule <a name="`connectRoutingProfile` Submodule" id="@cdktf/provider-aws.connectRoutingProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

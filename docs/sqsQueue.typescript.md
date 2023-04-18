@@ -1,3 +1,7 @@
+# `aws_sqs_queue`
+
+Refer to the Terraform Registory for docs: [`aws_sqs_queue`](https://www.terraform.io/docs/providers/aws/r/sqs_queue).
+
 # `sqsQueue` Submodule <a name="`sqsQueue` Submodule" id="@cdktf/provider-aws.sqsQueue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

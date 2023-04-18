@@ -1,3 +1,7 @@
+# `aws_lightsail_lb_attachment`
+
+Refer to the Terraform Registory for docs: [`aws_lightsail_lb_attachment`](https://www.terraform.io/docs/providers/aws/r/lightsail_lb_attachment).
+
 # `lightsailLbAttachment` Submodule <a name="`lightsailLbAttachment` Submodule" id="@cdktf/provider-aws.lightsailLbAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

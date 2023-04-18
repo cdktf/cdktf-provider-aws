@@ -1,3 +1,7 @@
+# `data_aws_ami`
+
+Refer to the Terraform Registory for docs: [`data_aws_ami`](https://www.terraform.io/docs/providers/aws/d/ami).
+
 # `dataAwsAmi` Submodule <a name="`dataAwsAmi` Submodule" id="@cdktf/provider-aws.dataAwsAmi"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

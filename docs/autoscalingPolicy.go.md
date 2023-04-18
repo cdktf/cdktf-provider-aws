@@ -1,3 +1,7 @@
+# `aws_autoscaling_policy`
+
+Refer to the Terraform Registory for docs: [`aws_autoscaling_policy`](https://www.terraform.io/docs/providers/aws/r/autoscaling_policy).
+
 # `autoscalingPolicy` Submodule <a name="`autoscalingPolicy` Submodule" id="@cdktf/provider-aws.autoscalingPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

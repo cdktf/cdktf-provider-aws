@@ -1,3 +1,7 @@
+# `aws_cloudwatch_event_archive`
+
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_archive`](https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_archive).
+
 # `cloudwatchEventArchive` Submodule <a name="`cloudwatchEventArchive` Submodule" id="@cdktf/provider-aws.cloudwatchEventArchive"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

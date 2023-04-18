@@ -1,3 +1,7 @@
+# `aws_datasync_location_hdfs`
+
+Refer to the Terraform Registory for docs: [`aws_datasync_location_hdfs`](https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs).
+
 # `datasyncLocationHdfs` Submodule <a name="`datasyncLocationHdfs` Submodule" id="@cdktf/provider-aws.datasyncLocationHdfs"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

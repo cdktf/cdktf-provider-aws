@@ -1,3 +1,7 @@
+# `aws_transcribe_language_model`
+
+Refer to the Terraform Registory for docs: [`aws_transcribe_language_model`](https://www.terraform.io/docs/providers/aws/r/transcribe_language_model).
+
 # `transcribeLanguageModel` Submodule <a name="`transcribeLanguageModel` Submodule" id="@cdktf/provider-aws.transcribeLanguageModel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_devicefarm_project`
+
+Refer to the Terraform Registory for docs: [`aws_devicefarm_project`](https://www.terraform.io/docs/providers/aws/r/devicefarm_project).
+
 # `devicefarmProject` Submodule <a name="`devicefarmProject` Submodule" id="@cdktf/provider-aws.devicefarmProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

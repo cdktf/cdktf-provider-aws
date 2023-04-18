@@ -1,3 +1,7 @@
+# `aws_efs_access_point`
+
+Refer to the Terraform Registory for docs: [`aws_efs_access_point`](https://www.terraform.io/docs/providers/aws/r/efs_access_point).
+
 # `efsAccessPoint` Submodule <a name="`efsAccessPoint` Submodule" id="@cdktf/provider-aws.efsAccessPoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_guardduty_organization_admin_account`
+
+Refer to the Terraform Registory for docs: [`aws_guardduty_organization_admin_account`](https://www.terraform.io/docs/providers/aws/r/guardduty_organization_admin_account).
+
 # `guarddutyOrganizationAdminAccount` Submodule <a name="`guarddutyOrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.guarddutyOrganizationAdminAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

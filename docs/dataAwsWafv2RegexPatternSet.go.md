@@ -1,3 +1,7 @@
+# `data_aws_wafv2_regex_pattern_set`
+
+Refer to the Terraform Registory for docs: [`data_aws_wafv2_regex_pattern_set`](https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set).
+
 # `dataAwsWafv2RegexPatternSet` Submodule <a name="`dataAwsWafv2RegexPatternSet` Submodule" id="@cdktf/provider-aws.dataAwsWafv2RegexPatternSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

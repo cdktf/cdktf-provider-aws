@@ -1,3 +1,7 @@
+# `data_aws_servicequotas_service`
+
+Refer to the Terraform Registory for docs: [`data_aws_servicequotas_service`](https://www.terraform.io/docs/providers/aws/d/servicequotas_service).
+
 # `dataAwsServicequotasService` Submodule <a name="`dataAwsServicequotasService` Submodule" id="@cdktf/provider-aws.dataAwsServicequotasService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

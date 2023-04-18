@@ -1,3 +1,7 @@
+# `aws_comprehend_document_classifier`
+
+Refer to the Terraform Registory for docs: [`aws_comprehend_document_classifier`](https://www.terraform.io/docs/providers/aws/r/comprehend_document_classifier).
+
 # `comprehendDocumentClassifier` Submodule <a name="`comprehendDocumentClassifier` Submodule" id="@cdktf/provider-aws.comprehendDocumentClassifier"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_opsworks_mysql_layer`
+
+Refer to the Terraform Registory for docs: [`aws_opsworks_mysql_layer`](https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer).
+
 # `opsworksMysqlLayer` Submodule <a name="`opsworksMysqlLayer` Submodule" id="@cdktf/provider-aws.opsworksMysqlLayer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

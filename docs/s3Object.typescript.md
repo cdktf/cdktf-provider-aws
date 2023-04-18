@@ -1,3 +1,7 @@
+# `aws_s3_object`
+
+Refer to the Terraform Registory for docs: [`aws_s3_object`](https://www.terraform.io/docs/providers/aws/r/s3_object).
+
 # `s3Object` Submodule <a name="`s3Object` Submodule" id="@cdktf/provider-aws.s3Object"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

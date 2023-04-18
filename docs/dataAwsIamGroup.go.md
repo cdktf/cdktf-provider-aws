@@ -1,3 +1,7 @@
+# `data_aws_iam_group`
+
+Refer to the Terraform Registory for docs: [`data_aws_iam_group`](https://www.terraform.io/docs/providers/aws/d/iam_group).
+
 # `dataAwsIamGroup` Submodule <a name="`dataAwsIamGroup` Submodule" id="@cdktf/provider-aws.dataAwsIamGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_aws_connect_contact_flow_module`
+
+Refer to the Terraform Registory for docs: [`data_aws_connect_contact_flow_module`](https://www.terraform.io/docs/providers/aws/d/connect_contact_flow_module).
+
 # `dataAwsConnectContactFlowModule` Submodule <a name="`dataAwsConnectContactFlowModule` Submodule" id="@cdktf/provider-aws.dataAwsConnectContactFlowModule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

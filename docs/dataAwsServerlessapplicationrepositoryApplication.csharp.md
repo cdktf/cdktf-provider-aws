@@ -1,3 +1,7 @@
+# `data_aws_serverlessapplicationrepository_application`
+
+Refer to the Terraform Registory for docs: [`data_aws_serverlessapplicationrepository_application`](https://www.terraform.io/docs/providers/aws/d/serverlessapplicationrepository_application).
+
 # `dataAwsServerlessapplicationrepositoryApplication` Submodule <a name="`dataAwsServerlessapplicationrepositoryApplication` Submodule" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

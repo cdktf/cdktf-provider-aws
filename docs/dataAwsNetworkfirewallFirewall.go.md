@@ -1,3 +1,7 @@
+# `data_aws_networkfirewall_firewall`
+
+Refer to the Terraform Registory for docs: [`data_aws_networkfirewall_firewall`](https://www.terraform.io/docs/providers/aws/d/networkfirewall_firewall).
+
 # `dataAwsNetworkfirewallFirewall` Submodule <a name="`dataAwsNetworkfirewallFirewall` Submodule" id="@cdktf/provider-aws.dataAwsNetworkfirewallFirewall"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

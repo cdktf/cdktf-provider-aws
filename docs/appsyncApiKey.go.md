@@ -1,3 +1,7 @@
+# `aws_appsync_api_key`
+
+Refer to the Terraform Registory for docs: [`aws_appsync_api_key`](https://www.terraform.io/docs/providers/aws/r/appsync_api_key).
+
 # `appsyncApiKey` Submodule <a name="`appsyncApiKey` Submodule" id="@cdktf/provider-aws.appsyncApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

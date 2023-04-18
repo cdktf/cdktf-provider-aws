@@ -1,3 +1,7 @@
+# `aws_cloudformation_stack_set_instance`
+
+Refer to the Terraform Registory for docs: [`aws_cloudformation_stack_set_instance`](https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance).
+
 # `cloudformationStackSetInstance` Submodule <a name="`cloudformationStackSetInstance` Submodule" id="@cdktf/provider-aws.cloudformationStackSetInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

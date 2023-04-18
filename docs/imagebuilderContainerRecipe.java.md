@@ -1,3 +1,7 @@
+# `aws_imagebuilder_container_recipe`
+
+Refer to the Terraform Registory for docs: [`aws_imagebuilder_container_recipe`](https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe).
+
 # `imagebuilderContainerRecipe` Submodule <a name="`imagebuilderContainerRecipe` Submodule" id="@cdktf/provider-aws.imagebuilderContainerRecipe"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

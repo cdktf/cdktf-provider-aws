@@ -1,3 +1,7 @@
+# `aws_ecr_repository_policy`
+
+Refer to the Terraform Registory for docs: [`aws_ecr_repository_policy`](https://www.terraform.io/docs/providers/aws/r/ecr_repository_policy).
+
 # `ecrRepositoryPolicy` Submodule <a name="`ecrRepositoryPolicy` Submodule" id="@cdktf/provider-aws.ecrRepositoryPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

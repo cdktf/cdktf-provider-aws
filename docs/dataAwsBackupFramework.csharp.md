@@ -1,3 +1,7 @@
+# `data_aws_backup_framework`
+
+Refer to the Terraform Registory for docs: [`data_aws_backup_framework`](https://www.terraform.io/docs/providers/aws/d/backup_framework).
+
 # `dataAwsBackupFramework` Submodule <a name="`dataAwsBackupFramework` Submodule" id="@cdktf/provider-aws.dataAwsBackupFramework"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

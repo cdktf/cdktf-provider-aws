@@ -1,3 +1,7 @@
+# `aws_transcribe_vocabulary`
+
+Refer to the Terraform Registory for docs: [`aws_transcribe_vocabulary`](https://www.terraform.io/docs/providers/aws/r/transcribe_vocabulary).
+
 # `transcribeVocabulary` Submodule <a name="`transcribeVocabulary` Submodule" id="@cdktf/provider-aws.transcribeVocabulary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

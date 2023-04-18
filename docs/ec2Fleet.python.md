@@ -1,3 +1,7 @@
+# `aws_ec2_fleet`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_fleet`](https://www.terraform.io/docs/providers/aws/r/ec2_fleet).
+
 # `ec2Fleet` Submodule <a name="`ec2Fleet` Submodule" id="@cdktf/provider-aws.ec2Fleet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

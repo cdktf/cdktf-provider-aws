@@ -1,3 +1,7 @@
+# `data_aws_location_tracker_associations`
+
+Refer to the Terraform Registory for docs: [`data_aws_location_tracker_associations`](https://www.terraform.io/docs/providers/aws/d/location_tracker_associations).
+
 # `dataAwsLocationTrackerAssociations` Submodule <a name="`dataAwsLocationTrackerAssociations` Submodule" id="@cdktf/provider-aws.dataAwsLocationTrackerAssociations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

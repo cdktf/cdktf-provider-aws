@@ -1,3 +1,7 @@
+# `aws_cloudfront_origin_access_control`
+
+Refer to the Terraform Registory for docs: [`aws_cloudfront_origin_access_control`](https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_access_control).
+
 # `cloudfrontOriginAccessControl` Submodule <a name="`cloudfrontOriginAccessControl` Submodule" id="@cdktf/provider-aws.cloudfrontOriginAccessControl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

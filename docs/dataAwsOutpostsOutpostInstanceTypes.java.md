@@ -1,3 +1,7 @@
+# `data_aws_outposts_outpost_instance_types`
+
+Refer to the Terraform Registory for docs: [`data_aws_outposts_outpost_instance_types`](https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_types).
+
 # `dataAwsOutpostsOutpostInstanceTypes` Submodule <a name="`dataAwsOutpostsOutpostInstanceTypes` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

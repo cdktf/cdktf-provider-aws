@@ -1,3 +1,7 @@
+# `aws_default_vpc`
+
+Refer to the Terraform Registory for docs: [`aws_default_vpc`](https://www.terraform.io/docs/providers/aws/r/default_vpc).
+
 # `defaultVpc` Submodule <a name="`defaultVpc` Submodule" id="@cdktf/provider-aws.defaultVpc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_codeartifact_repository`
+
+Refer to the Terraform Registory for docs: [`aws_codeartifact_repository`](https://www.terraform.io/docs/providers/aws/r/codeartifact_repository).
+
 # `codeartifactRepository` Submodule <a name="`codeartifactRepository` Submodule" id="@cdktf/provider-aws.codeartifactRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

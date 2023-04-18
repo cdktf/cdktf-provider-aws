@@ -1,3 +1,7 @@
+# `aws_rds_export_task`
+
+Refer to the Terraform Registory for docs: [`aws_rds_export_task`](https://www.terraform.io/docs/providers/aws/r/rds_export_task).
+
 # `rdsExportTask` Submodule <a name="`rdsExportTask` Submodule" id="@cdktf/provider-aws.rdsExportTask"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

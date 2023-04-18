@@ -1,3 +1,7 @@
+# `aws_ivschat_room`
+
+Refer to the Terraform Registory for docs: [`aws_ivschat_room`](https://www.terraform.io/docs/providers/aws/r/ivschat_room).
+
 # `ivschatRoom` Submodule <a name="`ivschatRoom` Submodule" id="@cdktf/provider-aws.ivschatRoom"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

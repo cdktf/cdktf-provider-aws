@@ -1,3 +1,7 @@
+# `aws_sesv2_dedicated_ip_pool`
+
+Refer to the Terraform Registory for docs: [`aws_sesv2_dedicated_ip_pool`](https://www.terraform.io/docs/providers/aws/r/sesv2_dedicated_ip_pool).
+
 # `sesv2DedicatedIpPool` Submodule <a name="`sesv2DedicatedIpPool` Submodule" id="@cdktf/provider-aws.sesv2DedicatedIpPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

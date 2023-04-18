@@ -1,3 +1,7 @@
+# `data_aws_workspaces_bundle`
+
+Refer to the Terraform Registory for docs: [`data_aws_workspaces_bundle`](https://www.terraform.io/docs/providers/aws/d/workspaces_bundle).
+
 # `dataAwsWorkspacesBundle` Submodule <a name="`dataAwsWorkspacesBundle` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesBundle"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `aws_ecr_registry_scanning_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_ecr_registry_scanning_configuration`](https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration).
+
 # `ecrRegistryScanningConfiguration` Submodule <a name="`ecrRegistryScanningConfiguration` Submodule" id="@cdktf/provider-aws.ecrRegistryScanningConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

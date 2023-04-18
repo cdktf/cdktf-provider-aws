@@ -1,3 +1,7 @@
+# `aws_emr_studio_session_mapping`
+
+Refer to the Terraform Registory for docs: [`aws_emr_studio_session_mapping`](https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping).
+
 # `emrStudioSessionMapping` Submodule <a name="`emrStudioSessionMapping` Submodule" id="@cdktf/provider-aws.emrStudioSessionMapping"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

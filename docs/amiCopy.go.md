@@ -1,3 +1,7 @@
+# `aws_ami_copy`
+
+Refer to the Terraform Registory for docs: [`aws_ami_copy`](https://www.terraform.io/docs/providers/aws/r/ami_copy).
+
 # `amiCopy` Submodule <a name="`amiCopy` Submodule" id="@cdktf/provider-aws.amiCopy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

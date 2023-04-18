@@ -1,3 +1,7 @@
+# `aws_mq_broker`
+
+Refer to the Terraform Registory for docs: [`aws_mq_broker`](https://www.terraform.io/docs/providers/aws/r/mq_broker).
+
 # `mqBroker` Submodule <a name="`mqBroker` Submodule" id="@cdktf/provider-aws.mqBroker"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

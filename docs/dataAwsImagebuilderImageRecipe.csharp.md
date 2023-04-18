@@ -1,3 +1,7 @@
+# `data_aws_imagebuilder_image_recipe`
+
+Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_image_recipe`](https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipe).
+
 # `dataAwsImagebuilderImageRecipe` Submodule <a name="`dataAwsImagebuilderImageRecipe` Submodule" id="@cdktf/provider-aws.dataAwsImagebuilderImageRecipe"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

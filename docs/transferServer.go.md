@@ -1,3 +1,7 @@
+# `aws_transfer_server`
+
+Refer to the Terraform Registory for docs: [`aws_transfer_server`](https://www.terraform.io/docs/providers/aws/r/transfer_server).
+
 # `transferServer` Submodule <a name="`transferServer` Submodule" id="@cdktf/provider-aws.transferServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

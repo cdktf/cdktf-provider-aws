@@ -1,3 +1,7 @@
+# `aws_appmesh_virtual_gateway`
+
+Refer to the Terraform Registory for docs: [`aws_appmesh_virtual_gateway`](https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway).
+
 # `appmeshVirtualGateway` Submodule <a name="`appmeshVirtualGateway` Submodule" id="@cdktf/provider-aws.appmeshVirtualGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

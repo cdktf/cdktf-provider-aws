@@ -1,3 +1,7 @@
+# `aws_amplify_webhook`
+
+Refer to the Terraform Registory for docs: [`aws_amplify_webhook`](https://www.terraform.io/docs/providers/aws/r/amplify_webhook).
+
 # `amplifyWebhook` Submodule <a name="`amplifyWebhook` Submodule" id="@cdktf/provider-aws.amplifyWebhook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

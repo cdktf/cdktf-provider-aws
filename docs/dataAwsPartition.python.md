@@ -1,3 +1,7 @@
+# `data_aws_partition`
+
+Refer to the Terraform Registory for docs: [`data_aws_partition`](https://www.terraform.io/docs/providers/aws/d/partition).
+
 # `dataAwsPartition` Submodule <a name="`dataAwsPartition` Submodule" id="@cdktf/provider-aws.dataAwsPartition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

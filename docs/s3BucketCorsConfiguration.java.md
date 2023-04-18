@@ -1,3 +1,7 @@
+# `aws_s3_bucket_cors_configuration`
+
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_cors_configuration`](https://www.terraform.io/docs/providers/aws/r/s3_bucket_cors_configuration).
+
 # `s3BucketCorsConfiguration` Submodule <a name="`s3BucketCorsConfiguration` Submodule" id="@cdktf/provider-aws.s3BucketCorsConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

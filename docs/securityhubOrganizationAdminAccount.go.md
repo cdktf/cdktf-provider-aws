@@ -1,3 +1,7 @@
+# `aws_securityhub_organization_admin_account`
+
+Refer to the Terraform Registory for docs: [`aws_securityhub_organization_admin_account`](https://www.terraform.io/docs/providers/aws/r/securityhub_organization_admin_account).
+
 # `securityhubOrganizationAdminAccount` Submodule <a name="`securityhubOrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.securityhubOrganizationAdminAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

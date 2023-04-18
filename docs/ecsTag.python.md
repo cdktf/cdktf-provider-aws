@@ -1,3 +1,7 @@
+# `aws_ecs_tag`
+
+Refer to the Terraform Registory for docs: [`aws_ecs_tag`](https://www.terraform.io/docs/providers/aws/r/ecs_tag).
+
 # `ecsTag` Submodule <a name="`ecsTag` Submodule" id="@cdktf/provider-aws.ecsTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

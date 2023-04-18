@@ -1,3 +1,7 @@
+# `aws_iam_user`
+
+Refer to the Terraform Registory for docs: [`aws_iam_user`](https://www.terraform.io/docs/providers/aws/r/iam_user).
+
 # `iamUser` Submodule <a name="`iamUser` Submodule" id="@cdktf/provider-aws.iamUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

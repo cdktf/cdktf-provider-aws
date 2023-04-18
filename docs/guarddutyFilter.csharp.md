@@ -1,3 +1,7 @@
+# `aws_guardduty_filter`
+
+Refer to the Terraform Registory for docs: [`aws_guardduty_filter`](https://www.terraform.io/docs/providers/aws/r/guardduty_filter).
+
 # `guarddutyFilter` Submodule <a name="`guarddutyFilter` Submodule" id="@cdktf/provider-aws.guarddutyFilter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

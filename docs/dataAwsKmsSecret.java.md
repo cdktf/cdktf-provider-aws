@@ -1,3 +1,7 @@
+# `data_aws_kms_secret`
+
+Refer to the Terraform Registory for docs: [`data_aws_kms_secret`](https://www.terraform.io/docs/providers/aws/d/kms_secret).
+
 # `dataAwsKmsSecret` Submodule <a name="`dataAwsKmsSecret` Submodule" id="@cdktf/provider-aws.dataAwsKmsSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

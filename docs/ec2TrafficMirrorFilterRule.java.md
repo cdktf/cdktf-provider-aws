@@ -1,3 +1,7 @@
+# `aws_ec2_traffic_mirror_filter_rule`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_traffic_mirror_filter_rule`](https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule).
+
 # `ec2TrafficMirrorFilterRule` Submodule <a name="`ec2TrafficMirrorFilterRule` Submodule" id="@cdktf/provider-aws.ec2TrafficMirrorFilterRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

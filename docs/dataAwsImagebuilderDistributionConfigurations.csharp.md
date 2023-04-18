@@ -1,3 +1,7 @@
+# `data_aws_imagebuilder_distribution_configurations`
+
+Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_distribution_configurations`](https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configurations).
+
 # `dataAwsImagebuilderDistributionConfigurations` Submodule <a name="`dataAwsImagebuilderDistributionConfigurations` Submodule" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

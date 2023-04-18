@@ -1,3 +1,7 @@
+# `aws_ec2_transit_gateway_route_table_propagation`
+
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_route_table_propagation`](https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_propagation).
+
 # `ec2TransitGatewayRouteTablePropagation` Submodule <a name="`ec2TransitGatewayRouteTablePropagation` Submodule" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
