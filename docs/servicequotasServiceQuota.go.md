@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuota(scope Construct, id *string, config ServicequotasServiceQuotaConfig) ServicequotasServiceQuota
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaConfig {
 	Connection: interface{},

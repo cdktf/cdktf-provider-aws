@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate"
 
 dataawsacmcertificate.NewDataAwsAcmCertificate(scope Construct, id *string, config DataAwsAcmCertificateConfig) DataAwsAcmCertificate
 ```
@@ -312,7 +312,7 @@ func ResetTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate"
 
 dataawsacmcertificate.DataAwsAcmCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmCertificate.DataAwsAcmCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmcertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate"
 
 &dataawsacmcertificate.DataAwsAcmCertificateConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroup(scope Construct, id *string, config DataAwsEksNodeGroupConfig) DataAwsEksNodeGroup
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.DataAwsEksNodeGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.DataAwsEksNodeGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawseksnodegroup.DataAwsEksNodeGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.DataAwsEksNodeGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupRemoteAccess {
 
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupResources {
 
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupResourcesAutoscalingGroups {
 
@@ -960,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupScalingConfig {
 
@@ -973,7 +973,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 &dataawseksnodegroup.DataAwsEksNodeGroupTaints {
 
@@ -988,7 +988,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupRemoteAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksNodeGroupRemoteAccessList
 ```
@@ -1120,7 +1120,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupRemoteAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksNodeGroupRemoteAccessOutputReference
 ```
@@ -1409,7 +1409,7 @@ func InternalValue() DataAwsEksNodeGroupRemoteAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupResourcesAutoscalingGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksNodeGroupResourcesAutoscalingGroupsList
 ```
@@ -1541,7 +1541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference
 ```
@@ -1819,7 +1819,7 @@ func InternalValue() DataAwsEksNodeGroupResourcesAutoscalingGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksNodeGroupResourcesList
 ```
@@ -1951,7 +1951,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksNodeGroupResourcesOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() DataAwsEksNodeGroupResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupScalingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksNodeGroupScalingConfigList
 ```
@@ -2372,7 +2372,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksNodeGroupScalingConfigOutputReference
 ```
@@ -2672,7 +2672,7 @@ func InternalValue() DataAwsEksNodeGroupScalingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksNodeGroupTaintsList
 ```
@@ -2804,7 +2804,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksnodegroup"
 
 dataawseksnodegroup.NewDataAwsEksNodeGroupTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksNodeGroupTaintsOutputReference
 ```

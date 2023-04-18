@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate"
 
 dmscertificate.NewDmsCertificate(scope Construct, id *string, config DmsCertificateConfig) DmsCertificate
 ```
@@ -305,7 +305,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate"
 
 dmscertificate.DmsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate"
 
 dmscertificate.DmsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dmscertificate.DmsCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsCertificate.DmsCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate"
 
 dmscertificate.DmsCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsCertificate.DmsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate"
 
 &dmscertificate.DmsCertificateConfig {
 	Connection: interface{},

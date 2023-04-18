@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicy(scope Construct, id *string, config NetworkfirewallFirewallPolicyConfig) NetworkfirewallFirewallPolicy
 ```
@@ -331,7 +331,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyConfig {
 	Connection: interface{},
@@ -762,10 +762,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicy,
+	FirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicy,
 	Name: *string,
 	Description: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyEncryptionConfiguration,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyEncryptionConfiguration {
 	Type: *string,
@@ -1005,13 +1005,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicy {
 	StatelessDefaultActions: *[]*string,
 	StatelessFragmentDefaultActions: *[]*string,
 	StatefulDefaultActions: *[]*string,
-	StatefulEngineOptions: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions,
+	StatefulEngineOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions,
 	StatefulRuleGroupReference: interface{},
 	StatelessCustomAction: interface{},
 	StatelessRuleGroupReference: interface{},
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions {
 	RuleOrder: *string,
@@ -1161,11 +1161,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference {
 	ResourceArn: *string,
-	Override: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride,
+	Override: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride,
 	Priority: *f64,
 }
 ```
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride {
 	Action: *string,
@@ -1255,10 +1255,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction {
-	ActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition,
+	ActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition,
 	ActionName: *string,
 }
 ```
@@ -1303,10 +1303,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition {
-	PublishMetricAction: github.com/cdktf/cdktf-provider-aws-go/aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction,
+	PublishMetricAction: github.com/cdktf/cdktf-provider-aws-go/aws/v14.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction,
 }
 ```
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction {
 	Dimension: interface{},
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension {
 	Value: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 &networkfirewallfirewallpolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference {
 	Priority: *f64,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() NetworkfirewallFirewallPolicyEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyOutputReference
 ```
@@ -2241,7 +2241,7 @@ func InternalValue() NetworkfirewallFirewallPolicyFirewallPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList
 ```
@@ -2655,7 +2655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference
 ```
@@ -3015,7 +3015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference
 ```
@@ -3293,7 +3293,7 @@ func InternalValue() NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGrou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference
 ```
@@ -3577,7 +3577,7 @@ func InternalValue() NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionList
 ```
@@ -3720,7 +3720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimensionOutputReference
 ```
@@ -4009,7 +4009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionOutputReference
 ```
@@ -4293,7 +4293,7 @@ func InternalValue() NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList
 ```
@@ -4436,7 +4436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference
 ```
@@ -4760,7 +4760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList
 ```
@@ -4903,7 +4903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/networkfirewallfirewallpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy"
 
 networkfirewallfirewallpolicy.NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference
 ```

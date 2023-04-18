@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicequotasservicequota"
 
 dataawsservicequotasservicequota.NewDataAwsServicequotasServiceQuota(scope Construct, id *string, config DataAwsServicequotasServiceQuotaConfig) DataAwsServicequotasServiceQuota
 ```
@@ -291,7 +291,7 @@ func ResetQuotaName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicequotasservicequota"
 
 dataawsservicequotasservicequota.DataAwsServicequotasServiceQuota_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicequotasservicequota"
 
 dataawsservicequotasservicequota.DataAwsServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawsservicequotasservicequota.DataAwsServicequotasServiceQuota_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicequotasservicequota"
 
 dataawsservicequotasservicequota.DataAwsServicequotasServiceQuota_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicequotasservicequota"
 
 &dataawsservicequotasservicequota.DataAwsServicequotasServiceQuotaConfig {
 	Connection: interface{},
