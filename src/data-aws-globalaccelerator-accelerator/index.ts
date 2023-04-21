@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator#id DataAwsGlobalacceleratorAccelerator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}
   */
   readonly name?: string;
 }
@@ -168,7 +168,7 @@ export class DataAwsGlobalacceleratorAcceleratorIpSetsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}
 */
 export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSource {
 
@@ -182,7 +182,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +193,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_medialive_channel`
 
-Refer to the Terraform Registory for docs: [`aws_medialive_channel`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel).
+Refer to the Terraform Registory for docs: [`aws_medialive_channel`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel).
 
 # `medialiveChannel` Submodule <a name="`medialiveChannel` Submodule" id="@cdktf/provider-aws.medialiveChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_medialive_channel`](https://reg
 
 ### MedialiveChannel <a name="MedialiveChannel" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel aws_medialive_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel aws_medialive_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveChannel.MedialiveChannel.Initializer"></a>
 
@@ -1074,7 +1074,7 @@ new MedialiveChannelCdiInputSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecification.property.resolution">Resolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecification.property.resolution">Resolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}. |
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Resolution { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}.
 
 ---
 
@@ -1135,20 +1135,20 @@ new MedialiveChannelConfig {
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.channelClass">ChannelClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channel_class MedialiveChannel#channel_class}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.channelClass">ChannelClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channel_class MedialiveChannel#channel_class}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.destinations">Destinations</a></code> | <code>object</code> | destinations block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.encoderSettings">EncoderSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettings">MedialiveChannelEncoderSettings</a></code> | encoder_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.inputAttachments">InputAttachments</a></code> | <code>object</code> | input_attachments block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.inputSpecification">InputSpecification</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification">MedialiveChannelInputSpecification</a></code> | input_specification block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.cdiInputSpecification">CdiInputSpecification</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecification">MedialiveChannelCdiInputSpecification</a></code> | cdi_input_specification block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#id MedialiveChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.logLevel">LogLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#log_level MedialiveChannel#log_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#id MedialiveChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.logLevel">LogLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#log_level MedialiveChannel#log_level}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.maintenance">Maintenance</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance">MedialiveChannelMaintenance</a></code> | maintenance block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#role_arn MedialiveChannel#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.startChannel">StartChannel</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#start_channel MedialiveChannel#start_channel}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#tags MedialiveChannel#tags}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#tags_all MedialiveChannel#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#role_arn MedialiveChannel#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.startChannel">StartChannel</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#start_channel MedialiveChannel#start_channel}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#tags MedialiveChannel#tags}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#tags_all MedialiveChannel#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts">MedialiveChannelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig.property.vpc">Vpc</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc">MedialiveChannelVpc</a></code> | vpc block. |
 
@@ -1232,7 +1232,7 @@ public string ChannelClass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channel_class MedialiveChannel#channel_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channel_class MedialiveChannel#channel_class}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public object Destinations { get; set; }
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destinations MedialiveChannel#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destinations MedialiveChannel#destinations}
 
 ---
 
@@ -1260,7 +1260,7 @@ public MedialiveChannelEncoderSettings EncoderSettings { get; set; }
 
 encoder_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#encoder_settings MedialiveChannel#encoder_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#encoder_settings MedialiveChannel#encoder_settings}
 
 ---
 
@@ -1274,7 +1274,7 @@ public object InputAttachments { get; set; }
 
 input_attachments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_attachments MedialiveChannel#input_attachments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_attachments MedialiveChannel#input_attachments}
 
 ---
 
@@ -1288,7 +1288,7 @@ public MedialiveChannelInputSpecification InputSpecification { get; set; }
 
 input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_specification MedialiveChannel#input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_specification MedialiveChannel#input_specification}
 
 ---
 
@@ -1300,7 +1300,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public MedialiveChannelCdiInputSpecification CdiInputSpecification { get; set; }
 
 cdi_input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cdi_input_specification MedialiveChannel#cdi_input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cdi_input_specification MedialiveChannel#cdi_input_specification}
 
 ---
 
@@ -1326,7 +1326,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#id MedialiveChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#id MedialiveChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1341,7 @@ public string LogLevel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#log_level MedialiveChannel#log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#log_level MedialiveChannel#log_level}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public MedialiveChannelMaintenance Maintenance { get; set; }
 
 maintenance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maintenance MedialiveChannel#maintenance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maintenance MedialiveChannel#maintenance}
 
 ---
 
@@ -1367,7 +1367,7 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#role_arn MedialiveChannel#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#role_arn MedialiveChannel#role_arn}.
 
 ---
 
@@ -1379,7 +1379,7 @@ public object StartChannel { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#start_channel MedialiveChannel#start_channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#start_channel MedialiveChannel#start_channel}.
 
 ---
 
@@ -1391,7 +1391,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#tags MedialiveChannel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#tags MedialiveChannel#tags}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#tags_all MedialiveChannel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#tags_all MedialiveChannel#tags_all}.
 
 ---
 
@@ -1417,7 +1417,7 @@ public MedialiveChannelTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timeouts MedialiveChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timeouts MedialiveChannel#timeouts}
 
 ---
 
@@ -1431,7 +1431,7 @@ public MedialiveChannelVpc Vpc { get; set; }
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#vpc MedialiveChannel#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#vpc MedialiveChannel#vpc}
 
 ---
 
@@ -1454,7 +1454,7 @@ new MedialiveChannelDestinations {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#id MedialiveChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#id MedialiveChannel#id}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.property.mediaPackageSettings">MediaPackageSettings</a></code> | <code>object</code> | media_package_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.property.multiplexSettings">MultiplexSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings">MedialiveChannelDestinationsMultiplexSettings</a></code> | multiplex_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations.property.settings">Settings</a></code> | <code>object</code> | settings block. |
@@ -1469,7 +1469,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#id MedialiveChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#id MedialiveChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1486,7 +1486,7 @@ public object MediaPackageSettings { get; set; }
 
 media_package_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
 
 ---
 
@@ -1500,7 +1500,7 @@ public MedialiveChannelDestinationsMultiplexSettings MultiplexSettings { get; se
 
 multiplex_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
 
 ---
 
@@ -1514,7 +1514,7 @@ public object Settings { get; set; }
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
 
 ---
 
@@ -1534,7 +1534,7 @@ new MedialiveChannelDestinationsMediaPackageSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettings.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettings.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}. |
 
 ---
 
@@ -1546,7 +1546,7 @@ public string ChannelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}.
 
 ---
 
@@ -1567,8 +1567,8 @@ new MedialiveChannelDestinationsMultiplexSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings.property.multiplexId">MultiplexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings.property.programName">ProgramName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings.property.multiplexId">MultiplexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings.property.programName">ProgramName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}. |
 
 ---
 
@@ -1580,7 +1580,7 @@ public string MultiplexId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public string ProgramName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}.
 
 ---
 
@@ -1615,10 +1615,10 @@ new MedialiveChannelDestinationsSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.streamName">StreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#url MedialiveChannel#url}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.streamName">StreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#url MedialiveChannel#url}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
 
 ---
 
@@ -1630,7 +1630,7 @@ public string PasswordParam { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public string StreamName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
 
 ---
 
@@ -1654,7 +1654,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#url MedialiveChannel#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#url MedialiveChannel#url}.
 
 ---
 
@@ -1666,7 +1666,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
 
 ---
 
@@ -1708,7 +1708,7 @@ public object OutputGroups { get; set; }
 
 output_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_groups MedialiveChannel#output_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_groups MedialiveChannel#output_groups}
 
 ---
 
@@ -1722,7 +1722,7 @@ public MedialiveChannelEncoderSettingsTimecodeConfig TimecodeConfig { get; set; 
 
 timecode_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timecode_config MedialiveChannel#timecode_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timecode_config MedialiveChannel#timecode_config}
 
 ---
 
@@ -1736,7 +1736,7 @@ public object AudioDescriptions { get; set; }
 
 audio_descriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
 
 ---
 
@@ -1750,7 +1750,7 @@ public MedialiveChannelEncoderSettingsAvailBlanking AvailBlanking { get; set; }
 
 avail_blanking block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
 
 ---
 
@@ -1764,7 +1764,7 @@ public object VideoDescriptions { get; set; }
 
 video_descriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}
 
 ---
 
@@ -1794,17 +1794,17 @@ new MedialiveChannelEncoderSettingsAudioDescriptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioSelectorName">AudioSelectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioSelectorName">AudioSelectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioNormalizationSettings">AudioNormalizationSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings">MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings</a></code> | audio_normalization_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioType">AudioType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioTypeControl">AudioTypeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioType">AudioType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioTypeControl">AudioTypeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.audioWatermarkSettings">AudioWatermarkSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings">MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings</a></code> | audio_watermark_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.codecSettings">CodecSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings">MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings</a></code> | codec_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.languageCodeControl">LanguageCodeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.languageCodeControl">LanguageCodeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.remixSettings">RemixSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings">MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings</a></code> | remix_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.streamName">StreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions.property.streamName">StreamName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}. |
 
 ---
 
@@ -1816,7 +1816,7 @@ public string AudioSelectorName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}.
 
 ---
 
@@ -1828,7 +1828,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -1842,7 +1842,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSetting
 
 audio_normalization_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_normalization_settings MedialiveChannel#audio_normalization_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_normalization_settings MedialiveChannel#audio_normalization_settings}
 
 ---
 
@@ -1854,7 +1854,7 @@ public string AudioType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}.
 
 ---
 
@@ -1866,7 +1866,7 @@ public string AudioTypeControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}.
 
 ---
 
@@ -1880,7 +1880,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings Au
 
 audio_watermark_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_watermark_settings MedialiveChannel#audio_watermark_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_watermark_settings MedialiveChannel#audio_watermark_settings}
 
 ---
 
@@ -1894,7 +1894,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings CodecSettin
 
 codec_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
 
 ---
 
@@ -1906,7 +1906,7 @@ public string LanguageCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
 
 ---
 
@@ -1918,7 +1918,7 @@ public string LanguageCodeControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}.
 
 ---
 
@@ -1932,7 +1932,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings RemixSettin
 
 remix_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#remix_settings MedialiveChannel#remix_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#remix_settings MedialiveChannel#remix_settings}
 
 ---
 
@@ -1944,7 +1944,7 @@ public string StreamName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
 
 ---
 
@@ -1966,9 +1966,9 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.algorithmControl">AlgorithmControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.targetLkfs">TargetLkfs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.algorithmControl">AlgorithmControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings.property.targetLkfs">TargetLkfs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}. |
 
 ---
 
@@ -1980,7 +1980,7 @@ public string Algorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}.
 
 ---
 
@@ -1992,7 +1992,7 @@ public string AlgorithmControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}.
 
 ---
 
@@ -2004,7 +2004,7 @@ public double TargetLkfs { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}.
 
 ---
 
@@ -2038,7 +2038,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNie
 
 nielsen_watermarks_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_watermarks_settings MedialiveChannel#nielsen_watermarks_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_watermarks_settings MedialiveChannel#nielsen_watermarks_settings}
 
 ---
 
@@ -2061,7 +2061,7 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielse
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings.property.nielsenCbetSettings">NielsenCbetSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings">MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings</a></code> | nielsen_cbet_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings.property.nielsenDistributionType">NielsenDistributionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings.property.nielsenDistributionType">NielsenDistributionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings.property.nielsenNaesIiNwSettings">NielsenNaesIiNwSettings</a></code> | <code>object</code> | nielsen_naes_ii_nw_settings block. |
 
 ---
@@ -2076,7 +2076,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNie
 
 nielsen_cbet_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_cbet_settings MedialiveChannel#nielsen_cbet_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_cbet_settings MedialiveChannel#nielsen_cbet_settings}
 
 ---
 
@@ -2088,7 +2088,7 @@ public string NielsenDistributionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}.
 
 ---
 
@@ -2102,7 +2102,7 @@ public object NielsenNaesIiNwSettings { get; set; }
 
 nielsen_naes_ii_nw_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
 
 ---
 
@@ -2124,9 +2124,9 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.cbetCheckDigitString">CbetCheckDigitString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.cbetStepaside">CbetStepaside</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.csid">Csid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.cbetCheckDigitString">CbetCheckDigitString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.cbetStepaside">CbetStepaside</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings.property.csid">Csid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}. |
 
 ---
 
@@ -2138,7 +2138,7 @@ public string CbetCheckDigitString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}.
 
 ---
 
@@ -2150,7 +2150,7 @@ public string CbetStepaside { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}.
 
 ---
 
@@ -2162,7 +2162,7 @@ public string Csid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}.
 
 ---
 
@@ -2183,8 +2183,8 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings.property.checkDigitString">CheckDigitString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings.property.sid">Sid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings.property.checkDigitString">CheckDigitString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings.property.sid">Sid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}. |
 
 ---
 
@@ -2196,7 +2196,7 @@ public string CheckDigitString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}.
 
 ---
 
@@ -2208,7 +2208,7 @@ public double Sid { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}.
 
 ---
 
@@ -2254,7 +2254,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings 
 
 aac_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#aac_settings MedialiveChannel#aac_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#aac_settings MedialiveChannel#aac_settings}
 
 ---
 
@@ -2268,7 +2268,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings 
 
 ac3_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ac3_settings MedialiveChannel#ac3_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ac3_settings MedialiveChannel#ac3_settings}
 
 ---
 
@@ -2282,7 +2282,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSet
 
 eac3_atmos_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
 
 ---
 
@@ -2296,7 +2296,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 
 eac3_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
 
 ---
 
@@ -2310,7 +2310,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings 
 
 mp2_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
 
 ---
 
@@ -2324,7 +2324,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughS
 
 pass_through_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
 
 ---
 
@@ -2338,7 +2338,7 @@ public MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings 
 
 wav_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#wav_settings MedialiveChannel#wav_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#wav_settings MedialiveChannel#wav_settings}
 
 ---
 
@@ -2366,15 +2366,15 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.inputType">InputType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.profile">Profile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.rateControlMode">RateControlMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.rawFormat">RawFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.spec">Spec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.vbrQuality">VbrQuality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.inputType">InputType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.profile">Profile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.rateControlMode">RateControlMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.rawFormat">RawFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.spec">Spec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings.property.vbrQuality">VbrQuality</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}. |
 
 ---
 
@@ -2386,7 +2386,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -2398,7 +2398,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -2410,7 +2410,7 @@ public string InputType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}.
 
 ---
 
@@ -2422,7 +2422,7 @@ public string Profile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}.
 
 ---
 
@@ -2434,7 +2434,7 @@ public string RateControlMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}.
 
 ---
 
@@ -2446,7 +2446,7 @@ public string RawFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}.
 
 ---
 
@@ -2458,7 +2458,7 @@ public double SampleRate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
 
 ---
 
@@ -2470,7 +2470,7 @@ public string Spec { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}.
 
 ---
 
@@ -2482,7 +2482,7 @@ public string VbrQuality { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}.
 
 ---
 
@@ -2508,13 +2508,13 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.bitstreamMode">BitstreamMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.drcProfile">DrcProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.lfeFilter">LfeFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.metadataControl">MetadataControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.bitstreamMode">BitstreamMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.drcProfile">DrcProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.lfeFilter">LfeFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings.property.metadataControl">MetadataControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}. |
 
 ---
 
@@ -2526,7 +2526,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -2538,7 +2538,7 @@ public string BitstreamMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}.
 
 ---
 
@@ -2550,7 +2550,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -2562,7 +2562,7 @@ public double Dialnorm { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
 
 ---
 
@@ -2574,7 +2574,7 @@ public string DrcProfile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}.
 
 ---
 
@@ -2586,7 +2586,7 @@ public string LfeFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}.
 
 ---
 
@@ -2598,7 +2598,7 @@ public string MetadataControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}.
 
 ---
 
@@ -2624,13 +2624,13 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.drcLine">DrcLine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.drcRf">DrcRf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.heightTrim">HeightTrim</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.surroundTrim">SurroundTrim</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.drcLine">DrcLine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.drcRf">DrcRf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.heightTrim">HeightTrim</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings.property.surroundTrim">SurroundTrim</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}. |
 
 ---
 
@@ -2642,7 +2642,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -2654,7 +2654,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -2666,7 +2666,7 @@ public double Dialnorm { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
 
 ---
 
@@ -2678,7 +2678,7 @@ public string DrcLine { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}.
 
 ---
 
@@ -2690,7 +2690,7 @@ public string DrcRf { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}.
 
 ---
 
@@ -2702,7 +2702,7 @@ public double HeightTrim { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}.
 
 ---
 
@@ -2714,7 +2714,7 @@ public double SurroundTrim { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}.
 
 ---
 
@@ -2753,26 +2753,26 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.attenuationControl">AttenuationControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.bitstreamMode">BitstreamMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.dcFilter">DcFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.drcLine">DrcLine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.drcRf">DrcRf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.lfeControl">LfeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.lfeFilter">LfeFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.loRoCenterMixLevel">LoRoCenterMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.loRoSurroundMixLevel">LoRoSurroundMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.ltRtCenterMixLevel">LtRtCenterMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.ltRtSurroundMixLevel">LtRtSurroundMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.metadataControl">MetadataControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.passthroughControl">PassthroughControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.phaseControl">PhaseControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.stereoDownmix">StereoDownmix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.surroundExMode">SurroundExMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.surroundMode">SurroundMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.attenuationControl">AttenuationControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.bitstreamMode">BitstreamMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.dcFilter">DcFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.dialnorm">Dialnorm</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.drcLine">DrcLine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.drcRf">DrcRf</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.lfeControl">LfeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.lfeFilter">LfeFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.loRoCenterMixLevel">LoRoCenterMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.loRoSurroundMixLevel">LoRoSurroundMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.ltRtCenterMixLevel">LtRtCenterMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.ltRtSurroundMixLevel">LtRtSurroundMixLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.metadataControl">MetadataControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.passthroughControl">PassthroughControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.phaseControl">PhaseControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.stereoDownmix">StereoDownmix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.surroundExMode">SurroundExMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings.property.surroundMode">SurroundMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}. |
 
 ---
 
@@ -2784,7 +2784,7 @@ public string AttenuationControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}.
 
 ---
 
@@ -2796,7 +2796,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -2808,7 +2808,7 @@ public string BitstreamMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}.
 
 ---
 
@@ -2820,7 +2820,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -2832,7 +2832,7 @@ public string DcFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}.
 
 ---
 
@@ -2844,7 +2844,7 @@ public double Dialnorm { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}.
 
 ---
 
@@ -2856,7 +2856,7 @@ public string DrcLine { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}.
 
 ---
 
@@ -2868,7 +2868,7 @@ public string DrcRf { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}.
 
 ---
 
@@ -2880,7 +2880,7 @@ public string LfeControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}.
 
 ---
 
@@ -2892,7 +2892,7 @@ public string LfeFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}.
 
 ---
 
@@ -2904,7 +2904,7 @@ public double LoRoCenterMixLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}.
 
 ---
 
@@ -2916,7 +2916,7 @@ public double LoRoSurroundMixLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}.
 
 ---
 
@@ -2928,7 +2928,7 @@ public double LtRtCenterMixLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}.
 
 ---
 
@@ -2940,7 +2940,7 @@ public double LtRtSurroundMixLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}.
 
 ---
 
@@ -2952,7 +2952,7 @@ public string MetadataControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}.
 
 ---
 
@@ -2964,7 +2964,7 @@ public string PassthroughControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}.
 
 ---
 
@@ -2976,7 +2976,7 @@ public string PhaseControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}.
 
 ---
 
@@ -2988,7 +2988,7 @@ public string StereoDownmix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}.
 
 ---
 
@@ -3000,7 +3000,7 @@ public string SurroundExMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}.
 
 ---
 
@@ -3012,7 +3012,7 @@ public string SurroundMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}.
 
 ---
 
@@ -3034,9 +3034,9 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
 
 ---
 
@@ -3048,7 +3048,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -3060,7 +3060,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -3072,7 +3072,7 @@ public double SampleRate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
 
 ---
 
@@ -3107,9 +3107,9 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.bitDepth">BitDepth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.bitDepth">BitDepth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.codingMode">CodingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings.property.sampleRate">SampleRate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}. |
 
 ---
 
@@ -3121,7 +3121,7 @@ public double BitDepth { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}.
 
 ---
 
@@ -3133,7 +3133,7 @@ public string CodingMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}.
 
 ---
 
@@ -3145,7 +3145,7 @@ public double SampleRate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}.
 
 ---
 
@@ -3168,8 +3168,8 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.property.channelMappings">ChannelMappings</a></code> | <code>object</code> | channel_mappings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.property.channelsIn">ChannelsIn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.property.channelsOut">ChannelsOut</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.property.channelsIn">ChannelsIn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings.property.channelsOut">ChannelsOut</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}. |
 
 ---
 
@@ -3183,7 +3183,7 @@ public object ChannelMappings { get; set; }
 
 channel_mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channel_mappings MedialiveChannel#channel_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channel_mappings MedialiveChannel#channel_mappings}
 
 ---
 
@@ -3195,7 +3195,7 @@ public double ChannelsIn { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}.
 
 ---
 
@@ -3207,7 +3207,7 @@ public double ChannelsOut { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}.
 
 ---
 
@@ -3229,7 +3229,7 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings.property.inputChannelLevels">InputChannelLevels</a></code> | <code>object</code> | input_channel_levels block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings.property.outputChannel">OutputChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings.property.outputChannel">OutputChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}. |
 
 ---
 
@@ -3243,7 +3243,7 @@ public object InputChannelLevels { get; set; }
 
 input_channel_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_channel_levels MedialiveChannel#input_channel_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_channel_levels MedialiveChannel#input_channel_levels}
 
 ---
 
@@ -3255,7 +3255,7 @@ public double OutputChannel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}.
 
 ---
 
@@ -3276,8 +3276,8 @@ new MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels.property.gain">Gain</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels.property.inputChannel">InputChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels.property.gain">Gain</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels.property.inputChannel">InputChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}. |
 
 ---
 
@@ -3289,7 +3289,7 @@ public double Gain { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}.
 
 ---
 
@@ -3301,7 +3301,7 @@ public double InputChannel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}.
 
 ---
 
@@ -3323,7 +3323,7 @@ new MedialiveChannelEncoderSettingsAvailBlanking {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking.property.availBlankingImage">AvailBlankingImage</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage">MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage</a></code> | avail_blanking_image block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#state MedialiveChannel#state}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#state MedialiveChannel#state}. |
 
 ---
 
@@ -3337,7 +3337,7 @@ public MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage AvailBlank
 
 avail_blanking_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
 
 ---
 
@@ -3349,7 +3349,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#state MedialiveChannel#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#state MedialiveChannel#state}.
 
 ---
 
@@ -3371,9 +3371,9 @@ new MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
 
 ---
 
@@ -3385,7 +3385,7 @@ public string Uri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
 
 ---
 
@@ -3397,7 +3397,7 @@ public string PasswordParam { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
 
 ---
 
@@ -3409,7 +3409,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
 
 ---
 
@@ -3433,7 +3433,7 @@ new MedialiveChannelEncoderSettingsOutputGroups {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups.property.outputGroupSettings">OutputGroupSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings</a></code> | output_group_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups.property.outputs">Outputs</a></code> | <code>object</code> | outputs block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 
 ---
 
@@ -3447,7 +3447,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings OutputGrou
 
 output_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_group_settings MedialiveChannel#output_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_group_settings MedialiveChannel#output_group_settings}
 
 ---
 
@@ -3461,7 +3461,7 @@ public object Outputs { get; set; }
 
 outputs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
 
 ---
 
@@ -3473,7 +3473,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -3521,7 +3521,7 @@ public object ArchiveGroupSettings { get; set; }
 
 archive_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
 
 ---
 
@@ -3535,7 +3535,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptur
 
 frame_capture_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
 
 ---
 
@@ -3549,7 +3549,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_group_settings MedialiveChannel#hls_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_group_settings MedialiveChannel#hls_group_settings}
 
 ---
 
@@ -3563,7 +3563,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackag
 
 media_package_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#media_package_group_settings MedialiveChannel#media_package_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#media_package_group_settings MedialiveChannel#media_package_group_settings}
 
 ---
 
@@ -3577,7 +3577,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGro
 
 ms_smooth_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ms_smooth_group_settings MedialiveChannel#ms_smooth_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ms_smooth_group_settings MedialiveChannel#ms_smooth_group_settings}
 
 ---
 
@@ -3591,7 +3591,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGr
 
 multiplex_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#multiplex_group_settings MedialiveChannel#multiplex_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#multiplex_group_settings MedialiveChannel#multiplex_group_settings}
 
 ---
 
@@ -3605,7 +3605,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSe
 
 rtmp_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rtmp_group_settings MedialiveChannel#rtmp_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rtmp_group_settings MedialiveChannel#rtmp_group_settings}
 
 ---
 
@@ -3619,7 +3619,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSet
 
 udp_group_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
 
 ---
 
@@ -3643,7 +3643,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSe
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination</a></code> | destination block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings.property.archiveCdnSettings">ArchiveCdnSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings</a></code> | archive_cdn_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings.property.rolloverInterval">RolloverInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings.property.rolloverInterval">RolloverInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}. |
 
 ---
 
@@ -3657,7 +3657,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGrou
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -3671,7 +3671,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGrou
 
 archive_cdn_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#archive_cdn_settings MedialiveChannel#archive_cdn_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#archive_cdn_settings MedialiveChannel#archive_cdn_settings}
 
 ---
 
@@ -3683,7 +3683,7 @@ public double RolloverInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}.
 
 ---
 
@@ -3717,7 +3717,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGrou
 
 archive_s3_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#archive_s3_settings MedialiveChannel#archive_s3_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#archive_s3_settings MedialiveChannel#archive_s3_settings}
 
 ---
 
@@ -3737,7 +3737,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
 
 ---
 
@@ -3749,7 +3749,7 @@ public string CannedAcl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
 
 ---
 
@@ -3769,7 +3769,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -3781,7 +3781,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -3817,7 +3817,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptur
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -3831,7 +3831,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptur
 
 frame_capture_cdn_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_cdn_settings MedialiveChannel#frame_capture_cdn_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_cdn_settings MedialiveChannel#frame_capture_cdn_settings}
 
 ---
 
@@ -3851,7 +3851,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -3863,7 +3863,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -3897,7 +3897,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptur
 
 frame_capture_s3_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_s3_settings MedialiveChannel#frame_capture_s3_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_s3_settings MedialiveChannel#frame_capture_s3_settings}
 
 ---
 
@@ -3917,7 +3917,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
 
 ---
 
@@ -3929,7 +3929,7 @@ public string CannedAcl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
 
 ---
 
@@ -3991,47 +3991,47 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.adMarkers">AdMarkers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlContent">BaseUrlContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlContent1">BaseUrlContent1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlManifest">BaseUrlManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlManifest1">BaseUrlManifest1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.adMarkers">AdMarkers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlContent">BaseUrlContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlContent1">BaseUrlContent1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlManifest">BaseUrlManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.baseUrlManifest1">BaseUrlManifest1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.captionLanguageMappings">CaptionLanguageMappings</a></code> | <code>object</code> | caption_language_mappings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.captionLanguageSetting">CaptionLanguageSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.clientCache">ClientCache</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.codecSpecification">CodecSpecification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.constantIv">ConstantIv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.directoryStructure">DirectoryStructure</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.discontinuityTags">DiscontinuityTags</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.captionLanguageSetting">CaptionLanguageSetting</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.clientCache">ClientCache</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.codecSpecification">CodecSpecification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.constantIv">ConstantIv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.directoryStructure">DirectoryStructure</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.discontinuityTags">DiscontinuityTags</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.hlsCdnSettings">HlsCdnSettings</a></code> | <code>object</code> | hls_cdn_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.hlsId3SegmentTagging">HlsId3SegmentTagging</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.iframeOnlyPlaylists">IframeOnlyPlaylists</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.incompleteSegmentBehavior">IncompleteSegmentBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.indexNSegments">IndexNSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.ivInManifest">IvInManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.ivSource">IvSource</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keepSegments">KeepSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keyFormat">KeyFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keyFormatVersions">KeyFormatVersions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.hlsId3SegmentTagging">HlsId3SegmentTagging</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.iframeOnlyPlaylists">IframeOnlyPlaylists</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.incompleteSegmentBehavior">IncompleteSegmentBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.indexNSegments">IndexNSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.ivInManifest">IvInManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.ivSource">IvSource</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keepSegments">KeepSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keyFormat">KeyFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keyFormatVersions">KeyFormatVersions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.keyProviderSettings">KeyProviderSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings</a></code> | key_provider_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.manifestCompression">ManifestCompression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.manifestDurationFormat">ManifestDurationFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.minSegmentLength">MinSegmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.outputSelection">OutputSelection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTime">ProgramDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTimeClock">ProgramDateTimeClock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTimePeriod">ProgramDateTimePeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.redundantManifest">RedundantManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.segmentLength">SegmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.segmentsPerSubdirectory">SegmentsPerSubdirectory</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.streamInfResolution">StreamInfResolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timedMetadataId3Frame">TimedMetadataId3Frame</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timedMetadataId3Period">TimedMetadataId3Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timestampDeltaMilliseconds">TimestampDeltaMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.tsFileMode">TsFileMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.manifestCompression">ManifestCompression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.manifestDurationFormat">ManifestDurationFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.minSegmentLength">MinSegmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.outputSelection">OutputSelection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTime">ProgramDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTimeClock">ProgramDateTimeClock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.programDateTimePeriod">ProgramDateTimePeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.redundantManifest">RedundantManifest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.segmentLength">SegmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.segmentsPerSubdirectory">SegmentsPerSubdirectory</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.streamInfResolution">StreamInfResolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timedMetadataId3Frame">TimedMetadataId3Frame</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timedMetadataId3Period">TimedMetadataId3Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.timestampDeltaMilliseconds">TimestampDeltaMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings.property.tsFileMode">TsFileMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}. |
 
 ---
 
@@ -4045,7 +4045,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -4057,7 +4057,7 @@ public string[] AdMarkers { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}.
 
 ---
 
@@ -4069,7 +4069,7 @@ public string BaseUrlContent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}.
 
 ---
 
@@ -4081,7 +4081,7 @@ public string BaseUrlContent1 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}.
 
 ---
 
@@ -4093,7 +4093,7 @@ public string BaseUrlManifest { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}.
 
 ---
 
@@ -4105,7 +4105,7 @@ public string BaseUrlManifest1 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}.
 
 ---
 
@@ -4119,7 +4119,7 @@ public object CaptionLanguageMappings { get; set; }
 
 caption_language_mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
 
 ---
 
@@ -4131,7 +4131,7 @@ public string CaptionLanguageSetting { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}.
 
 ---
 
@@ -4143,7 +4143,7 @@ public string ClientCache { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}.
 
 ---
 
@@ -4155,7 +4155,7 @@ public string CodecSpecification { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}.
 
 ---
 
@@ -4167,7 +4167,7 @@ public string ConstantIv { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}.
 
 ---
 
@@ -4179,7 +4179,7 @@ public string DirectoryStructure { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}.
 
 ---
 
@@ -4191,7 +4191,7 @@ public string DiscontinuityTags { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}.
 
 ---
 
@@ -4203,7 +4203,7 @@ public string EncryptionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}.
 
 ---
 
@@ -4217,7 +4217,7 @@ public object HlsCdnSettings { get; set; }
 
 hls_cdn_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
 
 ---
 
@@ -4229,7 +4229,7 @@ public string HlsId3SegmentTagging { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}.
 
 ---
 
@@ -4241,7 +4241,7 @@ public string IframeOnlyPlaylists { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}.
 
 ---
 
@@ -4253,7 +4253,7 @@ public string IncompleteSegmentBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}.
 
 ---
 
@@ -4265,7 +4265,7 @@ public double IndexNSegments { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}.
 
 ---
 
@@ -4277,7 +4277,7 @@ public string InputLossAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
 
 ---
 
@@ -4289,7 +4289,7 @@ public string IvInManifest { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}.
 
 ---
 
@@ -4301,7 +4301,7 @@ public string IvSource { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}.
 
 ---
 
@@ -4313,7 +4313,7 @@ public double KeepSegments { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}.
 
 ---
 
@@ -4325,7 +4325,7 @@ public string KeyFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}.
 
 ---
 
@@ -4337,7 +4337,7 @@ public string KeyFormatVersions { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}.
 
 ---
 
@@ -4351,7 +4351,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 key_provider_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
 
 ---
 
@@ -4363,7 +4363,7 @@ public string ManifestCompression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}.
 
 ---
 
@@ -4375,7 +4375,7 @@ public string ManifestDurationFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}.
 
 ---
 
@@ -4387,7 +4387,7 @@ public double MinSegmentLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}.
 
 ---
 
@@ -4399,7 +4399,7 @@ public string Mode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}.
 
 ---
 
@@ -4411,7 +4411,7 @@ public string OutputSelection { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}.
 
 ---
 
@@ -4423,7 +4423,7 @@ public string ProgramDateTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}.
 
 ---
 
@@ -4435,7 +4435,7 @@ public string ProgramDateTimeClock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}.
 
 ---
 
@@ -4447,7 +4447,7 @@ public double ProgramDateTimePeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}.
 
 ---
 
@@ -4459,7 +4459,7 @@ public string RedundantManifest { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}.
 
 ---
 
@@ -4471,7 +4471,7 @@ public double SegmentLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}.
 
 ---
 
@@ -4483,7 +4483,7 @@ public double SegmentsPerSubdirectory { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}.
 
 ---
 
@@ -4495,7 +4495,7 @@ public string StreamInfResolution { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}.
 
 ---
 
@@ -4507,7 +4507,7 @@ public string TimedMetadataId3Frame { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}.
 
 ---
 
@@ -4519,7 +4519,7 @@ public double TimedMetadataId3Period { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}.
 
 ---
 
@@ -4531,7 +4531,7 @@ public double TimestampDeltaMilliseconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}.
 
 ---
 
@@ -4543,7 +4543,7 @@ public string TsFileMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}.
 
 ---
 
@@ -4565,9 +4565,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.captionChannel">CaptionChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.languageDescription">LanguageDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.captionChannel">CaptionChannel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings.property.languageDescription">LanguageDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}. |
 
 ---
 
@@ -4579,7 +4579,7 @@ public double CaptionChannel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}.
 
 ---
 
@@ -4591,7 +4591,7 @@ public string LanguageCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
 
 ---
 
@@ -4603,7 +4603,7 @@ public string LanguageDescription { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}.
 
 ---
 
@@ -4623,7 +4623,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -4635,7 +4635,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -4677,7 +4677,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_akamai_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_akamai_settings MedialiveChannel#hls_akamai_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_akamai_settings MedialiveChannel#hls_akamai_settings}
 
 ---
 
@@ -4691,7 +4691,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_basic_put_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_basic_put_settings MedialiveChannel#hls_basic_put_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_basic_put_settings MedialiveChannel#hls_basic_put_settings}
 
 ---
 
@@ -4705,7 +4705,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_media_store_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_media_store_settings MedialiveChannel#hls_media_store_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_media_store_settings MedialiveChannel#hls_media_store_settings}
 
 ---
 
@@ -4719,7 +4719,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_s3_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_s3_settings MedialiveChannel#hls_s3_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_s3_settings MedialiveChannel#hls_s3_settings}
 
 ---
 
@@ -4733,7 +4733,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 hls_webdav_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_webdav_settings MedialiveChannel#hls_webdav_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_webdav_settings MedialiveChannel#hls_webdav_settings}
 
 ---
 
@@ -4759,13 +4759,13 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.httpTransferMode">HttpTransferMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.salt">Salt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#token MedialiveChannel#token}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.httpTransferMode">HttpTransferMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.salt">Salt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#token MedialiveChannel#token}. |
 
 ---
 
@@ -4777,7 +4777,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -4789,7 +4789,7 @@ public double FilecacheDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
 
 ---
 
@@ -4801,7 +4801,7 @@ public string HttpTransferMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}.
 
 ---
 
@@ -4813,7 +4813,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -4825,7 +4825,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -4837,7 +4837,7 @@ public string Salt { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}.
 
 ---
 
@@ -4849,7 +4849,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#token MedialiveChannel#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#token MedialiveChannel#token}.
 
 ---
 
@@ -4872,10 +4872,10 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
 
 ---
 
@@ -4887,7 +4887,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -4899,7 +4899,7 @@ public double FilecacheDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
 
 ---
 
@@ -4911,7 +4911,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -4923,7 +4923,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -4947,11 +4947,11 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.mediaStoreStorageClass">MediaStoreStorageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.mediaStoreStorageClass">MediaStoreStorageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
 
 ---
 
@@ -4963,7 +4963,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -4975,7 +4975,7 @@ public double FilecacheDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
 
 ---
 
@@ -4987,7 +4987,7 @@ public string MediaStoreStorageClass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}.
 
 ---
 
@@ -4999,7 +4999,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -5011,7 +5011,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -5031,7 +5031,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}. |
 
 ---
 
@@ -5043,7 +5043,7 @@ public string CannedAcl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}.
 
 ---
 
@@ -5067,11 +5067,11 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.httpTransferMode">HttpTransferMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.httpTransferMode">HttpTransferMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
 
 ---
 
@@ -5083,7 +5083,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -5095,7 +5095,7 @@ public double FilecacheDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
 
 ---
 
@@ -5107,7 +5107,7 @@ public string HttpTransferMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}.
 
 ---
 
@@ -5119,7 +5119,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -5131,7 +5131,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -5165,7 +5165,7 @@ public object StaticKeySettings { get; set; }
 
 static_key_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
 
 ---
 
@@ -5186,7 +5186,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings.property.staticKeyValue">StaticKeyValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings.property.staticKeyValue">StaticKeyValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings.property.keyProviderServer">KeyProviderServer</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer</a></code> | key_provider_server block. |
 
 ---
@@ -5199,7 +5199,7 @@ public string StaticKeyValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}.
 
 ---
 
@@ -5213,7 +5213,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSet
 
 key_provider_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
 
 ---
 
@@ -5235,9 +5235,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
 
 ---
 
@@ -5249,7 +5249,7 @@ public string Uri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
 
 ---
 
@@ -5261,7 +5261,7 @@ public string PasswordParam { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
 
 ---
 
@@ -5273,7 +5273,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
 
 ---
 
@@ -5307,7 +5307,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackag
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -5327,7 +5327,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -5339,7 +5339,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -5378,24 +5378,24 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupS
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.acquisitionPointId">AcquisitionPointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodeControl">AudioOnlyTimecodeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.certificateMode">CertificateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventId">EventId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventIdMode">EventIdMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventStopBehavior">EventStopBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.fragmentLength">FragmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.segmentationMode">SegmentationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.sendDelayMs">SendDelayMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.sparseTrackType">SparseTrackType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.streamManifestBehavior">StreamManifestBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.timestampOffset">TimestampOffset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.timestampOffsetMode">TimestampOffsetMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.acquisitionPointId">AcquisitionPointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.audioOnlyTimecodeControl">AudioOnlyTimecodeControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.certificateMode">CertificateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventId">EventId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventIdMode">EventIdMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.eventStopBehavior">EventStopBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.filecacheDuration">FilecacheDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.fragmentLength">FragmentLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.segmentationMode">SegmentationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.sendDelayMs">SendDelayMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.sparseTrackType">SparseTrackType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.streamManifestBehavior">StreamManifestBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.timestampOffset">TimestampOffset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings.property.timestampOffsetMode">TimestampOffsetMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}. |
 
 ---
 
@@ -5409,7 +5409,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGro
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -5421,7 +5421,7 @@ public string AcquisitionPointId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}.
 
 ---
 
@@ -5433,7 +5433,7 @@ public string AudioOnlyTimecodeControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}.
 
 ---
 
@@ -5445,7 +5445,7 @@ public string CertificateMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
 
 ---
 
@@ -5457,7 +5457,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -5469,7 +5469,7 @@ public string EventId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}.
 
 ---
 
@@ -5481,7 +5481,7 @@ public string EventIdMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}.
 
 ---
 
@@ -5493,7 +5493,7 @@ public string EventStopBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}.
 
 ---
 
@@ -5505,7 +5505,7 @@ public double FilecacheDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}.
 
 ---
 
@@ -5517,7 +5517,7 @@ public double FragmentLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}.
 
 ---
 
@@ -5529,7 +5529,7 @@ public string InputLossAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
 
 ---
 
@@ -5541,7 +5541,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -5553,7 +5553,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -5565,7 +5565,7 @@ public string SegmentationMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}.
 
 ---
 
@@ -5577,7 +5577,7 @@ public double SendDelayMs { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}.
 
 ---
 
@@ -5589,7 +5589,7 @@ public string SparseTrackType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}.
 
 ---
 
@@ -5601,7 +5601,7 @@ public string StreamManifestBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}.
 
 ---
 
@@ -5613,7 +5613,7 @@ public string TimestampOffset { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}.
 
 ---
 
@@ -5625,7 +5625,7 @@ public string TimestampOffsetMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}.
 
 ---
 
@@ -5645,7 +5645,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -5657,7 +5657,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -5696,13 +5696,13 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSetti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.adMarkers">AdMarkers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.authenticationScheme">AuthenticationScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.cacheFullBehavior">CacheFullBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.cacheLength">CacheLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.captionData">CaptionData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.adMarkers">AdMarkers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.authenticationScheme">AuthenticationScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.cacheFullBehavior">CacheFullBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.cacheLength">CacheLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.captionData">CaptionData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings.property.restartDelay">RestartDelay</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}. |
 
 ---
 
@@ -5714,7 +5714,7 @@ public string[] AdMarkers { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}.
 
 ---
 
@@ -5726,7 +5726,7 @@ public string AuthenticationScheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}.
 
 ---
 
@@ -5738,7 +5738,7 @@ public string CacheFullBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}.
 
 ---
 
@@ -5750,7 +5750,7 @@ public double CacheLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}.
 
 ---
 
@@ -5762,7 +5762,7 @@ public string CaptionData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}.
 
 ---
 
@@ -5774,7 +5774,7 @@ public string InputLossAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
 
 ---
 
@@ -5786,7 +5786,7 @@ public double RestartDelay { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}.
 
 ---
 
@@ -5808,9 +5808,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.timedMetadataId3Frame">TimedMetadataId3Frame</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.timedMetadataId3Period">TimedMetadataId3Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.inputLossAction">InputLossAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.timedMetadataId3Frame">TimedMetadataId3Frame</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings.property.timedMetadataId3Period">TimedMetadataId3Period</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}. |
 
 ---
 
@@ -5822,7 +5822,7 @@ public string InputLossAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}.
 
 ---
 
@@ -5834,7 +5834,7 @@ public string TimedMetadataId3Frame { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}.
 
 ---
 
@@ -5846,7 +5846,7 @@ public double TimedMetadataId3Period { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}.
 
 ---
 
@@ -5871,10 +5871,10 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.outputSettings">OutputSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings</a></code> | output_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.audioDescriptionNames">AudioDescriptionNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.captionDescriptionNames">CaptionDescriptionNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.outputName">OutputName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.videoDescriptionName">VideoDescriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.audioDescriptionNames">AudioDescriptionNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.captionDescriptionNames">CaptionDescriptionNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.outputName">OutputName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs.property.videoDescriptionName">VideoDescriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}. |
 
 ---
 
@@ -5888,7 +5888,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings OutputSe
 
 output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_settings MedialiveChannel#output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_settings MedialiveChannel#output_settings}
 
 ---
 
@@ -5900,7 +5900,7 @@ public string[] AudioDescriptionNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}.
 
 ---
 
@@ -5912,7 +5912,7 @@ public string[] CaptionDescriptionNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}.
 
 ---
 
@@ -5924,7 +5924,7 @@ public string OutputName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}.
 
 ---
 
@@ -5936,7 +5936,7 @@ public string VideoDescriptionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}.
 
 ---
 
@@ -5984,7 +5984,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 archive_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#archive_output_settings MedialiveChannel#archive_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#archive_output_settings MedialiveChannel#archive_output_settings}
 
 ---
 
@@ -5998,7 +5998,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCapt
 
 frame_capture_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_output_settings MedialiveChannel#frame_capture_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_output_settings MedialiveChannel#frame_capture_output_settings}
 
 ---
 
@@ -6012,7 +6012,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 hls_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_output_settings MedialiveChannel#hls_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_output_settings MedialiveChannel#hls_output_settings}
 
 ---
 
@@ -6026,7 +6026,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPack
 
 media_package_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#media_package_output_settings MedialiveChannel#media_package_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#media_package_output_settings MedialiveChannel#media_package_output_settings}
 
 ---
 
@@ -6040,7 +6040,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothO
 
 ms_smooth_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ms_smooth_output_settings MedialiveChannel#ms_smooth_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ms_smooth_output_settings MedialiveChannel#ms_smooth_output_settings}
 
 ---
 
@@ -6054,7 +6054,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplex
 
 multiplex_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#multiplex_output_settings MedialiveChannel#multiplex_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#multiplex_output_settings MedialiveChannel#multiplex_output_settings}
 
 ---
 
@@ -6068,7 +6068,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutpu
 
 rtmp_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rtmp_output_settings MedialiveChannel#rtmp_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rtmp_output_settings MedialiveChannel#rtmp_output_settings}
 
 ---
 
@@ -6082,7 +6082,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 udp_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#udp_output_settings MedialiveChannel#udp_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#udp_output_settings MedialiveChannel#udp_output_settings}
 
 ---
 
@@ -6105,8 +6105,8 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutpu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.property.containerSettings">ContainerSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings</a></code> | container_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.property.extension">Extension</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.property.extension">Extension</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
 
 ---
 
@@ -6120,7 +6120,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 container_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
 
 ---
 
@@ -6132,7 +6132,7 @@ public string Extension { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}.
 
 ---
 
@@ -6144,7 +6144,7 @@ public string NameModifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
 
 ---
 
@@ -6180,7 +6180,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 m2ts_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
 
 ---
 
@@ -6194,7 +6194,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 raw_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#raw_settings MedialiveChannel#raw_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#raw_settings MedialiveChannel#raw_settings}
 
 ---
 
@@ -6260,53 +6260,53 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.absentInputAudioBehavior">AbsentInputAudioBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.arib">Arib</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPid">AribCaptionsPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPidControl">AribCaptionsPidControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioBufferModel">AudioBufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioStreamType">AudioStreamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.bufferModel">BufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ccDescriptor">CcDescriptor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.absentInputAudioBehavior">AbsentInputAudioBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.arib">Arib</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPid">AribCaptionsPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPidControl">AribCaptionsPidControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioBufferModel">AudioBufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.audioStreamType">AudioStreamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.bufferModel">BufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ccDescriptor">CcDescriptor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbNitSettings">DvbNitSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings</a></code> | dvb_nit_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbSdtSettings">DvbSdtSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings</a></code> | dvb_sdt_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbSubPids">DvbSubPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbSubPids">DvbSubPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbTdtSettings">DvbTdtSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings</a></code> | dvb_tdt_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbTeletextPid">DvbTeletextPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebif">Ebif</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpAudioInterval">EbpAudioInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpLookaheadMs">EbpLookaheadMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpPlacement">EbpPlacement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.esRateInPes">EsRateInPes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.etvPlatformPid">EtvPlatformPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.etvSignalPid">EtvSignalPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.fragmentTime">FragmentTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.klv">Klv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.klvDataPids">KlvDataPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.nullPacketBitrate">NullPacketBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.rateMode">RateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte27Pids">Scte27Pids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte35Control">Scte35Control</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationMarkers">SegmentationMarkers</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationStyle">SegmentationStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationTime">SegmentationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.dvbTeletextPid">DvbTeletextPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebif">Ebif</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpAudioInterval">EbpAudioInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpLookaheadMs">EbpLookaheadMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ebpPlacement">EbpPlacement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.esRateInPes">EsRateInPes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.etvPlatformPid">EtvPlatformPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.etvSignalPid">EtvSignalPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.fragmentTime">FragmentTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.klv">Klv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.klvDataPids">KlvDataPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.nullPacketBitrate">NullPacketBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.rateMode">RateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte27Pids">Scte27Pids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte35Control">Scte35Control</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationMarkers">SegmentationMarkers</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationStyle">SegmentationStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.segmentationTime">SegmentationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
 
 ---
 
@@ -6318,7 +6318,7 @@ public string AbsentInputAudioBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}.
 
 ---
 
@@ -6330,7 +6330,7 @@ public string Arib { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}.
 
 ---
 
@@ -6342,7 +6342,7 @@ public string AribCaptionsPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}.
 
 ---
 
@@ -6354,7 +6354,7 @@ public string AribCaptionsPidControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}.
 
 ---
 
@@ -6366,7 +6366,7 @@ public string AudioBufferModel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}.
 
 ---
 
@@ -6378,7 +6378,7 @@ public double AudioFramesPerPes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
 
 ---
 
@@ -6390,7 +6390,7 @@ public string AudioPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
 
 ---
 
@@ -6402,7 +6402,7 @@ public string AudioStreamType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}.
 
 ---
 
@@ -6414,7 +6414,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -6426,7 +6426,7 @@ public string BufferModel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}.
 
 ---
 
@@ -6438,7 +6438,7 @@ public string CcDescriptor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}.
 
 ---
 
@@ -6452,7 +6452,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 dvb_nit_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
 
 ---
 
@@ -6466,7 +6466,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 dvb_sdt_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
 
 ---
 
@@ -6478,7 +6478,7 @@ public string DvbSubPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}.
 
 ---
 
@@ -6492,7 +6492,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOu
 
 dvb_tdt_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
 
 ---
 
@@ -6504,7 +6504,7 @@ public string DvbTeletextPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}.
 
 ---
 
@@ -6516,7 +6516,7 @@ public string Ebif { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}.
 
 ---
 
@@ -6528,7 +6528,7 @@ public string EbpAudioInterval { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}.
 
 ---
 
@@ -6540,7 +6540,7 @@ public double EbpLookaheadMs { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}.
 
 ---
 
@@ -6552,7 +6552,7 @@ public string EbpPlacement { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}.
 
 ---
 
@@ -6564,7 +6564,7 @@ public string EcmPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
 
 ---
 
@@ -6576,7 +6576,7 @@ public string EsRateInPes { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}.
 
 ---
 
@@ -6588,7 +6588,7 @@ public string EtvPlatformPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}.
 
 ---
 
@@ -6600,7 +6600,7 @@ public string EtvSignalPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}.
 
 ---
 
@@ -6612,7 +6612,7 @@ public double FragmentTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}.
 
 ---
 
@@ -6624,7 +6624,7 @@ public string Klv { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}.
 
 ---
 
@@ -6636,7 +6636,7 @@ public string KlvDataPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}.
 
 ---
 
@@ -6648,7 +6648,7 @@ public string NielsenId3Behavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
 
 ---
 
@@ -6660,7 +6660,7 @@ public double NullPacketBitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}.
 
 ---
 
@@ -6672,7 +6672,7 @@ public double PatInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
 
 ---
 
@@ -6684,7 +6684,7 @@ public string PcrControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
 
 ---
 
@@ -6696,7 +6696,7 @@ public double PcrPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
 
 ---
 
@@ -6708,7 +6708,7 @@ public string PcrPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
 
 ---
 
@@ -6720,7 +6720,7 @@ public double PmtInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
 
 ---
 
@@ -6732,7 +6732,7 @@ public string PmtPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
 
 ---
 
@@ -6744,7 +6744,7 @@ public double ProgramNum { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
 
 ---
 
@@ -6756,7 +6756,7 @@ public string RateMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}.
 
 ---
 
@@ -6768,7 +6768,7 @@ public string Scte27Pids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}.
 
 ---
 
@@ -6780,7 +6780,7 @@ public string Scte35Control { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}.
 
 ---
 
@@ -6792,7 +6792,7 @@ public string Scte35Pid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
 
 ---
 
@@ -6804,7 +6804,7 @@ public string SegmentationMarkers { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}.
 
 ---
 
@@ -6816,7 +6816,7 @@ public string SegmentationStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}.
 
 ---
 
@@ -6828,7 +6828,7 @@ public double SegmentationTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}.
 
 ---
 
@@ -6840,7 +6840,7 @@ public string TimedMetadataBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
 
 ---
 
@@ -6852,7 +6852,7 @@ public string TimedMetadataPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
 
 ---
 
@@ -6864,7 +6864,7 @@ public double TransportStreamId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
 
 ---
 
@@ -6876,7 +6876,7 @@ public string VideoPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
 
 ---
 
@@ -6898,9 +6898,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkId">NetworkId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkName">NetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkId">NetworkId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkName">NetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
 
 ---
 
@@ -6912,7 +6912,7 @@ public double NetworkId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}.
 
 ---
 
@@ -6924,7 +6924,7 @@ public string NetworkName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}.
 
 ---
 
@@ -6936,7 +6936,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -6959,10 +6959,10 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.outputSdt">OutputSdt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.outputSdt">OutputSdt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}. |
 
 ---
 
@@ -6974,7 +6974,7 @@ public string OutputSdt { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}.
 
 ---
 
@@ -6986,7 +6986,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -6998,7 +6998,7 @@ public string ServiceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}.
 
 ---
 
@@ -7010,7 +7010,7 @@ public string ServiceProviderName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}.
 
 ---
 
@@ -7030,7 +7030,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
 
 ---
 
@@ -7042,7 +7042,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -7075,7 +7075,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCapture
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
 
 ---
 
@@ -7087,7 +7087,7 @@ public string NameModifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
 
 ---
 
@@ -7111,9 +7111,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.hlsSettings">HlsSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings</a></code> | hls_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.h265PackagingType">H265PackagingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.segmentModifier">SegmentModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.h265PackagingType">H265PackagingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings.property.segmentModifier">SegmentModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}. |
 
 ---
 
@@ -7127,7 +7127,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 hls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_settings MedialiveChannel#hls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_settings MedialiveChannel#hls_settings}
 
 ---
 
@@ -7139,7 +7139,7 @@ public string H265PackagingType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}.
 
 ---
 
@@ -7151,7 +7151,7 @@ public string NameModifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
 
 ---
 
@@ -7163,7 +7163,7 @@ public string SegmentModifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}.
 
 ---
 
@@ -7203,7 +7203,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 audio_only_hls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_only_hls_settings MedialiveChannel#audio_only_hls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_only_hls_settings MedialiveChannel#audio_only_hls_settings}
 
 ---
 
@@ -7217,7 +7217,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 fmp4_hls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fmp4_hls_settings MedialiveChannel#fmp4_hls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fmp4_hls_settings MedialiveChannel#fmp4_hls_settings}
 
 ---
 
@@ -7231,7 +7231,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 frame_capture_hls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_hls_settings MedialiveChannel#frame_capture_hls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_hls_settings MedialiveChannel#frame_capture_hls_settings}
 
 ---
 
@@ -7245,7 +7245,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 standard_hls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#standard_hls_settings MedialiveChannel#standard_hls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#standard_hls_settings MedialiveChannel#standard_hls_settings}
 
 ---
 
@@ -7268,10 +7268,10 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.audioGroupId">AudioGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.audioGroupId">AudioGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.audioOnlyImage">AudioOnlyImage</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage</a></code> | audio_only_image block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.audioTrackType">AudioTrackType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.segmentType">SegmentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.audioTrackType">AudioTrackType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings.property.segmentType">SegmentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}. |
 
 ---
 
@@ -7283,7 +7283,7 @@ public string AudioGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}.
 
 ---
 
@@ -7297,7 +7297,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 audio_only_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_only_image MedialiveChannel#audio_only_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_only_image MedialiveChannel#audio_only_image}
 
 ---
 
@@ -7309,7 +7309,7 @@ public string AudioTrackType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}.
 
 ---
 
@@ -7321,7 +7321,7 @@ public string SegmentType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}.
 
 ---
 
@@ -7343,9 +7343,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.uri">Uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.passwordParam">PasswordParam</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}. |
 
 ---
 
@@ -7357,7 +7357,7 @@ public string Uri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}.
 
 ---
 
@@ -7369,7 +7369,7 @@ public string PasswordParam { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
 
 ---
 
@@ -7381,7 +7381,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
 
 ---
 
@@ -7403,9 +7403,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.audioRenditionSets">AudioRenditionSets</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.audioRenditionSets">AudioRenditionSets</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
 
 ---
 
@@ -7417,7 +7417,7 @@ public string AudioRenditionSets { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}.
 
 ---
 
@@ -7429,7 +7429,7 @@ public string NielsenId3Behavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
 
 ---
 
@@ -7441,7 +7441,7 @@ public string TimedMetadataBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
 
 ---
 
@@ -7476,7 +7476,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings.property.m3U8Settings">M3U8Settings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings</a></code> | m3u8_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings.property.audioRenditionSets">AudioRenditionSets</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings.property.audioRenditionSets">AudioRenditionSets</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}. |
 
 ---
 
@@ -7490,7 +7490,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutput
 
 m3u8_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#m3u8_settings MedialiveChannel#m3u8_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#m3u8_settings MedialiveChannel#m3u8_settings}
 
 ---
 
@@ -7502,7 +7502,7 @@ public string AudioRenditionSets { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}.
 
 ---
 
@@ -7538,23 +7538,23 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.scte35Behavior">Scte35Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.scte35Behavior">Scte35Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
 
 ---
 
@@ -7566,7 +7566,7 @@ public double AudioFramesPerPes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
 
 ---
 
@@ -7578,7 +7578,7 @@ public string AudioPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
 
 ---
 
@@ -7590,7 +7590,7 @@ public string EcmPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
 
 ---
 
@@ -7602,7 +7602,7 @@ public string NielsenId3Behavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
 
 ---
 
@@ -7614,7 +7614,7 @@ public double PatInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
 
 ---
 
@@ -7626,7 +7626,7 @@ public string PcrControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
 
 ---
 
@@ -7638,7 +7638,7 @@ public double PcrPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
 
 ---
 
@@ -7650,7 +7650,7 @@ public string PcrPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
 
 ---
 
@@ -7662,7 +7662,7 @@ public double PmtInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
 
 ---
 
@@ -7674,7 +7674,7 @@ public string PmtPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
 
 ---
 
@@ -7686,7 +7686,7 @@ public double ProgramNum { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
 
 ---
 
@@ -7698,7 +7698,7 @@ public string Scte35Behavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}.
 
 ---
 
@@ -7710,7 +7710,7 @@ public string Scte35Pid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
 
 ---
 
@@ -7722,7 +7722,7 @@ public string TimedMetadataBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
 
 ---
 
@@ -7734,7 +7734,7 @@ public string TimedMetadataPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
 
 ---
 
@@ -7746,7 +7746,7 @@ public double TransportStreamId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
 
 ---
 
@@ -7758,7 +7758,7 @@ public string VideoPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
 
 ---
 
@@ -7792,8 +7792,8 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings.property.h265PackagingType">H265PackagingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings.property.h265PackagingType">H265PackagingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings.property.nameModifier">NameModifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}. |
 
 ---
 
@@ -7805,7 +7805,7 @@ public string H265PackagingType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}.
 
 ---
 
@@ -7817,7 +7817,7 @@ public string NameModifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}.
 
 ---
 
@@ -7851,7 +7851,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplex
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -7871,7 +7871,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -7883,7 +7883,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -7907,9 +7907,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSe
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certificateMode">CertificateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.certificateMode">CertificateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.connectionRetryInterval">ConnectionRetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings.property.numRetries">NumRetries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}. |
 
 ---
 
@@ -7923,7 +7923,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutpu
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -7935,7 +7935,7 @@ public string CertificateMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
 
 ---
 
@@ -7947,7 +7947,7 @@ public double ConnectionRetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 
 ---
 
@@ -7959,7 +7959,7 @@ public double NumRetries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}.
 
 ---
 
@@ -7979,7 +7979,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -7991,7 +7991,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -8016,7 +8016,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.property.containerSettings">ContainerSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings</a></code> | container_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.property.bufferMsec">BufferMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.property.bufferMsec">BufferMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings.property.fecOutputSettings">FecOutputSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings</a></code> | fec_output_settings block. |
 
 ---
@@ -8031,7 +8031,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 container_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
 
 ---
 
@@ -8045,7 +8045,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 
 ---
 
@@ -8057,7 +8057,7 @@ public double BufferMsec { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}.
 
 ---
 
@@ -8071,7 +8071,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 fec_output_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fec_output_settings MedialiveChannel#fec_output_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fec_output_settings MedialiveChannel#fec_output_settings}
 
 ---
 
@@ -8105,7 +8105,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 m2ts_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
 
 ---
 
@@ -8171,53 +8171,53 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.absentInputAudioBehavior">AbsentInputAudioBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.arib">Arib</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPid">AribCaptionsPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPidControl">AribCaptionsPidControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioBufferModel">AudioBufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioStreamType">AudioStreamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.bufferModel">BufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ccDescriptor">CcDescriptor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.absentInputAudioBehavior">AbsentInputAudioBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.arib">Arib</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPid">AribCaptionsPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.aribCaptionsPidControl">AribCaptionsPidControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioBufferModel">AudioBufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioFramesPerPes">AudioFramesPerPes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioPids">AudioPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.audioStreamType">AudioStreamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.bufferModel">BufferModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ccDescriptor">CcDescriptor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbNitSettings">DvbNitSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings</a></code> | dvb_nit_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbSdtSettings">DvbSdtSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings</a></code> | dvb_sdt_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbSubPids">DvbSubPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbSubPids">DvbSubPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbTdtSettings">DvbTdtSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings">MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings</a></code> | dvb_tdt_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbTeletextPid">DvbTeletextPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebif">Ebif</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpAudioInterval">EbpAudioInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpLookaheadMs">EbpLookaheadMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpPlacement">EbpPlacement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.esRateInPes">EsRateInPes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.etvPlatformPid">EtvPlatformPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.etvSignalPid">EtvSignalPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.fragmentTime">FragmentTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.klv">Klv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.klvDataPids">KlvDataPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.nullPacketBitrate">NullPacketBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.rateMode">RateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte27Pids">Scte27Pids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte35Control">Scte35Control</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationMarkers">SegmentationMarkers</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationStyle">SegmentationStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationTime">SegmentationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.dvbTeletextPid">DvbTeletextPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebif">Ebif</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpAudioInterval">EbpAudioInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpLookaheadMs">EbpLookaheadMs</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ebpPlacement">EbpPlacement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.ecmPid">EcmPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.esRateInPes">EsRateInPes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.etvPlatformPid">EtvPlatformPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.etvSignalPid">EtvSignalPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.fragmentTime">FragmentTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.klv">Klv</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.klvDataPids">KlvDataPids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.nielsenId3Behavior">NielsenId3Behavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.nullPacketBitrate">NullPacketBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.patInterval">PatInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrControl">PcrControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrPeriod">PcrPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pcrPid">PcrPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pmtInterval">PmtInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.pmtPid">PmtPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.programNum">ProgramNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.rateMode">RateMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte27Pids">Scte27Pids</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte35Control">Scte35Control</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.scte35Pid">Scte35Pid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationMarkers">SegmentationMarkers</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationStyle">SegmentationStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.segmentationTime">SegmentationTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataBehavior">TimedMetadataBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.timedMetadataPid">TimedMetadataPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings.property.videoPid">VideoPid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}. |
 
 ---
 
@@ -8229,7 +8229,7 @@ public string AbsentInputAudioBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}.
 
 ---
 
@@ -8241,7 +8241,7 @@ public string Arib { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}.
 
 ---
 
@@ -8253,7 +8253,7 @@ public string AribCaptionsPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}.
 
 ---
 
@@ -8265,7 +8265,7 @@ public string AribCaptionsPidControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}.
 
 ---
 
@@ -8277,7 +8277,7 @@ public string AudioBufferModel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}.
 
 ---
 
@@ -8289,7 +8289,7 @@ public double AudioFramesPerPes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}.
 
 ---
 
@@ -8301,7 +8301,7 @@ public string AudioPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}.
 
 ---
 
@@ -8313,7 +8313,7 @@ public string AudioStreamType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}.
 
 ---
 
@@ -8325,7 +8325,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -8337,7 +8337,7 @@ public string BufferModel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}.
 
 ---
 
@@ -8349,7 +8349,7 @@ public string CcDescriptor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}.
 
 ---
 
@@ -8363,7 +8363,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 dvb_nit_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
 
 ---
 
@@ -8377,7 +8377,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 dvb_sdt_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
 
 ---
 
@@ -8389,7 +8389,7 @@ public string DvbSubPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}.
 
 ---
 
@@ -8403,7 +8403,7 @@ public MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutput
 
 dvb_tdt_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
 
 ---
 
@@ -8415,7 +8415,7 @@ public string DvbTeletextPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}.
 
 ---
 
@@ -8427,7 +8427,7 @@ public string Ebif { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}.
 
 ---
 
@@ -8439,7 +8439,7 @@ public string EbpAudioInterval { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}.
 
 ---
 
@@ -8451,7 +8451,7 @@ public double EbpLookaheadMs { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}.
 
 ---
 
@@ -8463,7 +8463,7 @@ public string EbpPlacement { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}.
 
 ---
 
@@ -8475,7 +8475,7 @@ public string EcmPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}.
 
 ---
 
@@ -8487,7 +8487,7 @@ public string EsRateInPes { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}.
 
 ---
 
@@ -8499,7 +8499,7 @@ public string EtvPlatformPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}.
 
 ---
 
@@ -8511,7 +8511,7 @@ public string EtvSignalPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}.
 
 ---
 
@@ -8523,7 +8523,7 @@ public double FragmentTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}.
 
 ---
 
@@ -8535,7 +8535,7 @@ public string Klv { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}.
 
 ---
 
@@ -8547,7 +8547,7 @@ public string KlvDataPids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}.
 
 ---
 
@@ -8559,7 +8559,7 @@ public string NielsenId3Behavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}.
 
 ---
 
@@ -8571,7 +8571,7 @@ public double NullPacketBitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}.
 
 ---
 
@@ -8583,7 +8583,7 @@ public double PatInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}.
 
 ---
 
@@ -8595,7 +8595,7 @@ public string PcrControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}.
 
 ---
 
@@ -8607,7 +8607,7 @@ public double PcrPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}.
 
 ---
 
@@ -8619,7 +8619,7 @@ public string PcrPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}.
 
 ---
 
@@ -8631,7 +8631,7 @@ public double PmtInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}.
 
 ---
 
@@ -8643,7 +8643,7 @@ public string PmtPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}.
 
 ---
 
@@ -8655,7 +8655,7 @@ public double ProgramNum { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}.
 
 ---
 
@@ -8667,7 +8667,7 @@ public string RateMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}.
 
 ---
 
@@ -8679,7 +8679,7 @@ public string Scte27Pids { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}.
 
 ---
 
@@ -8691,7 +8691,7 @@ public string Scte35Control { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}.
 
 ---
 
@@ -8703,7 +8703,7 @@ public string Scte35Pid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
 
 ---
 
@@ -8715,7 +8715,7 @@ public string SegmentationMarkers { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}.
 
 ---
 
@@ -8727,7 +8727,7 @@ public string SegmentationStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}.
 
 ---
 
@@ -8739,7 +8739,7 @@ public double SegmentationTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}.
 
 ---
 
@@ -8751,7 +8751,7 @@ public string TimedMetadataBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}.
 
 ---
 
@@ -8763,7 +8763,7 @@ public string TimedMetadataPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}.
 
 ---
 
@@ -8775,7 +8775,7 @@ public double TransportStreamId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}.
 
 ---
 
@@ -8787,7 +8787,7 @@ public string VideoPid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}.
 
 ---
 
@@ -8809,9 +8809,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkId">NetworkId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkName">NetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkId">NetworkId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.networkName">NetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
 
 ---
 
@@ -8823,7 +8823,7 @@ public double NetworkId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}.
 
 ---
 
@@ -8835,7 +8835,7 @@ public string NetworkName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}.
 
 ---
 
@@ -8847,7 +8847,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -8870,10 +8870,10 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.outputSdt">OutputSdt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.outputSdt">OutputSdt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}. |
 
 ---
 
@@ -8885,7 +8885,7 @@ public string OutputSdt { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}.
 
 ---
 
@@ -8897,7 +8897,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -8909,7 +8909,7 @@ public string ServiceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}.
 
 ---
 
@@ -8921,7 +8921,7 @@ public string ServiceProviderName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}.
 
 ---
 
@@ -8941,7 +8941,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings.property.repInterval">RepInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}. |
 
 ---
 
@@ -8953,7 +8953,7 @@ public double RepInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 
 ---
 
@@ -8973,7 +8973,7 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination.property.destinationRefId">DestinationRefId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}. |
 
 ---
 
@@ -8985,7 +8985,7 @@ public string DestinationRefId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 
 ---
 
@@ -9007,9 +9007,9 @@ new MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.columnDepth">ColumnDepth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.includeFec">IncludeFec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.rowLength">RowLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.columnDepth">ColumnDepth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.includeFec">IncludeFec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings.property.rowLength">RowLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}. |
 
 ---
 
@@ -9021,7 +9021,7 @@ public double ColumnDepth { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}.
 
 ---
 
@@ -9033,7 +9033,7 @@ public string IncludeFec { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}.
 
 ---
 
@@ -9045,7 +9045,7 @@ public double RowLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}.
 
 ---
 
@@ -9066,8 +9066,8 @@ new MedialiveChannelEncoderSettingsTimecodeConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source MedialiveChannel#source}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig.property.syncThreshold">SyncThreshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source MedialiveChannel#source}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig.property.syncThreshold">SyncThreshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}. |
 
 ---
 
@@ -9079,7 +9079,7 @@ public string Source { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source MedialiveChannel#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source MedialiveChannel#source}.
 
 ---
 
@@ -9091,7 +9091,7 @@ public double SyncThreshold { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}.
 
 ---
 
@@ -9117,13 +9117,13 @@ new MedialiveChannelEncoderSettingsVideoDescriptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.codecSettings">CodecSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings">MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings</a></code> | codec_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height MedialiveChannel#height}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.respondToAfd">RespondToAfd</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.scalingBehavior">ScalingBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.sharpness">Sharpness</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#width MedialiveChannel#width}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height MedialiveChannel#height}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.respondToAfd">RespondToAfd</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.scalingBehavior">ScalingBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.sharpness">Sharpness</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#width MedialiveChannel#width}. |
 
 ---
 
@@ -9135,7 +9135,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -9149,7 +9149,7 @@ public MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings CodecSettin
 
 codec_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
 
 ---
 
@@ -9161,7 +9161,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height MedialiveChannel#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height MedialiveChannel#height}.
 
 ---
 
@@ -9173,7 +9173,7 @@ public string RespondToAfd { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}.
 
 ---
 
@@ -9185,7 +9185,7 @@ public string ScalingBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}.
 
 ---
 
@@ -9197,7 +9197,7 @@ public double Sharpness { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}.
 
 ---
 
@@ -9209,7 +9209,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#width MedialiveChannel#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#width MedialiveChannel#width}.
 
 ---
 
@@ -9245,7 +9245,7 @@ public MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCapture
 
 frame_capture_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#frame_capture_settings MedialiveChannel#frame_capture_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#frame_capture_settings MedialiveChannel#frame_capture_settings}
 
 ---
 
@@ -9259,7 +9259,7 @@ public MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 
 h264_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#h264_settings MedialiveChannel#h264_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#h264_settings MedialiveChannel#h264_settings}
 
 ---
 
@@ -9280,8 +9280,8 @@ new MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings.property.captureInterval">CaptureInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings.property.captureIntervalUnits">CaptureIntervalUnits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings.property.captureInterval">CaptureInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings.property.captureIntervalUnits">CaptureIntervalUnits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}. |
 
 ---
 
@@ -9293,7 +9293,7 @@ public double CaptureInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}.
 
 ---
 
@@ -9305,7 +9305,7 @@ public string CaptureIntervalUnits { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}.
 
 ---
 
@@ -9364,46 +9364,46 @@ new MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.adaptiveQuantization">AdaptiveQuantization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.afdSignaling">AfdSignaling</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bufFillPct">BufFillPct</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bufSize">BufSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.colorMetadata">ColorMetadata</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.entropyEncoding">EntropyEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.adaptiveQuantization">AdaptiveQuantization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.afdSignaling">AfdSignaling</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bitrate">Bitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bufFillPct">BufFillPct</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.bufSize">BufSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.colorMetadata">ColorMetadata</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.entropyEncoding">EntropyEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.filterSettings">FilterSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings">MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings</a></code> | filter_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.fixedAfd">FixedAfd</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.flickerAq">FlickerAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.forceFieldPictures">ForceFieldPictures</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateControl">FramerateControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateDenominator">FramerateDenominator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateNumerator">FramerateNumerator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopBReference">GopBReference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopClosedCadence">GopClosedCadence</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopNumBFrames">GopNumBFrames</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopSize">GopSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopSizeUnits">GopSizeUnits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.level">Level</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#level MedialiveChannel#level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.lookAheadRateControl">LookAheadRateControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.maxBitrate">MaxBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.minIInterval">MinIInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.numRefFrames">NumRefFrames</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parControl">ParControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parDenominator">ParDenominator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parNumerator">ParNumerator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.profile">Profile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.qualityLevel">QualityLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.qvbrQualityLevel">QvbrQualityLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.rateControlMode">RateControlMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.scanType">ScanType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.sceneChangeDetect">SceneChangeDetect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.slices">Slices</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.softness">Softness</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.spatialAq">SpatialAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.subgopLength">SubgopLength</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.syntax">Syntax</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.temporalAq">TemporalAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.timecodeInsertion">TimecodeInsertion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.fixedAfd">FixedAfd</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.flickerAq">FlickerAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.forceFieldPictures">ForceFieldPictures</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateControl">FramerateControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateDenominator">FramerateDenominator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.framerateNumerator">FramerateNumerator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopBReference">GopBReference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopClosedCadence">GopClosedCadence</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopNumBFrames">GopNumBFrames</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopSize">GopSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.gopSizeUnits">GopSizeUnits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.level">Level</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#level MedialiveChannel#level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.lookAheadRateControl">LookAheadRateControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.maxBitrate">MaxBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.minIInterval">MinIInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.numRefFrames">NumRefFrames</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parControl">ParControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parDenominator">ParDenominator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.parNumerator">ParNumerator</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.profile">Profile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.qualityLevel">QualityLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.qvbrQualityLevel">QvbrQualityLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.rateControlMode">RateControlMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.scanType">ScanType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.sceneChangeDetect">SceneChangeDetect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.slices">Slices</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.softness">Softness</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.spatialAq">SpatialAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.subgopLength">SubgopLength</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.syntax">Syntax</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.temporalAq">TemporalAq</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings.property.timecodeInsertion">TimecodeInsertion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}. |
 
 ---
 
@@ -9415,7 +9415,7 @@ public string AdaptiveQuantization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}.
 
 ---
 
@@ -9427,7 +9427,7 @@ public string AfdSignaling { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}.
 
 ---
 
@@ -9439,7 +9439,7 @@ public double Bitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}.
 
 ---
 
@@ -9451,7 +9451,7 @@ public double BufFillPct { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}.
 
 ---
 
@@ -9463,7 +9463,7 @@ public double BufSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}.
 
 ---
 
@@ -9475,7 +9475,7 @@ public string ColorMetadata { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}.
 
 ---
 
@@ -9487,7 +9487,7 @@ public string EntropyEncoding { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}.
 
 ---
 
@@ -9501,7 +9501,7 @@ public MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 
 filter_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
 
 ---
 
@@ -9513,7 +9513,7 @@ public string FixedAfd { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}.
 
 ---
 
@@ -9525,7 +9525,7 @@ public string FlickerAq { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}.
 
 ---
 
@@ -9537,7 +9537,7 @@ public string ForceFieldPictures { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}.
 
 ---
 
@@ -9549,7 +9549,7 @@ public string FramerateControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}.
 
 ---
 
@@ -9561,7 +9561,7 @@ public double FramerateDenominator { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}.
 
 ---
 
@@ -9573,7 +9573,7 @@ public double FramerateNumerator { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}.
 
 ---
 
@@ -9585,7 +9585,7 @@ public string GopBReference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}.
 
 ---
 
@@ -9597,7 +9597,7 @@ public double GopClosedCadence { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}.
 
 ---
 
@@ -9609,7 +9609,7 @@ public double GopNumBFrames { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}.
 
 ---
 
@@ -9621,7 +9621,7 @@ public double GopSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}.
 
 ---
 
@@ -9633,7 +9633,7 @@ public string GopSizeUnits { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}.
 
 ---
 
@@ -9645,7 +9645,7 @@ public string Level { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#level MedialiveChannel#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#level MedialiveChannel#level}.
 
 ---
 
@@ -9657,7 +9657,7 @@ public string LookAheadRateControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}.
 
 ---
 
@@ -9669,7 +9669,7 @@ public double MaxBitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}.
 
 ---
 
@@ -9681,7 +9681,7 @@ public double MinIInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}.
 
 ---
 
@@ -9693,7 +9693,7 @@ public double NumRefFrames { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}.
 
 ---
 
@@ -9705,7 +9705,7 @@ public string ParControl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}.
 
 ---
 
@@ -9717,7 +9717,7 @@ public double ParDenominator { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}.
 
 ---
 
@@ -9729,7 +9729,7 @@ public double ParNumerator { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}.
 
 ---
 
@@ -9741,7 +9741,7 @@ public string Profile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}.
 
 ---
 
@@ -9753,7 +9753,7 @@ public string QualityLevel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}.
 
 ---
 
@@ -9765,7 +9765,7 @@ public double QvbrQualityLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}.
 
 ---
 
@@ -9777,7 +9777,7 @@ public string RateControlMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}.
 
 ---
 
@@ -9789,7 +9789,7 @@ public string ScanType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}.
 
 ---
 
@@ -9801,7 +9801,7 @@ public string SceneChangeDetect { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}.
 
 ---
 
@@ -9813,7 +9813,7 @@ public double Slices { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}.
 
 ---
 
@@ -9825,7 +9825,7 @@ public double Softness { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}.
 
 ---
 
@@ -9837,7 +9837,7 @@ public string SpatialAq { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}.
 
 ---
 
@@ -9849,7 +9849,7 @@ public string SubgopLength { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}.
 
 ---
 
@@ -9861,7 +9861,7 @@ public string Syntax { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}.
 
 ---
 
@@ -9873,7 +9873,7 @@ public string TemporalAq { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}.
 
 ---
 
@@ -9885,7 +9885,7 @@ public string TimecodeInsertion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}.
 
 ---
 
@@ -9919,7 +9919,7 @@ public MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 
 temporal_filter_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
 
 ---
 
@@ -9940,8 +9940,8 @@ new MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings.property.postFilterSharpening">PostFilterSharpening</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings.property.strength">Strength</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings.property.postFilterSharpening">PostFilterSharpening</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings.property.strength">Strength</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}. |
 
 ---
 
@@ -9953,7 +9953,7 @@ public string PostFilterSharpening { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}.
 
 ---
 
@@ -9965,7 +9965,7 @@ public string Strength { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}.
 
 ---
 
@@ -9988,8 +9988,8 @@ new MedialiveChannelInputAttachments {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.inputAttachmentName">InputAttachmentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.inputId">InputId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.inputAttachmentName">InputAttachmentName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.inputId">InputId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.automaticInputFailoverSettings">AutomaticInputFailoverSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings">MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings</a></code> | automatic_input_failover_settings block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments.property.inputSettings">InputSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings">MedialiveChannelInputAttachmentsInputSettings</a></code> | input_settings block. |
 
@@ -10003,7 +10003,7 @@ public string InputAttachmentName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}.
 
 ---
 
@@ -10015,7 +10015,7 @@ public string InputId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}.
 
 ---
 
@@ -10029,7 +10029,7 @@ public MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings AutomaticI
 
 automatic_input_failover_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#automatic_input_failover_settings MedialiveChannel#automatic_input_failover_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#automatic_input_failover_settings MedialiveChannel#automatic_input_failover_settings}
 
 ---
 
@@ -10043,7 +10043,7 @@ public MedialiveChannelInputAttachmentsInputSettings InputSettings { get; set; }
 
 input_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_settings MedialiveChannel#input_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_settings MedialiveChannel#input_settings}
 
 ---
 
@@ -10066,10 +10066,10 @@ new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.secondaryInputId">SecondaryInputId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.errorClearTimeMsec">ErrorClearTimeMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.secondaryInputId">SecondaryInputId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.errorClearTimeMsec">ErrorClearTimeMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.failoverCondition">FailoverCondition</a></code> | <code>object</code> | failover_condition block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.inputPreference">InputPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings.property.inputPreference">InputPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}. |
 
 ---
 
@@ -10081,7 +10081,7 @@ public string SecondaryInputId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}.
 
 ---
 
@@ -10093,7 +10093,7 @@ public double ErrorClearTimeMsec { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}.
 
 ---
 
@@ -10107,7 +10107,7 @@ public object FailoverCondition { get; set; }
 
 failover_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
 
 ---
 
@@ -10119,7 +10119,7 @@ public string InputPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}.
 
 ---
 
@@ -10153,7 +10153,7 @@ public MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCon
 
 failover_condition_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
 
 ---
 
@@ -10191,7 +10191,7 @@ public MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCon
 
 audio_silence_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
 
 ---
 
@@ -10205,7 +10205,7 @@ public MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCon
 
 input_loss_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
 
 ---
 
@@ -10219,7 +10219,7 @@ public MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCon
 
 video_black_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
 
 ---
 
@@ -10240,8 +10240,8 @@ new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings.property.audioSelectorName">AudioSelectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings.property.audioSilenceThresholdMsec">AudioSilenceThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings.property.audioSelectorName">AudioSelectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings.property.audioSilenceThresholdMsec">AudioSilenceThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}. |
 
 ---
 
@@ -10253,7 +10253,7 @@ public string AudioSelectorName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}.
 
 ---
 
@@ -10265,7 +10265,7 @@ public double AudioSilenceThresholdMsec { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}.
 
 ---
 
@@ -10285,7 +10285,7 @@ new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings.property.inputLossThresholdMsec">InputLossThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings.property.inputLossThresholdMsec">InputLossThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}. |
 
 ---
 
@@ -10297,7 +10297,7 @@ public double InputLossThresholdMsec { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}.
 
 ---
 
@@ -10318,8 +10318,8 @@ new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings.property.blackDetectThreshold">BlackDetectThreshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings.property.videoBlackThresholdMsec">VideoBlackThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings.property.blackDetectThreshold">BlackDetectThreshold</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings.property.videoBlackThresholdMsec">VideoBlackThresholdMsec</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}. |
 
 ---
 
@@ -10331,7 +10331,7 @@ public double BlackDetectThreshold { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}.
 
 ---
 
@@ -10343,7 +10343,7 @@ public double VideoBlackThresholdMsec { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}.
 
 ---
 
@@ -10375,14 +10375,14 @@ new MedialiveChannelInputAttachmentsInputSettings {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.audioSelector">AudioSelector</a></code> | <code>object</code> | audio_selector block. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.captionSelector">CaptionSelector</a></code> | <code>object</code> | caption_selector block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.deblockFilter">DeblockFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.denoiseFilter">DenoiseFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.filterStrength">FilterStrength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.inputFilter">InputFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.deblockFilter">DeblockFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.denoiseFilter">DenoiseFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.filterStrength">FilterStrength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.inputFilter">InputFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.networkInputSettings">NetworkInputSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings">MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings</a></code> | network_input_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.scte35Pid">Scte35Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.smpte2038DataPreference">Smpte2038DataPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.sourceEndBehavior">SourceEndBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.scte35Pid">Scte35Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.smpte2038DataPreference">Smpte2038DataPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.sourceEndBehavior">SourceEndBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings.property.videoSelector">VideoSelector</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector">MedialiveChannelInputAttachmentsInputSettingsVideoSelector</a></code> | video_selector block. |
 
 ---
@@ -10397,7 +10397,7 @@ public object AudioSelector { get; set; }
 
 audio_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
 
 ---
 
@@ -10411,7 +10411,7 @@ public object CaptionSelector { get; set; }
 
 caption_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
 
 ---
 
@@ -10423,7 +10423,7 @@ public string DeblockFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}.
 
 ---
 
@@ -10435,7 +10435,7 @@ public string DenoiseFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}.
 
 ---
 
@@ -10447,7 +10447,7 @@ public double FilterStrength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}.
 
 ---
 
@@ -10459,7 +10459,7 @@ public string InputFilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}.
 
 ---
 
@@ -10473,7 +10473,7 @@ public MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings Network
 
 network_input_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
 
 ---
 
@@ -10485,7 +10485,7 @@ public double Scte35Pid { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}.
 
 ---
 
@@ -10497,7 +10497,7 @@ public string Smpte2038DataPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}.
 
 ---
 
@@ -10509,7 +10509,7 @@ public string SourceEndBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}.
 
 ---
 
@@ -10523,7 +10523,7 @@ public MedialiveChannelInputAttachmentsInputSettingsVideoSelector VideoSelector 
 
 video_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
 
 ---
 
@@ -10544,7 +10544,7 @@ new MedialiveChannelInputAttachmentsInputSettingsAudioSelector {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector.property.selectorSettings">SelectorSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings">MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings</a></code> | selector_settings block. |
 
 ---
@@ -10557,7 +10557,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -10571,7 +10571,7 @@ public MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSetting
 
 selector_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
 
 ---
 
@@ -10611,7 +10611,7 @@ public MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSetting
 
 audio_hls_rendition_selection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
 
 ---
 
@@ -10625,7 +10625,7 @@ public MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSetting
 
 audio_language_selection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
 
 ---
 
@@ -10639,7 +10639,7 @@ public MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSetting
 
 audio_pid_selection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
 
 ---
 
@@ -10653,7 +10653,7 @@ public MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSetting
 
 audio_track_selection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
 
 ---
 
@@ -10674,8 +10674,8 @@ new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
 
 ---
 
@@ -10687,7 +10687,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}.
 
 ---
 
@@ -10699,7 +10699,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -10720,8 +10720,8 @@ new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection.property.languageSelectionPolicy">LanguageSelectionPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection.property.languageSelectionPolicy">LanguageSelectionPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}. |
 
 ---
 
@@ -10733,7 +10733,7 @@ public string LanguageCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
 
 ---
 
@@ -10745,7 +10745,7 @@ public string LanguageSelectionPolicy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}.
 
 ---
 
@@ -10765,7 +10765,7 @@ new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
 
 ---
 
@@ -10777,7 +10777,7 @@ public double Pid { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
 
 ---
 
@@ -10811,7 +10811,7 @@ public object Track { get; set; }
 
 track block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#track MedialiveChannel#track}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#track MedialiveChannel#track}
 
 ---
 
@@ -10831,7 +10831,7 @@ new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack.property.track">Track</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#track MedialiveChannel#track}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack.property.track">Track</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#track MedialiveChannel#track}. |
 
 ---
 
@@ -10843,7 +10843,7 @@ public double Track { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#track MedialiveChannel#track}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#track MedialiveChannel#track}.
 
 ---
 
@@ -10865,8 +10865,8 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.property.languageCode">LanguageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}. |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector.property.selectorSettings">SelectorSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings">MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings</a></code> | selector_settings block. |
 
 ---
@@ -10879,7 +10879,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 
 ---
 
@@ -10891,7 +10891,7 @@ public string LanguageCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}.
 
 ---
 
@@ -10905,7 +10905,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 selector_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
 
 ---
 
@@ -10949,7 +10949,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 ancillary_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
 
 ---
 
@@ -10963,7 +10963,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 dvb_tdt_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
 
 ---
 
@@ -10977,7 +10977,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 embedded_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
 
 ---
 
@@ -10991,7 +10991,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 scte20_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
 
 ---
 
@@ -11005,7 +11005,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 scte27_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
 
 ---
 
@@ -11019,7 +11019,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 teletext_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
 
 ---
 
@@ -11039,7 +11039,7 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings.property.sourceAncillaryChannelNumber">SourceAncillaryChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings.property.sourceAncillaryChannelNumber">SourceAncillaryChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}. |
 
 ---
 
@@ -11051,7 +11051,7 @@ public double SourceAncillaryChannelNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}.
 
 ---
 
@@ -11072,8 +11072,8 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings.property.ocrLanguage">OcrLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings.property.ocrLanguage">OcrLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
 
 ---
 
@@ -11085,7 +11085,7 @@ public string OcrLanguage { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}.
 
 ---
 
@@ -11097,7 +11097,7 @@ public double Pid { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
 
 ---
 
@@ -11120,10 +11120,10 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.convert608To708">Convert608To708</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.scte20Detection">Scte20Detection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.source608ChannelNumber">Source608ChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.source608TrackNumber">Source608TrackNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_track_number MedialiveChannel#source_608_track_number}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.convert608To708">Convert608To708</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.scte20Detection">Scte20Detection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.source608ChannelNumber">Source608ChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings.property.source608TrackNumber">Source608TrackNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_track_number MedialiveChannel#source_608_track_number}. |
 
 ---
 
@@ -11135,7 +11135,7 @@ public string Convert608To708 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}.
 
 ---
 
@@ -11147,7 +11147,7 @@ public string Scte20Detection { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}.
 
 ---
 
@@ -11159,7 +11159,7 @@ public double Source608ChannelNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}.
 
 ---
 
@@ -11171,7 +11171,7 @@ public double Source608TrackNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_track_number MedialiveChannel#source_608_track_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_track_number MedialiveChannel#source_608_track_number}.
 
 ---
 
@@ -11192,8 +11192,8 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings.property.convert608To708">Convert608To708</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings.property.source608ChannelNumber">Source608ChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings.property.convert608To708">Convert608To708</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings.property.source608ChannelNumber">Source608ChannelNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}. |
 
 ---
 
@@ -11205,7 +11205,7 @@ public string Convert608To708 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}.
 
 ---
 
@@ -11217,7 +11217,7 @@ public double Source608ChannelNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}.
 
 ---
 
@@ -11238,8 +11238,8 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings.property.ocrLanguage">OcrLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings.property.ocrLanguage">OcrLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings.property.pid">Pid</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}. |
 
 ---
 
@@ -11251,7 +11251,7 @@ public string OcrLanguage { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}.
 
 ---
 
@@ -11263,7 +11263,7 @@ public double Pid { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
 
 ---
 
@@ -11285,7 +11285,7 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings.property.outputRectangle">OutputRectangle</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle">MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle</a></code> | output_rectangle block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings.property.pageNumber">PageNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings.property.pageNumber">PageNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}. |
 
 ---
 
@@ -11299,7 +11299,7 @@ public MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetti
 
 output_rectangle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
 
 ---
 
@@ -11311,7 +11311,7 @@ public string PageNumber { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}.
 
 ---
 
@@ -11334,10 +11334,10 @@ new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height MedialiveChannel#height}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.leftOffset">LeftOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.topOffset">TopOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#width MedialiveChannel#width}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height MedialiveChannel#height}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.leftOffset">LeftOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.topOffset">TopOffset</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#width MedialiveChannel#width}. |
 
 ---
 
@@ -11349,7 +11349,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#height MedialiveChannel#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#height MedialiveChannel#height}.
 
 ---
 
@@ -11361,7 +11361,7 @@ public double LeftOffset { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}.
 
 ---
 
@@ -11373,7 +11373,7 @@ public double TopOffset { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}.
 
 ---
 
@@ -11385,7 +11385,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#width MedialiveChannel#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#width MedialiveChannel#width}.
 
 ---
 
@@ -11407,7 +11407,7 @@ new MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings.property.hlsInputSettings">HlsInputSettings</a></code> | <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings">MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings</a></code> | hls_input_settings block. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings.property.serverValidation">ServerValidation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings.property.serverValidation">ServerValidation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}. |
 
 ---
 
@@ -11421,7 +11421,7 @@ public MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInput
 
 hls_input_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
 
 ---
 
@@ -11433,7 +11433,7 @@ public string ServerValidation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}.
 
 ---
 
@@ -11457,11 +11457,11 @@ new MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.bandwidth">Bandwidth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.bufferSegments">BufferSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.retries">Retries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.retryInterval">RetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.scte35Source">Scte35Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.bandwidth">Bandwidth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.bufferSegments">BufferSegments</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.retries">Retries</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.retryInterval">RetryInterval</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings.property.scte35Source">Scte35Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}. |
 
 ---
 
@@ -11473,7 +11473,7 @@ public double Bandwidth { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}.
 
 ---
 
@@ -11485,7 +11485,7 @@ public double BufferSegments { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}.
 
 ---
 
@@ -11497,7 +11497,7 @@ public double Retries { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}.
 
 ---
 
@@ -11509,7 +11509,7 @@ public double RetryInterval { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}.
 
 ---
 
@@ -11521,7 +11521,7 @@ public string Scte35Source { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}.
 
 ---
 
@@ -11542,8 +11542,8 @@ new MedialiveChannelInputAttachmentsInputSettingsVideoSelector {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector.property.colorSpace">ColorSpace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector.property.colorSpaceUsage">ColorSpaceUsage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector.property.colorSpace">ColorSpace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector.property.colorSpaceUsage">ColorSpaceUsage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}. |
 
 ---
 
@@ -11555,7 +11555,7 @@ public string ColorSpace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}.
 
 ---
 
@@ -11567,7 +11567,7 @@ public string ColorSpaceUsage { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}.
 
 ---
 
@@ -11589,9 +11589,9 @@ new MedialiveChannelInputSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.codec">Codec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.inputResolution">InputResolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.maximumBitrate">MaximumBitrate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.codec">Codec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.inputResolution">InputResolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification.property.maximumBitrate">MaximumBitrate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}. |
 
 ---
 
@@ -11603,7 +11603,7 @@ public string Codec { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}.
 
 ---
 
@@ -11615,7 +11615,7 @@ public string InputResolution { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}.
 
 ---
 
@@ -11627,7 +11627,7 @@ public string MaximumBitrate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}.
 
 ---
 
@@ -11648,8 +11648,8 @@ new MedialiveChannelMaintenance {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance.property.maintenanceDay">MaintenanceDay</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance.property.maintenanceStartTime">MaintenanceStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance.property.maintenanceDay">MaintenanceDay</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance.property.maintenanceStartTime">MaintenanceStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}. |
 
 ---
 
@@ -11661,7 +11661,7 @@ public string MaintenanceDay { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}.
 
 ---
 
@@ -11673,7 +11673,7 @@ public string MaintenanceStartTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}.
 
 ---
 
@@ -11695,9 +11695,9 @@ new MedialiveChannelTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#create MedialiveChannel#create}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#update MedialiveChannel#update}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#create MedialiveChannel#create}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#update MedialiveChannel#update}. |
 
 ---
 
@@ -11709,7 +11709,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#create MedialiveChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#create MedialiveChannel#create}.
 
 ---
 
@@ -11721,7 +11721,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}.
 
 ---
 
@@ -11733,7 +11733,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#update MedialiveChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#update MedialiveChannel#update}.
 
 ---
 
@@ -11755,9 +11755,9 @@ new MedialiveChannelVpc {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.publicAddressAllocationIds">PublicAddressAllocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.publicAddressAllocationIds">PublicAddressAllocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}. |
 
 ---
 
@@ -11769,7 +11769,7 @@ public string[] PublicAddressAllocationIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}.
 
 ---
 
@@ -11781,7 +11781,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}.
 
 ---
 
@@ -11793,7 +11793,7 @@ public string[] SecurityGroupIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}.
 
 ---
 

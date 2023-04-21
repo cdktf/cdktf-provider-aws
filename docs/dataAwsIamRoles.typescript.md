@@ -1,6 +1,6 @@
 # `data_aws_iam_roles`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_roles`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles).
+Refer to the Terraform Registory for docs: [`data_aws_iam_roles`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles).
 
 # `dataAwsIamRoles` Submodule <a name="`dataAwsIamRoles` Submodule" id="@cdktf/provider-aws.dataAwsIamRoles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_roles`](https://regist
 
 ### DataAwsIamRoles <a name="DataAwsIamRoles" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles aws_iam_roles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles aws_iam_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.Initializer"></a>
 
@@ -618,9 +618,9 @@ const dataAwsIamRolesConfig: dataAwsIamRoles.DataAwsIamRolesConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#id DataAwsIamRoles#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#name_regex DataAwsIamRoles#name_regex}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.pathPrefix">pathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#path_prefix DataAwsIamRoles#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#id DataAwsIamRoles#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#name_regex DataAwsIamRoles#name_regex}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.property.pathPrefix">pathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#path_prefix DataAwsIamRoles#path_prefix}. |
 
 ---
 
@@ -702,7 +702,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#id DataAwsIamRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#id DataAwsIamRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -717,7 +717,7 @@ public readonly nameRegex: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#name_regex DataAwsIamRoles#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#name_regex DataAwsIamRoles#name_regex}.
 
 ---
 
@@ -729,7 +729,7 @@ public readonly pathPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_roles#path_prefix DataAwsIamRoles#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_roles#path_prefix DataAwsIamRoles#path_prefix}.
 
 ---
 

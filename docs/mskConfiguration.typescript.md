@@ -1,6 +1,6 @@
 # `aws_msk_configuration`
 
-Refer to the Terraform Registory for docs: [`aws_msk_configuration`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration).
+Refer to the Terraform Registory for docs: [`aws_msk_configuration`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration).
 
 # `mskConfiguration` Submodule <a name="`mskConfiguration` Submodule" id="@cdktf/provider-aws.mskConfiguration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_msk_configuration`](https://reg
 
 ### MskConfiguration <a name="MskConfiguration" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration aws_msk_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration aws_msk_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.Initializer"></a>
 
@@ -684,11 +684,11 @@ const mskConfigurationConfig: mskConfiguration.MskConfigurationConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#name MskConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.serverProperties">serverProperties</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#description MskConfiguration#description}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#id MskConfiguration#id}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.kafkaVersions">kafkaVersions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#name MskConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.serverProperties">serverProperties</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#description MskConfiguration#description}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#id MskConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.kafkaVersions">kafkaVersions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}. |
 
 ---
 
@@ -770,7 +770,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#name MskConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#name MskConfiguration#name}.
 
 ---
 
@@ -782,7 +782,7 @@ public readonly serverProperties: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}.
 
 ---
 
@@ -794,7 +794,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#description MskConfiguration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#description MskConfiguration#description}.
 
 ---
 
@@ -806,7 +806,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#id MskConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#id MskConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -821,7 +821,7 @@ public readonly kafkaVersions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}.
 
 ---
 

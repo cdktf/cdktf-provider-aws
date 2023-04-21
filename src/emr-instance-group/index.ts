@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,66 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#autoscaling_policy EmrInstanceGroup#autoscaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#autoscaling_policy EmrInstanceGroup#autoscaling_policy}
   */
   readonly autoscalingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#bid_price EmrInstanceGroup#bid_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#bid_price EmrInstanceGroup#bid_price}
   */
   readonly bidPrice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#cluster_id EmrInstanceGroup#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#cluster_id EmrInstanceGroup#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#configurations_json EmrInstanceGroup#configurations_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#configurations_json EmrInstanceGroup#configurations_json}
   */
   readonly configurationsJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#ebs_optimized EmrInstanceGroup#ebs_optimized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#ebs_optimized EmrInstanceGroup#ebs_optimized}
   */
   readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#id EmrInstanceGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#id EmrInstanceGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#instance_count EmrInstanceGroup#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#instance_count EmrInstanceGroup#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#instance_type EmrInstanceGroup#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#instance_type EmrInstanceGroup#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#name EmrInstanceGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#name EmrInstanceGroup#name}
   */
   readonly name?: string;
   /**
   * ebs_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
   */
   readonly ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable;
 }
 export interface EmrInstanceGroupEbsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#iops EmrInstanceGroup#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#iops EmrInstanceGroup#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#size EmrInstanceGroup#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#size EmrInstanceGroup#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#type EmrInstanceGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#type EmrInstanceGroup#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#volumes_per_instance EmrInstanceGroup#volumes_per_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#volumes_per_instance EmrInstanceGroup#volumes_per_instance}
   */
   readonly volumesPerInstance?: number;
 }
@@ -227,7 +227,7 @@ export class EmrInstanceGroupEbsConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group aws_emr_instance_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group aws_emr_instance_group}
 */
 export class EmrInstanceGroup extends cdktf.TerraformResource {
 
@@ -241,7 +241,7 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -252,7 +252,7 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emr_instance_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

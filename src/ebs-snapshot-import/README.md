@@ -1,3 +1,3 @@
 # `aws_ebs_snapshot_import`
 
-Refer to the Terraform Registory for docs: [`aws_ebs_snapshot_import`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ebs_snapshot_import).
+Refer to the Terraform Registory for docs: [`aws_ebs_snapshot_import`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ebs_snapshot_import).

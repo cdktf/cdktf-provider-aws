@@ -1,6 +1,9 @@
 // generated from terraform resource schema
 
-import { Wafv2WebAclCustomResponseBody, 
+import { Wafv2WebAclCaptchaConfig, 
+wafv2WebAclCaptchaConfigToTerraform, 
+Wafv2WebAclCaptchaConfigOutputReference, 
+Wafv2WebAclCustomResponseBody, 
 wafv2WebAclCustomResponseBodyToTerraform, 
 Wafv2WebAclCustomResponseBodyList, 
 Wafv2WebAclDefaultAction, 
@@ -17,60 +20,66 @@ import { Construct } from 'constructs';
 import * as cdktf from 'cdktf';
 export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * captcha_config block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+  */
+  readonly captchaConfig?: Wafv2WebAclCaptchaConfig;
+  /**
   * custom_response_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
   */
   readonly customResponseBody?: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable;
   /**
   * default_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
   */
   readonly defaultAction: Wafv2WebAclDefaultAction;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
   */
   readonly rule?: Wafv2WebAclRule[] | cdktf.IResolvable;
   /**
   * visibility_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclVisibilityConfig;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
 */
 export class Wafv2WebAcl extends cdktf.TerraformResource {
 
@@ -84,7 +93,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +104,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -112,6 +121,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
     this._scope = config.scope;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._captchaConfig.internalValue = config.captchaConfig;
     this._customResponseBody.internalValue = config.customResponseBody;
     this._defaultAction.internalValue = config.defaultAction;
     this._rule.internalValue = config.rule;
@@ -227,6 +237,22 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // captcha_config - computed: false, optional: true, required: false
+  private _captchaConfig = new Wafv2WebAclCaptchaConfigOutputReference(this, "captcha_config");
+  public get captchaConfig() {
+    return this._captchaConfig;
+  }
+  public putCaptchaConfig(value: Wafv2WebAclCaptchaConfig) {
+    this._captchaConfig.internalValue = value;
+  }
+  public resetCaptchaConfig() {
+    this._captchaConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get captchaConfigInput() {
+    return this._captchaConfig.internalValue;
+  }
+
   // custom_response_body - computed: false, optional: true, required: false
   private _customResponseBody = new Wafv2WebAclCustomResponseBodyList(this, "custom_response_body", true);
   public get customResponseBody() {
@@ -297,6 +323,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      captcha_config: wafv2WebAclCaptchaConfigToTerraform(this._captchaConfig.internalValue),
       custom_response_body: cdktf.listMapper(wafv2WebAclCustomResponseBodyToTerraform, true)(this._customResponseBody.internalValue),
       default_action: wafv2WebAclDefaultActionToTerraform(this._defaultAction.internalValue),
       rule: cdktf.listMapper(wafv2WebAclRuleToTerraform, true)(this._rule.internalValue),

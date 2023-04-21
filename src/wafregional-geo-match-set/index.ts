@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalGeoMatchSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set#id WafregionalGeoMatchSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set#id WafregionalGeoMatchSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set#name WafregionalGeoMatchSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set#name WafregionalGeoMatchSet#name}
   */
   readonly name: string;
   /**
   * geo_match_constraint block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set#geo_match_constraint WafregionalGeoMatchSet#geo_match_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set#geo_match_constraint WafregionalGeoMatchSet#geo_match_constraint}
   */
   readonly geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable;
 }
 export interface WafregionalGeoMatchSetGeoMatchConstraint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set#type WafregionalGeoMatchSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set#type WafregionalGeoMatchSet#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set#value WafregionalGeoMatchSet#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set#value WafregionalGeoMatchSet#value}
   */
   readonly value: string;
 }
@@ -145,7 +145,7 @@ export class WafregionalGeoMatchSetGeoMatchConstraintList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set aws_wafregional_geo_match_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set aws_wafregional_geo_match_set}
 */
 export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
 
@@ -159,7 +159,7 @@ export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_geo_match_set aws_wafregional_geo_match_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_geo_match_set aws_wafregional_geo_match_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -170,7 +170,7 @@ export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_geo_match_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

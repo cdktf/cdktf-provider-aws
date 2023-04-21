@@ -1,6 +1,6 @@
 # `data_aws_subnet_ids`
 
-Refer to the Terraform Registory for docs: [`data_aws_subnet_ids`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids).
+Refer to the Terraform Registory for docs: [`data_aws_subnet_ids`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids).
 
 # `dataAwsSubnetIds` Submodule <a name="`dataAwsSubnetIds` Submodule" id="@cdktf/provider-aws.dataAwsSubnetIds"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_subnet_ids`](https://regis
 
 ### DataAwsSubnetIds <a name="DataAwsSubnetIds" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids aws_subnet_ids}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids aws_subnet_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.NewDataAwsSubnetIds(scope Construct, id *string, config DataAwsSubnetIdsConfig) DataAwsSubnetIds
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.DataAwsSubnetIds_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.DataAwsSubnetIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawssubnetids.DataAwsSubnetIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.DataAwsSubnetIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 &dataawssubnetids.DataAwsSubnetIdsConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts,
 }
 ```
 
@@ -697,10 +697,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#vpc_id DataAwsSubnetIds#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#vpc_id DataAwsSubnetIds#vpc_id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#id DataAwsSubnetIds#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#tags DataAwsSubnetIds#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#id DataAwsSubnetIds#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#tags DataAwsSubnetIds#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -783,7 +783,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#vpc_id DataAwsSubnetIds#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#vpc_id DataAwsSubnetIds#vpc_id}.
 
 ---
 
@@ -797,7 +797,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#filter DataAwsSubnetIds#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#filter DataAwsSubnetIds#filter}
 
 ---
 
@@ -809,7 +809,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#id DataAwsSubnetIds#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#id DataAwsSubnetIds#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#tags DataAwsSubnetIds#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#tags DataAwsSubnetIds#tags}.
 
 ---
 
@@ -838,7 +838,7 @@ Timeouts DataAwsSubnetIdsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#timeouts DataAwsSubnetIds#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#timeouts DataAwsSubnetIds#timeouts}
 
 ---
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 &dataawssubnetids.DataAwsSubnetIdsFilter {
 	Name: *string,
@@ -859,8 +859,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#name DataAwsSubnetIds#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#values DataAwsSubnetIds#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#name DataAwsSubnetIds#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#values DataAwsSubnetIds#values}. |
 
 ---
 
@@ -872,7 +872,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#name DataAwsSubnetIds#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#name DataAwsSubnetIds#name}.
 
 ---
 
@@ -884,7 +884,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#values DataAwsSubnetIds#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#values DataAwsSubnetIds#values}.
 
 ---
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 &dataawssubnetids.DataAwsSubnetIdsTimeouts {
 	Read: *string,
@@ -904,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#read DataAwsSubnetIds#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#read DataAwsSubnetIds#read}. |
 
 ---
 
@@ -916,7 +916,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet_ids#read DataAwsSubnetIds#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet_ids#read DataAwsSubnetIds#read}.
 
 ---
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.NewDataAwsSubnetIdsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSubnetIdsFilterList
 ```
@@ -1070,7 +1070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.NewDataAwsSubnetIdsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSubnetIdsFilterOutputReference
 ```
@@ -1381,7 +1381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnetids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssubnetids"
 
 dataawssubnetids.NewDataAwsSubnetIdsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsSubnetIdsTimeoutsOutputReference
 ```

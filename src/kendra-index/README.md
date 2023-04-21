@@ -1,3 +1,3 @@
 # `aws_kendra_index`
 
-Refer to the Terraform Registory for docs: [`aws_kendra_index`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_index).
+Refer to the Terraform Registory for docs: [`aws_kendra_index`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kendra_index).

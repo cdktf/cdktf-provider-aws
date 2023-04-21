@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,70 +8,139 @@ import * as cdktf from 'cdktf';
 
 export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}
   */
   readonly assumeRolePolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#description IamRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#description IamRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}
   */
   readonly forceDetachPolicies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#id IamRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#id IamRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}
   */
   readonly managedPolicyArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}
   */
   readonly maxSessionDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#name IamRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#name IamRole#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#path IamRole#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#path IamRole#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}
   */
   readonly permissionsBoundary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#tags IamRole#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#tags IamRole#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#tags_all IamRole#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#tags_all IamRole#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * inline_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
   */
   readonly inlinePolicy?: IamRoleInlinePolicy[] | cdktf.IResolvable;
 }
+export interface IamRoleRoleLastUsed {
+}
+
+export function iamRoleRoleLastUsedToTerraform(struct?: IamRoleRoleLastUsed): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class IamRoleRoleLastUsedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IamRoleRoleLastUsed | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IamRoleRoleLastUsed | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // last_used_date - computed: true, optional: false, required: false
+  public get lastUsedDate() {
+    return this.getStringAttribute('last_used_date');
+  }
+
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+}
+
+export class IamRoleRoleLastUsedList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IamRoleRoleLastUsedOutputReference {
+    return new IamRoleRoleLastUsedOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IamRoleInlinePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#name IamRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#name IamRole#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role#policy IamRole#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role#policy IamRole#policy}
   */
   readonly policy?: string;
 }
@@ -191,7 +260,7 @@ export class IamRoleInlinePolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role aws_iam_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role aws_iam_role}
 */
 export class IamRole extends cdktf.TerraformResource {
 
@@ -205,7 +274,7 @@ export class IamRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role aws_iam_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/iam_role aws_iam_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -216,7 +285,7 @@ export class IamRole extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_role',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -411,6 +480,12 @@ export class IamRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get permissionsBoundaryInput() {
     return this._permissionsBoundary;
+  }
+
+  // role_last_used - computed: true, optional: false, required: false
+  private _roleLastUsed = new IamRoleRoleLastUsedList(this, "role_last_used", false);
+  public get roleLastUsed() {
+    return this._roleLastUsed;
   }
 
   // tags - computed: false, optional: true, required: false

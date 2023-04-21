@@ -1,6 +1,6 @@
 # `data_aws_waf_ipset`
 
-Refer to the Terraform Registory for docs: [`data_aws_waf_ipset`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset).
+Refer to the Terraform Registory for docs: [`data_aws_waf_ipset`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset).
 
 # `dataAwsWafIpset` Submodule <a name="`dataAwsWafIpset` Submodule" id="@cdktf/provider-aws.dataAwsWafIpset"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_waf_ipset`](https://regist
 
 ### DataAwsWafIpset <a name="DataAwsWafIpset" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset aws_waf_ipset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset aws_waf_ipset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.NewDataAwsWafIpset(scope Construct, id *string, config DataAwsWafIpsetConfig) DataAwsWafIpset
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafipset"
 
 &dataawswafipset.DataAwsWafIpsetConfig {
 	Connection: interface{},
@@ -570,8 +570,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafipset"
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset#name DataAwsWafIpset#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset#id DataAwsWafIpset#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset#name DataAwsWafIpset#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset#id DataAwsWafIpset#id}. |
 
 ---
 
@@ -653,7 +653,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset#name DataAwsWafIpset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset#name DataAwsWafIpset#name}.
 
 ---
 
@@ -665,7 +665,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/waf_ipset#id DataAwsWafIpset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/waf_ipset#id DataAwsWafIpset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

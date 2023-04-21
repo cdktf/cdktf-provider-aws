@@ -1,6 +1,6 @@
 # `aws_cloudwatch_metric_stream`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_metric_stream`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_metric_stream`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream).
 
 # `cloudwatchMetricStream` Submodule <a name="`cloudwatchMetricStream` Submodule" id="@cdktf/provider-aws.cloudwatchMetricStream"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_metric_stream`](http
 
 ### CloudwatchMetricStream <a name="CloudwatchMetricStream" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStream(scope Construct, id *string, config CloudwatchMetricStreamConfig) CloudwatchMetricStream
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetExcludeFilter">ResetExcludeFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetIncludeFilter">ResetIncludeFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetIncludeLinkedAccountsMetrics">ResetIncludeLinkedAccountsMetrics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetNamePrefix">ResetNamePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetStatisticsConfiguration">ResetStatisticsConfiguration</a></code> | *No description.* |
@@ -336,6 +337,12 @@ func ResetId()
 func ResetIncludeFilter()
 ```
 
+##### `ResetIncludeLinkedAccountsMetrics` <a name="ResetIncludeLinkedAccountsMetrics" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetIncludeLinkedAccountsMetrics"></a>
+
+```go
+func ResetIncludeLinkedAccountsMetrics()
+```
+
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.resetName"></a>
 
 ```go
@@ -385,7 +392,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,6 +479,7 @@ cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.firehoseArnInput">FirehoseArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.includeFilterInput">IncludeFilterInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.includeLinkedAccountsMetricsInput">IncludeLinkedAccountsMetricsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.namePrefixInput">NamePrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.outputFormatInput">OutputFormatInput</a></code> | <code>*string</code> | *No description.* |
@@ -482,6 +490,7 @@ cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.firehoseArn">FirehoseArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.includeLinkedAccountsMetrics">IncludeLinkedAccountsMetrics</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | *No description.* |
@@ -753,6 +762,16 @@ func IncludeFilterInput() interface{}
 
 ---
 
+##### `IncludeLinkedAccountsMetricsInput`<sup>Optional</sup> <a name="IncludeLinkedAccountsMetricsInput" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.includeLinkedAccountsMetricsInput"></a>
+
+```go
+func IncludeLinkedAccountsMetricsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.nameInput"></a>
 
 ```go
@@ -853,6 +872,16 @@ func Id() *string
 
 ---
 
+##### `IncludeLinkedAccountsMetrics`<sup>Required</sup> <a name="IncludeLinkedAccountsMetrics" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.includeLinkedAccountsMetrics"></a>
+
+```go
+func IncludeLinkedAccountsMetrics() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.property.name"></a>
 
 ```go
@@ -938,7 +967,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamConfig {
 	Connection: interface{},
@@ -954,12 +983,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 	ExcludeFilter: interface{},
 	Id: *string,
 	IncludeFilter: interface{},
+	IncludeLinkedAccountsMetrics: interface{},
 	Name: *string,
 	NamePrefix: *string,
 	StatisticsConfiguration: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts,
 }
 ```
 
@@ -974,17 +1004,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.firehoseArn">FirehoseArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#firehose_arn CloudwatchMetricStream#firehose_arn}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#output_format CloudwatchMetricStream#output_format}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#role_arn CloudwatchMetricStream#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.firehoseArn">FirehoseArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#firehose_arn CloudwatchMetricStream#firehose_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#output_format CloudwatchMetricStream#output_format}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#role_arn CloudwatchMetricStream#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.excludeFilter">ExcludeFilter</a></code> | <code>interface{}</code> | exclude_filter block. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#id CloudwatchMetricStream#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#id CloudwatchMetricStream#id}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.includeFilter">IncludeFilter</a></code> | <code>interface{}</code> | include_filter block. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#name CloudwatchMetricStream#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#name_prefix CloudwatchMetricStream#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.includeLinkedAccountsMetrics">IncludeLinkedAccountsMetrics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#include_linked_accounts_metrics CloudwatchMetricStream#include_linked_accounts_metrics}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#name CloudwatchMetricStream#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#name_prefix CloudwatchMetricStream#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.statisticsConfiguration">StatisticsConfiguration</a></code> | <code>interface{}</code> | statistics_configuration block. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#tags CloudwatchMetricStream#tags}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#tags_all CloudwatchMetricStream#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#tags CloudwatchMetricStream#tags}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#tags_all CloudwatchMetricStream#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts">CloudwatchMetricStreamTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1067,7 +1098,7 @@ FirehoseArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#firehose_arn CloudwatchMetricStream#firehose_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#firehose_arn CloudwatchMetricStream#firehose_arn}.
 
 ---
 
@@ -1079,7 +1110,7 @@ OutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#output_format CloudwatchMetricStream#output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#output_format CloudwatchMetricStream#output_format}.
 
 ---
 
@@ -1091,7 +1122,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#role_arn CloudwatchMetricStream#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#role_arn CloudwatchMetricStream#role_arn}.
 
 ---
 
@@ -1105,7 +1136,7 @@ ExcludeFilter interface{}
 
 exclude_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#exclude_filter CloudwatchMetricStream#exclude_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#exclude_filter CloudwatchMetricStream#exclude_filter}
 
 ---
 
@@ -1117,7 +1148,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#id CloudwatchMetricStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#id CloudwatchMetricStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1165,19 @@ IncludeFilter interface{}
 
 include_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#include_filter CloudwatchMetricStream#include_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#include_filter CloudwatchMetricStream#include_filter}
+
+---
+
+##### `IncludeLinkedAccountsMetrics`<sup>Optional</sup> <a name="IncludeLinkedAccountsMetrics" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.property.includeLinkedAccountsMetrics"></a>
+
+```go
+IncludeLinkedAccountsMetrics interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#include_linked_accounts_metrics CloudwatchMetricStream#include_linked_accounts_metrics}.
 
 ---
 
@@ -1146,7 +1189,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#name CloudwatchMetricStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#name CloudwatchMetricStream#name}.
 
 ---
 
@@ -1158,7 +1201,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#name_prefix CloudwatchMetricStream#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#name_prefix CloudwatchMetricStream#name_prefix}.
 
 ---
 
@@ -1172,7 +1215,7 @@ StatisticsConfiguration interface{}
 
 statistics_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#statistics_configuration CloudwatchMetricStream#statistics_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#statistics_configuration CloudwatchMetricStream#statistics_configuration}
 
 ---
 
@@ -1184,7 +1227,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#tags CloudwatchMetricStream#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#tags CloudwatchMetricStream#tags}.
 
 ---
 
@@ -1196,7 +1239,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#tags_all CloudwatchMetricStream#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#tags_all CloudwatchMetricStream#tags_all}.
 
 ---
 
@@ -1210,7 +1253,7 @@ Timeouts CloudwatchMetricStreamTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#timeouts CloudwatchMetricStream#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#timeouts CloudwatchMetricStream#timeouts}
 
 ---
 
@@ -1219,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamExcludeFilter {
 	Namespace: *string,
@@ -1230,7 +1273,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
 
 ---
 
@@ -1242,7 +1285,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
 
 ---
 
@@ -1251,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamIncludeFilter {
 	Namespace: *string,
@@ -1262,7 +1305,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
 
 ---
 
@@ -1274,7 +1317,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
 
 ---
 
@@ -1283,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamStatisticsConfiguration {
 	AdditionalStatistics: *[]*string,
@@ -1295,7 +1338,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration.property.additionalStatistics">AdditionalStatistics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#additional_statistics CloudwatchMetricStream#additional_statistics}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration.property.additionalStatistics">AdditionalStatistics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#additional_statistics CloudwatchMetricStream#additional_statistics}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration.property.includeMetric">IncludeMetric</a></code> | <code>interface{}</code> | include_metric block. |
 
 ---
@@ -1308,7 +1351,7 @@ AdditionalStatistics *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#additional_statistics CloudwatchMetricStream#additional_statistics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#additional_statistics CloudwatchMetricStream#additional_statistics}.
 
 ---
 
@@ -1322,7 +1365,7 @@ IncludeMetric interface{}
 
 include_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#include_metric CloudwatchMetricStream#include_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#include_metric CloudwatchMetricStream#include_metric}
 
 ---
 
@@ -1331,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric {
 	MetricName: *string,
@@ -1343,8 +1386,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#metric_name CloudwatchMetricStream#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#metric_name CloudwatchMetricStream#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}. |
 
 ---
 
@@ -1356,7 +1399,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#metric_name CloudwatchMetricStream#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#metric_name CloudwatchMetricStream#metric_name}.
 
 ---
 
@@ -1368,7 +1411,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#namespace CloudwatchMetricStream#namespace}.
 
 ---
 
@@ -1377,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamTimeouts {
 	Create: *string,
@@ -1390,9 +1433,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#create CloudwatchMetricStream#create}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#delete CloudwatchMetricStream#delete}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#update CloudwatchMetricStream#update}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#create CloudwatchMetricStream#create}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#delete CloudwatchMetricStream#delete}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#update CloudwatchMetricStream#update}. |
 
 ---
 
@@ -1404,7 +1447,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#create CloudwatchMetricStream#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#create CloudwatchMetricStream#create}.
 
 ---
 
@@ -1416,7 +1459,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#delete CloudwatchMetricStream#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#delete CloudwatchMetricStream#delete}.
 
 ---
 
@@ -1428,7 +1471,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream#update CloudwatchMetricStream#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream#update CloudwatchMetricStream#update}.
 
 ---
 
@@ -1439,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamExcludeFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamExcludeFilterList
 ```
@@ -1582,7 +1625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamExcludeFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamExcludeFilterOutputReference
 ```
@@ -1871,7 +1914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamIncludeFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamIncludeFilterList
 ```
@@ -2014,7 +2057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamIncludeFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamIncludeFilterOutputReference
 ```
@@ -2303,7 +2346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList
 ```
@@ -2446,7 +2489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference
 ```
@@ -2757,7 +2800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamStatisticsConfigurationList
 ```
@@ -2900,7 +2943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamStatisticsConfigurationOutputReference
 ```
@@ -3224,7 +3267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchMetricStreamTimeoutsOutputReference
 ```

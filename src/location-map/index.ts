@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface LocationMapConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#description LocationMap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#description LocationMap#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#id LocationMap#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#id LocationMap#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#map_name LocationMap#map_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#map_name LocationMap#map_name}
   */
   readonly mapName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags LocationMap#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#tags LocationMap#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#tags_all LocationMap#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#tags_all LocationMap#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#configuration LocationMap#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#configuration LocationMap#configuration}
   */
   readonly configuration: LocationMapConfiguration;
 }
 export interface LocationMapConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map#style LocationMap#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map#style LocationMap#style}
   */
   readonly style: string;
 }
@@ -101,7 +101,7 @@ export class LocationMapConfigurationOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map aws_location_map}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map aws_location_map}
 */
 export class LocationMap extends cdktf.TerraformResource {
 
@@ -115,7 +115,7 @@ export class LocationMap extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_map aws_location_map} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/location_map aws_location_map} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class LocationMap extends cdktf.TerraformResource {
       terraformResourceType: 'aws_location_map',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_subnet`
 
-Refer to the Terraform Registory for docs: [`aws_subnet`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet).
+Refer to the Terraform Registory for docs: [`aws_subnet`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet).
 
 # `subnet` Submodule <a name="`subnet` Submodule" id="@cdktf/provider-aws.subnet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_subnet`](https://registry.terra
 
 ### Subnet <a name="Subnet" id="@cdktf/provider-aws.subnet.Subnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet aws_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet aws_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.Subnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.NewSubnet(scope Construct, id *string, config SubnetConfig) Subnet
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetCidrBlock">ResetCidrBlock</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetCustomerOwnedIpv4Pool">ResetCustomerOwnedIpv4Pool</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableDns64">ResetEnableDns64</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex">ResetEnableLniAtDeviceIndex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch">ResetEnableResourceNameDnsAaaaRecordOnLaunch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch">ResetEnableResourceNameDnsARecordOnLaunch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetId">ResetId</a></code> | *No description.* |
@@ -324,6 +325,12 @@ func ResetCustomerOwnedIpv4Pool()
 func ResetEnableDns64()
 ```
 
+##### `ResetEnableLniAtDeviceIndex` <a name="ResetEnableLniAtDeviceIndex" id="@cdktf/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex"></a>
+
+```go
+func ResetEnableLniAtDeviceIndex()
+```
+
 ##### `ResetEnableResourceNameDnsAaaaRecordOnLaunch` <a name="ResetEnableResourceNameDnsAaaaRecordOnLaunch" id="@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 ```go
@@ -409,7 +416,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.subnet.Subnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsConstruct(x interface{}) *bool
 ```
@@ -441,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.subnet.Subnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -455,7 +462,7 @@ subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.subnet.Subnet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.Subnet_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,6 +501,7 @@ subnet.Subnet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.cidrBlockInput">CidrBlockInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4PoolInput">CustomerOwnedIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableDns64Input">EnableDns64Input</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput">EnableLniAtDeviceIndexInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput">EnableResourceNameDnsAaaaRecordOnLaunchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput">EnableResourceNameDnsARecordOnLaunchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -513,6 +521,7 @@ subnet.Subnet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableDns64">EnableDns64</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex">EnableLniAtDeviceIndex</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch">EnableResourceNameDnsAaaaRecordOnLaunch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch">EnableResourceNameDnsARecordOnLaunch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -770,6 +779,16 @@ func EnableDns64Input() interface{}
 
 ---
 
+##### `EnableLniAtDeviceIndexInput`<sup>Optional</sup> <a name="EnableLniAtDeviceIndexInput" id="@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput"></a>
+
+```go
+func EnableLniAtDeviceIndexInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `EnableResourceNameDnsAaaaRecordOnLaunchInput`<sup>Optional</sup> <a name="EnableResourceNameDnsAaaaRecordOnLaunchInput" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput"></a>
 
 ```go
@@ -960,6 +979,16 @@ func EnableDns64() interface{}
 
 ---
 
+##### `EnableLniAtDeviceIndex`<sup>Required</sup> <a name="EnableLniAtDeviceIndex" id="@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex"></a>
+
+```go
+func EnableLniAtDeviceIndex() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `EnableResourceNameDnsAaaaRecordOnLaunch`<sup>Required</sup> <a name="EnableResourceNameDnsAaaaRecordOnLaunch" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 ```go
@@ -1105,7 +1134,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 &subnet.SubnetConfig {
 	Connection: interface{},
@@ -1122,6 +1151,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
 	CidrBlock: *string,
 	CustomerOwnedIpv4Pool: *string,
 	EnableDns64: interface{},
+	EnableLniAtDeviceIndex: *f64,
 	EnableResourceNameDnsAaaaRecordOnLaunch: interface{},
 	EnableResourceNameDnsARecordOnLaunch: interface{},
 	Id: *string,
@@ -1133,7 +1163,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
 	PrivateDnsHostnameTypeOnLaunch: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.subnet.SubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.subnet.SubnetTimeouts,
 }
 ```
 
@@ -1148,24 +1178,25 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">AssignIpv6AddressOnCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableDns64">EnableDns64</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">EnableResourceNameDnsAaaaRecordOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">EnableResourceNameDnsARecordOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6Native">Ipv6Native</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">MapCustomerOwnedIpOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">MapPublicIpOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.outpostArn">OutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">PrivateDnsHostnameTypeOnLaunch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#tags Subnet#tags}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">AssignIpv6AddressOnCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableDns64">EnableDns64</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex">EnableLniAtDeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">EnableResourceNameDnsAaaaRecordOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">EnableResourceNameDnsARecordOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6Native">Ipv6Native</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">MapCustomerOwnedIpOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">MapPublicIpOnLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.outpostArn">OutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">PrivateDnsHostnameTypeOnLaunch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#tags Subnet#tags}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1248,7 +1279,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 
 ---
 
@@ -1260,7 +1291,7 @@ AssignIpv6AddressOnCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
 
 ---
 
@@ -1272,7 +1303,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 
 ---
 
@@ -1284,7 +1315,7 @@ AvailabilityZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
 
 ---
 
@@ -1296,7 +1327,7 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
 
 ---
 
@@ -1308,7 +1339,7 @@ CustomerOwnedIpv4Pool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 
 ---
 
@@ -1320,7 +1351,19 @@ EnableDns64 interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+
+---
+
+##### `EnableLniAtDeviceIndex`<sup>Optional</sup> <a name="EnableLniAtDeviceIndex" id="@cdktf/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex"></a>
+
+```go
+EnableLniAtDeviceIndex *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
 
 ---
 
@@ -1332,7 +1375,7 @@ EnableResourceNameDnsAaaaRecordOnLaunch interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
 
 ---
 
@@ -1344,7 +1387,7 @@ EnableResourceNameDnsARecordOnLaunch interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
 
 ---
 
@@ -1356,7 +1399,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1371,7 +1414,7 @@ Ipv6CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
 
 ---
 
@@ -1383,7 +1426,7 @@ Ipv6Native interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
 
 ---
 
@@ -1395,7 +1438,7 @@ MapCustomerOwnedIpOnLaunch interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
 
 ---
 
@@ -1407,7 +1450,7 @@ MapPublicIpOnLaunch interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
 
 ---
 
@@ -1419,7 +1462,7 @@ OutpostArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 
 ---
 
@@ -1431,7 +1474,7 @@ PrivateDnsHostnameTypeOnLaunch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
 
 ---
 
@@ -1443,7 +1486,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#tags Subnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#tags Subnet#tags}.
 
 ---
 
@@ -1455,7 +1498,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#tags_all Subnet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#tags_all Subnet#tags_all}.
 
 ---
 
@@ -1469,7 +1512,7 @@ Timeouts SubnetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -1478,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 &subnet.SubnetTimeouts {
 	Create: *string,
@@ -1490,8 +1533,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#create Subnet#create}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#delete Subnet#delete}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#create Subnet#create}. |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#delete Subnet#delete}. |
 
 ---
 
@@ -1503,7 +1546,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -1515,7 +1558,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
@@ -1526,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/subnet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/subnet"
 
 subnet.NewSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetTimeoutsOutputReference
 ```

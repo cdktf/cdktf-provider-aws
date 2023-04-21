@@ -1,6 +1,6 @@
 # `aws_macie_s3_bucket_association`
 
-Refer to the Terraform Registory for docs: [`aws_macie_s3_bucket_association`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association).
+Refer to the Terraform Registory for docs: [`aws_macie_s3_bucket_association`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association).
 
 # `macieS3BucketAssociation` Submodule <a name="`macieS3BucketAssociation` Submodule" id="@cdktf/provider-aws.macieS3BucketAssociation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_macie_s3_bucket_association`](h
 
 ### MacieS3BucketAssociation <a name="MacieS3BucketAssociation" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.NewMacieS3BucketAssociation(scope Construct, id *string, config MacieS3BucketAssociationConfig) MacieS3BucketAssociation
 ```
@@ -311,7 +311,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ macies3bucketassociation.MacieS3BucketAssociation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.MacieS3BucketAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 &macies3bucketassociation.MacieS3BucketAssociationClassificationType {
 	Continuous: *string,
@@ -678,8 +678,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.property.continuous">Continuous</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}. |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.property.oneTime">OneTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.property.continuous">Continuous</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType.property.oneTime">OneTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}. |
 
 ---
 
@@ -691,7 +691,7 @@ Continuous *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}.
 
 ---
 
@@ -703,7 +703,7 @@ OneTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}.
 
 ---
 
@@ -712,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 &macies3bucketassociation.MacieS3BucketAssociationConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BucketName: *string,
-	ClassificationType: github.com/cdktf/cdktf-provider-aws-go/aws/v14.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType,
+	ClassificationType: github.com/cdktf/cdktf-provider-aws-go/aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType,
 	Id: *string,
 	MemberAccountId: *string,
 	Prefix: *string,
@@ -741,11 +741,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
 | <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}. |
 | <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.classificationType">ClassificationType</a></code> | <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType">MacieS3BucketAssociationClassificationType</a></code> | classification_type block. |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}. |
-| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}. |
+| <code><a href="#@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}. |
 
 ---
 
@@ -827,7 +827,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}.
 
 ---
 
@@ -841,7 +841,7 @@ ClassificationType MacieS3BucketAssociationClassificationType
 
 classification_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#classification_type MacieS3BucketAssociation#classification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#classification_type MacieS3BucketAssociation#classification_type}
 
 ---
 
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -868,7 +868,7 @@ MemberAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}.
 
 ---
 
@@ -880,7 +880,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}.
 
 ---
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/macies3bucketassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macies3bucketassociation"
 
 macies3bucketassociation.NewMacieS3BucketAssociationClassificationTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MacieS3BucketAssociationClassificationTypeOutputReference
 ```

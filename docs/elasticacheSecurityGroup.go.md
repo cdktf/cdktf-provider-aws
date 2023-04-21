@@ -1,6 +1,6 @@
 # `aws_elasticache_security_group`
 
-Refer to the Terraform Registory for docs: [`aws_elasticache_security_group`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group).
+Refer to the Terraform Registory for docs: [`aws_elasticache_security_group`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group).
 
 # `elasticacheSecurityGroup` Submodule <a name="`elasticacheSecurityGroup` Submodule" id="@cdktf/provider-aws.elasticacheSecurityGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_elasticache_security_group`](ht
 
 ### ElasticacheSecurityGroup <a name="ElasticacheSecurityGroup" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group aws_elasticache_security_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group aws_elasticache_security_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.NewElasticacheSecurityGroup(scope Construct, id *string, config ElasticacheSecurityGroupConfig) ElasticacheSecurityGroup
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 elasticachesecuritygroup.ElasticacheSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachesecuritygroup"
 
 &elasticachesecuritygroup.ElasticacheSecurityGroupConfig {
 	Connection: interface{},
@@ -645,10 +645,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesecuritygroup"
 | <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#name ElasticacheSecurityGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.securityGroupNames">SecurityGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#security_group_names ElasticacheSecurityGroup#security_group_names}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#description ElasticacheSecurityGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#id ElasticacheSecurityGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#name ElasticacheSecurityGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.securityGroupNames">SecurityGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#security_group_names ElasticacheSecurityGroup#security_group_names}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#description ElasticacheSecurityGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#id ElasticacheSecurityGroup#id}. |
 
 ---
 
@@ -730,7 +730,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#name ElasticacheSecurityGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#name ElasticacheSecurityGroup#name}.
 
 ---
 
@@ -742,7 +742,7 @@ SecurityGroupNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#security_group_names ElasticacheSecurityGroup#security_group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#security_group_names ElasticacheSecurityGroup#security_group_names}.
 
 ---
 
@@ -754,7 +754,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#description ElasticacheSecurityGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#description ElasticacheSecurityGroup#description}.
 
 ---
 
@@ -766,7 +766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_security_group#id ElasticacheSecurityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group#id ElasticacheSecurityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

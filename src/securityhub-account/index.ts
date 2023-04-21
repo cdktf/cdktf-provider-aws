@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#auto_enable_controls SecurityhubAccount#auto_enable_controls}
+  */
+  readonly autoEnableControls?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#control_finding_generator SecurityhubAccount#control_finding_generator}
+  */
+  readonly controlFindingGenerator?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}
   */
   readonly enableDefaultStandards?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#id SecurityhubAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#id SecurityhubAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,7 +29,7 @@ export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account}
 */
 export class SecurityhubAccount extends cdktf.TerraformResource {
 
@@ -35,7 +43,7 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +54,7 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -57,6 +65,8 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._autoEnableControls = config.autoEnableControls;
+    this._controlFindingGenerator = config.controlFindingGenerator;
     this._enableDefaultStandards = config.enableDefaultStandards;
     this._id = config.id;
   }
@@ -64,6 +74,43 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // auto_enable_controls - computed: false, optional: true, required: false
+  private _autoEnableControls?: boolean | cdktf.IResolvable; 
+  public get autoEnableControls() {
+    return this.getBooleanAttribute('auto_enable_controls');
+  }
+  public set autoEnableControls(value: boolean | cdktf.IResolvable) {
+    this._autoEnableControls = value;
+  }
+  public resetAutoEnableControls() {
+    this._autoEnableControls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoEnableControlsInput() {
+    return this._autoEnableControls;
+  }
+
+  // control_finding_generator - computed: false, optional: true, required: false
+  private _controlFindingGenerator?: string; 
+  public get controlFindingGenerator() {
+    return this.getStringAttribute('control_finding_generator');
+  }
+  public set controlFindingGenerator(value: string) {
+    this._controlFindingGenerator = value;
+  }
+  public resetControlFindingGenerator() {
+    this._controlFindingGenerator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get controlFindingGeneratorInput() {
+    return this._controlFindingGenerator;
+  }
 
   // enable_default_standards - computed: false, optional: true, required: false
   private _enableDefaultStandards?: boolean | cdktf.IResolvable; 
@@ -103,6 +150,8 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      auto_enable_controls: cdktf.booleanToTerraform(this._autoEnableControls),
+      control_finding_generator: cdktf.stringToTerraform(this._controlFindingGenerator),
       enable_default_standards: cdktf.booleanToTerraform(this._enableDefaultStandards),
       id: cdktf.stringToTerraform(this._id),
     };

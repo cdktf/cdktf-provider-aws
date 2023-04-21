@@ -1,6 +1,6 @@
 # `aws_ami`
 
-Refer to the Terraform Registory for docs: [`aws_ami`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami).
+Refer to the Terraform Registory for docs: [`aws_ami`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami).
 
 # `ami` Submodule <a name="`ami` Submodule" id="@cdktf/provider-aws.ami"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ami`](https://registry.terrafor
 
 ### Ami <a name="Ami" id="@cdktf/provider-aws.ami.Ami"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami aws_ami}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami aws_ami}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.Ami.Initializer"></a>
 
@@ -1292,26 +1292,26 @@ new AmiConfig {
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#name Ami#name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.architecture">Architecture</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#architecture Ami#architecture}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.bootMode">BootMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.deprecationTime">DeprecationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#description Ami#description}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#name Ami#name}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.architecture">Architecture</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#architecture Ami#architecture}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.bootMode">BootMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.deprecationTime">DeprecationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#description Ami#description}. |
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ebsBlockDevice">EbsBlockDevice</a></code> | <code>object</code> | ebs_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.enaSupport">EnaSupport</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ena_support Ami#ena_support}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.enaSupport">EnaSupport</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ena_support Ami#ena_support}. |
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ephemeralBlockDevice">EphemeralBlockDevice</a></code> | <code>object</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#id Ami#id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imageLocation">ImageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#image_location Ami#image_location}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imdsSupport">ImdsSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#imds_support Ami#imds_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.kernelId">KernelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ramdiskId">RamdiskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.rootDeviceName">RootDeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.sriovNetSupport">SriovNetSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tags Ami#tags}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tags_all Ami#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#id Ami#id}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imageLocation">ImageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#image_location Ami#image_location}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imdsSupport">ImdsSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#imds_support Ami#imds_support}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.kernelId">KernelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ramdiskId">RamdiskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.rootDeviceName">RootDeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.sriovNetSupport">SriovNetSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tags Ami#tags}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tags_all Ami#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tpmSupport">TpmSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.virtualizationType">VirtualizationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tpmSupport">TpmSupport</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.virtualizationType">VirtualizationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#name Ami#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#name Ami#name}.
 
 ---
 
@@ -1405,7 +1405,7 @@ public string Architecture { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#architecture Ami#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#architecture Ami#architecture}.
 
 ---
 
@@ -1417,7 +1417,7 @@ public string BootMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#boot_mode Ami#boot_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#boot_mode Ami#boot_mode}.
 
 ---
 
@@ -1429,7 +1429,7 @@ public string DeprecationTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
 
 ---
 
@@ -1441,7 +1441,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#description Ami#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#description Ami#description}.
 
 ---
 
@@ -1455,7 +1455,7 @@ public object EbsBlockDevice { get; set; }
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
 
 ---
 
@@ -1467,7 +1467,7 @@ public object EnaSupport { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ena_support Ami#ena_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ena_support Ami#ena_support}.
 
 ---
 
@@ -1481,7 +1481,7 @@ public object EphemeralBlockDevice { get; set; }
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
 
 ---
 
@@ -1493,7 +1493,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#id Ami#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#id Ami#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1508,7 +1508,7 @@ public string ImageLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#image_location Ami#image_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#image_location Ami#image_location}.
 
 ---
 
@@ -1520,7 +1520,7 @@ public string ImdsSupport { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#imds_support Ami#imds_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#imds_support Ami#imds_support}.
 
 ---
 
@@ -1532,7 +1532,7 @@ public string KernelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#kernel_id Ami#kernel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#kernel_id Ami#kernel_id}.
 
 ---
 
@@ -1544,7 +1544,7 @@ public string RamdiskId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
 
 ---
 
@@ -1556,7 +1556,7 @@ public string RootDeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#root_device_name Ami#root_device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#root_device_name Ami#root_device_name}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public string SriovNetSupport { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
 
 ---
 
@@ -1580,7 +1580,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tags Ami#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tags Ami#tags}.
 
 ---
 
@@ -1592,7 +1592,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tags_all Ami#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tags_all Ami#tags_all}.
 
 ---
 
@@ -1606,7 +1606,7 @@ public AmiTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#timeouts Ami#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#timeouts Ami#timeouts}
 
 ---
 
@@ -1618,7 +1618,7 @@ public string TpmSupport { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#tpm_support Ami#tpm_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#tpm_support Ami#tpm_support}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public string VirtualizationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
 
 ---
 
@@ -1658,15 +1658,15 @@ new AmiEbsBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#device_name Ami#device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#encrypted Ami#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#iops Ami#iops}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn">OutpostArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#outpost_arn Ami#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#snapshot_id Ami#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#throughput Ami#throughput}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#volume_size Ami#volume_size}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#volume_type Ami#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#device_name Ami#device_name}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#encrypted Ami#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#iops Ami#iops}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn">OutpostArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#outpost_arn Ami#outpost_arn}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#snapshot_id Ami#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#throughput Ami#throughput}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#volume_size Ami#volume_size}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#volume_type Ami#volume_type}. |
 
 ---
 
@@ -1678,7 +1678,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#device_name Ami#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#device_name Ami#device_name}.
 
 ---
 
@@ -1690,7 +1690,7 @@ public object DeleteOnTermination { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}.
 
 ---
 
@@ -1702,7 +1702,7 @@ public object Encrypted { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#encrypted Ami#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#encrypted Ami#encrypted}.
 
 ---
 
@@ -1714,7 +1714,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#iops Ami#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#iops Ami#iops}.
 
 ---
 
@@ -1726,7 +1726,7 @@ public string OutpostArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#outpost_arn Ami#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#outpost_arn Ami#outpost_arn}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public string SnapshotId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#snapshot_id Ami#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#snapshot_id Ami#snapshot_id}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#throughput Ami#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#throughput Ami#throughput}.
 
 ---
 
@@ -1762,7 +1762,7 @@ public double VolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#volume_size Ami#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#volume_size Ami#volume_size}.
 
 ---
 
@@ -1774,7 +1774,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#volume_type Ami#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#volume_type Ami#volume_type}.
 
 ---
 
@@ -1795,8 +1795,8 @@ new AmiEphemeralBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#device_name Ami#device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#virtual_name Ami#virtual_name}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#device_name Ami#device_name}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#virtual_name Ami#virtual_name}. |
 
 ---
 
@@ -1808,7 +1808,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#device_name Ami#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#device_name Ami#device_name}.
 
 ---
 
@@ -1820,7 +1820,7 @@ public string VirtualName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#virtual_name Ami#virtual_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#virtual_name Ami#virtual_name}.
 
 ---
 
@@ -1842,9 +1842,9 @@ new AmiTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#create Ami#create}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#delete Ami#delete}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#update Ami#update}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#create Ami#create}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#delete Ami#delete}. |
+| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#update Ami#update}. |
 
 ---
 
@@ -1856,7 +1856,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#create Ami#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#create Ami#create}.
 
 ---
 
@@ -1868,7 +1868,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#delete Ami#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#delete Ami#delete}.
 
 ---
 
@@ -1880,7 +1880,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami#update Ami#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ami#update Ami#update}.
 
 ---
 

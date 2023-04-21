@@ -1,6 +1,6 @@
 # `data_aws_region`
 
-Refer to the Terraform Registory for docs: [`data_aws_region`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region).
+Refer to the Terraform Registory for docs: [`data_aws_region`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region).
 
 # `dataAwsRegion` Submodule <a name="`dataAwsRegion` Submodule" id="@cdktf/provider-aws.dataAwsRegion"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_region`](https://registry.
 
 ### DataAwsRegion <a name="DataAwsRegion" id="@cdktf/provider-aws.dataAwsRegion.DataAwsRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region aws_region}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region aws_region}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRegion.DataAwsRegion.Initializer"></a>
 
@@ -607,9 +607,9 @@ const dataAwsRegionConfig: dataAwsRegion.DataAwsRegionConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#id DataAwsRegion#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#name DataAwsRegion#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#id DataAwsRegion#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRegion.DataAwsRegionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#name DataAwsRegion#name}. |
 
 ---
 
@@ -691,7 +691,7 @@ public readonly endpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#endpoint DataAwsRegion#endpoint}.
 
 ---
 
@@ -703,7 +703,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#id DataAwsRegion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#id DataAwsRegion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -718,7 +718,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/region#name DataAwsRegion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/region#name DataAwsRegion#name}.
 
 ---
 

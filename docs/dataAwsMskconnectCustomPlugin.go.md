@@ -1,6 +1,6 @@
 # `data_aws_mskconnect_custom_plugin`
 
-Refer to the Terraform Registory for docs: [`data_aws_mskconnect_custom_plugin`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin).
+Refer to the Terraform Registory for docs: [`data_aws_mskconnect_custom_plugin`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin).
 
 # `dataAwsMskconnectCustomPlugin` Submodule <a name="`dataAwsMskconnectCustomPlugin` Submodule" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_mskconnect_custom_plugin`]
 
 ### DataAwsMskconnectCustomPlugin <a name="DataAwsMskconnectCustomPlugin" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.NewDataAwsMskconnectCustomPlugin(scope Construct, id *string, config DataAwsMskconnectCustomPluginConfig) DataAwsMskconnectCustomPlugin
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustomplugin"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectcustomplugin"
 
 &dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPluginConfig {
 	Connection: interface{},
@@ -614,8 +614,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskconnectcustompl
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin#name DataAwsMskconnectCustomPlugin#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin#id DataAwsMskconnectCustomPlugin#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin#name DataAwsMskconnectCustomPlugin#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin#id DataAwsMskconnectCustomPlugin#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin#name DataAwsMskconnectCustomPlugin#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin#name DataAwsMskconnectCustomPlugin#name}.
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mskconnect_custom_plugin#id DataAwsMskconnectCustomPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/mskconnect_custom_plugin#id DataAwsMskconnectCustomPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

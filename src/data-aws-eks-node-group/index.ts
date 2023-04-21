@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,98 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}
   */
   readonly nodeGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsEksNodeGroupLaunchTemplate {
+}
+
+export function dataAwsEksNodeGroupLaunchTemplateToTerraform(struct?: DataAwsEksNodeGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupLaunchTemplate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupLaunchTemplate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+}
+
+export class DataAwsEksNodeGroupLaunchTemplateList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupLaunchTemplateOutputReference {
+    return new DataAwsEksNodeGroupLaunchTemplateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsEksNodeGroupRemoteAccess {
 }
@@ -380,7 +454,7 @@ export class DataAwsEksNodeGroupTaintsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group aws_eks_node_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group aws_eks_node_group}
 */
 export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
 
@@ -394,7 +468,7 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +479,7 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -484,6 +558,12 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   private _labels = new cdktf.StringMap(this, "labels");
   public get labels() {
     return this._labels;
+  }
+
+  // launch_template - computed: true, optional: false, required: false
+  private _launchTemplate = new DataAwsEksNodeGroupLaunchTemplateList(this, "launch_template", false);
+  public get launchTemplate() {
+    return this._launchTemplate;
   }
 
   // node_group_name - computed: false, optional: false, required: true

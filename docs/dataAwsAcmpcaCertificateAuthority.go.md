@@ -1,6 +1,6 @@
 # `data_aws_acmpca_certificate_authority`
 
-Refer to the Terraform Registory for docs: [`data_aws_acmpca_certificate_authority`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority).
+Refer to the Terraform Registory for docs: [`data_aws_acmpca_certificate_authority`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority).
 
 # `dataAwsAcmpcaCertificateAuthority` Submodule <a name="`dataAwsAcmpcaCertificateAuthority` Submodule" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_acmpca_certificate_authori
 
 ### DataAwsAcmpcaCertificateAuthority <a name="DataAwsAcmpcaCertificateAuthority" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority aws_acmpca_certificate_authority}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority aws_acmpca_certificate_authority}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthority(scope Construct, id *string, config DataAwsAcmpcaCertificateAuthorityConfig) DataAwsAcmpcaCertificateAuthority
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthority_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthority_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthority_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthority_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 &dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthorityConfig {
 	Connection: interface{},
@@ -710,9 +710,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificatea
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#arn DataAwsAcmpcaCertificateAuthority#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#id DataAwsAcmpcaCertificateAuthority#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#tags DataAwsAcmpcaCertificateAuthority#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#arn DataAwsAcmpcaCertificateAuthority#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#id DataAwsAcmpcaCertificateAuthority#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#tags DataAwsAcmpcaCertificateAuthority#tags}. |
 
 ---
 
@@ -794,7 +794,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#arn DataAwsAcmpcaCertificateAuthority#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#arn DataAwsAcmpcaCertificateAuthority#arn}.
 
 ---
 
@@ -806,7 +806,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#id DataAwsAcmpcaCertificateAuthority#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#id DataAwsAcmpcaCertificateAuthority#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -821,7 +821,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acmpca_certificate_authority#tags DataAwsAcmpcaCertificateAuthority#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/acmpca_certificate_authority#tags DataAwsAcmpcaCertificateAuthority#tags}.
 
 ---
 
@@ -830,7 +830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 &dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthorityRevocationConfiguration {
 
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificatea
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 &dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificatea
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 &dataawsacmpcacertificateauthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration {
 
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificatea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList
 ```
@@ -1003,7 +1003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference
 ```
@@ -1325,7 +1325,7 @@ func InternalValue() DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList
 ```
@@ -1457,7 +1457,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList
 ```
@@ -1589,7 +1589,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmpcacertificateauthority"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificateauthority"
 
 dataawsacmpcacertificateauthority.NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference
 ```
