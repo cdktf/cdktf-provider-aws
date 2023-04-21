@@ -1,6 +1,6 @@
 # `data_aws_s3_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`data_aws_s3_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy).
+Refer to the Terraform Registory for docs: [`data_aws_s3_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy).
 
 # `dataAwsS3BucketPolicy` Submodule <a name="`dataAwsS3BucketPolicy` Submodule" id="@cdktf/provider-aws.dataAwsS3BucketPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_s3_bucket_policy`](https:/
 
 ### DataAwsS3BucketPolicy <a name="DataAwsS3BucketPolicy" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.Initializer"></a>
 
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3bucketpolicy"
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

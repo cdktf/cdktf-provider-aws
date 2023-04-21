@@ -1,6 +1,6 @@
 # `aws_securityhub_account`
 
-Refer to the Terraform Registory for docs: [`aws_securityhub_account`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account).
+Refer to the Terraform Registory for docs: [`aws_securityhub_account`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account).
 
 # `securityhubAccount` Submodule <a name="`securityhubAccount` Submodule" id="@cdktf/provider-aws.securityhubAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_securityhub_account`](https://r
 
 ### SecurityhubAccount <a name="SecurityhubAccount" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.Initializer"></a>
 
@@ -70,6 +70,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetAutoEnableControls">resetAutoEnableControls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetControlFindingGenerator">resetControlFindingGenerator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards">resetEnableDefaultStandards</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetId">resetId</a></code> | *No description.* |
 
@@ -259,6 +261,18 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAutoEnableControls` <a name="resetAutoEnableControls" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetAutoEnableControls"></a>
+
+```typescript
+public resetAutoEnableControls(): void
+```
+
+##### `resetControlFindingGenerator` <a name="resetControlFindingGenerator" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetControlFindingGenerator"></a>
+
+```typescript
+public resetControlFindingGenerator(): void
+```
+
 ##### `resetEnableDefaultStandards` <a name="resetEnableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.resetEnableDefaultStandards"></a>
 
 ```typescript
@@ -359,8 +373,13 @@ securityhubAccount.SecurityhubAccount.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.autoEnableControlsInput">autoEnableControlsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.controlFindingGeneratorInput">controlFindingGeneratorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput">enableDefaultStandardsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.autoEnableControls">autoEnableControls</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.controlFindingGenerator">controlFindingGenerator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandards">enableDefaultStandards</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -508,6 +527,36 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoEnableControlsInput`<sup>Optional</sup> <a name="autoEnableControlsInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.autoEnableControlsInput"></a>
+
+```typescript
+public readonly autoEnableControlsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `controlFindingGeneratorInput`<sup>Optional</sup> <a name="controlFindingGeneratorInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.controlFindingGeneratorInput"></a>
+
+```typescript
+public readonly controlFindingGeneratorInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `enableDefaultStandardsInput`<sup>Optional</sup> <a name="enableDefaultStandardsInput" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.enableDefaultStandardsInput"></a>
 
 ```typescript
@@ -522,6 +571,26 @@ public readonly enableDefaultStandardsInput: boolean | IResolvable;
 
 ```typescript
 public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoEnableControls`<sup>Required</sup> <a name="autoEnableControls" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.autoEnableControls"></a>
+
+```typescript
+public readonly autoEnableControls: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `controlFindingGenerator`<sup>Required</sup> <a name="controlFindingGenerator" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccount.property.controlFindingGenerator"></a>
+
+```typescript
+public readonly controlFindingGenerator: string;
 ```
 
 - *Type:* string
@@ -589,8 +658,10 @@ const securityhubAccountConfig: securityhubAccount.SecurityhubAccountConfig = { 
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards">enableDefaultStandards</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#id SecurityhubAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.autoEnableControls">autoEnableControls</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#auto_enable_controls SecurityhubAccount#auto_enable_controls}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.controlFindingGenerator">controlFindingGenerator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#control_finding_generator SecurityhubAccount#control_finding_generator}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards">enableDefaultStandards</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#id SecurityhubAccount#id}. |
 
 ---
 
@@ -664,6 +735,30 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `autoEnableControls`<sup>Optional</sup> <a name="autoEnableControls" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.autoEnableControls"></a>
+
+```typescript
+public readonly autoEnableControls: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#auto_enable_controls SecurityhubAccount#auto_enable_controls}.
+
+---
+
+##### `controlFindingGenerator`<sup>Optional</sup> <a name="controlFindingGenerator" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.controlFindingGenerator"></a>
+
+```typescript
+public readonly controlFindingGenerator: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#control_finding_generator SecurityhubAccount#control_finding_generator}.
+
+---
+
 ##### `enableDefaultStandards`<sup>Optional</sup> <a name="enableDefaultStandards" id="@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig.property.enableDefaultStandards"></a>
 
 ```typescript
@@ -672,7 +767,7 @@ public readonly enableDefaultStandards: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
 
 ---
 
@@ -684,7 +779,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account#id SecurityhubAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account#id SecurityhubAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

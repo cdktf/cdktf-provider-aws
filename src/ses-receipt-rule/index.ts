@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule
+// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,94 +8,94 @@ import * as cdktf from 'cdktf';
 
 export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#after SesReceiptRule#after}
   */
   readonly after?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#enabled SesReceiptRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#id SesReceiptRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#name SesReceiptRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#recipients SesReceiptRule#recipients}
   */
   readonly recipients?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#rule_set_name SesReceiptRule#rule_set_name}
   */
   readonly ruleSetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#scan_enabled SesReceiptRule#scan_enabled}
   */
   readonly scanEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#tls_policy SesReceiptRule#tls_policy}
   */
   readonly tlsPolicy?: string;
   /**
   * add_header_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
   */
   readonly addHeaderAction?: SesReceiptRuleAddHeaderAction[] | cdktf.IResolvable;
   /**
   * bounce_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
   */
   readonly bounceAction?: SesReceiptRuleBounceAction[] | cdktf.IResolvable;
   /**
   * lambda_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
   */
   readonly lambdaAction?: SesReceiptRuleLambdaAction[] | cdktf.IResolvable;
   /**
   * s3_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
   */
   readonly s3Action?: SesReceiptRuleS3Action[] | cdktf.IResolvable;
   /**
   * sns_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
   */
   readonly snsAction?: SesReceiptRuleSnsAction[] | cdktf.IResolvable;
   /**
   * stop_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
   */
   readonly stopAction?: SesReceiptRuleStopAction[] | cdktf.IResolvable;
   /**
   * workmail_action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
   */
   readonly workmailAction?: SesReceiptRuleWorkmailAction[] | cdktf.IResolvable;
 }
 export interface SesReceiptRuleAddHeaderAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#header_name SesReceiptRule#header_name}
   */
   readonly headerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#header_value SesReceiptRule#header_value}
   */
   readonly headerValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
 }
@@ -229,27 +229,27 @@ export class SesReceiptRuleAddHeaderActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleBounceAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#message SesReceiptRule#message}
   */
   readonly message: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#sender SesReceiptRule#sender}
   */
   readonly sender: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#smtp_reply_code SesReceiptRule#smtp_reply_code}
   */
   readonly smtpReplyCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#status_code SesReceiptRule#status_code}
   */
   readonly statusCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn?: string;
 }
@@ -449,19 +449,19 @@ export class SesReceiptRuleBounceActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleLambdaAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#function_arn SesReceiptRule#function_arn}
   */
   readonly functionArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#invocation_type SesReceiptRule#invocation_type}
   */
   readonly invocationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn?: string;
 }
@@ -621,23 +621,23 @@ export class SesReceiptRuleLambdaActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleS3Action {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#bucket_name SesReceiptRule#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#kms_key_arn SesReceiptRule#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#object_key_prefix SesReceiptRule#object_key_prefix}
   */
   readonly objectKeyPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn?: string;
 }
@@ -820,15 +820,15 @@ export class SesReceiptRuleS3ActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleSnsAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#encoding SesReceiptRule#encoding}
   */
   readonly encoding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -965,15 +965,15 @@ export class SesReceiptRuleSnsActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleStopAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#scope SesReceiptRule#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn?: string;
 }
@@ -1110,15 +1110,15 @@ export class SesReceiptRuleStopActionList extends cdktf.ComplexList {
 }
 export interface SesReceiptRuleWorkmailAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#organization_arn SesReceiptRule#organization_arn}
   */
   readonly organizationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#position SesReceiptRule#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule#topic_arn SesReceiptRule#topic_arn}
   */
   readonly topicArn?: string;
 }
@@ -1255,7 +1255,7 @@ export class SesReceiptRuleWorkmailActionList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}
 */
 export class SesReceiptRule extends cdktf.TerraformResource {
 
@@ -1269,7 +1269,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1280,7 +1280,7 @@ export class SesReceiptRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_receipt_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

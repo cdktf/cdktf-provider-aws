@@ -1,6 +1,6 @@
 # `aws_storagegateway_cache`
 
-Refer to the Terraform Registory for docs: [`aws_storagegateway_cache`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache).
+Refer to the Terraform Registory for docs: [`aws_storagegateway_cache`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache).
 
 # `storagegatewayCache` Submodule <a name="`storagegatewayCache` Submodule" id="@cdktf/provider-aws.storagegatewayCache"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_storagegateway_cache`](https://
 
 ### StoragegatewayCache <a name="StoragegatewayCache" id="@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache aws_storagegateway_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache aws_storagegateway_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache.Initializer"></a>
 
@@ -604,9 +604,9 @@ const storagegatewayCacheConfig: storagegatewayCache.StoragegatewayCacheConfig =
 | <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.diskId">diskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.gatewayArn">gatewayArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.diskId">diskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.gatewayArn">gatewayArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly diskId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#disk_id StoragegatewayCache#disk_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly gatewayArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#gateway_arn StoragegatewayCache#gateway_arn}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/storagegateway_cache#id StoragegatewayCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

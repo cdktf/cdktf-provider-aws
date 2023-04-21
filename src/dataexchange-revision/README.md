@@ -1,3 +1,3 @@
 # `aws_dataexchange_revision`
 
-Refer to the Terraform Registory for docs: [`aws_dataexchange_revision`](https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dataexchange_revision).
+Refer to the Terraform Registory for docs: [`aws_dataexchange_revision`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/dataexchange_revision).
