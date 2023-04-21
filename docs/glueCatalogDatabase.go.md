@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.NewGlueCatalogDatabase(scope Construct, id *string, config GlueCatalogDatabaseConfig) GlueCatalogDatabase
 ```
@@ -345,7 +345,7 @@ func ResetTargetDatabase()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.GlueCatalogDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.GlueCatalogDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ gluecatalogdatabase.GlueCatalogDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.GlueCatalogDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 &gluecatalogdatabase.GlueCatalogDatabaseConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
 	Id: *string,
 	LocationUri: *string,
 	Parameters: *map[string]*string,
-	TargetDatabase: github.com/cdktf/cdktf-provider-aws-go/aws/v14.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase,
+	TargetDatabase: github.com/cdktf/cdktf-provider-aws-go/aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase,
 }
 ```
 
@@ -998,11 +998,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 &gluecatalogdatabase.GlueCatalogDatabaseCreateTableDefaultPermission {
 	Permissions: *[]*string,
-	Principal: github.com/cdktf/cdktf-provider-aws-go/aws/v14.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal,
+	Principal: github.com/cdktf/cdktf-provider-aws-go/aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 &gluecatalogdatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal {
 	DataLakePrincipalIdentifier: *string,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 &gluecatalogdatabase.GlueCatalogDatabaseTargetDatabase {
 	CatalogId: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.NewGlueCatalogDatabaseCreateTableDefaultPermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogDatabaseCreateTableDefaultPermissionList
 ```
@@ -1269,7 +1269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.NewGlueCatalogDatabaseCreateTableDefaultPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference
 ```
@@ -1607,7 +1607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.NewGlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogdatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluecatalogdatabase"
 
 gluecatalogdatabase.NewGlueCatalogDatabaseTargetDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueCatalogDatabaseTargetDatabaseOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecret(scope Construct, id *string, config SecretsmanagerSecretConfig) SecretsmanagerSecret
 ```
@@ -387,7 +387,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ secretsmanagersecret.SecretsmanagerSecret_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.SecretsmanagerSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 &secretsmanagersecret.SecretsmanagerSecretConfig {
 	Connection: interface{},
@@ -960,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
 	RecoveryWindowInDays: *f64,
 	Replica: interface{},
 	RotationLambdaArn: *string,
-	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws/v14.secretsmanagerSecret.SecretsmanagerSecretRotationRules,
+	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws.secretsmanagerSecret.SecretsmanagerSecretRotationRules,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 &secretsmanagersecret.SecretsmanagerSecretReplica {
 	Region: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 &secretsmanagersecret.SecretsmanagerSecretRotationRules {
 	AutomaticallyAfterDays: *f64,
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecretReplicaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretsmanagerSecretReplicaList
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecretReplicaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretsmanagerSecretReplicaOutputReference
 ```
@@ -1833,7 +1833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecret"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecret"
 
 secretsmanagersecret.NewSecretsmanagerSecretRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretsmanagerSecretRotationRulesOutputReference
 ```

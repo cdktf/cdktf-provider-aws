@@ -21,3 +21,5 @@ tsconfig.tsbuildinfo
 .gen
 .terraform
 cdktf.json
+API.md
+docs

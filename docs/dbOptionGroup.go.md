@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroup(scope Construct, id *string, config DbOptionGroupConfig) DbOptionGroup
 ```
@@ -352,7 +352,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dboptiongroup.DbOptionGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.DbOptionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
 	OptionGroupDescription: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.dbOptionGroup.DbOptionGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbOptionGroup.DbOptionGroupTimeouts,
 }
 ```
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupOption {
 	OptionName: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupOptionOptionSettings {
 	Name: *string,
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 &dboptiongroup.DbOptionGroupTimeouts {
 	Delete: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbOptionGroupOptionList
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOptionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbOptionGroupOptionOptionSettingsList
 ```
@@ -1547,7 +1547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOptionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbOptionGroupOptionOptionSettingsOutputReference
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbOptionGroupOptionOutputReference
 ```
@@ -2305,7 +2305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dboptiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dboptiongroup"
 
 dboptiongroup.NewDbOptionGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbOptionGroupTimeoutsOutputReference
 ```
