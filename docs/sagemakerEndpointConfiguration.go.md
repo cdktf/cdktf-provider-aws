@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfiguration(scope Construct, id *string, config SagemakerEndpointConfigurationConfig) SagemakerEndpointConfiguration
 ```
@@ -385,7 +385,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.SagemakerEndpointConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.SagemakerEndpointConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ sagemakerendpointconfiguration.SagemakerEndpointConfiguration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.SagemakerEndpointConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -861,11 +861,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationAsyncInferenceConfig {
-	OutputConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig,
-	ClientConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig,
+	OutputConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig,
+	ClientConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig,
 }
 ```
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig {
 	MaxConcurrentInvocationsPerInstance: *f64,
@@ -943,12 +943,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig {
 	S3OutputPath: *string,
 	KmsKeyId: *string,
-	NotificationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig,
+	NotificationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig,
 }
 ```
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig {
 	ErrorTopic: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationConfig {
 	Connection: interface{},
@@ -1062,8 +1062,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguratio
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ProductionVariants: interface{},
-	AsyncInferenceConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfig,
-	DataCaptureConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfig,
+	AsyncInferenceConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfig,
+	DataCaptureConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfig,
 	Id: *string,
 	KmsKeyArn: *string,
 	Name: *string,
@@ -1304,13 +1304,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationDataCaptureConfig {
 	CaptureOptions: interface{},
 	DestinationS3Uri: *string,
 	InitialSamplingPercentage: *f64,
-	CaptureContentTypeHeader: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader,
+	CaptureContentTypeHeader: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader,
 	EnableCapture: interface{},
 	KmsKeyId: *string,
 }
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
 	CsvContentTypes: *[]*string,
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions {
 	CaptureMode: *string,
@@ -1488,19 +1488,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationProductionVariants {
 	ModelName: *string,
 	AcceleratorType: *string,
 	ContainerStartupHealthCheckTimeoutInSeconds: *f64,
-	CoreDumpConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig,
+	CoreDumpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig,
 	EnableSsmAccess: interface{},
 	InitialInstanceCount: *f64,
 	InitialVariantWeight: *f64,
 	InstanceType: *string,
 	ModelDataDownloadTimeoutInSeconds: *f64,
-	ServerlessConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfig,
+	ServerlessConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfig,
 	VariantName: *string,
 	VolumeSizeInGb: *f64,
 }
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig {
 	DestinationS3Uri: *string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfig {
 	MaxConcurrency: *f64,
@@ -1770,19 +1770,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationShadowProductionVariants {
 	ModelName: *string,
 	AcceleratorType: *string,
 	ContainerStartupHealthCheckTimeoutInSeconds: *f64,
-	CoreDumpConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig,
+	CoreDumpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig,
 	EnableSsmAccess: interface{},
 	InitialInstanceCount: *f64,
 	InitialVariantWeight: *f64,
 	InstanceType: *string,
 	ModelDataDownloadTimeoutInSeconds: *f64,
-	ServerlessConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig,
+	ServerlessConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig,
 	VariantName: *string,
 	VolumeSizeInGb: *f64,
 }
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig {
 	DestinationS3Uri: *string,
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 &sagemakerendpointconfiguration.SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig {
 	MaxConcurrency: *f64,
@@ -2054,7 +2054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference
 ```
@@ -2332,7 +2332,7 @@ func InternalValue() SagemakerEndpointConfigurationAsyncInferenceConfigClientCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference
 ```
@@ -2639,7 +2639,7 @@ func InternalValue() SagemakerEndpointConfigurationAsyncInferenceConfigOutputCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference
 ```
@@ -2981,7 +2981,7 @@ func InternalValue() SagemakerEndpointConfigurationAsyncInferenceConfigOutputCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference
 ```
@@ -3307,7 +3307,7 @@ func InternalValue() SagemakerEndpointConfigurationAsyncInferenceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference
 ```
@@ -3614,7 +3614,7 @@ func InternalValue() SagemakerEndpointConfigurationDataCaptureConfigCaptureConte
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList
 ```
@@ -3757,7 +3757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference
 ```
@@ -4046,7 +4046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationDataCaptureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationDataCaptureConfigOutputReference
 ```
@@ -4474,7 +4474,7 @@ func InternalValue() SagemakerEndpointConfigurationDataCaptureConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference
 ```
@@ -4774,7 +4774,7 @@ func InternalValue() SagemakerEndpointConfigurationProductionVariantsCoreDumpCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationProductionVariantsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerEndpointConfigurationProductionVariantsList
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationProductionVariantsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerEndpointConfigurationProductionVariantsOutputReference
 ```
@@ -5551,7 +5551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference
 ```
@@ -5844,7 +5844,7 @@ func InternalValue() SagemakerEndpointConfigurationProductionVariantsServerlessC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference
 ```
@@ -6137,7 +6137,7 @@ func InternalValue() SagemakerEndpointConfigurationShadowProductionVariantsCoreD
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationShadowProductionVariantsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerEndpointConfigurationShadowProductionVariantsList
 ```
@@ -6280,7 +6280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationShadowProductionVariantsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerEndpointConfigurationShadowProductionVariantsOutputReference
 ```
@@ -6914,7 +6914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerendpointconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerendpointconfiguration"
 
 sagemakerendpointconfiguration.NewSagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfigOutputReference
 ```
