@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnection(scope Construct, id *string, config CloudwatchEventConnectionConfig) CloudwatchEventConnection
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -674,13 +674,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParameters {
-	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey,
-	Basic: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic,
-	InvocationHttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters,
-	Oauth: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth,
+	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey,
+	Basic: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic,
+	InvocationHttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters,
+	Oauth: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth,
 }
 ```
 
@@ -756,7 +756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersApiKey {
 	Key: *string,
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersBasic {
 	Password: *string,
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters {
 	Body: interface{},
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody {
 	IsValueSecret: interface{},
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader {
 	IsValueSecret: interface{},
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString {
 	IsValueSecret: interface{},
@@ -1094,13 +1094,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauth {
 	AuthorizationEndpoint: *string,
 	HttpMethod: *string,
-	OauthHttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters,
-	ClientParameters: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters,
+	OauthHttpParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters,
+	ClientParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters,
 }
 ```
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthClientParameters {
 	ClientId: *string,
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters {
 	Body: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody {
 	IsValueSecret: interface{},
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader {
 	IsValueSecret: interface{},
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString {
 	IsValueSecret: interface{},
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionConfig {
 	Connection: interface{},
@@ -1475,7 +1475,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AuthorizationType: *string,
-	AuthParameters: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters,
+	AuthParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v14.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters,
 	Name: *string,
 	Description: *string,
 	Id: *string,
@@ -1643,7 +1643,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersApiKeyOutputReference
 ```
@@ -1936,7 +1936,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersApiKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersBasicOutputReference
 ```
@@ -2229,7 +2229,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersBasic
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList
 ```
@@ -2372,7 +2372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference
 ```
@@ -2726,7 +2726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList
 ```
@@ -2869,7 +2869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference
 ```
@@ -3223,7 +3223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference
 ```
@@ -3598,7 +3598,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersInvocationHttpParame
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList
 ```
@@ -3741,7 +3741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference
 ```
@@ -4095,7 +4095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference
 ```
@@ -4388,7 +4388,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauthClientParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList
 ```
@@ -4531,7 +4531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference
 ```
@@ -4885,7 +4885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList
 ```
@@ -5028,7 +5028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference
 ```
@@ -5382,7 +5382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference
 ```
@@ -5757,7 +5757,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauthOauthHttpParame
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList
 ```
@@ -5900,7 +5900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference
 ```
@@ -6254,7 +6254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthOutputReference
 ```
@@ -6624,7 +6624,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauth
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOutputReference
 ```

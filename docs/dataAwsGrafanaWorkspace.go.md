@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.NewDataAwsGrafanaWorkspace(scope Construct, id *string, config DataAwsGrafanaWorkspaceConfig) DataAwsGrafanaWorkspace
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgrafanaworkspace"
 
 &dataawsgrafanaworkspace.DataAwsGrafanaWorkspaceConfig {
 	Connection: interface{},
