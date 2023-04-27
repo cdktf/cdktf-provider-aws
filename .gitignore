@@ -38,6 +38,7 @@ jspm_packages/
 !/.github/workflows/release.yml
 !/.github/workflows/upgrade-main.yml
 !/.github/pull_request_template.md
+!/.npmrc
 !/test/
 !/tsconfig.dev.json
 !/src/
