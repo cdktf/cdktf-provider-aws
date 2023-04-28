@@ -1,6 +1,6 @@
 # `data_aws_redshift_service_account`
 
-Refer to the Terraform Registory for docs: [`data_aws_redshift_service_account`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account).
+Refer to the Terraform Registory for docs: [`data_aws_redshift_service_account`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account).
 
 # `dataAwsRedshiftServiceAccount` Submodule <a name="`dataAwsRedshiftServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsRedshiftServiceAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_redshift_service_account`]
 
 ### DataAwsRedshiftServiceAccount <a name="DataAwsRedshiftServiceAccount" id="@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account aws_redshift_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account aws_redshift_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount.Initializer"></a>
 
@@ -578,8 +578,8 @@ const dataAwsRedshiftServiceAccountConfig: dataAwsRedshiftServiceAccount.DataAws
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account#id DataAwsRedshiftServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account#region DataAwsRedshiftServiceAccount#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account#id DataAwsRedshiftServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account#region DataAwsRedshiftServiceAccount#region}. |
 
 ---
 
@@ -661,7 +661,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account#id DataAwsRedshiftServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account#id DataAwsRedshiftServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -676,7 +676,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/redshift_service_account#region DataAwsRedshiftServiceAccount#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/redshift_service_account#region DataAwsRedshiftServiceAccount#region}.
 
 ---
 

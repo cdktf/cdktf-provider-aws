@@ -1,6 +1,6 @@
 # `aws_transfer_tag`
 
-Refer to the Terraform Registory for docs: [`aws_transfer_tag`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag).
+Refer to the Terraform Registory for docs: [`aws_transfer_tag`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag).
 
 # `transferTag` Submodule <a name="`transferTag` Submodule" id="@cdktf/provider-aws.transferTag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_transfer_tag`](https://registry
 
 ### TransferTag <a name="TransferTag" id="@cdktf/provider-aws.transferTag.TransferTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag aws_transfer_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag aws_transfer_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferTag.TransferTag.Initializer"></a>
 
@@ -638,10 +638,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/transfertag"
 | <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#key TransferTag#key}. |
-| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#resource_arn TransferTag#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#value TransferTag#value}. |
-| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#id TransferTag#id}. |
+| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#key TransferTag#key}. |
+| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#resource_arn TransferTag#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#value TransferTag#value}. |
+| <code><a href="#@cdktf/provider-aws.transferTag.TransferTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#id TransferTag#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#key TransferTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#key TransferTag#key}.
 
 ---
 
@@ -735,7 +735,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#resource_arn TransferTag#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#resource_arn TransferTag#resource_arn}.
 
 ---
 
@@ -747,7 +747,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#value TransferTag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#value TransferTag#value}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/transfer_tag#id TransferTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/transfer_tag#id TransferTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

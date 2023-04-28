@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue
+// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,50 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#custom_event_data GameliftGameSessionQueue#custom_event_data}
+  */
+  readonly customEventData?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#destinations GameliftGameSessionQueue#destinations}
   */
   readonly destinations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#id GameliftGameSessionQueue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#name GameliftGameSessionQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#notification_target GameliftGameSessionQueue#notification_target}
   */
   readonly notificationTarget?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#tags GameliftGameSessionQueue#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#tags_all GameliftGameSessionQueue#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#timeout_in_seconds GameliftGameSessionQueue#timeout_in_seconds}
   */
   readonly timeoutInSeconds?: number;
   /**
   * player_latency_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#player_latency_policy GameliftGameSessionQueue#player_latency_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#player_latency_policy GameliftGameSessionQueue#player_latency_policy}
   */
   readonly playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable;
 }
 export interface GameliftGameSessionQueuePlayerLatencyPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#maximum_individual_player_latency_milliseconds GameliftGameSessionQueue#maximum_individual_player_latency_milliseconds}
   */
   readonly maximumIndividualPlayerLatencyMilliseconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue#policy_duration_seconds GameliftGameSessionQueue#policy_duration_seconds}
   */
   readonly policyDurationSeconds?: number;
 }
@@ -168,7 +172,7 @@ export class GameliftGameSessionQueuePlayerLatencyPolicyList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}
 */
 export class GameliftGameSessionQueue extends cdktf.TerraformResource {
 
@@ -182,7 +186,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +197,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       terraformResourceType: 'aws_gamelift_game_session_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -204,6 +208,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._customEventData = config.customEventData;
     this._destinations = config.destinations;
     this._id = config.id;
     this._name = config.name;
@@ -221,6 +226,22 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // custom_event_data - computed: false, optional: true, required: false
+  private _customEventData?: string; 
+  public get customEventData() {
+    return this.getStringAttribute('custom_event_data');
+  }
+  public set customEventData(value: string) {
+    this._customEventData = value;
+  }
+  public resetCustomEventData() {
+    this._customEventData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customEventDataInput() {
+    return this._customEventData;
   }
 
   // destinations - computed: false, optional: true, required: false
@@ -354,6 +375,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      custom_event_data: cdktf.stringToTerraform(this._customEventData),
       destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinations),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
