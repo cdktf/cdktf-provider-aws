@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace
+// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface PrometheusWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#alias PrometheusWorkspace#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#alias PrometheusWorkspace#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#id PrometheusWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#id PrometheusWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#tags PrometheusWorkspace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#tags PrometheusWorkspace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#tags_all PrometheusWorkspace#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#tags_all PrometheusWorkspace#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * logging_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#logging_configuration PrometheusWorkspace#logging_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#logging_configuration PrometheusWorkspace#logging_configuration}
   */
   readonly loggingConfiguration?: PrometheusWorkspaceLoggingConfiguration;
 }
 export interface PrometheusWorkspaceLoggingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace#log_group_arn PrometheusWorkspace#log_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace#log_group_arn PrometheusWorkspace#log_group_arn}
   */
   readonly logGroupArn: string;
 }
@@ -97,7 +97,7 @@ export class PrometheusWorkspaceLoggingConfigurationOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace aws_prometheus_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace aws_prometheus_workspace}
 */
 export class PrometheusWorkspace extends cdktf.TerraformResource {
 
@@ -111,7 +111,7 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -122,7 +122,7 @@ export class PrometheusWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_prometheus_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_s3_account_public_access_block`
 
-Refer to the Terraform Registory for docs: [`data_aws_s3_account_public_access_block`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block).
+Refer to the Terraform Registory for docs: [`data_aws_s3_account_public_access_block`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block).
 
 # `dataAwsS3AccountPublicAccessBlock` Submodule <a name="`dataAwsS3AccountPublicAccessBlock` Submodule" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_s3_account_public_access_b
 
 ### DataAwsS3AccountPublicAccessBlock <a name="DataAwsS3AccountPublicAccessBlock" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.NewDataAwsS3AccountPublicAccessBlock(scope Construct, id *string, config DataAwsS3AccountPublicAccessBlockConfig) DataAwsS3AccountPublicAccessBlock
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3accountpublicaccessblock"
 
 dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlock_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3accountpublicaccessblock"
 
 &dataawss3accountpublicaccessblock.DataAwsS3AccountPublicAccessBlockConfig {
 	Connection: interface{},
@@ -621,8 +621,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3accountpublicacc
 | <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}. |
 
 ---
 
@@ -704,7 +704,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}.
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

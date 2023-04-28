@@ -1,6 +1,6 @@
 # `data_aws_dx_location`
 
-Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location).
+Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location).
 
 # `dataAwsDxLocation` Submodule <a name="`dataAwsDxLocation` Submodule" id="@cdktf/provider-aws.dataAwsDxLocation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://regi
 
 ### DataAwsDxLocation <a name="DataAwsDxLocation" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location aws_dx_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location aws_dx_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.NewDataAwsDxLocation(scope Construct, id *string, config DataAwsDxLocationConfig) DataAwsDxLocation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsdxlocation.DataAwsDxLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 dataawsdxlocation.DataAwsDxLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxlocation"
 
 &dataawsdxlocation.DataAwsDxLocationConfig {
 	Connection: interface{},
@@ -614,8 +614,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdxlocation"
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">LocationCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">LocationCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ LocationCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

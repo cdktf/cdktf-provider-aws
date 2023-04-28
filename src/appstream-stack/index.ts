@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack
+// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,76 +8,82 @@ import * as cdktf from 'cdktf';
 
 export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#description AppstreamStack#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#description AppstreamStack#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#display_name AppstreamStack#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#display_name AppstreamStack#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}
   */
   readonly embedHostDomains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}
   */
   readonly feedbackUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#id AppstreamStack#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#id AppstreamStack#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#name AppstreamStack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#name AppstreamStack#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}
   */
   readonly redirectUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#tags AppstreamStack#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#tags AppstreamStack#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * access_endpoints block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
   */
   readonly accessEndpoints?: AppstreamStackAccessEndpoints[] | cdktf.IResolvable;
   /**
   * application_settings block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
   */
   readonly applicationSettings?: AppstreamStackApplicationSettings;
   /**
   * storage_connectors block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
   */
   readonly storageConnectors?: AppstreamStackStorageConnectors[] | cdktf.IResolvable;
   /**
+  * streaming_experience_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#streaming_experience_settings AppstreamStack#streaming_experience_settings}
+  */
+  readonly streamingExperienceSettings?: AppstreamStackStreamingExperienceSettings;
+  /**
   * user_settings block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
   */
   readonly userSettings?: AppstreamStackUserSettings[] | cdktf.IResolvable;
 }
 export interface AppstreamStackAccessEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}
   */
   readonly vpceId?: string;
 }
@@ -194,11 +200,11 @@ export class AppstreamStackAccessEndpointsList extends cdktf.ComplexList {
 }
 export interface AppstreamStackApplicationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#enabled AppstreamStack#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#enabled AppstreamStack#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}
   */
   readonly settingsGroup?: string;
 }
@@ -283,15 +289,15 @@ export class AppstreamStackApplicationSettingsOutputReference extends cdktf.Comp
 }
 export interface AppstreamStackStorageConnectors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}
   */
   readonly connectorType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#domains AppstreamStack#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#domains AppstreamStack#domains}
   */
   readonly domains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}
   */
   readonly resourceIdentifier?: string;
 }
@@ -429,13 +435,78 @@ export class AppstreamStackStorageConnectorsList extends cdktf.ComplexList {
     return new AppstreamStackStorageConnectorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppstreamStackStreamingExperienceSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#preferred_protocol AppstreamStack#preferred_protocol}
+  */
+  readonly preferredProtocol?: string;
+}
+
+export function appstreamStackStreamingExperienceSettingsToTerraform(struct?: AppstreamStackStreamingExperienceSettingsOutputReference | AppstreamStackStreamingExperienceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    preferred_protocol: cdktf.stringToTerraform(struct!.preferredProtocol),
+  }
+}
+
+export class AppstreamStackStreamingExperienceSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppstreamStackStreamingExperienceSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._preferredProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preferredProtocol = this._preferredProtocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppstreamStackStreamingExperienceSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._preferredProtocol = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._preferredProtocol = value.preferredProtocol;
+    }
+  }
+
+  // preferred_protocol - computed: false, optional: true, required: false
+  private _preferredProtocol?: string; 
+  public get preferredProtocol() {
+    return this.getStringAttribute('preferred_protocol');
+  }
+  public set preferredProtocol(value: string) {
+    this._preferredProtocol = value;
+  }
+  public resetPreferredProtocol() {
+    this._preferredProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredProtocolInput() {
+    return this._preferredProtocol;
+  }
+}
 export interface AppstreamStackUserSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#action AppstreamStack#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#action AppstreamStack#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack#permission AppstreamStack#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack#permission AppstreamStack#permission}
   */
   readonly permission: string;
 }
@@ -549,7 +620,7 @@ export class AppstreamStackUserSettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack aws_appstream_stack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack aws_appstream_stack}
 */
 export class AppstreamStack extends cdktf.TerraformResource {
 
@@ -563,7 +634,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack aws_appstream_stack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack aws_appstream_stack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -574,7 +645,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -597,6 +668,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
     this._accessEndpoints.internalValue = config.accessEndpoints;
     this._applicationSettings.internalValue = config.applicationSettings;
     this._storageConnectors.internalValue = config.storageConnectors;
+    this._streamingExperienceSettings.internalValue = config.streamingExperienceSettings;
     this._userSettings.internalValue = config.userSettings;
   }
 
@@ -803,6 +875,22 @@ export class AppstreamStack extends cdktf.TerraformResource {
     return this._storageConnectors.internalValue;
   }
 
+  // streaming_experience_settings - computed: false, optional: true, required: false
+  private _streamingExperienceSettings = new AppstreamStackStreamingExperienceSettingsOutputReference(this, "streaming_experience_settings");
+  public get streamingExperienceSettings() {
+    return this._streamingExperienceSettings;
+  }
+  public putStreamingExperienceSettings(value: AppstreamStackStreamingExperienceSettings) {
+    this._streamingExperienceSettings.internalValue = value;
+  }
+  public resetStreamingExperienceSettings() {
+    this._streamingExperienceSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamingExperienceSettingsInput() {
+    return this._streamingExperienceSettings.internalValue;
+  }
+
   // user_settings - computed: false, optional: true, required: false
   private _userSettings = new AppstreamStackUserSettingsList(this, "user_settings", true);
   public get userSettings() {
@@ -837,6 +925,7 @@ export class AppstreamStack extends cdktf.TerraformResource {
       access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform, true)(this._accessEndpoints.internalValue),
       application_settings: appstreamStackApplicationSettingsToTerraform(this._applicationSettings.internalValue),
       storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform, true)(this._storageConnectors.internalValue),
+      streaming_experience_settings: appstreamStackStreamingExperienceSettingsToTerraform(this._streamingExperienceSettings.internalValue),
       user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform, true)(this._userSettings.internalValue),
     };
   }

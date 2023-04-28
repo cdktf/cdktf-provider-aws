@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan
+// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface BackupReportPlanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#description BackupReportPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#description BackupReportPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#id BackupReportPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#id BackupReportPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#name BackupReportPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#name BackupReportPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * report_delivery_channel block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#report_delivery_channel BackupReportPlan#report_delivery_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#report_delivery_channel BackupReportPlan#report_delivery_channel}
   */
   readonly reportDeliveryChannel: BackupReportPlanReportDeliveryChannel;
   /**
   * report_setting block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#report_setting BackupReportPlan#report_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#report_setting BackupReportPlan#report_setting}
   */
   readonly reportSetting: BackupReportPlanReportSetting;
 }
 export interface BackupReportPlanReportDeliveryChannel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}
   */
   readonly formats?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}
   */
   readonly s3BucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}
   */
   readonly s3KeyPrefix?: string;
 }
@@ -161,15 +161,27 @@ export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktf.
 }
 export interface BackupReportPlanReportSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#accounts BackupReportPlan#accounts}
+  */
+  readonly accounts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}
   */
   readonly frameworkArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}
   */
   readonly numberOfFrameworks?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#organization_units BackupReportPlan#organization_units}
+  */
+  readonly organizationUnits?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#regions BackupReportPlan#regions}
+  */
+  readonly regions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}
   */
   readonly reportTemplate: string;
 }
@@ -180,8 +192,11 @@ export function backupReportPlanReportSettingToTerraform(struct?: BackupReportPl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accounts),
     framework_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.frameworkArns),
     number_of_frameworks: cdktf.numberToTerraform(struct!.numberOfFrameworks),
+    organization_units: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.organizationUnits),
+    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
     report_template: cdktf.stringToTerraform(struct!.reportTemplate),
   }
 }
@@ -200,6 +215,10 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   public get internalValue(): BackupReportPlanReportSetting | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accounts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accounts = this._accounts;
+    }
     if (this._frameworkArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.frameworkArns = this._frameworkArns;
@@ -207,6 +226,14 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
     if (this._numberOfFrameworks !== undefined) {
       hasAnyValues = true;
       internalValueResult.numberOfFrameworks = this._numberOfFrameworks;
+    }
+    if (this._organizationUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.organizationUnits = this._organizationUnits;
+    }
+    if (this._regions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regions = this._regions;
     }
     if (this._reportTemplate !== undefined) {
       hasAnyValues = true;
@@ -218,16 +245,38 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   public set internalValue(value: BackupReportPlanReportSetting | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._accounts = undefined;
       this._frameworkArns = undefined;
       this._numberOfFrameworks = undefined;
+      this._organizationUnits = undefined;
+      this._regions = undefined;
       this._reportTemplate = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._accounts = value.accounts;
       this._frameworkArns = value.frameworkArns;
       this._numberOfFrameworks = value.numberOfFrameworks;
+      this._organizationUnits = value.organizationUnits;
+      this._regions = value.regions;
       this._reportTemplate = value.reportTemplate;
     }
+  }
+
+  // accounts - computed: false, optional: true, required: false
+  private _accounts?: string[]; 
+  public get accounts() {
+    return cdktf.Fn.tolist(this.getListAttribute('accounts'));
+  }
+  public set accounts(value: string[]) {
+    this._accounts = value;
+  }
+  public resetAccounts() {
+    this._accounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountsInput() {
+    return this._accounts;
   }
 
   // framework_arns - computed: false, optional: true, required: false
@@ -262,6 +311,38 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
     return this._numberOfFrameworks;
   }
 
+  // organization_units - computed: false, optional: true, required: false
+  private _organizationUnits?: string[]; 
+  public get organizationUnits() {
+    return cdktf.Fn.tolist(this.getListAttribute('organization_units'));
+  }
+  public set organizationUnits(value: string[]) {
+    this._organizationUnits = value;
+  }
+  public resetOrganizationUnits() {
+    this._organizationUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationUnitsInput() {
+    return this._organizationUnits;
+  }
+
+  // regions - computed: false, optional: true, required: false
+  private _regions?: string[]; 
+  public get regions() {
+    return cdktf.Fn.tolist(this.getListAttribute('regions'));
+  }
+  public set regions(value: string[]) {
+    this._regions = value;
+  }
+  public resetRegions() {
+    this._regions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionsInput() {
+    return this._regions;
+  }
+
   // report_template - computed: false, optional: false, required: true
   private _reportTemplate?: string; 
   public get reportTemplate() {
@@ -277,7 +358,7 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan aws_backup_report_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan aws_backup_report_plan}
 */
 export class BackupReportPlan extends cdktf.TerraformResource {
 
@@ -291,7 +372,7 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/backup_report_plan aws_backup_report_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/backup_report_plan aws_backup_report_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -302,7 +383,7 @@ export class BackupReportPlan extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_report_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

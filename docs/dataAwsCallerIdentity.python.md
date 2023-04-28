@@ -1,6 +1,6 @@
 # `data_aws_caller_identity`
 
-Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity).
+Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity).
 
 # `dataAwsCallerIdentity` Submodule <a name="`dataAwsCallerIdentity` Submodule" id="@cdktf/provider-aws.dataAwsCallerIdentity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://
 
 ### DataAwsCallerIdentity <a name="DataAwsCallerIdentity" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity aws_caller_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity aws_caller_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataAwsCallerIdentity.DataAwsCallerIdentity(
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -676,7 +676,7 @@ dataAwsCallerIdentity.DataAwsCallerIdentityConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
 
 ---
 
@@ -758,7 +758,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

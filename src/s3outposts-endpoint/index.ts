@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,22 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface S3OutpostsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint#id S3OutpostsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#access_type S3OutpostsEndpoint#access_type}
+  */
+  readonly accessType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#customer_owned_ipv4_pool S3OutpostsEndpoint#customer_owned_ipv4_pool}
+  */
+  readonly customerOwnedIpv4Pool?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#id S3OutpostsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint#outpost_id S3OutpostsEndpoint#outpost_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#outpost_id S3OutpostsEndpoint#outpost_id}
   */
   readonly outpostId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint#security_group_id S3OutpostsEndpoint#security_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#security_group_id S3OutpostsEndpoint#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint#subnet_id S3OutpostsEndpoint#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint#subnet_id S3OutpostsEndpoint#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -93,7 +101,7 @@ export class S3OutpostsEndpointNetworkInterfacesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}
 */
 export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
@@ -107,7 +115,7 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -118,7 +126,7 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3outposts_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -129,6 +137,8 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accessType = config.accessType;
+    this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._id = config.id;
     this._outpostId = config.outpostId;
     this._securityGroupId = config.securityGroupId;
@@ -138,6 +148,22 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_type - computed: true, optional: true, required: false
+  private _accessType?: string; 
+  public get accessType() {
+    return this.getStringAttribute('access_type');
+  }
+  public set accessType(value: string) {
+    this._accessType = value;
+  }
+  public resetAccessType() {
+    this._accessType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTypeInput() {
+    return this._accessType;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -152,6 +178,22 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   // creation_time - computed: true, optional: false, required: false
   public get creationTime() {
     return this.getStringAttribute('creation_time');
+  }
+
+  // customer_owned_ipv4_pool - computed: false, optional: true, required: false
+  private _customerOwnedIpv4Pool?: string; 
+  public get customerOwnedIpv4Pool() {
+    return this.getStringAttribute('customer_owned_ipv4_pool');
+  }
+  public set customerOwnedIpv4Pool(value: string) {
+    this._customerOwnedIpv4Pool = value;
+  }
+  public resetCustomerOwnedIpv4Pool() {
+    this._customerOwnedIpv4Pool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerOwnedIpv4PoolInput() {
+    return this._customerOwnedIpv4Pool;
   }
 
   // id - computed: true, optional: true, required: false
@@ -221,6 +263,8 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_type: cdktf.stringToTerraform(this._accessType),
+      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
       id: cdktf.stringToTerraform(this._id),
       outpost_id: cdktf.stringToTerraform(this._outpostId),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
