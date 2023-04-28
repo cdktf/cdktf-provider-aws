@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.NewDataAwsKinesisStream(scope Construct, id *string, config DataAwsKinesisStreamConfig) DataAwsKinesisStream
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.DataAwsKinesisStream_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.DataAwsKinesisStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawskinesisstream.DataAwsKinesisStream_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.DataAwsKinesisStream_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 &dataawskinesisstream.DataAwsKinesisStreamConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 &dataawskinesisstream.DataAwsKinesisStreamStreamModeDetails {
 
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.NewDataAwsKinesisStreamStreamModeDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKinesisStreamStreamModeDetailsList
 ```
@@ -955,7 +955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskinesisstream"
 
 dataawskinesisstream.NewDataAwsKinesisStreamStreamModeDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKinesisStreamStreamModeDetailsOutputReference
 ```

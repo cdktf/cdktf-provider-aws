@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.NewDataAwsVpcEndpointService(scope Construct, id *string, config DataAwsVpcEndpointServiceConfig) DataAwsVpcEndpointService
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.DataAwsVpcEndpointService_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.DataAwsVpcEndpointService_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataawsvpcendpointservice.DataAwsVpcEndpointService_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.DataAwsVpcEndpointService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 &dataawsvpcendpointservice.DataAwsVpcEndpointServiceConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
 	ServiceName: *string,
 	ServiceType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 &dataawsvpcendpointservice.DataAwsVpcEndpointServiceFilter {
 	Name: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 &dataawsvpcendpointservice.DataAwsVpcEndpointServiceTimeouts {
 	Read: *string,
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.NewDataAwsVpcEndpointServiceFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcEndpointServiceFilterList
 ```
@@ -1262,7 +1262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.NewDataAwsVpcEndpointServiceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcEndpointServiceFilterOutputReference
 ```
@@ -1573,7 +1573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcendpointservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcendpointservice"
 
 dataawsvpcendpointservice.NewDataAwsVpcEndpointServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcEndpointServiceTimeoutsOutputReference
 ```

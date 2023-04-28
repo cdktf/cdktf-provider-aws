@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadmininstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssoadmininstances"
 
 dataawsssoadmininstances.NewDataAwsSsoadminInstances(scope Construct, id *string, config DataAwsSsoadminInstancesConfig) DataAwsSsoadminInstances
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadmininstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadmininstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadmininstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssoadmininstances"
 
 dataawsssoadmininstances.DataAwsSsoadminInstances_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadmininstances"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssoadmininstances"
 
 &dataawsssoadmininstances.DataAwsSsoadminInstancesConfig {
 	Connection: interface{},

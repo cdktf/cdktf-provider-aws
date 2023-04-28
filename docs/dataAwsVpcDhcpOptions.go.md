@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptions(scope Construct, id *string, config DataAwsVpcDhcpOptionsConfig) DataAwsVpcDhcpOptions
 ```
@@ -331,7 +331,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.DataAwsVpcDhcpOptions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsConfig {
 	Connection: interface{},
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts,
 }
 ```
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsFilter {
 	Name: *string,
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 &dataawsvpcdhcpoptions.DataAwsVpcDhcpOptionsTimeouts {
 	Read: *string,
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcDhcpOptionsFilterList
 ```
@@ -1143,7 +1143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcDhcpOptionsFilterOutputReference
 ```
@@ -1454,7 +1454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcdhcpoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions"
 
 dataawsvpcdhcpoptions.NewDataAwsVpcDhcpOptionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcDhcpOptionsTimeoutsOutputReference
 ```

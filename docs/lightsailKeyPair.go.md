@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailkeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailkeypair"
 
 lightsailkeypair.NewLightsailKeyPair(scope Construct, id *string, config LightsailKeyPairConfig) LightsailKeyPair
 ```
@@ -305,7 +305,7 @@ func ResetPublicKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailkeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailkeypair"
 
 lightsailkeypair.LightsailKeyPair_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailkeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailkeypair"
 
 lightsailkeypair.LightsailKeyPair_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ lightsailkeypair.LightsailKeyPair_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailkeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailkeypair"
 
 lightsailkeypair.LightsailKeyPair_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailkeypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailkeypair"
 
 &lightsailkeypair.LightsailKeyPairConfig {
 	Connection: interface{},
