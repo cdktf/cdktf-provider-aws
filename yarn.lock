@@ -1894,9 +1894,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.15"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.15.tgz#615640be5faaf1668d8dc1b99fc1aefbaf08bfb6"
-  integrity sha512-KBZCJqTraooK5cl7o39CMfJA2L5v+iJDI4eCdOYE7Jm/RxAqvY9hQGSTvId1Q+mv6NcLTqlA451rrOPOrKYiFg==
+  version "10.2.16"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.16.tgz#f7ca762f842ae2b774f8b612440eab2a4c9d9b46"
+  integrity sha512-jpMFKrvYTBnUPLXKnV6HggGQyd0IOioOAWp/1AaC9FMvlUqPbnPTWwFQ0iZUtDhQeZkEBw49utfQwiCeiu6gWQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2301,9 +2301,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.381"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.381.tgz#d4c66f4182fbb199a66e807ead82b1e18e8aba88"
-  integrity sha512-jSbS1KRmmGO6SwssmVQpCy1jENfCJT6hN36W6Dxj5HXUj59cUn6yd4gv5113mfATo6aEj/mPUTkMZmNknFXj6Q==
+  version "1.4.383"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.383.tgz#61f44a9bb55957b1bb1236704ca53f7214f7a941"
+  integrity sha512-BQyvFauIMzCJqILViJNs0kIBEAlx1bYLS5CRLyJtlun1KAnZlhNSgyfyWifPWagQ5s8KYPY6BpNHZsEMkxZAQQ==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -3847,9 +3847,9 @@ jsii-diff@^1.80.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.6.tgz#9bbd20174d602efe42d2b9743257c0d142cefde1"
-  integrity sha512-N7jYylbvq+XScWLTupMhVv/PQMc7QtVRcF+Uq/DRS7GMK+v6H3FRsiQ9Vw1VQY1afSnJ7s4l9/k/jrI+tRsG4A==
+  version "8.0.7"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.7.tgz#394f15b068a7a097037c39f122bf95142bdfefb7"
+  integrity sha512-mVQB91Fc4P0JuybG5JebA9aLtWSJur8QGVY7cyiKIXVYQQ1myWt3DQH8QXbmrz8jgjdp0dYS52K4KhmG0+pL/A==
   dependencies:
     "@jsii/spec" "^1.80.0"
     case "^1.6.3"
@@ -3930,9 +3930,9 @@ jsii-rosetta@^5.0.1:
     yargs "^17.7.1"
 
 jsii-srcmak@^0.1.867:
-  version "0.1.903"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.903.tgz#160a9f41ac535a437fe528fe4775a1a55e6186ae"
-  integrity sha512-TH9Mjow5kLumysTmiO/yr7RJJn6ShGoPL+2eTwO3/Sbw5701fJNxad9AblVN3JVjj0kqrmMR90y4Bom1VN0GSA==
+  version "0.1.904"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.904.tgz#0c8b572863e99a91625f48f99b79e166685ac565"
+  integrity sha512-JBelwOP7rVkvkX+DXaWe5njQRS4jo3SwXuOkOfPnFvI4PkYCiG1ZEaomnP2Etaj289Wctt1t07F/B5sNc9a0cQ==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.80.0"
@@ -5100,10 +5100,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.37:
-  version "0.71.37"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.37.tgz#a016a4446cc95b8d1b1b0f8604308108feb1ff72"
-  integrity sha512-kXuua8sFsJ9NFKndfI2JivxPHS2SOJchD53U/3SnKxH/RiaCl0RE3OAz0ubVm+wby6s4ae8Gnu5b6DK+eD3j9w==
+projen@^0.71.39:
+  version "0.71.39"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.39.tgz#5f2069aaf227c3e92fd60f64f4a0b6875de2d060"
+  integrity sha512-SbhidnVmn8a7kQLMbm8aXKtdS+RfHYUvLvXfnEH7Zd9RJyyUiTlSBTUWoz73iweWUsDSwDPgUv9vwBSZaaWJTQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5117,7 +5117,7 @@ projen@^0.71.37:
     shx "^0.3.4"
     xmlbuilder2 "^2.4.1"
     yaml "^2.2.2"
-    yargs "^16.2.0"
+    yargs "^17.7.2"
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -6507,7 +6507,7 @@ yargs@^16.0.0, yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yargs@^17.3.1, yargs@^17.6, yargs@^17.7.1:
+yargs@^17.3.1, yargs@^17.6, yargs@^17.7.1, yargs@^17.7.2:
   version "17.7.2"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
   integrity sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==
