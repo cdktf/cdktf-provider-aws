@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityhubInsightConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}
   */
   readonly groupByAttribute: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}
   */
   readonly name: string;
   /**
   * filters block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
   */
   readonly filters: SecurityhubInsightFilters;
 }
 export interface SecurityhubInsightFiltersAwsAccountId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -149,11 +149,11 @@ export class SecurityhubInsightFiltersAwsAccountIdList extends cdktf.ComplexList
 }
 export interface SecurityhubInsightFiltersCompanyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -267,11 +267,11 @@ export class SecurityhubInsightFiltersCompanyNameList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersComplianceStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -385,15 +385,15 @@ export class SecurityhubInsightFiltersComplianceStatusList extends cdktf.Complex
 }
 export interface SecurityhubInsightFiltersConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -536,11 +536,11 @@ export class SecurityhubInsightFiltersConfidenceList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -622,17 +622,17 @@ export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersCreatedAtDateRange;
 }
@@ -775,15 +775,15 @@ export class SecurityhubInsightFiltersCreatedAtList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -926,11 +926,11 @@ export class SecurityhubInsightFiltersCriticalityList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersDescription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1044,15 +1044,15 @@ export class SecurityhubInsightFiltersDescriptionList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1195,15 +1195,15 @@ export class SecurityhubInsightFiltersFindingProviderFieldsConfidenceList extend
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1346,11 +1346,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsCriticalityList exten
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1464,11 +1464,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1582,11 +1582,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProduc
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1700,11 +1700,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList ext
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1818,11 +1818,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1936,11 +1936,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsTypesList extends cdk
 }
 export interface SecurityhubInsightFiltersFirstObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -2022,17 +2022,17 @@ export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference ex
 }
 export interface SecurityhubInsightFiltersFirstObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersFirstObservedAtDateRange;
 }
@@ -2175,11 +2175,11 @@ export class SecurityhubInsightFiltersFirstObservedAtList extends cdktf.ComplexL
 }
 export interface SecurityhubInsightFiltersGeneratorId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2293,11 +2293,11 @@ export class SecurityhubInsightFiltersGeneratorIdList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2411,7 +2411,7 @@ export class SecurityhubInsightFiltersIdList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersKeyword {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2505,11 +2505,11 @@ export class SecurityhubInsightFiltersKeywordList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -2591,17 +2591,17 @@ export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference ext
 }
 export interface SecurityhubInsightFiltersLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersLastObservedAtDateRange;
 }
@@ -2744,11 +2744,11 @@ export class SecurityhubInsightFiltersLastObservedAtList extends cdktf.ComplexLi
 }
 export interface SecurityhubInsightFiltersMalwareName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2862,11 +2862,11 @@ export class SecurityhubInsightFiltersMalwareNameList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwarePath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2980,11 +2980,11 @@ export class SecurityhubInsightFiltersMalwarePathList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwareState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3098,11 +3098,11 @@ export class SecurityhubInsightFiltersMalwareStateList extends cdktf.ComplexList
 }
 export interface SecurityhubInsightFiltersMalwareType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3216,11 +3216,11 @@ export class SecurityhubInsightFiltersMalwareTypeList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersNetworkDestinationDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3334,7 +3334,7 @@ export class SecurityhubInsightFiltersNetworkDestinationDomainList extends cdktf
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -3428,7 +3428,7 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv4List extends cdktf.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -3522,15 +3522,15 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv6List extends cdktf.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationPort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -3673,11 +3673,11 @@ export class SecurityhubInsightFiltersNetworkDestinationPortList extends cdktf.C
 }
 export interface SecurityhubInsightFiltersNetworkDirection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3791,11 +3791,11 @@ export class SecurityhubInsightFiltersNetworkDirectionList extends cdktf.Complex
 }
 export interface SecurityhubInsightFiltersNetworkProtocol {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3909,11 +3909,11 @@ export class SecurityhubInsightFiltersNetworkProtocolList extends cdktf.ComplexL
 }
 export interface SecurityhubInsightFiltersNetworkSourceDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4027,7 +4027,7 @@ export class SecurityhubInsightFiltersNetworkSourceDomainList extends cdktf.Comp
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4121,7 +4121,7 @@ export class SecurityhubInsightFiltersNetworkSourceIpv4List extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4215,11 +4215,11 @@ export class SecurityhubInsightFiltersNetworkSourceIpv6List extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceMac {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4333,15 +4333,15 @@ export class SecurityhubInsightFiltersNetworkSourceMacList extends cdktf.Complex
 }
 export interface SecurityhubInsightFiltersNetworkSourcePort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -4484,11 +4484,11 @@ export class SecurityhubInsightFiltersNetworkSourcePortList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersNoteText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4602,11 +4602,11 @@ export class SecurityhubInsightFiltersNoteTextList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -4688,17 +4688,17 @@ export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference exte
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersNoteUpdatedAtDateRange;
 }
@@ -4841,11 +4841,11 @@ export class SecurityhubInsightFiltersNoteUpdatedAtList extends cdktf.ComplexLis
 }
 export interface SecurityhubInsightFiltersNoteUpdatedBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4959,11 +4959,11 @@ export class SecurityhubInsightFiltersNoteUpdatedByList extends cdktf.ComplexLis
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -5045,17 +5045,17 @@ export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference 
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessLaunchedAtDateRange;
 }
@@ -5198,11 +5198,11 @@ export class SecurityhubInsightFiltersProcessLaunchedAtList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersProcessName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5316,15 +5316,15 @@ export class SecurityhubInsightFiltersProcessNameList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessParentPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -5467,11 +5467,11 @@ export class SecurityhubInsightFiltersProcessParentPidList extends cdktf.Complex
 }
 export interface SecurityhubInsightFiltersProcessPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5585,15 +5585,15 @@ export class SecurityhubInsightFiltersProcessPathList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -5736,11 +5736,11 @@ export class SecurityhubInsightFiltersProcessPidList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -5822,17 +5822,17 @@ export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReferenc
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessTerminatedAtDateRange;
 }
@@ -5975,11 +5975,11 @@ export class SecurityhubInsightFiltersProcessTerminatedAtList extends cdktf.Comp
 }
 export interface SecurityhubInsightFiltersProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6093,15 +6093,15 @@ export class SecurityhubInsightFiltersProductArnList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersProductFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6235,11 +6235,11 @@ export class SecurityhubInsightFiltersProductFieldsList extends cdktf.ComplexLis
 }
 export interface SecurityhubInsightFiltersProductName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6353,11 +6353,11 @@ export class SecurityhubInsightFiltersProductNameList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersRecommendationText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6471,11 +6471,11 @@ export class SecurityhubInsightFiltersRecommendationTextList extends cdktf.Compl
 }
 export interface SecurityhubInsightFiltersRecordState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6589,11 +6589,11 @@ export class SecurityhubInsightFiltersRecordStateList extends cdktf.ComplexList 
 }
 export interface SecurityhubInsightFiltersRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6707,11 +6707,11 @@ export class SecurityhubInsightFiltersRelatedFindingsIdList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6825,11 +6825,11 @@ export class SecurityhubInsightFiltersRelatedFindingsProductArnList extends cdkt
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6943,11 +6943,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileAr
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7061,7 +7061,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -7155,7 +7155,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -7249,11 +7249,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7367,11 +7367,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -7453,17 +7453,17 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange;
 }
@@ -7606,11 +7606,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7724,11 +7724,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList extends
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7842,11 +7842,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7960,11 +7960,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList extends cd
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -8046,17 +8046,17 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange;
 }
@@ -8199,11 +8199,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8317,11 +8317,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8435,11 +8435,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList extend
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8553,11 +8553,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8671,11 +8671,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList extends c
 }
 export interface SecurityhubInsightFiltersResourceContainerImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8789,11 +8789,11 @@ export class SecurityhubInsightFiltersResourceContainerImageIdList extends cdktf
 }
 export interface SecurityhubInsightFiltersResourceContainerImageName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8907,11 +8907,11 @@ export class SecurityhubInsightFiltersResourceContainerImageNameList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -8993,17 +8993,17 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutput
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange;
 }
@@ -9146,11 +9146,11 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtList extends cd
 }
 export interface SecurityhubInsightFiltersResourceContainerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9264,15 +9264,15 @@ export class SecurityhubInsightFiltersResourceContainerNameList extends cdktf.Co
 }
 export interface SecurityhubInsightFiltersResourceDetailsOther {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9406,11 +9406,11 @@ export class SecurityhubInsightFiltersResourceDetailsOtherList extends cdktf.Com
 }
 export interface SecurityhubInsightFiltersResourceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9524,11 +9524,11 @@ export class SecurityhubInsightFiltersResourceIdList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersResourcePartition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9642,11 +9642,11 @@ export class SecurityhubInsightFiltersResourcePartitionList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersResourceRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9760,15 +9760,15 @@ export class SecurityhubInsightFiltersResourceRegionList extends cdktf.ComplexLi
 }
 export interface SecurityhubInsightFiltersResourceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9902,11 +9902,11 @@ export class SecurityhubInsightFiltersResourceTagsList extends cdktf.ComplexList
 }
 export interface SecurityhubInsightFiltersResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10020,11 +10020,11 @@ export class SecurityhubInsightFiltersResourceTypeList extends cdktf.ComplexList
 }
 export interface SecurityhubInsightFiltersSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10138,11 +10138,11 @@ export class SecurityhubInsightFiltersSeverityLabelList extends cdktf.ComplexLis
 }
 export interface SecurityhubInsightFiltersSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10256,11 +10256,11 @@ export class SecurityhubInsightFiltersSourceUrlList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10374,11 +10374,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorCategoryList extends c
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -10460,17 +10460,17 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRang
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange;
 }
@@ -10613,11 +10613,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList ext
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10731,11 +10731,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceList extends cdk
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10849,11 +10849,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList extends 
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10967,11 +10967,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorTypeList extends cdktf
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11085,11 +11085,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorValueList extends cdkt
 }
 export interface SecurityhubInsightFiltersTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11203,11 +11203,11 @@ export class SecurityhubInsightFiltersTitleList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11321,11 +11321,11 @@ export class SecurityhubInsightFiltersTypeList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -11407,17 +11407,17 @@ export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersUpdatedAtDateRange;
 }
@@ -11560,15 +11560,15 @@ export class SecurityhubInsightFiltersUpdatedAtList extends cdktf.ComplexList {
 }
 export interface SecurityhubInsightFiltersUserDefinedValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11702,11 +11702,11 @@ export class SecurityhubInsightFiltersUserDefinedValuesList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersVerificationState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11820,11 +11820,11 @@ export class SecurityhubInsightFiltersVerificationStateList extends cdktf.Comple
 }
 export interface SecurityhubInsightFiltersWorkflowStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11940,103 +11940,103 @@ export interface SecurityhubInsightFilters {
   /**
   * aws_account_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
   */
   readonly awsAccountId?: SecurityhubInsightFiltersAwsAccountId[] | cdktf.IResolvable;
   /**
   * company_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
   */
   readonly companyName?: SecurityhubInsightFiltersCompanyName[] | cdktf.IResolvable;
   /**
   * compliance_status block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
   */
   readonly complianceStatus?: SecurityhubInsightFiltersComplianceStatus[] | cdktf.IResolvable;
   /**
   * confidence block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
   */
   readonly confidence?: SecurityhubInsightFiltersConfidence[] | cdktf.IResolvable;
   /**
   * created_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
   */
   readonly createdAt?: SecurityhubInsightFiltersCreatedAt[] | cdktf.IResolvable;
   /**
   * criticality block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
   */
   readonly criticality?: SecurityhubInsightFiltersCriticality[] | cdktf.IResolvable;
   /**
   * description block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
   */
   readonly description?: SecurityhubInsightFiltersDescription[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_confidence block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
   */
   readonly findingProviderFieldsConfidence?: SecurityhubInsightFiltersFindingProviderFieldsConfidence[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_criticality block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
   */
   readonly findingProviderFieldsCriticality?: SecurityhubInsightFiltersFindingProviderFieldsCriticality[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_related_findings_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
   */
   readonly findingProviderFieldsRelatedFindingsId?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_related_findings_product_arn block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
   */
   readonly findingProviderFieldsRelatedFindingsProductArn?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_severity_label block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
   */
   readonly findingProviderFieldsSeverityLabel?: SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_severity_original block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
   */
   readonly findingProviderFieldsSeverityOriginal?: SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal[] | cdktf.IResolvable;
   /**
   * finding_provider_fields_types block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
   */
   readonly findingProviderFieldsTypes?: SecurityhubInsightFiltersFindingProviderFieldsTypes[] | cdktf.IResolvable;
   /**
   * first_observed_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
   */
   readonly firstObservedAt?: SecurityhubInsightFiltersFirstObservedAt[] | cdktf.IResolvable;
   /**
   * generator_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
   */
   readonly generatorId?: SecurityhubInsightFiltersGeneratorId[] | cdktf.IResolvable;
   /**
   * id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12045,427 +12045,427 @@ export interface SecurityhubInsightFilters {
   /**
   * keyword block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
   */
   readonly keyword?: SecurityhubInsightFiltersKeyword[] | cdktf.IResolvable;
   /**
   * last_observed_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
   */
   readonly lastObservedAt?: SecurityhubInsightFiltersLastObservedAt[] | cdktf.IResolvable;
   /**
   * malware_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
   */
   readonly malwareName?: SecurityhubInsightFiltersMalwareName[] | cdktf.IResolvable;
   /**
   * malware_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
   */
   readonly malwarePath?: SecurityhubInsightFiltersMalwarePath[] | cdktf.IResolvable;
   /**
   * malware_state block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
   */
   readonly malwareState?: SecurityhubInsightFiltersMalwareState[] | cdktf.IResolvable;
   /**
   * malware_type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
   */
   readonly malwareType?: SecurityhubInsightFiltersMalwareType[] | cdktf.IResolvable;
   /**
   * network_destination_domain block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
   */
   readonly networkDestinationDomain?: SecurityhubInsightFiltersNetworkDestinationDomain[] | cdktf.IResolvable;
   /**
   * network_destination_ipv4 block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
   */
   readonly networkDestinationIpv4?: SecurityhubInsightFiltersNetworkDestinationIpv4[] | cdktf.IResolvable;
   /**
   * network_destination_ipv6 block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
   */
   readonly networkDestinationIpv6?: SecurityhubInsightFiltersNetworkDestinationIpv6[] | cdktf.IResolvable;
   /**
   * network_destination_port block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
   */
   readonly networkDestinationPort?: SecurityhubInsightFiltersNetworkDestinationPort[] | cdktf.IResolvable;
   /**
   * network_direction block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
   */
   readonly networkDirection?: SecurityhubInsightFiltersNetworkDirection[] | cdktf.IResolvable;
   /**
   * network_protocol block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
   */
   readonly networkProtocol?: SecurityhubInsightFiltersNetworkProtocol[] | cdktf.IResolvable;
   /**
   * network_source_domain block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
   */
   readonly networkSourceDomain?: SecurityhubInsightFiltersNetworkSourceDomain[] | cdktf.IResolvable;
   /**
   * network_source_ipv4 block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
   */
   readonly networkSourceIpv4?: SecurityhubInsightFiltersNetworkSourceIpv4[] | cdktf.IResolvable;
   /**
   * network_source_ipv6 block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
   */
   readonly networkSourceIpv6?: SecurityhubInsightFiltersNetworkSourceIpv6[] | cdktf.IResolvable;
   /**
   * network_source_mac block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
   */
   readonly networkSourceMac?: SecurityhubInsightFiltersNetworkSourceMac[] | cdktf.IResolvable;
   /**
   * network_source_port block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
   */
   readonly networkSourcePort?: SecurityhubInsightFiltersNetworkSourcePort[] | cdktf.IResolvable;
   /**
   * note_text block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
   */
   readonly noteText?: SecurityhubInsightFiltersNoteText[] | cdktf.IResolvable;
   /**
   * note_updated_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
   */
   readonly noteUpdatedAt?: SecurityhubInsightFiltersNoteUpdatedAt[] | cdktf.IResolvable;
   /**
   * note_updated_by block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
   */
   readonly noteUpdatedBy?: SecurityhubInsightFiltersNoteUpdatedBy[] | cdktf.IResolvable;
   /**
   * process_launched_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
   */
   readonly processLaunchedAt?: SecurityhubInsightFiltersProcessLaunchedAt[] | cdktf.IResolvable;
   /**
   * process_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
   */
   readonly processName?: SecurityhubInsightFiltersProcessName[] | cdktf.IResolvable;
   /**
   * process_parent_pid block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
   */
   readonly processParentPid?: SecurityhubInsightFiltersProcessParentPid[] | cdktf.IResolvable;
   /**
   * process_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
   */
   readonly processPath?: SecurityhubInsightFiltersProcessPath[] | cdktf.IResolvable;
   /**
   * process_pid block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
   */
   readonly processPid?: SecurityhubInsightFiltersProcessPid[] | cdktf.IResolvable;
   /**
   * process_terminated_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
   */
   readonly processTerminatedAt?: SecurityhubInsightFiltersProcessTerminatedAt[] | cdktf.IResolvable;
   /**
   * product_arn block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
   */
   readonly productArn?: SecurityhubInsightFiltersProductArn[] | cdktf.IResolvable;
   /**
   * product_fields block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
   */
   readonly productFields?: SecurityhubInsightFiltersProductFields[] | cdktf.IResolvable;
   /**
   * product_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
   */
   readonly productName?: SecurityhubInsightFiltersProductName[] | cdktf.IResolvable;
   /**
   * recommendation_text block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
   */
   readonly recommendationText?: SecurityhubInsightFiltersRecommendationText[] | cdktf.IResolvable;
   /**
   * record_state block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
   */
   readonly recordState?: SecurityhubInsightFiltersRecordState[] | cdktf.IResolvable;
   /**
   * related_findings_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
   */
   readonly relatedFindingsId?: SecurityhubInsightFiltersRelatedFindingsId[] | cdktf.IResolvable;
   /**
   * related_findings_product_arn block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
   */
   readonly relatedFindingsProductArn?: SecurityhubInsightFiltersRelatedFindingsProductArn[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_iam_instance_profile_arn block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
   */
   readonly resourceAwsEc2InstanceIamInstanceProfileArn?: SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_image_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
   */
   readonly resourceAwsEc2InstanceImageId?: SecurityhubInsightFiltersResourceAwsEc2InstanceImageId[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_ipv4_addresses block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
   */
   readonly resourceAwsEc2InstanceIpv4Addresses?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_ipv6_addresses block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
   */
   readonly resourceAwsEc2InstanceIpv6Addresses?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_key_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
   */
   readonly resourceAwsEc2InstanceKeyName?: SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_launched_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
   */
   readonly resourceAwsEc2InstanceLaunchedAt?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_subnet_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
   */
   readonly resourceAwsEc2InstanceSubnetId?: SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
   */
   readonly resourceAwsEc2InstanceType?: SecurityhubInsightFiltersResourceAwsEc2InstanceType[] | cdktf.IResolvable;
   /**
   * resource_aws_ec2_instance_vpc_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
   */
   readonly resourceAwsEc2InstanceVpcId?: SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId[] | cdktf.IResolvable;
   /**
   * resource_aws_iam_access_key_created_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
   */
   readonly resourceAwsIamAccessKeyCreatedAt?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt[] | cdktf.IResolvable;
   /**
   * resource_aws_iam_access_key_status block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
   */
   readonly resourceAwsIamAccessKeyStatus?: SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus[] | cdktf.IResolvable;
   /**
   * resource_aws_iam_access_key_user_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
   */
   readonly resourceAwsIamAccessKeyUserName?: SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName[] | cdktf.IResolvable;
   /**
   * resource_aws_s3_bucket_owner_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
   */
   readonly resourceAwsS3BucketOwnerId?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerId[] | cdktf.IResolvable;
   /**
   * resource_aws_s3_bucket_owner_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
   */
   readonly resourceAwsS3BucketOwnerName?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerName[] | cdktf.IResolvable;
   /**
   * resource_container_image_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
   */
   readonly resourceContainerImageId?: SecurityhubInsightFiltersResourceContainerImageId[] | cdktf.IResolvable;
   /**
   * resource_container_image_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
   */
   readonly resourceContainerImageName?: SecurityhubInsightFiltersResourceContainerImageName[] | cdktf.IResolvable;
   /**
   * resource_container_launched_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
   */
   readonly resourceContainerLaunchedAt?: SecurityhubInsightFiltersResourceContainerLaunchedAt[] | cdktf.IResolvable;
   /**
   * resource_container_name block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
   */
   readonly resourceContainerName?: SecurityhubInsightFiltersResourceContainerName[] | cdktf.IResolvable;
   /**
   * resource_details_other block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
   */
   readonly resourceDetailsOther?: SecurityhubInsightFiltersResourceDetailsOther[] | cdktf.IResolvable;
   /**
   * resource_id block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
   */
   readonly resourceId?: SecurityhubInsightFiltersResourceId[] | cdktf.IResolvable;
   /**
   * resource_partition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
   */
   readonly resourcePartition?: SecurityhubInsightFiltersResourcePartition[] | cdktf.IResolvable;
   /**
   * resource_region block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
   */
   readonly resourceRegion?: SecurityhubInsightFiltersResourceRegion[] | cdktf.IResolvable;
   /**
   * resource_tags block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
   */
   readonly resourceTags?: SecurityhubInsightFiltersResourceTags[] | cdktf.IResolvable;
   /**
   * resource_type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
   */
   readonly resourceType?: SecurityhubInsightFiltersResourceType[] | cdktf.IResolvable;
   /**
   * severity_label block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
   */
   readonly severityLabel?: SecurityhubInsightFiltersSeverityLabel[] | cdktf.IResolvable;
   /**
   * source_url block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
   */
   readonly sourceUrl?: SecurityhubInsightFiltersSourceUrl[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_category block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
   */
   readonly threatIntelIndicatorCategory?: SecurityhubInsightFiltersThreatIntelIndicatorCategory[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_last_observed_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
   */
   readonly threatIntelIndicatorLastObservedAt?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_source block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
   */
   readonly threatIntelIndicatorSource?: SecurityhubInsightFiltersThreatIntelIndicatorSource[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_source_url block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
   */
   readonly threatIntelIndicatorSourceUrl?: SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
   */
   readonly threatIntelIndicatorType?: SecurityhubInsightFiltersThreatIntelIndicatorType[] | cdktf.IResolvable;
   /**
   * threat_intel_indicator_value block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
   */
   readonly threatIntelIndicatorValue?: SecurityhubInsightFiltersThreatIntelIndicatorValue[] | cdktf.IResolvable;
   /**
   * title block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
   */
   readonly title?: SecurityhubInsightFiltersTitle[] | cdktf.IResolvable;
   /**
   * type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
   */
   readonly type?: SecurityhubInsightFiltersType[] | cdktf.IResolvable;
   /**
   * updated_at block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
   */
   readonly updatedAt?: SecurityhubInsightFiltersUpdatedAt[] | cdktf.IResolvable;
   /**
   * user_defined_values block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
   */
   readonly userDefinedValues?: SecurityhubInsightFiltersUserDefinedValues[] | cdktf.IResolvable;
   /**
   * verification_state block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
   */
   readonly verificationState?: SecurityhubInsightFiltersVerificationState[] | cdktf.IResolvable;
   /**
   * workflow_status block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
   */
   readonly workflowStatus?: SecurityhubInsightFiltersWorkflowStatus[] | cdktf.IResolvable;
 }
@@ -14531,7 +14531,7 @@ export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight aws_securityhub_insight}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight aws_securityhub_insight}
 */
 export class SecurityhubInsight extends cdktf.TerraformResource {
 
@@ -14545,7 +14545,7 @@ export class SecurityhubInsight extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/securityhub_insight aws_securityhub_insight} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/securityhub_insight aws_securityhub_insight} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14556,7 +14556,7 @@ export class SecurityhubInsight extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_insight',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

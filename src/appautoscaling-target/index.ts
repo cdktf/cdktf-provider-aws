@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,40 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface AppautoscalingTargetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}
   */
   readonly maxCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}
   */
   readonly minCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}
   */
   readonly scalableDimension: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}
   */
   readonly serviceNamespace: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target aws_appautoscaling_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target aws_appautoscaling_target}
 */
 export class AppautoscalingTarget extends cdktf.TerraformResource {
 
@@ -55,7 +63,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +74,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appautoscaling_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -84,11 +92,18 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
     this._roleArn = config.roleArn;
     this._scalableDimension = config.scalableDimension;
     this._serviceNamespace = config.serviceNamespace;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -187,6 +202,38 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
     return this._serviceNamespace;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -200,6 +247,8 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
       service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
 }

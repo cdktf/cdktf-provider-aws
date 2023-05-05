@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DocdbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot#db_cluster_identifier DocdbClusterSnapshot#db_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot#db_cluster_identifier DocdbClusterSnapshot#db_cluster_identifier}
   */
   readonly dbClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot#db_cluster_snapshot_identifier DocdbClusterSnapshot#db_cluster_snapshot_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot#db_cluster_snapshot_identifier DocdbClusterSnapshot#db_cluster_snapshot_identifier}
   */
   readonly dbClusterSnapshotIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot#id DocdbClusterSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot#id DocdbClusterSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,13 +25,13 @@ export interface DocdbClusterSnapshotConfig extends cdktf.TerraformMetaArguments
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot#timeouts DocdbClusterSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot#timeouts DocdbClusterSnapshot#timeouts}
   */
   readonly timeouts?: DocdbClusterSnapshotTimeouts;
 }
 export interface DocdbClusterSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot#create DocdbClusterSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot#create DocdbClusterSnapshot#create}
   */
   readonly create?: string;
 }
@@ -106,7 +106,7 @@ export class DocdbClusterSnapshotTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot}
 */
 export class DocdbClusterSnapshot extends cdktf.TerraformResource {
 
@@ -120,7 +120,7 @@ export class DocdbClusterSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/docdb_cluster_snapshot aws_docdb_cluster_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,7 @@ export class DocdbClusterSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_docdb_cluster_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

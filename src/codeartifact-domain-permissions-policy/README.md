@@ -1,3 +1,3 @@
 # `aws_codeartifact_domain_permissions_policy`
 
-Refer to the Terraform Registory for docs: [`aws_codeartifact_domain_permissions_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/codeartifact_domain_permissions_policy).
+Refer to the Terraform Registory for docs: [`aws_codeartifact_domain_permissions_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/codeartifact_domain_permissions_policy).

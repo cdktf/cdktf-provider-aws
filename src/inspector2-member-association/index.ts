@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface Inspector2MemberAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association#account_id Inspector2MemberAssociation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association#account_id Inspector2MemberAssociation#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association#id Inspector2MemberAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association#id Inspector2MemberAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,17 +21,17 @@ export interface Inspector2MemberAssociationConfig extends cdktf.TerraformMetaAr
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association#timeouts Inspector2MemberAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association#timeouts Inspector2MemberAssociation#timeouts}
   */
   readonly timeouts?: Inspector2MemberAssociationTimeouts;
 }
 export interface Inspector2MemberAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association#create Inspector2MemberAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association#create Inspector2MemberAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association#delete Inspector2MemberAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association#delete Inspector2MemberAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -129,7 +129,7 @@ export class Inspector2MemberAssociationTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association aws_inspector2_member_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association aws_inspector2_member_association}
 */
 export class Inspector2MemberAssociation extends cdktf.TerraformResource {
 
@@ -143,7 +143,7 @@ export class Inspector2MemberAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +154,7 @@ export class Inspector2MemberAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_inspector2_member_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -187,6 +187,11 @@ export class Inspector2MemberAssociation extends cdktf.TerraformResource {
     return this._accountId;
   }
 
+  // delegated_admin_account_id - computed: true, optional: false, required: false
+  public get delegatedAdminAccountId() {
+    return this.getStringAttribute('delegated_admin_account_id');
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -201,6 +206,16 @@ export class Inspector2MemberAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // relationship_status - computed: true, optional: false, required: false
+  public get relationshipStatus() {
+    return this.getStringAttribute('relationship_status');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
   }
 
   // timeouts - computed: false, optional: true, required: false

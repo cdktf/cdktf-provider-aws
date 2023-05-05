@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#filter DataAwsEc2TransitGateway#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#filter DataAwsEc2TransitGateway#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#timeouts DataAwsEc2TransitGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#timeouts DataAwsEc2TransitGateway#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayTimeouts;
 }
 export interface DataAwsEc2TransitGatewayFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}
   */
   readonly values: string[];
 }
@@ -151,7 +151,7 @@ export class DataAwsEc2TransitGatewayFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsEc2TransitGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}
   */
   readonly read?: string;
 }
@@ -226,7 +226,7 @@ export class DataAwsEc2TransitGatewayTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}
 */
 export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
 
@@ -240,7 +240,7 @@ export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +251,7 @@ export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_transit_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

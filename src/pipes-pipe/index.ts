@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,74 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface PipesPipeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#description PipesPipe#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#description PipesPipe#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}
   */
   readonly desiredState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}
   */
   readonly enrichment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#id PipesPipe#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#id PipesPipe#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name PipesPipe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name PipesPipe#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source PipesPipe#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source PipesPipe#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags PipesPipe#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags PipesPipe#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target PipesPipe#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target PipesPipe#target}
   */
   readonly target: string;
   /**
   * source_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
   */
   readonly sourceParameters: PipesPipeSourceParameters;
   /**
   * target_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
   */
   readonly targetParameters: PipesPipeTargetParameters;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
   */
   readonly timeouts?: PipesPipeTimeouts;
 }
 export interface PipesPipeSourceParametersFilterCriteriaFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}
   */
   readonly pattern: string;
 }
@@ -171,7 +171,7 @@ export interface PipesPipeSourceParametersFilterCriteria {
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
   */
   readonly filter?: PipesPipeSourceParametersFilterCriteriaFilter[] | cdktf.IResolvable;
 }
@@ -238,7 +238,7 @@ export interface PipesPipeSourceParameters {
   /**
   * filter_criteria block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
   */
   readonly filterCriteria?: PipesPipeSourceParametersFilterCriteria;
 }
@@ -303,7 +303,7 @@ export class PipesPipeSourceParametersOutputReference extends cdktf.ComplexObjec
 }
 export interface PipesPipeTargetParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}
   */
   readonly inputTemplate?: string;
 }
@@ -368,15 +368,15 @@ export class PipesPipeTargetParametersOutputReference extends cdktf.ComplexObjec
 }
 export interface PipesPipeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#create PipesPipe#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#create PipesPipe#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#delete PipesPipe#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#delete PipesPipe#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#update PipesPipe#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#update PipesPipe#update}
   */
   readonly update?: string;
 }
@@ -497,7 +497,7 @@ export class PipesPipeTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe aws_pipes_pipe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe aws_pipes_pipe}
 */
 export class PipesPipe extends cdktf.TerraformResource {
 
@@ -511,7 +511,7 @@ export class PipesPipe extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -522,7 +522,7 @@ export class PipesPipe extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pipes_pipe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

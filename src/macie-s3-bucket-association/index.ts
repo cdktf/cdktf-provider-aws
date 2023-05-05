@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface MacieS3BucketAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#bucket_name MacieS3BucketAssociation#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#id MacieS3BucketAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#member_account_id MacieS3BucketAssociation#member_account_id}
   */
   readonly memberAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#prefix MacieS3BucketAssociation#prefix}
   */
   readonly prefix?: string;
   /**
   * classification_type block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#classification_type MacieS3BucketAssociation#classification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#classification_type MacieS3BucketAssociation#classification_type}
   */
   readonly classificationType?: MacieS3BucketAssociationClassificationType;
 }
 export interface MacieS3BucketAssociationClassificationType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#continuous MacieS3BucketAssociation#continuous}
   */
   readonly continuous?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association#one_time MacieS3BucketAssociation#one_time}
   */
   readonly oneTime?: string;
 }
@@ -127,7 +127,7 @@ export class MacieS3BucketAssociationClassificationTypeOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}
 */
 export class MacieS3BucketAssociation extends cdktf.TerraformResource {
 
@@ -141,7 +141,7 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +152,7 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie_s3_bucket_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
