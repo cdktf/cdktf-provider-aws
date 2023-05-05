@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
   */
   readonly filter?: DataAwsLaunchTemplateFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
   */
   readonly timeouts?: DataAwsLaunchTemplateTimeouts;
 }
@@ -391,6 +391,11 @@ export class DataAwsLaunchTemplateCpuOptionsOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // amd_sev_snp - computed: true, optional: false, required: false
+  public get amdSevSnp() {
+    return this.getStringAttribute('amd_sev_snp');
   }
 
   // core_count - computed: true, optional: false, required: false
@@ -2444,11 +2449,11 @@ export class DataAwsLaunchTemplateTagSpecificationsList extends cdktf.ComplexLis
 }
 export interface DataAwsLaunchTemplateFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}
   */
   readonly values: string[];
 }
@@ -2562,7 +2567,7 @@ export class DataAwsLaunchTemplateFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsLaunchTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}
   */
   readonly read?: string;
 }
@@ -2637,7 +2642,7 @@ export class DataAwsLaunchTemplateTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template aws_launch_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template aws_launch_template}
 */
 export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
@@ -2651,7 +2656,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/launch_template aws_launch_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/launch_template aws_launch_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2662,7 +2667,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

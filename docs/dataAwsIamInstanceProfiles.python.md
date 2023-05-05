@@ -1,6 +1,6 @@
 # `data_aws_iam_instance_profiles`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profiles`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles).
+Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profiles`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles).
 
 # `dataAwsIamInstanceProfiles` Submodule <a name="`dataAwsIamInstanceProfiles` Submodule" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profiles`](ht
 
 ### DataAwsIamInstanceProfiles <a name="DataAwsIamInstanceProfiles" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles aws_iam_instance_profiles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles aws_iam_instance_profiles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles(
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfiles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -709,8 +709,8 @@ dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.roleName">role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfiles.DataAwsIamInstanceProfilesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}. |
 
 ---
 
@@ -792,7 +792,7 @@ role_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#role_name DataAwsIamInstanceProfiles#role_name}.
 
 ---
 
@@ -804,7 +804,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/iam_instance_profiles#id DataAwsIamInstanceProfiles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `data_aws_ec2_transit_gateway_vpc_attachment`
 
-Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_vpc_attachment`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ec2_transit_gateway_vpc_attachment).
+Refer to the Terraform Registory for docs: [`data_aws_ec2_transit_gateway_vpc_attachment`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway_vpc_attachment).

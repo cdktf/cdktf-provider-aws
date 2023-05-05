@@ -1,6 +1,6 @@
 # `aws_pipes_pipe`
 
-Refer to the Terraform Registory for docs: [`aws_pipes_pipe`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe).
+Refer to the Terraform Registory for docs: [`aws_pipes_pipe`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe).
 
 # `pipesPipe` Submodule <a name="`pipesPipe` Submodule" id="@cdktf/provider-aws.pipesPipe"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_pipes_pipe`](https://registry.t
 
 ### PipesPipe <a name="PipesPipe" id="@cdktf/provider-aws.pipesPipe.PipesPipe"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe aws_pipes_pipe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe aws_pipes_pipe}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer"></a>
 
@@ -53,19 +53,19 @@ pipesPipe.PipesPipe(
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.sourceParameters">source_parameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParameters">PipesPipeSourceParameters</a></code> | source_parameters block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.targetParameters">target_parameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters">PipesPipeTargetParameters</a></code> | target_parameters block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#description PipesPipe#description}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.desiredState">desired_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.enrichment">enrichment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#id PipesPipe#id}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags PipesPipe#tags}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#description PipesPipe#description}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.desiredState">desired_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.enrichment">enrichment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#id PipesPipe#id}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags PipesPipe#tags}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source PipesPipe#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source PipesPipe#source}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target PipesPipe#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target PipesPipe#target}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#description PipesPipe#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#description PipesPipe#description}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#id PipesPipe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#id PipesPipe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name PipesPipe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name PipesPipe#name}.
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags PipesPipe#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags PipesPipe#tags}.
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}.
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
 
 ---
 
@@ -509,7 +509,7 @@ def put_source_parameters(
 
 filter_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
 
 ---
 
@@ -525,7 +525,7 @@ def put_target_parameters(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}.
 
 ---
 
@@ -543,7 +543,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#create PipesPipe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#create PipesPipe#create}.
 
 ---
 
@@ -551,7 +551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#delete PipesPipe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#delete PipesPipe#delete}.
 
 ---
 
@@ -559,7 +559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#update PipesPipe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#update PipesPipe#update}.
 
 ---
 
@@ -1238,19 +1238,19 @@ pipesPipe.PipesPipeConfig(
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source PipesPipe#source}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.sourceParameters">source_parameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParameters">PipesPipeSourceParameters</a></code> | source_parameters block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target PipesPipe#target}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.targetParameters">target_parameters</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters">PipesPipeTargetParameters</a></code> | target_parameters block. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#description PipesPipe#description}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.desiredState">desired_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.enrichment">enrichment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#id PipesPipe#id}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags PipesPipe#tags}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#description PipesPipe#description}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.desiredState">desired_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.enrichment">enrichment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#id PipesPipe#id}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name PipesPipe#name}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags PipesPipe#tags}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1333,7 +1333,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#role_arn PipesPipe#role_arn}.
 
 ---
 
@@ -1345,7 +1345,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source PipesPipe#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source PipesPipe#source}.
 
 ---
 
@@ -1359,7 +1359,7 @@ source_parameters: PipesPipeSourceParameters
 
 source_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#source_parameters PipesPipe#source_parameters}
 
 ---
 
@@ -1371,7 +1371,7 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target PipesPipe#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target PipesPipe#target}.
 
 ---
 
@@ -1385,7 +1385,7 @@ target_parameters: PipesPipeTargetParameters
 
 target_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#target_parameters PipesPipe#target_parameters}
 
 ---
 
@@ -1397,7 +1397,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#description PipesPipe#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#description PipesPipe#description}.
 
 ---
 
@@ -1409,7 +1409,7 @@ desired_state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#desired_state PipesPipe#desired_state}.
 
 ---
 
@@ -1421,7 +1421,7 @@ enrichment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#enrichment PipesPipe#enrichment}.
 
 ---
 
@@ -1433,7 +1433,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#id PipesPipe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#id PipesPipe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1448,7 +1448,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name PipesPipe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name PipesPipe#name}.
 
 ---
 
@@ -1460,7 +1460,7 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#name_prefix PipesPipe#name_prefix}.
 
 ---
 
@@ -1472,7 +1472,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags PipesPipe#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags PipesPipe#tags}.
 
 ---
 
@@ -1484,7 +1484,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#tags_all PipesPipe#tags_all}.
 
 ---
 
@@ -1498,7 +1498,7 @@ timeouts: PipesPipeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#timeouts PipesPipe#timeouts}
 
 ---
 
@@ -1532,7 +1532,7 @@ filter_criteria: PipesPipeSourceParametersFilterCriteria
 
 filter_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter_criteria PipesPipe#filter_criteria}
 
 ---
 
@@ -1566,7 +1566,7 @@ filter: typing.Union[IResolvable, typing.List[PipesPipeSourceParametersFilterCri
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
 
 ---
 
@@ -1586,7 +1586,7 @@ pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter.property.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter.property.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}. |
 
 ---
 
@@ -1598,7 +1598,7 @@ pattern: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#pattern PipesPipe#pattern}.
 
 ---
 
@@ -1618,7 +1618,7 @@ pipesPipe.PipesPipeTargetParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters.property.inputTemplate">input_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters.property.inputTemplate">input_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}. |
 
 ---
 
@@ -1630,7 +1630,7 @@ input_template: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#input_template PipesPipe#input_template}.
 
 ---
 
@@ -1652,9 +1652,9 @@ pipesPipe.PipesPipeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#create PipesPipe#create}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#delete PipesPipe#delete}. |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#update PipesPipe#update}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#create PipesPipe#create}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#delete PipesPipe#delete}. |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#update PipesPipe#update}. |
 
 ---
 
@@ -1666,7 +1666,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#create PipesPipe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#create PipesPipe#create}.
 
 ---
 
@@ -1678,7 +1678,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#delete PipesPipe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#delete PipesPipe#delete}.
 
 ---
 
@@ -1690,7 +1690,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#update PipesPipe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#update PipesPipe#update}.
 
 ---
 
@@ -2725,7 +2725,7 @@ def put_filter_criteria(
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
 
 ---
 

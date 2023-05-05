@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSecretsmanagerSecretsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets#id DataAwsSecretsmanagerSecrets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets#id DataAwsSecretsmanagerSecrets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,17 +17,17 @@ export interface DataAwsSecretsmanagerSecretsConfig extends cdktf.TerraformMetaA
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets#filter DataAwsSecretsmanagerSecrets#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets#filter DataAwsSecretsmanagerSecrets#filter}
   */
   readonly filter?: DataAwsSecretsmanagerSecretsFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsSecretsmanagerSecretsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets#name DataAwsSecretsmanagerSecrets#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets#name DataAwsSecretsmanagerSecrets#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets#values DataAwsSecretsmanagerSecrets#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets#values DataAwsSecretsmanagerSecrets#values}
   */
   readonly values: string[];
 }
@@ -141,7 +141,7 @@ export class DataAwsSecretsmanagerSecretsFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets}
 */
 export class DataAwsSecretsmanagerSecrets extends cdktf.TerraformDataSource {
 
@@ -155,7 +155,7 @@ export class DataAwsSecretsmanagerSecrets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -166,7 +166,7 @@ export class DataAwsSecretsmanagerSecrets extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_secretsmanager_secrets',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

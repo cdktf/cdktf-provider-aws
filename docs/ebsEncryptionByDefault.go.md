@@ -1,6 +1,6 @@
 # `aws_ebs_encryption_by_default`
 
-Refer to the Terraform Registory for docs: [`aws_ebs_encryption_by_default`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default).
+Refer to the Terraform Registory for docs: [`aws_ebs_encryption_by_default`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default).
 
 # `ebsEncryptionByDefault` Submodule <a name="`ebsEncryptionByDefault` Submodule" id="@cdktf/provider-aws.ebsEncryptionByDefault"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ebs_encryption_by_default`](htt
 
 ### EbsEncryptionByDefault <a name="EbsEncryptionByDefault" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ebsencryptionbydefault"
 
 ebsencryptionbydefault.NewEbsEncryptionByDefault(scope Construct, id *string, config EbsEncryptionByDefaultConfig) EbsEncryptionByDefault
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ebsencryptionbydefault"
 
 &ebsencryptionbydefault.EbsEncryptionByDefaultConfig {
 	Connection: interface{},
@@ -599,8 +599,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault"
 | <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}. |
-| <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}. |
 
 ---
 
@@ -682,7 +682,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}.
 
 ---
 
@@ -694,7 +694,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

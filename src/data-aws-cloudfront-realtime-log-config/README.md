@@ -1,3 +1,3 @@
 # `data_aws_cloudfront_realtime_log_config`
 
-Refer to the Terraform Registory for docs: [`data_aws_cloudfront_realtime_log_config`](https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/cloudfront_realtime_log_config).
+Refer to the Terraform Registory for docs: [`data_aws_cloudfront_realtime_log_config`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/cloudfront_realtime_log_config).

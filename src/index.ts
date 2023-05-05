@@ -2,6 +2,7 @@
 export * as accessanalyzerAnalyzer from './accessanalyzer-analyzer';
 export * as accessanalyzerArchiveRule from './accessanalyzer-archive-rule';
 export * as accountAlternateContact from './account-alternate-contact';
+export * as accountPrimaryContact from './account-primary-contact';
 export * as acmCertificate from './acm-certificate';
 export * as acmCertificateValidation from './acm-certificate-validation';
 export * as acmpcaCertificate from './acmpca-certificate';
@@ -74,6 +75,7 @@ export * as appconfigExtensionAssociation from './appconfig-extension-associatio
 export * as appconfigHostedConfigurationVersion from './appconfig-hosted-configuration-version';
 export * as appflowConnectorProfile from './appflow-connector-profile';
 export * as appflowFlow from './appflow-flow';
+export * as appintegrationsDataIntegration from './appintegrations-data-integration';
 export * as appintegrationsEventIntegration from './appintegrations-event-integration';
 export * as applicationinsightsApplication from './applicationinsights-application';
 export * as appmeshGatewayRoute from './appmesh-gateway-route';
@@ -154,6 +156,7 @@ export * as chimeVoiceConnectorStreaming from './chime-voice-connector-streaming
 export * as chimeVoiceConnectorTermination from './chime-voice-connector-termination';
 export * as chimeVoiceConnectorTerminationCredentials from './chime-voice-connector-termination-credentials';
 export * as chimesdkmediapipelinesMediaInsightsPipelineConfiguration from './chimesdkmediapipelines-media-insights-pipeline-configuration';
+export * as chimesdkvoiceVoiceProfileDomain from './chimesdkvoice-voice-profile-domain';
 export * as cloud9EnvironmentEc2 from './cloud9-environment-ec2';
 export * as cloud9EnvironmentMembership from './cloud9-environment-membership';
 export * as cloudcontrolapiResource from './cloudcontrolapi-resource';
@@ -327,6 +330,7 @@ export * as directoryServiceRadiusSettings from './directory-service-radius-sett
 export * as directoryServiceRegion from './directory-service-region';
 export * as directoryServiceSharedDirectory from './directory-service-shared-directory';
 export * as directoryServiceSharedDirectoryAccepter from './directory-service-shared-directory-accepter';
+export * as directoryServiceTrust from './directory-service-trust';
 export * as dlmLifecyclePolicy from './dlm-lifecycle-policy';
 export * as dmsCertificate from './dms-certificate';
 export * as dmsEndpoint from './dms-endpoint';
@@ -1150,13 +1154,17 @@ export * as vpcPeeringConnectionAccepter from './vpc-peering-connection-accepter
 export * as vpcPeeringConnectionOptions from './vpc-peering-connection-options';
 export * as vpcSecurityGroupEgressRule from './vpc-security-group-egress-rule';
 export * as vpcSecurityGroupIngressRule from './vpc-security-group-ingress-rule';
+export * as vpclatticeAccessLogSubscription from './vpclattice-access-log-subscription';
+export * as vpclatticeAuthPolicy from './vpclattice-auth-policy';
 export * as vpclatticeListener from './vpclattice-listener';
 export * as vpclatticeListenerRule from './vpclattice-listener-rule';
+export * as vpclatticeResourcePolicy from './vpclattice-resource-policy';
 export * as vpclatticeService from './vpclattice-service';
 export * as vpclatticeServiceNetwork from './vpclattice-service-network';
 export * as vpclatticeServiceNetworkServiceAssociation from './vpclattice-service-network-service-association';
 export * as vpclatticeServiceNetworkVpcAssociation from './vpclattice-service-network-vpc-association';
 export * as vpclatticeTargetGroup from './vpclattice-target-group';
+export * as vpclatticeTargetGroupAttachment from './vpclattice-target-group-attachment';
 export * as vpnConnection from './vpn-connection';
 export * as vpnConnectionRoute from './vpn-connection-route';
 export * as vpnGateway from './vpn-gateway';
@@ -1225,6 +1233,7 @@ export * as dataAwsAppconfigConfigurationProfile from './data-aws-appconfig-conf
 export * as dataAwsAppconfigConfigurationProfiles from './data-aws-appconfig-configuration-profiles';
 export * as dataAwsAppconfigEnvironment from './data-aws-appconfig-environment';
 export * as dataAwsAppconfigEnvironments from './data-aws-appconfig-environments';
+export * as dataAwsAppintegrationsEventIntegration from './data-aws-appintegrations-event-integration';
 export * as dataAwsAppmeshGatewayRoute from './data-aws-appmesh-gateway-route';
 export * as dataAwsAppmeshMesh from './data-aws-appmesh-mesh';
 export * as dataAwsAppmeshRoute from './data-aws-appmesh-route';
@@ -1312,6 +1321,7 @@ export * as dataAwsDefaultTags from './data-aws-default-tags';
 export * as dataAwsDirectoryServiceDirectory from './data-aws-directory-service-directory';
 export * as dataAwsDmsCertificate from './data-aws-dms-certificate';
 export * as dataAwsDmsEndpoint from './data-aws-dms-endpoint';
+export * as dataAwsDmsReplicationInstance from './data-aws-dms-replication-instance';
 export * as dataAwsDmsReplicationSubnetGroup from './data-aws-dms-replication-subnet-group';
 export * as dataAwsDmsReplicationTask from './data-aws-dms-replication-task';
 export * as dataAwsDocdbEngineVersion from './data-aws-docdb-engine-version';
@@ -1665,8 +1675,10 @@ export * as dataAwsVpcPeeringConnection from './data-aws-vpc-peering-connection'
 export * as dataAwsVpcPeeringConnections from './data-aws-vpc-peering-connections';
 export * as dataAwsVpcSecurityGroupRule from './data-aws-vpc-security-group-rule';
 export * as dataAwsVpcSecurityGroupRules from './data-aws-vpc-security-group-rules';
+export * as dataAwsVpclatticeAuthPolicy from './data-aws-vpclattice-auth-policy';
 export * as dataAwsVpclatticeListener from './data-aws-vpclattice-listener';
 export * as dataAwsVpclatticeService from './data-aws-vpclattice-service';
+export * as dataAwsVpclatticeServiceNetwork from './data-aws-vpclattice-service-network';
 export * as dataAwsVpcs from './data-aws-vpcs';
 export * as dataAwsVpnGateway from './data-aws-vpn-gateway';
 export * as dataAwsWafIpset from './data-aws-waf-ipset';
