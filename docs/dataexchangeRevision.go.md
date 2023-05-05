@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision"
 
 dataexchangerevision.NewDataexchangeRevision(scope Construct, id *string, config DataexchangeRevisionConfig) DataexchangeRevision
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataexchangerevision.DataexchangeRevision_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision"
 
 dataexchangerevision.DataexchangeRevision_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataexchangerevision"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision"
 
 &dataexchangerevision.DataexchangeRevisionConfig {
 	Connection: interface{},

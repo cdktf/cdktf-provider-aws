@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 ssmresourcedatasync.NewSsmResourceDataSync(scope Construct, id *string, config SsmResourceDataSyncConfig) SsmResourceDataSync
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 ssmresourcedatasync.SsmResourceDataSync_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 ssmresourcedatasync.SsmResourceDataSync_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ ssmresourcedatasync.SsmResourceDataSync_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 ssmresourcedatasync.SsmResourceDataSync_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 &ssmresourcedatasync.SsmResourceDataSyncConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination,
+	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v14.ssmResourceDataSync.SsmResourceDataSyncS3Destination,
 	Id: *string,
 }
 ```
@@ -750,7 +750,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 &ssmresourcedatasync.SsmResourceDataSyncS3Destination {
 	BucketName: *string,
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmresourcedatasync"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync"
 
 ssmresourcedatasync.NewSsmResourceDataSyncS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmResourceDataSyncS3DestinationOutputReference
 ```

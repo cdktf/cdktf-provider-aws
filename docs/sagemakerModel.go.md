@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModel(scope Construct, id *string, config SagemakerModelConfig) SagemakerModel
 ```
@@ -385,7 +385,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.SagemakerModel_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.SagemakerModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ sagemakermodel.SagemakerModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerModel.SagemakerModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.SagemakerModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelConfig {
 	Connection: interface{},
@@ -875,12 +875,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
 	Container: interface{},
 	EnableNetworkIsolation: interface{},
 	Id: *string,
-	InferenceExecutionConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelInferenceExecutionConfig,
+	InferenceExecutionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelInferenceExecutionConfig,
 	Name: *string,
-	PrimaryContainer: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelPrimaryContainer,
+	PrimaryContainer: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelPrimaryContainer,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelVpcConfig,
 }
 ```
 
@@ -1114,13 +1114,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelContainer {
 	Image: *string,
 	ContainerHostname: *string,
 	Environment: *map[string]*string,
-	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelContainerImageConfig,
+	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelContainerImageConfig,
 	Mode: *string,
 	ModelDataUrl: *string,
 }
@@ -1218,11 +1218,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelContainerImageConfig {
 	RepositoryAccessMode: *string,
-	RepositoryAuthConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig,
+	RepositoryAuthConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig,
 }
 ```
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelContainerImageConfigRepositoryAuthConfig {
 	RepositoryCredentialsProviderArn: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelInferenceExecutionConfig {
 	Mode: *string,
@@ -1330,13 +1330,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelPrimaryContainer {
 	Image: *string,
 	ContainerHostname: *string,
 	Environment: *map[string]*string,
-	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig,
+	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelPrimaryContainerImageConfig,
 	Mode: *string,
 	ModelDataUrl: *string,
 }
@@ -1434,11 +1434,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelPrimaryContainerImageConfig {
 	RepositoryAccessMode: *string,
-	RepositoryAuthConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig,
+	RepositoryAuthConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig,
 }
 ```
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig {
 	RepositoryCredentialsProviderArn: *string,
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 &sagemakermodel.SagemakerModelVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelContainerImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelContainerImageConfigOutputReference
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() SagemakerModelContainerImageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() SagemakerModelContainerImageConfigRepositoryAuthConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerModelContainerList
 ```
@@ -2289,7 +2289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerModelContainerOutputReference
 ```
@@ -2736,7 +2736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelInferenceExecutionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelInferenceExecutionConfigOutputReference
 ```
@@ -3007,7 +3007,7 @@ func InternalValue() SagemakerModelInferenceExecutionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelPrimaryContainerImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelPrimaryContainerImageConfigOutputReference
 ```
@@ -3320,7 +3320,7 @@ func InternalValue() SagemakerModelPrimaryContainerImageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference
 ```
@@ -3591,7 +3591,7 @@ func InternalValue() SagemakerModelPrimaryContainerImageConfigRepositoryAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelPrimaryContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelPrimaryContainerOutputReference
 ```
@@ -4020,7 +4020,7 @@ func InternalValue() SagemakerModelPrimaryContainer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakermodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakermodel"
 
 sagemakermodel.NewSagemakerModelVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerModelVpcConfigOutputReference
 ```
