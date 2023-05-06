@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface ChimeVoiceConnectorLoggingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging#enable_media_metric_logs ChimeVoiceConnectorLogging#enable_media_metric_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging#enable_media_metric_logs ChimeVoiceConnectorLogging#enable_media_metric_logs}
   */
   readonly enableMediaMetricLogs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging#enable_sip_logs ChimeVoiceConnectorLogging#enable_sip_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging#enable_sip_logs ChimeVoiceConnectorLogging#enable_sip_logs}
   */
   readonly enableSipLogs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging#id ChimeVoiceConnectorLogging#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging#id ChimeVoiceConnectorLogging#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging#voice_connector_id ChimeVoiceConnectorLogging#voice_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging#voice_connector_id ChimeVoiceConnectorLogging#voice_connector_id}
   */
   readonly voiceConnectorId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging}
 */
 export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
       terraformResourceType: 'aws_chime_voice_connector_logging',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.0',
+        providerVersion: '4.66.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

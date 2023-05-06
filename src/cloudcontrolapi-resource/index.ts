@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface CloudcontrolapiResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#desired_state CloudcontrolapiResource#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#desired_state CloudcontrolapiResource#desired_state}
   */
   readonly desiredState: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#id CloudcontrolapiResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#id CloudcontrolapiResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#role_arn CloudcontrolapiResource#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#role_arn CloudcontrolapiResource#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#schema CloudcontrolapiResource#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#schema CloudcontrolapiResource#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#type_name CloudcontrolapiResource#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#type_name CloudcontrolapiResource#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#type_version_id CloudcontrolapiResource#type_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#type_version_id CloudcontrolapiResource#type_version_id}
   */
   readonly typeVersionId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#timeouts CloudcontrolapiResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#timeouts CloudcontrolapiResource#timeouts}
   */
   readonly timeouts?: CloudcontrolapiResourceTimeouts;
 }
 export interface CloudcontrolapiResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#create CloudcontrolapiResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#create CloudcontrolapiResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#delete CloudcontrolapiResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#delete CloudcontrolapiResource#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource#update CloudcontrolapiResource#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource#update CloudcontrolapiResource#update}
   */
   readonly update?: string;
 }
@@ -172,7 +172,7 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}
 */
 export class CloudcontrolapiResource extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudcontrolapi_resource',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.0',
+        providerVersion: '4.66.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

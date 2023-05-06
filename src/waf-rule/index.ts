@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#id WafRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#id WafRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#metric_name WafRule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#metric_name WafRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#name WafRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#name WafRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#tags WafRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#tags WafRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#tags_all WafRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#tags_all WafRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * predicates block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#predicates WafRule#predicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#predicates WafRule#predicates}
   */
   readonly predicates?: WafRulePredicates[] | cdktf.IResolvable;
 }
 export interface WafRulePredicates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#data_id WafRule#data_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#data_id WafRule#data_id}
   */
   readonly dataId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#negated WafRule#negated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#negated WafRule#negated}
   */
   readonly negated: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule#type WafRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule#type WafRule#type}
   */
   readonly type: string;
 }
@@ -181,7 +181,7 @@ export class WafRulePredicatesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule aws_waf_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule aws_waf_rule}
 */
 export class WafRule extends cdktf.TerraformResource {
 
@@ -195,7 +195,7 @@ export class WafRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_rule aws_waf_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule aws_waf_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class WafRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.0',
+        providerVersion: '4.66.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

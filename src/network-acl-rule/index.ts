@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,60 +8,60 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#cidr_block NetworkAclRule#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#cidr_block NetworkAclRule#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#egress NetworkAclRule#egress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#egress NetworkAclRule#egress}
   */
   readonly egress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#from_port NetworkAclRule#from_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#from_port NetworkAclRule#from_port}
   */
   readonly fromPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#icmp_code NetworkAclRule#icmp_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#icmp_code NetworkAclRule#icmp_code}
   */
   readonly icmpCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#icmp_type NetworkAclRule#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#icmp_type NetworkAclRule#icmp_type}
   */
   readonly icmpType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#id NetworkAclRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#id NetworkAclRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#ipv6_cidr_block NetworkAclRule#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#ipv6_cidr_block NetworkAclRule#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#network_acl_id NetworkAclRule#network_acl_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#network_acl_id NetworkAclRule#network_acl_id}
   */
   readonly networkAclId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#protocol NetworkAclRule#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#protocol NetworkAclRule#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#rule_action NetworkAclRule#rule_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#rule_action NetworkAclRule#rule_action}
   */
   readonly ruleAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#rule_number NetworkAclRule#rule_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#rule_number NetworkAclRule#rule_number}
   */
   readonly ruleNumber: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule#to_port NetworkAclRule#to_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule#to_port NetworkAclRule#to_port}
   */
   readonly toPort?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule aws_network_acl_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule aws_network_acl_rule}
 */
 export class NetworkAclRule extends cdktf.TerraformResource {
 
@@ -75,7 +75,7 @@ export class NetworkAclRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/network_acl_rule aws_network_acl_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class NetworkAclRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_network_acl_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.0',
+        providerVersion: '4.66.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

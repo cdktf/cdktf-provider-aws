@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface WorklinkFleetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#audit_stream_arn WorklinkFleet#audit_stream_arn}
   */
   readonly auditStreamArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#device_ca_certificate WorklinkFleet#device_ca_certificate}
   */
   readonly deviceCaCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#display_name WorklinkFleet#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#id WorklinkFleet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#id WorklinkFleet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#name WorklinkFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#name WorklinkFleet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}
   */
   readonly optimizeForEndUserLocation?: boolean | cdktf.IResolvable;
   /**
   * identity_provider block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#identity_provider WorklinkFleet#identity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#identity_provider WorklinkFleet#identity_provider}
   */
   readonly identityProvider?: WorklinkFleetIdentityProvider;
   /**
   * network block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#network WorklinkFleet#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#network WorklinkFleet#network}
   */
   readonly network?: WorklinkFleetNetwork;
 }
 export interface WorklinkFleetIdentityProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#saml_metadata WorklinkFleet#saml_metadata}
   */
   readonly samlMetadata: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#type WorklinkFleet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#type WorklinkFleet#type}
   */
   readonly type: string;
 }
@@ -135,15 +135,15 @@ export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexO
 }
 export interface WorklinkFleetNetwork {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#security_group_ids WorklinkFleet#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#subnet_ids WorklinkFleet#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet#vpc_id WorklinkFleet#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -245,7 +245,7 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet aws_worklink_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet aws_worklink_fleet}
 */
 export class WorklinkFleet extends cdktf.TerraformResource {
 
@@ -259,7 +259,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_fleet aws_worklink_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -270,7 +270,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_worklink_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.0',
+        providerVersion: '4.66.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

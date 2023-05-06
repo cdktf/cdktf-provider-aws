@@ -1,6 +1,6 @@
 # `aws_schemas_schema`
 
-Refer to the Terraform Registory for docs: [`aws_schemas_schema`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema).
+Refer to the Terraform Registory for docs: [`aws_schemas_schema`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema).
 
 # `schemasSchema` Submodule <a name="`schemasSchema` Submodule" id="@cdktf/provider-aws.schemasSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_schemas_schema`](https://regist
 
 ### SchemasSchema <a name="SchemasSchema" id="@cdktf/provider-aws.schemasSchema.SchemasSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema aws_schemas_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema aws_schemas_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasSchema.SchemasSchema.Initializer"></a>
 
@@ -795,14 +795,14 @@ new SchemasSchemaConfig {
 | <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#content SchemasSchema#content}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#name SchemasSchema#name}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#type SchemasSchema#type}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#description SchemasSchema#description}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#id SchemasSchema#id}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#tags SchemasSchema#tags}. |
-| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#content SchemasSchema#content}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#name SchemasSchema#name}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#type SchemasSchema#type}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#description SchemasSchema#description}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#id SchemasSchema#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#tags SchemasSchema#tags}. |
+| <code><a href="#@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}. |
 
 ---
 
@@ -884,7 +884,7 @@ public string Content { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#content SchemasSchema#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#content SchemasSchema#content}.
 
 ---
 
@@ -896,7 +896,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#name SchemasSchema#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#name SchemasSchema#name}.
 
 ---
 
@@ -908,7 +908,7 @@ public string RegistryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}.
 
 ---
 
@@ -920,7 +920,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#type SchemasSchema#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#type SchemasSchema#type}.
 
 ---
 
@@ -932,7 +932,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#description SchemasSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#description SchemasSchema#description}.
 
 ---
 
@@ -944,7 +944,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#id SchemasSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#id SchemasSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#tags SchemasSchema#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#tags SchemasSchema#tags}.
 
 ---
 
@@ -971,7 +971,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}.
 
 ---
 

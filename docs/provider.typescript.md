@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`aws`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs).
+Refer to the Terraform Registory for docs: [`aws`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-aws.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws`](https://registry.terraform.io
 
 ### AwsProvider <a name="AwsProvider" id="@cdktf/provider-aws.provider.AwsProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs aws}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.provider.AwsProvider.Initializer"></a>
 
@@ -1281,7 +1281,7 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#duration AwsProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#duration AwsProvider#duration}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly durationSeconds: number;
 
 The duration, in seconds, of the role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#duration_seconds AwsProvider#duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#duration_seconds AwsProvider#duration_seconds}
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly externalId: string;
 
 A unique identifier that might be required when you assume a role in another account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#external_id AwsProvider#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#external_id AwsProvider#external_id}
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly policy: string;
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#policy AwsProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#policy AwsProvider#policy}
 
 ---
 
@@ -1337,7 +1337,7 @@ public readonly policyArns: string[];
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#policy_arns AwsProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#policy_arns AwsProvider#policy_arns}
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly roleArn: string;
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#role_arn AwsProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#role_arn AwsProvider#role_arn}
 
 ---
 
@@ -1365,7 +1365,7 @@ public readonly sessionName: string;
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#session_name AwsProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#session_name AwsProvider#session_name}
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly sourceIdentity: string;
 
 Source identity specified by the principal assuming the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#source_identity AwsProvider#source_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#source_identity AwsProvider#source_identity}
 
 ---
 
@@ -1393,7 +1393,7 @@ public readonly tags: {[ key: string ]: string};
 
 Assume role session tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#tags AwsProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#tags AwsProvider#tags}
 
 ---
 
@@ -1407,7 +1407,7 @@ public readonly transitiveTagKeys: string[];
 
 Assume role session tag keys to pass to any subsequent sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transitive_tag_keys AwsProvider#transitive_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transitive_tag_keys AwsProvider#transitive_tag_keys}
 
 ---
 
@@ -1430,8 +1430,8 @@ const awsProviderAssumeRoleWithWebIdentity: provider.AwsProviderAssumeRoleWithWe
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policyArns">policyArns</a></code> | <code>string[]</code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.roleArn">roleArn</a></code> | <code>string</code> | Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.sessionName">sessionName</a></code> | <code>string</code> | An identifier for the assumed role session. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken">webIdentityToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#web_identity_token AwsProvider#web_identity_token}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile">webIdentityTokenFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken">webIdentityToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#web_identity_token AwsProvider#web_identity_token}. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile">webIdentityTokenFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#web_identity_token_file AwsProvider#web_identity_token_file}. |
 
 ---
 
@@ -1447,7 +1447,7 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#duration AwsProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#duration AwsProvider#duration}
 
 ---
 
@@ -1461,7 +1461,7 @@ public readonly policy: string;
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#policy AwsProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#policy AwsProvider#policy}
 
 ---
 
@@ -1475,7 +1475,7 @@ public readonly policyArns: string[];
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#policy_arns AwsProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#policy_arns AwsProvider#policy_arns}
 
 ---
 
@@ -1489,7 +1489,7 @@ public readonly roleArn: string;
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#role_arn AwsProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#role_arn AwsProvider#role_arn}
 
 ---
 
@@ -1503,7 +1503,7 @@ public readonly sessionName: string;
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#session_name AwsProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#session_name AwsProvider#session_name}
 
 ---
 
@@ -1515,7 +1515,7 @@ public readonly webIdentityToken: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#web_identity_token AwsProvider#web_identity_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#web_identity_token AwsProvider#web_identity_token}.
 
 ---
 
@@ -1527,7 +1527,7 @@ public readonly webIdentityTokenFile: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#web_identity_token_file AwsProvider#web_identity_token_file}.
 
 ---
 
@@ -1547,7 +1547,7 @@ const awsProviderConfig: provider.AwsProviderConfig = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.accessKey">accessKey</a></code> | <code>string</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowedAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowedAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assumeRole</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>[]</code> | assume_role block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assumeRoleWithWebIdentity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>[]</code> | assume_role_with_web_identity block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.customCaBundle">customCaBundle</a></code> | <code>string</code> | File containing custom root and intermediate certificates. |
@@ -1555,7 +1555,7 @@ const awsProviderConfig: provider.AwsProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2MetadataServiceEndpoint</a></code> | <code>string</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2MetadataServiceEndpointMode</a></code> | <code>string</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>[]</code> | endpoints block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
+| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbiddenAccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpProxy">httpProxy</a></code> | <code>string</code> | The address of an HTTP proxy to use when accessing the AWS API. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignoreTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>[]</code> | ignore_tags block. |
 | <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
@@ -1590,7 +1590,7 @@ public readonly accessKey: string;
 
 The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#access_key AwsProvider#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#access_key AwsProvider#access_key}
 
 ---
 
@@ -1604,7 +1604,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#alias AwsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#alias AwsProvider#alias}
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly allowedAccountIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public readonly assumeRole: IResolvable | AwsProviderAssumeRole[];
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#assume_role AwsProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#assume_role AwsProvider#assume_role}
 
 ---
 
@@ -1644,7 +1644,7 @@ public readonly assumeRoleWithWebIdentity: IResolvable | AwsProviderAssumeRoleWi
 
 assume_role_with_web_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
 
 ---
 
@@ -1660,7 +1660,7 @@ File containing custom root and intermediate certificates.
 
 Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
 
 ---
 
@@ -1674,7 +1674,7 @@ public readonly defaultTags: IResolvable | AwsProviderDefaultTags[];
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#default_tags AwsProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#default_tags AwsProvider#default_tags}
 
 ---
 
@@ -1688,7 +1688,7 @@ public readonly ec2MetadataServiceEndpoint: string;
 
 Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
 
 ---
 
@@ -1702,7 +1702,7 @@ public readonly ec2MetadataServiceEndpointMode: string;
 
 Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
 
 ---
 
@@ -1716,7 +1716,7 @@ public readonly endpoints: IResolvable | AwsProviderEndpoints[];
 
 endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#endpoints AwsProvider#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#endpoints AwsProvider#endpoints}
 
 ---
 
@@ -1728,7 +1728,7 @@ public readonly forbiddenAccountIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
 
 ---
 
@@ -1744,7 +1744,7 @@ The address of an HTTP proxy to use when accessing the AWS API.
 
 Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#http_proxy AwsProvider#http_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#http_proxy AwsProvider#http_proxy}
 
 ---
 
@@ -1758,7 +1758,7 @@ public readonly ignoreTags: IResolvable | AwsProviderIgnoreTags[];
 
 ignore_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ignore_tags AwsProvider#ignore_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ignore_tags AwsProvider#ignore_tags}
 
 ---
 
@@ -1772,7 +1772,7 @@ public readonly insecure: boolean | IResolvable;
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#insecure AwsProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#insecure AwsProvider#insecure}
 
 ---
 
@@ -1789,7 +1789,7 @@ The maximum number of times an AWS API request is being executed.
 If the API request still fails, an error is
 thrown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#max_retries AwsProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#max_retries AwsProvider#max_retries}
 
 ---
 
@@ -1803,7 +1803,7 @@ public readonly profile: string;
 
 The profile for API operations. If not set, the default profile created with `aws configure` will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#profile AwsProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#profile AwsProvider#profile}
 
 ---
 
@@ -1817,7 +1817,7 @@ public readonly region: string;
 
 The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#region AwsProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#region AwsProvider#region}
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly s3ForcePathStyle: boolean | IResolvable;
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3_force_path_style AwsProvider#s3_force_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3_force_path_style AwsProvider#s3_force_path_style}
 
 ---
 
@@ -1845,7 +1845,7 @@ public readonly s3UsePathStyle: boolean | IResolvable;
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3_use_path_style AwsProvider#s3_use_path_style}
 
 ---
 
@@ -1859,7 +1859,7 @@ public readonly secretKey: string;
 
 The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#secret_key AwsProvider#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#secret_key AwsProvider#secret_key}
 
 ---
 
@@ -1873,7 +1873,7 @@ public readonly sharedConfigFiles: string[];
 
 List of paths to shared config files. If not set, defaults to [~/.aws/config].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#shared_config_files AwsProvider#shared_config_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#shared_config_files AwsProvider#shared_config_files}
 
 ---
 
@@ -1887,7 +1887,7 @@ public readonly sharedCredentialsFile: string;
 
 The path to the shared credentials file. If not set, defaults to ~/.aws/credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#shared_credentials_file AwsProvider#shared_credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#shared_credentials_file AwsProvider#shared_credentials_file}
 
 ---
 
@@ -1901,7 +1901,7 @@ public readonly sharedCredentialsFiles: string[];
 
 List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#shared_credentials_files AwsProvider#shared_credentials_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#shared_credentials_files AwsProvider#shared_credentials_files}
 
 ---
 
@@ -1915,7 +1915,7 @@ public readonly skipCredentialsValidation: boolean | IResolvable;
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
 
 ---
 
@@ -1929,7 +1929,7 @@ public readonly skipGetEc2Platforms: boolean | IResolvable;
 
 Skip getting the supported EC2 platforms. Used by users that don't have ec2:DescribeAccountAttributes permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#skip_get_ec2_platforms AwsProvider#skip_get_ec2_platforms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#skip_get_ec2_platforms AwsProvider#skip_get_ec2_platforms}
 
 ---
 
@@ -1943,7 +1943,7 @@ public readonly skipMetadataApiCheck: string;
 
 Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
 
 ---
 
@@ -1959,7 +1959,7 @@ Skip static validation of region name.
 
 Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#skip_region_validation AwsProvider#skip_region_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#skip_region_validation AwsProvider#skip_region_validation}
 
 ---
 
@@ -1973,7 +1973,7 @@ public readonly skipRequestingAccountId: boolean | IResolvable;
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
 
 ---
 
@@ -1987,7 +1987,7 @@ public readonly stsRegion: string;
 
 The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sts_region AwsProvider#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sts_region AwsProvider#sts_region}
 
 ---
 
@@ -2001,7 +2001,7 @@ public readonly token: string;
 
 session token. A session token is only required if you are using temporary security credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#token AwsProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#token AwsProvider#token}
 
 ---
 
@@ -2015,7 +2015,7 @@ public readonly useDualstackEndpoint: boolean | IResolvable;
 
 Resolve an endpoint with DualStack capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
 
 ---
 
@@ -2029,7 +2029,7 @@ public readonly useFipsEndpoint: boolean | IResolvable;
 
 Resolve an endpoint with FIPS capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
 
 ---
 
@@ -2061,7 +2061,7 @@ public readonly tags: {[ key: string ]: string};
 
 Resource tags to default across all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#tags AwsProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#tags AwsProvider#tags}
 
 ---
 
@@ -2476,7 +2476,7 @@ public readonly accessanalyzer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#accessanalyzer AwsProvider#accessanalyzer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#accessanalyzer AwsProvider#accessanalyzer}
 
 ---
 
@@ -2490,7 +2490,7 @@ public readonly account: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#account AwsProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#account AwsProvider#account}
 
 ---
 
@@ -2504,7 +2504,7 @@ public readonly acm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#acm AwsProvider#acm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#acm AwsProvider#acm}
 
 ---
 
@@ -2518,7 +2518,7 @@ public readonly acmpca: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#acmpca AwsProvider#acmpca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#acmpca AwsProvider#acmpca}
 
 ---
 
@@ -2532,7 +2532,7 @@ public readonly alexaforbusiness: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#alexaforbusiness AwsProvider#alexaforbusiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#alexaforbusiness AwsProvider#alexaforbusiness}
 
 ---
 
@@ -2546,7 +2546,7 @@ public readonly amg: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#amg AwsProvider#amg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#amg AwsProvider#amg}
 
 ---
 
@@ -2560,7 +2560,7 @@ public readonly amp: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#amp AwsProvider#amp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#amp AwsProvider#amp}
 
 ---
 
@@ -2574,7 +2574,7 @@ public readonly amplify: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#amplify AwsProvider#amplify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#amplify AwsProvider#amplify}
 
 ---
 
@@ -2588,7 +2588,7 @@ public readonly amplifybackend: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#amplifybackend AwsProvider#amplifybackend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#amplifybackend AwsProvider#amplifybackend}
 
 ---
 
@@ -2602,7 +2602,7 @@ public readonly amplifyuibuilder: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#amplifyuibuilder AwsProvider#amplifyuibuilder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#amplifyuibuilder AwsProvider#amplifyuibuilder}
 
 ---
 
@@ -2616,7 +2616,7 @@ public readonly apigateway: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#apigateway AwsProvider#apigateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#apigateway AwsProvider#apigateway}
 
 ---
 
@@ -2630,7 +2630,7 @@ public readonly apigatewaymanagementapi: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#apigatewaymanagementapi AwsProvider#apigatewaymanagementapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#apigatewaymanagementapi AwsProvider#apigatewaymanagementapi}
 
 ---
 
@@ -2644,7 +2644,7 @@ public readonly apigatewayv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#apigatewayv2 AwsProvider#apigatewayv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#apigatewayv2 AwsProvider#apigatewayv2}
 
 ---
 
@@ -2658,7 +2658,7 @@ public readonly appautoscaling: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appautoscaling AwsProvider#appautoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appautoscaling AwsProvider#appautoscaling}
 
 ---
 
@@ -2672,7 +2672,7 @@ public readonly appconfig: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appconfig AwsProvider#appconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appconfig AwsProvider#appconfig}
 
 ---
 
@@ -2686,7 +2686,7 @@ public readonly appconfigdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appconfigdata AwsProvider#appconfigdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appconfigdata AwsProvider#appconfigdata}
 
 ---
 
@@ -2700,7 +2700,7 @@ public readonly appflow: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appflow AwsProvider#appflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appflow AwsProvider#appflow}
 
 ---
 
@@ -2714,7 +2714,7 @@ public readonly appintegrations: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appintegrations AwsProvider#appintegrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appintegrations AwsProvider#appintegrations}
 
 ---
 
@@ -2728,7 +2728,7 @@ public readonly appintegrationsservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appintegrationsservice AwsProvider#appintegrationsservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appintegrationsservice AwsProvider#appintegrationsservice}
 
 ---
 
@@ -2742,7 +2742,7 @@ public readonly applicationautoscaling: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#applicationautoscaling AwsProvider#applicationautoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#applicationautoscaling AwsProvider#applicationautoscaling}
 
 ---
 
@@ -2756,7 +2756,7 @@ public readonly applicationcostprofiler: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#applicationcostprofiler AwsProvider#applicationcostprofiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#applicationcostprofiler AwsProvider#applicationcostprofiler}
 
 ---
 
@@ -2770,7 +2770,7 @@ public readonly applicationdiscovery: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#applicationdiscovery AwsProvider#applicationdiscovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#applicationdiscovery AwsProvider#applicationdiscovery}
 
 ---
 
@@ -2784,7 +2784,7 @@ public readonly applicationdiscoveryservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#applicationdiscoveryservice AwsProvider#applicationdiscoveryservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#applicationdiscoveryservice AwsProvider#applicationdiscoveryservice}
 
 ---
 
@@ -2798,7 +2798,7 @@ public readonly applicationinsights: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#applicationinsights AwsProvider#applicationinsights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#applicationinsights AwsProvider#applicationinsights}
 
 ---
 
@@ -2812,7 +2812,7 @@ public readonly appmesh: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appmesh AwsProvider#appmesh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appmesh AwsProvider#appmesh}
 
 ---
 
@@ -2826,7 +2826,7 @@ public readonly appregistry: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appregistry AwsProvider#appregistry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appregistry AwsProvider#appregistry}
 
 ---
 
@@ -2840,7 +2840,7 @@ public readonly apprunner: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#apprunner AwsProvider#apprunner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#apprunner AwsProvider#apprunner}
 
 ---
 
@@ -2854,7 +2854,7 @@ public readonly appstream: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appstream AwsProvider#appstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appstream AwsProvider#appstream}
 
 ---
 
@@ -2868,7 +2868,7 @@ public readonly appsync: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#appsync AwsProvider#appsync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#appsync AwsProvider#appsync}
 
 ---
 
@@ -2882,7 +2882,7 @@ public readonly athena: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#athena AwsProvider#athena}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#athena AwsProvider#athena}
 
 ---
 
@@ -2896,7 +2896,7 @@ public readonly auditmanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#auditmanager AwsProvider#auditmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#auditmanager AwsProvider#auditmanager}
 
 ---
 
@@ -2910,7 +2910,7 @@ public readonly augmentedairuntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#augmentedairuntime AwsProvider#augmentedairuntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#augmentedairuntime AwsProvider#augmentedairuntime}
 
 ---
 
@@ -2924,7 +2924,7 @@ public readonly autoscaling: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#autoscaling AwsProvider#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#autoscaling AwsProvider#autoscaling}
 
 ---
 
@@ -2938,7 +2938,7 @@ public readonly autoscalingplans: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#autoscalingplans AwsProvider#autoscalingplans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#autoscalingplans AwsProvider#autoscalingplans}
 
 ---
 
@@ -2952,7 +2952,7 @@ public readonly backup: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#backup AwsProvider#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#backup AwsProvider#backup}
 
 ---
 
@@ -2966,7 +2966,7 @@ public readonly backupgateway: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#backupgateway AwsProvider#backupgateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#backupgateway AwsProvider#backupgateway}
 
 ---
 
@@ -2980,7 +2980,7 @@ public readonly batch: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#batch AwsProvider#batch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#batch AwsProvider#batch}
 
 ---
 
@@ -2994,7 +2994,7 @@ public readonly beanstalk: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#beanstalk AwsProvider#beanstalk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#beanstalk AwsProvider#beanstalk}
 
 ---
 
@@ -3008,7 +3008,7 @@ public readonly billingconductor: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#billingconductor AwsProvider#billingconductor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#billingconductor AwsProvider#billingconductor}
 
 ---
 
@@ -3022,7 +3022,7 @@ public readonly braket: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#braket AwsProvider#braket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#braket AwsProvider#braket}
 
 ---
 
@@ -3036,7 +3036,7 @@ public readonly budgets: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#budgets AwsProvider#budgets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#budgets AwsProvider#budgets}
 
 ---
 
@@ -3050,7 +3050,7 @@ public readonly ce: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ce AwsProvider#ce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ce AwsProvider#ce}
 
 ---
 
@@ -3064,7 +3064,7 @@ public readonly chime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chime AwsProvider#chime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chime AwsProvider#chime}
 
 ---
 
@@ -3078,7 +3078,7 @@ public readonly chimesdkidentity: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chimesdkidentity AwsProvider#chimesdkidentity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chimesdkidentity AwsProvider#chimesdkidentity}
 
 ---
 
@@ -3092,7 +3092,7 @@ public readonly chimesdkmediapipelines: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
 
 ---
 
@@ -3106,7 +3106,7 @@ public readonly chimesdkmeetings: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chimesdkmeetings AwsProvider#chimesdkmeetings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chimesdkmeetings AwsProvider#chimesdkmeetings}
 
 ---
 
@@ -3120,7 +3120,7 @@ public readonly chimesdkmessaging: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chimesdkmessaging AwsProvider#chimesdkmessaging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chimesdkmessaging AwsProvider#chimesdkmessaging}
 
 ---
 
@@ -3134,7 +3134,7 @@ public readonly chimesdkvoice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#chimesdkvoice AwsProvider#chimesdkvoice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#chimesdkvoice AwsProvider#chimesdkvoice}
 
 ---
 
@@ -3148,7 +3148,7 @@ public readonly cleanrooms: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cleanrooms AwsProvider#cleanrooms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cleanrooms AwsProvider#cleanrooms}
 
 ---
 
@@ -3162,7 +3162,7 @@ public readonly cloud9: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloud9 AwsProvider#cloud9}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloud9 AwsProvider#cloud9}
 
 ---
 
@@ -3176,7 +3176,7 @@ public readonly cloudcontrol: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudcontrol AwsProvider#cloudcontrol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudcontrol AwsProvider#cloudcontrol}
 
 ---
 
@@ -3190,7 +3190,7 @@ public readonly cloudcontrolapi: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudcontrolapi AwsProvider#cloudcontrolapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudcontrolapi AwsProvider#cloudcontrolapi}
 
 ---
 
@@ -3204,7 +3204,7 @@ public readonly clouddirectory: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#clouddirectory AwsProvider#clouddirectory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#clouddirectory AwsProvider#clouddirectory}
 
 ---
 
@@ -3218,7 +3218,7 @@ public readonly cloudformation: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudformation AwsProvider#cloudformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudformation AwsProvider#cloudformation}
 
 ---
 
@@ -3232,7 +3232,7 @@ public readonly cloudfront: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudfront AwsProvider#cloudfront}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudfront AwsProvider#cloudfront}
 
 ---
 
@@ -3246,7 +3246,7 @@ public readonly cloudhsm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudhsm AwsProvider#cloudhsm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudhsm AwsProvider#cloudhsm}
 
 ---
 
@@ -3260,7 +3260,7 @@ public readonly cloudhsmv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudhsmv2 AwsProvider#cloudhsmv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudhsmv2 AwsProvider#cloudhsmv2}
 
 ---
 
@@ -3274,7 +3274,7 @@ public readonly cloudsearch: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudsearch AwsProvider#cloudsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudsearch AwsProvider#cloudsearch}
 
 ---
 
@@ -3288,7 +3288,7 @@ public readonly cloudsearchdomain: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudsearchdomain AwsProvider#cloudsearchdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudsearchdomain AwsProvider#cloudsearchdomain}
 
 ---
 
@@ -3302,7 +3302,7 @@ public readonly cloudtrail: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudtrail AwsProvider#cloudtrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudtrail AwsProvider#cloudtrail}
 
 ---
 
@@ -3316,7 +3316,7 @@ public readonly cloudwatch: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatch AwsProvider#cloudwatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatch AwsProvider#cloudwatch}
 
 ---
 
@@ -3330,7 +3330,7 @@ public readonly cloudwatchevents: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchevents AwsProvider#cloudwatchevents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchevents AwsProvider#cloudwatchevents}
 
 ---
 
@@ -3344,7 +3344,7 @@ public readonly cloudwatchevidently: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchevidently AwsProvider#cloudwatchevidently}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchevidently AwsProvider#cloudwatchevidently}
 
 ---
 
@@ -3358,7 +3358,7 @@ public readonly cloudwatchlog: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchlog AwsProvider#cloudwatchlog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchlog AwsProvider#cloudwatchlog}
 
 ---
 
@@ -3372,7 +3372,7 @@ public readonly cloudwatchlogs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchlogs AwsProvider#cloudwatchlogs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchlogs AwsProvider#cloudwatchlogs}
 
 ---
 
@@ -3386,7 +3386,7 @@ public readonly cloudwatchobservabilityaccessmanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
 
 ---
 
@@ -3400,7 +3400,7 @@ public readonly cloudwatchrum: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cloudwatchrum AwsProvider#cloudwatchrum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cloudwatchrum AwsProvider#cloudwatchrum}
 
 ---
 
@@ -3414,7 +3414,7 @@ public readonly codeartifact: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codeartifact AwsProvider#codeartifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codeartifact AwsProvider#codeartifact}
 
 ---
 
@@ -3428,7 +3428,7 @@ public readonly codebuild: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codebuild AwsProvider#codebuild}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codebuild AwsProvider#codebuild}
 
 ---
 
@@ -3442,7 +3442,7 @@ public readonly codecommit: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codecommit AwsProvider#codecommit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codecommit AwsProvider#codecommit}
 
 ---
 
@@ -3456,7 +3456,7 @@ public readonly codedeploy: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codedeploy AwsProvider#codedeploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codedeploy AwsProvider#codedeploy}
 
 ---
 
@@ -3470,7 +3470,7 @@ public readonly codeguruprofiler: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codeguruprofiler AwsProvider#codeguruprofiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codeguruprofiler AwsProvider#codeguruprofiler}
 
 ---
 
@@ -3484,7 +3484,7 @@ public readonly codegurureviewer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codegurureviewer AwsProvider#codegurureviewer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codegurureviewer AwsProvider#codegurureviewer}
 
 ---
 
@@ -3498,7 +3498,7 @@ public readonly codepipeline: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codepipeline AwsProvider#codepipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codepipeline AwsProvider#codepipeline}
 
 ---
 
@@ -3512,7 +3512,7 @@ public readonly codestar: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codestar AwsProvider#codestar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codestar AwsProvider#codestar}
 
 ---
 
@@ -3526,7 +3526,7 @@ public readonly codestarconnections: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codestarconnections AwsProvider#codestarconnections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codestarconnections AwsProvider#codestarconnections}
 
 ---
 
@@ -3540,7 +3540,7 @@ public readonly codestarnotifications: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#codestarnotifications AwsProvider#codestarnotifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#codestarnotifications AwsProvider#codestarnotifications}
 
 ---
 
@@ -3554,7 +3554,7 @@ public readonly cognitoidentity: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cognitoidentity AwsProvider#cognitoidentity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cognitoidentity AwsProvider#cognitoidentity}
 
 ---
 
@@ -3568,7 +3568,7 @@ public readonly cognitoidentityprovider: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cognitoidentityprovider AwsProvider#cognitoidentityprovider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cognitoidentityprovider AwsProvider#cognitoidentityprovider}
 
 ---
 
@@ -3582,7 +3582,7 @@ public readonly cognitoidp: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cognitoidp AwsProvider#cognitoidp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cognitoidp AwsProvider#cognitoidp}
 
 ---
 
@@ -3596,7 +3596,7 @@ public readonly cognitosync: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cognitosync AwsProvider#cognitosync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cognitosync AwsProvider#cognitosync}
 
 ---
 
@@ -3610,7 +3610,7 @@ public readonly comprehend: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#comprehend AwsProvider#comprehend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#comprehend AwsProvider#comprehend}
 
 ---
 
@@ -3624,7 +3624,7 @@ public readonly comprehendmedical: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#comprehendmedical AwsProvider#comprehendmedical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#comprehendmedical AwsProvider#comprehendmedical}
 
 ---
 
@@ -3638,7 +3638,7 @@ public readonly computeoptimizer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#computeoptimizer AwsProvider#computeoptimizer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#computeoptimizer AwsProvider#computeoptimizer}
 
 ---
 
@@ -3652,7 +3652,7 @@ public readonly config: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#config AwsProvider#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#config AwsProvider#config}
 
 ---
 
@@ -3666,7 +3666,7 @@ public readonly configservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#configservice AwsProvider#configservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#configservice AwsProvider#configservice}
 
 ---
 
@@ -3680,7 +3680,7 @@ public readonly connect: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#connect AwsProvider#connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#connect AwsProvider#connect}
 
 ---
 
@@ -3694,7 +3694,7 @@ public readonly connectcontactlens: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#connectcontactlens AwsProvider#connectcontactlens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#connectcontactlens AwsProvider#connectcontactlens}
 
 ---
 
@@ -3708,7 +3708,7 @@ public readonly connectparticipant: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#connectparticipant AwsProvider#connectparticipant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#connectparticipant AwsProvider#connectparticipant}
 
 ---
 
@@ -3722,7 +3722,7 @@ public readonly connectwisdomservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#connectwisdomservice AwsProvider#connectwisdomservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#connectwisdomservice AwsProvider#connectwisdomservice}
 
 ---
 
@@ -3736,7 +3736,7 @@ public readonly controltower: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#controltower AwsProvider#controltower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#controltower AwsProvider#controltower}
 
 ---
 
@@ -3750,7 +3750,7 @@ public readonly costandusagereportservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#costandusagereportservice AwsProvider#costandusagereportservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#costandusagereportservice AwsProvider#costandusagereportservice}
 
 ---
 
@@ -3764,7 +3764,7 @@ public readonly costexplorer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#costexplorer AwsProvider#costexplorer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#costexplorer AwsProvider#costexplorer}
 
 ---
 
@@ -3778,7 +3778,7 @@ public readonly cur: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#cur AwsProvider#cur}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#cur AwsProvider#cur}
 
 ---
 
@@ -3792,7 +3792,7 @@ public readonly customerprofiles: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#customerprofiles AwsProvider#customerprofiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#customerprofiles AwsProvider#customerprofiles}
 
 ---
 
@@ -3806,7 +3806,7 @@ public readonly databasemigration: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#databasemigration AwsProvider#databasemigration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#databasemigration AwsProvider#databasemigration}
 
 ---
 
@@ -3820,7 +3820,7 @@ public readonly databasemigrationservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#databasemigrationservice AwsProvider#databasemigrationservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#databasemigrationservice AwsProvider#databasemigrationservice}
 
 ---
 
@@ -3834,7 +3834,7 @@ public readonly databrew: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#databrew AwsProvider#databrew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#databrew AwsProvider#databrew}
 
 ---
 
@@ -3848,7 +3848,7 @@ public readonly dataexchange: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dataexchange AwsProvider#dataexchange}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dataexchange AwsProvider#dataexchange}
 
 ---
 
@@ -3862,7 +3862,7 @@ public readonly datapipeline: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#datapipeline AwsProvider#datapipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#datapipeline AwsProvider#datapipeline}
 
 ---
 
@@ -3876,7 +3876,7 @@ public readonly datasync: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#datasync AwsProvider#datasync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#datasync AwsProvider#datasync}
 
 ---
 
@@ -3890,7 +3890,7 @@ public readonly dax: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dax AwsProvider#dax}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dax AwsProvider#dax}
 
 ---
 
@@ -3904,7 +3904,7 @@ public readonly deploy: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#deploy AwsProvider#deploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#deploy AwsProvider#deploy}
 
 ---
 
@@ -3918,7 +3918,7 @@ public readonly detective: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#detective AwsProvider#detective}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#detective AwsProvider#detective}
 
 ---
 
@@ -3932,7 +3932,7 @@ public readonly devicefarm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#devicefarm AwsProvider#devicefarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#devicefarm AwsProvider#devicefarm}
 
 ---
 
@@ -3946,7 +3946,7 @@ public readonly devopsguru: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#devopsguru AwsProvider#devopsguru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#devopsguru AwsProvider#devopsguru}
 
 ---
 
@@ -3960,7 +3960,7 @@ public readonly directconnect: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#directconnect AwsProvider#directconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#directconnect AwsProvider#directconnect}
 
 ---
 
@@ -3974,7 +3974,7 @@ public readonly directoryservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#directoryservice AwsProvider#directoryservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#directoryservice AwsProvider#directoryservice}
 
 ---
 
@@ -3988,7 +3988,7 @@ public readonly discovery: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#discovery AwsProvider#discovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#discovery AwsProvider#discovery}
 
 ---
 
@@ -4002,7 +4002,7 @@ public readonly dlm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dlm AwsProvider#dlm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dlm AwsProvider#dlm}
 
 ---
 
@@ -4016,7 +4016,7 @@ public readonly dms: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dms AwsProvider#dms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dms AwsProvider#dms}
 
 ---
 
@@ -4030,7 +4030,7 @@ public readonly docdb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#docdb AwsProvider#docdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#docdb AwsProvider#docdb}
 
 ---
 
@@ -4044,7 +4044,7 @@ public readonly docdbelastic: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#docdbelastic AwsProvider#docdbelastic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#docdbelastic AwsProvider#docdbelastic}
 
 ---
 
@@ -4058,7 +4058,7 @@ public readonly drs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#drs AwsProvider#drs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#drs AwsProvider#drs}
 
 ---
 
@@ -4072,7 +4072,7 @@ public readonly ds: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ds AwsProvider#ds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ds AwsProvider#ds}
 
 ---
 
@@ -4086,7 +4086,7 @@ public readonly dynamodb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dynamodb AwsProvider#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dynamodb AwsProvider#dynamodb}
 
 ---
 
@@ -4100,7 +4100,7 @@ public readonly dynamodbstreams: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#dynamodbstreams AwsProvider#dynamodbstreams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#dynamodbstreams AwsProvider#dynamodbstreams}
 
 ---
 
@@ -4114,7 +4114,7 @@ public readonly ebs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ebs AwsProvider#ebs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ebs AwsProvider#ebs}
 
 ---
 
@@ -4128,7 +4128,7 @@ public readonly ec2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ec2 AwsProvider#ec2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ec2 AwsProvider#ec2}
 
 ---
 
@@ -4142,7 +4142,7 @@ public readonly ec2Instanceconnect: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ec2instanceconnect AwsProvider#ec2instanceconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ec2instanceconnect AwsProvider#ec2instanceconnect}
 
 ---
 
@@ -4156,7 +4156,7 @@ public readonly ecr: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ecr AwsProvider#ecr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ecr AwsProvider#ecr}
 
 ---
 
@@ -4170,7 +4170,7 @@ public readonly ecrpublic: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ecrpublic AwsProvider#ecrpublic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ecrpublic AwsProvider#ecrpublic}
 
 ---
 
@@ -4184,7 +4184,7 @@ public readonly ecs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ecs AwsProvider#ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ecs AwsProvider#ecs}
 
 ---
 
@@ -4198,7 +4198,7 @@ public readonly efs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#efs AwsProvider#efs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#efs AwsProvider#efs}
 
 ---
 
@@ -4212,7 +4212,7 @@ public readonly eks: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#eks AwsProvider#eks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#eks AwsProvider#eks}
 
 ---
 
@@ -4226,7 +4226,7 @@ public readonly elasticache: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticache AwsProvider#elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticache AwsProvider#elasticache}
 
 ---
 
@@ -4240,7 +4240,7 @@ public readonly elasticbeanstalk: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticbeanstalk AwsProvider#elasticbeanstalk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticbeanstalk AwsProvider#elasticbeanstalk}
 
 ---
 
@@ -4254,7 +4254,7 @@ public readonly elasticinference: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticinference AwsProvider#elasticinference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticinference AwsProvider#elasticinference}
 
 ---
 
@@ -4268,7 +4268,7 @@ public readonly elasticloadbalancing: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticloadbalancing AwsProvider#elasticloadbalancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticloadbalancing AwsProvider#elasticloadbalancing}
 
 ---
 
@@ -4282,7 +4282,7 @@ public readonly elasticloadbalancingv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticloadbalancingv2 AwsProvider#elasticloadbalancingv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticloadbalancingv2 AwsProvider#elasticloadbalancingv2}
 
 ---
 
@@ -4296,7 +4296,7 @@ public readonly elasticsearch: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticsearch AwsProvider#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticsearch AwsProvider#elasticsearch}
 
 ---
 
@@ -4310,7 +4310,7 @@ public readonly elasticsearchservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elasticsearchservice AwsProvider#elasticsearchservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elasticsearchservice AwsProvider#elasticsearchservice}
 
 ---
 
@@ -4324,7 +4324,7 @@ public readonly elastictranscoder: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elastictranscoder AwsProvider#elastictranscoder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elastictranscoder AwsProvider#elastictranscoder}
 
 ---
 
@@ -4338,7 +4338,7 @@ public readonly elb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elb AwsProvider#elb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elb AwsProvider#elb}
 
 ---
 
@@ -4352,7 +4352,7 @@ public readonly elbv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#elbv2 AwsProvider#elbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#elbv2 AwsProvider#elbv2}
 
 ---
 
@@ -4366,7 +4366,7 @@ public readonly emr: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#emr AwsProvider#emr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#emr AwsProvider#emr}
 
 ---
 
@@ -4380,7 +4380,7 @@ public readonly emrcontainers: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#emrcontainers AwsProvider#emrcontainers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#emrcontainers AwsProvider#emrcontainers}
 
 ---
 
@@ -4394,7 +4394,7 @@ public readonly emrserverless: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#emrserverless AwsProvider#emrserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#emrserverless AwsProvider#emrserverless}
 
 ---
 
@@ -4408,7 +4408,7 @@ public readonly es: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#es AwsProvider#es}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#es AwsProvider#es}
 
 ---
 
@@ -4422,7 +4422,7 @@ public readonly eventbridge: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#eventbridge AwsProvider#eventbridge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#eventbridge AwsProvider#eventbridge}
 
 ---
 
@@ -4436,7 +4436,7 @@ public readonly events: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#events AwsProvider#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#events AwsProvider#events}
 
 ---
 
@@ -4450,7 +4450,7 @@ public readonly evidently: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#evidently AwsProvider#evidently}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#evidently AwsProvider#evidently}
 
 ---
 
@@ -4464,7 +4464,7 @@ public readonly finspace: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#finspace AwsProvider#finspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#finspace AwsProvider#finspace}
 
 ---
 
@@ -4478,7 +4478,7 @@ public readonly finspacedata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#finspacedata AwsProvider#finspacedata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#finspacedata AwsProvider#finspacedata}
 
 ---
 
@@ -4492,7 +4492,7 @@ public readonly firehose: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#firehose AwsProvider#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#firehose AwsProvider#firehose}
 
 ---
 
@@ -4506,7 +4506,7 @@ public readonly fis: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#fis AwsProvider#fis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#fis AwsProvider#fis}
 
 ---
 
@@ -4520,7 +4520,7 @@ public readonly fms: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#fms AwsProvider#fms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#fms AwsProvider#fms}
 
 ---
 
@@ -4534,7 +4534,7 @@ public readonly forecast: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forecast AwsProvider#forecast}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forecast AwsProvider#forecast}
 
 ---
 
@@ -4548,7 +4548,7 @@ public readonly forecastquery: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forecastquery AwsProvider#forecastquery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forecastquery AwsProvider#forecastquery}
 
 ---
 
@@ -4562,7 +4562,7 @@ public readonly forecastqueryservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forecastqueryservice AwsProvider#forecastqueryservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forecastqueryservice AwsProvider#forecastqueryservice}
 
 ---
 
@@ -4576,7 +4576,7 @@ public readonly forecastservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#forecastservice AwsProvider#forecastservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#forecastservice AwsProvider#forecastservice}
 
 ---
 
@@ -4590,7 +4590,7 @@ public readonly frauddetector: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#frauddetector AwsProvider#frauddetector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#frauddetector AwsProvider#frauddetector}
 
 ---
 
@@ -4604,7 +4604,7 @@ public readonly fsx: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#fsx AwsProvider#fsx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#fsx AwsProvider#fsx}
 
 ---
 
@@ -4618,7 +4618,7 @@ public readonly gamelift: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#gamelift AwsProvider#gamelift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#gamelift AwsProvider#gamelift}
 
 ---
 
@@ -4632,7 +4632,7 @@ public readonly glacier: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#glacier AwsProvider#glacier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#glacier AwsProvider#glacier}
 
 ---
 
@@ -4646,7 +4646,7 @@ public readonly globalaccelerator: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#globalaccelerator AwsProvider#globalaccelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#globalaccelerator AwsProvider#globalaccelerator}
 
 ---
 
@@ -4660,7 +4660,7 @@ public readonly glue: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#glue AwsProvider#glue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#glue AwsProvider#glue}
 
 ---
 
@@ -4674,7 +4674,7 @@ public readonly gluedatabrew: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#gluedatabrew AwsProvider#gluedatabrew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#gluedatabrew AwsProvider#gluedatabrew}
 
 ---
 
@@ -4688,7 +4688,7 @@ public readonly grafana: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#grafana AwsProvider#grafana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#grafana AwsProvider#grafana}
 
 ---
 
@@ -4702,7 +4702,7 @@ public readonly greengrass: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#greengrass AwsProvider#greengrass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#greengrass AwsProvider#greengrass}
 
 ---
 
@@ -4716,7 +4716,7 @@ public readonly greengrassv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#greengrassv2 AwsProvider#greengrassv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#greengrassv2 AwsProvider#greengrassv2}
 
 ---
 
@@ -4730,7 +4730,7 @@ public readonly groundstation: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#groundstation AwsProvider#groundstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#groundstation AwsProvider#groundstation}
 
 ---
 
@@ -4744,7 +4744,7 @@ public readonly guardduty: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#guardduty AwsProvider#guardduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#guardduty AwsProvider#guardduty}
 
 ---
 
@@ -4758,7 +4758,7 @@ public readonly health: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#health AwsProvider#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#health AwsProvider#health}
 
 ---
 
@@ -4772,7 +4772,7 @@ public readonly healthlake: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#healthlake AwsProvider#healthlake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#healthlake AwsProvider#healthlake}
 
 ---
 
@@ -4786,7 +4786,7 @@ public readonly honeycode: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#honeycode AwsProvider#honeycode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#honeycode AwsProvider#honeycode}
 
 ---
 
@@ -4800,7 +4800,7 @@ public readonly iam: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iam AwsProvider#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iam AwsProvider#iam}
 
 ---
 
@@ -4814,7 +4814,7 @@ public readonly identitystore: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#identitystore AwsProvider#identitystore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#identitystore AwsProvider#identitystore}
 
 ---
 
@@ -4828,7 +4828,7 @@ public readonly imagebuilder: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#imagebuilder AwsProvider#imagebuilder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#imagebuilder AwsProvider#imagebuilder}
 
 ---
 
@@ -4842,7 +4842,7 @@ public readonly inspector: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#inspector AwsProvider#inspector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#inspector AwsProvider#inspector}
 
 ---
 
@@ -4856,7 +4856,7 @@ public readonly inspector2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#inspector2 AwsProvider#inspector2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#inspector2 AwsProvider#inspector2}
 
 ---
 
@@ -4870,7 +4870,7 @@ public readonly inspectorv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#inspectorv2 AwsProvider#inspectorv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#inspectorv2 AwsProvider#inspectorv2}
 
 ---
 
@@ -4884,7 +4884,7 @@ public readonly internetmonitor: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#internetmonitor AwsProvider#internetmonitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#internetmonitor AwsProvider#internetmonitor}
 
 ---
 
@@ -4898,7 +4898,7 @@ public readonly iot: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iot AwsProvider#iot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iot AwsProvider#iot}
 
 ---
 
@@ -4912,7 +4912,7 @@ public readonly iot1Clickdevices: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iot1clickdevices AwsProvider#iot1clickdevices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iot1clickdevices AwsProvider#iot1clickdevices}
 
 ---
 
@@ -4926,7 +4926,7 @@ public readonly iot1Clickdevicesservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iot1clickdevicesservice AwsProvider#iot1clickdevicesservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iot1clickdevicesservice AwsProvider#iot1clickdevicesservice}
 
 ---
 
@@ -4940,7 +4940,7 @@ public readonly iot1Clickprojects: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iot1clickprojects AwsProvider#iot1clickprojects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iot1clickprojects AwsProvider#iot1clickprojects}
 
 ---
 
@@ -4954,7 +4954,7 @@ public readonly iotanalytics: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotanalytics AwsProvider#iotanalytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotanalytics AwsProvider#iotanalytics}
 
 ---
 
@@ -4968,7 +4968,7 @@ public readonly iotdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotdata AwsProvider#iotdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotdata AwsProvider#iotdata}
 
 ---
 
@@ -4982,7 +4982,7 @@ public readonly iotdataplane: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotdataplane AwsProvider#iotdataplane}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotdataplane AwsProvider#iotdataplane}
 
 ---
 
@@ -4996,7 +4996,7 @@ public readonly iotdeviceadvisor: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotdeviceadvisor AwsProvider#iotdeviceadvisor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotdeviceadvisor AwsProvider#iotdeviceadvisor}
 
 ---
 
@@ -5010,7 +5010,7 @@ public readonly iotevents: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotevents AwsProvider#iotevents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotevents AwsProvider#iotevents}
 
 ---
 
@@ -5024,7 +5024,7 @@ public readonly ioteventsdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ioteventsdata AwsProvider#ioteventsdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ioteventsdata AwsProvider#ioteventsdata}
 
 ---
 
@@ -5038,7 +5038,7 @@ public readonly iotfleethub: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotfleethub AwsProvider#iotfleethub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotfleethub AwsProvider#iotfleethub}
 
 ---
 
@@ -5052,7 +5052,7 @@ public readonly iotjobsdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotjobsdata AwsProvider#iotjobsdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotjobsdata AwsProvider#iotjobsdata}
 
 ---
 
@@ -5066,7 +5066,7 @@ public readonly iotjobsdataplane: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotjobsdataplane AwsProvider#iotjobsdataplane}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotjobsdataplane AwsProvider#iotjobsdataplane}
 
 ---
 
@@ -5080,7 +5080,7 @@ public readonly iotsecuretunneling: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotsecuretunneling AwsProvider#iotsecuretunneling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotsecuretunneling AwsProvider#iotsecuretunneling}
 
 ---
 
@@ -5094,7 +5094,7 @@ public readonly iotsitewise: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotsitewise AwsProvider#iotsitewise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotsitewise AwsProvider#iotsitewise}
 
 ---
 
@@ -5108,7 +5108,7 @@ public readonly iotthingsgraph: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotthingsgraph AwsProvider#iotthingsgraph}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotthingsgraph AwsProvider#iotthingsgraph}
 
 ---
 
@@ -5122,7 +5122,7 @@ public readonly iottwinmaker: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iottwinmaker AwsProvider#iottwinmaker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iottwinmaker AwsProvider#iottwinmaker}
 
 ---
 
@@ -5136,7 +5136,7 @@ public readonly iotwireless: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#iotwireless AwsProvider#iotwireless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#iotwireless AwsProvider#iotwireless}
 
 ---
 
@@ -5150,7 +5150,7 @@ public readonly ivs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ivs AwsProvider#ivs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ivs AwsProvider#ivs}
 
 ---
 
@@ -5164,7 +5164,7 @@ public readonly ivschat: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ivschat AwsProvider#ivschat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ivschat AwsProvider#ivschat}
 
 ---
 
@@ -5178,7 +5178,7 @@ public readonly kafka: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kafka AwsProvider#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kafka AwsProvider#kafka}
 
 ---
 
@@ -5192,7 +5192,7 @@ public readonly kafkaconnect: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kafkaconnect AwsProvider#kafkaconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kafkaconnect AwsProvider#kafkaconnect}
 
 ---
 
@@ -5206,7 +5206,7 @@ public readonly kendra: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kendra AwsProvider#kendra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kendra AwsProvider#kendra}
 
 ---
 
@@ -5220,7 +5220,7 @@ public readonly keyspaces: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#keyspaces AwsProvider#keyspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#keyspaces AwsProvider#keyspaces}
 
 ---
 
@@ -5234,7 +5234,7 @@ public readonly kinesis: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesis AwsProvider#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesis AwsProvider#kinesis}
 
 ---
 
@@ -5248,7 +5248,7 @@ public readonly kinesisanalytics: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisanalytics AwsProvider#kinesisanalytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisanalytics AwsProvider#kinesisanalytics}
 
 ---
 
@@ -5262,7 +5262,7 @@ public readonly kinesisanalyticsv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisanalyticsv2 AwsProvider#kinesisanalyticsv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisanalyticsv2 AwsProvider#kinesisanalyticsv2}
 
 ---
 
@@ -5276,7 +5276,7 @@ public readonly kinesisvideo: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisvideo AwsProvider#kinesisvideo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisvideo AwsProvider#kinesisvideo}
 
 ---
 
@@ -5290,7 +5290,7 @@ public readonly kinesisvideoarchivedmedia: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisvideoarchivedmedia AwsProvider#kinesisvideoarchivedmedia}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisvideoarchivedmedia AwsProvider#kinesisvideoarchivedmedia}
 
 ---
 
@@ -5304,7 +5304,7 @@ public readonly kinesisvideomedia: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisvideomedia AwsProvider#kinesisvideomedia}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisvideomedia AwsProvider#kinesisvideomedia}
 
 ---
 
@@ -5318,7 +5318,7 @@ public readonly kinesisvideosignaling: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisvideosignaling AwsProvider#kinesisvideosignaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisvideosignaling AwsProvider#kinesisvideosignaling}
 
 ---
 
@@ -5332,7 +5332,7 @@ public readonly kinesisvideosignalingchannels: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kinesisvideosignalingchannels AwsProvider#kinesisvideosignalingchannels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kinesisvideosignalingchannels AwsProvider#kinesisvideosignalingchannels}
 
 ---
 
@@ -5346,7 +5346,7 @@ public readonly kms: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#kms AwsProvider#kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#kms AwsProvider#kms}
 
 ---
 
@@ -5360,7 +5360,7 @@ public readonly lakeformation: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lakeformation AwsProvider#lakeformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lakeformation AwsProvider#lakeformation}
 
 ---
 
@@ -5374,7 +5374,7 @@ public readonly lambda: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lambda AwsProvider#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lambda AwsProvider#lambda}
 
 ---
 
@@ -5388,7 +5388,7 @@ public readonly lex: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lex AwsProvider#lex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lex AwsProvider#lex}
 
 ---
 
@@ -5402,7 +5402,7 @@ public readonly lexmodelbuilding: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexmodelbuilding AwsProvider#lexmodelbuilding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexmodelbuilding AwsProvider#lexmodelbuilding}
 
 ---
 
@@ -5416,7 +5416,7 @@ public readonly lexmodelbuildingservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexmodelbuildingservice AwsProvider#lexmodelbuildingservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexmodelbuildingservice AwsProvider#lexmodelbuildingservice}
 
 ---
 
@@ -5430,7 +5430,7 @@ public readonly lexmodels: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexmodels AwsProvider#lexmodels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexmodels AwsProvider#lexmodels}
 
 ---
 
@@ -5444,7 +5444,7 @@ public readonly lexmodelsv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexmodelsv2 AwsProvider#lexmodelsv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexmodelsv2 AwsProvider#lexmodelsv2}
 
 ---
 
@@ -5458,7 +5458,7 @@ public readonly lexruntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexruntime AwsProvider#lexruntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexruntime AwsProvider#lexruntime}
 
 ---
 
@@ -5472,7 +5472,7 @@ public readonly lexruntimeservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexruntimeservice AwsProvider#lexruntimeservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexruntimeservice AwsProvider#lexruntimeservice}
 
 ---
 
@@ -5486,7 +5486,7 @@ public readonly lexruntimev2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexruntimev2 AwsProvider#lexruntimev2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexruntimev2 AwsProvider#lexruntimev2}
 
 ---
 
@@ -5500,7 +5500,7 @@ public readonly lexv2Models: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexv2models AwsProvider#lexv2models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexv2models AwsProvider#lexv2models}
 
 ---
 
@@ -5514,7 +5514,7 @@ public readonly lexv2Runtime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lexv2runtime AwsProvider#lexv2runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lexv2runtime AwsProvider#lexv2runtime}
 
 ---
 
@@ -5528,7 +5528,7 @@ public readonly licensemanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#licensemanager AwsProvider#licensemanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#licensemanager AwsProvider#licensemanager}
 
 ---
 
@@ -5542,7 +5542,7 @@ public readonly lightsail: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lightsail AwsProvider#lightsail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lightsail AwsProvider#lightsail}
 
 ---
 
@@ -5556,7 +5556,7 @@ public readonly location: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#location AwsProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#location AwsProvider#location}
 
 ---
 
@@ -5570,7 +5570,7 @@ public readonly locationservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#locationservice AwsProvider#locationservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#locationservice AwsProvider#locationservice}
 
 ---
 
@@ -5584,7 +5584,7 @@ public readonly logs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#logs AwsProvider#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#logs AwsProvider#logs}
 
 ---
 
@@ -5598,7 +5598,7 @@ public readonly lookoutequipment: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lookoutequipment AwsProvider#lookoutequipment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lookoutequipment AwsProvider#lookoutequipment}
 
 ---
 
@@ -5612,7 +5612,7 @@ public readonly lookoutforvision: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lookoutforvision AwsProvider#lookoutforvision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lookoutforvision AwsProvider#lookoutforvision}
 
 ---
 
@@ -5626,7 +5626,7 @@ public readonly lookoutmetrics: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lookoutmetrics AwsProvider#lookoutmetrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lookoutmetrics AwsProvider#lookoutmetrics}
 
 ---
 
@@ -5640,7 +5640,7 @@ public readonly lookoutvision: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#lookoutvision AwsProvider#lookoutvision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#lookoutvision AwsProvider#lookoutvision}
 
 ---
 
@@ -5654,7 +5654,7 @@ public readonly machinelearning: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#machinelearning AwsProvider#machinelearning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#machinelearning AwsProvider#machinelearning}
 
 ---
 
@@ -5668,7 +5668,7 @@ public readonly macie: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#macie AwsProvider#macie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#macie AwsProvider#macie}
 
 ---
 
@@ -5682,7 +5682,7 @@ public readonly macie2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#macie2 AwsProvider#macie2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#macie2 AwsProvider#macie2}
 
 ---
 
@@ -5696,7 +5696,7 @@ public readonly managedblockchain: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#managedblockchain AwsProvider#managedblockchain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#managedblockchain AwsProvider#managedblockchain}
 
 ---
 
@@ -5710,7 +5710,7 @@ public readonly managedgrafana: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#managedgrafana AwsProvider#managedgrafana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#managedgrafana AwsProvider#managedgrafana}
 
 ---
 
@@ -5724,7 +5724,7 @@ public readonly marketplacecatalog: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#marketplacecatalog AwsProvider#marketplacecatalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#marketplacecatalog AwsProvider#marketplacecatalog}
 
 ---
 
@@ -5738,7 +5738,7 @@ public readonly marketplacecommerceanalytics: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#marketplacecommerceanalytics AwsProvider#marketplacecommerceanalytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#marketplacecommerceanalytics AwsProvider#marketplacecommerceanalytics}
 
 ---
 
@@ -5752,7 +5752,7 @@ public readonly marketplaceentitlement: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#marketplaceentitlement AwsProvider#marketplaceentitlement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#marketplaceentitlement AwsProvider#marketplaceentitlement}
 
 ---
 
@@ -5766,7 +5766,7 @@ public readonly marketplaceentitlementservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#marketplaceentitlementservice AwsProvider#marketplaceentitlementservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#marketplaceentitlementservice AwsProvider#marketplaceentitlementservice}
 
 ---
 
@@ -5780,7 +5780,7 @@ public readonly marketplacemetering: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#marketplacemetering AwsProvider#marketplacemetering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#marketplacemetering AwsProvider#marketplacemetering}
 
 ---
 
@@ -5794,7 +5794,7 @@ public readonly mediaconnect: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediaconnect AwsProvider#mediaconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediaconnect AwsProvider#mediaconnect}
 
 ---
 
@@ -5808,7 +5808,7 @@ public readonly mediaconvert: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediaconvert AwsProvider#mediaconvert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediaconvert AwsProvider#mediaconvert}
 
 ---
 
@@ -5822,7 +5822,7 @@ public readonly medialive: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#medialive AwsProvider#medialive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#medialive AwsProvider#medialive}
 
 ---
 
@@ -5836,7 +5836,7 @@ public readonly mediapackage: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediapackage AwsProvider#mediapackage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediapackage AwsProvider#mediapackage}
 
 ---
 
@@ -5850,7 +5850,7 @@ public readonly mediapackagevod: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediapackagevod AwsProvider#mediapackagevod}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediapackagevod AwsProvider#mediapackagevod}
 
 ---
 
@@ -5864,7 +5864,7 @@ public readonly mediastore: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediastore AwsProvider#mediastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediastore AwsProvider#mediastore}
 
 ---
 
@@ -5878,7 +5878,7 @@ public readonly mediastoredata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediastoredata AwsProvider#mediastoredata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediastoredata AwsProvider#mediastoredata}
 
 ---
 
@@ -5892,7 +5892,7 @@ public readonly mediatailor: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mediatailor AwsProvider#mediatailor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mediatailor AwsProvider#mediatailor}
 
 ---
 
@@ -5906,7 +5906,7 @@ public readonly memorydb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#memorydb AwsProvider#memorydb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#memorydb AwsProvider#memorydb}
 
 ---
 
@@ -5920,7 +5920,7 @@ public readonly meteringmarketplace: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#meteringmarketplace AwsProvider#meteringmarketplace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#meteringmarketplace AwsProvider#meteringmarketplace}
 
 ---
 
@@ -5934,7 +5934,7 @@ public readonly mgh: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mgh AwsProvider#mgh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mgh AwsProvider#mgh}
 
 ---
 
@@ -5948,7 +5948,7 @@ public readonly mgn: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mgn AwsProvider#mgn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mgn AwsProvider#mgn}
 
 ---
 
@@ -5962,7 +5962,7 @@ public readonly migrationhub: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#migrationhub AwsProvider#migrationhub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#migrationhub AwsProvider#migrationhub}
 
 ---
 
@@ -5976,7 +5976,7 @@ public readonly migrationhubconfig: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#migrationhubconfig AwsProvider#migrationhubconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#migrationhubconfig AwsProvider#migrationhubconfig}
 
 ---
 
@@ -5990,7 +5990,7 @@ public readonly migrationhubrefactorspaces: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#migrationhubrefactorspaces AwsProvider#migrationhubrefactorspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#migrationhubrefactorspaces AwsProvider#migrationhubrefactorspaces}
 
 ---
 
@@ -6004,7 +6004,7 @@ public readonly migrationhubstrategy: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#migrationhubstrategy AwsProvider#migrationhubstrategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#migrationhubstrategy AwsProvider#migrationhubstrategy}
 
 ---
 
@@ -6018,7 +6018,7 @@ public readonly migrationhubstrategyrecommendations: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#migrationhubstrategyrecommendations AwsProvider#migrationhubstrategyrecommendations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#migrationhubstrategyrecommendations AwsProvider#migrationhubstrategyrecommendations}
 
 ---
 
@@ -6032,7 +6032,7 @@ public readonly mobile: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mobile AwsProvider#mobile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mobile AwsProvider#mobile}
 
 ---
 
@@ -6046,7 +6046,7 @@ public readonly mq: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mq AwsProvider#mq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mq AwsProvider#mq}
 
 ---
 
@@ -6060,7 +6060,7 @@ public readonly msk: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#msk AwsProvider#msk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#msk AwsProvider#msk}
 
 ---
 
@@ -6074,7 +6074,7 @@ public readonly mturk: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mturk AwsProvider#mturk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mturk AwsProvider#mturk}
 
 ---
 
@@ -6088,7 +6088,7 @@ public readonly mwaa: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#mwaa AwsProvider#mwaa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#mwaa AwsProvider#mwaa}
 
 ---
 
@@ -6102,7 +6102,7 @@ public readonly neptune: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#neptune AwsProvider#neptune}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#neptune AwsProvider#neptune}
 
 ---
 
@@ -6116,7 +6116,7 @@ public readonly networkfirewall: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#networkfirewall AwsProvider#networkfirewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#networkfirewall AwsProvider#networkfirewall}
 
 ---
 
@@ -6130,7 +6130,7 @@ public readonly networkmanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#networkmanager AwsProvider#networkmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#networkmanager AwsProvider#networkmanager}
 
 ---
 
@@ -6144,7 +6144,7 @@ public readonly nimble: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#nimble AwsProvider#nimble}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#nimble AwsProvider#nimble}
 
 ---
 
@@ -6158,7 +6158,7 @@ public readonly nimblestudio: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#nimblestudio AwsProvider#nimblestudio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#nimblestudio AwsProvider#nimblestudio}
 
 ---
 
@@ -6172,7 +6172,7 @@ public readonly oam: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#oam AwsProvider#oam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#oam AwsProvider#oam}
 
 ---
 
@@ -6186,7 +6186,7 @@ public readonly opensearch: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#opensearch AwsProvider#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#opensearch AwsProvider#opensearch}
 
 ---
 
@@ -6200,7 +6200,7 @@ public readonly opensearchserverless: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#opensearchserverless AwsProvider#opensearchserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#opensearchserverless AwsProvider#opensearchserverless}
 
 ---
 
@@ -6214,7 +6214,7 @@ public readonly opensearchservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#opensearchservice AwsProvider#opensearchservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#opensearchservice AwsProvider#opensearchservice}
 
 ---
 
@@ -6228,7 +6228,7 @@ public readonly opsworks: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#opsworks AwsProvider#opsworks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#opsworks AwsProvider#opsworks}
 
 ---
 
@@ -6242,7 +6242,7 @@ public readonly opsworkscm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#opsworkscm AwsProvider#opsworkscm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#opsworkscm AwsProvider#opsworkscm}
 
 ---
 
@@ -6256,7 +6256,7 @@ public readonly organizations: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#organizations AwsProvider#organizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#organizations AwsProvider#organizations}
 
 ---
 
@@ -6270,7 +6270,7 @@ public readonly outposts: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#outposts AwsProvider#outposts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#outposts AwsProvider#outposts}
 
 ---
 
@@ -6284,7 +6284,7 @@ public readonly panorama: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#panorama AwsProvider#panorama}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#panorama AwsProvider#panorama}
 
 ---
 
@@ -6298,7 +6298,7 @@ public readonly personalize: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#personalize AwsProvider#personalize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#personalize AwsProvider#personalize}
 
 ---
 
@@ -6312,7 +6312,7 @@ public readonly personalizeevents: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#personalizeevents AwsProvider#personalizeevents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#personalizeevents AwsProvider#personalizeevents}
 
 ---
 
@@ -6326,7 +6326,7 @@ public readonly personalizeruntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#personalizeruntime AwsProvider#personalizeruntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#personalizeruntime AwsProvider#personalizeruntime}
 
 ---
 
@@ -6340,7 +6340,7 @@ public readonly pi: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pi AwsProvider#pi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pi AwsProvider#pi}
 
 ---
 
@@ -6354,7 +6354,7 @@ public readonly pinpoint: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pinpoint AwsProvider#pinpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pinpoint AwsProvider#pinpoint}
 
 ---
 
@@ -6368,7 +6368,7 @@ public readonly pinpointemail: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pinpointemail AwsProvider#pinpointemail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pinpointemail AwsProvider#pinpointemail}
 
 ---
 
@@ -6382,7 +6382,7 @@ public readonly pinpointsmsvoice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pinpointsmsvoice AwsProvider#pinpointsmsvoice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pinpointsmsvoice AwsProvider#pinpointsmsvoice}
 
 ---
 
@@ -6396,7 +6396,7 @@ public readonly pipes: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pipes AwsProvider#pipes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pipes AwsProvider#pipes}
 
 ---
 
@@ -6410,7 +6410,7 @@ public readonly polly: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#polly AwsProvider#polly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#polly AwsProvider#polly}
 
 ---
 
@@ -6424,7 +6424,7 @@ public readonly pricing: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#pricing AwsProvider#pricing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#pricing AwsProvider#pricing}
 
 ---
 
@@ -6438,7 +6438,7 @@ public readonly prometheus: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#prometheus AwsProvider#prometheus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#prometheus AwsProvider#prometheus}
 
 ---
 
@@ -6452,7 +6452,7 @@ public readonly prometheusservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#prometheusservice AwsProvider#prometheusservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#prometheusservice AwsProvider#prometheusservice}
 
 ---
 
@@ -6466,7 +6466,7 @@ public readonly proton: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#proton AwsProvider#proton}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#proton AwsProvider#proton}
 
 ---
 
@@ -6480,7 +6480,7 @@ public readonly qldb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#qldb AwsProvider#qldb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#qldb AwsProvider#qldb}
 
 ---
 
@@ -6494,7 +6494,7 @@ public readonly qldbsession: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#qldbsession AwsProvider#qldbsession}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#qldbsession AwsProvider#qldbsession}
 
 ---
 
@@ -6508,7 +6508,7 @@ public readonly quicksight: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#quicksight AwsProvider#quicksight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#quicksight AwsProvider#quicksight}
 
 ---
 
@@ -6522,7 +6522,7 @@ public readonly ram: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ram AwsProvider#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ram AwsProvider#ram}
 
 ---
 
@@ -6536,7 +6536,7 @@ public readonly rbin: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rbin AwsProvider#rbin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rbin AwsProvider#rbin}
 
 ---
 
@@ -6550,7 +6550,7 @@ public readonly rds: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rds AwsProvider#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rds AwsProvider#rds}
 
 ---
 
@@ -6564,7 +6564,7 @@ public readonly rdsdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rdsdata AwsProvider#rdsdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rdsdata AwsProvider#rdsdata}
 
 ---
 
@@ -6578,7 +6578,7 @@ public readonly rdsdataservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rdsdataservice AwsProvider#rdsdataservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rdsdataservice AwsProvider#rdsdataservice}
 
 ---
 
@@ -6592,7 +6592,7 @@ public readonly recyclebin: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#recyclebin AwsProvider#recyclebin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#recyclebin AwsProvider#recyclebin}
 
 ---
 
@@ -6606,7 +6606,7 @@ public readonly redshift: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#redshift AwsProvider#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#redshift AwsProvider#redshift}
 
 ---
 
@@ -6620,7 +6620,7 @@ public readonly redshiftdata: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#redshiftdata AwsProvider#redshiftdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#redshiftdata AwsProvider#redshiftdata}
 
 ---
 
@@ -6634,7 +6634,7 @@ public readonly redshiftdataapiservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#redshiftdataapiservice AwsProvider#redshiftdataapiservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#redshiftdataapiservice AwsProvider#redshiftdataapiservice}
 
 ---
 
@@ -6648,7 +6648,7 @@ public readonly redshiftserverless: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#redshiftserverless AwsProvider#redshiftserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#redshiftserverless AwsProvider#redshiftserverless}
 
 ---
 
@@ -6662,7 +6662,7 @@ public readonly rekognition: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rekognition AwsProvider#rekognition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rekognition AwsProvider#rekognition}
 
 ---
 
@@ -6676,7 +6676,7 @@ public readonly resiliencehub: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#resiliencehub AwsProvider#resiliencehub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#resiliencehub AwsProvider#resiliencehub}
 
 ---
 
@@ -6690,7 +6690,7 @@ public readonly resourceexplorer2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#resourceexplorer2 AwsProvider#resourceexplorer2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#resourceexplorer2 AwsProvider#resourceexplorer2}
 
 ---
 
@@ -6704,7 +6704,7 @@ public readonly resourcegroups: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#resourcegroups AwsProvider#resourcegroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#resourcegroups AwsProvider#resourcegroups}
 
 ---
 
@@ -6718,7 +6718,7 @@ public readonly resourcegroupstagging: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#resourcegroupstagging AwsProvider#resourcegroupstagging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#resourcegroupstagging AwsProvider#resourcegroupstagging}
 
 ---
 
@@ -6732,7 +6732,7 @@ public readonly resourcegroupstaggingapi: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#resourcegroupstaggingapi AwsProvider#resourcegroupstaggingapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#resourcegroupstaggingapi AwsProvider#resourcegroupstaggingapi}
 
 ---
 
@@ -6746,7 +6746,7 @@ public readonly robomaker: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#robomaker AwsProvider#robomaker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#robomaker AwsProvider#robomaker}
 
 ---
 
@@ -6760,7 +6760,7 @@ public readonly rolesanywhere: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rolesanywhere AwsProvider#rolesanywhere}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rolesanywhere AwsProvider#rolesanywhere}
 
 ---
 
@@ -6774,7 +6774,7 @@ public readonly route53: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53 AwsProvider#route53}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53 AwsProvider#route53}
 
 ---
 
@@ -6788,7 +6788,7 @@ public readonly route53Domains: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53domains AwsProvider#route53domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53domains AwsProvider#route53domains}
 
 ---
 
@@ -6802,7 +6802,7 @@ public readonly route53Recoverycluster: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53recoverycluster AwsProvider#route53recoverycluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53recoverycluster AwsProvider#route53recoverycluster}
 
 ---
 
@@ -6816,7 +6816,7 @@ public readonly route53Recoverycontrolconfig: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53recoverycontrolconfig AwsProvider#route53recoverycontrolconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53recoverycontrolconfig AwsProvider#route53recoverycontrolconfig}
 
 ---
 
@@ -6830,7 +6830,7 @@ public readonly route53Recoveryreadiness: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53recoveryreadiness AwsProvider#route53recoveryreadiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53recoveryreadiness AwsProvider#route53recoveryreadiness}
 
 ---
 
@@ -6844,7 +6844,7 @@ public readonly route53Resolver: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#route53resolver AwsProvider#route53resolver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#route53resolver AwsProvider#route53resolver}
 
 ---
 
@@ -6858,7 +6858,7 @@ public readonly rum: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#rum AwsProvider#rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#rum AwsProvider#rum}
 
 ---
 
@@ -6872,7 +6872,7 @@ public readonly s3: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3 AwsProvider#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3 AwsProvider#s3}
 
 ---
 
@@ -6886,7 +6886,7 @@ public readonly s3Api: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3api AwsProvider#s3api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3api AwsProvider#s3api}
 
 ---
 
@@ -6900,7 +6900,7 @@ public readonly s3Control: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3control AwsProvider#s3control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3control AwsProvider#s3control}
 
 ---
 
@@ -6914,7 +6914,7 @@ public readonly s3Outposts: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#s3outposts AwsProvider#s3outposts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#s3outposts AwsProvider#s3outposts}
 
 ---
 
@@ -6928,7 +6928,7 @@ public readonly sagemaker: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemaker AwsProvider#sagemaker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemaker AwsProvider#sagemaker}
 
 ---
 
@@ -6942,7 +6942,7 @@ public readonly sagemakera2Iruntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemakera2iruntime AwsProvider#sagemakera2iruntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemakera2iruntime AwsProvider#sagemakera2iruntime}
 
 ---
 
@@ -6956,7 +6956,7 @@ public readonly sagemakeredge: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemakeredge AwsProvider#sagemakeredge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemakeredge AwsProvider#sagemakeredge}
 
 ---
 
@@ -6970,7 +6970,7 @@ public readonly sagemakeredgemanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemakeredgemanager AwsProvider#sagemakeredgemanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemakeredgemanager AwsProvider#sagemakeredgemanager}
 
 ---
 
@@ -6984,7 +6984,7 @@ public readonly sagemakerfeaturestoreruntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemakerfeaturestoreruntime AwsProvider#sagemakerfeaturestoreruntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemakerfeaturestoreruntime AwsProvider#sagemakerfeaturestoreruntime}
 
 ---
 
@@ -6998,7 +6998,7 @@ public readonly sagemakerruntime: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sagemakerruntime AwsProvider#sagemakerruntime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sagemakerruntime AwsProvider#sagemakerruntime}
 
 ---
 
@@ -7012,7 +7012,7 @@ public readonly savingsplans: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#savingsplans AwsProvider#savingsplans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#savingsplans AwsProvider#savingsplans}
 
 ---
 
@@ -7026,7 +7026,7 @@ public readonly scheduler: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#scheduler AwsProvider#scheduler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#scheduler AwsProvider#scheduler}
 
 ---
 
@@ -7040,7 +7040,7 @@ public readonly schemas: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#schemas AwsProvider#schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#schemas AwsProvider#schemas}
 
 ---
 
@@ -7054,7 +7054,7 @@ public readonly sdb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sdb AwsProvider#sdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sdb AwsProvider#sdb}
 
 ---
 
@@ -7068,7 +7068,7 @@ public readonly secretsmanager: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#secretsmanager AwsProvider#secretsmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#secretsmanager AwsProvider#secretsmanager}
 
 ---
 
@@ -7082,7 +7082,7 @@ public readonly securityhub: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#securityhub AwsProvider#securityhub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#securityhub AwsProvider#securityhub}
 
 ---
 
@@ -7096,7 +7096,7 @@ public readonly securitylake: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#securitylake AwsProvider#securitylake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#securitylake AwsProvider#securitylake}
 
 ---
 
@@ -7110,7 +7110,7 @@ public readonly serverlessapplicationrepository: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
 
 ---
 
@@ -7124,7 +7124,7 @@ public readonly serverlessapprepo: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#serverlessapprepo AwsProvider#serverlessapprepo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#serverlessapprepo AwsProvider#serverlessapprepo}
 
 ---
 
@@ -7138,7 +7138,7 @@ public readonly serverlessrepo: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#serverlessrepo AwsProvider#serverlessrepo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#serverlessrepo AwsProvider#serverlessrepo}
 
 ---
 
@@ -7152,7 +7152,7 @@ public readonly servicecatalog: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#servicecatalog AwsProvider#servicecatalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#servicecatalog AwsProvider#servicecatalog}
 
 ---
 
@@ -7166,7 +7166,7 @@ public readonly servicecatalogappregistry: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#servicecatalogappregistry AwsProvider#servicecatalogappregistry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#servicecatalogappregistry AwsProvider#servicecatalogappregistry}
 
 ---
 
@@ -7180,7 +7180,7 @@ public readonly servicediscovery: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#servicediscovery AwsProvider#servicediscovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#servicediscovery AwsProvider#servicediscovery}
 
 ---
 
@@ -7194,7 +7194,7 @@ public readonly servicequotas: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#servicequotas AwsProvider#servicequotas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#servicequotas AwsProvider#servicequotas}
 
 ---
 
@@ -7208,7 +7208,7 @@ public readonly ses: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ses AwsProvider#ses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ses AwsProvider#ses}
 
 ---
 
@@ -7222,7 +7222,7 @@ public readonly sesv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sesv2 AwsProvider#sesv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sesv2 AwsProvider#sesv2}
 
 ---
 
@@ -7236,7 +7236,7 @@ public readonly sfn: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sfn AwsProvider#sfn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sfn AwsProvider#sfn}
 
 ---
 
@@ -7250,7 +7250,7 @@ public readonly shield: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#shield AwsProvider#shield}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#shield AwsProvider#shield}
 
 ---
 
@@ -7264,7 +7264,7 @@ public readonly signer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#signer AwsProvider#signer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#signer AwsProvider#signer}
 
 ---
 
@@ -7278,7 +7278,7 @@ public readonly simpledb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#simpledb AwsProvider#simpledb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#simpledb AwsProvider#simpledb}
 
 ---
 
@@ -7292,7 +7292,7 @@ public readonly sms: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sms AwsProvider#sms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sms AwsProvider#sms}
 
 ---
 
@@ -7306,7 +7306,7 @@ public readonly snowball: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#snowball AwsProvider#snowball}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#snowball AwsProvider#snowball}
 
 ---
 
@@ -7320,7 +7320,7 @@ public readonly snowdevicemanagement: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#snowdevicemanagement AwsProvider#snowdevicemanagement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#snowdevicemanagement AwsProvider#snowdevicemanagement}
 
 ---
 
@@ -7334,7 +7334,7 @@ public readonly sns: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sns AwsProvider#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sns AwsProvider#sns}
 
 ---
 
@@ -7348,7 +7348,7 @@ public readonly sqs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sqs AwsProvider#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sqs AwsProvider#sqs}
 
 ---
 
@@ -7362,7 +7362,7 @@ public readonly ssm: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ssm AwsProvider#ssm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ssm AwsProvider#ssm}
 
 ---
 
@@ -7376,7 +7376,7 @@ public readonly ssmcontacts: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ssmcontacts AwsProvider#ssmcontacts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ssmcontacts AwsProvider#ssmcontacts}
 
 ---
 
@@ -7390,7 +7390,7 @@ public readonly ssmincidents: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ssmincidents AwsProvider#ssmincidents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ssmincidents AwsProvider#ssmincidents}
 
 ---
 
@@ -7404,7 +7404,7 @@ public readonly sso: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sso AwsProvider#sso}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sso AwsProvider#sso}
 
 ---
 
@@ -7418,7 +7418,7 @@ public readonly ssoadmin: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ssoadmin AwsProvider#ssoadmin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ssoadmin AwsProvider#ssoadmin}
 
 ---
 
@@ -7432,7 +7432,7 @@ public readonly ssooidc: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#ssooidc AwsProvider#ssooidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#ssooidc AwsProvider#ssooidc}
 
 ---
 
@@ -7446,7 +7446,7 @@ public readonly stepfunctions: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#stepfunctions AwsProvider#stepfunctions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#stepfunctions AwsProvider#stepfunctions}
 
 ---
 
@@ -7460,7 +7460,7 @@ public readonly storagegateway: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#storagegateway AwsProvider#storagegateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#storagegateway AwsProvider#storagegateway}
 
 ---
 
@@ -7474,7 +7474,7 @@ public readonly sts: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#sts AwsProvider#sts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#sts AwsProvider#sts}
 
 ---
 
@@ -7488,7 +7488,7 @@ public readonly support: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#support AwsProvider#support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#support AwsProvider#support}
 
 ---
 
@@ -7502,7 +7502,7 @@ public readonly swf: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#swf AwsProvider#swf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#swf AwsProvider#swf}
 
 ---
 
@@ -7516,7 +7516,7 @@ public readonly synthetics: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#synthetics AwsProvider#synthetics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#synthetics AwsProvider#synthetics}
 
 ---
 
@@ -7530,7 +7530,7 @@ public readonly textract: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#textract AwsProvider#textract}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#textract AwsProvider#textract}
 
 ---
 
@@ -7544,7 +7544,7 @@ public readonly timestreamquery: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#timestreamquery AwsProvider#timestreamquery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#timestreamquery AwsProvider#timestreamquery}
 
 ---
 
@@ -7558,7 +7558,7 @@ public readonly timestreamwrite: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#timestreamwrite AwsProvider#timestreamwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#timestreamwrite AwsProvider#timestreamwrite}
 
 ---
 
@@ -7572,7 +7572,7 @@ public readonly transcribe: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transcribe AwsProvider#transcribe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transcribe AwsProvider#transcribe}
 
 ---
 
@@ -7586,7 +7586,7 @@ public readonly transcribeservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transcribeservice AwsProvider#transcribeservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transcribeservice AwsProvider#transcribeservice}
 
 ---
 
@@ -7600,7 +7600,7 @@ public readonly transcribestreaming: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transcribestreaming AwsProvider#transcribestreaming}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transcribestreaming AwsProvider#transcribestreaming}
 
 ---
 
@@ -7614,7 +7614,7 @@ public readonly transcribestreamingservice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transcribestreamingservice AwsProvider#transcribestreamingservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transcribestreamingservice AwsProvider#transcribestreamingservice}
 
 ---
 
@@ -7628,7 +7628,7 @@ public readonly transfer: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#transfer AwsProvider#transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#transfer AwsProvider#transfer}
 
 ---
 
@@ -7642,7 +7642,7 @@ public readonly translate: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#translate AwsProvider#translate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#translate AwsProvider#translate}
 
 ---
 
@@ -7656,7 +7656,7 @@ public readonly voiceid: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#voiceid AwsProvider#voiceid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#voiceid AwsProvider#voiceid}
 
 ---
 
@@ -7670,7 +7670,7 @@ public readonly vpclattice: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#vpclattice AwsProvider#vpclattice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#vpclattice AwsProvider#vpclattice}
 
 ---
 
@@ -7684,7 +7684,7 @@ public readonly waf: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#waf AwsProvider#waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#waf AwsProvider#waf}
 
 ---
 
@@ -7698,7 +7698,7 @@ public readonly wafregional: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#wafregional AwsProvider#wafregional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#wafregional AwsProvider#wafregional}
 
 ---
 
@@ -7712,7 +7712,7 @@ public readonly wafv2: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#wafv2 AwsProvider#wafv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#wafv2 AwsProvider#wafv2}
 
 ---
 
@@ -7726,7 +7726,7 @@ public readonly wellarchitected: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#wellarchitected AwsProvider#wellarchitected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#wellarchitected AwsProvider#wellarchitected}
 
 ---
 
@@ -7740,7 +7740,7 @@ public readonly wisdom: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#wisdom AwsProvider#wisdom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#wisdom AwsProvider#wisdom}
 
 ---
 
@@ -7754,7 +7754,7 @@ public readonly workdocs: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#workdocs AwsProvider#workdocs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#workdocs AwsProvider#workdocs}
 
 ---
 
@@ -7768,7 +7768,7 @@ public readonly worklink: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#worklink AwsProvider#worklink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#worklink AwsProvider#worklink}
 
 ---
 
@@ -7782,7 +7782,7 @@ public readonly workmail: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#workmail AwsProvider#workmail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#workmail AwsProvider#workmail}
 
 ---
 
@@ -7796,7 +7796,7 @@ public readonly workmailmessageflow: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#workmailmessageflow AwsProvider#workmailmessageflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#workmailmessageflow AwsProvider#workmailmessageflow}
 
 ---
 
@@ -7810,7 +7810,7 @@ public readonly workspaces: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#workspaces AwsProvider#workspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#workspaces AwsProvider#workspaces}
 
 ---
 
@@ -7824,7 +7824,7 @@ public readonly workspacesweb: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#workspacesweb AwsProvider#workspacesweb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#workspacesweb AwsProvider#workspacesweb}
 
 ---
 
@@ -7838,7 +7838,7 @@ public readonly xray: string;
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#xray AwsProvider#xray}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#xray AwsProvider#xray}
 
 ---
 
@@ -7871,7 +7871,7 @@ public readonly keyPrefixes: string[];
 
 Resource tag key prefixes to ignore across all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#key_prefixes AwsProvider#key_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#key_prefixes AwsProvider#key_prefixes}
 
 ---
 
@@ -7885,7 +7885,7 @@ public readonly keys: string[];
 
 Resource tag keys to ignore across all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs#keys AwsProvider#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs#keys AwsProvider#keys}
 
 ---
 
