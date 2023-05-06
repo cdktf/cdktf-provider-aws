@@ -1,6 +1,6 @@
 # `aws_lightsail_static_ip`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip).
+Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip).
 
 # `lightsailStaticIp` Submodule <a name="`lightsailStaticIp` Submodule" id="@cdktf/provider-aws.lightsailStaticIp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://r
 
 ### LightsailStaticIp <a name="LightsailStaticIp" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip aws_lightsail_static_ip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip aws_lightsail_static_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer"></a>
 
@@ -615,8 +615,8 @@ const lightsailStaticIpConfig: lightsailStaticIp.LightsailStaticIpConfig = { ...
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
 
 ---
 
@@ -698,7 +698,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
 
 ---
 
@@ -710,7 +710,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `aws_alb_listener_certificate`
 
-Refer to the Terraform Registory for docs: [`aws_alb_listener_certificate`](https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate).
+Refer to the Terraform Registory for docs: [`aws_alb_listener_certificate`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate).
 
 # `albListenerCertificate` Submodule <a name="`albListenerCertificate` Submodule" id="@cdktf/provider-aws.albListenerCertificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_alb_listener_certificate`](http
 
 ### AlbListenerCertificate <a name="AlbListenerCertificate" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate aws_alb_listener_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate aws_alb_listener_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
 
 alblistenercertificate.NewAlbListenerCertificate(scope Construct, id *string, config AlbListenerCertificateConfig) AlbListenerCertificate
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
 
 &alblistenercertificate.AlbListenerCertificateConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistenercertificate"
 | <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ CertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}.
 
 ---
 
@@ -711,7 +711,7 @@ ListenerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
