@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.NewSagemakerImage(scope Construct, id *string, config SagemakerImageConfig) SagemakerImage
 ```
@@ -305,7 +305,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ sagemakerimage.SagemakerImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerImage.SagemakerImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 sagemakerimage.SagemakerImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerImage.SagemakerImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerimage"
 
 &sagemakerimage.SagemakerImageConfig {
 	Connection: interface{},
