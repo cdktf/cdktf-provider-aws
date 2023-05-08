@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.NewDataAwsRamResourceShare(scope Construct, id *string, config DataAwsRamResourceShareConfig) DataAwsRamResourceShare
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.DataAwsRamResourceShare_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.DataAwsRamResourceShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsramresourceshare.DataAwsRamResourceShare_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.DataAwsRamResourceShare_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 &dataawsramresourceshare.DataAwsRamResourceShareConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 &dataawsramresourceshare.DataAwsRamResourceShareFilter {
 	Name: *string,
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.NewDataAwsRamResourceShareFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRamResourceShareFilterList
 ```
@@ -1081,7 +1081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsramresourceshare"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsramresourceshare"
 
 dataawsramresourceshare.NewDataAwsRamResourceShareFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRamResourceShareFilterOutputReference
 ```
