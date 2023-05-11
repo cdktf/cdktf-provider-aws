@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftclustercredentials"
 
 dataawsredshiftclustercredentials.NewDataAwsRedshiftClusterCredentials(scope Construct, id *string, config DataAwsRedshiftClusterCredentialsConfig) DataAwsRedshiftClusterCredentials
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftclustercredentials"
 
 dataawsredshiftclustercredentials.DataAwsRedshiftClusterCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftclustercredentials"
 
 dataawsredshiftclustercredentials.DataAwsRedshiftClusterCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsredshiftclustercredentials.DataAwsRedshiftClusterCredentials_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftclustercredentials"
 
 dataawsredshiftclustercredentials.DataAwsRedshiftClusterCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftclustercredentials"
 
 &dataawsredshiftclustercredentials.DataAwsRedshiftClusterCredentialsConfig {
 	Connection: interface{},
