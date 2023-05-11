@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgram(scope Construct, id *string, config MedialiveMultiplexProgramConfig) MedialiveMultiplexProgram
 ```
@@ -290,7 +290,7 @@ func ResetMultiplexProgramSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.MedialiveMultiplexProgram_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.MedialiveMultiplexProgram_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ medialivemultiplexprogram.MedialiveMultiplexProgram_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.MedialiveMultiplexProgram_IsTerraformResource(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramMultiplexProgramSettings {
 	PreferredChannelPipeline: *string,
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor {
 	ProviderName: *string,
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings {
 	ConstantBitrate: *f64,
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings {
 	MaximumBitrate: *f64,
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 &medialivemultiplexprogram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings {
 	MaximumBitrate: *f64,
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsList
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList
 ```
@@ -1749,7 +1749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference
 ```
@@ -2060,7 +2060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList
 ```
@@ -2203,7 +2203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference
 ```
@@ -2583,7 +2583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList
 ```
@@ -2726,7 +2726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference
 ```
@@ -3080,7 +3080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList
 ```
@@ -3223,7 +3223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/medialivemultiplexprogram"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram"
 
 medialivemultiplexprogram.NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference
 ```
