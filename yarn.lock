@@ -1902,9 +1902,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.23"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.23.tgz#af0b75c8948d5bafed305aa576aafde421d6109e"
-  integrity sha512-9zhSKMFutVPy7Df0JyjDmqjrT+BHJ+zBOszkgOOYmYB7SLGYOFbfqo5TcitAB1vK9f+sGATnzfKbA3+fl6EMlw==
+  version "10.2.24"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.24.tgz#abe99a42dc939b19d32f1aff4a7e1e24669ec80c"
+  integrity sha512-35U5rfqCm800L98WwAgsig3jfy0ACOenjEh3o9t95kXvpGqviQO28HyERm9hCgtGVT8xZzczPNAZoVWkDbntzg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2675,12 +2675,13 @@ get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3, get-intrinsic@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.2.0.tgz#7ad1dc0535f3a2904bba075772763e5051f6d05f"
-  integrity sha512-L049y6nFOuom5wGyRc3/gdTLO94dySVKRACj1RmJZBQXlbTMhtNIgkWkUHq+jYmZvKf14EW1EoJnnjbmoHij0Q==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.2.1.tgz#d295644fed4505fc9cde952c37ee12b477a83d82"
+  integrity sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==
   dependencies:
     function-bind "^1.1.1"
     has "^1.0.3"
+    has-proto "^1.0.1"
     has-symbols "^1.0.3"
 
 get-package-type@^0.1.0:
@@ -2919,6 +2920,11 @@ has-property-descriptors@^1.0.0:
   integrity sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==
   dependencies:
     get-intrinsic "^1.1.1"
+
+has-proto@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/has-proto/-/has-proto-1.0.1.tgz#1885c1305538958aff469fef37937c22795408e0"
+  integrity sha512-7qE+iP+O+bgF9clE5+UoBFzE65mlBiVj3tKCrlNQ0Ogwm0BjpT/gK4SlLYDMybDh5I3TCTKnPPa0oMG7JDYrhg==
 
 has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
@@ -3837,9 +3843,9 @@ jsii-diff@^1.81.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.16"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.16.tgz#b50e99a8af552d8602565911011941cf408947a7"
-  integrity sha512-5JqQf7HkX88ZRkWB4W9DiTWc4r4scpFN2ELHgEkDbvDBpK2NA6dW7cj/vFCV8IQPjz811Bu/9vFmoVp8BlNtEg==
+  version "8.0.17"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.17.tgz#46ad15acfca6935643823ce1264384ce74add698"
+  integrity sha512-Szl4vyfZGPSwYmY3J3QHZiNkRXkSdpVsw4PotmJq5P0XQ9cQWRkuZQf69CyQnea+XMxiAz2Tagskvp83mQQGvA==
   dependencies:
     "@jsii/spec" "^1.81.0"
     case "^1.6.3"
@@ -3950,23 +3956,23 @@ jsii@1.81.0, jsii@^1.53.0, jsii@^1.80.0:
     yargs "^16.2.0"
 
 jsii@5.0.x, jsii@^5.0.1:
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.0.7.tgz#3b35ec28097fbbb2315486a7c3933b66bfce3325"
-  integrity sha512-T1So9pQiWBtjq+ki6HrilEDbV/YSxiorY05TjzjHbQtHsIZ1lJlLEIdN1YW9JVD2CrCRZgIPqeBIHwNZazDRcA==
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.0.8.tgz#324c84179097d092545f0090f9517dddc8151427"
+  integrity sha512-FQlEQX1o/v1CnkYsap7iPQH/L0QRzo8zv00L28qdcfAYuUGNlBc35q8G7G5zmrQfionVxDdpz00l8l+Fj6I2hA==
   dependencies:
-    "@jsii/check-node" "1.80.0"
-    "@jsii/spec" "^1.80.0"
+    "@jsii/check-node" "1.81.0"
+    "@jsii/spec" "^1.81.0"
     case "^1.6.3"
     chalk "^4"
     downlevel-dts "^0.11.0"
     fast-deep-equal "^3.1.3"
     log4js "^6.9.1"
-    semver "^7.5.0"
+    semver "^7.5.1"
     semver-intersect "^1.4.0"
     sort-json "^2.0.1"
     spdx-license-list "^6.6.0"
     typescript "~5.0.4"
-    yargs "^17.7.1"
+    yargs "^17.7.2"
 
 json-buffer@3.0.1:
   version "3.0.1"
@@ -4992,9 +4998,9 @@ path-parse@^1.0.7:
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-scurry@^1.6.1, path-scurry@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.8.0.tgz#809e09690c63817c76d0183f19a5b21b530ff7d2"
-  integrity sha512-IjTrKseM404/UAWA8bBbL3Qp6O2wXkanuIE3seCxBH7ctRuvH1QRawy1N3nVDHGkdeZsjOsSe/8AQBL/VQCy2g==
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.9.0.tgz#f8a4f273c28bb73722c11d6872d91572a6a4ec97"
+  integrity sha512-KLejx+14koDZLnb3JNDZbjcmHC/IO2Imd3rNoyt5mynieVd+MT4b1aaGaXAHw06H3P+aZ3Q+56VKJ6BCHMO3WA==
   dependencies:
     lru-cache "^9.1.1"
     minipass "^5.0.0"
@@ -5090,10 +5096,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.54:
-  version "0.71.54"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.54.tgz#4fa2d5e184318579147c9bba7a24f72937a2a29e"
-  integrity sha512-6CcaWV/Qqadytr4gPaWCHEHOUKONXSVUCm9u4J48aI2Iz+QiZX0QWHOTwuA8NGpGDURrYTb6BeP995PlL9F/Dw==
+projen@^0.71.55:
+  version "0.71.55"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.55.tgz#90ab709513361144b05488b40eb3f03cfe7e9c00"
+  integrity sha512-1eMhhroyE6+X3SQkThrdc06YIQe4tV/LeD3AOuKNiNoejS+nAH/pKhuu6cxKHyOOrPTsIhCwzmFFIT0HXD6WNA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6099,9 +6105,9 @@ typescript@^5.0.2, typescript@~5.0.4:
   integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
 
 typescript@next:
-  version "5.1.0-dev.20230513"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.0-dev.20230513.tgz#b1deeb31f6ced2decb3d9819f8ff4bfb8907a4ed"
-  integrity sha512-tHCqXX6guJwGQLfNyt/QcNkudg/kADIk6AmwUMQR8PEAUHrlOx7taJ0BFUEiUYLX6yBmCUs6CezfkRvSZiU9eA==
+  version "5.1.0-dev.20230514"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.0-dev.20230514.tgz#bbb374bc248d4937c414f562e493de3a6db4d4e6"
+  integrity sha512-eqrm5MDdWSVKrPKutCwj4N1hVZ8zReTXuuOxC4ufWGtLHPTmJWAm3JfxNYNcfXHhpiCsjVtx79zOYnFWEMObNw==
 
 uglify-js@^3.1.4:
   version "3.17.4"
