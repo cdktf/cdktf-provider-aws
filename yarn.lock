@@ -938,9 +938,9 @@
     type-detect "4.0.8"
 
 "@sinonjs/fake-timers@^10.0.2":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@sinonjs/fake-timers/-/fake-timers-10.1.0.tgz#3595e42b3f0a7df80a9681cf58d8cb418eac1e99"
-  integrity sha512-w1qd368vtrwttm1PRJWPW1QHlbmHrVDGs1eBH/jZvRPUFS4MNXV9Q33EQdjOdeAxZ7O8+3wM7zxztm2nfUSyKw==
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@sinonjs/fake-timers/-/fake-timers-10.2.0.tgz#b3e322a34c5f26e3184e7f6115695f299c1b1194"
+  integrity sha512-OPwQlEdg40HAj5KNF8WW6q2KG4Z+cBCZb3m4ninfTZKaBmbIJodviQsDBoYMPHkOyJJMHnOJo5j2+LKDOhOACg==
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
@@ -1052,9 +1052,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "20.2.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.0.tgz#e33da33171ac4eba79b9cfe30b68a4f1561e74ec"
-  integrity sha512-3iD2jaCCziTx04uudpJKwe39QxXgSUnpxXSvRQjRvHPxFQfmfP4NXIm/NURVeNlTCc+ru4WqjYGTmpXrW9uMlw==
+  version "20.2.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.1.tgz#de559d4b33be9a808fd43372ccee822c70f39704"
+  integrity sha512-DqJociPbZP1lbZ5SQPk4oag6W7AyaGMO6gSfRwq3PWl4PXTwJpRQJhDq4W0kzrg3w6tJ1SwlvGZ5uKFHY13LIg==
 
 "@types/node@16.18.23":
   version "16.18.23"
@@ -1502,9 +1502,9 @@ cacache@^16.1.0:
     unique-filename "^2.0.0"
 
 cacache@^17.0.0:
-  version "17.1.2"
-  resolved "https://registry.yarnpkg.com/cacache/-/cacache-17.1.2.tgz#57ce9b79d300373f7266f2f1e4e1718fe09e84b4"
-  integrity sha512-VcRDUtZd9r7yfGDpdm3dBDBSQbLd19IqWs9q1tuB9g6kmxYLwIjfLngRKMCfDHxReuf0SBclRuYn66Xds7jzUQ==
+  version "17.1.3"
+  resolved "https://registry.yarnpkg.com/cacache/-/cacache-17.1.3.tgz#c6ac23bec56516a7c0c52020fd48b4909d7c7044"
+  integrity sha512-jAdjGxmPxZh0IipMdR7fK/4sDSrHMLUV0+GvVUsjwyGNKHsh79kW/otg+GkbXwl6Uzvy9wsvHOX4nUoWldeZMg==
   dependencies:
     "@npmcli/fs" "^3.1.0"
     fs-minipass "^3.0.0"
@@ -1894,9 +1894,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.27"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.27.tgz#44835f100064604be21f32820209cb9edd674910"
-  integrity sha512-77XJ+QjfQQpLOlpSxOuYeUxsyp5EDI888p7RVPJlsbN9aYeEPb3jPodptvcM5rK+dB4gN9UMTsi99K4zSe8ARg==
+  version "10.2.28"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.28.tgz#3195e7e363a09100b5407794ff167968436584b0"
+  integrity sha512-qP0ryyp1ZVM0sbLgnGwa4aEOsJYQ1ghK4WA3WkPyft9JsSfbU/Wf8fMujWZWl+6txnyYyuvXabsCxiscjTyzMQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2301,9 +2301,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.398"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.398.tgz#b0fd3092b07d81c2ebf63f8395aa8a70c2c0892d"
-  integrity sha512-tT90Lmieb+Y4jX5Awub8BsvuFM/ICKr01oZFBR9Cy6pxCf+rAmwcpRl4xfXb66DzTXc4qSMPqlqLDoghm27utQ==
+  version "1.4.400"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.400.tgz#bc39fd77c4280b8d9abfbd7bee17d7bf3d1ef35f"
+  integrity sha512-Lsvf7cvwbIxCfB8VqbnVtEsjGi3+48ejDiQZfWo5gkT+1vQ2DHQI5pl0nUvPD6z1IQk6JgFeMC5ZQJqVhalEHg==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -3835,9 +3835,9 @@ jsii-diff@^1.81.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.20"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.20.tgz#9f4eff334a1b611dfb1fd924b6be75ccea1be32c"
-  integrity sha512-cyj271aPasPu/F5wxXMZ/jhWygNoSMQt1wYwFDRAfdti7c7oX0CO/dlMEXhrCZjIsHX/F7fwFl+tNPf4gB1QOA==
+  version "8.0.21"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.21.tgz#41332c540da930da8b7f84e53e7e56b385d0a51b"
+  integrity sha512-6iXGrN++zKim02wRGsEjJ+E576j88CSVvbzw7Qf9MoD4EtGWofjisMGQb7Cf+QrcBViAU7owsIGaclrPbi1CwA==
   dependencies:
     "@jsii/spec" "^1.81.0"
     case "^1.6.3"
@@ -5093,10 +5093,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.60:
-  version "0.71.60"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.60.tgz#4c3973b8a2754947eb36746c1e2f6e1f8299d18e"
-  integrity sha512-/up45q54xkLQdG09lEnPWF/Yzph2YKW9RmOO5rXkrVUUJTDmFSw8gogxbLR3MIWxBovDeHj7cUElvev1x+VMnw==
+projen@^0.71.62:
+  version "0.71.62"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.62.tgz#50f832eca2579051e55f2ecf67716cef33093616"
+  integrity sha512-vlJD3uEjdtaTutEkEJIieobDSWlCZET29f9ArYSBsP04bqFVL5CAwyusDWtUztwqUGt5K2vhaqGUR4kWvJB6LQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6019,9 +6019,9 @@ tslib@^1.9.3:
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
 tslib@^2.0.3:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.5.1.tgz#f2ad78c367857d54e49a0ef9def68737e1a67b21"
-  integrity sha512-KaI6gPil5m9vF7DKaoXxx1ia9fxS4qG5YveErRRVknPDXXriu5M8h48YRjB6h5ZUOKuAKlSJYb0GaDe8I39fRw==
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.5.2.tgz#1b6f07185c881557b0ffa84b111a0106989e8338"
+  integrity sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==
 
 tuf-js@^1.1.3:
   version "1.1.6"
@@ -6102,9 +6102,9 @@ typescript@^5.0.2, typescript@~5.0.4:
   integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
 
 typescript@next:
-  version "5.2.0-dev.20230517"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230517.tgz#6927c37887406ff250bc11f4256eb6136cc21475"
-  integrity sha512-mTT3ka5HTeudnNirocnOfr/0d2CEvZExrJpP8YXqAvdwlwjwNPJ4TqHHiL1y9lx3RfsUWu6HSX539ZxngUTqeA==
+  version "5.2.0-dev.20230518"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230518.tgz#0bf70a4334e8942a9ede2a595ae79409d598a79c"
+  integrity sha512-lHSI4e0QtTokuq/T1UnAFtdh3S2bzTG1TrR0Z3n6ld6J97SlPwW3FKbtKZiSdUVyOBaL0KbEiEyjy9AzukpS4Q==
 
 uglify-js@^3.1.4:
   version "3.17.4"
