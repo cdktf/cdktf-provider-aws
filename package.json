@@ -57,7 +57,7 @@
     "jsii-pacmak": "^1.81.0",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.71.62",
+    "projen": "^0.71.64",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
@@ -66,8 +66,8 @@
     "constructs": "^10.0.0"
   },
   "resolutions": {
-    "@types/prettier": "2.6.0",
     "@types/babel__traverse": "7.18.2",
+    "@types/prettier": "2.6.0",
     "@types/yargs": "17.0.13"
   },
   "keywords": [
