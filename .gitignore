@@ -63,3 +63,4 @@ package-lock.json
 !/.github/CODEOWNERS
 !/scripts/should-release.js
 API.md
+!/.copywrite.hcl

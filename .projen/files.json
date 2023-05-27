@@ -1,5 +1,6 @@
 {
   "files": [
+    ".copywrite.hcl",
     ".gitattributes",
     ".github/CODEOWNERS",
     ".github/ISSUE_TEMPLATE/config.yml",
