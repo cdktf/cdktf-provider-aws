@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2NetworkInsightsAnalysisConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#id DataAwsEc2NetworkInsightsAnalysis#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#id DataAwsEc2NetworkInsightsAnalysis#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#network_insights_analysis_id DataAwsEc2NetworkInsightsAnalysis#network_insights_analysis_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#network_insights_analysis_id DataAwsEc2NetworkInsightsAnalysis#network_insights_analysis_id}
   */
   readonly networkInsightsAnalysisId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#tags DataAwsEc2NetworkInsightsAnalysis#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#tags DataAwsEc2NetworkInsightsAnalysis#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#filter DataAwsEc2NetworkInsightsAnalysis#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#filter DataAwsEc2NetworkInsightsAnalysis#filter}
   */
   readonly filter?: DataAwsEc2NetworkInsightsAnalysisFilter[] | cdktf.IResolvable;
 }
@@ -1357,10 +1357,10 @@ export class DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesList extends
     return new DataAwsEc2NetworkInsightsAnalysisExplanationsPortRangesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixList {
+export interface DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct {
 }
 
-export function dataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListToTerraform(struct?: DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixList): any {
+export function dataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructToTerraform(struct?: DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1369,7 +1369,7 @@ export function dataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListToTerrafo
   }
 }
 
-export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListOutputReference extends cdktf.ComplexObject {
+export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1382,13 +1382,13 @@ export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListOutputRefere
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixList | undefined {
+  public get internalValue(): DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixList | undefined) {
+  public set internalValue(value: DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -1413,7 +1413,7 @@ export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListOutputRefere
   }
 }
 
-export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList extends cdktf.ComplexList {
+export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -1427,8 +1427,8 @@ export class DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList extends
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListOutputReference {
-    return new DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference {
+    return new DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsEc2NetworkInsightsAnalysisExplanationsRouteTable {
@@ -3026,7 +3026,7 @@ export class DataAwsEc2NetworkInsightsAnalysisExplanationsOutputReference extend
   }
 
   // prefix_list - computed: true, optional: false, required: false
-  private _prefixList = new DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListList(this, "prefix_list", false);
+  private _prefixList = new DataAwsEc2NetworkInsightsAnalysisExplanationsPrefixListStructList(this, "prefix_list", false);
   public get prefixList() {
     return this._prefixList;
   }
@@ -6722,11 +6722,11 @@ export class DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsList extends c
 }
 export interface DataAwsEc2NetworkInsightsAnalysisFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#name DataAwsEc2NetworkInsightsAnalysis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#name DataAwsEc2NetworkInsightsAnalysis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis#values DataAwsEc2NetworkInsightsAnalysis#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis#values DataAwsEc2NetworkInsightsAnalysis#values}
   */
   readonly values: string[];
 }
@@ -6840,7 +6840,7 @@ export class DataAwsEc2NetworkInsightsAnalysisFilterList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}
 */
 export class DataAwsEc2NetworkInsightsAnalysis extends cdktf.TerraformDataSource {
 
@@ -6854,7 +6854,7 @@ export class DataAwsEc2NetworkInsightsAnalysis extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6865,7 +6865,7 @@ export class DataAwsEc2NetworkInsightsAnalysis extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_ec2_network_insights_analysis',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

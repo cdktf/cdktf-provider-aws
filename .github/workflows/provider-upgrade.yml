@@ -18,7 +18,7 @@ jobs:
       statuses: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
       - run: yarn install
       - id: check_version
         run: yarn check-if-new-provider-version
@@ -41,7 +41,7 @@ jobs:
         run: yarn docgen
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
         with:
           commit-message: "chore: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           branch: auto/provider-upgrade

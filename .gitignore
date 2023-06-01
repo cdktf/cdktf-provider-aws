@@ -46,7 +46,6 @@ jspm_packages/
 /dist/
 .jsii
 tsconfig.json
-!/API.md
 .gen
 .terraform
 package-lock.json
@@ -63,3 +62,5 @@ package-lock.json
 !/.github/CODEOWNERS
 !/scripts/should-release.js
 API.md
+!/docs/*.md
+!/.copywrite.hcl

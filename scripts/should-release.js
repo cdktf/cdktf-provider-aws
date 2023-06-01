@@ -1,4 +1,8 @@
 
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
 // Note: This script is currently not handling pre-releases
 const execSync = require("child_process").execSync;
 
