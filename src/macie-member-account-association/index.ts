@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface MacieMemberAccountAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}
   */
   readonly memberAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association aws_macie_member_account_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association aws_macie_member_account_association}
 */
 export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
 
@@ -35,7 +35,7 @@ export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +46,7 @@ export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie_member_account_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

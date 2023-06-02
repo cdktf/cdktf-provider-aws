@@ -1,6 +1,6 @@
 # `aws_dx_connection_association`
 
-Refer to the Terraform Registory for docs: [`aws_dx_connection_association`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association).
+Refer to the Terraform Registory for docs: [`aws_dx_connection_association`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association).
 
 # `dxConnectionAssociation` Submodule <a name="`dxConnectionAssociation` Submodule" id="@cdktf/provider-aws.dxConnectionAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_dx_connection_association`](htt
 
 ### DxConnectionAssociation <a name="DxConnectionAssociation" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association aws_dx_connection_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association aws_dx_connection_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer"></a>
 
@@ -44,9 +44,9 @@ DxConnectionAssociation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.lagId">lagId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.lagId">lagId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -706,9 +706,9 @@ DxConnectionAssociationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">lagId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">lagId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
 
 ---
 
@@ -802,7 +802,7 @@ public java.lang.String getLagId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
 
 ---
 
@@ -814,7 +814,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

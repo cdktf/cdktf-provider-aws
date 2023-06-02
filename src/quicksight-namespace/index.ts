@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
   */
   readonly identityStore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
   */
   readonly timeouts?: QuicksightNamespaceTimeouts;
 }
 export interface QuicksightNamespaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
   */
   readonly delete?: string;
 }
@@ -134,7 +134,7 @@ export class QuicksightNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace aws_quicksight_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace aws_quicksight_namespace}
 */
 export class QuicksightNamespace extends cdktf.TerraformResource {
 
@@ -148,7 +148,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +159,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

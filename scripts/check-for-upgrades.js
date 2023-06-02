@@ -1,4 +1,8 @@
 
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
 const fetch = require("node-fetch");
 const semver = require("semver");
 const actions = require("@actions/core");

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2InstanceTypesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,23 +17,23 @@ export interface DataAwsEc2InstanceTypesConfig extends cdktf.TerraformMetaArgume
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#filter DataAwsEc2InstanceTypes#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#filter DataAwsEc2InstanceTypes#filter}
   */
   readonly filter?: DataAwsEc2InstanceTypesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#timeouts DataAwsEc2InstanceTypes#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#timeouts DataAwsEc2InstanceTypes#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypesTimeouts;
 }
 export interface DataAwsEc2InstanceTypesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}
   */
   readonly values: string[];
 }
@@ -147,7 +147,7 @@ export class DataAwsEc2InstanceTypesFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsEc2InstanceTypesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}
   */
   readonly read?: string;
 }
@@ -222,7 +222,7 @@ export class DataAwsEc2InstanceTypesTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types aws_ec2_instance_types}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types aws_ec2_instance_types}
 */
 export class DataAwsEc2InstanceTypes extends cdktf.TerraformDataSource {
 
@@ -236,7 +236,7 @@ export class DataAwsEc2InstanceTypes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_instance_types aws_ec2_instance_types} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_instance_types aws_ec2_instance_types} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,7 +247,7 @@ export class DataAwsEc2InstanceTypes extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_instance_types',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

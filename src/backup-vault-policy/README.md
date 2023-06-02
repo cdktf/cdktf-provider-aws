@@ -1,3 +1,3 @@
 # `aws_backup_vault_policy`
 
-Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_vault_policy).
+Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_vault_policy).

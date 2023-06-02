@@ -1,6 +1,6 @@
 # `data_aws_eks_clusters`
 
-Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_clusters).
+Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_clusters).
 
 # `dataAwsEksClusters` Submodule <a name="`dataAwsEksClusters` Submodule" id="@cdktf/provider-aws.dataAwsEksClusters"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://reg
 
 ### DataAwsEksClusters <a name="DataAwsEksClusters" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_clusters aws_eks_clusters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_clusters aws_eks_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.NewDataAwsEksClusters(scope Construct, id *string, config DataAwsEksClustersConfig) DataAwsEksClusters
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 &dataawseksclusters.DataAwsEksClustersConfig {
 	Connection: interface{},
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksclusters"
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
