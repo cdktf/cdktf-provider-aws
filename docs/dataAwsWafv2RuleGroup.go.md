@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2rulegroup"
 
 dataawswafv2rulegroup.NewDataAwsWafv2RuleGroup(scope Construct, id *string, config DataAwsWafv2RuleGroupConfig) DataAwsWafv2RuleGroup
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2rulegroup"
 
 dataawswafv2rulegroup.DataAwsWafv2RuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2rulegroup"
 
 dataawswafv2rulegroup.DataAwsWafv2RuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafv2rulegroup.DataAwsWafv2RuleGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2rulegroup"
 
 dataawswafv2rulegroup.DataAwsWafv2RuleGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2rulegroup"
 
 &dataawswafv2rulegroup.DataAwsWafv2RuleGroupConfig {
 	Connection: interface{},
