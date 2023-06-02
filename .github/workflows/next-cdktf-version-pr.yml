@@ -14,7 +14,7 @@ jobs:
       CHECKPOINT_DISABLE: "1"
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -40,7 +40,7 @@ jobs:
       - name: Regenerate bindings
         run: yarn run fetch && yarn run compile && yarn run docgen
       - name: Create PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: cdktf-next-pr
