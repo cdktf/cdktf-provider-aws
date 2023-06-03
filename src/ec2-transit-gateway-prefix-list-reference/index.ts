@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_transit_gateway_prefix_list_reference
 // generated from terraform resource schema
 
