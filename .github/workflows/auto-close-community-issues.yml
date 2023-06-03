@@ -14,7 +14,7 @@ jobs:
     if: github.event.issue.author_association != 'OWNER' && github.event.issue.author_association != 'MEMBER' && github.event.issue.author_association != 'COLLABORATOR'
     steps:
       - name: Auto-close issues by non-collaborators
-        uses: peter-evans/close-issue@v2
+        uses: peter-evans/close-issue@276d7966e389d888f011539a86c8920025ea0626
         with:
           issue-number: ${{ github.event.issue.number }}
           comment: Hi there! 👋 We appreciate your interest, but this is probably not the right place. All the code in this repository is auto-generated using [cdktf-provider-project](https://github.com/cdktf/cdktf-provider-project) and [cdktf-repository-manager](https://github.com/cdktf/cdktf-repository-manager) from the source [Terraform provider](https://github.com/terraform-providers/terraform-provider-aws). If there are problems, they should be addressed in one of those 3 repositories, not here, as any changes here will just get overwritten the next time there is an update upstream. Please open a new issue or PR in one of those repos. In the meantime, I'll auto-close this. Thanks!
