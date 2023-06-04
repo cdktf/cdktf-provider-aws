@@ -1376,9 +1376,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.41"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.41.tgz#090e725b84d2da59ddb9e5c782f9678a0c49257a"
-  integrity sha512-csg/lxYKHA3meQX4JWs7EiTAtVYl681jTl8VxCK7jMfzbH5RzRsCA09HwYzslarQcFCSZyUMcgHVvZhUyABjAA==
+  version "10.2.42"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.42.tgz#881d1746dbb747586adb702b70d8c502b5c796da"
+  integrity sha512-QTy50blEmjrHexraR4JmxJtA7YCQ2p/IaDXiXNfy8lYNYnWQbp5YbAhDG1BSYvoRRgru/kB9CTlGtiLd9x3aUQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2994,9 +2994,9 @@ jsii-diff@^1.82.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.36"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.36.tgz#7d9e0e6c01a82c7e5fa4dcdc251572e081226542"
-  integrity sha512-g0eHtGPfxWJ/6Yqwc0PNCqA+evtTnFxGSGppSgtaKrfRxUj5EjPZm+EuiIdgMuhGvVCQ7GhrvPuoH2XveaGG2w==
+  version "8.0.37"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.37.tgz#4d8d7cbd2894abd1e1bb024dc26c193e00b58a53"
+  integrity sha512-SSyHqto9cbP17jqFMaueGPlRaCZeZQ2jv7kJpoWbPReMqmm78RNox1sYCUv+Bbm7AqXoD3FHI+fuEk0XhqcExw==
   dependencies:
     "@jsii/spec" "^1.82.0"
     case "^1.6.3"
@@ -5255,9 +5255,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.2.0-dev.20230602"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230602.tgz#01e2055aa8d8bde4431947c0c048c07c23cc6027"
-  integrity sha512-LenKdxmkwzZRmEKzShAq83TvEuvCGR8pCYBe0VpUTuJ7NMSK4r2yV2GTmJrSqtk8IoJAmc+PfymMQIfwX1JGQQ==
+  version "5.2.0-dev.20230603"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230603.tgz#e9e618df48bd1d74296ac264dd816ed43dd96a27"
+  integrity sha512-jxLUGxmI27KgHSMU2bKNbnpq2WOQIJYJvBcOxcgBSxzCnTZTZmeWU/9nPKQCtbHorw+OTe+BxQWjVw21uhPxjQ==
 
 typescript@~5.0.4:
   version "5.0.4"
