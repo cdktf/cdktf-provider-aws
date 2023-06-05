@@ -1,6 +1,6 @@
 # `data_aws_cloudfront_function`
 
-Refer to the Terraform Registory for docs: [`data_aws_cloudfront_function`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function).
+Refer to the Terraform Registory for docs: [`data_aws_cloudfront_function`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function).
 
 # `dataAwsCloudfrontFunction` Submodule <a name="`dataAwsCloudfrontFunction` Submodule" id="@cdktf/provider-aws.dataAwsCloudfrontFunction"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_cloudfront_function`](http
 
 ### DataAwsCloudfrontFunction <a name="DataAwsCloudfrontFunction" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function aws_cloudfront_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function aws_cloudfront_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.NewDataAwsCloudfrontFunction(scope Construct, id *string, config DataAwsCloudfrontFunctionConfig) DataAwsCloudfrontFunction
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
 
 dataawscloudfrontfunction.DataAwsCloudfrontFunction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontfunction"
 
 &dataawscloudfrontfunction.DataAwsCloudfrontFunctionConfig {
 	Connection: interface{},
@@ -670,9 +670,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontfunction
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#name DataAwsCloudfrontFunction#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#stage DataAwsCloudfrontFunction#stage}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#id DataAwsCloudfrontFunction#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#name DataAwsCloudfrontFunction#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#stage DataAwsCloudfrontFunction#stage}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#id DataAwsCloudfrontFunction#id}. |
 
 ---
 
@@ -754,7 +754,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#name DataAwsCloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#name DataAwsCloudfrontFunction#name}.
 
 ---
 
@@ -766,7 +766,7 @@ Stage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#stage DataAwsCloudfrontFunction#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#stage DataAwsCloudfrontFunction#stage}.
 
 ---
 
@@ -778,7 +778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cloudfront_function#id DataAwsCloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_function#id DataAwsCloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

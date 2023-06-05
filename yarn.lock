@@ -197,9 +197,9 @@
     jsii-srcmak "^0.1.867"
 
 "@cdktf/provider-project@^0.2.95":
-  version "0.2.115"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.115.tgz#ac19c91aeff25c31ef322455f29a6795fca00b3a"
-  integrity sha512-odqHo/+35EGKXE/5Fzj3rdlX1evqDLpCayPadVoOO1hyYHkeDi5QI5iV/BcHTBzsX8Q0fdb87H9cehoUZr7X0g==
+  version "0.2.116"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.116.tgz#2511a918e8933986fc1491b4c52921675ce146ed"
+  integrity sha512-dnN+XwR83nB15PvQO20VzS9kGBW2ykCbrv7wmRfqsJzUy/u7mUP+6Df3omMLcSSUOGniM5N0R7CRclkwuh08Fw==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -1031,7 +1031,7 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktf-cli@^0.16.0:
+cdktf-cli@^0.16.3:
   version "0.16.3"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.16.3.tgz#bd25fbf050c00229566da9757e8d785348124d57"
   integrity sha512-VX0AQO89n06L2GOjxKX98Awzcak2NF0t9bCk7ITXwRcf5Rhq9wedcuu0rlRMO6MiBlYvbz+fjSAuQUGfVhj6BQ==
@@ -1058,7 +1058,7 @@ cdktf-cli@^0.16.0:
     yoga-layout-prebuilt "^1.10.0"
     zod "^1.11.17"
 
-cdktf@0.16.3, cdktf@^0.16.0:
+cdktf@0.16.3, cdktf@^0.16.3:
   version "0.16.3"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.16.3.tgz#c90494667e709c6db5af02a4cacfe2da5d1098b2"
   integrity sha512-rE+/RVDaLfZsQlJB/ATMhe226pFfIzOXMYWXqWmIEiHPZXlkbdUCVM2rmJNBWJdMvs58yWmDLwFrqg+HakjA6Q==

@@ -1,6 +1,6 @@
 # `data_aws_memorydb_snapshot`
 
-Refer to the Terraform Registory for docs: [`data_aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot).
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot).
 
 # `dataAwsMemorydbSnapshot` Submodule <a name="`dataAwsMemorydbSnapshot` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_memorydb_snapshot`](https:
 
 ### DataAwsMemorydbSnapshot <a name="DataAwsMemorydbSnapshot" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer"></a>
 
@@ -42,9 +42,9 @@ dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot(
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
 
 ---
 
@@ -782,9 +782,9 @@ dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}. |
 
 ---
 
@@ -866,7 +866,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#name DataAwsMemorydbSnapshot#name}.
 
 ---
 
@@ -878,7 +878,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#id DataAwsMemorydbSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_snapshot#tags DataAwsMemorydbSnapshot#tags}.
 
 ---
 
