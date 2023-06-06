@@ -16,6 +16,8 @@ jobs:
       issues: write
       contents: write
       statuses: write
+    environment:
+      NODE_OPTIONS: --max-old-space-size=31744
     steps:
       - name: Checkout
         uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
