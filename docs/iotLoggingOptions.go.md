@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotloggingoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions"
 
 iotloggingoptions.NewIotLoggingOptions(scope Construct, id *string, config IotLoggingOptionsConfig) IotLoggingOptions
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotloggingoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotloggingoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ iotloggingoptions.IotLoggingOptions_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotloggingoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions"
 
 iotloggingoptions.IotLoggingOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotloggingoptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions"
 
 &iotloggingoptions.IotLoggingOptionsConfig {
 	Connection: interface{},
