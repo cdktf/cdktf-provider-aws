@@ -1,6 +1,6 @@
 # `aws_macie_member_account_association`
 
-Refer to the Terraform Registory for docs: [`aws_macie_member_account_association`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association).
+Refer to the Terraform Registory for docs: [`aws_macie_member_account_association`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association).
 
 # `macieMemberAccountAssociation` Submodule <a name="`macieMemberAccountAssociation` Submodule" id="@cdktf/provider-aws.macieMemberAccountAssociation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_macie_member_account_associatio
 
 ### MacieMemberAccountAssociation <a name="MacieMemberAccountAssociation" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association aws_macie_member_account_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association aws_macie_member_account_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/maciememberaccountassociation"
 
 maciememberaccountassociation.NewMacieMemberAccountAssociation(scope Construct, id *string, config MacieMemberAccountAssociationConfig) MacieMemberAccountAssociation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/maciememberaccountassociation"
 
 maciememberaccountassociation.MacieMemberAccountAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/maciememberaccountassociation"
 
 maciememberaccountassociation.MacieMemberAccountAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ maciememberaccountassociation.MacieMemberAccountAssociation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/maciememberaccountassociation"
 
 maciememberaccountassociation.MacieMemberAccountAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/maciememberaccountassociation"
 
 &maciememberaccountassociation.MacieMemberAccountAssociationConfig {
 	Connection: interface{},
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassocia
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}. |
-| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.memberAccountId">MemberAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}. |
+| <code><a href="#@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ MemberAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#member_account_id MacieMemberAccountAssociation#member_account_id}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/macie_member_account_association#id MacieMemberAccountAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
