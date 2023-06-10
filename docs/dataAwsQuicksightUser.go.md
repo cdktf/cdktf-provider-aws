@@ -1,6 +1,6 @@
 # `data_aws_quicksight_user`
 
-Refer to the Terraform Registory for docs: [`data_aws_quicksight_user`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user).
+Refer to the Terraform Registory for docs: [`data_aws_quicksight_user`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user).
 
 # `dataAwsQuicksightUser` Submodule <a name="`dataAwsQuicksightUser` Submodule" id="@cdktf/provider-aws.dataAwsQuicksightUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_quicksight_user`](https://
 
 ### DataAwsQuicksightUser <a name="DataAwsQuicksightUser" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user aws_quicksight_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user aws_quicksight_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.NewDataAwsQuicksightUser(scope Construct, id *string, config DataAwsQuicksightUserConfig) DataAwsQuicksightUser
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 dataawsquicksightuser.DataAwsQuicksightUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksightuser"
 
 &dataawsquicksightuser.DataAwsQuicksightUserConfig {
 	Connection: interface{},
@@ -696,10 +696,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightuser"
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#user_name DataAwsQuicksightUser#user_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#aws_account_id DataAwsQuicksightUser#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#id DataAwsQuicksightUser#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#namespace DataAwsQuicksightUser#namespace}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#user_name DataAwsQuicksightUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#aws_account_id DataAwsQuicksightUser#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#id DataAwsQuicksightUser#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightUser.DataAwsQuicksightUserConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#namespace DataAwsQuicksightUser#namespace}. |
 
 ---
 
@@ -781,7 +781,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#user_name DataAwsQuicksightUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#user_name DataAwsQuicksightUser#user_name}.
 
 ---
 
@@ -793,7 +793,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#aws_account_id DataAwsQuicksightUser#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#aws_account_id DataAwsQuicksightUser#aws_account_id}.
 
 ---
 
@@ -805,7 +805,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#id DataAwsQuicksightUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#id DataAwsQuicksightUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_user#namespace DataAwsQuicksightUser#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_user#namespace DataAwsQuicksightUser#namespace}.
 
 ---
 

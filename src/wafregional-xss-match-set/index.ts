@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#id WafregionalXssMatchSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#id WafregionalXssMatchSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#name WafregionalXssMatchSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#name WafregionalXssMatchSet#name}
   */
   readonly name: string;
   /**
   * xss_match_tuple block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#xss_match_tuple WafregionalXssMatchSet#xss_match_tuple}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#xss_match_tuple WafregionalXssMatchSet#xss_match_tuple}
   */
   readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[] | cdktf.IResolvable;
 }
 export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#data WafregionalXssMatchSet#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#data WafregionalXssMatchSet#data}
   */
   readonly data?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#type WafregionalXssMatchSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#type WafregionalXssMatchSet#type}
   */
   readonly type: string;
 }
@@ -121,13 +116,13 @@ export class WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference exte
 }
 export interface WafregionalXssMatchSetXssMatchTuple {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#text_transformation WafregionalXssMatchSet#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#text_transformation WafregionalXssMatchSet#text_transformation}
   */
   readonly textTransformation: string;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set#field_to_match WafregionalXssMatchSet#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set#field_to_match WafregionalXssMatchSet#field_to_match}
   */
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch;
 }
@@ -241,7 +236,7 @@ export class WafregionalXssMatchSetXssMatchTupleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set aws_wafregional_xss_match_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set aws_wafregional_xss_match_set}
 */
 export class WafregionalXssMatchSet extends cdktf.TerraformResource {
 
@@ -255,7 +250,7 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_xss_match_set aws_wafregional_xss_match_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_xss_match_set aws_wafregional_xss_match_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +261,7 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_xss_match_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

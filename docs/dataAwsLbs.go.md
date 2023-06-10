@@ -1,6 +1,6 @@
 # `data_aws_lbs`
 
-Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs).
+Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs).
 
 # `dataAwsLbs` Submodule <a name="`dataAwsLbs` Submodule" id="@cdktf/provider-aws.dataAwsLbs"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_lbs`](https://registry.ter
 
 ### DataAwsLbs <a name="DataAwsLbs" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs aws_lbs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs aws_lbs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
 
 dataawslbs.NewDataAwsLbs(scope Construct, id *string, config DataAwsLbsConfig) DataAwsLbs
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
 
 &dataawslbs.DataAwsLbsConfig {
 	Connection: interface{},
@@ -588,8 +588,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslbs"
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs#id DataAwsLbs#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs#tags DataAwsLbs#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs#id DataAwsLbs#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs#tags DataAwsLbs#tags}. |
 
 ---
 
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs#id DataAwsLbs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs#id DataAwsLbs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lbs#tags DataAwsLbs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lbs#tags DataAwsLbs#tags}.
 
 ---
 
