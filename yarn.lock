@@ -1393,9 +1393,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.49"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.49.tgz#0a8d89c5fcbbb33fd989b1f41dd286a0cbcb1300"
-  integrity sha512-OXIIyu0wlLrH7i3xDXMUgWcaN7B1IqIYlBIdB1E4thXsxCwpnIsZdiINcuOm7HrcRBYCNgbUS8+E8KFEaHCOTA==
+  version "10.2.50"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.50.tgz#e308c31eedc95c9738143f6f121d1191370e5ab9"
+  integrity sha512-uDWTvkHgkyLLwPTtHYnmEjUNwhgS22JUaATl7+kkDa3yZnvQb8vGsiO/UvVIOmpOzK2T2TGQ2L+SJZlf+exa7w==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2239,7 +2239,7 @@ glob-parent@^5.1.2, glob-parent@~5.1.2:
   dependencies:
     is-glob "^4.0.1"
 
-glob-promise@^6.0.2:
+glob-promise@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/glob-promise/-/glob-promise-6.0.3.tgz#e6b3ab02d350b3f4b3e15b57e4485986e41ba2fe"
   integrity sha512-m+kxywR5j/2Z2V9zvHKfwwL5Gp7gIFEBX+deTB9w2lJB+wSuw9kcS43VfvTAMk8TXL5JCl/cCjsR+tgNVspGyA==
@@ -3011,15 +3011,15 @@ jsii-diff@^1.83.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.45"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.45.tgz#a64fff80d0d717eee8c6a8a6c76b8053b8bc0610"
-  integrity sha512-whLeMyvZAnArBHRgYMt/wIHiumiuWyQcHt8NyGeilKaY0V4Fdtw1vEqcn2Npq9kx6/oOU4pRhvTbeq+P93+yHg==
+  version "8.0.46"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.46.tgz#ad19926dc170ca531665457a218c756f51374b69"
+  integrity sha512-ENxuCKACFPo25YGxasjdcU/g8t0UNUY408hGDzHlTGjmNWcLPgYzc8Jht+WORRcTpCSXoJhh6MCRwQ9GLjmcAQ==
   dependencies:
     "@jsii/spec" "^1.83.0"
     case "^1.6.3"
     fs-extra "^10.1.0"
     glob "^8.1.0"
-    glob-promise "^6.0.2"
+    glob-promise "^6.0.3"
     jsii-reflect "^1.83.0"
     jsii-rosetta "^1.83.0"
     semver "^7.5.1"
@@ -3094,9 +3094,9 @@ jsii-rosetta@^5.0.1:
     yargs "^17.7.2"
 
 jsii-srcmak@^0.1.867:
-  version "0.1.925"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.925.tgz#1d3eaa8ce76a11eb356719add6979de528022cd0"
-  integrity sha512-RSwBIGsoYNV6GqDBTMgiqYbQIfLg8k5qhH+JRae6eTXvEoF8LBhotSqZxcdUL5rXAuV2JKpcWOHAANQN4Y1R9A==
+  version "0.1.926"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.926.tgz#baf54d594361d53f70d04176dd471b10d295fd15"
+  integrity sha512-z2I0vOg93q06SM3kMLEukmTRQPGicxHr1dOoEQ8lAqF6eCr1/geGb/zsNsFpm/UPcZofA6fQuTLlja7UsKatFw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.1.1"
@@ -4262,10 +4262,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.89:
-  version "0.71.89"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.89.tgz#e4dcb6a808e3958ff2866fac39864808f57b6338"
-  integrity sha512-AN7uj9wsBbNFxiqIpYTfuNDbbEmSTWsLMgbaQyN0ZuVnYLwUqrjySjEN2g8Gxn6GLaIQsTt13qJvkRdz9nFs+Q==
+projen@^0.71.90:
+  version "0.71.90"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.90.tgz#49bce6c6c26994bc8c76c7fe6278e848e495bc3f"
+  integrity sha512-+7/eYcvPnFrhfXMO97QUIvcop5C+rYJKDnhhIyVl7wrV9GMnmNR4VqNbq1dMjfbFXfmVCab9YgQm9EVSseecww==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5254,9 +5254,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.2.0-dev.20230610"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230610.tgz#3867ad92b05a4389aec705bf1fec81da94e23f98"
-  integrity sha512-xeq9aV0oQjWBJAeUfg5MOkBuPvc5iYRgXGFoKPNxPpvum+0ttNDF4azQdfIggbe3TmGE6tInT969gQ/v6EKflQ==
+  version "5.2.0-dev.20230611"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230611.tgz#f78d445a79717e1a51a14daa69f476060c6d294d"
+  integrity sha512-qbg1yH3XnM3fKxBpXTESv++zWLL5TbS1QfPw6D+GNNemnHo4OXtuhby6pXoaFSCiPILY+/8EqRAJZb/ovVAJRg==
 
 typescript@~5.1.3:
   version "5.1.3"
