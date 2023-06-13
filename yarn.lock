@@ -3011,9 +3011,9 @@ jsii-diff@^1.83.0:
     yargs "^16.2.0"
 
 jsii-docgen@>=7.1.2:
-  version "8.0.46"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.46.tgz#ad19926dc170ca531665457a218c756f51374b69"
-  integrity sha512-ENxuCKACFPo25YGxasjdcU/g8t0UNUY408hGDzHlTGjmNWcLPgYzc8Jht+WORRcTpCSXoJhh6MCRwQ9GLjmcAQ==
+  version "8.0.47"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-8.0.47.tgz#ade40d20ad6c1916ea67c31394b5afa1d7086c61"
+  integrity sha512-50dLPmaELC7W+Ogzk5JKqktkhc4JH++m1koEdP2kGef18qfzOouuBkAhHh6dguljpo7Z/ykyEvHNJEbwn2sEig==
   dependencies:
     "@jsii/spec" "^1.83.0"
     case "^1.6.3"
@@ -3075,12 +3075,12 @@ jsii-rosetta@^1.83.0:
     yargs "^16.2.0"
 
 jsii-rosetta@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.1.0.tgz#22cdad3dd6a8a4dec7b5c5bffdf6d2b7763f497f"
-  integrity sha512-5n4XGD8yBVJcvjq0QLpnspEx8N6KUvopM2kVDgWLApry50rXbRHSiH3Tmb5LUJKA/s3IJrexNRwYBAcPNl4h+A==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.1.1.tgz#61693ed99f0005c01ccb6e10738161df85a51458"
+  integrity sha512-qoDOgSarohafFB2Om+XfhmhOz3QXjCobSGUT4XMoT8m6H4L9p/fhkYxf51nBitXT62wjQk2VcZm9EWqrHX9uYQ==
   dependencies:
-    "@jsii/check-node" "1.82.0"
-    "@jsii/spec" "^1.82.0"
+    "@jsii/check-node" "1.83.0"
+    "@jsii/spec" "^1.83.0"
     "@xmldom/xmldom" "^0.8.8"
     chalk "^4"
     commonmark "^0.30.0"
@@ -3094,9 +3094,9 @@ jsii-rosetta@^5.0.1:
     yargs "^17.7.2"
 
 jsii-srcmak@^0.1.867:
-  version "0.1.926"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.926.tgz#baf54d594361d53f70d04176dd471b10d295fd15"
-  integrity sha512-z2I0vOg93q06SM3kMLEukmTRQPGicxHr1dOoEQ8lAqF6eCr1/geGb/zsNsFpm/UPcZofA6fQuTLlja7UsKatFw==
+  version "0.1.927"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.927.tgz#9b1b882152ebaf929c9e39cb8ba65f8e44287fe0"
+  integrity sha512-HMbZUIKeGraXm/D7tabdNIIbRraVDiw7iycWqEW0FExjsmVOv7GFJJckkNThNGqCaaJAcnnmjhRBkqDwrtZskg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.1.1"
@@ -3420,7 +3420,7 @@ make-fetch-happen@^10.0.3:
     socks-proxy-agent "^7.0.0"
     ssri "^9.0.0"
 
-make-fetch-happen@^11.0.0, make-fetch-happen@^11.0.1, make-fetch-happen@^11.1.0:
+make-fetch-happen@^11.0.0, make-fetch-happen@^11.0.1, make-fetch-happen@^11.1.1:
   version "11.1.1"
   resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-11.1.1.tgz#85ceb98079584a9523d4bf71d32996e7e208549f"
   integrity sha512-rLWS7GCSTcEujjVBs2YqG7Y4643u8ucvCJeSRqiLYhesrDuzeuFIk37xREzAsfQaqzl8b9rNCE4m6J8tvX4Q8w==
@@ -4262,10 +4262,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.90:
-  version "0.71.90"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.90.tgz#49bce6c6c26994bc8c76c7fe6278e848e495bc3f"
-  integrity sha512-+7/eYcvPnFrhfXMO97QUIvcop5C+rYJKDnhhIyVl7wrV9GMnmNR4VqNbq1dMjfbFXfmVCab9YgQm9EVSseecww==
+projen@^0.71.91:
+  version "0.71.91"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.91.tgz#6e858b8a908b11297cc2438f0337e8381582aedd"
+  integrity sha512-fcAAdrGL1kemwEX8+S+mIN/7iOYKSB2O4tGtnSujlqqgtZxU2Vt5CbjNbuZi8TNkFnYN6bcM9gtuJoYNI9qEgA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5181,13 +5181,13 @@ tslib@^2.0.3, tslib@^2.1.0:
   integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
 
 tuf-js@^1.1.3:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/tuf-js/-/tuf-js-1.1.6.tgz#ad3e7a20237b83b51c2a8f9d1ddf093279a10fc2"
-  integrity sha512-CXwFVIsXGbVY4vFiWF7TJKWmlKJAT8TWkH4RmiohJRcDJInix++F0dznDmoVbtJNzZ8yLprKUG4YrDIhv3nBMg==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/tuf-js/-/tuf-js-1.1.7.tgz#21b7ae92a9373015be77dfe0cb282a80ec3bbe43"
+  integrity sha512-i3P9Kgw3ytjELUfpuKVDNBJvk4u5bXL6gskv572mcevPbSKCV3zt3djhmlEQ65yERjIbOSncy7U4cQJaB1CBCg==
   dependencies:
     "@tufjs/models" "1.0.4"
     debug "^4.3.4"
-    make-fetch-happen "^11.1.0"
+    make-fetch-happen "^11.1.1"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
@@ -5254,9 +5254,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.2.0-dev.20230611"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230611.tgz#f78d445a79717e1a51a14daa69f476060c6d294d"
-  integrity sha512-qbg1yH3XnM3fKxBpXTESv++zWLL5TbS1QfPw6D+GNNemnHo4OXtuhby6pXoaFSCiPILY+/8EqRAJZb/ovVAJRg==
+  version "5.2.0-dev.20230612"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230612.tgz#73c4168a266cf3cc70b7e3af3196038bf3eb4033"
+  integrity sha512-f7THkvy028PZE2G7zoA0hnJZJHjE0u/de8+Izzn4C1Oaz13Lm0ll9fSqcnfTw0JlmIc68YqrwC/z0s8IW0E3Cw==
 
 typescript@~5.1.3:
   version "5.1.3"
