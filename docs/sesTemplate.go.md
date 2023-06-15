@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sestemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sestemplate"
 
 sestemplate.NewSesTemplate(scope Construct, id *string, config SesTemplateConfig) SesTemplate
 ```
@@ -298,7 +298,7 @@ func ResetText()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesTemplate.SesTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sestemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sestemplate"
 
 sestemplate.SesTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesTemplate.SesTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sestemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sestemplate"
 
 sestemplate.SesTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ sestemplate.SesTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesTemplate.SesTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sestemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sestemplate"
 
 sestemplate.SesTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesTemplate.SesTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sestemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sestemplate"
 
 &sestemplate.SesTemplateConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccount(scope Construct, id *string, config ApiGatewayAccountConfig) ApiGatewayAccount
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ apigatewayaccount.ApiGatewayAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.ApiGatewayAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 &apigatewayaccount.ApiGatewayAccountConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 &apigatewayaccount.ApiGatewayAccountThrottleSettings {
 
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccountThrottleSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayAccountThrottleSettingsList
 ```
@@ -864,7 +864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayaccount"
 
 apigatewayaccount.NewApiGatewayAccountThrottleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayAccountThrottleSettingsOutputReference
 ```

@@ -66,7 +66,7 @@ jobs:
           git config user.email "github-team-tf-cdk@hashicorp.com"
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
+        uses: peter-evans/create-pull-request@284f54f989303d2699d373481a0cfa13ad5a6666
         with:
           token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
           commit-message: |-
