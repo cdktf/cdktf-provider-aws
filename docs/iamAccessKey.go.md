@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamaccesskey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccesskey"
 
 iamaccesskey.NewIamAccessKey(scope Construct, id *string, config IamAccessKeyConfig) IamAccessKey
 ```
@@ -291,7 +291,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamaccesskey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamaccesskey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ iamaccesskey.IamAccessKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamaccesskey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccesskey"
 
 iamaccesskey.IamAccessKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamaccesskey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccesskey"
 
 &iamaccesskey.IamAccessKeyConfig {
 	Connection: interface{},

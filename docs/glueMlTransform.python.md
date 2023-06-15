@@ -2136,7 +2136,7 @@ def reset_connection_name() -> None
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.connectionName">connection_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables">GlueMlTransformInputRecordTables</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables">GlueMlTransformInputRecordTables</a>]</code> | *No description.* |
 
 ---
 
@@ -2247,10 +2247,10 @@ table_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GlueMlTransformInputRecordTables, IResolvable]
+internal_value: typing.Union[IResolvable, GlueMlTransformInputRecordTables]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables">GlueMlTransformInputRecordTables</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables">GlueMlTransformInputRecordTables</a>]
 
 ---
 

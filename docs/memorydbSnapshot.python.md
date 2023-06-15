@@ -599,7 +599,7 @@ memorydbSnapshot.MemorydbSnapshot.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.namePrefixInput">name_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.clusterName">cluster_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | *No description.* |
@@ -865,10 +865,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[MemorydbSnapshotTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, MemorydbSnapshotTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>]
 
 ---
 
@@ -2070,7 +2070,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2141,10 +2141,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MemorydbSnapshotTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, MemorydbSnapshotTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a>]
 
 ---
 

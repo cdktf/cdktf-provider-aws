@@ -823,7 +823,7 @@ lexBot.LexBot.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput">nlu_intent_confidence_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.processBehaviorInput">process_behavior_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.voiceIdInput">voice_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirected">child_directed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersion">create_version</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1235,10 +1235,10 @@ process_behavior_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[LexBotTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, LexBotTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>]
 
 ---
 
@@ -2486,7 +2486,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -2577,10 +2577,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexBotAbortStatementMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexBotAbortStatementMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 ---
 
@@ -3344,7 +3344,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -3435,10 +3435,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexBotClarificationPromptMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexBotClarificationPromptMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 ---
 
@@ -4215,7 +4215,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput">intent_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName">intent_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion">intent_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | *No description.* |
 
 ---
 
@@ -4286,10 +4286,10 @@ intent_version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexBotIntent, IResolvable]
+internal_value: typing.Union[IResolvable, LexBotIntent]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 ---
 
@@ -4556,7 +4556,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4647,10 +4647,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexBotTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, LexBotTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>]
 
 ---
 

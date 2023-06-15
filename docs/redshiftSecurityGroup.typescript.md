@@ -1232,7 +1232,7 @@ public resetSecurityGroupOwnerId(): void
 | <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.securityGroupName">securityGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.securityGroupOwnerId">securityGroupOwnerId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress">RedshiftSecurityGroupIngress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress">RedshiftSecurityGroupIngress</a></code> | *No description.* |
 
 ---
 
@@ -1323,10 +1323,10 @@ public readonly securityGroupOwnerId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RedshiftSecurityGroupIngress | IResolvable;
+public readonly internalValue: IResolvable | RedshiftSecurityGroupIngress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress">RedshiftSecurityGroupIngress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress">RedshiftSecurityGroupIngress</a>
 
 ---
 

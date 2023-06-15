@@ -553,7 +553,7 @@ servicecatalogTagOption.ServicecatalogTagOption.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.activeInput">active_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -757,10 +757,10 @@ key_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ServicecatalogTagOptionTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ServicecatalogTagOptionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>]
 
 ---
 
@@ -1358,7 +1358,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1469,10 +1469,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServicecatalogTagOptionTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ServicecatalogTagOptionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a>]
 
 ---
 

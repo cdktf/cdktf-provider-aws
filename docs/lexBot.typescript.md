@@ -506,7 +506,7 @@ lexBot.LexBot.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput">nluIntentConfidenceThresholdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.processBehaviorInput">processBehaviorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.voiceIdInput">voiceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirected">childDirected</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersion">createVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -918,10 +918,10 @@ public readonly processBehaviorInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: LexBotTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | LexBotTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 
@@ -2088,7 +2088,7 @@ public resetGroupNumber(): void
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber">groupNumber</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a></code> | *No description.* |
 
 ---
 
@@ -2179,10 +2179,10 @@ public readonly groupNumber: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LexBotAbortStatementMessage | IResolvable;
+public readonly internalValue: IResolvable | LexBotAbortStatementMessage;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>
 
 ---
 
@@ -2884,7 +2884,7 @@ public resetGroupNumber(): void
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber">groupNumber</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a></code> | *No description.* |
 
 ---
 
@@ -2975,10 +2975,10 @@ public readonly groupNumber: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LexBotClarificationPromptMessage | IResolvable;
+public readonly internalValue: IResolvable | LexBotClarificationPromptMessage;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>
 
 ---
 
@@ -3693,7 +3693,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput">intentVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName">intentName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion">intentVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a></code> | *No description.* |
 
 ---
 
@@ -3764,10 +3764,10 @@ public readonly intentVersion: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LexBotIntent | IResolvable;
+public readonly internalValue: IResolvable | LexBotIntent;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>
 
 ---
 
@@ -4009,7 +4009,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4100,10 +4100,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LexBotTimeouts | IResolvable;
+public readonly internalValue: IResolvable | LexBotTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 

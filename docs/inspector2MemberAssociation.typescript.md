@@ -378,7 +378,7 @@ inspector2MemberAssociation.Inspector2MemberAssociation.isTerraformResource(x: a
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -589,10 +589,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: Inspector2MemberAssociationTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | Inspector2MemberAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a>
 
 ---
 
@@ -1047,7 +1047,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1118,10 +1118,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: Inspector2MemberAssociationTimeouts | IResolvable;
+public readonly internalValue: IResolvable | Inspector2MemberAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.inspector2MemberAssociation.Inspector2MemberAssociationTimeouts">Inspector2MemberAssociationTimeouts</a>
 
 ---
 

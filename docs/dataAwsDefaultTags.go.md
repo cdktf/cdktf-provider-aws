@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdefaulttags"
 
 dataawsdefaulttags.NewDataAwsDefaultTags(scope Construct, id *string, config DataAwsDefaultTagsConfig) DataAwsDefaultTags
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdefaulttags"
 
 &dataawsdefaulttags.DataAwsDefaultTagsConfig {
 	Connection: interface{},

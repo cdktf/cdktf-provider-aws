@@ -4680,7 +4680,7 @@ def reset_weight() -> None
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.weightInput">weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -4751,10 +4751,10 @@ weight: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerRuleActionForwardTargetGroup, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -5544,7 +5544,7 @@ def reset_target_group_arn() -> None
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.order">order</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a>]</code> | *No description.* |
 
 ---
 
@@ -5735,10 +5735,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerRuleAction, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerRuleAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a>]
 
 ---
 
@@ -7663,7 +7663,7 @@ def reset_source_ip() -> None
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.pathPatternInput">path_pattern_input</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern">AlbListenerRuleConditionPathPattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.queryStringInput">query_string_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.sourceIpInput">source_ip_input</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp">AlbListenerRuleConditionSourceIp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -7814,10 +7814,10 @@ source_ip_input: AlbListenerRuleConditionSourceIp
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerRuleCondition, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerRuleCondition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a>]
 
 ---
 
@@ -8535,7 +8535,7 @@ def reset_key() -> None
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>]</code> | *No description.* |
 
 ---
 
@@ -8606,10 +8606,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerRuleConditionQueryString, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerRuleConditionQueryString]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>]
 
 ---
 

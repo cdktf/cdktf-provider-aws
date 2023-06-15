@@ -67,7 +67,7 @@
     "@babel/parser" "^7.22.5"
     "@babel/types" "^7.22.5"
 
-"@babel/types@^7.21.4", "@babel/types@^7.22.5", "@babel/types@^7.3.0":
+"@babel/types@^7.21.4", "@babel/types@^7.22.5":
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.22.5.tgz#cd93eeaab025880a3a47ec881f4b096a5b786fbe"
   integrity sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==
@@ -646,13 +646,6 @@
     "@tufjs/canonical-json" "1.0.0"
     minimatch "^9.0.0"
 
-"@types/babel__traverse@7.18.2":
-  version "7.18.2"
-  resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.18.2.tgz#235bf339d17185bdec25e024ca19cce257cc7309"
-  integrity sha512-FcFaxOr2V5KZCviw1TnutEMVUVsGt4D2hP1TAfXZAMKuHYW3xQhe3jTxNPWutgCJ3/X1c5yX8ZoGVEItxKbwBg==
-  dependencies:
-    "@babel/types" "^7.3.0"
-
 "@types/glob@^8.0.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-8.1.0.tgz#b63e70155391b0584dce44e7ea25190bbc38f2fc"
@@ -695,11 +688,6 @@
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
-
-"@types/prettier@2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.6.0.tgz#efcbd41937f9ae7434c714ab698604822d890759"
-  integrity sha512-G/AdOadiZhnJp0jXCaBQU449W2h716OW/EoXeYkCytxKL06X1WCXB4DZpp8TpZ8eyIJVS1cw4lrlkkSYU21cDw==
 
 "@types/yargs-parser@*":
   version "21.0.0"
@@ -3131,7 +3119,7 @@ jsii-srcmak@^0.1.867:
     ncp "^2.0.0"
     yargs "^15.4.1"
 
-jsii@1.84.0, jsii@^1.53.0:
+jsii@1.84.0:
   version "1.84.0"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.84.0.tgz#57e631c85ac2d4ffcc2f59a9c68591fcfaf5667e"
   integrity sha512-vtrw3fRrr5Do4LDNxAVXHgtHDyxHvohyzAfBwxcMEYzZ51gJX52wsdlaGE1p0dPe1V9uCAbNQTDKbAMgVJkg0Q==

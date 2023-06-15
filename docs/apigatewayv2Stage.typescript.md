@@ -2544,7 +2544,7 @@ public resetThrottlingRateLimit(): void
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.routeKey">routeKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.throttlingBurstLimit">throttlingBurstLimit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.throttlingRateLimit">throttlingRateLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings">Apigatewayv2StageRouteSettings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings">Apigatewayv2StageRouteSettings</a></code> | *No description.* |
 
 ---
 
@@ -2695,10 +2695,10 @@ public readonly throttlingRateLimit: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: Apigatewayv2StageRouteSettings | IResolvable;
+public readonly internalValue: IResolvable | Apigatewayv2StageRouteSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings">Apigatewayv2StageRouteSettings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings">Apigatewayv2StageRouteSettings</a>
 
 ---
 

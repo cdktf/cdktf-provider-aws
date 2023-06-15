@@ -2050,7 +2050,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.matchEqualsInput">match_equals_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.jsonPath">json_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.matchEquals">match_equals</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -2121,10 +2121,10 @@ match_equals: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CodepipelineWebhookFilter, IResolvable]
+internal_value: typing.Union[IResolvable, CodepipelineWebhookFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a>]
 
 ---
 

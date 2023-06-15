@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRule(scope Construct, id *string, config SesReceiptRuleConfig) SesReceiptRule
 ```
@@ -452,7 +452,7 @@ func ResetWorkmailAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.SesReceiptRule_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.SesReceiptRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ sesreceiptrule.SesReceiptRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.SesReceiptRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleAddHeaderAction {
 	HeaderName: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleBounceAction {
 	Message: *string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleConfig {
 	Connection: interface{},
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleLambdaAction {
 	FunctionArn: *string,
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleS3Action {
 	BucketName: *string,
@@ -1691,7 +1691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleSnsAction {
 	Position: *f64,
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleStopAction {
 	Position: *f64,
@@ -1811,7 +1811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 &sesreceiptrule.SesReceiptRuleWorkmailAction {
 	OrganizationArn: *string,
@@ -1873,7 +1873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleAddHeaderActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleAddHeaderActionList
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleAddHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleAddHeaderActionOutputReference
 ```
@@ -2349,7 +2349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleBounceActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleBounceActionList
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleBounceActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleBounceActionOutputReference
 ```
@@ -2905,7 +2905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleLambdaActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleLambdaActionList
 ```
@@ -3048,7 +3048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleLambdaActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleLambdaActionOutputReference
 ```
@@ -3417,7 +3417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleS3ActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleS3ActionList
 ```
@@ -3560,7 +3560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleS3ActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleS3ActionOutputReference
 ```
@@ -3958,7 +3958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleSnsActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleSnsActionList
 ```
@@ -4101,7 +4101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleSnsActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleSnsActionOutputReference
 ```
@@ -4441,7 +4441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleStopActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleStopActionList
 ```
@@ -4584,7 +4584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleStopActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleStopActionOutputReference
 ```
@@ -4924,7 +4924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleWorkmailActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SesReceiptRuleWorkmailActionList
 ```
@@ -5067,7 +5067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesreceiptrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesreceiptrule"
 
 sesreceiptrule.NewSesReceiptRuleWorkmailActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SesReceiptRuleWorkmailActionOutputReference
 ```

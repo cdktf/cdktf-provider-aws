@@ -924,7 +924,7 @@ lexIntent.LexIntent.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.rejectionStatementInput">rejection_statement_input</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement">LexIntentRejectionStatement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.sampleUtterancesInput">sample_utterances_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.slotInput">slot_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.createVersion">create_version</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntent.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1339,10 +1339,10 @@ slot_input: typing.Union[IResolvable, typing.List[LexIntentSlot]]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.lexIntent.LexIntent.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[LexIntentTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, LexIntentTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>]
 
 ---
 
@@ -3250,7 +3250,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -3341,10 +3341,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentConclusionStatementMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentConclusionStatementMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>]
 
 ---
 
@@ -4108,7 +4108,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -4199,10 +4199,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentConfirmationPromptMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentConfirmationPromptMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>]
 
 ---
 
@@ -5689,7 +5689,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -5780,10 +5780,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentFollowUpPromptPromptMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentFollowUpPromptPromptMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>]
 
 ---
 
@@ -6569,7 +6569,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -6660,10 +6660,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentFollowUpPromptRejectionStatementMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentFollowUpPromptRejectionStatementMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>]
 
 ---
 
@@ -8096,7 +8096,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -8187,10 +8187,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentRejectionStatementMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentRejectionStatementMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>]
 
 ---
 
@@ -9038,7 +9038,7 @@ def reset_value_elicitation_prompt() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotConstraint">slot_constraint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotType">slot_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.slotTypeVersion">slot_type_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>]</code> | *No description.* |
 
 ---
 
@@ -9249,10 +9249,10 @@ slot_type_version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentSlot, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentSlot]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>]
 
 ---
 
@@ -9676,7 +9676,7 @@ def reset_group_number() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>]</code> | *No description.* |
 
 ---
 
@@ -9767,10 +9767,10 @@ group_number: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentSlotValueElicitationPromptMessage, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentSlotValueElicitationPromptMessage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>]
 
 ---
 
@@ -10399,7 +10399,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -10490,10 +10490,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LexIntentTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, LexIntentTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a>]
 
 ---
 

@@ -585,7 +585,7 @@ Route53ResolverRule.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.targetIpInput">targetIpInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.domainName">domainName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -874,7 +874,7 @@ public java.lang.Object getTargetIpInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a>
 
 ---
 
@@ -1698,7 +1698,7 @@ public void resetPort()
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.property.portInput">portInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.property.ip">ip</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.property.port">port</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a></code> | *No description.* |
 
 ---
 
@@ -1772,7 +1772,7 @@ public java.lang.Number getPort();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp">Route53ResolverRuleTargetIp</a>
 
 ---
 
@@ -2014,7 +2014,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2108,7 +2108,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts">Route53ResolverRuleTimeouts</a>
 
 ---
 

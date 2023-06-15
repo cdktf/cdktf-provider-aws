@@ -2502,7 +2502,7 @@ def reset_starts_with() -> None
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.notEquals">not_equals</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.notStartsWith">not_starts_with</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.startsWith">starts_with</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>]</code> | *No description.* |
 
 ---
 
@@ -2673,10 +2673,10 @@ starts_with: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CloudtrailAdvancedEventSelectorFieldSelector, IResolvable]
+internal_value: typing.Union[IResolvable, CloudtrailAdvancedEventSelectorFieldSelector]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>]
 
 ---
 
@@ -3113,7 +3113,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.fieldSelectorInput">field_selector_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector">CloudtrailAdvancedEventSelector</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector">CloudtrailAdvancedEventSelector</a>]</code> | *No description.* |
 
 ---
 
@@ -3184,10 +3184,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CloudtrailAdvancedEventSelector, IResolvable]
+internal_value: typing.Union[IResolvable, CloudtrailAdvancedEventSelector]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector">CloudtrailAdvancedEventSelector</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector">CloudtrailAdvancedEventSelector</a>]
 
 ---
 
@@ -3602,7 +3602,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource">CloudtrailEventSelectorDataResource</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource">CloudtrailEventSelectorDataResource</a>]</code> | *No description.* |
 
 ---
 
@@ -3673,10 +3673,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CloudtrailEventSelectorDataResource, IResolvable]
+internal_value: typing.Union[IResolvable, CloudtrailEventSelectorDataResource]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource">CloudtrailEventSelectorDataResource</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource">CloudtrailEventSelectorDataResource</a>]
 
 ---
 
@@ -4138,7 +4138,7 @@ def reset_read_write_type() -> None
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.excludeManagementEventSources">exclude_management_event_sources</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.includeManagementEvents">include_management_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.readWriteType">read_write_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector">CloudtrailEventSelector</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector">CloudtrailEventSelector</a>]</code> | *No description.* |
 
 ---
 
@@ -4249,10 +4249,10 @@ read_write_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CloudtrailEventSelector, IResolvable]
+internal_value: typing.Union[IResolvable, CloudtrailEventSelector]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector">CloudtrailEventSelector</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector">CloudtrailEventSelector</a>]
 
 ---
 
@@ -4665,7 +4665,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.insightTypeInput">insight_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.insightType">insight_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector">CloudtrailInsightSelector</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector">CloudtrailInsightSelector</a>]</code> | *No description.* |
 
 ---
 
@@ -4716,10 +4716,10 @@ insight_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CloudtrailInsightSelector, IResolvable]
+internal_value: typing.Union[IResolvable, CloudtrailInsightSelector]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector">CloudtrailInsightSelector</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector">CloudtrailInsightSelector</a>]
 
 ---
 

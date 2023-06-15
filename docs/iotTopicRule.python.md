@@ -6578,7 +6578,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateReason">state_reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateValue">state_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]</code> | *No description.* |
 
 ---
 
@@ -6689,10 +6689,10 @@ state_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleCloudwatchAlarm, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleCloudwatchAlarm]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]
 
 ---
 
@@ -7107,7 +7107,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
 
 ---
 
@@ -7178,10 +7178,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleCloudwatchLogs, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleCloudwatchLogs]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]
 
 ---
 
@@ -7611,7 +7611,7 @@ def reset_metric_timestamp() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricUnit">metric_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricValue">metric_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]</code> | *No description.* |
 
 ---
 
@@ -7762,10 +7762,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleCloudwatchMetric, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleCloudwatchMetric]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]
 
 ---
 
@@ -8238,7 +8238,7 @@ def reset_range_key_value() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]</code> | *No description.* |
 
 ---
 
@@ -8469,10 +8469,10 @@ table_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleDynamodb, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleDynamodb]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]
 
 ---
 
@@ -8911,7 +8911,7 @@ def reset_put_item() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.putItemInput">put_item_input</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem">IotTopicRuleDynamodbv2PutItem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]</code> | *No description.* |
 
 ---
 
@@ -8982,10 +8982,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleDynamodbv2, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleDynamodbv2]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]
 
 ---
 
@@ -9702,7 +9702,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.index">index</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]</code> | *No description.* |
 
 ---
 
@@ -9833,10 +9833,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleElasticsearch, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleElasticsearch]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]
 
 ---
 
@@ -13278,7 +13278,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -13349,10 +13349,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleErrorActionHttpHttpHeader, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleErrorActionHttpHttpHeader]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]
 
 ---
 
@@ -19295,7 +19295,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]</code> | *No description.* |
 
 ---
 
@@ -19366,10 +19366,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleErrorActionTimestreamDimension, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleErrorActionTimestreamDimension]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]
 
 ---
 
@@ -20552,7 +20552,7 @@ def reset_separator() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separator">separator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]</code> | *No description.* |
 
 ---
 
@@ -20663,10 +20663,10 @@ separator: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleFirehose, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleFirehose]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]
 
 ---
 
@@ -21081,7 +21081,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -21152,10 +21152,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleHttpHttpHeader, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleHttpHttpHeader]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]
 
 ---
 
@@ -21601,7 +21601,7 @@ def reset_http_header() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]</code> | *No description.* |
 
 ---
 
@@ -21692,10 +21692,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleHttp, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleHttp]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]
 
 ---
 
@@ -22119,7 +22119,7 @@ def reset_batch_mode() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelName">channel_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]</code> | *No description.* |
 
 ---
 
@@ -22210,10 +22210,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleIotAnalytics, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleIotAnalytics]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]
 
 ---
 
@@ -22646,7 +22646,7 @@ def reset_message_id() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputName">input_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageId">message_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]</code> | *No description.* |
 
 ---
 
@@ -22757,10 +22757,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleIotEvents, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleIotEvents]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]
 
 ---
 
@@ -23195,7 +23195,7 @@ def reset_partition() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partition">partition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topic">topic</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]</code> | *No description.* |
 
 ---
 
@@ -23326,10 +23326,10 @@ topic: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleKafka, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleKafka]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]
 
 ---
 
@@ -23753,7 +23753,7 @@ def reset_partition_key() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.partitionKey">partition_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.streamName">stream_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]</code> | *No description.* |
 
 ---
 
@@ -23844,10 +23844,10 @@ stream_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleKinesis, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleKinesis]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>]
 
 ---
 
@@ -24260,7 +24260,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArnInput">function_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArn">function_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]</code> | *No description.* |
 
 ---
 
@@ -24311,10 +24311,10 @@ function_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleLambda, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleLambda]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>]
 
 ---
 
@@ -24738,7 +24738,7 @@ def reset_qos() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.topic">topic</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]</code> | *No description.* |
 
 ---
 
@@ -24829,10 +24829,10 @@ topic: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleRepublish, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleRepublish]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>]
 
 ---
 
@@ -25258,7 +25258,7 @@ def reset_canned_acl() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]</code> | *No description.* |
 
 ---
 
@@ -25369,10 +25369,10 @@ role_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleS3, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleS3]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>]
 
 ---
 
@@ -25796,7 +25796,7 @@ def reset_message_format() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.messageFormat">message_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.targetArn">target_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]</code> | *No description.* |
 
 ---
 
@@ -25887,10 +25887,10 @@ target_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleSns, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleSns]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]
 
 ---
 
@@ -26307,7 +26307,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrl">queue_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">use_base64</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]</code> | *No description.* |
 
 ---
 
@@ -26398,10 +26398,10 @@ use_base64: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleSqs, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleSqs]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]
 
 ---
 
@@ -26825,7 +26825,7 @@ def reset_execution_name_prefix() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]</code> | *No description.* |
 
 ---
 
@@ -26916,10 +26916,10 @@ state_machine_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleStepFunctions, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleStepFunctions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]
 
 ---
 
@@ -27334,7 +27334,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]</code> | *No description.* |
 
 ---
 
@@ -27405,10 +27405,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleTimestreamDimension, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleTimestreamDimension]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]
 
 ---
 
@@ -27877,7 +27877,7 @@ def reset_timestamp() -> None
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]</code> | *No description.* |
 
 ---
 
@@ -28008,10 +28008,10 @@ table_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IotTopicRuleTimestream, IResolvable]
+internal_value: typing.Union[IResolvable, IotTopicRuleTimestream]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]
 
 ---
 

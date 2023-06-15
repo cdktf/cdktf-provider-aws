@@ -382,7 +382,7 @@ ramResourceShareAccepter.RamResourceShareAccepter.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference">RamResourceShareAccepterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArnInput">shareArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArn">shareArn</a></code> | <code>string</code> | *No description.* |
 
@@ -633,10 +633,10 @@ public readonly shareArnInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: RamResourceShareAccepterTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | RamResourceShareAccepterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a>
 
 ---
 
@@ -1091,7 +1091,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1162,10 +1162,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RamResourceShareAccepterTimeouts | IResolvable;
+public readonly internalValue: IResolvable | RamResourceShareAccepterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a>
 
 ---
 

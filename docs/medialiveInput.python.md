@@ -792,7 +792,7 @@ medialiveInput.MedialiveInput.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.sourcesInput">sources_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources">MedialiveInputSources</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.vpcInput">vpc_input</a></code> | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc">MedialiveInputVpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInput.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1160,10 +1160,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[MedialiveInputTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, MedialiveInputTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>]
 
 ---
 
@@ -2251,7 +2251,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.streamNameInput">stream_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.streamName">stream_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations">MedialiveInputDestinations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations">MedialiveInputDestinations</a>]</code> | *No description.* |
 
 ---
 
@@ -2302,10 +2302,10 @@ stream_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MedialiveInputDestinations, IResolvable]
+internal_value: typing.Union[IResolvable, MedialiveInputDestinations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations">MedialiveInputDestinations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations">MedialiveInputDestinations</a>]
 
 ---
 
@@ -2718,7 +2718,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices">MedialiveInputInputDevices</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices">MedialiveInputInputDevices</a>]</code> | *No description.* |
 
 ---
 
@@ -2769,10 +2769,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MedialiveInputInputDevices, IResolvable]
+internal_value: typing.Union[IResolvable, MedialiveInputInputDevices]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices">MedialiveInputInputDevices</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices">MedialiveInputInputDevices</a>]
 
 ---
 
@@ -3185,7 +3185,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.flowArnInput">flow_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.flowArn">flow_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows">MedialiveInputMediaConnectFlows</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows">MedialiveInputMediaConnectFlows</a>]</code> | *No description.* |
 
 ---
 
@@ -3236,10 +3236,10 @@ flow_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MedialiveInputMediaConnectFlows, IResolvable]
+internal_value: typing.Union[IResolvable, MedialiveInputMediaConnectFlows]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows">MedialiveInputMediaConnectFlows</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows">MedialiveInputMediaConnectFlows</a>]
 
 ---
 
@@ -3656,7 +3656,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.passwordParam">password_param</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources">MedialiveInputSources</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources">MedialiveInputSources</a>]</code> | *No description.* |
 
 ---
 
@@ -3747,10 +3747,10 @@ username: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MedialiveInputSources, IResolvable]
+internal_value: typing.Union[IResolvable, MedialiveInputSources]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources">MedialiveInputSources</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources">MedialiveInputSources</a>]
 
 ---
 
@@ -4017,7 +4017,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4108,10 +4108,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MedialiveInputTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, MedialiveInputTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a>]
 
 ---
 

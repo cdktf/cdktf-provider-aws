@@ -814,7 +814,7 @@ subnet.Subnet.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunchInput">private_dns_hostname_type_on_launch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
@@ -1203,10 +1203,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.subnet.Subnet.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[SubnetTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, SubnetTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>]
 
 ---
 
@@ -2118,7 +2118,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2189,10 +2189,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SubnetTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, SubnetTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>]
 
 ---
 

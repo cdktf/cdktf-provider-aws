@@ -1509,7 +1509,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.dataId">data_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.negated">negated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a>]</code> | *No description.* |
 
 ---
 
@@ -1600,10 +1600,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[WafregionalRulePredicate, IResolvable]
+internal_value: typing.Union[IResolvable, WafregionalRulePredicate]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a>]
 
 ---
 

@@ -50,7 +50,7 @@
     },
     {
       "name": "jsii",
-      "version": "^1.53.0",
+      "version": "^5.0.1",
       "type": "build"
     },
     {
@@ -75,16 +75,6 @@
     {
       "name": "typescript",
       "type": "build"
-    },
-    {
-      "name": "@types/babel__traverse",
-      "version": "7.18.2",
-      "type": "override"
-    },
-    {
-      "name": "@types/prettier",
-      "version": "2.6.0",
-      "type": "override"
     },
     {
       "name": "@types/yargs",

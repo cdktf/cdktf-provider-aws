@@ -461,7 +461,7 @@ transferUser.TransferUser.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.serverIdInput">serverIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.userNameInput">userNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.homeDirectory">homeDirectory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.homeDirectoryType">homeDirectoryType</a></code> | <code>string</code> | *No description.* |
@@ -760,10 +760,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: TransferUserTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | TransferUserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>
 
 ---
 
@@ -1652,7 +1652,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.entry">entry</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a></code> | *No description.* |
 
 ---
 
@@ -1723,10 +1723,10 @@ public readonly target: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TransferUserHomeDirectoryMappings | IResolvable;
+public readonly internalValue: IResolvable | TransferUserHomeDirectoryMappings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a>
 
 ---
 
@@ -2272,7 +2272,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2323,10 +2323,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TransferUserTimeouts | IResolvable;
+public readonly internalValue: IResolvable | TransferUserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>
 
 ---
 

@@ -15759,7 +15759,7 @@ public void resetConnectorProfileName()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.apiVersion">apiVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorProfileName">connectorProfileName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorType">connectorType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a></code> | *No description.* |
 
 ---
 
@@ -15873,7 +15873,7 @@ public java.lang.String getConnectorType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>
 
 ---
 
@@ -22886,7 +22886,7 @@ public void resetZendesk()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.trendmicro">trendmicro</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.veeva">veeva</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.zendesk">zendesk</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a></code> | *No description.* |
 
 ---
 
@@ -23240,7 +23240,7 @@ public java.lang.String getZendesk();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>
 
 ---
 
@@ -23660,7 +23660,7 @@ public void resetTaskProperties()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFields">sourceFields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskProperties">taskProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskType">taskType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a></code> | *No description.* |
 
 ---
 
@@ -23794,7 +23794,7 @@ public java.lang.String getTaskType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>
 
 ---
 

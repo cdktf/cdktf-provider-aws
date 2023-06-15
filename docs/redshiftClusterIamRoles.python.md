@@ -551,7 +551,7 @@ redshiftClusterIamRoles.RedshiftClusterIamRoles.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.defaultIamRoleArnInput">default_iam_role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.iamRoleArnsInput">iam_role_arns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.defaultIamRoleArn">default_iam_role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.iamRoleArns">iam_role_arns</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -754,10 +754,10 @@ id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[RedshiftClusterIamRolesTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, RedshiftClusterIamRolesTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>]
 
 ---
 
@@ -1322,7 +1322,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1413,10 +1413,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RedshiftClusterIamRolesTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, RedshiftClusterIamRolesTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts">RedshiftClusterIamRolesTimeouts</a>]
 
 ---
 

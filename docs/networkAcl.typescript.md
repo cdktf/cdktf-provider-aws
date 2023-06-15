@@ -1664,7 +1664,7 @@ public resetToPort(): void
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.ruleNo">ruleNo</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.toPort">toPort</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a></code> | *No description.* |
 
 ---
 
@@ -1875,10 +1875,10 @@ public readonly toPort: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NetworkAclEgress | IResolvable;
+public readonly internalValue: IResolvable | NetworkAclEgress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a>
 
 ---
 
@@ -2335,7 +2335,7 @@ public resetToPort(): void
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.ruleNo">ruleNo</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.toPort">toPort</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a></code> | *No description.* |
 
 ---
 
@@ -2546,10 +2546,10 @@ public readonly toPort: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NetworkAclIngress | IResolvable;
+public readonly internalValue: IResolvable | NetworkAclIngress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a>
 
 ---
 

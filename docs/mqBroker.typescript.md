@@ -584,7 +584,7 @@ mqBroker.MqBroker.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.subnetIdsInput">subnetIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.userInput">userInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.applyImmediately">applyImmediately</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.authenticationStrategy">authenticationStrategy</a></code> | <code>string</code> | *No description.* |
@@ -1039,10 +1039,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: MqBrokerTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | MqBrokerTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>
 
 ---
 
@@ -4582,7 +4582,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4673,10 +4673,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MqBrokerTimeouts | IResolvable;
+public readonly internalValue: IResolvable | MqBrokerTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>
 
 ---
 
@@ -5074,7 +5074,7 @@ public resetGroups(): void
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.groups">groups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a></code> | *No description.* |
 
 ---
 
@@ -5185,10 +5185,10 @@ public readonly username: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MqBrokerUser | IResolvable;
+public readonly internalValue: IResolvable | MqBrokerUser;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>
 
 ---
 

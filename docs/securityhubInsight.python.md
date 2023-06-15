@@ -8527,7 +8527,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]</code> | *No description.* |
 
 ---
 
@@ -8598,10 +8598,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersAwsAccountId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersAwsAccountId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>]
 
 ---
 
@@ -9016,7 +9016,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]</code> | *No description.* |
 
 ---
 
@@ -9087,10 +9087,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersCompanyName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCompanyName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>]
 
 ---
 
@@ -9505,7 +9505,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -9576,10 +9576,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersComplianceStatus, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersComplianceStatus]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>]
 
 ---
 
@@ -10017,7 +10017,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]</code> | *No description.* |
 
 ---
 
@@ -10108,10 +10108,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersConfidence, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersConfidence]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>]
 
 ---
 
@@ -10893,7 +10893,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -10984,10 +10984,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersCreatedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCreatedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>]
 
 ---
 
@@ -11425,7 +11425,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]</code> | *No description.* |
 
 ---
 
@@ -11516,10 +11516,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersCriticality, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersCriticality]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>]
 
 ---
 
@@ -11934,7 +11934,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]</code> | *No description.* |
 
 ---
 
@@ -12005,10 +12005,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersDescription, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersDescription]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>]
 
 ---
 
@@ -12446,7 +12446,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]</code> | *No description.* |
 
 ---
 
@@ -12537,10 +12537,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsConfidence, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsConfidence]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>]
 
 ---
 
@@ -12978,7 +12978,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]</code> | *No description.* |
 
 ---
 
@@ -13069,10 +13069,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsCriticality, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsCriticality]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>]
 
 ---
 
@@ -13487,7 +13487,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]</code> | *No description.* |
 
 ---
 
@@ -13558,10 +13558,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>]
 
 ---
 
@@ -13976,7 +13976,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -14047,10 +14047,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>]
 
 ---
 
@@ -14465,7 +14465,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -14536,10 +14536,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>]
 
 ---
 
@@ -14954,7 +14954,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]</code> | *No description.* |
 
 ---
 
@@ -15025,10 +15025,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>]
 
 ---
 
@@ -15443,7 +15443,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]</code> | *No description.* |
 
 ---
 
@@ -15514,10 +15514,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFindingProviderFieldsTypes, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFindingProviderFieldsTypes]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>]
 
 ---
 
@@ -16299,7 +16299,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -16390,10 +16390,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersFirstObservedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersFirstObservedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>]
 
 ---
 
@@ -16808,7 +16808,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]</code> | *No description.* |
 
 ---
 
@@ -16879,10 +16879,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersGeneratorId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersGeneratorId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>]
 
 ---
 
@@ -17297,7 +17297,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]</code> | *No description.* |
 
 ---
 
@@ -17368,10 +17368,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>]
 
 ---
 
@@ -17784,7 +17784,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]</code> | *No description.* |
 
 ---
 
@@ -17835,10 +17835,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersKeyword, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersKeyword]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>]
 
 ---
 
@@ -18620,7 +18620,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -18711,10 +18711,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersLastObservedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersLastObservedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>]
 
 ---
 
@@ -19129,7 +19129,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]</code> | *No description.* |
 
 ---
 
@@ -19200,10 +19200,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersMalwareName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>]
 
 ---
 
@@ -19618,7 +19618,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]</code> | *No description.* |
 
 ---
 
@@ -19689,10 +19689,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersMalwarePath, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwarePath]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>]
 
 ---
 
@@ -20107,7 +20107,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]</code> | *No description.* |
 
 ---
 
@@ -20178,10 +20178,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersMalwareState, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareState]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>]
 
 ---
 
@@ -20596,7 +20596,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]</code> | *No description.* |
 
 ---
 
@@ -20667,10 +20667,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersMalwareType, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersMalwareType]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>]
 
 ---
 
@@ -21085,7 +21085,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -21156,10 +21156,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkDestinationDomain, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationDomain]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>]
 
 ---
 
@@ -21572,7 +21572,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]</code> | *No description.* |
 
 ---
 
@@ -21623,10 +21623,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkDestinationIpv4, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationIpv4]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>]
 
 ---
 
@@ -22039,7 +22039,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]</code> | *No description.* |
 
 ---
 
@@ -22090,10 +22090,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkDestinationIpv6, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationIpv6]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>]
 
 ---
 
@@ -22531,7 +22531,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]</code> | *No description.* |
 
 ---
 
@@ -22622,10 +22622,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkDestinationPort, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDestinationPort]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>]
 
 ---
 
@@ -23040,7 +23040,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]</code> | *No description.* |
 
 ---
 
@@ -23111,10 +23111,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkDirection, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkDirection]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>]
 
 ---
 
@@ -23529,7 +23529,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]</code> | *No description.* |
 
 ---
 
@@ -23600,10 +23600,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkProtocol, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkProtocol]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>]
 
 ---
 
@@ -24018,7 +24018,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -24089,10 +24089,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkSourceDomain, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceDomain]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>]
 
 ---
 
@@ -24505,7 +24505,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]</code> | *No description.* |
 
 ---
 
@@ -24556,10 +24556,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkSourceIpv4, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceIpv4]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>]
 
 ---
 
@@ -24972,7 +24972,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]</code> | *No description.* |
 
 ---
 
@@ -25023,10 +25023,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkSourceIpv6, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceIpv6]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>]
 
 ---
 
@@ -25441,7 +25441,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]</code> | *No description.* |
 
 ---
 
@@ -25512,10 +25512,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkSourceMac, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourceMac]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>]
 
 ---
 
@@ -25953,7 +25953,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]</code> | *No description.* |
 
 ---
 
@@ -26044,10 +26044,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNetworkSourcePort, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNetworkSourcePort]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>]
 
 ---
 
@@ -26462,7 +26462,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]</code> | *No description.* |
 
 ---
 
@@ -26533,10 +26533,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNoteText, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteText]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>]
 
 ---
 
@@ -27318,7 +27318,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -27409,10 +27409,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNoteUpdatedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteUpdatedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>]
 
 ---
 
@@ -27827,7 +27827,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]</code> | *No description.* |
 
 ---
 
@@ -27898,10 +27898,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersNoteUpdatedBy, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersNoteUpdatedBy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>]
 
 ---
 
@@ -32829,7 +32829,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -32920,10 +32920,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessLaunchedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessLaunchedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>]
 
 ---
 
@@ -33338,7 +33338,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]</code> | *No description.* |
 
 ---
 
@@ -33409,10 +33409,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>]
 
 ---
 
@@ -33850,7 +33850,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]</code> | *No description.* |
 
 ---
 
@@ -33941,10 +33941,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessParentPid, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessParentPid]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>]
 
 ---
 
@@ -34359,7 +34359,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]</code> | *No description.* |
 
 ---
 
@@ -34430,10 +34430,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessPath, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessPath]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>]
 
 ---
 
@@ -34871,7 +34871,7 @@ def reset_lte() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.eq">eq</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.gte">gte</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.lte">lte</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]</code> | *No description.* |
 
 ---
 
@@ -34962,10 +34962,10 @@ lte: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessPid, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessPid]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>]
 
 ---
 
@@ -35747,7 +35747,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -35838,10 +35838,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProcessTerminatedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProcessTerminatedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>]
 
 ---
 
@@ -36256,7 +36256,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -36327,10 +36327,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProductArn, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductArn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>]
 
 ---
 
@@ -36747,7 +36747,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]</code> | *No description.* |
 
 ---
 
@@ -36838,10 +36838,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProductFields, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductFields]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>]
 
 ---
 
@@ -37256,7 +37256,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]</code> | *No description.* |
 
 ---
 
@@ -37327,10 +37327,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersProductName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersProductName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>]
 
 ---
 
@@ -37745,7 +37745,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]</code> | *No description.* |
 
 ---
 
@@ -37816,10 +37816,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersRecommendationText, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRecommendationText]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>]
 
 ---
 
@@ -38234,7 +38234,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]</code> | *No description.* |
 
 ---
 
@@ -38305,10 +38305,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersRecordState, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRecordState]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>]
 
 ---
 
@@ -38723,7 +38723,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]</code> | *No description.* |
 
 ---
 
@@ -38794,10 +38794,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersRelatedFindingsId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRelatedFindingsId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>]
 
 ---
 
@@ -39212,7 +39212,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]</code> | *No description.* |
 
 ---
 
@@ -39283,10 +39283,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersRelatedFindingsProductArn, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersRelatedFindingsProductArn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>]
 
 ---
 
@@ -39701,7 +39701,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]</code> | *No description.* |
 
 ---
 
@@ -39772,10 +39772,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>]
 
 ---
 
@@ -40190,7 +40190,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]</code> | *No description.* |
 
 ---
 
@@ -40261,10 +40261,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceImageId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceImageId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>]
 
 ---
 
@@ -40677,7 +40677,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]</code> | *No description.* |
 
 ---
 
@@ -40728,10 +40728,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>]
 
 ---
 
@@ -41144,7 +41144,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidrInput">cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidr">cidr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]</code> | *No description.* |
 
 ---
 
@@ -41195,10 +41195,10 @@ cidr: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>]
 
 ---
 
@@ -41613,7 +41613,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]</code> | *No description.* |
 
 ---
 
@@ -41684,10 +41684,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>]
 
 ---
 
@@ -42469,7 +42469,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -42560,10 +42560,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>]
 
 ---
 
@@ -42978,7 +42978,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]</code> | *No description.* |
 
 ---
 
@@ -43049,10 +43049,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>]
 
 ---
 
@@ -43467,7 +43467,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]</code> | *No description.* |
 
 ---
 
@@ -43538,10 +43538,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceType, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceType]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>]
 
 ---
 
@@ -43956,7 +43956,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]</code> | *No description.* |
 
 ---
 
@@ -44027,10 +44027,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>]
 
 ---
 
@@ -44812,7 +44812,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -44903,10 +44903,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>]
 
 ---
 
@@ -45321,7 +45321,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -45392,10 +45392,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>]
 
 ---
 
@@ -45810,7 +45810,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]</code> | *No description.* |
 
 ---
 
@@ -45881,10 +45881,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>]
 
 ---
 
@@ -46299,7 +46299,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]</code> | *No description.* |
 
 ---
 
@@ -46370,10 +46370,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsS3BucketOwnerId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsS3BucketOwnerId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>]
 
 ---
 
@@ -46788,7 +46788,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]</code> | *No description.* |
 
 ---
 
@@ -46859,10 +46859,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceAwsS3BucketOwnerName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceAwsS3BucketOwnerName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>]
 
 ---
 
@@ -47277,7 +47277,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]</code> | *No description.* |
 
 ---
 
@@ -47348,10 +47348,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceContainerImageId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerImageId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>]
 
 ---
 
@@ -47766,7 +47766,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]</code> | *No description.* |
 
 ---
 
@@ -47837,10 +47837,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceContainerImageName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerImageName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>]
 
 ---
 
@@ -48622,7 +48622,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -48713,10 +48713,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceContainerLaunchedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerLaunchedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>]
 
 ---
 
@@ -49131,7 +49131,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]</code> | *No description.* |
 
 ---
 
@@ -49202,10 +49202,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceContainerName, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceContainerName]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>]
 
 ---
 
@@ -49622,7 +49622,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]</code> | *No description.* |
 
 ---
 
@@ -49713,10 +49713,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceDetailsOther, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceDetailsOther]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>]
 
 ---
 
@@ -50131,7 +50131,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]</code> | *No description.* |
 
 ---
 
@@ -50202,10 +50202,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceId, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceId]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>]
 
 ---
 
@@ -50620,7 +50620,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]</code> | *No description.* |
 
 ---
 
@@ -50691,10 +50691,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourcePartition, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourcePartition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>]
 
 ---
 
@@ -51109,7 +51109,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]</code> | *No description.* |
 
 ---
 
@@ -51180,10 +51180,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceRegion, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceRegion]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>]
 
 ---
 
@@ -51600,7 +51600,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]</code> | *No description.* |
 
 ---
 
@@ -51691,10 +51691,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceTags, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceTags]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>]
 
 ---
 
@@ -52109,7 +52109,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]</code> | *No description.* |
 
 ---
 
@@ -52180,10 +52180,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersResourceType, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersResourceType]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>]
 
 ---
 
@@ -52598,7 +52598,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -52669,10 +52669,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersSeverityLabel, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersSeverityLabel]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>]
 
 ---
 
@@ -53087,7 +53087,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]</code> | *No description.* |
 
 ---
 
@@ -53158,10 +53158,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersSourceUrl, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersSourceUrl]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>]
 
 ---
 
@@ -53576,7 +53576,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]</code> | *No description.* |
 
 ---
 
@@ -53647,10 +53647,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorCategory, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorCategory]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>]
 
 ---
 
@@ -54432,7 +54432,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -54523,10 +54523,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>]
 
 ---
 
@@ -54941,7 +54941,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]</code> | *No description.* |
 
 ---
 
@@ -55012,10 +55012,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorSource, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorSource]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>]
 
 ---
 
@@ -55430,7 +55430,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]</code> | *No description.* |
 
 ---
 
@@ -55501,10 +55501,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>]
 
 ---
 
@@ -55919,7 +55919,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]</code> | *No description.* |
 
 ---
 
@@ -55990,10 +55990,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorType, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorType]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>]
 
 ---
 
@@ -56408,7 +56408,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]</code> | *No description.* |
 
 ---
 
@@ -56479,10 +56479,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersThreatIntelIndicatorValue, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersThreatIntelIndicatorValue]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>]
 
 ---
 
@@ -56897,7 +56897,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]</code> | *No description.* |
 
 ---
 
@@ -56968,10 +56968,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersTitle, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersTitle]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>]
 
 ---
 
@@ -57386,7 +57386,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]</code> | *No description.* |
 
 ---
 
@@ -57457,10 +57457,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersType, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersType]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>]
 
 ---
 
@@ -58242,7 +58242,7 @@ def reset_start() -> None
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]</code> | *No description.* |
 
 ---
 
@@ -58333,10 +58333,10 @@ start: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersUpdatedAt, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersUpdatedAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>]
 
 ---
 
@@ -58753,7 +58753,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]</code> | *No description.* |
 
 ---
 
@@ -58844,10 +58844,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersUserDefinedValues, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersUserDefinedValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>]
 
 ---
 
@@ -59262,7 +59262,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]</code> | *No description.* |
 
 ---
 
@@ -59333,10 +59333,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersVerificationState, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersVerificationState]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>]
 
 ---
 
@@ -59751,7 +59751,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]</code> | *No description.* |
 
 ---
 
@@ -59822,10 +59822,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SecurityhubInsightFiltersWorkflowStatus, IResolvable]
+internal_value: typing.Union[IResolvable, SecurityhubInsightFiltersWorkflowStatus]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>]
 
 ---
 

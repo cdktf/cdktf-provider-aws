@@ -1349,7 +1349,7 @@ public resetSecurityGroupOwnerId(): void
 | <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.securityGroupId">securityGroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.securityGroupName">securityGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.securityGroupOwnerId">securityGroupOwnerId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress">DbSecurityGroupIngress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress">DbSecurityGroupIngress</a></code> | *No description.* |
 
 ---
 
@@ -1460,10 +1460,10 @@ public readonly securityGroupOwnerId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DbSecurityGroupIngress | IResolvable;
+public readonly internalValue: IResolvable | DbSecurityGroupIngress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress">DbSecurityGroupIngress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress">DbSecurityGroupIngress</a>
 
 ---
 

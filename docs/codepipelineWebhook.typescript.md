@@ -1772,7 +1772,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.matchEqualsInput">matchEqualsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.jsonPath">jsonPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.matchEquals">matchEquals</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a></code> | *No description.* |
 
 ---
 
@@ -1843,10 +1843,10 @@ public readonly matchEquals: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: CodepipelineWebhookFilter | IResolvable;
+public readonly internalValue: IResolvable | CodepipelineWebhookFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter">CodepipelineWebhookFilter</a>
 
 ---
 

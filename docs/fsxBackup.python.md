@@ -570,7 +570,7 @@ fsxBackup.FsxBackup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.volumeIdInput">volume_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.fileSystemId">file_system_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackup.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -815,10 +815,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.fsxBackup.FsxBackup.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[FsxBackupTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, FsxBackupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>]
 
 ---
 
@@ -1394,7 +1394,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1465,10 +1465,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[FsxBackupTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, FsxBackupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts">FsxBackupTimeouts</a>]
 
 ---
 

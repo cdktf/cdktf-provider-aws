@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayer(scope Construct, id *string, config OpsworksCustomLayerConfig) OpsworksCustomLayer
 ```
@@ -470,7 +470,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ opsworkscustomlayer.OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1298,7 +1298,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerConfig {
 	Connection: interface{},
@@ -1534,7 +1534,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v15.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v16.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1549,7 +1549,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v15.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v16.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1993,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerEbsVolume {
 	MountPoint: *string,
@@ -2109,12 +2109,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v15.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v16.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v15.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v16.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2289,7 +2289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2407,7 +2407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2550,7 +2550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerCloudwatchConfigurationOutputReference
 ```
@@ -3442,7 +3442,7 @@ func InternalValue() OpsworksCustomLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksCustomLayerEbsVolumeList
 ```
@@ -3585,7 +3585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksCustomLayerEbsVolumeOutputReference
 ```
@@ -4034,7 +4034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4486,7 +4486,7 @@ func InternalValue() OpsworksCustomLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4848,7 +4848,7 @@ func InternalValue() OpsworksCustomLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

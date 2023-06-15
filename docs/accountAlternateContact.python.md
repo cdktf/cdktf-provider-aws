@@ -576,7 +576,7 @@ accountAlternateContact.AccountAlternateContact.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.phoneNumberInput">phone_number_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.alternateContactType">alternate_contact_type</a></code> | <code>str</code> | *No description.* |
@@ -803,10 +803,10 @@ phone_number_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[AccountAlternateContactTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, AccountAlternateContactTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>]
 
 ---
 
@@ -1453,7 +1453,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1544,10 +1544,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AccountAlternateContactTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, AccountAlternateContactTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>]
 
 ---
 

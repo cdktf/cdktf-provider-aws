@@ -6328,7 +6328,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateReason">stateReason</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.stateValue">stateValue</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a></code> | *No description.* |
 
 ---
 
@@ -6442,7 +6442,7 @@ public java.lang.String getStateValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>
 
 ---
 
@@ -6822,7 +6822,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArnInput">roleArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupName">logGroupName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a></code> | *No description.* |
 
 ---
 
@@ -6896,7 +6896,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>
 
 ---
 
@@ -7291,7 +7291,7 @@ public void resetMetricTimestamp()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricUnit">metricUnit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.metricValue">metricValue</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a></code> | *No description.* |
 
 ---
 
@@ -7445,7 +7445,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>
 
 ---
 
@@ -7883,7 +7883,7 @@ public void resetRangeKeyValue()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.rangeKeyValue">rangeKeyValue</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.tableName">tableName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a></code> | *No description.* |
 
 ---
 
@@ -8117,7 +8117,7 @@ public java.lang.String getTableName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>
 
 ---
 
@@ -8517,7 +8517,7 @@ public void resetPutItem()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.putItemInput">putItemInput</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem">IotTopicRuleDynamodbv2PutItem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArnInput">roleArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a></code> | *No description.* |
 
 ---
 
@@ -8591,7 +8591,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>
 
 ---
 
@@ -9248,7 +9248,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.index">index</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -9382,7 +9382,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>
 
 ---
 
@@ -12585,7 +12585,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -12659,7 +12659,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>
 
 ---
 
@@ -17692,7 +17692,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -17766,7 +17766,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>
 
 ---
 
@@ -18849,7 +18849,7 @@ public void resetSeparator()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.deliveryStreamName">deliveryStreamName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.separator">separator</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a></code> | *No description.* |
 
 ---
 
@@ -18963,7 +18963,7 @@ public java.lang.String getSeparator();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>
 
 ---
 
@@ -19343,7 +19343,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a></code> | *No description.* |
 
 ---
 
@@ -19417,7 +19417,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>
 
 ---
 
@@ -19826,7 +19826,7 @@ public void resetHttpHeader()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.confirmationUrl">confirmationUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a></code> | *No description.* |
 
 ---
 
@@ -19920,7 +19920,7 @@ public java.lang.String getUrl();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>
 
 ---
 
@@ -20309,7 +20309,7 @@ public void resetBatchMode()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.batchMode">batchMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.channelName">channelName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a></code> | *No description.* |
 
 ---
 
@@ -20403,7 +20403,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>
 
 ---
 
@@ -20801,7 +20801,7 @@ public void resetMessageId()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.inputName">inputName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.messageId">messageId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a></code> | *No description.* |
 
 ---
 
@@ -20915,7 +20915,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>
 
 ---
 
@@ -21315,7 +21315,7 @@ public void resetPartition()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.partition">partition</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.topic">topic</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a></code> | *No description.* |
 
 ---
 
@@ -21449,7 +21449,7 @@ public java.lang.String getTopic();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>
 
 ---
 
@@ -21838,7 +21838,7 @@ public void resetPartitionKey()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.partitionKey">partitionKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.streamName">streamName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a></code> | *No description.* |
 
 ---
 
@@ -21932,7 +21932,7 @@ public java.lang.String getStreamName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis">IotTopicRuleKinesis</a>
 
 ---
 
@@ -22310,7 +22310,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArnInput">functionArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.functionArn">functionArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a></code> | *No description.* |
 
 ---
 
@@ -22364,7 +22364,7 @@ public java.lang.String getFunctionArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda">IotTopicRuleLambda</a>
 
 ---
 
@@ -22753,7 +22753,7 @@ public void resetQos()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.qos">qos</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.topic">topic</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a></code> | *No description.* |
 
 ---
 
@@ -22847,7 +22847,7 @@ public java.lang.String getTopic();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish">IotTopicRuleRepublish</a>
 
 ---
 
@@ -23238,7 +23238,7 @@ public void resetCannedAcl()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a></code> | *No description.* |
 
 ---
 
@@ -23352,7 +23352,7 @@ public java.lang.String getRoleArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3">IotTopicRuleS3</a>
 
 ---
 
@@ -23741,7 +23741,7 @@ public void resetMessageFormat()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.messageFormat">messageFormat</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.targetArn">targetArn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a></code> | *No description.* |
 
 ---
 
@@ -23835,7 +23835,7 @@ public java.lang.String getTargetArn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>
 
 ---
 
@@ -24217,7 +24217,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.queueUrl">queueUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.useBase64">useBase64</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a></code> | *No description.* |
 
 ---
 
@@ -24311,7 +24311,7 @@ public java.lang.Object getUseBase64();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>
 
 ---
 
@@ -24700,7 +24700,7 @@ public void resetExecutionNamePrefix()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.executionNamePrefix">executionNamePrefix</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.stateMachineName">stateMachineName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a></code> | *No description.* |
 
 ---
 
@@ -24794,7 +24794,7 @@ public java.lang.String getStateMachineName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>
 
 ---
 
@@ -25174,7 +25174,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a></code> | *No description.* |
 
 ---
 
@@ -25248,7 +25248,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>
 
 ---
 
@@ -25667,7 +25667,7 @@ public void resetTimestamp()
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.tableName">tableName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a></code> | *No description.* |
 
 ---
 
@@ -25801,7 +25801,7 @@ public java.lang.String getTableName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>
 
 ---
 

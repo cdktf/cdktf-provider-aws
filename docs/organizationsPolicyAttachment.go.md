@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/organizationspolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationspolicyattachment"
 
 organizationspolicyattachment.NewOrganizationsPolicyAttachment(scope Construct, id *string, config OrganizationsPolicyAttachmentConfig) OrganizationsPolicyAttachment
 ```
@@ -284,7 +284,7 @@ func ResetSkipDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/organizationspolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationspolicyattachment"
 
 organizationspolicyattachment.OrganizationsPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/organizationspolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationspolicyattachment"
 
 organizationspolicyattachment.OrganizationsPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ organizationspolicyattachment.OrganizationsPolicyAttachment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/organizationspolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationspolicyattachment"
 
 organizationspolicyattachment.OrganizationsPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/organizationspolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationspolicyattachment"
 
 &organizationspolicyattachment.OrganizationsPolicyAttachmentConfig {
 	Connection: interface{},

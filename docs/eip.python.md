@@ -692,7 +692,7 @@ eip.Eip.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicIpv4PoolInput">public_ipv4_pool_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.vpcInput">vpc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIp">associate_with_private_ip</a></code> | <code>str</code> | *No description.* |
@@ -1053,10 +1053,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.eip.Eip.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[EipTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, EipTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>]
 
 ---
 
@@ -1799,7 +1799,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1890,10 +1890,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EipTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, EipTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>]
 
 ---
 

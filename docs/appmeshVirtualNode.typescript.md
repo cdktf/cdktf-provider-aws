@@ -8407,7 +8407,7 @@ public putVirtualService(value: AppmeshVirtualNodeSpecBackendVirtualService): vo
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.virtualService">virtualService</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference">AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.virtualServiceInput">virtualServiceInput</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService">AppmeshVirtualNodeSpecBackendVirtualService</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a></code> | *No description.* |
 
 ---
 
@@ -8458,10 +8458,10 @@ public readonly virtualServiceInput: AppmeshVirtualNodeSpecBackendVirtualService
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecBackend | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecBackend;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend">AppmeshVirtualNodeSpecBackend</a>
 
 ---
 
@@ -13064,7 +13064,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.maxRequestsInput">maxRequestsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.maxRequests">maxRequests</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a></code> | *No description.* |
 
 ---
 
@@ -13115,10 +13115,10 @@ public readonly maxRequests: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolHttp2;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2">AppmeshVirtualNodeSpecListenerConnectionPoolHttp2</a>
 
 ---
 
@@ -13505,7 +13505,7 @@ public resetMaxPendingRequests(): void
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxPendingRequestsInput">maxPendingRequestsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxConnections">maxConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.maxPendingRequests">maxPendingRequests</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a></code> | *No description.* |
 
 ---
 
@@ -13576,10 +13576,10 @@ public readonly maxPendingRequests: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecListenerConnectionPoolHttp | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolHttp;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp">AppmeshVirtualNodeSpecListenerConnectionPoolHttp</a>
 
 ---
 
@@ -14374,7 +14374,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.maxConnectionsInput">maxConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.maxConnections">maxConnections</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a></code> | *No description.* |
 
 ---
 
@@ -14425,10 +14425,10 @@ public readonly maxConnections: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecListenerConnectionPoolTcp | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecListenerConnectionPoolTcp;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp">AppmeshVirtualNodeSpecListenerConnectionPoolTcp</a>
 
 ---
 
@@ -16295,7 +16295,7 @@ public resetTls(): void
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.portMappingInput">portMappingInput</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping">AppmeshVirtualNodeSpecListenerPortMapping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.timeoutInput">timeoutInput</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout">AppmeshVirtualNodeSpecListenerTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.tlsInput">tlsInput</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls">AppmeshVirtualNodeSpecListenerTls</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a></code> | *No description.* |
 
 ---
 
@@ -16446,10 +16446,10 @@ public readonly tlsInput: AppmeshVirtualNodeSpecListenerTls;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecListener | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecListener;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener">AppmeshVirtualNodeSpecListener</a>
 
 ---
 
@@ -24194,7 +24194,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a></code> | *No description.* |
 
 ---
 
@@ -24265,10 +24265,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson | IResolvable;
+public readonly internalValue: IResolvable | AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson">AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson</a>
 
 ---
 

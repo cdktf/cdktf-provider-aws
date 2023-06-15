@@ -1203,7 +1203,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters">DaxParameterGroupParameters</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters">DaxParameterGroupParameters</a></code> | *No description.* |
 
 ---
 
@@ -1274,10 +1274,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DaxParameterGroupParameters | IResolvable;
+public readonly internalValue: IResolvable | DaxParameterGroupParameters;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters">DaxParameterGroupParameters</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters">DaxParameterGroupParameters</a>
 
 ---
 
