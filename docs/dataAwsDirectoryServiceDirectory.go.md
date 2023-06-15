@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectory(scope Construct, id *string, config DataAwsDirectoryServiceDirectoryConfig) DataAwsDirectoryServiceDirectory
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryConnectSettings {
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirect
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryRadiusSettings {
 
@@ -900,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirect
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryVpcSettings {
 
@@ -915,7 +915,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryConnectSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryConnectSettingsList
 ```
@@ -1047,7 +1047,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference
 ```
@@ -1380,7 +1380,7 @@ func InternalValue() DataAwsDirectoryServiceDirectoryConnectSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryRadiusSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryRadiusSettingsList
 ```
@@ -1512,7 +1512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() DataAwsDirectoryServiceDirectoryRadiusSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryVpcSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryVpcSettingsList
 ```
@@ -1988,7 +1988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference
 ```

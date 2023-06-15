@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetector(scope Construct, id *string, config DataAwsGuarddutyDetectorConfig) DataAwsGuarddutyDetector
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorConfig {
 	Connection: interface{},
