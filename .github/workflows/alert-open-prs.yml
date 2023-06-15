@@ -25,7 +25,7 @@ jobs:
           fi
       - name: Alert Slack on old PRs
         if: ${{ steps.old_prs.outputs.pr_links }}
-        uses: slackapi/slack-github-action@v1.23.0
+        uses: slackapi/slack-github-action@e28cf165c92ffef168d23c5c9000cffc8a25e117
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.ALERT_PRS_SLACK_WEBHOOK_URL }}
         with:

@@ -36,9 +36,7 @@ jobs:
       - name: Revert package.json version bump
         run: git checkout package.json
       - name: Setup Copywrite tool
-        uses: hashicorp/setup-copywrite@3ace06ad72e6ec679ea8572457b17dbc3960b8ce
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: hashicorp/setup-copywrite@867a1a2a064a0626db322392806428f7dc59cb3e
       - name: Add headers using Copywrite tool
         run: copywrite headers
       - name: Find mutations
