@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_delegation_set
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_delegation_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface Route53DelegationSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_delegation_set#id Route53DelegationSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_delegation_set#id Route53DelegationSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_delegation_set#reference_name Route53DelegationSet#reference_name}
   */
   readonly referenceName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_delegation_set aws_route53_delegation_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_delegation_set aws_route53_delegation_set}
 */
 export class Route53DelegationSet extends cdktf.TerraformResource {
 
@@ -40,7 +35,7 @@ export class Route53DelegationSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_delegation_set aws_route53_delegation_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_delegation_set aws_route53_delegation_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class Route53DelegationSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_delegation_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
